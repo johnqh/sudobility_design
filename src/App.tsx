@@ -27,6 +27,11 @@ const designPages: Record<string, ComponentType<PageProps>> = {
   modals: lazy(() => import('./pages/design/ModalsPage')),
   navigation: lazy(() => import('./pages/design/NavigationPage')),
   'data-display': lazy(() => import('./pages/design/DataDisplayPage')),
+  forms: lazy(() => import('./pages/design/FormsPage')),
+  'forms-advanced': lazy(() => import('./pages/design/FormsAdvancedPage')),
+  'notifications-feedback': lazy(() => import('./pages/design/NotificationsFeedbackPage')),
+  'layout-spacing': lazy(() => import('./pages/design/LayoutSpacingPage')),
+  'tables-grids': lazy(() => import('./pages/design/TablesGridsPage')),
 };
 
 const pageProps: PageProps = { emailDomain: CONSTANTS.APP_DOMAIN, appName: CONSTANTS.APP_NAME };
