@@ -1,16 +1,15 @@
 import { StrictMode } from "react";
 import { createRoot } from "react-dom/client";
-import { configureTheme } from "@sudobility/design";
-import { defaultTheme } from "@sudobility/design/themes";
 import "./index.css";
+import { applyDesignTheme, getStoredDesignTheme } from "./config/designTheme";
 
 import App from "./App";
 
-// Activate the design-system theme so @sudobility/design + components render
-// theme-aware semantic classes (bg-primary, ...) that resolve via the
-// :root/.dark CSS variables in index.css + createTailwindPreset() in
-// tailwind.config.js — matching the reference tapayoka_vendor_app.
-configureTheme(defaultTheme);
+// Apply the stored (or default) design theme at bootstrap, before render — this
+// injects the design package's full set of semantic CSS variables (--background,
+// --card, --muted, ...) so backgrounds match mail_box's /internal/design, whose
+// initialize.ts does the same. Also runs configureTheme() internally.
+applyDesignTheme(getStoredDesignTheme());
 
 createRoot(document.getElementById("root")!).render(
   <StrictMode>

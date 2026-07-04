@@ -2,275 +2,70 @@
 @tailwind components;
 @tailwind utilities;
 
-/* The app's theme.* utility colors are aliased to the @sudobility/design tokens
-   (defined as --background, --foreground, ... in the :root/.dark blocks below),
-   so the whole app — not just the design components — follows the active design
-   theme and flips light/dark automatically. The hardcoded .dark { --color-* }
-   overrides were removed so the design tokens drive light/dark. */
-:root {
-  --color-bg-primary: hsl(var(--background));
-  --color-bg-secondary: hsl(var(--muted));
-  --color-bg-tertiary: hsl(var(--accent));
-  --color-text-primary: hsl(var(--foreground));
-  --color-text-secondary: hsl(var(--muted-foreground));
-  --color-text-tertiary: hsl(var(--muted-foreground));
-  --color-border: hsl(var(--border));
-  --color-border-light: hsl(var(--border));
-  --color-hover-bg: hsl(var(--accent));
-  --color-hover-border: hsl(var(--input));
-}
+/*
+ * Base surface (body background/foreground/font) is owned by @sudobility/design:
+ * applyDesignTheme() (called at boot in main.tsx) injects a `body { ... }` rule
+ * from generateThemeCSS(), so every app inherits the themed surface without
+ * redefining it. This file only provides the font-size scale + minimal resets.
+ */
 
-/* @sudobility/design theme tokens (semantic) — enables theme-aware design components */
-:root {
-  --background: 0 0% 100%;
-  --foreground: 222.2 84% 4.9%;
-  --card: 0 0% 100%;
-  --card-foreground: 222.2 84% 4.9%;
-  --popover: 0 0% 100%;
-  --popover-foreground: 222.2 84% 4.9%;
-  --primary: 221.2 83.2% 53.3%;
-  --primary-foreground: 210 40% 98%;
-  --secondary: 210 40% 96.1%;
-  --secondary-foreground: 222.2 47.4% 11.2%;
-  --muted: 210 40% 96.1%;
-  --muted-foreground: 215.4 16.3% 46.9%;
-  --accent: 210 40% 96.1%;
-  --accent-foreground: 222.2 47.4% 11.2%;
-  --destructive: 0 84.2% 60.2%;
-  --destructive-foreground: 210 40% 98%;
-  --success: 142 76% 36%;
-  --success-foreground: 0 0% 100%;
-  --warning: 38 92% 50%;
-  --warning-foreground: 0 0% 0%;
-  --info: 221.2 83.2% 53.3%;
-  --info-foreground: 210 40% 98%;
-  --border: 214.3 31.8% 91.4%;
-  --input: 214.3 31.8% 91.4%;
-  --ring: 221.2 83.2% 53.3%;
-  --radius: 0.5rem;
-  --border-width: 1px;
-  --shadow-sm: 0 1px 2px 0 rgb(0 0 0 / 0.05);
-  --shadow-md: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
-  --shadow-lg: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
-  --font-sans: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
-  --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
-}
-
-.dark {
-  --background: 222.2 84% 4.9%;
-  --foreground: 210 40% 98%;
-  --card: 222.2 84% 4.9%;
-  --card-foreground: 210 40% 98%;
-  --popover: 222.2 84% 4.9%;
-  --popover-foreground: 210 40% 98%;
-  --primary: 217.2 91.2% 59.8%;
-  --primary-foreground: 222.2 47.4% 11.2%;
-  --secondary: 217.2 32.6% 17.5%;
-  --secondary-foreground: 210 40% 98%;
-  --muted: 217.2 32.6% 17.5%;
-  --muted-foreground: 215 20.2% 65.1%;
-  --accent: 217.2 32.6% 17.5%;
-  --accent-foreground: 210 40% 98%;
-  --destructive: 0 62.8% 30.6%;
-  --destructive-foreground: 210 40% 98%;
-  --success: 142 76% 36%;
-  --success-foreground: 0 0% 100%;
-  --warning: 38 92% 50%;
-  --warning-foreground: 0 0% 0%;
-  --info: 217.2 91.2% 59.8%;
-  --info-foreground: 210 40% 98%;
-  --border: 217.2 32.6% 17.5%;
-  --input: 217.2 32.6% 17.5%;
-  --ring: 224.3 76.3% 48%;
-  --radius: 0.5rem;
-  --border-width: 1px;
-  --shadow-sm: 0 1px 2px 0 rgb(0 0 0 / 0.05);
-  --shadow-md: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
-  --shadow-lg: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
-  --font-sans: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
-  --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
-}
-
-/* Font size variants */
+/* Font size classes (driven by the @sudobility/components ThemeProvider FontSize) */
 .font-small {
-  font-size: 14px;
+  --font-size-xs: 0.625rem;
+  --font-size-sm: 0.75rem;
+  --font-size-base: 0.825rem;
+  --font-size-lg: 0.95rem;
+  --font-size-xl: 1.05rem;
+  --font-size-2xl: 1.35rem;
 }
 
 .font-medium {
-  font-size: 16px;
+  --font-size-xs: 0.75rem;
+  --font-size-sm: 0.875rem;
+  --font-size-base: 1rem;
+  --font-size-lg: 1.125rem;
+  --font-size-xl: 1.25rem;
+  --font-size-2xl: 1.5rem;
 }
 
 .font-large {
-  font-size: 18px;
+  --font-size-xs: 0.875rem;
+  --font-size-sm: 1rem;
+  --font-size-base: 1.125rem;
+  --font-size-lg: 1.25rem;
+  --font-size-xl: 1.375rem;
+  --font-size-2xl: 1.75rem;
 }
 
-/* Base styles */
-html {
-  font-family:
-    system-ui,
-    -apple-system,
-    BlinkMacSystemFont,
-    'Segoe UI',
-    Roboto,
-    Oxygen,
-    Ubuntu,
-    Cantarell,
-    'Open Sans',
-    'Helvetica Neue',
-    sans-serif;
-  line-height: 1.5;
-  font-weight: 400;
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  scroll-behavior: smooth;
+/* Apply font sizes using CSS variables */
+.text-xs {
+  font-size: var(--font-size-xs);
+}
+.text-sm {
+  font-size: var(--font-size-sm);
+}
+.text-base {
+  font-size: var(--font-size-base);
+}
+.text-lg {
+  font-size: var(--font-size-lg);
+}
+.text-xl {
+  font-size: var(--font-size-xl);
+}
+.text-2xl {
+  font-size: var(--font-size-2xl);
 }
 
 body {
   margin: 0;
-  min-width: 320px;
-  min-height: 100vh;
-  background-color: var(--color-bg-primary);
-  color: var(--color-text-primary);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  transition:
+    background-color 0.3s ease,
+    color 0.3s ease;
 }
 
 #root {
   min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-}
-
-/* Smooth transitions for theme changes */
-* {
-  transition:
-    background-color 0.2s ease,
-    border-color 0.2s ease,
-    color 0.2s ease;
-}
-
-/* Custom scrollbar */
-::-webkit-scrollbar {
-  width: 8px;
-}
-
-::-webkit-scrollbar-track {
-  background: #1e293b;
-}
-
-::-webkit-scrollbar-thumb {
-  background: #475569;
-  border-radius: 4px;
-}
-
-::-webkit-scrollbar-thumb:hover {
-  background: #64748b;
-}
-
-/* Hide scrollbar while maintaining scroll functionality */
-.scrollbar-hide {
-  -ms-overflow-style: none;
-  scrollbar-width: none;
-}
-
-.scrollbar-hide::-webkit-scrollbar {
-  display: none;
-}
-
-/* Utility for max-width container */
-.container-app {
-  max-width: 80rem; /* 1280px */
-  margin-left: auto;
-  margin-right: auto;
-}
-
-/* Sudobility custom utilities (used by landing content components) */
-
-/* Gradient text utility */
-.gradient-text {
-  background: linear-gradient(135deg, #8b5cf6 0%, #3b82f6 50%, #06b6d4 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
-}
-
-/* Glass effect */
-.glass {
-  background: rgba(30, 41, 59, 0.7);
-  backdrop-filter: blur(10px);
-  border: 1px solid rgba(51, 65, 85, 0.5);
-}
-
-/* ===========================================
-   RTL (Right-to-Left) Language Support
-   Supports: Arabic (ar), Hebrew (he), Farsi (fa), Urdu (ur)
-   =========================================== */
-
-/* Base RTL text direction */
-html[dir='rtl'] {
-  direction: rtl;
-  text-align: right;
-}
-
-/* Flip flex layouts for RTL */
-html[dir='rtl'] .flex-row {
-  flex-direction: row-reverse;
-}
-
-/* Flip margins and paddings in RTL */
-html[dir='rtl'] .ml-auto {
-  margin-left: 0;
-  margin-right: auto;
-}
-
-html[dir='rtl'] .mr-auto {
-  margin-right: 0;
-  margin-left: auto;
-}
-
-/* Navigation and menu alignment for RTL */
-html[dir='rtl'] nav {
-  direction: rtl;
-}
-
-/* Form elements RTL support */
-html[dir='rtl'] input,
-html[dir='rtl'] textarea,
-html[dir='rtl'] select {
-  text-align: right;
-}
-
-/* Code blocks should remain LTR even in RTL context */
-html[dir='rtl'] pre,
-html[dir='rtl'] code,
-html[dir='rtl'] .code-block {
-  direction: ltr;
-  text-align: left;
-}
-
-/* Keep numbers and technical content LTR */
-html[dir='rtl'] .ltr-content {
-  direction: ltr;
-  text-align: left;
-}
-
-/* Flip icons that indicate direction */
-html[dir='rtl'] .icon-directional {
-  transform: scaleX(-1);
-}
-
-/* Flip chevrons and arrows in RTL */
-html[dir='rtl'] [class*='chevron-right'],
-html[dir='rtl'] [class*='arrow-right'] {
-  transform: scaleX(-1);
-}
-
-html[dir='rtl'] [class*='chevron-left'],
-html[dir='rtl'] [class*='arrow-left'] {
-  transform: scaleX(-1);
-}
-
-/* Breadcrumb separator direction */
-html[dir='rtl'] .breadcrumb-separator {
-  transform: scaleX(-1);
 }

@@ -52,10 +52,8 @@ const LinkWrapper = ({
 function LoadingFallback() {
   const { t } = useTranslation("common");
   return (
-    <div className="min-h-screen bg-theme-bg-primary flex items-center justify-center">
-      <div className="animate-pulse text-theme-text-tertiary">
-        {t("loading")}
-      </div>
+    <div className="min-h-screen bg-background flex items-center justify-center">
+      <div className="animate-pulse text-muted-foreground">{t("loading")}</div>
     </div>
   );
 }
@@ -129,7 +127,7 @@ export default function ScreenContainerLayout() {
 
   return (
     <LayoutProvider mode="standard">
-      <div className="min-h-screen flex flex-col bg-theme-bg-primary">
+      <div className="min-h-screen flex flex-col bg-background">
         {/* Sticky header: topbar + breadcrumbs */}
         <div className="sticky top-0 z-40">
           <AppTopBar
