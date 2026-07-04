@@ -24,6 +24,9 @@ export default tseslint.config(
         'error',
         { argsIgnorePattern: '^_', varsIgnorePattern: '^_', ignoreRestSiblings: true },
       ],
+      // Ported design-showcase pages come from a `strict: false` codebase that
+      // permits `any`; keep it visible as a warning rather than failing the build.
+      '@typescript-eslint/no-explicit-any': 'warn',
     },
   }
 );
