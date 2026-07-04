@@ -1,0 +1,5 @@
+{
+  "nav": { "docs": "Docs", "settings": "Settings" },
+  "footer": { "librariesTitle": "Libraries", "contactTitle": "Contact" },
+  "loading": "Loading..."
+}
