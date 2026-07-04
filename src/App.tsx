@@ -7,6 +7,7 @@ import { SEOHeadProvider } from '@sudobility/seo_lib';
 import i18n from './i18n';
 import { seoHeadConfig } from './config/seo';
 import ScreenContainerLayout from './components/ScreenContainerLayout';
+import { DesignThemeProvider } from './context/DesignThemeContext';
 
 initializeNetworkService();
 
@@ -35,7 +36,9 @@ export default function App() {
   return (
     <SudobilityApp i18n={i18n} storageKeyPrefix="sudobility-design">
       <SEOHeadProvider config={seoHeadConfig}>
-        <AppRoutes />
+        <DesignThemeProvider>
+          <AppRoutes />
+        </DesignThemeProvider>
       </SEOHeadProvider>
     </SudobilityApp>
   );

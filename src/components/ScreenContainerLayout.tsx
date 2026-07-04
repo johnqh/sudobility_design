@@ -9,6 +9,7 @@ import {
 import { LayoutProvider } from '@sudobility/components';
 import { CONSTANTS } from '../config/constants';
 import { supportedLanguages, languageNames, type SupportedLanguage } from '../i18n';
+import { useBreadcrumbs } from '../hooks/useBreadcrumbs';
 
 // Language display names and flags for AppTopBar.
 const LANGUAGE_INFO: Record<string, { name: string; flag: string }> = {
@@ -74,6 +75,8 @@ export default function ScreenContainerLayout() {
 
   const currentLang = (lang || i18nInstance.language || 'en') as SupportedLanguage;
 
+  const { items: breadcrumbItems } = useBreadcrumbs();
+
   const languages = useMemo(
     () =>
       supportedLanguages.map(code => ({
@@ -124,9 +127,7 @@ export default function ScreenContainerLayout() {
             onLanguageChange={handleLanguageChange}
             LinkComponent={LinkWrapper}
           />
-          <AppBreadcrumbs
-            items={[{ label: 'Home', href: `/${currentLang}`, current: true }]}
-          />
+          <AppBreadcrumbs items={breadcrumbItems} />
         </div>
 
         {/* Main content */}
