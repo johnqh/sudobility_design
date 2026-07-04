@@ -6,6 +6,7 @@ import { initializeNetworkService } from '@sudobility/di';
 import { SEOHeadProvider } from '@sudobility/seo_lib';
 import i18n from './i18n';
 import { seoHeadConfig } from './config/seo';
+import ScreenContainerLayout from './components/ScreenContainerLayout';
 
 initializeNetworkService();
 
@@ -20,7 +21,9 @@ function AppRoutes() {
   return (
     <Suspense fallback={<div className="p-12">Loading...</div>}>
       <Routes>
-        <Route path="/:lang" element={<Placeholder />} />
+        <Route path="/:lang" element={<ScreenContainerLayout />}>
+          <Route index element={<Placeholder />} />
+        </Route>
         <Route path="/" element={<Navigate to={`/${i18nInstance.language || 'en'}`} replace />} />
         <Route path="*" element={<Navigate to="/en" replace />} />
       </Routes>
