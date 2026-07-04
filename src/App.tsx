@@ -22,6 +22,11 @@ const designPages: Record<string, ComponentType<PageProps>> = {
   buttons: lazy(() => import('./pages/design/ButtonsPage')),
   cards: lazy(() => import('./pages/design/CardsPage')),
   inputs: lazy(() => import('./pages/design/InputsPage')),
+  alerts: lazy(() => import('./pages/design/AlertsPage')),
+  loading: lazy(() => import('./pages/design/LoadingStatesPage')),
+  modals: lazy(() => import('./pages/design/ModalsPage')),
+  navigation: lazy(() => import('./pages/design/NavigationPage')),
+  'data-display': lazy(() => import('./pages/design/DataDisplayPage')),
 };
 
 const pageProps: PageProps = { emailDomain: CONSTANTS.APP_DOMAIN, appName: CONSTANTS.APP_NAME };
