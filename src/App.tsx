@@ -32,6 +32,14 @@ const designPages: Record<string, ComponentType<PageProps>> = {
   'notifications-feedback': lazy(() => import('./pages/design/NotificationsFeedbackPage')),
   'layout-spacing': lazy(() => import('./pages/design/LayoutSpacingPage')),
   'tables-grids': lazy(() => import('./pages/design/TablesGridsPage')),
+  badges: lazy(() => import('./pages/design/BadgesPage')),
+  'icons-illustrations': lazy(() => import('./pages/design/IconsIllustrationsPage')),
+  'overlays-portals': lazy(() => import('./pages/design/OverlaysPortalsPage')),
+  'micro-interactions-animations': lazy(
+    () => import('./pages/design/MicroInteractionsAnimationsPage')
+  ),
+  accessibility: lazy(() => import('./pages/design/AccessibilityPage')),
+  performance: lazy(() => import('./pages/design/PerformancePage')),
 };
 
 const pageProps: PageProps = { emailDomain: CONSTANTS.APP_DOMAIN, appName: CONSTANTS.APP_NAME };
