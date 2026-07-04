@@ -27,6 +27,7 @@ import {
 import { SEOHead } from "@sudobility/seo_lib";
 import { ui, textVariants, designTokens } from "@sudobility/design";
 import ThemeSwitcher from "../components/internal/ThemeSwitcher";
+import ThemeModeSwitcher from "../components/internal/ThemeModeSwitcher";
 import ThemePreview from "../components/internal/ThemePreview";
 import { useDesignTheme } from "../context/DesignThemeContext";
 
@@ -438,8 +439,9 @@ const DesignSystemPage: React.FC<AppProps> = ({ appName }) => {
           </div>
         </div>
 
-        {/* Theme switcher + live preview */}
-        <div className="mb-8 flex items-center justify-end">
+        {/* Appearance + design-theme switchers + live preview */}
+        <div className="mb-8 flex flex-wrap items-center justify-end gap-4">
+          <ThemeModeSwitcher />
           <ThemeSwitcher />
         </div>
         <div className="mb-12">
