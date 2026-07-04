@@ -8,14 +8,10 @@ import i18n from './i18n';
 import { seoHeadConfig } from './config/seo';
 import ScreenContainerLayout from './components/ScreenContainerLayout';
 import { DesignThemeProvider } from './context/DesignThemeContext';
+import { CONSTANTS } from './config/constants';
+import DesignSystemPage from './pages/DesignSystemPage';
 
 initializeNetworkService();
-
-function Placeholder() {
-  return (
-    <div className="p-12 text-center text-2xl">Sudobility Design System — scaffold OK</div>
-  );
-}
 
 function AppRoutes() {
   const { i18n: i18nInstance } = useTranslation();
@@ -23,7 +19,12 @@ function AppRoutes() {
     <Suspense fallback={<div className="p-12">Loading...</div>}>
       <Routes>
         <Route path="/:lang" element={<ScreenContainerLayout />}>
-          <Route index element={<Placeholder />} />
+          <Route
+            index
+            element={
+              <DesignSystemPage emailDomain={CONSTANTS.APP_DOMAIN} appName={CONSTANTS.APP_NAME} />
+            }
+          />
         </Route>
         <Route path="/" element={<Navigate to={`/${i18nInstance.language || 'en'}`} replace />} />
         <Route path="*" element={<Navigate to="/en" replace />} />
