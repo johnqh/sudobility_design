@@ -1,5 +1,5 @@
-import { textVariants, ui, variants } from '@sudobility/design';
-import { cn } from '@sudobility/components';
+import { textVariants, ui, variants } from "@sudobility/design";
+import { cn } from "@sudobility/components";
 import {
   ArrowPathIcon,
   BellIcon,
@@ -15,11 +15,11 @@ import {
   WifiIcon,
   XCircleIcon,
   XMarkIcon,
-} from '@heroicons/react/24/outline';
-import { CheckCircleIcon as CheckCircleSolid } from '@heroicons/react/24/solid';
-import React, { useEffect, useState, useRef } from 'react';
-import { SEOHead } from '@sudobility/seo_lib';
-import { Button, Section } from '@sudobility/components';
+} from "@heroicons/react/24/outline";
+import { CheckCircleIcon as CheckCircleSolid } from "@heroicons/react/24/solid";
+import React, { useEffect, useState, useRef } from "react";
+import { SEOHead } from "@sudobility/seo_lib";
+import { Button, Section } from "@sudobility/components";
 
 interface AppProps {
   emailDomain: string;
@@ -28,7 +28,7 @@ interface AppProps {
 
 interface ToastNotification {
   id: string;
-  type: 'success' | 'error' | 'warning' | 'info';
+  type: "success" | "error" | "warning" | "info";
   title: string;
   message: string;
   duration?: number;
@@ -42,57 +42,62 @@ interface ToastNotification {
 interface TransactionStatus {
   id: string;
   hash: string;
-  status: 'pending' | 'confirming' | 'confirmed' | 'failed';
+  status: "pending" | "confirming" | "confirmed" | "failed";
   type: string;
   amount?: string;
   confirmations?: number;
   maxConfirmations?: number;
 }
 
-const NotificationsFeedbackPage: React.FC<AppProps> = ({ emailDomain, appName: _appName }) => {
+const NotificationsFeedbackPage: React.FC<AppProps> = ({
+  emailDomain,
+  appName: _appName,
+}) => {
   const [toasts, setToasts] = useState<ToastNotification[]>([]);
   const toastIdCounter = useRef(0);
   const [transactions] = useState<TransactionStatus[]>([
     {
-      id: '1',
-      hash: '0x742d35...5f0bEb7',
-      status: 'confirmed',
-      type: 'Send ETH',
-      amount: '0.5 ETH',
+      id: "1",
+      hash: "0x742d35...5f0bEb7",
+      status: "confirmed",
+      type: "Send ETH",
+      amount: "0.5 ETH",
       confirmations: 12,
       maxConfirmations: 12,
     },
     {
-      id: '2',
-      hash: '0x8f5a91...3c7d2eA',
-      status: 'confirming',
-      type: 'Swap Tokens',
-      amount: '100 USDC',
+      id: "2",
+      hash: "0x8f5a91...3c7d2eA",
+      status: "confirming",
+      type: "Swap Tokens",
+      amount: "100 USDC",
       confirmations: 3,
       maxConfirmations: 12,
     },
     {
-      id: '3',
-      hash: '0x1b4e7a...9f2c8d1',
-      status: 'pending',
-      type: 'Approve Token',
-      amount: 'DAI',
+      id: "3",
+      hash: "0x1b4e7a...9f2c8d1",
+      status: "pending",
+      type: "Approve Token",
+      amount: "DAI",
     },
   ]);
-  const [systemStatus, setSystemStatus] = useState<'online' | 'degraded' | 'offline'>('online');
+  const [systemStatus, setSystemStatus] = useState<
+    "online" | "degraded" | "offline"
+  >("online");
   const [progress, setProgress] = useState(0);
 
   const copyToClipboard = (text: string) => {
     navigator.clipboard.writeText(text);
-    addToast('success', 'Copied!', 'Code copied to clipboard');
+    addToast("success", "Copied!", "Code copied to clipboard");
   };
 
   const addToast = (
-    type: ToastNotification['type'],
+    type: ToastNotification["type"],
     title: string,
     message: string,
     persistent = false,
-    action?: ToastNotification['action']
+    action?: ToastNotification["action"],
   ) => {
     // Use ref-based counter instead of Math.random() to avoid impure function during render
     toastIdCounter.current += 1;
@@ -107,7 +112,7 @@ const NotificationsFeedbackPage: React.FC<AppProps> = ({ emailDomain, appName: _
       action,
     };
 
-    setToasts(prev => [...prev, newToast]);
+    setToasts((prev) => [...prev, newToast]);
 
     if (!persistent) {
       setTimeout(() => {
@@ -117,16 +122,16 @@ const NotificationsFeedbackPage: React.FC<AppProps> = ({ emailDomain, appName: _
   };
 
   const removeToast = (id: string) => {
-    setToasts(prev => prev.filter(toast => toast.id !== id));
+    setToasts((prev) => prev.filter((toast) => toast.id !== id));
   };
 
   const simulateProgress = () => {
     setProgress(0);
     const interval = setInterval(() => {
-      setProgress(prev => {
+      setProgress((prev) => {
         if (prev >= 100) {
           clearInterval(interval);
-          addToast('success', 'Complete!', 'Operation completed successfully');
+          addToast("success", "Complete!", "Operation completed successfully");
           return 100;
         }
         return prev + 10;
@@ -136,8 +141,8 @@ const NotificationsFeedbackPage: React.FC<AppProps> = ({ emailDomain, appName: _
 
   const quickStartExamples = [
     {
-      title: 'Toast Notifications',
-      description: 'Temporary notifications with auto-dismiss and actions',
+      title: "Toast Notifications",
+      description: "Temporary notifications with auto-dismiss and actions",
       code: `// Toast Notification
 const showToast = (type, title, message) => {
   const toast = document.createElement('div');
@@ -163,8 +168,8 @@ const showToast = (type, title, message) => {
 };`,
     },
     {
-      title: 'Progress Notifications',
-      description: 'Show progress for long-running operations',
+      title: "Progress Notifications",
+      description: "Show progress for long-running operations",
       code: `// Progress Notification
 const ProgressNotification = ({ progress, title, message }) => (
   <div className={variants.notifications.progress.container()}>
@@ -191,8 +196,8 @@ const ProgressNotification = ({ progress, title, message }) => (
 );`,
     },
     {
-      title: 'Transaction Status',
-      description: 'Web3 transaction progress with confirmations',
+      title: "Transaction Status",
+      description: "Web3 transaction progress with confirmations",
       code: `// Transaction Status
 const TransactionStatus = ({ transaction }) => (
   <div className={variants.notifications.transaction.container()}>
@@ -221,8 +226,8 @@ const TransactionStatus = ({ transaction }) => (
 );`,
     },
     {
-      title: 'System Status Indicator',
-      description: 'Real-time system and connection status',
+      title: "System Status Indicator",
+      description: "Real-time system and connection status",
       code: `// System Status
 const SystemStatus = ({ status, message }) => (
   <div className={cn(
@@ -246,7 +251,11 @@ const SystemStatus = ({ status, message }) => (
   // Simulate system status changes
   useEffect(() => {
     const interval = setInterval(() => {
-      const statuses: Array<'online' | 'degraded' | 'offline'> = ['online', 'degraded', 'offline'];
+      const statuses: Array<"online" | "degraded" | "offline"> = [
+        "online",
+        "degraded",
+        "offline",
+      ];
       const currentIndex = statuses.indexOf(systemStatus);
       const nextIndex = (currentIndex + 1) % statuses.length;
       setSystemStatus(statuses[nextIndex]);
@@ -265,26 +274,36 @@ const SystemStatus = ({ status, message }) => (
 
       {/* Toast Container */}
       <div className="fixed top-4 right-4 z-50 space-y-2 max-w-sm">
-        {toasts.map(toast => (
+        {toasts.map((toast) => (
           <div
             key={toast.id}
             className={cn(
-              'transform transition-all duration-300 ease-out',
-              'bg-card border border-border rounded-lg shadow-lg p-4'
+              "transform transition-all duration-300 ease-out",
+              "bg-card border border-border rounded-lg shadow-lg p-4",
             )}
           >
             <div className="flex items-start">
               <div className="flex-shrink-0">
-                {toast.type === 'success' && <CheckCircleIcon className="h-5 w-5 text-success" />}
-                {toast.type === 'error' && <XCircleIcon className="h-5 w-5 text-destructive" />}
-                {toast.type === 'warning' && (
+                {toast.type === "success" && (
+                  <CheckCircleIcon className="h-5 w-5 text-success" />
+                )}
+                {toast.type === "error" && (
+                  <XCircleIcon className="h-5 w-5 text-destructive" />
+                )}
+                {toast.type === "warning" && (
                   <ExclamationTriangleIcon className="h-5 w-5 text-warning" />
                 )}
-                {toast.type === 'info' && <InformationCircleIcon className="h-5 w-5 text-info" />}
+                {toast.type === "info" && (
+                  <InformationCircleIcon className="h-5 w-5 text-info" />
+                )}
               </div>
               <div className="ml-3 flex-1">
-                <p className="text-sm font-medium text-foreground">{toast.title}</p>
-                <p className="mt-1 text-sm text-muted-foreground">{toast.message}</p>
+                <p className="text-sm font-medium text-foreground">
+                  {toast.title}
+                </p>
+                <p className="mt-1 text-sm text-muted-foreground">
+                  {toast.message}
+                </p>
                 {toast.action && (
                   <button
                     onClick={toast.action.onClick}
@@ -315,16 +334,21 @@ const SystemStatus = ({ status, message }) => (
           <div className="mb-12">
             <div className="inline-flex items-center bg-info/10 px-4 py-2 rounded-full mb-6">
               <BellIcon className="h-5 w-5 text-info mr-2" />
-              <span className="text-info font-semibold">Notifications & Feedback</span>
+              <span className="text-info font-semibold">
+                Notifications & Feedback
+              </span>
             </div>
 
             <h1 className={`${textVariants.heading.display.xl()} mb-6`}>
               Notifications & Feedback System
             </h1>
 
-            <p className={`${textVariants.body.lg()} max-w-3xl text-muted-foreground`}>
-              Comprehensive notification and feedback system including toasts, progress indicators,
-              transaction status updates, and system status displays for Web3 applications.
+            <p
+              className={`${textVariants.body.lg()} max-w-3xl text-muted-foreground`}
+            >
+              Comprehensive notification and feedback system including toasts,
+              progress indicators, transaction status updates, and system status
+              displays for Web3 applications.
             </p>
           </div>
 
@@ -339,8 +363,12 @@ const SystemStatus = ({ status, message }) => (
                   className={`${ui.background.surface} ${ui.border.default} border rounded-lg overflow-hidden`}
                 >
                   <div className="p-6 border-b border-border">
-                    <h3 className={`${textVariants.heading.h4()} mb-2`}>{example.title}</h3>
-                    <p className={`${textVariants.body.sm()} text-muted-foreground`}>
+                    <h3 className={`${textVariants.heading.h4()} mb-2`}>
+                      {example.title}
+                    </h3>
+                    <p
+                      className={`${textVariants.body.sm()} text-muted-foreground`}
+                    >
                       {example.description}
                     </p>
                   </div>
@@ -363,15 +391,22 @@ const SystemStatus = ({ status, message }) => (
 
           {/* Toast Notifications Demo */}
           <Section>
-            <h2 className={`${textVariants.heading.h2()} mb-8`}>Toast Notifications</h2>
+            <h2 className={`${textVariants.heading.h2()} mb-8`}>
+              Toast Notifications
+            </h2>
 
             <div
               className={`${ui.background.surface} ${ui.border.default} border rounded-lg overflow-hidden`}
             >
               <div className="p-6 border-b border-border">
-                <h3 className={`${textVariants.heading.h3()} mb-2`}>Interactive Toast Demos</h3>
-                <p className={`${textVariants.body.sm()} text-muted-foreground`}>
-                  Click buttons to trigger different types of toast notifications
+                <h3 className={`${textVariants.heading.h3()} mb-2`}>
+                  Interactive Toast Demos
+                </h3>
+                <p
+                  className={`${textVariants.body.sm()} text-muted-foreground`}
+                >
+                  Click buttons to trigger different types of toast
+                  notifications
                 </p>
               </div>
 
@@ -380,9 +415,9 @@ const SystemStatus = ({ status, message }) => (
                   <Button
                     onClick={() =>
                       addToast(
-                        'success',
-                        'Transaction Confirmed!',
-                        'Your ETH transfer was successful'
+                        "success",
+                        "Transaction Confirmed!",
+                        "Your ETH transfer was successful",
                       )
                     }
                     className="bg-success text-success-foreground hover:bg-success/90"
@@ -393,7 +428,11 @@ const SystemStatus = ({ status, message }) => (
 
                   <Button
                     onClick={() =>
-                      addToast('error', 'Transaction Failed', 'Insufficient gas for transaction')
+                      addToast(
+                        "error",
+                        "Transaction Failed",
+                        "Insufficient gas for transaction",
+                      )
                     }
                     className="bg-destructive text-destructive-foreground hover:bg-destructive/90"
                   >
@@ -403,11 +442,21 @@ const SystemStatus = ({ status, message }) => (
 
                   <Button
                     onClick={() =>
-                      addToast('warning', 'High Gas Fees', 'Network congestion detected', false, {
-                        label: 'Adjust Gas',
-                        onClick: () =>
-                          addToast('info', 'Gas Adjusted', 'Gas price updated to 25 gwei'),
-                      })
+                      addToast(
+                        "warning",
+                        "High Gas Fees",
+                        "Network congestion detected",
+                        false,
+                        {
+                          label: "Adjust Gas",
+                          onClick: () =>
+                            addToast(
+                              "info",
+                              "Gas Adjusted",
+                              "Gas price updated to 25 gwei",
+                            ),
+                        },
+                      )
                     }
                     className="bg-warning text-warning-foreground hover:bg-warning/90"
                   >
@@ -418,10 +467,10 @@ const SystemStatus = ({ status, message }) => (
                   <Button
                     onClick={() =>
                       addToast(
-                        'info',
-                        'New Feature Available',
-                        'Multi-chain swaps now supported',
-                        true
+                        "info",
+                        "New Feature Available",
+                        "Multi-chain swaps now supported",
+                        true,
                       )
                     }
                     variant="outline"
@@ -437,16 +486,20 @@ const SystemStatus = ({ status, message }) => (
                   </h4>
                   <ul className="text-sm text-muted-foreground space-y-1">
                     <li>
-                      • <strong>Success:</strong> Transaction confirmations, completed actions
+                      • <strong>Success:</strong> Transaction confirmations,
+                      completed actions
                     </li>
                     <li>
-                      • <strong>Error:</strong> Failed transactions, network errors
+                      • <strong>Error:</strong> Failed transactions, network
+                      errors
                     </li>
                     <li>
-                      • <strong>Warning:</strong> High gas fees, security warnings (with actions)
+                      • <strong>Warning:</strong> High gas fees, security
+                      warnings (with actions)
                     </li>
                     <li>
-                      • <strong>Info:</strong> New features, system updates (persistent)
+                      • <strong>Info:</strong> New features, system updates
+                      (persistent)
                     </li>
                     <li>• Auto-dismiss after 5 seconds (unless persistent)</li>
                     <li>• Optional action buttons for interactive responses</li>
@@ -458,7 +511,9 @@ const SystemStatus = ({ status, message }) => (
 
           {/* Progress Indicators Demo */}
           <Section>
-            <h2 className={`${textVariants.heading.h2()} mb-8`}>Progress Indicators</h2>
+            <h2 className={`${textVariants.heading.h2()} mb-8`}>
+              Progress Indicators
+            </h2>
 
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
               {/* Linear Progress */}
@@ -466,8 +521,12 @@ const SystemStatus = ({ status, message }) => (
                 className={`${ui.background.surface} ${ui.border.default} border rounded-lg overflow-hidden`}
               >
                 <div className="p-6 border-b border-border">
-                  <h3 className={`${textVariants.heading.h4()} mb-2`}>Linear Progress</h3>
-                  <p className={`${textVariants.body.sm()} text-muted-foreground`}>
+                  <h3 className={`${textVariants.heading.h4()} mb-2`}>
+                    Linear Progress
+                  </h3>
+                  <p
+                    className={`${textVariants.body.sm()} text-muted-foreground`}
+                  >
                     Progress bars for file uploads and operations
                   </p>
                 </div>
@@ -478,7 +537,9 @@ const SystemStatus = ({ status, message }) => (
                       <span className="text-sm font-medium text-foreground">
                         Email Sync Progress
                       </span>
-                      <span className="text-sm text-muted-foreground">{progress}%</span>
+                      <span className="text-sm text-muted-foreground">
+                        {progress}%
+                      </span>
                     </div>
                     <div className="w-full bg-muted rounded-full h-2">
                       <div
@@ -490,7 +551,9 @@ const SystemStatus = ({ status, message }) => (
 
                   <div>
                     <div className="flex items-center justify-between mb-2">
-                      <span className="text-sm font-medium text-foreground">File Upload</span>
+                      <span className="text-sm font-medium text-foreground">
+                        File Upload
+                      </span>
                       <span className="text-sm text-muted-foreground">75%</span>
                     </div>
                     <div className="w-full bg-muted rounded-full h-2">
@@ -501,7 +564,11 @@ const SystemStatus = ({ status, message }) => (
                     </p>
                   </div>
 
-                  <Button onClick={simulateProgress} variant="outline" className="w-full">
+                  <Button
+                    onClick={simulateProgress}
+                    variant="outline"
+                    className="w-full"
+                  >
                     <ArrowPathIcon className="h-4 w-4 mr-2" />
                     Simulate Progress
                   </Button>
@@ -513,8 +580,12 @@ const SystemStatus = ({ status, message }) => (
                 className={`${ui.background.surface} ${ui.border.default} border rounded-lg overflow-hidden`}
               >
                 <div className="p-6 border-b border-border">
-                  <h3 className={`${textVariants.heading.h4()} mb-2`}>Loading Spinners</h3>
-                  <p className={`${textVariants.body.sm()} text-muted-foreground`}>
+                  <h3 className={`${textVariants.heading.h4()} mb-2`}>
+                    Loading Spinners
+                  </h3>
+                  <p
+                    className={`${textVariants.body.sm()} text-muted-foreground`}
+                  >
                     Various loading states and spinners
                   </p>
                 </div>
@@ -522,7 +593,9 @@ const SystemStatus = ({ status, message }) => (
                 <div className="p-6 space-y-6">
                   <div className="flex items-center space-x-4">
                     <div className="animate-spin rounded-full h-6 w-6 border-b-2 border-primary"></div>
-                    <span className="text-sm text-muted-foreground">Loading transactions...</span>
+                    <span className="text-sm text-muted-foreground">
+                      Loading transactions...
+                    </span>
                   </div>
 
                   <div className="flex items-center space-x-4">
@@ -531,7 +604,9 @@ const SystemStatus = ({ status, message }) => (
                       <div className="w-2 h-2 bg-primary rounded-full animation-delay-75"></div>
                       <div className="w-2 h-2 bg-primary rounded-full animation-delay-150"></div>
                     </div>
-                    <span className="text-sm text-muted-foreground">Connecting to wallet...</span>
+                    <span className="text-sm text-muted-foreground">
+                      Connecting to wallet...
+                    </span>
                   </div>
 
                   <div className="flex items-center space-x-4">
@@ -550,51 +625,64 @@ const SystemStatus = ({ status, message }) => (
 
           {/* Transaction Status Demo */}
           <Section>
-            <h2 className={`${textVariants.heading.h2()} mb-8`}>Web3 Transaction Status</h2>
+            <h2 className={`${textVariants.heading.h2()} mb-8`}>
+              Web3 Transaction Status
+            </h2>
 
             <div
               className={`${ui.background.surface} ${ui.border.default} border rounded-lg overflow-hidden`}
             >
               <div className="p-6 border-b border-border">
-                <h3 className={`${textVariants.heading.h3()} mb-2`}>Transaction Tracker</h3>
-                <p className={`${textVariants.body.sm()} text-muted-foreground`}>
+                <h3 className={`${textVariants.heading.h3()} mb-2`}>
+                  Transaction Tracker
+                </h3>
+                <p
+                  className={`${textVariants.body.sm()} text-muted-foreground`}
+                >
                   Real-time transaction status with confirmation progress
                 </p>
               </div>
 
               <div className="p-6">
                 <div className="space-y-4">
-                  {transactions.map(tx => (
-                    <div key={tx.id} className="border border-border rounded-lg p-4">
+                  {transactions.map((tx) => (
+                    <div
+                      key={tx.id}
+                      className="border border-border rounded-lg p-4"
+                    >
                       <div className="flex items-start justify-between">
                         <div className="flex items-center space-x-3">
                           <div
                             className={cn(
-                              'w-10 h-10 rounded-full flex items-center justify-center',
-                              tx.status === 'confirmed' && 'bg-success/10',
-                              tx.status === 'confirming' && 'bg-info/10',
-                              tx.status === 'pending' && 'bg-warning/10',
-                              tx.status === 'failed' && 'bg-destructive/10'
+                              "w-10 h-10 rounded-full flex items-center justify-center",
+                              tx.status === "confirmed" && "bg-success/10",
+                              tx.status === "confirming" && "bg-info/10",
+                              tx.status === "pending" && "bg-warning/10",
+                              tx.status === "failed" && "bg-destructive/10",
                             )}
                           >
-                            {tx.status === 'confirmed' && (
+                            {tx.status === "confirmed" && (
                               <CheckCircleSolid className="h-5 w-5 text-success" />
                             )}
-                            {tx.status === 'confirming' && (
+                            {tx.status === "confirming" && (
                               <div className="animate-spin rounded-full h-4 w-4 border-2 border-info border-t-transparent" />
                             )}
-                            {tx.status === 'pending' && (
+                            {tx.status === "pending" && (
                               <ClockIcon className="h-5 w-5 text-warning" />
                             )}
-                            {tx.status === 'failed' && (
+                            {tx.status === "failed" && (
                               <XCircleIcon className="h-5 w-5 text-destructive" />
                             )}
                           </div>
                           <div>
                             <div className="flex items-center space-x-2">
-                              <span className="text-sm font-medium text-foreground">{tx.type}</span>
+                              <span className="text-sm font-medium text-foreground">
+                                {tx.type}
+                              </span>
                               {tx.amount && (
-                                <span className="text-sm text-muted-foreground">{tx.amount}</span>
+                                <span className="text-sm text-muted-foreground">
+                                  {tx.amount}
+                                </span>
                               )}
                             </div>
                             <code className="text-xs text-muted-foreground font-mono">
@@ -605,24 +693,30 @@ const SystemStatus = ({ status, message }) => (
                         <div className="text-right">
                           <span
                             className={cn(
-                              'px-2 py-1 text-xs rounded-full font-medium',
-                              tx.status === 'confirmed' && 'bg-success/10 text-success',
-                              tx.status === 'confirming' && 'bg-info/10 text-info',
-                              tx.status === 'pending' && 'bg-warning/10 text-warning',
-                              tx.status === 'failed' && 'bg-destructive/10 text-destructive'
+                              "px-2 py-1 text-xs rounded-full font-medium",
+                              tx.status === "confirmed" &&
+                                "bg-success/10 text-success",
+                              tx.status === "confirming" &&
+                                "bg-info/10 text-info",
+                              tx.status === "pending" &&
+                                "bg-warning/10 text-warning",
+                              tx.status === "failed" &&
+                                "bg-destructive/10 text-destructive",
                             )}
                           >
-                            {tx.status.charAt(0).toUpperCase() + tx.status.slice(1)}
+                            {tx.status.charAt(0).toUpperCase() +
+                              tx.status.slice(1)}
                           </span>
                           {tx.confirmations !== undefined && (
                             <div className="text-xs text-muted-foreground mt-1">
-                              {tx.confirmations}/{tx.maxConfirmations} confirmations
+                              {tx.confirmations}/{tx.maxConfirmations}{" "}
+                              confirmations
                             </div>
                           )}
                         </div>
                       </div>
 
-                      {tx.status === 'confirming' &&
+                      {tx.status === "confirming" &&
                         tx.confirmations !== undefined &&
                         tx.maxConfirmations && (
                           <div className="mt-3">
@@ -647,19 +741,25 @@ const SystemStatus = ({ status, message }) => (
                 </div>
 
                 <div className="mt-6 bg-muted rounded-lg p-4">
-                  <h4 className="text-sm font-medium text-foreground mb-2">Transaction States</h4>
+                  <h4 className="text-sm font-medium text-foreground mb-2">
+                    Transaction States
+                  </h4>
                   <ul className="text-sm text-muted-foreground space-y-1">
                     <li>
-                      • <strong>Pending:</strong> Transaction submitted to mempool
+                      • <strong>Pending:</strong> Transaction submitted to
+                      mempool
                     </li>
                     <li>
-                      • <strong>Confirming:</strong> Being included in blocks (shows progress)
+                      • <strong>Confirming:</strong> Being included in blocks
+                      (shows progress)
                     </li>
                     <li>
-                      • <strong>Confirmed:</strong> Required confirmations reached
+                      • <strong>Confirmed:</strong> Required confirmations
+                      reached
                     </li>
                     <li>
-                      • <strong>Failed:</strong> Transaction reverted or rejected
+                      • <strong>Failed:</strong> Transaction reverted or
+                      rejected
                     </li>
                   </ul>
                 </div>
@@ -669,7 +769,9 @@ const SystemStatus = ({ status, message }) => (
 
           {/* System Status Demo */}
           <Section>
-            <h2 className={`${textVariants.heading.h2()} mb-8`}>System Status & Indicators</h2>
+            <h2 className={`${textVariants.heading.h2()} mb-8`}>
+              System Status & Indicators
+            </h2>
 
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
               {/* Connection Status */}
@@ -677,8 +779,12 @@ const SystemStatus = ({ status, message }) => (
                 className={`${ui.background.surface} ${ui.border.default} border rounded-lg overflow-hidden`}
               >
                 <div className="p-6 border-b border-border">
-                  <h3 className={`${textVariants.heading.h4()} mb-2`}>Connection Status</h3>
-                  <p className={`${textVariants.body.sm()} text-muted-foreground`}>
+                  <h3 className={`${textVariants.heading.h4()} mb-2`}>
+                    Connection Status
+                  </h3>
+                  <p
+                    className={`${textVariants.body.sm()} text-muted-foreground`}
+                  >
                     Real-time connection and system status
                   </p>
                 </div>
@@ -688,55 +794,71 @@ const SystemStatus = ({ status, message }) => (
                     <div className="flex items-center space-x-3">
                       <div
                         className={cn(
-                          'w-3 h-3 rounded-full',
-                          systemStatus === 'online' && 'bg-success',
-                          systemStatus === 'degraded' && 'bg-warning',
-                          systemStatus === 'offline' && 'bg-destructive'
+                          "w-3 h-3 rounded-full",
+                          systemStatus === "online" && "bg-success",
+                          systemStatus === "degraded" && "bg-warning",
+                          systemStatus === "offline" && "bg-destructive",
                         )}
                       />
                       <div>
-                        <div className="text-sm font-medium text-foreground">System Status</div>
+                        <div className="text-sm font-medium text-foreground">
+                          System Status
+                        </div>
                         <div className="text-xs text-muted-foreground">
-                          {systemStatus === 'online' && 'All systems operational'}
-                          {systemStatus === 'degraded' && 'Some services unavailable'}
-                          {systemStatus === 'offline' && 'System maintenance'}
+                          {systemStatus === "online" &&
+                            "All systems operational"}
+                          {systemStatus === "degraded" &&
+                            "Some services unavailable"}
+                          {systemStatus === "offline" && "System maintenance"}
                         </div>
                       </div>
                     </div>
                     <div
                       className={cn(
-                        'px-2 py-1 text-xs rounded-full font-medium',
-                        systemStatus === 'online' && 'bg-success/10 text-success',
-                        systemStatus === 'degraded' && 'bg-warning/10 text-warning',
-                        systemStatus === 'offline' && 'bg-destructive/10 text-destructive'
+                        "px-2 py-1 text-xs rounded-full font-medium",
+                        systemStatus === "online" &&
+                          "bg-success/10 text-success",
+                        systemStatus === "degraded" &&
+                          "bg-warning/10 text-warning",
+                        systemStatus === "offline" &&
+                          "bg-destructive/10 text-destructive",
                       )}
                     >
-                      {systemStatus.charAt(0).toUpperCase() + systemStatus.slice(1)}
+                      {systemStatus.charAt(0).toUpperCase() +
+                        systemStatus.slice(1)}
                     </div>
                   </div>
 
                   <div className="space-y-3">
                     <div className="flex items-center space-x-3">
                       <WifiIcon className="h-4 w-4 text-success" />
-                      <span className="text-sm text-foreground">Internet Connection</span>
+                      <span className="text-sm text-foreground">
+                        Internet Connection
+                      </span>
                       <span className="text-xs text-success">Connected</span>
                     </div>
 
                     <div className="flex items-center space-x-3">
                       <WalletIcon className="h-4 w-4 text-info" />
-                      <span className="text-sm text-foreground">Wallet Connection</span>
+                      <span className="text-sm text-foreground">
+                        Wallet Connection
+                      </span>
                       <span className="text-xs text-info">MetaMask</span>
                     </div>
 
                     <div className="flex items-center space-x-3">
                       <SignalIcon className="h-4 w-4 text-success" />
-                      <span className="text-sm text-foreground">Ethereum Network</span>
+                      <span className="text-sm text-foreground">
+                        Ethereum Network
+                      </span>
                       <span className="text-xs text-success">Mainnet</span>
                     </div>
 
                     <div className="flex items-center space-x-3">
                       <ShieldCheckIcon className="h-4 w-4 text-warning" />
-                      <span className="text-sm text-foreground">Security Status</span>
+                      <span className="text-sm text-foreground">
+                        Security Status
+                      </span>
                       <span className="text-xs text-warning">Warning</span>
                     </div>
                   </div>
@@ -748,15 +870,21 @@ const SystemStatus = ({ status, message }) => (
                 className={`${ui.background.surface} ${ui.border.default} border rounded-lg overflow-hidden`}
               >
                 <div className="p-6 border-b border-border">
-                  <h3 className={`${textVariants.heading.h4()} mb-2`}>Notification Badges</h3>
-                  <p className={`${textVariants.body.sm()} text-muted-foreground`}>
+                  <h3 className={`${textVariants.heading.h4()} mb-2`}>
+                    Notification Badges
+                  </h3>
+                  <p
+                    className={`${textVariants.body.sm()} text-muted-foreground`}
+                  >
                     Count indicators and status badges
                   </p>
                 </div>
 
                 <div className="p-6 space-y-6">
                   <div className="space-y-4">
-                    <h4 className="text-sm font-medium text-foreground">Count Badges</h4>
+                    <h4 className="text-sm font-medium text-foreground">
+                      Count Badges
+                    </h4>
 
                     <div className="flex items-center space-x-6">
                       <div className="relative">
@@ -783,7 +911,9 @@ const SystemStatus = ({ status, message }) => (
                   </div>
 
                   <div className="space-y-4">
-                    <h4 className="text-sm font-medium text-foreground">Status Indicators</h4>
+                    <h4 className="text-sm font-medium text-foreground">
+                      Status Indicators
+                    </h4>
 
                     <div className="space-y-3">
                       <div className="flex items-center space-x-3">
@@ -809,15 +939,22 @@ const SystemStatus = ({ status, message }) => (
 
           {/* Contextual Feedback */}
           <Section>
-            <h2 className={`${textVariants.heading.h2()} mb-8`}>Contextual Feedback</h2>
+            <h2 className={`${textVariants.heading.h2()} mb-8`}>
+              Contextual Feedback
+            </h2>
 
             <div
               className={`${ui.background.surface} ${ui.border.default} border rounded-lg overflow-hidden`}
             >
               <div className="p-6 border-b border-border">
-                <h3 className={`${textVariants.heading.h3()} mb-2`}>Smart Feedback Patterns</h3>
-                <p className={`${textVariants.body.sm()} text-muted-foreground`}>
-                  Context-aware feedback that adapts to user actions and system state
+                <h3 className={`${textVariants.heading.h3()} mb-2`}>
+                  Smart Feedback Patterns
+                </h3>
+                <p
+                  className={`${textVariants.body.sm()} text-muted-foreground`}
+                >
+                  Context-aware feedback that adapts to user actions and system
+                  state
                 </p>
               </div>
 
@@ -825,13 +962,17 @@ const SystemStatus = ({ status, message }) => (
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                   {/* Action Feedback */}
                   <div className="space-y-4">
-                    <h4 className="text-sm font-medium text-foreground">Action Feedback</h4>
+                    <h4 className="text-sm font-medium text-foreground">
+                      Action Feedback
+                    </h4>
 
                     <div className="space-y-3">
                       <div className={(variants.alert as any).success()}>
                         <div className="flex items-center">
                           <CheckCircleIcon className="h-4 w-4 text-success mr-2" />
-                          <span className="text-sm">Email sent successfully</span>
+                          <span className="text-sm">
+                            Email sent successfully
+                          </span>
                         </div>
                       </div>
 
@@ -853,7 +994,9 @@ const SystemStatus = ({ status, message }) => (
 
                   {/* Smart Suggestions */}
                   <div className="space-y-4">
-                    <h4 className="text-sm font-medium text-foreground">Smart Suggestions</h4>
+                    <h4 className="text-sm font-medium text-foreground">
+                      Smart Suggestions
+                    </h4>
 
                     <div className="space-y-3">
                       <div className="p-3 bg-muted border border-border rounded-lg">
@@ -875,7 +1018,9 @@ const SystemStatus = ({ status, message }) => (
                       <div className="p-3 bg-muted border border-border rounded-lg">
                         <div className="flex items-start justify-between">
                           <div>
-                            <p className="text-sm text-foreground">Back up your seed phrase</p>
+                            <p className="text-sm text-foreground">
+                              Back up your seed phrase
+                            </p>
                             <p className="text-xs text-muted-foreground mt-1">
                               Secure your wallet recovery
                             </p>

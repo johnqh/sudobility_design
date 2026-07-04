@@ -5,9 +5,9 @@ import {
   SelectItem,
   SelectTrigger,
   SelectValue,
-} from '@sudobility/components';
+} from "@sudobility/components";
 
-import React, { useState } from 'react';
+import React, { useState } from "react";
 import {
   ClipboardDocumentIcon,
   CheckIcon,
@@ -15,9 +15,9 @@ import {
   ExclamationCircleIcon,
   EyeIcon,
   EyeSlashIcon,
-} from '@heroicons/react/24/outline';
-import { SEOHead } from '@sudobility/seo_lib';
-import { textVariants, variants } from '@sudobility/design';
+} from "@heroicons/react/24/outline";
+import { SEOHead } from "@sudobility/seo_lib";
+import { textVariants, variants } from "@sudobility/design";
 
 interface AppProps {
   emailDomain: string;
@@ -46,7 +46,9 @@ const CodeExample: React.FC<CodeExampleProps> = ({
     <div>
       <h4 className={`${textVariants.heading.h5()} mb-1`}>{title}</h4>
       {description && (
-        <p className={`${textVariants.body.sm()} text-muted-foreground`}>{description}</p>
+        <p className={`${textVariants.body.sm()} text-muted-foreground`}>
+          {description}
+        </p>
       )}
     </div>
 
@@ -56,7 +58,9 @@ const CodeExample: React.FC<CodeExampleProps> = ({
           <div className="w-2 h-2 bg-destructive rounded-full"></div>
           <div className="w-2 h-2 bg-warning rounded-full"></div>
           <div className="w-2 h-2 bg-success rounded-full"></div>
-          <span className={`${textVariants.caption.default()} ml-2`}>Preview</span>
+          <span className={`${textVariants.caption.default()} ml-2`}>
+            Preview
+          </span>
         </div>
         <div className="bg-card rounded border p-3">{preview}</div>
       </div>
@@ -66,7 +70,11 @@ const CodeExample: React.FC<CodeExampleProps> = ({
       <div className="flex items-center justify-between mb-2">
         <div className="flex items-center gap-2">
           <CodeBracketIcon className="h-4 w-4 text-muted-foreground" />
-          <span className={`${textVariants.caption.default()} text-muted-foreground`}>Usage</span>
+          <span
+            className={`${textVariants.caption.default()} text-muted-foreground`}
+          >
+            Usage
+          </span>
         </div>
         <button
           onClick={() => onCopy(code)}
@@ -129,10 +137,12 @@ const FormsPage: React.FC<AppProps> = ({ emailDomain, appName: _appName }) => {
               Form Components & Input Elements
             </h1>
 
-            <p className={`${textVariants.body.lg()} max-w-3xl mx-auto text-muted-foreground`}>
-              Comprehensive form element library with consistent styling, validation states, and
-              accessibility features. All components support light/dark themes and include proper
-              focus management.
+            <p
+              className={`${textVariants.body.lg()} max-w-3xl mx-auto text-muted-foreground`}
+            >
+              Comprehensive form element library with consistent styling,
+              validation states, and accessibility features. All components
+              support light/dark themes and include proper focus management.
             </p>
           </div>
 
@@ -147,14 +157,18 @@ const FormsPage: React.FC<AppProps> = ({ emailDomain, appName: _appName }) => {
               </div>
 
               <p className={`${textVariants.body.md()} text-success mb-8`}>
-                Ready-to-use form components with proper validation, accessibility, and responsive
-                design.
+                Ready-to-use form components with proper validation,
+                accessibility, and responsive design.
               </p>
 
               <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
                 {/* Basic Input */}
                 <div className="space-y-4">
-                  <h3 className={`${textVariants.heading.h4()} text-success mb-3`}>Text Input</h3>
+                  <h3
+                    className={`${textVariants.heading.h4()} text-success mb-3`}
+                  >
+                    Text Input
+                  </h3>
                   <div className="bg-muted rounded-lg p-4 relative">
                     <button
                       className="absolute top-2 right-2 p-1 hover:bg-accent rounded"
@@ -196,7 +210,9 @@ const FormsPage: React.FC<AppProps> = ({ emailDomain, appName: _appName }) => {
                   </div>
                   <div className="p-4 bg-card rounded-lg border border-border">
                     <div className="space-y-1">
-                      <label className={`${textVariants.label.default()} block`}>
+                      <label
+                        className={`${textVariants.label.default()} block`}
+                      >
                         Email Address
                       </label>
                       <input
@@ -210,7 +226,9 @@ const FormsPage: React.FC<AppProps> = ({ emailDomain, appName: _appName }) => {
 
                 {/* Select Dropdown */}
                 <div className="space-y-4">
-                  <h3 className={`${textVariants.heading.h4()} text-success mb-3`}>
+                  <h3
+                    className={`${textVariants.heading.h4()} text-success mb-3`}
+                  >
                     Select Dropdown
                   </h3>
                   <div className="bg-muted rounded-lg p-4 relative">
@@ -265,7 +283,9 @@ const FormsPage: React.FC<AppProps> = ({ emailDomain, appName: _appName }) => {
                   </div>
                   <div className="p-4 bg-card rounded-lg border border-border">
                     <div className="space-y-1">
-                      <label className={`${textVariants.label.default()} block`}>
+                      <label
+                        className={`${textVariants.label.default()} block`}
+                      >
                         Blockchain Network
                       </label>
                       <Select>
@@ -284,7 +304,11 @@ const FormsPage: React.FC<AppProps> = ({ emailDomain, appName: _appName }) => {
 
                 {/* Checkbox */}
                 <div className="space-y-4">
-                  <h3 className={`${textVariants.heading.h4()} text-success mb-3`}>Checkbox</h3>
+                  <h3
+                    className={`${textVariants.heading.h4()} text-success mb-3`}
+                  >
+                    Checkbox
+                  </h3>
                   <div className="bg-muted rounded-lg p-4 relative">
                     <button
                       className="absolute top-2 right-2 p-1 hover:bg-accent rounded"
@@ -345,7 +369,11 @@ const FormsPage: React.FC<AppProps> = ({ emailDomain, appName: _appName }) => {
 
                 {/* Textarea */}
                 <div className="space-y-4">
-                  <h3 className={`${textVariants.heading.h4()} text-success mb-3`}>Textarea</h3>
+                  <h3
+                    className={`${textVariants.heading.h4()} text-success mb-3`}
+                  >
+                    Textarea
+                  </h3>
                   <div className="bg-muted rounded-lg p-4 relative">
                     <button
                       className="absolute top-2 right-2 p-1 hover:bg-accent rounded"
@@ -395,7 +423,11 @@ const FormsPage: React.FC<AppProps> = ({ emailDomain, appName: _appName }) => {
                   </div>
                   <div className="p-4 bg-card rounded-lg border border-border">
                     <div className="space-y-1">
-                      <label className={`${textVariants.label.default()} block`}>Message</label>
+                      <label
+                        className={`${textVariants.label.default()} block`}
+                      >
+                        Message
+                      </label>
                       <textarea
                         rows={4}
                         className={`${variants.input.default()} resize-vertical`}
@@ -410,9 +442,14 @@ const FormsPage: React.FC<AppProps> = ({ emailDomain, appName: _appName }) => {
 
           {/* Input Types */}
           <Section>
-            <h2 className={`${textVariants.heading.h2()} mb-8`}>Input Types & Variants</h2>
-            <p className={`${textVariants.body.md()} text-muted-foreground mb-8`}>
-              Different input types with consistent styling across all form elements.
+            <h2 className={`${textVariants.heading.h2()} mb-8`}>
+              Input Types & Variants
+            </h2>
+            <p
+              className={`${textVariants.body.md()} text-muted-foreground mb-8`}
+            >
+              Different input types with consistent styling across all form
+              elements.
             </p>
 
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
@@ -451,7 +488,11 @@ const FormsPage: React.FC<AppProps> = ({ emailDomain, appName: _appName }) => {
                       className={variants.input.default()}
                       placeholder="Password"
                     />
-                    <input type="number" className={variants.input.default()} placeholder="123" />
+                    <input
+                      type="number"
+                      className={variants.input.default()}
+                      placeholder="123"
+                    />
                   </div>
                 }
               />
@@ -473,12 +514,18 @@ const FormsPage: React.FC<AppProps> = ({ emailDomain, appName: _appName }) => {
 <input className={\`\${variants.input.large()} h-12\`} />`}
                 preview={
                   <div className="space-y-4">
-                    <input className={`${variants.input.small()} h-8`} placeholder="Small input" />
+                    <input
+                      className={`${variants.input.small()} h-8`}
+                      placeholder="Small input"
+                    />
                     <input
                       className={`${variants.input.default()} h-10`}
                       placeholder="Default input"
                     />
-                    <input className={`${variants.input.large()} h-12`} placeholder="Large input" />
+                    <input
+                      className={`${variants.input.large()} h-12`}
+                      placeholder="Large input"
+                    />
                   </div>
                 }
               />
@@ -487,8 +534,12 @@ const FormsPage: React.FC<AppProps> = ({ emailDomain, appName: _appName }) => {
 
           {/* Validation States */}
           <Section>
-            <h2 className={`${textVariants.heading.h2()} mb-8`}>Validation States</h2>
-            <p className={`${textVariants.body.md()} text-muted-foreground mb-8`}>
+            <h2 className={`${textVariants.heading.h2()} mb-8`}>
+              Validation States
+            </h2>
+            <p
+              className={`${textVariants.body.md()} text-muted-foreground mb-8`}
+            >
               Form validation states with proper color coding and messaging.
             </p>
 
@@ -515,7 +566,9 @@ const FormsPage: React.FC<AppProps> = ({ emailDomain, appName: _appName }) => {
 </div>`}
                 preview={
                   <div className="space-y-1">
-                    <label className={`${textVariants.label.default()} block`}>Email Address</label>
+                    <label className={`${textVariants.label.default()} block`}>
+                      Email Address
+                    </label>
                     <input
                       type="email"
                       className="w-full rounded-md border border-success bg-card px-3 py-2 text-sm text-foreground transition-colors focus:outline-none focus:ring-2 focus:ring-success"
@@ -547,7 +600,9 @@ const FormsPage: React.FC<AppProps> = ({ emailDomain, appName: _appName }) => {
 </div>`}
                 preview={
                   <div className="space-y-1">
-                    <label className={`${textVariants.label.default()} block`}>Password</label>
+                    <label className={`${textVariants.label.default()} block`}>
+                      Password
+                    </label>
                     <input
                       type="password"
                       className={variants.input.error()}
@@ -566,8 +621,12 @@ const FormsPage: React.FC<AppProps> = ({ emailDomain, appName: _appName }) => {
 
           {/* Complex Form Components */}
           <Section>
-            <h2 className={`${textVariants.heading.h2()} mb-8`}>Advanced Form Components</h2>
-            <p className={`${textVariants.body.md()} text-muted-foreground mb-8`}>
+            <h2 className={`${textVariants.heading.h2()} mb-8`}>
+              Advanced Form Components
+            </h2>
+            <p
+              className={`${textVariants.body.md()} text-muted-foreground mb-8`}
+            >
               More complex form patterns with enhanced functionality.
             </p>
 
@@ -605,10 +664,12 @@ const [showPassword, setShowPassword] = useState(false);
 </div>`}
                 preview={
                   <div className="space-y-1">
-                    <label className={`${textVariants.label.default()} block`}>Password</label>
+                    <label className={`${textVariants.label.default()} block`}>
+                      Password
+                    </label>
                     <div className="relative">
                       <input
-                        type={showPassword ? 'text' : 'password'}
+                        type={showPassword ? "text" : "password"}
                         className={`${variants.input.default()} pr-10`}
                         placeholder="Enter password..."
                       />
@@ -671,7 +732,9 @@ const [showPassword, setShowPassword] = useState(false);
                           value="free"
                           className="w-4 h-4 text-primary bg-card border-input focus:ring-ring focus:ring-2"
                         />
-                        <span className="text-sm text-foreground">Free Plan - Basic features</span>
+                        <span className="text-sm text-foreground">
+                          Free Plan - Basic features
+                        </span>
                       </label>
                       <label className="flex items-center space-x-3 cursor-pointer">
                         <input
@@ -693,9 +756,14 @@ const [showPassword, setShowPassword] = useState(false);
 
           {/* Complete Form Example */}
           <Section>
-            <h2 className={`${textVariants.heading.h2()} mb-8`}>Complete Form Example</h2>
-            <p className={`${textVariants.body.md()} text-muted-foreground mb-8`}>
-              A comprehensive form showcasing all form elements working together.
+            <h2 className={`${textVariants.heading.h2()} mb-8`}>
+              Complete Form Example
+            </h2>
+            <p
+              className={`${textVariants.body.md()} text-muted-foreground mb-8`}
+            >
+              A comprehensive form showcasing all form elements working
+              together.
             </p>
 
             <CodeExample
@@ -757,7 +825,9 @@ const [showPassword, setShowPassword] = useState(false);
               preview={
                 <form className="space-y-6 max-w-2xl">
                   <div className="space-y-1">
-                    <label className={`${textVariants.label.default()} block`}>Display Name</label>
+                    <label className={`${textVariants.label.default()} block`}>
+                      Display Name
+                    </label>
                     <input
                       type="text"
                       className={variants.input.default()}
@@ -766,7 +836,9 @@ const [showPassword, setShowPassword] = useState(false);
                   </div>
 
                   <div className="space-y-1">
-                    <label className={`${textVariants.label.default()} block`}>Email Address</label>
+                    <label className={`${textVariants.label.default()} block`}>
+                      Email Address
+                    </label>
                     <input
                       type="email"
                       className={variants.input.default()}
@@ -791,7 +863,9 @@ const [showPassword, setShowPassword] = useState(false);
                   </div>
 
                   <div className="space-y-1">
-                    <label className={`${textVariants.label.default()} block`}>Bio</label>
+                    <label className={`${textVariants.label.default()} block`}>
+                      Bio
+                    </label>
                     <textarea
                       rows={3}
                       className={`${variants.input.default()} resize-vertical`}
@@ -809,7 +883,10 @@ const [showPassword, setShowPassword] = useState(false);
                     </span>
                   </label>
 
-                  <button type="submit" className={variants.button.primary.fullWidth()}>
+                  <button
+                    type="submit"
+                    className={variants.button.primary.fullWidth()}
+                  >
                     Save Profile
                   </button>
                 </form>
@@ -819,7 +896,9 @@ const [showPassword, setShowPassword] = useState(false);
 
           {/* Accessibility Guidelines */}
           <Section>
-            <h2 className={`${textVariants.heading.h2()} mb-8`}>Accessibility Guidelines</h2>
+            <h2 className={`${textVariants.heading.h2()} mb-8`}>
+              Accessibility Guidelines
+            </h2>
             <div className="bg-info/10 rounded-xl p-6 border border-info">
               <h3 className={`${textVariants.heading.h4()} mb-4 text-info`}>
                 Form Accessibility Best Practices
@@ -828,27 +907,35 @@ const [showPassword, setShowPassword] = useState(false);
                 <li className="flex items-start">
                   <span className="w-2 h-2 bg-info rounded-full mt-2 mr-3 flex-shrink-0"></span>
                   <span>
-                    Always use proper <code className="bg-info/20 px-1 rounded">label</code>{' '}
+                    Always use proper{" "}
+                    <code className="bg-info/20 px-1 rounded">label</code>{" "}
                     elements associated with inputs
                   </span>
                 </li>
                 <li className="flex items-start">
                   <span className="w-2 h-2 bg-info rounded-full mt-2 mr-3 flex-shrink-0"></span>
-                  <span>Include clear error messages with validation states</span>
-                </li>
-                <li className="flex items-start">
-                  <span className="w-2 h-2 bg-info rounded-full mt-2 mr-3 flex-shrink-0"></span>
-                  <span>Ensure focus states are clearly visible with ring utilities</span>
-                </li>
-                <li className="flex items-start">
-                  <span className="w-2 h-2 bg-info rounded-full mt-2 mr-3 flex-shrink-0"></span>
                   <span>
-                    Use appropriate input types (email, password, etc.) for better mobile experience
+                    Include clear error messages with validation states
                   </span>
                 </li>
                 <li className="flex items-start">
                   <span className="w-2 h-2 bg-info rounded-full mt-2 mr-3 flex-shrink-0"></span>
-                  <span>Maintain sufficient color contrast (minimum 4.5:1 ratio)</span>
+                  <span>
+                    Ensure focus states are clearly visible with ring utilities
+                  </span>
+                </li>
+                <li className="flex items-start">
+                  <span className="w-2 h-2 bg-info rounded-full mt-2 mr-3 flex-shrink-0"></span>
+                  <span>
+                    Use appropriate input types (email, password, etc.) for
+                    better mobile experience
+                  </span>
+                </li>
+                <li className="flex items-start">
+                  <span className="w-2 h-2 bg-info rounded-full mt-2 mr-3 flex-shrink-0"></span>
+                  <span>
+                    Maintain sufficient color contrast (minimum 4.5:1 ratio)
+                  </span>
                 </li>
               </ul>
             </div>

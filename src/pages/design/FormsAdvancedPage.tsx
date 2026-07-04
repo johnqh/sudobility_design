@@ -13,9 +13,9 @@ import {
   TrashIcon,
   WalletIcon,
   XCircleIcon,
-} from '@heroicons/react/24/outline';
-import React, { useState } from 'react';
-import { SEOHead } from '@sudobility/seo_lib';
+} from "@heroicons/react/24/outline";
+import React, { useState } from "react";
+import { SEOHead } from "@sudobility/seo_lib";
 import {
   Button,
   Input,
@@ -26,9 +26,9 @@ import {
   SelectItem,
   SelectTrigger,
   SelectValue,
-} from '@sudobility/components';
-import { cn } from '@sudobility/components';
-import { textVariants, ui } from '@sudobility/design';
+} from "@sudobility/components";
+import { cn } from "@sudobility/components";
+import { textVariants, ui } from "@sudobility/design";
 
 interface AppProps {
   emailDomain: string;
@@ -43,17 +43,20 @@ interface FormStep {
   current: boolean;
 }
 
-const FormsAdvancedPage: React.FC<AppProps> = ({ emailDomain, appName: _appName }) => {
+const FormsAdvancedPage: React.FC<AppProps> = ({
+  emailDomain,
+  appName: _appName,
+}) => {
   const [currentStep, setCurrentStep] = useState(1);
   const [showPassword, setShowPassword] = useState(false);
   const [formData, setFormData] = useState({
-    email: '',
-    password: '',
-    confirmPassword: '',
-    walletAddress: '',
-    tokenAmount: '',
-    gasPrice: '',
-    network: 'ethereum',
+    email: "",
+    password: "",
+    confirmPassword: "",
+    walletAddress: "",
+    tokenAmount: "",
+    gasPrice: "",
+    network: "ethereum",
   });
   const [errors, setErrors] = useState<Record<string, string>>({});
   const [uploadedFiles, setUploadedFiles] = useState<File[]>([]);
@@ -66,29 +69,29 @@ const FormsAdvancedPage: React.FC<AppProps> = ({ emailDomain, appName: _appName 
   const steps: FormStep[] = [
     {
       id: 1,
-      title: 'Account Setup',
-      description: 'Basic account information',
+      title: "Account Setup",
+      description: "Basic account information",
       completed: false,
       current: currentStep === 1,
     },
     {
       id: 2,
-      title: 'Wallet Connection',
-      description: 'Connect your Web3 wallet',
+      title: "Wallet Connection",
+      description: "Connect your Web3 wallet",
       completed: false,
       current: currentStep === 2,
     },
     {
       id: 3,
-      title: 'Transaction Details',
-      description: 'Configure transaction parameters',
+      title: "Transaction Details",
+      description: "Configure transaction parameters",
       completed: false,
       current: currentStep === 3,
     },
     {
       id: 4,
-      title: 'Review & Confirm',
-      description: 'Review and submit',
+      title: "Review & Confirm",
+      description: "Review and submit",
       completed: false,
       current: currentStep === 4,
     },
@@ -96,8 +99,8 @@ const FormsAdvancedPage: React.FC<AppProps> = ({ emailDomain, appName: _appName 
 
   const quickStartExamples = [
     {
-      title: 'Multi-Step Form',
-      description: 'Step-by-step form with progress indicator',
+      title: "Multi-Step Form",
+      description: "Step-by-step form with progress indicator",
       code: `// Multi-Step Form — semantic tokens auto-adapt to theme
 {steps.map((step, index) => (
   <div key={step.id} className="flex flex-col items-center flex-1">
@@ -119,8 +122,8 @@ const FormsAdvancedPage: React.FC<AppProps> = ({ emailDomain, appName: _appName 
 ))}`,
     },
     {
-      title: 'File Upload with Drag & Drop',
-      description: 'Advanced file upload with preview and validation',
+      title: "File Upload with Drag & Drop",
+      description: "Advanced file upload with preview and validation",
       code: `// File Upload Zone — semantic tokens, no dark: overrides needed
 <div
   className={cn(
@@ -139,8 +142,9 @@ const FormsAdvancedPage: React.FC<AppProps> = ({ emailDomain, appName: _appName 
 </div>`,
     },
     {
-      title: 'Web3 Token Amount Input',
-      description: 'Specialized input for cryptocurrency amounts with validation',
+      title: "Web3 Token Amount Input",
+      description:
+        "Specialized input for cryptocurrency amounts with validation",
       code: `// Token Amount Input — Input uses variants.input.* under the hood
 <Label className="text-sm font-medium text-foreground">Amount to Send</Label>
 <div className="flex rounded-md shadow-sm">
@@ -160,8 +164,8 @@ const FormsAdvancedPage: React.FC<AppProps> = ({ emailDomain, appName: _appName 
 <Button variant="outline" size="sm">Max</Button>`,
     },
     {
-      title: 'Advanced Validation',
-      description: 'Real-time validation with custom error messages',
+      title: "Advanced Validation",
+      description: "Real-time validation with custom error messages",
       code: `// Advanced Validation — intent tokens (destructive/success) instead of red/green
 <Label className="text-sm font-medium text-foreground">Wallet Address</Label>
 <div className="relative">
@@ -188,65 +192,65 @@ const FormsAdvancedPage: React.FC<AppProps> = ({ emailDomain, appName: _appName 
 
   const handleFileUpload = (files: FileList | null) => {
     if (files) {
-      setUploadedFiles(prev => [...prev, ...Array.from(files)]);
+      setUploadedFiles((prev) => [...prev, ...Array.from(files)]);
     }
   };
 
   const removeFile = (index: number) => {
-    setUploadedFiles(prev => prev.filter((_, i) => i !== index));
+    setUploadedFiles((prev) => prev.filter((_, i) => i !== index));
   };
 
   const validateWalletAddress = (address: string) => {
-    if (!address) return '';
+    if (!address) return "";
     if (!/^0x[a-fA-F0-9]{40}$/.test(address)) {
-      return 'Invalid Ethereum address format';
+      return "Invalid Ethereum address format";
     }
-    return '';
+    return "";
   };
 
   const validateTokenAmount = (amount: string) => {
-    if (!amount) return '';
+    if (!amount) return "";
     if (isNaN(Number(amount)) || Number(amount) <= 0) {
-      return 'Amount must be a positive number';
+      return "Amount must be a positive number";
     }
     if (Number(amount) > 1.234567) {
-      return 'Insufficient balance';
+      return "Insufficient balance";
     }
-    return '';
+    return "";
   };
 
   const validatePassword = (password: string) => {
-    if (!password) return '';
+    if (!password) return "";
     if (password.length < 8) {
-      return 'Password must be at least 8 characters';
+      return "Password must be at least 8 characters";
     }
     if (!/(?=.*[a-z])(?=.*[A-Z])(?=.*\d)/.test(password)) {
-      return 'Password must contain uppercase, lowercase, and number';
+      return "Password must contain uppercase, lowercase, and number";
     }
-    return '';
+    return "";
   };
 
   const handleInputChange = (field: string, value: string) => {
-    setFormData(prev => ({ ...prev, [field]: value }));
+    setFormData((prev) => ({ ...prev, [field]: value }));
 
     // Real-time validation
-    let error = '';
+    let error = "";
     switch (field) {
-      case 'walletAddress':
+      case "walletAddress":
         error = validateWalletAddress(value);
         break;
-      case 'tokenAmount':
+      case "tokenAmount":
         error = validateTokenAmount(value);
         break;
-      case 'password':
+      case "password":
         error = validatePassword(value);
         break;
-      case 'confirmPassword':
-        error = value !== formData.password ? 'Passwords do not match' : '';
+      case "confirmPassword":
+        error = value !== formData.password ? "Passwords do not match" : "";
         break;
     }
 
-    setErrors(prev => ({ ...prev, [field]: error }));
+    setErrors((prev) => ({ ...prev, [field]: error }));
   };
 
   return (
@@ -266,11 +270,16 @@ const FormsAdvancedPage: React.FC<AppProps> = ({ emailDomain, appName: _appName 
               <span className="text-accent font-semibold">Advanced Forms</span>
             </div>
 
-            <h1 className={`${textVariants.heading.display.xl()} mb-6`}>Advanced Forms System</h1>
+            <h1 className={`${textVariants.heading.display.xl()} mb-6`}>
+              Advanced Forms System
+            </h1>
 
-            <p className={`${textVariants.body.lg()} max-w-3xl text-muted-foreground`}>
-              Advanced form patterns including multi-step wizards, file uploads, Web3-specific
-              inputs, and sophisticated validation patterns for complex user interactions.
+            <p
+              className={`${textVariants.body.lg()} max-w-3xl text-muted-foreground`}
+            >
+              Advanced form patterns including multi-step wizards, file uploads,
+              Web3-specific inputs, and sophisticated validation patterns for
+              complex user interactions.
             </p>
           </div>
 
@@ -285,8 +294,12 @@ const FormsAdvancedPage: React.FC<AppProps> = ({ emailDomain, appName: _appName 
                   className={`${ui.background.surface} ${ui.border.default} border rounded-lg overflow-hidden`}
                 >
                   <div className="p-6 border-b border-border">
-                    <h3 className={`${textVariants.heading.h4()} mb-2`}>{example.title}</h3>
-                    <p className={`${textVariants.body.sm()} text-muted-foreground`}>
+                    <h3 className={`${textVariants.heading.h4()} mb-2`}>
+                      {example.title}
+                    </h3>
+                    <p
+                      className={`${textVariants.body.sm()} text-muted-foreground`}
+                    >
                       {example.description}
                     </p>
                   </div>
@@ -309,15 +322,22 @@ const FormsAdvancedPage: React.FC<AppProps> = ({ emailDomain, appName: _appName 
 
           {/* Multi-Step Form Demo */}
           <Section>
-            <h2 className={`${textVariants.heading.h2()} mb-8`}>Multi-Step Forms</h2>
+            <h2 className={`${textVariants.heading.h2()} mb-8`}>
+              Multi-Step Forms
+            </h2>
 
             <div
               className={`${ui.background.surface} ${ui.border.default} border rounded-lg overflow-hidden`}
             >
               <div className="p-6 border-b border-border">
-                <h3 className={`${textVariants.heading.h3()} mb-2`}>Wallet Setup Wizard</h3>
-                <p className={`${textVariants.body.sm()} text-muted-foreground`}>
-                  Interactive multi-step form with progress tracking and validation
+                <h3 className={`${textVariants.heading.h3()} mb-2`}>
+                  Wallet Setup Wizard
+                </h3>
+                <p
+                  className={`${textVariants.body.sm()} text-muted-foreground`}
+                >
+                  Interactive multi-step form with progress tracking and
+                  validation
                 </p>
               </div>
 
@@ -330,12 +350,12 @@ const FormsAdvancedPage: React.FC<AppProps> = ({ emailDomain, appName: _appName 
                         <div className="flex flex-col items-center flex-1">
                           <div
                             className={cn(
-                              'w-10 h-10 rounded-full flex items-center justify-center text-sm font-medium border-2 transition-all',
+                              "w-10 h-10 rounded-full flex items-center justify-center text-sm font-medium border-2 transition-all",
                               step.completed
-                                ? 'bg-success/10 border-success text-success'
+                                ? "bg-success/10 border-success text-success"
                                 : step.current
-                                  ? 'bg-primary/10 border-primary text-primary'
-                                  : 'bg-muted border-input text-muted-foreground'
+                                  ? "bg-primary/10 border-primary text-primary"
+                                  : "bg-muted border-input text-muted-foreground",
                             )}
                           >
                             {step.completed ? (
@@ -347,8 +367,10 @@ const FormsAdvancedPage: React.FC<AppProps> = ({ emailDomain, appName: _appName 
                           <div className="mt-2 text-center">
                             <div
                               className={cn(
-                                'text-sm font-medium',
-                                step.current ? 'text-primary' : 'text-muted-foreground'
+                                "text-sm font-medium",
+                                step.current
+                                  ? "text-primary"
+                                  : "text-muted-foreground",
                               )}
                             >
                               {step.title}
@@ -361,10 +383,10 @@ const FormsAdvancedPage: React.FC<AppProps> = ({ emailDomain, appName: _appName 
                         {index < steps.length - 1 && (
                           <div
                             className={cn(
-                              'flex-1 h-px mt-5',
+                              "flex-1 h-px mt-5",
                               steps[index + 1].completed || step.completed
-                                ? 'bg-success/40'
-                                : 'bg-muted'
+                                ? "bg-success/40"
+                                : "bg-muted",
                             )}
                           />
                         )}
@@ -378,28 +400,34 @@ const FormsAdvancedPage: React.FC<AppProps> = ({ emailDomain, appName: _appName 
                   {currentStep === 1 && (
                     <div className="space-y-6">
                       <div>
-                        <Label className="text-sm font-medium text-foreground">Email Address</Label>
+                        <Label className="text-sm font-medium text-foreground">
+                          Email Address
+                        </Label>
                         <Input
                           type="email"
                           placeholder="Enter your email"
                           value={formData.email}
                           onChange={(e: React.ChangeEvent<HTMLInputElement>) =>
-                            handleInputChange('email', e.target.value)
+                            handleInputChange("email", e.target.value)
                           }
                           className="mt-1"
                         />
                       </div>
                       <div>
-                        <Label className="text-sm font-medium text-foreground">Password</Label>
+                        <Label className="text-sm font-medium text-foreground">
+                          Password
+                        </Label>
                         <div className="relative mt-1">
                           <Input
-                            type={showPassword ? 'text' : 'password'}
+                            type={showPassword ? "text" : "password"}
                             placeholder="Create a strong password"
                             value={formData.password}
-                            onChange={(e: React.ChangeEvent<HTMLInputElement>) =>
-                              handleInputChange('password', e.target.value)
-                            }
-                            className={cn(errors.password && 'border-destructive')}
+                            onChange={(
+                              e: React.ChangeEvent<HTMLInputElement>,
+                            ) => handleInputChange("password", e.target.value)}
+                            className={cn(
+                              errors.password && "border-destructive",
+                            )}
                           />
                           <button
                             type="button"
@@ -414,7 +442,9 @@ const FormsAdvancedPage: React.FC<AppProps> = ({ emailDomain, appName: _appName 
                           </button>
                         </div>
                         {errors.password && (
-                          <p className="mt-1 text-sm text-destructive">{errors.password}</p>
+                          <p className="mt-1 text-sm text-destructive">
+                            {errors.password}
+                          </p>
                         )}
                       </div>
                       <div>
@@ -426,12 +456,17 @@ const FormsAdvancedPage: React.FC<AppProps> = ({ emailDomain, appName: _appName 
                           placeholder="Confirm your password"
                           value={formData.confirmPassword}
                           onChange={(e: React.ChangeEvent<HTMLInputElement>) =>
-                            handleInputChange('confirmPassword', e.target.value)
+                            handleInputChange("confirmPassword", e.target.value)
                           }
-                          className={cn('mt-1', errors.confirmPassword && 'border-destructive')}
+                          className={cn(
+                            "mt-1",
+                            errors.confirmPassword && "border-destructive",
+                          )}
                         />
                         {errors.confirmPassword && (
-                          <p className="mt-1 text-sm text-destructive">{errors.confirmPassword}</p>
+                          <p className="mt-1 text-sm text-destructive">
+                            {errors.confirmPassword}
+                          </p>
                         )}
                       </div>
                     </div>
@@ -448,14 +483,17 @@ const FormsAdvancedPage: React.FC<AppProps> = ({ emailDomain, appName: _appName 
                             type="text"
                             placeholder="0x..."
                             value={formData.walletAddress}
-                            onChange={(e: React.ChangeEvent<HTMLInputElement>) =>
-                              handleInputChange('walletAddress', e.target.value)
+                            onChange={(
+                              e: React.ChangeEvent<HTMLInputElement>,
+                            ) =>
+                              handleInputChange("walletAddress", e.target.value)
                             }
                             className={cn(
-                              errors.walletAddress && 'border-destructive pr-10',
+                              errors.walletAddress &&
+                                "border-destructive pr-10",
                               !errors.walletAddress &&
                                 formData.walletAddress &&
-                                'border-success pr-10'
+                                "border-success pr-10",
                             )}
                           />
                           {!errors.walletAddress && formData.walletAddress && (
@@ -466,23 +504,33 @@ const FormsAdvancedPage: React.FC<AppProps> = ({ emailDomain, appName: _appName 
                           )}
                         </div>
                         {errors.walletAddress && (
-                          <p className="mt-1 text-sm text-destructive">{errors.walletAddress}</p>
+                          <p className="mt-1 text-sm text-destructive">
+                            {errors.walletAddress}
+                          </p>
                         )}
                       </div>
 
                       <div>
-                        <Label className="text-sm font-medium text-foreground">Network</Label>
+                        <Label className="text-sm font-medium text-foreground">
+                          Network
+                        </Label>
                         <Select
                           value={formData.network}
-                          onValueChange={value => handleInputChange('network', value)}
+                          onValueChange={(value) =>
+                            handleInputChange("network", value)
+                          }
                         >
                           <SelectTrigger className="mt-1 block w-full rounded-md border-input bg-card text-foreground shadow-sm focus:outline-none focus:border-ring focus:ring-ring">
                             <SelectValue />
                           </SelectTrigger>
                           <SelectContent>
-                            <SelectItem value="ethereum">Ethereum Mainnet</SelectItem>
+                            <SelectItem value="ethereum">
+                              Ethereum Mainnet
+                            </SelectItem>
                             <SelectItem value="polygon">Polygon</SelectItem>
-                            <SelectItem value="bsc">Binance Smart Chain</SelectItem>
+                            <SelectItem value="bsc">
+                              Binance Smart Chain
+                            </SelectItem>
                             <SelectItem value="arbitrum">Arbitrum</SelectItem>
                           </SelectContent>
                         </Select>
@@ -493,19 +541,23 @@ const FormsAdvancedPage: React.FC<AppProps> = ({ emailDomain, appName: _appName 
                   {currentStep === 3 && (
                     <div className="space-y-6">
                       <div>
-                        <Label className="text-sm font-medium text-foreground">Token Amount</Label>
+                        <Label className="text-sm font-medium text-foreground">
+                          Token Amount
+                        </Label>
                         <div className="relative mt-1">
                           <div className="flex rounded-md shadow-sm">
                             <Input
                               type="number"
                               placeholder="0.00"
                               value={formData.tokenAmount}
-                              onChange={(e: React.ChangeEvent<HTMLInputElement>) =>
-                                handleInputChange('tokenAmount', e.target.value)
+                              onChange={(
+                                e: React.ChangeEvent<HTMLInputElement>,
+                              ) =>
+                                handleInputChange("tokenAmount", e.target.value)
                               }
                               className={cn(
-                                'rounded-r-none',
-                                errors.tokenAmount && 'border-destructive'
+                                "rounded-r-none",
+                                errors.tokenAmount && "border-destructive",
                               )}
                               step="0.000000000000000001"
                               min="0"
@@ -522,13 +574,17 @@ const FormsAdvancedPage: React.FC<AppProps> = ({ emailDomain, appName: _appName 
                           <Button
                             variant="outline"
                             size="sm"
-                            onClick={() => handleInputChange('tokenAmount', '1.234567')}
+                            onClick={() =>
+                              handleInputChange("tokenAmount", "1.234567")
+                            }
                           >
                             Max
                           </Button>
                         </div>
                         {errors.tokenAmount && (
-                          <p className="mt-1 text-sm text-destructive">{errors.tokenAmount}</p>
+                          <p className="mt-1 text-sm text-destructive">
+                            {errors.tokenAmount}
+                          </p>
                         )}
                       </div>
 
@@ -541,13 +597,14 @@ const FormsAdvancedPage: React.FC<AppProps> = ({ emailDomain, appName: _appName 
                           placeholder="20"
                           value={formData.gasPrice}
                           onChange={(e: React.ChangeEvent<HTMLInputElement>) =>
-                            handleInputChange('gasPrice', e.target.value)
+                            handleInputChange("gasPrice", e.target.value)
                           }
                           className="mt-1"
                           min="1"
                         />
                         <p className="mt-1 text-sm text-muted-foreground">
-                          Higher gas prices result in faster transaction confirmation
+                          Higher gas prices result in faster transaction
+                          confirmation
                         </p>
                       </div>
                     </div>
@@ -561,27 +618,35 @@ const FormsAdvancedPage: React.FC<AppProps> = ({ emailDomain, appName: _appName 
                         </h4>
                         <dl className="space-y-3">
                           <div className="flex justify-between">
-                            <dt className="text-sm text-muted-foreground">Network:</dt>
+                            <dt className="text-sm text-muted-foreground">
+                              Network:
+                            </dt>
                             <dd className="text-sm font-medium text-foreground capitalize">
                               {formData.network}
                             </dd>
                           </div>
                           <div className="flex justify-between">
-                            <dt className="text-sm text-muted-foreground">To Address:</dt>
+                            <dt className="text-sm text-muted-foreground">
+                              To Address:
+                            </dt>
                             <dd className="text-sm font-mono text-foreground">
                               {formData.walletAddress}
                             </dd>
                           </div>
                           <div className="flex justify-between">
-                            <dt className="text-sm text-muted-foreground">Amount:</dt>
+                            <dt className="text-sm text-muted-foreground">
+                              Amount:
+                            </dt>
                             <dd className="text-sm font-medium text-foreground">
                               {formData.tokenAmount} ETH
                             </dd>
                           </div>
                           <div className="flex justify-between">
-                            <dt className="text-sm text-muted-foreground">Gas Price:</dt>
+                            <dt className="text-sm text-muted-foreground">
+                              Gas Price:
+                            </dt>
                             <dd className="text-sm font-medium text-foreground">
-                              {formData.gasPrice || '20'} Gwei
+                              {formData.gasPrice || "20"} Gwei
                             </dd>
                           </div>
                         </dl>
@@ -595,8 +660,8 @@ const FormsAdvancedPage: React.FC<AppProps> = ({ emailDomain, appName: _appName 
                               Transaction Warning
                             </h5>
                             <p className="mt-1 text-sm text-warning">
-                              Please double-check all transaction details. Blockchain transactions
-                              cannot be reversed.
+                              Please double-check all transaction details.
+                              Blockchain transactions cannot be reversed.
                             </p>
                           </div>
                         </div>
@@ -622,7 +687,7 @@ const FormsAdvancedPage: React.FC<AppProps> = ({ emailDomain, appName: _appName 
                     }}
                     disabled={currentStep === 4}
                   >
-                    {currentStep === 4 ? 'Submit Transaction' : 'Next'}
+                    {currentStep === 4 ? "Submit Transaction" : "Next"}
                   </Button>
                 </div>
               </div>
@@ -631,14 +696,20 @@ const FormsAdvancedPage: React.FC<AppProps> = ({ emailDomain, appName: _appName 
 
           {/* File Upload Demo */}
           <Section>
-            <h2 className={`${textVariants.heading.h2()} mb-8`}>File Uploads</h2>
+            <h2 className={`${textVariants.heading.h2()} mb-8`}>
+              File Uploads
+            </h2>
 
             <div
               className={`${ui.background.surface} ${ui.border.default} border rounded-lg overflow-hidden`}
             >
               <div className="p-6 border-b border-border">
-                <h3 className={`${textVariants.heading.h3()} mb-2`}>Document Upload</h3>
-                <p className={`${textVariants.body.sm()} text-muted-foreground`}>
+                <h3 className={`${textVariants.heading.h3()} mb-2`}>
+                  Document Upload
+                </h3>
+                <p
+                  className={`${textVariants.body.sm()} text-muted-foreground`}
+                >
                   Drag and drop file upload with preview and validation
                 </p>
               </div>
@@ -646,17 +717,17 @@ const FormsAdvancedPage: React.FC<AppProps> = ({ emailDomain, appName: _appName 
               <div className="p-6">
                 <div
                   className={cn(
-                    'border-2 border-dashed rounded-lg p-8 text-center transition-colors',
+                    "border-2 border-dashed rounded-lg p-8 text-center transition-colors",
                     dragOver
-                      ? 'border-primary bg-primary/10'
-                      : 'border-input hover:border-muted-foreground'
+                      ? "border-primary bg-primary/10"
+                      : "border-input hover:border-muted-foreground",
                   )}
-                  onDragOver={e => {
+                  onDragOver={(e) => {
                     e.preventDefault();
                     setDragOver(true);
                   }}
                   onDragLeave={() => setDragOver(false)}
-                  onDrop={e => {
+                  onDrop={(e) => {
                     e.preventDefault();
                     setDragOver(false);
                     handleFileUpload(e.dataTransfer.files);
@@ -675,7 +746,7 @@ const FormsAdvancedPage: React.FC<AppProps> = ({ emailDomain, appName: _appName 
                     id="file-upload"
                     multiple
                     accept=".pdf,.doc,.docx,.jpg,.png,.txt"
-                    onChange={e => handleFileUpload(e.target.files)}
+                    onChange={(e) => handleFileUpload(e.target.files)}
                   />
                   <label
                     htmlFor="file-upload"
@@ -685,7 +756,8 @@ const FormsAdvancedPage: React.FC<AppProps> = ({ emailDomain, appName: _appName 
                     Choose Files
                   </label>
                   <p className="text-xs text-muted-foreground mt-2">
-                    Supported formats: PDF, DOC, DOCX, JPG, PNG, TXT (Max 10MB each)
+                    Supported formats: PDF, DOC, DOCX, JPG, PNG, TXT (Max 10MB
+                    each)
                   </p>
                 </div>
 
@@ -706,7 +778,9 @@ const FormsAdvancedPage: React.FC<AppProps> = ({ emailDomain, appName: _appName 
                               <DocumentTextIcon className="h-4 w-4 text-info" />
                             </div>
                             <div>
-                              <p className="text-sm font-medium text-foreground">{file.name}</p>
+                              <p className="text-sm font-medium text-foreground">
+                                {file.name}
+                              </p>
                               <p className="text-xs text-muted-foreground">
                                 {(file.size / 1024 / 1024).toFixed(2)} MB
                               </p>
@@ -729,7 +803,9 @@ const FormsAdvancedPage: React.FC<AppProps> = ({ emailDomain, appName: _appName 
 
           {/* Web3 Inputs Demo */}
           <Section>
-            <h2 className={`${textVariants.heading.h2()} mb-8`}>Web3 Specialized Inputs</h2>
+            <h2 className={`${textVariants.heading.h2()} mb-8`}>
+              Web3 Specialized Inputs
+            </h2>
 
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
               {/* Wallet Address Input */}
@@ -737,9 +813,14 @@ const FormsAdvancedPage: React.FC<AppProps> = ({ emailDomain, appName: _appName 
                 className={`${ui.background.surface} ${ui.border.default} border rounded-lg overflow-hidden`}
               >
                 <div className="p-6 border-b border-border">
-                  <h3 className={`${textVariants.heading.h4()} mb-2`}>Wallet Address Input</h3>
-                  <p className={`${textVariants.body.sm()} text-muted-foreground`}>
-                    Specialized input for cryptocurrency addresses with validation
+                  <h3 className={`${textVariants.heading.h4()} mb-2`}>
+                    Wallet Address Input
+                  </h3>
+                  <p
+                    className={`${textVariants.body.sm()} text-muted-foreground`}
+                  >
+                    Specialized input for cryptocurrency addresses with
+                    validation
                   </p>
                 </div>
 
@@ -760,7 +841,9 @@ const FormsAdvancedPage: React.FC<AppProps> = ({ emailDomain, appName: _appName 
                         <CheckCircleIcon className="h-4 w-4 text-success" />
                       </div>
                     </div>
-                    <p className="mt-1 text-xs text-success">✓ Valid Ethereum address</p>
+                    <p className="mt-1 text-xs text-success">
+                      ✓ Valid Ethereum address
+                    </p>
                   </div>
 
                   <div>
@@ -774,7 +857,9 @@ const FormsAdvancedPage: React.FC<AppProps> = ({ emailDomain, appName: _appName 
                       className="font-mono text-sm"
                       value="alice.eth"
                     />
-                    <p className="mt-1 text-xs text-info">→ Resolves to: 0x742d...5f0bEb7</p>
+                    <p className="mt-1 text-xs text-info">
+                      → Resolves to: 0x742d...5f0bEb7
+                    </p>
                   </div>
                 </div>
               </div>
@@ -784,8 +869,12 @@ const FormsAdvancedPage: React.FC<AppProps> = ({ emailDomain, appName: _appName 
                 className={`${ui.background.surface} ${ui.border.default} border rounded-lg overflow-hidden`}
               >
                 <div className="p-6 border-b border-border">
-                  <h3 className={`${textVariants.heading.h4()} mb-2`}>Token Amount Input</h3>
-                  <p className={`${textVariants.body.sm()} text-muted-foreground`}>
+                  <h3 className={`${textVariants.heading.h4()} mb-2`}>
+                    Token Amount Input
+                  </h3>
+                  <p
+                    className={`${textVariants.body.sm()} text-muted-foreground`}
+                  >
                     Precise token amount input with balance display
                   </p>
                 </div>
@@ -810,7 +899,9 @@ const FormsAdvancedPage: React.FC<AppProps> = ({ emailDomain, appName: _appName 
                       </div>
                     </div>
                     <div className="mt-2 flex items-center justify-between">
-                      <span className="text-sm text-muted-foreground">Balance: 1.234567 ETH</span>
+                      <span className="text-sm text-muted-foreground">
+                        Balance: 1.234567 ETH
+                      </span>
                       <div className="flex space-x-2">
                         <Button variant="outline" size="sm">
                           25%
@@ -826,7 +917,9 @@ const FormsAdvancedPage: React.FC<AppProps> = ({ emailDomain, appName: _appName 
                         </Button>
                       </div>
                     </div>
-                    <p className="mt-1 text-xs text-muted-foreground">≈ $1,234.50 USD</p>
+                    <p className="mt-1 text-xs text-muted-foreground">
+                      ≈ $1,234.50 USD
+                    </p>
                   </div>
 
                   <div>
@@ -836,16 +929,24 @@ const FormsAdvancedPage: React.FC<AppProps> = ({ emailDomain, appName: _appName 
                     </Label>
                     <div className="grid grid-cols-3 gap-2">
                       <button className="p-2 text-center border rounded-md border-success bg-success/10">
-                        <div className="text-xs font-medium text-success">Slow</div>
+                        <div className="text-xs font-medium text-success">
+                          Slow
+                        </div>
                         <div className="text-xs text-success">15 Gwei</div>
                       </button>
                       <button className="p-2 text-center border rounded-md border-primary bg-primary/10">
-                        <div className="text-xs font-medium text-primary">Standard</div>
+                        <div className="text-xs font-medium text-primary">
+                          Standard
+                        </div>
                         <div className="text-xs text-primary">25 Gwei</div>
                       </button>
                       <button className="p-2 text-center border rounded-md border-input">
-                        <div className="text-xs font-medium text-foreground">Fast</div>
-                        <div className="text-xs text-muted-foreground">35 Gwei</div>
+                        <div className="text-xs font-medium text-foreground">
+                          Fast
+                        </div>
+                        <div className="text-xs text-muted-foreground">
+                          35 Gwei
+                        </div>
                       </button>
                     </div>
                   </div>
@@ -856,7 +957,9 @@ const FormsAdvancedPage: React.FC<AppProps> = ({ emailDomain, appName: _appName 
 
           {/* Validation Patterns */}
           <Section>
-            <h2 className={`${textVariants.heading.h2()} mb-8`}>Advanced Validation</h2>
+            <h2 className={`${textVariants.heading.h2()} mb-8`}>
+              Advanced Validation
+            </h2>
 
             <div
               className={`${ui.background.surface} ${ui.border.default} border rounded-lg overflow-hidden`}
@@ -865,8 +968,11 @@ const FormsAdvancedPage: React.FC<AppProps> = ({ emailDomain, appName: _appName 
                 <h3 className={`${textVariants.heading.h3()} mb-2`}>
                   Real-time Validation Examples
                 </h3>
-                <p className={`${textVariants.body.sm()} text-muted-foreground`}>
-                  Advanced validation patterns with real-time feedback and custom error messages
+                <p
+                  className={`${textVariants.body.sm()} text-muted-foreground`}
+                >
+                  Advanced validation patterns with real-time feedback and
+                  custom error messages
                 </p>
               </div>
 
@@ -874,7 +980,9 @@ const FormsAdvancedPage: React.FC<AppProps> = ({ emailDomain, appName: _appName 
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                   <div className="space-y-4">
                     <div>
-                      <Label className="text-sm font-medium text-foreground">Strong Password</Label>
+                      <Label className="text-sm font-medium text-foreground">
+                        Strong Password
+                      </Label>
                       <div className="relative mt-1">
                         <Input
                           type="password"
@@ -886,11 +994,15 @@ const FormsAdvancedPage: React.FC<AppProps> = ({ emailDomain, appName: _appName 
                       <div className="mt-2 space-y-1">
                         <div className="flex items-center text-xs">
                           <CheckCircleIcon className="h-3 w-3 text-success mr-1" />
-                          <span className="text-success">At least 8 characters</span>
+                          <span className="text-success">
+                            At least 8 characters
+                          </span>
                         </div>
                         <div className="flex items-center text-xs">
                           <CheckCircleIcon className="h-3 w-3 text-success mr-1" />
-                          <span className="text-success">Contains uppercase letter</span>
+                          <span className="text-success">
+                            Contains uppercase letter
+                          </span>
                         </div>
                         <div className="flex items-center text-xs">
                           <CheckCircleIcon className="h-3 w-3 text-success mr-1" />
@@ -898,18 +1010,28 @@ const FormsAdvancedPage: React.FC<AppProps> = ({ emailDomain, appName: _appName 
                         </div>
                         <div className="flex items-center text-xs">
                           <CheckCircleIcon className="h-3 w-3 text-success mr-1" />
-                          <span className="text-success">Contains special character</span>
+                          <span className="text-success">
+                            Contains special character
+                          </span>
                         </div>
                       </div>
                     </div>
 
                     <div>
-                      <Label className="text-sm font-medium text-foreground">Email Address</Label>
+                      <Label className="text-sm font-medium text-foreground">
+                        Email Address
+                      </Label>
                       <div className="relative mt-1">
-                        <Input type="email" placeholder="Enter email" value="user@example.com" />
+                        <Input
+                          type="email"
+                          placeholder="Enter email"
+                          value="user@example.com"
+                        />
                         <CheckCircleIcon className="absolute right-3 top-1/2 transform -translate-y-1/2 h-4 w-4 text-success" />
                       </div>
-                      <p className="mt-1 text-xs text-success">✓ Valid email format</p>
+                      <p className="mt-1 text-xs text-success">
+                        ✓ Valid email format
+                      </p>
                     </div>
                   </div>
 
@@ -947,7 +1069,9 @@ const FormsAdvancedPage: React.FC<AppProps> = ({ emailDomain, appName: _appName 
                           <div className="animate-spin rounded-full h-4 w-4 border-b-2 border-primary"></div>
                         </div>
                       </div>
-                      <p className="mt-1 text-xs text-info">Checking username availability...</p>
+                      <p className="mt-1 text-xs text-info">
+                        Checking username availability...
+                      </p>
                     </div>
                   </div>
                 </div>

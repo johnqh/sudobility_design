@@ -3,8 +3,8 @@ import {
   CogIcon,
   EllipsisVerticalIcon,
   UserIcon,
-} from '@heroicons/react/24/outline';
-import React, { useState } from 'react';
+} from "@heroicons/react/24/outline";
+import React, { useState } from "react";
 import {
   Button,
   Dropdown,
@@ -13,8 +13,8 @@ import {
   ModalContent,
   ModalFooter,
   Section,
-} from '@sudobility/components';
-import { textVariants, ui, variants } from '@sudobility/design';
+} from "@sudobility/components";
+import { textVariants, ui, variants } from "@sudobility/design";
 
 interface AppProps {
   emailDomain: string;
@@ -27,26 +27,26 @@ const OverlaysPortalsPage: React.FC<AppProps> = ({
 }) => {
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [isLoadingOverlayOpen, setIsLoadingOverlayOpen] = useState(false);
-  const [tooltipVisible, setTooltipVisible] = useState('');
+  const [tooltipVisible, setTooltipVisible] = useState("");
 
   const dropdownItems = [
     {
-      id: 'profile',
-      label: 'View Profile',
+      id: "profile",
+      label: "View Profile",
       icon: UserIcon,
-      onClick: () => alert('Profile clicked'),
+      onClick: () => alert("Profile clicked"),
     },
     {
-      id: 'settings',
-      label: 'Settings',
+      id: "settings",
+      label: "Settings",
       icon: CogIcon,
-      onClick: () => alert('Settings clicked'),
+      onClick: () => alert("Settings clicked"),
     },
     {
-      id: 'logout',
-      label: 'Sign Out',
+      id: "logout",
+      label: "Sign Out",
       icon: ArrowRightOnRectangleIcon,
-      onClick: () => alert('Sign out clicked'),
+      onClick: () => alert("Sign out clicked"),
     },
   ];
 
@@ -60,22 +60,25 @@ const OverlaysPortalsPage: React.FC<AppProps> = ({
       <div className="py-8">
         <div className="mb-8">
           <h1 className={textVariants.heading.h1()}>Overlays & Portals</h1>
-          <p className={textVariants.body.lg() + ' mt-4'}>
-            Comprehensive overlay system including modals, dropdowns, tooltips, sheets, and loading
-            states with proper z-index management and accessibility.
+          <p className={textVariants.body.lg() + " mt-4"}>
+            Comprehensive overlay system including modals, dropdowns, tooltips,
+            sheets, and loading states with proper z-index management and
+            accessibility.
           </p>
         </div>
 
         {/* Modals Section */}
         <Section>
-          <h2 className={textVariants.heading.h2() + ' mb-6'}>Modals</h2>
-          <p className={textVariants.body.md() + ' mb-6'}>
-            Modal dialogs with backdrop blur, animation states, and multiple sizes. Includes focus
-            management and keyboard navigation.
+          <h2 className={textVariants.heading.h2() + " mb-6"}>Modals</h2>
+          <p className={textVariants.body.md() + " mb-6"}>
+            Modal dialogs with backdrop blur, animation states, and multiple
+            sizes. Includes focus management and keyboard navigation.
           </p>
 
-          <div className={variants.card.default.padded() + ' mb-6'}>
-            <h3 className={textVariants.heading.h3() + ' mb-4'}>Interactive Example</h3>
+          <div className={variants.card.default.padded() + " mb-6"}>
+            <h3 className={textVariants.heading.h3() + " mb-4"}>
+              Interactive Example
+            </h3>
             <Button onClick={() => setIsModalOpen(true)}>Open Modal</Button>
 
             <Modal
@@ -87,12 +90,15 @@ const OverlaysPortalsPage: React.FC<AppProps> = ({
               <ModalContent>
                 <div className="space-y-4">
                   <p className={textVariants.body.md()}>
-                    This is an example modal using the new overlay design system. It includes proper
-                    backdrop handling, focus management, and animation states.
+                    This is an example modal using the new overlay design
+                    system. It includes proper backdrop handling, focus
+                    management, and animation states.
                   </p>
                   <div className="grid grid-cols-2 gap-4">
-                    <div className={ui.background.subtle + ' p-4'}>
-                      <h4 className={textVariants.heading.h5() + ' mb-2'}>Features</h4>
+                    <div className={ui.background.subtle + " p-4"}>
+                      <h4 className={textVariants.heading.h5() + " mb-2"}>
+                        Features
+                      </h4>
                       <ul className="space-y-1 text-sm text-muted-foreground">
                         <li>• Backdrop blur effect</li>
                         <li>• Focus trap and restoration</li>
@@ -100,8 +106,10 @@ const OverlaysPortalsPage: React.FC<AppProps> = ({
                         <li>• Multiple size variants</li>
                       </ul>
                     </div>
-                    <div className={ui.background.subtle + ' p-4'}>
-                      <h4 className={textVariants.heading.h5() + ' mb-2'}>Accessibility</h4>
+                    <div className={ui.background.subtle + " p-4"}>
+                      <h4 className={textVariants.heading.h5() + " mb-2"}>
+                        Accessibility
+                      </h4>
                       <ul className="space-y-1 text-sm text-muted-foreground">
                         <li>• ARIA labels and roles</li>
                         <li>• Escape key handling</li>
@@ -121,8 +129,8 @@ const OverlaysPortalsPage: React.FC<AppProps> = ({
             </Modal>
           </div>
 
-          <div className={variants.card.default.padded() + ' p-6'}>
-            <h3 className={textVariants.heading.h3() + ' mb-4'}>Usage</h3>
+          <div className={variants.card.default.padded() + " p-6"}>
+            <h3 className={textVariants.heading.h3() + " mb-4"}>Usage</h3>
             <pre className={variants.dataDisplay.code.block()}>
               {`import { Modal, ModalContent, ModalFooter } from "../../components/ui"
 import { variants } from '@/design-system';
@@ -166,19 +174,23 @@ size="extraLarge" // ${variants.overlays.modal.extraLarge()}
 
         {/* Dropdowns Section */}
         <Section>
-          <h2 className={textVariants.heading.h2() + ' mb-6'}>Dropdowns</h2>
-          <p className={textVariants.body.md() + ' mb-6'}>
-            Dropdown menus with multiple positioning options, icons, dividers, and keyboard
-            navigation.
+          <h2 className={textVariants.heading.h2() + " mb-6"}>Dropdowns</h2>
+          <p className={textVariants.body.md() + " mb-6"}>
+            Dropdown menus with multiple positioning options, icons, dividers,
+            and keyboard navigation.
           </p>
 
-          <div className={variants.card.default.padded() + ' mb-6'}>
-            <h3 className={textVariants.heading.h3() + ' mb-4'}>Interactive Example</h3>
+          <div className={variants.card.default.padded() + " mb-6"}>
+            <h3 className={textVariants.heading.h3() + " mb-4"}>
+              Interactive Example
+            </h3>
             <div className="flex space-x-4">
               <Dropdown
                 trigger={
                   <Button variant="outline">
-                    <EllipsisVerticalIcon className={variants.icon.variant.muted.sm() + ' mr-2'} />
+                    <EllipsisVerticalIcon
+                      className={variants.icon.variant.muted.sm() + " mr-2"}
+                    />
                     Actions
                   </Button>
                 }
@@ -191,7 +203,9 @@ size="extraLarge" // ${variants.overlays.modal.extraLarge()}
                   <Button>
                     User Menu
                     <EllipsisVerticalIcon
-                      className={variants.icon.variant.interactive.sm() + ' ml-2'}
+                      className={
+                        variants.icon.variant.interactive.sm() + " ml-2"
+                      }
                     />
                   </Button>
                 }
@@ -201,8 +215,8 @@ size="extraLarge" // ${variants.overlays.modal.extraLarge()}
             </div>
           </div>
 
-          <div className={variants.card.default.padded() + ' p-6'}>
-            <h3 className={textVariants.heading.h3() + ' mb-4'}>Usage</h3>
+          <div className={variants.card.default.padded() + " p-6"}>
+            <h3 className={textVariants.heading.h3() + " mb-4"}>Usage</h3>
             <pre className={variants.dataDisplay.code.block()}>
               {`import { Dropdown } from "../../components/ui"
 import { variants } from '@/design-system';
@@ -249,20 +263,23 @@ const items = [
 
         {/* Tooltips Section */}
         <Section>
-          <h2 className={textVariants.heading.h2() + ' mb-6'}>Tooltips</h2>
-          <p className={textVariants.body.md() + ' mb-6'}>
-            Lightweight tooltips with multiple positioning options and color variants.
+          <h2 className={textVariants.heading.h2() + " mb-6"}>Tooltips</h2>
+          <p className={textVariants.body.md() + " mb-6"}>
+            Lightweight tooltips with multiple positioning options and color
+            variants.
           </p>
 
-          <div className={variants.card.default.padded() + ' mb-6'}>
-            <h3 className={textVariants.heading.h3() + ' mb-4'}>Interactive Example</h3>
+          <div className={variants.card.default.padded() + " mb-6"}>
+            <h3 className={textVariants.heading.h3() + " mb-4"}>
+              Interactive Example
+            </h3>
             <div className="flex flex-wrap gap-4">
-              {['top', 'bottom', 'left', 'right'].map(position => (
+              {["top", "bottom", "left", "right"].map((position) => (
                 <div key={position} className="relative">
                   <Button
                     variant="outline"
                     onMouseEnter={() => setTooltipVisible(position)}
-                    onMouseLeave={() => setTooltipVisible('')}
+                    onMouseLeave={() => setTooltipVisible("")}
                   >
                     Hover for {position} tooltip
                   </Button>
@@ -287,8 +304,8 @@ const items = [
             </div>
           </div>
 
-          <div className={variants.card.default.padded() + ' p-6'}>
-            <h3 className={textVariants.heading.h3() + ' mb-4'}>Usage</h3>
+          <div className={variants.card.default.padded() + " p-6"}>
+            <h3 className={textVariants.heading.h3() + " mb-4"}>Usage</h3>
             <pre className={variants.dataDisplay.code.block()}>
               {`// Tooltip variants
 className={variants.overlays.tooltip.container()} // Base container
@@ -316,31 +333,47 @@ className={variants.overlays.tooltip.right()}     // Right position
 
         {/* Loading Overlays Section */}
         <Section>
-          <h2 className={textVariants.heading.h2() + ' mb-6'}>Loading Overlays</h2>
-          <p className={textVariants.body.md() + ' mb-6'}>
-            Full-screen and inline loading states with backdrop blur and customizable messaging.
+          <h2 className={textVariants.heading.h2() + " mb-6"}>
+            Loading Overlays
+          </h2>
+          <p className={textVariants.body.md() + " mb-6"}>
+            Full-screen and inline loading states with backdrop blur and
+            customizable messaging.
           </p>
 
-          <div className={variants.card.default.padded() + ' mb-6'}>
-            <h3 className={textVariants.heading.h3() + ' mb-4'}>Interactive Example</h3>
+          <div className={variants.card.default.padded() + " mb-6"}>
+            <h3 className={textVariants.heading.h3() + " mb-4"}>
+              Interactive Example
+            </h3>
             <div className="space-y-4">
               <div>
-                <Button onClick={showLoadingOverlay}>Show Loading Overlay</Button>
+                <Button onClick={showLoadingOverlay}>
+                  Show Loading Overlay
+                </Button>
               </div>
 
               <div className="border rounded-lg p-4 bg-muted relative h-32">
-                <p className={textVariants.body.sm() + ' mb-2'}>Inline Loading State:</p>
-                <LoadingState message="Processing your request..." size="small" />
+                <p className={textVariants.body.sm() + " mb-2"}>
+                  Inline Loading State:
+                </p>
+                <LoadingState
+                  message="Processing your request..."
+                  size="small"
+                />
               </div>
             </div>
 
             {isLoadingOverlayOpen && (
-              <LoadingState fullScreen message="Processing your request..." size="large" />
+              <LoadingState
+                fullScreen
+                message="Processing your request..."
+                size="large"
+              />
             )}
           </div>
 
-          <div className={variants.card.default.padded() + ' p-6'}>
-            <h3 className={textVariants.heading.h3() + ' mb-4'}>Usage</h3>
+          <div className={variants.card.default.padded() + " p-6"}>
+            <h3 className={textVariants.heading.h3() + " mb-4"}>Usage</h3>
             <pre className={variants.dataDisplay.code.block()}>
               {`import LoadingState from "../../components/ui"
 import { variants } from '@/design-system';
@@ -378,14 +411,16 @@ interface AppProps {
 
         {/* Sheets Section */}
         <Section>
-          <h2 className={textVariants.heading.h2() + ' mb-6'}>Sheets (Bottom Sheets)</h2>
-          <p className={textVariants.body.md() + ' mb-6'}>
-            Mobile-first bottom sheets and action sheets that slide up from the bottom of the
-            screen.
+          <h2 className={textVariants.heading.h2() + " mb-6"}>
+            Sheets (Bottom Sheets)
+          </h2>
+          <p className={textVariants.body.md() + " mb-6"}>
+            Mobile-first bottom sheets and action sheets that slide up from the
+            bottom of the screen.
           </p>
 
-          <div className={variants.card.default.padded() + ' p-6'}>
-            <h3 className={textVariants.heading.h3() + ' mb-4'}>Usage</h3>
+          <div className={variants.card.default.padded() + " p-6"}>
+            <h3 className={textVariants.heading.h3() + " mb-4"}>Usage</h3>
             <pre className={variants.dataDisplay.code.block()}>
               {`// Sheet structure
 <div className={variants.overlays.sheet.backdrop()}>
@@ -418,13 +453,14 @@ className={variants.overlays.sheet.exiting()}  // translate-y-full`}
 
         {/* Context Menus Section */}
         <Section>
-          <h2 className={textVariants.heading.h2() + ' mb-6'}>Context Menus</h2>
-          <p className={textVariants.body.md() + ' mb-6'}>
-            Right-click context menus with keyboard shortcuts and nested submenus.
+          <h2 className={textVariants.heading.h2() + " mb-6"}>Context Menus</h2>
+          <p className={textVariants.body.md() + " mb-6"}>
+            Right-click context menus with keyboard shortcuts and nested
+            submenus.
           </p>
 
-          <div className={variants.card.default.padded() + ' p-6'}>
-            <h3 className={textVariants.heading.h3() + ' mb-4'}>Usage</h3>
+          <div className={variants.card.default.padded() + " p-6"}>
+            <h3 className={textVariants.heading.h3() + " mb-4"}>Usage</h3>
             <pre className={variants.dataDisplay.code.block()}>
               {`// Context menu structure
 <div className={variants.overlays.contextMenu.backdrop()}>
@@ -453,74 +489,83 @@ className={variants.overlays.sheet.exiting()}  // translate-y-full`}
 
         {/* Portal Management Section */}
         <Section>
-          <h2 className={textVariants.heading.h2() + ' mb-6'}>Portal Management</h2>
-          <p className={textVariants.body.md() + ' mb-6'}>
-            Z-index management system and portal utilities for proper overlay stacking.
+          <h2 className={textVariants.heading.h2() + " mb-6"}>
+            Portal Management
+          </h2>
+          <p className={textVariants.body.md() + " mb-6"}>
+            Z-index management system and portal utilities for proper overlay
+            stacking.
           </p>
 
-          <div className={variants.card.default.padded() + ' p-6'}>
-            <h3 className={textVariants.heading.h3() + ' mb-4'}>Z-Index Layers</h3>
+          <div className={variants.card.default.padded() + " p-6"}>
+            <h3 className={textVariants.heading.h3() + " mb-4"}>
+              Z-Index Layers
+            </h3>
             <div className="space-y-3">
               {[
                 {
-                  name: 'Backdrop',
-                  value: '40',
+                  name: "Backdrop",
+                  value: "40",
                   class: variants.overlays.portal.backdrop(),
                 },
                 {
-                  name: 'Popover',
-                  value: '40',
+                  name: "Popover",
+                  value: "40",
                   class: variants.overlays.portal.popover(),
                 },
                 {
-                  name: 'Dropdown',
-                  value: '50',
+                  name: "Dropdown",
+                  value: "50",
                   class: variants.overlays.portal.dropdown(),
                 },
                 {
-                  name: 'Tooltip',
-                  value: '50',
+                  name: "Tooltip",
+                  value: "50",
                   class: variants.overlays.portal.tooltip(),
                 },
                 {
-                  name: 'Modal',
-                  value: '50',
+                  name: "Modal",
+                  value: "50",
                   class: variants.overlays.portal.modal(),
                 },
                 {
-                  name: 'Sheet',
-                  value: '50',
+                  name: "Sheet",
+                  value: "50",
                   class: variants.overlays.portal.sheet(),
                 },
                 {
-                  name: 'Context Menu',
-                  value: '50',
+                  name: "Context Menu",
+                  value: "50",
                   class: variants.overlays.portal.contextMenu(),
                 },
                 {
-                  name: 'Loading',
-                  value: '60',
+                  name: "Loading",
+                  value: "60",
                   class: variants.overlays.portal.loading(),
                 },
                 {
-                  name: 'Notification',
-                  value: '70',
+                  name: "Notification",
+                  value: "70",
                   class: variants.overlays.portal.notification(),
                 },
-              ].map(layer => (
+              ].map((layer) => (
                 <div
                   key={layer.name}
                   className="flex items-center justify-between p-3 bg-muted rounded"
                 >
                   <span className={textVariants.body.sm()}>{layer.name}</span>
-                  <span className={`${variants.badge.default()} font-mono`}>z-{layer.value}</span>
+                  <span className={`${variants.badge.default()} font-mono`}>
+                    z-{layer.value}
+                  </span>
                 </div>
               ))}
             </div>
           </div>
 
-          <div className={variants.card.default.padded() + ' p-6 mt-6'}>
-            <h3 className={textVariants.heading.h3() + ' mb-4'}>Focus Management</h3>
+          <div className={variants.card.default.padded() + " p-6 mt-6"}>
+            <h3 className={textVariants.heading.h3() + " mb-4"}>
+              Focus Management
+            </h3>
             <pre className={variants.dataDisplay.code.block()}>
               {`// Focus trap utilities
 className={variants.overlays.portal.focusTrap()}    // focus:outline-none
@@ -548,16 +593,23 @@ className={variants.overlays.portal.srOnly()}       // sr-only
 
         {/* Animation States */}
         <Section>
-          <h2 className={textVariants.heading.h2() + ' mb-6'}>Animation States</h2>
-          <p className={textVariants.body.md() + ' mb-6'}>
-            Consistent animation states for enter/exit transitions across all overlay components.
+          <h2 className={textVariants.heading.h2() + " mb-6"}>
+            Animation States
+          </h2>
+          <p className={textVariants.body.md() + " mb-6"}>
+            Consistent animation states for enter/exit transitions across all
+            overlay components.
           </p>
 
-          <div className={variants.card.default.padded() + ' p-6'}>
-            <h3 className={textVariants.heading.h3() + ' mb-4'}>Available States</h3>
+          <div className={variants.card.default.padded() + " p-6"}>
+            <h3 className={textVariants.heading.h3() + " mb-4"}>
+              Available States
+            </h3>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
               <div>
-                <h4 className={textVariants.heading.h5() + ' mb-3'}>Modal States</h4>
+                <h4 className={textVariants.heading.h5() + " mb-3"}>
+                  Modal States
+                </h4>
                 <pre className={variants.dataDisplay.code.block()}>
                   {`// Modal backdrop
 ${variants.overlays.modal.backdropEntering()} // opacity-0
@@ -572,7 +624,9 @@ ${variants.overlays.modal.containerExiting()}  // opacity-0 scale-95`}
               </div>
 
               <div>
-                <h4 className={textVariants.heading.h5() + ' mb-3'}>Dropdown States</h4>
+                <h4 className={textVariants.heading.h5() + " mb-3"}>
+                  Dropdown States
+                </h4>
                 <pre className={variants.dataDisplay.code.block()}>
                   {`// Dropdown menu
 ${variants.overlays.dropdown.menuEntering()} // opacity-0 scale-95 origin-top
@@ -586,11 +640,15 @@ ${variants.overlays.dropdown.menuExiting()}  // opacity-0 scale-95 origin-top`}
 
         {/* Best Practices */}
         <Section>
-          <h2 className={textVariants.heading.h2() + ' mb-6'}>Best Practices</h2>
+          <h2 className={textVariants.heading.h2() + " mb-6"}>
+            Best Practices
+          </h2>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-            <div className={variants.card.default.padded() + ' p-6'}>
-              <h3 className={textVariants.heading.h3() + ' mb-4'}>Accessibility</h3>
+            <div className={variants.card.default.padded() + " p-6"}>
+              <h3 className={textVariants.heading.h3() + " mb-4"}>
+                Accessibility
+              </h3>
               <ul className="space-y-2 text-sm text-muted-foreground">
                 <li>• Always provide proper ARIA labels and roles</li>
                 <li>• Implement focus trapping for modals</li>
@@ -601,8 +659,10 @@ ${variants.overlays.dropdown.menuExiting()}  // opacity-0 scale-95 origin-top`}
               </ul>
             </div>
 
-            <div className={variants.card.default.padded() + ' p-6'}>
-              <h3 className={textVariants.heading.h3() + ' mb-4'}>Performance</h3>
+            <div className={variants.card.default.padded() + " p-6"}>
+              <h3 className={textVariants.heading.h3() + " mb-4"}>
+                Performance
+              </h3>
               <ul className="space-y-2 text-sm text-muted-foreground">
                 <li>• Use React Portals for proper DOM rendering</li>
                 <li>• Implement lazy loading for heavy overlays</li>
@@ -613,8 +673,10 @@ ${variants.overlays.dropdown.menuExiting()}  // opacity-0 scale-95 origin-top`}
               </ul>
             </div>
 
-            <div className={variants.card.default.padded() + ' p-6'}>
-              <h3 className={textVariants.heading.h3() + ' mb-4'}>UX Guidelines</h3>
+            <div className={variants.card.default.padded() + " p-6"}>
+              <h3 className={textVariants.heading.h3() + " mb-4"}>
+                UX Guidelines
+              </h3>
               <ul className="space-y-2 text-sm text-muted-foreground">
                 <li>• Keep modals focused on single tasks</li>
                 <li>• Provide clear close affordances</li>
@@ -625,8 +687,8 @@ ${variants.overlays.dropdown.menuExiting()}  // opacity-0 scale-95 origin-top`}
               </ul>
             </div>
 
-            <div className={variants.card.default.padded() + ' p-6'}>
-              <h3 className={textVariants.heading.h3() + ' mb-4'}>Technical</h3>
+            <div className={variants.card.default.padded() + " p-6"}>
+              <h3 className={textVariants.heading.h3() + " mb-4"}>Technical</h3>
               <ul className="space-y-2 text-sm text-muted-foreground">
                 <li>• Use proper z-index layering system</li>
                 <li>• Handle body scroll locking correctly</li>

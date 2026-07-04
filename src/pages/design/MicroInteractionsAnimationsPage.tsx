@@ -5,11 +5,11 @@ import {
   CursorArrowRippleIcon,
   SparklesIcon,
   XMarkIcon,
-} from '@heroicons/react/24/outline';
-import React, { useState } from 'react';
-import { SEOHead } from '@sudobility/seo_lib';
-import { Button, Card, CardContent } from '@sudobility/components';
-import { textVariants, ui, variants } from '@sudobility/design';
+} from "@heroicons/react/24/outline";
+import React, { useState } from "react";
+import { SEOHead } from "@sudobility/seo_lib";
+import { Button, Card, CardContent } from "@sudobility/components";
+import { textVariants, ui, variants } from "@sudobility/design";
 
 interface AppProps {
   emailDomain: string;
@@ -23,8 +23,8 @@ const MicroInteractionsAnimationsPage: React.FC<AppProps> = ({
   const [isLoading, setIsLoading] = useState(false);
   const [progress, setProgress] = useState(0);
   const [walletStatus, setWalletStatus] = useState<
-    'disconnected' | 'connecting' | 'connected' | 'error'
-  >('disconnected');
+    "disconnected" | "connecting" | "connected" | "error"
+  >("disconnected");
 
   const simulateLoading = () => {
     setIsLoading(true);
@@ -34,7 +34,7 @@ const MicroInteractionsAnimationsPage: React.FC<AppProps> = ({
   const simulateProgress = () => {
     setProgress(0);
     const interval = setInterval(() => {
-      setProgress(prev => {
+      setProgress((prev) => {
         if (prev >= 100) {
           clearInterval(interval);
           return 100;
@@ -45,9 +45,9 @@ const MicroInteractionsAnimationsPage: React.FC<AppProps> = ({
   };
 
   const simulateWalletConnection = () => {
-    setWalletStatus('connecting');
-    setTimeout(() => setWalletStatus('connected'), 2000);
-    setTimeout(() => setWalletStatus('disconnected'), 4000);
+    setWalletStatus("connecting");
+    setTimeout(() => setWalletStatus("connected"), 2000);
+    setTimeout(() => setWalletStatus("disconnected"), 4000);
   };
 
   return (
@@ -66,36 +66,65 @@ const MicroInteractionsAnimationsPage: React.FC<AppProps> = ({
           <div className="text-center mb-12">
             <div className="inline-flex items-center bg-accent/10 px-4 py-2 rounded-full mb-6">
               <CursorArrowRippleIcon className="h-5 w-5 text-accent mr-2" />
-              <span className="text-accent font-semibold">Micro-Interactions & Animations</span>
+              <span className="text-accent font-semibold">
+                Micro-Interactions & Animations
+              </span>
             </div>
 
             <h1 className={`${textVariants.heading.display.xl()} mb-6`}>
               Micro-Interactions & Animations
             </h1>
 
-            <p className={`${textVariants.body.lg()} max-w-3xl mx-auto text-muted-foreground mb-8`}>
-              Comprehensive animation system with hover effects, loading states, transitions, and
-              Web3-specific interactions. All animations respect user motion preferences and provide
-              smooth, delightful user experiences.
+            <p
+              className={`${textVariants.body.lg()} max-w-3xl mx-auto text-muted-foreground mb-8`}
+            >
+              Comprehensive animation system with hover effects, loading states,
+              transitions, and Web3-specific interactions. All animations
+              respect user motion preferences and provide smooth, delightful
+              user experiences.
             </p>
 
             {/* Quick Stats */}
             <div className="grid grid-cols-2 md:grid-cols-4 gap-4 max-w-2xl mx-auto">
               <div className={`${ui.background.subtle} rounded-lg p-4`}>
-                <div className={`${textVariants.heading.h4()} text-accent mb-1`}>200+</div>
-                <div className={textVariants.caption.default()}>Animation Variants</div>
+                <div
+                  className={`${textVariants.heading.h4()} text-accent mb-1`}
+                >
+                  200+
+                </div>
+                <div className={textVariants.caption.default()}>
+                  Animation Variants
+                </div>
               </div>
               <div className={`${ui.background.subtle} rounded-lg p-4`}>
-                <div className={`${textVariants.heading.h4()} text-primary mb-1`}>60fps</div>
-                <div className={textVariants.caption.default()}>Smooth Performance</div>
+                <div
+                  className={`${textVariants.heading.h4()} text-primary mb-1`}
+                >
+                  60fps
+                </div>
+                <div className={textVariants.caption.default()}>
+                  Smooth Performance
+                </div>
               </div>
               <div className={`${ui.background.subtle} rounded-lg p-4`}>
-                <div className={`${textVariants.heading.h4()} text-success mb-1`}>A11Y</div>
-                <div className={textVariants.caption.default()}>Motion Safe</div>
+                <div
+                  className={`${textVariants.heading.h4()} text-success mb-1`}
+                >
+                  A11Y
+                </div>
+                <div className={textVariants.caption.default()}>
+                  Motion Safe
+                </div>
               </div>
               <div className={`${ui.background.subtle} rounded-lg p-4`}>
-                <div className={`${textVariants.heading.h4()} text-secondary mb-1`}>Web3</div>
-                <div className={textVariants.caption.default()}>Specialized</div>
+                <div
+                  className={`${textVariants.heading.h4()} text-secondary mb-1`}
+                >
+                  Web3
+                </div>
+                <div className={textVariants.caption.default()}>
+                  Specialized
+                </div>
               </div>
             </div>
           </div>
@@ -111,15 +140,23 @@ const MicroInteractionsAnimationsPage: React.FC<AppProps> = ({
                   <h2 className={textVariants.heading.h3()}>Hover Effects</h2>
                 </div>
 
-                <p className={`${textVariants.body.md()} text-muted-foreground mb-6`}>
-                  Subtle but engaging hover effects for buttons, cards, and interactive elements.
+                <p
+                  className={`${textVariants.body.md()} text-muted-foreground mb-6`}
+                >
+                  Subtle but engaging hover effects for buttons, cards, and
+                  interactive elements.
                 </p>
 
                 <div className="space-y-4">
                   <div>
-                    <h4 className={`${textVariants.heading.h5()} mb-3`}>Button Hover Effects</h4>
+                    <h4 className={`${textVariants.heading.h5()} mb-3`}>
+                      Button Hover Effects
+                    </h4>
                     <div className="grid grid-cols-2 gap-3">
-                      <Button variant="default" className={variants.animations.hover.button.lift()}>
+                      <Button
+                        variant="default"
+                        className={variants.animations.hover.button.lift()}
+                      >
                         Lift Effect
                       </Button>
                       <Button
@@ -144,17 +181,23 @@ const MicroInteractionsAnimationsPage: React.FC<AppProps> = ({
                   </div>
 
                   <div>
-                    <h4 className={`${textVariants.heading.h5()} mb-3`}>Card Hover Effects</h4>
+                    <h4 className={`${textVariants.heading.h5()} mb-3`}>
+                      Card Hover Effects
+                    </h4>
                     <div className="grid grid-cols-1 gap-3">
                       <div
                         className={`p-4 border rounded-lg ${variants.animations.hover.card.subtle()}`}
                       >
-                        <p className="text-sm">Subtle hover effect - lifts gently</p>
+                        <p className="text-sm">
+                          Subtle hover effect - lifts gently
+                        </p>
                       </div>
                       <div
                         className={`p-4 border rounded-lg ${variants.animations.hover.card.glow()}`}
                       >
-                        <p className="text-sm">Glow hover effect - adds soft glow</p>
+                        <p className="text-sm">
+                          Glow hover effect - adds soft glow
+                        </p>
                       </div>
                     </div>
                   </div>
@@ -175,17 +218,24 @@ variants.animations.hover.icon.bounce()`}
             <Card>
               <CardContent className="pt-6">
                 <div className="flex items-center mb-4">
-                  <ArrowPathIcon className={`${variants.icon.size.lg()} text-primary mr-3`} />
+                  <ArrowPathIcon
+                    className={`${variants.icon.size.lg()} text-primary mr-3`}
+                  />
                   <h2 className={textVariants.heading.h3()}>Loading States</h2>
                 </div>
 
-                <p className={`${textVariants.body.md()} text-muted-foreground mb-6`}>
-                  Loading animations and progress indicators that keep users engaged.
+                <p
+                  className={`${textVariants.body.md()} text-muted-foreground mb-6`}
+                >
+                  Loading animations and progress indicators that keep users
+                  engaged.
                 </p>
 
                 <div className="space-y-4">
                   <div>
-                    <h4 className={`${textVariants.heading.h5()} mb-3`}>Spinners</h4>
+                    <h4 className={`${textVariants.heading.h5()} mb-3`}>
+                      Spinners
+                    </h4>
                     <div className="flex items-center space-x-4">
                       <div
                         className={`w-6 h-6 border-2 border-primary border-t-transparent rounded-full ${variants.animations.loading.spinner.default()}`}
@@ -200,8 +250,14 @@ variants.animations.hover.icon.bounce()`}
                   </div>
 
                   <div>
-                    <h4 className={`${textVariants.heading.h5()} mb-3`}>Interactive Demo</h4>
-                    <Button onClick={simulateLoading} disabled={isLoading} className="mb-4">
+                    <h4 className={`${textVariants.heading.h5()} mb-3`}>
+                      Interactive Demo
+                    </h4>
+                    <Button
+                      onClick={simulateLoading}
+                      disabled={isLoading}
+                      className="mb-4"
+                    >
                       {isLoading ? (
                         <>
                           <div
@@ -210,7 +266,7 @@ variants.animations.hover.icon.bounce()`}
                           Loading...
                         </>
                       ) : (
-                        'Start Loading'
+                        "Start Loading"
                       )}
                     </Button>
 
@@ -223,11 +279,14 @@ variants.animations.hover.icon.bounce()`}
                           className={`h-2 rounded-full ${variants.animations.loading.progress.bar()}`}
                           style={{
                             width: `${progress}%`,
-                            background: 'linear-gradient(to right, #3b82f6, #8b5cf6)',
+                            background:
+                              "linear-gradient(to right, #3b82f6, #8b5cf6)",
                           }}
                         ></div>
                       </div>
-                      <p className="text-sm text-muted-foreground mt-1">Progress: {progress}%</p>
+                      <p className="text-sm text-muted-foreground mt-1">
+                        Progress: {progress}%
+                      </p>
                     </div>
                   </div>
                 </div>
@@ -248,51 +307,64 @@ variants.animations.loading.progress.bar()`}
           <Card className="mb-8">
             <CardContent className="pt-6">
               <div className="flex items-center mb-4">
-                <SparklesIcon className={`${variants.icon.size.lg()} text-accent mr-3`} />
+                <SparklesIcon
+                  className={`${variants.icon.size.lg()} text-accent mr-3`}
+                />
                 <h2 className={textVariants.heading.h3()}>Web3 Animations</h2>
               </div>
 
-              <p className={`${textVariants.body.md()} text-muted-foreground mb-6`}>
-                Specialized animations for Web3 interactions including wallet connections and
-                transaction states.
+              <p
+                className={`${textVariants.body.md()} text-muted-foreground mb-6`}
+              >
+                Specialized animations for Web3 interactions including wallet
+                connections and transaction states.
               </p>
 
               <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
                 <div>
-                  <h4 className={`${textVariants.heading.h5()} mb-3`}>Wallet Connection States</h4>
+                  <h4 className={`${textVariants.heading.h5()} mb-3`}>
+                    Wallet Connection States
+                  </h4>
                   <div className="space-y-3">
                     <Button
                       onClick={simulateWalletConnection}
                       className={
-                        walletStatus === 'connecting'
+                        walletStatus === "connecting"
                           ? variants.animations.web3.wallet.connecting()
-                          : walletStatus === 'connected'
+                          : walletStatus === "connected"
                             ? variants.animations.web3.wallet.connected()
                             : variants.animations.hover.button.connect()
                       }
-                      disabled={walletStatus === 'connecting'}
+                      disabled={walletStatus === "connecting"}
                     >
-                      {walletStatus === 'connecting' && (
+                      {walletStatus === "connecting" && (
                         <div
                           className={`w-4 h-4 border-2 border-primary-foreground border-t-transparent rounded-full ${variants.animations.loading.spinner.default()} mr-2`}
                         ></div>
                       )}
-                      {walletStatus === 'connected' && <CheckIcon className="w-4 h-4 mr-2" />}
-                      {walletStatus === 'connecting'
-                        ? 'Connecting...'
-                        : walletStatus === 'connected'
-                          ? 'Connected'
-                          : 'Connect Wallet'}
+                      {walletStatus === "connected" && (
+                        <CheckIcon className="w-4 h-4 mr-2" />
+                      )}
+                      {walletStatus === "connecting"
+                        ? "Connecting..."
+                        : walletStatus === "connected"
+                          ? "Connected"
+                          : "Connect Wallet"}
                     </Button>
 
                     <p className="text-sm text-muted-foreground">
-                      Status: <span className="font-medium capitalize">{walletStatus}</span>
+                      Status:{" "}
+                      <span className="font-medium capitalize">
+                        {walletStatus}
+                      </span>
                     </p>
                   </div>
                 </div>
 
                 <div>
-                  <h4 className={`${textVariants.heading.h5()} mb-3`}>Transaction States</h4>
+                  <h4 className={`${textVariants.heading.h5()} mb-3`}>
+                    Transaction States
+                  </h4>
                   <div className="space-y-3">
                     <div
                       className={`p-3 rounded-lg ${variants.animations.web3.transaction.pending()}`}
@@ -342,33 +414,49 @@ variants.animations.web3.transaction.confirmed()`}
           <Card className="mb-8">
             <CardContent className="pt-6">
               <div className="flex items-center mb-4">
-                <BoltIcon className={`${variants.icon.size.lg()} text-warning mr-3`} />
-                <h2 className={textVariants.heading.h3()}>Motion Preferences</h2>
+                <BoltIcon
+                  className={`${variants.icon.size.lg()} text-warning mr-3`}
+                />
+                <h2 className={textVariants.heading.h3()}>
+                  Motion Preferences
+                </h2>
               </div>
 
-              <p className={`${textVariants.body.md()} text-muted-foreground mb-6`}>
-                All animations respect user motion preferences and provide alternatives for
-                accessibility.
+              <p
+                className={`${textVariants.body.md()} text-muted-foreground mb-6`}
+              >
+                All animations respect user motion preferences and provide
+                alternatives for accessibility.
               </p>
 
               <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
                 <div>
-                  <h4 className={`${textVariants.heading.h5()} mb-3`}>Reduced Motion Support</h4>
+                  <h4 className={`${textVariants.heading.h5()} mb-3`}>
+                    Reduced Motion Support
+                  </h4>
                   <div className="space-y-3">
-                    <Button className={variants.animations.utility.reduced.respectPrefers()}>
+                    <Button
+                      className={variants.animations.utility.reduced.respectPrefers()}
+                    >
                       Respects Motion Preferences
                     </Button>
-                    <Button className={variants.animations.utility.reduced.fadeOnly()}>
+                    <Button
+                      className={variants.animations.utility.reduced.fadeOnly()}
+                    >
                       Fade Only Animation
                     </Button>
-                    <Button className={variants.animations.utility.reduced.scaleOnly()}>
+                    <Button
+                      className={variants.animations.utility.reduced.scaleOnly()}
+                    >
                       Scale Only Animation
                     </Button>
                   </div>
                 </div>
 
                 <div>
-                  <h4 className={`${textVariants.heading.h5()} mb-3`}>Safe Animations</h4>
+                  <h4 className={`${textVariants.heading.h5()} mb-3`}>
+                    Safe Animations
+                  </h4>
                   <div className="space-y-3">
                     <div
                       className={`p-3 border rounded-lg ${variants.animations.transitions.fade.default()}`}
@@ -401,13 +489,19 @@ variants.animations.utility.reduced.fadeOnly()
           <Card>
             <CardContent className="pt-6">
               <div className="flex items-center mb-4">
-                <CheckIcon className={`${variants.icon.size.lg()} text-success mr-3`} />
-                <h2 className={textVariants.heading.h3()}>Animation Best Practices</h2>
+                <CheckIcon
+                  className={`${variants.icon.size.lg()} text-success mr-3`}
+                />
+                <h2 className={textVariants.heading.h3()}>
+                  Animation Best Practices
+                </h2>
               </div>
 
               <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
                 <div>
-                  <h4 className={`${textVariants.heading.h5()} mb-4`}>✅ Do This</h4>
+                  <h4 className={`${textVariants.heading.h5()} mb-4`}>
+                    ✅ Do This
+                  </h4>
                   <ul className="space-y-2 text-sm">
                     <li className="flex items-start">
                       <CheckIcon className="h-4 w-4 text-success mr-2 mt-0.5 flex-shrink-0" />
@@ -433,7 +527,9 @@ variants.animations.utility.reduced.fadeOnly()
                 </div>
 
                 <div>
-                  <h4 className={`${textVariants.heading.h5()} mb-4`}>❌ Avoid This</h4>
+                  <h4 className={`${textVariants.heading.h5()} mb-4`}>
+                    ❌ Avoid This
+                  </h4>
                   <ul className="space-y-2 text-sm">
                     <li className="flex items-start">
                       <XMarkIcon className="h-4 w-4 text-destructive mr-2 mt-0.5 flex-shrink-0" />

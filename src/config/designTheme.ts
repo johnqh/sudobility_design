@@ -12,14 +12,14 @@ import {
   generateThemeCSS,
   type ThemeName,
   type ThemeDefinition,
-} from '@sudobility/design/themes';
+} from "@sudobility/design/themes";
 
-export const DEFAULT_THEME_NAME: ThemeName = 'default';
+export const DEFAULT_THEME_NAME: ThemeName = "default";
 
 // Distinct from the light/dark ThemeProvider key (storageKeyPrefix + '-theme',
 // i.e. 'sudobility-design-theme') to avoid clobbering each other in localStorage.
-const STORAGE_KEY = 'sudobility-design-palette';
-const STYLE_ELEMENT_ID = 'sudobility-design-theme';
+const STORAGE_KEY = "sudobility-design-palette";
+const STYLE_ELEMENT_ID = "sudobility-design-theme";
 
 export interface ThemeOption {
   name: ThemeName;
@@ -28,14 +28,16 @@ export interface ThemeOption {
 
 /** All available themes as { name, displayName } options for UI. */
 export function getThemeOptions(): ThemeOption[] {
-  return (Object.keys(themes) as ThemeName[]).map(name => ({
+  return (Object.keys(themes) as ThemeName[]).map((name) => ({
     name,
     displayName: themes[name].displayName,
   }));
 }
 
 /** Type guard: is the value a registered theme name? */
-export function isValidThemeName(name: string | null | undefined): name is ThemeName {
+export function isValidThemeName(
+  name: string | null | undefined,
+): name is ThemeName {
   return !!name && Object.prototype.hasOwnProperty.call(themes, name);
 }
 
@@ -69,10 +71,12 @@ export function applyDesignTheme(name: ThemeName): void {
   configureTheme(theme);
 
   // 2. Inject/replace the CSS custom properties (:root + .dark blocks)
-  if (typeof document === 'undefined') return;
-  let style = document.getElementById(STYLE_ELEMENT_ID) as HTMLStyleElement | null;
+  if (typeof document === "undefined") return;
+  let style = document.getElementById(
+    STYLE_ELEMENT_ID,
+  ) as HTMLStyleElement | null;
   if (!style) {
-    style = document.createElement('style');
+    style = document.createElement("style");
     style.id = STYLE_ELEMENT_ID;
     document.head.appendChild(style);
   }

@@ -13,11 +13,11 @@ import {
   PencilSquareIcon,
   PhoneIcon,
   UserIcon,
-} from '@heroicons/react/24/outline';
-import React, { useState } from 'react';
-import LocalizedLink from '../../components/LocalizedLink';
-import { SEOHead } from '@sudobility/seo_lib';
-import { textVariants, ui, variants } from '@sudobility/design';
+} from "@heroicons/react/24/outline";
+import React, { useState } from "react";
+import LocalizedLink from "../../components/LocalizedLink";
+import { SEOHead } from "@sudobility/seo_lib";
+import { textVariants, ui, variants } from "@sudobility/design";
 
 interface AppProps {
   emailDomain: string;
@@ -31,7 +31,7 @@ const CodeBlock: React.FC<{
   copyKey: string;
   copiedStates: { [key: string]: boolean };
   copyToClipboard: (text: string, key: string) => void;
-}> = ({ code, _language = 'tsx', copyKey, copiedStates, copyToClipboard }) => (
+}> = ({ code, _language = "tsx", copyKey, copiedStates, copyToClipboard }) => (
   <div className="relative">
     <pre className="bg-muted text-foreground p-4 rounded-lg overflow-x-auto text-sm">
       <code>{code}</code>
@@ -40,7 +40,7 @@ const CodeBlock: React.FC<{
       onClick={() => copyToClipboard(code, copyKey)}
       className="absolute top-3 right-3 bg-secondary hover:bg-secondary/80 text-secondary-foreground px-3 py-1 rounded text-xs transition-colors"
     >
-      {copiedStates[copyKey] ? '✓ Copied!' : 'Copy'}
+      {copiedStates[copyKey] ? "✓ Copied!" : "Copy"}
     </button>
   </div>
 );
@@ -65,17 +65,21 @@ const SectionHeader: React.FC<{
       )}
     </button>
     {expandedSections[id] && (
-      <p className={`${textVariants.body.lg()} text-muted-foreground mb-6`}>{description}</p>
+      <p className={`${textVariants.body.lg()} text-muted-foreground mb-6`}>
+        {description}
+      </p>
     )}
   </div>
 );
 
 const InputsPage: React.FC<AppProps> = ({ emailDomain, appName: _appName }) => {
-  const [copiedStates, setCopiedStates] = useState<{ [key: string]: boolean }>({});
+  const [copiedStates, setCopiedStates] = useState<{ [key: string]: boolean }>(
+    {},
+  );
   const [expandedSections, setExpandedSections] = useState<{
     [key: string]: boolean;
   }>({
-    'quick-start': true,
+    "quick-start": true,
     variants: true,
     sizes: true,
     states: true,
@@ -86,68 +90,70 @@ const InputsPage: React.FC<AppProps> = ({ emailDomain, appName: _appName }) => {
 
   // Demo form states
   const [demoValues, setDemoValues] = useState({
-    email: '',
-    password: '',
-    search: '',
-    message: '',
-    wallet: '',
-    amount: '',
-    phone: '',
-    website: '',
-    date: '',
+    email: "",
+    password: "",
+    search: "",
+    message: "",
+    wallet: "",
+    amount: "",
+    phone: "",
+    website: "",
+    date: "",
   });
   const [showPassword, setShowPassword] = useState(false);
   const [errors, setErrors] = useState<{ [key: string]: string }>({});
-  const [validations, setValidations] = useState<{ [key: string]: boolean }>({});
+  const [validations, setValidations] = useState<{ [key: string]: boolean }>(
+    {},
+  );
 
   const copyToClipboard = (text: string, key: string) => {
     navigator.clipboard.writeText(text).then(() => {
-      setCopiedStates(prev => ({ ...prev, [key]: true }));
+      setCopiedStates((prev) => ({ ...prev, [key]: true }));
       setTimeout(() => {
-        setCopiedStates(prev => ({ ...prev, [key]: false }));
+        setCopiedStates((prev) => ({ ...prev, [key]: false }));
       }, 2000);
     });
   };
 
   const toggleSection = (section: string) => {
-    setExpandedSections(prev => ({ ...prev, [section]: !prev[section] }));
+    setExpandedSections((prev) => ({ ...prev, [section]: !prev[section] }));
   };
 
   const handleDemoInput = (field: string, value: string) => {
-    setDemoValues(prev => ({ ...prev, [field]: value }));
+    setDemoValues((prev) => ({ ...prev, [field]: value }));
 
     // Simple validation examples
-    if (field === 'email') {
+    if (field === "email") {
       const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
       if (value && !emailRegex.test(value)) {
-        setErrors(prev => ({
+        setErrors((prev) => ({
           ...prev,
-          email: 'Please enter a valid email address',
+          email: "Please enter a valid email address",
         }));
-        setValidations(prev => ({ ...prev, email: false }));
+        setValidations((prev) => ({ ...prev, email: false }));
       } else if (value) {
-        setErrors(prev => ({ ...prev, email: '' }));
-        setValidations(prev => ({ ...prev, email: true }));
+        setErrors((prev) => ({ ...prev, email: "" }));
+        setValidations((prev) => ({ ...prev, email: true }));
       } else {
-        setErrors(prev => ({ ...prev, email: '' }));
-        setValidations(prev => ({ ...prev, email: false }));
+        setErrors((prev) => ({ ...prev, email: "" }));
+        setValidations((prev) => ({ ...prev, email: false }));
       }
     }
 
-    if (field === 'wallet') {
+    if (field === "wallet") {
       const ethRegex = /^0x[a-fA-F0-9]{40}$/;
       if (value && !ethRegex.test(value) && value.length > 10) {
-        setErrors(prev => ({
+        setErrors((prev) => ({
           ...prev,
-          wallet: 'Please enter a valid Ethereum address',
+          wallet: "Please enter a valid Ethereum address",
         }));
-        setValidations(prev => ({ ...prev, wallet: false }));
+        setValidations((prev) => ({ ...prev, wallet: false }));
       } else if (value && ethRegex.test(value)) {
-        setErrors(prev => ({ ...prev, wallet: '' }));
-        setValidations(prev => ({ ...prev, wallet: true }));
+        setErrors((prev) => ({ ...prev, wallet: "" }));
+        setValidations((prev) => ({ ...prev, wallet: true }));
       } else {
-        setErrors(prev => ({ ...prev, wallet: '' }));
-        setValidations(prev => ({ ...prev, wallet: false }));
+        setErrors((prev) => ({ ...prev, wallet: "" }));
+        setValidations((prev) => ({ ...prev, wallet: false }));
       }
     }
   };
@@ -171,30 +177,59 @@ const InputsPage: React.FC<AppProps> = ({ emailDomain, appName: _appName }) => {
               <span className="text-primary font-semibold">Inputs</span>
             </div>
 
-            <h1 className={`${textVariants.heading.display.xl()} mb-6`}>Input Components</h1>
+            <h1 className={`${textVariants.heading.display.xl()} mb-6`}>
+              Input Components
+            </h1>
 
-            <p className={`${textVariants.body.lg()} max-w-3xl mx-auto text-muted-foreground mb-8`}>
-              Form input components with consistent styling, validation states, and accessibility
-              features designed for both traditional and Web3 applications.
+            <p
+              className={`${textVariants.body.lg()} max-w-3xl mx-auto text-muted-foreground mb-8`}
+            >
+              Form input components with consistent styling, validation states,
+              and accessibility features designed for both traditional and Web3
+              applications.
             </p>
 
             {/* Input Stats */}
             <div className="grid grid-cols-2 md:grid-cols-4 gap-4 max-w-2xl mx-auto">
               <div className={`${ui.background.subtle} rounded-lg p-4`}>
-                <div className={`${textVariants.heading.h4()} text-primary mb-1`}>8</div>
-                <div className={textVariants.caption.default()}>Input Types</div>
+                <div
+                  className={`${textVariants.heading.h4()} text-primary mb-1`}
+                >
+                  8
+                </div>
+                <div className={textVariants.caption.default()}>
+                  Input Types
+                </div>
               </div>
               <div className={`${ui.background.subtle} rounded-lg p-4`}>
-                <div className={`${textVariants.heading.h4()} text-success mb-1`}>3</div>
-                <div className={textVariants.caption.default()}>Size Options</div>
+                <div
+                  className={`${textVariants.heading.h4()} text-success mb-1`}
+                >
+                  3
+                </div>
+                <div className={textVariants.caption.default()}>
+                  Size Options
+                </div>
               </div>
               <div className={`${ui.background.subtle} rounded-lg p-4`}>
-                <div className={`${textVariants.heading.h4()} text-accent mb-1`}>4</div>
-                <div className={textVariants.caption.default()}>State Types</div>
+                <div
+                  className={`${textVariants.heading.h4()} text-accent mb-1`}
+                >
+                  4
+                </div>
+                <div className={textVariants.caption.default()}>
+                  State Types
+                </div>
               </div>
               <div className={`${ui.background.subtle} rounded-lg p-4`}>
-                <div className={`${textVariants.heading.h4()} text-secondary mb-1`}>6</div>
-                <div className={textVariants.caption.default()}>Web3 Patterns</div>
+                <div
+                  className={`${textVariants.heading.h4()} text-secondary mb-1`}
+                >
+                  6
+                </div>
+                <div className={textVariants.caption.default()}>
+                  Web3 Patterns
+                </div>
               </div>
             </div>
           </div>
@@ -209,11 +244,13 @@ const InputsPage: React.FC<AppProps> = ({ emailDomain, appName: _appName }) => {
               toggleSection={toggleSection}
             />
 
-            {expandedSections['quick-start'] && (
+            {expandedSections["quick-start"] && (
               <div className="space-y-8">
                 {/* Basic Input Types */}
                 <div>
-                  <h3 className={`${textVariants.heading.h3()} mb-4`}>1. Essential Input Types</h3>
+                  <h3 className={`${textVariants.heading.h3()} mb-4`}>
+                    1. Essential Input Types
+                  </h3>
                   <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-4">
                     <div>
                       <label className="block text-sm font-medium text-foreground mb-2">
@@ -224,7 +261,9 @@ const InputsPage: React.FC<AppProps> = ({ emailDomain, appName: _appName }) => {
                         className={variants.input.default()}
                         placeholder="user@example.com"
                         value={demoValues.email}
-                        onChange={e => handleDemoInput('email', e.target.value)}
+                        onChange={(e) =>
+                          handleDemoInput("email", e.target.value)
+                        }
                       />
                       {errors.email && (
                         <p className="text-sm text-destructive mt-1 flex items-center">
@@ -246,11 +285,13 @@ const InputsPage: React.FC<AppProps> = ({ emailDomain, appName: _appName }) => {
                       </label>
                       <div className="relative">
                         <input
-                          type={showPassword ? 'text' : 'password'}
+                          type={showPassword ? "text" : "password"}
                           className={variants.input.default()}
                           placeholder="Enter your password"
                           value={demoValues.password}
-                          onChange={e => handleDemoInput('password', e.target.value)}
+                          onChange={(e) =>
+                            handleDemoInput("password", e.target.value)
+                          }
                         />
                         <button
                           type="button"
@@ -279,7 +320,9 @@ const InputsPage: React.FC<AppProps> = ({ emailDomain, appName: _appName }) => {
                           className={variants.input.withIcon()}
                           placeholder="Search messages..."
                           value={demoValues.search}
-                          onChange={e => handleDemoInput('search', e.target.value)}
+                          onChange={(e) =>
+                            handleDemoInput("search", e.target.value)
+                          }
                         />
                       </div>
                     </div>
@@ -293,7 +336,9 @@ const InputsPage: React.FC<AppProps> = ({ emailDomain, appName: _appName }) => {
                         placeholder="Type your message..."
                         rows={3}
                         value={demoValues.message}
-                        onChange={e => handleDemoInput('message', e.target.value)}
+                        onChange={(e) =>
+                          handleDemoInput("message", e.target.value)
+                        }
                       />
                     </div>
                   </div>
@@ -346,7 +391,9 @@ const InputsPage: React.FC<AppProps> = ({ emailDomain, appName: _appName }) => {
 
                 {/* Input Sizes */}
                 <div>
-                  <h3 className={`${textVariants.heading.h3()} mb-4`}>2. Size Variations</h3>
+                  <h3 className={`${textVariants.heading.h3()} mb-4`}>
+                    2. Size Variations
+                  </h3>
                   <div className="space-y-4 mb-4">
                     <div>
                       <label className="block text-sm font-medium text-foreground mb-2">
@@ -395,7 +442,9 @@ const InputsPage: React.FC<AppProps> = ({ emailDomain, appName: _appName }) => {
 
                 {/* Error State */}
                 <div>
-                  <h3 className={`${textVariants.heading.h3()} mb-4`}>3. Validation States</h3>
+                  <h3 className={`${textVariants.heading.h3()} mb-4`}>
+                    3. Validation States
+                  </h3>
                   <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-4">
                     <div>
                       <label className="block text-sm font-medium text-foreground mb-2">
@@ -421,7 +470,7 @@ const InputsPage: React.FC<AppProps> = ({ emailDomain, appName: _appName }) => {
                         type="email"
                         className={
                           variants.input.default() +
-                          ' border-success focus:border-success focus:ring-success'
+                          " border-success focus:border-success focus:ring-success"
                         }
                         placeholder="user@example.com"
                         value="user@example.com"
@@ -463,7 +512,9 @@ const InputsPage: React.FC<AppProps> = ({ emailDomain, appName: _appName }) => {
 
                 {/* Web3 Inputs */}
                 <div>
-                  <h3 className={`${textVariants.heading.h3()} mb-4`}>4. Web3 Specific Inputs</h3>
+                  <h3 className={`${textVariants.heading.h3()} mb-4`}>
+                    4. Web3 Specific Inputs
+                  </h3>
                   <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-4">
                     <div>
                       <label className="block text-sm font-medium text-foreground mb-2">
@@ -480,7 +531,9 @@ const InputsPage: React.FC<AppProps> = ({ emailDomain, appName: _appName }) => {
                           className={variants.input.withIcon()}
                           placeholder="0x742d35Cc6434C0532925a3b8D665d4E0f3c"
                           value={demoValues.wallet}
-                          onChange={e => handleDemoInput('wallet', e.target.value)}
+                          onChange={(e) =>
+                            handleDemoInput("wallet", e.target.value)
+                          }
                         />
                       </div>
                       {errors.wallet && (
@@ -508,13 +561,19 @@ const InputsPage: React.FC<AppProps> = ({ emailDomain, appName: _appName }) => {
                           className={variants.input.default()}
                           placeholder="0.0"
                           value={demoValues.amount}
-                          onChange={e => handleDemoInput('amount', e.target.value)}
+                          onChange={(e) =>
+                            handleDemoInput("amount", e.target.value)
+                          }
                         />
                         <div className="absolute inset-y-0 right-0 pr-3 flex items-center">
-                          <span className="text-sm text-muted-foreground">ETH</span>
+                          <span className="text-sm text-muted-foreground">
+                            ETH
+                          </span>
                         </div>
                       </div>
-                      <p className="text-xs text-muted-foreground mt-1">Balance: 2.4563 ETH</p>
+                      <p className="text-xs text-muted-foreground mt-1">
+                        Balance: 2.4563 ETH
+                      </p>
                     </div>
                   </div>
 
@@ -564,15 +623,19 @@ const InputsPage: React.FC<AppProps> = ({ emailDomain, appName: _appName }) => {
               toggleSection={toggleSection}
             />
 
-            {expandedSections['variants'] && (
+            {expandedSections["variants"] && (
               <div className="space-y-8">
                 <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
                   {/* Standard Variants */}
                   <div>
-                    <h3 className={`${textVariants.heading.h4()} mb-4`}>Standard Variants</h3>
+                    <h3 className={`${textVariants.heading.h4()} mb-4`}>
+                      Standard Variants
+                    </h3>
                     <div className="space-y-4">
                       <div>
-                        <label className="block text-sm font-medium mb-2">Default Input</label>
+                        <label className="block text-sm font-medium mb-2">
+                          Default Input
+                        </label>
                         <input
                           type="text"
                           className={variants.input.default()}
@@ -584,7 +647,9 @@ const InputsPage: React.FC<AppProps> = ({ emailDomain, appName: _appName }) => {
                       </div>
 
                       <div>
-                        <label className="block text-sm font-medium mb-2">Search Input</label>
+                        <label className="block text-sm font-medium mb-2">
+                          Search Input
+                        </label>
                         <input
                           type="search"
                           className={variants.input.search()}
@@ -596,17 +661,23 @@ const InputsPage: React.FC<AppProps> = ({ emailDomain, appName: _appName }) => {
                       </div>
 
                       <div>
-                        <label className="block text-sm font-medium mb-2">Error State</label>
+                        <label className="block text-sm font-medium mb-2">
+                          Error State
+                        </label>
                         <input
                           type="text"
                           className={variants.input.error()}
                           placeholder="Invalid input"
                         />
-                        <p className="text-xs text-muted-foreground mt-1">For validation errors</p>
+                        <p className="text-xs text-muted-foreground mt-1">
+                          For validation errors
+                        </p>
                       </div>
 
                       <div>
-                        <label className="block text-sm font-medium mb-2">With Icon</label>
+                        <label className="block text-sm font-medium mb-2">
+                          With Icon
+                        </label>
                         <div className="relative">
                           <div className="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
                             <AtSymbolIcon className="h-5 w-5 text-muted-foreground" />
@@ -626,10 +697,14 @@ const InputsPage: React.FC<AppProps> = ({ emailDomain, appName: _appName }) => {
 
                   {/* Specialized Inputs */}
                   <div>
-                    <h3 className={`${textVariants.heading.h4()} mb-4`}>Specialized Types</h3>
+                    <h3 className={`${textVariants.heading.h4()} mb-4`}>
+                      Specialized Types
+                    </h3>
                     <div className="space-y-4">
                       <div>
-                        <label className="block text-sm font-medium mb-2">Phone Number</label>
+                        <label className="block text-sm font-medium mb-2">
+                          Phone Number
+                        </label>
                         <div className="relative">
                           <div className="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
                             <PhoneIcon className="h-5 w-5 text-muted-foreground" />
@@ -639,13 +714,17 @@ const InputsPage: React.FC<AppProps> = ({ emailDomain, appName: _appName }) => {
                             className={variants.input.withIcon()}
                             placeholder="+1 (555) 123-4567"
                             value={demoValues.phone}
-                            onChange={e => handleDemoInput('phone', e.target.value)}
+                            onChange={(e) =>
+                              handleDemoInput("phone", e.target.value)
+                            }
                           />
                         </div>
                       </div>
 
                       <div>
-                        <label className="block text-sm font-medium mb-2">Website URL</label>
+                        <label className="block text-sm font-medium mb-2">
+                          Website URL
+                        </label>
                         <div className="relative">
                           <div className="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
                             <LinkIcon className="h-5 w-5 text-muted-foreground" />
@@ -655,13 +734,17 @@ const InputsPage: React.FC<AppProps> = ({ emailDomain, appName: _appName }) => {
                             className={variants.input.withIcon()}
                             placeholder="https://example.com"
                             value={demoValues.website}
-                            onChange={e => handleDemoInput('website', e.target.value)}
+                            onChange={(e) =>
+                              handleDemoInput("website", e.target.value)
+                            }
                           />
                         </div>
                       </div>
 
                       <div>
-                        <label className="block text-sm font-medium mb-2">Date</label>
+                        <label className="block text-sm font-medium mb-2">
+                          Date
+                        </label>
                         <div className="relative">
                           <div className="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
                             <CalendarIcon className="h-5 w-5 text-muted-foreground" />
@@ -670,18 +753,22 @@ const InputsPage: React.FC<AppProps> = ({ emailDomain, appName: _appName }) => {
                             type="date"
                             className={variants.input.withIcon()}
                             value={demoValues.date}
-                            onChange={e => handleDemoInput('date', e.target.value)}
+                            onChange={(e) =>
+                              handleDemoInput("date", e.target.value)
+                            }
                           />
                         </div>
                       </div>
 
                       <div>
-                        <label className="block text-sm font-medium mb-2">File Upload</label>
+                        <label className="block text-sm font-medium mb-2">
+                          File Upload
+                        </label>
                         <input
                           type="file"
                           className={
                             variants.input.default() +
-                            ' file:mr-4 file:py-2 file:px-4 file:rounded-md file:border-0 file:text-sm file:font-medium file:bg-primary/10 file:text-primary hover:file:bg-primary/20'
+                            " file:mr-4 file:py-2 file:px-4 file:rounded-md file:border-0 file:text-sm file:font-medium file:bg-primary/10 file:text-primary hover:file:bg-primary/20"
                           }
                         />
                       </div>
@@ -727,14 +814,18 @@ const InputsPage: React.FC<AppProps> = ({ emailDomain, appName: _appName }) => {
               toggleSection={toggleSection}
             />
 
-            {expandedSections['web3'] && (
+            {expandedSections["web3"] && (
               <div className="space-y-8">
                 {/* Wallet Address Patterns */}
                 <div>
-                  <h3 className={`${textVariants.heading.h4()} mb-4`}>Wallet Address Inputs</h3>
+                  <h3 className={`${textVariants.heading.h4()} mb-4`}>
+                    Wallet Address Inputs
+                  </h3>
                   <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
                     <div>
-                      <label className="block text-sm font-medium mb-2">Ethereum Address</label>
+                      <label className="block text-sm font-medium mb-2">
+                        Ethereum Address
+                      </label>
                       <div className="relative">
                         <div className="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
                           <div className="w-5 h-5 bg-gradient-to-r from-primary to-accent rounded-full flex items-center justify-center text-xs text-primary-foreground font-bold">
@@ -750,7 +841,9 @@ const InputsPage: React.FC<AppProps> = ({ emailDomain, appName: _appName }) => {
                     </div>
 
                     <div>
-                      <label className="block text-sm font-medium mb-2">Solana Address</label>
+                      <label className="block text-sm font-medium mb-2">
+                        Solana Address
+                      </label>
                       <div className="relative">
                         <div className="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
                           <div className="w-5 h-5 bg-gradient-to-r from-accent to-secondary rounded-full flex items-center justify-center text-xs text-secondary-foreground font-bold">
@@ -766,7 +859,9 @@ const InputsPage: React.FC<AppProps> = ({ emailDomain, appName: _appName }) => {
                     </div>
 
                     <div>
-                      <label className="block text-sm font-medium mb-2">ENS Domain</label>
+                      <label className="block text-sm font-medium mb-2">
+                        ENS Domain
+                      </label>
                       <div className="relative">
                         <div className="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
                           <UserIcon className="h-5 w-5 text-muted-foreground" />
@@ -777,13 +872,17 @@ const InputsPage: React.FC<AppProps> = ({ emailDomain, appName: _appName }) => {
                           placeholder="alice.eth"
                         />
                         <div className="absolute inset-y-0 right-0 pr-3 flex items-center">
-                          <span className={variants.badge.small('primary')}>ENS</span>
+                          <span className={variants.badge.small("primary")}>
+                            ENS
+                          </span>
                         </div>
                       </div>
                     </div>
 
                     <div>
-                      <label className="block text-sm font-medium mb-2">SNS Domain</label>
+                      <label className="block text-sm font-medium mb-2">
+                        SNS Domain
+                      </label>
                       <div className="relative">
                         <div className="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
                           <UserIcon className="h-5 w-5 text-muted-foreground" />
@@ -794,7 +893,9 @@ const InputsPage: React.FC<AppProps> = ({ emailDomain, appName: _appName }) => {
                           placeholder="alice.sol"
                         />
                         <div className="absolute inset-y-0 right-0 pr-3 flex items-center">
-                          <span className={variants.badge.small('solana')}>SNS</span>
+                          <span className={variants.badge.small("solana")}>
+                            SNS
+                          </span>
                         </div>
                       </div>
                     </div>
@@ -803,10 +904,14 @@ const InputsPage: React.FC<AppProps> = ({ emailDomain, appName: _appName }) => {
 
                 {/* Token Amount Inputs */}
                 <div>
-                  <h3 className={`${textVariants.heading.h4()} mb-4`}>Token Amount Inputs</h3>
+                  <h3 className={`${textVariants.heading.h4()} mb-4`}>
+                    Token Amount Inputs
+                  </h3>
                   <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
                     <div>
-                      <label className="block text-sm font-medium mb-2">ETH Amount</label>
+                      <label className="block text-sm font-medium mb-2">
+                        ETH Amount
+                      </label>
                       <div className="relative">
                         <input
                           type="number"
@@ -818,7 +923,9 @@ const InputsPage: React.FC<AppProps> = ({ emailDomain, appName: _appName }) => {
                           <button className="text-xs text-primary hover:text-primary/80 font-medium">
                             MAX
                           </button>
-                          <span className="text-sm text-muted-foreground">ETH</span>
+                          <span className="text-sm text-muted-foreground">
+                            ETH
+                          </span>
                         </div>
                       </div>
                       <div className="flex justify-between text-xs text-muted-foreground mt-1">
@@ -828,7 +935,9 @@ const InputsPage: React.FC<AppProps> = ({ emailDomain, appName: _appName }) => {
                     </div>
 
                     <div>
-                      <label className="block text-sm font-medium mb-2">USDC Amount</label>
+                      <label className="block text-sm font-medium mb-2">
+                        USDC Amount
+                      </label>
                       <div className="relative">
                         <input
                           type="number"
@@ -840,7 +949,9 @@ const InputsPage: React.FC<AppProps> = ({ emailDomain, appName: _appName }) => {
                           <button className="text-xs text-primary hover:text-primary/80 font-medium">
                             MAX
                           </button>
-                          <span className="text-sm text-muted-foreground">USDC</span>
+                          <span className="text-sm text-muted-foreground">
+                            USDC
+                          </span>
                         </div>
                       </div>
                       <div className="flex justify-between text-xs text-muted-foreground mt-1">
@@ -853,31 +964,45 @@ const InputsPage: React.FC<AppProps> = ({ emailDomain, appName: _appName }) => {
 
                 {/* Gas Fee Inputs */}
                 <div>
-                  <h3 className={`${textVariants.heading.h4()} mb-4`}>Gas Fee Configuration</h3>
+                  <h3 className={`${textVariants.heading.h4()} mb-4`}>
+                    Gas Fee Configuration
+                  </h3>
                   <div className="space-y-4">
                     <div>
-                      <label className="block text-sm font-medium mb-2">Gas Price (Gwei)</label>
+                      <label className="block text-sm font-medium mb-2">
+                        Gas Price (Gwei)
+                      </label>
                       <div className="grid grid-cols-3 gap-4">
                         <button className="p-3 border border-input rounded-lg text-left hover:border-primary focus:border-primary focus:outline-none focus:ring-2 focus:ring-ring">
                           <div className="text-sm font-medium">Slow</div>
                           <div className="text-lg font-semibold">20 Gwei</div>
-                          <div className="text-xs text-muted-foreground">~5 min</div>
+                          <div className="text-xs text-muted-foreground">
+                            ~5 min
+                          </div>
                         </button>
                         <button className="p-3 border-2 border-primary bg-primary/10 rounded-lg text-left">
-                          <div className="text-sm font-medium text-primary">Standard</div>
+                          <div className="text-sm font-medium text-primary">
+                            Standard
+                          </div>
                           <div className="text-lg font-semibold">35 Gwei</div>
-                          <div className="text-xs text-muted-foreground">~2 min</div>
+                          <div className="text-xs text-muted-foreground">
+                            ~2 min
+                          </div>
                         </button>
                         <button className="p-3 border border-input rounded-lg text-left hover:border-primary focus:border-primary focus:outline-none focus:ring-2 focus:ring-ring">
                           <div className="text-sm font-medium">Fast</div>
                           <div className="text-lg font-semibold">50 Gwei</div>
-                          <div className="text-xs text-muted-foreground">~1 min</div>
+                          <div className="text-xs text-muted-foreground">
+                            ~1 min
+                          </div>
                         </button>
                       </div>
                     </div>
 
                     <div>
-                      <label className="block text-sm font-medium mb-2">Custom Gas Price</label>
+                      <label className="block text-sm font-medium mb-2">
+                        Custom Gas Price
+                      </label>
                       <div className="relative">
                         <input
                           type="number"
@@ -886,7 +1011,9 @@ const InputsPage: React.FC<AppProps> = ({ emailDomain, appName: _appName }) => {
                           placeholder="35.0"
                         />
                         <div className="absolute inset-y-0 right-0 pr-3 flex items-center">
-                          <span className="text-sm text-muted-foreground">Gwei</span>
+                          <span className="text-sm text-muted-foreground">
+                            Gwei
+                          </span>
                         </div>
                       </div>
                       <p className="text-xs text-muted-foreground mt-1">
@@ -951,11 +1078,13 @@ const InputsPage: React.FC<AppProps> = ({ emailDomain, appName: _appName }) => {
               toggleSection={toggleSection}
             />
 
-            {expandedSections['accessibility'] && (
+            {expandedSections["accessibility"] && (
               <div className="space-y-6">
                 <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
                   <div>
-                    <h3 className={`${textVariants.heading.h4()} mb-4`}>✅ Best Practices</h3>
+                    <h3 className={`${textVariants.heading.h4()} mb-4`}>
+                      ✅ Best Practices
+                    </h3>
                     <ul className="space-y-3">
                       <li className="flex items-start">
                         <CheckCircleIcon className="h-5 w-5 text-success mr-2 mt-0.5 flex-shrink-0" />
@@ -997,11 +1126,15 @@ const InputsPage: React.FC<AppProps> = ({ emailDomain, appName: _appName }) => {
                   </div>
 
                   <div>
-                    <h3 className={`${textVariants.heading.h4()} mb-4`}>❌ Avoid</h3>
+                    <h3 className={`${textVariants.heading.h4()} mb-4`}>
+                      ❌ Avoid
+                    </h3>
                     <ul className="space-y-3">
                       <li className="flex items-start">
                         <ExclamationCircleIcon className="h-5 w-5 text-destructive mr-2 mt-0.5 flex-shrink-0" />
-                        <span className="text-sm">Using placeholder text as the only label</span>
+                        <span className="text-sm">
+                          Using placeholder text as the only label
+                        </span>
                       </li>
                       <li className="flex items-start">
                         <ExclamationCircleIcon className="h-5 w-5 text-destructive mr-2 mt-0.5 flex-shrink-0" />
@@ -1017,7 +1150,9 @@ const InputsPage: React.FC<AppProps> = ({ emailDomain, appName: _appName }) => {
                       </li>
                       <li className="flex items-start">
                         <ExclamationCircleIcon className="h-5 w-5 text-destructive mr-2 mt-0.5 flex-shrink-0" />
-                        <span className="text-sm">Providing vague or unhelpful error messages</span>
+                        <span className="text-sm">
+                          Providing vague or unhelpful error messages
+                        </span>
                       </li>
                       <li className="flex items-start">
                         <ExclamationCircleIcon className="h-5 w-5 text-destructive mr-2 mt-0.5 flex-shrink-0" />

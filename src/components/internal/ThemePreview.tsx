@@ -4,12 +4,14 @@
  * theme changes. Render with a key tied to the theme name to pick up structural
  * class overrides on switch.
  */
-import { variants } from '@sudobility/design';
+import { variants } from "@sudobility/design";
 
 export default function ThemePreview() {
   return (
     <section className="rounded-xl border border-border bg-card p-8 text-card-foreground">
-      <h2 className="mb-6 text-2xl font-bold text-foreground">Live Theme Preview</h2>
+      <h2 className="mb-6 text-2xl font-bold text-foreground">
+        Live Theme Preview
+      </h2>
 
       {/* Buttons */}
       <div className="mb-8">
@@ -18,7 +20,9 @@ export default function ThemePreview() {
         </h3>
         <div className="flex flex-wrap gap-3">
           <button className={variants.button.primary.default()}>Primary</button>
-          <button className={variants.button.secondary.default()}>Secondary</button>
+          <button className={variants.button.secondary.default()}>
+            Secondary
+          </button>
           <button className={variants.button.outline.default()}>Outline</button>
         </div>
       </div>
@@ -49,7 +53,10 @@ export default function ThemePreview() {
           <h3 className="mb-3 text-sm font-semibold uppercase tracking-wider text-muted-foreground">
             Input
           </h3>
-          <input className={variants.input.default()} placeholder="Themed input" />
+          <input
+            className={variants.input.default()}
+            placeholder="Themed input"
+          />
         </div>
       </div>
 
@@ -60,10 +67,16 @@ export default function ThemePreview() {
         </h3>
         <div className="flex flex-wrap gap-3">
           <div className="h-12 w-24 rounded-md bg-primary" title="primary" />
-          <div className="h-12 w-24 rounded-md bg-secondary" title="secondary" />
+          <div
+            className="h-12 w-24 rounded-md bg-secondary"
+            title="secondary"
+          />
           <div className="h-12 w-24 rounded-md bg-accent" title="accent" />
           <div className="h-12 w-24 rounded-md bg-muted" title="muted" />
-          <div className="h-12 w-24 rounded-md bg-destructive" title="destructive" />
+          <div
+            className="h-12 w-24 rounded-md bg-destructive"
+            title="destructive"
+          />
         </div>
       </div>
     </section>

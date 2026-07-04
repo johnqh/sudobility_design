@@ -1,6 +1,6 @@
-import { type SEOHeadConfig } from '@sudobility/seo_lib';
-import { CONSTANTS } from './constants';
-import { supportedLanguages } from '../i18n';
+import { type SEOHeadConfig } from "@sudobility/seo_lib";
+import { CONSTANTS } from "./constants";
+import { supportedLanguages } from "../i18n";
 
 export const seoHeadConfig: SEOHeadConfig = {
   appName: CONSTANTS.APP_NAME,
@@ -8,6 +8,6 @@ export const seoHeadConfig: SEOHeadConfig = {
   defaultOgImage: `https://${CONSTANTS.APP_DOMAIN}/logo.png`,
   twitterHandle: undefined,
   supportedLanguages: supportedLanguages as unknown as string[],
-  defaultLanguage: 'en',
-  applicationCategory: 'BusinessApplication',
+  defaultLanguage: "en",
+  applicationCategory: "BusinessApplication",
 };

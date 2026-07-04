@@ -1,7 +1,9 @@
 // Stub for @sudobility/subscription-components - not used by this app
-import React from 'react';
+import React from "react";
 
-export const SubscriptionProvider: React.FC<{ children: React.ReactNode }> = ({ children }) => {
+export const SubscriptionProvider: React.FC<{ children: React.ReactNode }> = ({
+  children,
+}) => {
   return React.createElement(React.Fragment, null, children);
 };
 

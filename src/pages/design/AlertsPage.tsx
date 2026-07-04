@@ -1,5 +1,5 @@
-import React, { useState } from 'react';
-import LocalizedLink from '../../components/LocalizedLink';
+import React, { useState } from "react";
+import LocalizedLink from "../../components/LocalizedLink";
 import {
   ArrowLeftIcon,
   CheckCircleIcon,
@@ -14,10 +14,10 @@ import {
   SignalSlashIcon,
   CurrencyDollarIcon,
   UserPlusIcon,
-} from '@heroicons/react/24/outline';
-import { CheckCircleIcon as CheckCircleSolid } from '@heroicons/react/24/solid';
-import { SEOHead } from '@sudobility/seo_lib';
-import { ui, textVariants, variants } from '@sudobility/design';
+} from "@heroicons/react/24/outline";
+import { CheckCircleIcon as CheckCircleSolid } from "@heroicons/react/24/solid";
+import { SEOHead } from "@sudobility/seo_lib";
+import { ui, textVariants, variants } from "@sudobility/design";
 
 interface AppProps {
   emailDomain: string;
@@ -31,7 +31,7 @@ const CodeBlock: React.FC<{
   copyKey: string;
   copiedStates: { [key: string]: boolean };
   copyToClipboard: (text: string, key: string) => void;
-}> = ({ code, _language = 'tsx', copyKey, copiedStates, copyToClipboard }) => (
+}> = ({ code, _language = "tsx", copyKey, copiedStates, copyToClipboard }) => (
   <div className="relative">
     <pre className="bg-muted text-foreground p-4 rounded-lg overflow-x-auto text-sm">
       <code>{code}</code>
@@ -40,7 +40,7 @@ const CodeBlock: React.FC<{
       onClick={() => copyToClipboard(code, copyKey)}
       className="absolute top-3 right-3 bg-muted hover:bg-muted/80 text-muted-foreground px-3 py-1 rounded text-xs transition-colors"
     >
-      {copiedStates[copyKey] ? '✓ Copied!' : 'Copy'}
+      {copiedStates[copyKey] ? "✓ Copied!" : "Copy"}
     </button>
   </div>
 );
@@ -65,17 +65,21 @@ const SectionHeader: React.FC<{
       )}
     </button>
     {expandedSections[id] && (
-      <p className={`${textVariants.body.lg()} text-muted-foreground mb-6`}>{description}</p>
+      <p className={`${textVariants.body.lg()} text-muted-foreground mb-6`}>
+        {description}
+      </p>
     )}
   </div>
 );
 
 const AlertsPage: React.FC<AppProps> = ({ emailDomain, appName: _appName }) => {
-  const [copiedStates, setCopiedStates] = useState<{ [key: string]: boolean }>({});
+  const [copiedStates, setCopiedStates] = useState<{ [key: string]: boolean }>(
+    {},
+  );
   const [expandedSections, setExpandedSections] = useState<{
     [key: string]: boolean;
   }>({
-    'quick-start': true,
+    "quick-start": true,
     variants: true,
     layouts: true,
     actions: true,
@@ -89,19 +93,19 @@ const AlertsPage: React.FC<AppProps> = ({ emailDomain, appName: _appName }) => {
 
   const copyToClipboard = (text: string, key: string) => {
     navigator.clipboard.writeText(text).then(() => {
-      setCopiedStates(prev => ({ ...prev, [key]: true }));
+      setCopiedStates((prev) => ({ ...prev, [key]: true }));
       setTimeout(() => {
-        setCopiedStates(prev => ({ ...prev, [key]: false }));
+        setCopiedStates((prev) => ({ ...prev, [key]: false }));
       }, 2000);
     });
   };
 
   const toggleSection = (section: string) => {
-    setExpandedSections(prev => ({ ...prev, [section]: !prev[section] }));
+    setExpandedSections((prev) => ({ ...prev, [section]: !prev[section] }));
   };
 
   const dismissAlert = (alertId: string) => {
-    setDismissedAlerts(prev => ({ ...prev, [alertId]: true }));
+    setDismissedAlerts((prev) => ({ ...prev, [alertId]: true }));
   };
 
   return (
@@ -121,30 +125,57 @@ const AlertsPage: React.FC<AppProps> = ({ emailDomain, appName: _appName }) => {
               <span className="text-destructive font-semibold">Alerts</span>
             </div>
 
-            <h1 className={`${textVariants.heading.display.xl()} mb-6`}>Alert Components</h1>
+            <h1 className={`${textVariants.heading.display.xl()} mb-6`}>
+              Alert Components
+            </h1>
 
-            <p className={`${textVariants.body.lg()} max-w-3xl mx-auto text-muted-foreground mb-8`}>
-              Contextual feedback messages that provide important information, warnings, or
-              confirmations to users with clear visual hierarchy and actionable content.
+            <p
+              className={`${textVariants.body.lg()} max-w-3xl mx-auto text-muted-foreground mb-8`}
+            >
+              Contextual feedback messages that provide important information,
+              warnings, or confirmations to users with clear visual hierarchy
+              and actionable content.
             </p>
 
             {/* Alert Stats */}
             <div className="grid grid-cols-2 md:grid-cols-4 gap-4 max-w-2xl mx-auto">
               <div className={`${ui.background.subtle} rounded-lg p-4`}>
-                <div className={`${textVariants.heading.h4()} text-destructive mb-1`}>4</div>
-                <div className={textVariants.caption.default()}>Alert Types</div>
+                <div
+                  className={`${textVariants.heading.h4()} text-destructive mb-1`}
+                >
+                  4
+                </div>
+                <div className={textVariants.caption.default()}>
+                  Alert Types
+                </div>
               </div>
               <div className={`${ui.background.subtle} rounded-lg p-4`}>
-                <div className={`${textVariants.heading.h4()} text-success mb-1`}>3</div>
-                <div className={textVariants.caption.default()}>Layout Options</div>
+                <div
+                  className={`${textVariants.heading.h4()} text-success mb-1`}
+                >
+                  3
+                </div>
+                <div className={textVariants.caption.default()}>
+                  Layout Options
+                </div>
               </div>
               <div className={`${ui.background.subtle} rounded-lg p-4`}>
-                <div className={`${textVariants.heading.h4()} text-info mb-1`}>5</div>
-                <div className={textVariants.caption.default()}>Action Patterns</div>
+                <div className={`${textVariants.heading.h4()} text-info mb-1`}>
+                  5
+                </div>
+                <div className={textVariants.caption.default()}>
+                  Action Patterns
+                </div>
               </div>
               <div className={`${ui.background.subtle} rounded-lg p-4`}>
-                <div className={`${textVariants.heading.h4()} text-accent mb-1`}>6</div>
-                <div className={textVariants.caption.default()}>Web3 Examples</div>
+                <div
+                  className={`${textVariants.heading.h4()} text-accent mb-1`}
+                >
+                  6
+                </div>
+                <div className={textVariants.caption.default()}>
+                  Web3 Examples
+                </div>
               </div>
             </div>
           </div>
@@ -159,11 +190,13 @@ const AlertsPage: React.FC<AppProps> = ({ emailDomain, appName: _appName }) => {
               description="Get started with the most commonly used alert patterns. These examples show the essential alert types and their typical use cases."
             />
 
-            {expandedSections['quick-start'] && (
+            {expandedSections["quick-start"] && (
               <div className="space-y-8">
                 {/* Basic Alert Types */}
                 <div>
-                  <h3 className={`${textVariants.heading.h3()} mb-4`}>1. Essential Alert Types</h3>
+                  <h3 className={`${textVariants.heading.h3()} mb-4`}>
+                    1. Essential Alert Types
+                  </h3>
                   <div className="space-y-4 mb-4">
                     <div className={(variants.alert as any).success()}>
                       <CheckCircleIcon className="h-5 w-5" />
@@ -179,7 +212,8 @@ const AlertsPage: React.FC<AppProps> = ({ emailDomain, appName: _appName }) => {
                       <div>
                         <div className="font-medium">Information</div>
                         <div className="text-sm">
-                          Please connect your wallet to continue with this action.
+                          Please connect your wallet to continue with this
+                          action.
                         </div>
                       </div>
                     </div>
@@ -188,7 +222,8 @@ const AlertsPage: React.FC<AppProps> = ({ emailDomain, appName: _appName }) => {
                       <div>
                         <div className="font-medium">Warning</div>
                         <div className="text-sm">
-                          High gas fees detected. Consider waiting for lower network congestion.
+                          High gas fees detected. Consider waiting for lower
+                          network congestion.
                         </div>
                       </div>
                     </div>
@@ -197,7 +232,8 @@ const AlertsPage: React.FC<AppProps> = ({ emailDomain, appName: _appName }) => {
                       <div>
                         <div className="font-medium">Error</div>
                         <div className="text-sm">
-                          Transaction failed. Please check your wallet balance and try again.
+                          Transaction failed. Please check your wallet balance
+                          and try again.
                         </div>
                       </div>
                     </div>
@@ -246,7 +282,9 @@ import { CheckCircleIcon, InformationCircleIcon, ExclamationTriangleIcon, XCircl
 
                 {/* Compact Alerts */}
                 <div>
-                  <h3 className={`${textVariants.heading.h3()} mb-4`}>2. Compact Alert Style</h3>
+                  <h3 className={`${textVariants.heading.h3()} mb-4`}>
+                    2. Compact Alert Style
+                  </h3>
                   <div className="space-y-3 mb-4">
                     <div className={(variants.alert as any).compact.success()}>
                       ✓ Email sent successfully
@@ -285,34 +323,40 @@ import { CheckCircleIcon, InformationCircleIcon, ExclamationTriangleIcon, XCircl
 
                 {/* Dismissible Alerts */}
                 <div>
-                  <h3 className={`${textVariants.heading.h3()} mb-4`}>3. Dismissible Alerts</h3>
+                  <h3 className={`${textVariants.heading.h3()} mb-4`}>
+                    3. Dismissible Alerts
+                  </h3>
                   <div className="space-y-4 mb-4">
-                    {!dismissedAlerts['demo-success'] && (
+                    {!dismissedAlerts["demo-success"] && (
                       <div className={(variants.alert as any).success()}>
                         <CheckCircleIcon className="h-5 w-5" />
                         <div className="flex-1">
                           <div className="font-medium">Account verified!</div>
-                          <div className="text-sm">You can now access all premium features.</div>
+                          <div className="text-sm">
+                            You can now access all premium features.
+                          </div>
                         </div>
                         <button
-                          onClick={() => dismissAlert('demo-success')}
+                          onClick={() => dismissAlert("demo-success")}
                           className="ml-auto -mx-1.5 -my-1.5 rounded-md p-1.5 hover:bg-success/20 focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2"
                         >
                           <XMarkIcon className="h-4 w-4" />
                         </button>
                       </div>
                     )}
-                    {!dismissedAlerts['demo-info'] && (
+                    {!dismissedAlerts["demo-info"] && (
                       <div className={(variants.alert as any).info()}>
                         <InformationCircleIcon className="h-5 w-5" />
                         <div className="flex-1">
-                          <div className="font-medium">New update available</div>
+                          <div className="font-medium">
+                            New update available
+                          </div>
                           <div className="text-sm">
                             Version 2.0 includes improved security features.
                           </div>
                         </div>
                         <button
-                          onClick={() => dismissAlert('demo-info')}
+                          onClick={() => dismissAlert("demo-info")}
                           className="ml-auto -mx-1.5 -my-1.5 rounded-md p-1.5 hover:bg-info/20 focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2"
                         >
                           <XMarkIcon className="h-4 w-4" />
@@ -358,7 +402,9 @@ const [dismissed, setDismissed] = useState(false);
                     <div className={(variants.alert as any).warning()}>
                       <ExclamationTriangleIcon className="h-5 w-5" />
                       <div className="flex-1">
-                        <div className="font-medium">Subscription expires soon</div>
+                        <div className="font-medium">
+                          Subscription expires soon
+                        </div>
                         <div className="text-sm">
                           Your premium features will be disabled in 3 days.
                         </div>
@@ -412,12 +458,14 @@ import { ExclamationTriangleIcon } from '@heroicons/react/24/outline';
               description="Explore all available alert variants with their semantic meanings and appropriate contexts for different types of user communication."
             />
 
-            {expandedSections['variants'] && (
+            {expandedSections["variants"] && (
               <div className="space-y-8">
                 <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
                   {/* Standard Alerts */}
                   <div>
-                    <h3 className={`${textVariants.heading.h4()} mb-4`}>Standard Alerts</h3>
+                    <h3 className={`${textVariants.heading.h4()} mb-4`}>
+                      Standard Alerts
+                    </h3>
                     <div className="space-y-4">
                       <div>
                         <div className={(variants.alert as any).success()}>
@@ -425,7 +473,8 @@ import { ExclamationTriangleIcon } from '@heroicons/react/24/outline';
                           <div>
                             <div className="font-medium">Success Alert</div>
                             <div className="text-sm">
-                              Use for completed actions and positive confirmations
+                              Use for completed actions and positive
+                              confirmations
                             </div>
                           </div>
                         </div>
@@ -468,31 +517,47 @@ import { ExclamationTriangleIcon } from '@heroicons/react/24/outline';
 
                   {/* Compact Alerts */}
                   <div>
-                    <h3 className={`${textVariants.heading.h4()} mb-4`}>Compact Variants</h3>
+                    <h3 className={`${textVariants.heading.h4()} mb-4`}>
+                      Compact Variants
+                    </h3>
                     <div className="space-y-4">
                       <div>
-                        <div className={(variants.alert as any).compact.success()}>
+                        <div
+                          className={(variants.alert as any).compact.success()}
+                        >
                           Compact success message
                         </div>
-                        <p className="text-sm text-muted-foreground mt-1">Minimal space usage</p>
+                        <p className="text-sm text-muted-foreground mt-1">
+                          Minimal space usage
+                        </p>
                       </div>
                       <div>
                         <div className={(variants.alert as any).compact.info()}>
                           Compact information message
                         </div>
-                        <p className="text-sm text-muted-foreground mt-1">Quick notifications</p>
+                        <p className="text-sm text-muted-foreground mt-1">
+                          Quick notifications
+                        </p>
                       </div>
                       <div>
-                        <div className={(variants.alert as any).compact.warning()}>
+                        <div
+                          className={(variants.alert as any).compact.warning()}
+                        >
                           Compact warning message
                         </div>
-                        <p className="text-sm text-muted-foreground mt-1">Brief cautionary notes</p>
+                        <p className="text-sm text-muted-foreground mt-1">
+                          Brief cautionary notes
+                        </p>
                       </div>
                       <div>
-                        <div className={(variants.alert as any).compact.error()}>
+                        <div
+                          className={(variants.alert as any).compact.error()}
+                        >
                           Compact error message
                         </div>
-                        <p className="text-sm text-muted-foreground mt-1">Short error notices</p>
+                        <p className="text-sm text-muted-foreground mt-1">
+                          Short error notices
+                        </p>
                       </div>
                     </div>
                   </div>
@@ -531,21 +596,25 @@ import { ExclamationTriangleIcon } from '@heroicons/react/24/outline';
               description="Real-world examples of alerts commonly used in Web3 applications including wallet connections, transactions, and blockchain interactions."
             />
 
-            {expandedSections['web3'] && (
+            {expandedSections["web3"] && (
               <div className="space-y-8">
                 {/* Transaction Alerts */}
                 <div>
-                  <h3 className={`${textVariants.heading.h4()} mb-4`}>Transaction Status Alerts</h3>
+                  <h3 className={`${textVariants.heading.h4()} mb-4`}>
+                    Transaction Status Alerts
+                  </h3>
                   <div className="space-y-4 mb-4">
                     <div className={(variants.alert as any).info()}>
                       <div className="animate-spin rounded-full h-5 w-5 border-b-2 border-info"></div>
                       <div>
                         <div className="font-medium">Transaction Pending</div>
                         <div className="text-sm">
-                          Your transaction is being processed on the blockchain. This may take a few
-                          minutes.
+                          Your transaction is being processed on the blockchain.
+                          This may take a few minutes.
                         </div>
-                        <div className="text-xs text-info mt-1">Hash: 0x1234...abcd</div>
+                        <div className="text-xs text-info mt-1">
+                          Hash: 0x1234...abcd
+                        </div>
                       </div>
                     </div>
 
@@ -554,7 +623,8 @@ import { ExclamationTriangleIcon } from '@heroicons/react/24/outline';
                       <div>
                         <div className="font-medium">Transaction Confirmed</div>
                         <div className="text-sm">
-                          Your email has been sent and recorded on the blockchain.
+                          Your email has been sent and recorded on the
+                          blockchain.
                         </div>
                         <div className="text-xs text-success mt-1">
                           Gas used: 21,000 • Block: #18,234,567
@@ -567,7 +637,8 @@ import { ExclamationTriangleIcon } from '@heroicons/react/24/outline';
                       <div>
                         <div className="font-medium">Transaction Failed</div>
                         <div className="text-sm">
-                          Insufficient funds or gas limit too low. Please try again.
+                          Insufficient funds or gas limit too low. Please try
+                          again.
                         </div>
                         <div className="text-xs text-destructive mt-1">
                           Error: Execution reverted
@@ -579,14 +650,17 @@ import { ExclamationTriangleIcon } from '@heroicons/react/24/outline';
 
                 {/* Wallet Alerts */}
                 <div>
-                  <h3 className={`${textVariants.heading.h4()} mb-4`}>Wallet Connection Alerts</h3>
+                  <h3 className={`${textVariants.heading.h4()} mb-4`}>
+                    Wallet Connection Alerts
+                  </h3>
                   <div className="space-y-4 mb-4">
                     <div className={(variants.alert as any).warning()}>
                       <WifiIcon className="h-5 w-5" />
                       <div>
                         <div className="font-medium">Wallet Not Connected</div>
                         <div className="text-sm">
-                          Please connect your wallet to access your emails and send messages.
+                          Please connect your wallet to access your emails and
+                          send messages.
                         </div>
                         <div className="mt-2">
                           <button className="bg-warning/20 text-warning px-3 py-1 rounded text-sm font-medium hover:bg-warning/30">
@@ -601,7 +675,8 @@ import { ExclamationTriangleIcon } from '@heroicons/react/24/outline';
                       <div>
                         <div className="font-medium">Network Mismatch</div>
                         <div className="text-sm">
-                          Please switch to Ethereum Mainnet to continue using the platform.
+                          Please switch to Ethereum Mainnet to continue using
+                          the platform.
                         </div>
                         <div className="mt-2">
                           <button className="bg-destructive/20 text-destructive px-3 py-1 rounded text-sm font-medium hover:bg-destructive/30">
@@ -615,15 +690,19 @@ import { ExclamationTriangleIcon } from '@heroicons/react/24/outline';
 
                 {/* Gas Fee Alerts */}
                 <div>
-                  <h3 className={`${textVariants.heading.h4()} mb-4`}>Gas Fee & Network Alerts</h3>
+                  <h3 className={`${textVariants.heading.h4()} mb-4`}>
+                    Gas Fee & Network Alerts
+                  </h3>
                   <div className="space-y-4 mb-4">
                     <div className={(variants.alert as any).warning()}>
                       <CurrencyDollarIcon className="h-5 w-5" />
                       <div>
-                        <div className="font-medium">High Gas Fees Detected</div>
+                        <div className="font-medium">
+                          High Gas Fees Detected
+                        </div>
                         <div className="text-sm">
-                          Current gas price is unusually high. Consider waiting for lower network
-                          congestion.
+                          Current gas price is unusually high. Consider waiting
+                          for lower network congestion.
                         </div>
                         <div className="text-xs text-warning mt-1">
                           Estimated cost: ~$45 USD • Gas price: 120 gwei
@@ -634,9 +713,12 @@ import { ExclamationTriangleIcon } from '@heroicons/react/24/outline';
                     <div className={(variants.alert as any).info()}>
                       <UserPlusIcon className="h-5 w-5" />
                       <div>
-                        <div className="font-medium">New ENS Domain Detected</div>
+                        <div className="font-medium">
+                          New ENS Domain Detected
+                        </div>
                         <div className="text-sm">
-                          Your wallet now owns alice.eth. You can receive emails at this address!
+                          Your wallet now owns alice.eth. You can receive emails
+                          at this address!
                         </div>
                         <div className="mt-2">
                           <button className="bg-info/20 text-info px-3 py-1 rounded text-sm font-medium hover:bg-info/30">
@@ -700,16 +782,19 @@ import { ExclamationTriangleIcon } from '@heroicons/react/24/outline';
               description="Ensure your alerts are accessible to all users with proper ARIA attributes, focus management, and screen reader compatibility."
             />
 
-            {expandedSections['accessibility'] && (
+            {expandedSections["accessibility"] && (
               <div className="space-y-6">
                 <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
                   <div>
-                    <h3 className={`${textVariants.heading.h4()} mb-4`}>✅ Best Practices</h3>
+                    <h3 className={`${textVariants.heading.h4()} mb-4`}>
+                      ✅ Best Practices
+                    </h3>
                     <ul className="space-y-3">
                       <li className="flex items-start">
                         <CheckCircleIcon className="h-5 w-5 text-success mr-2 mt-0.5 flex-shrink-0" />
                         <span className="text-sm">
-                          Use appropriate ARIA roles (alert, alertdialog, status)
+                          Use appropriate ARIA roles (alert, alertdialog,
+                          status)
                         </span>
                       </li>
                       <li className="flex items-start">
@@ -732,29 +817,41 @@ import { ExclamationTriangleIcon } from '@heroicons/react/24/outline';
                       </li>
                       <li className="flex items-start">
                         <CheckCircleIcon className="h-5 w-5 text-success mr-2 mt-0.5 flex-shrink-0" />
-                        <span className="text-sm">Time dismissible alerts appropriately</span>
+                        <span className="text-sm">
+                          Time dismissible alerts appropriately
+                        </span>
                       </li>
                     </ul>
                   </div>
 
                   <div>
-                    <h3 className={`${textVariants.heading.h4()} mb-4`}>❌ Avoid</h3>
+                    <h3 className={`${textVariants.heading.h4()} mb-4`}>
+                      ❌ Avoid
+                    </h3>
                     <ul className="space-y-3">
                       <li className="flex items-start">
                         <XCircleIcon className="h-5 w-5 text-destructive mr-2 mt-0.5 flex-shrink-0" />
-                        <span className="text-sm">Auto-dismissing critical error messages</span>
+                        <span className="text-sm">
+                          Auto-dismissing critical error messages
+                        </span>
                       </li>
                       <li className="flex items-start">
                         <XCircleIcon className="h-5 w-5 text-destructive mr-2 mt-0.5 flex-shrink-0" />
-                        <span className="text-sm">Using only colors to convey importance</span>
+                        <span className="text-sm">
+                          Using only colors to convey importance
+                        </span>
                       </li>
                       <li className="flex items-start">
                         <XCircleIcon className="h-5 w-5 text-destructive mr-2 mt-0.5 flex-shrink-0" />
-                        <span className="text-sm">Overwhelming users with too many alerts</span>
+                        <span className="text-sm">
+                          Overwhelming users with too many alerts
+                        </span>
                       </li>
                       <li className="flex items-start">
                         <XCircleIcon className="h-5 w-5 text-destructive mr-2 mt-0.5 flex-shrink-0" />
-                        <span className="text-sm">Making alert text too small to read</span>
+                        <span className="text-sm">
+                          Making alert text too small to read
+                        </span>
                       </li>
                       <li className="flex items-start">
                         <XCircleIcon className="h-5 w-5 text-destructive mr-2 mt-0.5 flex-shrink-0" />

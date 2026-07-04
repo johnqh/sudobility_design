@@ -1,4 +1,4 @@
-import { textVariants, ui, variants } from '@sudobility/design';
+import { textVariants, ui, variants } from "@sudobility/design";
 import {
   ArrowPathIcon,
   BoltIcon,
@@ -8,18 +8,23 @@ import {
   GlobeAltIcon,
   RocketLaunchIcon,
   SparklesIcon,
-} from '@heroicons/react/24/outline';
-import React, { useEffect, useState } from 'react';
-import { SEOHead } from '@sudobility/seo_lib';
-import { Button, Card, CardContent } from '@sudobility/components';
+} from "@heroicons/react/24/outline";
+import React, { useEffect, useState } from "react";
+import { SEOHead } from "@sudobility/seo_lib";
+import { Button, Card, CardContent } from "@sudobility/components";
 
 interface AppProps {
   emailDomain: string;
   appName: string;
 }
 
-const PerformancePage: React.FC<AppProps> = ({ emailDomain, appName: _appName }) => {
-  const [connectionSpeed, setConnectionSpeed] = useState<'fast' | 'slow' | 'offline'>('fast');
+const PerformancePage: React.FC<AppProps> = ({
+  emailDomain,
+  appName: _appName,
+}) => {
+  const [connectionSpeed, setConnectionSpeed] = useState<
+    "fast" | "slow" | "offline"
+  >("fast");
   const [webVitalsScore, setWebVitalsScore] = useState({
     lcp: 0,
     fid: 0,
@@ -43,26 +48,26 @@ const PerformancePage: React.FC<AppProps> = ({ emailDomain, appName: _appName })
 
   const getVitalsRating = (metric: string, value: number) => {
     switch (metric) {
-      case 'lcp':
-        if (value <= 2500) return 'good';
-        if (value <= 4000) return 'needsImprovement';
-        return 'poor';
-      case 'fid':
-        if (value <= 100) return 'good';
-        if (value <= 300) return 'needsImprovement';
-        return 'poor';
-      case 'cls':
-        if (value <= 0.1) return 'good';
-        if (value <= 0.25) return 'needsImprovement';
-        return 'poor';
+      case "lcp":
+        if (value <= 2500) return "good";
+        if (value <= 4000) return "needsImprovement";
+        return "poor";
+      case "fid":
+        if (value <= 100) return "good";
+        if (value <= 300) return "needsImprovement";
+        return "poor";
+      case "cls":
+        if (value <= 0.1) return "good";
+        if (value <= 0.25) return "needsImprovement";
+        return "poor";
       default:
-        return 'good';
+        return "good";
     }
   };
 
   const simulateSlowConnection = () => {
-    setConnectionSpeed('slow');
-    setTimeout(() => setConnectionSpeed('fast'), 5000);
+    setConnectionSpeed("slow");
+    setTimeout(() => setConnectionSpeed("fast"), 5000);
   };
 
   return (
@@ -81,35 +86,61 @@ const PerformancePage: React.FC<AppProps> = ({ emailDomain, appName: _appName })
           <div className="text-center mb-12">
             <div className="inline-flex items-center bg-success/10 px-4 py-2 rounded-full mb-6">
               <RocketLaunchIcon className="h-5 w-5 text-success mr-2" />
-              <span className="text-success font-semibold">Performance & Optimization</span>
+              <span className="text-success font-semibold">
+                Performance & Optimization
+              </span>
             </div>
 
             <h1 className={`${textVariants.heading.display.xl()} mb-6`}>
               Performance Optimization System
             </h1>
 
-            <p className={`${textVariants.body.lg()} max-w-3xl mx-auto text-muted-foreground mb-8`}>
-              Comprehensive performance patterns for fast-loading, efficient Web3 applications.
-              Optimize bundle size, rendering performance, Core Web Vitals, and blockchain
-              interactions.
+            <p
+              className={`${textVariants.body.lg()} max-w-3xl mx-auto text-muted-foreground mb-8`}
+            >
+              Comprehensive performance patterns for fast-loading, efficient
+              Web3 applications. Optimize bundle size, rendering performance,
+              Core Web Vitals, and blockchain interactions.
             </p>
 
             {/* Performance Metrics */}
             <div className="grid grid-cols-2 md:grid-cols-4 gap-4 max-w-3xl mx-auto">
               <div className={`${ui.background.subtle} rounded-lg p-4`}>
-                <div className={`${textVariants.heading.h4()} text-success mb-1`}>Bundle Split</div>
-                <div className={textVariants.caption.default()}>Code Chunks</div>
+                <div
+                  className={`${textVariants.heading.h4()} text-success mb-1`}
+                >
+                  Bundle Split
+                </div>
+                <div className={textVariants.caption.default()}>
+                  Code Chunks
+                </div>
               </div>
               <div className={`${ui.background.subtle} rounded-lg p-4`}>
-                <div className={`${textVariants.heading.h4()} text-primary mb-1`}>GPU Layers</div>
-                <div className={textVariants.caption.default()}>Hardware Acceleration</div>
+                <div
+                  className={`${textVariants.heading.h4()} text-primary mb-1`}
+                >
+                  GPU Layers
+                </div>
+                <div className={textVariants.caption.default()}>
+                  Hardware Acceleration
+                </div>
               </div>
               <div className={`${ui.background.subtle} rounded-lg p-4`}>
-                <div className={`${textVariants.heading.h4()} text-accent mb-1`}>Web3 Batch</div>
-                <div className={textVariants.caption.default()}>Transaction Batching</div>
+                <div
+                  className={`${textVariants.heading.h4()} text-accent mb-1`}
+                >
+                  Web3 Batch
+                </div>
+                <div className={textVariants.caption.default()}>
+                  Transaction Batching
+                </div>
               </div>
               <div className={`${ui.background.subtle} rounded-lg p-4`}>
-                <div className={`${textVariants.heading.h4()} text-secondary mb-1`}>&lt; 2.5s</div>
+                <div
+                  className={`${textVariants.heading.h4()} text-secondary mb-1`}
+                >
+                  &lt; 2.5s
+                </div>
                 <div className={textVariants.caption.default()}>LCP Target</div>
               </div>
             </div>
@@ -120,27 +151,33 @@ const PerformancePage: React.FC<AppProps> = ({ emailDomain, appName: _appName })
             <Card>
               <CardContent className="pt-6">
                 <div className="flex items-center mb-4">
-                  <ChartBarIcon className={`${variants.icon.size.lg()} text-primary mr-3`} />
+                  <ChartBarIcon
+                    className={`${variants.icon.size.lg()} text-primary mr-3`}
+                  />
                   <h2 className={textVariants.heading.h3()}>Core Web Vitals</h2>
                 </div>
 
-                <p className={`${textVariants.body.md()} text-muted-foreground mb-6`}>
-                  Real-time monitoring of Core Web Vitals metrics with performance optimization
-                  utilities.
+                <p
+                  className={`${textVariants.body.md()} text-muted-foreground mb-6`}
+                >
+                  Real-time monitoring of Core Web Vitals metrics with
+                  performance optimization utilities.
                 </p>
 
                 <div className="space-y-4">
                   {/* LCP */}
                   <div className="flex items-center justify-between p-3 rounded-lg border">
                     <div>
-                      <h4 className={`${textVariants.heading.h5()}`}>Largest Contentful Paint</h4>
+                      <h4 className={`${textVariants.heading.h5()}`}>
+                        Largest Contentful Paint
+                      </h4>
                       <p className="text-sm text-muted-foreground">
                         Time to render largest element
                       </p>
                     </div>
                     <div
                       className={`px-3 py-1 rounded ${variants.performance.monitoring.metrics[
-                        getVitalsRating('lcp', webVitalsScore.lcp)
+                        getVitalsRating("lcp", webVitalsScore.lcp)
                       ]()}`}
                     >
                       {Math.round(webVitalsScore.lcp)}ms
@@ -150,12 +187,16 @@ const PerformancePage: React.FC<AppProps> = ({ emailDomain, appName: _appName })
                   {/* FID */}
                   <div className="flex items-center justify-between p-3 rounded-lg border">
                     <div>
-                      <h4 className={`${textVariants.heading.h5()}`}>First Input Delay</h4>
-                      <p className="text-sm text-muted-foreground">Time to interactive response</p>
+                      <h4 className={`${textVariants.heading.h5()}`}>
+                        First Input Delay
+                      </h4>
+                      <p className="text-sm text-muted-foreground">
+                        Time to interactive response
+                      </p>
                     </div>
                     <div
                       className={`px-3 py-1 rounded ${variants.performance.monitoring.metrics[
-                        getVitalsRating('fid', webVitalsScore.fid)
+                        getVitalsRating("fid", webVitalsScore.fid)
                       ]()}`}
                     >
                       {Math.round(webVitalsScore.fid)}ms
@@ -165,12 +206,16 @@ const PerformancePage: React.FC<AppProps> = ({ emailDomain, appName: _appName })
                   {/* CLS */}
                   <div className="flex items-center justify-between p-3 rounded-lg border">
                     <div>
-                      <h4 className={`${textVariants.heading.h5()}`}>Cumulative Layout Shift</h4>
-                      <p className="text-sm text-muted-foreground">Visual stability score</p>
+                      <h4 className={`${textVariants.heading.h5()}`}>
+                        Cumulative Layout Shift
+                      </h4>
+                      <p className="text-sm text-muted-foreground">
+                        Visual stability score
+                      </p>
                     </div>
                     <div
                       className={`px-3 py-1 rounded ${variants.performance.monitoring.metrics[
-                        getVitalsRating('cls', webVitalsScore.cls)
+                        getVitalsRating("cls", webVitalsScore.cls)
                       ]()}`}
                     >
                       {webVitalsScore.cls.toFixed(3)}
@@ -192,17 +237,26 @@ variants.performance.webVitals.layoutStability.stable()`}
             <Card>
               <CardContent className="pt-6">
                 <div className="flex items-center mb-4">
-                  <BoltIcon className={`${variants.icon.size.lg()} text-warning mr-3`} />
-                  <h2 className={textVariants.heading.h3()}>Bundle Optimization</h2>
+                  <BoltIcon
+                    className={`${variants.icon.size.lg()} text-warning mr-3`}
+                  />
+                  <h2 className={textVariants.heading.h3()}>
+                    Bundle Optimization
+                  </h2>
                 </div>
 
-                <p className={`${textVariants.body.md()} text-muted-foreground mb-6`}>
-                  Code splitting and lazy loading patterns to reduce initial bundle size.
+                <p
+                  className={`${textVariants.body.md()} text-muted-foreground mb-6`}
+                >
+                  Code splitting and lazy loading patterns to reduce initial
+                  bundle size.
                 </p>
 
                 <div className="space-y-4">
                   <div>
-                    <h4 className={`${textVariants.heading.h5()} mb-3`}>Lazy Loading States</h4>
+                    <h4 className={`${textVariants.heading.h5()} mb-3`}>
+                      Lazy Loading States
+                    </h4>
                     <div className="space-y-2">
                       <div
                         className={`p-3 rounded ${variants.performance.bundle.lazy.component()}`}
@@ -218,7 +272,9 @@ variants.performance.webVitals.layoutStability.stable()`}
                   </div>
 
                   <div>
-                    <h4 className={`${textVariants.heading.h5()} mb-3`}>Code Splitting Example</h4>
+                    <h4 className={`${textVariants.heading.h5()} mb-3`}>
+                      Code Splitting Example
+                    </h4>
                     <div
                       className={`p-3 rounded border ${variants.performance.bundle.splitting.fallback()}`}
                     >
@@ -232,13 +288,16 @@ variants.performance.webVitals.layoutStability.stable()`}
                   </div>
 
                   <div>
-                    <h4 className={`${textVariants.heading.h5()} mb-3`}>Bundle Analysis</h4>
+                    <h4 className={`${textVariants.heading.h5()} mb-3`}>
+                      Bundle Analysis
+                    </h4>
                     <div className="grid grid-cols-2 gap-2 text-sm">
                       <div className="p-2 bg-success/10 rounded">
                         <span className="font-medium">Main Bundle:</span> 245KB
                       </div>
                       <div className="p-2 bg-primary/10 rounded">
-                        <span className="font-medium">Design System:</span> 128KB
+                        <span className="font-medium">Design System:</span>{" "}
+                        128KB
                       </div>
                       <div className="p-2 bg-accent/10 rounded">
                         <span className="font-medium">Web3 Utils:</span> 89KB
@@ -257,17 +316,26 @@ variants.performance.webVitals.layoutStability.stable()`}
           <Card className="mb-8">
             <CardContent className="pt-6">
               <div className="flex items-center mb-4">
-                <GlobeAltIcon className={`${variants.icon.size.lg()} text-accent mr-3`} />
-                <h2 className={textVariants.heading.h3()}>Network Optimization</h2>
+                <GlobeAltIcon
+                  className={`${variants.icon.size.lg()} text-accent mr-3`}
+                />
+                <h2 className={textVariants.heading.h3()}>
+                  Network Optimization
+                </h2>
               </div>
 
-              <p className={`${textVariants.body.md()} text-muted-foreground mb-6`}>
-                Adaptive loading strategies based on connection quality and caching patterns.
+              <p
+                className={`${textVariants.body.md()} text-muted-foreground mb-6`}
+              >
+                Adaptive loading strategies based on connection quality and
+                caching patterns.
               </p>
 
               <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
                 <div>
-                  <h4 className={`${textVariants.heading.h5()} mb-3`}>Connection Quality</h4>
+                  <h4 className={`${textVariants.heading.h5()} mb-3`}>
+                    Connection Quality
+                  </h4>
                   <div className="space-y-3">
                     <div
                       className={`p-3 rounded ${variants.performance.network.connection[
@@ -276,7 +344,9 @@ variants.performance.webVitals.layoutStability.stable()`}
                     >
                       <div className="flex items-center justify-between">
                         <span>Current Connection</span>
-                        <span className="font-medium capitalize">{connectionSpeed}</span>
+                        <span className="font-medium capitalize">
+                          {connectionSpeed}
+                        </span>
                       </div>
                       <div className="text-sm opacity-75 mt-1">
                         Latency: ~{Math.round(networkLatency)}ms
@@ -288,21 +358,31 @@ variants.performance.webVitals.layoutStability.stable()`}
                     </Button>
                   </div>
 
-                  <h4 className={`${textVariants.heading.h5()} mb-3 mt-6`}>Cache Status</h4>
+                  <h4 className={`${textVariants.heading.h5()} mb-3 mt-6`}>
+                    Cache Status
+                  </h4>
                   <div className="space-y-2">
-                    <div className={variants.performance.network.cache.cached()}>
+                    <div
+                      className={variants.performance.network.cache.cached()}
+                    >
                       <div className="p-3">
-                        <span className={variants.performance.network.cache.fresh()}>
+                        <span
+                          className={variants.performance.network.cache.fresh()}
+                        >
                           Fresh Data
-                        </span>{' '}
+                        </span>{" "}
                         - Recently fetched
                       </div>
                     </div>
-                    <div className={variants.performance.network.cache.updating()}>
+                    <div
+                      className={variants.performance.network.cache.updating()}
+                    >
                       <div className="p-3">
-                        <span className={variants.performance.network.cache.stale()}>
+                        <span
+                          className={variants.performance.network.cache.stale()}
+                        >
                           Stale Data
-                        </span>{' '}
+                        </span>{" "}
                         - Needs refresh
                       </div>
                     </div>
@@ -310,7 +390,9 @@ variants.performance.webVitals.layoutStability.stable()`}
                 </div>
 
                 <div>
-                  <h4 className={`${textVariants.heading.h5()} mb-3`}>Implementation</h4>
+                  <h4 className={`${textVariants.heading.h5()} mb-3`}>
+                    Implementation
+                  </h4>
                   <div className="bg-muted p-4 rounded border">
                     <pre className="text-xs text-foreground overflow-x-auto">
                       {`// Network Quality Detection
@@ -333,18 +415,24 @@ variants.performance.network.cache.stale()`}
           <Card className="mb-8">
             <CardContent className="pt-6">
               <div className="flex items-center mb-4">
-                <SparklesIcon className={`${variants.icon.size.lg()} text-accent mr-3`} />
+                <SparklesIcon
+                  className={`${variants.icon.size.lg()} text-accent mr-3`}
+                />
                 <h2 className={textVariants.heading.h3()}>Web3 Performance</h2>
               </div>
 
-              <p className={`${textVariants.body.md()} text-muted-foreground mb-6`}>
-                Specialized optimizations for blockchain interactions, wallet connections, and
-                transaction batching.
+              <p
+                className={`${textVariants.body.md()} text-muted-foreground mb-6`}
+              >
+                Specialized optimizations for blockchain interactions, wallet
+                connections, and transaction batching.
               </p>
 
               <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
                 <div>
-                  <h4 className={`${textVariants.heading.h5()} mb-3`}>Wallet Connection</h4>
+                  <h4 className={`${textVariants.heading.h5()} mb-3`}>
+                    Wallet Connection
+                  </h4>
                   <div className="space-y-3">
                     <div
                       className={`p-3 rounded border ${variants.performance.web3.wallet.cached()}`}
@@ -366,18 +454,26 @@ variants.performance.network.cache.stale()`}
                 </div>
 
                 <div>
-                  <h4 className={`${textVariants.heading.h5()} mb-3`}>Transaction Batching</h4>
+                  <h4 className={`${textVariants.heading.h5()} mb-3`}>
+                    Transaction Batching
+                  </h4>
                   <div className="space-y-3">
-                    <div className={variants.performance.web3.transaction.batched()}>
+                    <div
+                      className={variants.performance.web3.transaction.batched()}
+                    >
                       <div className="p-3">
                         <div className="flex items-center">
                           <BoltIcon className="w-4 h-4 mr-2" />
                           Batched Transactions
                         </div>
-                        <div className="text-sm opacity-75 mt-1">5 txs → 1 multicall</div>
+                        <div className="text-sm opacity-75 mt-1">
+                          5 txs → 1 multicall
+                        </div>
                       </div>
                     </div>
-                    <div className={variants.performance.web3.transaction.individual()}>
+                    <div
+                      className={variants.performance.web3.transaction.individual()}
+                    >
                       <div className="p-3">
                         <div className="flex items-center">
                           <ArrowPathIcon className="w-4 h-4 mr-2" />
@@ -389,7 +485,9 @@ variants.performance.network.cache.stale()`}
                 </div>
 
                 <div>
-                  <h4 className={`${textVariants.heading.h5()} mb-3`}>Gas Optimization</h4>
+                  <h4 className={`${textVariants.heading.h5()} mb-3`}>
+                    Gas Optimization
+                  </h4>
                   <div className="space-y-3">
                     <div
                       className={`text-center p-2 rounded ${variants.performance.web3.transaction.gasOptimal()}`}
@@ -429,13 +527,19 @@ variants.performance.web3.transaction.gasHigh()`}
           <Card>
             <CardContent className="pt-6">
               <div className="flex items-center mb-4">
-                <CheckIcon className={`${variants.icon.size.lg()} text-success mr-3`} />
-                <h2 className={textVariants.heading.h3()}>Performance Best Practices</h2>
+                <CheckIcon
+                  className={`${variants.icon.size.lg()} text-success mr-3`}
+                />
+                <h2 className={textVariants.heading.h3()}>
+                  Performance Best Practices
+                </h2>
               </div>
 
               <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
                 <div>
-                  <h4 className={`${textVariants.heading.h5()} mb-4`}>✅ Do This</h4>
+                  <h4 className={`${textVariants.heading.h5()} mb-4`}>
+                    ✅ Do This
+                  </h4>
                   <ul className="space-y-2 text-sm">
                     <li className="flex items-start">
                       <CheckIcon className="h-4 w-4 text-success mr-2 mt-0.5 flex-shrink-0" />
@@ -465,7 +569,9 @@ variants.performance.web3.transaction.gasHigh()`}
                 </div>
 
                 <div>
-                  <h4 className={`${textVariants.heading.h5()} mb-4`}>❌ Avoid This</h4>
+                  <h4 className={`${textVariants.heading.h5()} mb-4`}>
+                    ❌ Avoid This
+                  </h4>
                   <ul className="space-y-2 text-sm">
                     <li className="flex items-start">
                       <ExclamationTriangleIcon className="h-4 w-4 text-destructive mr-2 mt-0.5 flex-shrink-0" />

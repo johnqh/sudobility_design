@@ -10,22 +10,25 @@ import {
   InboxIcon,
   StarIcon,
   TableCellsIcon,
-} from '@heroicons/react/24/outline';
-import { StarIcon as StarSolid } from '@heroicons/react/24/solid';
-import React, { useState } from 'react';
-import { SEOHead } from '@sudobility/seo_lib';
-import { Button, Section } from '@sudobility/components';
-import { cn } from '@sudobility/components';
-import { textVariants, ui, variants } from '@sudobility/design';
+} from "@heroicons/react/24/outline";
+import { StarIcon as StarSolid } from "@heroicons/react/24/solid";
+import React, { useState } from "react";
+import { SEOHead } from "@sudobility/seo_lib";
+import { Button, Section } from "@sudobility/components";
+import { cn } from "@sudobility/components";
+import { textVariants, ui, variants } from "@sudobility/design";
 
 interface AppProps {
   emailDomain: string;
   appName: string;
 }
 
-const DataDisplayPage: React.FC<AppProps> = ({ emailDomain, appName: _appName }) => {
-  const [sortColumn, setSortColumn] = useState('date');
-  const [sortDirection, setSortDirection] = useState<'asc' | 'desc'>('desc');
+const DataDisplayPage: React.FC<AppProps> = ({
+  emailDomain,
+  appName: _appName,
+}) => {
+  const [sortColumn, setSortColumn] = useState("date");
+  const [sortDirection, setSortDirection] = useState<"asc" | "desc">("desc");
   const [selectedRow, setSelectedRow] = useState<number | null>(null);
   const [selectedEmail, setSelectedEmail] = useState<number | null>(null);
 
@@ -35,8 +38,8 @@ const DataDisplayPage: React.FC<AppProps> = ({ emailDomain, appName: _appName })
 
   const quickStartExamples = [
     {
-      title: 'Data Table',
-      description: 'Sortable table with hover states and selection',
+      title: "Data Table",
+      description: "Sortable table with hover states and selection",
       code: `// Data Table
 <div className={variants.dataDisplay.table.container()}>
   <div className={variants.dataDisplay.table.wrapper()}>
@@ -62,8 +65,8 @@ const DataDisplayPage: React.FC<AppProps> = ({ emailDomain, appName: _appName })
 </div>`,
     },
     {
-      title: 'Email List',
-      description: 'Interactive list with read/unread states',
+      title: "Email List",
+      description: "Interactive list with read/unread states",
       code: `// Email List
 <div className={variants.dataDisplay.list.container()}>
   <ul className={variants.dataDisplay.list.ul()}>
@@ -84,8 +87,8 @@ const DataDisplayPage: React.FC<AppProps> = ({ emailDomain, appName: _appName })
 </div>`,
     },
     {
-      title: 'Key-Value Display',
-      description: 'Display structured data in key-value pairs',
+      title: "Key-Value Display",
+      description: "Display structured data in key-value pairs",
       code: `// Key-Value Pairs
 <div className={variants.dataDisplay.keyValue.container()}>
   <dl className={variants.dataDisplay.keyValue.list()}>
@@ -107,8 +110,8 @@ const DataDisplayPage: React.FC<AppProps> = ({ emailDomain, appName: _appName })
 </div>`,
     },
     {
-      title: 'Stats Grid',
-      description: 'Display metrics and statistics with trend indicators',
+      title: "Stats Grid",
+      description: "Display metrics and statistics with trend indicators",
       code: `// Stats Grid
 <div className={variants.dataDisplay.stats.container()}>
   <div className={variants.dataDisplay.stats.grid()}>
@@ -132,89 +135,89 @@ const DataDisplayPage: React.FC<AppProps> = ({ emailDomain, appName: _appName })
   const tableData = [
     {
       id: 1,
-      name: 'Alice.eth',
-      email: 'alice@example.com',
-      balance: '2.5 ETH',
-      status: 'Active',
-      date: '2024-01-15',
+      name: "Alice.eth",
+      email: "alice@example.com",
+      balance: "2.5 ETH",
+      status: "Active",
+      date: "2024-01-15",
     },
     {
       id: 2,
-      name: 'Bob.sol',
-      email: 'bob@example.com',
-      balance: '1.2 SOL',
-      status: 'Active',
-      date: '2024-01-14',
+      name: "Bob.sol",
+      email: "bob@example.com",
+      balance: "1.2 SOL",
+      status: "Active",
+      date: "2024-01-14",
     },
     {
       id: 3,
-      name: 'Charlie',
-      email: 'charlie@example.com',
-      balance: '0.8 ETH',
-      status: 'Pending',
-      date: '2024-01-13',
+      name: "Charlie",
+      email: "charlie@example.com",
+      balance: "0.8 ETH",
+      status: "Pending",
+      date: "2024-01-13",
     },
     {
       id: 4,
-      name: 'David.eth',
-      email: 'david@example.com',
-      balance: '5.0 ETH',
-      status: 'Active',
-      date: '2024-01-12',
+      name: "David.eth",
+      email: "david@example.com",
+      balance: "5.0 ETH",
+      status: "Active",
+      date: "2024-01-12",
     },
     {
       id: 5,
-      name: 'Eve',
-      email: 'eve@example.com',
-      balance: '3.3 ETH',
-      status: 'Inactive',
-      date: '2024-01-11',
+      name: "Eve",
+      email: "eve@example.com",
+      balance: "3.3 ETH",
+      status: "Inactive",
+      date: "2024-01-11",
     },
   ];
 
   const emailData = [
     {
       id: 1,
-      subject: 'Transaction Confirmed',
-      sender: 'noreply@etherscan.io',
-      preview: 'Your transaction has been confirmed on the blockchain...',
-      time: '2h ago',
+      subject: "Transaction Confirmed",
+      sender: "noreply@etherscan.io",
+      preview: "Your transaction has been confirmed on the blockchain...",
+      time: "2h ago",
       read: false,
       starred: true,
     },
     {
       id: 2,
-      subject: 'New NFT Drop Alert',
-      sender: 'updates@opensea.io',
-      preview: 'Exciting new collection launching tomorrow...',
-      time: '5h ago',
+      subject: "New NFT Drop Alert",
+      sender: "updates@opensea.io",
+      preview: "Exciting new collection launching tomorrow...",
+      time: "5h ago",
       read: false,
       starred: false,
     },
     {
       id: 3,
-      subject: 'Wallet Security Update',
-      sender: 'security@metamask.io',
-      preview: 'Important security improvements to your wallet...',
-      time: '1d ago',
+      subject: "Wallet Security Update",
+      sender: "security@metamask.io",
+      preview: "Important security improvements to your wallet...",
+      time: "1d ago",
       read: true,
       starred: false,
     },
     {
       id: 4,
-      subject: 'DeFi Yield Report',
-      sender: 'report@aave.com',
-      preview: 'Your monthly yield farming summary...',
-      time: '2d ago',
+      subject: "DeFi Yield Report",
+      sender: "report@aave.com",
+      preview: "Your monthly yield farming summary...",
+      time: "2d ago",
       read: true,
       starred: true,
     },
     {
       id: 5,
-      subject: 'DAO Proposal #42',
-      sender: 'governance@dao.eth',
-      preview: 'Vote on the latest community proposal...',
-      time: '3d ago',
+      subject: "DAO Proposal #42",
+      sender: "governance@dao.eth",
+      preview: "Vote on the latest community proposal...",
+      time: "3d ago",
       read: true,
       starred: false,
     },
@@ -223,47 +226,47 @@ const DataDisplayPage: React.FC<AppProps> = ({ emailDomain, appName: _appName })
   const timelineData = [
     {
       id: 1,
-      title: 'Account Created',
-      description: 'Welcome to example.com',
-      time: '2024-01-01 10:00 AM',
-      status: 'complete',
+      title: "Account Created",
+      description: "Welcome to example.com",
+      time: "2024-01-01 10:00 AM",
+      status: "complete",
     },
     {
       id: 2,
-      title: 'Wallet Connected',
-      description: 'MetaMask wallet linked successfully',
-      time: '2024-01-01 10:15 AM',
-      status: 'complete',
+      title: "Wallet Connected",
+      description: "MetaMask wallet linked successfully",
+      time: "2024-01-01 10:15 AM",
+      status: "complete",
     },
     {
       id: 3,
-      title: 'First Email Sent',
-      description: 'Sent welcome email to team',
-      time: '2024-01-01 11:00 AM',
-      status: 'complete',
+      title: "First Email Sent",
+      description: "Sent welcome email to team",
+      time: "2024-01-01 11:00 AM",
+      status: "complete",
     },
     {
       id: 4,
-      title: 'ENS Name Registered',
-      description: 'alice.eth registered',
-      time: '2024-01-02 2:00 PM',
-      status: 'active',
+      title: "ENS Name Registered",
+      description: "alice.eth registered",
+      time: "2024-01-02 2:00 PM",
+      status: "active",
     },
     {
       id: 5,
-      title: 'Premium Upgrade',
-      description: 'Upgrade to premium plan pending',
-      time: 'Pending',
-      status: 'pending',
+      title: "Premium Upgrade",
+      description: "Upgrade to premium plan pending",
+      time: "Pending",
+      status: "pending",
     },
   ];
 
   const handleSort = (column: string) => {
     if (sortColumn === column) {
-      setSortDirection(sortDirection === 'asc' ? 'desc' : 'asc');
+      setSortDirection(sortDirection === "asc" ? "desc" : "asc");
     } else {
       setSortColumn(column);
-      setSortDirection('asc');
+      setSortDirection("asc");
     }
   };
 
@@ -281,14 +284,21 @@ const DataDisplayPage: React.FC<AppProps> = ({ emailDomain, appName: _appName })
           <div className="mb-12">
             <div className="inline-flex items-center bg-accent/10 px-4 py-2 rounded-full mb-6">
               <TableCellsIcon className="h-5 w-5 text-accent mr-2" />
-              <span className="text-accent font-semibold">Data Display Components</span>
+              <span className="text-accent font-semibold">
+                Data Display Components
+              </span>
             </div>
 
-            <h1 className={`${textVariants.heading.display.xl()} mb-6`}>Data Display System</h1>
+            <h1 className={`${textVariants.heading.display.xl()} mb-6`}>
+              Data Display System
+            </h1>
 
-            <p className={`${textVariants.body.lg()} max-w-3xl text-muted-foreground`}>
-              Comprehensive data display components for tables, lists, grids, and code. Optimized
-              for Web3 data including addresses, transactions, and blockchain information.
+            <p
+              className={`${textVariants.body.lg()} max-w-3xl text-muted-foreground`}
+            >
+              Comprehensive data display components for tables, lists, grids,
+              and code. Optimized for Web3 data including addresses,
+              transactions, and blockchain information.
             </p>
           </div>
 
@@ -303,8 +313,12 @@ const DataDisplayPage: React.FC<AppProps> = ({ emailDomain, appName: _appName })
                   className={`${ui.background.surface} ${ui.border.default} border rounded-lg overflow-hidden`}
                 >
                   <div className="p-6 border-b border-border">
-                    <h3 className={`${textVariants.heading.h4()} mb-2`}>{example.title}</h3>
-                    <p className={`${textVariants.body.sm()} text-muted-foreground`}>
+                    <h3 className={`${textVariants.heading.h4()} mb-2`}>
+                      {example.title}
+                    </h3>
+                    <p
+                      className={`${textVariants.body.sm()} text-muted-foreground`}
+                    >
                       {example.description}
                     </p>
                   </div>
@@ -345,8 +359,12 @@ const DataDisplayPage: React.FC<AppProps> = ({ emailDomain, appName: _appName })
               className={`${ui.background.surface} ${ui.border.default} border rounded-lg overflow-hidden`}
             >
               <div className="p-6 border-b border-border">
-                <h3 className={`${textVariants.heading.h3()} mb-2`}>Interactive Contact Table</h3>
-                <p className={`${textVariants.body.sm()} text-muted-foreground`}>
+                <h3 className={`${textVariants.heading.h3()} mb-2`}>
+                  Interactive Contact Table
+                </h3>
+                <p
+                  className={`${textVariants.body.sm()} text-muted-foreground`}
+                >
                   Sortable table with selection and hover states
                 </p>
               </div>
@@ -360,12 +378,12 @@ const DataDisplayPage: React.FC<AppProps> = ({ emailDomain, appName: _appName })
                       </th>
                       <th
                         className={variants.dataDisplay.table.thSortable()}
-                        onClick={() => handleSort('name')}
+                        onClick={() => handleSort("name")}
                       >
                         <div className="flex items-center">
                           Name
-                          {sortColumn === 'name' &&
-                            (sortDirection === 'asc' ? (
+                          {sortColumn === "name" &&
+                            (sortDirection === "asc" ? (
                               <ChevronUpIcon className="h-3 w-3 ml-1" />
                             ) : (
                               <ChevronDownIcon className="h-3 w-3 ml-1" />
@@ -373,16 +391,20 @@ const DataDisplayPage: React.FC<AppProps> = ({ emailDomain, appName: _appName })
                         </div>
                       </th>
                       <th className={variants.dataDisplay.table.th()}>Email</th>
-                      <th className={variants.dataDisplay.table.th()}>Balance</th>
-                      <th className={variants.dataDisplay.table.th()}>Status</th>
+                      <th className={variants.dataDisplay.table.th()}>
+                        Balance
+                      </th>
+                      <th className={variants.dataDisplay.table.th()}>
+                        Status
+                      </th>
                       <th
                         className={variants.dataDisplay.table.thSortable()}
-                        onClick={() => handleSort('date')}
+                        onClick={() => handleSort("date")}
                       >
                         <div className="flex items-center">
                           Date
-                          {sortColumn === 'date' &&
-                            (sortDirection === 'asc' ? (
+                          {sortColumn === "date" &&
+                            (sortDirection === "asc" ? (
                               <ChevronUpIcon className="h-3 w-3 ml-1" />
                             ) : (
                               <ChevronDownIcon className="h-3 w-3 ml-1" />
@@ -392,7 +414,7 @@ const DataDisplayPage: React.FC<AppProps> = ({ emailDomain, appName: _appName })
                     </tr>
                   </thead>
                   <tbody className={variants.dataDisplay.table.tbody()}>
-                    {tableData.map(row => (
+                    {tableData.map((row) => (
                       <tr
                         key={row.id}
                         className={
@@ -421,22 +443,31 @@ const DataDisplayPage: React.FC<AppProps> = ({ emailDomain, appName: _appName })
                           </div>
                         </td>
                         <td className={variants.dataDisplay.table.td()}>
-                          <code className={variants.dataDisplay.code.inline()}>{row.email}</code>
+                          <code className={variants.dataDisplay.code.inline()}>
+                            {row.email}
+                          </code>
                         </td>
-                        <td className={variants.dataDisplay.table.td()}>{row.balance}</td>
+                        <td className={variants.dataDisplay.table.td()}>
+                          {row.balance}
+                        </td>
                         <td className={variants.dataDisplay.table.td()}>
                           <span
                             className={cn(
-                              'px-2 py-1 text-xs rounded-full',
-                              row.status === 'Active' && 'bg-success/10 text-success',
-                              row.status === 'Pending' && 'bg-warning/10 text-warning',
-                              row.status === 'Inactive' && 'bg-muted text-muted-foreground'
+                              "px-2 py-1 text-xs rounded-full",
+                              row.status === "Active" &&
+                                "bg-success/10 text-success",
+                              row.status === "Pending" &&
+                                "bg-warning/10 text-warning",
+                              row.status === "Inactive" &&
+                                "bg-muted text-muted-foreground",
                             )}
                           >
                             {row.status}
                           </span>
                         </td>
-                        <td className={variants.dataDisplay.table.td()}>{row.date}</td>
+                        <td className={variants.dataDisplay.table.td()}>
+                          {row.date}
+                        </td>
                       </tr>
                     ))}
                   </tbody>
@@ -453,15 +484,19 @@ const DataDisplayPage: React.FC<AppProps> = ({ emailDomain, appName: _appName })
               className={`${ui.background.surface} ${ui.border.default} border rounded-lg overflow-hidden`}
             >
               <div className="p-6 border-b border-border">
-                <h3 className={`${textVariants.heading.h3()} mb-2`}>Email List</h3>
-                <p className={`${textVariants.body.sm()} text-muted-foreground`}>
+                <h3 className={`${textVariants.heading.h3()} mb-2`}>
+                  Email List
+                </h3>
+                <p
+                  className={`${textVariants.body.sm()} text-muted-foreground`}
+                >
                   Interactive email list with read/unread states and actions
                 </p>
               </div>
 
               <div className={variants.dataDisplay.list.container()}>
                 <ul className={variants.dataDisplay.list.ul()}>
-                  {emailData.map(email => (
+                  {emailData.map((email) => (
                     <li
                       key={email.id}
                       className={
@@ -475,7 +510,7 @@ const DataDisplayPage: React.FC<AppProps> = ({ emailDomain, appName: _appName })
                     >
                       <button
                         className="mr-3"
-                        onClick={e => {
+                        onClick={(e) => {
                           e.stopPropagation();
                           // Toggle star
                         }}
@@ -491,8 +526,8 @@ const DataDisplayPage: React.FC<AppProps> = ({ emailDomain, appName: _appName })
                         <div className="flex items-center justify-between">
                           <p
                             className={cn(
-                              'text-sm font-medium truncate',
-                              !email.read && 'font-semibold'
+                              "text-sm font-medium truncate",
+                              !email.read && "font-semibold",
                             )}
                           >
                             {email.subject}
@@ -501,8 +536,12 @@ const DataDisplayPage: React.FC<AppProps> = ({ emailDomain, appName: _appName })
                             {email.time}
                           </span>
                         </div>
-                        <p className="text-sm text-muted-foreground">{email.sender}</p>
-                        <p className="text-sm text-muted-foreground truncate">{email.preview}</p>
+                        <p className="text-sm text-muted-foreground">
+                          {email.sender}
+                        </p>
+                        <p className="text-sm text-muted-foreground truncate">
+                          {email.preview}
+                        </p>
                       </div>
                     </li>
                   ))}
@@ -513,20 +552,28 @@ const DataDisplayPage: React.FC<AppProps> = ({ emailDomain, appName: _appName })
 
           {/* Grid Layouts */}
           <Section>
-            <h2 className={`${textVariants.heading.h2()} mb-8`}>Grid Layouts</h2>
+            <h2 className={`${textVariants.heading.h2()} mb-8`}>
+              Grid Layouts
+            </h2>
 
             <div className="space-y-8">
               <div>
-                <h3 className={`${textVariants.heading.h3()} mb-4`}>Stats Grid</h3>
+                <h3 className={`${textVariants.heading.h3()} mb-4`}>
+                  Stats Grid
+                </h3>
                 <div className={variants.dataDisplay.stats.container()}>
                   <div className={variants.dataDisplay.stats.grid()}>
                     <div className={variants.dataDisplay.stats.item()}>
-                      <p className={variants.dataDisplay.stats.label()}>Total Emails</p>
-                      <p className={variants.dataDisplay.stats.value()}>1,234</p>
+                      <p className={variants.dataDisplay.stats.label()}>
+                        Total Emails
+                      </p>
+                      <p className={variants.dataDisplay.stats.value()}>
+                        1,234
+                      </p>
                       <p
                         className={cn(
                           variants.dataDisplay.stats.change(),
-                          variants.dataDisplay.stats.changePositive()
+                          variants.dataDisplay.stats.changePositive(),
                         )}
                       >
                         <ArrowTrendingUpIcon className="h-4 w-4 mr-1 inline" />
@@ -534,24 +581,31 @@ const DataDisplayPage: React.FC<AppProps> = ({ emailDomain, appName: _appName })
                       </p>
                     </div>
                     <div className={variants.dataDisplay.stats.item()}>
-                      <p className={variants.dataDisplay.stats.label()}>Active Contacts</p>
+                      <p className={variants.dataDisplay.stats.label()}>
+                        Active Contacts
+                      </p>
                       <p className={variants.dataDisplay.stats.value()}>89</p>
                       <p
                         className={cn(
                           variants.dataDisplay.stats.change(),
-                          variants.dataDisplay.stats.changePositive()
+                          variants.dataDisplay.stats.changePositive(),
                         )}
                       >
-                        <ArrowTrendingUpIcon className="h-4 w-4 mr-1 inline" />5 new this week
+                        <ArrowTrendingUpIcon className="h-4 w-4 mr-1 inline" />5
+                        new this week
                       </p>
                     </div>
                     <div className={variants.dataDisplay.stats.item()}>
-                      <p className={variants.dataDisplay.stats.label()}>Storage Used</p>
-                      <p className={variants.dataDisplay.stats.value()}>2.4GB</p>
+                      <p className={variants.dataDisplay.stats.label()}>
+                        Storage Used
+                      </p>
+                      <p className={variants.dataDisplay.stats.value()}>
+                        2.4GB
+                      </p>
                       <p
                         className={cn(
                           variants.dataDisplay.stats.change(),
-                          variants.dataDisplay.stats.changeNegative()
+                          variants.dataDisplay.stats.changeNegative(),
                         )}
                       >
                         <ArrowTrendingDownIcon className="h-4 w-4 mr-1 inline" />
@@ -563,19 +617,27 @@ const DataDisplayPage: React.FC<AppProps> = ({ emailDomain, appName: _appName })
               </div>
 
               <div>
-                <h3 className={`${textVariants.heading.h3()} mb-4`}>Card Grid</h3>
+                <h3 className={`${textVariants.heading.h3()} mb-4`}>
+                  Card Grid
+                </h3>
                 <div className={variants.dataDisplay.grid.threeColumn()}>
-                  {[1, 2, 3, 4, 5, 6].map(i => (
+                  {[1, 2, 3, 4, 5, 6].map((i) => (
                     <div
                       key={i}
                       className={`${ui.background.surface} ${ui.border.default} border rounded-lg p-6`}
                     >
                       <div className="flex items-center justify-between mb-4">
                         <InboxIcon className="h-8 w-8 text-primary" />
-                        <span className="text-sm text-muted-foreground">#{i}</span>
+                        <span className="text-sm text-muted-foreground">
+                          #{i}
+                        </span>
                       </div>
-                      <h4 className={textVariants.heading.h4()}>Card Title {i}</h4>
-                      <p className={`${textVariants.body.sm()} text-muted-foreground mt-2`}>
+                      <h4 className={textVariants.heading.h4()}>
+                        Card Title {i}
+                      </h4>
+                      <p
+                        className={`${textVariants.body.sm()} text-muted-foreground mt-2`}
+                      >
                         Card content with relevant information and actions.
                       </p>
                     </div>
@@ -587,23 +649,37 @@ const DataDisplayPage: React.FC<AppProps> = ({ emailDomain, appName: _appName })
 
           {/* Key-Value Display */}
           <Section>
-            <h2 className={`${textVariants.heading.h2()} mb-8`}>Key-Value Display</h2>
+            <h2 className={`${textVariants.heading.h2()} mb-8`}>
+              Key-Value Display
+            </h2>
 
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
               <div>
-                <h3 className={`${textVariants.heading.h3()} mb-4`}>User Profile</h3>
+                <h3 className={`${textVariants.heading.h3()} mb-4`}>
+                  User Profile
+                </h3>
                 <div className={variants.dataDisplay.keyValue.container()}>
                   <dl className={variants.dataDisplay.keyValue.list()}>
                     <div className={variants.dataDisplay.keyValue.row()}>
-                      <dt className={variants.dataDisplay.keyValue.key()}>Full Name</dt>
-                      <dd className={variants.dataDisplay.keyValue.value()}>Alice Johnson</dd>
+                      <dt className={variants.dataDisplay.keyValue.key()}>
+                        Full Name
+                      </dt>
+                      <dd className={variants.dataDisplay.keyValue.value()}>
+                        Alice Johnson
+                      </dd>
                     </div>
                     <div className={variants.dataDisplay.keyValue.row()}>
-                      <dt className={variants.dataDisplay.keyValue.key()}>ENS Name</dt>
-                      <dd className={variants.dataDisplay.keyValue.value()}>alice.eth</dd>
+                      <dt className={variants.dataDisplay.keyValue.key()}>
+                        ENS Name
+                      </dt>
+                      <dd className={variants.dataDisplay.keyValue.value()}>
+                        alice.eth
+                      </dd>
                     </div>
                     <div className={variants.dataDisplay.keyValue.row()}>
-                      <dt className={variants.dataDisplay.keyValue.key()}>Wallet Address</dt>
+                      <dt className={variants.dataDisplay.keyValue.key()}>
+                        Wallet Address
+                      </dt>
                       <dd className={variants.dataDisplay.keyValue.value()}>
                         <code className={variants.dataDisplay.code.address()}>
                           0x742d35Cc6634C0532925a3b844Bc9e7595f0bEb7
@@ -611,11 +687,17 @@ const DataDisplayPage: React.FC<AppProps> = ({ emailDomain, appName: _appName })
                       </dd>
                     </div>
                     <div className={variants.dataDisplay.keyValue.row()}>
-                      <dt className={variants.dataDisplay.keyValue.key()}>Email</dt>
-                      <dd className={variants.dataDisplay.keyValue.value()}>alice@{emailDomain}</dd>
+                      <dt className={variants.dataDisplay.keyValue.key()}>
+                        Email
+                      </dt>
+                      <dd className={variants.dataDisplay.keyValue.value()}>
+                        alice@{emailDomain}
+                      </dd>
                     </div>
                     <div className={variants.dataDisplay.keyValue.row()}>
-                      <dt className={variants.dataDisplay.keyValue.key()}>Account Status</dt>
+                      <dt className={variants.dataDisplay.keyValue.key()}>
+                        Account Status
+                      </dt>
                       <dd className={variants.dataDisplay.keyValue.value()}>
                         <span className="px-2 py-1 text-xs rounded-full bg-success/10 text-success">
                           Verified
@@ -627,25 +709,41 @@ const DataDisplayPage: React.FC<AppProps> = ({ emailDomain, appName: _appName })
               </div>
 
               <div>
-                <h3 className={`${textVariants.heading.h3()} mb-4`}>Transaction Details</h3>
+                <h3 className={`${textVariants.heading.h3()} mb-4`}>
+                  Transaction Details
+                </h3>
                 <div className={variants.dataDisplay.keyValue.container()}>
                   <dl className={variants.dataDisplay.keyValue.list()}>
                     <div className={variants.dataDisplay.keyValue.row()}>
-                      <dt className={variants.dataDisplay.keyValue.key()}>Transaction Hash</dt>
+                      <dt className={variants.dataDisplay.keyValue.key()}>
+                        Transaction Hash
+                      </dt>
                       <dd className={variants.dataDisplay.keyValue.value()}>
-                        <code className={variants.dataDisplay.code.hash()}>0x123abc...def789</code>
+                        <code className={variants.dataDisplay.code.hash()}>
+                          0x123abc...def789
+                        </code>
                       </dd>
                     </div>
                     <div className={variants.dataDisplay.keyValue.row()}>
-                      <dt className={variants.dataDisplay.keyValue.key()}>Block Number</dt>
-                      <dd className={variants.dataDisplay.keyValue.value()}>18,234,567</dd>
+                      <dt className={variants.dataDisplay.keyValue.key()}>
+                        Block Number
+                      </dt>
+                      <dd className={variants.dataDisplay.keyValue.value()}>
+                        18,234,567
+                      </dd>
                     </div>
                     <div className={variants.dataDisplay.keyValue.row()}>
-                      <dt className={variants.dataDisplay.keyValue.key()}>Gas Used</dt>
-                      <dd className={variants.dataDisplay.keyValue.value()}>21,000</dd>
+                      <dt className={variants.dataDisplay.keyValue.key()}>
+                        Gas Used
+                      </dt>
+                      <dd className={variants.dataDisplay.keyValue.value()}>
+                        21,000
+                      </dd>
                     </div>
                     <div className={variants.dataDisplay.keyValue.row()}>
-                      <dt className={variants.dataDisplay.keyValue.key()}>Status</dt>
+                      <dt className={variants.dataDisplay.keyValue.key()}>
+                        Status
+                      </dt>
                       <dd className={variants.dataDisplay.keyValue.value()}>
                         <span className="flex items-center text-success">
                           <CheckCircleIcon className="h-4 w-4 mr-1" />
@@ -661,30 +759,40 @@ const DataDisplayPage: React.FC<AppProps> = ({ emailDomain, appName: _appName })
 
           {/* Code Display */}
           <Section>
-            <h2 className={`${textVariants.heading.h2()} mb-8`}>Code Display</h2>
+            <h2 className={`${textVariants.heading.h2()} mb-8`}>
+              Code Display
+            </h2>
 
             <div className="space-y-8">
               <div
                 className={`${ui.background.surface} ${ui.border.default} border rounded-lg p-6`}
               >
-                <h3 className={`${textVariants.heading.h3()} mb-4`}>Inline Code</h3>
+                <h3 className={`${textVariants.heading.h3()} mb-4`}>
+                  Inline Code
+                </h3>
                 <p className={textVariants.body.md()}>
-                  Use{' '}
+                  Use{" "}
                   <code className={variants.dataDisplay.code.inline()}>
                     variants.dataDisplay.code.inline()
-                  </code>{' '}
-                  for inline code. Web3 addresses like{' '}
-                  <code className={variants.dataDisplay.code.address()}>0x742d...4e88</code> and
-                  transaction hashes like{' '}
-                  <code className={variants.dataDisplay.code.hash()}>0xabc123...def456</code> have
-                  special styling.
+                  </code>{" "}
+                  for inline code. Web3 addresses like{" "}
+                  <code className={variants.dataDisplay.code.address()}>
+                    0x742d...4e88
+                  </code>{" "}
+                  and transaction hashes like{" "}
+                  <code className={variants.dataDisplay.code.hash()}>
+                    0xabc123...def456
+                  </code>{" "}
+                  have special styling.
                 </p>
               </div>
 
               <div
                 className={`${ui.background.surface} ${ui.border.default} border rounded-lg p-6`}
               >
-                <h3 className={`${textVariants.heading.h3()} mb-4`}>Code Block</h3>
+                <h3 className={`${textVariants.heading.h3()} mb-4`}>
+                  Code Block
+                </h3>
                 <pre className={variants.dataDisplay.code.block()}>
                   <code>{`// Smart Contract Example
 pragma solidity ^0.8.0;
@@ -709,8 +817,12 @@ contract EmailRegistry {
           <Section>
             <h2 className={`${textVariants.heading.h2()} mb-8`}>Timeline</h2>
 
-            <div className={`${ui.background.surface} ${ui.border.default} border rounded-lg p-8`}>
-              <h3 className={`${textVariants.heading.h3()} mb-6`}>Activity Timeline</h3>
+            <div
+              className={`${ui.background.surface} ${ui.border.default} border rounded-lg p-8`}
+            >
+              <h3 className={`${textVariants.heading.h3()} mb-6`}>
+                Activity Timeline
+              </h3>
 
               <div className={variants.dataDisplay.timeline.container()}>
                 <ul className={variants.dataDisplay.timeline.list()}>
@@ -733,25 +845,33 @@ contract EmailRegistry {
                         <div
                           className={cn(
                             variants.dataDisplay.timeline.dot(),
-                            item.status === 'complete' && 'bg-success',
-                            item.status === 'active' && 'bg-primary',
-                            item.status === 'pending' && 'bg-muted-foreground'
+                            item.status === "complete" && "bg-success",
+                            item.status === "active" && "bg-primary",
+                            item.status === "pending" && "bg-muted-foreground",
                           )}
                         >
-                          {item.status === 'complete' && (
+                          {item.status === "complete" && (
                             <CheckCircleIcon className="h-5 w-5 text-success-foreground" />
                           )}
-                          {item.status === 'active' && (
+                          {item.status === "active" && (
                             <ClockIcon className="h-5 w-5 text-primary-foreground" />
                           )}
-                          {item.status === 'pending' && (
+                          {item.status === "pending" && (
                             <ExclamationTriangleIcon className="h-5 w-5 text-foreground" />
                           )}
                         </div>
-                        <div className={variants.dataDisplay.timeline.content()}>
-                          <p className={variants.dataDisplay.timeline.time()}>{item.time}</p>
-                          <p className={variants.dataDisplay.timeline.title()}>{item.title}</p>
-                          <p className={variants.dataDisplay.timeline.description()}>
+                        <div
+                          className={variants.dataDisplay.timeline.content()}
+                        >
+                          <p className={variants.dataDisplay.timeline.time()}>
+                            {item.time}
+                          </p>
+                          <p className={variants.dataDisplay.timeline.title()}>
+                            {item.title}
+                          </p>
+                          <p
+                            className={variants.dataDisplay.timeline.description()}
+                          >
                             {item.description}
                           </p>
                         </div>
@@ -765,7 +885,9 @@ contract EmailRegistry {
 
           {/* Empty States */}
           <Section>
-            <h2 className={`${textVariants.heading.h2()} mb-8`}>Empty States</h2>
+            <h2 className={`${textVariants.heading.h2()} mb-8`}>
+              Empty States
+            </h2>
 
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
               <div
@@ -773,7 +895,9 @@ contract EmailRegistry {
               >
                 <div className={variants.dataDisplay.empty.container()}>
                   <InboxIcon className={variants.dataDisplay.empty.icon()} />
-                  <h3 className={variants.dataDisplay.empty.title()}>No emails</h3>
+                  <h3 className={variants.dataDisplay.empty.title()}>
+                    No emails
+                  </h3>
                   <p className={variants.dataDisplay.empty.description()}>
                     Get started by composing your first email
                   </p>
@@ -787,8 +911,12 @@ contract EmailRegistry {
                 className={`${ui.background.surface} ${ui.border.default} border rounded-lg p-8`}
               >
                 <div className={variants.dataDisplay.empty.container()}>
-                  <TableCellsIcon className={variants.dataDisplay.empty.icon()} />
-                  <h3 className={variants.dataDisplay.empty.title()}>No data available</h3>
+                  <TableCellsIcon
+                    className={variants.dataDisplay.empty.icon()}
+                  />
+                  <h3 className={variants.dataDisplay.empty.title()}>
+                    No data available
+                  </h3>
                   <p className={variants.dataDisplay.empty.description()}>
                     There are no records to display at this time
                   </p>
@@ -799,22 +927,36 @@ contract EmailRegistry {
 
           {/* Web3 Data Patterns */}
           <Section>
-            <h2 className={`${textVariants.heading.h2()} mb-8`}>Web3 Data Patterns</h2>
+            <h2 className={`${textVariants.heading.h2()} mb-8`}>
+              Web3 Data Patterns
+            </h2>
 
-            <div className={`${ui.background.surface} ${ui.border.default} border rounded-lg`}>
+            <div
+              className={`${ui.background.surface} ${ui.border.default} border rounded-lg`}
+            >
               <div className="p-6 border-b border-border">
-                <h3 className={`${textVariants.heading.h3()} mb-2`}>Blockchain Data Display</h3>
-                <p className={`${textVariants.body.sm()} text-muted-foreground`}>
+                <h3 className={`${textVariants.heading.h3()} mb-2`}>
+                  Blockchain Data Display
+                </h3>
+                <p
+                  className={`${textVariants.body.sm()} text-muted-foreground`}
+                >
                   Specialized patterns for displaying Web3 data
                 </p>
               </div>
 
               <div className="p-6 space-y-6">
                 <div>
-                  <h4 className={`${textVariants.heading.h4()} mb-3`}>Address Display</h4>
+                  <h4 className={`${textVariants.heading.h4()} mb-3`}>
+                    Address Display
+                  </h4>
                   <div className="space-y-2">
                     <div className={variants.dataDisplay.keyValue.inline()}>
-                      <span className={variants.dataDisplay.keyValue.inlineKey()}>Full:</span>
+                      <span
+                        className={variants.dataDisplay.keyValue.inlineKey()}
+                      >
+                        Full:
+                      </span>
                       <code className={variants.dataDisplay.code.address()}>
                         0x742d35Cc6634C0532925a3b844Bc9e7595f0bEb7
                       </code>
@@ -823,33 +965,57 @@ contract EmailRegistry {
                       </button>
                     </div>
                     <div className={variants.dataDisplay.keyValue.inline()}>
-                      <span className={variants.dataDisplay.keyValue.inlineKey()}>Truncated:</span>
-                      <code className={variants.dataDisplay.code.address()}>0x742d...bEb7</code>
+                      <span
+                        className={variants.dataDisplay.keyValue.inlineKey()}
+                      >
+                        Truncated:
+                      </span>
+                      <code className={variants.dataDisplay.code.address()}>
+                        0x742d...bEb7
+                      </code>
                     </div>
                     <div className={variants.dataDisplay.keyValue.inline()}>
-                      <span className={variants.dataDisplay.keyValue.inlineKey()}>ENS:</span>
-                      <span className={variants.dataDisplay.keyValue.inlineValue()}>alice.eth</span>
+                      <span
+                        className={variants.dataDisplay.keyValue.inlineKey()}
+                      >
+                        ENS:
+                      </span>
+                      <span
+                        className={variants.dataDisplay.keyValue.inlineValue()}
+                      >
+                        alice.eth
+                      </span>
                     </div>
                   </div>
                 </div>
 
                 <div>
-                  <h4 className={`${textVariants.heading.h4()} mb-3`}>Token Balances</h4>
+                  <h4 className={`${textVariants.heading.h4()} mb-3`}>
+                    Token Balances
+                  </h4>
                   <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
                     <div className="text-center">
-                      <div className="text-2xl font-bold text-foreground">2.5</div>
+                      <div className="text-2xl font-bold text-foreground">
+                        2.5
+                      </div>
                       <div className="text-sm text-muted-foreground">ETH</div>
                     </div>
                     <div className="text-center">
-                      <div className="text-2xl font-bold text-foreground">1,234</div>
+                      <div className="text-2xl font-bold text-foreground">
+                        1,234
+                      </div>
                       <div className="text-sm text-muted-foreground">USDC</div>
                     </div>
                     <div className="text-center">
-                      <div className="text-2xl font-bold text-foreground">5.2</div>
+                      <div className="text-2xl font-bold text-foreground">
+                        5.2
+                      </div>
                       <div className="text-sm text-muted-foreground">SOL</div>
                     </div>
                     <div className="text-center">
-                      <div className="text-2xl font-bold text-foreground">420</div>
+                      <div className="text-2xl font-bold text-foreground">
+                        420
+                      </div>
                       <div className="text-sm text-muted-foreground">MATIC</div>
                     </div>
                   </div>
@@ -860,12 +1026,16 @@ contract EmailRegistry {
 
           {/* Implementation Notes */}
           <Section>
-            <h2 className={`${textVariants.heading.h2()} mb-8`}>Implementation Notes</h2>
+            <h2 className={`${textVariants.heading.h2()} mb-8`}>
+              Implementation Notes
+            </h2>
 
             <div className={`${ui.background.subtle} rounded-xl p-8`}>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
                 <div>
-                  <h3 className={`${textVariants.heading.h3()} mb-4`}>Performance Tips</h3>
+                  <h3 className={`${textVariants.heading.h3()} mb-4`}>
+                    Performance Tips
+                  </h3>
                   <ul className="space-y-2 text-muted-foreground">
                     <li>• Use virtual scrolling for large data sets</li>
                     <li>• Implement pagination for tables over 100 rows</li>
@@ -876,7 +1046,9 @@ contract EmailRegistry {
                 </div>
 
                 <div>
-                  <h3 className={`${textVariants.heading.h3()} mb-4`}>Accessibility</h3>
+                  <h3 className={`${textVariants.heading.h3()} mb-4`}>
+                    Accessibility
+                  </h3>
                   <ul className="space-y-2 text-muted-foreground">
                     <li>• Use semantic HTML (table, thead, tbody)</li>
                     <li>• Add aria-labels for sortable columns</li>

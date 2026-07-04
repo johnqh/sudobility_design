@@ -1,15 +1,15 @@
-import { Section } from '@sudobility/components';
+import { Section } from "@sudobility/components";
 
-import React, { useState } from 'react';
-import LocalizedLink from '../../components/LocalizedLink';
+import React, { useState } from "react";
+import LocalizedLink from "../../components/LocalizedLink";
 import {
   SwatchIcon,
   ClipboardDocumentIcon,
   CheckIcon,
   CodeBracketIcon,
-} from '@heroicons/react/24/outline';
-import { SEOHead } from '@sudobility/seo_lib';
-import { ui, textVariants, variants, colors } from '@sudobility/design';
+} from "@heroicons/react/24/outline";
+import { SEOHead } from "@sudobility/seo_lib";
+import { ui, textVariants, variants, colors } from "@sudobility/design";
 
 interface AppProps {
   emailDomain: string;
@@ -30,7 +30,7 @@ const ColorSwatch: React.FC<ColorSwatchProps> = ({
   name,
   value,
   showName = true,
-  className = '',
+  className = "",
   copiedValue,
   onCopy,
 }) => (
@@ -80,7 +80,9 @@ const CodeExample: React.FC<CodeExampleProps> = ({
     <div>
       <h4 className={`${textVariants.heading.h5()} mb-1`}>{title}</h4>
       {description && (
-        <p className={`${textVariants.body.sm()} text-muted-foreground`}>{description}</p>
+        <p className={`${textVariants.body.sm()} text-muted-foreground`}>
+          {description}
+        </p>
       )}
     </div>
 
@@ -90,7 +92,9 @@ const CodeExample: React.FC<CodeExampleProps> = ({
           <div className="w-2 h-2 bg-destructive rounded-full"></div>
           <div className="w-2 h-2 bg-warning rounded-full"></div>
           <div className="w-2 h-2 bg-success rounded-full"></div>
-          <span className={`${textVariants.caption.default()} ml-2`}>Preview</span>
+          <span className={`${textVariants.caption.default()} ml-2`}>
+            Preview
+          </span>
         </div>
         <div className="bg-card rounded border p-3">{preview}</div>
       </div>
@@ -100,7 +104,11 @@ const CodeExample: React.FC<CodeExampleProps> = ({
       <div className="flex items-center justify-between mb-2">
         <div className="flex items-center gap-2">
           <CodeBracketIcon className="h-4 w-4 text-muted-foreground" />
-          <span className={`${textVariants.caption.default()} text-muted-foreground`}>Usage</span>
+          <span
+            className={`${textVariants.caption.default()} text-muted-foreground`}
+          >
+            Usage
+          </span>
         </div>
         <button
           onClick={() => onCopy(code)}
@@ -166,38 +174,38 @@ const ColorsPage: React.FC<AppProps> = ({ emailDomain, appName }) => {
   // Raw color palettes from the design system
   const colorPalettes = [
     {
-      name: 'Blue (Primary)',
-      description: 'Primary brand color palette',
+      name: "Blue (Primary)",
+      description: "Primary brand color palette",
       colors: colors.raw.blue,
     },
     {
-      name: 'Purple (Secondary)',
-      description: 'Secondary brand color palette',
+      name: "Purple (Secondary)",
+      description: "Secondary brand color palette",
       colors: colors.raw.purple,
     },
     {
-      name: 'Neutral (Grayscale)',
-      description: 'Background, text, and border colors',
+      name: "Neutral (Grayscale)",
+      description: "Background, text, and border colors",
       colors: colors.raw.neutral,
     },
     {
-      name: 'Red (Error)',
-      description: 'Error and destructive action colors',
+      name: "Red (Error)",
+      description: "Error and destructive action colors",
       colors: colors.raw.red,
     },
     {
-      name: 'Green (Success)',
-      description: 'Success and positive action colors',
+      name: "Green (Success)",
+      description: "Success and positive action colors",
       colors: colors.raw.green,
     },
     {
-      name: 'Amber (Warning)',
-      description: 'Warning and caution colors',
+      name: "Amber (Warning)",
+      description: "Warning and caution colors",
       colors: colors.raw.amber,
     },
     {
-      name: 'Orange',
-      description: 'Accent and highlight colors',
+      name: "Orange",
+      description: "Accent and highlight colors",
       colors: colors.raw.orange,
     },
   ];
@@ -205,96 +213,96 @@ const ColorsPage: React.FC<AppProps> = ({ emailDomain, appName }) => {
   // Web3 specific colors
   const web3Colors = [
     {
-      name: 'Ethereum',
+      name: "Ethereum",
       color: colors.raw.web3.ethereum.DEFAULT,
-      usage: 'Ethereum network branding',
+      usage: "Ethereum network branding",
     },
     {
-      name: 'Solana',
+      name: "Solana",
       color: colors.raw.web3.solana.DEFAULT,
-      usage: 'Solana network branding',
+      usage: "Solana network branding",
     },
     {
-      name: 'Polygon',
+      name: "Polygon",
       color: colors.raw.web3.polygon.DEFAULT,
-      usage: 'Polygon network branding',
+      usage: "Polygon network branding",
     },
   ];
 
   // Semantic color examples
   const semanticColors = [
     {
-      category: 'Text Colors',
+      category: "Text Colors",
       colors: [
         {
-          name: 'Primary Text',
+          name: "Primary Text",
           light: colors.semantic.text.primary.light,
           dark: colors.semantic.text.primary.dark,
-          usage: 'Main content text',
+          usage: "Main content text",
         },
         {
-          name: 'Secondary Text',
+          name: "Secondary Text",
           light: colors.semantic.text.secondary.light,
           dark: colors.semantic.text.secondary.dark,
-          usage: 'Supporting text',
+          usage: "Supporting text",
         },
         {
-          name: 'Link Text',
+          name: "Link Text",
           light: colors.semantic.text.link.light,
           dark: colors.semantic.text.link.dark,
-          usage: 'Interactive links',
+          usage: "Interactive links",
         },
       ],
     },
     {
-      category: 'Background Colors',
+      category: "Background Colors",
       colors: [
         {
-          name: 'Primary Background',
+          name: "Primary Background",
           light: colors.semantic.background.primary.light,
           dark: colors.semantic.background.primary.dark,
-          usage: 'Main page backgrounds',
+          usage: "Main page backgrounds",
         },
         {
-          name: 'Secondary Background',
+          name: "Secondary Background",
           light: colors.semantic.background.secondary.light,
           dark: colors.semantic.background.secondary.dark,
-          usage: 'Card backgrounds',
+          usage: "Card backgrounds",
         },
         {
-          name: 'Elevated Background',
+          name: "Elevated Background",
           light: colors.semantic.background.elevated.light,
           dark: colors.semantic.background.elevated.dark,
-          usage: 'Modals and overlays',
+          usage: "Modals and overlays",
         },
       ],
     },
     {
-      category: 'State Colors',
+      category: "State Colors",
       colors: [
         {
-          name: 'Success',
+          name: "Success",
           light: colors.semantic.state.success.light,
           dark: colors.semantic.state.success.dark,
-          usage: 'Success messages and actions',
+          usage: "Success messages and actions",
         },
         {
-          name: 'Warning',
+          name: "Warning",
           light: colors.semantic.state.warning.light,
           dark: colors.semantic.state.warning.dark,
-          usage: 'Warning messages',
+          usage: "Warning messages",
         },
         {
-          name: 'Error',
+          name: "Error",
           light: colors.semantic.state.error.light,
           dark: colors.semantic.state.error.dark,
-          usage: 'Error messages and destructive actions',
+          usage: "Error messages and destructive actions",
         },
         {
-          name: 'Info',
+          name: "Info",
           light: colors.semantic.state.info.light,
           dark: colors.semantic.state.info.dark,
-          usage: 'Informational messages',
+          usage: "Informational messages",
         },
       ],
     },
@@ -303,88 +311,121 @@ const ColorsPage: React.FC<AppProps> = ({ emailDomain, appName }) => {
   // Component color examples
   const componentColors = [
     {
-      component: 'Button',
+      component: "Button",
       variants: [
         {
-          name: 'Primary',
+          name: "Primary",
           classes:
-            colors.component.button.primary.base + ' ' + colors.component.button.primary.dark,
-          usage: 'Main actions',
+            colors.component.button.primary.base +
+            " " +
+            colors.component.button.primary.dark,
+          usage: "Main actions",
         },
         {
-          name: 'Secondary',
+          name: "Secondary",
           classes:
-            colors.component.button.secondary.base + ' ' + colors.component.button.secondary.dark,
-          usage: 'Alternative actions',
+            colors.component.button.secondary.base +
+            " " +
+            colors.component.button.secondary.dark,
+          usage: "Alternative actions",
         },
         {
-          name: 'Destructive',
+          name: "Destructive",
           classes:
             colors.component.button.destructive.base +
-            ' ' +
+            " " +
             colors.component.button.destructive.dark,
-          usage: 'Dangerous actions',
+          usage: "Dangerous actions",
         },
         {
-          name: 'Success',
+          name: "Success",
           classes:
-            colors.component.button.success.base + ' ' + colors.component.button.success.dark,
-          usage: 'Positive actions',
+            colors.component.button.success.base +
+            " " +
+            colors.component.button.success.dark,
+          usage: "Positive actions",
         },
       ],
     },
     {
-      component: 'Badge',
+      component: "Badge",
       variants: [
         {
-          name: 'Default',
-          classes: colors.component.badge.default.base + ' ' + colors.component.badge.default.dark,
-          usage: 'General labels',
+          name: "Default",
+          classes:
+            colors.component.badge.default.base +
+            " " +
+            colors.component.badge.default.dark,
+          usage: "General labels",
         },
         {
-          name: 'Primary',
-          classes: colors.component.badge.primary.base + ' ' + colors.component.badge.primary.dark,
-          usage: 'Important labels',
+          name: "Primary",
+          classes:
+            colors.component.badge.primary.base +
+            " " +
+            colors.component.badge.primary.dark,
+          usage: "Important labels",
         },
         {
-          name: 'Success',
-          classes: colors.component.badge.success.base + ' ' + colors.component.badge.success.dark,
-          usage: 'Success states',
+          name: "Success",
+          classes:
+            colors.component.badge.success.base +
+            " " +
+            colors.component.badge.success.dark,
+          usage: "Success states",
         },
         {
-          name: 'Warning',
-          classes: colors.component.badge.warning.base + ' ' + colors.component.badge.warning.dark,
-          usage: 'Warning states',
+          name: "Warning",
+          classes:
+            colors.component.badge.warning.base +
+            " " +
+            colors.component.badge.warning.dark,
+          usage: "Warning states",
         },
         {
-          name: 'Error',
-          classes: colors.component.badge.error.base + ' ' + colors.component.badge.error.dark,
-          usage: 'Error states',
+          name: "Error",
+          classes:
+            colors.component.badge.error.base +
+            " " +
+            colors.component.badge.error.dark,
+          usage: "Error states",
         },
       ],
     },
     {
-      component: 'Alert',
+      component: "Alert",
       variants: [
         {
-          name: 'Info',
-          classes: colors.component.alert.info.base + ' ' + colors.component.alert.info.dark,
-          usage: 'Information messages',
+          name: "Info",
+          classes:
+            colors.component.alert.info.base +
+            " " +
+            colors.component.alert.info.dark,
+          usage: "Information messages",
         },
         {
-          name: 'Success',
-          classes: colors.component.alert.success.base + ' ' + colors.component.alert.success.dark,
-          usage: 'Success messages',
+          name: "Success",
+          classes:
+            colors.component.alert.success.base +
+            " " +
+            colors.component.alert.success.dark,
+          usage: "Success messages",
         },
         {
-          name: 'Warning',
-          classes: colors.component.alert.warning.base + ' ' + colors.component.alert.warning.dark,
-          usage: 'Warning messages',
+          name: "Warning",
+          classes:
+            colors.component.alert.warning.base +
+            " " +
+            colors.component.alert.warning.dark,
+          usage: "Warning messages",
         },
         {
-          name: 'Error',
-          classes: colors.component.alert.error.base + ' ' + colors.component.alert.error.dark,
-          usage: 'Error messages',
+          name: "Error",
+          classes:
+            colors.component.alert.error.base +
+            " " +
+            colors.component.alert.error.dark,
+          usage: "Error messages",
         },
       ],
     },
@@ -407,7 +448,12 @@ const ColorsPage: React.FC<AppProps> = ({ emailDomain, appName }) => {
               className="flex items-center text-primary hover:text-primary/80"
             >
               View Typography
-              <svg className="ml-2 h-4 w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <svg
+                className="ml-2 h-4 w-4"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
                 <path
                   strokeLinecap="round"
                   strokeLinejoin="round"
@@ -422,14 +468,21 @@ const ColorsPage: React.FC<AppProps> = ({ emailDomain, appName }) => {
           <div className="text-center mb-12">
             <div className="inline-flex items-center bg-destructive/10 px-4 py-2 rounded-full mb-6">
               <SwatchIcon className="h-5 w-5 text-destructive mr-2" />
-              <span className="text-destructive font-semibold">Color System</span>
+              <span className="text-destructive font-semibold">
+                Color System
+              </span>
             </div>
 
-            <h1 className={`${textVariants.heading.display.xl()} mb-6`}>Color Palette & Usage</h1>
+            <h1 className={`${textVariants.heading.display.xl()} mb-6`}>
+              Color Palette & Usage
+            </h1>
 
-            <p className={`${textVariants.body.lg()} max-w-3xl mx-auto text-muted-foreground`}>
-              Complete color system used throughout the {appName} application with usage examples
-              and code samples. Click any color to copy its hex value to clipboard.
+            <p
+              className={`${textVariants.body.lg()} max-w-3xl mx-auto text-muted-foreground`}
+            >
+              Complete color system used throughout the {appName} application
+              with usage examples and code samples. Click any color to copy its
+              hex value to clipboard.
             </p>
           </div>
 
@@ -443,15 +496,19 @@ const ColorsPage: React.FC<AppProps> = ({ emailDomain, appName }) => {
                 </h2>
               </div>
 
-              <p className={`${textVariants.body.md()} text-muted-foreground mb-8`}>
-                Ready-to-use code examples for the most common design patterns. Copy and paste
-                directly into your components.
+              <p
+                className={`${textVariants.body.md()} text-muted-foreground mb-8`}
+              >
+                Ready-to-use code examples for the most common design patterns.
+                Copy and paste directly into your components.
               </p>
 
               <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
                 {/* Primary Button Example */}
                 <div className="space-y-4">
-                  <h3 className={`${textVariants.heading.h4()} mb-3`}>Primary Button</h3>
+                  <h3 className={`${textVariants.heading.h4()} mb-3`}>
+                    Primary Button
+                  </h3>
                   <div className="bg-muted rounded-lg p-4 relative">
                     <button
                       className="absolute top-2 right-2 p-1 hover:bg-foreground/10 rounded"
@@ -468,13 +525,17 @@ const ColorsPage: React.FC<AppProps> = ({ emailDomain, appName }) => {
                     </pre>
                   </div>
                   <div className="p-4 bg-card rounded-lg border border-border">
-                    <button className={variants.button.primary.default()}>Primary Action</button>
+                    <button className={variants.button.primary.default()}>
+                      Primary Action
+                    </button>
                   </div>
                 </div>
 
                 {/* Success Alert Example */}
                 <div className="space-y-4">
-                  <h3 className={`${textVariants.heading.h4()} mb-3`}>Success Alert</h3>
+                  <h3 className={`${textVariants.heading.h4()} mb-3`}>
+                    Success Alert
+                  </h3>
                   <div className="bg-muted rounded-lg p-4 relative">
                     <button
                       className="absolute top-2 right-2 p-1 hover:bg-foreground/10 rounded"
@@ -496,14 +557,18 @@ const ColorsPage: React.FC<AppProps> = ({ emailDomain, appName }) => {
                         <CheckIcon className="h-5 w-5 mr-3" />
                         <span className="font-medium">Success!</span>
                       </div>
-                      <p className="mt-1 text-sm">Your action was completed successfully.</p>
+                      <p className="mt-1 text-sm">
+                        Your action was completed successfully.
+                      </p>
                     </div>
                   </div>
                 </div>
 
                 {/* Web3 Badge Example */}
                 <div className="space-y-4">
-                  <h3 className={`${textVariants.heading.h4()} mb-3`}>Blockchain Badge</h3>
+                  <h3 className={`${textVariants.heading.h4()} mb-3`}>
+                    Blockchain Badge
+                  </h3>
                   <div className="bg-muted rounded-lg p-4 relative">
                     <button
                       className="absolute top-2 right-2 p-1 hover:bg-foreground/10 rounded"
@@ -515,7 +580,9 @@ const ColorsPage: React.FC<AppProps> = ({ emailDomain, appName }) => {
                         <ClipboardDocumentIcon className="h-4 w-4 text-muted-foreground hover:text-foreground" />
                       )}
                     </button>
-                    <pre className="text-sm text-foreground overflow-x-auto">{ethBadgeSnippet}</pre>
+                    <pre className="text-sm text-foreground overflow-x-auto">
+                      {ethBadgeSnippet}
+                    </pre>
                   </div>
                   <div className="p-4 bg-card rounded-lg border border-border">
                     <span className={variants.badge.ethereum()}>Ethereum</span>
@@ -524,7 +591,9 @@ const ColorsPage: React.FC<AppProps> = ({ emailDomain, appName }) => {
 
                 {/* Form Input Example */}
                 <div className="space-y-4">
-                  <h3 className={`${textVariants.heading.h4()} mb-3`}>Form Input</h3>
+                  <h3 className={`${textVariants.heading.h4()} mb-3`}>
+                    Form Input
+                  </h3>
                   <div className="bg-muted rounded-lg p-4 relative">
                     <button
                       className="absolute top-2 right-2 p-1 hover:bg-foreground/10 rounded"
@@ -536,10 +605,15 @@ const ColorsPage: React.FC<AppProps> = ({ emailDomain, appName }) => {
                         <ClipboardDocumentIcon className="h-4 w-4 text-muted-foreground hover:text-foreground" />
                       )}
                     </button>
-                    <pre className="text-sm text-foreground overflow-x-auto">{inputSnippet}</pre>
+                    <pre className="text-sm text-foreground overflow-x-auto">
+                      {inputSnippet}
+                    </pre>
                   </div>
                   <div className="p-4 bg-card rounded-lg border border-border">
-                    <input className={variants.input.default()} placeholder="Enter your email..." />
+                    <input
+                      className={variants.input.default()}
+                      placeholder="Enter your email..."
+                    />
                   </div>
                 </div>
               </div>
@@ -548,17 +622,25 @@ const ColorsPage: React.FC<AppProps> = ({ emailDomain, appName }) => {
 
           {/* Raw Color Palettes */}
           <Section>
-            <h2 className={`${textVariants.heading.h2()} mb-8`}>Color Palettes</h2>
-            <p className={`${textVariants.body.md()} text-muted-foreground mb-8`}>
-              Base color palettes organized by hue. Each palette includes shades from 50 (lightest)
-              to 950 (darkest).
+            <h2 className={`${textVariants.heading.h2()} mb-8`}>
+              Color Palettes
+            </h2>
+            <p
+              className={`${textVariants.body.md()} text-muted-foreground mb-8`}
+            >
+              Base color palettes organized by hue. Each palette includes shades
+              from 50 (lightest) to 950 (darkest).
             </p>
 
             <div className="space-y-12">
-              {colorPalettes.map(palette => (
+              {colorPalettes.map((palette) => (
                 <div key={palette.name}>
-                  <h3 className={`${textVariants.heading.h3()} mb-4`}>{palette.name}</h3>
-                  <p className={`${textVariants.body.sm()} text-muted-foreground mb-6`}>
+                  <h3 className={`${textVariants.heading.h3()} mb-4`}>
+                    {palette.name}
+                  </h3>
+                  <p
+                    className={`${textVariants.body.sm()} text-muted-foreground mb-6`}
+                  >
                     {palette.description}
                   </p>
                   <div className="grid grid-cols-2 sm:grid-cols-4 md:grid-cols-6 lg:grid-cols-11 gap-4">
@@ -579,13 +661,18 @@ const ColorsPage: React.FC<AppProps> = ({ emailDomain, appName }) => {
 
           {/* Web3 Colors */}
           <Section>
-            <h2 className={`${textVariants.heading.h2()} mb-8`}>Web3 Network Colors</h2>
-            <p className={`${textVariants.body.md()} text-muted-foreground mb-8`}>
-              Colors representing different blockchain networks and Web3 elements.
+            <h2 className={`${textVariants.heading.h2()} mb-8`}>
+              Web3 Network Colors
+            </h2>
+            <p
+              className={`${textVariants.body.md()} text-muted-foreground mb-8`}
+            >
+              Colors representing different blockchain networks and Web3
+              elements.
             </p>
 
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
-              {web3Colors.map(item => (
+              {web3Colors.map((item) => (
                 <div key={item.name} className="text-center">
                   <ColorSwatch
                     name={item.name}
@@ -594,7 +681,11 @@ const ColorsPage: React.FC<AppProps> = ({ emailDomain, appName }) => {
                     copiedValue={copiedValue}
                     onCopy={copyToClipboard}
                   />
-                  <p className={`${textVariants.body.sm()} text-muted-foreground`}>{item.usage}</p>
+                  <p
+                    className={`${textVariants.body.sm()} text-muted-foreground`}
+                  >
+                    {item.usage}
+                  </p>
                 </div>
               ))}
             </div>
@@ -636,20 +727,28 @@ className="text-purple-600" // Polygon purple`}
 
           {/* Semantic Colors */}
           <Section>
-            <h2 className={`${textVariants.heading.h2()} mb-8`}>Semantic Colors</h2>
-            <p className={`${textVariants.body.md()} text-muted-foreground mb-8`}>
-              Semantic color tokens that adapt to light and dark themes. These provide consistent
-              meaning across the interface.
+            <h2 className={`${textVariants.heading.h2()} mb-8`}>
+              Semantic Colors
+            </h2>
+            <p
+              className={`${textVariants.body.md()} text-muted-foreground mb-8`}
+            >
+              Semantic color tokens that adapt to light and dark themes. These
+              provide consistent meaning across the interface.
             </p>
 
             <div className="space-y-12">
-              {semanticColors.map(category => (
+              {semanticColors.map((category) => (
                 <div key={category.category}>
-                  <h3 className={`${textVariants.heading.h3()} mb-6`}>{category.category}</h3>
+                  <h3 className={`${textVariants.heading.h3()} mb-6`}>
+                    {category.category}
+                  </h3>
                   <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-                    {category.colors.map(color => (
+                    {category.colors.map((color) => (
                       <div key={color.name} className="space-y-4">
-                        <h4 className={`${textVariants.heading.h4()}`}>{color.name}</h4>
+                        <h4 className={`${textVariants.heading.h4()}`}>
+                          {color.name}
+                        </h4>
                         <div className="grid grid-cols-2 gap-4">
                           <div>
                             <div className="text-xs font-medium text-muted-foreground mb-2">
@@ -676,7 +775,9 @@ className="text-purple-600" // Polygon purple`}
                             />
                           </div>
                         </div>
-                        <p className={`${textVariants.body.xs()} text-muted-foreground`}>
+                        <p
+                          className={`${textVariants.body.xs()} text-muted-foreground`}
+                        >
                           {color.usage}
                         </p>
                       </div>
@@ -726,13 +827,15 @@ const errorColor = colors.semantic.state.error.light;
             <h2 className={`${textVariants.heading.h2()} mb-8`}>
               Component Colors & Usage Examples
             </h2>
-            <p className={`${textVariants.body.md()} text-muted-foreground mb-8`}>
-              Pre-configured color combinations for common UI components with built-in hover, focus,
-              and theme support.
+            <p
+              className={`${textVariants.body.md()} text-muted-foreground mb-8`}
+            >
+              Pre-configured color combinations for common UI components with
+              built-in hover, focus, and theme support.
             </p>
 
             <div className="space-y-12">
-              {componentColors.map(component => (
+              {componentColors.map((component) => (
                 <div key={component.component}>
                   <h3 className={`${textVariants.heading.h3()} mb-6`}>
                     {component.component} Examples
@@ -740,23 +843,27 @@ const errorColor = colors.semantic.state.error.light;
 
                   {/* Live Examples */}
                   <div className="mb-8 p-6 bg-muted rounded-lg">
-                    <h4 className={`${textVariants.heading.h4()} mb-4`}>Live Examples</h4>
+                    <h4 className={`${textVariants.heading.h4()} mb-4`}>
+                      Live Examples
+                    </h4>
                     <div className="flex flex-wrap gap-4">
-                      {component.variants.map(variant => (
+                      {component.variants.map((variant) => (
                         <div key={variant.name} className="space-y-2">
-                          {component.component === 'Button' && (
+                          {component.component === "Button" && (
                             <>
                               <button
                                 className={`${variant.classes} px-4 py-2 rounded-lg font-medium transition-colors hover:scale-105`}
                               >
                                 {variant.name}
                               </button>
-                              <div className={`${textVariants.caption.default()} text-center`}>
+                              <div
+                                className={`${textVariants.caption.default()} text-center`}
+                              >
                                 {variant.name}
                               </div>
                             </>
                           )}
-                          {component.component === 'Badge' && (
+                          {component.component === "Badge" && (
                             <>
                               <div>
                                 <span
@@ -765,19 +872,23 @@ const errorColor = colors.semantic.state.error.light;
                                   {variant.name}
                                 </span>
                               </div>
-                              <div className={`${textVariants.caption.default()}`}>
+                              <div
+                                className={`${textVariants.caption.default()}`}
+                              >
                                 {variant.name}
                               </div>
                             </>
                           )}
-                          {component.component === 'Alert' && (
+                          {component.component === "Alert" && (
                             <>
                               <div
                                 className={`${variant.classes} p-3 rounded-lg border text-sm max-w-xs`}
                               >
                                 {variant.name} message
                               </div>
-                              <div className={`${textVariants.caption.default()}`}>
+                              <div
+                                className={`${textVariants.caption.default()}`}
+                              >
                                 {variant.name}
                               </div>
                             </>
@@ -795,7 +906,7 @@ const errorColor = colors.semantic.state.error.light;
                       copiedValue={copiedValue}
                       onCopy={copyToClipboard}
                       code={
-                        component.component === 'Button'
+                        component.component === "Button"
                           ? `import { variants } from '@sudobility/design';
 
 // Primary
@@ -812,7 +923,7 @@ const errorColor = colors.semantic.state.error.light;
 <button className={variants.button.destructive.default()}>
   Delete Item
 </button>`
-                          : component.component === 'Badge'
+                          : component.component === "Badge"
                             ? `import { variants } from '@sudobility/design';
 
 <span className={variants.badge.primary()}>Primary</span>
@@ -838,31 +949,45 @@ const errorColor = colors.semantic.state.error.light;
 </div>`
                       }
                       preview={
-                        component.component === 'Button' ? (
+                        component.component === "Button" ? (
                           <div className="space-y-3">
-                            <button className={variants.button.primary.default()}>
+                            <button
+                              className={variants.button.primary.default()}
+                            >
                               Primary Action
                             </button>
-                            <button className={variants.button.secondary.default()}>
+                            <button
+                              className={variants.button.secondary.default()}
+                            >
                               Secondary Action
                             </button>
-                            <button className={variants.button.destructive.default()}>
+                            <button
+                              className={variants.button.destructive.default()}
+                            >
                               Delete Item
                             </button>
                           </div>
-                        ) : component.component === 'Badge' ? (
+                        ) : component.component === "Badge" ? (
                           <div className="flex flex-wrap gap-2">
-                            <span className={variants.badge.primary()}>Primary</span>
-                            <span className={variants.badge.success()}>Success</span>
-                            <span className={variants.badge.error()}>Error</span>
+                            <span className={variants.badge.primary()}>
+                              Primary
+                            </span>
+                            <span className={variants.badge.success()}>
+                              Success
+                            </span>
+                            <span className={variants.badge.error()}>
+                              Error
+                            </span>
                           </div>
                         ) : (
                           <div className="space-y-3">
                             <div className={(variants.alert as any).info()}>
-                              <strong>Info:</strong> This is an information alert
+                              <strong>Info:</strong> This is an information
+                              alert
                             </div>
                             <div className={(variants.alert as any).success()}>
-                              <strong>Success:</strong> Operation completed successfully
+                              <strong>Success:</strong> Operation completed
+                              successfully
                             </div>
                             <div className={(variants.alert as any).error()}>
                               <strong>Error:</strong> Something went wrong
@@ -878,7 +1003,7 @@ const errorColor = colors.semantic.state.error.light;
                       copiedValue={copiedValue}
                       onCopy={copyToClipboard}
                       code={
-                        component.component === 'Button'
+                        component.component === "Button"
                           ? `import { variants } from '@sudobility/design';
 
 // All button variants
@@ -892,7 +1017,7 @@ const errorColor = colors.semantic.state.error.light;
 
 <button className={variants.button.outline.default()}>Outline</button>
 <button className={variants.button.primary.default()} disabled>Disabled</button>`
-                          : component.component === 'Badge'
+                          : component.component === "Badge"
                             ? `import { variants } from '@sudobility/design';
 
 // Map status → semantic badge variant
@@ -926,27 +1051,29 @@ const alert = {
                       }
                       preview={
                         <div className="space-y-4">
-                          <div className={`${textVariants.body.sm()} font-medium mb-2`}>
+                          <div
+                            className={`${textVariants.body.sm()} font-medium mb-2`}
+                          >
                             Interactive {component.component} Examples:
                           </div>
                           <div className="flex flex-wrap gap-3">
-                            {component.variants.slice(0, 3).map(variant => (
+                            {component.variants.slice(0, 3).map((variant) => (
                               <div key={variant.name}>
-                                {component.component === 'Button' && (
+                                {component.component === "Button" && (
                                   <button
                                     className={`${variant.classes} px-3 py-1.5 rounded text-sm font-medium transition-all hover:scale-105`}
                                   >
                                     {variant.name}
                                   </button>
                                 )}
-                                {component.component === 'Badge' && (
+                                {component.component === "Badge" && (
                                   <span
                                     className={`${variant.classes} px-2 py-0.5 rounded-full text-xs font-medium`}
                                   >
                                     {variant.name}
                                   </span>
                                 )}
-                                {component.component === 'Alert' && (
+                                {component.component === "Alert" && (
                                   <div
                                     className={`${variant.classes} p-2 rounded text-xs border max-w-32`}
                                   >
@@ -967,9 +1094,14 @@ const alert = {
 
           {/* Practical Usage Examples */}
           <Section>
-            <h2 className={`${textVariants.heading.h2()} mb-8`}>Practical Usage Examples</h2>
-            <p className={`${textVariants.body.md()} text-muted-foreground mb-8`}>
-              Real-world examples showing how to combine colors for common UI patterns.
+            <h2 className={`${textVariants.heading.h2()} mb-8`}>
+              Practical Usage Examples
+            </h2>
+            <p
+              className={`${textVariants.body.md()} text-muted-foreground mb-8`}
+            >
+              Real-world examples showing how to combine colors for common UI
+              patterns.
             </p>
 
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
@@ -1029,7 +1161,9 @@ const alert = {
                         defaultValue="user@example.com"
                         readOnly
                       />
-                      <p className="mt-1 text-sm text-success">✓ Email is valid</p>
+                      <p className="mt-1 text-sm text-success">
+                        ✓ Email is valid
+                      </p>
                     </div>
 
                     <div>
@@ -1047,7 +1181,10 @@ const alert = {
                       </p>
                     </div>
 
-                    <button type="button" className={variants.button.primary.fullWidth()}>
+                    <button
+                      type="button"
+                      className={variants.button.primary.fullWidth()}
+                    >
                       Submit Form
                     </button>
                   </form>
@@ -1111,18 +1248,24 @@ const alert = {
                   <div className="space-y-3">
                     <div className="bg-success/10 border-success/30 border rounded-lg p-4">
                       <div className="flex items-center justify-between mb-2">
-                        <h3 className="font-medium text-foreground text-sm">API Server</h3>
+                        <h3 className="font-medium text-foreground text-sm">
+                          API Server
+                        </h3>
                         <span className="bg-success/10 text-success px-2 py-1 rounded-full text-xs font-medium flex items-center gap-1">
                           <div className="w-2 h-2 rounded-full bg-success"></div>
                           online
                         </span>
                       </div>
-                      <p className="text-muted-foreground text-xs">All systems operational</p>
+                      <p className="text-muted-foreground text-xs">
+                        All systems operational
+                      </p>
                     </div>
 
                     <div className="bg-warning/10 border-warning/30 border rounded-lg p-4">
                       <div className="flex items-center justify-between mb-2">
-                        <h3 className="font-medium text-foreground text-sm">Database</h3>
+                        <h3 className="font-medium text-foreground text-sm">
+                          Database
+                        </h3>
                         <span className="bg-warning/10 text-warning px-2 py-1 rounded-full text-xs font-medium flex items-center gap-1">
                           <div className="w-2 h-2 rounded-full bg-warning"></div>
                           maintenance
@@ -1252,8 +1395,12 @@ const alert = {
                   <div className="space-y-4">
                     <div className="space-y-2">
                       <div className="flex justify-between items-center">
-                        <span className="text-sm font-medium text-foreground">Progress</span>
-                        <span className="text-sm text-muted-foreground">75/100</span>
+                        <span className="text-sm font-medium text-foreground">
+                          Progress
+                        </span>
+                        <span className="text-sm text-muted-foreground">
+                          75/100
+                        </span>
                       </div>
                       <div className="w-full bg-muted rounded-full h-2">
                         <div className="bg-primary h-2 rounded-full w-3/4 transition-all duration-300"></div>
@@ -1263,8 +1410,12 @@ const alert = {
 
                     <div className="space-y-2">
                       <div className="flex justify-between items-center">
-                        <span className="text-sm font-medium text-foreground">Success</span>
-                        <span className="text-sm text-muted-foreground">100/100</span>
+                        <span className="text-sm font-medium text-foreground">
+                          Success
+                        </span>
+                        <span className="text-sm text-muted-foreground">
+                          100/100
+                        </span>
                       </div>
                       <div className="w-full bg-muted rounded-full h-2">
                         <div className="bg-success h-2 rounded-full w-full transition-all duration-300"></div>
@@ -1279,12 +1430,20 @@ const alert = {
 
           {/* Usage Guidelines */}
           <Section>
-            <h2 className={`${textVariants.heading.h2()} mb-8`}>Usage Guidelines</h2>
+            <h2 className={`${textVariants.heading.h2()} mb-8`}>
+              Usage Guidelines
+            </h2>
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
               <div className={`${ui.background.subtle} rounded-lg p-6`}>
-                <h3 className={`${textVariants.heading.h4()} mb-4 text-success`}>✓ Do</h3>
-                <ul className={`${textVariants.body.sm()} space-y-2 text-muted-foreground`}>
+                <h3
+                  className={`${textVariants.heading.h4()} mb-4 text-success`}
+                >
+                  ✓ Do
+                </h3>
+                <ul
+                  className={`${textVariants.body.sm()} space-y-2 text-muted-foreground`}
+                >
                   <li>• Use semantic colors for consistent meaning</li>
                   <li>• Prefer component colors for UI elements</li>
                   <li>• Test colors in both light and dark modes</li>
@@ -1294,8 +1453,14 @@ const alert = {
               </div>
 
               <div className={`${ui.background.subtle} rounded-lg p-6`}>
-                <h3 className={`${textVariants.heading.h4()} mb-4 text-destructive`}>✗ Don't</h3>
-                <ul className={`${textVariants.body.sm()} space-y-2 text-muted-foreground`}>
+                <h3
+                  className={`${textVariants.heading.h4()} mb-4 text-destructive`}
+                >
+                  ✗ Don't
+                </h3>
+                <ul
+                  className={`${textVariants.body.sm()} space-y-2 text-muted-foreground`}
+                >
                   <li>• Use raw hex values directly in components</li>
                   <li>• Mix different color systems</li>
                   <li>• Create custom colors without design approval</li>
@@ -1309,10 +1474,12 @@ const alert = {
           {/* Copy Instructions */}
           <div className={`${ui.background.muted} rounded-lg p-6 text-center`}>
             <ClipboardDocumentIcon className="h-8 w-8 text-muted-foreground mx-auto mb-3" />
-            <h3 className={`${textVariants.heading.h5()} mb-2`}>Click to Copy Values</h3>
+            <h3 className={`${textVariants.heading.h5()} mb-2`}>
+              Click to Copy Values
+            </h3>
             <p className={`${textVariants.body.sm()} text-muted-foreground`}>
-              Click on any color swatch to copy its hex value, or use the copy button on code
-              examples to copy usage code
+              Click on any color swatch to copy its hex value, or use the copy
+              button on code examples to copy usage code
             </p>
           </div>
         </div>

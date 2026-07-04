@@ -1,6 +1,6 @@
-import { Section } from '@sudobility/components';
+import { Section } from "@sudobility/components";
 
-import React, { useState } from 'react';
+import React, { useState } from "react";
 import {
   ClipboardDocumentIcon,
   CheckIcon,
@@ -18,10 +18,13 @@ import {
   WifiIcon,
   SignalIcon,
   CpuChipIcon,
-} from '@heroicons/react/24/outline';
-import { HeartIcon as HeartIconSolid, StarIcon as StarIconSolid } from '@heroicons/react/24/solid';
-import { SEOHead } from '@sudobility/seo_lib';
-import { textVariants, variants } from '@sudobility/design';
+} from "@heroicons/react/24/outline";
+import {
+  HeartIcon as HeartIconSolid,
+  StarIcon as StarIconSolid,
+} from "@heroicons/react/24/solid";
+import { SEOHead } from "@sudobility/seo_lib";
+import { textVariants, variants } from "@sudobility/design";
 
 interface AppProps {
   emailDomain: string;
@@ -41,7 +44,9 @@ const CodeExample: React.FC<{
     <div>
       <h4 className={`${textVariants.heading.h5()} mb-1`}>{title}</h4>
       {description && (
-        <p className={`${textVariants.body.sm()} text-muted-foreground`}>{description}</p>
+        <p className={`${textVariants.body.sm()} text-muted-foreground`}>
+          {description}
+        </p>
       )}
     </div>
 
@@ -51,7 +56,9 @@ const CodeExample: React.FC<{
           <div className="w-2 h-2 bg-destructive rounded-full"></div>
           <div className="w-2 h-2 bg-warning rounded-full"></div>
           <div className="w-2 h-2 bg-success rounded-full"></div>
-          <span className={`${textVariants.caption.default()} ml-2`}>Preview</span>
+          <span className={`${textVariants.caption.default()} ml-2`}>
+            Preview
+          </span>
         </div>
         <div className="bg-card rounded border p-6">{preview}</div>
       </div>
@@ -61,7 +68,11 @@ const CodeExample: React.FC<{
       <div className="flex items-center justify-between mb-2">
         <div className="flex items-center gap-2">
           <CodeBracketIcon className="h-4 w-4 text-muted-foreground" />
-          <span className={`${textVariants.caption.default()} text-muted-foreground`}>Usage</span>
+          <span
+            className={`${textVariants.caption.default()} text-muted-foreground`}
+          >
+            Usage
+          </span>
         </div>
         <button
           onClick={() => copyToClipboard(code)}
@@ -187,17 +198,22 @@ const CardsPage: React.FC<AppProps> = ({ emailDomain, appName: _appName }) => {
                   d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10"
                 />
               </svg>
-              <span className="text-primary font-semibold">Card Components</span>
+              <span className="text-primary font-semibold">
+                Card Components
+              </span>
             </div>
 
             <h1 className={`${textVariants.heading.display.xl()} mb-6`}>
               Card Layout & Content Patterns
             </h1>
 
-            <p className={`${textVariants.body.lg()} max-w-3xl mx-auto text-muted-foreground`}>
-              Comprehensive card component system with flexible layouts, interactive elements, and
-              content patterns. All cards support elevation, hover states, and responsive design
-              with consistent spacing and styling.
+            <p
+              className={`${textVariants.body.lg()} max-w-3xl mx-auto text-muted-foreground`}
+            >
+              Comprehensive card component system with flexible layouts,
+              interactive elements, and content patterns. All cards support
+              elevation, hover states, and responsive design with consistent
+              spacing and styling.
             </p>
           </div>
 
@@ -211,15 +227,19 @@ const CardsPage: React.FC<AppProps> = ({ emailDomain, appName: _appName }) => {
                 </h2>
               </div>
 
-              <p className={`${textVariants.body.md()} text-muted-foreground mb-8`}>
-                Ready-to-use card components with consistent layouts, interactions, and content
-                organization.
+              <p
+                className={`${textVariants.body.md()} text-muted-foreground mb-8`}
+              >
+                Ready-to-use card components with consistent layouts,
+                interactions, and content organization.
               </p>
 
               <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
                 {/* Basic Card */}
                 <div className="space-y-4">
-                  <h3 className={`${textVariants.heading.h4()} text-foreground mb-3`}>
+                  <h3
+                    className={`${textVariants.heading.h4()} text-foreground mb-3`}
+                  >
                     Basic Content Card
                   </h3>
                   <div className="bg-muted rounded-lg p-4 relative">
@@ -233,15 +253,20 @@ const CardsPage: React.FC<AppProps> = ({ emailDomain, appName: _appName }) => {
                         <ClipboardDocumentIcon className="h-4 w-4 text-muted-foreground hover:text-foreground" />
                       )}
                     </button>
-                    <pre className="text-sm text-foreground overflow-x-auto">{basicCardCode}</pre>
+                    <pre className="text-sm text-foreground overflow-x-auto">
+                      {basicCardCode}
+                    </pre>
                   </div>
                   <div className="p-4 bg-card rounded-lg border border-border">
                     <div
                       className={`${variants.card.default.padded()} hover:shadow-md transition-shadow duration-200`}
                     >
-                      <h3 className="text-lg font-semibold text-foreground mb-2">Card Title</h3>
+                      <h3 className="text-lg font-semibold text-foreground mb-2">
+                        Card Title
+                      </h3>
                       <p className="text-muted-foreground text-sm">
-                        This is a basic card with simple content layout and consistent styling.
+                        This is a basic card with simple content layout and
+                        consistent styling.
                       </p>
                     </div>
                   </div>
@@ -249,7 +274,9 @@ const CardsPage: React.FC<AppProps> = ({ emailDomain, appName: _appName }) => {
 
                 {/* Interactive Card */}
                 <div className="space-y-4">
-                  <h3 className={`${textVariants.heading.h4()} text-foreground mb-3`}>
+                  <h3
+                    className={`${textVariants.heading.h4()} text-foreground mb-3`}
+                  >
                     Interactive Card
                   </h3>
                   <div className="bg-muted rounded-lg p-4 relative">
@@ -275,10 +302,13 @@ const CardsPage: React.FC<AppProps> = ({ emailDomain, appName: _appName }) => {
                         Interactive Card
                       </h3>
                       <p className="text-muted-foreground text-sm mb-4">
-                        Click me for interaction effects and enhanced hover states.
+                        Click me for interaction effects and enhanced hover
+                        states.
                       </p>
                       <div className="flex items-center justify-between">
-                        <span className="text-primary text-sm font-medium">Learn more →</span>
+                        <span className="text-primary text-sm font-medium">
+                          Learn more →
+                        </span>
                       </div>
                     </div>
                   </div>
@@ -286,7 +316,9 @@ const CardsPage: React.FC<AppProps> = ({ emailDomain, appName: _appName }) => {
 
                 {/* Stats Card */}
                 <div className="space-y-4">
-                  <h3 className={`${textVariants.heading.h4()} text-foreground mb-3`}>
+                  <h3
+                    className={`${textVariants.heading.h4()} text-foreground mb-3`}
+                  >
                     Statistics Card
                   </h3>
                   <div className="bg-muted rounded-lg p-4 relative">
@@ -300,7 +332,9 @@ const CardsPage: React.FC<AppProps> = ({ emailDomain, appName: _appName }) => {
                         <ClipboardDocumentIcon className="h-4 w-4 text-muted-foreground hover:text-foreground" />
                       )}
                     </button>
-                    <pre className="text-sm text-foreground overflow-x-auto">{statsCardCode}</pre>
+                    <pre className="text-sm text-foreground overflow-x-auto">
+                      {statsCardCode}
+                    </pre>
                   </div>
                   <div className="p-4 bg-card rounded-lg border border-border">
                     <div className={variants.card.default.padded()}>
@@ -309,8 +343,12 @@ const CardsPage: React.FC<AppProps> = ({ emailDomain, appName: _appName }) => {
                           <CurrencyDollarIcon className="h-6 w-6 text-primary" />
                         </div>
                         <div className="ml-4">
-                          <p className="text-sm font-medium text-muted-foreground">Total Revenue</p>
-                          <p className="text-2xl font-semibold text-foreground">$45,231.89</p>
+                          <p className="text-sm font-medium text-muted-foreground">
+                            Total Revenue
+                          </p>
+                          <p className="text-2xl font-semibold text-foreground">
+                            $45,231.89
+                          </p>
                         </div>
                       </div>
                       <div className="mt-4 flex items-center text-sm">
@@ -318,7 +356,9 @@ const CardsPage: React.FC<AppProps> = ({ emailDomain, appName: _appName }) => {
                           <ArrowTrendingUpIcon className="h-4 w-4 mr-1" />
                           +20.1%
                         </span>
-                        <span className="text-muted-foreground ml-2">from last month</span>
+                        <span className="text-muted-foreground ml-2">
+                          from last month
+                        </span>
                       </div>
                     </div>
                   </div>
@@ -326,7 +366,9 @@ const CardsPage: React.FC<AppProps> = ({ emailDomain, appName: _appName }) => {
 
                 {/* Feature Card */}
                 <div className="space-y-4">
-                  <h3 className={`${textVariants.heading.h4()} text-foreground mb-3`}>
+                  <h3
+                    className={`${textVariants.heading.h4()} text-foreground mb-3`}
+                  >
                     Feature Card
                   </h3>
                   <div className="bg-muted rounded-lg p-4 relative">
@@ -340,7 +382,9 @@ const CardsPage: React.FC<AppProps> = ({ emailDomain, appName: _appName }) => {
                         <ClipboardDocumentIcon className="h-4 w-4 text-muted-foreground hover:text-foreground" />
                       )}
                     </button>
-                    <pre className="text-sm text-foreground overflow-x-auto">{featureCardCode}</pre>
+                    <pre className="text-sm text-foreground overflow-x-auto">
+                      {featureCardCode}
+                    </pre>
                   </div>
                   <div className="p-4 bg-card rounded-lg border border-border">
                     <div className={variants.card.default.padded()}>
@@ -353,8 +397,8 @@ const CardsPage: React.FC<AppProps> = ({ emailDomain, appName: _appName }) => {
                             Secure & Private
                           </h3>
                           <p className="text-muted-foreground text-sm mb-4">
-                            End-to-end encryption ensures your communications remain private and
-                            secure.
+                            End-to-end encryption ensures your communications
+                            remain private and secure.
                           </p>
                           <button className="text-success text-sm font-medium hover:text-success/80 transition-colors">
                             Learn more →
@@ -370,9 +414,14 @@ const CardsPage: React.FC<AppProps> = ({ emailDomain, appName: _appName }) => {
 
           {/* Card Variants */}
           <Section>
-            <h2 className={`${textVariants.heading.h2()} mb-8`}>Card Variants & Elevations</h2>
-            <p className={`${textVariants.body.md()} text-muted-foreground mb-8`}>
-              Different card elevations and styling variants for various use cases.
+            <h2 className={`${textVariants.heading.h2()} mb-8`}>
+              Card Variants & Elevations
+            </h2>
+            <p
+              className={`${textVariants.body.md()} text-muted-foreground mb-8`}
+            >
+              Different card elevations and styling variants for various use
+              cases.
             </p>
 
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
@@ -403,16 +452,24 @@ const CardsPage: React.FC<AppProps> = ({ emailDomain, appName: _appName }) => {
                 preview={
                   <div className="space-y-4">
                     <div className="bg-card border border-border rounded-lg p-4">
-                      <span className="text-sm text-muted-foreground">Flat Card</span>
+                      <span className="text-sm text-muted-foreground">
+                        Flat Card
+                      </span>
                     </div>
                     <div className="bg-card border border-border rounded-lg p-4 shadow-sm">
-                      <span className="text-sm text-muted-foreground">Default Card</span>
+                      <span className="text-sm text-muted-foreground">
+                        Default Card
+                      </span>
                     </div>
                     <div className="bg-card border border-border rounded-lg p-4 shadow-md">
-                      <span className="text-sm text-muted-foreground">Elevated Card</span>
+                      <span className="text-sm text-muted-foreground">
+                        Elevated Card
+                      </span>
                     </div>
                     <div className="bg-card border border-border rounded-lg p-4 shadow-lg">
-                      <span className="text-sm text-muted-foreground">Floating Card</span>
+                      <span className="text-sm text-muted-foreground">
+                        Floating Card
+                      </span>
                     </div>
                   </div>
                 }
@@ -464,10 +521,14 @@ const CardsPage: React.FC<AppProps> = ({ emailDomain, appName: _appName }) => {
 
           {/* Content Cards */}
           <Section>
-            <h2 className={`${textVariants.heading.h2()} mb-8`}>Content & Media Cards</h2>
-            <p className={`${textVariants.body.md()} text-muted-foreground mb-8`}>
-              Cards with rich content, media, and interactive elements for social and content
-              applications.
+            <h2 className={`${textVariants.heading.h2()} mb-8`}>
+              Content & Media Cards
+            </h2>
+            <p
+              className={`${textVariants.body.md()} text-muted-foreground mb-8`}
+            >
+              Cards with rich content, media, and interactive elements for
+              social and content applications.
             </p>
 
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
@@ -525,11 +586,17 @@ const CardsPage: React.FC<AppProps> = ({ emailDomain, appName: _appName }) => {
                     <div className="flex items-center justify-between mb-4">
                       <div className="flex items-center">
                         <div className="w-10 h-10 bg-primary rounded-full flex items-center justify-center">
-                          <span className="text-primary-foreground font-medium text-sm">JD</span>
+                          <span className="text-primary-foreground font-medium text-sm">
+                            JD
+                          </span>
                         </div>
                         <div className="ml-3">
-                          <p className="font-medium text-foreground">John Doe</p>
-                          <p className="text-xs text-muted-foreground">2 hours ago</p>
+                          <p className="font-medium text-foreground">
+                            John Doe
+                          </p>
+                          <p className="text-xs text-muted-foreground">
+                            2 hours ago
+                          </p>
                         </div>
                       </div>
                       <button className="p-1 hover:bg-muted rounded">
@@ -539,8 +606,8 @@ const CardsPage: React.FC<AppProps> = ({ emailDomain, appName: _appName }) => {
 
                     {/* Content */}
                     <p className="text-foreground mb-4">
-                      Just shipped a new feature! The Web3 integration is now live and ready for
-                      testing.
+                      Just shipped a new feature! The Web3 integration is now
+                      live and ready for testing.
                     </p>
 
                     {/* Actions */}
@@ -630,7 +697,7 @@ const CardsPage: React.FC<AppProps> = ({ emailDomain, appName: _appName }) => {
 
                       {/* Rating */}
                       <div className="flex items-center mb-2">
-                        {[1, 2, 3, 4, 5].map(star => (
+                        {[1, 2, 3, 4, 5].map((star) => (
                           <button key={star} onClick={() => setRating(star)}>
                             {star <= rating ? (
                               <StarIconSolid className="h-4 w-4 text-warning" />
@@ -639,16 +706,21 @@ const CardsPage: React.FC<AppProps> = ({ emailDomain, appName: _appName }) => {
                             )}
                           </button>
                         ))}
-                        <span className="ml-2 text-sm text-muted-foreground">(128 reviews)</span>
+                        <span className="ml-2 text-sm text-muted-foreground">
+                          (128 reviews)
+                        </span>
                       </div>
 
                       <p className="text-muted-foreground text-sm mb-4">
-                        Complete toolkit for building decentralized applications with ease.
+                        Complete toolkit for building decentralized applications
+                        with ease.
                       </p>
 
                       {/* Price & Actions */}
                       <div className="flex items-center justify-between">
-                        <div className="text-2xl font-bold text-foreground">$99</div>
+                        <div className="text-2xl font-bold text-foreground">
+                          $99
+                        </div>
                         <div className="flex space-x-2">
                           <button
                             onClick={() => setBookmarked(!bookmarked)}
@@ -660,7 +732,9 @@ const CardsPage: React.FC<AppProps> = ({ emailDomain, appName: _appName }) => {
                               <BookmarkIcon className="h-4 w-4" />
                             )}
                           </button>
-                          <button className={variants.button.primary.default()}>Add to Cart</button>
+                          <button className={variants.button.primary.default()}>
+                            Add to Cart
+                          </button>
                         </div>
                       </div>
                     </div>
@@ -672,9 +746,14 @@ const CardsPage: React.FC<AppProps> = ({ emailDomain, appName: _appName }) => {
 
           {/* Web3 Specific Cards */}
           <Section>
-            <h2 className={`${textVariants.heading.h2()} mb-8`}>Web3 & Crypto Cards</h2>
-            <p className={`${textVariants.body.md()} text-muted-foreground mb-8`}>
-              Specialized card patterns for Web3, crypto, and blockchain applications.
+            <h2 className={`${textVariants.heading.h2()} mb-8`}>
+              Web3 & Crypto Cards
+            </h2>
+            <p
+              className={`${textVariants.body.md()} text-muted-foreground mb-8`}
+            >
+              Specialized card patterns for Web3, crypto, and blockchain
+              applications.
             </p>
 
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
@@ -727,8 +806,12 @@ const CardsPage: React.FC<AppProps> = ({ emailDomain, appName: _appName }) => {
                           <WifiIcon className="h-6 w-6 text-primary-foreground" />
                         </div>
                         <div className="ml-4">
-                          <h3 className="font-semibold text-foreground">MetaMask</h3>
-                          <p className="text-sm text-muted-foreground">0x742d...4b1a</p>
+                          <h3 className="font-semibold text-foreground">
+                            MetaMask
+                          </h3>
+                          <p className="text-sm text-muted-foreground">
+                            0x742d...4b1a
+                          </p>
                         </div>
                       </div>
                       <div className="flex items-center">
@@ -739,16 +822,26 @@ const CardsPage: React.FC<AppProps> = ({ emailDomain, appName: _appName }) => {
 
                     <div className="space-y-3">
                       <div className="flex justify-between">
-                        <span className="text-sm text-muted-foreground">Network</span>
-                        <span className="text-sm font-medium text-foreground">Ethereum</span>
+                        <span className="text-sm text-muted-foreground">
+                          Network
+                        </span>
+                        <span className="text-sm font-medium text-foreground">
+                          Ethereum
+                        </span>
                       </div>
                       <div className="flex justify-between">
-                        <span className="text-sm text-muted-foreground">Balance</span>
-                        <span className="text-sm font-medium text-foreground">2.45 ETH</span>
+                        <span className="text-sm text-muted-foreground">
+                          Balance
+                        </span>
+                        <span className="text-sm font-medium text-foreground">
+                          2.45 ETH
+                        </span>
                       </div>
                     </div>
 
-                    <button className={`${variants.button.destructive.default()} w-full mt-4`}>
+                    <button
+                      className={`${variants.button.destructive.default()} w-full mt-4`}
+                    >
                       Disconnect
                     </button>
                   </div>
@@ -814,24 +907,35 @@ const CardsPage: React.FC<AppProps> = ({ emailDomain, appName: _appName }) => {
                     {/* Content */}
                     <div className="p-6">
                       <div className="flex items-center justify-between mb-2">
-                        <h3 className="font-semibold text-foreground">Crypto Punks Collection</h3>
+                        <h3 className="font-semibold text-foreground">
+                          Crypto Punks Collection
+                        </h3>
                         <div className="flex items-center space-x-1">
                           <EyeIcon className="h-4 w-4 text-muted-foreground" />
-                          <span className="text-xs text-muted-foreground">1.2k</span>
+                          <span className="text-xs text-muted-foreground">
+                            1.2k
+                          </span>
                         </div>
                       </div>
 
                       <p className="text-sm text-muted-foreground mb-4">
-                        Rare digital collectible from the iconic CryptoPunks series.
+                        Rare digital collectible from the iconic CryptoPunks
+                        series.
                       </p>
 
                       <div className="flex items-center justify-between">
                         <div>
-                          <p className="text-xs text-muted-foreground">Current Price</p>
-                          <p className="font-semibold text-foreground">125.5 ETH</p>
+                          <p className="text-xs text-muted-foreground">
+                            Current Price
+                          </p>
+                          <p className="font-semibold text-foreground">
+                            125.5 ETH
+                          </p>
                         </div>
                         <div className="flex space-x-2">
-                          <button className={`${variants.button.primary.default()} text-sm`}>
+                          <button
+                            className={`${variants.button.primary.default()} text-sm`}
+                          >
                             Place Bid
                           </button>
                         </div>
@@ -845,9 +949,14 @@ const CardsPage: React.FC<AppProps> = ({ emailDomain, appName: _appName }) => {
 
           {/* Card Layouts */}
           <Section>
-            <h2 className={`${textVariants.heading.h2()} mb-8`}>Card Layouts & Grids</h2>
-            <p className={`${textVariants.body.md()} text-muted-foreground mb-8`}>
-              Responsive grid layouts and card arrangements for different screen sizes.
+            <h2 className={`${textVariants.heading.h2()} mb-8`}>
+              Card Layouts & Grids
+            </h2>
+            <p
+              className={`${textVariants.body.md()} text-muted-foreground mb-8`}
+            >
+              Responsive grid layouts and card arrangements for different screen
+              sizes.
             </p>
 
             <CodeExample
@@ -889,7 +998,7 @@ const CardsPage: React.FC<AppProps> = ({ emailDomain, appName: _appName }) => {
               preview={
                 <div className="w-full">
                   <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-                    {[1, 2, 3, 4, 5, 6].map(index => (
+                    {[1, 2, 3, 4, 5, 6].map((index) => (
                       <div
                         key={index}
                         className="bg-card border border-border rounded-lg p-4 shadow-sm"
@@ -899,8 +1008,12 @@ const CardsPage: React.FC<AppProps> = ({ emailDomain, appName: _appName }) => {
                             <SignalIcon className="h-4 w-4 text-primary" />
                           </div>
                           <div className="ml-3">
-                            <h3 className="font-medium text-foreground text-sm">Card {index}</h3>
-                            <p className="text-xs text-muted-foreground">Subtitle</p>
+                            <h3 className="font-medium text-foreground text-sm">
+                              Card {index}
+                            </h3>
+                            <p className="text-xs text-muted-foreground">
+                              Subtitle
+                            </p>
                           </div>
                         </div>
                         <p className="text-muted-foreground text-xs">
@@ -916,20 +1029,28 @@ const CardsPage: React.FC<AppProps> = ({ emailDomain, appName: _appName }) => {
 
           {/* Accessibility Guidelines */}
           <Section>
-            <h2 className={`${textVariants.heading.h2()} mb-8`}>Accessibility & Best Practices</h2>
+            <h2 className={`${textVariants.heading.h2()} mb-8`}>
+              Accessibility & Best Practices
+            </h2>
             <div className="bg-primary/10 rounded-xl p-6 border border-primary/20">
-              <h3 className={`${textVariants.heading.h4()} mb-4 text-foreground`}>
+              <h3
+                className={`${textVariants.heading.h4()} mb-4 text-foreground`}
+              >
                 Card Accessibility Guidelines
               </h3>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                 <ul className="space-y-2 text-foreground">
                   <li className="flex items-start">
                     <span className="w-2 h-2 bg-primary rounded-full mt-2 mr-3 flex-shrink-0"></span>
-                    <span>Use semantic HTML structure with proper headings</span>
+                    <span>
+                      Use semantic HTML structure with proper headings
+                    </span>
                   </li>
                   <li className="flex items-start">
                     <span className="w-2 h-2 bg-primary rounded-full mt-2 mr-3 flex-shrink-0"></span>
-                    <span>Ensure sufficient color contrast for text content</span>
+                    <span>
+                      Ensure sufficient color contrast for text content
+                    </span>
                   </li>
                   <li className="flex items-start">
                     <span className="w-2 h-2 bg-primary rounded-full mt-2 mr-3 flex-shrink-0"></span>
@@ -947,7 +1068,9 @@ const CardsPage: React.FC<AppProps> = ({ emailDomain, appName: _appName }) => {
                   </li>
                   <li className="flex items-start">
                     <span className="w-2 h-2 bg-primary rounded-full mt-2 mr-3 flex-shrink-0"></span>
-                    <span>Provide alternative text for decorative elements</span>
+                    <span>
+                      Provide alternative text for decorative elements
+                    </span>
                   </li>
                   <li className="flex items-start">
                     <span className="w-2 h-2 bg-primary rounded-full mt-2 mr-3 flex-shrink-0"></span>
@@ -955,7 +1078,9 @@ const CardsPage: React.FC<AppProps> = ({ emailDomain, appName: _appName }) => {
                   </li>
                   <li className="flex items-start">
                     <span className="w-2 h-2 bg-primary rounded-full mt-2 mr-3 flex-shrink-0"></span>
-                    <span>Test with screen readers and keyboard navigation</span>
+                    <span>
+                      Test with screen readers and keyboard navigation
+                    </span>
                   </li>
                 </ul>
               </div>

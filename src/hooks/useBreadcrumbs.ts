@@ -1,6 +1,6 @@
-import { useMemo } from 'react';
-import { useLocation, useParams } from 'react-router-dom';
-import { useTranslation } from 'react-i18next';
+import { useMemo } from "react";
+import { useLocation, useParams } from "react-router-dom";
+import { useTranslation } from "react-i18next";
 
 export interface BreadcrumbItem {
   label: string;
@@ -10,30 +10,30 @@ export interface BreadcrumbItem {
 
 // Human labels for this app's route segments (design areas + top-level pages).
 const SEGMENT_LABELS: Record<string, string> = {
-  design: 'Design System',
-  colors: 'Colors',
-  text: 'Typography',
-  forms: 'Forms',
-  buttons: 'Buttons',
-  cards: 'Cards',
-  badges: 'Badges',
-  alerts: 'Alerts',
-  inputs: 'Inputs',
-  loading: 'Loading States',
-  modals: 'Modals',
-  navigation: 'Navigation',
-  'data-display': 'Data Display',
-  'forms-advanced': 'Forms Advanced',
-  'notifications-feedback': 'Notifications & Feedback',
-  'layout-spacing': 'Layout & Spacing',
-  'tables-grids': 'Tables & Grids',
-  'icons-illustrations': 'Icons & Illustrations',
-  'overlays-portals': 'Overlays & Portals',
-  'micro-interactions-animations': 'Micro-Interactions & Animations',
-  accessibility: 'Accessibility',
-  performance: 'Performance',
-  settings: 'Settings',
-  docs: 'Docs',
+  design: "Design System",
+  colors: "Colors",
+  text: "Typography",
+  forms: "Forms",
+  buttons: "Buttons",
+  cards: "Cards",
+  badges: "Badges",
+  alerts: "Alerts",
+  inputs: "Inputs",
+  loading: "Loading States",
+  modals: "Modals",
+  navigation: "Navigation",
+  "data-display": "Data Display",
+  "forms-advanced": "Forms Advanced",
+  "notifications-feedback": "Notifications & Feedback",
+  "layout-spacing": "Layout & Spacing",
+  "tables-grids": "Tables & Grids",
+  "icons-illustrations": "Icons & Illustrations",
+  "overlays-portals": "Overlays & Portals",
+  "micro-interactions-animations": "Micro-Interactions & Animations",
+  accessibility: "Accessibility",
+  performance: "Performance",
+  settings: "Settings",
+  docs: "Docs",
 };
 
 /**
@@ -46,11 +46,11 @@ export const useBreadcrumbs = (): { items: BreadcrumbItem[] } => {
   useTranslation(); // re-render on language change
 
   const items = useMemo<BreadcrumbItem[]>(() => {
-    const base = `/${lang || 'en'}`;
-    const rest = location.pathname.replace(base, '').split('/').filter(Boolean);
-    const crumbs: BreadcrumbItem[] = [{ label: 'Home', href: base }];
+    const base = `/${lang || "en"}`;
+    const rest = location.pathname.replace(base, "").split("/").filter(Boolean);
+    const crumbs: BreadcrumbItem[] = [{ label: "Home", href: base }];
     let acc = base;
-    rest.forEach(seg => {
+    rest.forEach((seg) => {
       acc += `/${seg}`;
       crumbs.push({ label: SEGMENT_LABELS[seg] || seg, href: acc });
     });

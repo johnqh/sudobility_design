@@ -7,11 +7,11 @@ import {
   ClockIcon,
   EnvelopeIcon,
   ExclamationTriangleIcon,
-} from '@heroicons/react/24/outline';
-import React, { useState } from 'react';
-import LocalizedLink from '../../components/LocalizedLink';
-import { SEOHead } from '@sudobility/seo_lib';
-import { textVariants, ui, variants } from '@sudobility/design';
+} from "@heroicons/react/24/outline";
+import React, { useState } from "react";
+import LocalizedLink from "../../components/LocalizedLink";
+import { SEOHead } from "@sudobility/seo_lib";
+import { textVariants, ui, variants } from "@sudobility/design";
 
 interface AppProps {
   emailDomain: string;
@@ -25,7 +25,7 @@ const CodeBlock: React.FC<{
   copyKey: string;
   copiedStates: { [key: string]: boolean };
   copyToClipboard: (text: string, key: string) => void;
-}> = ({ code, _language = 'tsx', copyKey, copiedStates, copyToClipboard }) => (
+}> = ({ code, _language = "tsx", copyKey, copiedStates, copyToClipboard }) => (
   <div className="relative">
     <pre className="bg-muted text-foreground p-4 rounded-lg overflow-x-auto text-sm">
       <code>{code}</code>
@@ -34,7 +34,7 @@ const CodeBlock: React.FC<{
       onClick={() => copyToClipboard(code, copyKey)}
       className="absolute top-3 right-3 bg-secondary hover:bg-secondary/80 text-secondary-foreground px-3 py-1 rounded text-xs transition-colors"
     >
-      {copiedStates[copyKey] ? '✓ Copied!' : 'Copy'}
+      {copiedStates[copyKey] ? "✓ Copied!" : "Copy"}
     </button>
   </div>
 );
@@ -59,7 +59,9 @@ const SectionHeader: React.FC<{
       )}
     </button>
     {expandedSections[id] && (
-      <p className={`${textVariants.body.lg()} text-muted-foreground mb-6`}>{description}</p>
+      <p className={`${textVariants.body.lg()} text-muted-foreground mb-6`}>
+        {description}
+      </p>
     )}
   </div>
 );
@@ -77,12 +79,17 @@ const SpinnerLarge = () => (
   <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-primary"></div>
 );
 
-const LoadingStatesPage: React.FC<AppProps> = ({ emailDomain, appName: _appName }) => {
-  const [copiedStates, setCopiedStates] = useState<{ [key: string]: boolean }>({});
+const LoadingStatesPage: React.FC<AppProps> = ({
+  emailDomain,
+  appName: _appName,
+}) => {
+  const [copiedStates, setCopiedStates] = useState<{ [key: string]: boolean }>(
+    {},
+  );
   const [expandedSections, setExpandedSections] = useState<{
     [key: string]: boolean;
   }>({
-    'quick-start': true,
+    "quick-start": true,
     spinners: true,
     skeletons: true,
     progress: true,
@@ -95,36 +102,36 @@ const LoadingStatesPage: React.FC<AppProps> = ({ emailDomain, appName: _appName 
   const [demoStates, setDemoStates] = useState({
     isLoading: false,
     progress: 0,
-    transactionState: 'idle', // idle, pending, confirming, confirmed, failed
+    transactionState: "idle", // idle, pending, confirming, confirmed, failed
     uploadProgress: 0,
     isUploading: false,
   });
 
   const copyToClipboard = (text: string, key: string) => {
     navigator.clipboard.writeText(text).then(() => {
-      setCopiedStates(prev => ({ ...prev, [key]: true }));
+      setCopiedStates((prev) => ({ ...prev, [key]: true }));
       setTimeout(() => {
-        setCopiedStates(prev => ({ ...prev, [key]: false }));
+        setCopiedStates((prev) => ({ ...prev, [key]: false }));
       }, 2000);
     });
   };
 
   const toggleSection = (section: string) => {
-    setExpandedSections(prev => ({ ...prev, [section]: !prev[section] }));
+    setExpandedSections((prev) => ({ ...prev, [section]: !prev[section] }));
   };
 
   // Demo functions
   const startSimpleLoading = () => {
-    setDemoStates(prev => ({ ...prev, isLoading: true }));
+    setDemoStates((prev) => ({ ...prev, isLoading: true }));
     setTimeout(() => {
-      setDemoStates(prev => ({ ...prev, isLoading: false }));
+      setDemoStates((prev) => ({ ...prev, isLoading: false }));
     }, 3000);
   };
 
   const startProgressDemo = () => {
-    setDemoStates(prev => ({ ...prev, progress: 0 }));
+    setDemoStates((prev) => ({ ...prev, progress: 0 }));
     const interval = setInterval(() => {
-      setDemoStates(prev => {
+      setDemoStates((prev) => {
         if (prev.progress >= 100) {
           clearInterval(interval);
           return prev;
@@ -135,30 +142,30 @@ const LoadingStatesPage: React.FC<AppProps> = ({ emailDomain, appName: _appName 
   };
 
   const startTransactionDemo = () => {
-    setDemoStates(prev => ({ ...prev, transactionState: 'pending' }));
+    setDemoStates((prev) => ({ ...prev, transactionState: "pending" }));
     setTimeout(() => {
-      setDemoStates(prev => ({ ...prev, transactionState: 'confirming' }));
+      setDemoStates((prev) => ({ ...prev, transactionState: "confirming" }));
     }, 2000);
     setTimeout(() => {
-      setDemoStates(prev => ({ ...prev, transactionState: 'confirmed' }));
+      setDemoStates((prev) => ({ ...prev, transactionState: "confirmed" }));
     }, 5000);
     setTimeout(() => {
-      setDemoStates(prev => ({ ...prev, transactionState: 'idle' }));
+      setDemoStates((prev) => ({ ...prev, transactionState: "idle" }));
     }, 8000);
   };
 
   const startUploadDemo = () => {
-    setDemoStates(prev => ({
+    setDemoStates((prev) => ({
       ...prev,
       isUploading: true,
       uploadProgress: 0,
     }));
     const interval = setInterval(() => {
-      setDemoStates(prev => {
+      setDemoStates((prev) => {
         if (prev.uploadProgress >= 100) {
           clearInterval(interval);
           setTimeout(() => {
-            setDemoStates(prevState => ({
+            setDemoStates((prevState) => ({
               ...prevState,
               isUploading: false,
               uploadProgress: 0,
@@ -190,36 +197,64 @@ const LoadingStatesPage: React.FC<AppProps> = ({ emailDomain, appName: _appName 
           <div className="text-center mb-12">
             <div className="inline-flex items-center bg-accent px-4 py-2 rounded-full mb-6">
               <ArrowPathIcon className="h-5 w-5 text-accent-foreground mr-2 animate-spin" />
-              <span className="text-accent-foreground font-semibold">Loading States</span>
+              <span className="text-accent-foreground font-semibold">
+                Loading States
+              </span>
             </div>
 
             <h1 className={`${textVariants.heading.display.xl()} mb-6`}>
               Loading State Components
             </h1>
 
-            <p className={`${textVariants.body.lg()} max-w-3xl mx-auto text-muted-foreground mb-8`}>
-              Loading indicators and progress states that provide clear visual feedback during
-              asynchronous operations, specially designed for Web3 transactions and blockchain
-              interactions.
+            <p
+              className={`${textVariants.body.lg()} max-w-3xl mx-auto text-muted-foreground mb-8`}
+            >
+              Loading indicators and progress states that provide clear visual
+              feedback during asynchronous operations, specially designed for
+              Web3 transactions and blockchain interactions.
             </p>
 
             {/* Loading Stats */}
             <div className="grid grid-cols-2 md:grid-cols-4 gap-4 max-w-2xl mx-auto">
               <div className={`${ui.background.subtle} rounded-lg p-4`}>
-                <div className={`${textVariants.heading.h4()} text-accent mb-1`}>6</div>
-                <div className={textVariants.caption.default()}>Spinner Types</div>
+                <div
+                  className={`${textVariants.heading.h4()} text-accent mb-1`}
+                >
+                  6
+                </div>
+                <div className={textVariants.caption.default()}>
+                  Spinner Types
+                </div>
               </div>
               <div className={`${ui.background.subtle} rounded-lg p-4`}>
-                <div className={`${textVariants.heading.h4()} text-primary mb-1`}>4</div>
-                <div className={textVariants.caption.default()}>Skeleton Patterns</div>
+                <div
+                  className={`${textVariants.heading.h4()} text-primary mb-1`}
+                >
+                  4
+                </div>
+                <div className={textVariants.caption.default()}>
+                  Skeleton Patterns
+                </div>
               </div>
               <div className={`${ui.background.subtle} rounded-lg p-4`}>
-                <div className={`${textVariants.heading.h4()} text-success mb-1`}>5</div>
-                <div className={textVariants.caption.default()}>Progress Types</div>
+                <div
+                  className={`${textVariants.heading.h4()} text-success mb-1`}
+                >
+                  5
+                </div>
+                <div className={textVariants.caption.default()}>
+                  Progress Types
+                </div>
               </div>
               <div className={`${ui.background.subtle} rounded-lg p-4`}>
-                <div className={`${textVariants.heading.h4()} text-warning mb-1`}>8</div>
-                <div className={textVariants.caption.default()}>Web3 Examples</div>
+                <div
+                  className={`${textVariants.heading.h4()} text-warning mb-1`}
+                >
+                  8
+                </div>
+                <div className={textVariants.caption.default()}>
+                  Web3 Examples
+                </div>
               </div>
             </div>
           </div>
@@ -234,23 +269,31 @@ const LoadingStatesPage: React.FC<AppProps> = ({ emailDomain, appName: _appName 
               description="Get started with the most commonly used loading patterns. These examples show essential loading states for different use cases."
             />
 
-            {expandedSections['quick-start'] && (
+            {expandedSections["quick-start"] && (
               <div className="space-y-8">
                 {/* Basic Spinners */}
                 <div>
-                  <h3 className={`${textVariants.heading.h3()} mb-4`}>1. Basic Loading Spinners</h3>
+                  <h3 className={`${textVariants.heading.h3()} mb-4`}>
+                    1. Basic Loading Spinners
+                  </h3>
                   <div className="flex items-center gap-8 p-6 bg-muted rounded-lg mb-4">
                     <div className="text-center">
                       <SpinnerSmall />
-                      <p className="text-xs text-muted-foreground mt-2">Small</p>
+                      <p className="text-xs text-muted-foreground mt-2">
+                        Small
+                      </p>
                     </div>
                     <div className="text-center">
                       <SpinnerDefault />
-                      <p className="text-xs text-muted-foreground mt-2">Default</p>
+                      <p className="text-xs text-muted-foreground mt-2">
+                        Default
+                      </p>
                     </div>
                     <div className="text-center">
                       <SpinnerLarge />
-                      <p className="text-xs text-muted-foreground mt-2">Large</p>
+                      <p className="text-xs text-muted-foreground mt-2">
+                        Large
+                      </p>
                     </div>
                   </div>
 
@@ -271,7 +314,9 @@ const LoadingStatesPage: React.FC<AppProps> = ({ emailDomain, appName: _appName 
 
                 {/* Loading Button */}
                 <div>
-                  <h3 className={`${textVariants.heading.h3()} mb-4`}>2. Loading Button States</h3>
+                  <h3 className={`${textVariants.heading.h3()} mb-4`}>
+                    2. Loading Button States
+                  </h3>
                   <div className="flex flex-wrap gap-4 p-6 bg-muted rounded-lg mb-4">
                     <button
                       className={(variants.button as any).primary.default()}
@@ -284,7 +329,7 @@ const LoadingStatesPage: React.FC<AppProps> = ({ emailDomain, appName: _appName 
                           Loading...
                         </div>
                       ) : (
-                        'Click to Load'
+                        "Click to Load"
                       )}
                     </button>
 
@@ -335,7 +380,9 @@ const LoadingStatesPage: React.FC<AppProps> = ({ emailDomain, appName: _appName 
 
                 {/* Progress Bars */}
                 <div>
-                  <h3 className={`${textVariants.heading.h3()} mb-4`}>3. Progress Indicators</h3>
+                  <h3 className={`${textVariants.heading.h3()} mb-4`}>
+                    3. Progress Indicators
+                  </h3>
                   <div className="space-y-4 p-6 bg-muted rounded-lg mb-4">
                     <div>
                       <div className="flex justify-between text-sm mb-2">
@@ -360,7 +407,7 @@ const LoadingStatesPage: React.FC<AppProps> = ({ emailDomain, appName: _appName 
                     <div className="w-full bg-muted rounded-full h-1">
                       <div
                         className="bg-gradient-to-r from-success to-primary h-1 rounded-full animate-pulse"
-                        style={{ width: '65%' }}
+                        style={{ width: "65%" }}
                       ></div>
                     </div>
                   </div>
@@ -392,7 +439,9 @@ const LoadingStatesPage: React.FC<AppProps> = ({ emailDomain, appName: _appName 
 
                 {/* Skeleton Loading */}
                 <div>
-                  <h3 className={`${textVariants.heading.h3()} mb-4`}>4. Skeleton Loading</h3>
+                  <h3 className={`${textVariants.heading.h3()} mb-4`}>
+                    4. Skeleton Loading
+                  </h3>
                   <div className="p-6 bg-muted rounded-lg mb-4">
                     <div className="animate-pulse">
                       <div className="flex space-x-4">
@@ -441,7 +490,7 @@ const LoadingStatesPage: React.FC<AppProps> = ({ emailDomain, appName: _appName 
               description="Specialized loading states for Web3 operations including wallet connections, transactions, and blockchain confirmations."
             />
 
-            {expandedSections['web3'] && (
+            {expandedSections["web3"] && (
               <div className="space-y-8">
                 {/* Transaction States */}
                 <div>
@@ -453,7 +502,7 @@ const LoadingStatesPage: React.FC<AppProps> = ({ emailDomain, appName: _appName 
                       <button
                         className={(variants.button as any).primary.default()}
                         onClick={startTransactionDemo}
-                        disabled={demoStates.transactionState !== 'idle'}
+                        disabled={demoStates.transactionState !== "idle"}
                       >
                         Start Transaction Demo
                       </button>
@@ -462,7 +511,7 @@ const LoadingStatesPage: React.FC<AppProps> = ({ emailDomain, appName: _appName 
                       </span>
                     </div>
 
-                    {demoStates.transactionState === 'pending' && (
+                    {demoStates.transactionState === "pending" && (
                       <div className={(variants.alert as any).info()}>
                         <div className="animate-spin rounded-full h-5 w-5 border-b-2 border-primary"></div>
                         <div>
@@ -474,13 +523,16 @@ const LoadingStatesPage: React.FC<AppProps> = ({ emailDomain, appName: _appName 
                       </div>
                     )}
 
-                    {demoStates.transactionState === 'confirming' && (
+                    {demoStates.transactionState === "confirming" && (
                       <div className={(variants.alert as any).warning()}>
                         <ClockIcon className="h-5 w-5 animate-pulse" />
                         <div>
-                          <div className="font-medium">Confirming Transaction</div>
+                          <div className="font-medium">
+                            Confirming Transaction
+                          </div>
                           <div className="text-sm">
-                            Transaction submitted. Waiting for blockchain confirmation...
+                            Transaction submitted. Waiting for blockchain
+                            confirmation...
                           </div>
                           <div className="text-xs text-muted-foreground mt-1">
                             Hash: 0x1234...abcd
@@ -489,13 +541,16 @@ const LoadingStatesPage: React.FC<AppProps> = ({ emailDomain, appName: _appName 
                       </div>
                     )}
 
-                    {demoStates.transactionState === 'confirmed' && (
+                    {demoStates.transactionState === "confirmed" && (
                       <div className={(variants.alert as any).success()}>
                         <CheckCircleIcon className="h-5 w-5" />
                         <div>
-                          <div className="font-medium">Transaction Confirmed</div>
+                          <div className="font-medium">
+                            Transaction Confirmed
+                          </div>
                           <div className="text-sm">
-                            Your transaction has been confirmed on the blockchain!
+                            Your transaction has been confirmed on the
+                            blockchain!
                           </div>
                           <div className="text-xs text-muted-foreground mt-1">
                             Block: #18,234,567
@@ -508,9 +563,13 @@ const LoadingStatesPage: React.FC<AppProps> = ({ emailDomain, appName: _appName 
 
                 {/* Wallet Connection */}
                 <div>
-                  <h3 className={`${textVariants.heading.h4()} mb-4`}>Wallet Connection States</h3>
+                  <h3 className={`${textVariants.heading.h4()} mb-4`}>
+                    Wallet Connection States
+                  </h3>
                   <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
-                    <div className={`${variants.card.default.padded()} space-y-4`}>
+                    <div
+                      className={`${variants.card.default.padded()} space-y-4`}
+                    >
                       <div className="flex items-center justify-center py-8">
                         <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-primary"></div>
                       </div>
@@ -522,17 +581,19 @@ const LoadingStatesPage: React.FC<AppProps> = ({ emailDomain, appName: _appName 
                       </div>
                     </div>
 
-                    <div className={`${variants.card.default.padded()} space-y-4`}>
+                    <div
+                      className={`${variants.card.default.padded()} space-y-4`}
+                    >
                       <div className="flex items-center justify-center py-8">
                         <div className="flex space-x-1">
                           <div className="w-3 h-3 bg-primary rounded-full animate-bounce"></div>
                           <div
                             className="w-3 h-3 bg-primary rounded-full animate-bounce"
-                            style={{ animationDelay: '0.1s' }}
+                            style={{ animationDelay: "0.1s" }}
                           ></div>
                           <div
                             className="w-3 h-3 bg-primary rounded-full animate-bounce"
-                            style={{ animationDelay: '0.2s' }}
+                            style={{ animationDelay: "0.2s" }}
                           ></div>
                         </div>
                       </div>
@@ -548,7 +609,9 @@ const LoadingStatesPage: React.FC<AppProps> = ({ emailDomain, appName: _appName 
 
                 {/* Email/Message Loading */}
                 <div>
-                  <h3 className={`${textVariants.heading.h4()} mb-4`}>Email & Message Loading</h3>
+                  <h3 className={`${textVariants.heading.h4()} mb-4`}>
+                    Email & Message Loading
+                  </h3>
                   <div className="space-y-4 mb-6">
                     <div className="flex items-center space-x-3 p-4 border rounded-lg">
                       <div className="animate-spin rounded-full h-6 w-6 border-b-2 border-success"></div>
@@ -586,7 +649,9 @@ const LoadingStatesPage: React.FC<AppProps> = ({ emailDomain, appName: _appName 
                         onClick={startUploadDemo}
                         disabled={demoStates.isUploading}
                       >
-                        {demoStates.isUploading ? 'Uploading...' : 'Start Upload Demo'}
+                        {demoStates.isUploading
+                          ? "Uploading..."
+                          : "Start Upload Demo"}
                       </button>
                     </div>
                   </div>
@@ -645,14 +710,16 @@ const LoadingStatesPage: React.FC<AppProps> = ({ emailDomain, appName: _appName 
               description="Content placeholders that mimic the structure of the loading content for better perceived performance."
             />
 
-            {expandedSections['skeletons'] && (
+            {expandedSections["skeletons"] && (
               <div className="space-y-8">
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
                   {/* Email List Skeleton */}
                   <div>
-                    <h4 className={`${textVariants.heading.h5()} mb-4`}>Email List Skeleton</h4>
+                    <h4 className={`${textVariants.heading.h5()} mb-4`}>
+                      Email List Skeleton
+                    </h4>
                     <div className="space-y-3 p-4 border rounded-lg">
-                      {[1, 2, 3].map(i => (
+                      {[1, 2, 3].map((i) => (
                         <div key={i} className="animate-pulse flex space-x-3">
                           <div className="rounded-full bg-muted-foreground/20 h-10 w-10"></div>
                           <div className="flex-1 space-y-2">
@@ -667,7 +734,9 @@ const LoadingStatesPage: React.FC<AppProps> = ({ emailDomain, appName: _appName 
 
                   {/* Card Skeleton */}
                   <div>
-                    <h4 className={`${textVariants.heading.h5()} mb-4`}>Card Content Skeleton</h4>
+                    <h4 className={`${textVariants.heading.h5()} mb-4`}>
+                      Card Content Skeleton
+                    </h4>
                     <div className="animate-pulse p-4 border rounded-lg">
                       <div className="h-32 bg-muted-foreground/20 rounded mb-4"></div>
                       <div className="h-6 bg-muted-foreground/20 rounded w-3/4 mb-2"></div>
@@ -722,11 +791,13 @@ const LoadingStatesPage: React.FC<AppProps> = ({ emailDomain, appName: _appName 
               description="Ensure your loading states are accessible with proper ARIA attributes, screen reader support, and focus management."
             />
 
-            {expandedSections['accessibility'] && (
+            {expandedSections["accessibility"] && (
               <div className="space-y-6">
                 <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
                   <div>
-                    <h3 className={`${textVariants.heading.h4()} mb-4`}>✅ Best Practices</h3>
+                    <h3 className={`${textVariants.heading.h4()} mb-4`}>
+                      ✅ Best Practices
+                    </h3>
                     <ul className="space-y-3">
                       <li className="flex items-start">
                         <CheckCircleIcon className="h-5 w-5 text-success mr-2 mt-0.5 flex-shrink-0" />
@@ -736,25 +807,35 @@ const LoadingStatesPage: React.FC<AppProps> = ({ emailDomain, appName: _appName 
                       </li>
                       <li className="flex items-start">
                         <CheckCircleIcon className="h-5 w-5 text-success mr-2 mt-0.5 flex-shrink-0" />
-                        <span className="text-sm">Provide meaningful loading messages</span>
+                        <span className="text-sm">
+                          Provide meaningful loading messages
+                        </span>
                       </li>
                       <li className="flex items-start">
                         <CheckCircleIcon className="h-5 w-5 text-success mr-2 mt-0.5 flex-shrink-0" />
-                        <span className="text-sm">Include progress information when possible</span>
+                        <span className="text-sm">
+                          Include progress information when possible
+                        </span>
                       </li>
                       <li className="flex items-start">
                         <CheckCircleIcon className="h-5 w-5 text-success mr-2 mt-0.5 flex-shrink-0" />
-                        <span className="text-sm">Use reduced motion for users who prefer it</span>
+                        <span className="text-sm">
+                          Use reduced motion for users who prefer it
+                        </span>
                       </li>
                       <li className="flex items-start">
                         <CheckCircleIcon className="h-5 w-5 text-success mr-2 mt-0.5 flex-shrink-0" />
-                        <span className="text-sm">Maintain focus management during loading</span>
+                        <span className="text-sm">
+                          Maintain focus management during loading
+                        </span>
                       </li>
                     </ul>
                   </div>
 
                   <div>
-                    <h3 className={`${textVariants.heading.h4()} mb-4`}>❌ Avoid</h3>
+                    <h3 className={`${textVariants.heading.h4()} mb-4`}>
+                      ❌ Avoid
+                    </h3>
                     <ul className="space-y-3">
                       <li className="flex items-start">
                         <ExclamationTriangleIcon className="h-5 w-5 text-destructive mr-2 mt-0.5 flex-shrink-0" />
@@ -776,7 +857,9 @@ const LoadingStatesPage: React.FC<AppProps> = ({ emailDomain, appName: _appName 
                       </li>
                       <li className="flex items-start">
                         <ExclamationTriangleIcon className="h-5 w-5 text-destructive mr-2 mt-0.5 flex-shrink-0" />
-                        <span className="text-sm">Removing focus or content without warning</span>
+                        <span className="text-sm">
+                          Removing focus or content without warning
+                        </span>
                       </li>
                       <li className="flex items-start">
                         <ExclamationTriangleIcon className="h-5 w-5 text-destructive mr-2 mt-0.5 flex-shrink-0" />

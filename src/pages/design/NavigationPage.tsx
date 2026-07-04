@@ -1,5 +1,5 @@
-import { textVariants, ui, variants } from '@sudobility/design';
-import { cn } from '@sudobility/components';
+import { textVariants, ui, variants } from "@sudobility/design";
+import { cn } from "@sudobility/components";
 import {
   ArchiveBoxIcon,
   Bars3Icon,
@@ -13,17 +13,26 @@ import {
   InboxIcon,
   PaperAirplaneIcon,
   UserIcon,
-} from '@heroicons/react/24/outline';
-import React, { useState } from 'react';
-import { SEOHead } from '@sudobility/seo_lib';
-import { Tabs, TabsContent, TabsList, TabsTrigger, Section } from '@sudobility/components';
+} from "@heroicons/react/24/outline";
+import React, { useState } from "react";
+import { SEOHead } from "@sudobility/seo_lib";
+import {
+  Tabs,
+  TabsContent,
+  TabsList,
+  TabsTrigger,
+  Section,
+} from "@sudobility/components";
 
 interface AppProps {
   emailDomain: string;
   appName: string;
 }
 
-const NavigationPage: React.FC<AppProps> = ({ emailDomain, appName: _appName }) => {
+const NavigationPage: React.FC<AppProps> = ({
+  emailDomain,
+  appName: _appName,
+}) => {
   const [activeStep, setActiveStep] = useState(1);
   const [currentPage, setCurrentPage] = useState(3);
 
@@ -33,8 +42,8 @@ const NavigationPage: React.FC<AppProps> = ({ emailDomain, appName: _appName }) 
 
   const quickStartExamples = [
     {
-      title: 'Breadcrumb Navigation',
-      description: 'Hierarchical navigation showing current page location',
+      title: "Breadcrumb Navigation",
+      description: "Hierarchical navigation showing current page location",
       code: `// Basic Breadcrumb
 <nav className={variants.navigation.breadcrumb.container()}>
   <ol className={variants.navigation.breadcrumb.list()}>
@@ -54,8 +63,8 @@ const NavigationPage: React.FC<AppProps> = ({ emailDomain, appName: _appName }) 
 </nav>`,
     },
     {
-      title: 'Tab Navigation',
-      description: 'Organize content into multiple views with tab navigation',
+      title: "Tab Navigation",
+      description: "Organize content into multiple views with tab navigation",
       code: `// Tab Navigation
 <Tabs defaultValue="overview" className="w-full">
   <TabsList className={variants.navigation.tabs.list()}>
@@ -72,8 +81,8 @@ const NavigationPage: React.FC<AppProps> = ({ emailDomain, appName: _appName }) 
 </Tabs>`,
     },
     {
-      title: 'Pagination',
-      description: 'Navigate through multiple pages of content',
+      title: "Pagination",
+      description: "Navigate through multiple pages of content",
       code: `// Pagination Component
 <div className={variants.navigation.pagination.container()}>
   <div className={variants.navigation.pagination.nav()}>
@@ -101,8 +110,8 @@ const NavigationPage: React.FC<AppProps> = ({ emailDomain, appName: _appName }) 
 </div>`,
     },
     {
-      title: 'Step Navigation',
-      description: 'Guide users through multi-step processes',
+      title: "Step Navigation",
+      description: "Guide users through multi-step processes",
       code: `// Step Navigation
 <div className={variants.navigation.steps.container()}>
   <ol className={variants.navigation.steps.list()}>
@@ -129,43 +138,43 @@ const NavigationPage: React.FC<AppProps> = ({ emailDomain, appName: _appName }) 
   ];
 
   const sidebarItems = [
-    { name: 'Dashboard', icon: HomeIcon, href: '/dashboard', active: true },
+    { name: "Dashboard", icon: HomeIcon, href: "/dashboard", active: true },
     {
-      name: 'Inbox',
+      name: "Inbox",
       icon: InboxIcon,
-      href: '/inbox',
+      href: "/inbox",
       active: false,
       count: 12,
     },
-    { name: 'Sent', icon: PaperAirplaneIcon, href: '/sent', active: false },
-    { name: 'Archive', icon: ArchiveBoxIcon, href: '/archive', active: false },
-    { name: 'Settings', icon: Cog6ToothIcon, href: '/settings', active: false },
+    { name: "Sent", icon: PaperAirplaneIcon, href: "/sent", active: false },
+    { name: "Archive", icon: ArchiveBoxIcon, href: "/archive", active: false },
+    { name: "Settings", icon: Cog6ToothIcon, href: "/settings", active: false },
   ];
 
   const steps = [
     {
       id: 1,
-      name: 'Account Setup',
-      description: 'Create your account',
-      status: 'complete',
+      name: "Account Setup",
+      description: "Create your account",
+      status: "complete",
     },
     {
       id: 2,
-      name: 'Wallet Connection',
-      description: 'Connect your Web3 wallet',
-      status: 'current',
+      name: "Wallet Connection",
+      description: "Connect your Web3 wallet",
+      status: "current",
     },
     {
       id: 3,
-      name: 'Email Setup',
-      description: 'Configure your email preferences',
-      status: 'upcoming',
+      name: "Email Setup",
+      description: "Configure your email preferences",
+      status: "upcoming",
     },
     {
       id: 4,
-      name: 'Complete',
-      description: 'Start using example.com',
-      status: 'upcoming',
+      name: "Complete",
+      description: "Start using example.com",
+      status: "upcoming",
     },
   ];
 
@@ -185,15 +194,21 @@ const NavigationPage: React.FC<AppProps> = ({ emailDomain, appName: _appName }) 
           <div className="mb-12">
             <div className="inline-flex items-center bg-accent/10 px-4 py-2 rounded-full mb-6">
               <Bars3Icon className="h-5 w-5 text-accent mr-2" />
-              <span className="text-accent font-semibold">Navigation Components</span>
+              <span className="text-accent font-semibold">
+                Navigation Components
+              </span>
             </div>
 
-            <h1 className={`${textVariants.heading.display.xl()} mb-6`}>Navigation System</h1>
+            <h1 className={`${textVariants.heading.display.xl()} mb-6`}>
+              Navigation System
+            </h1>
 
-            <p className={`${textVariants.body.lg()} max-w-3xl text-muted-foreground`}>
-              Comprehensive navigation components for Web3 applications including breadcrumbs, tabs,
-              pagination, menus, and step navigation. Designed for accessibility and responsive
-              behavior.
+            <p
+              className={`${textVariants.body.lg()} max-w-3xl text-muted-foreground`}
+            >
+              Comprehensive navigation components for Web3 applications
+              including breadcrumbs, tabs, pagination, menus, and step
+              navigation. Designed for accessibility and responsive behavior.
             </p>
           </div>
 
@@ -208,8 +223,12 @@ const NavigationPage: React.FC<AppProps> = ({ emailDomain, appName: _appName }) 
                   className={`${ui.background.surface} ${ui.border.default} border rounded-lg overflow-hidden`}
                 >
                   <div className="p-6 border-b border-border">
-                    <h3 className={`${textVariants.heading.h4()} mb-2`}>{example.title}</h3>
-                    <p className={`${textVariants.body.sm()} text-muted-foreground`}>
+                    <h3 className={`${textVariants.heading.h4()} mb-2`}>
+                      {example.title}
+                    </h3>
+                    <p
+                      className={`${textVariants.body.sm()} text-muted-foreground`}
+                    >
                       {example.description}
                     </p>
                   </div>
@@ -244,30 +263,44 @@ const NavigationPage: React.FC<AppProps> = ({ emailDomain, appName: _appName }) 
 
           {/* Interactive Breadcrumb Demo */}
           <Section>
-            <h2 className={`${textVariants.heading.h2()} mb-8`}>Interactive Breadcrumbs</h2>
+            <h2 className={`${textVariants.heading.h2()} mb-8`}>
+              Interactive Breadcrumbs
+            </h2>
 
-            <div className={`${ui.background.surface} ${ui.border.default} border rounded-lg p-8`}>
+            <div
+              className={`${ui.background.surface} ${ui.border.default} border rounded-lg p-8`}
+            >
               <div className="mb-6">
-                <h3 className={`${textVariants.heading.h3()} mb-4`}>Live Breadcrumb Example</h3>
+                <h3 className={`${textVariants.heading.h3()} mb-4`}>
+                  Live Breadcrumb Example
+                </h3>
 
                 {/* Demo breadcrumb */}
                 <nav className={variants.navigation.breadcrumb.container()}>
                   <ol className={variants.navigation.breadcrumb.list()}>
                     <li className={variants.navigation.breadcrumb.item()}>
                       <button className={variants.navigation.breadcrumb.link()}>
-                        <HomeIcon className={variants.navigation.breadcrumb.home()} />
+                        <HomeIcon
+                          className={variants.navigation.breadcrumb.home()}
+                        />
                         Home
                       </button>
                     </li>
-                    <ChevronRightIcon className={variants.navigation.breadcrumb.separator()} />
+                    <ChevronRightIcon
+                      className={variants.navigation.breadcrumb.separator()}
+                    />
                     <li className={variants.navigation.breadcrumb.item()}>
                       <button className={variants.navigation.breadcrumb.link()}>
                         Web3 Projects
                       </button>
                     </li>
-                    <ChevronRightIcon className={variants.navigation.breadcrumb.separator()} />
+                    <ChevronRightIcon
+                      className={variants.navigation.breadcrumb.separator()}
+                    />
                     <li className={variants.navigation.breadcrumb.item()}>
-                      <span className={variants.navigation.breadcrumb.current()}>
+                      <span
+                        className={variants.navigation.breadcrumb.current()}
+                      >
                         {emailDomain}
                       </span>
                     </li>
@@ -276,7 +309,9 @@ const NavigationPage: React.FC<AppProps> = ({ emailDomain, appName: _appName }) 
               </div>
 
               <div className="bg-muted rounded-lg p-4">
-                <h4 className={`${textVariants.heading.h5()} mb-2`}>Features</h4>
+                <h4 className={`${textVariants.heading.h5()} mb-2`}>
+                  Features
+                </h4>
                 <ul className="space-y-1 text-muted-foreground text-sm">
                   <li>• Structured data for SEO optimization</li>
                   <li>• ARIA accessibility attributes</li>
@@ -290,41 +325,64 @@ const NavigationPage: React.FC<AppProps> = ({ emailDomain, appName: _appName }) 
 
           {/* Tab Variants */}
           <Section>
-            <h2 className={`${textVariants.heading.h2()} mb-8`}>Tab Navigation Variants</h2>
+            <h2 className={`${textVariants.heading.h2()} mb-8`}>
+              Tab Navigation Variants
+            </h2>
 
             <div className="space-y-8">
               {/* Default Tabs */}
               <div
                 className={`${ui.background.surface} ${ui.border.default} border rounded-lg p-6`}
               >
-                <h3 className={`${textVariants.heading.h3()} mb-4`}>Default Tabs</h3>
+                <h3 className={`${textVariants.heading.h3()} mb-4`}>
+                  Default Tabs
+                </h3>
                 <Tabs defaultValue="overview" className="w-full">
                   <TabsList className={variants.navigation.tabs.list()}>
-                    <TabsTrigger value="overview" className={variants.navigation.tabs.trigger()}>
+                    <TabsTrigger
+                      value="overview"
+                      className={variants.navigation.tabs.trigger()}
+                    >
                       Overview
                     </TabsTrigger>
-                    <TabsTrigger value="analytics" className={variants.navigation.tabs.trigger()}>
+                    <TabsTrigger
+                      value="analytics"
+                      className={variants.navigation.tabs.trigger()}
+                    >
                       Analytics
                     </TabsTrigger>
-                    <TabsTrigger value="settings" className={variants.navigation.tabs.trigger()}>
+                    <TabsTrigger
+                      value="settings"
+                      className={variants.navigation.tabs.trigger()}
+                    >
                       Settings
                     </TabsTrigger>
                   </TabsList>
-                  <TabsContent value="overview" className={variants.navigation.tabs.content()}>
+                  <TabsContent
+                    value="overview"
+                    className={variants.navigation.tabs.content()}
+                  >
                     <div className="p-4 bg-muted rounded-lg">
                       <p className={textVariants.body.md()}>
-                        Overview content with project statistics and recent activity.
+                        Overview content with project statistics and recent
+                        activity.
                       </p>
                     </div>
                   </TabsContent>
-                  <TabsContent value="analytics" className={variants.navigation.tabs.content()}>
+                  <TabsContent
+                    value="analytics"
+                    className={variants.navigation.tabs.content()}
+                  >
                     <div className="p-4 bg-muted rounded-lg">
                       <p className={textVariants.body.md()}>
                         Analytics dashboard with charts and metrics.
                       </p>
                     </div>
                   </TabsContent>
-                  <TabsContent value="settings" className={variants.navigation.tabs.content()}>
+                  <TabsContent
+                    value="settings"
+                    className={variants.navigation.tabs.content()}
+                  >
                     <div className="p-4 bg-muted rounded-lg">
                       <p className={textVariants.body.md()}>
                         Settings panel for configuration options.
@@ -338,22 +396,32 @@ const NavigationPage: React.FC<AppProps> = ({ emailDomain, appName: _appName }) 
               <div
                 className={`${ui.background.surface} ${ui.border.default} border rounded-lg p-6`}
               >
-                <h3 className={`${textVariants.heading.h3()} mb-4`}>Underlined Tabs</h3>
+                <h3 className={`${textVariants.heading.h3()} mb-4`}>
+                  Underlined Tabs
+                </h3>
                 <div className="w-full">
                   <div className={variants.navigation.tabs.listUnderlined()}>
                     <button
                       className={cn(
                         variants.navigation.tabs.triggerUnderlined(),
-                        'data-[state=active]'
+                        "data-[state=active]",
                       )}
                     >
                       Dashboard
                     </button>
-                    <button className={variants.navigation.tabs.triggerUnderlined()}>Team</button>
-                    <button className={variants.navigation.tabs.triggerUnderlined()}>
+                    <button
+                      className={variants.navigation.tabs.triggerUnderlined()}
+                    >
+                      Team
+                    </button>
+                    <button
+                      className={variants.navigation.tabs.triggerUnderlined()}
+                    >
                       Projects
                     </button>
-                    <button className={variants.navigation.tabs.triggerUnderlined()}>
+                    <button
+                      className={variants.navigation.tabs.triggerUnderlined()}
+                    >
                       Calendar
                     </button>
                   </div>
@@ -369,20 +437,28 @@ const NavigationPage: React.FC<AppProps> = ({ emailDomain, appName: _appName }) 
               <div
                 className={`${ui.background.surface} ${ui.border.default} border rounded-lg p-6`}
               >
-                <h3 className={`${textVariants.heading.h3()} mb-4`}>Pills Tabs</h3>
+                <h3 className={`${textVariants.heading.h3()} mb-4`}>
+                  Pills Tabs
+                </h3>
                 <div className="w-full">
                   <div className={variants.navigation.tabs.listPills()}>
                     <button
                       className={cn(
                         variants.navigation.tabs.triggerPills(),
-                        'data-[state=active]:bg-background data-[state=active]:shadow-sm'
+                        "data-[state=active]:bg-background data-[state=active]:shadow-sm",
                       )}
                     >
                       All
                     </button>
-                    <button className={variants.navigation.tabs.triggerPills()}>Active</button>
-                    <button className={variants.navigation.tabs.triggerPills()}>Draft</button>
-                    <button className={variants.navigation.tabs.triggerPills()}>Archived</button>
+                    <button className={variants.navigation.tabs.triggerPills()}>
+                      Active
+                    </button>
+                    <button className={variants.navigation.tabs.triggerPills()}>
+                      Draft
+                    </button>
+                    <button className={variants.navigation.tabs.triggerPills()}>
+                      Archived
+                    </button>
                   </div>
                   <div className="mt-4 p-4 bg-muted rounded-lg">
                     <p className={textVariants.body.md()}>
@@ -402,8 +478,12 @@ const NavigationPage: React.FC<AppProps> = ({ emailDomain, appName: _appName }) 
               className={`${ui.background.surface} ${ui.border.default} border rounded-lg overflow-hidden`}
             >
               <div className="p-6 border-b border-border">
-                <h3 className={`${textVariants.heading.h3()} mb-2`}>Email List Pagination</h3>
-                <p className={`${textVariants.body.sm()} text-muted-foreground`}>
+                <h3 className={`${textVariants.heading.h3()} mb-2`}>
+                  Email List Pagination
+                </h3>
+                <p
+                  className={`${textVariants.body.sm()} text-muted-foreground`}
+                >
                   Example pagination for email list navigation
                 </p>
               </div>
@@ -412,21 +492,30 @@ const NavigationPage: React.FC<AppProps> = ({ emailDomain, appName: _appName }) 
                 {/* Mock email list */}
                 <div className="space-y-3 mb-6">
                   {Array.from({ length: 5 }).map((_, i) => (
-                    <div key={i} className="flex items-center p-3 border border-border rounded-lg">
+                    <div
+                      key={i}
+                      className="flex items-center p-3 border border-border rounded-lg"
+                    >
                       <div className="w-8 h-8 bg-primary/10 rounded-full flex items-center justify-center mr-3">
                         <span className="text-primary text-sm font-medium">
                           {String.fromCharCode(65 + i)}
                         </span>
                       </div>
                       <div className="flex-1">
-                        <div className={`${textVariants.body.md()} font-medium`}>
+                        <div
+                          className={`${textVariants.body.md()} font-medium`}
+                        >
                           Email Subject {currentPage * 5 - 5 + i + 1}
                         </div>
-                        <div className={`${textVariants.body.sm()} text-muted-foreground`}>
+                        <div
+                          className={`${textVariants.body.sm()} text-muted-foreground`}
+                        >
                           sender{currentPage * 5 - 5 + i + 1}@example.com
                         </div>
                       </div>
-                      <div className={`${textVariants.body.sm()} text-muted-foreground`}>
+                      <div
+                        className={`${textVariants.body.sm()} text-muted-foreground`}
+                      >
                         2h ago
                       </div>
                     </div>
@@ -436,17 +525,27 @@ const NavigationPage: React.FC<AppProps> = ({ emailDomain, appName: _appName }) 
                 {/* Pagination */}
                 <div className={variants.navigation.pagination.container()}>
                   <div className={variants.navigation.pagination.info()}>
-                    <button className={variants.navigation.pagination.mobileButton()}>
+                    <button
+                      className={variants.navigation.pagination.mobileButton()}
+                    >
                       Previous
                     </button>
-                    <button className={variants.navigation.pagination.mobileButton()}>Next</button>
+                    <button
+                      className={variants.navigation.pagination.mobileButton()}
+                    >
+                      Next
+                    </button>
                   </div>
                   <div className={variants.navigation.pagination.nav()}>
                     <div>
                       <p className={variants.navigation.pagination.results()}>
-                        Showing <span className="font-medium">{(currentPage - 1) * 5 + 1}</span> to{' '}
-                        <span className="font-medium">{currentPage * 5}</span> of{' '}
-                        <span className="font-medium">97</span> results
+                        Showing{" "}
+                        <span className="font-medium">
+                          {(currentPage - 1) * 5 + 1}
+                        </span>{" "}
+                        to{" "}
+                        <span className="font-medium">{currentPage * 5}</span>{" "}
+                        of <span className="font-medium">97</span> results
                       </p>
                     </div>
                     <div>
@@ -454,14 +553,16 @@ const NavigationPage: React.FC<AppProps> = ({ emailDomain, appName: _appName }) 
                         <button
                           className={cn(
                             variants.navigation.pagination.button(),
-                            variants.navigation.pagination.buttonFirst()
+                            variants.navigation.pagination.buttonFirst(),
                           )}
-                          onClick={() => setCurrentPage(Math.max(1, currentPage - 1))}
+                          onClick={() =>
+                            setCurrentPage(Math.max(1, currentPage - 1))
+                          }
                         >
                           <ChevronLeftIcon className="h-4 w-4" />
                         </button>
 
-                        {[1, 2, 3, 4, 5].map(page => (
+                        {[1, 2, 3, 4, 5].map((page) => (
                           <button
                             key={page}
                             className={
@@ -478,9 +579,11 @@ const NavigationPage: React.FC<AppProps> = ({ emailDomain, appName: _appName }) 
                         <button
                           className={cn(
                             variants.navigation.pagination.button(),
-                            variants.navigation.pagination.buttonLast()
+                            variants.navigation.pagination.buttonLast(),
                           )}
-                          onClick={() => setCurrentPage(Math.min(5, currentPage + 1))}
+                          onClick={() =>
+                            setCurrentPage(Math.min(5, currentPage + 1))
+                          }
                         >
                           <ChevronRightIcon className="h-4 w-4" />
                         </button>
@@ -494,12 +597,20 @@ const NavigationPage: React.FC<AppProps> = ({ emailDomain, appName: _appName }) 
 
           {/* Step Navigation */}
           <Section>
-            <h2 className={`${textVariants.heading.h2()} mb-8`}>Step Navigation</h2>
+            <h2 className={`${textVariants.heading.h2()} mb-8`}>
+              Step Navigation
+            </h2>
 
-            <div className={`${ui.background.surface} ${ui.border.default} border rounded-lg p-8`}>
+            <div
+              className={`${ui.background.surface} ${ui.border.default} border rounded-lg p-8`}
+            >
               <div className="mb-8">
-                <h3 className={`${textVariants.heading.h3()} mb-2`}>Web3 Wallet Setup</h3>
-                <p className={`${textVariants.body.md()} text-muted-foreground`}>
+                <h3 className={`${textVariants.heading.h3()} mb-2`}>
+                  Web3 Wallet Setup
+                </h3>
+                <p
+                  className={`${textVariants.body.md()} text-muted-foreground`}
+                >
                   Guide users through the wallet connection process
                 </p>
               </div>
@@ -511,8 +622,9 @@ const NavigationPage: React.FC<AppProps> = ({ emailDomain, appName: _appName }) 
                       {stepIdx > 0 && (
                         <div
                           className={
-                            step.status === 'complete' ||
-                            stepIdx < steps.findIndex(s => s.status === 'current')
+                            step.status === "complete" ||
+                            stepIdx <
+                              steps.findIndex((s) => s.status === "current")
                               ? variants.navigation.steps.connectorActive()
                               : variants.navigation.steps.connector()
                           }
@@ -525,16 +637,16 @@ const NavigationPage: React.FC<AppProps> = ({ emailDomain, appName: _appName }) 
                         >
                           <div
                             className={
-                              step.status === 'complete'
+                              step.status === "complete"
                                 ? variants.navigation.steps.circleCompleted()
-                                : step.status === 'current'
+                                : step.status === "current"
                                   ? variants.navigation.steps.circleActive()
                                   : variants.navigation.steps.circle()
                             }
                           >
-                            {step.status === 'complete' ? (
+                            {step.status === "complete" ? (
                               <CheckIcon className="h-4 w-4" />
-                            ) : step.status === 'current' ? (
+                            ) : step.status === "current" ? (
                               <ClockIcon className="h-4 w-4" />
                             ) : (
                               <span>{step.id}</span>
@@ -543,14 +655,17 @@ const NavigationPage: React.FC<AppProps> = ({ emailDomain, appName: _appName }) 
                           <div className="text-left">
                             <div
                               className={
-                                step.status === 'current' || step.status === 'complete'
+                                step.status === "current" ||
+                                step.status === "complete"
                                   ? variants.navigation.steps.label()
                                   : variants.navigation.steps.labelInactive()
                               }
                             >
                               {step.name}
                             </div>
-                            <div className={`${textVariants.body.sm()} text-muted-foreground`}>
+                            <div
+                              className={`${textVariants.body.sm()} text-muted-foreground`}
+                            >
                               {step.description}
                             </div>
                           </div>
@@ -563,17 +678,18 @@ const NavigationPage: React.FC<AppProps> = ({ emailDomain, appName: _appName }) 
 
               <div className="mt-8 p-6 bg-muted rounded-lg">
                 <h4 className={`${textVariants.heading.h4()} mb-3`}>
-                  Step {activeStep}: {steps.find(s => s.id === activeStep)?.name}
+                  Step {activeStep}:{" "}
+                  {steps.find((s) => s.id === activeStep)?.name}
                 </h4>
                 <p className={textVariants.body.md()}>
                   {activeStep === 1 &&
                     `Create your ${emailDomain} account with your preferred username and security settings.`}
                   {activeStep === 2 &&
-                    'Connect your Web3 wallet (MetaMask, WalletConnect, etc.) to enable blockchain features.'}
+                    "Connect your Web3 wallet (MetaMask, WalletConnect, etc.) to enable blockchain features."}
                   {activeStep === 3 &&
-                    'Configure your email preferences, notifications, and privacy settings.'}
+                    "Configure your email preferences, notifications, and privacy settings."}
                   {activeStep === 4 &&
-                    'Your setup is complete! Start sending and receiving Web3 emails.'}
+                    "Your setup is complete! Start sending and receiving Web3 emails."}
                 </p>
               </div>
             </div>
@@ -581,14 +697,20 @@ const NavigationPage: React.FC<AppProps> = ({ emailDomain, appName: _appName }) 
 
           {/* Sidebar Navigation Demo */}
           <Section>
-            <h2 className={`${textVariants.heading.h2()} mb-8`}>Sidebar Navigation</h2>
+            <h2 className={`${textVariants.heading.h2()} mb-8`}>
+              Sidebar Navigation
+            </h2>
 
             <div
               className={`${ui.background.surface} ${ui.border.default} border rounded-lg overflow-hidden`}
             >
               <div className="p-6 border-b border-border">
-                <h3 className={`${textVariants.heading.h3()} mb-2`}>Email Application Sidebar</h3>
-                <p className={`${textVariants.body.sm()} text-muted-foreground`}>
+                <h3 className={`${textVariants.heading.h3()} mb-2`}>
+                  Email Application Sidebar
+                </h3>
+                <p
+                  className={`${textVariants.body.sm()} text-muted-foreground`}
+                >
                   Persistent navigation for email application
                 </p>
               </div>
@@ -598,7 +720,7 @@ const NavigationPage: React.FC<AppProps> = ({ emailDomain, appName: _appName }) 
                 <div className="w-64 border-r border-border">
                   <div className={variants.navigation.sidebar.container()}>
                     <nav className={variants.navigation.sidebar.nav()}>
-                      {sidebarItems.map(item => {
+                      {sidebarItems.map((item) => {
                         const Icon = item.icon;
                         return (
                           <a
@@ -609,7 +731,7 @@ const NavigationPage: React.FC<AppProps> = ({ emailDomain, appName: _appName }) 
                                 ? variants.navigation.sidebar.itemActive()
                                 : variants.navigation.sidebar.item()
                             }
-                            onClick={e => e.preventDefault()}
+                            onClick={(e) => e.preventDefault()}
                           >
                             <Icon
                               className={
@@ -636,10 +758,14 @@ const NavigationPage: React.FC<AppProps> = ({ emailDomain, appName: _appName }) 
                   <div className="h-full bg-muted rounded-lg flex items-center justify-center">
                     <div className="text-center">
                       <InboxIcon className="h-12 w-12 text-muted-foreground mx-auto mb-3" />
-                      <p className={`${textVariants.body.lg()} text-muted-foreground`}>
+                      <p
+                        className={`${textVariants.body.lg()} text-muted-foreground`}
+                      >
                         Main content area
                       </p>
-                      <p className={`${textVariants.body.sm()} text-muted-foreground`}>
+                      <p
+                        className={`${textVariants.body.sm()} text-muted-foreground`}
+                      >
                         Content changes based on sidebar selection
                       </p>
                     </div>
@@ -651,13 +777,21 @@ const NavigationPage: React.FC<AppProps> = ({ emailDomain, appName: _appName }) 
 
           {/* Web3 Navigation Patterns */}
           <Section>
-            <h2 className={`${textVariants.heading.h2()} mb-8`}>Web3 Navigation Patterns</h2>
+            <h2 className={`${textVariants.heading.h2()} mb-8`}>
+              Web3 Navigation Patterns
+            </h2>
 
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
-              <div className={`${ui.background.surface} ${ui.border.default} border rounded-lg`}>
+              <div
+                className={`${ui.background.surface} ${ui.border.default} border rounded-lg`}
+              >
                 <div className="p-6 border-b border-border">
-                  <h3 className={`${textVariants.heading.h3()} mb-2`}>Wallet Status Navigation</h3>
-                  <p className={`${textVariants.body.sm()} text-muted-foreground`}>
+                  <h3 className={`${textVariants.heading.h3()} mb-2`}>
+                    Wallet Status Navigation
+                  </h3>
+                  <p
+                    className={`${textVariants.body.sm()} text-muted-foreground`}
+                  >
                     Navigation that adapts to wallet connection status
                   </p>
                 </div>
@@ -666,11 +800,15 @@ const NavigationPage: React.FC<AppProps> = ({ emailDomain, appName: _appName }) 
                     <div className="flex items-center justify-between p-3 bg-success/10 rounded-lg border border-success">
                       <div className="flex items-center">
                         <div className="w-3 h-3 bg-success rounded-full mr-3"></div>
-                        <span className={`${textVariants.body.sm()} text-success`}>
+                        <span
+                          className={`${textVariants.body.sm()} text-success`}
+                        >
                           MetaMask Connected
                         </span>
                       </div>
-                      <span className={`${textVariants.body.xs()} font-mono text-success`}>
+                      <span
+                        className={`${textVariants.body.xs()} font-mono text-success`}
+                      >
                         0x742d...4e88
                       </span>
                     </div>
@@ -701,10 +839,16 @@ const NavigationPage: React.FC<AppProps> = ({ emailDomain, appName: _appName }) 
                 </div>
               </div>
 
-              <div className={`${ui.background.surface} ${ui.border.default} border rounded-lg`}>
+              <div
+                className={`${ui.background.surface} ${ui.border.default} border rounded-lg`}
+              >
                 <div className="p-6 border-b border-border">
-                  <h3 className={`${textVariants.heading.h3()} mb-2`}>Multi-Chain Navigation</h3>
-                  <p className={`${textVariants.body.sm()} text-muted-foreground`}>
+                  <h3 className={`${textVariants.heading.h3()} mb-2`}>
+                    Multi-Chain Navigation
+                  </h3>
+                  <p
+                    className={`${textVariants.body.sm()} text-muted-foreground`}
+                  >
                     Navigation across different blockchain networks
                   </p>
                 </div>
@@ -763,20 +907,30 @@ const NavigationPage: React.FC<AppProps> = ({ emailDomain, appName: _appName }) 
 
           {/* Accessibility Guidelines */}
           <Section>
-            <h2 className={`${textVariants.heading.h2()} mb-8`}>Accessibility Guidelines</h2>
+            <h2 className={`${textVariants.heading.h2()} mb-8`}>
+              Accessibility Guidelines
+            </h2>
 
-            <div className={`${ui.background.surface} ${ui.border.default} border rounded-lg`}>
+            <div
+              className={`${ui.background.surface} ${ui.border.default} border rounded-lg`}
+            >
               <div className="p-6 border-b border-border">
-                <h3 className={`${textVariants.heading.h3()} mb-4`}>Navigation Accessibility</h3>
-                <p className={`${textVariants.body.md()} text-muted-foreground`}>
-                  Ensure all navigation components are accessible to screen readers and keyboard
-                  users.
+                <h3 className={`${textVariants.heading.h3()} mb-4`}>
+                  Navigation Accessibility
+                </h3>
+                <p
+                  className={`${textVariants.body.md()} text-muted-foreground`}
+                >
+                  Ensure all navigation components are accessible to screen
+                  readers and keyboard users.
                 </p>
               </div>
 
               <div className="p-6 space-y-6">
                 <div>
-                  <h4 className={`${textVariants.heading.h4()} mb-3`}>ARIA Landmarks</h4>
+                  <h4 className={`${textVariants.heading.h4()} mb-3`}>
+                    ARIA Landmarks
+                  </h4>
                   <pre className="bg-muted p-4 rounded-lg text-sm overflow-x-auto">
                     <code className="text-foreground">{`<nav role="navigation" aria-label="Main navigation">
   <ol role="list" aria-label="Breadcrumb">
@@ -793,10 +947,14 @@ const NavigationPage: React.FC<AppProps> = ({ emailDomain, appName: _appName }) 
                 </div>
 
                 <div>
-                  <h4 className={`${textVariants.heading.h4()} mb-3`}>Keyboard Navigation</h4>
+                  <h4 className={`${textVariants.heading.h4()} mb-3`}>
+                    Keyboard Navigation
+                  </h4>
                   <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                     <div className="space-y-2">
-                      <div className={`${textVariants.body.sm()} font-medium`}>Breadcrumbs</div>
+                      <div className={`${textVariants.body.sm()} font-medium`}>
+                        Breadcrumbs
+                      </div>
                       <ul className="space-y-1 text-muted-foreground text-sm">
                         <li>• Tab: Navigate through links</li>
                         <li>• Enter/Space: Activate link</li>
@@ -804,7 +962,9 @@ const NavigationPage: React.FC<AppProps> = ({ emailDomain, appName: _appName }) 
                       </ul>
                     </div>
                     <div className="space-y-2">
-                      <div className={`${textVariants.body.sm()} font-medium`}>Tabs</div>
+                      <div className={`${textVariants.body.sm()} font-medium`}>
+                        Tabs
+                      </div>
                       <ul className="space-y-1 text-muted-foreground text-sm">
                         <li>• Arrow keys: Navigate tabs</li>
                         <li>• Tab: Enter tab panel</li>
@@ -819,7 +979,9 @@ const NavigationPage: React.FC<AppProps> = ({ emailDomain, appName: _appName }) 
 
           {/* Implementation Notes */}
           <Section>
-            <h2 className={`${textVariants.heading.h2()} mb-8`}>Implementation Notes</h2>
+            <h2 className={`${textVariants.heading.h2()} mb-8`}>
+              Implementation Notes
+            </h2>
 
             <div className={`${ui.background.subtle} rounded-xl p-8`}>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
@@ -837,7 +999,9 @@ const NavigationPage: React.FC<AppProps> = ({ emailDomain, appName: _appName }) 
                 </div>
 
                 <div>
-                  <h3 className={`${textVariants.heading.h3()} mb-4`}>Mobile Responsiveness</h3>
+                  <h3 className={`${textVariants.heading.h3()} mb-4`}>
+                    Mobile Responsiveness
+                  </h3>
                   <ul className="space-y-2 text-muted-foreground">
                     <li>• Collapse navigation into hamburger menus</li>
                     <li>• Use bottom navigation for mobile apps</li>

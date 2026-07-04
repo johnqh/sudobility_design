@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState } from "react";
 import {
   EyeIcon,
   HandRaisedIcon,
@@ -10,17 +10,20 @@ import {
   AdjustmentsHorizontalIcon,
   SpeakerWaveIcon,
   GlobeAltIcon,
-} from '@heroicons/react/24/outline';
-import { SEOHead } from '@sudobility/seo_lib';
-import { Button, Card, CardContent } from '@sudobility/components';
-import { ui, textVariants, variants } from '@sudobility/design';
+} from "@heroicons/react/24/outline";
+import { SEOHead } from "@sudobility/seo_lib";
+import { Button, Card, CardContent } from "@sudobility/components";
+import { ui, textVariants, variants } from "@sudobility/design";
 
 interface AppProps {
   emailDomain: string;
   appName: string;
 }
 
-const AccessibilityPage: React.FC<AppProps> = ({ emailDomain, appName: _appName }) => {
+const AccessibilityPage: React.FC<AppProps> = ({
+  emailDomain,
+  appName: _appName,
+}) => {
   const [reducedMotion, setReducedMotion] = useState(false);
   const [_highContrast, _setHighContrast] = useState(false);
   const [showSkipLink, setShowSkipLink] = useState(false);
@@ -39,33 +42,60 @@ const AccessibilityPage: React.FC<AppProps> = ({ emailDomain, appName: _appName 
           <div className="text-center mb-12">
             <div className="inline-flex items-center bg-info/10 px-4 py-2 rounded-full mb-6">
               <EyeIcon className="h-5 w-5 text-info mr-2" />
-              <span className="text-info font-semibold">Accessibility & A11Y</span>
+              <span className="text-info font-semibold">
+                Accessibility & A11Y
+              </span>
             </div>
 
-            <h1 className={`${textVariants.heading.display.xl()} mb-6`}>Inclusive Design System</h1>
+            <h1 className={`${textVariants.heading.display.xl()} mb-6`}>
+              Inclusive Design System
+            </h1>
 
-            <p className={`${textVariants.body.lg()} max-w-3xl mx-auto text-muted-foreground mb-8`}>
-              Comprehensive accessibility patterns and utilities for building inclusive,
-              WCAG-compliant Web3 applications. These patterns ensure equal access for all users,
-              including those using assistive technologies.
+            <p
+              className={`${textVariants.body.lg()} max-w-3xl mx-auto text-muted-foreground mb-8`}
+            >
+              Comprehensive accessibility patterns and utilities for building
+              inclusive, WCAG-compliant Web3 applications. These patterns ensure
+              equal access for all users, including those using assistive
+              technologies.
             </p>
 
             {/* Quick Stats */}
             <div className="grid grid-cols-2 md:grid-cols-4 gap-4 max-w-2xl mx-auto">
               <div className={`${ui.background.subtle} rounded-lg p-4`}>
-                <div className={`${textVariants.heading.h4()} text-primary mb-1`}>WCAG 2.1</div>
-                <div className={textVariants.caption.default()}>AA Compliant</div>
+                <div
+                  className={`${textVariants.heading.h4()} text-primary mb-1`}
+                >
+                  WCAG 2.1
+                </div>
+                <div className={textVariants.caption.default()}>
+                  AA Compliant
+                </div>
               </div>
               <div className={`${ui.background.subtle} rounded-lg p-4`}>
-                <div className={`${textVariants.heading.h4()} text-success mb-1`}>44px+</div>
-                <div className={textVariants.caption.default()}>Touch Targets</div>
+                <div
+                  className={`${textVariants.heading.h4()} text-success mb-1`}
+                >
+                  44px+
+                </div>
+                <div className={textVariants.caption.default()}>
+                  Touch Targets
+                </div>
               </div>
               <div className={`${ui.background.subtle} rounded-lg p-4`}>
-                <div className={`${textVariants.heading.h4()} text-accent mb-1`}>4.5:1</div>
-                <div className={textVariants.caption.default()}>Color Contrast</div>
+                <div
+                  className={`${textVariants.heading.h4()} text-accent mb-1`}
+                >
+                  4.5:1
+                </div>
+                <div className={textVariants.caption.default()}>
+                  Color Contrast
+                </div>
               </div>
               <div className={`${ui.background.subtle} rounded-lg p-4`}>
-                <div className={`${textVariants.heading.h4()} text-warning mb-1`}>
+                <div
+                  className={`${textVariants.heading.h4()} text-warning mb-1`}
+                >
                   Screen Reader
                 </div>
                 <div className={textVariants.caption.default()}>Compatible</div>
@@ -79,19 +109,27 @@ const AccessibilityPage: React.FC<AppProps> = ({ emailDomain, appName: _appName 
             <Card>
               <CardContent className="pt-6">
                 <div className="flex items-center mb-4">
-                  <SpeakerWaveIcon className={`${variants.icon.size.lg()} text-primary mr-3`} />
-                  <h2 className={textVariants.heading.h3()}>Screen Reader Support</h2>
+                  <SpeakerWaveIcon
+                    className={`${variants.icon.size.lg()} text-primary mr-3`}
+                  />
+                  <h2 className={textVariants.heading.h3()}>
+                    Screen Reader Support
+                  </h2>
                 </div>
 
-                <p className={`${textVariants.body.md()} text-muted-foreground mb-6`}>
-                  Comprehensive screen reader patterns including skip links, aria labels, and
-                  semantic HTML.
+                <p
+                  className={`${textVariants.body.md()} text-muted-foreground mb-6`}
+                >
+                  Comprehensive screen reader patterns including skip links,
+                  aria labels, and semantic HTML.
                 </p>
 
                 <div className="space-y-4">
                   {/* Skip Link Demo */}
                   <div className="border rounded-lg p-4">
-                    <h4 className={`${textVariants.heading.h5()} mb-3`}>Skip Link</h4>
+                    <h4 className={`${textVariants.heading.h5()} mb-3`}>
+                      Skip Link
+                    </h4>
                     <div className="bg-muted p-4 rounded border">
                       <pre className="text-xs text-foreground overflow-x-auto">
                         {`// Screen Reader Skip Link
@@ -116,7 +154,8 @@ focus:m-2 focus:no-underline`}
                     </button>
                     {showSkipLink && (
                       <p className="text-sm text-success mt-2">
-                        ✓ Skip link is now visible! This helps keyboard users navigate quickly.
+                        ✓ Skip link is now visible! This helps keyboard users
+                        navigate quickly.
                       </p>
                     )}
                   </div>
@@ -134,9 +173,11 @@ focus:m-2 focus:no-underline`}
                       </pre>
                     </div>
                     <p className="text-sm text-muted-foreground mt-2">
-                      This content provides context for screen readers without cluttering the visual
-                      design.
-                      <span className={variants.accessibility.screenReader.only()}>
+                      This content provides context for screen readers without
+                      cluttering the visual design.
+                      <span
+                        className={variants.accessibility.screenReader.only()}
+                      >
                         This text is only visible to screen readers
                       </span>
                     </p>
@@ -149,21 +190,32 @@ focus:m-2 focus:no-underline`}
             <Card>
               <CardContent className="pt-6">
                 <div className="flex items-center mb-4">
-                  <CursorArrowRaysIcon className={`${variants.icon.size.lg()} text-accent mr-3`} />
-                  <h2 className={textVariants.heading.h3()}>Focus Management</h2>
+                  <CursorArrowRaysIcon
+                    className={`${variants.icon.size.lg()} text-accent mr-3`}
+                  />
+                  <h2 className={textVariants.heading.h3()}>
+                    Focus Management
+                  </h2>
                 </div>
 
-                <p className={`${textVariants.body.md()} text-muted-foreground mb-6`}>
-                  Clear focus indicators and keyboard navigation patterns for all interactive
-                  elements.
+                <p
+                  className={`${textVariants.body.md()} text-muted-foreground mb-6`}
+                >
+                  Clear focus indicators and keyboard navigation patterns for
+                  all interactive elements.
                 </p>
 
                 <div className="space-y-4">
                   {/* Focus Ring Examples */}
                   <div className="border rounded-lg p-4">
-                    <h4 className={`${textVariants.heading.h5()} mb-3`}>Focus Indicators</h4>
+                    <h4 className={`${textVariants.heading.h5()} mb-3`}>
+                      Focus Indicators
+                    </h4>
                     <div className="grid grid-cols-2 gap-4">
-                      <Button variant="default" className={variants.accessibility.focus.ring()}>
+                      <Button
+                        variant="default"
+                        className={variants.accessibility.focus.ring()}
+                      >
                         Standard Focus
                       </Button>
                       <Button
@@ -172,7 +224,10 @@ focus:m-2 focus:no-underline`}
                       >
                         High Contrast
                       </Button>
-                      <Button variant="default" className={variants.accessibility.focus.wallet()}>
+                      <Button
+                        variant="default"
+                        className={variants.accessibility.focus.wallet()}
+                      >
                         Web3 Wallet
                       </Button>
                       <Button
@@ -206,16 +261,23 @@ variants.accessibility.focus.error()       // Error states`}
                   <h2 className={textVariants.heading.h3()}>Color Contrast</h2>
                 </div>
 
-                <p className={`${textVariants.body.md()} text-muted-foreground mb-6`}>
-                  High contrast text and background combinations that exceed WCAG AA requirements.
+                <p
+                  className={`${textVariants.body.md()} text-muted-foreground mb-6`}
+                >
+                  High contrast text and background combinations that exceed
+                  WCAG AA requirements.
                 </p>
 
                 <div className="space-y-4">
                   {/* Contrast Examples */}
                   <div className="border rounded-lg p-4">
-                    <h4 className={`${textVariants.heading.h5()} mb-3`}>Text Contrast Levels</h4>
+                    <h4 className={`${textVariants.heading.h5()} mb-3`}>
+                      Text Contrast Levels
+                    </h4>
                     <div className="space-y-3">
-                      <div className={`p-3 rounded ${variants.accessibility.contrast.text.high()}`}>
+                      <div
+                        className={`p-3 rounded ${variants.accessibility.contrast.text.high()}`}
+                      >
                         High contrast text (WCAG AAA) - Ratio 7:1+
                       </div>
                       <div
@@ -223,7 +285,9 @@ variants.accessibility.focus.error()       // Error states`}
                       >
                         Medium contrast text (WCAG AA) - Ratio 4.5:1+
                       </div>
-                      <div className={`p-3 rounded ${variants.accessibility.contrast.text.low()}`}>
+                      <div
+                        className={`p-3 rounded ${variants.accessibility.contrast.text.low()}`}
+                      >
                         Low contrast text (for secondary content)
                       </div>
                     </div>
@@ -271,13 +335,19 @@ variants.accessibility.contrast.link.default()`}
             <Card>
               <CardContent className="pt-6">
                 <div className="flex items-center mb-4">
-                  <BoltIcon className={`${variants.icon.size.lg()} text-warning mr-3`} />
-                  <h2 className={textVariants.heading.h3()}>Motion Preferences</h2>
+                  <BoltIcon
+                    className={`${variants.icon.size.lg()} text-warning mr-3`}
+                  />
+                  <h2 className={textVariants.heading.h3()}>
+                    Motion Preferences
+                  </h2>
                 </div>
 
-                <p className={`${textVariants.body.md()} text-muted-foreground mb-6`}>
-                  Animations that respect user motion preferences and provide alternatives for users
-                  with vestibular disorders.
+                <p
+                  className={`${textVariants.body.md()} text-muted-foreground mb-6`}
+                >
+                  Animations that respect user motion preferences and provide
+                  alternatives for users with vestibular disorders.
                 </p>
 
                 <div className="space-y-4">
@@ -291,7 +361,7 @@ variants.accessibility.contrast.link.default()`}
                         <input
                           type="checkbox"
                           checked={reducedMotion}
-                          onChange={e => setReducedMotion(e.target.checked)}
+                          onChange={(e) => setReducedMotion(e.target.checked)}
                           className="mr-2"
                         />
                         Reduce Motion
@@ -306,13 +376,13 @@ variants.accessibility.contrast.link.default()`}
                             : variants.animations.hover.button.lift()
                         }
                       >
-                        {reducedMotion ? 'No Animation' : 'Animated Button'}
+                        {reducedMotion ? "No Animation" : "Animated Button"}
                       </Button>
                       <div
                         className={`w-8 h-8 bg-primary rounded mx-auto ${
                           reducedMotion
                             ? variants.accessibility.motion.loading.spin()
-                            : 'animate-spin'
+                            : "animate-spin"
                         }`}
                       ></div>
                     </div>
@@ -339,17 +409,26 @@ motion-reduce:transition-none`}
           <Card className="mb-8">
             <CardContent className="pt-6">
               <div className="flex items-center mb-4">
-                <HandRaisedIcon className={`${variants.icon.size.lg()} text-primary mr-3`} />
-                <h2 className={textVariants.heading.h3()}>Form Accessibility</h2>
+                <HandRaisedIcon
+                  className={`${variants.icon.size.lg()} text-primary mr-3`}
+                />
+                <h2 className={textVariants.heading.h3()}>
+                  Form Accessibility
+                </h2>
               </div>
 
-              <p className={`${textVariants.body.md()} text-muted-foreground mb-6`}>
-                Accessible form patterns with proper labeling, validation, and error handling.
+              <p
+                className={`${textVariants.body.md()} text-muted-foreground mb-6`}
+              >
+                Accessible form patterns with proper labeling, validation, and
+                error handling.
               </p>
 
               <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
                 <div>
-                  <h4 className={`${textVariants.heading.h5()} mb-3`}>Required Field Indicators</h4>
+                  <h4 className={`${textVariants.heading.h5()} mb-3`}>
+                    Required Field Indicators
+                  </h4>
                   <form className="space-y-4">
                     <div>
                       <label
@@ -394,7 +473,9 @@ motion-reduce:transition-none`}
                 </div>
 
                 <div>
-                  <h4 className={`${textVariants.heading.h5()} mb-3`}>Code Examples</h4>
+                  <h4 className={`${textVariants.heading.h5()} mb-3`}>
+                    Code Examples
+                  </h4>
                   <div className="bg-muted p-4 rounded border">
                     <pre className="text-xs text-foreground overflow-x-auto">
                       {`// Required Field Visual Indicator
@@ -423,41 +504,62 @@ variants.accessibility.feedback.error.message()`}
                 <ChatBubbleLeftRightIcon
                   className={`${variants.icon.size.lg()} text-warning mr-3`}
                 />
-                <h2 className={textVariants.heading.h3()}>Accessible Feedback</h2>
+                <h2 className={textVariants.heading.h3()}>
+                  Accessible Feedback
+                </h2>
               </div>
 
-              <p className={`${textVariants.body.md()} text-muted-foreground mb-6`}>
-                Screen reader-friendly feedback messages with appropriate ARIA live regions.
+              <p
+                className={`${textVariants.body.md()} text-muted-foreground mb-6`}
+              >
+                Screen reader-friendly feedback messages with appropriate ARIA
+                live regions.
               </p>
 
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                 <div>
-                  <h4 className={`${textVariants.heading.h5()} mb-3`}>Message Types</h4>
+                  <h4 className={`${textVariants.heading.h5()} mb-3`}>
+                    Message Types
+                  </h4>
                   <div className="space-y-4">
-                    <div className={variants.accessibility.feedback.success.container()}>
+                    <div
+                      className={variants.accessibility.feedback.success.container()}
+                    >
                       <div className="flex">
                         <CheckCircleIcon
                           className={`h-5 w-5 ${variants.accessibility.feedback.success.title()} mr-2 flex-shrink-0`}
                         />
                         <div>
-                          <h5 className={variants.accessibility.feedback.success.title()}>
+                          <h5
+                            className={variants.accessibility.feedback.success.title()}
+                          >
                             Success
                           </h5>
-                          <p className={variants.accessibility.feedback.success.message()}>
+                          <p
+                            className={variants.accessibility.feedback.success.message()}
+                          >
                             Your wallet has been connected successfully!
                           </p>
                         </div>
                       </div>
                     </div>
 
-                    <div className={variants.accessibility.feedback.error.container()}>
+                    <div
+                      className={variants.accessibility.feedback.error.container()}
+                    >
                       <div className="flex">
                         <XCircleIcon
                           className={`h-5 w-5 ${variants.accessibility.feedback.error.title()} mr-2 flex-shrink-0`}
                         />
                         <div>
-                          <h5 className={variants.accessibility.feedback.error.title()}>Error</h5>
-                          <p className={variants.accessibility.feedback.error.message()}>
+                          <h5
+                            className={variants.accessibility.feedback.error.title()}
+                          >
+                            Error
+                          </h5>
+                          <p
+                            className={variants.accessibility.feedback.error.message()}
+                          >
                             Transaction failed. Please try again.
                           </p>
                         </div>
@@ -467,7 +569,9 @@ variants.accessibility.feedback.error.message()`}
                 </div>
 
                 <div>
-                  <h4 className={`${textVariants.heading.h5()} mb-3`}>Live Region Patterns</h4>
+                  <h4 className={`${textVariants.heading.h5()} mb-3`}>
+                    Live Region Patterns
+                  </h4>
                   <div className="bg-muted p-4 rounded border">
                     <pre className="text-xs text-foreground">
                       {`// Live Regions for Dynamic Content
@@ -486,11 +590,16 @@ variants.accessibility.feedback.error.message()`}
                   </div>
 
                   {/* Live region examples */}
-                  <div className={variants.accessibility.feedback.liveRegion.polite()}>
+                  <div
+                    className={variants.accessibility.feedback.liveRegion.polite()}
+                  >
                     This content will be announced politely to screen readers
                   </div>
-                  <div className={variants.accessibility.feedback.liveRegion.assertive()}>
-                    This content will interrupt screen readers for important alerts
+                  <div
+                    className={variants.accessibility.feedback.liveRegion.assertive()}
+                  >
+                    This content will interrupt screen readers for important
+                    alerts
                   </div>
                 </div>
               </div>
@@ -501,18 +610,26 @@ variants.accessibility.feedback.error.message()`}
           <Card className="mb-8">
             <CardContent className="pt-6">
               <div className="flex items-center mb-4">
-                <GlobeAltIcon className={`${variants.icon.size.lg()} text-info mr-3`} />
-                <h2 className={textVariants.heading.h3()}>Web3 Accessibility</h2>
+                <GlobeAltIcon
+                  className={`${variants.icon.size.lg()} text-info mr-3`}
+                />
+                <h2 className={textVariants.heading.h3()}>
+                  Web3 Accessibility
+                </h2>
               </div>
 
-              <p className={`${textVariants.body.md()} text-muted-foreground mb-6`}>
-                Specialized accessibility patterns for Web3 applications including wallet
-                connections and transactions.
+              <p
+                className={`${textVariants.body.md()} text-muted-foreground mb-6`}
+              >
+                Specialized accessibility patterns for Web3 applications
+                including wallet connections and transactions.
               </p>
 
               <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
                 <div>
-                  <h4 className={`${textVariants.heading.h5()} mb-3`}>Web3 Components</h4>
+                  <h4 className={`${textVariants.heading.h5()} mb-3`}>
+                    Web3 Components
+                  </h4>
                   <div className="space-y-4">
                     <Button
                       className={variants.accessibility.focus.wallet()}
@@ -545,7 +662,9 @@ variants.accessibility.feedback.error.message()`}
                 </div>
 
                 <div>
-                  <h4 className={`${textVariants.heading.h5()} mb-3`}>Implementation</h4>
+                  <h4 className={`${textVariants.heading.h5()} mb-3`}>
+                    Implementation
+                  </h4>
                   <div className="bg-muted p-4 rounded border">
                     <pre className="text-xs text-foreground">
                       {`// Web3 Semantic Patterns
@@ -575,13 +694,17 @@ variants.accessibility.feedback.error.message()`}
           <Card>
             <CardContent className="pt-6">
               <div className="flex items-center mb-4">
-                <CheckCircleIcon className={`${variants.icon.size.lg()} text-success mr-3`} />
+                <CheckCircleIcon
+                  className={`${variants.icon.size.lg()} text-success mr-3`}
+                />
                 <h2 className={textVariants.heading.h3()}>Best Practices</h2>
               </div>
 
               <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
                 <div>
-                  <h4 className={`${textVariants.heading.h5()} mb-4`}>✅ Do This</h4>
+                  <h4 className={`${textVariants.heading.h5()} mb-4`}>
+                    ✅ Do This
+                  </h4>
                   <ul className="space-y-2 text-sm">
                     <li className="flex items-start">
                       <CheckCircleIcon className="h-4 w-4 text-success mr-2 mt-0.5 flex-shrink-0" />
@@ -611,7 +734,9 @@ variants.accessibility.feedback.error.message()`}
                 </div>
 
                 <div>
-                  <h4 className={`${textVariants.heading.h5()} mb-4`}>❌ Avoid This</h4>
+                  <h4 className={`${textVariants.heading.h5()} mb-4`}>
+                    ❌ Avoid This
+                  </h4>
                   <ul className="space-y-2 text-sm">
                     <li className="flex items-start">
                       <XCircleIcon className="h-4 w-4 text-destructive mr-2 mt-0.5 flex-shrink-0" />

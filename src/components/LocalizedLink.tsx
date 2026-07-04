@@ -1,12 +1,12 @@
-import React from 'react';
-import { LocalizedLink as SharedLocalizedLink } from '@sudobility/components';
-import type { LinkProps } from 'react-router-dom';
-import { supportedLanguages, type SupportedLanguage } from '../i18n';
+import React from "react";
+import { LocalizedLink as SharedLocalizedLink } from "@sudobility/components";
+import type { LinkProps } from "react-router-dom";
+import { supportedLanguages, type SupportedLanguage } from "../i18n";
 
 const isLanguageSupported = (lang: string): boolean =>
   (supportedLanguages as readonly string[]).includes(lang);
 
-interface LocalizedLinkProps extends Omit<LinkProps, 'to'> {
+interface LocalizedLinkProps extends Omit<LinkProps, "to"> {
   to: string;
   language?: SupportedLanguage;
 }
