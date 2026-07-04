@@ -14,5 +14,12 @@
     "medium": "Medium",
     "large": "Large",
     "designTheme": "Design theme"
+  },
+  "docs": {
+    "title": "Docs",
+    "overviewTitle": "About the design system",
+    "overviewBody": "The Sudobility design system provides design tokens, typography variants (textVariants), and a runtime theme system built on Tailwind CSS with class-based dark mode. Components consume semantic tokens so the whole app stays consistent and flips light/dark automatically.",
+    "howToTitle": "How to use",
+    "librariesTitle": "Libraries"
   }
 }
