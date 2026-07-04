@@ -15,6 +15,8 @@ initializeNetworkService();
 
 type PageProps = { emailDomain: string; appName: string };
 
+const SettingsPage = lazy(() => import('./pages/SettingsPage'));
+
 // Lazy-loaded design showcase pages, keyed by route slug (under /:lang/design/).
 const designPages: Record<string, ComponentType<PageProps>> = {
   colors: lazy(() => import('./pages/design/ColorsPage')),
@@ -54,6 +56,7 @@ function AppRoutes() {
           {Object.entries(designPages).map(([slug, Page]) => (
             <Route key={slug} path={`design/${slug}`} element={<Page {...pageProps} />} />
           ))}
+          <Route path="settings" element={<SettingsPage {...pageProps} />} />
         </Route>
         <Route path="/" element={<Navigate to={`/${i18nInstance.language || 'en'}`} replace />} />
         <Route path="*" element={<Navigate to="/en" replace />} />

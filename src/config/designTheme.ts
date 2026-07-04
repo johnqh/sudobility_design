@@ -16,7 +16,9 @@ import {
 
 export const DEFAULT_THEME_NAME: ThemeName = 'default';
 
-const STORAGE_KEY = 'sudobility-design-theme';
+// Distinct from the light/dark ThemeProvider key (storageKeyPrefix + '-theme',
+// i.e. 'sudobility-design-theme') to avoid clobbering each other in localStorage.
+const STORAGE_KEY = 'sudobility-design-palette';
 const STYLE_ELEMENT_ID = 'sudobility-design-theme';
 
 export interface ThemeOption {

@@ -1,5 +1,18 @@
 {
   "nav": { "docs": "Docs", "settings": "Settings" },
   "footer": { "librariesTitle": "Libraries", "contactTitle": "Contact" },
-  "loading": "Loading..."
+  "loading": "Loading...",
+  "settings": {
+    "title": "Settings",
+    "appearance": "Customize the appearance of the design system showcase.",
+    "theme": "Theme",
+    "light": "Light",
+    "dark": "Dark",
+    "system": "System",
+    "fontSize": "Font size",
+    "small": "Small",
+    "medium": "Medium",
+    "large": "Large",
+    "designTheme": "Design theme"
+  }
 }
