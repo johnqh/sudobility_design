@@ -1,0 +1,31 @@
+{
+  "nav": {
+    "docs": "ドキュメント",
+    "settings": "設定"
+  },
+  "footer": {
+    "librariesTitle": "図書館",
+    "contactTitle": "お問い合わせ"
+  },
+  "loading": "読み込み中...",
+  "settings": {
+    "title": "設定",
+    "appearance": "デザインシステムのショーケースの外観をカスタマイズします。",
+    "theme": "テーマ",
+    "light": "光",
+    "dark": "暗い",
+    "system": "システム",
+    "fontSize": "フォントサイズ",
+    "small": "小さな",
+    "medium": "Medium",
+    "large": "大",
+    "designTheme": "デザインテーマ"
+  },
+  "docs": {
+    "title": "ドキュメント",
+    "overviewTitle": "デザインシステムについて",
+    "overviewBody": "Sudobilityデザインシステムは、デザイントークン、タイプグラフィーのバリエーション（textVariants）、およびTailwind CSSに基づき、クラスベースのダークモードを備えたランタイムテーマシステムを提供します。コンポーネントはセマンティックトークンを消費するため、アプリ全体が一貫性を持ち、自動的にライト/ダークモードを切り替えます。",
+    "howToTitle": "使い方",
+    "librariesTitle": "図書館"
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "nav": {
+    "docs": "Dokumente",
+    "settings": "Einstellungen"
+  },
+  "footer": {
+    "librariesTitle": "Bibliotheken",
+    "contactTitle": "Kontakt"
+  },
+  "loading": "Lade...",
+  "settings": {
+    "title": "Einstellungen",
+    "appearance": "Passen Sie das Erscheinungsbild der Design-System-Showcase-Ansicht an.",
+    "theme": "Thema",
+    "light": "Licht",
+    "dark": "Dunkel",
+    "system": "System",
+    "fontSize": "Schriftgröße",
+    "small": "Klein",
+    "medium": "Medium",
+    "large": "Groß",
+    "designTheme": "Design-Thema"
+  },
+  "docs": {
+    "title": "Dokumente",
+    "overviewTitle": "Über das Design-System",
+    "overviewBody": "Das Sudobility-Design-System bietet Design-Tokens, Typografie-Varianten (textVariants) und ein Laufzeit-Themen-System, das auf Tailwind CSS basiert und Klassen-basierten Dunkelmodus verwendet. Komponenten nutzen semantische Tokens, sodass die gesamte App konsistent bleibt und automatisch zwischen Hell und Dunkel wechselt.",
+    "howToTitle": "Wie man verwendet",
+    "librariesTitle": "Bibliotheken"
+  }
+}

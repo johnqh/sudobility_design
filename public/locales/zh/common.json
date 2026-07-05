@@ -1,0 +1,31 @@
+{
+  "nav": {
+    "docs": "文档",
+    "settings": "设置"
+  },
+  "footer": {
+    "librariesTitle": "图书馆",
+    "contactTitle": "联系"
+  },
+  "loading": "加载中...",
+  "settings": {
+    "title": "设置",
+    "appearance": "自定义设计系统演示的外观。",
+    "theme": "主题",
+    "light": "光",
+    "dark": "黑暗",
+    "system": "系统",
+    "fontSize": "字体大小",
+    "small": "小",
+    "medium": "Medium",
+    "large": "大",
+    "designTheme": "设计主题"
+  },
+  "docs": {
+    "title": "文档",
+    "overviewTitle": "关于设计系统",
+    "overviewBody": "Sudobility 设计系统提供设计令牌、排版变体（textVariants）以及基于 Tailwind CSS 的运行时主题系统，支持基于类的暗色模式。组件使用语义令牌，确保整个应用程序保持一致，并能自动切换亮色/暗色模式。",
+    "howToTitle": "如何使用",
+    "librariesTitle": "图书馆"
+  }
+}

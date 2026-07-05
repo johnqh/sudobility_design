@@ -73,9 +73,11 @@ sudobility_design/
 ## Task 1: Project scaffold — boots to a placeholder home
 
 **Files:**
+
 - Create: `package.json`, `tsconfig.json`, `vite.config.ts`, `tailwind.config.js`, `postcss.config.js`, `eslint.config.js`, `index.html`, `.env.example`, `.gitignore`, `src/main.tsx`, `src/index.css`, `src/vite-env.d.ts`, `src/i18n.ts`, `src/App.tsx`, `src/config/constants.ts`, `src/config/seo.ts`, `src/stubs/{firebase-auth,di_web,auth_lib,subscription-components,subscription_lib,devops-components}.ts`, `public/locales/en/common.json`, `public/logo.png` (placeholder)
 
 **Interfaces:**
+
 - Produces: `supportedLanguages`, `languageNames`, `SupportedLanguage` (from `src/i18n.ts`); `CONSTANTS` (from `src/config/constants.ts`); `seoHeadConfig` (from `src/config/seo.ts`); a booting `App` rendering `SudobilityApp` with a placeholder route at `/:lang`.
 
 - [ ] **Step 1: Create the project directory and copy static scaffold files**
@@ -145,7 +147,10 @@ Copy `~/projects/sudobility/index.html` but simplify the `<title>`/meta to the d
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="icon" type="image/png" href="/logo.png" />
     <title>Sudobility Design System</title>
-    <meta name="description" content="Sudobility design system documentation and component showcase." />
+    <meta
+      name="description"
+      content="Sudobility design system documentation and component showcase."
+    />
   </head>
   <body>
     <div id="root"></div>
@@ -158,10 +163,10 @@ Copy `~/projects/sudobility/index.html` but simplify the `<title>`/meta to the d
 
 ```ts
 export const CONSTANTS = {
-  APP_NAME: import.meta.env.VITE_APP_NAME || 'Sudobility Design System',
-  APP_DOMAIN: import.meta.env.VITE_APP_DOMAIN || 'design.sudobility.com',
-  COMPANY_NAME: import.meta.env.VITE_COMPANY_NAME || 'Sudobility',
-  SUPPORT_EMAIL: import.meta.env.VITE_SUPPORT_EMAIL || 'info@sudobility.com',
+  APP_NAME: import.meta.env.VITE_APP_NAME || "Sudobility Design System",
+  APP_DOMAIN: import.meta.env.VITE_APP_DOMAIN || "design.sudobility.com",
+  COMPANY_NAME: import.meta.env.VITE_COMPANY_NAME || "Sudobility",
+  SUPPORT_EMAIL: import.meta.env.VITE_SUPPORT_EMAIL || "info@sudobility.com",
 } as const;
 ```
 
@@ -186,19 +191,23 @@ Copy `~/projects/sudobility/src/main.tsx` verbatim (`configureTheme(defaultTheme
 - [ ] **Step 13: Write a minimal `src/App.tsx` (placeholder)**
 
 ```tsx
-import { Suspense } from 'react';
-import { Routes, Route, Navigate } from 'react-router-dom';
-import { useTranslation } from 'react-i18next';
-import { SudobilityApp } from '@sudobility/building_blocks';
-import { initializeNetworkService } from '@sudobility/di';
-import { SEOHeadProvider } from '@sudobility/seo_lib';
-import i18n from './i18n';
-import { seoHeadConfig } from './config/seo';
+import { Suspense } from "react";
+import { Routes, Route, Navigate } from "react-router-dom";
+import { useTranslation } from "react-i18next";
+import { SudobilityApp } from "@sudobility/building_blocks";
+import { initializeNetworkService } from "@sudobility/di";
+import { SEOHeadProvider } from "@sudobility/seo_lib";
+import i18n from "./i18n";
+import { seoHeadConfig } from "./config/seo";
 
 initializeNetworkService();
 
 function Placeholder() {
-  return <div className="p-12 text-center text-2xl">Sudobility Design System — scaffold OK</div>;
+  return (
+    <div className="p-12 text-center text-2xl">
+      Sudobility Design System — scaffold OK
+    </div>
+  );
 }
 
 function AppRoutes() {
@@ -207,7 +216,12 @@ function AppRoutes() {
     <Suspense fallback={<div className="p-12">Loading...</div>}>
       <Routes>
         <Route path="/:lang" element={<Placeholder />} />
-        <Route path="/" element={<Navigate to={`/${i18nInstance.language || 'en'}`} replace />} />
+        <Route
+          path="/"
+          element={
+            <Navigate to={`/${i18nInstance.language || "en"}`} replace />
+          }
+        />
         <Route path="*" element={<Navigate to="/en" replace />} />
       </Routes>
     </Suspense>
@@ -236,6 +250,7 @@ cd /Users/johnhuang/projects/sudobility_design
 bun install
 bun run build
 ```
+
 Expected: `tsc -b` and `vite build` complete with no errors; `dist/` is produced.
 
 - [ ] **Step 16: Verify dev server + browser smoke**
@@ -243,6 +258,7 @@ Expected: `tsc -b` and `vite build` complete with no errors; `dist/` is produced
 ```bash
 bun run dev
 ```
+
 Open `http://localhost:4000/` → expect redirect to `/en` and the "scaffold OK" text. Check the browser console has no errors. Stop the server.
 
 - [ ] **Step 17: Commit**
@@ -257,25 +273,31 @@ git commit -m "chore: scaffold sudobility_design app (boots to placeholder)"
 ## Task 2: App shell — ScreenContainerLayout (topbar + breadcrumbs + footer)
 
 **Files:**
+
 - Create: `src/components/ScreenContainerLayout.tsx`
 - Modify: `src/App.tsx` (add `LANGUAGE_INFO`, `LinkWrapper`, use the layout as the `/:lang` route element wrapping an `<Outlet>`)
 - Modify: `public/locales/en/common.json` (footer strings)
 
 **Interfaces:**
+
 - Consumes: `supportedLanguages`, `languageNames`, `SupportedLanguage`, `CONSTANTS`, `useBreadcrumbs` (defined in T3 — for now pass a static Home item; T3 swaps it in).
 - Produces: `ScreenContainerLayout` route-layout component rendering `AppTopBar` (Docs + Settings menu items + language selector) → `AppBreadcrumbs` → `<main><Outlet/></main>` → `AppFooterForHomePage`.
 
 - [ ] **Step 1: Write `src/components/ScreenContainerLayout.tsx`**
 
 Adapt `~/projects/sudobility/src/App.tsx`'s `ScreenContainerLayout` + `LinkWrapper` + `LANGUAGE_INFO` (read that file for the exact structure). Differences from the reference:
+
 - `menuItems` on `AppTopBar` = Docs + Settings:
+
 ```tsx
 menuItems={[
   { label: t('nav.docs'), href: `/${currentLang}/docs` },
   { label: t('nav.settings'), href: `/${currentLang}/settings` },
 ]}
 ```
-  (Confirm the `AppTopBar` `menuItems` item shape against `@sudobility/building_blocks` types while implementing; the reference passes `menuItems={[]}`, so read the type from `node_modules/@sudobility/building_blocks/dist` if the `{label, href}` shape errors.)
+
+(Confirm the `AppTopBar` `menuItems` item shape against `@sudobility/building_blocks` types while implementing; the reference passes `menuItems={[]}`, so read the type from `node_modules/@sudobility/building_blocks/dist` if the `{label, href}` shape errors.)
+
 - `AppBreadcrumbs items` = `[{ label: 'Home', href: `/${currentLang}`, current: true }]` for now (T3 replaces with `useBreadcrumbs()`).
 - Footer `linkSections` = a single "Libraries" section is fine as a placeholder now (final repo links come in T11); keep `t('footer.librariesTitle')` as the title and an empty `links: []` array, plus a Contact section with `SUPPORT_EMAIL`.
 - Use `useTranslation('common')`.
@@ -294,6 +316,7 @@ Replace the placeholder route so `/:lang` renders `ScreenContainerLayout` with a
   <Route index element={<Placeholder />} />
 </Route>
 ```
+
 Import `ScreenContainerLayout` and keep the `/` and `*` redirects.
 
 - [ ] **Step 4: Verify build + lint**
@@ -301,6 +324,7 @@ Import `ScreenContainerLayout` and keep the `/` and `*` redirects.
 ```bash
 bun run build && bun run lint
 ```
+
 Expected: no errors/warnings that fail the build.
 
 - [ ] **Step 5: Browser smoke**
@@ -319,10 +343,12 @@ git commit -m "feat: app shell with topbar (Docs/Settings), breadcrumbs, footer"
 ## Task 3: Support modules — design theme + links + breadcrumbs + code block
 
 **Files:**
+
 - Create: `src/context/DesignThemeContext.tsx`, `src/config/designTheme.ts`, `src/components/internal/ThemeSwitcher.tsx`, `src/components/internal/ThemePreview.tsx`, `src/components/LocalizedLink.tsx`, `src/components/CodeBlock.tsx`, `src/hooks/useBreadcrumbs.ts`
 - Modify: `src/App.tsx` (wrap routes in `DesignThemeProvider`), `src/components/ScreenContainerLayout.tsx` (use `useBreadcrumbs`)
 
 **Interfaces:**
+
 - Produces:
   - `useDesignTheme()` → `{ themeName, themeOptions, setThemeName }`; `DesignThemeProvider`.
   - `ThemeSwitcher` (default export), `ThemePreview` (default export).
@@ -343,20 +369,25 @@ Copy `~/projects/mail_box/src/components/internal/ThemeSwitcher.tsx` and `ThemeP
 Simplify the mail_box wrapper to use this app's language list:
 
 ```tsx
-import React from 'react';
-import { LocalizedLink as SharedLocalizedLink } from '@sudobility/components';
-import type { LinkProps } from 'react-router-dom';
-import { supportedLanguages, type SupportedLanguage } from '../i18n';
+import React from "react";
+import { LocalizedLink as SharedLocalizedLink } from "@sudobility/components";
+import type { LinkProps } from "react-router-dom";
+import { supportedLanguages, type SupportedLanguage } from "../i18n";
 
 const isLanguageSupported = (lang: string): boolean =>
   (supportedLanguages as readonly string[]).includes(lang);
 
-interface LocalizedLinkProps extends Omit<LinkProps, 'to'> {
+interface LocalizedLinkProps extends Omit<LinkProps, "to"> {
   to: string;
   language?: SupportedLanguage;
 }
 
-export const LocalizedLink: React.FC<LocalizedLinkProps> = ({ to, language, children, ...props }) => (
+export const LocalizedLink: React.FC<LocalizedLinkProps> = ({
+  to,
+  language,
+  children,
+  ...props
+}) => (
   <SharedLocalizedLink
     to={to}
     language={language}
@@ -370,6 +401,7 @@ export const LocalizedLink: React.FC<LocalizedLinkProps> = ({ to, language, chil
 
 export default LocalizedLink;
 ```
+
 (If `SharedLocalizedLink`'s prop names differ, read `node_modules/@sudobility/components/dist/**/LocalizedLink.d.ts` and match.)
 
 - [ ] **Step 4: Write `src/components/CodeBlock.tsx`**
@@ -379,9 +411,9 @@ Copy `~/projects/mail_box/src/components/CodeBlock.tsx` verbatim (thin wrapper o
 - [ ] **Step 5: Write `src/hooks/useBreadcrumbs.ts` (simplified)**
 
 ```tsx
-import { useMemo } from 'react';
-import { useLocation, useParams } from 'react-router-dom';
-import { useTranslation } from 'react-i18next';
+import { useMemo } from "react";
+import { useLocation, useParams } from "react-router-dom";
+import { useTranslation } from "react-i18next";
 
 export interface BreadcrumbItem {
   label: string;
@@ -391,30 +423,30 @@ export interface BreadcrumbItem {
 
 // Human labels for this app's route segments (design areas + top-level pages).
 const SEGMENT_LABELS: Record<string, string> = {
-  design: 'Design System',
-  colors: 'Colors',
-  text: 'Typography',
-  forms: 'Forms',
-  buttons: 'Buttons',
-  cards: 'Cards',
-  badges: 'Badges',
-  alerts: 'Alerts',
-  inputs: 'Inputs',
-  loading: 'Loading States',
-  modals: 'Modals',
-  navigation: 'Navigation',
-  'data-display': 'Data Display',
-  'forms-advanced': 'Forms Advanced',
-  'notifications-feedback': 'Notifications & Feedback',
-  'layout-spacing': 'Layout & Spacing',
-  'tables-grids': 'Tables & Grids',
-  'icons-illustrations': 'Icons & Illustrations',
-  'overlays-portals': 'Overlays & Portals',
-  'micro-interactions-animations': 'Micro-Interactions & Animations',
-  accessibility: 'Accessibility',
-  performance: 'Performance',
-  settings: 'Settings',
-  docs: 'Docs',
+  design: "Design System",
+  colors: "Colors",
+  text: "Typography",
+  forms: "Forms",
+  buttons: "Buttons",
+  cards: "Cards",
+  badges: "Badges",
+  alerts: "Alerts",
+  inputs: "Inputs",
+  loading: "Loading States",
+  modals: "Modals",
+  navigation: "Navigation",
+  "data-display": "Data Display",
+  "forms-advanced": "Forms Advanced",
+  "notifications-feedback": "Notifications & Feedback",
+  "layout-spacing": "Layout & Spacing",
+  "tables-grids": "Tables & Grids",
+  "icons-illustrations": "Icons & Illustrations",
+  "overlays-portals": "Overlays & Portals",
+  "micro-interactions-animations": "Micro-Interactions & Animations",
+  accessibility: "Accessibility",
+  performance: "Performance",
+  settings: "Settings",
+  docs: "Docs",
 };
 
 export const useBreadcrumbs = (): { items: BreadcrumbItem[] } => {
@@ -423,12 +455,12 @@ export const useBreadcrumbs = (): { items: BreadcrumbItem[] } => {
   useTranslation(); // re-render on language change
 
   const items = useMemo<BreadcrumbItem[]>(() => {
-    const base = `/${lang || 'en'}`;
+    const base = `/${lang || "en"}`;
     // Strip the leading /:lang, split remaining segments.
-    const rest = location.pathname.replace(base, '').split('/').filter(Boolean);
-    const crumbs: BreadcrumbItem[] = [{ label: 'Home', href: base }];
+    const rest = location.pathname.replace(base, "").split("/").filter(Boolean);
+    const crumbs: BreadcrumbItem[] = [{ label: "Home", href: base }];
     let acc = base;
-    rest.forEach(seg => {
+    rest.forEach((seg) => {
       acc += `/${seg}`;
       crumbs.push({ label: SEGMENT_LABELS[seg] || seg, href: acc });
     });
@@ -450,8 +482,16 @@ In `src/components/ScreenContainerLayout.tsx`, replace the static breadcrumb ite
 ```tsx
 const { items: breadcrumbItems } = useBreadcrumbs();
 // ...
-<AppBreadcrumbs items={breadcrumbItems} shareConfig={{ title: CONSTANTS.APP_NAME, description: 'Sudobility design system', hashtags: ['Sudobility', 'DesignSystem'] }} />
+<AppBreadcrumbs
+  items={breadcrumbItems}
+  shareConfig={{
+    title: CONSTANTS.APP_NAME,
+    description: "Sudobility design system",
+    hashtags: ["Sudobility", "DesignSystem"],
+  }}
+/>;
 ```
+
 (Match `AppBreadcrumbs`'s prop shape from the reference usage.)
 
 - [ ] **Step 7: Wrap the app in `DesignThemeProvider`**
@@ -471,6 +511,7 @@ In `src/App.tsx`, import `DesignThemeProvider` and wrap `<AppRoutes />` (inside 
 ```bash
 bun run build && bun run lint
 ```
+
 Expected: clean.
 
 - [ ] **Step 9: Commit**
@@ -485,16 +526,19 @@ git commit -m "feat: design-theme context, LocalizedLink, CodeBlock, breadcrumbs
 ## Task 4: Home page (DesignSystemPage)
 
 **Files:**
+
 - Create: `src/pages/DesignSystemPage.tsx`
 - Modify: `src/App.tsx` (home is the `/:lang` index route)
 
 **Interfaces:**
+
 - Consumes: `LocalizedLink`, `ThemeSwitcher`, `ThemePreview`, `useDesignTheme`, `CONSTANTS`, `SEOHead`, `ui`/`textVariants`/`designTokens` from `@sudobility/design`.
 - Produces: `DesignSystemPage` (default export) — props `{ emailDomain: string; appName: string }`.
 
 - [ ] **Step 1: Port the file**
 
 Copy `~/projects/mail_box/src/pages/internal/DesignSystemPage.tsx` → `src/pages/DesignSystemPage.tsx`. Apply the uniform porting transform (spec §7):
+
 - Remove `import { BreadcrumbSection } from '@sudobility/components'` and `import { useBreadcrumbs } from '../../hooks/useBreadcrumbs'` and the `const { items: breadcrumbItems } = useBreadcrumbs();` line and the `<BreadcrumbSection items={breadcrumbItems} />` element.
 - Change `import ThemeSwitcher from '../../components/internal/ThemeSwitcher'` → `'../components/internal/ThemeSwitcher'`, `ThemePreview` likewise, `useDesignTheme` from `'../context/DesignThemeContext'`, `LocalizedLink` from `'../components/LocalizedLink'` (this file sits at `src/pages/`, depth 1, so `../` not `../../`).
 - Replace the outer `<main className="flex-1 overflow-auto" role="main" …>…</main>` with a fragment, keeping the inner `<div className="max-w-7xl mx-auto px-4 py-12">…</div>`.
@@ -503,13 +547,22 @@ Copy `~/projects/mail_box/src/pages/internal/DesignSystemPage.tsx` → `src/page
 - [ ] **Step 2: Wire the route in `src/App.tsx`**
 
 ```tsx
-import DesignSystemPage from './pages/DesignSystemPage';
-import { CONSTANTS } from './config/constants';
+import DesignSystemPage from "./pages/DesignSystemPage";
+import { CONSTANTS } from "./config/constants";
 // ...
 <Route path="/:lang" element={<ScreenContainerLayout />}>
-  <Route index element={<DesignSystemPage emailDomain={CONSTANTS.APP_DOMAIN} appName={CONSTANTS.APP_NAME} />} />
-</Route>
+  <Route
+    index
+    element={
+      <DesignSystemPage
+        emailDomain={CONSTANTS.APP_DOMAIN}
+        appName={CONSTANTS.APP_NAME}
+      />
+    }
+  />
+</Route>;
 ```
+
 Remove the `Placeholder` component.
 
 - [ ] **Step 3: Verify build + lint**
@@ -548,9 +601,17 @@ Each batch task follows the **identical** procedure below. `<Name>` = source fil
 Route wiring pattern in `src/App.tsx` (add a `lazy` import + a nested route per page, and pass props):
 
 ```tsx
-const ColorsPage = lazy(() => import('./pages/design/ColorsPage'));
+const ColorsPage = lazy(() => import("./pages/design/ColorsPage"));
 // inside <Route path="/:lang" element={<ScreenContainerLayout/>}>
-<Route path="design/colors" element={<ColorsPage emailDomain={CONSTANTS.APP_DOMAIN} appName={CONSTANTS.APP_NAME} />} />
+<Route
+  path="design/colors"
+  element={
+    <ColorsPage
+      emailDomain={CONSTANTS.APP_DOMAIN}
+      appName={CONSTANTS.APP_NAME}
+    />
+  }
+/>;
 ```
 
 ### Task 5 — Batch A (5 pages)
@@ -615,7 +676,11 @@ const ColorsPage = lazy(() => import('./pages/design/ColorsPage'));
     ```tsx
     return (
       <>
-        <SEOHead title={`Badges - ${appName}`} description="Badge component showcase" noIndex />
+        <SEOHead
+          title={`Badges - ${appName}`}
+          description="Badge component showcase"
+          noIndex
+        />
         <div className="max-w-7xl mx-auto px-4 py-12">
           {/* ...the original inner content that was between <StandardPageLayout> and </StandardPageLayout>... */}
         </div>
@@ -633,24 +698,29 @@ const ColorsPage = lazy(() => import('./pages/design/ColorsPage'));
 ## Task 9: Settings page
 
 **Files:**
+
 - Create: `src/pages/SettingsPage.tsx`
 - Modify: `src/App.tsx` (add `/:lang/settings` route), `public/locales/en/common.json` (settings labels)
 
 **Interfaces:**
+
 - Consumes: `ThemeSwitcher` (design-palette), `@sudobility/components` theme + font-size API, `useTranslation('common')`, `ui`/`textVariants`.
 - Produces: `SettingsPage` (default export), props `{ emailDomain, appName }`.
 
 - [ ] **Step 1: Discover the components theme/font-size API**
 
 The reference app forces `Theme.DARK` and never toggles at runtime, so this is new usage. Read `node_modules/@sudobility/components/dist/**` for the theme hook and font-size hook exposed by `ThemeProvider` (search for `useTheme`, `useFontSize`, `Theme`, `FontSize`, `setTheme`, `setFontSize`):
+
 ```bash
 grep -rn "useTheme\|useFontSize\|setTheme\|setFontSize\|FontSize" /Users/johnhuang/projects/sudobility_design/node_modules/@sudobility/components/dist/*.d.ts | head -40
 ```
+
 Note the exact hook names + signatures for Step 2. (If no runtime theme hook exists, fall back to toggling the `dark` class on `document.documentElement` and persisting to localStorage — but prefer the library hook if present.)
 
 - [ ] **Step 2: Write `src/pages/SettingsPage.tsx`**
 
 Compose a page (fragment + `<div className="max-w-3xl mx-auto px-4 py-12">`) with `SEOHead`, a heading, and three labeled controls styled with `textVariants`/`ui`:
+
 - **Appearance (light/dark)** — a toggle wired to the theme hook/setter discovered in Step 1.
 - **Font size** — a `Select` (from `@sudobility/components`) bound to the font-size hook/setter (`FontSize.SMALL/MEDIUM/LARGE`).
 - **Design theme** — render the existing `<ThemeSwitcher />` (from `src/components/internal/ThemeSwitcher`).
@@ -674,8 +744,16 @@ Use `t('...')` from `useTranslation('common')` for the section labels (keys adde
 - [ ] **Step 4: Wire the route in `src/App.tsx`**
 
 ```tsx
-const SettingsPage = lazy(() => import('./pages/SettingsPage'));
-<Route path="settings" element={<SettingsPage emailDomain={CONSTANTS.APP_DOMAIN} appName={CONSTANTS.APP_NAME} />} />
+const SettingsPage = lazy(() => import("./pages/SettingsPage"));
+<Route
+  path="settings"
+  element={
+    <SettingsPage
+      emailDomain={CONSTANTS.APP_DOMAIN}
+      appName={CONSTANTS.APP_NAME}
+    />
+  }
+/>;
 ```
 
 - [ ] **Step 5: Verify build + lint.**
@@ -689,10 +767,12 @@ const SettingsPage = lazy(() => import('./pages/SettingsPage'));
 ## Task 10: Docs page
 
 **Files:**
+
 - Create: `src/pages/DocsPage.tsx`
 - Modify: `src/App.tsx` (add `/:lang/docs` route), `src/config/constants.ts` (repo list), `public/locales/en/common.json` (docs prose)
 
 **Interfaces:**
+
 - Consumes: `CodeBlock`, `SEOHead`, `ui`/`textVariants`, `useTranslation('common')`, `CONSTANTS.LIBRARIES`.
 - Produces: `DocsPage` (default export), props `{ emailDomain, appName }`.
 
@@ -700,19 +780,48 @@ const SettingsPage = lazy(() => import('./pages/SettingsPage'));
 
 ```ts
 export const LIBRARIES = [
-  { name: '@sudobility/design', repo: 'https://github.com/johnqh/design_system', desc: 'Design tokens, textVariants, theme system' },
-  { name: '@sudobility/components', repo: 'https://github.com/johnqh/mail_box_components', desc: 'Shared React UI components' },
-  { name: '@sudobility/building_blocks', repo: 'https://github.com/johnqh/building_blocks', desc: 'App shell: topbar, footer, layout' },
-  { name: '@sudobility/di', repo: 'https://github.com/johnqh/di', desc: 'Dependency-injection container' },
-  { name: '@sudobility/di_web', repo: 'https://github.com/johnqh/di_web', desc: 'Web DI bindings (Firebase, service worker, i18n)' },
-  { name: '@sudobility/seo_lib', repo: 'https://github.com/johnqh/seo_lib', desc: 'SEO utilities (SEOHead)' },
-  { name: '@sudobility/types', repo: 'https://github.com/johnqh/types', desc: 'Shared TypeScript types' },
+  {
+    name: "@sudobility/design",
+    repo: "https://github.com/johnqh/design_system",
+    desc: "Design tokens, textVariants, theme system",
+  },
+  {
+    name: "@sudobility/components",
+    repo: "https://github.com/johnqh/mail_box_components",
+    desc: "Shared React UI components",
+  },
+  {
+    name: "@sudobility/building_blocks",
+    repo: "https://github.com/johnqh/building_blocks",
+    desc: "App shell: topbar, footer, layout",
+  },
+  {
+    name: "@sudobility/di",
+    repo: "https://github.com/johnqh/di",
+    desc: "Dependency-injection container",
+  },
+  {
+    name: "@sudobility/di_web",
+    repo: "https://github.com/johnqh/di_web",
+    desc: "Web DI bindings (Firebase, service worker, i18n)",
+  },
+  {
+    name: "@sudobility/seo_lib",
+    repo: "https://github.com/johnqh/seo_lib",
+    desc: "SEO utilities (SEOHead)",
+  },
+  {
+    name: "@sudobility/types",
+    repo: "https://github.com/johnqh/types",
+    desc: "Shared TypeScript types",
+  },
 ] as const;
 ```
 
 - [ ] **Step 2: Write `src/pages/DocsPage.tsx`**
 
 Fragment + `<div className="max-w-5xl mx-auto px-4 py-12">` containing:
+
 - `SEOHead` (title `Docs - ${appName}`, description, `noIndex` optional — default index-able here).
 - **Overview** section (`t('docs.overviewTitle')`, `t('docs.overviewBody')`): design tokens + `textVariants`, Tailwind integration, class-based dark mode, runtime theme system.
 - **How to use** section with a `<pre className={...}>` (or the `CodeBlock` component) showing an install snippet:
@@ -737,8 +846,13 @@ Fragment + `<div className="max-w-5xl mx-auto px-4 py-12">` containing:
 - [ ] **Step 4: Wire the route in `src/App.tsx`**
 
 ```tsx
-const DocsPage = lazy(() => import('./pages/DocsPage'));
-<Route path="docs" element={<DocsPage emailDomain={CONSTANTS.APP_DOMAIN} appName={CONSTANTS.APP_NAME} />} />
+const DocsPage = lazy(() => import("./pages/DocsPage"));
+<Route
+  path="docs"
+  element={
+    <DocsPage emailDomain={CONSTANTS.APP_DOMAIN} appName={CONSTANTS.APP_NAME} />
+  }
+/>;
 ```
 
 - [ ] **Step 5: Verify build + lint.**
@@ -752,10 +866,12 @@ const DocsPage = lazy(() => import('./pages/DocsPage'));
 ## Task 11: Footer library links, final polish, full verification
 
 **Files:**
+
 - Modify: `src/components/ScreenContainerLayout.tsx` (real footer link sections), `src/config/seo.ts` (optional), `public/favicon.ico`/`public/logo.png`
 - Create: `wrangler.toml`, `README.md`
 
 **Interfaces:**
+
 - Consumes: `CONSTANTS.LIBRARIES`, `CONSTANTS.SUPPORT_EMAIL`.
 
 - [ ] **Step 1: Populate the footer link sections**
@@ -780,17 +896,19 @@ Ensure `public/logo.png` exists (from T1); add `public/favicon.ico` if reference
 cd /Users/johnhuang/projects/sudobility_design
 bun run build && bun run lint && bun run format:check
 ```
+
 Expected: all pass (run `bun run format` first if `format:check` flags files).
 
 - [ ] **Step 5: Full-route browser smoke**
 
 `bun run dev`, then visit and eyeball each route with no console errors:
+
 - `/en` (home grid + theme preview)
 - All 21 `/en/design/<slug>` pages (via the home grid links)
 - `/en/settings` (theme/font/design-theme controls work)
 - `/en/docs` (overview + 7 repo cards)
 - Topbar Docs/Settings links + language selector; footer library links.
-Confirm the design-theme selection persists across a page reload, and light/dark persists.
+  Confirm the design-theme selection persists across a page reload, and light/dark persists.
 
 - [ ] **Step 6: Commit**
 

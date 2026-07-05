@@ -1,0 +1,31 @@
+{
+  "nav": {
+    "docs": "Documents",
+    "settings": "Paramètres"
+  },
+  "footer": {
+    "librariesTitle": "Bibliothèques",
+    "contactTitle": "Contact"
+  },
+  "loading": "Chargement...",
+  "settings": {
+    "title": "Paramètres",
+    "appearance": "Personnalisez l'apparence de la présentation du système de design.",
+    "theme": "Thème",
+    "light": "Lumière",
+    "dark": "Sombre",
+    "system": "Système",
+    "fontSize": "Taille de police",
+    "small": "Petit",
+    "medium": "Medium",
+    "large": "Grand",
+    "designTheme": "Thème de design"
+  },
+  "docs": {
+    "title": "Documents",
+    "overviewTitle": "À propos du système de conception",
+    "overviewBody": "Le système de conception Sudobility fournit des jetons de conception, des variantes de typographie (textVariants) et un système de thème en temps réel basé sur Tailwind CSS avec un mode sombre basé sur les classes. Les composants utilisent des jetons sémantiques afin que toute l'application reste cohérente et passe automatiquement du clair au foncé.",
+    "howToTitle": "Comment utiliser",
+    "librariesTitle": "Bibliothèques"
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "nav": {
+    "docs": "Tài liệu",
+    "settings": "Cài đặt"
+  },
+  "footer": {
+    "librariesTitle": "Thư viện",
+    "contactTitle": "Liên hệ"
+  },
+  "loading": "Đang tải...",
+  "settings": {
+    "title": "Cài đặt",
+    "appearance": "Tùy chỉnh ngoại hình của phần trình diễn hệ thống thiết kế.",
+    "theme": "Chủ đề",
+    "light": "Ánh sáng",
+    "dark": "Tối",
+    "system": "Hệ thống",
+    "fontSize": "Cỡ chữ",
+    "small": "Nhỏ",
+    "medium": "Medium",
+    "large": "Lớn",
+    "designTheme": "Chủ đề thiết kế"
+  },
+  "docs": {
+    "title": "Tài liệu",
+    "overviewTitle": "Về hệ thống thiết kế",
+    "overviewBody": "Hệ thống thiết kế Sudobility cung cấp các token thiết kế, các biến thể kiểu chữ (textVariants) và một hệ thống chủ đề thời gian chạy được xây dựng trên Tailwind CSS với chế độ tối dựa trên lớp CSS. Các thành phần sử dụng các token ngữ nghĩa để toàn bộ ứng dụng duy trì tính nhất quán và tự động chuyển đổi giữa chế độ sáng và tối.",
+    "howToTitle": "Cách sử dụng",
+    "librariesTitle": "Thư viện"
+  }
+}

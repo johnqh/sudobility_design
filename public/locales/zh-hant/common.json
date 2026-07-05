@@ -1,0 +1,31 @@
+{
+  "nav": {
+    "docs": "文件",
+    "settings": "設定"
+  },
+  "footer": {
+    "librariesTitle": "圖書館",
+    "contactTitle": "聯絡"
+  },
+  "loading": "載入中...",
+  "settings": {
+    "title": "設定",
+    "appearance": "自定義設計系統展示的外觀。",
+    "theme": "主題",
+    "light": "光",
+    "dark": "黑暗",
+    "system": "系統",
+    "fontSize": "字體大小",
+    "small": "小",
+    "medium": "Medium",
+    "large": "大",
+    "designTheme": "設計主題"
+  },
+  "docs": {
+    "title": "文件",
+    "overviewTitle": "關於設計系統",
+    "overviewBody": "Sudobility 設計系統提供設計令牌、文字變體（textVariants）以及基於 Tailwind CSS 的執行時主題系統，並支援以類別為基礎的深色模式。元件會使用語意令牌，確保整個應用程式保持一致，並可自動切換亮色/暗色模式。",
+    "howToTitle": "如何使用",
+    "librariesTitle": "圖書館"
+  }
+}

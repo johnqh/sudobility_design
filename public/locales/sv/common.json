@@ -1,0 +1,31 @@
+{
+  "nav": {
+    "docs": "Dokument",
+    "settings": "Inställningar"
+  },
+  "footer": {
+    "librariesTitle": "Bibliotek",
+    "contactTitle": "Kontakt"
+  },
+  "loading": "Läser in...",
+  "settings": {
+    "title": "Inställningar",
+    "appearance": "Anpassa utseendet på visningen av designsystemet.",
+    "theme": "Temat",
+    "light": "Ljus",
+    "dark": "Mörk",
+    "system": "System",
+    "fontSize": "Teckenstorlek",
+    "small": "Liten",
+    "medium": "Medium",
+    "large": "Stor",
+    "designTheme": "Designtema"
+  },
+  "docs": {
+    "title": "Dokument",
+    "overviewTitle": "Om designsystemet",
+    "overviewBody": "Sudobility-designsystemet erbjuder designtoken, typografi-variationer (textVariants) och ett körningsbaserat temesystem byggt på Tailwind CSS med klassbaserad mörkt läge. Komponenter använder semantiska token så hela appen förblir konsekvent och växlar automatiskt mellan ljus och mörkt läge.",
+    "howToTitle": "Hur man använder",
+    "librariesTitle": "Bibliotek"
+  }
+}

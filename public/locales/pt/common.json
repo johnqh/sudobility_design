@@ -1,0 +1,31 @@
+{
+  "nav": {
+    "docs": "Documentos",
+    "settings": "Configurações"
+  },
+  "footer": {
+    "librariesTitle": "Bibliotecas",
+    "contactTitle": "Contato"
+  },
+  "loading": "Carregando...",
+  "settings": {
+    "title": "Configurações",
+    "appearance": "Personalize a aparência da exposição do sistema de design.",
+    "theme": "Tema",
+    "light": "Luz",
+    "dark": "Escuro",
+    "system": "Sistema",
+    "fontSize": "Tamanho da fonte",
+    "small": "Pequeno",
+    "medium": "Medium",
+    "large": "Grande",
+    "designTheme": "Tema de design"
+  },
+  "docs": {
+    "title": "Documentos",
+    "overviewTitle": "Sobre o sistema de design",
+    "overviewBody": "O sistema de design Sudobility fornece tokens de design, variantes de tipografia (textVariants) e um sistema de tema em tempo de execução baseado no Tailwind CSS com modo escuro baseado em classes. Os componentes utilizam tokens semânticos para manter toda a aplicação consistente e alternar automaticamente entre claro e escuro.",
+    "howToTitle": "Como usar",
+    "librariesTitle": "Bibliotecas"
+  }
+}

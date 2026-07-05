@@ -39,7 +39,7 @@ structural reference for this project.
   source; only the app chrome is translated).
 - No auth, wallet, email, subscription, or analytics-driven features.
 - No prerender/SSG pipeline in the initial version.
-- No new design components — this app *showcases* existing `@sudobility/design`
+- No new design components — this app _showcases_ existing `@sudobility/design`
   and `@sudobility/components`, it does not extend them.
 
 ## 3. Reference Architecture
@@ -55,14 +55,14 @@ app with no auth/backend:
   this app does not install. `vite.config.ts` aliases redirect those imports to
   no-op stub files. This must be replicated or the build breaks.
 
-  | Import path | Stub file |
-  | --- | --- |
-  | `firebase/auth` | `src/stubs/firebase-auth.ts` |
-  | `@sudobility/di_web` | `src/stubs/di_web.ts` |
-  | `@sudobility/auth_lib` | `src/stubs/auth_lib.ts` |
+  | Import path                           | Stub file                              |
+  | ------------------------------------- | -------------------------------------- |
+  | `firebase/auth`                       | `src/stubs/firebase-auth.ts`           |
+  | `@sudobility/di_web`                  | `src/stubs/di_web.ts`                  |
+  | `@sudobility/auth_lib`                | `src/stubs/auth_lib.ts`                |
   | `@sudobility/subscription-components` | `src/stubs/subscription-components.ts` |
-  | `@sudobility/devops-components` | `src/stubs/devops-components.ts` |
-  | `@sudobility/subscription_lib` | `src/stubs/subscription_lib.ts` |
+  | `@sudobility/devops-components`       | `src/stubs/devops-components.ts`       |
+  | `@sudobility/subscription_lib`        | `src/stubs/subscription_lib.ts`        |
 
   Note: the real `@sudobility/di_web/vite` `serviceWorkerPlugin` is imported in
   `vite.config.ts` at Node level and is NOT affected by the alias (same as
@@ -75,6 +75,7 @@ Match the versions used by `~/projects/sudobility` unless a design showcase page
 requires a newer one.
 
 ### Runtime `@sudobility/*`
+
 - `@sudobility/building_blocks` — app shell (`SudobilityApp`, `AppTopBar`,
   `AppFooterForHomePage`, and breadcrumb components if used).
 - `@sudobility/components` — `ThemeProvider`, `LayoutProvider`, `Theme`,
@@ -88,6 +89,7 @@ requires a newer one.
 - `@sudobility/types` — shared types (transitive).
 
 ### Other runtime
+
 `@heroicons/react`, `@radix-ui/*` (dialog, select, tabs, switch, label, slot,
 alert-dialog — needed by `ThemeSwitcher` and the modal/overlay/forms showcase
 pages), `react`, `react-dom`, `react-router-dom` (v7), `i18next`,
@@ -96,6 +98,7 @@ pages), `react`, `react-dom`, `react-router-dom` (v7), `i18next`,
 `clsx`, `tailwind-merge`, `bs58` (if a transitive requires it, match reference).
 
 ### Dev
+
 Match reference: `vite` (v6), `@vitejs/plugin-react`, `typescript`,
 `typescript-eslint`, `eslint` + plugins, `prettier`, `tailwindcss` (v3),
 `postcss`, `autoprefixer`, `@types/*`.
@@ -106,34 +109,34 @@ All routes are language-prefixed under `/:lang`. The `/internal` prefix from the
 source is **dropped** — this whole app is the design system, so paths are
 shorter.
 
-| Route | Page | Notes |
-| --- | --- | --- |
-| `/:lang` | `DesignSystemPage` (Home) | Eager or lazy; grid of 22 areas |
-| `/:lang/design/colors` | `ColorsPage` | lazy |
-| `/:lang/design/text` | `TypographyPage` | lazy |
-| `/:lang/design/forms` | `FormsPage` | lazy |
-| `/:lang/design/buttons` | `ButtonsPage` | lazy |
-| `/:lang/design/cards` | `CardsPage` | lazy |
-| `/:lang/design/badges` | `BadgesPage` | lazy |
-| `/:lang/design/alerts` | `AlertsPage` | lazy |
-| `/:lang/design/inputs` | `InputsPage` | lazy |
-| `/:lang/design/loading` | `LoadingStatesPage` | lazy |
-| `/:lang/design/modals` | `ModalsPage` | lazy |
-| `/:lang/design/navigation` | `NavigationPage` | lazy |
-| `/:lang/design/data-display` | `DataDisplayPage` | lazy |
-| `/:lang/design/forms-advanced` | `FormsAdvancedPage` | lazy |
-| `/:lang/design/notifications-feedback` | `NotificationsFeedbackPage` | lazy |
-| `/:lang/design/layout-spacing` | `LayoutSpacingPage` | lazy |
-| `/:lang/design/tables-grids` | `TablesGridsPage` | lazy |
-| `/:lang/design/icons-illustrations` | `IconsIllustrationsPage` | lazy |
-| `/:lang/design/overlays-portals` | `OverlaysPortalsPage` | lazy |
-| `/:lang/design/micro-interactions-animations` | `MicroInteractionsAnimationsPage` | lazy |
-| `/:lang/design/accessibility` | `AccessibilityPage` | lazy |
-| `/:lang/design/performance` | `PerformancePage` | lazy |
-| `/:lang/settings` | `SettingsPage` (new) | lazy |
-| `/:lang/docs` | `DocsPage` (new) | lazy |
-| `/` | redirect → `/en` (or detected lang) | |
-| `*` | redirect → `/en` | |
+| Route                                         | Page                                | Notes                           |
+| --------------------------------------------- | ----------------------------------- | ------------------------------- |
+| `/:lang`                                      | `DesignSystemPage` (Home)           | Eager or lazy; grid of 22 areas |
+| `/:lang/design/colors`                        | `ColorsPage`                        | lazy                            |
+| `/:lang/design/text`                          | `TypographyPage`                    | lazy                            |
+| `/:lang/design/forms`                         | `FormsPage`                         | lazy                            |
+| `/:lang/design/buttons`                       | `ButtonsPage`                       | lazy                            |
+| `/:lang/design/cards`                         | `CardsPage`                         | lazy                            |
+| `/:lang/design/badges`                        | `BadgesPage`                        | lazy                            |
+| `/:lang/design/alerts`                        | `AlertsPage`                        | lazy                            |
+| `/:lang/design/inputs`                        | `InputsPage`                        | lazy                            |
+| `/:lang/design/loading`                       | `LoadingStatesPage`                 | lazy                            |
+| `/:lang/design/modals`                        | `ModalsPage`                        | lazy                            |
+| `/:lang/design/navigation`                    | `NavigationPage`                    | lazy                            |
+| `/:lang/design/data-display`                  | `DataDisplayPage`                   | lazy                            |
+| `/:lang/design/forms-advanced`                | `FormsAdvancedPage`                 | lazy                            |
+| `/:lang/design/notifications-feedback`        | `NotificationsFeedbackPage`         | lazy                            |
+| `/:lang/design/layout-spacing`                | `LayoutSpacingPage`                 | lazy                            |
+| `/:lang/design/tables-grids`                  | `TablesGridsPage`                   | lazy                            |
+| `/:lang/design/icons-illustrations`           | `IconsIllustrationsPage`            | lazy                            |
+| `/:lang/design/overlays-portals`              | `OverlaysPortalsPage`               | lazy                            |
+| `/:lang/design/micro-interactions-animations` | `MicroInteractionsAnimationsPage`   | lazy                            |
+| `/:lang/design/accessibility`                 | `AccessibilityPage`                 | lazy                            |
+| `/:lang/design/performance`                   | `PerformancePage`                   | lazy                            |
+| `/:lang/settings`                             | `SettingsPage` (new)                | lazy                            |
+| `/:lang/docs`                                 | `DocsPage` (new)                    | lazy                            |
+| `/`                                           | redirect → `/en` (or detected lang) |                                 |
+| `*`                                           | redirect → `/en`                    |                                 |
 
 **Path updates required in ported pages:** every internal link inside the source
 pages currently points at `/internal/design/...`. The home `DesignSystemPage`'s
@@ -227,15 +230,15 @@ Content:
 3. **Library repos** — a responsive grid of cards, one per library, each linking
    to its GitHub repo with a one-line description:
 
-   | Library | Repo | One-liner |
-   | --- | --- | --- |
-   | `@sudobility/design` | github.com/johnqh/design_system | Design tokens, `textVariants`, theme system |
-   | `@sudobility/components` | github.com/johnqh/mail_box_components | Shared React UI components |
-   | `@sudobility/building_blocks` | github.com/johnqh/building_blocks | App shell: topbar, footer, layout |
-   | `@sudobility/di` | github.com/johnqh/di | Dependency-injection container |
-   | `@sudobility/di_web` | github.com/johnqh/di_web | Web DI bindings (Firebase, SW, i18n) |
-   | `@sudobility/seo_lib` | github.com/johnqh/seo_lib | SEO utilities (`SEOHead`) |
-   | `@sudobility/types` | github.com/johnqh/types | Shared TypeScript types |
+   | Library                       | Repo                                  | One-liner                                   |
+   | ----------------------------- | ------------------------------------- | ------------------------------------------- |
+   | `@sudobility/design`          | github.com/johnqh/design_system       | Design tokens, `textVariants`, theme system |
+   | `@sudobility/components`      | github.com/johnqh/mail_box_components | Shared React UI components                  |
+   | `@sudobility/building_blocks` | github.com/johnqh/building_blocks     | App shell: topbar, footer, layout           |
+   | `@sudobility/di`              | github.com/johnqh/di                  | Dependency-injection container              |
+   | `@sudobility/di_web`          | github.com/johnqh/di_web              | Web DI bindings (Firebase, SW, i18n)        |
+   | `@sudobility/seo_lib`         | github.com/johnqh/seo_lib             | SEO utilities (`SEOHead`)                   |
+   | `@sudobility/types`           | github.com/johnqh/types               | Shared TypeScript types                     |
 
    Repo URLs are read from each installed package's `package.json` `repository`
    field (verified during exploration).
@@ -246,7 +249,7 @@ code snippets stay literal.
 ## 10. Internationalization
 
 - Same 15 languages as the reference: `en, zh, zh-hant, ja, ko, es, fr, de, it,
-  pt, ru, sv, th, uk, vi`.
+pt, ru, sv, th, uk, vi`.
 - `/:lang` routing, `i18n.ts` `supportedLanguages` canonical list, `LANGUAGE_INFO`
   (name + flag) for the topbar selector — cloned from reference.
 - A single **chrome** locale namespace (e.g. `common`) holds only the app-shell
@@ -267,11 +270,11 @@ Copied from `mail_box` (adjusting import paths, dropping mail-specific bits):
 - `components/LocalizedLink.tsx` — language-prefixed `Link` wrapper.
 - `hooks/useBreadcrumbs.ts` — a **simplified** hook (NOT the full mail_box
   `BreadcrumbBuilder`, which pulls mail-specific label maps + `stringExtensions`
-  + `languageRouting`). It derives `BreadcrumbItem[]` (`{ label, href?, current? }`,
-  the shape `@sudobility/components` `BreadcrumbItem` / `building_blocks`
-  `AppBreadcrumbs` expect) from the current pathname against a small label map
-  for this app's routes (Home, Design areas, Settings, Docs). Consumed by the
-  **shell**, not by pages.
+  - `languageRouting`). It derives `BreadcrumbItem[]` (`{ label, href?, current? }`,
+    the shape `@sudobility/components` `BreadcrumbItem` / `building_blocks`
+    `AppBreadcrumbs` expect) from the current pathname against a small label map
+    for this app's routes (Home, Design areas, Settings, Docs). Consumed by the
+    **shell**, not by pages.
 - `components/CodeBlock.tsx` — thin wrapper over `@sudobility/components`
   `CodeBlock` (used by `BadgesPage` and the Docs how-to snippet).
 - `components/internal/ThemeSwitcher.tsx` — design-palette `Select`, bound to
@@ -300,7 +303,7 @@ works app-wide and the home/Settings pages share one theme state.
 - **Scripts:** clone the reference `package.json` scripts (`dev`, `build`,
   `lint`, `format`, `preview`, `localize`, `localized`). Prune SEO/prerender
   steps not needed initially, keeping the app buildable with `tsc -b && vite
-  build`.
+build`.
 - **Tailwind:** `tailwind.config.js` cloned from reference, configured to scan
   `@sudobility/design` (and `@sudobility/components`) so design token classes are
   not purged. Class-based dark mode.
@@ -325,7 +328,7 @@ works app-wide and the home/Settings pages share one theme state.
   package during implementation; the reference forces `Theme.DARK` and does not
   expose a runtime toggle, so this is new usage.
 - **Package versions (LOW risk — verified):** `@sudobility/design@1.1.43` and
-  `@sudobility/components@5.0.92` are the *same* versions in both `mail_box` (which
+  `@sudobility/components@5.0.92` are the _same_ versions in both `mail_box` (which
   runs the source pages) and `sudobility` (the scaffold reference), so the pages
   and scaffold are known-compatible. The `@sudobility/design/themes` subpath
   (used by the theme system) ships in 1.1.43. Pin to these versions.
@@ -341,4 +344,7 @@ works app-wide and the home/Settings pages share one theme state.
   from a `strict: false` project. To avoid dozens of unused-var failures during
   the port, the new app's `tsconfig.json` keeps `strict: true` but sets
   `noUnusedLocals: false` and `noUnusedParameters: false`.
+
+```
+
 ```
