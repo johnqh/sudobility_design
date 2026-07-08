@@ -132,5 +132,12 @@
   "nav": {
     "back": "Back to Design System",
     "lastUpdated": "Last updated: {{date}}"
+  },
+  "placeholders": {
+    "email": "user@example.com",
+    "invalidEmail": "invalid-email",
+    "emailWithIcon": "email@example.com",
+    "phone": "+1 (555) 123-4567",
+    "website": "https://example.com"
   }
 }

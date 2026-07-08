@@ -128,5 +128,15 @@
     }
   },
   "backToDesignSystem": "Обратно в систему дизайна",
-  "lastUpdated": "Последнее обновление: {{date}}"
+  "lastUpdated": "Последнее обновление: {{date}}",
+  "codeTitles": {
+    "essentialVariants": "Необходимые варианты значков",
+    "statusIcons": "Значки статуса с иконками",
+    "sizes": "Размеры значков",
+    "web3Variants": "Варианты значков Web3",
+    "completeSystem": "Завершить систему значков",
+    "sizeVariants": "Размерные варианты",
+    "interactivePatterns": "Интерактивные шаблоны значков",
+    "accessibleExamples": "Примеры доступных значков"
+  }
 }

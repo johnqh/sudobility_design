@@ -3,6 +3,31 @@
     "docs": "Documentos",
     "settings": "Ajustes"
   },
+  "breadcrumbs": {
+    "home": "Inicio",
+    "design": "Sistema de diseño",
+    "colors": "Colores",
+    "text": "Tipografía",
+    "forms": "Formularios",
+    "buttons": "Botones",
+    "cards": "Tarjetas",
+    "badges": "Insignias",
+    "alerts": "Alertas",
+    "inputs": "Entradas",
+    "loading": "Estados de carga",
+    "modals": "Modales",
+    "navigation": "Navegación",
+    "dataDisplay": "Visualización de datos",
+    "formsAdvanced": "Formularios Avanzados",
+    "notificationsFeedback": "Notificaciones y comentarios",
+    "layoutSpacing": "Diseño y espaciado",
+    "tablesGrids": "Tablas y cuadrículas",
+    "iconsIllustrations": "Iconos e ilustraciones",
+    "overlaysPortals": "Superposiciones y puertas",
+    "microInteractionsAnimations": "Microinteracciones y animaciones",
+    "accessibility": "Accesibilidad",
+    "performance": "Rendimiento"
+  },
   "footer": {
     "librariesTitle": "Bibliotecas",
     "contactTitle": "Contacto"
@@ -10,6 +35,7 @@
   "loading": "Cargando...",
   "settings": {
     "title": "Ajustes",
+    "seoDescription": "Apariencia de configuración",
     "appearance": "Personalice la apariencia de la demostración del sistema de diseño.",
     "theme": "Tema",
     "light": "Luz",
@@ -21,11 +47,49 @@
     "large": "Grande",
     "designTheme": "Tema de diseño"
   },
+  "themePreview": {
+    "appearance": "Apariencia",
+    "selectAppearance": "Seleccionar apariencia",
+    "selectDesignTheme": "Seleccionar tema de diseño",
+    "title": "Vista previa del tema en vivo",
+    "buttons": {
+      "title": "Botones",
+      "primary": "Principal",
+      "secondary": "Secundario",
+      "outline": "Bosquejo"
+    },
+    "badges": {
+      "title": "Insignias",
+      "default": "Predeterminado",
+      "primary": "Principal",
+      "success": "Éxito",
+      "warning": "Advertencia",
+      "error": "Error"
+    },
+    "card": {
+      "title": "Tarjeta",
+      "description": "Las cartas, los bordes y las superficies siguen los tokens de tema activos."
+    },
+    "input": {
+      "title": "Entrada",
+      "placeholder": "Entrada temática"
+    },
+    "colors": {
+      "title": "Colores semánticos",
+      "primary": "primario",
+      "secondary": "secundario",
+      "accent": "acentuación",
+      "muted": "apagado",
+      "destructive": "destructivo"
+    }
+  },
   "docs": {
     "title": "Documentos",
+    "seoDescription": "Documentación del sistema de diseño Sudobility y sus bibliotecas.",
     "overviewTitle": "Sobre el sistema de diseño",
     "overviewBody": "El sistema de diseño Sudobility proporciona tokens de diseño, variantes de tipografía (textVariants) y un sistema de temas en tiempo de ejecución basado en Tailwind CSS con modo oscuro basado en clases. Los componentes consumen tokens semánticos para que toda la aplicación permanezca consistente y cambie automáticamente entre claro y oscuro.",
     "howToTitle": "Cómo usar",
-    "librariesTitle": "Bibliotecas"
+    "librariesTitle": "Bibliotecas",
+    "viewOnGithub": "Ver en GitHub →"
   }
 }

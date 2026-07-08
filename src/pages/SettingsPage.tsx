@@ -53,7 +53,7 @@ const SettingsPage: React.FC<AppProps> = ({ appName }) => {
     <>
       <SEOHead
         title={`${t("settings.title")} - ${appName}`}
-        description="Appearance settings"
+        description={t("settings.seoDescription")}
       />
 
       <div className="max-w-3xl mx-auto px-4 py-12">

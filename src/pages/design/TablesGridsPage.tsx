@@ -41,46 +41,46 @@ const TablesGridsPage: React.FC<AppProps> = ({
   const sampleData = [
     {
       id: 1,
-      name: "Alice Johnson",
+      name: t("sampleData.rows.1.name"),
       email: "alice@example.com",
-      role: "Admin",
-      status: "Active",
+      role: t("sampleData.roles.admin"),
+      status: t("sampleData.status.active"),
       joinDate: "2023-01-15",
       transactions: 45,
     },
     {
       id: 2,
-      name: "Bob Smith",
+      name: t("sampleData.rows.2.name"),
       email: "bob@example.com",
-      role: "User",
-      status: "Active",
+      role: t("sampleData.roles.user"),
+      status: t("sampleData.status.active"),
       joinDate: "2023-02-20",
       transactions: 23,
     },
     {
       id: 3,
-      name: "Charlie Brown",
+      name: t("sampleData.rows.3.name"),
       email: "charlie@example.com",
-      role: "Moderator",
-      status: "Inactive",
+      role: t("sampleData.roles.moderator"),
+      status: t("sampleData.status.inactive"),
       joinDate: "2023-03-10",
       transactions: 67,
     },
     {
       id: 4,
-      name: "Diana Prince",
+      name: t("sampleData.rows.4.name"),
       email: "diana@example.com",
-      role: "User",
-      status: "Pending",
+      role: t("sampleData.roles.user"),
+      status: t("sampleData.status.pending"),
       joinDate: "2023-04-05",
       transactions: 12,
     },
     {
       id: 5,
-      name: "Eve Wilson",
+      name: t("sampleData.rows.5.name"),
       email: "eve@example.com",
-      role: "Admin",
-      status: "Active",
+      role: t("sampleData.roles.admin"),
+      status: t("sampleData.status.active"),
       joinDate: "2023-05-12",
       transactions: 89,
     },
@@ -111,11 +111,11 @@ const TablesGridsPage: React.FC<AppProps> = ({
 
   const getStatusBadge = (status: string) => {
     switch (status) {
-      case "Active":
+      case t("sampleData.status.active"):
         return variants.badge.success();
-      case "Inactive":
+      case t("sampleData.status.inactive"):
         return variants.badge.error();
-      case "Pending":
+      case t("sampleData.status.pending"):
         return variants.badge.warning();
       default:
         return (variants.badge as any).default();

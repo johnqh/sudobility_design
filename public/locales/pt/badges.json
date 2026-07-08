@@ -128,5 +128,15 @@
     }
   },
   "backToDesignSystem": "Voltar para o sistema de design",
-  "lastUpdated": "Última atualização: {{date}}"
+  "lastUpdated": "Última atualização: {{date}}",
+  "codeTitles": {
+    "essentialVariants": "Variantes de crachás essenciais",
+    "statusIcons": "Crachás de status com ícones",
+    "sizes": "Tamanhos dos crachás",
+    "web3Variants": "Variantes de crachá Web3",
+    "completeSystem": "Sistema de medalhas concluído",
+    "sizeVariants": "Variações de tamanho",
+    "interactivePatterns": "Padrões de crachás interativos",
+    "accessibleExamples": "Exemplos de crachás acessíveis"
+  }
 }

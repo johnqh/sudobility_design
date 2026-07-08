@@ -128,5 +128,15 @@
     }
   },
   "backToDesignSystem": "返回設計系統",
-  "lastUpdated": "最後更新：{{date}}"
+  "lastUpdated": "最後更新：{{date}}",
+  "codeTitles": {
+    "essentialVariants": "必備徽章變體",
+    "statusIcons": "帶圖示的狀態徽章",
+    "sizes": "徽章大小",
+    "web3Variants": "Web3徽章變體",
+    "completeSystem": "完成徽章系統",
+    "sizeVariants": "尺寸變體",
+    "interactivePatterns": "互動徽章圖案",
+    "accessibleExamples": "可存取徽章範例"
+  }
 }

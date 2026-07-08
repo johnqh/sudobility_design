@@ -128,5 +128,15 @@
     }
   },
   "backToDesignSystem": "Back to Design System",
-  "lastUpdated": "Last updated: {{date}}"
+  "lastUpdated": "Last updated: {{date}}",
+  "codeTitles": {
+    "essentialVariants": "Essential Badge Variants",
+    "statusIcons": "Status Badges with Icons",
+    "sizes": "Badge Sizes",
+    "web3Variants": "Web3 Badge Variants",
+    "completeSystem": "Complete Badge System",
+    "sizeVariants": "Size Variants",
+    "interactivePatterns": "Interactive Badge Patterns",
+    "accessibleExamples": "Accessible Badge Examples"
+  }
 }

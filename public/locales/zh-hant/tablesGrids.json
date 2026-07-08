@@ -44,6 +44,35 @@
     "searchPlaceholder": "搜尋使用者...",
     "filters": "過濾器"
   },
+  "sampleData": {
+    "roles": {
+      "admin": "管理員",
+      "user": "使用者",
+      "moderator": "主持人"
+    },
+    "status": {
+      "active": "活躍",
+      "inactive": "不活躍",
+      "pending": "待處理"
+    },
+    "rows": {
+      "1": {
+        "name": "愛麗絲·約翰遜"
+      },
+      "2": {
+        "name": "Bob Smith"
+      },
+      "3": {
+        "name": "查理·布朗"
+      },
+      "4": {
+        "name": "戴安娜·普林斯"
+      },
+      "5": {
+        "name": "Eve Wilson"
+      }
+    }
+  },
   "pagination": {
     "title": "帶分頁的表格",
     "showing": "顯示",

@@ -128,5 +128,15 @@
     }
   },
   "backToDesignSystem": "Tillbaka till designsystemet",
-  "lastUpdated": "Senast uppdaterat: {{date}}"
+  "lastUpdated": "Senast uppdaterat: {{date}}",
+  "codeTitles": {
+    "essentialVariants": "Viktiga emblemvarianter",
+    "statusIcons": "Statusmärken med ikoner",
+    "sizes": "Badgestorlekar",
+    "web3Variants": "Web3-badgevarianter",
+    "completeSystem": "Komplett system för insignier",
+    "sizeVariants": "Storleksvarianter",
+    "interactivePatterns": "Interaktiva badge-mönster",
+    "accessibleExamples": "Exempel på tillgängliga badge"
+  }
 }

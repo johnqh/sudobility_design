@@ -128,5 +128,15 @@
     }
   },
   "backToDesignSystem": "Назад до системи дизайнів",
-  "lastUpdated": "Останнє оновлення: {{date}}"
+  "lastUpdated": "Останнє оновлення: {{date}}",
+  "codeTitles": {
+    "essentialVariants": "Необхідні варіанти значків",
+    "statusIcons": "Значки статусу з іконками",
+    "sizes": "Розміри значків",
+    "web3Variants": "Варіанти емблеми Web3",
+    "completeSystem": "Завершити систему значків",
+    "sizeVariants": "Розмірні варіанти",
+    "interactivePatterns": "Інтерактивні шаблони значків",
+    "accessibleExamples": "Приклади доступних значків"
+  }
 }

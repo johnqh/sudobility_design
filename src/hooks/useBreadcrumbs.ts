@@ -8,34 +8,6 @@ export interface BreadcrumbItem {
   current?: boolean;
 }
 
-// Human labels for this app's route segments (design areas + top-level pages).
-const SEGMENT_LABELS: Record<string, string> = {
-  design: "Design System",
-  colors: "Colors",
-  text: "Typography",
-  forms: "Forms",
-  buttons: "Buttons",
-  cards: "Cards",
-  badges: "Badges",
-  alerts: "Alerts",
-  inputs: "Inputs",
-  loading: "Loading States",
-  modals: "Modals",
-  navigation: "Navigation",
-  "data-display": "Data Display",
-  "forms-advanced": "Forms Advanced",
-  "notifications-feedback": "Notifications & Feedback",
-  "layout-spacing": "Layout & Spacing",
-  "tables-grids": "Tables & Grids",
-  "icons-illustrations": "Icons & Illustrations",
-  "overlays-portals": "Overlays & Portals",
-  "micro-interactions-animations": "Micro-Interactions & Animations",
-  accessibility: "Accessibility",
-  performance: "Performance",
-  settings: "Settings",
-  docs: "Docs",
-};
-
 /**
  * Builds breadcrumb items for the current path against this app's route map.
  * Consumed by the shell (ScreenContainerLayout), not by individual pages.
@@ -43,22 +15,53 @@ const SEGMENT_LABELS: Record<string, string> = {
 export const useBreadcrumbs = (): { items: BreadcrumbItem[] } => {
   const location = useLocation();
   const { lang } = useParams<{ lang: string }>();
-  useTranslation(); // re-render on language change
+  const { t } = useTranslation("common");
+
+  const segmentLabels: Record<string, string> = {
+    design: t("breadcrumbs.design"),
+    colors: t("breadcrumbs.colors"),
+    text: t("breadcrumbs.text"),
+    forms: t("breadcrumbs.forms"),
+    buttons: t("breadcrumbs.buttons"),
+    cards: t("breadcrumbs.cards"),
+    badges: t("breadcrumbs.badges"),
+    alerts: t("breadcrumbs.alerts"),
+    inputs: t("breadcrumbs.inputs"),
+    loading: t("breadcrumbs.loading"),
+    modals: t("breadcrumbs.modals"),
+    navigation: t("breadcrumbs.navigation"),
+    "data-display": t("breadcrumbs.dataDisplay"),
+    "forms-advanced": t("breadcrumbs.formsAdvanced"),
+    "notifications-feedback": t("breadcrumbs.notificationsFeedback"),
+    "layout-spacing": t("breadcrumbs.layoutSpacing"),
+    "tables-grids": t("breadcrumbs.tablesGrids"),
+    "icons-illustrations": t("breadcrumbs.iconsIllustrations"),
+    "overlays-portals": t("breadcrumbs.overlaysPortals"),
+    "micro-interactions-animations": t(
+      "breadcrumbs.microInteractionsAnimations",
+    ),
+    accessibility: t("breadcrumbs.accessibility"),
+    performance: t("breadcrumbs.performance"),
+    settings: t("nav.settings"),
+    docs: t("nav.docs"),
+  };
 
   const items = useMemo<BreadcrumbItem[]>(() => {
     const base = `/${lang || "en"}`;
     const rest = location.pathname.replace(base, "").split("/").filter(Boolean);
-    const crumbs: BreadcrumbItem[] = [{ label: "Home", href: base }];
+    const crumbs: BreadcrumbItem[] = [
+      { label: t("breadcrumbs.home"), href: base },
+    ];
     let acc = base;
     rest.forEach((seg) => {
       acc += `/${seg}`;
-      crumbs.push({ label: SEGMENT_LABELS[seg] || seg, href: acc });
+      crumbs.push({ label: segmentLabels[seg] || seg, href: acc });
     });
     const last = crumbs[crumbs.length - 1];
     last.current = true;
     last.href = undefined;
     return crumbs;
-  }, [location.pathname, lang]);
+  }, [location.pathname, lang, segmentLabels, t]);
 
   return { items };
 };

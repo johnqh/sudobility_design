@@ -113,5 +113,14 @@
       "inputTypes": "使用适当的输入类型（如电子邮件、密码等）以提升移动设备体验",
       "contrast": "保持足够的颜色对比度（最小对比度比为4.5:1）"
     }
+  },
+  "options": {
+    "ethereum": "以太坊",
+    "polygon": "多边形",
+    "arbitrum": "Arbitrum"
+  },
+  "placeholders": {
+    "email": "email@example.com",
+    "emailContact": "你的@email.com"
   }
 }

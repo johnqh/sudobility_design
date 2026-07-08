@@ -172,7 +172,7 @@ const BadgesPage: React.FC<AppProps> = ({ appName }) => {
                 </div>
                 <CodeBlock
                   filename="internal/badges/essential-variants.tsx"
-                  title="Essential Badge Variants"
+                  title={t("codeTitles.essentialVariants")}
                 />
               </div>
 
@@ -203,7 +203,7 @@ const BadgesPage: React.FC<AppProps> = ({ appName }) => {
                 </div>
                 <CodeBlock
                   filename="internal/badges/status-icons.tsx"
-                  title="Status Badges with Icons"
+                  title={t("codeTitles.statusIcons")}
                 />
               </div>
 
@@ -227,7 +227,7 @@ const BadgesPage: React.FC<AppProps> = ({ appName }) => {
                 </div>
                 <CodeBlock
                   filename="internal/badges/sizes.tsx"
-                  title="Badge Sizes"
+                  title={t("codeTitles.sizes")}
                 />
               </div>
 
@@ -261,7 +261,7 @@ const BadgesPage: React.FC<AppProps> = ({ appName }) => {
                 </div>
                 <CodeBlock
                   filename="internal/badges/web3-variants.tsx"
-                  title="Web3 Badge Variants"
+                  title={t("codeTitles.web3Variants")}
                 />
               </div>
             </div>
@@ -372,7 +372,7 @@ const BadgesPage: React.FC<AppProps> = ({ appName }) => {
 
               <CodeBlock
                 filename="internal/badges/complete-system.tsx"
-                title="Complete Badge System"
+                title={t("codeTitles.completeSystem")}
               />
             </div>
           )}
@@ -436,7 +436,7 @@ const BadgesPage: React.FC<AppProps> = ({ appName }) => {
 
               <CodeBlock
                 filename="internal/badges/size-variants.tsx"
-                title="Size Variants"
+                title={t("codeTitles.sizeVariants")}
               />
             </div>
           )}
@@ -531,7 +531,7 @@ const BadgesPage: React.FC<AppProps> = ({ appName }) => {
 
               <CodeBlock
                 filename="internal/badges/interactive-patterns.tsx"
-                title="Interactive Badge Patterns"
+                title={t("codeTitles.interactivePatterns")}
               />
             </div>
           )}
@@ -593,7 +593,7 @@ const BadgesPage: React.FC<AppProps> = ({ appName }) => {
                 </h3>
                 <CodeBlock
                   filename="internal/badges/accessible-examples.tsx"
-                  title="Accessible Badge Examples"
+                  title={t("codeTitles.accessibleExamples")}
                 />
               </div>
             </div>

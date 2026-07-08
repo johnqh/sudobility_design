@@ -44,6 +44,35 @@
     "searchPlaceholder": "ユーザーを検索...",
     "filters": "フィルター"
   },
+  "sampleData": {
+    "roles": {
+      "admin": "管理者",
+      "user": "ユーザー",
+      "moderator": "モデレーター"
+    },
+    "status": {
+      "active": "アクティブ",
+      "inactive": "非アクティブ",
+      "pending": "保留中"
+    },
+    "rows": {
+      "1": {
+        "name": "アリス・ジョンソン"
+      },
+      "2": {
+        "name": "Bob Smith"
+      },
+      "3": {
+        "name": "チャーリー・ブラウン"
+      },
+      "4": {
+        "name": "ダイアナ・プライス"
+      },
+      "5": {
+        "name": "Eve Wilson"
+      }
+    }
+  },
   "pagination": {
     "title": "ページネーション付きのテーブル",
     "showing": "表示中",

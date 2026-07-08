@@ -132,5 +132,12 @@
   "nav": {
     "back": "デザインシステムに戻る",
     "lastUpdated": "最終更新日: {{date}}"
+  },
+  "placeholders": {
+    "email": "user@example.com",
+    "invalidEmail": "無効なメールアドレス",
+    "emailWithIcon": "email@example.com",
+    "phone": "+1 (555) 123-4567",
+    "website": "https://example.com"
   }
 }

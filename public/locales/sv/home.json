@@ -80,206 +80,206 @@
       "title": "Kort",
       "description": "Flexibelt kortsystem med höjd, innehållsvarianter och Web3-integreringsmönster",
       "features": [
-        "Card elevation and shadow variants",
-        "Content and media card layouts",
-        "Interactive card states and actions",
-        "Web3-specific card patterns (wallet, NFT)",
-        "Responsive grid layouts"
+        "Kortschattning och skuggvariant",
+        "Layout för innehålls- och mediekort",
+        "Interaktiva kortlägen och åtgärder",
+        "Web3-specifika kortmönster (plånbok, NFT)",
+        "Responsiva rutnätslayout"
       ]
     },
     "badges": {
       "title": "Badge",
       "description": "Små, mångsidiga komponenter för märkning, kategorisering och överföring av statusinformation",
       "features": [
-        "Semantic color variants (success, warning, error)",
-        "Size options (small, default, large)",
-        "Web3-specific blockchain badges",
-        "Interactive states and notifications",
-        "Accessibility and screen reader support"
+        "Semantiska färgvarianter (framgång, varning, fel)",
+        "Storleksval (liten, standard, stor)",
+        "Web3-specifika blockchaintecken",
+        "Interaktiva tillstånd och meddelanden",
+        "Tillgänglighet och stöd för skärmläsare"
       ]
     },
     "alerts": {
       "title": "Varningar",
       "description": "Sammanhangsbestämda feedbackmeddelanden för viktiga information, varningar och bekräftelser",
       "features": [
-        "Standard and compact alert layouts",
-        "Dismissible alerts with close actions",
-        "Web3 transaction and wallet status alerts",
-        "Action buttons and interactive elements",
-        "ARIA accessibility and screen reader support"
+        "Standard- och kompakta varningslayoutar",
+        "Avvisbara varningar med stängningsåtgärder",
+        "Web3-transaktions- och plånbetsstatusvarningar",
+        "Åtgärdsknappar och interaktiva element",
+        "ARIA-åtkomst och stöd för skärmläsare"
       ]
     },
     "inputs": {
       "title": "Indata",
       "description": "Formulärkomponenter med konsekvent stil, valideringslägen och tillgänglighet",
       "features": [
-        "Text, email, password, and search inputs",
-        "Size variations (small, default, large)",
-        "Validation states and error handling",
-        "Web3 wallet address and token amount inputs",
-        "Icon placement and accessibility support"
+        "Text, e-post, lösenord och sökfält",
+        "Storleksvariationer (liten, standard, stor)",
+        "Valideringslägen och felhantering",
+        "Web3-plånboksadress och tokenbelopp inmatning",
+        "Ikonplacering och tillgänglighetsstöd"
       ]
     },
     "loading": {
       "title": "Laddningslägen",
       "description": "Kompletta laddningsmönster inklusive snurrar, förloppsmärken och Web3-transaktionslägen",
       "features": [
-        "Spinners and loading buttons",
-        "Progress bars and skeleton loading",
-        "Web3 transaction and wallet states",
-        "Contextual loading messages",
-        "Accessibility and screen reader support"
+        "Spinnar och laddningsknappar",
+        "Förloppsindikatorer och skelettbelastning",
+        "Web3-transaktioner och plånbetillstånd",
+        "Sammanhangsbestämda laddningsmeddelanden",
+        "Tillgänglighet och stöd för skärmläsare"
       ]
     },
     "modals": {
       "title": "Modal",
       "description": "Modal- och dialogkomponenter med web3-integreringsmönster och tillgänglighetsfunktioner",
       "features": [
-        "Modal sizes and layout variants",
-        "Web3 wallet connection and transaction modals",
-        "Interactive confirmation dialogs",
-        "Form modals and settings panels",
-        "ARIA accessibility and focus management"
+        "Storlekar på modaler och layoutvarianter",
+        "Web3-plånbokanslutning och transaktionsmodaler",
+        "Interaktiva bekräftelsedialoger",
+        "Formulärmodaler och inställningspaneler",
+        "ARIA-åtkomlighet och fokushantering"
       ]
     },
     "navigation": {
       "title": "Navigering",
       "description": "Navigationskomponenter inklusive sidväg, flikar, sidnumrering och menysystem",
       "features": [
-        "Breadcrumb navigation with SEO optimization",
-        "Tab navigation with multiple variants",
-        "Pagination for data sets",
-        "Sidebar and menu navigation patterns",
-        "Web3-specific navigation (multi-chain, wallet status)"
+        "Breadcrumb-navigering med SEO-optimering",
+        "Fliknavigation med flera varianter",
+        "Sidindelning för datamängder",
+        "Mallar för sidopanel- och menynavigering",
+        "Web3-specifik navigation (flerkedja, plånbokstillstånd)"
       ]
     },
     "dataDisplay": {
       "title": "Datavisning",
       "description": "Komponenter för visning av data, inklusive tabeller, listor, rutor och informationslayout",
       "features": [
-        "Data tables with sorting and filtering",
-        "List components for emails and transactions",
-        "Grid layouts for NFTs and blockchain data",
-        "Key-value displays and metadata",
-        "Timeline and activity feeds"
+        "Datatabeller med sortering och filtrering",
+        "Lista komponenter för e-post och transaktioner",
+        "Rutnätlayout för NFT:er och blockkedjedata",
+        "Nyckel-värde-visningar och metadata",
+        "Tidslinje och aktivitetsflöden"
       ]
     },
     "formsAdvanced": {
       "title": "Formulär Avancerat",
       "description": "Avancerade formulärsmönster inklusive flerstegsvägledare, filuppladdningar och Web3-ingångar",
       "features": [
-        "Multi-step form wizards with progress tracking",
-        "File upload with drag & drop functionality",
-        "Web3-specific inputs (wallet addresses, token amounts)",
-        "Advanced validation with real-time feedback",
-        "Security patterns for sensitive data"
+        "Flerskallsformulär med stegvis förloppskontroll",
+        "Uppladdning av filer med funktion för dra och släpp",
+        "Web3-specifika inmatningar (plånboksadresser, antal token)",
+        "Avancerad validering med realtidsåterkoppling",
+        "Säkerhetsmönster för känsliga data"
       ]
     },
     "notificationsFeedback": {
       "title": "Meddelanden och återkoppling",
       "description": "Komplett aviseringssystem med toastmeddelanden, förloppsmarkörer och statusvisningar",
       "features": [
-        "Toast notifications with auto-dismiss and actions",
-        "Progress indicators for long-running operations",
-        "Web3 transaction status with confirmation tracking",
-        "System status indicators and connection states",
-        "Contextual feedback and smart suggestions"
+        "Toast-meddelanden med automatisk avvisning och åtgärder",
+        "Förloppsmarkörer för långvariga åtgärder",
+        "Web3-transaktionsstatus med bekräftelsespårning",
+        "Systemstatusindikatorer och anslutningslägen",
+        "Sammanhangsbestämd feedback och intelligenta förslag"
       ]
     },
     "layoutSpacing": {
       "title": "Layout och mellanrum",
       "description": "Komplett layoutsystem med responsiva rutor, containrar och avståndsverktyg",
       "features": [
-        "Responsive grid systems and auto-fit patterns",
-        "Container variants for different content widths",
-        "Flexible Flexbox patterns for common layouts",
-        "Comprehensive spacing utility system",
-        "Web3-specific layout patterns (wallets, NFTs, DeFi)",
-        "Dashboard and page layout templates"
+        "Responsiva rutnätssystem och automatiska justeringsmönster",
+        "Behållare med olika innehållsbredd",
+        "Flexibla Flexbox-mönster för vanliga layouter",
+        "Komplett system för avståndsnyttoläge",
+        "Web3-specifika layoutmönster (plånböcker, NFT:er, DeFi)",
+        "Mallar för instrumentbräda och sidlayout"
       ]
     },
     "tablesGrids": {
       "title": "Tabeller och datagridgar",
       "description": "Komplett tabellsystem med sortering, filtrering, sidnumrering och datagridfunktioner",
       "features": [
-        "Sortable columns with visual indicators",
-        "Filterable data with search functionality",
-        "Pagination for large datasets",
-        "Row selection and bulk actions",
-        "Responsive table layouts",
-        "Data grid with resizable columns",
-        "Loading and empty states",
-        "Web3 transaction and address tables"
+        "Sorterbara kolumner med visuella indikatorer",
+        "Filtrerbara data med sökfunktion",
+        "Sidindelning för stora datamängder",
+        "Radval och massåtgärder",
+        "Responsiva tabelllayout",
+        "Datagrid med justerbara kolumner",
+        "Laddnings- och tomma tillstånd",
+        "Web3-transaktions- och adresstabeller"
       ]
     },
     "iconsIllustrations": {
       "title": "IKoner och illustrationer",
       "description": "Komplett ikonsystem med konsekvent storlek, färger och kontextuell användning",
       "features": [
-        "Consistent icon sizing system (xs to xxxl)",
-        "Semantic color variants (success, warning, error)",
-        "Context-specific icon patterns (buttons, _inputs, navigation)",
-        "Interactive states and hover effects",
-        "Web3-specific blockchain icons",
-        "Decorative and hero icon variants",
-        "Status indicators and loading states",
-        "Accessibility and screen reader support"
+        "Konsekvent ikonstorleksystem (xs till xxxl)",
+        "Semantiska färgvarianter (framgång, varning, fel)",
+        "kontextspecifika ikonmönster (knappar, _insatningar, navigering)",
+        "Interaktiva tillstånd och hover-effekter",
+        "Web3-specifika blockchaintecken",
+        "Dekorativa och hjälteikonvarianter",
+        "Statusindikatorer och lässtatus",
+        "Tillgänglighet och stöd för skärmläsare"
       ]
     },
     "overlaysPortals": {
       "title": "Överlappningar och portaler",
       "description": "Komplett överskotts-system med modaler, listrutor, verktygstips, flikar och laddningslägen",
       "features": [
-        "Modal dialogs with animation states and focus management",
-        "Dropdown menus with positioning and keyboard navigation",
-        "Tooltips with multiple positioning options",
-        "Bottom sheets and drawer overlays for mobile",
-        "Context menus and right-click interactions",
-        "Loading overlays with backdrop blur effects",
-        "Proper z-index layering and portal management",
-        "Accessibility with ARIA labels and focus trapping"
+        "Modal dialoger med animationslägen och fokushantering",
+        "Rullgardinsmenyer med positionering och tangentbordsnavigering",
+        "Verktygstips med flera placeringsoptioner",
+        "Underlakan och skufföverlappningar för mobil",
+        "Kontextmenyer och högerklicksinteraktioner",
+        "Läser in överlappningar med bakgrundsblurrande effekter",
+        "Rätt z-index-lagering och portalmatning",
+        "Tillgänglighet med ARIA-etiketter och fokusfång"
       ]
     },
     "microInteractions": {
       "title": "Microinteraktioner och animationer",
       "description": "Komplett animationsystem med hover-effekter, övergångar och Web3-specifika interaktioner",
       "features": [
-        "Hover effects with lift, glow, and scale animations",
-        "Loading animations and spinner variants",
-        "Smooth transitions for state changes",
-        "Gesture feedback and interaction responses",
-        "Web3-specific animations (wallet connect, transaction states)",
-        "Scroll-triggered animations and reveals",
-        "Reduced motion accessibility support",
-        "Performance-optimized CSS and JavaScript animations"
+        "Hover-effekter med lyft-, glöd- och skalningsanimationer",
+        "Laddningsanimationer och spinner-variationer",
+        "Smygna övergångar vid tillståndsförändringar",
+        "Gestfeedback och interaktionsrespons",
+        "Web3-specifika animationer (anslutning till plånbok, transaktionslägen)",
+        "Scroll-utlöst animation och avslöjande effekter",
+        "Minskad stöd för rörelseåtkomst",
+        "Prestandaoptimerade CSS- och JavaScript-animationer"
       ]
     },
     "accessibility": {
       "title": "Tillgänglighet och A11Y",
       "description": "Kompletta tillgänglighetsmönster och inklusiva designverktyg för WCAG-kompatibilitet",
       "features": [
-        "Screen reader support with ARIA labels and skip links",
-        "Focus management and keyboard navigation patterns",
-        "High contrast color combinations for visibility",
-        "Motion preferences and reduced motion support",
-        "Semantic HTML roles and interactive patterns",
-        "Form accessibility with validation and error handling",
-        "Web3-specific accessibility for wallet connections",
-        "WCAG 2.1 AA compliance utilities and best practices"
+        "Stöd för skärmläsare med ARIA-etiketter och hoppningslänkar",
+        "Mönster för fokushantering och tangentbordsnavigation",
+        "Höghöjd färgkombinationer för ökad synlighet",
+        "Rörelseinställningar och stöd för minskad rörelse",
+        "Semantiska HTML-roller och interaktiva mönster",
+        "Formulär tillgänglighet med validering och felhantering",
+        "Web3-specifik tillgänglighet för plånboksförbindelser",
+        "Verktyg och bästa praxis för WCAG 2.1 AA-kompatibilitet"
       ]
     },
     "performance": {
       "title": "Prestanda och optimering",
       "description": "Kompletta prestandamönster och optimeringsverktyg för snabba och effektiva appar",
       "features": [
-        "Bundle optimization with code splitting and lazy loading",
-        "Rendering optimization with GPU acceleration and virtual scrolling",
-        "Network optimization with caching and adaptive loading",
-        "Core Web Vitals monitoring (LCP, FID/INP, CLS)",
-        "Web3-specific optimizations (transaction batching, gas optimization)",
-        "Resource optimization with image compression and CDN patterns",
-        "Performance monitoring with real-time metrics",
-        "Memory optimization and efficient state management"
+        "Paketoptimering med koddelning och lazy loading",
+        "Renderingsoptimering med GPU-acceleration och virtuellt scrollande",
+        "Nätverksoptimering med cachelagring och anpassat inläsning",
+        "Övervakning av Core Web Vitals (LCP, FID/INP, CLS)",
+        "Web3-specifika förbättringar (transaktionsbatchning, gasoptimering)",
+        "Resursoptimering med bildkomprimering och CDN-mönster",
+        "Prestandaövervakning med realtidsmetriker",
+        "Minnesoptimering och effektiv tillståndshantering"
       ]
     }
   }

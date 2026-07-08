@@ -128,5 +128,15 @@
     }
   },
   "backToDesignSystem": "返回设计系统",
-  "lastUpdated": "最后更新：{{date}}"
+  "lastUpdated": "最后更新：{{date}}",
+  "codeTitles": {
+    "essentialVariants": "必备徽章变体",
+    "statusIcons": "带图标的状态徽章",
+    "sizes": "徽章大小",
+    "web3Variants": "Web3徽章变体",
+    "completeSystem": "完成徽章系统",
+    "sizeVariants": "尺寸变体",
+    "interactivePatterns": "互动徽章图案",
+    "accessibleExamples": "可访问徽章示例"
+  }
 }

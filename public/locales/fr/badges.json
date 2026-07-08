@@ -128,5 +128,15 @@
     }
   },
   "backToDesignSystem": "Retour au système de conception",
-  "lastUpdated": "Dernière mise à jour : {{date}}"
+  "lastUpdated": "Dernière mise à jour : {{date}}",
+  "codeTitles": {
+    "essentialVariants": "Variants de badges essentiels",
+    "statusIcons": "Badges d'état avec icônes",
+    "sizes": "Tailles des badges",
+    "web3Variants": "Variants de badge Web3",
+    "completeSystem": "Système de badges terminé",
+    "sizeVariants": "Variants de taille",
+    "interactivePatterns": "Modèles d'insignes interactifs",
+    "accessibleExamples": "Exemples de badges accessibles"
+  }
 }

@@ -44,6 +44,35 @@
     "searchPlaceholder": "Найти пользователей...",
     "filters": "Фильтры"
   },
+  "sampleData": {
+    "roles": {
+      "admin": "Администратор",
+      "user": "Пользователь",
+      "moderator": "Модератор"
+    },
+    "status": {
+      "active": "Активный",
+      "inactive": "Неактивен",
+      "pending": "Ожидается"
+    },
+    "rows": {
+      "1": {
+        "name": "Элис Джонсон"
+      },
+      "2": {
+        "name": "Bob Smith"
+      },
+      "3": {
+        "name": "Чарли Браун"
+      },
+      "4": {
+        "name": "Диана Принс"
+      },
+      "5": {
+        "name": "Eve Wilson"
+      }
+    }
+  },
   "pagination": {
     "title": "Таблица с пагинацией",
     "showing": "Показано",

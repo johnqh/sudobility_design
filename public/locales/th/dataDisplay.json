@@ -47,6 +47,25 @@
       "inactive": "ไม่ได้ใช้งาน"
     }
   },
+  "sampleData": {
+    "table": {
+      "1": {
+        "name": "Alice.eth"
+      },
+      "2": {
+        "name": "Bob.sol"
+      },
+      "3": {
+        "name": "Charlie"
+      },
+      "4": {
+        "name": "David.eth"
+      },
+      "5": {
+        "name": "Eve"
+      }
+    }
+  },
   "lists": {
     "heading": "รายการ",
     "cardTitle": "รายชื่ออีเมล",
@@ -96,6 +115,7 @@
     "userProfile": {
       "heading": "โปรไฟล์ผู้ใช้",
       "fullName": "ชื่อเต็ม",
+      "fullNameValue": "อเล็กซ์ จอห์นสัน",
       "ensName": "ชื่อ ENS",
       "walletAddress": "ที่อยู่กระเป๋าเงิน",
       "email": "อีเมล",

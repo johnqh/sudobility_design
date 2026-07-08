@@ -113,5 +113,14 @@
       "inputTypes": "ใช้ประเภทอินพุตที่เหมาะสม (อีเมล รหัสผ่าน ฯลฯ) เพื่อประสบการณ์มือถือที่ดีขึ้น",
       "contrast": "รักษาระดับความตัดกันของสีให้เพียงพอ (อัตราส่วนขั้นต่ำ 4.5:1)"
     }
+  },
+  "options": {
+    "ethereum": "Ethereum",
+    "polygon": "รูปหลายเหลี่ยม",
+    "arbitrum": "Arbitrum"
+  },
+  "placeholders": {
+    "email": "email@example.com",
+    "emailContact": "อีเมลของคุณ@อีเมล.com"
   }
 }

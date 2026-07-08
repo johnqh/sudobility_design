@@ -3,6 +3,31 @@
     "docs": "เอกสาร",
     "settings": "การตั้งค่า"
   },
+  "breadcrumbs": {
+    "home": "หน้าหลัก",
+    "design": "ระบบการออกแบบ",
+    "colors": "สี",
+    "text": "การจัดตัวอักษร",
+    "forms": "แบบฟอร์ม",
+    "buttons": "ปุ่ม",
+    "cards": "การ์ด",
+    "badges": "สัญลักษณ์",
+    "alerts": "การแจ้งเตือน",
+    "inputs": "อินพุต",
+    "loading": "สถานะการโหลด",
+    "modals": "โมดัล",
+    "navigation": "การนำทาง",
+    "dataDisplay": "การแสดงข้อมูล",
+    "formsAdvanced": "แบบฟอร์มขั้นสูง",
+    "notificationsFeedback": "การแจ้งเตือนและข้อเสนอแนะ",
+    "layoutSpacing": "การจัดเรียงและการเว้นช่องว่าง",
+    "tablesGrids": "ตารางและกริด",
+    "iconsIllustrations": "ไอคอนและภาพประกอบ",
+    "overlaysPortals": "ชั้นวางและประตูทาง",
+    "microInteractionsAnimations": "การโต้ตอบย่อยและการเคลื่อนไหว",
+    "accessibility": "ความเข้าถึง",
+    "performance": "ประสิทธิภาพ"
+  },
   "footer": {
     "librariesTitle": "ห้องสมุด",
     "contactTitle": "ติดต่อ"
@@ -10,6 +35,7 @@
   "loading": "กำลังโหลด...",
   "settings": {
     "title": "การตั้งค่า",
+    "seoDescription": "การตั้งค่ารูปลักษณ์",
     "appearance": "ปรับแต่งรูปลักษณ์ของงานแสดงระบบการออกแบบ",
     "theme": "หัวข้อ",
     "light": "แสง",
@@ -21,11 +47,49 @@
     "large": "ใหญ่",
     "designTheme": "ธีมการออกแบบ"
   },
+  "themePreview": {
+    "appearance": "รูปลักษณ์",
+    "selectAppearance": "เลือกภาพลักษณ์",
+    "selectDesignTheme": "เลือกธีมการออกแบบ",
+    "title": "ตัวอย่างธีมแบบเรียลไทม์",
+    "buttons": {
+      "title": "ปุ่ม",
+      "primary": "หลัก",
+      "secondary": "รอง",
+      "outline": "ร่าง"
+    },
+    "badges": {
+      "title": "สัญลักษณ์",
+      "default": "ค่าเริ่มต้น",
+      "primary": "หลัก",
+      "success": "ความสำเร็จ",
+      "warning": "คำเตือน",
+      "error": "ข้อผิดพลาด"
+    },
+    "card": {
+      "title": "การ์ด",
+      "description": "การ์ด ขอบ และพื้นผิวจะตามโทเค็นธีมที่ใช้งานอยู่"
+    },
+    "input": {
+      "title": "ป้อนข้อมูล",
+      "placeholder": "การป้อนข้อมูลตามธีม"
+    },
+    "colors": {
+      "title": "สีเชิงความหมาย",
+      "primary": "หลัก",
+      "secondary": "รอง",
+      "accent": "เสียงวรรณยุกต์",
+      "muted": "ปิดเสียง",
+      "destructive": "ทำลาย"
+    }
+  },
   "docs": {
     "title": "เอกสาร",
+    "seoDescription": "เอกสารประกอบระบบออกแบบ Sudobility และไลบรารีต่างๆ",
     "overviewTitle": "เกี่ยวกับระบบการออกแบบ",
     "overviewBody": "ระบบออกแบบ Sudobility ให้บริการโทเค็นการออกแบบ ตัวเลือกแบบตัวอักษร (textVariants) และระบบธีมแบบเรียลไทม์ที่สร้างขึ้นบน Tailwind CSS โดยใช้โหมดมืดแบบคลาส คอมโพเนนต์ใช้โทเค็นเชิงความหมายเพื่อให้แอปพลิเคชันทั้งหมดมีความสอดคล้องกันและสลับระหว่างโหมดสว่าง/มืดโดยอัตโนมัติ",
     "howToTitle": "วิธีการใช้",
-    "librariesTitle": "ห้องสมุด"
+    "librariesTitle": "ห้องสมุด",
+    "viewOnGithub": "ดูที่ GitHub →"
   }
 }

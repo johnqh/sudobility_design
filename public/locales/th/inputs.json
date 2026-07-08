@@ -132,5 +132,12 @@
   "nav": {
     "back": "กลับไปยังระบบการออกแบบ",
     "lastUpdated": "อัปเดตครั้งสุดท้าย: {{date}}"
+  },
+  "placeholders": {
+    "email": "user@example.com",
+    "invalidEmail": "อีเมลไม่ถูกต้อง",
+    "emailWithIcon": "email@example.com",
+    "phone": "+1 (555) 123-4567",
+    "website": "https://example.com"
   }
 }

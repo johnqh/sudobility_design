@@ -47,6 +47,25 @@
       "inactive": "Inativo"
     }
   },
+  "sampleData": {
+    "table": {
+      "1": {
+        "name": "Alice.eth"
+      },
+      "2": {
+        "name": "Bob.sol"
+      },
+      "3": {
+        "name": "Charlie"
+      },
+      "4": {
+        "name": "David.eth"
+      },
+      "5": {
+        "name": "Eve"
+      }
+    }
+  },
   "lists": {
     "heading": "Listas",
     "cardTitle": "Lista de e-mails",
@@ -96,6 +115,7 @@
     "userProfile": {
       "heading": "Perfil do Usuário",
       "fullName": "Nome completo",
+      "fullNameValue": "Alice Johnson",
       "ensName": "Nome ENS",
       "walletAddress": "Endereço da carteira",
       "email": "E-mail",

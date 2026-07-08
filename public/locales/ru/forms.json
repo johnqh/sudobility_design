@@ -113,5 +113,14 @@
       "inputTypes": "Используйте соответствующие типы ввода (e-mail, пароль и т. д.) для лучшего мобильного опыта",
       "contrast": "Обеспечьте достаточный контраст цветов (минимальное соотношение 4,5:1)"
     }
+  },
+  "options": {
+    "ethereum": "Ethereum",
+    "polygon": "Многоугольник",
+    "arbitrum": "Arbitrum"
+  },
+  "placeholders": {
+    "email": "email@example.com",
+    "emailContact": "ваш@email.com"
   }
 }

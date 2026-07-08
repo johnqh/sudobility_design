@@ -44,6 +44,35 @@
     "searchPlaceholder": "Tìm người dùng...",
     "filters": "Bộ lọc"
   },
+  "sampleData": {
+    "roles": {
+      "admin": "Quản trị viên",
+      "user": "Người dùng",
+      "moderator": "Người điều hành"
+    },
+    "status": {
+      "active": "Đang hoạt động",
+      "inactive": "Không hoạt động",
+      "pending": "Đang chờ"
+    },
+    "rows": {
+      "1": {
+        "name": "Alice Johnson"
+      },
+      "2": {
+        "name": "Bob Smith"
+      },
+      "3": {
+        "name": "Charlie Brown"
+      },
+      "4": {
+        "name": "Diana Prince"
+      },
+      "5": {
+        "name": "Eve Wilson"
+      }
+    }
+  },
   "pagination": {
     "title": "Bảng với phân trang",
     "showing": "Đang hiển thị",

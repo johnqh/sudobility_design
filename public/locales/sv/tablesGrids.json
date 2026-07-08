@@ -44,6 +44,35 @@
     "searchPlaceholder": "Sök användare...",
     "filters": "Filter"
   },
+  "sampleData": {
+    "roles": {
+      "admin": "Administratör",
+      "user": "Användare",
+      "moderator": "Moderator"
+    },
+    "status": {
+      "active": "Aktiv",
+      "inactive": "Inaktiv",
+      "pending": "Väntar"
+    },
+    "rows": {
+      "1": {
+        "name": "Alice Johnson"
+      },
+      "2": {
+        "name": "Bob Smith"
+      },
+      "3": {
+        "name": "Charlie Brown"
+      },
+      "4": {
+        "name": "Diana Prince"
+      },
+      "5": {
+        "name": "Eve Wilson"
+      }
+    }
+  },
   "pagination": {
     "title": "Tabell med sidnumrering",
     "showing": "Visar",

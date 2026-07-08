@@ -3,6 +3,31 @@
     "docs": "Documenti",
     "settings": "Impostazioni"
   },
+  "breadcrumbs": {
+    "home": "Home",
+    "design": "Sistema di design",
+    "colors": "Colori",
+    "text": "Tipografia",
+    "forms": "Moduli",
+    "buttons": "Pulsanti",
+    "cards": "Schede",
+    "badges": "Badge",
+    "alerts": "Avvisi",
+    "inputs": "Input",
+    "loading": "Stati di caricamento",
+    "modals": "Modali",
+    "navigation": "Navigazione",
+    "dataDisplay": "Visualizzazione dati",
+    "formsAdvanced": "Moduli avanzati",
+    "notificationsFeedback": "Notifiche e feedback",
+    "layoutSpacing": "Layout e spaziatura",
+    "tablesGrids": "Tabelle e griglie",
+    "iconsIllustrations": "Icone e illustrazioni",
+    "overlaysPortals": "Overlay e portali",
+    "microInteractionsAnimations": "Micro-interazioni e animazioni",
+    "accessibility": "Accessibilità",
+    "performance": "Prestazioni"
+  },
   "footer": {
     "librariesTitle": "Biblioteche",
     "contactTitle": "Contatto"
@@ -10,22 +35,61 @@
   "loading": "Caricamento...",
   "settings": {
     "title": "Impostazioni",
+    "seoDescription": "Impostazioni dell'aspetto",
     "appearance": "Personalizza l'aspetto della dimostrazione del sistema di design.",
     "theme": "Tema",
-    "light": "Luce",
+    "light": "Chiaro",
     "dark": "Scuro",
     "system": "Sistema",
     "fontSize": "Dimensione del carattere",
     "small": "Piccolo",
-    "medium": "Medium",
+    "medium": "Medio",
     "large": "Grande",
-    "designTheme": "Tema del design"
+    "designTheme": "Tema grafico"
+  },
+  "themePreview": {
+    "appearance": "Aspetto",
+    "selectAppearance": "Seleziona aspetto",
+    "selectDesignTheme": "Seleziona tema grafico",
+    "title": "Anteprima tema in tempo reale",
+    "buttons": {
+      "title": "Pulsanti",
+      "primary": "Primario",
+      "secondary": "Secondario",
+      "outline": "Contorno"
+    },
+    "badges": {
+      "title": "Badge",
+      "default": "Predefinito",
+      "primary": "Primario",
+      "success": "Successo",
+      "warning": "Avviso",
+      "error": "Errore"
+    },
+    "card": {
+      "title": "Scheda",
+      "description": "Schede, bordi e superfici seguono i token del tema attivo."
+    },
+    "input": {
+      "title": "Campo input",
+      "placeholder": "Input tematizzato"
+    },
+    "colors": {
+      "title": "Colori semantici",
+      "primary": "primario",
+      "secondary": "secondario",
+      "accent": "accento",
+      "muted": "attenuato",
+      "destructive": "distruttivo"
+    }
   },
   "docs": {
     "title": "Documenti",
+    "seoDescription": "Documentazione per il sistema di progettazione Sudobility e le sue librerie.",
     "overviewTitle": "Informazioni sul sistema di design",
     "overviewBody": "Il sistema di design Sudobility fornisce token di design, varianti tipografiche (textVariants) e un sistema tematico in tempo reale basato su Tailwind CSS con modalità scura basata su classi. I componenti utilizzano token semantici in modo che l'intera applicazione rimanga coerente e passi automaticamente da chiaro a scuro.",
     "howToTitle": "Come usare",
-    "librariesTitle": "Biblioteche"
+    "librariesTitle": "Biblioteche",
+    "viewOnGithub": "Visualizza su GitHub →"
   }
 }

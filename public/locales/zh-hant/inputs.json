@@ -132,5 +132,12 @@
   "nav": {
     "back": "返回設計系統",
     "lastUpdated": "最後更新：{{date}}"
+  },
+  "placeholders": {
+    "email": "user@example.com",
+    "invalidEmail": "無效電子郵件",
+    "emailWithIcon": "email@example.com",
+    "phone": "+1 (555) 123-4567",
+    "website": "https://example.com"
   }
 }

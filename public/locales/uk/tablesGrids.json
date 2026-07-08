@@ -44,6 +44,35 @@
     "searchPlaceholder": "Шукати користувачів...",
     "filters": "Фільтри"
   },
+  "sampleData": {
+    "roles": {
+      "admin": "Адміністратор",
+      "user": "Користувач",
+      "moderator": "Модератор"
+    },
+    "status": {
+      "active": "Активний",
+      "inactive": "Неактивний",
+      "pending": "На очікуванні"
+    },
+    "rows": {
+      "1": {
+        "name": "Еліс Джонсон"
+      },
+      "2": {
+        "name": "Bob Smith"
+      },
+      "3": {
+        "name": "Чарлі Браун"
+      },
+      "4": {
+        "name": "Діана Прінс"
+      },
+      "5": {
+        "name": "Eve Wilson"
+      }
+    }
+  },
   "pagination": {
     "title": "Таблиця з пагінацією",
     "showing": "Показано",

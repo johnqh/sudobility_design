@@ -44,6 +44,35 @@
     "searchPlaceholder": "搜索用户...",
     "filters": "过滤器"
   },
+  "sampleData": {
+    "roles": {
+      "admin": "管理员",
+      "user": "用户",
+      "moderator": "主持人"
+    },
+    "status": {
+      "active": "活跃",
+      "inactive": "不活跃",
+      "pending": "待处理"
+    },
+    "rows": {
+      "1": {
+        "name": "爱丽丝·约翰逊"
+      },
+      "2": {
+        "name": "Bob Smith"
+      },
+      "3": {
+        "name": "查理·布朗"
+      },
+      "4": {
+        "name": "戴安娜·普林斯"
+      },
+      "5": {
+        "name": "Eve Wilson"
+      }
+    }
+  },
   "pagination": {
     "title": "带分页的表格",
     "showing": "显示",

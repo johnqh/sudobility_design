@@ -113,5 +113,14 @@
       "inputTypes": "Utilisez des types d'entrée appropriés (e-mail, mot de passe, etc.) pour une meilleure expérience mobile",
       "contrast": "Maintenez un contraste de couleur suffisant (rapport minimum de 4,5:1)"
     }
+  },
+  "options": {
+    "ethereum": "Ethereum",
+    "polygon": "Polygone",
+    "arbitrum": "Arbitrum"
+  },
+  "placeholders": {
+    "email": "email@example.com",
+    "emailContact": "ton@email.com"
   }
 }

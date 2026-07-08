@@ -264,7 +264,7 @@ const InputsPage: React.FC<AppProps> = ({ emailDomain, appName: _appName }) => {
                       <input
                         type="email"
                         className={variants.input.default()}
-                        placeholder="user@example.com"
+                        placeholder={t("placeholders.email")}
                         value={demoValues.email}
                         onChange={(e) =>
                           handleDemoInput("email", e.target.value)
@@ -458,7 +458,7 @@ const InputsPage: React.FC<AppProps> = ({ emailDomain, appName: _appName }) => {
                       <input
                         type="email"
                         className={variants.input.error()}
-                        placeholder="invalid-email"
+                        placeholder={t("placeholders.invalidEmail")}
                         value="invalid-email"
                       />
                       <p className="text-sm text-destructive mt-1 flex items-center">
@@ -477,7 +477,7 @@ const InputsPage: React.FC<AppProps> = ({ emailDomain, appName: _appName }) => {
                           variants.input.default() +
                           " border-success focus:border-success focus:ring-success"
                         }
-                        placeholder="user@example.com"
+                        placeholder={t("placeholders.email")}
                         value="user@example.com"
                       />
                       <p className="text-sm text-success mt-1 flex items-center">
@@ -690,7 +690,7 @@ const InputsPage: React.FC<AppProps> = ({ emailDomain, appName: _appName }) => {
                           <input
                             type="email"
                             className={variants.input.withIcon()}
-                            placeholder="email@example.com"
+                            placeholder={t("placeholders.emailWithIcon")}
                           />
                         </div>
                         <p className="text-xs text-muted-foreground mt-1">
@@ -717,7 +717,7 @@ const InputsPage: React.FC<AppProps> = ({ emailDomain, appName: _appName }) => {
                           <input
                             type="tel"
                             className={variants.input.withIcon()}
-                            placeholder="+1 (555) 123-4567"
+                            placeholder={t("placeholders.phone")}
                             value={demoValues.phone}
                             onChange={(e) =>
                               handleDemoInput("phone", e.target.value)
@@ -737,7 +737,7 @@ const InputsPage: React.FC<AppProps> = ({ emailDomain, appName: _appName }) => {
                           <input
                             type="url"
                             className={variants.input.withIcon()}
-                            placeholder="https://example.com"
+                            placeholder={t("placeholders.website")}
                             value={demoValues.website}
                             onChange={(e) =>
                               handleDemoInput("website", e.target.value)

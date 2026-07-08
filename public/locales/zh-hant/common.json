@@ -3,6 +3,31 @@
     "docs": "文件",
     "settings": "設定"
   },
+  "breadcrumbs": {
+    "home": "首頁",
+    "design": "設計系統",
+    "colors": "顏色",
+    "text": "排版",
+    "forms": "表單",
+    "buttons": "按鈕",
+    "cards": "卡片",
+    "badges": "徽章",
+    "alerts": "警報",
+    "inputs": "輸入",
+    "loading": "載入狀態",
+    "modals": "模態",
+    "navigation": "導航",
+    "dataDisplay": "資料顯示",
+    "formsAdvanced": "表單進階",
+    "notificationsFeedback": "通知與反饋",
+    "layoutSpacing": "佈局與間距",
+    "tablesGrids": "表格與網格",
+    "iconsIllustrations": "圖示與插圖",
+    "overlaysPortals": "疊加與門戶",
+    "microInteractionsAnimations": "微互動與動畫",
+    "accessibility": "可及性",
+    "performance": "效能"
+  },
   "footer": {
     "librariesTitle": "圖書館",
     "contactTitle": "聯絡"
@@ -10,6 +35,7 @@
   "loading": "載入中...",
   "settings": {
     "title": "設定",
+    "seoDescription": "外觀設定",
     "appearance": "自定義設計系統展示的外觀。",
     "theme": "主題",
     "light": "光",
@@ -21,11 +47,49 @@
     "large": "大",
     "designTheme": "設計主題"
   },
+  "themePreview": {
+    "appearance": "外觀",
+    "selectAppearance": "選擇外觀",
+    "selectDesignTheme": "選擇設計主題",
+    "title": "即時主題預覽",
+    "buttons": {
+      "title": "按鈕",
+      "primary": "主要",
+      "secondary": "次級",
+      "outline": "概要"
+    },
+    "badges": {
+      "title": "徽章",
+      "default": "預設",
+      "primary": "主要",
+      "success": "成功",
+      "warning": "警告",
+      "error": "錯誤"
+    },
+    "card": {
+      "title": "卡片",
+      "description": "卡片、邊框和表面遵循活躍主題令牌。"
+    },
+    "input": {
+      "title": "輸入",
+      "placeholder": "主題輸入"
+    },
+    "colors": {
+      "title": "語義色彩",
+      "primary": "主要",
+      "secondary": "次要的",
+      "accent": "重音",
+      "muted": "靜音",
+      "destructive": "破壞性的"
+    }
+  },
   "docs": {
     "title": "文件",
+    "seoDescription": "Sudobility 設計系統及其程式庫的文件。",
     "overviewTitle": "關於設計系統",
     "overviewBody": "Sudobility 設計系統提供設計令牌、文字變體（textVariants）以及基於 Tailwind CSS 的執行時主題系統，並支援以類別為基礎的深色模式。元件會使用語意令牌，確保整個應用程式保持一致，並可自動切換亮色/暗色模式。",
     "howToTitle": "如何使用",
-    "librariesTitle": "圖書館"
+    "librariesTitle": "圖書館",
+    "viewOnGithub": "在 GitHub 上查看 →"
   }
 }

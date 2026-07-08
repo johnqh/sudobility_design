@@ -128,5 +128,15 @@
     }
   },
   "backToDesignSystem": "디자인 시스템으로 돌아가기",
-  "lastUpdated": "마지막 업데이트: {{date}}"
+  "lastUpdated": "마지막 업데이트: {{date}}",
+  "codeTitles": {
+    "essentialVariants": "필수 배지 변형",
+    "statusIcons": "아이콘 포함 상태 배지",
+    "sizes": "배지 크기",
+    "web3Variants": "웹3 배지 변형",
+    "completeSystem": "완료 배지 시스템",
+    "sizeVariants": "크기 변형",
+    "interactivePatterns": "인터랙티브 배지 패턴",
+    "accessibleExamples": "접근성 있는 배지 예시"
+  }
 }

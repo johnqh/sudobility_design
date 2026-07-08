@@ -31,7 +31,7 @@ const DocsPage: React.FC<AppProps> = ({ appName }) => {
     <>
       <SEOHead
         title={`${t("docs.title")} - ${appName}`}
-        description="Documentation for the Sudobility design system and its libraries."
+        description={t("docs.seoDescription")}
       />
 
       <div className="max-w-5xl mx-auto px-4 py-12">
@@ -91,7 +91,7 @@ const DocsPage: React.FC<AppProps> = ({ appName }) => {
                   {lib.desc}
                 </p>
                 <span className={textVariants.link.subtle()}>
-                  View on GitHub →
+                  {t("docs.viewOnGithub")}
                 </span>
               </a>
             ))}

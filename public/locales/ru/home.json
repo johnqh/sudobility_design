@@ -80,206 +80,206 @@
       "title": "Карты",
       "description": "Гибкая система компонентов карточек с уровнем возвышения, вариантами содержимого и паттернами интеграции Web3",
       "features": [
-        "Card elevation and shadow variants",
-        "Content and media card layouts",
-        "Interactive card states and actions",
-        "Web3-specific card patterns (wallet, NFT)",
-        "Responsive grid layouts"
+        "Варианты высоты карты и теней",
+        "Макеты карточек с контентом и медиа",
+        "Состояния и действия интерактивных карт",
+        "Специфичные для Web3 шаблоны карт (кошелёк, NFT)",
+        "Адаптивные сеточные макеты"
       ]
     },
     "badges": {
       "title": "Значки",
       "description": "Маленькие универсальные компоненты для маркировки, категоризации и передачи информации о состоянии",
       "features": [
-        "Semantic color variants (success, warning, error)",
-        "Size options (small, default, large)",
-        "Web3-specific blockchain badges",
-        "Interactive states and notifications",
-        "Accessibility and screen reader support"
+        "Семантические варианты цветов (успех, предупреждение, ошибка)",
+        "Варианты размера (маленький, по умолчанию, большой)",
+        "Бейджики блокчейна, специфичные для Web3",
+        "Интерактивные состояния и уведомления",
+        "Доступность и поддержка экранного доступа"
       ]
     },
     "alerts": {
       "title": "Оповещения",
       "description": "Контекстные сообщения обратной связи для важной информации, предупреждений и подтверждений",
       "features": [
-        "Standard and compact alert layouts",
-        "Dismissible alerts with close actions",
-        "Web3 transaction and wallet status alerts",
-        "Action buttons and interactive elements",
-        "ARIA accessibility and screen reader support"
+        "Стандартные и компактные макеты уведомлений",
+        "Уведомления, которые можно отклонить, с действиями закрытия",
+        "Уведомления о статусе транзакций и кошельков Web3",
+        "Кнопки действий и интерактивные элементы",
+        "Доступность ARIA и поддержка экранного доступа"
       ]
     },
     "inputs": {
       "title": "Входы",
       "description": "Компоненты ввода форм с единообразным стилем, состоянием проверки и доступностью",
       "features": [
-        "Text, email, password, and search inputs",
-        "Size variations (small, default, large)",
-        "Validation states and error handling",
-        "Web3 wallet address and token amount inputs",
-        "Icon placement and accessibility support"
+        "Текст, электронная почта, пароль и поля поиска",
+        "Варианты размеров (маленький, по умолчанию, большой)",
+        "Состояния проверки и обработка ошибок",
+        "Ввод адреса кошелька Web3 и суммы токенов",
+        "Размещение значка и поддержка доступности"
       ]
     },
     "loading": {
       "title": "Состояния загрузки",
       "description": "Полные паттерны загрузки, включая спиннеры, индикаторы прогресса и состояния транзакций Web3",
       "features": [
-        "Spinners and loading buttons",
-        "Progress bars and skeleton loading",
-        "Web3 transaction and wallet states",
-        "Contextual loading messages",
-        "Accessibility and screen reader support"
+        "Круговые индикаторы и кнопки загрузки",
+        "Полосы прогресса и загрузка по типу скелета",
+        "Состояния транзакций и кошельков Web3",
+        "Контекстные сообщения о загрузке",
+        "Доступность и поддержка экранного доступа"
       ]
     },
     "modals": {
       "title": "Модальные",
       "description": "Модальные и диалоговые компоненты с паттернами интеграции Web3 и функциями доступности",
       "features": [
-        "Modal sizes and layout variants",
-        "Web3 wallet connection and transaction modals",
-        "Interactive confirmation dialogs",
-        "Form modals and settings panels",
-        "ARIA accessibility and focus management"
+        "Размеры модальных окон и варианты макетов",
+        "Модальные окна подключения кошелька Web3 и транзакций",
+        "Интерактивные диалоги подтверждения",
+        "Модальные окна форм и панели настроек",
+        "Доступность ARIA и управление фокусом"
       ]
     },
     "navigation": {
       "title": "Навигация",
       "description": "Элементы навигации, включая хлебные крошки, вкладки, пагинацию и системы меню",
       "features": [
-        "Breadcrumb navigation with SEO optimization",
-        "Tab navigation with multiple variants",
-        "Pagination for data sets",
-        "Sidebar and menu navigation patterns",
-        "Web3-specific navigation (multi-chain, wallet status)"
+        "Навигация по хлебным крошкам с оптимизацией SEO",
+        "Переход по вкладкам с несколькими вариантами",
+        "Пагинация для наборов данных",
+        "Шаблоны навигации по боковой панели и меню",
+        "Специфичная для Web3 навигация (многоканальная, статус кошелька)"
       ]
     },
     "dataDisplay": {
       "title": "Отображение данных",
       "description": "Компоненты для отображения данных, включая таблицы, списки, сетки и макеты информации",
       "features": [
-        "Data tables with sorting and filtering",
-        "List components for emails and transactions",
-        "Grid layouts for NFTs and blockchain data",
-        "Key-value displays and metadata",
-        "Timeline and activity feeds"
+        "Таблицы данных с сортировкой и фильтрацией",
+        "Перечислить компоненты для электронной почты и транзакций",
+        "Макеты сетки для NFT и данных блокчейна",
+        "Отображение пар «ключ-значение» и метаданные",
+        "Хронология и ленты активности"
       ]
     },
     "formsAdvanced": {
       "title": "Формы расширенные",
       "description": "Расширенные шаблоны форм, включая многошаговые мастера, загрузку файлов и ввод Web3",
       "features": [
-        "Multi-step form wizards with progress tracking",
-        "File upload with drag & drop functionality",
-        "Web3-specific inputs (wallet addresses, token amounts)",
-        "Advanced validation with real-time feedback",
-        "Security patterns for sensitive data"
+        "Многошаговые мастера форм с отслеживанием прогресса",
+        "Загрузка файлов с функцией перетаскивания",
+        "Ввод, специфичный для Web3 (адреса кошельков, суммы токенов)",
+        "Расширенная валидация с обратной связью в реальном времени",
+        "Шаблоны безопасности для конфиденциальных данных"
       ]
     },
     "notificationsFeedback": {
       "title": "Уведомления и обратная связь",
       "description": "Полная система уведомлений с всплывающими сообщениями, индикаторами хода и отображением статуса",
       "features": [
-        "Toast notifications with auto-dismiss and actions",
-        "Progress indicators for long-running operations",
-        "Web3 transaction status with confirmation tracking",
-        "System status indicators and connection states",
-        "Contextual feedback and smart suggestions"
+        "Уведомления типа «toast» с автоматическим исчезновением и действиями",
+        "Индикаторы хода для длительных операций",
+        "Статус транзакции Web3 с отслеживанием подтверждения",
+        "Индикаторы состояния системы и состояния подключения",
+        "Контекстная обратная связь и умные рекомендации"
       ]
     },
     "layoutSpacing": {
       "title": "Макет и интервалы",
       "description": "Полная система макетов с адаптивными сетками, контейнерами и инструментами для отступов",
       "features": [
-        "Responsive grid systems and auto-fit patterns",
-        "Container variants for different content widths",
-        "Flexible Flexbox patterns for common layouts",
-        "Comprehensive spacing utility system",
-        "Web3-specific layout patterns (wallets, NFTs, DeFi)",
-        "Dashboard and page layout templates"
+        "Адаптивные системы сетки и автоматические шаблоны подгонки",
+        "Варианты контейнеров для различных ширин содержимого",
+        "Гибкие шаблоны Flexbox для распространённых макетов",
+        "Комплексная система утилит для интервалов",
+        "Специфичные для Web3 паттерны макетов (кошельки, NFT, DeFi)",
+        "Шаблоны панели управления и макета страницы"
       ]
     },
     "tablesGrids": {
       "title": "Таблицы и таблицы данных",
       "description": "Комплексная система таблиц с сортировкой, фильтрацией, пагинацией и функцией сетки данных",
       "features": [
-        "Sortable columns with visual indicators",
-        "Filterable data with search functionality",
-        "Pagination for large datasets",
-        "Row selection and bulk actions",
-        "Responsive table layouts",
-        "Data grid with resizable columns",
-        "Loading and empty states",
-        "Web3 transaction and address tables"
+        "Сортируемые столбцы с визуальными индикаторами",
+        "Фильтруемые данные с функцией поиска",
+        "Пагинация для больших наборов данных",
+        "Выбор строк и массовые действия",
+        "Адаптивные макеты таблиц",
+        "Таблица данных с изменяемыми столбцами",
+        "Состояния загрузки и пустые",
+        "Таблицы транзакций и адресов Web3"
       ]
     },
     "iconsIllustrations": {
       "title": "Значки и иллюстрации",
       "description": "Комплексная система иконок с согласованным размером, цветом и контекстным использованием",
       "features": [
-        "Consistent icon sizing system (xs to xxxl)",
-        "Semantic color variants (success, warning, error)",
-        "Context-specific icon patterns (buttons, _inputs, navigation)",
-        "Interactive states and hover effects",
-        "Web3-specific blockchain icons",
-        "Decorative and hero icon variants",
-        "Status indicators and loading states",
-        "Accessibility and screen reader support"
+        "Согласованная система размеров значков (от xs до xxxl)",
+        "Семантические варианты цветов (успех, предупреждение, ошибка)",
+        "конкретные для контекста паттерны иконок (кнопки, _ввод, навигация)",
+        "Интерактивные состояния и эффекты наведения",
+        "Специфичные для Web3 иконки блокчейна",
+        "Декоративные и героические варианты значков",
+        "Индикаторы состояния и состояния загрузки",
+        "Доступность и поддержка экранного доступа"
       ]
     },
     "overlaysPortals": {
       "title": "Наложения и порталы",
       "description": "Комплексная система наложения с модальными окнами, выпадающими списками, всплывающими подсказками, панелями и состояниями загрузки",
       "features": [
-        "Modal dialogs with animation states and focus management",
-        "Dropdown menus with positioning and keyboard navigation",
-        "Tooltips with multiple positioning options",
-        "Bottom sheets and drawer overlays for mobile",
-        "Context menus and right-click interactions",
-        "Loading overlays with backdrop blur effects",
-        "Proper z-index layering and portal management",
-        "Accessibility with ARIA labels and focus trapping"
+        "Модальные диалоги с состояниями анимации и управлением фокусом",
+        "Выпадающие меню с позиционированием и навигацией с клавиатуры",
+        "Подсказки с несколькими вариантами позиционирования",
+        "Нижние листы и наложения ящиков для мобильных устройств",
+        "Контекстные меню и взаимодействия при правом щелчке",
+        "Загрузка наложений с эффектом размытия фона",
+        "Правильная настройка z-index и управление порталами",
+        "Доступность с помощью меток ARIA и захвата фокуса"
       ]
     },
     "microInteractions": {
       "title": "Микроинтеракции и анимации",
       "description": "Полная система анимации с эффектами при наведении, переходами и взаимодействиями, специфичными для Web3",
       "features": [
-        "Hover effects with lift, glow, and scale animations",
-        "Loading animations and spinner variants",
-        "Smooth transitions for state changes",
-        "Gesture feedback and interaction responses",
-        "Web3-specific animations (wallet connect, transaction states)",
-        "Scroll-triggered animations and reveals",
-        "Reduced motion accessibility support",
-        "Performance-optimized CSS and JavaScript animations"
+        "Эффекты наведения с анимацией подъема, свечения и масштабирования",
+        "Загрузка анимаций и вариантов спиннера",
+        "Плавные переходы при смене состояния",
+        "Обратная связь по жестам и реакции взаимодействия",
+        "Анимации, специфичные для Web3 (подключение кошелька, состояния транзакций)",
+        "Анимации и эффекты, запускаемые при прокрутке",
+        "Сниженная поддержка доступности движения",
+        "Оптимизированные по производительности анимации CSS и JavaScript"
       ]
     },
     "accessibility": {
       "title": "Доступность и A11Y",
       "description": "Полные паттерны доступности и инструменты инклюзивного дизайна для соответствия WCAG",
       "features": [
-        "Screen reader support with ARIA labels and skip links",
-        "Focus management and keyboard navigation patterns",
-        "High contrast color combinations for visibility",
-        "Motion preferences and reduced motion support",
-        "Semantic HTML roles and interactive patterns",
-        "Form accessibility with validation and error handling",
-        "Web3-specific accessibility for wallet connections",
-        "WCAG 2.1 AA compliance utilities and best practices"
+        "Поддержка экранного доступа с помощью меток ARIA и ссылок пропуска",
+        "Шаблоны управления фокусом и навигации с клавиатуры",
+        "Высококонтрастные цветовые комбинации для лучшей видимости",
+        "Предпочтения движения и поддержка снижения движения",
+        "Семантические роли HTML и интерактивные паттерны",
+        "Доступность форм с проверкой и обработкой ошибок",
+        "Специфическая для Web3 доступность для подключения кошельков",
+        "Средства и лучшие практики соответствия WCAG 2.1 AA"
       ]
     },
     "performance": {
       "title": "Производительность и оптимизация",
       "description": "Полные паттерны производительности и инструменты оптимизации для быстрых и эффективных приложений",
       "features": [
-        "Bundle optimization with code splitting and lazy loading",
-        "Rendering optimization with GPU acceleration and virtual scrolling",
-        "Network optimization with caching and adaptive loading",
-        "Core Web Vitals monitoring (LCP, FID/INP, CLS)",
-        "Web3-specific optimizations (transaction batching, gas optimization)",
-        "Resource optimization with image compression and CDN patterns",
-        "Performance monitoring with real-time metrics",
-        "Memory optimization and efficient state management"
+        "Оптимизация пакетов с разделением кода и ленивой загрузкой",
+        "Оптимизация отрисовки с ускорением GPU и виртуальным прокручиванием",
+        "Оптимизация сети с кэшированием и адаптивной загрузкой",
+        "Мониторинг Core Web Vitals (LCP, FID/INP, CLS)",
+        "Оптимизации, специфичные для Web3 (объединение транзакций, оптимизация газа)",
+        "Оптимизация ресурсов с помощью сжатия изображений и шаблонов CDN",
+        "Мониторинг производительности с метриками в реальном времени",
+        "Оптимизация памяти и эффективное управление состоянием"
       ]
     }
   }

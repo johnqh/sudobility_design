@@ -128,5 +128,15 @@
     }
   },
   "backToDesignSystem": "Volver al sistema de diseño",
-  "lastUpdated": "Última actualización: {{date}}"
+  "lastUpdated": "Última actualización: {{date}}",
+  "codeTitles": {
+    "essentialVariants": "Variantes de insignias esenciales",
+    "statusIcons": "Marcadores de estado con iconos",
+    "sizes": "Tamaños de insignias",
+    "web3Variants": "Variantes de insignia Web3",
+    "completeSystem": "Sistema de insignias completado",
+    "sizeVariants": "Variantes de tamaño",
+    "interactivePatterns": "Patrones de insignias interactivas",
+    "accessibleExamples": "Ejemplos de insignia accesible"
+  }
 }

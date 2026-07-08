@@ -47,6 +47,25 @@
       "inactive": "不活跃"
     }
   },
+  "sampleData": {
+    "table": {
+      "1": {
+        "name": "Alice.eth"
+      },
+      "2": {
+        "name": "Bob.sol"
+      },
+      "3": {
+        "name": "Charlie"
+      },
+      "4": {
+        "name": "David.eth"
+      },
+      "5": {
+        "name": "Eve"
+      }
+    }
+  },
   "lists": {
     "heading": "列表",
     "cardTitle": "邮件列表",
@@ -96,6 +115,7 @@
     "userProfile": {
       "heading": "用户资料",
       "fullName": "全名",
+      "fullNameValue": "爱丽丝·约翰逊",
       "ensName": "ENS名称",
       "walletAddress": "钱包地址",
       "email": "电子邮件",

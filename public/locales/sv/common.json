@@ -3,6 +3,31 @@
     "docs": "Dokument",
     "settings": "Inställningar"
   },
+  "breadcrumbs": {
+    "home": "Hem",
+    "design": "Designsystem",
+    "colors": "Färger",
+    "text": "Typografi",
+    "forms": "Formulär",
+    "buttons": "Knappar",
+    "cards": "Kort",
+    "badges": "Badge",
+    "alerts": "Varningar",
+    "inputs": "Indata",
+    "loading": "Laddningslägen",
+    "modals": "Modal",
+    "navigation": "Navigering",
+    "dataDisplay": "Datavisning",
+    "formsAdvanced": "Formulär Avancerat",
+    "notificationsFeedback": "Meddelanden och återkoppling",
+    "layoutSpacing": "Layout och mellanrum",
+    "tablesGrids": "Tabeller och rutnät",
+    "iconsIllustrations": "IKoner och illustrationer",
+    "overlaysPortals": "Överlappningar och portaler",
+    "microInteractionsAnimations": "Microinteraktioner och animationer",
+    "accessibility": "Tillgänglighet",
+    "performance": "Prestanda"
+  },
   "footer": {
     "librariesTitle": "Bibliotek",
     "contactTitle": "Kontakt"
@@ -10,6 +35,7 @@
   "loading": "Läser in...",
   "settings": {
     "title": "Inställningar",
+    "seoDescription": "Utseendetinställningar",
     "appearance": "Anpassa utseendet på visningen av designsystemet.",
     "theme": "Temat",
     "light": "Ljus",
@@ -21,11 +47,49 @@
     "large": "Stor",
     "designTheme": "Designtema"
   },
+  "themePreview": {
+    "appearance": "Utseende",
+    "selectAppearance": "Välj utseende",
+    "selectDesignTheme": "Välj designtema",
+    "title": "Live temavyckling",
+    "buttons": {
+      "title": "Knappar",
+      "primary": "Primär",
+      "secondary": "Andra",
+      "outline": "Utskiss"
+    },
+    "badges": {
+      "title": "Badge",
+      "default": "Standard",
+      "primary": "Primär",
+      "success": "Framgång",
+      "warning": "Varning",
+      "error": "Fel"
+    },
+    "card": {
+      "title": "Kort",
+      "description": "Kort, kanter och ytor följer de aktiva tematoken."
+    },
+    "input": {
+      "title": "Inmatning",
+      "placeholder": "Temadatning"
+    },
+    "colors": {
+      "title": "Semantiska färger",
+      "primary": "primär",
+      "secondary": "sekundär",
+      "accent": "accent",
+      "muted": "stum",
+      "destructive": "destruktiv"
+    }
+  },
   "docs": {
     "title": "Dokument",
+    "seoDescription": "Dokumentation för Sudobility-designsystemet och dess bibliotek.",
     "overviewTitle": "Om designsystemet",
     "overviewBody": "Sudobility-designsystemet erbjuder designtoken, typografi-variationer (textVariants) och ett körningsbaserat temesystem byggt på Tailwind CSS med klassbaserad mörkt läge. Komponenter använder semantiska token så hela appen förblir konsekvent och växlar automatiskt mellan ljus och mörkt läge.",
     "howToTitle": "Hur man använder",
-    "librariesTitle": "Bibliotek"
+    "librariesTitle": "Bibliotek",
+    "viewOnGithub": "Visa på GitHub →"
   }
 }

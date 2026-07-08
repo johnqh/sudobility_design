@@ -1098,18 +1098,18 @@ const Modal = ({ children, isOpen }) => {
                       <label className={`${textVariants.body.sm()} block mb-2`}>
                         {t("settingsModal.profileVisibility")}
                       </label>
-                      <Select defaultValue="Public">
+                      <Select defaultValue="public">
                         <SelectTrigger className="w-full px-3 py-2 border border-input rounded-md bg-background focus:outline-none focus:ring-2 focus:ring-ring">
                           <SelectValue />
                         </SelectTrigger>
                         <SelectContent>
-                          <SelectItem value="Public">
+                          <SelectItem value="public">
                             {t("settingsModal.visibilityPublic")}
                           </SelectItem>
-                          <SelectItem value="Friends Only">
+                          <SelectItem value="friends">
                             {t("settingsModal.visibilityFriends")}
                           </SelectItem>
-                          <SelectItem value="Private">
+                          <SelectItem value="private">
                             {t("settingsModal.visibilityPrivate")}
                           </SelectItem>
                         </SelectContent>

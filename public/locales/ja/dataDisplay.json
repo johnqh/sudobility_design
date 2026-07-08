@@ -47,6 +47,25 @@
       "inactive": "非アクティブ"
     }
   },
+  "sampleData": {
+    "table": {
+      "1": {
+        "name": "Alice.eth"
+      },
+      "2": {
+        "name": "Bob.sol"
+      },
+      "3": {
+        "name": "Charlie"
+      },
+      "4": {
+        "name": "David.eth"
+      },
+      "5": {
+        "name": "Eve"
+      }
+    }
+  },
   "lists": {
     "heading": "リスト",
     "cardTitle": "メールリスト",
@@ -96,6 +115,7 @@
     "userProfile": {
       "heading": "ユーザー・プロファイル",
       "fullName": "氏名",
+      "fullNameValue": "アリス・ジョンソン",
       "ensName": "ENS名",
       "walletAddress": "ウォレットアドレス",
       "email": "電子メール",

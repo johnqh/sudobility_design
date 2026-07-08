@@ -55,9 +55,9 @@ const pageProps: PageProps = {
 };
 
 function AppRoutes() {
-  const { i18n: i18nInstance } = useTranslation();
+  const { i18n: i18nInstance, t } = useTranslation("common");
   return (
-    <Suspense fallback={<div className="p-12">Loading...</div>}>
+    <Suspense fallback={<div className="p-12">{t("loading")}</div>}>
       <Routes>
         <Route path="/:lang" element={<ScreenContainerLayout />}>
           <Route index element={<DesignSystemPage {...pageProps} />} />

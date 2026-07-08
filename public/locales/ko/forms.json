@@ -113,5 +113,14 @@
       "inputTypes": "더 나은 모바일 경험을 위해 적절한 입력 유형(이메일, 비밀번호 등)을 사용하세요",
       "contrast": "충분한 색 대비를 유지하세요 (최소 4.5:1 비율)"
     }
+  },
+  "options": {
+    "ethereum": "Ethereum",
+    "polygon": "다각형",
+    "arbitrum": "Arbitrum"
+  },
+  "placeholders": {
+    "email": "email@example.com",
+    "emailContact": "당신의@email.com"
   }
 }

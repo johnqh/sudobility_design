@@ -44,6 +44,35 @@
     "searchPlaceholder": "사용자 검색...",
     "filters": "필터"
   },
+  "sampleData": {
+    "roles": {
+      "admin": "관리자",
+      "user": "사용자",
+      "moderator": "모더레이터"
+    },
+    "status": {
+      "active": "활성",
+      "inactive": "비활성",
+      "pending": "보류 중"
+    },
+    "rows": {
+      "1": {
+        "name": "앨리스 존슨"
+      },
+      "2": {
+        "name": "Bob Smith"
+      },
+      "3": {
+        "name": "찰리 브라운"
+      },
+      "4": {
+        "name": "다이아나 프라이스"
+      },
+      "5": {
+        "name": "Eve Wilson"
+      }
+    }
+  },
   "pagination": {
     "title": "페이지네이션 있는 테이블",
     "showing": "보기",

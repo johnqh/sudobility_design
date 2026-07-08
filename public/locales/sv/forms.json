@@ -113,5 +113,14 @@
       "inputTypes": "Använd lämpliga inmatningstyper (e-post, lösenord osv.) för en bättre mobilupplevelse",
       "contrast": "Säkerställ tillräcklig färgkontrast (minsta förhållande 4,5:1)"
     }
+  },
+  "options": {
+    "ethereum": "Ethereum",
+    "polygon": "Polygon",
+    "arbitrum": "Arbitrum"
+  },
+  "placeholders": {
+    "email": "email@example.com",
+    "emailContact": "ditt@email.com"
   }
 }

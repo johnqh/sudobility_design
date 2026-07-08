@@ -133,42 +133,42 @@ const DataDisplayPage: React.FC<AppProps> = ({
   const tableData = [
     {
       id: 1,
-      name: "Alice.eth",
+      name: t("sampleData.table.1.name"),
       email: "alice@example.com",
       balance: "2.5 ETH",
-      status: "Active",
+      status: t("tables.status.active"),
       date: "2024-01-15",
     },
     {
       id: 2,
-      name: "Bob.sol",
+      name: t("sampleData.table.2.name"),
       email: "bob@example.com",
       balance: "1.2 SOL",
-      status: "Active",
+      status: t("tables.status.active"),
       date: "2024-01-14",
     },
     {
       id: 3,
-      name: "Charlie",
+      name: t("sampleData.table.3.name"),
       email: "charlie@example.com",
       balance: "0.8 ETH",
-      status: "Pending",
+      status: t("tables.status.pending"),
       date: "2024-01-13",
     },
     {
       id: 4,
-      name: "David.eth",
+      name: t("sampleData.table.4.name"),
       email: "david@example.com",
       balance: "5.0 ETH",
-      status: "Active",
+      status: t("tables.status.active"),
       date: "2024-01-12",
     },
     {
       id: 5,
-      name: "Eve",
+      name: t("sampleData.table.5.name"),
       email: "eve@example.com",
       balance: "3.3 ETH",
-      status: "Inactive",
+      status: t("tables.status.inactive"),
       date: "2024-01-11",
     },
   ];
@@ -649,7 +649,7 @@ const DataDisplayPage: React.FC<AppProps> = ({
                         {t("keyValue.userProfile.fullName")}
                       </dt>
                       <dd className={variants.dataDisplay.keyValue.value()}>
-                        Alice Johnson
+                        {t("keyValue.userProfile.fullNameValue")}
                       </dd>
                     </div>
                     <div className={variants.dataDisplay.keyValue.row()}>

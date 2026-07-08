@@ -1,9 +1,35 @@
 {
   "nav": { "docs": "Docs", "settings": "Settings" },
+  "breadcrumbs": {
+    "home": "Home",
+    "design": "Design System",
+    "colors": "Colors",
+    "text": "Typography",
+    "forms": "Forms",
+    "buttons": "Buttons",
+    "cards": "Cards",
+    "badges": "Badges",
+    "alerts": "Alerts",
+    "inputs": "Inputs",
+    "loading": "Loading States",
+    "modals": "Modals",
+    "navigation": "Navigation",
+    "dataDisplay": "Data Display",
+    "formsAdvanced": "Forms Advanced",
+    "notificationsFeedback": "Notifications & Feedback",
+    "layoutSpacing": "Layout & Spacing",
+    "tablesGrids": "Tables & Grids",
+    "iconsIllustrations": "Icons & Illustrations",
+    "overlaysPortals": "Overlays & Portals",
+    "microInteractionsAnimations": "Micro-Interactions & Animations",
+    "accessibility": "Accessibility",
+    "performance": "Performance"
+  },
   "footer": { "librariesTitle": "Libraries", "contactTitle": "Contact" },
   "loading": "Loading...",
   "settings": {
     "title": "Settings",
+    "seoDescription": "Appearance settings",
     "appearance": "Customize the appearance of the design system showcase.",
     "theme": "Theme",
     "light": "Light",
@@ -15,11 +41,49 @@
     "large": "Large",
     "designTheme": "Design theme"
   },
+  "themePreview": {
+    "appearance": "Appearance",
+    "selectAppearance": "Select appearance",
+    "selectDesignTheme": "Select design theme",
+    "title": "Live Theme Preview",
+    "buttons": {
+      "title": "Buttons",
+      "primary": "Primary",
+      "secondary": "Secondary",
+      "outline": "Outline"
+    },
+    "badges": {
+      "title": "Badges",
+      "default": "Default",
+      "primary": "Primary",
+      "success": "Success",
+      "warning": "Warning",
+      "error": "Error"
+    },
+    "card": {
+      "title": "Card",
+      "description": "Cards, borders, and surfaces follow the active theme tokens."
+    },
+    "input": {
+      "title": "Input",
+      "placeholder": "Themed input"
+    },
+    "colors": {
+      "title": "Semantic Colors",
+      "primary": "primary",
+      "secondary": "secondary",
+      "accent": "accent",
+      "muted": "muted",
+      "destructive": "destructive"
+    }
+  },
   "docs": {
     "title": "Docs",
+    "seoDescription": "Documentation for the Sudobility design system and its libraries.",
     "overviewTitle": "About the design system",
     "overviewBody": "The Sudobility design system provides design tokens, typography variants (textVariants), and a runtime theme system built on Tailwind CSS with class-based dark mode. Components consume semantic tokens so the whole app stays consistent and flips light/dark automatically.",
     "howToTitle": "How to use",
-    "librariesTitle": "Libraries"
+    "librariesTitle": "Libraries",
+    "viewOnGithub": "View on GitHub →"
   }
 }

@@ -47,6 +47,25 @@
       "inactive": "비활성"
     }
   },
+  "sampleData": {
+    "table": {
+      "1": {
+        "name": "Alice.eth"
+      },
+      "2": {
+        "name": "Bob.sol"
+      },
+      "3": {
+        "name": "Charlie"
+      },
+      "4": {
+        "name": "David.eth"
+      },
+      "5": {
+        "name": "Eve"
+      }
+    }
+  },
   "lists": {
     "heading": "목록",
     "cardTitle": "이메일 목록",
@@ -96,6 +115,7 @@
     "userProfile": {
       "heading": "사용자 프로필",
       "fullName": "성명",
+      "fullNameValue": "앨리스 존슨",
       "ensName": "ENS 이름",
       "walletAddress": "지갑 주소",
       "email": "이메일",

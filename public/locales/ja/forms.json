@@ -113,5 +113,14 @@
       "inputTypes": "適切な入力タイプ（メール、パスワードなど）を使用して、モバイル体験を向上させましょう",
       "contrast": "十分な色のコントラストを維持する（最小比4.5:1）"
     }
+  },
+  "options": {
+    "ethereum": "Ethereum",
+    "polygon": "ポリゴン",
+    "arbitrum": "Arbitrum"
+  },
+  "placeholders": {
+    "email": "email@example.com",
+    "emailContact": "あなたのメールアドレス@メール.com"
   }
 }

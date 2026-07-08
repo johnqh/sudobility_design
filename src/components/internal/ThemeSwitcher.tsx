@@ -11,9 +11,11 @@ import {
   SelectTrigger,
   SelectValue,
 } from "@sudobility/components";
+import { useTranslation } from "react-i18next";
 import { useDesignTheme } from "../../context/DesignThemeContext";
 
 export default function ThemeSwitcher() {
+  const { t } = useTranslation("common");
   const { themeName, themeOptions, setThemeName } = useDesignTheme();
 
   const sortedThemeOptions = useMemo(
@@ -26,13 +28,15 @@ export default function ThemeSwitcher() {
 
   return (
     <label className="inline-flex items-center gap-2">
-      <span className="text-sm font-medium text-foreground">Theme</span>
+      <span className="text-sm font-medium text-foreground">
+        {t("settings.designTheme")}
+      </span>
       <Select
         value={themeName}
         onValueChange={(value) => setThemeName(value as ThemeName)}
       >
         <SelectTrigger
-          aria-label="Select design theme"
+          aria-label={t("themePreview.selectDesignTheme")}
           className="min-w-[12rem] rounded-md border border-input bg-background px-3 py-1.5 text-sm text-foreground focus:outline-none focus:ring-2 focus:ring-ring"
         >
           <SelectValue />

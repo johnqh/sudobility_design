@@ -128,5 +128,15 @@
     }
   },
   "backToDesignSystem": "กลับไปยังระบบการออกแบบ",
-  "lastUpdated": "อัปเดตครั้งสุดท้าย: {{date}}"
+  "lastUpdated": "อัปเดตครั้งสุดท้าย: {{date}}",
+  "codeTitles": {
+    "essentialVariants": "รูปแบบสัญลักษณ์ที่จำเป็น",
+    "statusIcons": "สัญลักษณ์สถานะพร้อมไอคอน",
+    "sizes": "ขนาดของสัญลักษณ์",
+    "web3Variants": "รูปแบบสัญลักษณ์ Web3",
+    "completeSystem": "ระบบเหรียญสำเร็จแล้ว",
+    "sizeVariants": "รุ่นขนาด",
+    "interactivePatterns": "รูปแบบบัตรแสดงการโต้ตอบ",
+    "accessibleExamples": "ตัวอย่างสัญลักษณ์ที่เข้าถึงได้"
+  }
 }

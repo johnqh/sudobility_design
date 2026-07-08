@@ -3,6 +3,31 @@
     "docs": "Документы",
     "settings": "Настройки"
   },
+  "breadcrumbs": {
+    "home": "Главная",
+    "design": "Система дизайна",
+    "colors": "Цвета",
+    "text": "Типографика",
+    "forms": "Формы",
+    "buttons": "Кнопки",
+    "cards": "Карты",
+    "badges": "Значки",
+    "alerts": "Оповещения",
+    "inputs": "Входы",
+    "loading": "Состояния загрузки",
+    "modals": "Модальные",
+    "navigation": "Навигация",
+    "dataDisplay": "Отображение данных",
+    "formsAdvanced": "Формы расширенные",
+    "notificationsFeedback": "Уведомления и обратная связь",
+    "layoutSpacing": "Макет и интервалы",
+    "tablesGrids": "Таблицы и сетки",
+    "iconsIllustrations": "Значки и иллюстрации",
+    "overlaysPortals": "Наложения и порталы",
+    "microInteractionsAnimations": "Микроинтеракции и анимации",
+    "accessibility": "Доступность",
+    "performance": "Производительность"
+  },
   "footer": {
     "librariesTitle": "Библиотеки",
     "contactTitle": "Контакт"
@@ -10,6 +35,7 @@
   "loading": "Загрузка...",
   "settings": {
     "title": "Настройки",
+    "seoDescription": "Настройки внешнего вида",
     "appearance": "Настройте внешний вид демонстрации системы дизайна.",
     "theme": "Тема",
     "light": "Свет",
@@ -21,11 +47,49 @@
     "large": "Большой",
     "designTheme": "Тема дизайна"
   },
+  "themePreview": {
+    "appearance": "Внешний вид",
+    "selectAppearance": "Выбрать внешний вид",
+    "selectDesignTheme": "Выберите тему дизайна",
+    "title": "Предварительный просмотр темы в режиме реального времени",
+    "buttons": {
+      "title": "Кнопки",
+      "primary": "Основной",
+      "secondary": "Вторичный",
+      "outline": "Эскиз"
+    },
+    "badges": {
+      "title": "Значки",
+      "default": "По умолчанию",
+      "primary": "Основной",
+      "success": "Успех",
+      "warning": "Предупреждение",
+      "error": "Ошибка"
+    },
+    "card": {
+      "title": "Карта",
+      "description": "Карты, рамки и поверхности следуют активным токенам темы."
+    },
+    "input": {
+      "title": "Вход",
+      "placeholder": "Ввод по теме"
+    },
+    "colors": {
+      "title": "Семантические цвета",
+      "primary": "основной",
+      "secondary": "вторичный",
+      "accent": "акцент",
+      "muted": "приглушён",
+      "destructive": "разрушительный"
+    }
+  },
   "docs": {
     "title": "Документы",
+    "seoDescription": "Документация по системе дизайна Sudobility и ее библиотекам.",
     "overviewTitle": "О системе дизайна",
     "overviewBody": "Система дизайна Sudobility предоставляет токены дизайна, варианты типографики (textVariants) и систему темы в режиме реального времени, построенную на Tailwind CSS с темой на основе классов для темного режима. Компоненты используют семантические токены, поэтому весь интерфейс остается согласованным и автоматически переключается между светлой и темной темами.",
     "howToTitle": "Как использовать",
-    "librariesTitle": "Библиотеки"
+    "librariesTitle": "Библиотеки",
+    "viewOnGithub": "Посмотреть на GitHub →"
   }
 }

@@ -47,6 +47,25 @@
       "inactive": "Không hoạt động"
     }
   },
+  "sampleData": {
+    "table": {
+      "1": {
+        "name": "Alice.eth"
+      },
+      "2": {
+        "name": "Bob.sol"
+      },
+      "3": {
+        "name": "Charlie"
+      },
+      "4": {
+        "name": "David.eth"
+      },
+      "5": {
+        "name": "Eve"
+      }
+    }
+  },
   "lists": {
     "heading": "Danh sách",
     "cardTitle": "Danh sách email",
@@ -96,6 +115,7 @@
     "userProfile": {
       "heading": "Hồ sơ người dùng",
       "fullName": "Họ và tên",
+      "fullNameValue": "Alice Johnson",
       "ensName": "Tên ENS",
       "walletAddress": "Địa chỉ ví",
       "email": "Thư điện tử",

@@ -3,6 +3,31 @@
     "docs": "Tài liệu",
     "settings": "Cài đặt"
   },
+  "breadcrumbs": {
+    "home": "Trang chủ",
+    "design": "Hệ thống thiết kế",
+    "colors": "Màu sắc",
+    "text": "Thiết kế chữ",
+    "forms": "Biểu mẫu",
+    "buttons": "Nút bấm",
+    "cards": "Thẻ",
+    "badges": "Huy hiệu",
+    "alerts": "Cảnh báo",
+    "inputs": "Đầu vào",
+    "loading": "Trạng thái đang tải",
+    "modals": "Cửa sổ bật ra",
+    "navigation": "Điều hướng",
+    "dataDisplay": "Hiển thị dữ liệu",
+    "formsAdvanced": "Biểu mẫu nâng cao",
+    "notificationsFeedback": "Thông báo và phản hồi",
+    "layoutSpacing": "Bố cục và khoảng cách",
+    "tablesGrids": "Bảng và lưới",
+    "iconsIllustrations": "Biểu tượng và minh họa",
+    "overlaysPortals": "Lớp chồng và cổng",
+    "microInteractionsAnimations": "Tương tác vi mô và hoạt hình",
+    "accessibility": "Khả năng tiếp cận",
+    "performance": "Hiệu suất"
+  },
   "footer": {
     "librariesTitle": "Thư viện",
     "contactTitle": "Liên hệ"
@@ -10,6 +35,7 @@
   "loading": "Đang tải...",
   "settings": {
     "title": "Cài đặt",
+    "seoDescription": "Cài đặt giao diện",
     "appearance": "Tùy chỉnh ngoại hình của phần trình diễn hệ thống thiết kế.",
     "theme": "Chủ đề",
     "light": "Ánh sáng",
@@ -21,11 +47,49 @@
     "large": "Lớn",
     "designTheme": "Chủ đề thiết kế"
   },
+  "themePreview": {
+    "appearance": "Ngoại hình",
+    "selectAppearance": "Chọn ngoại hình",
+    "selectDesignTheme": "Chọn chủ đề thiết kế",
+    "title": "Xem trước chủ đề trực tiếp",
+    "buttons": {
+      "title": "Nút bấm",
+      "primary": "Chính",
+      "secondary": "Thứ cấp",
+      "outline": "Dàn ý"
+    },
+    "badges": {
+      "title": "Huy hiệu",
+      "default": "Mặc định",
+      "primary": "Chính",
+      "success": "Thành công",
+      "warning": "Cảnh báo",
+      "error": "Lỗi"
+    },
+    "card": {
+      "title": "Thẻ",
+      "description": "Thẻ, viền và bề mặt tuân theo các token chủ đề đang hoạt động."
+    },
+    "input": {
+      "title": "Đầu vào",
+      "placeholder": "Nhập theo chủ đề"
+    },
+    "colors": {
+      "title": "Màu ngữ nghĩa",
+      "primary": "chính",
+      "secondary": "phụ",
+      "accent": "dấu nhấn",
+      "muted": "tắt âm",
+      "destructive": "phá hoại"
+    }
+  },
   "docs": {
     "title": "Tài liệu",
+    "seoDescription": "Tài liệu cho hệ thống thiết kế Sudobility và các thư viện của nó.",
     "overviewTitle": "Về hệ thống thiết kế",
     "overviewBody": "Hệ thống thiết kế Sudobility cung cấp các token thiết kế, các biến thể kiểu chữ (textVariants) và một hệ thống chủ đề thời gian chạy được xây dựng trên Tailwind CSS với chế độ tối dựa trên lớp CSS. Các thành phần sử dụng các token ngữ nghĩa để toàn bộ ứng dụng duy trì tính nhất quán và tự động chuyển đổi giữa chế độ sáng và tối.",
     "howToTitle": "Cách sử dụng",
-    "librariesTitle": "Thư viện"
+    "librariesTitle": "Thư viện",
+    "viewOnGithub": "Xem trên GitHub →"
   }
 }

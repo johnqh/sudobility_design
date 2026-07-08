@@ -128,5 +128,15 @@
     }
   },
   "backToDesignSystem": "デザインシステムに戻る",
-  "lastUpdated": "最終更新日: {{date}}"
+  "lastUpdated": "最終更新日: {{date}}",
+  "codeTitles": {
+    "essentialVariants": "必須のバッジバリエーション",
+    "statusIcons": "アイコン付きステータスバッジ",
+    "sizes": "バッジのサイズ",
+    "web3Variants": "Web3バッジのバリエーション",
+    "completeSystem": "バッジシステムを完了",
+    "sizeVariants": "サイズバリエーション",
+    "interactivePatterns": "インタラクティブバッジパターン",
+    "accessibleExamples": "アクセシブルバッジの例"
+  }
 }

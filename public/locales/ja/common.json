@@ -3,6 +3,31 @@
     "docs": "ドキュメント",
     "settings": "設定"
   },
+  "breadcrumbs": {
+    "home": "ホーム",
+    "design": "デザインシステム",
+    "colors": "色",
+    "text": "タイプセット",
+    "forms": "フォーム",
+    "buttons": "ボタン",
+    "cards": "カード",
+    "badges": "バッジ",
+    "alerts": "アラート",
+    "inputs": "入力",
+    "loading": "読み込み状態",
+    "modals": "モーダル",
+    "navigation": "ナビゲーション",
+    "dataDisplay": "データ表示",
+    "formsAdvanced": "フォームの高度な機能",
+    "notificationsFeedback": "通知とフィードバック",
+    "layoutSpacing": "レイアウトと余白",
+    "tablesGrids": "テーブルとグリッド",
+    "iconsIllustrations": "アイコンとイラストレーション",
+    "overlaysPortals": "オーバーレイとポータル",
+    "microInteractionsAnimations": "マイクロインタラクションとアニメーション",
+    "accessibility": "アクセシビリティ",
+    "performance": "パフォーマンス"
+  },
   "footer": {
     "librariesTitle": "図書館",
     "contactTitle": "お問い合わせ"
@@ -10,6 +35,7 @@
   "loading": "読み込み中...",
   "settings": {
     "title": "設定",
+    "seoDescription": "外観設定",
     "appearance": "デザインシステムのショーケースの外観をカスタマイズします。",
     "theme": "テーマ",
     "light": "光",
@@ -21,11 +47,49 @@
     "large": "大",
     "designTheme": "デザインテーマ"
   },
+  "themePreview": {
+    "appearance": "外観",
+    "selectAppearance": "外観を選択",
+    "selectDesignTheme": "デザインテーマを選択",
+    "title": "ライブテーマプレビュー",
+    "buttons": {
+      "title": "ボタン",
+      "primary": "プライマリー",
+      "secondary": "二次",
+      "outline": "概要"
+    },
+    "badges": {
+      "title": "バッジ",
+      "default": "デフォルト",
+      "primary": "プライマリー",
+      "success": "成功",
+      "warning": "警告",
+      "error": "エラー"
+    },
+    "card": {
+      "title": "カード",
+      "description": "カード、ボーダー、表面は、アクティブなテーマトークンに従います。"
+    },
+    "input": {
+      "title": "入力",
+      "placeholder": "テーマ入力"
+    },
+    "colors": {
+      "title": "意味的色",
+      "primary": "プライマリ",
+      "secondary": "二次的",
+      "accent": "アクセント",
+      "muted": "ミュート",
+      "destructive": "破壊的な"
+    }
+  },
   "docs": {
     "title": "ドキュメント",
+    "seoDescription": "Sudobilityデザインシステムおよびそのライブラリのドキュメント。",
     "overviewTitle": "デザインシステムについて",
     "overviewBody": "Sudobilityデザインシステムは、デザイントークン、タイプグラフィーのバリエーション（textVariants）、およびTailwind CSSに基づき、クラスベースのダークモードを備えたランタイムテーマシステムを提供します。コンポーネントはセマンティックトークンを消費するため、アプリ全体が一貫性を持ち、自動的にライト/ダークモードを切り替えます。",
     "howToTitle": "使い方",
-    "librariesTitle": "図書館"
+    "librariesTitle": "図書館",
+    "viewOnGithub": "GitHubで表示 →"
   }
 }

@@ -3,6 +3,31 @@
     "docs": "Documents",
     "settings": "Paramètres"
   },
+  "breadcrumbs": {
+    "home": "Accueil",
+    "design": "Système de design",
+    "colors": "Couleurs",
+    "text": "Typographie",
+    "forms": "Formulaires",
+    "buttons": "Boutons",
+    "cards": "Cartes",
+    "badges": "Badges",
+    "alerts": "Alertes",
+    "inputs": "Entrées",
+    "loading": "États de chargement",
+    "modals": "Modaux",
+    "navigation": "Navigation",
+    "dataDisplay": "Affichage des données",
+    "formsAdvanced": "Formulaires avancés",
+    "notificationsFeedback": "Notifications et commentaires",
+    "layoutSpacing": "Mise en page et espacement",
+    "tablesGrids": "Tableaux et grilles",
+    "iconsIllustrations": "Icônes et illustrations",
+    "overlaysPortals": "Superpositions et portails",
+    "microInteractionsAnimations": "Micro-interactions et animations",
+    "accessibility": "Accessibilité",
+    "performance": "Performance"
+  },
   "footer": {
     "librariesTitle": "Bibliothèques",
     "contactTitle": "Contact"
@@ -10,6 +35,7 @@
   "loading": "Chargement...",
   "settings": {
     "title": "Paramètres",
+    "seoDescription": "Paramètres d'apparence",
     "appearance": "Personnalisez l'apparence de la présentation du système de design.",
     "theme": "Thème",
     "light": "Lumière",
@@ -21,11 +47,49 @@
     "large": "Grand",
     "designTheme": "Thème de design"
   },
+  "themePreview": {
+    "appearance": "Apparence",
+    "selectAppearance": "Sélectionner l'apparence",
+    "selectDesignTheme": "Sélectionner un thème de conception",
+    "title": "Aperçu du thème en direct",
+    "buttons": {
+      "title": "Boutons",
+      "primary": "Principal",
+      "secondary": "Secondaire",
+      "outline": "Esquisse"
+    },
+    "badges": {
+      "title": "Badges",
+      "default": "Par défaut",
+      "primary": "Principal",
+      "success": "Succès",
+      "warning": "Avertissement",
+      "error": "Erreur"
+    },
+    "card": {
+      "title": "Carte",
+      "description": "Les cartes, les bordures et les surfaces suivent les jetons de thème actifs."
+    },
+    "input": {
+      "title": "Entrée",
+      "placeholder": "Saisie thématique"
+    },
+    "colors": {
+      "title": "Couleurs sémantiques",
+      "primary": "primaire",
+      "secondary": "secondaire",
+      "accent": "accent",
+      "muted": "muet",
+      "destructive": "destructeur"
+    }
+  },
   "docs": {
     "title": "Documents",
+    "seoDescription": "Documentation du système de conception Sudobility et de ses bibliothèques.",
     "overviewTitle": "À propos du système de conception",
     "overviewBody": "Le système de conception Sudobility fournit des jetons de conception, des variantes de typographie (textVariants) et un système de thème en temps réel basé sur Tailwind CSS avec un mode sombre basé sur les classes. Les composants utilisent des jetons sémantiques afin que toute l'application reste cohérente et passe automatiquement du clair au foncé.",
     "howToTitle": "Comment utiliser",
-    "librariesTitle": "Bibliothèques"
+    "librariesTitle": "Bibliothèques",
+    "viewOnGithub": "Voir sur GitHub →"
   }
 }

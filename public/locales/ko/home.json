@@ -80,206 +80,206 @@
       "title": "카드",
       "description": "에레베이션, 콘텐츠 변형 및 Web3 통합 패턴을 갖춘 유연한 카드 컴포넌트 시스템",
       "features": [
-        "Card elevation and shadow variants",
-        "Content and media card layouts",
-        "Interactive card states and actions",
-        "Web3-specific card patterns (wallet, NFT)",
-        "Responsive grid layouts"
+        "카드 높이 및 그림자 변형",
+        "콘텐츠 및 미디어 카드 레이아웃",
+        "인터랙티브 카드 상태 및 작업",
+        "웹3 전용 카드 패턴 (지갑, NFT)",
+        "반응형 그리드 레이아웃"
       ]
     },
     "badges": {
       "title": "배지",
       "description": "라벨링, 분류 및 상태 정보 전달을 위한 소형 다기능 구성 요소",
       "features": [
-        "Semantic color variants (success, warning, error)",
-        "Size options (small, default, large)",
-        "Web3-specific blockchain badges",
-        "Interactive states and notifications",
-        "Accessibility and screen reader support"
+        "세미틱 색상 변형 (성공, 경고, 오류)",
+        "크기 옵션 (작음, 기본, 큼)",
+        "웹3 전용 블록체인 배지",
+        "인터랙티브 상태 및 알림",
+        "접근성 및 화면 판독기 지원"
       ]
     },
     "alerts": {
       "title": "알림",
       "description": "중요한 정보, 경고 및 확인을 위한 맥락 기반 피드백 메시지",
       "features": [
-        "Standard and compact alert layouts",
-        "Dismissible alerts with close actions",
-        "Web3 transaction and wallet status alerts",
-        "Action buttons and interactive elements",
-        "ARIA accessibility and screen reader support"
+        "표준 및 컴팩트 알림 레이아웃",
+        "닫기 작업이 있는 제거 가능한 알림",
+        "웹3 거래 및 지갑 상태 알림",
+        "액션 버튼 및 상호작용 요소",
+        "ARIA 접근성 및 스크린 리더 지원"
       ]
     },
     "inputs": {
       "title": "입력",
       "description": "일관된 스타일링, 검증 상태 및 접근성과 함께 폼 입력 컴포넌트",
       "features": [
-        "Text, email, password, and search inputs",
-        "Size variations (small, default, large)",
-        "Validation states and error handling",
-        "Web3 wallet address and token amount inputs",
-        "Icon placement and accessibility support"
+        "텍스트, 이메일, 비밀번호 및 검색 입력",
+        "크기 변형 (작은, 기본, 큰)",
+        "검증 상태 및 오류 처리",
+        "웹3 지갑 주소 및 토큰 수량 입력",
+        "아이콘 위치 및 접근성 지원"
       ]
     },
     "loading": {
       "title": "로딩 상태",
       "description": "스피너, 프로그레스 인디케이터, Web3 거래 상태를 포함한 포괄적인 로딩 패턴",
       "features": [
-        "Spinners and loading buttons",
-        "Progress bars and skeleton loading",
-        "Web3 transaction and wallet states",
-        "Contextual loading messages",
-        "Accessibility and screen reader support"
+        "스피너 및 로딩 버튼",
+        "진행률 바 및 스켈레톤 로딩",
+        "Web3 거래 및 지갑 상태",
+        "컨텍스트 기반 로딩 메시지",
+        "접근성 및 화면 판독기 지원"
       ]
     },
     "modals": {
       "title": "모달",
       "description": "웹3 통합 패턴과 접근성 기능을 갖춘 모달 및 대화형 컴포넌트",
       "features": [
-        "Modal sizes and layout variants",
-        "Web3 wallet connection and transaction modals",
-        "Interactive confirmation dialogs",
-        "Form modals and settings panels",
-        "ARIA accessibility and focus management"
+        "모달 크기 및 레이아웃 변형",
+        "웹3 지갑 연결 및 거래 모달",
+        "인터랙티브 확인 대화상자",
+        "폼 모달 및 설정 패널",
+        "ARIA 접근성 및 포커스 관리"
       ]
     },
     "navigation": {
       "title": "내비게이션",
       "description": "브레드크럼, 탭, 페이지네이션 및 메뉴 시스템을 포함한 탐색 구성 요소",
       "features": [
-        "Breadcrumb navigation with SEO optimization",
-        "Tab navigation with multiple variants",
-        "Pagination for data sets",
-        "Sidebar and menu navigation patterns",
-        "Web3-specific navigation (multi-chain, wallet status)"
+        "SEO 최적화를 고려한 브레드크럼 탐색",
+        "다양한 변형을 가진 탭 탐색",
+        "데이터 세트에 대한 페이지네이션",
+        "사이드바 및 메뉴 탐색 패턴",
+        "웹3 전용 탐색 (다중 체인, 지갑 상태)"
       ]
     },
     "dataDisplay": {
       "title": "데이터 표시",
       "description": "테이블, 목록, 그리드 및 정보 레이아웃을 포함한 데이터 표시용 컴포넌트",
       "features": [
-        "Data tables with sorting and filtering",
-        "List components for emails and transactions",
-        "Grid layouts for NFTs and blockchain data",
-        "Key-value displays and metadata",
-        "Timeline and activity feeds"
+        "정렬 및 필터링 기능이 있는 데이터 테이블",
+        "이메일 및 거래용 구성 요소 목록",
+        "NFT 및 블록체인 데이터를 위한 격자 레이아웃",
+        "키-값 표시 및 메타데이터",
+        "타임라인 및 활동 피드"
       ]
     },
     "formsAdvanced": {
       "title": "양식 고급 기능",
       "description": "다단계 워즈, 파일 업로드 및 Web3 입력을 포함한 고급 폼 패턴",
       "features": [
-        "Multi-step form wizards with progress tracking",
-        "File upload with drag & drop functionality",
-        "Web3-specific inputs (wallet addresses, token amounts)",
-        "Advanced validation with real-time feedback",
-        "Security patterns for sensitive data"
+        "진행 추적 기능이 있는 다단계 폼 워즈",
+        "드래그 앤 드롭 기능을 갖춘 파일 업로드",
+        "웹3 전용 입력값 (지갑 주소, 토큰 수량)",
+        "실시간 피드백이 있는 고급 검증",
+        "민감 데이터를 위한 보안 패턴"
       ]
     },
     "notificationsFeedback": {
       "title": "알림 및 피드백",
       "description": "토스트, 진행률 표시기 및 상태 표시를 갖춘 포괄적인 알림 시스템",
       "features": [
-        "Toast notifications with auto-dismiss and actions",
-        "Progress indicators for long-running operations",
-        "Web3 transaction status with confirmation tracking",
-        "System status indicators and connection states",
-        "Contextual feedback and smart suggestions"
+        "자동 종료 및 작업이 있는 토스트 알림",
+        "오랜 시간이 걸리는 작업을 위한 진행률 표시기",
+        "Web3 거래 상태 및 확인 추적",
+        "시스템 상태 표시기 및 연결 상태",
+        "맥락 기반 피드백 및 스마트 제안"
       ]
     },
     "layoutSpacing": {
       "title": "레이아웃 및 간격",
       "description": "반응형 그리드, 컨테이너 및 여백 유틸리티를 갖춘 포괄적인 레이아웃 시스템",
       "features": [
-        "Responsive grid systems and auto-fit patterns",
-        "Container variants for different content widths",
-        "Flexible Flexbox patterns for common layouts",
-        "Comprehensive spacing utility system",
-        "Web3-specific layout patterns (wallets, NFTs, DeFi)",
-        "Dashboard and page layout templates"
+        "반응형 그리드 시스템과 자동 맞춤 패턴",
+        "다양한 콘텐츠 폭을 위한 컨테이너 변형",
+        "일반적인 레이아웃을 위한 유연한 Flexbox 패턴",
+        "포괄적인 간격 유틸리티 시스템",
+        "웹3 전용 레이아웃 패턴 (지갑, NFT, DeFi)",
+        "대시보드 및 페이지 레이아웃 템플릿"
       ]
     },
     "tablesGrids": {
       "title": "테이블 및 데이터 그리드",
       "description": "정렬, 필터링, 페이지네이션 및 데이터 그리드 기능을 갖춘 포괄적인 테이블 시스템",
       "features": [
-        "Sortable columns with visual indicators",
-        "Filterable data with search functionality",
-        "Pagination for large datasets",
-        "Row selection and bulk actions",
-        "Responsive table layouts",
-        "Data grid with resizable columns",
-        "Loading and empty states",
-        "Web3 transaction and address tables"
+        "시각적 표시자가 있는 정렬 가능한 열",
+        "검색 기능이 있는 필터링 가능한 데이터",
+        "대규모 데이터셋을 위한 페이지네이션",
+        "행 선택 및 대량 작업",
+        "반응형 테이블 레이아웃",
+        "크기 조정 가능한 열을 가진 데이터 그리드",
+        "로딩 및 빈 상태",
+        "Web3 거래 및 주소 테이블"
       ]
     },
     "iconsIllustrations": {
       "title": "아이콘 및 일러스트레이션",
       "description": "일관된 크기, 색상 및 맥락 기반 사용 패턴을 갖춘 포괄적인 아이콘 시스템",
       "features": [
-        "Consistent icon sizing system (xs to xxxl)",
-        "Semantic color variants (success, warning, error)",
-        "Context-specific icon patterns (buttons, _inputs, navigation)",
-        "Interactive states and hover effects",
-        "Web3-specific blockchain icons",
-        "Decorative and hero icon variants",
-        "Status indicators and loading states",
-        "Accessibility and screen reader support"
+        "일관된 아이콘 크기 시스템 (xs부터 xxxl까지)",
+        "세미틱 색상 변형 (성공, 경고, 오류)",
+        "컨텍스트에 따라 달라지는 아이콘 패턴 (버튼, _입력 필드, 탐색)",
+        "인터랙티브 상태 및 호버 효과",
+        "웹3 전용 블록체인 아이콘",
+        "장식적 및 영웅 아이콘 변형",
+        "상태 표시기 및 로딩 상태",
+        "접근성 및 화면 판독기 지원"
       ]
     },
     "overlaysPortals": {
       "title": "오버레이 및 포탈",
       "description": "모달, 드롭다운, 툴팁, 시트, 로딩 상태를 포함한 포괄적인 오버레이 시스템",
       "features": [
-        "Modal dialogs with animation states and focus management",
-        "Dropdown menus with positioning and keyboard navigation",
-        "Tooltips with multiple positioning options",
-        "Bottom sheets and drawer overlays for mobile",
-        "Context menus and right-click interactions",
-        "Loading overlays with backdrop blur effects",
-        "Proper z-index layering and portal management",
-        "Accessibility with ARIA labels and focus trapping"
+        "애니메이션 상태와 포커스 관리를 갖춘 모달 대화상자",
+        "포지셔닝과 키보드 탐색 기능이 있는 드롭다운 메뉴",
+        "여러 위치 옵션을 갖춘 툴팁",
+        "모바일용 바닥 시트와 서랍 오버레이",
+        "컨텍스트 메뉴 및 오른쪽 클릭 상호작용",
+        "배경 블러 효과를 사용한 오버레이 로딩 중",
+        "적절한 z-index 계층 구조 및 포탈 관리",
+        "ARIA 레이블과 포커스 트랩을 통한 접근성"
       ]
     },
     "microInteractions": {
       "title": "마이크로 인터랙션 및 애니메이션",
       "description": "호버 효과, 전환 효과, Web3 전용 상호작용을 포함한 포괄적인 애니메이션 시스템",
       "features": [
-        "Hover effects with lift, glow, and scale animations",
-        "Loading animations and spinner variants",
-        "Smooth transitions for state changes",
-        "Gesture feedback and interaction responses",
-        "Web3-specific animations (wallet connect, transaction states)",
-        "Scroll-triggered animations and reveals",
-        "Reduced motion accessibility support",
-        "Performance-optimized CSS and JavaScript animations"
+        "리프트, 글로우, 스케일 애니메이션을 포함한 호버 효과",
+        "로딩 애니메이션 및 스피너 변형",
+        "상태 변경을 위한 부드러운 전환",
+        "제스처 피드백 및 상호작용 응답",
+        "웹3 전용 애니메이션 (지갑 연결, 거래 상태)",
+        "스크롤 트리거 애니메이션과 리베일",
+        "감소된 움직임 접근성 지원",
+        "성능 최적화된 CSS 및 JavaScript 애니메이션"
       ]
     },
     "accessibility": {
       "title": "접근성 및 A11Y",
       "description": "WCAG 준수를 위한 포괄적인 접근성 패턴 및 포괄적 디자인 유틸리티",
       "features": [
-        "Screen reader support with ARIA labels and skip links",
-        "Focus management and keyboard navigation patterns",
-        "High contrast color combinations for visibility",
-        "Motion preferences and reduced motion support",
-        "Semantic HTML roles and interactive patterns",
-        "Form accessibility with validation and error handling",
-        "Web3-specific accessibility for wallet connections",
-        "WCAG 2.1 AA compliance utilities and best practices"
+        "ARIA 레이블과 건너뛰기 링크를 사용한 화면 리더 지원",
+        "포커스 관리 및 키보드 탐색 패턴",
+        "가시성을 높이기 위한 고대비 색상 조합",
+        "모션 설정 및 모션 감소 지원",
+        "세미틱 HTML 역할과 인터랙티브 패턴",
+        "검증 및 오류 처리를 포함한 폼 접근성",
+        "지갑 연결을 위한 Web3 전용 접근성",
+        "WCAG 2.1 AA 준수 도구 및 최선의 실천 방법"
       ]
     },
     "performance": {
       "title": "성능 및 최적화",
       "description": "빠르고 효율적인 애플리케이션을 위한 포괄적인 성능 패턴 및 최적화 유틸리티",
       "features": [
-        "Bundle optimization with code splitting and lazy loading",
-        "Rendering optimization with GPU acceleration and virtual scrolling",
-        "Network optimization with caching and adaptive loading",
-        "Core Web Vitals monitoring (LCP, FID/INP, CLS)",
-        "Web3-specific optimizations (transaction batching, gas optimization)",
-        "Resource optimization with image compression and CDN patterns",
-        "Performance monitoring with real-time metrics",
-        "Memory optimization and efficient state management"
+        "코드 분할과 지연 로딩을 통한 번들 최적화",
+        "GPU 가속 및 가상 스크롤을 이용한 렌더링 최적화",
+        "캐싱과 적응형 로딩을 이용한 네트워크 최적화",
+        "코어 웹 비탈 모니터링 (LCP, FID/INP, CLS)",
+        "웹3 전용 최적화 (트랜잭션 배치, 수수료 최적화)",
+        "이미지 압축과 CDN 패턴을 통한 자원 최적화",
+        "실시간 메트릭을 활용한 성능 모니터링",
+        "메모리 최적화 및 효율적인 상태 관리"
       ]
     }
   }

@@ -299,9 +299,15 @@ const FormsPage: React.FC<AppProps> = ({ emailDomain, appName: _appName }) => {
                           />
                         </SelectTrigger>
                         <SelectContent>
-                          <SelectItem value="ethereum">Ethereum</SelectItem>
-                          <SelectItem value="polygon">Polygon</SelectItem>
-                          <SelectItem value="arbitrum">Arbitrum</SelectItem>
+                          <SelectItem value="ethereum">
+                            {t("options.ethereum")}
+                          </SelectItem>
+                          <SelectItem value="polygon">
+                            {t("options.polygon")}
+                          </SelectItem>
+                          <SelectItem value="arbitrum">
+                            {t("options.arbitrum")}
+                          </SelectItem>
                         </SelectContent>
                       </Select>
                     </div>
@@ -467,7 +473,7 @@ const FormsPage: React.FC<AppProps> = ({ emailDomain, appName: _appName }) => {
 
 // All input types share the themed input variant
 <input type="text" className={variants.input.default()} placeholder="Text input" />
-<input type="email" className={variants.input.default()} placeholder="email@example.com" />
+<input type="email" className={variants.input.default()} placeholder={t("placeholders.email")} />
 <input type="password" className={variants.input.default()} placeholder="Password" />
 <input type="number" className={variants.input.default()} placeholder="123" />
 <input type="url" className={variants.input.default()} placeholder="https://example.com" />
@@ -488,7 +494,7 @@ const FormsPage: React.FC<AppProps> = ({ emailDomain, appName: _appName }) => {
                     <input
                       type="email"
                       className={variants.input.default()}
-                      placeholder="email@example.com"
+                      placeholder={t("placeholders.email")}
                     />
                     <input
                       type="password"
@@ -791,7 +797,7 @@ const [showPassword, setShowPassword] = useState(false);
   {/* Email Input */}
   <div className="space-y-1">
     <label className={\`\${textVariants.label.default()} block\`}>Email Address</label>
-    <input type="email" className={variants.input.default()} placeholder="your@email.com" />
+    <input type="email" className={variants.input.default()} placeholder={t("placeholders.emailContact")} />
   </div>
 
   {/* Select */}
@@ -850,7 +856,7 @@ const [showPassword, setShowPassword] = useState(false);
                     <input
                       type="email"
                       className={variants.input.default()}
-                      placeholder="your@email.com"
+                      placeholder={t("placeholders.emailContact")}
                     />
                   </div>
 
@@ -865,9 +871,15 @@ const [showPassword, setShowPassword] = useState(false);
                         />
                       </SelectTrigger>
                       <SelectContent>
-                        <SelectItem value="ethereum">Ethereum</SelectItem>
-                        <SelectItem value="polygon">Polygon</SelectItem>
-                        <SelectItem value="arbitrum">Arbitrum</SelectItem>
+                        <SelectItem value="ethereum">
+                          {t("options.ethereum")}
+                        </SelectItem>
+                        <SelectItem value="polygon">
+                          {t("options.polygon")}
+                        </SelectItem>
+                        <SelectItem value="arbitrum">
+                          {t("options.arbitrum")}
+                        </SelectItem>
                       </SelectContent>
                     </Select>
                   </div>

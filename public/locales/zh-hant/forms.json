@@ -113,5 +113,14 @@
       "inputTypes": "使用適當的輸入類型（如電子郵件、密碼等）以提升移動設備體驗",
       "contrast": "保持足夠的顏色對比度（最小對比度比為4.5:1）"
     }
+  },
+  "options": {
+    "ethereum": "以太坊",
+    "polygon": "多邊形",
+    "arbitrum": "Arbitrum"
+  },
+  "placeholders": {
+    "email": "email@example.com",
+    "emailContact": "你的@email.com"
   }
 }

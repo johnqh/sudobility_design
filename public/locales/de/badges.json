@@ -128,5 +128,15 @@
     }
   },
   "backToDesignSystem": "Zurück zum Design-System",
-  "lastUpdated": "Zuletzt aktualisiert: {{date}}"
+  "lastUpdated": "Zuletzt aktualisiert: {{date}}",
+  "codeTitles": {
+    "essentialVariants": "Wichtige Abzeichen-Varianten",
+    "statusIcons": "Status-Abzeichen mit Symbolen",
+    "sizes": "Abzeichen-Größen",
+    "web3Variants": "Web3-Auszeichnungs-Varianten",
+    "completeSystem": "Badge-System abschließen",
+    "sizeVariants": "Größenvarianten",
+    "interactivePatterns": "Interaktive Abzeichenmuster",
+    "accessibleExamples": "Beispiel für zugängliches Abzeichen"
+  }
 }

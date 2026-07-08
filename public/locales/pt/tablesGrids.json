@@ -44,6 +44,35 @@
     "searchPlaceholder": "Procurar usuários...",
     "filters": "Filtros"
   },
+  "sampleData": {
+    "roles": {
+      "admin": "Administrador",
+      "user": "Utilizador",
+      "moderator": "Moderador"
+    },
+    "status": {
+      "active": "Ativo",
+      "inactive": "Inativo",
+      "pending": "Pendente"
+    },
+    "rows": {
+      "1": {
+        "name": "Alice Johnson"
+      },
+      "2": {
+        "name": "Bob Smith"
+      },
+      "3": {
+        "name": "Charlie Brown"
+      },
+      "4": {
+        "name": "Diana Prince"
+      },
+      "5": {
+        "name": "Eve Wilson"
+      }
+    }
+  },
   "pagination": {
     "title": "Tabela com paginação",
     "showing": "Mostrando",

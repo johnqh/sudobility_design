@@ -132,5 +132,12 @@
   "nav": {
     "back": "Quay lại Hệ thống Thiết kế",
     "lastUpdated": "Cập nhật lần cuối: {{date}}"
+  },
+  "placeholders": {
+    "email": "user@example.com",
+    "invalidEmail": "email không hợp lệ",
+    "emailWithIcon": "email@example.com",
+    "phone": "+1 (555) 123-4567",
+    "website": "https://example.com"
   }
 }

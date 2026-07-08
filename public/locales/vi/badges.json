@@ -128,5 +128,15 @@
     }
   },
   "backToDesignSystem": "Quay lại Hệ thống thiết kế",
-  "lastUpdated": "Cập nhật lần cuối: {{date}}"
+  "lastUpdated": "Cập nhật lần cuối: {{date}}",
+  "codeTitles": {
+    "essentialVariants": "Phiên bản dán nhãn thiết yếu",
+    "statusIcons": "Thẻ trạng thái với biểu tượng",
+    "sizes": "Kích thước huy hiệu",
+    "web3Variants": "Phiên bản huy hiệu Web3",
+    "completeSystem": "Hệ thống huy hiệu hoàn thành",
+    "sizeVariants": "Phiên bản kích thước",
+    "interactivePatterns": "Mẫu dấu ghi tương tác",
+    "accessibleExamples": "Ví dụ về huy hiệu truy cập"
+  }
 }

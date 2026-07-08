@@ -113,5 +113,14 @@
       "inputTypes": "Sử dụng các loại đầu vào phù hợp (email, mật khẩu, v.v.) để cải thiện trải nghiệm di động",
       "contrast": "Duy trì độ tương phản màu sắc đủ (tỷ lệ tối thiểu 4,5:1)"
     }
+  },
+  "options": {
+    "ethereum": "Ethereum",
+    "polygon": "Đa giác",
+    "arbitrum": "Arbitrum"
+  },
+  "placeholders": {
+    "email": "email@example.com",
+    "emailContact": "email của bạn@email.com"
   }
 }

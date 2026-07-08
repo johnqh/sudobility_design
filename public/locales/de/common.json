@@ -3,6 +3,31 @@
     "docs": "Dokumente",
     "settings": "Einstellungen"
   },
+  "breadcrumbs": {
+    "home": "Startseite",
+    "design": "Design-System",
+    "colors": "Farben",
+    "text": "Typografie",
+    "forms": "Formulare",
+    "buttons": "Knöpfe",
+    "cards": "Karten",
+    "badges": "Abzeichen",
+    "alerts": "Benachrichtigungen",
+    "inputs": "Eingaben",
+    "loading": "Ladezustände",
+    "modals": "Modals",
+    "navigation": "Navigation",
+    "dataDisplay": "Datenanzeige",
+    "formsAdvanced": "Formulare Erweitert",
+    "notificationsFeedback": "Benachrichtigungen & Feedback",
+    "layoutSpacing": "Layout & Abstand",
+    "tablesGrids": "Tabellen & Gitter",
+    "iconsIllustrations": "Symbole & Abbildungen",
+    "overlaysPortals": "Overlay & Portale",
+    "microInteractionsAnimations": "Mikro-Interaktionen und Animationen",
+    "accessibility": "Barrierefreiheit",
+    "performance": "Leistung"
+  },
   "footer": {
     "librariesTitle": "Bibliotheken",
     "contactTitle": "Kontakt"
@@ -10,6 +35,7 @@
   "loading": "Lade...",
   "settings": {
     "title": "Einstellungen",
+    "seoDescription": "Erscheinungseinstellungen",
     "appearance": "Passen Sie das Erscheinungsbild der Design-System-Showcase-Ansicht an.",
     "theme": "Thema",
     "light": "Licht",
@@ -21,11 +47,49 @@
     "large": "Groß",
     "designTheme": "Design-Thema"
   },
+  "themePreview": {
+    "appearance": "Aussehen",
+    "selectAppearance": "Aussehen auswählen",
+    "selectDesignTheme": "Design-Thema auswählen",
+    "title": "Live-Thema-Vorschau",
+    "buttons": {
+      "title": "Knöpfe",
+      "primary": "Primär",
+      "secondary": "Sekundär",
+      "outline": "Umriss"
+    },
+    "badges": {
+      "title": "Abzeichen",
+      "default": "Standard",
+      "primary": "Primär",
+      "success": "Erfolg",
+      "warning": "Warnung",
+      "error": "Fehler"
+    },
+    "card": {
+      "title": "Karte",
+      "description": "Karten, Ränder und Oberflächen folgen den aktiven Themen-Tokens."
+    },
+    "input": {
+      "title": "Eingabe",
+      "placeholder": "Thema-Eingabe"
+    },
+    "colors": {
+      "title": "Semantische Farben",
+      "primary": "primär",
+      "secondary": "sekundär",
+      "accent": "Akzent",
+      "muted": "stumm",
+      "destructive": "zerstörerisch"
+    }
+  },
   "docs": {
     "title": "Dokumente",
+    "seoDescription": "Dokumentation für das Sudobility-Designsystem und seine Bibliotheken.",
     "overviewTitle": "Über das Design-System",
     "overviewBody": "Das Sudobility-Design-System bietet Design-Tokens, Typografie-Varianten (textVariants) und ein Laufzeit-Themen-System, das auf Tailwind CSS basiert und Klassen-basierten Dunkelmodus verwendet. Komponenten nutzen semantische Tokens, sodass die gesamte App konsistent bleibt und automatisch zwischen Hell und Dunkel wechselt.",
     "howToTitle": "Wie man verwendet",
-    "librariesTitle": "Bibliotheken"
+    "librariesTitle": "Bibliotheken",
+    "viewOnGithub": "Ansicht auf GitHub →"
   }
 }
