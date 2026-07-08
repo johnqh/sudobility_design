@@ -1,0 +1,188 @@
+{
+  "seo": {
+    "title": "Notifications et retours - Système de conception - Interne - {{emailDomain}}",
+    "description": "Composants de notification et de retour, y compris les toast, les indicateurs de progression et l'état du système"
+  },
+  "toasts": {
+    "copied": {
+      "title": "Copié !",
+      "message": "Code copié dans le presse-papiers"
+    },
+    "complete": {
+      "title": "Terminé !",
+      "message": "Opération terminée avec succès"
+    },
+    "success": {
+      "title": "Transaction confirmée !",
+      "message": "Votre transfert ETH a réussi"
+    },
+    "error": {
+      "title": "Transaction échouée",
+      "message": "Gas insuffisant pour la transaction"
+    },
+    "warning": {
+      "title": "Frais de gaz élevés",
+      "message": "Congestion réseau détectée",
+      "actionLabel": "Réglage du gaz"
+    },
+    "gasAdjusted": {
+      "title": "Ajusté au gaz",
+      "message": "Prix du gaz mis à jour à 25 gwei"
+    },
+    "info": {
+      "title": "Nouvelle fonctionnalité disponible",
+      "message": "Les échanges multi-chaînes sont désormais pris en charge"
+    }
+  },
+  "header": {
+    "badge": "Notifications et commentaires",
+    "title": "Système de notifications et de retours",
+    "description": "Système complet de notification et de retour d'information incluant des notifications contextuelles, des indicateurs de progression, des mises à jour de statut des transactions et des affichages d'état du système pour les applications Web3."
+  },
+  "quickStart": {
+    "title": "Mise en route rapide",
+    "copyTooltip": "Copier dans le presse-papiers",
+    "examples": {
+      "toast": {
+        "title": "Notifications toast",
+        "description": "Notifications temporaires avec fermeture automatique et actions"
+      },
+      "progress": {
+        "title": "Notifications de progression",
+        "description": "Afficher la progression des opérations longues"
+      },
+      "transaction": {
+        "title": "État de la transaction",
+        "description": "Progression de la transaction Web3 avec confirmations"
+      },
+      "systemStatus": {
+        "title": "Indicateur d'état du système",
+        "description": "État du système et connexion en temps réel"
+      }
+    }
+  },
+  "toastSection": {
+    "title": "Notifications toast",
+    "demoTitle": "Démonstrations interactives de Toast",
+    "demoDescription": "Cliquez sur les boutons pour déclencher différents types de notifications toast",
+    "buttons": {
+      "success": "Succès",
+      "error": "Erreur",
+      "warning": "Avertissement",
+      "info": "Informations"
+    },
+    "featuresTitle": "Types de toast et fonctions",
+    "features": {
+      "successLabel": "Succès :",
+      "successText": "Confirmation des transactions, actions terminées",
+      "errorLabel": "Erreur :",
+      "errorText": "Transactions échouées, erreurs de réseau",
+      "warningLabel": "Attention:",
+      "warningText": "Frais de gaz élevés, avertissements de sécurité (avec actions)",
+      "infoLabel": "Informations :",
+      "infoText": "Nouvelles fonctionnalités, mises à jour du système (persistantes)",
+      "autoDismiss": "Fermeture automatique après 5 secondes (sauf si persistante)",
+      "actionButtons": "Boutons d'action facultatifs pour les réponses interactives"
+    }
+  },
+  "progressSection": {
+    "title": "Indicateurs de progression",
+    "linear": {
+      "title": "Progression linéaire",
+      "description": "Barres de progression pour les téléchargements de fichiers et les opérations",
+      "emailSync": "Progrès de synchronisation des e-mails",
+      "fileUpload": "Téléchargement de fichier",
+      "uploading": "Téléchargement de document.pdf (2,3 Mo)",
+      "simulate": "Simuler l'avancement"
+    },
+    "spinners": {
+      "title": "Chargeurs de rotation",
+      "description": "Divers états de chargement et animations de chargement",
+      "loadingTransactions": "Chargement des transactions...",
+      "connectingWallet": "Connexion au portefeuille...",
+      "syncingBlockchain": "Synchronisation des données de la chaîne de blocs..."
+    }
+  },
+  "transactionSection": {
+    "title": "Statut de transaction Web3",
+    "trackerTitle": "Suivi des transactions",
+    "trackerDescription": "Statut de transaction en temps réel avec avancement de confirmation",
+    "confirmations": "confirmations",
+    "confirmationsLabel": "Confirmations",
+    "statuses": {
+      "pending": "En attente",
+      "confirming": "Confirmer",
+      "confirmed": "Confirmé",
+      "failed": "Échec"
+    },
+    "types": {
+      "sendEth": "Envoyer ETH",
+      "swapTokens": "Échanger des jetons",
+      "approveToken": "Approuver le jeton"
+    },
+    "statesTitle": "États de transaction",
+    "states": {
+      "pendingLabel": "En attente :",
+      "pendingText": "Transaction soumise au mempool",
+      "confirmingLabel": "Confirmer :",
+      "confirmingText": "Être inclus dans les blocs (affiche la progression)",
+      "confirmedLabel": "Confirmé :",
+      "confirmedText": "Les confirmations requises ont été atteintes",
+      "failedLabel": "Échec :",
+      "failedText": "Transaction annulée ou rejetée"
+    }
+  },
+  "systemStatusSection": {
+    "title": "État du système et indicateurs",
+    "connection": {
+      "title": "État de connexion",
+      "description": "Connexion en temps réel et état du système",
+      "systemStatus": "État du système",
+      "online": "Tous les systèmes fonctionnent",
+      "degraded": "Certains services ne sont pas disponibles",
+      "offline": "Maintenance du système",
+      "statusLabels": {
+        "online": "En ligne",
+        "degraded": "Détérioré",
+        "offline": "Hors ligne"
+      },
+      "internetConnection": "Connexion Internet",
+      "connected": "Connecté",
+      "walletConnection": "Connexion du portefeuille",
+      "metaMask": "MetaMask",
+      "ethereumNetwork": "Réseau Ethereum",
+      "mainnet": "Mainnet",
+      "securityStatus": "État de sécurité",
+      "warning": "Avertissement"
+    },
+    "badges": {
+      "title": "Badges de notification",
+      "description": "Compteurs d'indicateurs et badges d'état",
+      "countBadges": "Compter les médailles",
+      "statusIndicators": "Indicateurs d'état",
+      "online": "En ligne",
+      "away": "Partir",
+      "offline": "Hors ligne"
+    }
+  },
+  "contextualFeedback": {
+    "title": "Retour contextuel",
+    "smartTitle": "Schablonnes de retour d'information intelligents",
+    "smartDescription": "retour d'information consciente du contexte qui s'adapte aux actions de l'utilisateur et à l'état du système",
+    "actionFeedback": "Retour sur l'action",
+    "emailSent": "E-mail envoyé avec succès",
+    "autoSave": "Sauvegarde automatique activée",
+    "draftSaved": "Brouillon enregistré localement",
+    "smartSuggestions": "Suggestions intelligentes",
+    "enable2fa": {
+      "title": "Activez la 2FA pour une meilleure sécurité",
+      "description": "Recommandé pour la protection du portefeuille",
+      "action": "Activer"
+    },
+    "backupSeed": {
+      "title": "Sauvegardez votre phrase de récupération",
+      "description": "Sauvegardez la récupération de votre portefeuille",
+      "action": "Sauvegarde"
+    }
+  }
+}

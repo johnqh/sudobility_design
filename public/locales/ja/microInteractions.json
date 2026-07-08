@@ -1,0 +1,82 @@
+{
+  "seo": {
+    "title": "マイクロインタラクションとアニメーション - デザインシステム - 内部 - {{emailDomain}}",
+    "description": "ホバー効果、トランジション、Web3固有のインタラクションを備えた包括的なアニメーションシステム"
+  },
+  "header": {
+    "badge": "マイクロインタラクションとアニメーション",
+    "title": "マイクロインタラクションとアニメーション",
+    "description": "ホバー効果、ロード状態、トランジション、Web3固有のインタラクションを備えた包括的なアニメーションシステム。すべてのアニメーションはユーザーのモーション設定を尊重し、スムーズで快適なユーザー体験を提供します。"
+  },
+  "stats": {
+    "variants": "アニメーションのバリエーション",
+    "performance": "スムーズなパフォーマンス",
+    "motionSafe": "モーションセーフ",
+    "specialized": "専門化された"
+  },
+  "hover": {
+    "title": "ホバー効果",
+    "description": "ボタン、カード、インタラクティブ要素のための繊細で魅力的なホバー効果。",
+    "buttonEffectsTitle": "ボタンホバー効果",
+    "liftEffect": "リフト効果",
+    "glowEffect": "グロー効果",
+    "scaleEffect": "スケール効果",
+    "shimmerEffect": "きらめきエフェクト",
+    "cardEffectsTitle": "カードホバー効果",
+    "cardSubtle": "繊細なホバー効果 - そっと浮かび上がる",
+    "cardGlow": "グロー・ホバー効果 - ほのかな光を追加"
+  },
+  "loading": {
+    "title": "読み込み状態",
+    "description": "ユーザーの関与を維持するロードアニメーションと進捗インジケーター。",
+    "spinnersTitle": "スピナーズ",
+    "interactiveDemoTitle": "インタラクティブデモ",
+    "loadingLabel": "読み込み中...",
+    "startLoading": "読み込みを開始",
+    "simulateProgress": "進捗をシミュレート",
+    "progress": "進捗: {{progress}}%"
+  },
+  "web3": {
+    "title": "Web3アニメーション",
+    "description": "Web3のインタラクション用に特化したアニメーションで、ウォレット接続や取引状態を対象としています。",
+    "walletStatesTitle": "ウォレット接続状態",
+    "connecting": "接続中...",
+    "connected": "接続済み",
+    "connectWallet": "ウォレットを接続する",
+    "statusLabel": "ステータス:",
+    "transactionStatesTitle": "取引状態",
+    "transactionPending": "取引保留中",
+    "transactionConfirmed": "取引が確認されました",
+    "transactionFailed": "取引に失敗しました"
+  },
+  "motion": {
+    "title": "モーションの設定",
+    "description": "すべてのアニメーションはユーザーの動きの好みを尊重し、アクセシビリティのための代替手段を提供します。",
+    "reducedMotionTitle": "モーションの低減をサポート",
+    "respectsPreferences": "動きの好みを尊重する",
+    "fadeOnly": "フェードのみアニメーション",
+    "scaleOnly": "スケールのみのアニメーション",
+    "safeAnimationsTitle": "安全なアニメーション",
+    "safeFade": "安全なフェードトランジション",
+    "safeSlide": "安全なスライド遷移"
+  },
+  "bestPractices": {
+    "title": "アニメーションのベストプラクティス",
+    "doTitle": "✅ これを行ってください",
+    "do": [
+      "マイクロインタラクションのアニメーションは300ミリ秒未満に保ってください。",
+      "自然な動きのためにイージング関数を使用してください",
+      "ユーザーの操作に対して即座にフィードバックを提供する",
+      "リダクションモーション設定を尊重する",
+      "500ms以上の操作にはロード状態を使用してください"
+    ],
+    "avoidTitle": "❌ これを避ける",
+    "avoid": [
+      "アニメーションの過剰使用 - 少しが良い",
+      "進捗のない長いロードアニメーション",
+      "機能に干渉するアニメーション",
+      "ページ読み込み時に自動再生されるアニメーション",
+      "運動に敏感なユーザー向けの複雑なアニメーション"
+    ]
+  }
+}

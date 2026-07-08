@@ -1,0 +1,133 @@
+{
+  "header": {
+    "title": "Superposiciones y puertas",
+    "description": "Sistema de superposición completo que incluye ventanas modales, desplegables, tooltips, hojas y estados de carga con gestión adecuada del z-index y accesibilidad."
+  },
+  "common": {
+    "interactiveExample": "Ejemplo interactivo",
+    "usage": "Uso"
+  },
+  "dropdownItems": {
+    "profile": "Ver Perfil",
+    "settings": "Ajustes",
+    "logout": "Cerrar sesión"
+  },
+  "alerts": {
+    "profile": "Perfil clicado",
+    "settings": "Configuración clicada",
+    "logout": "Clic en cerrar sesión"
+  },
+  "modals": {
+    "title": "Modales",
+    "description": "Diálogos modales con desenfoque de fondo, estados de animación y múltiples tamaños. Incluye administración de enfoque y navegación con teclado.",
+    "openButton": "Abrir modal",
+    "exampleTitle": "Modal de ejemplo",
+    "exampleBody": "Este es un modal de ejemplo que utiliza el nuevo sistema de diseño de superposición. Incluye un manejo adecuado del fondo, gestión del enfoque y estados de animación.",
+    "featuresTitle": "Características",
+    "features": [
+      "Efecto de desenfoque de fondo",
+      "Trampa de enfoque y restauración",
+      "Navegación con el teclado",
+      "Varias variantes de tamaño"
+    ],
+    "accessibilityTitle": "Accesibilidad",
+    "accessibility": [
+      "Etiquetas y roles de ARIA",
+      "Manejo de la tecla Escape",
+      "Soporte para lector de pantalla",
+      "Gestión del enfoque"
+    ],
+    "cancel": "Cancelar",
+    "confirm": "Confirmar"
+  },
+  "dropdowns": {
+    "title": "Desplegables",
+    "description": "Menús desplegables con varias opciones de posicionamiento, iconos, separadores y navegación con el teclado.",
+    "actionsButton": "Acciones",
+    "userMenuButton": "Menú de usuario"
+  },
+  "tooltips": {
+    "title": "Astuillas",
+    "description": "Tooltips ligeros con múltiples opciones de posicionamiento y variantes de color.",
+    "hoverButton": "Pasa el cursor para ver la sugerencia {{position}}",
+    "tooltipOn": "Tooltip en {{position}}"
+  },
+  "loading": {
+    "title": "Cargando superposiciones",
+    "description": "Estados de carga en pantalla completa e inline con desenfoque de fondo y mensajes personalizables.",
+    "showButton": "Mostrar superposición de carga",
+    "inlineLabel": "Estado de carga en línea:",
+    "message": "Procesando su solicitud..."
+  },
+  "sheets": {
+    "title": "Sábanas (sábanas inferiores)",
+    "description": "Hoja inferior y hoja de acción orientadas a móviles que deslizan desde la parte inferior de la pantalla."
+  },
+  "contextMenus": {
+    "title": "Menús contextuales",
+    "description": "Menús contextuales con clic derecho, atajos de teclado y submenús anidados."
+  },
+  "portal": {
+    "title": "Administración de puertas de enlace",
+    "description": "Sistema de gestión de Z-index y utilidades de portal para una superposición adecuada.",
+    "zIndexLayersTitle": "Capas de índice Z",
+    "focusManagementTitle": "Gestión del enfoque",
+    "layers": {
+      "backdrop": "Fondo",
+      "popover": "Desplegable",
+      "dropdown": "Menú desplegable",
+      "tooltip": "Tooltip",
+      "modal": "Modal",
+      "sheet": "Hoja",
+      "contextMenu": "Menú contextual",
+      "loading": "Cargando",
+      "notification": "Notificación"
+    }
+  },
+  "animationStates": {
+    "title": "Estados de animación",
+    "description": "Estados de animación coherentes para las transiciones de entrada/salida en todos los componentes de superposición.",
+    "availableStatesTitle": "Estados disponibles",
+    "modalStatesTitle": "Estados modales",
+    "dropdownStatesTitle": "Estados de lista desplegable"
+  },
+  "bestPractices": {
+    "title": "Prácticas recomendadas",
+    "accessibilityTitle": "Accesibilidad",
+    "accessibility": [
+      "Proporcione siempre etiquetas ARIA y roles adecuados",
+      "Implementar el atrapamiento de enfoque para ventanas modales",
+      "Soporte de navegación con teclado (Tab, Escape, teclas de flecha)",
+      "Mantener el orden de enfoque y la restauración",
+      "Utilice elementos HTML semánticos",
+      "Proporcione anuncios para lectores de pantalla"
+    ],
+    "performanceTitle": "Rendimiento",
+    "performance": [
+      "Utilice React Portals para un renderizado DOM adecuado",
+      "Implemente la carga diferida para superposiciones pesadas",
+      "Limpie los oyentes de eventos al desmontar",
+      "Utilice transformaciones de CSS para animaciones",
+      "Evita los filtros de fondo complejos en móviles",
+      "Minimizar el bloqueo de diseño"
+    ],
+    "uxGuidelinesTitle": "Directrices de UX",
+    "uxGuidelines": [
+      "Mantenga los modales centrados en tareas individuales",
+      "Proporcione claras affordances de cierre",
+      "Use tipos de superposición adecuados para el contexto",
+      "Mantenga un tiempo de animación consistente",
+      "Considere las limitaciones del viewport móvil",
+      "Evite las interacciones anidadas de superposición"
+    ],
+    "technicalTitle": "Técnico",
+    "technical": [
+      "Utilice un sistema de superposición de z-index adecuado",
+      "Gestionar correctamente el bloqueo del desplazamiento del cuerpo",
+      "Soporte tanto interacciones de clic como de teclado",
+      "Pruebe en diferentes tamaños de vista",
+      "Considere las preferencias de movimiento reducido",
+      "Implemente límites de error adecuados"
+    ]
+  }
+}

@@ -1,0 +1,80 @@
+{
+  "seo": {
+    "title": "Tableaux et grilles de données - Système de conception - Interne - {{emailDomain}}",
+    "description": "Système de tableau complet avec tri, filtrage, pagination et fonctionnalité de grille de données"
+  },
+  "header": {
+    "badge": "Tableaux et grilles de données",
+    "title": "Tableaux et grilles de données",
+    "subtitle": "Système de table complète avec tri, filtrage, pagination et fonctionnalité de grille de données. Idéal pour afficher des données structurées avec des modèles d'interaction avancés."
+  },
+  "columns": {
+    "name": "Nom",
+    "email": "Courriel",
+    "role": "Rôle",
+    "status": "Statut",
+    "actions": "Actions",
+    "transactions": "Transactions",
+    "joinDate": "Date d'adhésion",
+    "transactionHash": "Hachage de transaction",
+    "from": "Depuis",
+    "to": "À",
+    "amount": "Montant",
+    "chain": "Chaîne"
+  },
+  "basic": {
+    "title": "Tableau de base",
+    "usage": "Utilisation"
+  },
+  "sortable": {
+    "title": "Table triable",
+    "headers": "En-têtes triables"
+  },
+  "selectable": {
+    "title": "Tableau sélectionnable avec actions en masse",
+    "selected": "{{count}} ligne(s) sélectionnée(s)",
+    "export": "Exporter",
+    "delete": "Supprimer"
+  },
+  "compact": {
+    "title": "Tablette compacte"
+  },
+  "filterable": {
+    "title": "Tableau filtrable",
+    "searchPlaceholder": "Rechercher des utilisateurs...",
+    "filters": "Filtres"
+  },
+  "pagination": {
+    "title": "Table avec pagination",
+    "showing": "Affichage",
+    "to": "à",
+    "of": "de",
+    "results": "résultats",
+    "ariaLabel": "Pagination"
+  },
+  "web3": {
+    "title": "Tableau des transactions Web3",
+    "confirmed": "Confirmé",
+    "pending": "En attente",
+    "ethereum": "Ethereum",
+    "solana": "Solana"
+  },
+  "empty": {
+    "title": "État vide",
+    "noData": "Aucune donnée trouvée",
+    "description": "Il n'y a actuellement aucun enregistrement à afficher.",
+    "addRecord": "Ajouter un nouvel enregistrement"
+  },
+  "tokens": {
+    "title": "Variants de table disponibles",
+    "structure": "Structure de table",
+    "containerBase": "Récipient et base",
+    "headers": "En-têtes",
+    "body": "Corps",
+    "statesPagination": "États et pagination"
+  },
+  "nav": {
+    "previous": "Mise en page et espacement",
+    "back": "Retour au système de conception"
+  }
+}

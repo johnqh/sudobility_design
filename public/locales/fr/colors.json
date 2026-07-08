@@ -1,0 +1,291 @@
+{
+  "seo": {
+    "title": "Couleurs - Système de conception - Interne - {{emailDomain}}",
+    "description": "Affichage complet de la palette de couleurs et des variations pour le système de conception"
+  },
+  "nav": {
+    "viewTypography": "Afficher la typographie"
+  },
+  "header": {
+    "badge": "Système de couleur",
+    "title": "Palette de couleurs et utilisation",
+    "description": "Système de couleurs complet utilisé dans toute l'application {{appName}} avec des exemples d'utilisation et des extraits de code. Cliquez sur une couleur pour copier sa valeur hexadécimale dans le presse-papiers."
+  },
+  "swatch": {
+    "copyAria": "Copiez la valeur de couleur {{name}} {{value}}"
+  },
+  "codeExample": {
+    "preview": "Aperçu",
+    "usage": "Utilisation"
+  },
+  "quickStart": {
+    "title": "Mise en route rapide - Exemples d'utilisation courants",
+    "description": "Exemples de code prêts à l'emploi pour les modèles de conception les plus courants. Copiez-collez directement dans vos composants.",
+    "primaryButton": {
+      "title": "Bouton principal",
+      "action": "Action principale"
+    },
+    "successAlert": {
+      "title": "Alerte de succès",
+      "heading": "Succès !",
+      "body": "Votre action a été effectuée avec succès."
+    },
+    "blockchainBadge": {
+      "title": "Badge Blockchain"
+    },
+    "formInput": {
+      "title": "Saisie de formulaire",
+      "placeholder": "Entrez votre adresse e-mail..."
+    }
+  },
+  "palettes": {
+    "title": "Palettes de couleurs",
+    "description": "Les palettes de couleurs de base organisées par teinte. Chaque palette inclut des nuances allant de 50 (la plus claire) à 950 (la plus foncée).",
+    "items": {
+      "blue": {
+        "name": "Bleu (Principal)",
+        "description": "Palette de couleurs principale de la marque"
+      },
+      "purple": {
+        "name": "Violet (secondaire)",
+        "description": "Palette de couleurs de marque secondaire"
+      },
+      "neutral": {
+        "name": "Neutre (nuances de gris)",
+        "description": "Couleurs de fond, texte et bordure"
+      },
+      "red": {
+        "name": "Rouge (Erreur)",
+        "description": "Couleurs d'erreur et d'action destructive"
+      },
+      "green": {
+        "name": "Vert (Succès)",
+        "description": "Succès et couleurs d'action positive"
+      },
+      "amber": {
+        "name": "Amber (Avertissement)",
+        "description": "Couleurs d'avertissement et de précaution"
+      },
+      "orange": {
+        "name": "Orange",
+        "description": "Couleurs d'accent et d'accentuation"
+      }
+    }
+  },
+  "networks": {
+    "ethereum": "Ethereum",
+    "solana": "Solana",
+    "polygon": "Polygone"
+  },
+  "web3": {
+    "title": "Couleurs du réseau Web3",
+    "description": "Couleurs représentant différents réseaux de blockchain et éléments Web3.",
+    "usage": {
+      "ethereum": "Marque du réseau Ethereum",
+      "solana": "marque du réseau Solana",
+      "polygon": "Marque du réseau Polygon"
+    },
+    "code": {
+      "title": "Utilisation des couleurs Web3",
+      "description": "Comment utiliser les couleurs de réseau Web3 dans les composants"
+    }
+  },
+  "semantic": {
+    "title": "Couleurs sémantiques",
+    "description": "Des jetons de couleur sémantique qui s'adaptent aux thèmes clair et sombre. Ils assurent une signification cohérente à travers l'interface.",
+    "lightMode": "Mode clair",
+    "darkMode": "Mode sombre",
+    "categories": {
+      "text": {
+        "name": "Couleurs du texte",
+        "colors": {
+          "primaryText": {
+            "name": "Texte principal",
+            "usage": "Texte principal du contenu"
+          },
+          "secondaryText": {
+            "name": "Texte secondaire",
+            "usage": "Texte de soutien"
+          },
+          "linkText": {
+            "name": "Texte du lien",
+            "usage": "Liens interactifs"
+          }
+        }
+      },
+      "background": {
+        "name": "Couleurs d'arrière-plan",
+        "colors": {
+          "primaryBackground": {
+            "name": "Arrière-plan principal",
+            "usage": "Arrière-plans de la page principale"
+          },
+          "secondaryBackground": {
+            "name": "Arrière-plan secondaire",
+            "usage": "Arrière-plans de cartes"
+          },
+          "elevatedBackground": {
+            "name": "Arrière-plan élevé",
+            "usage": "Modaux et superpositions"
+          }
+        }
+      },
+      "state": {
+        "name": "Couleurs d'État",
+        "colors": {
+          "success": {
+            "name": "Succès",
+            "usage": "Messages de succès et actions"
+          },
+          "warning": {
+            "name": "Avertissement",
+            "usage": "Messages d'alerte"
+          },
+          "error": {
+            "name": "Erreur",
+            "usage": "Messages d'erreur et actions destructrices"
+          },
+          "info": {
+            "name": "Informations",
+            "usage": "Messages d'information"
+          }
+        }
+      }
+    },
+    "code": {
+      "title": "Utilisation des couleurs sémantiques",
+      "description": "Comment utiliser les couleurs sémantiques du système de design",
+      "preview": {
+        "success": "✓ Message de succès",
+        "error": "✗ Message d'erreur",
+        "warning": "⚠ Message d'avertissement"
+      }
+    }
+  },
+  "components": {
+    "title": "Couleurs des composants et exemples d'utilisation",
+    "description": "Combinaisons de couleurs prédéfinies pour les composants d'interface utilisateur courants, avec prise en charge intégrée du survol, du focus et des thèmes.",
+    "exampleHeading": "{{name}} Exemples",
+    "liveExamples": "Exemples en direct",
+    "alertMessage": "message {{name}}",
+    "interactiveHeading": "Exemples interactifs de {{name}}:",
+    "createPreview": {
+      "button": {
+        "primary": "Action principale",
+        "secondary": "Action secondaire",
+        "destructive": "Supprimer l'élément"
+      },
+      "alert": {
+        "infoLabel": "Informations :",
+        "infoText": "Ceci est une alerte d'information",
+        "successLabel": "Succès :",
+        "successText": "Opération terminée avec succès",
+        "errorLabel": "Erreur :",
+        "errorText": "Quelque chose s'est mal passé"
+      }
+    },
+    "items": {
+      "button": {
+        "name": "Bouton",
+        "createTitle": "Comment créer des boutons",
+        "createDescription": "Guide pas à pas pour créer des boutons avec des couleurs appropriées",
+        "variantsTitle": "Variants et états du bouton",
+        "variantsDescription": "Toutes les variantes de couleur de bouton avec les états au survol et au focus",
+        "variants": {
+          "primary": "Principal",
+          "secondary": "Secondaire",
+          "destructive": "Destructeur",
+          "success": "Succès"
+        }
+      },
+      "badge": {
+        "name": "Badge",
+        "createTitle": "Comment créer des badges",
+        "createDescription": "Guide pas à pas pour créer des badges avec les bonnes couleurs",
+        "variantsTitle": "Variants et états des badges",
+        "variantsDescription": "Toutes les variantes de couleur des badges avec les états au survol et au focus",
+        "variants": {
+          "default": "Par défaut",
+          "primary": "Primaire",
+          "success": "Succès",
+          "warning": "Avertissement",
+          "error": "Erreur"
+        }
+      },
+      "alert": {
+        "name": "Alerte",
+        "createTitle": "Comment créer des alertes",
+        "createDescription": "Guide pas à pas pour créer des alertes avec des couleurs appropriées",
+        "variantsTitle": "Variants et états d'alerte",
+        "variantsDescription": "Toutes les variantes de couleur d'alerte avec les états au survol et au focus",
+        "variants": {
+          "info": "Informations",
+          "success": "Succès",
+          "warning": "Avertissement",
+          "error": "Erreur"
+        }
+      }
+    }
+  },
+  "practical": {
+    "title": "Exemples d'utilisation pratiques",
+    "description": "Exemples du monde réel montrant comment combiner des couleurs pour des modèles d'interface utilisateur courants.",
+    "form": {
+      "title": "Formulaire avec états codés par couleur",
+      "description": "Comment utiliser les couleurs pour la validation des formulaires et les états",
+      "emailLabel": "Courriel (valide)",
+      "emailValid": "✓ L'e-mail est valide",
+      "passwordLabel": "Mot de passe (Erreur)",
+      "passwordError": "✗ Le mot de passe doit comporter au moins 8 caractères",
+      "submit": "Soumettre le formulaire"
+    },
+    "card": {
+      "title": "Carte avec des couleurs d'état",
+      "description": "Comment utiliser les couleurs dans les composants de carte avec différents états",
+      "apiServer": "Serveur API",
+      "online": "en ligne",
+      "operational": "Tous les systèmes fonctionnent",
+      "database": "Base de données",
+      "maintenance": "entretien",
+      "maintenanceProgress": "Maintenance planifiée en cours"
+    },
+    "navigation": {
+      "title": "Navigation avec des états de couleur",
+      "description": "Comment utiliser les couleurs pour les états de navigation et les éléments actifs",
+      "dashboard": "Tableau de bord",
+      "users": "Utilisateurs",
+      "settings": "Paramètres"
+    },
+    "progress": {
+      "title": "Indicateurs de progression avec des couleurs",
+      "description": "Comment utiliser les couleurs pour les barres de progression et les états de chargement",
+      "label": "Progrès",
+      "complete75": "75 % terminé",
+      "success": "Succès",
+      "complete100": "100 % terminé"
+    }
+  },
+  "guidelines": {
+    "title": "Guides d'utilisation",
+    "doTitle": "✓ Faire",
+    "do": [
+      "Utilisez des couleurs sémantiques pour un sens cohérent",
+      "Préférez les couleurs des composants pour les éléments de l'interface",
+      "Tester les couleurs en mode clair et sombre",
+      "Assurez-vous d'avoir un contraste suffisant pour l'accessibilité",
+      "Utilisez les fonctions d'utilité de couleur pour plus de cohérence"
+    ],
+    "dontTitle": "✗ Ne pas",
+    "dont": [
+      "Utilisez des valeurs hexadécimales brutes directement dans les composants",
+      "Mélangez différents systèmes de couleur",
+      "Créez des couleurs personnalisées sans approbation de conception",
+      "Utilisez des couleurs qui ne fonctionnent pas en mode sombre",
+      "Ignorer les exigences de contraste pour l'accessibilité"
+    ]
+  },
+  "copyInstructions": {
+    "title": "Cliquez pour copier les valeurs",
+    "description": "Cliquez sur n'importe quelle tuile de couleur pour copier sa valeur hexadécimale, ou utilisez le bouton copier dans les exemples de code pour copier le code d'utilisation"
+  }
+}

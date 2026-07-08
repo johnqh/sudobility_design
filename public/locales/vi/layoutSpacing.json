@@ -1,0 +1,147 @@
+{
+  "seo": {
+    "title": "Bố cục và khoảng cách - Hệ thống thiết kế - Nội bộ - {{emailDomain}}",
+    "description": "Hệ thống bố cục và khoảng cách với lưới phản hồi, khung chứa và các mẫu đặc thù cho Web3"
+  },
+  "header": {
+    "badge": "Bố cục và khoảng cách",
+    "title": "Hệ thống bố cục và khoảng cách",
+    "description": "Hệ thống bố cục và khoảng cách toàn diện với lưới phản hồi, khung linh hoạt và các mẫu đặc biệt cho Web3 cho ví, giao dịch và giao diện bảng điều khiển."
+  },
+  "quickStart": {
+    "title": "Bắt đầu nhanh",
+    "copyTooltip": "Sao chép vào bộ nhớ tạm",
+    "examples": {
+      "grid": {
+        "title": "Hệ thống lưới phản hồi",
+        "description": "Bố cục lưới linh hoạt có thể điều chỉnh theo các kích thước màn hình khác nhau"
+      },
+      "container": {
+        "title": "Hệ thống thùng chứa",
+        "description": "Các container phản hồi với chiều rộng tối đa nhất quán và lề"
+      },
+      "flex": {
+        "title": "Công cụ Flexbox",
+        "description": "Các mẫu flexbox phổ biến cho bố cục thành phần"
+      },
+      "spacing": {
+        "title": "Hệ thống khoảng cách",
+        "description": "Mẫu khoảng cách nhất quán cho lề và lề trong"
+      }
+    }
+  },
+  "grid": {
+    "title": "Hệ thống lưới phản hồi",
+    "cardTitle": "Ví dụ về lưới tương tác",
+    "cardDescription": "Chuyển đổi giữa các điểm ngắt để xem cách lưới điều chỉnh",
+    "preview": "Xem trước:",
+    "breakpoints": {
+      "mobile": "Di động",
+      "tablet": "Viên nén",
+      "desktop": "Màn hình chính"
+    },
+    "examples": {
+      "nftGallery": {
+        "name": "Bảo tàng NFT"
+      },
+      "dashboardWidgets": {
+        "name": "Trang bị bảng điều khiển"
+      },
+      "transactionHistory": {
+        "name": "Lịch sử giao dịch"
+      }
+    },
+    "item": "Vật phẩm {{number}}"
+  },
+  "container": {
+    "title": "Hệ thống thùng chứa",
+    "cardTitle": "Phiên bản thùng chứa",
+    "cardDescription": "Các kích thước thùng chứa khác nhau cho các loại nội dung khác nhau",
+    "label": "Thùng chứa:",
+    "maxWidth": "Chiều rộng tối đa:",
+    "bestFor": "Tốt nhất cho:",
+    "containerSuffix": "{{name}} Thùng chứa",
+    "previewText": "Thùng này thích nghi với các giới hạn chiều rộng được chọn trong khi vẫn duy trì khoảng cách phản hồi.",
+    "sizes": {
+      "narrow": {
+        "name": "Hẹp",
+        "use": "Bài viết, biểu mẫu"
+      },
+      "default": {
+        "name": "Mặc định",
+        "use": "Nội dung chung"
+      },
+      "wide": {
+        "name": "Rộng",
+        "use": "Bảng điều khiển, bảng"
+      },
+      "full": {
+        "name": "Đầy",
+        "use": "Bố cục cạnh sát cạnh"
+      }
+    }
+  },
+  "flexbox": {
+    "title": "Mẫu Flexbox",
+    "common": {
+      "title": "Mẫu thông dụng",
+      "description": "Bố cục flexbox chuẩn cho các thành phần",
+      "spaceBetween": "Khoảng cách giữa",
+      "center": "Trung tâm",
+      "startWithGap": "Bắt đầu với khoảng trống",
+      "columnStack": "Chồng cột"
+    },
+    "web3": {
+      "title": "Mẫu Web3",
+      "description": "Bố cục chuyên biệt cho giao diện blockchain",
+      "walletConnection": "Kết nối ví",
+      "walletName": "MetaMask",
+      "connected": "Đã kết nối",
+      "transactionSummary": "Tóm tắt giao dịch",
+      "amount": "Số tiền:",
+      "gasFee": "Phí khí gas:",
+      "total": "Tổng cộng:",
+      "nftCardLayout": "Bố cục thẻ NFT",
+      "nftName": "NFT siêu #1234",
+      "artistName": "Tên nghệ sĩ"
+    }
+  },
+  "spacing": {
+    "title": "Hệ thống khoảng cách",
+    "cardTitle": "Mẫu khoảng cách nhất quán",
+    "cardDescription": "Công cụ giãn cách chuẩn để bố cục nhất quán",
+    "scaleTitle": "Thang đo khoảng cách",
+    "componentTitle": "Khoảng cách giữa các thành phần",
+    "sectionHeader": "Tiêu đề phần",
+    "component": "Thành phần {{number}}",
+    "sectionSpacingLabel": "Khoảng cách phần:",
+    "sectionSpacingText": "lề dọc 32px",
+    "componentSpacingLabel": "Khoảng cách giữa các thành phần:",
+    "componentSpacingText": "12px giữa các mục",
+    "internalPaddingLabel": "Đệm bên trong:",
+    "internalPaddingText": "16px cho các khu vực nội dung"
+  },
+  "web3": {
+    "title": "Mẫu bố cục Web3",
+    "wallet": {
+      "title": "Bảng điều khiển ví",
+      "description": "Tổng quan danh mục đầu tư với số dư và tài sản",
+      "send": "Gửi",
+      "receive": "Nhận",
+      "swap": "Đổi",
+      "assets": "Tài sản"
+    },
+    "transaction": {
+      "title": "Dòng giao dịch",
+      "description": "Giao diện giao dịch từng bước",
+      "recipientAddress": "Địa chỉ người nhận",
+      "amount": "Số tiền",
+      "balance": "Số dư: 2,45 ETH",
+      "max": "Max",
+      "networkFee": "Phí mạng lưới:",
+      "total": "Tổng cộng:",
+      "cancel": "Hủy",
+      "continue": "Tiếp tục"
+    }
+  }
+}

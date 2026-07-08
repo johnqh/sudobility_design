@@ -1,0 +1,185 @@
+{
+  "seo": {
+    "title": "Navegación - Sistema de diseño - Interno - {{emailDomain}}",
+    "description": "Componentes de navegación, incluyendo elementos de navegación, pestañas, paginación y sistemas de menús"
+  },
+  "header": {
+    "badge": "Componentes de navegación",
+    "title": "Sistema de navegación",
+    "intro": "Componentes de navegación completos para aplicaciones Web3, incluyendo elementos de navegación por breadcrumbs, pestañas, paginación, menús y navegación por pasos. Diseñados para accesibilidad y comportamiento adaptable."
+  },
+  "quickStart": {
+    "title": "Inicio rápido",
+    "copy": "Copiar al portapapeles",
+    "examples": {
+      "breadcrumb": {
+        "title": "Navegación por breadcrumbs",
+        "description": "Navegación jerárquica que muestra la ubicación actual de la página"
+      },
+      "tabs": {
+        "title": "Navegación por pestañas",
+        "description": "Organiza el contenido en varias vistas con navegación por pestañas"
+      },
+      "pagination": {
+        "title": "Paginación",
+        "description": "Navegue a través de varias páginas de contenido"
+      },
+      "steps": {
+        "title": "Navegación por pasos",
+        "description": "Guíe a los usuarios a través de procesos de múltiples pasos"
+      }
+    }
+  },
+  "breadcrumbs": {
+    "sectionTitle": "Migas de pan interactivas",
+    "liveTitle": "Ejemplo de breadcrumb en vivo",
+    "home": "Inicio",
+    "web3Projects": "Proyectos Web3",
+    "featuresTitle": "Características",
+    "features": [
+      "Datos estructurados para la optimización de SEO",
+      "Atributos de accesibilidad ARIA",
+      "Soporte de navegación con teclado",
+      "Diseño adaptable con truncamiento",
+      "Icono de inicio opcional y compartición social"
+    ]
+  },
+  "tabVariants": {
+    "sectionTitle": "Variantes de navegación por pestañas",
+    "defaultTitle": "Pestañas predeterminadas",
+    "overview": "Resumen",
+    "analytics": "Análisis",
+    "settings": "Ajustes",
+    "overviewContent": "Contenido de visión general con estadísticas del proyecto y actividad reciente.",
+    "analyticsContent": "Panel de análisis con gráficos y métricas.",
+    "settingsContent": "Panel de configuración para opciones de configuración.",
+    "underlinedTitle": "Pestañas subrayadas",
+    "dashboard": "Panel de control",
+    "team": "Equipo",
+    "projects": "Proyectos",
+    "calendar": "Calendario",
+    "underlinedContent": "Contenido del panel con estilo de pestaña subrayado limpio.",
+    "pillsTitle": "Pastillas Comprimidos",
+    "all": "Todos",
+    "active": "Activo",
+    "draft": "Borrador",
+    "archived": "Archivado",
+    "pillsContent": "Contenido filtrado por la pestaña de píldora seleccionada."
+  },
+  "pagination": {
+    "sectionTitle": "Paginación",
+    "listTitle": "Paginación de lista de correos",
+    "listDescription": "Ejemplo de paginación para la navegación de la lista de correos",
+    "emailSubject": "Asunto del correo electrónico {{number}}",
+    "timeAgo": "hace 2h",
+    "previous": "Anterior",
+    "next": "Siguiente",
+    "showing": "Mostrando",
+    "to": "a",
+    "of": "de",
+    "results": "resultados"
+  },
+  "steps": {
+    "sectionTitle": "Navegación por pasos",
+    "demoTitle": "Configuración de billetera Web3",
+    "demoDescription": "Guíe a los usuarios a través del proceso de conexión de billetera",
+    "stepLabel": "Paso {{number}}:",
+    "items": {
+      "accountSetup": {
+        "name": "Configuración de cuenta",
+        "description": "Cree su cuenta"
+      },
+      "walletConnection": {
+        "name": "Conexión de billetera",
+        "description": "Conecta tu billetera Web3"
+      },
+      "emailSetup": {
+        "name": "Configuración de correo electrónico",
+        "description": "Configure sus preferencias de correo electrónico"
+      },
+      "complete": {
+        "name": "Completado",
+        "description": "Comience a usar example.com"
+      }
+    },
+    "details": {
+      "1": "Cree su cuenta de {{emailDomain}} con su nombre de usuario preferido y configuración de seguridad.",
+      "2": "Conecte su billetera Web3 (MetaMask, WalletConnect, etc.) para habilitar las funciones de blockchain.",
+      "3": "Configure sus preferencias de correo electrónico, notificaciones y ajustes de privacidad.",
+      "4": "¡Su configuración está completa! Comience a enviar y recibir correos electrónicos Web3."
+    }
+  },
+  "sidebar": {
+    "sectionTitle": "Navegación de barra lateral",
+    "cardTitle": "Barra lateral de la aplicación de correo electrónico",
+    "cardDescription": "Navegación persistente para la aplicación de correo electrónico",
+    "items": {
+      "dashboard": "Panel de control",
+      "inbox": "Bandeja de entrada",
+      "sent": "Enviado",
+      "archive": "Archivo",
+      "settings": "Ajustes"
+    },
+    "mainContent": "Área principal de contenido",
+    "mainContentHint": "Los cambios de contenido dependen de la selección en la barra lateral"
+  },
+  "web3Patterns": {
+    "sectionTitle": "Patrones de navegación Web3",
+    "walletStatus": {
+      "title": "Navegación del estado de la billetera",
+      "description": "Navegación que se adapta al estado de conexión de la billetera",
+      "connected": "MetaMask conectado",
+      "inbox": "Bandeja de entrada Web3",
+      "ensProfile": "Perfil ENS",
+      "walletSettings": "Ajustes de billetera"
+    },
+    "multiChain": {
+      "title": "Navegación multicanal",
+      "description": "Navegación entre diferentes redes de blockchain",
+      "ethereum": "Ethereum",
+      "solana": "Solana",
+      "polygon": "Polígono",
+      "ethereumInbox": "Bandeja de entrada de Ethereum",
+      "ensNames": "Nombres ENS",
+      "gasSettings": "Ajustes de gas"
+    }
+  },
+  "accessibility": {
+    "sectionTitle": "Directrices de accesibilidad",
+    "title": "Accesibilidad de navegación",
+    "description": "Asegúrese de que todos los componentes de navegación sean accesibles para lectores de pantalla y usuarios del teclado.",
+    "ariaLandmarks": "Marcadores de ARIA",
+    "keyboardNavigation": "Navegación con el teclado",
+    "breadcrumbsLabel": "Rastros",
+    "breadcrumbsKeys": [
+      "Pestaña: Navegar por enlaces",
+      "Intro/Barra espaciadora: Activar enlace",
+      "Enlaces de salto para lectores de pantalla"
+    ],
+    "tabsLabel": "pestañas",
+    "tabsKeys": [
+      "Teclas de flecha: Navegar entre pestañas",
+      "Pestaña: introduzca el panel de pestañas",
+      "Intro/espacio: Activar pestaña"
+    ]
+  },
+  "implementation": {
+    "sectionTitle": "Notas de implementación",
+    "performanceTitle": "Consideraciones de rendimiento",
+    "performance": [
+      "Carga diferida de elementos de navegación cuando sea posible",
+      "Utilice React.memo para componentes de navegación complejos",
+      "Debouncing de la búsqueda en menús de navegación",
+      "Desplazamiento virtual para listas de navegación largas",
+      "Cargar de antemano las rutas de navegación críticas"
+    ],
+    "mobileTitle": "Responsividad móvil",
+    "mobile": [
+      "Colapsar la navegación en menús de hamburguesa",
+      "Utilice la navegación inferior para aplicaciones móviles",
+      "Implemente gestos de deslizamiento donde sea apropiado",
+      "Asegúrese de que los objetivos táctiles tengan al menos 44 píxeles",
+      "Pruebe en varios tamaños de pantalla y orientaciones"
+    ]
+  }
+}

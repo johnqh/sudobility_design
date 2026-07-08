@@ -1,0 +1,136 @@
+{
+  "seo": {
+    "title": "Inputs - Design System - Internal - {{emailDomain}}",
+    "description": "Comprehensive input component documentation with variants, sizes, states, and Web3 integration"
+  },
+  "code": {
+    "copied": "✓ Copied!",
+    "copy": "Copy"
+  },
+  "header": {
+    "badge": "Inputs",
+    "title": "Input Components",
+    "intro": "Form input components with consistent styling, validation states, and accessibility features designed for both traditional and Web3 applications."
+  },
+  "stats": {
+    "inputTypes": "Input Types",
+    "sizeOptions": "Size Options",
+    "stateTypes": "State Types",
+    "web3Patterns": "Web3 Patterns"
+  },
+  "sections": {
+    "quickStart": {
+      "title": "🚀 Quick Start",
+      "description": "Get started with the most commonly used input patterns. These examples show essential input types with validation and accessibility features."
+    },
+    "variants": {
+      "title": "🎨 Input Variants",
+      "description": "Explore all available input variants with their specific use cases and styling options for different contexts."
+    },
+    "web3": {
+      "title": "⚡ Web3 Input Patterns",
+      "description": "Specialized input patterns commonly used in Web3 applications including wallet addresses, ENS domains, and token amounts."
+    },
+    "accessibility": {
+      "title": "♿ Accessibility Guidelines",
+      "description": "Ensure your inputs are accessible to all users with proper labeling, keyboard navigation, and screen reader support."
+    }
+  },
+  "validation": {
+    "emailInvalid": "Please enter a valid email address",
+    "emailValid": "Valid email address",
+    "walletInvalid": "Please enter a valid Ethereum address",
+    "walletValid": "Valid Ethereum address"
+  },
+  "quickStart": {
+    "essentialTitle": "1. Essential Input Types",
+    "emailLabel": "Email Address",
+    "passwordLabel": "Password",
+    "passwordPlaceholder": "Enter your password",
+    "searchLabel": "Search",
+    "searchPlaceholder": "Search messages...",
+    "messageLabel": "Message",
+    "messagePlaceholder": "Type your message...",
+    "sizesTitle": "2. Size Variations",
+    "smallLabel": "Small Input",
+    "smallPlaceholder": "Small size input",
+    "defaultLabel": "Default Input",
+    "defaultPlaceholder": "Default size input",
+    "largeLabel": "Large Input",
+    "largePlaceholder": "Large size input",
+    "validationTitle": "3. Validation States",
+    "errorStateLabel": "Error State",
+    "successStateLabel": "Success State",
+    "web3Title": "4. Web3 Specific Inputs",
+    "walletLabel": "Wallet Address",
+    "amountLabel": "Token Amount",
+    "amountBalance": "Balance: 2.4563 ETH"
+  },
+  "variants": {
+    "standardTitle": "Standard Variants",
+    "specializedTitle": "Specialized Types",
+    "defaultLabel": "Default Input",
+    "defaultPlaceholder": "Standard input field",
+    "defaultHint": "Most common input style",
+    "searchLabel": "Search Input",
+    "searchPlaceholder": "Search functionality",
+    "searchHint": "Optimized for search use cases",
+    "errorLabel": "Error State",
+    "errorPlaceholder": "Invalid input",
+    "errorHint": "For validation errors",
+    "iconLabel": "With Icon",
+    "iconHint": "With left icon placement",
+    "phoneLabel": "Phone Number",
+    "urlLabel": "Website URL",
+    "dateLabel": "Date",
+    "fileLabel": "File Upload"
+  },
+  "web3": {
+    "walletInputsTitle": "Wallet Address Inputs",
+    "ethAddressLabel": "Ethereum Address",
+    "solAddressLabel": "Solana Address",
+    "ensLabel": "ENS Domain",
+    "snsLabel": "SNS Domain",
+    "tokenAmountsTitle": "Token Amount Inputs",
+    "ethAmountLabel": "ETH Amount",
+    "usdcAmountLabel": "USDC Amount",
+    "max": "MAX",
+    "ethBalance": "Balance: 2.4563 ETH",
+    "usdcBalance": "Balance: 1,547.23 USDC",
+    "gasTitle": "Gas Fee Configuration",
+    "gasPriceLabel": "Gas Price (Gwei)",
+    "gasSlow": "Slow",
+    "gasStandard": "Standard",
+    "gasFast": "Fast",
+    "gasSlowTime": "~5 min",
+    "gasStandardTime": "~2 min",
+    "gasFastTime": "~1 min",
+    "customGasLabel": "Custom Gas Price",
+    "customGasHint": "Estimated cost: $8.45 USD • Estimated time: ~2 minutes"
+  },
+  "accessibility": {
+    "bestPracticesTitle": "✅ Best Practices",
+    "bestPractices": [
+      "Always provide descriptive labels for screen readers",
+      "Use appropriate input types (email, tel, url, etc.)",
+      "Include helpful placeholder text and instructions",
+      "Provide clear error messages with suggestions",
+      "Ensure adequate color contrast (4.5:1 minimum)",
+      "Support keyboard navigation and focus states"
+    ],
+    "avoidTitle": "❌ Avoid",
+    "avoid": [
+      "Using placeholder text as the only label",
+      "Relying only on color to indicate validation states",
+      "Making inputs too small for comfortable interaction",
+      "Providing vague or unhelpful error messages",
+      "Disabling browser autofill without good reason",
+      "Removing focus indicators or making them hard to see"
+    ],
+    "examplesTitle": "Accessibility Implementation Examples"
+  },
+  "nav": {
+    "back": "Back to Design System",
+    "lastUpdated": "Last updated: {{date}}"
+  }
+}

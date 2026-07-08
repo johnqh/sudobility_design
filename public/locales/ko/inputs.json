@@ -1,0 +1,136 @@
+{
+  "seo": {
+    "title": "입력 - 디자인 시스템 - 내부 - {{emailDomain}}",
+    "description": "입력 컴포넌트에 대한 포괄적인 문서로, 다양한 변형, 크기, 상태 및 Web3 통합 포함"
+  },
+  "code": {
+    "copied": "✓ 복사되었습니다!",
+    "copy": "복사"
+  },
+  "header": {
+    "badge": "입력",
+    "title": "입력 구성 요소",
+    "intro": "일관된 스타일링, 검증 상태 및 접근성 기능을 갖춘 폼 입력 컴포넌트로, 기존 및 Web3 애플리케이션 모두에 적합합니다."
+  },
+  "stats": {
+    "inputTypes": "입력 유형",
+    "sizeOptions": "크기 옵션",
+    "stateTypes": "국가 유형",
+    "web3Patterns": "웹3 패턴"
+  },
+  "sections": {
+    "quickStart": {
+      "title": "🚀 빠른 시작",
+      "description": "가장 흔히 사용되는 입력 패턴으로 시작하세요. 이 예제들은 검증 및 접근성 기능을 갖춘 핵심 입력 유형을 보여줍니다."
+    },
+    "variants": {
+      "title": "🎨 입력 변형",
+      "description": "다양한 맥락에 맞는 특정 사용 사례와 스타일링 옵션을 갖춘 모든 사용 가능한 입력 변형을 탐색하세요."
+    },
+    "web3": {
+      "title": "⚡ Web3 입력 패턴",
+      "description": "웹3 애플리케이션에서 흔히 사용되는 전문적인 입력 패턴으로, 지갑 주소, ENS 도메인, 토큰 금액 등이 포함됩니다."
+    },
+    "accessibility": {
+      "title": "♿ 접근성 가이드라인",
+      "description": "입력이 모든 사용자가 적절한 레이블링, 키보드 탐색 및 스크린 리더 지원을 통해 접근 가능하도록 해야 합니다."
+    }
+  },
+  "validation": {
+    "emailInvalid": "유효한 이메일 주소를 입력하세요",
+    "emailValid": "유효한 이메일 주소",
+    "walletInvalid": "유효한 이더리움 주소를 입력하세요",
+    "walletValid": "유효한 이더리움 주소"
+  },
+  "quickStart": {
+    "essentialTitle": "1. 필수 입력 유형",
+    "emailLabel": "이메일 주소",
+    "passwordLabel": "비밀번호",
+    "passwordPlaceholder": "비밀번호를 입력하세요",
+    "searchLabel": "검색",
+    "searchPlaceholder": "메시지 검색...",
+    "messageLabel": "메시지",
+    "messagePlaceholder": "메시지를 입력하세요...",
+    "sizesTitle": "2. 크기 변형",
+    "smallLabel": "작은 입력",
+    "smallPlaceholder": "작은 크기의 입력",
+    "defaultLabel": "기본 입력",
+    "defaultPlaceholder": "기본 크기 입력",
+    "largeLabel": "큰 입력",
+    "largePlaceholder": "크기 입력",
+    "validationTitle": "3. 검증 상태",
+    "errorStateLabel": "오류 상태",
+    "successStateLabel": "성공 상태",
+    "web3Title": "4. Web3 전용 입력",
+    "walletLabel": "지갑 주소",
+    "amountLabel": "토큰 금액",
+    "amountBalance": "잔액: 2.4563 ETH"
+  },
+  "variants": {
+    "standardTitle": "표준 버전",
+    "specializedTitle": "특화된 형식",
+    "defaultLabel": "기본 입력",
+    "defaultPlaceholder": "표준 입력 필드",
+    "defaultHint": "가장 흔한 입력 방식",
+    "searchLabel": "검색 입력",
+    "searchPlaceholder": "검색 기능",
+    "searchHint": "검색 사용 사례에 최적화됨",
+    "errorLabel": "오류 상태",
+    "errorPlaceholder": "잘못된 입력",
+    "errorHint": "검증 오류용",
+    "iconLabel": "아이콘 포함",
+    "iconHint": "왼쪽 아이콘 배치",
+    "phoneLabel": "전화번호",
+    "urlLabel": "웹사이트 URL",
+    "dateLabel": "날짜",
+    "fileLabel": "파일 업로드"
+  },
+  "web3": {
+    "walletInputsTitle": "지갑 주소 입력",
+    "ethAddressLabel": "이더리움 주소",
+    "solAddressLabel": "솔라나 주소",
+    "ensLabel": "ENS 도메인",
+    "snsLabel": "SNS 도메인",
+    "tokenAmountsTitle": "토큰 금액 입력",
+    "ethAmountLabel": "ETH 금액",
+    "usdcAmountLabel": "USDC 금액",
+    "max": "MAX",
+    "ethBalance": "잔액: 2.4563 ETH",
+    "usdcBalance": "잔액: 1,547.23 USDC",
+    "gasTitle": "가스 수수료 구성",
+    "gasPriceLabel": "가스 가격 (Gwei)",
+    "gasSlow": "천천히",
+    "gasStandard": "표준",
+    "gasFast": "빠른",
+    "gasSlowTime": "~5분",
+    "gasStandardTime": "~2분",
+    "gasFastTime": "~1분",
+    "customGasLabel": "사용자 정의 가스 가격",
+    "customGasHint": "예상 비용: 8.45달러 미국 • 예상 시간: ~2분"
+  },
+  "accessibility": {
+    "bestPracticesTitle": "✅ 최선의 방법",
+    "bestPractices": [
+      "스크린 리더를 위해 항상 설명적인 레이블을 제공하세요",
+      "적절한 입력 유형(이메일, 전화번호, URL 등)을 사용하세요",
+      "유용한 플레이스홀더 텍스트와 지침을 포함하세요",
+      "명확한 오류 메시지와 제안을 제공하세요",
+      "충분한 색 대비를 확보하세요 (최소 4.5:1)",
+      "키보드 탐색 및 포커스 상태 지원"
+    ],
+    "avoidTitle": "❌ 피하기",
+    "avoid": [
+      "플레이스홀더 텍스트를 유일한 레이블로 사용",
+      "검증 상태를 나타내기 위해 색상만을 신뢰하는 것",
+      "입력을 편안한 상호작용에 부적합하게 너무 작게 만든다",
+      "모호하거나 도움이 되지 않는 오류 메시지를 제공하는 것",
+      "좋은 이유 없이 브라우저 자동완성 기능을 끄는 것",
+      "포커스 인디케이터를 제거하거나 보이기 어렵게 만들기"
+    ],
+    "examplesTitle": "접근성 구현 예시"
+  },
+  "nav": {
+    "back": "디자인 시스템으로 돌아가기",
+    "lastUpdated": "마지막 업데이트: {{date}}"
+  }
+}

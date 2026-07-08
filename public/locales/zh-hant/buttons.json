@@ -1,0 +1,130 @@
+{
+  "seo": {
+    "title": "按鈕 - 設計系統 - 內部 - {{emailDomain}}",
+    "description": "完成按鈕組件庫，包含所有變體、尺寸、狀態和互動"
+  },
+  "codeExample": {
+    "preview": "預覽",
+    "usage": "使用"
+  },
+  "header": {
+    "badge": "按鈕組件",
+    "title": "按鈕庫與互動模式",
+    "intro": "具備一致變數、尺寸、狀態與互動行為的全面按鈕元件系統。所有按鈕均支援載入狀態、適當的焦點管理與可存取性功能。"
+  },
+  "quickStart": {
+    "title": "快速入門 - 必備按鈕模式",
+    "description": "具有一致樣式、狀態和行為模式的即用型按鈕組件。",
+    "primary": {
+      "title": "主要操作按鈕",
+      "button": "主要操作"
+    },
+    "secondary": {
+      "title": "次要按鈕",
+      "button": "次要操作"
+    },
+    "outline": {
+      "title": "輪廓按鈕",
+      "button": "輪廓操作"
+    },
+    "ghost": {
+      "title": "幽靈按鈕",
+      "button": "幽靈行動"
+    }
+  },
+  "variants": {
+    "title": "按鈕變體",
+    "description": "適用於不同使用場景和層級的按鈕樣式。",
+    "colors": {
+      "title": "顏色變體",
+      "description": "主按鈕、次按鈕、成功按鈕、警告按鈕和破壞性按鈕的顏色",
+      "primary": "主要",
+      "success": "成功",
+      "warning": "警告",
+      "destructive": "破壞性的"
+    },
+    "sizes": {
+      "title": "按鈕大小",
+      "description": "適用於不同情境的小、預設和大按鈕尺寸",
+      "small": "小",
+      "default": "預設",
+      "large": "大"
+    }
+  },
+  "states": {
+    "title": "按鈕狀態",
+    "description": "包括懸停、激活、焦點、加載和禁用的互動狀態。",
+    "interactive": {
+      "title": "互動狀態",
+      "description": "正常、懸停、激活和焦點狀態，帶有適當的過渡效果",
+      "button": "互動式按鈕",
+      "secondary": "次要互動"
+    },
+    "loading": {
+      "title": "載入和禁用狀態",
+      "description": "載入指示器整合與正確的禁用樣式",
+      "loadingLabel": "載入中...",
+      "demoLabel": "演示加載",
+      "disabled": "已停用"
+    }
+  },
+  "icons": {
+    "title": "圖標按鈕及組合",
+    "description": "帶圖示的按鈕、僅圖示按鈕和切換按鈕，以增強可用性。",
+    "withIcons": {
+      "title": "帶圖示的按鈕",
+      "description": "文字按鈕透過圖示增強，以提升辨識度",
+      "sendMessage": "發送訊息",
+      "download": "下載",
+      "settingsTitle": "設定"
+    },
+    "toggle": {
+      "title": "切換和操作按鈕",
+      "description": "切換按鈕和特定操作按鈕模式",
+      "liked": "喜歡",
+      "like": "像",
+      "delete": "刪除",
+      "edit": "編輯"
+    }
+  },
+  "groups": {
+    "title": "按鈕組和組合",
+    "description": "分組按鈕、按鈕欄以及複雜介面中的操作組合。",
+    "buttonGroups": {
+      "title": "按鈕群組",
+      "description": "用於相關操作的連接按鈕組",
+      "connectedLabel": "已連接群組：",
+      "previous": "上一頁",
+      "current": "目前",
+      "next": "下一個",
+      "spacedLabel": "間隔分組：",
+      "primary": "主要",
+      "secondary": "次級",
+      "cancel": "取消"
+    },
+    "actionBars": {
+      "title": "操作欄和工具列",
+      "description": "工具列和操作區域的複雜按鈕組合",
+      "new": "新",
+      "editTitle": "編輯",
+      "shareTitle": "分享",
+      "cancel": "取消",
+      "delete": "刪除"
+    }
+  },
+  "accessibility": {
+    "title": "可訪問性與最佳實踐",
+    "guidelinesTitle": "按鈕可訪問性指南",
+    "list": {
+      "semanticBefore": "使用語義",
+      "semanticAfter": "元素而不是div",
+      "contrast": "確保足夠的顏色對比度（最小對比度為4.5:1）",
+      "focus": "為鍵盤導航包含焦點狀態",
+      "loadingStates": "新增載入狀態以防止重複提交",
+      "ariaLabels": "為僅包含圖標按鈕使用適當的 ARIA 標籤",
+      "touchTarget": "保持最小觸摸目標大小（44px x 44px）",
+      "feedback": "為所有狀態提供清晰的視覺反饋",
+      "grouping": "使用適當的間距，邏輯地分組相關按鈕"
+    }
+  }
+}

@@ -1,0 +1,132 @@
+{
+  "seo": {
+    "title": "Medallas - {{appName}}",
+    "description": "Componentes y variantes de insignias para el sistema de diseño"
+  },
+  "header": {
+    "badge": "Insignias",
+    "title": "Componentes de insignia",
+    "intro": "Componentes pequeños y versátiles para etiquetar, categorizar y transmitir información de estado con colores semánticos y estados interactivos."
+  },
+  "stats": {
+    "badgeVariants": "Variantes de insignia",
+    "sizeOptions": "Opciones de tamaño",
+    "stateTypes": "Tipos de estado",
+    "web3Variants": "Variantes de Web3"
+  },
+  "sections": {
+    "quickStart": {
+      "title": "🚀 Comienzo rápido",
+      "description": "Comience con los patrones de insignias más comúnmente utilizados. Copie y pegue estos ejemplos para implementar insignias rápidamente en sus componentes.",
+      "essentialTitle": "1. Tipos esenciales de insignias",
+      "essential": {
+        "default": "Predeterminado",
+        "primary": "Principal",
+        "success": "Éxito",
+        "warning": "Advertencia",
+        "error": "Error"
+      },
+      "statusTitle": "2. Marcadores de estado con iconos",
+      "status": {
+        "active": "Activo",
+        "pending": "Pendiente",
+        "failed": "Error",
+        "info": "Información"
+      },
+      "sizesTitle": "3. Variaciones de tamaño",
+      "sizes": {
+        "small": "Pequeño",
+        "default": "Predeterminado",
+        "large": "Grande"
+      },
+      "web3Title": "4. insignias de integración de Web3",
+      "web3": {
+        "ethereum": "Ethereum",
+        "solana": "Solana",
+        "verified": "Verificado"
+      }
+    },
+    "variants": {
+      "title": "🎨 Variantes de insignia",
+      "description": "Explore todas las variantes de colores de insignias disponibles, sus significados semánticos y sus casos de uso adecuados.",
+      "semanticTitle": "Colores semánticos",
+      "web3Title": "Específico de Web3",
+      "semantic": {
+        "default": "Predeterminado",
+        "defaultDesc": "Información general y neutral",
+        "primary": "Principal",
+        "primaryDesc": "Colores de marca, destacados importantes",
+        "success": "Éxito",
+        "successDesc": "Acciones completadas, estado positivo",
+        "warning": "Advertencia",
+        "warningDesc": "Cuidado requerido, acciones pendientes",
+        "error": "Error",
+        "errorDesc": "Acciones fallidas, problemas críticos"
+      },
+      "web3": {
+        "ethereum": "Ethereum",
+        "ethereumDesc": "relacionado con la cadena de bloques de Ethereum",
+        "solana": "Solana",
+        "solanaDesc": "relacionado con la cadena de bloques Solana"
+      }
+    },
+    "sizes": {
+      "title": "📏 Opciones de tamaño",
+      "description": "Tamaños de insignias diferentes para diversos casos de uso, desde indicadores compactos hasta etiquetas destacadas.",
+      "small": {
+        "heading": "Pequeño",
+        "badge": "Pequeño distintivo",
+        "desc": "Tamaño compacto para diseños densos"
+      },
+      "default": {
+        "heading": "Predeterminado",
+        "badge": "Distintivo predeterminado",
+        "desc": "Tamaño estándar para la mayoría de los casos de uso"
+      },
+      "large": {
+        "heading": "Grande",
+        "badge": "Gran insignia",
+        "desc": "Tamaño destacado para énfasis"
+      }
+    },
+    "interactive": {
+      "title": "⚡ Patrones interactivos",
+      "description": "Ejemplos del mundo real de cómo se utilizan los insignias en diferentes contextos y componentes.",
+      "userStatusTitle": "Indicadores de estado de usuario",
+      "userStatus": {
+        "online": "En línea",
+        "away": "Lejos",
+        "offline": "Desconectado"
+      },
+      "notificationTitle": "Contadores de notificaciones",
+      "notification": {
+        "messages": "📧 Mensajes",
+        "notifications": "🔔 Notificaciones",
+        "updates": "⭐ Actualizaciones"
+      }
+    },
+    "accessibility": {
+      "title": "♿ Directrices de accesibilidad",
+      "description": "Asegúrese de que sus insignias sean accesibles para todos los usuarios con el contraste adecuado, soporte para lectores de pantalla y navegación con teclado.",
+      "bestPracticesTitle": "✅ Mejores prácticas",
+      "bestPractices": [
+        "Utilice colores semánticos que transmitan significado de forma consistente",
+        "Asegure un contraste de color adecuado (mínimo 4,5:1)",
+        "Incluir etiquetas de texto, no solo colores o iconos",
+        "Utilice etiquetas ARIA apropiadas para lectores de pantalla",
+        "Mantenga el texto del insignia breve y significativo"
+      ],
+      "avoidTitle": "❌ Evitar",
+      "avoid": [
+        "Dependiendo únicamente del color para transmitir información",
+        "Usar demasiados insignias en una sola interfaz",
+        "Hacer que los insignias sean demasiado pequeñas para leer cómodamente",
+        "Usar texto de insignia poco claro o ambiguo",
+        "El uso excesivo de insignias animadas o parpadeantes"
+      ],
+      "ariaExamplesTitle": "Ejemplos de ARIA"
+    }
+  },
+  "backToDesignSystem": "Volver al sistema de diseño",
+  "lastUpdated": "Última actualización: {{date}}"
+}

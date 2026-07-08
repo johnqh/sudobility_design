@@ -1,0 +1,188 @@
+{
+  "seo": {
+    "title": "通知とフィードバック - デザインシステム - 内部 - {{emailDomain}}",
+    "description": "トースト、プログレスインジケーター、システムステータスを含む通知およびフィードバックコンポーネント"
+  },
+  "toasts": {
+    "copied": {
+      "title": "コピーしました！",
+      "message": "コードをクリップボードにコピーしました"
+    },
+    "complete": {
+      "title": "完了！",
+      "message": "操作が正常に完了しました"
+    },
+    "success": {
+      "title": "取引が確認されました！",
+      "message": "ETHの送金が正常に完了しました"
+    },
+    "error": {
+      "title": "取引に失敗しました",
+      "message": "取引に必要なガスが不足しています"
+    },
+    "warning": {
+      "title": "高額なガス手数料",
+      "message": "ネットワークの混雑が検出されました",
+      "actionLabel": "ガスの調整"
+    },
+    "gasAdjusted": {
+      "title": "ガス調整済",
+      "message": "ガス価格が25 gweiに更新されました"
+    },
+    "info": {
+      "title": "新しい機能が利用可能",
+      "message": "マルチチェーン交換が今サポートされています"
+    }
+  },
+  "header": {
+    "badge": "通知とフィードバック",
+    "title": "通知およびフィードバックシステム",
+    "description": "Web3アプリケーション向けのトースト、進捗インジケーター、取引ステータスの更新、システムステータスの表示を含む包括的な通知およびフィードバックシステム。"
+  },
+  "quickStart": {
+    "title": "クイックスタート",
+    "copyTooltip": "クリップボードにコピー",
+    "examples": {
+      "toast": {
+        "title": "トースト通知",
+        "description": "自動消去とアクション付きの一時的な通知"
+      },
+      "progress": {
+        "title": "進捗通知",
+        "description": "長時間実行される操作の進捗を表示"
+      },
+      "transaction": {
+        "title": "取引ステータス",
+        "description": "確認付きWeb3取引の進捗"
+      },
+      "systemStatus": {
+        "title": "システムステータスインジケーター",
+        "description": "リアルタイムシステムおよび接続状態"
+      }
+    }
+  },
+  "toastSection": {
+    "title": "トースト通知",
+    "demoTitle": "インタラクティブなトーストデモ",
+    "demoDescription": "ボタンをクリックして、さまざまな種類のトースト通知を発生させます",
+    "buttons": {
+      "success": "成功",
+      "error": "エラー",
+      "warning": "警告",
+      "info": "情報"
+    },
+    "featuresTitle": "トーストの種類と特徴",
+    "features": {
+      "successLabel": "成功：",
+      "successText": "取引の確認、完了した操作",
+      "errorLabel": "エラー:",
+      "errorText": "失敗した取引、ネットワークエラー",
+      "warningLabel": "警告:",
+      "warningText": "高額なガス手数料、セキュリティ警告（アクション付き）",
+      "infoLabel": "情報:",
+      "infoText": "新しい機能、システム更新（永続的）",
+      "autoDismiss": "5秒後に自動的に閉じる（永続的でない限り）",
+      "actionButtons": "インタラクティブな応答用のオプションボタン"
+    }
+  },
+  "progressSection": {
+    "title": "進捗インジケーター",
+    "linear": {
+      "title": "線形プログレス",
+      "description": "ファイルアップロードおよび操作の進捗バー",
+      "emailSync": "メール同期進捗",
+      "fileUpload": "ファイルアップロード",
+      "uploading": "document.pdf (2.3 MB) をアップロード中",
+      "simulate": "進捗をシミュレート"
+    },
+    "spinners": {
+      "title": "ローディングスピナー",
+      "description": "さまざまな読み込み状態とスピンナーロゴ",
+      "loadingTransactions": "取引を読み込んでいます...",
+      "connectingWallet": "ウォレットに接続中...",
+      "syncingBlockchain": "ブロックチェーンデータの同期中..."
+    }
+  },
+  "transactionSection": {
+    "title": "Web3取引ステータス",
+    "trackerTitle": "取引トラッカー",
+    "trackerDescription": "確認進捗付きのリアルタイム取引ステータス",
+    "confirmations": "確認",
+    "confirmationsLabel": "確認",
+    "statuses": {
+      "pending": "保留中",
+      "confirming": "確認する",
+      "confirmed": "確認済み",
+      "failed": "失敗しました"
+    },
+    "types": {
+      "sendEth": "ETHを送る",
+      "swapTokens": "トークンを交換する",
+      "approveToken": "トークンの承認"
+    },
+    "statesTitle": "取引状態",
+    "states": {
+      "pendingLabel": "保留中:",
+      "pendingText": "トランザクションがメモポールに送信されました",
+      "confirmingLabel": "確認します:",
+      "confirmingText": "ブロックに含まれている（進捗が表示される）",
+      "confirmedLabel": "確認済み:",
+      "confirmedText": "必要な確認が達成されました",
+      "failedLabel": "失敗しました：",
+      "failedText": "取引が元に戻されたか拒否されました"
+    }
+  },
+  "systemStatusSection": {
+    "title": "システムステータスとインジケーター",
+    "connection": {
+      "title": "接続状態",
+      "description": "リアルタイム接続とシステムステータス",
+      "systemStatus": "システムステータス",
+      "online": "すべてのシステムが正常に動作しています",
+      "degraded": "一部のサービスは利用できません",
+      "offline": "システムメンテナンス",
+      "statusLabels": {
+        "online": "オンライン",
+        "degraded": "劣化",
+        "offline": "オフライン"
+      },
+      "internetConnection": "インターネット接続",
+      "connected": "接続済み",
+      "walletConnection": "ウォレット接続",
+      "metaMask": "MetaMask",
+      "ethereumNetwork": "イーサリアムネットワーク",
+      "mainnet": "Mainnet",
+      "securityStatus": "セキュリティステータス",
+      "warning": "警告"
+    },
+    "badges": {
+      "title": "通知バッジ",
+      "description": "インジケーターとステータスバッジのカウント",
+      "countBadges": "バッジを数える",
+      "statusIndicators": "ステータスインジケーター",
+      "online": "オンライン",
+      "away": "遠く",
+      "offline": "オフライン"
+    }
+  },
+  "contextualFeedback": {
+    "title": "文脈に応じたフィードバック",
+    "smartTitle": "スマートフィードバックパターン",
+    "smartDescription": "ユーザーの操作とシステム状態に応じて適応する文脈認識フィードバック",
+    "actionFeedback": "アクションフィードバック",
+    "emailSent": "メールを正常に送信しました",
+    "autoSave": "自動保存が有効になりました",
+    "draftSaved": "ローカルに下書きを保存しました",
+    "smartSuggestions": "スマートな提案",
+    "enable2fa": {
+      "title": "より高いセキュリティのため2FAを有効にする",
+      "description": "財布の保護に推奨",
+      "action": "有効にする"
+    },
+    "backupSeed": {
+      "title": "シードフレーズをバックアップしてください",
+      "description": "ウォレットの復旧を保護する",
+      "action": "バックアップ"
+    }
+  }
+}

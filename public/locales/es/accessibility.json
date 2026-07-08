@@ -1,0 +1,127 @@
+{
+  "seo": {
+    "title": "Accesibilidad & A11Y - Sistema de diseño - Interno - {{emailDomain}}",
+    "description": "Patrones de accesibilidad completos y utilidades de diseño inclusivo para cumplir con WCAG"
+  },
+  "header": {
+    "badge": "Accesibilidad y A11Y",
+    "title": "Sistema de diseño inclusivo",
+    "intro": "Patrones y utilidades de accesibilidad completos para crear aplicaciones Web3 inclusivas y conformes con WCAG. Estos patrones garantizan el acceso igualitario para todos los usuarios, incluidos aquellos que utilizan tecnologías asistivas."
+  },
+  "stats": {
+    "wcag": {
+      "value": "WCAG 2.1",
+      "label": "Cumple con AA"
+    },
+    "touch": {
+      "value": "44px+",
+      "label": "Objetos de toque"
+    },
+    "contrast": {
+      "value": "4,5:1",
+      "label": "Contraste de color"
+    },
+    "screenReader": {
+      "value": "Lector de pantalla",
+      "label": "Compatible"
+    }
+  },
+  "screenReader": {
+    "title": "Compatibilidad con lector de pantalla",
+    "description": "Patrones de lector de pantalla completos, incluyendo enlaces de salto, etiquetas ARIA y HTML semántico.",
+    "skipLink": {
+      "title": "Enlace de salto",
+      "button": "Enlace de salto (Enfocar para ver)",
+      "visible": "✓ El enlace de salto ahora es visible. Esto ayuda a los usuarios con teclado a navegar rápidamente."
+    },
+    "only": {
+      "title": "Contenido solo para lectores de pantalla",
+      "description": "Este contenido proporciona contexto para lectores de pantalla sin ensuciar el diseño visual.",
+      "hidden": "Este texto solo es visible para lectores de pantalla"
+    }
+  },
+  "focus": {
+    "title": "Gestión del enfoque",
+    "description": "Elimine los indicadores de enfoque y los patrones de navegación con teclado para todos los elementos interactivos.",
+    "indicatorsTitle": "Indicadores de enfoque",
+    "standard": "Enfoque estándar",
+    "highContrast": "Alto contraste",
+    "wallet": "Monedero Web3",
+    "error": "Estado de error"
+  },
+  "contrast": {
+    "title": "Contraste de color",
+    "description": "Combinaciones de texto y fondo de alto contraste que superan los requisitos WCAG AA.",
+    "levelsTitle": "Niveles de contraste de texto",
+    "high": "Texto de alto contraste (WCAG AAA) - Relación 7:1+",
+    "medium": "Texto de contraste medio (WCAG AA) - Relación 4,5:1+",
+    "low": "Texto de bajo contraste (para contenido secundario)",
+    "backgroundsTitle": "Fondos de alto contraste",
+    "primary": "Principal",
+    "success": "Éxito",
+    "warning": "Advertencia",
+    "errorLabel": "Error"
+  },
+  "motion": {
+    "title": "Preferencias de movimiento",
+    "description": "Animaciones que respetan las preferencias de movimiento del usuario y ofrecen alternativas para usuarios con trastornos vestibulares.",
+    "controlsTitle": "Controles de preferencia de movimiento",
+    "reduceMotion": "Reducir movimiento",
+    "noAnimation": "Sin animación",
+    "animatedButton": "Botón animado"
+  },
+  "form": {
+    "title": "Accesibilidad de formularios",
+    "description": "Patrones de formularios accesibles con etiquetado adecuado, validación y manejo de errores.",
+    "requiredTitle": "Indicadores de campo obligatorio",
+    "emailLabel": "Dirección de correo electrónico",
+    "passwordLabel": "Contraseña",
+    "passwordError": "La contraseña debe tener al menos 8 caracteres",
+    "codeExamplesTitle": "Ejemplos de código"
+  },
+  "feedback": {
+    "title": "Comentario accesible",
+    "description": "Mensajes de retroalimentación compatibles con lectores de pantalla, con regiones ARIA en vivo apropiadas.",
+    "messageTypesTitle": "Tipos de mensaje",
+    "successTitle": "Éxito",
+    "successMessage": "¡Su billetera se ha conectado con éxito!",
+    "errorTitle": "Error",
+    "errorMessage": "La transacción falló. Inténtalo de nuevo.",
+    "liveRegionTitle": "Patrones de región en vivo",
+    "politeExample": "Este contenido se anunciará educadamente a los lectores de pantalla",
+    "assertiveExample": "Este contenido interrumpirá los lectores de pantalla para alertas importantes"
+  },
+  "web3": {
+    "title": "Accesibilidad Web3",
+    "description": "Patrones especializados de accesibilidad para aplicaciones Web3, incluyendo conexiones de billetera y transacciones.",
+    "componentsTitle": "Componentes Web3",
+    "connectWallet": "Conectar billetera",
+    "connectWalletAria": "Conecta tu billetera Web3",
+    "transactionAria": "Estado de la transacción",
+    "transactionPending": "Transacción pendiente...",
+    "balanceAria": "El saldo de la cuenta es de 1,5 ETH",
+    "addressAria": "Dirección de billetera 0x1234...5678",
+    "implementationTitle": "Implementación"
+  },
+  "bestPractices": {
+    "title": "Prácticas recomendadas",
+    "doTitle": "✅ Haz esto",
+    "do": [
+      "Utilice elementos HTML semánticos (button, nav, main, etc.)",
+      "Proporcione etiquetas aria-label descriptivas para los elementos interactivos",
+      "Asegúrese de que los objetivos táctiles tengan un tamaño mínimo de 44 píxeles en dispositivos móviles",
+      "Prueba con navegación solo con el teclado",
+      "Respetar las preferencias de movimiento del usuario",
+      "Proporcione texto alternativo para conceptos complejos de Web3"
+    ],
+    "avoidTitle": "❌ Evita esto",
+    "avoid": [
+      "Usar el color solo para transmitir información",
+      "Creando trampas de teclado sin rutas de escape",
+      "Vídeos o animaciones que se reproducen automáticamente",
+      "Usar etiquetas genéricas como \"Haga clic aquí\" o \"Leer más\"",
+      "Eliminar completamente los indicadores de enfoque",
+      "Uso de jerga de Web3 sin explicaciones"
+    ]
+  }
+}

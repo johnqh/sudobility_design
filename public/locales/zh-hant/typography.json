@@ -1,0 +1,477 @@
+{
+  "seo": {
+    "title": "排版 - 設計系統 - 內部 - {{emailDomain}}",
+    "description": "設計系統完整排版系統和文字樣式展示"
+  },
+  "nav": {
+    "viewColors": "查看顏色"
+  },
+  "header": {
+    "badge": "排版系統",
+    "title": "排版與文字樣式",
+    "intro": "完整的排版系統，包括字體、大小、粗細和樣式，以及使用範例和程式碼範例。點擊任一範例可將其類別名稱複製到剪貼簿。"
+  },
+  "example": {
+    "aria": "複製 {{title}} 類別名稱",
+    "preview": "預覽",
+    "usage": "使用"
+  },
+  "quickStart": {
+    "heading": "快速入門 - 字體排版範例",
+    "description": "最常見的文本模式的即用型排版範例。直接複製貼上至您的元件中。",
+    "pageHeading": {
+      "title": "頁面標題",
+      "preview": "歡迎來到平台"
+    },
+    "bodyText": {
+      "title": "正文",
+      "preview": "這是一個大型文字範例，用以展示在您的應用程式中，實現可讀內容所需的正確字型大小、行高和間距。"
+    },
+    "codeBlock": {
+      "title": "程式碼區塊"
+    },
+    "linkText": {
+      "title": "連結文字",
+      "preview": "了解更多關於 Web3 電子郵件的資訊"
+    },
+    "captionText": {
+      "title": "標題文字",
+      "preview": "最後更新時間：2024年3月15日 14:30"
+    },
+    "inlineCode": {
+      "title": "內聯代碼",
+      "previewPrefix": "使用",
+      "previewSuffix": "用於在 React 應用程式中管理組件狀態的 hook。"
+    }
+  },
+  "fontFamilies": {
+    "heading": "字體族",
+    "description": "應用程式中用於不同內容類型的三種主要字體家族。",
+    "pangram": "快速的棕色狐狸跳過懶狗",
+    "items": {
+      "sans": {
+        "name": "無襯線字體（預設）",
+        "description": "使用者介面元素和正文字體的主字型家族",
+        "usage": "UI 元素、標題、正文"
+      },
+      "serif": {
+        "name": "襯線體",
+        "description": "用於編輯和正式內容",
+        "usage": "編輯內容，正式文件"
+      },
+      "mono": {
+        "name": "等寬",
+        "description": "用於程式碼區塊與技術性文字",
+        "usage": "程式碼區塊，技術內容，錢包位址"
+      }
+    },
+    "code": {
+      "title": "字體族使用",
+      "description": "如何使用設計系統的字體族"
+    },
+    "preview": {
+      "sans": "這是無襯線文字（預設UI字型）",
+      "serif": "這是用於編輯內容的襯線體文字",
+      "mono": "這是用於程式碼的等寬文字"
+    }
+  },
+  "scale": {
+    "heading": "排版比例",
+    "description": "從顯示文字到標題的層級字型比例，提供介面中的一致性大小設定。",
+    "items": {
+      "hero": {
+        "name": "英雄",
+        "usage": "登陸頁面，英雄區塊"
+      },
+      "xl": {
+        "name": "顯示 XL",
+        "usage": "大螢幕標題"
+      },
+      "lg": {
+        "name": "顯示 LG",
+        "usage": "中等顯示標題"
+      },
+      "md": {
+        "name": "顯示 MD",
+        "usage": "小螢幕標題"
+      },
+      "sm": {
+        "name": "顯示 SM",
+        "usage": "超小尺寸顯示標題"
+      },
+      "h1": {
+        "name": "標題 1",
+        "usage": "主頁標題"
+      },
+      "h2": {
+        "name": "標題 2",
+        "usage": "章節標題"
+      },
+      "h3": {
+        "name": "標題 3",
+        "usage": "小節標題"
+      },
+      "h4": {
+        "name": "標題 4",
+        "usage": "次要標題"
+      },
+      "h5": {
+        "name": "標題 5",
+        "usage": "小標題"
+      },
+      "h6": {
+        "name": "標題 6",
+        "usage": "最小標題"
+      }
+    },
+    "code": {
+      "title": "排版比例使用",
+      "description": "如何使用設計系統的標題變體"
+    },
+    "preview": {
+      "h1": "標題 1",
+      "h2": "標題 2",
+      "h3": "標題 3",
+      "body": "正文緊隨標題之後"
+    }
+  },
+  "body": {
+    "heading": "正文",
+    "description": "不同內容類型和層級結構的正文字本變體。",
+    "sample": "這是演示此變體字體大小、字重和行距的範例正文。",
+    "items": {
+      "xl": {
+        "name": "身體 XL",
+        "usage": "引言段落，重要內容"
+      },
+      "lg": {
+        "name": "身體大",
+        "usage": "標準正文，主要內容"
+      },
+      "md": {
+        "name": "身體 中號",
+        "usage": "標準正文（大號的別名）"
+      },
+      "sm": {
+        "name": "身體小",
+        "usage": "次要資訊，說明文字"
+      },
+      "xs": {
+        "name": "身體超小號",
+        "usage": "細文字，最少細節"
+      }
+    },
+    "code": {
+      "title": "正文文字使用",
+      "description": "如何使用正文變體"
+    },
+    "preview": {
+      "xl": "這是用於引言段落和重要介紹內容的超大正文文字。",
+      "lg": "這是應用程式中大部分用於主內容的標準正文文字。",
+      "sm": "這是用於次要資訊、字幕和幫助文字的小型正文字體。"
+    }
+  },
+  "emphasis": {
+    "heading": "文字強調",
+    "description": "不同字重和突出程度的文本強調變體。",
+    "items": {
+      "strongLg": {
+        "name": "強力大",
+        "usage": "重要強調文字"
+      },
+      "strongMd": {
+        "name": "強 中",
+        "usage": "中等粗體文字"
+      },
+      "strongSm": {
+        "name": "強壯小",
+        "usage": "小號強調文字"
+      },
+      "emphasisLg": {
+        "name": "強調大",
+        "usage": "中等重量強調"
+      },
+      "emphasisMd": {
+        "name": "中等強調",
+        "usage": "中等重量強調"
+      },
+      "emphasisSm": {
+        "name": "強調 小",
+        "usage": "輕至中等重量強調"
+      },
+      "mutedLg": {
+        "name": "靜音大",
+        "usage": "弱化文字"
+      },
+      "mutedMd": {
+        "name": "靜音中",
+        "usage": "弱化文字"
+      },
+      "mutedSm": {
+        "name": "靜音小",
+        "usage": "去強調的小文字"
+      }
+    },
+    "code": {
+      "title": "文字強調用法",
+      "description": "如何使用文字強調變體"
+    },
+    "preview": {
+      "normalPrefix": "這是正常文字，包含",
+      "strong": "強烈強調",
+      "and": "和",
+      "medium": "中等強調",
+      "muted": "這是音量降低的文本，視覺突出度降低。"
+    }
+  },
+  "caption": {
+    "heading": "標題和特殊文字",
+    "captionTitle": "標題變體",
+    "sample": "這是一個標題範例",
+    "uppercaseSample": "章節標籤",
+    "items": {
+      "default": {
+        "name": "預設字幕",
+        "usage": "圖像說明，附加資訊"
+      },
+      "emphasis": {
+        "name": "強調字幕",
+        "usage": "重要標題"
+      },
+      "uppercase": {
+        "name": "大寫標題",
+        "usage": "章節標籤、標籤"
+      }
+    },
+    "leadTitle": "主文本",
+    "leadSample": "這是介紹主內容的引言文字，為接下來的內容提供背景。",
+    "leadItems": {
+      "lg": {
+        "name": "大鉛",
+        "usage": "引言段落，文章開頭"
+      },
+      "md": {
+        "name": "中等線索",
+        "usage": "引言段落"
+      },
+      "sm": {
+        "name": "小領導",
+        "usage": "簡短的介紹文字"
+      }
+    },
+    "code": {
+      "title": "標題與引言文字使用",
+      "description": "如何使用字幕和引言文字"
+    },
+    "preview": {
+      "imageCaption": "這是上方圖片的說明文字",
+      "sectionLabel": "章節標籤",
+      "lead": "這是介紹該部分的引言文字。"
+    }
+  },
+  "links": {
+    "heading": "連結樣式",
+    "description": "不同上下文和強調程度的連結樣式。",
+    "externalSample": "外部連結 →",
+    "items": {
+      "default": {
+        "name": "預設連結",
+        "usage": "帶底線的標準連結"
+      },
+      "subtle": {
+        "name": "微妙的連結",
+        "usage": "無底線的連結"
+      },
+      "muted": {
+        "name": "靜音連結",
+        "usage": "灰色連結"
+      },
+      "external": {
+        "name": "外部連結",
+        "usage": "外部網站連結"
+      }
+    },
+    "code": {
+      "title": "連結樣式用法",
+      "description": "如何使用連結變體"
+    },
+    "preview": {
+      "paraPrefix": "此段落包含一個",
+      "defaultLink": "預設連結",
+      "and": "和一個",
+      "subtleLink": "微妙的連結",
+      "checkPrefix": "看看這個",
+      "externalLink": "外部連結 →",
+      "or": "或這個",
+      "mutedLink": "靜音連結"
+    }
+  },
+  "codeText": {
+    "heading": "程式碼與技術性文字",
+    "description": "程式碼、技術內容與技術文件的等寬文字樣式。",
+    "items": {
+      "inline": {
+        "name": "內聯代碼",
+        "usage": "文字中的程式碼"
+      },
+      "block": {
+        "name": "程式碼區塊",
+        "usage": "多行程式碼區塊"
+      },
+      "small": {
+        "name": "小程式碼",
+        "usage": "小內聯代碼"
+      }
+    },
+    "code": {
+      "title": "程式碼文字使用",
+      "description": "如何使用程式碼文字變體"
+    },
+    "preview": {
+      "usePrefix": "使用",
+      "useSuffix": "用於管理狀態的hook。",
+      "runPrefix": "執行",
+      "runSuffix": "開始使用。"
+    }
+  },
+  "labels": {
+    "heading": "表單標籤與訊息",
+    "description": "表單元素、標籤和反饋訊息的文本樣式。",
+    "items": {
+      "default": {
+        "name": "預設標籤",
+        "usage": "表單欄位標籤",
+        "sample": "預設"
+      },
+      "required": {
+        "name": "必要標籤",
+        "usage": "必填表單欄位",
+        "sample": "電子郵件地址"
+      },
+      "optional": {
+        "name": "可選標籤",
+        "usage": "可選表單欄位",
+        "sample": "可選"
+      },
+      "helper": {
+        "name": "幫助文字",
+        "usage": "表單幫助文字",
+        "sample": "助手"
+      },
+      "error": {
+        "name": "錯誤文字",
+        "usage": "表單錯誤訊息",
+        "sample": "錯誤"
+      },
+      "success": {
+        "name": "成功文字",
+        "usage": "表單成功訊息",
+        "sample": "成功"
+      }
+    },
+    "code": {
+      "title": "表單標籤使用",
+      "description": "如何使用表單標籤和訊息變體"
+    },
+    "preview": {
+      "emailLabel": "電子郵件地址",
+      "emailHelper": "我們將使用這個向您發送更新",
+      "passwordLabel": "密碼",
+      "passwordError": "密碼必須至少包含8個字符",
+      "phoneLabel": "電話號碼",
+      "phoneSuccess": "電話號碼驗證成功"
+    }
+  },
+  "web3": {
+    "heading": "Web3 文字樣式",
+    "description": "適用於Web3和區塊鏈特定內容（如位址、雜湊和金額）的專業文字樣式。",
+    "items": {
+      "address": {
+        "name": "錢包地址",
+        "usage": "完整的錢包地址"
+      },
+      "addressShort": {
+        "name": "短地址",
+        "usage": "截斷的錢包地址"
+      },
+      "hash": {
+        "name": "交易哈希",
+        "usage": "交易識別碼"
+      },
+      "amount": {
+        "name": "代幣金額",
+        "usage": "加密貨幣金額"
+      },
+      "chain": {
+        "name": "鏈名稱",
+        "usage": "區塊鏈網絡名稱"
+      },
+      "symbol": {
+        "name": "代幣符號",
+        "usage": "加密貨幣符號"
+      }
+    },
+    "code": {
+      "title": "Web3 文字使用",
+      "description": "如何使用 Web3 特定的文本樣式"
+    },
+    "preview": {
+      "transactionHash": "交易哈希："
+    }
+  },
+  "responsive": {
+    "heading": "響應式排版",
+    "description": "自動根據螢幕大小調整的排版，以在各種設備上實現最佳可讀性。",
+    "items": {
+      "h1": {
+        "name": "響應式 H1",
+        "usage": "隨螢幕大小縮放的標題"
+      },
+      "h2": {
+        "name": "響應式 H2",
+        "usage": "可縮放的章節標題"
+      },
+      "h3": {
+        "name": "響應式 H3",
+        "usage": "可縮放的子節標題"
+      },
+      "display": {
+        "name": "響應式顯示",
+        "usage": "顯示可縮放的文本"
+      }
+    },
+    "code": {
+      "title": "響應式排版使用",
+      "description": "如何使用隨螢幕大小縮放的響應式文字變體"
+    },
+    "preview": {
+      "heading": "此標題會隨螢幕大小而縮放",
+      "body": "調整瀏覽器視窗大小，查看響應式標題如何根據不同的螢幕尺寸進行自適應。"
+    }
+  },
+  "guidelines": {
+    "heading": "排版指南",
+    "doTitle": "✓ 做",
+    "do": [
+      "使用 textVariants 以實現一致的樣式",
+      "選擇合適的階層級別",
+      "為英雄內容使用響應式變體",
+      "確保足夠的對比度",
+      "程式碼和位址使用等寬字型",
+      "在不同螢幕尺寸上測試可讀性"
+    ],
+    "dontTitle": "✗ 不要",
+    "dont": [
+      "在比例範圍外使用隨機字體大小",
+      "跳過標題級別（h1 → h3）",
+      "使用太多不同的文字樣式",
+      "使文字在行動裝置上過小",
+      "為使用者介面元素使用襯線字型",
+      "忽略深色模式下的文字顏色"
+    ]
+  },
+  "copyInstructions": {
+    "title": "點擊以複製類別名稱",
+    "description": "點擊任意文字範例以複製其 CSS 類別名稱，或使用程式碼範例中的複製按鈕來複製使用程式碼"
+  }
+}

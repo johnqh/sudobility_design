@@ -1,0 +1,117 @@
+{
+  "seo": {
+    "title": "Formulaires - Système de conception - Interne - {{emailDomain}}",
+    "description": "Les éléments de formulaire et les composants d'entrée montrent la présentation pour le système de conception"
+  },
+  "codeExample": {
+    "preview": "Aperçu",
+    "usage": "Utilisation"
+  },
+  "header": {
+    "badge": "Éléments de formulaire",
+    "title": "Composants de formulaire et éléments d'entrée",
+    "description": "Bibliothèque complète d'éléments de formulaire avec une mise en forme cohérente, des états de validation et des fonctionnalités d'accessibilité. Tous les composants prennent en charge les thèmes clair/sombre et incluent une gestion appropriée du focus."
+  },
+  "quickStart": {
+    "title": "Mise en route rapide - Modèles de formulaire essentiels",
+    "description": "Composants de formulaire prêts à l'emploi avec une validation appropriée, une accessibilité et un design réactif.",
+    "textInput": {
+      "title": "Saisie de texte",
+      "label": "Adresse e-mail",
+      "placeholder": "Entrez votre adresse e-mail..."
+    },
+    "select": {
+      "title": "Sélectionner le menu déroulant",
+      "label": "Réseau de blockchain",
+      "placeholder": "Sélectionnez un réseau..."
+    },
+    "checkbox": {
+      "title": "Case à cocher",
+      "agree": "J'accepte les Conditions d'utilisation et la Politique de confidentialité"
+    },
+    "textarea": {
+      "title": "Zone de texte",
+      "label": "Message",
+      "placeholder": "Entrez votre message..."
+    }
+  },
+  "inputTypes": {
+    "title": "Types d'entrée et variantes",
+    "description": "Différents types d'entrée avec un style cohérent sur tous les éléments du formulaire.",
+    "textInputTypes": {
+      "title": "Types d'entrée de texte",
+      "description": "Différents types d'entrée avec un style cohérent",
+      "textPlaceholder": "Saisie de texte",
+      "passwordPlaceholder": "Mot de passe"
+    },
+    "sizes": {
+      "title": "Tailles d'entrée",
+      "description": "Tailles d'entrée différentes pour divers cas d'utilisation",
+      "smallPlaceholder": "Petite entrée",
+      "defaultPlaceholder": "Entrée par défaut",
+      "largePlaceholder": "Grand entrée"
+    }
+  },
+  "validation": {
+    "title": "États de validation",
+    "description": "États de validation de formulaire avec codage de couleur approprié et messages.",
+    "success": {
+      "title": "État de réussite",
+      "description": "Entrée valide avec style de succès",
+      "label": "Adresse e-mail",
+      "message": "Adresse e-mail valide"
+    },
+    "error": {
+      "title": "État d'erreur",
+      "description": "Entrée non valide avec mise en forme d'erreur",
+      "label": "Mot de passe",
+      "message": "Le mot de passe doit comporter au moins 8 caractères"
+    }
+  },
+  "advanced": {
+    "title": "Composants de formulaire avancés",
+    "description": "Plus de modèles de formulaires complexes avec des fonctionnalités améliorées.",
+    "passwordToggle": {
+      "title": "Saisie du mot de passe avec commutateur",
+      "description": "Champ de mot de passe avec fonctionnalité afficher/cacher",
+      "label": "Mot de passe",
+      "placeholder": "Entrez le mot de passe..."
+    },
+    "radio": {
+      "title": "Groupe de boutons radio",
+      "description": "Boutons radio pour la sélection unique",
+      "label": "Abonnement",
+      "free": "Plan gratuit - Fonctionnalités de base",
+      "pro": "Forfait Pro - Fonctionnalités avancées"
+    }
+  },
+  "complete": {
+    "title": "Remplir l'exemple de formulaire",
+    "description": "Un formulaire complet mettant en évidence tous les éléments de formulaire qui fonctionnent ensemble.",
+    "form": {
+      "title": "Formulaire de profil Web3",
+      "description": "Remplissez le formulaire avec tous les types d'éléments et la validation",
+      "displayNameLabel": "Nom affiché",
+      "displayNamePlaceholder": "Votre nom d'affichage",
+      "emailLabel": "Adresse e-mail",
+      "networkLabel": "Réseau préféré",
+      "networkPlaceholder": "Sélectionnez un réseau...",
+      "bioLabel": "Bio",
+      "bioPlaceholder": "Parlez-nous de vous...",
+      "notifications": "Je suis d'accord pour recevoir des notifications par e-mail",
+      "submit": "Enregistrer le profil"
+    }
+  },
+  "accessibility": {
+    "title": "Lignes directrices sur l'accessibilité",
+    "heading": "Meilleures pratiques d'accessibilité des formulaires",
+    "items": {
+      "labelsBefore": "Utilisez toujours la bonne méthode",
+      "labelsAfter": "éléments associés aux entrées",
+      "errorMessages": "Incluez des messages d'erreur clairs avec les états de validation",
+      "focusStates": "Assurez-vous que les états de focus soient clairement visibles grâce aux utilitaires anneau",
+      "inputTypes": "Utilisez des types d'entrée appropriés (e-mail, mot de passe, etc.) pour une meilleure expérience mobile",
+      "contrast": "Maintenez un contraste de couleur suffisant (rapport minimum de 4,5:1)"
+    }
+  }
+}

@@ -1,0 +1,132 @@
+{
+  "seo": {
+    "title": "徽章 - {{appName}}",
+    "description": "設計系統中的徽章組件和變體"
+  },
+  "header": {
+    "badge": "徽章",
+    "title": "徽章組件",
+    "intro": "用於標記、分類和傳達狀態資訊的微型多功能組件，支援語義顏色和互動狀態。"
+  },
+  "stats": {
+    "badgeVariants": "徽章變體",
+    "sizeOptions": "尺寸選項",
+    "stateTypes": "國家類型",
+    "web3Variants": "Web3 變體"
+  },
+  "sections": {
+    "quickStart": {
+      "title": "🚀 快速入門",
+      "description": "從最常見的徽章樣式開始。複製並貼上這些範例，快速在您的元件中實作徽章。",
+      "essentialTitle": "1. 基本徽章類型",
+      "essential": {
+        "default": "預設",
+        "primary": "主要",
+        "success": "成功",
+        "warning": "警告",
+        "error": "錯誤"
+      },
+      "statusTitle": "2. 帶圖示的狀態徽章",
+      "status": {
+        "active": "活躍",
+        "pending": "待處理",
+        "failed": "失敗",
+        "info": "資訊"
+      },
+      "sizesTitle": "3. 大小變異",
+      "sizes": {
+        "small": "小",
+        "default": "預設",
+        "large": "大"
+      },
+      "web3Title": "4. Web3 集成徽章",
+      "web3": {
+        "ethereum": "以太坊",
+        "solana": "Solana",
+        "verified": "已驗證"
+      }
+    },
+    "variants": {
+      "title": "🎨 道具變體",
+      "description": "探索所有可用徽章顏色變體及其語義含義和適當的使用場景。",
+      "semanticTitle": "語義色彩",
+      "web3Title": "Web3專用",
+      "semantic": {
+        "default": "預設",
+        "defaultDesc": "通用的中立資訊",
+        "primary": "主要",
+        "primaryDesc": "品牌色彩，重要亮點",
+        "success": "成功",
+        "successDesc": "已完成操作，狀態為正",
+        "warning": "警告",
+        "warningDesc": "注意，有待處理的操作",
+        "error": "錯誤",
+        "errorDesc": "失敗的操作，嚴重問題"
+      },
+      "web3": {
+        "ethereum": "以太坊",
+        "ethereumDesc": "以太坊區塊鏈相關",
+        "solana": "Solana",
+        "solanaDesc": "Solana區塊鏈相關"
+      }
+    },
+    "sizes": {
+      "title": "📏 尺寸選項",
+      "description": "適用於不同使用場景的多種徽章尺寸，從緊湊的指示器到醒目的標籤。",
+      "small": {
+        "heading": "小",
+        "badge": "小徽章",
+        "desc": "緊湊尺寸，適用於密集佈局"
+      },
+      "default": {
+        "heading": "預設",
+        "badge": "預設徽章",
+        "desc": "大多數使用場景的標準尺寸"
+      },
+      "large": {
+        "heading": "大",
+        "badge": "大徽章",
+        "desc": "突出的尺寸以強調"
+      }
+    },
+    "interactive": {
+      "title": "⚡ 互動式範式",
+      "description": "不同情境和組件中徽章使用的現實世界範例。",
+      "userStatusTitle": "使用者狀態指示器",
+      "userStatus": {
+        "online": "線上",
+        "away": "遠處",
+        "offline": "離線"
+      },
+      "notificationTitle": "通知數量",
+      "notification": {
+        "messages": "📧 訊息",
+        "notifications": "🔔 通知",
+        "updates": "⭐ 更新"
+      }
+    },
+    "accessibility": {
+      "title": "♿ 可及性指南",
+      "description": "確保您的徽章對所有用戶都可存取，具備適當的對比度、螢幕閱讀器支援和鍵盤導航。",
+      "bestPracticesTitle": "✅ 最佳實踐",
+      "bestPractices": [
+        "使用語義顏色來一致地傳達意義",
+        "提供足夠的顏色對比度（最小對比度為4.5:1）",
+        "包含文字標籤，而不仅仅是顏色或圖示",
+        "為螢幕閱讀器使用適當的 ARIA 標籤",
+        "保持徽章文字簡潔且有意義"
+      ],
+      "avoidTitle": "❌ 避免",
+      "avoid": [
+        "僅依靠顏色來傳遞資訊",
+        "在單一介面上使用過多徽章",
+        "讓徽章太小而難以舒適地閱讀",
+        "使用不清晰或模糊的徽章文字",
+        "過度使用動畫或閃爍的徽章"
+      ],
+      "ariaExamplesTitle": "ARIA 範例"
+    }
+  },
+  "backToDesignSystem": "返回設計系統",
+  "lastUpdated": "最後更新：{{date}}"
+}

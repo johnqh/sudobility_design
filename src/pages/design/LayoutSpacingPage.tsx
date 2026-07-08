@@ -10,6 +10,7 @@ import {
   WalletIcon,
 } from "@heroicons/react/24/outline";
 import React, { useState } from "react";
+import { useTranslation } from "react-i18next";
 import { SEOHead } from "@sudobility/seo_lib";
 import { Button, Section } from "@sudobility/components";
 import { cn } from "@sudobility/components";
@@ -24,6 +25,7 @@ const LayoutSpacingPage: React.FC<AppProps> = ({
   emailDomain,
   appName: _appName,
 }) => {
+  const { t } = useTranslation("layoutSpacing");
   const [activeBreakpoint, setActiveBreakpoint] = useState<
     "mobile" | "tablet" | "desktop"
   >("desktop");
@@ -37,8 +39,7 @@ const LayoutSpacingPage: React.FC<AppProps> = ({
 
   const quickStartExamples = [
     {
-      title: "Responsive Grid System",
-      description: "Flexible grid layouts that adapt to different screen sizes",
+      key: "grid",
       code: `// Responsive Grid
 <div className={variants.layout.grid.container()}>
   <div className={variants.layout.grid.responsive()}>
@@ -69,9 +70,7 @@ const LayoutSpacingPage: React.FC<AppProps> = ({
 </div>`,
     },
     {
-      title: "Container System",
-      description:
-        "Responsive containers with consistent max-widths and padding",
+      key: "container",
       code: `// Container Variants
 <div className={variants.layout.container.default()}>
   <div className={variants.layout.container.content()}>
@@ -96,8 +95,7 @@ const LayoutSpacingPage: React.FC<AppProps> = ({
 </div>`,
     },
     {
-      title: "Flexbox Utilities",
-      description: "Common flexbox patterns for component layouts",
+      key: "flex",
       code: `// Flex Patterns
 <div className={variants.layout.flex.spaceBetween()}>
   <div>Left Content</div>
@@ -122,8 +120,7 @@ const LayoutSpacingPage: React.FC<AppProps> = ({
 </div>`,
     },
     {
-      title: "Spacing System",
-      description: "Consistent spacing patterns for margins and padding",
+      key: "spacing",
       code: `// Spacing Utilities
 <div className={variants.layout.spacing.section()}>
   Section with standard vertical spacing
@@ -153,19 +150,19 @@ const LayoutSpacingPage: React.FC<AppProps> = ({
 
   const responsiveExamples = [
     {
-      name: "NFT Gallery",
+      key: "nftGallery",
       mobile: "grid-cols-1",
       tablet: "grid-cols-2",
       desktop: "grid-cols-4",
     },
     {
-      name: "Dashboard Widgets",
+      key: "dashboardWidgets",
       mobile: "grid-cols-1",
       tablet: "grid-cols-2",
       desktop: "grid-cols-3",
     },
     {
-      name: "Transaction History",
+      key: "transactionHistory",
       mobile: "grid-cols-1",
       tablet: "grid-cols-1",
       desktop: "grid-cols-2",
@@ -174,36 +171,28 @@ const LayoutSpacingPage: React.FC<AppProps> = ({
 
   const containerSizes = [
     {
-      name: "Narrow",
       key: "narrow",
       maxWidth: "640px",
-      use: "Articles, forms",
     },
     {
-      name: "Default",
       key: "default",
       maxWidth: "1024px",
-      use: "General content",
     },
     {
-      name: "Wide",
       key: "wide",
       maxWidth: "1280px",
-      use: "Dashboards, tables",
     },
     {
-      name: "Full",
       key: "full",
       maxWidth: "100%",
-      use: "Edge-to-edge layouts",
     },
   ];
 
   return (
     <>
       <SEOHead
-        title={`Layout & Spacing - Design System - Internal - ${emailDomain}`}
-        description="Layout and spacing system with responsive grids, containers, and Web3-specific patterns"
+        title={t("seo.title", { emailDomain })}
+        description={t("seo.description")}
         noIndex={true}
       />
 
@@ -216,26 +205,26 @@ const LayoutSpacingPage: React.FC<AppProps> = ({
             <div className="inline-flex items-center bg-primary/10 px-4 py-2 rounded-full mb-6">
               <Squares2X2Icon className="h-5 w-5 text-primary mr-2" />
               <span className="text-primary font-semibold">
-                Layout & Spacing
+                {t("header.badge")}
               </span>
             </div>
 
             <h1 className={`${textVariants.heading.display.xl()} mb-6`}>
-              Layout & Spacing System
+              {t("header.title")}
             </h1>
 
             <p
               className={`${textVariants.body.lg()} max-w-3xl text-muted-foreground`}
             >
-              Comprehensive layout and spacing system with responsive grids,
-              flexible containers, and Web3-specific patterns for wallets,
-              transactions, and dashboard interfaces.
+              {t("header.description")}
             </p>
           </div>
 
           {/* Quick Start Examples */}
           <Section>
-            <h2 className={`${textVariants.heading.h2()} mb-8`}>Quick Start</h2>
+            <h2 className={`${textVariants.heading.h2()} mb-8`}>
+              {t("quickStart.title")}
+            </h2>
 
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
               {quickStartExamples.map((example, index) => (
@@ -245,12 +234,12 @@ const LayoutSpacingPage: React.FC<AppProps> = ({
                 >
                   <div className="p-6 border-b border-border">
                     <h3 className={`${textVariants.heading.h4()} mb-2`}>
-                      {example.title}
+                      {t(`quickStart.examples.${example.key}.title`)}
                     </h3>
                     <p
                       className={`${textVariants.body.sm()} text-muted-foreground`}
                     >
-                      {example.description}
+                      {t(`quickStart.examples.${example.key}.description`)}
                     </p>
                   </div>
                   <div className="relative">
@@ -260,7 +249,7 @@ const LayoutSpacingPage: React.FC<AppProps> = ({
                     <button
                       onClick={() => copyToClipboard(example.code)}
                       className="absolute top-2 right-2 p-2 text-muted-foreground hover:text-foreground bg-card rounded-md shadow-sm border border-border hover:bg-muted transition-colors"
-                      title="Copy to clipboard"
+                      title={t("quickStart.copyTooltip")}
                     >
                       <ClipboardDocumentIcon className="h-4 w-4" />
                     </button>
@@ -273,7 +262,7 @@ const LayoutSpacingPage: React.FC<AppProps> = ({
           {/* Grid System Demo */}
           <Section>
             <h2 className={`${textVariants.heading.h2()} mb-8`}>
-              Responsive Grid System
+              {t("grid.title")}
             </h2>
 
             <div
@@ -281,12 +270,12 @@ const LayoutSpacingPage: React.FC<AppProps> = ({
             >
               <div className="p-6 border-b border-border">
                 <h3 className={`${textVariants.heading.h3()} mb-2`}>
-                  Interactive Grid Examples
+                  {t("grid.cardTitle")}
                 </h3>
                 <p
                   className={`${textVariants.body.sm()} text-muted-foreground`}
                 >
-                  Switch between breakpoints to see how grids adapt
+                  {t("grid.cardDescription")}
                 </p>
               </div>
 
@@ -294,7 +283,7 @@ const LayoutSpacingPage: React.FC<AppProps> = ({
                 {/* Breakpoint Selector */}
                 <div className="flex items-center space-x-4 mb-8">
                   <span className="text-sm font-medium text-foreground">
-                    Preview:
+                    {t("grid.preview")}
                   </span>
                   <div className="flex space-x-2">
                     <button
@@ -307,7 +296,7 @@ const LayoutSpacingPage: React.FC<AppProps> = ({
                       )}
                     >
                       <DevicePhoneMobileIcon className="h-4 w-4" />
-                      <span>Mobile</span>
+                      <span>{t("grid.breakpoints.mobile")}</span>
                     </button>
                     <button
                       onClick={() => setActiveBreakpoint("tablet")}
@@ -319,7 +308,7 @@ const LayoutSpacingPage: React.FC<AppProps> = ({
                       )}
                     >
                       <DeviceTabletIcon className="h-4 w-4" />
-                      <span>Tablet</span>
+                      <span>{t("grid.breakpoints.tablet")}</span>
                     </button>
                     <button
                       onClick={() => setActiveBreakpoint("desktop")}
@@ -331,7 +320,7 @@ const LayoutSpacingPage: React.FC<AppProps> = ({
                       )}
                     >
                       <ComputerDesktopIcon className="h-4 w-4" />
-                      <span>Desktop</span>
+                      <span>{t("grid.breakpoints.desktop")}</span>
                     </button>
                   </div>
                 </div>
@@ -342,7 +331,7 @@ const LayoutSpacingPage: React.FC<AppProps> = ({
                     <div key={index}>
                       <div className="flex items-center justify-between mb-4">
                         <h4 className="text-lg font-medium text-foreground">
-                          {example.name}
+                          {t(`grid.examples.${example.key}.name`)}
                         </h4>
                         <code className="text-sm bg-muted px-2 py-1 rounded">
                           {activeBreakpoint === "mobile" && example.mobile}
@@ -373,7 +362,7 @@ const LayoutSpacingPage: React.FC<AppProps> = ({
                           >
                             <div className="w-12 h-12 bg-primary/20 rounded-lg mx-auto mb-3"></div>
                             <p className="text-sm text-primary font-medium">
-                              Item {i + 1}
+                              {t("grid.item", { number: i + 1 })}
                             </p>
                           </div>
                         ))}
@@ -388,7 +377,7 @@ const LayoutSpacingPage: React.FC<AppProps> = ({
           {/* Container System Demo */}
           <Section>
             <h2 className={`${textVariants.heading.h2()} mb-8`}>
-              Container System
+              {t("container.title")}
             </h2>
 
             <div
@@ -396,12 +385,12 @@ const LayoutSpacingPage: React.FC<AppProps> = ({
             >
               <div className="p-6 border-b border-border">
                 <h3 className={`${textVariants.heading.h3()} mb-2`}>
-                  Container Variants
+                  {t("container.cardTitle")}
                 </h3>
                 <p
                   className={`${textVariants.body.sm()} text-muted-foreground`}
                 >
-                  Different container sizes for various content types
+                  {t("container.cardDescription")}
                 </p>
               </div>
 
@@ -409,7 +398,7 @@ const LayoutSpacingPage: React.FC<AppProps> = ({
                 {/* Container Selector */}
                 <div className="flex items-center space-x-4 mb-8">
                   <span className="text-sm font-medium text-foreground">
-                    Container:
+                    {t("container.label")}
                   </span>
                   <div className="flex space-x-2">
                     {containerSizes.map((size) => (
@@ -423,7 +412,7 @@ const LayoutSpacingPage: React.FC<AppProps> = ({
                             : "text-muted-foreground hover:text-foreground",
                         )}
                       >
-                        {size.name}
+                        {t(`container.sizes.${size.key}.name`)}
                       </button>
                     ))}
                   </div>
@@ -440,7 +429,7 @@ const LayoutSpacingPage: React.FC<AppProps> = ({
                         >
                           <div className="flex items-center space-x-2">
                             <span className="text-muted-foreground">
-                              Max Width:
+                              {t("container.maxWidth")}
                             </span>
                             <code className="bg-muted px-2 py-1 rounded">
                               {size.maxWidth}
@@ -448,9 +437,11 @@ const LayoutSpacingPage: React.FC<AppProps> = ({
                           </div>
                           <div className="flex items-center space-x-2">
                             <span className="text-muted-foreground">
-                              Best for:
+                              {t("container.bestFor")}
                             </span>
-                            <span className="text-foreground">{size.use}</span>
+                            <span className="text-foreground">
+                              {t(`container.sizes.${size.key}.use`)}
+                            </span>
                           </div>
                         </div>
                       ),
@@ -470,16 +461,12 @@ const LayoutSpacingPage: React.FC<AppProps> = ({
                   >
                     <div className="text-center">
                       <h4 className="text-lg font-medium text-foreground mb-2">
-                        {
-                          containerSizes.find(
-                            (s) => s.key === selectedContainer,
-                          )?.name
-                        }{" "}
-                        Container
+                        {t("container.containerSuffix", {
+                          name: t(`container.sizes.${selectedContainer}.name`),
+                        })}
                       </h4>
                       <p className="text-muted-foreground">
-                        This container adapts to the selected width constraints
-                        while maintaining responsive padding.
+                        {t("container.previewText")}
                       </p>
                     </div>
                   </div>
@@ -491,7 +478,7 @@ const LayoutSpacingPage: React.FC<AppProps> = ({
           {/* Flexbox Patterns Demo */}
           <Section>
             <h2 className={`${textVariants.heading.h2()} mb-8`}>
-              Flexbox Patterns
+              {t("flexbox.title")}
             </h2>
 
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
@@ -501,19 +488,19 @@ const LayoutSpacingPage: React.FC<AppProps> = ({
               >
                 <div className="p-6 border-b border-border">
                   <h3 className={`${textVariants.heading.h4()} mb-2`}>
-                    Common Patterns
+                    {t("flexbox.common.title")}
                   </h3>
                   <p
                     className={`${textVariants.body.sm()} text-muted-foreground`}
                   >
-                    Standard flexbox layouts for components
+                    {t("flexbox.common.description")}
                   </p>
                 </div>
 
                 <div className="p-6 space-y-6">
                   <div>
                     <label className="text-sm font-medium text-foreground mb-2 block">
-                      Space Between
+                      {t("flexbox.common.spaceBetween")}
                     </label>
                     <div className="flex justify-between items-center p-3 bg-muted rounded-lg">
                       <div className="w-16 h-8 bg-primary/20 rounded"></div>
@@ -523,7 +510,7 @@ const LayoutSpacingPage: React.FC<AppProps> = ({
 
                   <div>
                     <label className="text-sm font-medium text-foreground mb-2 block">
-                      Center
+                      {t("flexbox.common.center")}
                     </label>
                     <div className="flex justify-center items-center p-3 bg-muted rounded-lg">
                       <div className="w-16 h-8 bg-success/20 rounded"></div>
@@ -532,7 +519,7 @@ const LayoutSpacingPage: React.FC<AppProps> = ({
 
                   <div>
                     <label className="text-sm font-medium text-foreground mb-2 block">
-                      Start with Gap
+                      {t("flexbox.common.startWithGap")}
                     </label>
                     <div className="flex items-center space-x-3 p-3 bg-muted rounded-lg">
                       <div className="w-12 h-8 bg-accent/20 rounded"></div>
@@ -543,7 +530,7 @@ const LayoutSpacingPage: React.FC<AppProps> = ({
 
                   <div>
                     <label className="text-sm font-medium text-foreground mb-2 block">
-                      Column Stack
+                      {t("flexbox.common.columnStack")}
                     </label>
                     <div className="flex flex-col space-y-2 p-3 bg-muted rounded-lg">
                       <div className="h-6 bg-warning/20 rounded"></div>
@@ -560,54 +547,62 @@ const LayoutSpacingPage: React.FC<AppProps> = ({
               >
                 <div className="p-6 border-b border-border">
                   <h3 className={`${textVariants.heading.h4()} mb-2`}>
-                    Web3 Patterns
+                    {t("flexbox.web3.title")}
                   </h3>
                   <p
                     className={`${textVariants.body.sm()} text-muted-foreground`}
                   >
-                    Specialized layouts for blockchain interfaces
+                    {t("flexbox.web3.description")}
                   </p>
                 </div>
 
                 <div className="p-6 space-y-6">
                   <div>
                     <label className="text-sm font-medium text-foreground mb-2 block">
-                      Wallet Connection
+                      {t("flexbox.web3.walletConnection")}
                     </label>
                     <div className="flex items-center justify-between p-4 bg-primary/10 border border-primary/20 rounded-lg">
                       <div className="flex items-center space-x-3">
                         <WalletIcon className="h-5 w-5 text-primary" />
                         <span className="text-foreground font-medium">
-                          MetaMask
+                          {t("flexbox.web3.walletName")}
                         </span>
                       </div>
                       <div className="flex items-center space-x-2">
                         <div className="w-2 h-2 bg-success rounded-full"></div>
-                        <span className="text-success text-sm">Connected</span>
+                        <span className="text-success text-sm">
+                          {t("flexbox.web3.connected")}
+                        </span>
                       </div>
                     </div>
                   </div>
 
                   <div>
                     <label className="text-sm font-medium text-foreground mb-2 block">
-                      Transaction Summary
+                      {t("flexbox.web3.transactionSummary")}
                     </label>
                     <div className="space-y-3 p-4 bg-muted rounded-lg">
                       <div className="flex justify-between items-center">
-                        <span className="text-muted-foreground">Amount:</span>
+                        <span className="text-muted-foreground">
+                          {t("flexbox.web3.amount")}
+                        </span>
                         <span className="font-mono text-foreground">
                           0.5 ETH
                         </span>
                       </div>
                       <div className="flex justify-between items-center">
-                        <span className="text-muted-foreground">Gas Fee:</span>
+                        <span className="text-muted-foreground">
+                          {t("flexbox.web3.gasFee")}
+                        </span>
                         <span className="font-mono text-foreground">
                           0.002 ETH
                         </span>
                       </div>
                       <div className="border-t border-border pt-2">
                         <div className="flex justify-between items-center font-medium">
-                          <span className="text-foreground">Total:</span>
+                          <span className="text-foreground">
+                            {t("flexbox.web3.total")}
+                          </span>
                           <span className="font-mono text-foreground">
                             0.502 ETH
                           </span>
@@ -618,17 +613,17 @@ const LayoutSpacingPage: React.FC<AppProps> = ({
 
                   <div>
                     <label className="text-sm font-medium text-foreground mb-2 block">
-                      NFT Card Layout
+                      {t("flexbox.web3.nftCardLayout")}
                     </label>
                     <div className="p-4 bg-accent/10 border border-accent/20 rounded-lg">
                       <div className="w-full h-32 bg-accent/20 rounded-lg mb-3"></div>
                       <div className="flex justify-between items-start">
                         <div>
                           <h4 className="font-medium text-foreground">
-                            Cool NFT #1234
+                            {t("flexbox.web3.nftName")}
                           </h4>
                           <p className="text-sm text-muted-foreground">
-                            Artist Name
+                            {t("flexbox.web3.artistName")}
                           </p>
                         </div>
                         <div className="text-right">
@@ -650,7 +645,7 @@ const LayoutSpacingPage: React.FC<AppProps> = ({
           {/* Spacing System Demo */}
           <Section>
             <h2 className={`${textVariants.heading.h2()} mb-8`}>
-              Spacing System
+              {t("spacing.title")}
             </h2>
 
             <div
@@ -658,12 +653,12 @@ const LayoutSpacingPage: React.FC<AppProps> = ({
             >
               <div className="p-6 border-b border-border">
                 <h3 className={`${textVariants.heading.h3()} mb-2`}>
-                  Consistent Spacing Patterns
+                  {t("spacing.cardTitle")}
                 </h3>
                 <p
                   className={`${textVariants.body.sm()} text-muted-foreground`}
                 >
-                  Standard spacing utilities for consistent layouts
+                  {t("spacing.cardDescription")}
                 </p>
               </div>
 
@@ -672,7 +667,7 @@ const LayoutSpacingPage: React.FC<AppProps> = ({
                   {/* Spacing Scale */}
                   <div>
                     <h4 className="text-lg font-medium text-foreground mb-4">
-                      Spacing Scale
+                      {t("spacing.scaleTitle")}
                     </h4>
                     <div className="space-y-4">
                       {[
@@ -706,39 +701,40 @@ const LayoutSpacingPage: React.FC<AppProps> = ({
                   {/* Component Spacing */}
                   <div>
                     <h4 className="text-lg font-medium text-foreground mb-4">
-                      Component Spacing
+                      {t("spacing.componentTitle")}
                     </h4>
                     <div className="space-y-6">
                       <div className="p-4 border-2 border-dashed border-border rounded-lg">
                         <div className="bg-primary/10 p-4 rounded-lg mb-4">
                           <h5 className="font-medium text-foreground">
-                            Section Header
+                            {t("spacing.sectionHeader")}
                           </h5>
                         </div>
                         <div className="space-y-3">
                           <div className="bg-muted p-3 rounded">
-                            Component 1
+                            {t("spacing.component", { number: 1 })}
                           </div>
                           <div className="bg-muted p-3 rounded">
-                            Component 2
+                            {t("spacing.component", { number: 2 })}
                           </div>
                           <div className="bg-muted p-3 rounded">
-                            Component 3
+                            {t("spacing.component", { number: 3 })}
                           </div>
                         </div>
                       </div>
 
                       <div className="text-sm text-muted-foreground">
                         <p>
-                          <strong>Section spacing:</strong> 32px vertical
-                          margins
+                          <strong>{t("spacing.sectionSpacingLabel")}</strong>{" "}
+                          {t("spacing.sectionSpacingText")}
                         </p>
                         <p>
-                          <strong>Component spacing:</strong> 12px between items
+                          <strong>{t("spacing.componentSpacingLabel")}</strong>{" "}
+                          {t("spacing.componentSpacingText")}
                         </p>
                         <p>
-                          <strong>Internal padding:</strong> 16px for content
-                          areas
+                          <strong>{t("spacing.internalPaddingLabel")}</strong>{" "}
+                          {t("spacing.internalPaddingText")}
                         </p>
                       </div>
                     </div>
@@ -751,7 +747,7 @@ const LayoutSpacingPage: React.FC<AppProps> = ({
           {/* Web3 Layout Patterns */}
           <Section>
             <h2 className={`${textVariants.heading.h2()} mb-8`}>
-              Web3 Layout Patterns
+              {t("web3.title")}
             </h2>
 
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
@@ -761,12 +757,12 @@ const LayoutSpacingPage: React.FC<AppProps> = ({
               >
                 <div className="p-6 border-b border-border">
                   <h3 className={`${textVariants.heading.h4()} mb-2`}>
-                    Wallet Dashboard
+                    {t("web3.wallet.title")}
                   </h3>
                   <p
                     className={`${textVariants.body.sm()} text-muted-foreground`}
                   >
-                    Portfolio overview with balance and assets
+                    {t("web3.wallet.description")}
                   </p>
                 </div>
 
@@ -784,19 +780,19 @@ const LayoutSpacingPage: React.FC<AppProps> = ({
                     <button className="flex flex-col items-center p-3 bg-muted rounded-lg hover:bg-muted/80 transition-colors">
                       <ArrowsPointingOutIcon className="h-5 w-5 text-primary mb-1" />
                       <span className="text-xs text-muted-foreground">
-                        Send
+                        {t("web3.wallet.send")}
                       </span>
                     </button>
                     <button className="flex flex-col items-center p-3 bg-muted rounded-lg hover:bg-muted/80 transition-colors">
                       <ArrowsPointingInIcon className="h-5 w-5 text-success mb-1" />
                       <span className="text-xs text-muted-foreground">
-                        Receive
+                        {t("web3.wallet.receive")}
                       </span>
                     </button>
                     <button className="flex flex-col items-center p-3 bg-muted rounded-lg hover:bg-muted/80 transition-colors">
                       <CurrencyDollarIcon className="h-5 w-5 text-primary mb-1" />
                       <span className="text-xs text-muted-foreground">
-                        Swap
+                        {t("web3.wallet.swap")}
                       </span>
                     </button>
                   </div>
@@ -804,7 +800,7 @@ const LayoutSpacingPage: React.FC<AppProps> = ({
                   {/* Asset List */}
                   <div className="space-y-2">
                     <h5 className="text-sm font-medium text-foreground">
-                      Assets
+                      {t("web3.wallet.assets")}
                     </h5>
                     <div className="space-y-2">
                       {[
@@ -859,12 +855,12 @@ const LayoutSpacingPage: React.FC<AppProps> = ({
               >
                 <div className="p-6 border-b border-border">
                   <h3 className={`${textVariants.heading.h4()} mb-2`}>
-                    Transaction Flow
+                    {t("web3.transaction.title")}
                   </h3>
                   <p
                     className={`${textVariants.body.sm()} text-muted-foreground`}
                   >
-                    Step-by-step transaction interface
+                    {t("web3.transaction.description")}
                   </p>
                 </div>
 
@@ -888,7 +884,7 @@ const LayoutSpacingPage: React.FC<AppProps> = ({
                   <div className="space-y-4">
                     <div>
                       <label className="block text-sm font-medium text-foreground mb-2">
-                        Recipient Address
+                        {t("web3.transaction.recipientAddress")}
                       </label>
                       <input
                         type="text"
@@ -899,7 +895,7 @@ const LayoutSpacingPage: React.FC<AppProps> = ({
 
                     <div>
                       <label className="block text-sm font-medium text-foreground mb-2">
-                        Amount
+                        {t("web3.transaction.amount")}
                       </label>
                       <div className="relative">
                         <input
@@ -915,10 +911,10 @@ const LayoutSpacingPage: React.FC<AppProps> = ({
                       </div>
                       <div className="flex justify-between items-center mt-1">
                         <span className="text-xs text-muted-foreground">
-                          Balance: 2.45 ETH
+                          {t("web3.transaction.balance")}
                         </span>
                         <button className="text-xs text-primary hover:text-primary/80">
-                          Max
+                          {t("web3.transaction.max")}
                         </button>
                       </div>
                     </div>
@@ -929,12 +925,14 @@ const LayoutSpacingPage: React.FC<AppProps> = ({
                     <div className="space-y-2 text-sm">
                       <div className="flex justify-between">
                         <span className="text-muted-foreground">
-                          Network Fee:
+                          {t("web3.transaction.networkFee")}
                         </span>
                         <span className="font-mono">0.002 ETH</span>
                       </div>
                       <div className="flex justify-between">
-                        <span className="text-muted-foreground">Total:</span>
+                        <span className="text-muted-foreground">
+                          {t("web3.transaction.total")}
+                        </span>
                         <span className="font-mono font-medium">1.002 ETH</span>
                       </div>
                     </div>
@@ -943,9 +941,11 @@ const LayoutSpacingPage: React.FC<AppProps> = ({
                   {/* Actions */}
                   <div className="flex space-x-3">
                     <Button variant="outline" className="flex-1">
-                      Cancel
+                      {t("web3.transaction.cancel")}
                     </Button>
-                    <Button className="flex-1">Continue</Button>
+                    <Button className="flex-1">
+                      {t("web3.transaction.continue")}
+                    </Button>
                   </div>
                 </div>
               </div>

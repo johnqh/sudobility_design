@@ -1,0 +1,82 @@
+{
+  "seo": {
+    "title": "微交互与动画 - 设计系统 - 内部 - {{emailDomain}}",
+    "description": "包含悬停效果、过渡动画和Web3特定交互的完整动画系统"
+  },
+  "header": {
+    "badge": "微交互与动画",
+    "title": "微交互与动画",
+    "description": "全面的动画系统，包含悬停效果、加载状态、过渡动画和Web3特定交互。所有动画均尊重用户的运动偏好，提供流畅、愉悦的用户体验。"
+  },
+  "stats": {
+    "variants": "动画变体",
+    "performance": "流畅性能",
+    "motionSafe": "运动安全",
+    "specialized": "专业"
+  },
+  "hover": {
+    "title": "悬停效果",
+    "description": "按钮、卡片和交互元素的微妙但吸引人的悬停效果。",
+    "buttonEffectsTitle": "按钮悬停效果",
+    "liftEffect": "提升效果",
+    "glowEffect": "发光效果",
+    "scaleEffect": "规模效应",
+    "shimmerEffect": "闪烁效果",
+    "cardEffectsTitle": "卡片悬停效果",
+    "cardSubtle": "微妙的悬停效果 - 轻轻抬起",
+    "cardGlow": "发光悬停效果 - 添加柔和光晕"
+  },
+  "loading": {
+    "title": "加载状态",
+    "description": "保持用户参与的加载动画和进度指示器。",
+    "spinnersTitle": "旋转器",
+    "interactiveDemoTitle": "交互式演示",
+    "loadingLabel": "加载中...",
+    "startLoading": "开始加载",
+    "simulateProgress": "模拟进度",
+    "progress": "进度: {{progress}}%"
+  },
+  "web3": {
+    "title": "Web3 动画",
+    "description": "专用于Web3交互的动画，包括钱包连接和交易状态。",
+    "walletStatesTitle": "钱包连接状态",
+    "connecting": "连接中...",
+    "connected": "已连接",
+    "connectWallet": "连接钱包",
+    "statusLabel": "状态:",
+    "transactionStatesTitle": "交易状态",
+    "transactionPending": "交易待处理",
+    "transactionConfirmed": "交易已确认",
+    "transactionFailed": "交易失败"
+  },
+  "motion": {
+    "title": "运动偏好",
+    "description": "所有动画均尊重用户的运动偏好，并提供无障碍替代方案。",
+    "reducedMotionTitle": "减少运动支持",
+    "respectsPreferences": "尊重运动偏好",
+    "fadeOnly": "仅淡出动画",
+    "scaleOnly": "仅缩放动画",
+    "safeAnimationsTitle": "安全动画",
+    "safeFade": "安全淡出过渡",
+    "safeSlide": "安全的幻灯片过渡"
+  },
+  "bestPractices": {
+    "title": "动画最佳实践",
+    "doTitle": "✅ 做这个",
+    "do": [
+      "将微交互的动画保持在300毫秒以下。",
+      "使用缓动函数实现自然运动",
+      "对用户操作提供即时反馈",
+      "尊重偏好减少运动的设置",
+      "对于耗时超过500毫秒的操作，请使用加载状态"
+    ],
+    "avoidTitle": "❌ 避免这个",
+    "avoid": [
+      "过度使用动画——少即是多",
+      "长时间加载动画但无进度",
+      "干扰功能的动画",
+      "页面加载时自动播放动画",
+      "为对运动敏感的用户设计的复杂动画"
+    ]
+  }
+}

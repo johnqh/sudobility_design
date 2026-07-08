@@ -1,0 +1,155 @@
+{
+  "seo": {
+    "title": "圖標與插圖 - 設計系統 - 內部 - {{emailDomain}}",
+    "description": "全面的圖示系統，具有一致的尺寸、色彩和情境使用模式"
+  },
+  "header": {
+    "badge": "圖示與插圖",
+    "title": "圖示與插圖",
+    "description": "全面的圖示系統，具有一致的尺寸、色彩和情境使用模式。基於 Heroicons 建構，並針對可存取性和深色模式進行優化。"
+  },
+  "sizes": {
+    "title": "圖示大小",
+    "variantsTitle": "尺寸變體",
+    "usageTitle": "大小 使用",
+    "labels": {
+      "xs": "xs (12px)",
+      "sm": "sm (16px)",
+      "md": "md (20px)",
+      "lg": "lg (24px)",
+      "xl": "xl (32px)",
+      "xxl": "xxl (40px)",
+      "xxxl": "xxxl (48px)"
+    }
+  },
+  "colors": {
+    "title": "圖標顏色",
+    "variantsTitle": "顏色變體",
+    "web3Title": "Web3 顏色",
+    "default": {
+      "label": "預設",
+      "value": "灰階 500 / 400"
+    },
+    "brand": {
+      "label": "品牌",
+      "value": "藍色 600 / 400"
+    },
+    "success": {
+      "label": "成功",
+      "value": "綠色 600 / 400"
+    },
+    "warning": {
+      "label": "警告",
+      "value": "琥珀 600 / 400"
+    },
+    "error": {
+      "label": "錯誤",
+      "value": "紅色 600 / 400"
+    },
+    "interactive": {
+      "label": "互動",
+      "value": "懸停效果"
+    },
+    "ethereum": {
+      "label": "以太坊",
+      "value": "藍色 600 / 400"
+    },
+    "solana": {
+      "label": "Solana",
+      "value": "紫色 600 / 400"
+    },
+    "bitcoin": {
+      "label": "比特幣",
+      "value": "橙色 600 / 400"
+    }
+  },
+  "context": {
+    "title": "上下文特定圖標",
+    "buttonTitle": "按鈕圖示",
+    "inputTitle": "輸入圖示",
+    "leadingIcon": "主導圖示",
+    "trailingIcon": "尾部圖示",
+    "iconOnly": "僅圖示",
+    "trailingInteractive": "尾隨互動",
+    "addItem": "新增項目",
+    "continue": "繼續",
+    "searchPlaceholder": "搜尋...",
+    "passwordPlaceholder": "密碼"
+  },
+  "status": {
+    "title": "狀態圖示",
+    "success": {
+      "title": "成功",
+      "description": "操作成功完成"
+    },
+    "warning": {
+      "title": "警告",
+      "description": "請檢查並繼續"
+    },
+    "error": {
+      "title": "錯誤",
+      "description": "出錯了"
+    },
+    "info": {
+      "title": "資訊",
+      "description": "附加資訊"
+    }
+  },
+  "web3": {
+    "title": "Web3 上下文圖示",
+    "walletStatusTitle": "錢包狀態",
+    "blockchainTitle": "區塊鏈圖示",
+    "walletConnected": "錢包已連接",
+    "noWalletConnected": "未連接錢包",
+    "connectToContinue": "連接以繼續",
+    "ethereum": {
+      "title": "以太坊",
+      "network": "ETH網絡"
+    },
+    "solana": {
+      "title": "Solana",
+      "network": "SOL 網路"
+    },
+    "bitcoin": {
+      "title": "比特幣",
+      "network": "BTC網絡"
+    }
+  },
+  "decorative": {
+    "title": "裝飾性圖示",
+    "heroLarge": {
+      "title": "英雄 大號",
+      "size": "80px × 80px"
+    },
+    "heroMedium": {
+      "title": "英雄中號",
+      "size": "64px × 64px"
+    },
+    "heroSmall": {
+      "title": "英雄小號",
+      "size": "48px × 48px"
+    }
+  },
+  "browser": {
+    "title": "圖標瀏覽器",
+    "categories": {
+      "all": "所有圖標",
+      "actions": "操作",
+      "status": "狀態",
+      "navigation": "導航",
+      "web3": "Web3",
+      "decorative": "裝飾性的"
+    }
+  },
+  "tokens": {
+    "title": "可用圖示變體",
+    "sizeVariants": "尺寸變體",
+    "colorVariants": "顏色變體",
+    "contextVariants": "上下文變體",
+    "combinedVariants": "組合變體"
+  },
+  "navigation": {
+    "previous": "表格與資料网格",
+    "backToDesignSystem": "返回設計系統"
+  }
+}

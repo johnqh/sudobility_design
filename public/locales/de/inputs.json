@@ -1,0 +1,136 @@
+{
+  "seo": {
+    "title": "Eingaben - Design-System - Intern - {{emailDomain}}",
+    "description": "Umfassende Dokumentation der Eingabekomponente mit Varianten, Größen, Zuständen und Integration von Web3"
+  },
+  "code": {
+    "copied": "✓ Kopiert!",
+    "copy": "Kopieren"
+  },
+  "header": {
+    "badge": "Eingaben",
+    "title": "Eingabekomponenten",
+    "intro": "Formular-Eingabekomponenten mit konsistenter Stilisierung, Validierungsstatus und barrierefreien Funktionen, die für traditionelle und Web3-Anwendungen entwickelt wurden."
+  },
+  "stats": {
+    "inputTypes": "Eingabetypen",
+    "sizeOptions": "Größenoptionen",
+    "stateTypes": "Staatsarten",
+    "web3Patterns": "Web3-Muster"
+  },
+  "sections": {
+    "quickStart": {
+      "title": "🚀 Schnellstart",
+      "description": "Beginnen Sie mit den am häufigsten verwendeten Eingabemustern. Diese Beispiele zeigen wesentliche Eingabetypen mit Validierung und Barrierefreiheitsfunktionen."
+    },
+    "variants": {
+      "title": "🎨 Eingabevarianten",
+      "description": "Erkunden Sie alle verfügbaren Eingabevarianten mit ihren spezifischen Einsatzfällen und Stiloptionen für verschiedene Kontexte."
+    },
+    "web3": {
+      "title": "⚡ Web3-Eingabemuster",
+      "description": "Spezialisierte Eingabemuster, die häufig in Web3-Anwendungen verwendet werden, einschließlich Wallet-Adressen, ENS-Domains und Token-Beträge."
+    },
+    "accessibility": {
+      "title": "♿ Barrierefreiheitsrichtlinien",
+      "description": "Stellen Sie sicher, dass Ihre Eingaben für alle Benutzer über geeignete Beschriftungen, die Tastaturnavigation und die Unterstützung durch Bildschirmleser zugänglich sind."
+    }
+  },
+  "validation": {
+    "emailInvalid": "Bitte geben Sie eine gültige E-Mail-Adresse ein",
+    "emailValid": "Gültige E-Mail-Adresse",
+    "walletInvalid": "Bitte geben Sie eine gültige Ethereum-Adresse ein",
+    "walletValid": "Gültige Ethereum-Adresse"
+  },
+  "quickStart": {
+    "essentialTitle": "1. Wesentliche Eingabetypen",
+    "emailLabel": "E-Mail-Adresse",
+    "passwordLabel": "Passwort",
+    "passwordPlaceholder": "Geben Sie Ihr Passwort ein",
+    "searchLabel": "Suchen",
+    "searchPlaceholder": "Nachrichten durchsuchen...",
+    "messageLabel": "Nachricht",
+    "messagePlaceholder": "Geben Sie Ihre Nachricht ein...",
+    "sizesTitle": "2. Größenvariationen",
+    "smallLabel": "Kleine Eingabe",
+    "smallPlaceholder": "Kleine Eingabegröße",
+    "defaultLabel": "Standard-Eingabe",
+    "defaultPlaceholder": "Standardgröße Eingabe",
+    "largeLabel": "Große Eingabe",
+    "largePlaceholder": "Große Eingabegröße",
+    "validationTitle": "3. Validierungsstatus",
+    "errorStateLabel": "Fehlerzustand",
+    "successStateLabel": "Erfolgszustand",
+    "web3Title": "4. Web3-spezifische Eingaben",
+    "walletLabel": "Brieftaschen-Adresse",
+    "amountLabel": "Token-Betrag",
+    "amountBalance": "Guthaben: 2,4563 ETH"
+  },
+  "variants": {
+    "standardTitle": "Standardvarianten",
+    "specializedTitle": "Spezialisierte Typen",
+    "defaultLabel": "Standard-Eingabe",
+    "defaultPlaceholder": "Standard-Eingabefeld",
+    "defaultHint": "Häufigste Eingabemethode",
+    "searchLabel": "Sucheingabe",
+    "searchPlaceholder": "Suchfunktion",
+    "searchHint": "Optimiert für Suchanwendungen",
+    "errorLabel": "Fehlerzustand",
+    "errorPlaceholder": "Ungültige Eingabe",
+    "errorHint": "Für Validierungsfehler",
+    "iconLabel": "Mit Symbol",
+    "iconHint": "Mit linker Icon-Platzierung",
+    "phoneLabel": "Telefonnummer",
+    "urlLabel": "Webseite URL",
+    "dateLabel": "Datum",
+    "fileLabel": "Datei hochladen"
+  },
+  "web3": {
+    "walletInputsTitle": "Brieftaschen-Adresseneingaben",
+    "ethAddressLabel": "Ethereum-Adresse",
+    "solAddressLabel": "Solana-Adresse",
+    "ensLabel": "ENS-Domain",
+    "snsLabel": "SNS-Domain",
+    "tokenAmountsTitle": "Token-Betrag-Eingaben",
+    "ethAmountLabel": "ETH-Betrag",
+    "usdcAmountLabel": "USDC-Betrag",
+    "max": "MAX",
+    "ethBalance": "Guthaben: 2,4563 ETH",
+    "usdcBalance": "Guthaben: 1.547,23 USDC",
+    "gasTitle": "Gas-Gebührenkonfiguration",
+    "gasPriceLabel": "Gaspreis (Gwei)",
+    "gasSlow": "Langsam",
+    "gasStandard": "Standard",
+    "gasFast": "Schnell",
+    "gasSlowTime": "~5 min",
+    "gasStandardTime": "~2 min",
+    "gasFastTime": "~1 Minute",
+    "customGasLabel": "Benutzerdefinierter Gaspreis",
+    "customGasHint": "Geschätzter Kosten: 8,45 USD • Geschätzte Zeit: ~2 Minuten"
+  },
+  "accessibility": {
+    "bestPracticesTitle": "✅ Best Practices",
+    "bestPractices": [
+      "Stellen Sie immer beschreibende Beschriftungen für Bildschirmleser bereit",
+      "Verwenden Sie geeignete Eingabetypen (E-Mail, Telefon, URL usw.)",
+      "Fügen Sie hilfreichen Platzhalter-Text und Anweisungen hinzu",
+      "Geben Sie klare Fehlermeldungen mit Vorschlägen zurück",
+      "Stellen Sie eine ausreichende Farbkontrastierung sicher (mindestens 4,5:1)",
+      "Unterstützung der Tastaturnavigation und Fokusszustände"
+    ],
+    "avoidTitle": "❌ Vermeiden",
+    "avoid": [
+      "Verwendung von Platzhalter-Text als einzigem Label",
+      "Sich allein auf die Farbe zu verlassen, um Validierungsstatus anzuzeigen",
+      "Eingaben zu klein gestalten, um eine komfortable Interaktion zu ermöglichen",
+      "Die Bereitstellung vager oder unhilfreicher Fehlermeldungen",
+      "Deaktivieren des Browser-Autofill ohne guten Grund",
+      "Entfernen von Fokussierungsindikatoren oder machen sie schwer sichtbar"
+    ],
+    "examplesTitle": "Beispielhafte Umsetzung der Barrierefreiheit"
+  },
+  "nav": {
+    "back": "Zurück zum Design-System",
+    "lastUpdated": "Zuletzt aktualisiert: {{date}}"
+  }
+}

@@ -1,0 +1,155 @@
+{
+  "seo": {
+    "title": "アイコンとイラストレーション - デザインシステム - 内部 - {{emailDomain}}",
+    "description": "一貫したサイズ、色、文脈的な使用パターンを備えた包括的なアイコンシステム"
+  },
+  "header": {
+    "badge": "アイコンとイラストレーション",
+    "title": "アイコンとイラストレーション",
+    "description": "一貫したサイズ、色、文脈的な使用パターンを持つ包括的なアイコンシステム。Heroiconsで構築され、アクセシビリティおよびダークモードに対応しています。"
+  },
+  "sizes": {
+    "title": "アイコンサイズ",
+    "variantsTitle": "サイズバリエーション",
+    "usageTitle": "サイズ 使用量",
+    "labels": {
+      "xs": "xs (12px)",
+      "sm": "sm (16px)",
+      "md": "md (20px)",
+      "lg": "lg (24px)",
+      "xl": "xl (32px)",
+      "xxl": "xxl (40px)",
+      "xxxl": "xxxl (48px)"
+    }
+  },
+  "colors": {
+    "title": "アイコンの色",
+    "variantsTitle": "カラーバリエーション",
+    "web3Title": "Web3カラー",
+    "default": {
+      "label": "デフォルト",
+      "value": "グレー 500 / 400"
+    },
+    "brand": {
+      "label": "ブランド",
+      "value": "青 600 / 400"
+    },
+    "success": {
+      "label": "成功",
+      "value": "緑 600 / 400"
+    },
+    "warning": {
+      "label": "警告",
+      "value": "アーモンド 600 / 400"
+    },
+    "error": {
+      "label": "エラー",
+      "value": "赤 600 / 400"
+    },
+    "interactive": {
+      "label": "インタラクティブ",
+      "value": "ホバー効果"
+    },
+    "ethereum": {
+      "label": "Ethereum",
+      "value": "青 600 / 400"
+    },
+    "solana": {
+      "label": "Solana",
+      "value": "パープル600 / 400"
+    },
+    "bitcoin": {
+      "label": "Bitcoin",
+      "value": "オレンジ 600 / 400"
+    }
+  },
+  "context": {
+    "title": "コンテキスト固有のアイコン",
+    "buttonTitle": "ボタンアイコン",
+    "inputTitle": "入力アイコン",
+    "leadingIcon": "リーディングアイコン",
+    "trailingIcon": "末尾のアイコン",
+    "iconOnly": "アイコンのみ",
+    "trailingInteractive": "トラーリングインタラクティブ",
+    "addItem": "アイテムを追加",
+    "continue": "続行",
+    "searchPlaceholder": "検索...",
+    "passwordPlaceholder": "パスワード"
+  },
+  "status": {
+    "title": "ステータスアイコン",
+    "success": {
+      "title": "成功",
+      "description": "操作が正常に完了しました"
+    },
+    "warning": {
+      "title": "警告",
+      "description": "確認して続行してください"
+    },
+    "error": {
+      "title": "エラー",
+      "description": "何かが間違いました"
+    },
+    "info": {
+      "title": "情報",
+      "description": "追加情報"
+    }
+  },
+  "web3": {
+    "title": "Web3コンテキストアイコン",
+    "walletStatusTitle": "ウォレットのステータス",
+    "blockchainTitle": "ブロックチェーンアイコン",
+    "walletConnected": "ウォレットが接続されました",
+    "noWalletConnected": "ウォレットが接続されていません",
+    "connectToContinue": "接続して続行する",
+    "ethereum": {
+      "title": "Ethereum",
+      "network": "ETHネットワーク"
+    },
+    "solana": {
+      "title": "Solana",
+      "network": "SOLネットワーク"
+    },
+    "bitcoin": {
+      "title": "Bitcoin",
+      "network": "BTCネットワーク"
+    }
+  },
+  "decorative": {
+    "title": "装飾的アイコン",
+    "heroLarge": {
+      "title": "ヒーロー ラージ",
+      "size": "80px × 80px"
+    },
+    "heroMedium": {
+      "title": "ヒーロー ミディアム",
+      "size": "64px × 64px"
+    },
+    "heroSmall": {
+      "title": "ヒーロー スモール",
+      "size": "48px × 48px"
+    }
+  },
+  "browser": {
+    "title": "アイコンブラウザ",
+    "categories": {
+      "all": "すべてのアイコン",
+      "actions": "アクション",
+      "status": "ステータス",
+      "navigation": "ナビゲーション",
+      "web3": "Web3",
+      "decorative": "装飾的な"
+    }
+  },
+  "tokens": {
+    "title": "利用可能なアイコンのバリエーション",
+    "sizeVariants": "サイズバリエーション",
+    "colorVariants": "カラーバリエーション",
+    "contextVariants": "コンテキストのバリエーション",
+    "combinedVariants": "結合されたバリアント"
+  },
+  "navigation": {
+    "previous": "テーブルとデータグリッド",
+    "backToDesignSystem": "デザインシステムに戻る"
+  }
+}

@@ -1,0 +1,155 @@
+{
+  "seo": {
+    "title": "Icônes et illustrations - Système de conception - Interne - {{emailDomain}}",
+    "description": "Système d'icônes complet avec des tailles, des couleurs et des usages contextuels cohérents"
+  },
+  "header": {
+    "badge": "Icônes et illustrations",
+    "title": "Icônes et illustrations",
+    "description": "Système d'icônes complet avec des tailles, couleurs et usages contextuels cohérents. Conçu avec Heroicons et optimisé pour l'accessibilité et le mode sombre."
+  },
+  "sizes": {
+    "title": "Tailles des icônes",
+    "variantsTitle": "Variants de taille",
+    "usageTitle": "Taille Utilisation",
+    "labels": {
+      "xs": "xs (12px)",
+      "sm": "sm (16px)",
+      "md": "md (20px)",
+      "lg": "lg (24px)",
+      "xl": "xl (32px)",
+      "xxl": "xxl (40px)",
+      "xxxl": "xxxl (48px)"
+    }
+  },
+  "colors": {
+    "title": "Couleurs des icônes",
+    "variantsTitle": "Variants de couleur",
+    "web3Title": "Couleurs Web3",
+    "default": {
+      "label": "Par défaut",
+      "value": "Gris 500 / 400"
+    },
+    "brand": {
+      "label": "Marque",
+      "value": "Bleu 600 / 400"
+    },
+    "success": {
+      "label": "Succès",
+      "value": "Vert 600 / 400"
+    },
+    "warning": {
+      "label": "Avertissement",
+      "value": "Amber 600 / 400"
+    },
+    "error": {
+      "label": "Erreur",
+      "value": "Rouge 600 / 400"
+    },
+    "interactive": {
+      "label": "Interactif",
+      "value": "Effets au survol"
+    },
+    "ethereum": {
+      "label": "Ethereum",
+      "value": "Bleu 600 / 400"
+    },
+    "solana": {
+      "label": "Solana",
+      "value": "Violet 600 / 400"
+    },
+    "bitcoin": {
+      "label": "Bitcoin",
+      "value": "Orange 600 / 400"
+    }
+  },
+  "context": {
+    "title": "Icônes spécifiques au contexte",
+    "buttonTitle": "Icônes de bouton",
+    "inputTitle": "Icônes d'entrée",
+    "leadingIcon": "Icône principale",
+    "trailingIcon": "Icône de fin",
+    "iconOnly": "Icône seulement",
+    "trailingInteractive": "Interactif de fin",
+    "addItem": "Ajouter un élément",
+    "continue": "Continuer",
+    "searchPlaceholder": "Rechercher...",
+    "passwordPlaceholder": "Mot de passe"
+  },
+  "status": {
+    "title": "Icônes d'état",
+    "success": {
+      "title": "Succès",
+      "description": "Opération terminée avec succès"
+    },
+    "warning": {
+      "title": "Avertissement",
+      "description": "Veuillez examiner et continuer"
+    },
+    "error": {
+      "title": "Erreur",
+      "description": "Quelque chose s'est mal passé"
+    },
+    "info": {
+      "title": "Informations",
+      "description": "Informations supplémentaires"
+    }
+  },
+  "web3": {
+    "title": "Icônes de contexte Web3",
+    "walletStatusTitle": "État du portefeuille",
+    "blockchainTitle": "Icônes de blockchain",
+    "walletConnected": "Portefeuille connecté",
+    "noWalletConnected": "Aucun portefeuille connecté",
+    "connectToContinue": "Connectez-vous pour continuer",
+    "ethereum": {
+      "title": "Ethereum",
+      "network": "Réseau ETH"
+    },
+    "solana": {
+      "title": "Solana",
+      "network": "Réseau SOL"
+    },
+    "bitcoin": {
+      "title": "Bitcoin",
+      "network": "Réseau BTC"
+    }
+  },
+  "decorative": {
+    "title": "Icônes décoratives",
+    "heroLarge": {
+      "title": "Héros Grand",
+      "size": "80px × 80px"
+    },
+    "heroMedium": {
+      "title": "Héros Moyen",
+      "size": "64px × 64px"
+    },
+    "heroSmall": {
+      "title": "Héros Petit",
+      "size": "48px × 48px"
+    }
+  },
+  "browser": {
+    "title": "Navigateur d'icônes",
+    "categories": {
+      "all": "Tous les icônes",
+      "actions": "Actions",
+      "status": "Statut",
+      "navigation": "Navigation",
+      "web3": "Web3",
+      "decorative": "Décoratif"
+    }
+  },
+  "tokens": {
+    "title": "Variants d'icônes disponibles",
+    "sizeVariants": "Variants de taille",
+    "colorVariants": "Variants de couleur",
+    "contextVariants": "Variants de contexte",
+    "combinedVariants": "Variants combinés"
+  },
+  "navigation": {
+    "previous": "Tableaux et grilles de données",
+    "backToDesignSystem": "Retour au système de conception"
+  }
+}

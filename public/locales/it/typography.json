@@ -1,0 +1,477 @@
+{
+  "seo": {
+    "title": "Tipografia - Sistema di progettazione - Interno - {{emailDomain}}",
+    "description": "Completto sistema tipografico e mostra degli stili testuali per il sistema di progettazione"
+  },
+  "nav": {
+    "viewColors": "Visualizza colori"
+  },
+  "header": {
+    "badge": "Sistema di tipografia",
+    "title": "Tipografia e stili del testo",
+    "intro": "Completo sistema tipografico con caratteri, dimensioni, spessori e stili, con esempi di utilizzo e frammenti di codice. Clicca su un esempio per copiarne il nome della classe negli appunti."
+  },
+  "example": {
+    "aria": "Copia il nome della classe {{title}}",
+    "preview": "Anteprima",
+    "usage": "Utilizzo"
+  },
+  "quickStart": {
+    "heading": "Avvio rapido - Esempi di tipografia",
+    "description": "Esempi di tipografia pronti all'uso per i modelli di testo più comuni. Copia e incolla direttamente nei tuoi componenti.",
+    "pageHeading": {
+      "title": "Titolo della pagina",
+      "preview": "Benvenuto sulla piattaforma"
+    },
+    "bodyText": {
+      "title": "Testo del corpo",
+      "preview": "Questo è un lungo testo di esempio che dimostra la dimensione del carattere, l'altezza della riga e lo spaziatura corretti per un contenuto leggibile nella tua applicazione."
+    },
+    "codeBlock": {
+      "title": "Blocco di codice"
+    },
+    "linkText": {
+      "title": "Testo del collegamento",
+      "preview": "Scopri di più sull'e-mail Web3"
+    },
+    "captionText": {
+      "title": "Testo della didascalia",
+      "preview": "Ultimo aggiornamento: 15 marzo 2024 alle 14:30"
+    },
+    "inlineCode": {
+      "title": "Codice inline",
+      "previewPrefix": "Usa la",
+      "previewSuffix": "hook per gestire lo stato del componente nelle applicazioni React."
+    }
+  },
+  "fontFamilies": {
+    "heading": "Famiglie di caratteri",
+    "description": "Tre famiglie tipografiche principali vengono utilizzate in tutta l'applicazione per diversi tipi di contenuti.",
+    "pangram": "Il volpe marrone veloce salta sopra il cane pigro",
+    "items": {
+      "sans": {
+        "name": "Sans Serif (predefinito)",
+        "description": "Famiglia tipografica principale per gli elementi dell'interfaccia e il testo principale",
+        "usage": "Elementi dell'interfaccia, titoli, testo principale"
+      },
+      "serif": {
+        "name": "Serif",
+        "description": "Per contenuti editoriali e formali",
+        "usage": "Contenuti editoriali, documenti ufficiali"
+      },
+      "mono": {
+        "name": "Monospace",
+        "description": "Per i blocchi di codice e il testo tecnico",
+        "usage": "Blocchi di codice, contenuti tecnici, indirizzi del portafoglio"
+      }
+    },
+    "code": {
+      "title": "Utilizzo del carattere famiglia",
+      "description": "Come utilizzare le famiglie di caratteri del sistema di design"
+    },
+    "preview": {
+      "sans": "Questo è testo senza serifa (font predefinito dell'interfaccia utente)",
+      "serif": "Questo è testo serif per contenuti editoriali",
+      "mono": "Questo è testo monospaziato per codice"
+    }
+  },
+  "scale": {
+    "heading": "Scala tipografica",
+    "description": "Scala gerarchica dei tipi dal testo di visualizzazione ai titoli, fornendo una dimensione coerente nell'interfaccia.",
+    "items": {
+      "hero": {
+        "name": "Eroe",
+        "usage": "Pagine di atterraggio, sezioni eroiche"
+      },
+      "xl": {
+        "name": "Visualizza XL",
+        "usage": "Intestazioni con display grande"
+      },
+      "lg": {
+        "name": "Visualizza LG",
+        "usage": "Intestazioni di visualizzazione medie"
+      },
+      "md": {
+        "name": "Visualizza MD",
+        "usage": "Intestazioni schermo piccole"
+      },
+      "sm": {
+        "name": "Visualizza SM",
+        "usage": "Intestazioni schermo extra piccole"
+      },
+      "h1": {
+        "name": "Intestazione 1",
+        "usage": "Intestazioni della pagina principale"
+      },
+      "h2": {
+        "name": "Intestazione 2",
+        "usage": "Intestazioni delle sezioni"
+      },
+      "h3": {
+        "name": "Intestazione 3",
+        "usage": "Sottotitoli"
+      },
+      "h4": {
+        "name": "Intestazione 4",
+        "usage": "Sottotitoli minori"
+      },
+      "h5": {
+        "name": "Intestazione 5",
+        "usage": "Piccoli titoli"
+      },
+      "h6": {
+        "name": "Intestazione 6",
+        "usage": "Titoli più piccoli"
+      }
+    },
+    "code": {
+      "title": "Utilizzo della scala tipografica",
+      "description": "Come utilizzare le varianti dei titoli del sistema di design"
+    },
+    "preview": {
+      "h1": "Intestazione 1",
+      "h2": "Intestazione 2",
+      "h3": "Intestazione 3",
+      "body": "Il testo segue le intestazioni"
+    }
+  },
+  "body": {
+    "heading": "Testo del corpo",
+    "description": "Varianti di testo corpo per diversi tipi di contenuto e livelli di gerarchia.",
+    "sample": "Questo è un testo di esempio che illustra la dimensione del carattere, il suo spessore e l'altezza della riga di questa variante.",
+    "items": {
+      "xl": {
+        "name": "Corpo XL",
+        "usage": "Paragrafi introduttivi, contenuto importante"
+      },
+      "lg": {
+        "name": "Corpo grande",
+        "usage": "Testo standard del corpo, contenuto principale"
+      },
+      "md": {
+        "name": "Corpo Medio",
+        "usage": "Testo corpo standard (alias di grande)"
+      },
+      "sm": {
+        "name": "Corpo piccolo",
+        "usage": "Informazioni secondarie, didascalie"
+      },
+      "xs": {
+        "name": "Corpo Extra Piccolo",
+        "usage": "Piccole scritte, pochi dettagli"
+      }
+    },
+    "code": {
+      "title": "Utilizzo del testo corpo",
+      "description": "Come usare le varianti di testo corpo"
+    },
+    "preview": {
+      "xl": "Questo è un testo corpo extra grande per i paragrafi iniziali e il contenuto importante.",
+      "lg": "Questo è il testo principale standard utilizzato nella maggior parte dell'applicazione per il contenuto principale.",
+      "sm": "Questo è un testo di corpo piccolo utilizzato per informazioni secondarie, didascalie e testi di aiuto."
+    }
+  },
+  "emphasis": {
+    "heading": "Evidenziazione del testo",
+    "description": "Varianti di enfasi del testo per diversi livelli di peso e di prominentezza.",
+    "items": {
+      "strongLg": {
+        "name": "Grande Forte",
+        "usage": "Testo importante evidenziato"
+      },
+      "strongMd": {
+        "name": "Forte Medio",
+        "usage": "Testo in grassetto medio"
+      },
+      "strongSm": {
+        "name": "Piccolo forte",
+        "usage": "Piccolo testo evidenziato"
+      },
+      "emphasisLg": {
+        "name": "Evidenzia grande",
+        "usage": "Evidenziazione di peso medio"
+      },
+      "emphasisMd": {
+        "name": "Media enfasi",
+        "usage": "Evidenziazione di peso medio"
+      },
+      "emphasisSm": {
+        "name": "Enfasi piccola",
+        "usage": "Evidenziazione di peso leggero a medio"
+      },
+      "mutedLg": {
+        "name": "Grande spento",
+        "usage": "Testo meno evidenziato"
+      },
+      "mutedMd": {
+        "name": "Zittato medio",
+        "usage": "Testo meno evidenziato"
+      },
+      "mutedSm": {
+        "name": "Piccolo silenziato",
+        "usage": "Testo piccolo de-emfatico"
+      }
+    },
+    "code": {
+      "title": "Utilizzo del rilievo del testo",
+      "description": "Come usare le varianti di enfasi del testo"
+    },
+    "preview": {
+      "normalPrefix": "Questo è un testo normale con",
+      "strong": "forte enfasi",
+      "and": "e",
+      "medium": "accento moderato",
+      "muted": "Questo è testo mutato con minore evidenza visiva."
+    }
+  },
+  "caption": {
+    "heading": "Didascalia e testo speciale",
+    "captionTitle": "Varianti didascaliche",
+    "sample": "Questo è un esempio di didascalia",
+    "uppercaseSample": "ETICHETTA SEZIONE",
+    "items": {
+      "default": {
+        "name": "Didascalia predefinita",
+        "usage": "Didascalie delle immagini, informazioni aggiuntive"
+      },
+      "emphasis": {
+        "name": "Didascalia in evidenza",
+        "usage": "Didascalie importanti"
+      },
+      "uppercase": {
+        "name": "Didascalia maiuscole",
+        "usage": "Etichette delle sezioni, tag"
+      }
+    },
+    "leadTitle": "Testo principale",
+    "leadSample": "Questo è il testo introduttivo che presenta il contenuto principale e fornisce contesto per quanto segue.",
+    "leadItems": {
+      "lg": {
+        "name": "Grande Piombo",
+        "usage": "Paragrafi di introduzione, prime frasi degli articoli"
+      },
+      "md": {
+        "name": "Lead medio",
+        "usage": "Paragrafi di introduzione"
+      },
+      "sm": {
+        "name": "Piccolo leader",
+        "usage": "Piccolo testo di introduzione"
+      }
+    },
+    "code": {
+      "title": "Utilizzo del testo didascalico e del testo principale",
+      "description": "Come usare didascalie e testo principale"
+    },
+    "preview": {
+      "imageCaption": "Questa è una didascalia per l'immagine sopra",
+      "sectionLabel": "ETICHETTA SEZIONE",
+      "lead": "Questo è il testo di introduzione che presenta la sezione."
+    }
+  },
+  "links": {
+    "heading": "Stili dei collegamenti",
+    "description": "Diversi stili di collegamento per vari contesti e livelli di enfasi.",
+    "externalSample": "Collegamento esterno →",
+    "items": {
+      "default": {
+        "name": "Collegamento predefinito",
+        "usage": "Collegamenti standard con sottolineatura"
+      },
+      "subtle": {
+        "name": "Collegamento sottile",
+        "usage": "Collegamenti senza sottolineatura"
+      },
+      "muted": {
+        "name": "Collegamento mutato",
+        "usage": "Collegamenti di colore grigio"
+      },
+      "external": {
+        "name": "Collegamento esterno",
+        "usage": "Collegamenti a siti esterni"
+      }
+    },
+    "code": {
+      "title": "Utilizzo degli stili dei collegamenti",
+      "description": "Come usare le varianti del collegamento"
+    },
+    "preview": {
+      "paraPrefix": "Questo paragrafo contiene un",
+      "defaultLink": "collegamento predefinito",
+      "and": "e un",
+      "subtleLink": "collegamento sottile",
+      "checkPrefix": "Dai un'occhiata a questo",
+      "externalLink": "collegamento esterno →",
+      "or": "o questo",
+      "mutedLink": "collegamento mutato"
+    }
+  },
+  "codeText": {
+    "heading": "Codice e testo tecnico",
+    "description": "Stili di testo monospaziato per codice, contenuti tecnici e documentazione tecnica.",
+    "items": {
+      "inline": {
+        "name": "Codice inline",
+        "usage": "Codice all'interno del testo"
+      },
+      "block": {
+        "name": "Blocco di codice",
+        "usage": "Blocchi di codice multiriga"
+      },
+      "small": {
+        "name": "Piccolo codice",
+        "usage": "Piccolo codice in linea"
+      }
+    },
+    "code": {
+      "title": "Utilizzo del testo codice",
+      "description": "Come usare le varianti di testo codice"
+    },
+    "preview": {
+      "usePrefix": "Usa la",
+      "useSuffix": "hook per gestire lo stato.",
+      "runPrefix": "Esegui",
+      "runSuffix": "per iniziare."
+    }
+  },
+  "labels": {
+    "heading": "Etichette e messaggi del modulo",
+    "description": "Stili del testo per gli elementi del modulo, le etichette e i messaggi di feedback.",
+    "items": {
+      "default": {
+        "name": "Etichetta predefinita",
+        "usage": "Etichette dei campi del modulo",
+        "sample": "Predefinito"
+      },
+      "required": {
+        "name": "Etichetta richiesta",
+        "usage": "Campi del modulo obbligatori",
+        "sample": "Indirizzo email"
+      },
+      "optional": {
+        "name": "Etichetta opzionale",
+        "usage": "Campi del modulo opzionali",
+        "sample": "Opzionale"
+      },
+      "helper": {
+        "name": "Testo di aiuto",
+        "usage": "Testo di aiuto del modulo",
+        "sample": "Aiuto"
+      },
+      "error": {
+        "name": "Testo di errore",
+        "usage": "Messaggi di errore del modulo",
+        "sample": "Errore"
+      },
+      "success": {
+        "name": "Testo di successo",
+        "usage": "Messaggi di successo del modulo",
+        "sample": "Successo"
+      }
+    },
+    "code": {
+      "title": "Utilizzo delle etichette del modulo",
+      "description": "Come usare le varianti di etichetta e messaggio del modulo"
+    },
+    "preview": {
+      "emailLabel": "Indirizzo email",
+      "emailHelper": "Useremo questo per inviarti aggiornamenti",
+      "passwordLabel": "Password",
+      "passwordError": "La password deve essere di almeno 8 caratteri",
+      "phoneLabel": "Numero di telefono",
+      "phoneSuccess": "Numero di telefono verificato con successo"
+    }
+  },
+  "web3": {
+    "heading": "Stili di testo Web3",
+    "description": "Stili di testo specializzati per contenuti Web3 e specifici della blockchain, come indirizzi, hash e importi.",
+    "items": {
+      "address": {
+        "name": "Indirizzo del portafoglio",
+        "usage": "Indirizzi portafoglio completi"
+      },
+      "addressShort": {
+        "name": "Indirizzo breve",
+        "usage": "Indirizzi portafogli troncati"
+      },
+      "hash": {
+        "name": "Hash della transazione",
+        "usage": "Identificativi delle transazioni"
+      },
+      "amount": {
+        "name": "Importo dei token",
+        "usage": "Importi di criptovalute"
+      },
+      "chain": {
+        "name": "Nome della catena",
+        "usage": "NomI delle reti blockchain"
+      },
+      "symbol": {
+        "name": "Simbolo del token",
+        "usage": "Simboli delle criptovalute"
+      }
+    },
+    "code": {
+      "title": "Utilizzo del testo Web3",
+      "description": "Come utilizzare gli stili di testo specifici di Web3"
+    },
+    "preview": {
+      "transactionHash": "Hash della transazione:"
+    }
+  },
+  "responsive": {
+    "heading": "Tipografia reattiva",
+    "description": "Tipografia che si adatta automaticamente alla dimensione dello schermo per una leggibilità ottimale su tutti i dispositivi.",
+    "items": {
+      "h1": {
+        "name": "H1 reattivo",
+        "usage": "Intestazioni che si adattano alla dimensione dello schermo"
+      },
+      "h2": {
+        "name": "H2 reattivo",
+        "usage": "Intestazioni di sezione che si adattano"
+      },
+      "h3": {
+        "name": "H3 reattivo",
+        "usage": "Sottotitoli che si adattano"
+      },
+      "display": {
+        "name": "Visualizzazione reattiva",
+        "usage": "Visualizza testo che si scala"
+      }
+    },
+    "code": {
+      "title": "Utilizzo della tipografia reattiva",
+      "description": "Come usare varianti di testo responsive che si adattano alla dimensione dello schermo"
+    },
+    "preview": {
+      "heading": "Questo titolo si adatta alla dimensione dello schermo",
+      "body": "Ridimensiona la finestra del browser per vedere come i titoli reattivi si adattano a diverse dimensioni dello schermo."
+    }
+  },
+  "guidelines": {
+    "heading": "Linee guida sulla tipografia",
+    "doTitle": "✓ Fare",
+    "do": [
+      "Utilizzate textVariants per uno stile coerente",
+      "Scegli i livelli gerarchici appropriati",
+      "Utilizza varianti responsive per il contenuto del titolo",
+      "Assicurati di avere un rapporto di contrasto sufficiente",
+      "Usa un carattere monospaziato per codice e indirizzi",
+      "Prova la leggibilità su diverse dimensioni dello schermo"
+    ],
+    "dontTitle": "✗ Non",
+    "dont": [
+      "Utilizza dimensioni di carattere casuali al di fuori della scala",
+      "Salta i livelli degli intitolati (h1 → h3)",
+      "Usa troppi stili di testo diversi",
+      "Rendi il testo troppo piccolo sui dispositivi mobili",
+      "Utilizza caratteri serif per gli elementi dell'interfaccia utente",
+      "Ignora i colori del testo nella modalità scura"
+    ]
+  },
+  "copyInstructions": {
+    "title": "Clicca per copiare i nomi delle classi",
+    "description": "Fai clic su qualsiasi esempio di testo per copiarne il nome della classe CSS, oppure usa il pulsante copia nei codici di esempio per copiare il codice di utilizzo"
+  }
+}

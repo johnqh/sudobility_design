@@ -1,0 +1,136 @@
+{
+  "seo": {
+    "title": "入力 - デザインシステム - 内部 - {{emailDomain}}",
+    "description": "入力コンポーネントの包括的なドキュメント。バリエーション、サイズ、状態、Web3統合をサポート"
+  },
+  "code": {
+    "copied": "✓ コピーしました！",
+    "copy": "コピー"
+  },
+  "header": {
+    "badge": "入力",
+    "title": "入力コンポーネント",
+    "intro": "一貫したスタイリング、検証状態、アクセシビリティ機能を備えたフォーム入力コンポーネントで、従来型およびWeb3アプリケーションに適しています。"
+  },
+  "stats": {
+    "inputTypes": "入力タイプ",
+    "sizeOptions": "サイズオプション",
+    "stateTypes": "州の種類",
+    "web3Patterns": "Web3 パターン"
+  },
+  "sections": {
+    "quickStart": {
+      "title": "🚀 クイックスタート",
+      "description": "最もよく使われる入力パターンから始めましょう。これらの例は、検証機能とアクセシビリティ機能を備えた基本的な入力タイプを示しています。"
+    },
+    "variants": {
+      "title": "🎨 入力のバリエーション",
+      "description": "さまざまな文脈に応じた、特定の用途とスタイリングオプションを備えた、利用可能なすべての入力バリアントを確認してください。"
+    },
+    "web3": {
+      "title": "⚡ Web3 入力パターン",
+      "description": "Web3アプリケーションでよく使われる専門的な入力パターン、ウォレットアドレス、ENSドメイン、トークンの金額など。"
+    },
+    "accessibility": {
+      "title": "♿ アクセシビリティガイドライン",
+      "description": "入力がすべてのユーザーに適切なラベル付け、キーボードナビゲーション、スクリーンリーダーのサポートを備えてアクセス可能であることを確認してください。"
+    }
+  },
+  "validation": {
+    "emailInvalid": "有効なメールアドレスを入力してください",
+    "emailValid": "有効なメールアドレス",
+    "walletInvalid": "有効なイーサリアムアドレスを入力してください",
+    "walletValid": "有効なイーサリアムアドレス"
+  },
+  "quickStart": {
+    "essentialTitle": "1. 必須の入力タイプ",
+    "emailLabel": "メールアドレス",
+    "passwordLabel": "パスワード",
+    "passwordPlaceholder": "パスワードを入力してください",
+    "searchLabel": "検索",
+    "searchPlaceholder": "メッセージを検索...",
+    "messageLabel": "メッセージ",
+    "messagePlaceholder": "メッセージを入力してください...",
+    "sizesTitle": "2. サイズのバリエーション",
+    "smallLabel": "小さな入力",
+    "smallPlaceholder": "小さなサイズの入力",
+    "defaultLabel": "デフォルト入力",
+    "defaultPlaceholder": "デフォルトサイズの入力",
+    "largeLabel": "大きな入力",
+    "largePlaceholder": "大規模な入力",
+    "validationTitle": "3. 検証状態",
+    "errorStateLabel": "エラーステート",
+    "successStateLabel": "成功状態",
+    "web3Title": "4. Web3専用の入力",
+    "walletLabel": "ウォレットアドレス",
+    "amountLabel": "トークン金額",
+    "amountBalance": "残高: 2.4563 ETH"
+  },
+  "variants": {
+    "standardTitle": "標準バージョン",
+    "specializedTitle": "専門型",
+    "defaultLabel": "デフォルト入力",
+    "defaultPlaceholder": "標準入力フィールド",
+    "defaultHint": "最も一般的な入力スタイル",
+    "searchLabel": "検索入力",
+    "searchPlaceholder": "検索機能",
+    "searchHint": "検索ユースケースに最適化されています",
+    "errorLabel": "エラーステート",
+    "errorPlaceholder": "無効な入力",
+    "errorHint": "検証エラー用",
+    "iconLabel": "アイコン付き",
+    "iconHint": "左側にアイコンを配置",
+    "phoneLabel": "電話番号",
+    "urlLabel": "ウェブサイトURL",
+    "dateLabel": "日付",
+    "fileLabel": "ファイルアップロード"
+  },
+  "web3": {
+    "walletInputsTitle": "ウォレットアドレス入力",
+    "ethAddressLabel": "Ethereumアドレス",
+    "solAddressLabel": "Solanaアドレス",
+    "ensLabel": "ENSドメイン",
+    "snsLabel": "SNSドメイン",
+    "tokenAmountsTitle": "トークン金額入力",
+    "ethAmountLabel": "ETH金額",
+    "usdcAmountLabel": "USDC金額",
+    "max": "MAX",
+    "ethBalance": "残高: 2.4563 ETH",
+    "usdcBalance": "残高: 1,547.23 USDC",
+    "gasTitle": "ガス手数料の設定",
+    "gasPriceLabel": "ガス価格 (Gwei)",
+    "gasSlow": "ゆっくり",
+    "gasStandard": "スタンダード",
+    "gasFast": "速い",
+    "gasSlowTime": "~5分",
+    "gasStandardTime": "~2分",
+    "gasFastTime": "~1分",
+    "customGasLabel": "カスタムガス価格",
+    "customGasHint": "予想コスト: 8.45米ドル • 予想時間: ~2分"
+  },
+  "accessibility": {
+    "bestPracticesTitle": "✅ ベストプラクティス",
+    "bestPractices": [
+      "スクリーンリーダー用に常に説明的なラベルを提供してください",
+      "適切な入力タイプ（メール、電話、URLなど）を使用してください",
+      "役立つプレースホルダーテキストと説明を追加してください",
+      "明確なエラーメッセージと提案を提供してください",
+      "十分な色のコントラストを確保してください（最小4.5:1）",
+      "キーボードナビゲーションとフォーカス状態のサポート"
+    ],
+    "avoidTitle": "❌ 避ける",
+    "avoid": [
+      "プレースホルダーテキストを唯一のラベルとして使用",
+      "検証状態を示すために色のみに頼る",
+      "入力を快適な操作に不向きなほど小さくする",
+      "曖昧または役に立たないエラーメッセージを提供する",
+      "良い理由がないのにブラウザの自動補完を無効にする",
+      "フォーカスインジケーターを削除する、または見えにくくする"
+    ],
+    "examplesTitle": "アクセシビリティ実装の例"
+  },
+  "nav": {
+    "back": "デザインシステムに戻る",
+    "lastUpdated": "最終更新日: {{date}}"
+  }
+}

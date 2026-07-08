@@ -1,0 +1,127 @@
+{
+  "seo": {
+    "title": "アクセシビリティ & A11Y - デザインシステム - 内部 - {{emailDomain}}",
+    "description": "WCAG準拠のための包括的なアクセシビリティパターンおよびインクルーシブデザインユーティリティ"
+  },
+  "header": {
+    "badge": "アクセシビリティ & A11Y",
+    "title": "インクルーシブ・デザイン・システム",
+    "intro": "包括的なWeb3アプリケーションを構築するための包括的なアクセシビリティパターンとユーティリティ。これらのパターンは、補助技術を使用するユーザーを含むすべてのユーザーに平等なアクセスを確保します。"
+  },
+  "stats": {
+    "wcag": {
+      "value": "WCAG 2.1",
+      "label": "AA準拠"
+    },
+    "touch": {
+      "value": "44px+",
+      "label": "タッチターゲット"
+    },
+    "contrast": {
+      "value": "4.5:1",
+      "label": "色のコントラスト"
+    },
+    "screenReader": {
+      "value": "スクリーンリーダー",
+      "label": "互換性あり"
+    }
+  },
+  "screenReader": {
+    "title": "スクリーンリーダー対応",
+    "description": "スクリーンリーダー用の包括的なパターン。スキップリンク、ariaラベル、セマンティックHTMLを含む。",
+    "skipLink": {
+      "title": "スキップリンク",
+      "button": "スキップリンク（フォーカスで表示）",
+      "visible": "✓ スキップリンクが表示されるようになりました。キーボードユーザーが素早く移動できるようになります。"
+    },
+    "only": {
+      "title": "スクリーンリーダー専用のコンテンツ",
+      "description": "このコンテンツは、視覚的なデザインを複雑にすることなく、スクリーンリーダーに文脈を提供します。",
+      "hidden": "このテキストはスクリーンリーダーのみに表示されます"
+    }
+  },
+  "focus": {
+    "title": "フォーカス管理",
+    "description": "すべてのインタラクティブ要素のフォーカスインジケーターとキーボードナビゲーションパターンをクリアにする。",
+    "indicatorsTitle": "フォーカスインジケーター",
+    "standard": "スタンダードフォーカス",
+    "highContrast": "高コントラスト",
+    "wallet": "Web3ウォレット",
+    "error": "エラーステート"
+  },
+  "contrast": {
+    "title": "色のコントラスト",
+    "description": "WCAG AA要件を上回る高コントラストのテキストと背景の組み合わせ。",
+    "levelsTitle": "テキストコントラストレベル",
+    "high": "高コントラストテキスト (WCAG AAA) - 比率 7:1+",
+    "medium": "中程度のコントラストテキスト (WCAG AA) - 比率 4.5:1+",
+    "low": "低コントラストテキスト（補助コンテンツ用）",
+    "backgroundsTitle": "高コントラスト背景",
+    "primary": "プライマリー",
+    "success": "成功",
+    "warning": "警告",
+    "errorLabel": "エラー"
+  },
+  "motion": {
+    "title": "モーションの設定",
+    "description": "ユーザーの運動好みを尊重し、前庭器障害のあるユーザー向けの代替案を提供するアニメーション。",
+    "controlsTitle": "モーション設定の制御",
+    "reduceMotion": "モーションを減らす",
+    "noAnimation": "アニメーションなし",
+    "animatedButton": "アニメーション付きボタン"
+  },
+  "form": {
+    "title": "フォームのアクセシビリティ",
+    "description": "適切なラベル、検証、エラー処理を備えたアクセス可能なフォームパターン。",
+    "requiredTitle": "必須フィールドのインジケーター",
+    "emailLabel": "メールアドレス",
+    "passwordLabel": "パスワード",
+    "passwordError": "パスワードは8文字以上である必要があります",
+    "codeExamplesTitle": "コード例"
+  },
+  "feedback": {
+    "title": "アクセス可能なフィードバック",
+    "description": "スクリーンリーダー対応のフィードバックメッセージで、適切なARIA live regionsを使用しています。",
+    "messageTypesTitle": "メッセージの種類",
+    "successTitle": "成功",
+    "successMessage": "ウォレットの接続が正常に完了しました！",
+    "errorTitle": "エラー",
+    "errorMessage": "取引に失敗しました。もう一度お試しください。",
+    "liveRegionTitle": "ライブ領域のパターン",
+    "politeExample": "このコンテンツはスクリーンリーダーに丁寧に発表されます",
+    "assertiveExample": "このコンテンツは、重要なアラートのため、スクリーンリーダーの動作を中断します"
+  },
+  "web3": {
+    "title": "Web3アクセシビリティ",
+    "description": "Web3アプリケーション向けの専門的なアクセシビリティパターン。ウォレット接続および取引を含む。",
+    "componentsTitle": "Web3 コンポーネント",
+    "connectWallet": "ウォレットを接続する",
+    "connectWalletAria": "Web3ウォレットを接続する",
+    "transactionAria": "取引ステータス",
+    "transactionPending": "取引保留中...",
+    "balanceAria": "口座残高は1.5 ETHです",
+    "addressAria": "ウォレットアドレス 0x1234...5678",
+    "implementationTitle": "実装"
+  },
+  "bestPractices": {
+    "title": "ベストプラクティス",
+    "doTitle": "✅ これを行ってください",
+    "do": [
+      "セマンティックHTML要素（button、nav、mainなど）を使用してください",
+      "インタラクティブな要素に対して説明的な aria-label を提供してください",
+      "モバイル端末でタッチターゲットの最小サイズを44px以上に設定してください",
+      "キーボードのみによるナビゲーションでのテスト",
+      "ユーザーの動きの好みを尊重する",
+      "複雑なWeb3のコンセプトに対して代替テキストを提供してください"
+    ],
+    "avoidTitle": "❌ これを避けてください",
+    "avoid": [
+      "情報伝達に色のみを用いる",
+      "脱出手段のないキーボードトラップの作成",
+      "自動再生される動画またはアニメーション",
+      "「ここをクリック」や「もっと読む」などの一般的なラベルを使用する",
+      "フォーカスインジケーターを完全に削除する",
+      "説明のないWeb3用語の使用"
+    ]
+  }
+}

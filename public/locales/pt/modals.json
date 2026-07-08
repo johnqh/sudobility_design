@@ -1,0 +1,197 @@
+{
+  "seo": {
+    "title": "Modais - Sistema de Design - Interno - {{emailDomain}}",
+    "description": "Componentes modais e de diálogo com padrões Web3 e recursos de acessibilidade"
+  },
+  "header": {
+    "badge": "Modais e Caixas de Diálogo",
+    "title": "Componentes modais",
+    "description": "Sistema abrangente de modais e diálogos com padrões de integração Web3, recursos de acessibilidade e comportamento responsivo. Perfeito para conexões de carteira, confirmações de transação e interações com o usuário."
+  },
+  "common": {
+    "copyToClipboard": "Copiar para a área de transferência",
+    "cancel": "Cancelar"
+  },
+  "quickStart": {
+    "heading": "Início Rápido",
+    "examples": {
+      "basic": {
+        "title": "Modal Básico",
+        "description": "Modal padrão com cabeçalho, conteúdo e rodapé"
+      },
+      "confirmation": {
+        "title": "Caixa de diálogo de confirmação",
+        "description": "Caixa de diálogo de confirmação simples com botões de ação"
+      },
+      "wallet": {
+        "title": "Conexão da carteira Web3",
+        "description": "Modal para seleção e conexão da carteira"
+      },
+      "transaction": {
+        "title": "Status da transação",
+        "description": "Modal que exibe o progresso e os estados da transação"
+      }
+    }
+  },
+  "demos": {
+    "heading": "Demonstrações interativas",
+    "cards": {
+      "simpleModal": {
+        "title": "Modal Básico",
+        "description": "Modal padrão com seção de cabeçalho, conteúdo e rodapé."
+      },
+      "confirmationModal": {
+        "title": "Caixa de diálogo de confirmação",
+        "description": "Caixa de diálogo de confirmação simples com ações destrutivas."
+      },
+      "walletModal": {
+        "title": "Conexão da carteira",
+        "description": "Interface de seleção e conexão de carteira Web3."
+      },
+      "transactionModal": {
+        "title": "Status da transação",
+        "description": "Janelas modais de feedback sobre o progresso e status da transação."
+      },
+      "formModal": {
+        "title": "Modal de formulário",
+        "description": "Modal contendo elementos de formulário e validação."
+      },
+      "settingsModal": {
+        "title": "Painel de configurações",
+        "description": "Modal grande para configurações e preferências complexas."
+      }
+    }
+  },
+  "sizes": {
+    "heading": "Variações de tamanho",
+    "availableTitle": "Tamanhos disponíveis",
+    "availableDescription": "Escolha o tamanho de modal apropriado com base nas suas necessidades de conteúdo.",
+    "boxLabel": "{{name}} Modal ({{maxWidth}})",
+    "names": {
+      "small": "Pequeno",
+      "medium": "Medium",
+      "large": "Grande",
+      "extraLarge": "Extra grande"
+    }
+  },
+  "web3": {
+    "heading": "Padrões de Integração Web3",
+    "walletFlow": {
+      "title": "Fluxo de conexão da carteira",
+      "description": "Complete a experiência de conexão da carteira com a seleção do provedor."
+    },
+    "transactionConfirmation": {
+      "title": "Confirmação de transação",
+      "description": "Interface de detalhes e confirmação de transação."
+    }
+  },
+  "accessibility": {
+    "heading": "Diretrizes de Acessibilidade",
+    "ariaTitle": "Atributos ARIA e Melhores Práticas",
+    "ariaDescription": "Siga estas diretrizes para garantir que seus modais sejam acessíveis a todos os usuários.",
+    "requiredAria": "Atributos ARIA obrigatórios",
+    "focusManagement": "Gestão de Foco",
+    "focusItems": [
+      "O foco deveria passar para o primeiro elemento focável na janela modal quando aberta",
+      "A navegação com tabulação deveria ser presa dentro do modal",
+      "O foco deve retornar ao elemento gatilho quando o modal for fechado",
+      "A tecla ESC deveria fechar o modal"
+    ],
+    "screenReader": "Suporte para leitor de tela",
+    "screenReaderItems": [
+      "Use elementos HTML semânticos (button, form, etc.)",
+      "Forneça rótulos claros e descritivos para todos os elementos interativos.",
+      "Anunciar alterações de estado modal com regiões vivas"
+    ]
+  },
+  "implementation": {
+    "heading": "Notas de Implementação",
+    "portalTitle": "Uso do Portal React",
+    "portalDescription": "Renderize modais em um portal para evitar problemas com o índice z e garantir o empilhamento adequado.",
+    "animationTitle": "Considerações sobre animação",
+    "animationDescription": "Use animações CSS ou bibliotecas como Framer Motion para transições suaves de janelas modais.",
+    "animationItems": [
+      "• Desvanecer entrada/saída para sobreposição",
+      "• Amplie ou deslize para conteúdo modal",
+      "• Respeite as preferências de movimento do usuário",
+      "• Mantenha as animações abaixo de 300ms"
+    ]
+  },
+  "simpleModal": {
+    "title": "Exemplo de modal simples",
+    "body": "Este é um modal básico com cabeçalho padrão, conteúdo e seção de rodapé. Ele demonstra a estrutura e o estilo típicos de um modal.",
+    "hint": "Clique fora do modal ou clique no botão fechar para fechá-lo.",
+    "gotIt": "Entendido"
+  },
+  "confirmationModal": {
+    "title": "Excluir item",
+    "body": "Tem certeza de que deseja excluir este item? Esta ação não pode ser desfeita.",
+    "delete": "Excluir"
+  },
+  "walletModal": {
+    "title": "Conectar carteira",
+    "choose": "Escolha uma carteira para se conectar à plataforma {{emailDomain}}",
+    "metamask": "MetaMask",
+    "metamaskDescription": "Extensão de navegador popular",
+    "walletConnect": "WalletConnect",
+    "walletConnectDescription": "Digitalize com carteira móvel",
+    "phantom": "Fantasma",
+    "phantomDescription": "carteira Solana"
+  },
+  "transactionModal": {
+    "title": {
+      "idle": "Enviar transação",
+      "pending": "Transação pendente",
+      "confirming": "Confirmar transação",
+      "success": "Transação bem-sucedida",
+      "error": "Transação falhou"
+    },
+    "description": {
+      "idle": "Revise os detalhes da transação e confirme para prosseguir.",
+      "pending": "Por favor, confirme a transação na sua carteira...",
+      "confirming": "Aguardando confirmação da blockchain...",
+      "success": "Sua transação foi concluída com sucesso.",
+      "error": "A transação foi rejeitada ou falhou. Tente novamente."
+    },
+    "amount": "Quantia:",
+    "gasFee": "Taxa de gás:",
+    "total": "Total:",
+    "confirm": "Confirmar transação",
+    "close": "Fechar"
+  },
+  "formModal": {
+    "title": "Formulário de contato",
+    "firstName": "Nome",
+    "firstNamePlaceholder": "Insira seu primeiro nome",
+    "lastName": "Sobrenome",
+    "lastNamePlaceholder": "Insira seu sobrenome",
+    "email": "Endereço de e-mail",
+    "emailPlaceholder": "Insira seu endereço de e-mail",
+    "message": "Mensagem",
+    "messagePlaceholder": "Digite sua mensagem...",
+    "send": "Enviar mensagem"
+  },
+  "settingsModal": {
+    "title": "Configurações e Preferências",
+    "account": "Configurações da conta",
+    "emailNotifications": "Notificações por e-mail",
+    "emailNotificationsDescription": "Receba notificações sobre a atividade da sua conta",
+    "twoFactor": "Autenticação de dois fatores",
+    "twoFactorDescription": "Adicione uma camada extra de segurança à sua conta",
+    "privacy": "Configurações de privacidade",
+    "profileVisibility": "Visibilidade do Perfil",
+    "visibilityPublic": "Público",
+    "visibilityFriends": "Apenas amigos",
+    "visibilityPrivate": "Privado",
+    "dataSharing": "Compartilhamento de dados",
+    "analyticsConsent": "Permitir a coleta de dados analíticos",
+    "thirdPartyConsent": "Compartilhar dados de uso com terceiros",
+    "appearance": "Aparência",
+    "theme": "Tema",
+    "themeLight": "Luz",
+    "themeDark": "Escuro",
+    "themeAuto": "Automático",
+    "resetDefaults": "Redefinir para os padrões",
+    "saveChanges": "Salvar alterações"
+  }
+}

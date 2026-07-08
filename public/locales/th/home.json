@@ -1,0 +1,286 @@
+{
+  "seo": {
+    "title": "ระบบการออกแบบ - {{appName}}",
+    "description": "เอกสารประกอบระบบการออกแบบและตัวอย่างคอมโพเนนต์"
+  },
+  "badge": "ระบบการออกแบบ",
+  "intro": "เอกสารคำอธิบายระบบการออกแบบที่ครอบคลุม ซึ่งแสดงสีทั้งหมด ฟอนต์ และโทเค็นการออกแบบที่ใช้ใน {{appName}}",
+  "stats": {
+    "fontFamilies": "ครอบครัวแบบอักษร",
+    "textSizes": "ขนาดข้อความ",
+    "spacingUnits": "หน่วยระยะห่าง",
+    "borderRadius": "รัศมีขอบ"
+  },
+  "exploreAria": "สำรวจเอกสารของ {{title}}",
+  "explore": "สำรวจ {{title}}",
+  "architecture": {
+    "title": "สถาปัตยกรรมระบบการออกแบบ",
+    "body": "{{appName}} ถูกสร้างขึ้นด้วยความใส่ใจในความสอดคล้อง ความสามารถในการขยายตัว และการเข้าถึง พร้อมชุดของโทเค็นการออกแบบ คอมโพเนนต์ และแนวทางที่ครอบคลุม",
+    "tokensTitle": "โทเค็นการออกแบบ",
+    "tokens": [
+      "ขนาดและชุดตัวอักษรแบบต่างๆ",
+      "ชุดสีและสีเชิงความหมาย",
+      "ระบบการเว้นช่องว่างและการกำหนดขนาด",
+      "โทเค็นรัศมีขอบและเงา"
+    ],
+    "implementationTitle": "การประยุกต์ใช้",
+    "implementation": [
+      "การผสานรวม Tailwind CSS",
+      "การสนับสนุน TypeScript",
+      "ความเข้ากันได้กับโหมดมืด",
+      "เครื่องมือการออกแบบที่ตอบสนองได้"
+    ]
+  },
+  "areas": {
+    "colors": {
+      "title": "สี",
+      "description": "สำรวจการเปลี่ยนแปลงสีทั้งหมด โทนสีเชิงความหมาย และธีมที่ใช้ในแอปพลิเคชัน",
+      "features": [
+        "สีแบรนด์และรูปแบบต่างๆ",
+        "ระบบสีเชิงความหมาย",
+        "ธีมสว่างและมืด",
+        "สีสถานะ (สำเร็จ, ข้อผิดพลาด, คำเตือน)",
+        "สีพื้นหลังและพื้นผิว"
+      ]
+    },
+    "typography": {
+      "title": "การจัดตัวอักษร",
+      "description": "ดูรูปแบบข้อความ ฟอนต์ ขนาด และรูปแบบตัวอักษรทั้งหมดที่ระบบออกแบบรองรับ",
+      "features": [
+        "ครอบครัวและน้ำหนักของฟอนต์",
+        "ขนาดและมาตราส่วนของข้อความ",
+        "รูปแบบหัวข้อ",
+        "รูปแบบข้อความเนื้อหา",
+        "รูปแบบข้อความพิเศษ (โค้ด ลิงก์ ฯลฯ)"
+      ]
+    },
+    "forms": {
+      "title": "แบบฟอร์ม",
+      "description": "ไลบรารีองค์ประกอบแบบฟอร์มครบวงจรพร้อมสถานะการตรวจสอบความถูกต้อง คุณสมบัติด้านความเข้าถึง และการจัดสไตล์ที่สอดคล้องกัน",
+      "features": [
+        "ประเภทและรูปแบบของข้อมูลนำเข้า",
+        "สถานะการตรวจสอบ (สำเร็จ, ข้อผิดพลาด)",
+        "ส่วนควบคุมแบบฟอร์ม (select, checkbox, radio)",
+        "รูปแบบขั้นสูง (สลับรหัสผ่าน)",
+        "แนวทางการเข้าถึง"
+      ]
+    },
+    "buttons": {
+      "title": "ปุ่ม",
+      "description": "ระบบคอมโพเนนต์ปุ่มที่ครอบคลุมพร้อมรูปแบบ ขนาด สถานะ และรูปแบบการโต้ตอบ",
+      "features": [
+        "รูปแบบสี (หลัก, รอง, ทำลาย)",
+        "ขนาดปุ่ม (เล็ก, ค่าเริ่มต้น, ใหญ่)",
+        "สถานะการโต้ตอบ (ชี้เมาส์, ใช้งานอยู่, โหลด)",
+        "ปุ่มไอคอนและรูปแบบการรวม",
+        "กลุ่มปุ่มและแถบเครื่องมือ"
+      ]
+    },
+    "cards": {
+      "title": "การ์ด",
+      "description": "ระบบคอมโพเนนต์การ์ดที่ยืดหยุ่นพร้อมการยกสูง รูปแบบเนื้อหาต่างๆ และรูปแบบการผสาน Web3",
+      "features": [
+        "Card elevation and shadow variants",
+        "Content and media card layouts",
+        "Interactive card states and actions",
+        "Web3-specific card patterns (wallet, NFT)",
+        "Responsive grid layouts"
+      ]
+    },
+    "badges": {
+      "title": "สัญลักษณ์",
+      "description": "ชิ้นส่วนขนาดเล็กที่มีความยืดหยุ่นสูงสำหรับติดฉลาก จัดหมวดหมู่ และสื่อสารข้อมูลสถานะ",
+      "features": [
+        "Semantic color variants (success, warning, error)",
+        "Size options (small, default, large)",
+        "Web3-specific blockchain badges",
+        "Interactive states and notifications",
+        "Accessibility and screen reader support"
+      ]
+    },
+    "alerts": {
+      "title": "การแจ้งเตือน",
+      "description": "ข้อความตอบกลับตามบริบทสำหรับข้อมูลสำคัญ คำเตือน และการยืนยัน",
+      "features": [
+        "Standard and compact alert layouts",
+        "Dismissible alerts with close actions",
+        "Web3 transaction and wallet status alerts",
+        "Action buttons and interactive elements",
+        "ARIA accessibility and screen reader support"
+      ]
+    },
+    "inputs": {
+      "title": "อินพุต",
+      "description": "ส่วนประกอบการป้อนข้อมูลแบบฟอร์มที่มีการจัดแต่งรูปแบบอย่างสม่ำเสมอ สถานะการตรวจสอบความถูกต้อง และการเข้าถึงได้",
+      "features": [
+        "Text, email, password, and search inputs",
+        "Size variations (small, default, large)",
+        "Validation states and error handling",
+        "Web3 wallet address and token amount inputs",
+        "Icon placement and accessibility support"
+      ]
+    },
+    "loading": {
+      "title": "สถานะการโหลด",
+      "description": "รูปแบบการโหลดที่ครอบคลุม รวมถึงสปินเนอร์ ตัวบ่งชี้ความก้าวหน้า และสถานะธุรกรรม Web3",
+      "features": [
+        "Spinners and loading buttons",
+        "Progress bars and skeleton loading",
+        "Web3 transaction and wallet states",
+        "Contextual loading messages",
+        "Accessibility and screen reader support"
+      ]
+    },
+    "modals": {
+      "title": "โมดัล",
+      "description": "คอมโพเนนต์แบบโมดัลและไดอะล็อกที่มีรูปแบบการผสานเว็บ3และคุณสมบัติด้านความเข้าถึง",
+      "features": [
+        "Modal sizes and layout variants",
+        "Web3 wallet connection and transaction modals",
+        "Interactive confirmation dialogs",
+        "Form modals and settings panels",
+        "ARIA accessibility and focus management"
+      ]
+    },
+    "navigation": {
+      "title": "การนำทาง",
+      "description": "ส่วนประกอบการนำทาง ได้แก่ บreadcrumbs, แท็บ, การแบ่งหน้า และระบบเมนู",
+      "features": [
+        "Breadcrumb navigation with SEO optimization",
+        "Tab navigation with multiple variants",
+        "Pagination for data sets",
+        "Sidebar and menu navigation patterns",
+        "Web3-specific navigation (multi-chain, wallet status)"
+      ]
+    },
+    "dataDisplay": {
+      "title": "การแสดงข้อมูล",
+      "description": "ส่วนประกอบสำหรับแสดงข้อมูล รวมถึงตาราง รายการ ตาราง และการจัดเรียงข้อมูล",
+      "features": [
+        "Data tables with sorting and filtering",
+        "List components for emails and transactions",
+        "Grid layouts for NFTs and blockchain data",
+        "Key-value displays and metadata",
+        "Timeline and activity feeds"
+      ]
+    },
+    "formsAdvanced": {
+      "title": "แบบฟอร์มขั้นสูง",
+      "description": "รูปแบบฟอร์มขั้นสูง รวมถึงวิธีการขั้นตอนหลายขั้นตอน การอัปโหลดไฟล์ และการป้อนข้อมูล Web3",
+      "features": [
+        "Multi-step form wizards with progress tracking",
+        "File upload with drag & drop functionality",
+        "Web3-specific inputs (wallet addresses, token amounts)",
+        "Advanced validation with real-time feedback",
+        "Security patterns for sensitive data"
+      ]
+    },
+    "notificationsFeedback": {
+      "title": "การแจ้งเตือนและข้อเสนอแนะ",
+      "description": "ระบบการแจ้งเตือนที่ครอบคลุมพร้อมการแจ้งเตือนแบบทูสต์ ตัวชี้วัดความก้าวหน้า และการแสดงสถานะ",
+      "features": [
+        "Toast notifications with auto-dismiss and actions",
+        "Progress indicators for long-running operations",
+        "Web3 transaction status with confirmation tracking",
+        "System status indicators and connection states",
+        "Contextual feedback and smart suggestions"
+      ]
+    },
+    "layoutSpacing": {
+      "title": "การจัดเรียงและการเว้นช่องว่าง",
+      "description": "ระบบการจัดวางที่ครอบคลุมพร้อมกริดที่ตอบสนองต่อการใช้งาน คอนเทนเนอร์ และเครื่องมือการเว้นระยะ",
+      "features": [
+        "Responsive grid systems and auto-fit patterns",
+        "Container variants for different content widths",
+        "Flexible Flexbox patterns for common layouts",
+        "Comprehensive spacing utility system",
+        "Web3-specific layout patterns (wallets, NFTs, DeFi)",
+        "Dashboard and page layout templates"
+      ]
+    },
+    "tablesGrids": {
+      "title": "ตารางและกริดข้อมูล",
+      "description": "ระบบตารางที่ครอบคลุมพร้อมการจัดเรียง การกรอง การแบ่งหน้า และฟังก์ชันการจัดเรียงข้อมูล",
+      "features": [
+        "Sortable columns with visual indicators",
+        "Filterable data with search functionality",
+        "Pagination for large datasets",
+        "Row selection and bulk actions",
+        "Responsive table layouts",
+        "Data grid with resizable columns",
+        "Loading and empty states",
+        "Web3 transaction and address tables"
+      ]
+    },
+    "iconsIllustrations": {
+      "title": "ไอคอนและภาพประกอบ",
+      "description": "ระบบไอคอนที่ครอบคลุมพร้อมขนาดสีและรูปแบบการใช้งานที่สอดคล้องกัน",
+      "features": [
+        "Consistent icon sizing system (xs to xxxl)",
+        "Semantic color variants (success, warning, error)",
+        "Context-specific icon patterns (buttons, _inputs, navigation)",
+        "Interactive states and hover effects",
+        "Web3-specific blockchain icons",
+        "Decorative and hero icon variants",
+        "Status indicators and loading states",
+        "Accessibility and screen reader support"
+      ]
+    },
+    "overlaysPortals": {
+      "title": "ชั้นวางและประตูทาง",
+      "description": "ระบบการซ้อนทับที่ครอบคลุมพร้อมโมดัล ดรอปดาวน์ -tooltip แผ่นงาน และสถานะการโหลด",
+      "features": [
+        "Modal dialogs with animation states and focus management",
+        "Dropdown menus with positioning and keyboard navigation",
+        "Tooltips with multiple positioning options",
+        "Bottom sheets and drawer overlays for mobile",
+        "Context menus and right-click interactions",
+        "Loading overlays with backdrop blur effects",
+        "Proper z-index layering and portal management",
+        "Accessibility with ARIA labels and focus trapping"
+      ]
+    },
+    "microInteractions": {
+      "title": "การโต้ตอบย่อยและการเคลื่อนไหว",
+      "description": "ระบบการเคลื่อนไหวที่ครอบคลุมพร้อมเอฟเฟกต์การชี้ไปที่ปุ่ม ทรานซิชัน และการโต้ตอบเฉพาะด้าน Web3",
+      "features": [
+        "Hover effects with lift, glow, and scale animations",
+        "Loading animations and spinner variants",
+        "Smooth transitions for state changes",
+        "Gesture feedback and interaction responses",
+        "Web3-specific animations (wallet connect, transaction states)",
+        "Scroll-triggered animations and reveals",
+        "Reduced motion accessibility support",
+        "Performance-optimized CSS and JavaScript animations"
+      ]
+    },
+    "accessibility": {
+      "title": "ความเข้าถึงและ A11Y",
+      "description": "รูปแบบการเข้าถึงที่ครอบคลุมและเครื่องมือการออกแบบที่มีความครอบคลุมเพื่อความสอดคล้องตาม WCAG",
+      "features": [
+        "Screen reader support with ARIA labels and skip links",
+        "Focus management and keyboard navigation patterns",
+        "High contrast color combinations for visibility",
+        "Motion preferences and reduced motion support",
+        "Semantic HTML roles and interactive patterns",
+        "Form accessibility with validation and error handling",
+        "Web3-specific accessibility for wallet connections",
+        "WCAG 2.1 AA compliance utilities and best practices"
+      ]
+    },
+    "performance": {
+      "title": "ประสิทธิภาพและการปรับปรุง",
+      "description": "รูปแบบการประมวลผลที่ครอบคลุมและเครื่องมือการปรับปรุงประสิทธิภาพสำหรับแอปพลิเคชันที่รวดเร็วและมีประสิทธิภาพ",
+      "features": [
+        "Bundle optimization with code splitting and lazy loading",
+        "Rendering optimization with GPU acceleration and virtual scrolling",
+        "Network optimization with caching and adaptive loading",
+        "Core Web Vitals monitoring (LCP, FID/INP, CLS)",
+        "Web3-specific optimizations (transaction batching, gas optimization)",
+        "Resource optimization with image compression and CDN patterns",
+        "Performance monitoring with real-time metrics",
+        "Memory optimization and efficient state management"
+      ]
+    }
+  }
+}

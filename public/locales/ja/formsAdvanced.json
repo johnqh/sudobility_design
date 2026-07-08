@@ -1,0 +1,159 @@
+{
+  "seo": {
+    "title": "Forms Advanced - Design System - 内部 - {{emailDomain}}",
+    "description": "マルチステップフォーム、ファイルアップロード、Web3入力などを含む高度なフォームパターン"
+  },
+  "header": {
+    "badge": "高度なフォーム",
+    "title": "高度なフォームシステム",
+    "description": "マルチステップウィザード、ファイルアップロード、Web3固有の入力、複雑なユーザー操作を対象とした高度な検証パターンを含む高度なフォームパターン。"
+  },
+  "quickStart": {
+    "heading": "クイックスタート",
+    "copyTitle": "クリップボードにコピー",
+    "examples": {
+      "multiStep": {
+        "title": "複数ステップフォーム",
+        "description": "進捗状況を確認できるステップバイステップフォーム"
+      },
+      "fileUpload": {
+        "title": "ドラッグアンドドロップによるファイルアップロード",
+        "description": "プレビューと検証付きの高度なファイルアップロード"
+      },
+      "tokenAmount": {
+        "title": "Web3トークン金額入力",
+        "description": "暗号通貨の金額入力と検証のための専用入力"
+      },
+      "validation": {
+        "title": "高度な検証",
+        "description": "カスタムエラーメッセージ付きのリアルタイム検証"
+      }
+    }
+  },
+  "steps": {
+    "account": {
+      "title": "アカウント設定",
+      "description": "アカウントの基本情報"
+    },
+    "wallet": {
+      "title": "ウォレット接続",
+      "description": "Web3ウォレットを接続する"
+    },
+    "transaction": {
+      "title": "取引の詳細",
+      "description": "取引パラメータの設定"
+    },
+    "review": {
+      "title": "確認と確認",
+      "description": "確認して送信"
+    }
+  },
+  "multiStep": {
+    "heading": "複数ステップフォーム",
+    "cardTitle": "ウォレットセットアップウィザード",
+    "cardDescription": "進捗追跡と検証を備えたインタラクティブな複数ステップフォーム",
+    "emailLabel": "メールアドレス",
+    "emailPlaceholder": "メールアドレスを入力してください",
+    "passwordLabel": "パスワード",
+    "passwordPlaceholder": "強力なパスワードを作成します",
+    "confirmPasswordLabel": "パスワードの確認",
+    "confirmPasswordPlaceholder": "パスワードを確認してください",
+    "walletAddressLabel": "ウォレットアドレス",
+    "walletAddressPlaceholder": "0x...",
+    "networkLabel": "ネットワーク",
+    "networks": {
+      "ethereum": "イーサリアムメインネット",
+      "polygon": "ポリゴン",
+      "bsc": "Binance Smart Chain",
+      "arbitrum": "Arbitrum"
+    },
+    "tokenAmountLabel": "トークン金額",
+    "tokenAmountPlaceholder": "0.00",
+    "balance": "残高: 1.234567 ETH (2,468.90 $)",
+    "max": "マックス",
+    "gasPriceLabel": "ガス価格 (Gwei)",
+    "gasPricePlaceholder": "20",
+    "gasPriceHint": "ガス代が高くなると、取引の確認が早くなります",
+    "reviewTitle": "取引を確認する",
+    "reviewNetwork": "ネットワーク:",
+    "reviewToAddress": "宛先：",
+    "reviewAmount": "金額：",
+    "reviewGasPrice": "ガス価格：",
+    "warningTitle": "取引警告",
+    "warningBody": "取引のすべての詳細を再度確認してください。ブロックチェーン取引は元に戻せません。",
+    "previous": "前へ",
+    "next": "次へ",
+    "submit": "取引を送信する"
+  },
+  "validationMessages": {
+    "invalidAddress": "無効なイーサリアムアドレス形式",
+    "positiveAmount": "金額は正の数でなければなりません",
+    "insufficientBalance": "残高不足",
+    "passwordMinLength": "パスワードは8文字以上である必要があります",
+    "passwordComplexity": "パスワードには大文字、小文字、数字を含める必要があります",
+    "passwordsDoNotMatch": "パスワードが一致しません"
+  },
+  "fileUpload": {
+    "heading": "ファイルアップロード",
+    "cardTitle": "文書のアップロード",
+    "cardDescription": "プレビューと検証付きのドラッグアンドドロップファイルアップロード",
+    "dropTitle": "ファイルをここにドラッグしてアップロード",
+    "dropSubtitle": "または、コンピュータからファイルを選択するにはクリックしてください",
+    "chooseFiles": "ファイルを選択",
+    "supportedFormats": "対応形式: PDF、DOC、DOCX、JPG、PNG、TXT（1ファイルあたり最大10MB）",
+    "uploadedFiles": "アップロードされたファイル ({{count}})",
+    "megabytes": "{{size}} MB"
+  },
+  "web3": {
+    "heading": "Web3専門の入力",
+    "walletCard": {
+      "title": "ウォレットアドレス入力",
+      "description": "暗号通貨アドレス用の専用入力と検証",
+      "recipientLabel": "受信者住所",
+      "recipientPlaceholder": "0x... または ENS 名",
+      "validAddress": "✓ 有効なEthereumアドレス",
+      "ensLabel": "ENS名",
+      "ensPlaceholder": "vitalik.eth",
+      "ensResolves": "→ 解決対象: 0x742d...5f0bEb7"
+    },
+    "tokenCard": {
+      "title": "トークン金額入力",
+      "description": "残高表示付きの正確なトークン数量入力",
+      "amountLabel": "送信する金額",
+      "amountPlaceholder": "0.00",
+      "balance": "残高: 1.234567 ETH",
+      "usdEquivalent": "約1,234.50米ドル",
+      "quarter": "25%",
+      "half": "50%",
+      "threeQuarters": "75%",
+      "max": "マックス",
+      "gasSettingsLabel": "ガス設定",
+      "gasSlow": "ゆっくり",
+      "gasSlowValue": "15 Gwei",
+      "gasStandard": "スタンダード",
+      "gasStandardValue": "25 Gwei",
+      "gasFast": "速い",
+      "gasFastValue": "35 Gwei"
+    }
+  },
+  "validationSection": {
+    "heading": "高度な検証",
+    "cardTitle": "リアルタイム検証の例",
+    "cardDescription": "リアルタイムフィードバックとカスタムエラーメッセージを備えた高度な検証パターン",
+    "strongPasswordLabel": "強力なパスワード",
+    "strongPasswordPlaceholder": "パスワードを入力してください",
+    "checkMinChars": "8文字以上",
+    "checkUppercase": "大文字を含む",
+    "checkNumber": "数字を含む",
+    "checkSpecialChar": "特殊文字を含みます",
+    "emailLabel": "メールアドレス",
+    "emailPlaceholder": "メールアドレスを入力してください",
+    "validEmail": "✓ 正しいメール形式",
+    "invalidLabel": "無効な入力例",
+    "invalidPlaceholder": "値を入力してください",
+    "invalidMessage": "このフィールドには無効な文字が含まれています",
+    "loadingLabel": "検証の読み込み",
+    "loadingPlaceholder": "利用可能を確認しています...",
+    "loadingMessage": "ユーザー名の利用可能状態を確認しています..."
+  }
+}

@@ -1,0 +1,129 @@
+{
+  "seo": {
+    "title": "Layout & Spacing - Design System - Internal - {{emailDomain}}",
+    "description": "Layout and spacing system with responsive grids, containers, and Web3-specific patterns"
+  },
+  "header": {
+    "badge": "Layout & Spacing",
+    "title": "Layout & Spacing System",
+    "description": "Comprehensive layout and spacing system with responsive grids, flexible containers, and Web3-specific patterns for wallets, transactions, and dashboard interfaces."
+  },
+  "quickStart": {
+    "title": "Quick Start",
+    "copyTooltip": "Copy to clipboard",
+    "examples": {
+      "grid": {
+        "title": "Responsive Grid System",
+        "description": "Flexible grid layouts that adapt to different screen sizes"
+      },
+      "container": {
+        "title": "Container System",
+        "description": "Responsive containers with consistent max-widths and padding"
+      },
+      "flex": {
+        "title": "Flexbox Utilities",
+        "description": "Common flexbox patterns for component layouts"
+      },
+      "spacing": {
+        "title": "Spacing System",
+        "description": "Consistent spacing patterns for margins and padding"
+      }
+    }
+  },
+  "grid": {
+    "title": "Responsive Grid System",
+    "cardTitle": "Interactive Grid Examples",
+    "cardDescription": "Switch between breakpoints to see how grids adapt",
+    "preview": "Preview:",
+    "breakpoints": {
+      "mobile": "Mobile",
+      "tablet": "Tablet",
+      "desktop": "Desktop"
+    },
+    "examples": {
+      "nftGallery": { "name": "NFT Gallery" },
+      "dashboardWidgets": { "name": "Dashboard Widgets" },
+      "transactionHistory": { "name": "Transaction History" }
+    },
+    "item": "Item {{number}}"
+  },
+  "container": {
+    "title": "Container System",
+    "cardTitle": "Container Variants",
+    "cardDescription": "Different container sizes for various content types",
+    "label": "Container:",
+    "maxWidth": "Max Width:",
+    "bestFor": "Best for:",
+    "containerSuffix": "{{name}} Container",
+    "previewText": "This container adapts to the selected width constraints while maintaining responsive padding.",
+    "sizes": {
+      "narrow": { "name": "Narrow", "use": "Articles, forms" },
+      "default": { "name": "Default", "use": "General content" },
+      "wide": { "name": "Wide", "use": "Dashboards, tables" },
+      "full": { "name": "Full", "use": "Edge-to-edge layouts" }
+    }
+  },
+  "flexbox": {
+    "title": "Flexbox Patterns",
+    "common": {
+      "title": "Common Patterns",
+      "description": "Standard flexbox layouts for components",
+      "spaceBetween": "Space Between",
+      "center": "Center",
+      "startWithGap": "Start with Gap",
+      "columnStack": "Column Stack"
+    },
+    "web3": {
+      "title": "Web3 Patterns",
+      "description": "Specialized layouts for blockchain interfaces",
+      "walletConnection": "Wallet Connection",
+      "walletName": "MetaMask",
+      "connected": "Connected",
+      "transactionSummary": "Transaction Summary",
+      "amount": "Amount:",
+      "gasFee": "Gas Fee:",
+      "total": "Total:",
+      "nftCardLayout": "NFT Card Layout",
+      "nftName": "Cool NFT #1234",
+      "artistName": "Artist Name"
+    }
+  },
+  "spacing": {
+    "title": "Spacing System",
+    "cardTitle": "Consistent Spacing Patterns",
+    "cardDescription": "Standard spacing utilities for consistent layouts",
+    "scaleTitle": "Spacing Scale",
+    "componentTitle": "Component Spacing",
+    "sectionHeader": "Section Header",
+    "component": "Component {{number}}",
+    "sectionSpacingLabel": "Section spacing:",
+    "sectionSpacingText": "32px vertical margins",
+    "componentSpacingLabel": "Component spacing:",
+    "componentSpacingText": "12px between items",
+    "internalPaddingLabel": "Internal padding:",
+    "internalPaddingText": "16px for content areas"
+  },
+  "web3": {
+    "title": "Web3 Layout Patterns",
+    "wallet": {
+      "title": "Wallet Dashboard",
+      "description": "Portfolio overview with balance and assets",
+      "send": "Send",
+      "receive": "Receive",
+      "swap": "Swap",
+      "assets": "Assets"
+    },
+    "transaction": {
+      "title": "Transaction Flow",
+      "description": "Step-by-step transaction interface",
+      "recipientAddress": "Recipient Address",
+      "amount": "Amount",
+      "balance": "Balance: 2.45 ETH",
+      "max": "Max",
+      "networkFee": "Network Fee:",
+      "total": "Total:",
+      "cancel": "Cancel",
+      "continue": "Continue"
+    }
+  }
+}

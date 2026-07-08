@@ -1,0 +1,80 @@
+{
+  "seo": {
+    "title": "表格與資料网格 - 設計系統 - 內部 - {{emailDomain}}",
+    "description": "包含排序、篩選、分頁和資料网格功能的綜合性表格系統"
+  },
+  "header": {
+    "badge": "表格與資料网格",
+    "title": "表格與資料网格",
+    "subtitle": "包含排序、篩選、分頁和資料网格功能的綜合性表格系統。非常適合用於展示具有高級互動模式的結構化資料。"
+  },
+  "columns": {
+    "name": "名字",
+    "email": "電子郵件",
+    "role": "角色",
+    "status": "狀態",
+    "actions": "操作",
+    "transactions": "交易",
+    "joinDate": "加入日期",
+    "transactionHash": "交易哈希",
+    "from": "從",
+    "to": "到",
+    "amount": "金額",
+    "chain": "鏈"
+  },
+  "basic": {
+    "title": "基本表格",
+    "usage": "使用"
+  },
+  "sortable": {
+    "title": "可排序表格",
+    "headers": "可排序的標題"
+  },
+  "selectable": {
+    "title": "支援批量操作的可選擇表格",
+    "selected": "{{count}} 行已選擇",
+    "export": "匯出",
+    "delete": "刪除"
+  },
+  "compact": {
+    "title": "緊湊型桌"
+  },
+  "filterable": {
+    "title": "可過濾的表格",
+    "searchPlaceholder": "搜尋使用者...",
+    "filters": "過濾器"
+  },
+  "pagination": {
+    "title": "帶分頁的表格",
+    "showing": "顯示",
+    "to": "到",
+    "of": "的",
+    "results": "結果",
+    "ariaLabel": "分頁"
+  },
+  "web3": {
+    "title": "Web3交易表",
+    "confirmed": "已確認",
+    "pending": "待處理",
+    "ethereum": "以太坊",
+    "solana": "Solana"
+  },
+  "empty": {
+    "title": "空狀態",
+    "noData": "未找到資料",
+    "description": "目前沒有記錄可供顯示。",
+    "addRecord": "新增記錄"
+  },
+  "tokens": {
+    "title": "可用的表格變體",
+    "structure": "表結構",
+    "containerBase": "容器與底座",
+    "headers": "標題",
+    "body": "身體",
+    "statesPagination": "狀態和分頁"
+  },
+  "nav": {
+    "previous": "佈局與間距",
+    "back": "返回設計系統"
+  }
+}

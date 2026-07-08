@@ -1,0 +1,477 @@
+{
+  "seo": {
+    "title": "Tipografia - Sistema de Design - Interno - {{emailDomain}}",
+    "description": "Sistema completo de tipografia e demonstração de estilos de texto para o sistema de design"
+  },
+  "nav": {
+    "viewColors": "Ver cores"
+  },
+  "header": {
+    "badge": "Sistema de tipografia",
+    "title": "Tipografia e Estilos de Texto",
+    "intro": "Sistema tipográfico completo, incluindo fontes, tamanhos, pesos e estilos, com exemplos de uso e amostras de código. Clique em qualquer exemplo para copiar seu nome de classe para a área de transferência."
+  },
+  "example": {
+    "aria": "Copie o nome da classe {{title}}",
+    "preview": "Pré-visualização",
+    "usage": "Uso"
+  },
+  "quickStart": {
+    "heading": "Início Rápido - Exemplos de Tipografia",
+    "description": "Exemplos prontos de tipografia para os padrões de texto mais comuns. Copie e cole diretamente em seus componentes.",
+    "pageHeading": {
+      "title": "Título da página",
+      "preview": "Bem-vindo à plataforma"
+    },
+    "bodyText": {
+      "title": "Texto do corpo",
+      "preview": "Este é um exemplo de texto longo que demonstra o tamanho de fonte, altura da linha e espaçamento adequados para conteúdo legível em sua aplicação."
+    },
+    "codeBlock": {
+      "title": "Bloco de código"
+    },
+    "linkText": {
+      "title": "Texto do link",
+      "preview": "Saiba mais sobre o e-mail Web3"
+    },
+    "captionText": {
+      "title": "Texto da legenda",
+      "preview": "Última atualização: 15 de março de 2024 às 14:30"
+    },
+    "inlineCode": {
+      "title": "Código em linha",
+      "previewPrefix": "Use a",
+      "previewSuffix": "hook para gerenciar o estado do componente em aplicações React."
+    }
+  },
+  "fontFamilies": {
+    "heading": "Famílias de fontes",
+    "description": "Três famílias principais de fontes são utilizadas ao longo da aplicação para diferentes tipos de conteúdo.",
+    "pangram": "A raposa marrom rápida salta sobre o cão preguiçoso",
+    "items": {
+      "sans": {
+        "name": "Sans Serif (padrão)",
+        "description": "Família de fontes principal para elementos da interface e texto corporal",
+        "usage": "Elementos da interface, títulos, texto principal"
+      },
+      "serif": {
+        "name": "Serif",
+        "description": "Para conteúdo editorial e formal",
+        "usage": "Conteúdo editorial, documentos oficiais"
+      },
+      "mono": {
+        "name": "Monospace",
+        "description": "Para blocos de código e texto técnico",
+        "usage": "Blocos de código, conteúdo técnico, endereços de carteira"
+      }
+    },
+    "code": {
+      "title": "Uso da família de fontes",
+      "description": "Como usar famílias de fontes do sistema de design"
+    },
+    "preview": {
+      "sans": "Este é texto sem serifa (fonte padrão da interface de usuário)",
+      "serif": "Este é texto serif para conteúdo editorial",
+      "mono": "Este é texto monoespaçado para código"
+    }
+  },
+  "scale": {
+    "heading": "Escala tipográfica",
+    "description": "Escala hierárquica de tipos do texto de exibição para títulos, proporcionando dimensões coerentes em toda a interface.",
+    "items": {
+      "hero": {
+        "name": "Herói",
+        "usage": "Páginas de aterragem, seções heróis"
+      },
+      "xl": {
+        "name": "Exibir XL",
+        "usage": "Cabeçalhos de tela grande"
+      },
+      "lg": {
+        "name": "Exibir LG",
+        "usage": "Títulos de exibição média"
+      },
+      "md": {
+        "name": "Exibir MD",
+        "usage": "Títulos de tela pequenos"
+      },
+      "sm": {
+        "name": "Exibir SM",
+        "usage": "Cabeçalhos de tela extra pequenos"
+      },
+      "h1": {
+        "name": "Título 1",
+        "usage": "Cabeçalhos da página principal"
+      },
+      "h2": {
+        "name": "Título 2",
+        "usage": "Títulos de seção"
+      },
+      "h3": {
+        "name": "Título 3",
+        "usage": "Cabeçalhos de seção"
+      },
+      "h4": {
+        "name": "Título 4",
+        "usage": "Cabeçalhos menores"
+      },
+      "h5": {
+        "name": "Título 5",
+        "usage": "Títulos pequenos"
+      },
+      "h6": {
+        "name": "Título 6",
+        "usage": "Títulos menores"
+      }
+    },
+    "code": {
+      "title": "Uso da escala tipográfica",
+      "description": "Como usar as variantes de cabeçalho do sistema de design"
+    },
+    "preview": {
+      "h1": "Título 1",
+      "h2": "Título 2",
+      "h3": "Título 3",
+      "body": "O texto corporal segue os títulos"
+    }
+  },
+  "body": {
+    "heading": "Texto do corpo",
+    "description": "Variantes de texto corporal para diferentes tipos de conteúdo e níveis de hierarquia.",
+    "sample": "Este é um texto de exemplo que demonstra o tamanho da fonte, o peso e a altura da linha desta variante.",
+    "items": {
+      "xl": {
+        "name": "Corpo XL",
+        "usage": "Parágrafos introdutórios, conteúdo importante"
+      },
+      "lg": {
+        "name": "Corpo grande",
+        "usage": "Texto padrão do corpo, conteúdo principal"
+      },
+      "md": {
+        "name": "Corpo Médio",
+        "usage": "Texto corporal padrão (apelido de grande)"
+      },
+      "sm": {
+        "name": "Corpo pequeno",
+        "usage": "Informações secundárias, legendas"
+      },
+      "xs": {
+        "name": "Corpo Extra Pequeno",
+        "usage": "Texto pequeno, detalhes mínimos"
+      }
+    },
+    "code": {
+      "title": "Uso do texto corpo",
+      "description": "Como usar as variantes de texto corporal"
+    },
+    "preview": {
+      "xl": "Este é um texto corporal extra grande para parágrafos iniciais e conteúdo importante.",
+      "lg": "Este é o texto padrão usado em grande parte da aplicação para o conteúdo principal.",
+      "sm": "Este é um texto curto usado para informações secundárias, legendas e textos de ajuda."
+    }
+  },
+  "emphasis": {
+    "heading": "Ênfase de texto",
+    "description": "Variantes de ênfase de texto para diferentes níveis de peso e destaque.",
+    "items": {
+      "strongLg": {
+        "name": "Grande Forte",
+        "usage": "Texto importante destacado"
+      },
+      "strongMd": {
+        "name": "Forte Médio",
+        "usage": "Texto em negrito médio"
+      },
+      "strongSm": {
+        "name": "Forte pequeno",
+        "usage": "Pequeno texto destacado"
+      },
+      "emphasisLg": {
+        "name": "Ênfase grande",
+        "usage": "Ênfase de peso médio"
+      },
+      "emphasisMd": {
+        "name": "Ênfase Média",
+        "usage": "Ênfase de peso médio"
+      },
+      "emphasisSm": {
+        "name": "Ênfase pequena",
+        "usage": "Ênfase de peso leve a médio"
+      },
+      "mutedLg": {
+        "name": "Grande Mudo",
+        "usage": "Texto menos destacado"
+      },
+      "mutedMd": {
+        "name": "Silenciado médio",
+        "usage": "Texto menos destacado"
+      },
+      "mutedSm": {
+        "name": "Pequeno Mudo",
+        "usage": "Texto pequeno desemfaticado"
+      }
+    },
+    "code": {
+      "title": "Uso de destaque de texto",
+      "description": "Como usar variantes de ênfase de texto"
+    },
+    "preview": {
+      "normalPrefix": "Este é um texto normal com",
+      "strong": "ênfase forte",
+      "and": "e",
+      "medium": "ênfase moderada",
+      "muted": "Este é texto silenciado com menor destaque visual."
+    }
+  },
+  "caption": {
+    "heading": "Legenda e texto especial",
+    "captionTitle": "Variantes de legenda",
+    "sample": "Este é um exemplo de legenda",
+    "uppercaseSample": "RÓTULO DE SEÇÃO",
+    "items": {
+      "default": {
+        "name": "Legenda padrão",
+        "usage": "Legendas de imagem, informações adicionais"
+      },
+      "emphasis": {
+        "name": "Legenda de destaque",
+        "usage": "Legendas importantes"
+      },
+      "uppercase": {
+        "name": "Legenda em maiúsculas",
+        "usage": "Rótulos de seção, tags"
+      }
+    },
+    "leadTitle": "Texto principal",
+    "leadSample": "Este é o texto introdutório que apresenta o conteúdo principal e fornece contexto para o que se segue.",
+    "leadItems": {
+      "lg": {
+        "name": "Chumbo Grande",
+        "usage": "Parágrafos de introdução, aberturas de artigos"
+      },
+      "md": {
+        "name": "Lead Médio",
+        "usage": "Parágrafos de introdução"
+      },
+      "sm": {
+        "name": "Pequeno Líder",
+        "usage": "Pequeno texto de introdução"
+      }
+    },
+    "code": {
+      "title": "Uso de texto de legenda e texto principal",
+      "description": "Como usar legendas e texto de introdução"
+    },
+    "preview": {
+      "imageCaption": "Esta é uma legenda para a imagem acima",
+      "sectionLabel": "RÓTULO DE SEÇÃO",
+      "lead": "Este é o texto de introdução que apresenta a seção."
+    }
+  },
+  "links": {
+    "heading": "Estilos de hiperlink",
+    "description": "Estilos de link diferentes para diversos contextos e níveis de ênfase.",
+    "externalSample": "Link externo →",
+    "items": {
+      "default": {
+        "name": "Link padrão",
+        "usage": "Links padrão com sublinhado"
+      },
+      "subtle": {
+        "name": "Ligação sutil",
+        "usage": "Links sem sublinhado"
+      },
+      "muted": {
+        "name": "Link Mudo",
+        "usage": "Links de cor cinza"
+      },
+      "external": {
+        "name": "Link externo",
+        "usage": "Links para sites externos"
+      }
+    },
+    "code": {
+      "title": "Uso de estilos de link",
+      "description": "Como usar variantes de link"
+    },
+    "preview": {
+      "paraPrefix": "Este parágrafo contém um",
+      "defaultLink": "link padrão",
+      "and": "e um",
+      "subtleLink": "link sutil",
+      "checkPrefix": "Confira isto",
+      "externalLink": "link externo →",
+      "or": "ou isto",
+      "mutedLink": "link silenciado"
+    }
+  },
+  "codeText": {
+    "heading": "Código e texto técnico",
+    "description": "Estilos de texto monoespaciado para código, conteúdo técnico e documentação técnica.",
+    "items": {
+      "inline": {
+        "name": "Código em linha",
+        "usage": "Código dentro do texto"
+      },
+      "block": {
+        "name": "Bloco de código",
+        "usage": "Blocos de código multilinha"
+      },
+      "small": {
+        "name": "Pequeno código",
+        "usage": "Pequeno código em linha"
+      }
+    },
+    "code": {
+      "title": "Uso do texto de código",
+      "description": "Como usar variantes de texto de código"
+    },
+    "preview": {
+      "usePrefix": "Use a",
+      "useSuffix": "hook para gerenciar o estado.",
+      "runPrefix": "Executar",
+      "runSuffix": "para começar."
+    }
+  },
+  "labels": {
+    "heading": "Rótulos e mensagens do formulário",
+    "description": "Estilos de texto para elementos de formulário, rótulos e mensagens de feedback.",
+    "items": {
+      "default": {
+        "name": "Rótulo padrão",
+        "usage": "Rótulos de campos de formulário",
+        "sample": "Padrão"
+      },
+      "required": {
+        "name": "Rótulo obrigatório",
+        "usage": "Campos obrigatórios do formulário",
+        "sample": "Endereço de e-mail"
+      },
+      "optional": {
+        "name": "Rótulo opcional",
+        "usage": "Campos de formulário opcionais",
+        "sample": "Opcional"
+      },
+      "helper": {
+        "name": "Texto de ajuda",
+        "usage": "Texto de ajuda do formulário",
+        "sample": "Ajuda"
+      },
+      "error": {
+        "name": "Texto de erro",
+        "usage": "Mensagens de erro do formulário",
+        "sample": "Erro"
+      },
+      "success": {
+        "name": "Texto de sucesso",
+        "usage": "Mensagens de sucesso do formulário",
+        "sample": "Sucesso"
+      }
+    },
+    "code": {
+      "title": "Uso de rótulos de formulário",
+      "description": "Como usar as variantes de rótulo e mensagem do formulário"
+    },
+    "preview": {
+      "emailLabel": "Endereço de e-mail",
+      "emailHelper": "Vamos usar isso para te enviar atualizações",
+      "passwordLabel": "Senha",
+      "passwordError": "A senha deve ter pelo menos 8 caracteres",
+      "phoneLabel": "Número de telefone",
+      "phoneSuccess": "Número de telefone verificado com sucesso"
+    }
+  },
+  "web3": {
+    "heading": "Estilos de texto Web3",
+    "description": "Estilos de texto especializados para conteúdo Web3 e específico de blockchain, como endereços, hashes e quantias.",
+    "items": {
+      "address": {
+        "name": "Endereço da carteira",
+        "usage": "Endereços completos da carteira"
+      },
+      "addressShort": {
+        "name": "Endereço curto",
+        "usage": "Endereços de carteira truncados"
+      },
+      "hash": {
+        "name": "Hash da transação",
+        "usage": "Identificadores de transação"
+      },
+      "amount": {
+        "name": "Quantidade de token",
+        "usage": "Valores de criptomoedas"
+      },
+      "chain": {
+        "name": "Nome da cadeia",
+        "usage": "Nomes das redes de blockchain"
+      },
+      "symbol": {
+        "name": "Símbolo do token",
+        "usage": "Símbolos de criptomoedas"
+      }
+    },
+    "code": {
+      "title": "Uso de texto Web3",
+      "description": "Como usar estilos de texto específicos do Web3"
+    },
+    "preview": {
+      "transactionHash": "Hash da transação:"
+    }
+  },
+  "responsive": {
+    "heading": "Tipografia Responsiva",
+    "description": "Tipografia que se ajusta automaticamente ao tamanho da tela para uma legibilidade ideal em todos os dispositivos.",
+    "items": {
+      "h1": {
+        "name": "H1 responsivo",
+        "usage": "Títulos que se ajustam ao tamanho da tela"
+      },
+      "h2": {
+        "name": "H2 responsivo",
+        "usage": "Cabeçalhos de seção que escalonam"
+      },
+      "h3": {
+        "name": "H3 responsivo",
+        "usage": "Cabeçalhos de subseção que escalonam"
+      },
+      "display": {
+        "name": "Exibição responsiva",
+        "usage": "Exibir texto que escala"
+      }
+    },
+    "code": {
+      "title": "Uso de tipografia reativa",
+      "description": "Como usar variantes de texto responsivas que se ajustam ao tamanho da tela"
+    },
+    "preview": {
+      "heading": "Este título escala com o tamanho da tela",
+      "body": "Redimensione a janela do seu navegador para ver como os títulos responsivos se adaptam a diferentes tamanhos de tela."
+    }
+  },
+  "guidelines": {
+    "heading": "Diretrizes de tipografia",
+    "doTitle": "✓ Fazer",
+    "do": [
+      "Use textVariants para estilos coerentes",
+      "Escolha os níveis hierárquicos apropriados",
+      "Use variantes responsivas para o conteúdo do herói",
+      "Certifique-se de ter uma relação de contraste suficiente",
+      "Use fonte monoespaciada para código e endereços",
+      "Teste a legibilidade em diferentes tamanhos de tela"
+    ],
+    "dontTitle": "✗ Não",
+    "dont": [
+      "Use tamanhos de fonte aleatórios fora da escala",
+      "Pular níveis de cabeçalho (h1 → h3)",
+      "Use muitos estilos de texto diferentes",
+      "Torne o texto muito pequeno em dispositivos móveis",
+      "Use fontes serif para elementos da interface do usuário",
+      "Ignore as cores de texto no modo escuro"
+    ]
+  },
+  "copyInstructions": {
+    "title": "Clique para copiar os nomes das classes",
+    "description": "Clique em qualquer exemplo de texto para copiar seu nome de classe CSS, ou use o botão copiar nos exemplos de código para copiar o código de uso"
+  }
+}

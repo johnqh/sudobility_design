@@ -1,0 +1,477 @@
+{
+  "seo": {
+    "title": "Kiểu chữ - Hệ thống thiết kế - Nội bộ - {{emailDomain}}",
+    "description": "Hệ thống kiểu chữ hoàn chỉnh và bản trình diễn các phong cách văn bản cho hệ thống thiết kế"
+  },
+  "nav": {
+    "viewColors": "Xem màu sắc"
+  },
+  "header": {
+    "badge": "Hệ thống kiểu chữ",
+    "title": "Kiểu chữ và phong cách văn bản",
+    "intro": "Hệ thống kiểu chữ toàn diện bao gồm phông chữ, kích thước, độ đậm và phong cách, cùng với các ví dụ sử dụng và mã mẫu. Nhấp vào bất kỳ ví dụ nào để sao chép tên lớp vào bộ nhớ tạm."
+  },
+  "example": {
+    "aria": "Sao chép tên lớp {{title}}",
+    "preview": "Xem trước",
+    "usage": "Sử dụng"
+  },
+  "quickStart": {
+    "heading": "Bắt đầu nhanh - Các ví dụ về kiểu chữ",
+    "description": "Các ví dụ về kiểu chữ sẵn sàng sử dụng cho các mẫu văn bản phổ biến nhất. Sao chép và dán trực tiếp vào các thành phần của bạn.",
+    "pageHeading": {
+      "title": "Tiêu đề trang",
+      "preview": "Chào mừng bạn đến với nền tảng"
+    },
+    "bodyText": {
+      "title": "Văn bản cơ thể",
+      "preview": "Đây là một ví dụ về văn bản dài, minh họa kích thước phông chữ, chiều cao dòng và khoảng cách phù hợp để nội dung dễ đọc trong ứng dụng của bạn."
+    },
+    "codeBlock": {
+      "title": "Khối mã"
+    },
+    "linkText": {
+      "title": "Văn bản liên kết",
+      "preview": "Tìm hiểu thêm về email Web3"
+    },
+    "captionText": {
+      "title": "Văn bản chú thích",
+      "preview": "Cập nhật lần cuối: ngày 15 tháng 3 năm 2024 lúc 14:30"
+    },
+    "inlineCode": {
+      "title": "Mã nhúng",
+      "previewPrefix": "Sử dụng",
+      "previewSuffix": "hook để quản lý trạng thái thành phần trong các ứng dụng React."
+    }
+  },
+  "fontFamilies": {
+    "heading": "Thế hệ phông chữ",
+    "description": "Ba họ phông chữ chính được sử dụng trong toàn bộ ứng dụng cho các loại nội dung khác nhau.",
+    "pangram": "Con cáo nhanh màu nâu nhảy qua con chó lười",
+    "items": {
+      "sans": {
+        "name": "Sans Serif (mặc định)",
+        "description": "Họ phông chính cho các thành phần giao diện người dùng và văn bản chính",
+        "usage": "Các thành phần giao diện người dùng, tiêu đề, văn bản chính"
+      },
+      "serif": {
+        "name": "Serif",
+        "description": "Để nội dung biên tập và chính thức",
+        "usage": "Nội dung biên tập, tài liệu chính thức"
+      },
+      "mono": {
+        "name": "Monospace",
+        "description": "Đối với khối mã và văn bản kỹ thuật",
+        "usage": "Khối mã, nội dung kỹ thuật, địa chỉ ví"
+      }
+    },
+    "code": {
+      "title": "Sử dụng phong cách chữ",
+      "description": "Làm thế nào để sử dụng các họ phông chữ từ hệ thống thiết kế"
+    },
+    "preview": {
+      "sans": "Đây là văn bản sans serif (phông chữ giao diện người dùng mặc định)",
+      "serif": "Đây là văn bản serif cho nội dung biên tập",
+      "mono": "Đây là văn bản chữ monospace cho mã nguồn"
+    }
+  },
+  "scale": {
+    "heading": "Thang đo kiểu chữ",
+    "description": "Thang bậc quy mô kiểu chữ từ văn bản hiển thị đến tiêu đề, cung cấp kích thước nhất quán trên toàn bộ giao diện.",
+    "items": {
+      "hero": {
+        "name": "Anh hùng",
+        "usage": "Trang đích, các phần tiêu đề"
+      },
+      "xl": {
+        "name": "Hiển thị XL",
+        "usage": "Tiêu đề màn hình lớn"
+      },
+      "lg": {
+        "name": "Hiển thị LG",
+        "usage": "Tiêu đề hiển thị cỡ trung bình"
+      },
+      "md": {
+        "name": "Hiển thị MD",
+        "usage": "Tiêu đề màn hình nhỏ"
+      },
+      "sm": {
+        "name": "Hiển thị SM",
+        "usage": "Tiêu đề màn hình cỡ extra nhỏ"
+      },
+      "h1": {
+        "name": "Tiêu đề 1",
+        "usage": "Tiêu đề trang chính"
+      },
+      "h2": {
+        "name": "Tiêu đề 2",
+        "usage": "Tiêu đề phần"
+      },
+      "h3": {
+        "name": "Tiêu đề 3",
+        "usage": "Tiêu đề phụ"
+      },
+      "h4": {
+        "name": "Tiêu đề 4",
+        "usage": "Tiêu đề phụ nhỏ"
+      },
+      "h5": {
+        "name": "Tiêu đề 5",
+        "usage": "Tiêu đề nhỏ"
+      },
+      "h6": {
+        "name": "Tiêu đề 6",
+        "usage": "Tiêu đề nhỏ nhất"
+      }
+    },
+    "code": {
+      "title": "Sử dụng thang kiểu chữ",
+      "description": "Cách sử dụng các biến thể tiêu đề từ hệ thống thiết kế"
+    },
+    "preview": {
+      "h1": "Tiêu đề 1",
+      "h2": "Tiêu đề 2",
+      "h3": "Tiêu đề 3",
+      "body": "Nội dung văn bản đi theo các tiêu đề"
+    }
+  },
+  "body": {
+    "heading": "Văn bản cơ thể",
+    "description": "Các biến thể văn bản chính cho các loại nội dung khác nhau và các cấp độ phân cấp.",
+    "sample": "Đây là văn bản mẫu minh họa kích thước phông chữ, độ đậm và chiều cao dòng của biến thể này.",
+    "items": {
+      "xl": {
+        "name": "Thân hình XL",
+        "usage": "Đoạn mở đầu, nội dung quan trọng"
+      },
+      "lg": {
+        "name": "Thân hình lớn",
+        "usage": "Văn bản tiêu chuẩn, nội dung chính"
+      },
+      "md": {
+        "name": "Thân hình Trung bình",
+        "usage": "Văn bản cơ thể chuẩn (tên gọi thay thế cho lớn)"
+      },
+      "sm": {
+        "name": "Thân hình nhỏ",
+        "usage": "Thông tin bổ sung, chú thích"
+      },
+      "xs": {
+        "name": "Thân thể Extra Small",
+        "usage": "Chữ nhỏ, chi tiết tối thiểu"
+      }
+    },
+    "code": {
+      "title": "Sử dụng văn bản thân",
+      "description": "Cách sử dụng các biến thể văn bản cơ thể"
+    },
+    "preview": {
+      "xl": "Đây là văn bản thân lớn cho các đoạn mở đầu và nội dung giới thiệu quan trọng.",
+      "lg": "Đây là văn bản chính tiêu chuẩn được sử dụng trong phần lớn ứng dụng cho nội dung chính.",
+      "sm": "Đây là văn bản nhỏ dùng cho thông tin phụ, chú thích và văn bản trợ giúp."
+    }
+  },
+  "emphasis": {
+    "heading": "Đánh dấu văn bản",
+    "description": "Các biến thể nhấn mạnh văn bản cho các mức độ đậm và nổi bật khác nhau.",
+    "items": {
+      "strongLg": {
+        "name": "Lớn mạnh",
+        "usage": "Văn bản quan trọng được nhấn mạnh"
+      },
+      "strongMd": {
+        "name": "Mạnh Trung bình",
+        "usage": "Văn bản in đậm trung bình"
+      },
+      "strongSm": {
+        "name": "Mạnh nhỏ",
+        "usage": "Văn bản được nhấn mạnh nhỏ"
+      },
+      "emphasisLg": {
+        "name": "Nhấn mạnh lớn",
+        "usage": "Nhấn mạnh trọng lượng trung bình"
+      },
+      "emphasisMd": {
+        "name": "Nhấn mạnh trung bình",
+        "usage": "Nhấn mạnh trọng lượng trung bình"
+      },
+      "emphasisSm": {
+        "name": "Nhấn mạnh nhỏ",
+        "usage": "Nhấn mạnh trọng lượng nhỏ đến trung bình"
+      },
+      "mutedLg": {
+        "name": "Lớn im lặng",
+        "usage": "Văn bản ít nổi bật hơn"
+      },
+      "mutedMd": {
+        "name": "Tắt âm trung bình",
+        "usage": "Văn bản ít nổi bật hơn"
+      },
+      "mutedSm": {
+        "name": "Nhỏ im lặng",
+        "usage": "Văn bản nhỏ được giảm nhấn mạnh"
+      }
+    },
+    "code": {
+      "title": "Sử dụng nhấn mạnh văn bản",
+      "description": "Làm thế nào để sử dụng các biến thể nhấn mạnh văn bản"
+    },
+    "preview": {
+      "normalPrefix": "Đây là văn bản bình thường với",
+      "strong": "nhấn mạnh mạnh",
+      "and": "và",
+      "medium": "nhấn mạnh trung bình",
+      "muted": "Đây là văn bản bị vô hiệu hóa với độ nổi bật thị giác giảm."
+    }
+  },
+  "caption": {
+    "heading": "Chú thích và văn bản đặc biệt",
+    "captionTitle": "Biến thể chú thích",
+    "sample": "Đây là một ví dụ về chú thích",
+    "uppercaseSample": "NHÃN BÀI ĐOẠN",
+    "items": {
+      "default": {
+        "name": "Chú thích mặc định",
+        "usage": "Chú thích hình ảnh, thông tin bổ sung"
+      },
+      "emphasis": {
+        "name": "Chú thích nhấn mạnh",
+        "usage": "Chú thích quan trọng"
+      },
+      "uppercase": {
+        "name": "Chữ in hoa",
+        "usage": "Nhãn phần, thẻ"
+      }
+    },
+    "leadTitle": "Văn bản dẫn",
+    "leadSample": "Đây là đoạn văn giới thiệu, cung cấp bối cảnh cho nội dung chính và phần tiếp theo.",
+    "leadItems": {
+      "lg": {
+        "name": "Chì lớn",
+        "usage": "Đoạn giới thiệu, phần mở đầu bài viết"
+      },
+      "md": {
+        "name": "Lead trung bình",
+        "usage": "Đoạn mở đầu"
+      },
+      "sm": {
+        "name": "Lãnh đạo nhỏ",
+        "usage": "Văn bản giới thiệu ngắn"
+      }
+    },
+    "code": {
+      "title": "Sử dụng văn bản chú thích và văn bản dẫn",
+      "description": "Cách sử dụng phụ đề và văn bản dẫn"
+    },
+    "preview": {
+      "imageCaption": "Đây là chú thích cho hình ảnh phía trên",
+      "sectionLabel": "NHÃN BÀI ĐOẠN",
+      "lead": "Đây là đoạn văn giới thiệu phần."
+    }
+  },
+  "links": {
+    "heading": "Kiểu liên kết",
+    "description": "Các phong cách liên kết khác nhau cho các ngữ cảnh và mức độ nhấn mạnh khác nhau.",
+    "externalSample": "Liên kết ngoài →",
+    "items": {
+      "default": {
+        "name": "Liên kết mặc định",
+        "usage": "Liên kết chuẩn có gạch chân"
+      },
+      "subtle": {
+        "name": "Liên kết tinh tế",
+        "usage": "Liên kết không có gạch chân"
+      },
+      "muted": {
+        "name": "Liên kết đã vô hiệu hóa",
+        "usage": "Liên kết màu xám"
+      },
+      "external": {
+        "name": "Liên kết ngoài",
+        "usage": "Liên kết đến các trang web bên ngoài"
+      }
+    },
+    "code": {
+      "title": "Cách sử dụng phong cách liên kết",
+      "description": "Cách sử dụng biến thể liên kết"
+    },
+    "preview": {
+      "paraPrefix": "Đoạn văn này chứa một",
+      "defaultLink": "liên kết mặc định",
+      "and": "và một",
+      "subtleLink": "liên kết tinh tế",
+      "checkPrefix": "Xem điều này",
+      "externalLink": "liên kết ngoài →",
+      "or": "hoặc điều này",
+      "mutedLink": "liên kết im lặng"
+    }
+  },
+  "codeText": {
+    "heading": "Mã và văn bản kỹ thuật",
+    "description": "Kiểu chữ chữ rộng cố định cho mã, nội dung kỹ thuật và tài liệu kỹ thuật.",
+    "items": {
+      "inline": {
+        "name": "Mã nhúng",
+        "usage": "Mã trong văn bản"
+      },
+      "block": {
+        "name": "Khối mã",
+        "usage": "Khối mã nhiều dòng"
+      },
+      "small": {
+        "name": "Mã nhỏ",
+        "usage": "Mã nhúng nhỏ"
+      }
+    },
+    "code": {
+      "title": "Sử dụng văn bản mã",
+      "description": "Cách sử dụng các biến thể văn bản mã"
+    },
+    "preview": {
+      "usePrefix": "Sử dụng",
+      "useSuffix": "hook để quản lý trạng thái.",
+      "runPrefix": "Chạy",
+      "runSuffix": "để bắt đầu."
+    }
+  },
+  "labels": {
+    "heading": "Nhãn và tin nhắn biểu mẫu",
+    "description": "Kiểu chữ cho các thành phần biểu mẫu, nhãn và tin nhắn phản hồi.",
+    "items": {
+      "default": {
+        "name": "Nhãn mặc định",
+        "usage": "Nhãn trường biểu mẫu",
+        "sample": "Mặc định"
+      },
+      "required": {
+        "name": "Nhãn bắt buộc",
+        "usage": "Các trường biểu mẫu bắt buộc",
+        "sample": "Địa chỉ email"
+      },
+      "optional": {
+        "name": "Nhãn tùy chọn",
+        "usage": "Các trường biểu mẫu tùy chọn",
+        "sample": "Tùy chọn"
+      },
+      "helper": {
+        "name": "Văn bản trợ giúp",
+        "usage": "Văn bản trợ giúp cho biểu mẫu",
+        "sample": "Trợ giúp"
+      },
+      "error": {
+        "name": "Thông báo lỗi",
+        "usage": "Thông báo lỗi biểu mẫu",
+        "sample": "Lỗi"
+      },
+      "success": {
+        "name": "Văn bản thành công",
+        "usage": "Thông báo thành công của biểu mẫu",
+        "sample": "Thành công"
+      }
+    },
+    "code": {
+      "title": "Sử dụng nhãn biểu mẫu",
+      "description": "Cách sử dụng các biến thể nhãn và tin nhắn cho biểu mẫu"
+    },
+    "preview": {
+      "emailLabel": "Địa chỉ email",
+      "emailHelper": "Chúng tôi sẽ dùng điều này để gửi cho bạn các bản cập nhật",
+      "passwordLabel": "Mật khẩu",
+      "passwordError": "Mật khẩu phải có ít nhất 8 ký tự",
+      "phoneLabel": "Số điện thoại",
+      "phoneSuccess": "Số điện thoại đã được xác minh thành công"
+    }
+  },
+  "web3": {
+    "heading": "Kiểu chữ Web3",
+    "description": "Các phong cách văn bản chuyên biệt cho nội dung Web3 và nội dung đặc thù blockchain như địa chỉ, băm và số lượng.",
+    "items": {
+      "address": {
+        "name": "Địa chỉ ví",
+        "usage": "Địa chỉ ví đầy đủ"
+      },
+      "addressShort": {
+        "name": "Địa chỉ ngắn",
+        "usage": "Địa chỉ ví bị cắt ngắn"
+      },
+      "hash": {
+        "name": "Băm giao dịch",
+        "usage": "Mã giao dịch"
+      },
+      "amount": {
+        "name": "Số lượng token",
+        "usage": "Số tiền tiền mã hóa"
+      },
+      "chain": {
+        "name": "Tên chuỗi",
+        "usage": "Tên mạng lưới blockchain"
+      },
+      "symbol": {
+        "name": "Ký hiệu token",
+        "usage": "Ký hiệu tiền điện tử"
+      }
+    },
+    "code": {
+      "title": "Sử dụng văn bản Web3",
+      "description": "Làm thế nào để sử dụng các phong cách văn bản đặc thù cho Web3"
+    },
+    "preview": {
+      "transactionHash": "Băm giao dịch:"
+    }
+  },
+  "responsive": {
+    "heading": "Kiến trúc chữ phản ứng",
+    "description": "Kiểu chữ tự động điều chỉnh theo kích thước màn hình để đọc dễ dàng nhất trên mọi thiết bị.",
+    "items": {
+      "h1": {
+        "name": "H1 phản hồi",
+        "usage": "Tiêu đề thay đổi kích thước theo kích thước màn hình"
+      },
+      "h2": {
+        "name": "H2 phản hồi",
+        "usage": "Tiêu đề phần được điều chỉnh kích thước"
+      },
+      "h3": {
+        "name": "H3 phản hồi",
+        "usage": "Tiêu đề phụ được điều chỉnh kích thước"
+      },
+      "display": {
+        "name": "Hiển thị phản hồi",
+        "usage": "Hiển thị văn bản có thể thay đổi kích thước"
+      }
+    },
+    "code": {
+      "title": "Sử dụng kiểu chữ phản hồi",
+      "description": "Làm thế nào để sử dụng các biến thể văn bản phản hồi mà thay đổi kích thước theo kích thước màn hình"
+    },
+    "preview": {
+      "heading": "Tiêu đề này thay đổi kích thước theo kích thước màn hình",
+      "body": "Thay đổi kích thước cửa sổ trình duyệt để xem cách các tiêu đề phản ứng điều chỉnh theo các kích thước màn hình khác nhau."
+    }
+  },
+  "guidelines": {
+    "heading": "Hướng dẫn về kiểu chữ",
+    "doTitle": "✓ Làm",
+    "do": [
+      "Sử dụng textVariants để thiết lập phong cách nhất quán",
+      "Chọn các cấp độ phân cấp phù hợp",
+      "Sử dụng các biến thể phản hồi cho nội dung tiêu đề",
+      "Đảm bảo tỷ lệ tương phản đủ",
+      "Sử dụng phông chữ chữ rộng cố định cho mã và địa chỉ",
+      "Thử khả năng đọc trên các kích thước màn hình khác nhau"
+    ],
+    "dontTitle": "✗ Đừng",
+    "dont": [
+      "Sử dụng kích thước phông chữ ngẫu nhiên bên ngoài thang đo",
+      "Bỏ qua các cấp độ tiêu đề (h1 → h3)",
+      "Sử dụng quá nhiều phong cách văn bản khác nhau",
+      "Làm văn bản quá nhỏ trên thiết bị di động",
+      "Sử dụng phông chữ serif cho các thành phần giao diện người dùng",
+      "Bỏ qua màu chữ trong chế độ tối"
+    ]
+  },
+  "copyInstructions": {
+    "title": "Nhấp để sao chép tên lớp",
+    "description": "Nhấp vào bất kỳ ví dụ văn bản nào để sao chép tên lớp CSS của nó, hoặc sử dụng nút sao chép trong các ví dụ mã để sao chép mã sử dụng"
+  }
+}

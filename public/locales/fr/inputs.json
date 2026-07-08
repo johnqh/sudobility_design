@@ -1,0 +1,136 @@
+{
+  "seo": {
+    "title": "Entrées - Système de conception - Interne - {{emailDomain}}",
+    "description": "Documentation complète des composants d'entrée avec des variantes, des tailles, des états et une intégration Web3"
+  },
+  "code": {
+    "copied": "✓ Copié !",
+    "copy": "Copier"
+  },
+  "header": {
+    "badge": "Entrées",
+    "title": "Composants d'entrée",
+    "intro": "Composants d'entrée de formulaire avec un style cohérent, des états de validation et des fonctionnalités d'accessibilité conçus pour les applications traditionnelles et Web3."
+  },
+  "stats": {
+    "inputTypes": "Types d'entrée",
+    "sizeOptions": "Options de taille",
+    "stateTypes": "Types d'État",
+    "web3Patterns": "Modèles Web3"
+  },
+  "sections": {
+    "quickStart": {
+      "title": "🚀 Démarrage rapide",
+      "description": "Commencez avec les modèles d'entrée les plus couramment utilisés. Ces exemples montrent les types d'entrée essentiels avec validation et fonctionnalités d'accessibilité."
+    },
+    "variants": {
+      "title": "🎨 Variantes d'entrée",
+      "description": "Explorez toutes les variantes d'entrée disponibles avec leurs cas d'utilisation spécifiques et leurs options de mise en forme pour différents contextes."
+    },
+    "web3": {
+      "title": "⚡ Modèles d'entrée Web3",
+      "description": "Modèles d'entrée spécialisés couramment utilisés dans les applications Web3, y compris les adresses de portefeuille, les noms de domaine ENS et les montants de jetons."
+    },
+    "accessibility": {
+      "title": "♿ Lignes directrices sur l'accessibilité",
+      "description": "Assurez-vous que vos entrées soient accessibles à tous les utilisateurs grâce à une étiquetage approprié, à la navigation au clavier et au support des lecteurs d'écran."
+    }
+  },
+  "validation": {
+    "emailInvalid": "Veuillez saisir une adresse e-mail valide",
+    "emailValid": "Adresse e-mail valide",
+    "walletInvalid": "Veuillez saisir une adresse Ethereum valide",
+    "walletValid": "Adresse Ethereum valide"
+  },
+  "quickStart": {
+    "essentialTitle": "1. Types d'entrée essentiels",
+    "emailLabel": "Adresse e-mail",
+    "passwordLabel": "Mot de passe",
+    "passwordPlaceholder": "Entrez votre mot de passe",
+    "searchLabel": "Rechercher",
+    "searchPlaceholder": "Rechercher des messages...",
+    "messageLabel": "Message",
+    "messagePlaceholder": "Tapez votre message...",
+    "sizesTitle": "2. Variations de taille",
+    "smallLabel": "Petite entrée",
+    "smallPlaceholder": "Petite taille d'entrée",
+    "defaultLabel": "Entrée par défaut",
+    "defaultPlaceholder": "Entrée de taille par défaut",
+    "largeLabel": "Grand entrée",
+    "largePlaceholder": "Grand format d'entrée",
+    "validationTitle": "3. États de validation",
+    "errorStateLabel": "État d'erreur",
+    "successStateLabel": "État de réussite",
+    "web3Title": "4. Entrées spécifiques à Web3",
+    "walletLabel": "Adresse du portefeuille",
+    "amountLabel": "Montant des jetons",
+    "amountBalance": "Solde : 2,4563 ETH"
+  },
+  "variants": {
+    "standardTitle": "Variants standards",
+    "specializedTitle": "Types spécialisés",
+    "defaultLabel": "Entrée par défaut",
+    "defaultPlaceholder": "Champ de saisie standard",
+    "defaultHint": "Mode d'entrée le plus courant",
+    "searchLabel": "Champ de recherche",
+    "searchPlaceholder": "Fonctionnalité de recherche",
+    "searchHint": "Optimisé pour les cas d'utilisation de recherche",
+    "errorLabel": "État d'erreur",
+    "errorPlaceholder": "Entrée invalide",
+    "errorHint": "Pour les erreurs de validation",
+    "iconLabel": "Avec icône",
+    "iconHint": "Avec placement de l'icône à gauche",
+    "phoneLabel": "Numéro de téléphone",
+    "urlLabel": "URL du site web",
+    "dateLabel": "Date",
+    "fileLabel": "Téléchargement de fichier"
+  },
+  "web3": {
+    "walletInputsTitle": "Saisies d'adresses de portefeuille",
+    "ethAddressLabel": "Adresse Ethereum",
+    "solAddressLabel": "Adresse Solana",
+    "ensLabel": "Domaine ENS",
+    "snsLabel": "Domaine SNS",
+    "tokenAmountsTitle": "Saisies de montant de jetons",
+    "ethAmountLabel": "Montant en ETH",
+    "usdcAmountLabel": "Montant en USDC",
+    "max": "MAX",
+    "ethBalance": "Solde : 2,4563 ETH",
+    "usdcBalance": "Solde : 1.547,23 USDC",
+    "gasTitle": "Configuration des frais de gaz",
+    "gasPriceLabel": "Prix du gaz (Gwei)",
+    "gasSlow": "Lent",
+    "gasStandard": "Standard",
+    "gasFast": "Rapide",
+    "gasSlowTime": "~5 min",
+    "gasStandardTime": "~2 min",
+    "gasFastTime": "~1 min",
+    "customGasLabel": "Prix de gaz personnalisé",
+    "customGasHint": "Coût estimé : 8,45 USD • Temps estimé : ~2 minutes"
+  },
+  "accessibility": {
+    "bestPracticesTitle": "✅ Meilleures pratiques",
+    "bestPractices": [
+      "Fournissez toujours des libellés descriptifs pour les lecteurs d'écran",
+      "Utilisez les types d'entrée appropriés (e-mail, téléphone, URL, etc.)",
+      "Incluez du texte d'indication utile et des instructions",
+      "Fournissez des messages d'erreur clairs avec des suggestions",
+      "Assurez un contraste de couleur suffisant (au moins 4,5:1)",
+      "Prise en charge de la navigation au clavier et des états de focus"
+    ],
+    "avoidTitle": "❌ Éviter",
+    "avoid": [
+      "Utilisation du texte de placeholder comme seul libellé",
+      "Se fier uniquement à la couleur pour indiquer les états de validation",
+      "Rendre les entrées trop petites pour une interaction confortable",
+      "Fournir des messages d'erreur vagues ou peu utiles",
+      "Désactiver le remplissage automatique du navigateur sans bonne raison",
+      "Supprimer les indicateurs de focus ou les rendre difficiles à voir"
+    ],
+    "examplesTitle": "Exemples de mise en œuvre de l'accessibilité"
+  },
+  "nav": {
+    "back": "Retour au système de conception",
+    "lastUpdated": "Dernière mise à jour : {{date}}"
+  }
+}

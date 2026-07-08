@@ -1,0 +1,132 @@
+{
+  "seo": {
+    "title": "Badge - {{appName}}",
+    "description": "Badgekomponenter och varianter för designsystemet"
+  },
+  "header": {
+    "badge": "Badge",
+    "title": "Badgekomponenter",
+    "intro": "Små, flexibla komponenter för etikettering, kategorisering och överföring av statusinformation med semantiska färger och interaktiva tillstånd."
+  },
+  "stats": {
+    "badgeVariants": "Badgevarianter",
+    "sizeOptions": "Storleksval",
+    "stateTypes": "Statsformer",
+    "web3Variants": "Web3-variationer"
+  },
+  "sections": {
+    "quickStart": {
+      "title": "🚀 Snabbstart",
+      "description": "Kom igång med de mest vanligt förekommande badmönstren. Kopiera och klistra in dessa exempel för att snabbt implementera snedband i dina komponenter.",
+      "essentialTitle": "1. Viktiga emblemtyper",
+      "essential": {
+        "default": "Standard",
+        "primary": "Primär",
+        "success": "Framgång",
+        "warning": "Varning",
+        "error": "Fel"
+      },
+      "statusTitle": "2. Statusmärken med ikoner",
+      "status": {
+        "active": "Aktiv",
+        "pending": "Väntar",
+        "failed": "Misslyckat",
+        "info": "Information"
+      },
+      "sizesTitle": "3. Storleksvariationer",
+      "sizes": {
+        "small": "Liten",
+        "default": "Standard",
+        "large": "Stor"
+      },
+      "web3Title": "4. Web3-integreringsmedaljer",
+      "web3": {
+        "ethereum": "Ethereum",
+        "solana": "Solana",
+        "verified": "Verifierat"
+      }
+    },
+    "variants": {
+      "title": "🎨 Emblemvarianter",
+      "description": "Utforska alla tillgängliga varianterna av badge-färg och deras semantiska betydelser samt lämpliga användningsområden.",
+      "semanticTitle": "Semantiska färger",
+      "web3Title": "Web3-specifikt",
+      "semantic": {
+        "default": "Standard",
+        "defaultDesc": "Allmän, neutralt information",
+        "primary": "Primär",
+        "primaryDesc": "Märkfärger, viktiga markeringar",
+        "success": "Framgång",
+        "successDesc": "Slutna åtgärder, positiv status",
+        "warning": "Varning",
+        "warningDesc": "Förvarning krävs, väntande åtgärder",
+        "error": "Fel",
+        "errorDesc": "Misslyckade åtgärder, allvarliga problem"
+      },
+      "web3": {
+        "ethereum": "Ethereum",
+        "ethereumDesc": "relaterat till Ethereum-blockchain",
+        "solana": "Solana",
+        "solanaDesc": "relaterat till Solana-blockchain"
+      }
+    },
+    "sizes": {
+      "title": "📏 Storleksval",
+      "description": "Olika storlekar på emblemen för olika användningsområden, från kompakta indikatorer till framträdande etiketter.",
+      "small": {
+        "heading": "Liten",
+        "badge": "Litet emblem",
+        "desc": "Kompakt storlek för tätt layout"
+      },
+      "default": {
+        "heading": "Standard",
+        "badge": "Standardmärke",
+        "desc": "Standardstorlek för de flesta användningsområden"
+      },
+      "large": {
+        "heading": "Stor",
+        "badge": "Stort emblem",
+        "desc": "Utmärkt storlek för betoning"
+      }
+    },
+    "interactive": {
+      "title": "⚡ Interaktiva mönster",
+      "description": "Exempel från verkligheten på hur insignier används i olika sammanhang och komponenter.",
+      "userStatusTitle": "Användarstatusindikatorer",
+      "userStatus": {
+        "online": "Online",
+        "away": "Bort",
+        "offline": "Offline"
+      },
+      "notificationTitle": "Notifikationsantal",
+      "notification": {
+        "messages": "📧 Meddelanden",
+        "notifications": "🔔 Notifikationer",
+        "updates": "⭐ Uppdateringar"
+      }
+    },
+    "accessibility": {
+      "title": "♿ Tillgänglighetsrikklinjer",
+      "description": "Se till att dina badge är tillgängliga för alla användare med lämplig kontrast, stöd för skärmläsare och tangentbordsnavigation.",
+      "bestPracticesTitle": "✅ Bästa praxis",
+      "bestPractices": [
+        "Använd semantiska färger som förmedlar betydelse konsekvent",
+        "Försök tillräcklig färgkontrast (minst 4,5:1)",
+        "Inkludera textetiketter, inte bara färger eller ikoner",
+        "Använd lämpliga ARIA-etiketter för skärmläsare",
+        "Håll texten på badge kort och meningsfull"
+      ],
+      "avoidTitle": "❌ Undvik",
+      "avoid": [
+        "Att förlita sig enbart på färg för att överföra information",
+        "Använda för många insignier i en och samma gränssnitt",
+        "Göra insignier så små att de inte går att läsa bekvämt",
+        "Använda oklar eller tvetydig text på badge",
+        "Att överanvända animerade eller blinkande märken"
+      ],
+      "ariaExamplesTitle": "ARIA-exempel"
+    }
+  },
+  "backToDesignSystem": "Tillbaka till designsystemet",
+  "lastUpdated": "Senast uppdaterat: {{date}}"
+}

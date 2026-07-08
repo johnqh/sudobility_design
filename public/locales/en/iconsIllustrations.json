@@ -1,0 +1,155 @@
+{
+  "seo": {
+    "title": "Icons & Illustrations - Design System - Internal - {{emailDomain}}",
+    "description": "Comprehensive icon system with consistent sizing, colors, and contextual usage patterns"
+  },
+  "header": {
+    "badge": "Icons & Illustrations",
+    "title": "Icons & Illustrations",
+    "description": "Comprehensive icon system with consistent sizing, colors, and contextual usage patterns. Built with Heroicons and optimized for accessibility and dark mode."
+  },
+  "sizes": {
+    "title": "Icon Sizes",
+    "variantsTitle": "Size Variants",
+    "usageTitle": "Size Usage",
+    "labels": {
+      "xs": "xs (12px)",
+      "sm": "sm (16px)",
+      "md": "md (20px)",
+      "lg": "lg (24px)",
+      "xl": "xl (32px)",
+      "xxl": "xxl (40px)",
+      "xxxl": "xxxl (48px)"
+    }
+  },
+  "colors": {
+    "title": "Icon Colors",
+    "variantsTitle": "Color Variants",
+    "web3Title": "Web3 Colors",
+    "default": {
+      "label": "Default",
+      "value": "Gray 500 / 400"
+    },
+    "brand": {
+      "label": "Brand",
+      "value": "Blue 600 / 400"
+    },
+    "success": {
+      "label": "Success",
+      "value": "Green 600 / 400"
+    },
+    "warning": {
+      "label": "Warning",
+      "value": "Amber 600 / 400"
+    },
+    "error": {
+      "label": "Error",
+      "value": "Red 600 / 400"
+    },
+    "interactive": {
+      "label": "Interactive",
+      "value": "Hover effects"
+    },
+    "ethereum": {
+      "label": "Ethereum",
+      "value": "Blue 600 / 400"
+    },
+    "solana": {
+      "label": "Solana",
+      "value": "Purple 600 / 400"
+    },
+    "bitcoin": {
+      "label": "Bitcoin",
+      "value": "Orange 600 / 400"
+    }
+  },
+  "context": {
+    "title": "Context-Specific Icons",
+    "buttonTitle": "Button Icons",
+    "inputTitle": "Input Icons",
+    "leadingIcon": "Leading Icon",
+    "trailingIcon": "Trailing Icon",
+    "iconOnly": "Icon Only",
+    "trailingInteractive": "Trailing Interactive",
+    "addItem": "Add Item",
+    "continue": "Continue",
+    "searchPlaceholder": "Search...",
+    "passwordPlaceholder": "Password"
+  },
+  "status": {
+    "title": "Status Icons",
+    "success": {
+      "title": "Success",
+      "description": "Operation completed successfully"
+    },
+    "warning": {
+      "title": "Warning",
+      "description": "Please review and continue"
+    },
+    "error": {
+      "title": "Error",
+      "description": "Something went wrong"
+    },
+    "info": {
+      "title": "Info",
+      "description": "Additional information"
+    }
+  },
+  "web3": {
+    "title": "Web3 Context Icons",
+    "walletStatusTitle": "Wallet Status",
+    "blockchainTitle": "Blockchain Icons",
+    "walletConnected": "Wallet Connected",
+    "noWalletConnected": "No Wallet Connected",
+    "connectToContinue": "Connect to continue",
+    "ethereum": {
+      "title": "Ethereum",
+      "network": "ETH Network"
+    },
+    "solana": {
+      "title": "Solana",
+      "network": "SOL Network"
+    },
+    "bitcoin": {
+      "title": "Bitcoin",
+      "network": "BTC Network"
+    }
+  },
+  "decorative": {
+    "title": "Decorative Icons",
+    "heroLarge": {
+      "title": "Hero Large",
+      "size": "80px × 80px"
+    },
+    "heroMedium": {
+      "title": "Hero Medium",
+      "size": "64px × 64px"
+    },
+    "heroSmall": {
+      "title": "Hero Small",
+      "size": "48px × 48px"
+    }
+  },
+  "browser": {
+    "title": "Icon Browser",
+    "categories": {
+      "all": "All Icons",
+      "actions": "Actions",
+      "status": "Status",
+      "navigation": "Navigation",
+      "web3": "Web3",
+      "decorative": "Decorative"
+    }
+  },
+  "tokens": {
+    "title": "Available Icon Variants",
+    "sizeVariants": "Size Variants",
+    "colorVariants": "Color Variants",
+    "contextVariants": "Context Variants",
+    "combinedVariants": "Combined Variants"
+  },
+  "navigation": {
+    "previous": "Tables & Data Grids",
+    "backToDesignSystem": "Back to Design System"
+  }
+}

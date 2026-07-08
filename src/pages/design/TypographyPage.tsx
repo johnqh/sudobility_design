@@ -8,6 +8,7 @@ import {
   DocumentTextIcon as TextIcon,
 } from "@heroicons/react/24/outline";
 import React, { useState } from "react";
+import { useTranslation } from "react-i18next";
 import LocalizedLink from "../../components/LocalizedLink";
 import { SEOHead } from "@sudobility/seo_lib";
 
@@ -33,43 +34,50 @@ const TextExample: React.FC<{
   token,
   copiedValue,
   copyToClipboard,
-}) => (
-  <div
-    className="group cursor-pointer border border-border rounded-lg p-4 hover:border-primary transition-colors"
-    onClick={() => copyToClipboard(className)}
-    role="button"
-    aria-label={`Copy ${title} class name`}
-  >
-    <div className="flex items-start justify-between mb-2">
-      <h4
-        className={`${textVariants.body.sm()} font-medium text-muted-foreground`}
-      >
-        {title}
-      </h4>
-      <div className="flex-shrink-0">
-        {copiedValue === className ? (
-          <CheckIcon className="h-4 w-4 text-success" />
-        ) : (
-          <ClipboardDocumentIcon className="h-4 w-4 text-muted-foreground opacity-0 group-hover:opacity-100 transition-opacity" />
-        )}
+}) => {
+  const { t } = useTranslation("typography");
+  return (
+    <div
+      className="group cursor-pointer border border-border rounded-lg p-4 hover:border-primary transition-colors"
+      onClick={() => copyToClipboard(className)}
+      role="button"
+      aria-label={t("example.aria", { title })}
+    >
+      <div className="flex items-start justify-between mb-2">
+        <h4
+          className={`${textVariants.body.sm()} font-medium text-muted-foreground`}
+        >
+          {title}
+        </h4>
+        <div className="flex-shrink-0">
+          {copiedValue === className ? (
+            <CheckIcon className="h-4 w-4 text-success" />
+          ) : (
+            <ClipboardDocumentIcon className="h-4 w-4 text-muted-foreground opacity-0 group-hover:opacity-100 transition-opacity" />
+          )}
+        </div>
       </div>
-    </div>
-    <div className={className} style={{ lineHeight: "inherit" }}>
-      {text}
-    </div>
-    {description && (
-      <p className={`${textVariants.caption.default()} mt-2`}>{description}</p>
-    )}
-    {token && (
-      <code className={`${textVariants.code.small()} mt-2 block text-primary`}>
-        {token}
+      <div className={className} style={{ lineHeight: "inherit" }}>
+        {text}
+      </div>
+      {description && (
+        <p className={`${textVariants.caption.default()} mt-2`}>
+          {description}
+        </p>
+      )}
+      {token && (
+        <code
+          className={`${textVariants.code.small()} mt-2 block text-primary`}
+        >
+          {token}
+        </code>
+      )}
+      <code className={`${textVariants.code.small()} mt-2 block`}>
+        className="{className}"
       </code>
-    )}
-    <code className={`${textVariants.code.small()} mt-2 block`}>
-      className="{className}"
-    </code>
-  </div>
-);
+    </div>
+  );
+};
 
 const CodeExample: React.FC<{
   title: string;
@@ -78,63 +86,67 @@ const CodeExample: React.FC<{
   preview?: React.ReactNode;
   copiedValue: string | null;
   copyToClipboard: (value: string) => void;
-}> = ({ title, description, code, preview, copiedValue, copyToClipboard }) => (
-  <div className="border border-border rounded-lg p-4 space-y-4">
-    <div>
-      <h4 className={`${textVariants.heading.h5()} mb-1`}>{title}</h4>
-      {description && (
-        <p className={`${textVariants.body.sm()} text-muted-foreground`}>
-          {description}
-        </p>
+}> = ({ title, description, code, preview, copiedValue, copyToClipboard }) => {
+  const { t } = useTranslation("typography");
+  return (
+    <div className="border border-border rounded-lg p-4 space-y-4">
+      <div>
+        <h4 className={`${textVariants.heading.h5()} mb-1`}>{title}</h4>
+        {description && (
+          <p className={`${textVariants.body.sm()} text-muted-foreground`}>
+            {description}
+          </p>
+        )}
+      </div>
+
+      {preview && (
+        <div className="bg-muted rounded-lg p-4">
+          <div className="flex items-center gap-2 mb-2">
+            <div className="w-2 h-2 bg-destructive rounded-full"></div>
+            <div className="w-2 h-2 bg-warning rounded-full"></div>
+            <div className="w-2 h-2 bg-success rounded-full"></div>
+            <span className={`${textVariants.caption.default()} ml-2`}>
+              {t("example.preview")}
+            </span>
+          </div>
+          <div className="bg-card rounded border p-4">{preview}</div>
+        </div>
       )}
-    </div>
 
-    {preview && (
       <div className="bg-muted rounded-lg p-4">
-        <div className="flex items-center gap-2 mb-2">
-          <div className="w-2 h-2 bg-destructive rounded-full"></div>
-          <div className="w-2 h-2 bg-warning rounded-full"></div>
-          <div className="w-2 h-2 bg-success rounded-full"></div>
-          <span className={`${textVariants.caption.default()} ml-2`}>
-            Preview
-          </span>
-        </div>
-        <div className="bg-card rounded border p-4">{preview}</div>
-      </div>
-    )}
-
-    <div className="bg-muted rounded-lg p-4">
-      <div className="flex items-center justify-between mb-2">
-        <div className="flex items-center gap-2">
-          <CodeBracketIcon className="h-4 w-4 text-muted-foreground" />
-          <span
-            className={`${textVariants.caption.default()} text-muted-foreground`}
+        <div className="flex items-center justify-between mb-2">
+          <div className="flex items-center gap-2">
+            <CodeBracketIcon className="h-4 w-4 text-muted-foreground" />
+            <span
+              className={`${textVariants.caption.default()} text-muted-foreground`}
+            >
+              {t("example.usage")}
+            </span>
+          </div>
+          <button
+            onClick={() => copyToClipboard(code)}
+            className="p-1 text-muted-foreground hover:text-foreground transition-colors"
           >
-            Usage
-          </span>
+            {copiedValue === code ? (
+              <CheckIcon className="h-4 w-4" />
+            ) : (
+              <ClipboardDocumentIcon className="h-4 w-4" />
+            )}
+          </button>
         </div>
-        <button
-          onClick={() => copyToClipboard(code)}
-          className="p-1 text-muted-foreground hover:text-foreground transition-colors"
-        >
-          {copiedValue === code ? (
-            <CheckIcon className="h-4 w-4" />
-          ) : (
-            <ClipboardDocumentIcon className="h-4 w-4" />
-          )}
-        </button>
+        <code className="font-mono text-xs font-medium text-foreground block whitespace-pre-wrap">
+          {code}
+        </code>
       </div>
-      <code className="font-mono text-xs font-medium text-foreground block whitespace-pre-wrap">
-        {code}
-      </code>
     </div>
-  </div>
-);
+  );
+};
 
 const TypographyPage: React.FC<AppProps> = ({
   emailDomain,
   appName: _appName,
 }) => {
+  const { t } = useTranslation("typography");
   const [copiedValue, setCopiedValue] = useState<string | null>(null);
 
   const copyToClipboard = (value: string) => {
@@ -146,368 +158,390 @@ const TypographyPage: React.FC<AppProps> = ({
   // Font families with examples
   const fontFamilies = [
     {
-      name: "Sans Serif (Default)",
+      name: t("fontFamilies.items.sans.name"),
       token: "font-sans",
-      description: "Primary font family for UI elements and body text",
-      example: "The quick brown fox jumps over the lazy dog",
+      description: t("fontFamilies.items.sans.description"),
+      example: t("fontFamilies.pangram"),
       className: "font-sans",
-      usage: "UI elements, headings, body text",
+      usage: t("fontFamilies.items.sans.usage"),
     },
     {
-      name: "Serif",
+      name: t("fontFamilies.items.serif.name"),
       token: "font-serif",
-      description: "For editorial and formal content",
-      example: "The quick brown fox jumps over the lazy dog",
+      description: t("fontFamilies.items.serif.description"),
+      example: t("fontFamilies.pangram"),
       className: "font-serif",
-      usage: "Editorial content, formal documents",
+      usage: t("fontFamilies.items.serif.usage"),
     },
     {
-      name: "Monospace",
+      name: t("fontFamilies.items.mono.name"),
       token: "font-mono",
-      description: "For code blocks and technical text",
+      description: t("fontFamilies.items.mono.description"),
       example: 'const message = "Hello, World!";',
       className: "font-mono",
-      usage: "Code blocks, technical content, wallet addresses",
+      usage: t("fontFamilies.items.mono.usage"),
     },
   ];
 
   // Typography scale from design tokens
   const typographyScale = [
     {
-      name: "Hero",
+      name: t("scale.items.hero.name"),
       token: "text-9xl",
       size: "128px",
       className: textVariants.heading.display.hero(),
-      usage: "Landing pages, hero sections",
+      usage: t("scale.items.hero.usage"),
     },
     {
-      name: "Display XL",
+      name: t("scale.items.xl.name"),
       token: "text-7xl",
       size: "72px",
       className: textVariants.heading.display.xl(),
-      usage: "Large display headings",
+      usage: t("scale.items.xl.usage"),
     },
     {
-      name: "Display LG",
+      name: t("scale.items.lg.name"),
       token: "text-6xl",
       size: "60px",
       className: textVariants.heading.display.lg(),
-      usage: "Medium display headings",
+      usage: t("scale.items.lg.usage"),
     },
     {
-      name: "Display MD",
+      name: t("scale.items.md.name"),
       token: "text-5xl",
       size: "48px",
       className: textVariants.heading.display.md(),
-      usage: "Small display headings",
+      usage: t("scale.items.md.usage"),
     },
     {
-      name: "Display SM",
+      name: t("scale.items.sm.name"),
       token: "text-4xl",
       size: "36px",
       className: textVariants.heading.display.sm(),
-      usage: "Extra small display headings",
+      usage: t("scale.items.sm.usage"),
     },
     {
-      name: "Heading 1",
+      name: t("scale.items.h1.name"),
       token: "text-3xl",
       size: "30px",
       className: textVariants.heading.h1(),
-      usage: "Main page headings",
+      usage: t("scale.items.h1.usage"),
     },
     {
-      name: "Heading 2",
+      name: t("scale.items.h2.name"),
       token: "text-2xl",
       size: "24px",
       className: textVariants.heading.h2(),
-      usage: "Section headings",
+      usage: t("scale.items.h2.usage"),
     },
     {
-      name: "Heading 3",
+      name: t("scale.items.h3.name"),
       token: "text-xl",
       size: "20px",
       className: textVariants.heading.h3(),
-      usage: "Subsection headings",
+      usage: t("scale.items.h3.usage"),
     },
     {
-      name: "Heading 4",
+      name: t("scale.items.h4.name"),
       token: "text-lg",
       size: "18px",
       className: textVariants.heading.h4(),
-      usage: "Minor headings",
+      usage: t("scale.items.h4.usage"),
     },
     {
-      name: "Heading 5",
+      name: t("scale.items.h5.name"),
       token: "text-base",
       size: "16px",
       className: textVariants.heading.h5(),
-      usage: "Small headings",
+      usage: t("scale.items.h5.usage"),
     },
     {
-      name: "Heading 6",
+      name: t("scale.items.h6.name"),
       token: "text-sm",
       size: "14px",
       className: textVariants.heading.h6(),
-      usage: "Smallest headings",
+      usage: t("scale.items.h6.usage"),
     },
   ];
 
   // Body text variants
   const bodyTextVariants = [
     {
-      name: "Body XL",
+      name: t("body.items.xl.name"),
       className: textVariants.body.xl(),
-      usage: "Lead paragraphs, important content",
+      usage: t("body.items.xl.usage"),
     },
     {
-      name: "Body Large",
+      name: t("body.items.lg.name"),
       className: textVariants.body.lg(),
-      usage: "Standard body text, main content",
+      usage: t("body.items.lg.usage"),
     },
     {
-      name: "Body Medium",
+      name: t("body.items.md.name"),
       className: textVariants.body.md(),
-      usage: "Standard body text (alias for large)",
+      usage: t("body.items.md.usage"),
     },
     {
-      name: "Body Small",
+      name: t("body.items.sm.name"),
       className: textVariants.body.sm(),
-      usage: "Secondary information, captions",
+      usage: t("body.items.sm.usage"),
     },
     {
-      name: "Body Extra Small",
+      name: t("body.items.xs.name"),
       className: textVariants.body.xs(),
-      usage: "Fine print, minimal details",
+      usage: t("body.items.xs.usage"),
     },
   ];
 
   // Text emphasis variants
   const textEmphasis = [
     {
-      name: "Strong Large",
+      name: t("emphasis.items.strongLg.name"),
       className: textVariants.body.strong.lg(),
-      usage: "Important emphasized text",
+      usage: t("emphasis.items.strongLg.usage"),
     },
     {
-      name: "Strong Medium",
+      name: t("emphasis.items.strongMd.name"),
       className: textVariants.body.strong.md(),
-      usage: "Medium emphasized text",
+      usage: t("emphasis.items.strongMd.usage"),
     },
     {
-      name: "Strong Small",
+      name: t("emphasis.items.strongSm.name"),
       className: textVariants.body.strong.sm(),
-      usage: "Small emphasized text",
+      usage: t("emphasis.items.strongSm.usage"),
     },
     {
-      name: "Emphasis Large",
+      name: t("emphasis.items.emphasisLg.name"),
       className: textVariants.body.emphasis.lg(),
-      usage: "Medium weight emphasis",
+      usage: t("emphasis.items.emphasisLg.usage"),
     },
     {
-      name: "Emphasis Medium",
+      name: t("emphasis.items.emphasisMd.name"),
       className: textVariants.body.emphasis.md(),
-      usage: "Medium weight emphasis",
+      usage: t("emphasis.items.emphasisMd.usage"),
     },
     {
-      name: "Emphasis Small",
+      name: t("emphasis.items.emphasisSm.name"),
       className: textVariants.body.emphasis.sm(),
-      usage: "Small medium weight emphasis",
+      usage: t("emphasis.items.emphasisSm.usage"),
     },
     {
-      name: "Muted Large",
+      name: t("emphasis.items.mutedLg.name"),
       className: textVariants.body.muted.lg(),
-      usage: "De-emphasized text",
+      usage: t("emphasis.items.mutedLg.usage"),
     },
     {
-      name: "Muted Medium",
+      name: t("emphasis.items.mutedMd.name"),
       className: textVariants.body.muted.md(),
-      usage: "De-emphasized text",
+      usage: t("emphasis.items.mutedMd.usage"),
     },
     {
-      name: "Muted Small",
+      name: t("emphasis.items.mutedSm.name"),
       className: textVariants.body.muted.sm(),
-      usage: "De-emphasized small text",
+      usage: t("emphasis.items.mutedSm.usage"),
     },
   ];
 
   // Caption and special text
   const captionVariants = [
     {
-      name: "Default Caption",
+      key: "default",
+      name: t("caption.items.default.name"),
       className: textVariants.caption.default(),
-      usage: "Image captions, additional info",
+      usage: t("caption.items.default.usage"),
     },
     {
-      name: "Emphasis Caption",
+      key: "emphasis",
+      name: t("caption.items.emphasis.name"),
       className: textVariants.caption.emphasis(),
-      usage: "Important captions",
+      usage: t("caption.items.emphasis.usage"),
     },
     {
-      name: "Uppercase Caption",
+      key: "uppercase",
+      name: t("caption.items.uppercase.name"),
       className: textVariants.caption.uppercase(),
-      usage: "Section labels, tags",
+      usage: t("caption.items.uppercase.usage"),
     },
   ];
 
   // Lead text variants
   const leadVariants = [
     {
-      name: "Large Lead",
+      name: t("caption.leadItems.lg.name"),
       className: textVariants.lead.lg(),
-      usage: "Introduction paragraphs, article leads",
+      usage: t("caption.leadItems.lg.usage"),
     },
     {
-      name: "Medium Lead",
+      name: t("caption.leadItems.md.name"),
       className: textVariants.lead.md(),
-      usage: "Introduction paragraphs",
+      usage: t("caption.leadItems.md.usage"),
     },
     {
-      name: "Small Lead",
+      name: t("caption.leadItems.sm.name"),
       className: textVariants.lead.sm(),
-      usage: "Small introduction text",
+      usage: t("caption.leadItems.sm.usage"),
     },
   ];
 
   // Link variants
   const linkVariants = [
     {
-      name: "Default Link",
+      key: "default",
+      name: t("links.items.default.name"),
       className: textVariants.link.default(),
-      usage: "Standard links with underline",
+      usage: t("links.items.default.usage"),
     },
     {
-      name: "Subtle Link",
+      key: "subtle",
+      name: t("links.items.subtle.name"),
       className: textVariants.link.subtle(),
-      usage: "Links without underline",
+      usage: t("links.items.subtle.usage"),
     },
     {
-      name: "Muted Link",
+      key: "muted",
+      name: t("links.items.muted.name"),
       className: textVariants.link.muted(),
-      usage: "Gray colored links",
+      usage: t("links.items.muted.usage"),
     },
     {
-      name: "External Link",
+      key: "external",
+      name: t("links.items.external.name"),
       className: textVariants.link.external(),
-      usage: "Links to external sites",
+      usage: t("links.items.external.usage"),
     },
   ];
 
   // Code variants
   const codeVariants = [
     {
-      name: "Inline Code",
+      key: "inline",
+      name: t("codeText.items.inline.name"),
       className: textVariants.code.inline(),
-      usage: "Code within text",
+      usage: t("codeText.items.inline.usage"),
     },
     {
-      name: "Code Block",
+      key: "block",
+      name: t("codeText.items.block.name"),
       className: textVariants.code.block(),
-      usage: "Multi-line code blocks",
+      usage: t("codeText.items.block.usage"),
     },
     {
-      name: "Small Code",
+      key: "small",
+      name: t("codeText.items.small.name"),
       className: textVariants.code.small(),
-      usage: "Small inline code",
+      usage: t("codeText.items.small.usage"),
     },
   ];
 
   // Label variants
   const labelVariants = [
     {
-      name: "Default Label",
+      name: t("labels.items.default.name"),
+      sample: t("labels.items.default.sample"),
       className: textVariants.label.default(),
-      usage: "Form field labels",
+      usage: t("labels.items.default.usage"),
     },
     {
-      name: "Required Label",
+      name: t("labels.items.required.name"),
+      sample: t("labels.items.required.sample"),
       className: textVariants.label.required(),
-      usage: "Required form fields",
+      usage: t("labels.items.required.usage"),
     },
     {
-      name: "Optional Label",
+      name: t("labels.items.optional.name"),
+      sample: t("labels.items.optional.sample"),
       className: textVariants.label.optional(),
-      usage: "Optional form fields",
+      usage: t("labels.items.optional.usage"),
     },
     {
-      name: "Helper Text",
+      name: t("labels.items.helper.name"),
+      sample: t("labels.items.helper.sample"),
       className: textVariants.label.helper(),
-      usage: "Form help text",
+      usage: t("labels.items.helper.usage"),
     },
     {
-      name: "Error Text",
+      name: t("labels.items.error.name"),
+      sample: t("labels.items.error.sample"),
       className: textVariants.label.error(),
-      usage: "Form error messages",
+      usage: t("labels.items.error.usage"),
     },
     {
-      name: "Success Text",
+      name: t("labels.items.success.name"),
+      sample: t("labels.items.success.sample"),
       className: textVariants.label.success(),
-      usage: "Form success messages",
+      usage: t("labels.items.success.usage"),
     },
   ];
 
   // Web3 specific text
   const web3TextVariants = [
     {
-      name: "Wallet Address",
+      key: "address",
+      name: t("web3.items.address.name"),
       className: textVariants.web3.address(),
-      usage: "Full wallet addresses",
+      usage: t("web3.items.address.usage"),
     },
     {
-      name: "Short Address",
+      key: "addressShort",
+      name: t("web3.items.addressShort.name"),
       className: textVariants.web3.addressShort(),
-      usage: "Truncated wallet addresses",
+      usage: t("web3.items.addressShort.usage"),
     },
     {
-      name: "Transaction Hash",
+      key: "hash",
+      name: t("web3.items.hash.name"),
       className: textVariants.web3.hash(),
-      usage: "Transaction identifiers",
+      usage: t("web3.items.hash.usage"),
     },
     {
-      name: "Token Amount",
+      key: "amount",
+      name: t("web3.items.amount.name"),
       className: textVariants.web3.amount(),
-      usage: "Cryptocurrency amounts",
+      usage: t("web3.items.amount.usage"),
     },
     {
-      name: "Chain Name",
+      key: "chain",
+      name: t("web3.items.chain.name"),
       className: textVariants.web3.chain(),
-      usage: "Blockchain network names",
+      usage: t("web3.items.chain.usage"),
     },
     {
-      name: "Token Symbol",
+      key: "symbol",
+      name: t("web3.items.symbol.name"),
       className: textVariants.web3.symbol(),
-      usage: "Cryptocurrency symbols",
+      usage: t("web3.items.symbol.usage"),
     },
   ];
 
   // Responsive typography examples
   const responsiveExamples = [
     {
-      name: "Responsive H1",
+      name: t("responsive.items.h1.name"),
       className: textVariants.heading.responsive.h1(),
-      usage: "Headings that scale with screen size",
+      usage: t("responsive.items.h1.usage"),
     },
     {
-      name: "Responsive H2",
+      name: t("responsive.items.h2.name"),
       className: textVariants.heading.responsive.h2(),
-      usage: "Section headings that scale",
+      usage: t("responsive.items.h2.usage"),
     },
     {
-      name: "Responsive H3",
+      name: t("responsive.items.h3.name"),
       className: textVariants.heading.responsive.h3(),
-      usage: "Subsection headings that scale",
+      usage: t("responsive.items.h3.usage"),
     },
     {
-      name: "Responsive Display",
+      name: t("responsive.items.display.name"),
       className: textVariants.heading.responsive.display(),
-      usage: "Display text that scales",
+      usage: t("responsive.items.display.usage"),
     },
   ];
 
   return (
     <>
       <SEOHead
-        title={`Typography - Design System - Internal - ${emailDomain}`}
-        description="Complete typography system and text styles showcase for the design system"
+        title={t("seo.title", { emailDomain })}
+        description={t("seo.description")}
         noIndex={true}
       />
 
@@ -521,7 +555,7 @@ const TypographyPage: React.FC<AppProps> = ({
               to="/design/colors"
               className="flex items-center text-primary hover:text-primary/80"
             >
-              View Colors
+              {t("nav.viewColors")}
               <svg
                 className="ml-2 h-4 w-4"
                 fill="none"
@@ -543,20 +577,18 @@ const TypographyPage: React.FC<AppProps> = ({
             <div className="inline-flex items-center bg-primary/10 px-4 py-2 rounded-full mb-6">
               <TextIcon className="h-5 w-5 text-primary mr-2" />
               <span className="text-primary font-semibold">
-                Typography System
+                {t("header.badge")}
               </span>
             </div>
 
             <h1 className={`${textVariants.heading.display.xl()} mb-6`}>
-              Typography & Text Styles
+              {t("header.title")}
             </h1>
 
             <p
               className={`${textVariants.body.lg()} max-w-3xl mx-auto text-muted-foreground`}
             >
-              Complete typography system including fonts, sizes, weights, and
-              styles with usage examples and code samples. Click any example to
-              copy its class name to clipboard.
+              {t("header.intro")}
             </p>
           </div>
 
@@ -566,13 +598,12 @@ const TypographyPage: React.FC<AppProps> = ({
               <div className="flex items-center mb-6">
                 <CodeBracketIcon className="h-8 w-8 text-primary mr-3" />
                 <h2 className={`${textVariants.heading.h2()} text-primary`}>
-                  Quick Start - Typography Examples
+                  {t("quickStart.heading")}
                 </h2>
               </div>
 
               <p className={`${textVariants.body.md()} text-primary mb-8`}>
-                Ready-to-use typography examples for the most common text
-                patterns. Copy and paste directly into your components.
+                {t("quickStart.description")}
               </p>
 
               <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
@@ -581,7 +612,7 @@ const TypographyPage: React.FC<AppProps> = ({
                   <h3
                     className={`${textVariants.heading.h4()} text-primary mb-3`}
                   >
-                    Page Heading
+                    {t("quickStart.pageHeading.title")}
                   </h3>
                   <div className="bg-muted rounded-lg p-4 relative">
                     <button
@@ -609,7 +640,7 @@ const TypographyPage: React.FC<AppProps> = ({
                   </div>
                   <div className="p-4 bg-card rounded-lg border border-border">
                     <h1 className={`${textVariants.heading.display.xl()}`}>
-                      Welcome to the platform
+                      {t("quickStart.pageHeading.preview")}
                     </h1>
                   </div>
                 </div>
@@ -619,7 +650,7 @@ const TypographyPage: React.FC<AppProps> = ({
                   <h3
                     className={`${textVariants.heading.h4()} text-primary mb-3`}
                   >
-                    Body Text
+                    {t("quickStart.bodyText.title")}
                   </h3>
                   <div className="bg-muted rounded-lg p-4 relative">
                     <button
@@ -653,9 +684,7 @@ const TypographyPage: React.FC<AppProps> = ({
                   </div>
                   <div className="p-4 bg-card rounded-lg border border-border">
                     <p className={`${textVariants.body.lg()}`}>
-                      This is a large body text example that demonstrates the
-                      proper font size, line height, and spacing for readable
-                      content in your application.
+                      {t("quickStart.bodyText.preview")}
                     </p>
                   </div>
                 </div>
@@ -665,7 +694,7 @@ const TypographyPage: React.FC<AppProps> = ({
                   <h3
                     className={`${textVariants.heading.h4()} text-primary mb-3`}
                   >
-                    Code Block
+                    {t("quickStart.codeBlock.title")}
                   </h3>
                   <div className="bg-muted rounded-lg p-4 relative">
                     <button
@@ -712,7 +741,7 @@ const TypographyPage: React.FC<AppProps> = ({
                   <h3
                     className={`${textVariants.heading.h4()} text-primary mb-3`}
                   >
-                    Link Text
+                    {t("quickStart.linkText.title")}
                   </h3>
                   <div className="bg-muted rounded-lg p-4 relative">
                     <button
@@ -740,7 +769,7 @@ const TypographyPage: React.FC<AppProps> = ({
                   </div>
                   <div className="p-4 bg-card rounded-lg border border-border">
                     <a href="#" className={`${textVariants.link.default()}`}>
-                      Learn more about Web3 email
+                      {t("quickStart.linkText.preview")}
                     </a>
                   </div>
                 </div>
@@ -750,7 +779,7 @@ const TypographyPage: React.FC<AppProps> = ({
                   <h3
                     className={`${textVariants.heading.h4()} text-primary mb-3`}
                   >
-                    Caption Text
+                    {t("quickStart.captionText.title")}
                   </h3>
                   <div className="bg-muted rounded-lg p-4 relative">
                     <button
@@ -778,7 +807,7 @@ const TypographyPage: React.FC<AppProps> = ({
                   </div>
                   <div className="p-4 bg-card rounded-lg border border-border">
                     <p className={`${textVariants.caption.default()}`}>
-                      Last updated: March 15, 2024 at 2:30 PM
+                      {t("quickStart.captionText.preview")}
                     </p>
                   </div>
                 </div>
@@ -788,7 +817,7 @@ const TypographyPage: React.FC<AppProps> = ({
                   <h3
                     className={`${textVariants.heading.h4()} text-primary mb-3`}
                   >
-                    Inline Code
+                    {t("quickStart.inlineCode.title")}
                   </h3>
                   <div className="bg-muted rounded-lg p-4 relative">
                     <button
@@ -819,11 +848,11 @@ const TypographyPage: React.FC<AppProps> = ({
                   </div>
                   <div className="p-4 bg-card rounded-lg border border-border">
                     <p className={`${textVariants.body.md()}`}>
-                      Use the{" "}
+                      {t("quickStart.inlineCode.previewPrefix")}{" "}
                       <code className={`${textVariants.code.inline()}`}>
                         useState
                       </code>{" "}
-                      hook to manage component state in React applications.
+                      {t("quickStart.inlineCode.previewSuffix")}
                     </p>
                   </div>
                 </div>
@@ -834,13 +863,12 @@ const TypographyPage: React.FC<AppProps> = ({
           {/* Font Families */}
           <Section>
             <h2 className={`${textVariants.heading.h2()} mb-8`}>
-              Font Families
+              {t("fontFamilies.heading")}
             </h2>
             <p
               className={`${textVariants.body.md()} text-muted-foreground mb-8`}
             >
-              Three primary font families used throughout the application for
-              different content types.
+              {t("fontFamilies.description")}
             </p>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
               {fontFamilies.map((font) => (
@@ -858,8 +886,8 @@ const TypographyPage: React.FC<AppProps> = ({
             </div>
 
             <CodeExample
-              title="Font Family Usage"
-              description="How to use font families from the design system"
+              title={t("fontFamilies.code.title")}
+              description={t("fontFamilies.code.description")}
               code={`import { textVariants, designTokens } from '@/design-system';
 
 // Use predefined text variants (recommended)
@@ -880,13 +908,13 @@ const monoFamily = designTokens.typography.family.mono;`}
               preview={
                 <div className="space-y-4">
                   <div className="font-sans">
-                    This is sans serif text (default UI font)
+                    {t("fontFamilies.preview.sans")}
                   </div>
                   <div className="font-serif">
-                    This is serif text for editorial content
+                    {t("fontFamilies.preview.serif")}
                   </div>
                   <div className="font-mono">
-                    This is monospace text for code
+                    {t("fontFamilies.preview.mono")}
                   </div>
                 </div>
               }
@@ -896,13 +924,12 @@ const monoFamily = designTokens.typography.family.mono;`}
           {/* Typography Scale */}
           <Section>
             <h2 className={`${textVariants.heading.h2()} mb-8`}>
-              Typography Scale
+              {t("scale.heading")}
             </h2>
             <p
               className={`${textVariants.body.md()} text-muted-foreground mb-8`}
             >
-              Hierarchical type scale from display text to headings, providing
-              consistent sizing across the interface.
+              {t("scale.description")}
             </p>
             <div className="space-y-6 mb-8">
               {typographyScale.map((type) => (
@@ -920,8 +947,8 @@ const monoFamily = designTokens.typography.family.mono;`}
             </div>
 
             <CodeExample
-              title="Typography Scale Usage"
-              description="How to use heading variants from the design system"
+              title={t("scale.code.title")}
+              description={t("scale.code.description")}
               code={`import { textVariants } from '@/design-system';
 
 // Display headings (largest)
@@ -941,11 +968,17 @@ className={textVariants.heading.responsive.display()}`}
               copyToClipboard={copyToClipboard}
               preview={
                 <div className="space-y-4">
-                  <h1 className={textVariants.heading.h1()}>Heading 1</h1>
-                  <h2 className={textVariants.heading.h2()}>Heading 2</h2>
-                  <h3 className={textVariants.heading.h3()}>Heading 3</h3>
+                  <h1 className={textVariants.heading.h1()}>
+                    {t("scale.preview.h1")}
+                  </h1>
+                  <h2 className={textVariants.heading.h2()}>
+                    {t("scale.preview.h2")}
+                  </h2>
+                  <h3 className={textVariants.heading.h3()}>
+                    {t("scale.preview.h3")}
+                  </h3>
                   <p className={textVariants.body.lg()}>
-                    Body text follows the headings
+                    {t("scale.preview.body")}
                   </p>
                 </div>
               }
@@ -954,12 +987,13 @@ className={textVariants.heading.responsive.display()}`}
 
           {/* Body Text */}
           <Section>
-            <h2 className={`${textVariants.heading.h2()} mb-8`}>Body Text</h2>
+            <h2 className={`${textVariants.heading.h2()} mb-8`}>
+              {t("body.heading")}
+            </h2>
             <p
               className={`${textVariants.body.md()} text-muted-foreground mb-8`}
             >
-              Body text variants for different content types and hierarchy
-              levels.
+              {t("body.description")}
             </p>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
               {bodyTextVariants.map((variant) => (
@@ -967,7 +1001,7 @@ className={textVariants.heading.responsive.display()}`}
                   key={variant.name}
                   title={variant.name}
                   className={variant.className}
-                  text="This is sample body text demonstrating the font size, weight, and line height of this variant."
+                  text={t("body.sample")}
                   description={variant.usage}
                   copiedValue={copiedValue}
                   copyToClipboard={copyToClipboard}
@@ -976,8 +1010,8 @@ className={textVariants.heading.responsive.display()}`}
             </div>
 
             <CodeExample
-              title="Body Text Usage"
-              description="How to use body text variants"
+              title={t("body.code.title")}
+              description={t("body.code.description")}
               code={`import { textVariants } from '@/design-system';
 
 // Body text sizes
@@ -999,16 +1033,13 @@ className={textVariants.body.xs()}  // 12px - Fine print
               preview={
                 <div className="space-y-4">
                   <p className={textVariants.body.xl()}>
-                    This is extra large body text for lead paragraphs and
-                    important introductory content.
+                    {t("body.preview.xl")}
                   </p>
                   <p className={textVariants.body.lg()}>
-                    This is the standard body text used throughout most of the
-                    application for main content.
+                    {t("body.preview.lg")}
                   </p>
                   <p className={textVariants.body.sm()}>
-                    This is small body text used for secondary information,
-                    captions, and helper text.
+                    {t("body.preview.sm")}
                   </p>
                 </div>
               }
@@ -1018,12 +1049,12 @@ className={textVariants.body.xs()}  // 12px - Fine print
           {/* Text Emphasis */}
           <Section>
             <h2 className={`${textVariants.heading.h2()} mb-8`}>
-              Text Emphasis
+              {t("emphasis.heading")}
             </h2>
             <p
               className={`${textVariants.body.md()} text-muted-foreground mb-8`}
             >
-              Text emphasis variants for different weight and prominence levels.
+              {t("emphasis.description")}
             </p>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
               {textEmphasis.map((variant) => (
@@ -1040,8 +1071,8 @@ className={textVariants.body.xs()}  // 12px - Fine print
             </div>
 
             <CodeExample
-              title="Text Emphasis Usage"
-              description="How to use text emphasis variants"
+              title={t("emphasis.code.title")}
+              description={t("emphasis.code.description")}
               code={`import { textVariants } from '@/design-system';
 
 // Strong emphasis (bold weight)
@@ -1063,19 +1094,19 @@ className={textVariants.body.muted.sm()}    // Muted small text`}
               preview={
                 <div className="space-y-4">
                   <p>
-                    This is normal text with{" "}
+                    {t("emphasis.preview.normalPrefix")}{" "}
                     <span className={textVariants.body.strong.lg()}>
-                      strong emphasis
+                      {t("emphasis.preview.strong")}
                     </span>{" "}
-                    and
+                    {t("emphasis.preview.and")}
                     <span className={textVariants.body.emphasis.lg()}>
                       {" "}
-                      medium emphasis
+                      {t("emphasis.preview.medium")}
                     </span>
                     .
                   </p>
                   <p className={textVariants.body.muted.lg()}>
-                    This is muted text with reduced visual prominence.
+                    {t("emphasis.preview.muted")}
                   </p>
                 </div>
               }
@@ -1085,12 +1116,12 @@ className={textVariants.body.muted.sm()}    // Muted small text`}
           {/* Caption & Special Text */}
           <Section>
             <h2 className={`${textVariants.heading.h2()} mb-8`}>
-              Caption & Special Text
+              {t("caption.heading")}
             </h2>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
               <div>
                 <h3 className={`${textVariants.heading.h3()} mb-6`}>
-                  Caption Variants
+                  {t("caption.captionTitle")}
                 </h3>
                 <div className="space-y-4 mb-6">
                   {captionVariants.map((variant) => (
@@ -1099,9 +1130,9 @@ className={textVariants.body.muted.sm()}    // Muted small text`}
                       title={variant.name}
                       className={variant.className}
                       text={
-                        variant.name === "Uppercase Caption"
-                          ? "SECTION LABEL"
-                          : "This is a caption example"
+                        variant.key === "uppercase"
+                          ? t("caption.uppercaseSample")
+                          : t("caption.sample")
                       }
                       description={variant.usage}
                       copiedValue={copiedValue}
@@ -1113,7 +1144,7 @@ className={textVariants.body.muted.sm()}    // Muted small text`}
 
               <div>
                 <h3 className={`${textVariants.heading.h3()} mb-6`}>
-                  Lead Text
+                  {t("caption.leadTitle")}
                 </h3>
                 <div className="space-y-4 mb-6">
                   {leadVariants.map((variant) => (
@@ -1121,7 +1152,7 @@ className={textVariants.body.muted.sm()}    // Muted small text`}
                       key={variant.name}
                       title={variant.name}
                       className={variant.className}
-                      text="This is lead text that introduces the main content and provides context for what follows."
+                      text={t("caption.leadSample")}
                       description={variant.usage}
                       copiedValue={copiedValue}
                       copyToClipboard={copyToClipboard}
@@ -1132,8 +1163,8 @@ className={textVariants.body.muted.sm()}    // Muted small text`}
             </div>
 
             <CodeExample
-              title="Caption & Lead Text Usage"
-              description="How to use captions and lead text"
+              title={t("caption.code.title")}
+              description={t("caption.code.description")}
               code={`import { textVariants } from '@/design-system';
 
 // Caption variants
@@ -1167,15 +1198,15 @@ className={textVariants.lead.sm()}            // Small introduction text
                   <div className="bg-muted p-4 rounded">
                     <div className="w-full h-16 bg-muted-foreground/20 rounded mb-2"></div>
                     <div className={textVariants.caption.default()}>
-                      This is a caption for the image above
+                      {t("caption.preview.imageCaption")}
                     </div>
                   </div>
                   <div>
                     <div className={textVariants.caption.uppercase()}>
-                      SECTION LABEL
+                      {t("caption.preview.sectionLabel")}
                     </div>
                     <p className={textVariants.lead.lg()}>
-                      This is lead text that introduces the section.
+                      {t("caption.preview.lead")}
                     </p>
                   </div>
                 </div>
@@ -1187,11 +1218,13 @@ className={textVariants.lead.sm()}            // Small introduction text
 
           {/* Links */}
           <Section>
-            <h2 className={`${textVariants.heading.h2()} mb-8`}>Link Styles</h2>
+            <h2 className={`${textVariants.heading.h2()} mb-8`}>
+              {t("links.heading")}
+            </h2>
             <p
               className={`${textVariants.body.md()} text-muted-foreground mb-8`}
             >
-              Different link styles for various contexts and emphasis levels.
+              {t("links.description")}
             </p>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
               {linkVariants.map((variant) => (
@@ -1200,8 +1233,8 @@ className={textVariants.lead.sm()}            // Small introduction text
                   title={variant.name}
                   className={variant.className}
                   text={
-                    variant.name === "External Link"
-                      ? "External link →"
+                    variant.key === "external"
+                      ? t("links.externalSample")
                       : variant.name
                   }
                   description={variant.usage}
@@ -1212,8 +1245,8 @@ className={textVariants.lead.sm()}            // Small introduction text
             </div>
 
             <CodeExample
-              title="Link Styles Usage"
-              description="How to use link variants"
+              title={t("links.code.title")}
+              description={t("links.code.description")}
               code={`import { textVariants } from '@/design-system';
 
 // Link variants
@@ -1246,24 +1279,24 @@ className={textVariants.link.external()}  // External links with icon space
               preview={
                 <div className="space-y-4">
                   <p>
-                    This paragraph contains a{" "}
+                    {t("links.preview.paraPrefix")}{" "}
                     <a href="#" className={textVariants.link.default()}>
-                      default link
+                      {t("links.preview.defaultLink")}
                     </a>{" "}
-                    and a{" "}
+                    {t("links.preview.and")}{" "}
                     <a href="#" className={textVariants.link.subtle()}>
-                      subtle link
+                      {t("links.preview.subtleLink")}
                     </a>
                     .
                   </p>
                   <p>
-                    Check out this{" "}
+                    {t("links.preview.checkPrefix")}{" "}
                     <a href="#" className={textVariants.link.external()}>
-                      external link →
+                      {t("links.preview.externalLink")}
                     </a>{" "}
-                    or this{" "}
+                    {t("links.preview.or")}{" "}
                     <a href="#" className={textVariants.link.muted()}>
-                      muted link
+                      {t("links.preview.mutedLink")}
                     </a>
                     .
                   </p>
@@ -1275,13 +1308,12 @@ className={textVariants.link.external()}  // External links with icon space
           {/* Code Text */}
           <Section>
             <h2 className={`${textVariants.heading.h2()} mb-8`}>
-              Code & Technical Text
+              {t("codeText.heading")}
             </h2>
             <p
               className={`${textVariants.body.md()} text-muted-foreground mb-8`}
             >
-              Monospace text styles for code, technical content, and technical
-              documentation.
+              {t("codeText.description")}
             </p>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
               {codeVariants.map((variant) => (
@@ -1290,7 +1322,7 @@ className={textVariants.link.external()}  // External links with icon space
                   title={variant.name}
                   className={variant.className}
                   text={
-                    variant.name === "Code Block"
+                    variant.key === "block"
                       ? 'function example() {\n  return "Hello, World!";\n}'
                       : 'const variable = "value";'
                   }
@@ -1302,8 +1334,8 @@ className={textVariants.link.external()}  // External links with icon space
             </div>
 
             <CodeExample
-              title="Code Text Usage"
-              description="How to use code text variants"
+              title={t("codeText.code.title")}
+              description={t("codeText.code.description")}
               code={`import { textVariants } from '@/design-system';
 
 // Code variants
@@ -1328,9 +1360,9 @@ className={textVariants.code.small()}     // Small inline code
               preview={
                 <div className="space-y-4">
                   <p>
-                    Use the{" "}
+                    {t("codeText.preview.usePrefix")}{" "}
                     <code className={textVariants.code.inline()}>useState</code>{" "}
-                    hook to manage state.
+                    {t("codeText.preview.useSuffix")}
                   </p>
                   <pre className={textVariants.code.block()}>
                     {`function example() {
@@ -1338,11 +1370,11 @@ className={textVariants.code.small()}     // Small inline code
 }`}
                   </pre>
                   <p>
-                    Run{" "}
+                    {t("codeText.preview.runPrefix")}{" "}
                     <code className={textVariants.code.small()}>
                       npm install
                     </code>{" "}
-                    to get started.
+                    {t("codeText.preview.runSuffix")}
                   </p>
                 </div>
               }
@@ -1354,12 +1386,12 @@ className={textVariants.code.small()}     // Small inline code
           {/* Form Labels */}
           <Section>
             <h2 className={`${textVariants.heading.h2()} mb-8`}>
-              Form Labels & Messages
+              {t("labels.heading")}
             </h2>
             <p
               className={`${textVariants.body.md()} text-muted-foreground mb-8`}
             >
-              Text styles for form elements, labels, and feedback messages.
+              {t("labels.description")}
             </p>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
               {labelVariants.map((variant) => (
@@ -1367,11 +1399,7 @@ className={textVariants.code.small()}     // Small inline code
                   key={variant.name}
                   title={variant.name}
                   className={variant.className}
-                  text={
-                    variant.name === "Required Label"
-                      ? "Email Address"
-                      : variant.name.replace(" Text", "").replace(" Label", "")
-                  }
+                  text={variant.sample}
                   description={variant.usage}
                   copiedValue={copiedValue}
                   copyToClipboard={copyToClipboard}
@@ -1380,8 +1408,8 @@ className={textVariants.code.small()}     // Small inline code
             </div>
 
             <CodeExample
-              title="Form Labels Usage"
-              description="How to use form label and message variants"
+              title={t("labels.code.title")}
+              description={t("labels.code.description")}
               code={`import { textVariants } from '@/design-system';
 
 // Label variants
@@ -1418,35 +1446,35 @@ className={textVariants.label.success()}   // Success messages
                 <div className="space-y-6">
                   <div>
                     <label className={textVariants.label.required()}>
-                      Email Address
+                      {t("labels.preview.emailLabel")}
                     </label>
                     <div className="mt-1 p-2 border border-input rounded bg-card text-sm">
                       user@example.com
                     </div>
                     <p className={textVariants.label.helper()}>
-                      We'll use this to send you updates
+                      {t("labels.preview.emailHelper")}
                     </p>
                   </div>
                   <div>
                     <label className={textVariants.label.default()}>
-                      Password
+                      {t("labels.preview.passwordLabel")}
                     </label>
                     <div className="mt-1 p-2 border border-destructive rounded bg-card text-sm">
                       ••••••
                     </div>
                     <p className={textVariants.label.error()}>
-                      Password must be at least 8 characters
+                      {t("labels.preview.passwordError")}
                     </p>
                   </div>
                   <div>
                     <label className={textVariants.label.optional()}>
-                      Phone Number
+                      {t("labels.preview.phoneLabel")}
                     </label>
                     <div className="mt-1 p-2 border border-success rounded bg-card text-sm">
                       +1 (555) 123-4567
                     </div>
                     <p className={textVariants.label.success()}>
-                      Phone number verified successfully
+                      {t("labels.preview.phoneSuccess")}
                     </p>
                   </div>
                 </div>
@@ -1459,28 +1487,25 @@ className={textVariants.label.success()}   // Success messages
           {/* Web3 Text Styles */}
           <Section>
             <h2 className={`${textVariants.heading.h2()} mb-8`}>
-              Web3 Text Styles
+              {t("web3.heading")}
             </h2>
             <p
               className={`${textVariants.body.md()} text-muted-foreground mb-8`}
             >
-              Specialized text styles for Web3 and blockchain-specific content
-              like addresses, hashes, and amounts.
+              {t("web3.description")}
             </p>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
               {web3TextVariants.map((variant) => {
                 let sampleText = variant.name;
-                if (variant.name === "Wallet Address")
+                if (variant.key === "address")
                   sampleText = "0x1234567890abcdef1234567890abcdef12345678";
-                if (variant.name === "Short Address")
+                if (variant.key === "addressShort")
                   sampleText = "0x1234...5678";
-                if (variant.name === "Transaction Hash")
+                if (variant.key === "hash")
                   sampleText = "0xabcdef1234567890abcdef1234567890abcdef12";
-                if (variant.name === "Token Amount")
-                  sampleText = "1,250.50 ETH";
-                if (variant.name === "Chain Name")
-                  sampleText = "Ethereum Mainnet";
-                if (variant.name === "Token Symbol") sampleText = "ETH";
+                if (variant.key === "amount") sampleText = "1,250.50 ETH";
+                if (variant.key === "chain") sampleText = "Ethereum Mainnet";
+                if (variant.key === "symbol") sampleText = "ETH";
 
                 return (
                   <TextExample
@@ -1497,8 +1522,8 @@ className={textVariants.label.success()}   // Success messages
             </div>
 
             <CodeExample
-              title="Web3 Text Usage"
-              description="How to use Web3-specific text styles"
+              title={t("web3.code.title")}
+              description={t("web3.code.description")}
               code={`import { textVariants } from '@/design-system';
 
 // Web3 text variants
@@ -1545,7 +1570,7 @@ className={textVariants.web3.symbol()}       // Token symbols
                   </div>
                   <div>
                     <div className="text-sm text-muted-foreground mb-1">
-                      Transaction Hash:
+                      {t("web3.preview.transactionHash")}
                     </div>
                     <code className={textVariants.web3.hash()}>
                       0xabcdef1234567890abcdef1234567890abcdef12
@@ -1559,13 +1584,12 @@ className={textVariants.web3.symbol()}       // Token symbols
           {/* Responsive Typography */}
           <Section>
             <h2 className={`${textVariants.heading.h2()} mb-8`}>
-              Responsive Typography
+              {t("responsive.heading")}
             </h2>
             <p
               className={`${textVariants.body.md()} text-muted-foreground mb-8`}
             >
-              Typography that automatically scales with screen size for optimal
-              readability across devices.
+              {t("responsive.description")}
             </p>
             <div className="space-y-6 mb-8">
               {responsiveExamples.map((variant) => (
@@ -1582,8 +1606,8 @@ className={textVariants.web3.symbol()}       // Token symbols
             </div>
 
             <CodeExample
-              title="Responsive Typography Usage"
-              description="How to use responsive text variants that scale with screen size"
+              title={t("responsive.code.title")}
+              description={t("responsive.code.description")}
               code={`import { textVariants } from '@/design-system';
 import LocalizedLink from "../components/LocalizedLink";
 
@@ -1623,11 +1647,10 @@ className="text-xl sm:text-2xl md:text-3xl lg:text-4xl"
               preview={
                 <div className="space-y-4">
                   <h1 className={textVariants.heading.responsive.h1()}>
-                    This heading scales with screen size
+                    {t("responsive.preview.heading")}
                   </h1>
                   <p className={textVariants.body.lg()}>
-                    Resize your browser window to see how responsive headings
-                    adapt to different screen sizes.
+                    {t("responsive.preview.body")}
                   </p>
                 </div>
               }
@@ -1637,7 +1660,7 @@ className="text-xl sm:text-2xl md:text-3xl lg:text-4xl"
           {/* Usage Guidelines */}
           <Section>
             <h2 className={`${textVariants.heading.h2()} mb-8`}>
-              Typography Guidelines
+              {t("guidelines.heading")}
             </h2>
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
@@ -1645,17 +1668,16 @@ className="text-xl sm:text-2xl md:text-3xl lg:text-4xl"
                 <h3
                   className={`${textVariants.heading.h4()} mb-4 text-success`}
                 >
-                  ✓ Do
+                  {t("guidelines.doTitle")}
                 </h3>
                 <ul
                   className={`${textVariants.body.sm()} space-y-2 text-muted-foreground`}
                 >
-                  <li>• Use textVariants for consistent styling</li>
-                  <li>• Choose appropriate hierarchy levels</li>
-                  <li>• Use responsive variants for hero content</li>
-                  <li>• Ensure sufficient contrast ratios</li>
-                  <li>• Use monospace for code and addresses</li>
-                  <li>• Test readability on different screen sizes</li>
+                  {(
+                    t("guidelines.do", { returnObjects: true }) as string[]
+                  ).map((item, i) => (
+                    <li key={i}>• {item}</li>
+                  ))}
                 </ul>
               </div>
 
@@ -1663,17 +1685,16 @@ className="text-xl sm:text-2xl md:text-3xl lg:text-4xl"
                 <h3
                   className={`${textVariants.heading.h4()} mb-4 text-destructive`}
                 >
-                  ✗ Don't
+                  {t("guidelines.dontTitle")}
                 </h3>
                 <ul
                   className={`${textVariants.body.sm()} space-y-2 text-muted-foreground`}
                 >
-                  <li>• Use random font sizes outside the scale</li>
-                  <li>• Skip heading levels (h1 → h3)</li>
-                  <li>• Use too many different text styles</li>
-                  <li>• Make text too small on mobile devices</li>
-                  <li>• Use serif fonts for UI elements</li>
-                  <li>• Ignore dark mode text colors</li>
+                  {(
+                    t("guidelines.dont", { returnObjects: true }) as string[]
+                  ).map((item, i) => (
+                    <li key={i}>• {item}</li>
+                  ))}
                 </ul>
               </div>
             </div>
@@ -1683,11 +1704,10 @@ className="text-xl sm:text-2xl md:text-3xl lg:text-4xl"
           <div className={`${ui.background.muted} rounded-lg p-6 text-center`}>
             <ClipboardDocumentIcon className="h-8 w-8 text-muted-foreground mx-auto mb-3" />
             <h3 className={`${textVariants.heading.h5()} mb-2`}>
-              Click to Copy Class Names
+              {t("copyInstructions.title")}
             </h3>
             <p className={`${textVariants.body.sm()} text-muted-foreground`}>
-              Click on any text example to copy its CSS class name, or use the
-              copy button on code examples to copy usage code
+              {t("copyInstructions.description")}
             </p>
           </div>
         </div>

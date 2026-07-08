@@ -1,0 +1,117 @@
+{
+  "seo": {
+    "title": "Moduli - Sistema di progettazione - Interno - {{emailDomain}}",
+    "description": "Mostra completa degli elementi del modulo e dei componenti di input per il sistema di progettazione"
+  },
+  "codeExample": {
+    "preview": "Anteprima",
+    "usage": "Utilizzo"
+  },
+  "header": {
+    "badge": "Elementi del modulo",
+    "title": "Componenti del modulo e elementi di input",
+    "description": "Libreria completa di elementi del modulo con un design coerente, stati di convalida e funzionalità di accessibilità. Tutti i componenti supportano i temi chiaro/scuro e includono una gestione corretta del focus."
+  },
+  "quickStart": {
+    "title": "Avvio rapido - Modelli di form principali",
+    "description": "Componenti di modulo pronti all'uso con convalida corretta, accessibilità e design reattivo.",
+    "textInput": {
+      "title": "Inserimento testo",
+      "label": "Indirizzo email",
+      "placeholder": "Inserisci il tuo indirizzo email..."
+    },
+    "select": {
+      "title": "Selezionare il menu a tendina",
+      "label": "Rete blockchain",
+      "placeholder": "Seleziona una rete..."
+    },
+    "checkbox": {
+      "title": "Casella di controllo",
+      "agree": "Accetto i Termini di Servizio e la Politica sulla Privacy"
+    },
+    "textarea": {
+      "title": "Area del testo",
+      "label": "Messaggio",
+      "placeholder": "Inserisci il tuo messaggio..."
+    }
+  },
+  "inputTypes": {
+    "title": "Tipi di input e varianti",
+    "description": "Diversi tipi di input con un design coerente su tutti gli elementi del modulo.",
+    "textInputTypes": {
+      "title": "Tipi di input di testo",
+      "description": "Diversi tipi di input con stile coerente",
+      "textPlaceholder": "Inserimento testo",
+      "passwordPlaceholder": "Password"
+    },
+    "sizes": {
+      "title": "Dimensioni di input",
+      "description": "Dimensioni di input diverse per vari casi d'uso",
+      "smallPlaceholder": "Piccola input",
+      "defaultPlaceholder": "Input predefinito",
+      "largePlaceholder": "Grande input"
+    }
+  },
+  "validation": {
+    "title": "Stati di convalida",
+    "description": "Stati di convalida del modulo con codifica dei colori e messaggi corretti.",
+    "success": {
+      "title": "Stato di successo",
+      "description": "Input valido con stile di successo",
+      "label": "Indirizzo email",
+      "message": "Indirizzo email valido"
+    },
+    "error": {
+      "title": "Stato di errore",
+      "description": "Input non valido con stile di errore",
+      "label": "Password",
+      "message": "La password deve essere di almeno 8 caratteri"
+    }
+  },
+  "advanced": {
+    "title": "Componenti avanzati del modulo",
+    "description": "Più modelli di moduli complessi con funzionalità migliorate.",
+    "passwordToggle": {
+      "title": "Inserimento della password con commutatore",
+      "description": "Campo della password con funzionalità mostra/nascondi",
+      "label": "Password",
+      "placeholder": "Inserisci la password..."
+    },
+    "radio": {
+      "title": "Gruppo di pulsanti radio",
+      "description": "Pulsanti a radio per selezione singola",
+      "label": "Piano di abbonamento",
+      "free": "Piano gratuito - Funzionalità di base",
+      "pro": "Piano Pro - Funzionalità avanzate"
+    }
+  },
+  "complete": {
+    "title": "Compila esempio modulo",
+    "description": "Un modulo completo che mostra tutti gli elementi del modulo che funzionano insieme.",
+    "form": {
+      "title": "Modulo del profilo Web3",
+      "description": "Compila il modulo con tutti i tipi di elementi e con convalida",
+      "displayNameLabel": "Nome visualizzato",
+      "displayNamePlaceholder": "Il tuo nome visualizzato",
+      "emailLabel": "Indirizzo email",
+      "networkLabel": "Rete preferita",
+      "networkPlaceholder": "Seleziona una rete...",
+      "bioLabel": "Bio",
+      "bioPlaceholder": "Narraci qualcosa di te...",
+      "notifications": "Acconsento a ricevere notifiche via e-mail",
+      "submit": "Salva profilo"
+    }
+  },
+  "accessibility": {
+    "title": "Linee guida sull'accessibilità",
+    "heading": "Migliori pratiche per l'accessibilità dei moduli",
+    "items": {
+      "labelsBefore": "Usa sempre il metodo corretto",
+      "labelsAfter": "elementi associati agli input",
+      "errorMessages": "Includi messaggi di errore chiari con stati di convalida",
+      "focusStates": "Assicurati che gli stati di focus siano chiaramente visibili con le funzionalità anello",
+      "inputTypes": "Utilizza tipi di input appropriati (email, password, ecc.) per un'esperienza mobile migliore",
+      "contrast": "Mantieni un contrasto cromatico sufficiente (rapporto minimo 4,5:1)"
+    }
+  }
+}

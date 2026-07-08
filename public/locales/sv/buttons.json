@@ -1,0 +1,130 @@
+{
+  "seo": {
+    "title": "Knappar - Designsystem - Intern - {{emailDomain}}",
+    "description": "Slutför knappkomponentbiblioteket med alla varianter, storlekar, tillstånd och interaktioner"
+  },
+  "codeExample": {
+    "preview": "Förhandsgranskning",
+    "usage": "Användning"
+  },
+  "header": {
+    "badge": "Knappkomponenter",
+    "title": "Knappbibliotek och interaktionsmönster",
+    "intro": "Komplett system för knappkomponenter med konsekventa variationer, storlekar, tillstånd och interaktiva beteenden. Alla knappar stöder laddningsläge, korrekt fokushantering och tillgänglighetsfunktioner."
+  },
+  "quickStart": {
+    "title": "Snabbstart – Essentiella knappmönster",
+    "description": "Klart att använda knappkomponenter med konsekvent stil, tillstånd och beteendemönster.",
+    "primary": {
+      "title": "Primär åtgärdsknapp",
+      "button": "Huvudåtgärd"
+    },
+    "secondary": {
+      "title": "Sekundärt knapp",
+      "button": "Andra åtgärd"
+    },
+    "outline": {
+      "title": "Utkastknapp",
+      "button": "Utskissåtgärd"
+    },
+    "ghost": {
+      "title": "Spökknapp",
+      "button": "Spökhandling"
+    }
+  },
+  "variants": {
+    "title": "Knappvarianter",
+    "description": "Olika knappstilar för olika användningsområden och hierarkinivåer.",
+    "colors": {
+      "title": "Färgvarianter",
+      "description": "Färg på primära, sekundära, lyckade, varnings- och förstörelseknappar",
+      "primary": "Primär",
+      "success": "Framgång",
+      "warning": "Varning",
+      "destructive": "Destruktiv"
+    },
+    "sizes": {
+      "title": "Knappstorlekar",
+      "description": "Lill, standard och stor knappstorlek för olika sammanhang",
+      "small": "Liten",
+      "default": "Standard",
+      "large": "Stor"
+    }
+  },
+  "states": {
+    "title": "Knapplägen",
+    "description": "Interaktiva tillstånd inklusive hover, aktiv, fokus, laddning och inaktiverat.",
+    "interactive": {
+      "title": "Interaktiva tillstånd",
+      "description": "Normal, hover, aktiv och fokuslägen med korrekta övergångar",
+      "button": "Interaktiv knapp",
+      "secondary": "Sekundär interaktion"
+    },
+    "loading": {
+      "title": "Laddnings- och inaktiverade tillstånd",
+      "description": "Integration av laddningsspinnern och korrekt utseende när inaktiverat",
+      "loadingLabel": "Läser in...",
+      "demoLabel": "Demoinläsning",
+      "disabled": "Inaktiverat"
+    }
+  },
+  "icons": {
+    "title": "Ikonknappar och kombinationer",
+    "description": "Knappar med ikoner, ikonendast-knappar och växlande knappar för förbättrad användbarhet.",
+    "withIcons": {
+      "title": "Knappar med ikoner",
+      "description": "Textknappar förbättrade med ikoner för bättre igenkänning",
+      "sendMessage": "Skicka meddelande",
+      "download": "Ladda ner",
+      "settingsTitle": "Inställningar"
+    },
+    "toggle": {
+      "title": "Växla- och åtgärdsknappar",
+      "description": "Växla knappar och specifika knappmönster för åtgärder",
+      "liked": "Tyckte om",
+      "like": "Som",
+      "delete": "Ta bort",
+      "edit": "Redigera"
+    }
+  },
+  "groups": {
+    "title": "Knappgrupper och kombinationer",
+    "description": "Grupperade knappar, knappfält och åtgärdscombinationer för komplexa gränssnitt.",
+    "buttonGroups": {
+      "title": "Knappgrupper",
+      "description": "Anslutna knappgrupper för relaterade åtgärder",
+      "connectedLabel": "Ansluten grupp:",
+      "previous": "Föregående",
+      "current": "Nuvarande",
+      "next": "Nästa",
+      "spacedLabel": "Platserat grupp:",
+      "primary": "Primär",
+      "secondary": "Andra",
+      "cancel": "Avbryta"
+    },
+    "actionBars": {
+      "title": "Verktygsfält och verktygsfält",
+      "description": "Komplexa knappkominationer för verktygsfält och åtgärdsområden",
+      "new": "Ny",
+      "editTitle": "Redigera",
+      "shareTitle": "Dela",
+      "cancel": "Avbryta",
+      "delete": "Ta bort"
+    }
+  },
+  "accessibility": {
+    "title": "Tillgänglighet och bästa praxis",
+    "guidelinesTitle": "Riktlinjer för tillgänglighet av knappar",
+    "list": {
+      "semanticBefore": "Använd semantik",
+      "semanticAfter": "element istället för divar",
+      "contrast": "Se till att kontrasten mellan färger är tillräcklig (minst 4,5:1)",
+      "focus": "Inkludera fokuslägen för tangentbordsnavigation",
+      "loadingStates": "Lägg till lässtatusar för att förhindra dubbelinsändning",
+      "ariaLabels": "Använd lämpliga ARIA-etiketter för ikonendastknappar",
+      "touchTarget": "Håll minsta storlek på tryckmål (44px x 44px)",
+      "feedback": "Ge tydlig visuell återkoppling för alla tillstånd",
+      "grouping": "Grupper relaterade knappar logiskt med lämplig mellanrum"
+    }
+  }
+}

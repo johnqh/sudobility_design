@@ -1,0 +1,130 @@
+{
+  "seo": {
+    "title": "버튼 - 디자인 시스템 - 내부 - {{emailDomain}}",
+    "description": "모든 변형, 크기, 상태 및 상호작용을 포함한 버튼 컴포넌트 라이브러리 완성"
+  },
+  "codeExample": {
+    "preview": "미리 보기",
+    "usage": "사용"
+  },
+  "header": {
+    "badge": "버튼 컴포넌트",
+    "title": "버튼 라이브러리 및 상호작용 패턴",
+    "intro": "일관된 변형, 크기, 상태 및 상호작용 행동을 갖춘 포괄적인 버튼 컴포넌트 시스템. 모든 버튼은 로딩 상태, 적절한 포커스 관리 및 접근성 기능을 지원합니다."
+  },
+  "quickStart": {
+    "title": "빠른 시작 - 핵심 버튼 패턴",
+    "description": "일관된 스타일, 상태 및 동작 패턴을 갖춘 즉시 사용 가능한 버튼 컴포넌트.",
+    "primary": {
+      "title": "기본 작업 버튼",
+      "button": "주요 작업"
+    },
+    "secondary": {
+      "title": "보조 버튼",
+      "button": "보조 작업"
+    },
+    "outline": {
+      "title": "윤곽 버튼",
+      "button": "アウ라인 액션"
+    },
+    "ghost": {
+      "title": "유령 버튼",
+      "button": "유령 액션"
+    }
+  },
+  "variants": {
+    "title": "버튼 변형",
+    "description": "다양한 사용 사례와 계층 수준에 맞는 버튼 스타일.",
+    "colors": {
+      "title": "색상 변형",
+      "description": "기본, 보조, 성공, 경고 및 파괴 버튼 색상",
+      "primary": "주요",
+      "success": "성공",
+      "warning": "경고",
+      "destructive": "파괴적인"
+    },
+    "sizes": {
+      "title": "버튼 크기",
+      "description": "다양한 상황에 적합한 작은, 기본, 큰 버튼 크기",
+      "small": "작은",
+      "default": "기본값",
+      "large": "크다"
+    }
+  },
+  "states": {
+    "title": "버튼 상태",
+    "description": "호버, 활성, 포커스, 로딩 및 비활성 상태를 포함한 인터랙티브 상태.",
+    "interactive": {
+      "title": "인터랙티브 상태",
+      "description": "일반, 호버, 활성 및 포커스 상태와 적절한 전환",
+      "button": "인터랙티브 버튼",
+      "secondary": "보조 상호작용"
+    },
+    "loading": {
+      "title": "로딩 및 비활성 상태",
+      "description": "로딩 스피너 통합 및 올바른 비활성 스타일링",
+      "loadingLabel": "로딩 중...",
+      "demoLabel": "데모 로딩",
+      "disabled": "비활성화됨"
+    }
+  },
+  "icons": {
+    "title": "아이콘 버튼 및 조합",
+    "description": "아이콘을 사용하는 버튼, 아이콘 전용 버튼, 토글 버튼으로 사용성을 향상시킵니다.",
+    "withIcons": {
+      "title": "아이콘 있는 버튼",
+      "description": "아이콘으로 개선된 텍스트 버튼으로 인식을 향상",
+      "sendMessage": "메시지 보내기",
+      "download": "다운로드",
+      "settingsTitle": "설정"
+    },
+    "toggle": {
+      "title": "토글 및 액션 버튼",
+      "description": "토글 버튼 및 특정 액션 버튼 패턴",
+      "liked": "좋아요",
+      "like": "비슷한",
+      "delete": "삭제",
+      "edit": "편집"
+    }
+  },
+  "groups": {
+    "title": "버튼 그룹 및 조합",
+    "description": "복잡한 인터페이스를 위한 그룹화된 버튼, 버튼 바 및 액션 조합.",
+    "buttonGroups": {
+      "title": "버튼 그룹",
+      "description": "관련된 작업을 위한 연결된 버튼 그룹",
+      "connectedLabel": "연결된 그룹:",
+      "previous": "이전",
+      "current": "현재",
+      "next": "다음",
+      "spacedLabel": "스페이스 그룹:",
+      "primary": "주요",
+      "secondary": "보조",
+      "cancel": "취소"
+    },
+    "actionBars": {
+      "title": "액션 바 및 도구 모음",
+      "description": "툴바 및 작업 영역용 복잡한 버튼 조합",
+      "new": "새로운",
+      "editTitle": "편집",
+      "shareTitle": "공유",
+      "cancel": "취소",
+      "delete": "삭제"
+    }
+  },
+  "accessibility": {
+    "title": "접근성 및 최선의 실천 방법",
+    "guidelinesTitle": "버튼 접근성 가이드라인",
+    "list": {
+      "semanticBefore": "세마틱 사용",
+      "semanticAfter": "div 대신 요소",
+      "contrast": "충분한 색 대비(최소 4.5:1)를 확보하세요",
+      "focus": "키보드 탐색을 위한 포커스 상태 포함",
+      "loadingStates": "중복 제출을 방지하기 위해 로딩 상태를 추가하세요",
+      "ariaLabels": "아이콘 전용 버튼에 적절한 ARIA 레이블을 사용하세요",
+      "touchTarget": "터치 타겟 크기를 최소 44px x 44px로 유지하세요",
+      "feedback": "모든 상태에 대해 명확한 시각적 피드백을 제공하세요",
+      "grouping": "관련된 버튼들을 논리적으로 그룹화하고 적절한 간격을 유지하세요"
+    }
+  }
+}

@@ -1,0 +1,291 @@
+{
+  "seo": {
+    "title": "Màu sắc - Hệ thống thiết kế - Nội bộ - {{emailDomain}}",
+    "description": "Bộ màu hoàn chỉnh và bản trình bày các biến thể cho hệ thống thiết kế"
+  },
+  "nav": {
+    "viewTypography": "Xem Kiểu chữ"
+  },
+  "header": {
+    "badge": "Hệ thống màu sắc",
+    "title": "Bảng màu và cách sử dụng",
+    "description": "Hệ thống màu hoàn chỉnh được sử dụng trên toàn bộ ứng dụng {{appName}} với các ví dụ sử dụng và mẫu mã nguồn. Nhấp vào bất kỳ màu nào để sao chép giá trị hex của nó vào bộ nhớ tạm."
+  },
+  "swatch": {
+    "copyAria": "Sao chép giá trị màu {{name}} {{value}}"
+  },
+  "codeExample": {
+    "preview": "Xem trước",
+    "usage": "Sử dụng"
+  },
+  "quickStart": {
+    "title": "Bắt đầu nhanh - Các ví dụ sử dụng phổ biến",
+    "description": "Các ví dụ mã nguồn sẵn sàng sử dụng cho các mẫu thiết kế phổ biến nhất. Sao chép và dán trực tiếp vào các thành phần của bạn.",
+    "primaryButton": {
+      "title": "Nút chính",
+      "action": "Hành động chính"
+    },
+    "successAlert": {
+      "title": "Thông báo thành công",
+      "heading": "Thành công!",
+      "body": "Hành động của bạn đã được thực hiện thành công."
+    },
+    "blockchainBadge": {
+      "title": "Huy hiệu Blockchain"
+    },
+    "formInput": {
+      "title": "Nhập form",
+      "placeholder": "Nhập địa chỉ email của bạn..."
+    }
+  },
+  "palettes": {
+    "title": "Bảng màu",
+    "description": "Các bảng màu cơ bản được sắp xếp theo sắc độ. Mỗi bảng màu bao gồm các tông từ 50 (nhạt nhất) đến 950 (đậm nhất).",
+    "items": {
+      "blue": {
+        "name": "Xanh (chính)",
+        "description": "Bảng màu chính của thương hiệu"
+      },
+      "purple": {
+        "name": "Tím (phụ)",
+        "description": "Bảng màu màu thương hiệu phụ"
+      },
+      "neutral": {
+        "name": "Trung tính (thang độ xám)",
+        "description": "Màu nền, văn bản và viền"
+      },
+      "red": {
+        "name": "Đỏ (Lỗi)",
+        "description": "Màu sắc lỗi và hành động phá hủy"
+      },
+      "green": {
+        "name": "Xanh lá (Thành công)",
+        "description": "Thành công và màu sắc hành động tích cực"
+      },
+      "amber": {
+        "name": "Hồng (Cảnh báo)",
+        "description": "Màu sắc cảnh báo và cẩn trọng"
+      },
+      "orange": {
+        "name": "Cam",
+        "description": "Màu nhấn mạnh và nổi bật"
+      }
+    }
+  },
+  "networks": {
+    "ethereum": "Ethereum",
+    "solana": "Solana",
+    "polygon": "Đa giác"
+  },
+  "web3": {
+    "title": "Màu mạng lưới Web3",
+    "description": "Màu sắc đại diện cho các mạng lưới blockchain khác nhau và các thành phần Web3.",
+    "usage": {
+      "ethereum": "Thương hiệu mạng lưới Ethereum",
+      "solana": "thương hiệu mạng lưới Solana",
+      "polygon": "Thương hiệu mạng lưới Polygon"
+    },
+    "code": {
+      "title": "Sử dụng màu sắc trong Web3",
+      "description": "Cách sử dụng màu mạng Web3 trong các thành phần"
+    }
+  },
+  "semantic": {
+    "title": "Màu ngữ nghĩa",
+    "description": "Các mã màu ngữ nghĩa tự điều chỉnh theo chế độ sáng và tối. Chúng cung cấp ý nghĩa nhất quán trên giao diện.",
+    "lightMode": "Chế độ sáng",
+    "darkMode": "Chế độ tối",
+    "categories": {
+      "text": {
+        "name": "Màu chữ",
+        "colors": {
+          "primaryText": {
+            "name": "Văn bản chính",
+            "usage": "Văn bản nội dung chính"
+          },
+          "secondaryText": {
+            "name": "Văn bản phụ",
+            "usage": "Văn bản hỗ trợ"
+          },
+          "linkText": {
+            "name": "Văn bản liên kết",
+            "usage": "Liên kết tương tác"
+          }
+        }
+      },
+      "background": {
+        "name": "Màu nền",
+        "colors": {
+          "primaryBackground": {
+            "name": "Nền chính",
+            "usage": "Nền trang chính"
+          },
+          "secondaryBackground": {
+            "name": "Nền phụ",
+            "usage": "Nền thẻ"
+          },
+          "elevatedBackground": {
+            "name": "Nền nâng cao",
+            "usage": "Hộp thoại và lớp chồng"
+          }
+        }
+      },
+      "state": {
+        "name": "Màu sắc bang",
+        "colors": {
+          "success": {
+            "name": "Thành công",
+            "usage": "Tin nhắn thành công và hành động"
+          },
+          "warning": {
+            "name": "Cảnh báo",
+            "usage": "Thông báo cảnh báo"
+          },
+          "error": {
+            "name": "Lỗi",
+            "usage": "Tin nhắn lỗi và các hành động phá hủy"
+          },
+          "info": {
+            "name": "Thông tin",
+            "usage": "Tin nhắn thông tin"
+          }
+        }
+      }
+    },
+    "code": {
+      "title": "Sử dụng màu sắc ngữ nghĩa",
+      "description": "Cách sử dụng màu ngữ nghĩa từ hệ thống thiết kế",
+      "preview": {
+        "success": "✓ Thông báo thành công",
+        "error": "✗ Thông báo lỗi",
+        "warning": "⚠ Thông báo cảnh báo"
+      }
+    }
+  },
+  "components": {
+    "title": "Màu sắc thành phần và ví dụ sử dụng",
+    "description": "Các tổ hợp màu được cấu hình trước cho các thành phần giao diện người dùng phổ biến với hỗ trợ hover, focus và chủ đề tích hợp.",
+    "exampleHeading": "{{name}} Ví dụ",
+    "liveExamples": "Ví dụ trực tiếp",
+    "alertMessage": "tin nhắn {{name}}",
+    "interactiveHeading": "Ví dụ tương tác về {{name}}:",
+    "createPreview": {
+      "button": {
+        "primary": "Hành động chính",
+        "secondary": "Hành động phụ",
+        "destructive": "Xóa mục"
+      },
+      "alert": {
+        "infoLabel": "Thông tin:",
+        "infoText": "Đây là một cảnh báo thông tin",
+        "successLabel": "Thành công:",
+        "successText": "Thao tác hoàn tất thành công",
+        "errorLabel": "Lỗi:",
+        "errorText": "Điều gì đó đã xảy ra sai"
+      }
+    },
+    "items": {
+      "button": {
+        "name": "Nút",
+        "createTitle": "Làm thế nào để tạo nút",
+        "createDescription": "Hướng dẫn từng bước để tạo nút với màu sắc phù hợp",
+        "variantsTitle": "Các biến thể và trạng thái nút",
+        "variantsDescription": "Tất cả các biến thể màu nút với trạng thái hover và focus",
+        "variants": {
+          "primary": "Chính",
+          "secondary": "Thứ cấp",
+          "destructive": "Phá hoại",
+          "success": "Thành công"
+        }
+      },
+      "badge": {
+        "name": "Huy hiệu",
+        "createTitle": "Làm thế nào để tạo huy hiệu",
+        "createDescription": "Hướng dẫn từng bước để tạo huy hiệu với màu sắc phù hợp",
+        "variantsTitle": "Các biến thể huy hiệu và trạng thái",
+        "variantsDescription": "Tất cả các biến thể màu dấu hiệu với trạng thái di chuột và tập trung",
+        "variants": {
+          "default": "Mặc định",
+          "primary": "Chính",
+          "success": "Thành công",
+          "warning": "Cảnh báo",
+          "error": "Lỗi"
+        }
+      },
+      "alert": {
+        "name": "Cảnh báo",
+        "createTitle": "Làm thế nào để tạo thông báo",
+        "createDescription": "Hướng dẫn từng bước để tạo cảnh báo với màu sắc phù hợp",
+        "variantsTitle": "Thông báo: Các biến thể và trạng thái",
+        "variantsDescription": "Tất cả các biến thể màu cảnh báo với trạng thái di chuột và tập trung",
+        "variants": {
+          "info": "Thông tin",
+          "success": "Thành công",
+          "warning": "Cảnh báo",
+          "error": "Lỗi"
+        }
+      }
+    }
+  },
+  "practical": {
+    "title": "Các ví dụ thực tế về sử dụng",
+    "description": "Các ví dụ thực tế cho thấy cách kết hợp màu sắc cho các mẫu giao diện người dùng phổ biến",
+    "form": {
+      "title": "Biểu mẫu với trạng thái mã màu",
+      "description": "Làm thế nào để sử dụng màu sắc cho xác thực biểu mẫu và trạng thái",
+      "emailLabel": "Thư điện tử (hợp lệ)",
+      "emailValid": "✓ Địa chỉ email hợp lệ",
+      "passwordLabel": "Mật khẩu (Lỗi)",
+      "passwordError": "✗ Mật khẩu phải có ít nhất 8 ký tự",
+      "submit": "Gửi biểu mẫu"
+    },
+    "card": {
+      "title": "Thẻ với màu trạng thái",
+      "description": "Cách sử dụng màu sắc trong các thành phần thẻ với các trạng thái khác nhau",
+      "apiServer": "Máy chủ API",
+      "online": "trực tuyến",
+      "operational": "Tất cả các hệ thống đang hoạt động",
+      "database": "Cơ sở dữ liệu",
+      "maintenance": "bảo trì",
+      "maintenanceProgress": "Bảo trì theo lịch trình đang được thực hiện"
+    },
+    "navigation": {
+      "title": "Điều hướng với trạng thái màu sắc",
+      "description": "Làm thế nào để sử dụng màu sắc cho trạng thái điều hướng và các mục đang hoạt động",
+      "dashboard": "Bảng điều khiển",
+      "users": "Người dùng",
+      "settings": "Cài đặt"
+    },
+    "progress": {
+      "title": "Các chỉ báo tiến độ với màu sắc",
+      "description": "Làm thế nào để sử dụng màu sắc cho thanh tiến độ và trạng thái tải",
+      "label": "Tiến độ",
+      "complete75": "Hoàn thành 75%",
+      "success": "Thành công",
+      "complete100": "Hoàn thành 100%"
+    }
+  },
+  "guidelines": {
+    "title": "Hướng dẫn sử dụng",
+    "doTitle": "✓ Làm",
+    "do": [
+      "Sử dụng màu ngữ nghĩa để có nghĩa nhất quán",
+      "Ưu tiên màu thành phần cho các thành phần giao diện người dùng",
+      "Kiểm tra màu sắc trong cả chế độ sáng và tối",
+      "Đảm bảo độ tương phản đủ để truy cập",
+      "Sử dụng các hàm tiện ích màu sắc để đảm bảo tính nhất quán"
+    ],
+    "dontTitle": "✗ Đừng",
+    "dont": [
+      "Sử dụng giá trị hex thô trực tiếp trong các thành phần",
+      "Trộn các hệ thống màu khác nhau",
+      "Tạo màu tùy chỉnh mà không cần phê duyệt thiết kế",
+      "Sử dụng các màu không hoạt động trong chế độ tối",
+      "Bỏ qua yêu cầu tương phản khả năng truy cập"
+    ]
+  },
+  "copyInstructions": {
+    "title": "Nhấp để sao chép giá trị",
+    "description": "Nhấp vào bất kỳ mảnh màu nào để sao chép giá trị hex của nó, hoặc sử dụng nút sao chép trong các ví dụ mã để sao chép mã sử dụng"
+  }
+}

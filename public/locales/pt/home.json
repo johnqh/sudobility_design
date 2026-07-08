@@ -1,0 +1,286 @@
+{
+  "seo": {
+    "title": "Sistema de Design - {{appName}}",
+    "description": "Documentação do sistema de design e exposição de componentes"
+  },
+  "badge": "Sistema de Design",
+  "intro": "Documentação abrangente do sistema de design que mostra todas as cores, tipografias e tokens de design usados no {{appName}}.",
+  "stats": {
+    "fontFamilies": "Famílias de fontes",
+    "textSizes": "Tamanhos de texto",
+    "spacingUnits": "Unidades de espaçamento",
+    "borderRadius": "Raio da borda"
+  },
+  "exploreAria": "Explore a documentação do {{title}}",
+  "explore": "Explore {{title}}",
+  "architecture": {
+    "title": "Arquitetura do Sistema de Design",
+    "body": "O {{appName}} foi construído com foco em consistência, escalabilidade e acessibilidade. Oferece um conjunto abrangente de tokens de design, componentes e diretrizes.",
+    "tokensTitle": "Tokens de design",
+    "tokens": [
+      "Escala e famílias tipográficas",
+      "Paletas de cores e cores semânticas",
+      "Sistemas de espaçamento e dimensão",
+      "Tokens de raio da borda e sombra"
+    ],
+    "implementationTitle": "Implementação",
+    "implementation": [
+      "integração do Tailwind CSS",
+      "Suporte do TypeScript",
+      "Compatibilidade com o modo escuro",
+      "Utilitários de design responsivo"
+    ]
+  },
+  "areas": {
+    "colors": {
+      "title": "Cores",
+      "description": "Explore todas as variações de cor, cores semânticas e temas usados na aplicação",
+      "features": [
+        "Cores da marca e variações",
+        "Sistema de cor semântica",
+        "Temas claro e escuro",
+        "Cores de estado (sucesso, erro, aviso)",
+        "Cores de plano de fundo e superfície"
+      ]
+    },
+    "typography": {
+      "title": "Tipografia",
+      "description": "Ver todas as variantes de estilos de texto, fontes, tamanhos e tipografia suportadas pelo sistema de design",
+      "features": [
+        "Famílias e pesos de fontes",
+        "Tamanhos e escalas de texto",
+        "Variações de título",
+        "Estilos de texto do corpo",
+        "Variantes especiais de texto (código, links, etc.)"
+      ]
+    },
+    "forms": {
+      "title": "Formulários",
+      "description": "Biblioteca completa de elementos de formulário com estados de validação, recursos de acessibilidade e estilos coerentes",
+      "features": [
+        "Tipos de entrada e variantes",
+        "Estados de validação (sucesso, erro)",
+        "Controles de formulário (select, caixa de seleção, botão de opção)",
+        "Padrões avançados (alternar senha)",
+        "Diretrizes de acessibilidade"
+      ]
+    },
+    "buttons": {
+      "title": "Botões",
+      "description": "Sistema abrangente de componentes de botão com variantes, tamanhos, estados e padrões interativos",
+      "features": [
+        "Variantes de cor (primária, secundária, destrutiva)",
+        "Tamanhos dos botões (pequeno, padrão, grande)",
+        "Estados interativos (passar o mouse, ativo, carregando)",
+        "Botões de ícone e combinações",
+        "Grupos de botões e barras de ferramentas"
+      ]
+    },
+    "cards": {
+      "title": "Cartas",
+      "description": "Sistema flexível de componentes de cartão com elevação, variantes de conteúdo e padrões de integração Web3",
+      "features": [
+        "Card elevation and shadow variants",
+        "Content and media card layouts",
+        "Interactive card states and actions",
+        "Web3-specific card patterns (wallet, NFT)",
+        "Responsive grid layouts"
+      ]
+    },
+    "badges": {
+      "title": "Emblemas",
+      "description": "Pequenos componentes versáteis para rotular, categorizar e transmitir informações de status",
+      "features": [
+        "Semantic color variants (success, warning, error)",
+        "Size options (small, default, large)",
+        "Web3-specific blockchain badges",
+        "Interactive states and notifications",
+        "Accessibility and screen reader support"
+      ]
+    },
+    "alerts": {
+      "title": "Alertas",
+      "description": "Mensagens de feedback contextuais para informações importantes, avisos e confirmações",
+      "features": [
+        "Standard and compact alert layouts",
+        "Dismissible alerts with close actions",
+        "Web3 transaction and wallet status alerts",
+        "Action buttons and interactive elements",
+        "ARIA accessibility and screen reader support"
+      ]
+    },
+    "inputs": {
+      "title": "Entradas",
+      "description": "Componentes de entrada de formulário com estilização consistente, estados de validação e acessibilidade",
+      "features": [
+        "Text, email, password, and search inputs",
+        "Size variations (small, default, large)",
+        "Validation states and error handling",
+        "Web3 wallet address and token amount inputs",
+        "Icon placement and accessibility support"
+      ]
+    },
+    "loading": {
+      "title": "Estados de carregamento",
+      "description": "Padrões de carregamento abrangentes, incluindo carregadores, indicadores de progresso e estados de transações Web3",
+      "features": [
+        "Spinners and loading buttons",
+        "Progress bars and skeleton loading",
+        "Web3 transaction and wallet states",
+        "Contextual loading messages",
+        "Accessibility and screen reader support"
+      ]
+    },
+    "modals": {
+      "title": "Modais",
+      "description": "Componentes modais e de diálogo com padrões de integração Web3 e recursos de acessibilidade",
+      "features": [
+        "Modal sizes and layout variants",
+        "Web3 wallet connection and transaction modals",
+        "Interactive confirmation dialogs",
+        "Form modals and settings panels",
+        "ARIA accessibility and focus management"
+      ]
+    },
+    "navigation": {
+      "title": "Navegação",
+      "description": "Componentes de navegação, incluindo breadcrumbs, abas, paginação e sistemas de menu",
+      "features": [
+        "Breadcrumb navigation with SEO optimization",
+        "Tab navigation with multiple variants",
+        "Pagination for data sets",
+        "Sidebar and menu navigation patterns",
+        "Web3-specific navigation (multi-chain, wallet status)"
+      ]
+    },
+    "dataDisplay": {
+      "title": "Exibição de dados",
+      "description": "Componentes para exibição de dados, incluindo tabelas, listas, grelhas e layouts de informações",
+      "features": [
+        "Data tables with sorting and filtering",
+        "List components for emails and transactions",
+        "Grid layouts for NFTs and blockchain data",
+        "Key-value displays and metadata",
+        "Timeline and activity feeds"
+      ]
+    },
+    "formsAdvanced": {
+      "title": "Formulários Avançados",
+      "description": "Padrões avançados de formulários, incluindo assistentes de múltiplos passos, upload de arquivos e entradas Web3",
+      "features": [
+        "Multi-step form wizards with progress tracking",
+        "File upload with drag & drop functionality",
+        "Web3-specific inputs (wallet addresses, token amounts)",
+        "Advanced validation with real-time feedback",
+        "Security patterns for sensitive data"
+      ]
+    },
+    "notificationsFeedback": {
+      "title": "Notificações e feedback",
+      "description": "Sistema abrangente de notificação com toasts, indicadores de progresso e exibição de status",
+      "features": [
+        "Toast notifications with auto-dismiss and actions",
+        "Progress indicators for long-running operations",
+        "Web3 transaction status with confirmation tracking",
+        "System status indicators and connection states",
+        "Contextual feedback and smart suggestions"
+      ]
+    },
+    "layoutSpacing": {
+      "title": "Layout e espaçamento",
+      "description": "Sistema de layout abrangente com grelhas responsivas, contêineres e utilitários de espaçamento",
+      "features": [
+        "Responsive grid systems and auto-fit patterns",
+        "Container variants for different content widths",
+        "Flexible Flexbox patterns for common layouts",
+        "Comprehensive spacing utility system",
+        "Web3-specific layout patterns (wallets, NFTs, DeFi)",
+        "Dashboard and page layout templates"
+      ]
+    },
+    "tablesGrids": {
+      "title": "Tabelas e Grade de Dados",
+      "description": "Sistema de tabela abrangente com classificação, filtragem, paginação e funcionalidade de grade de dados",
+      "features": [
+        "Sortable columns with visual indicators",
+        "Filterable data with search functionality",
+        "Pagination for large datasets",
+        "Row selection and bulk actions",
+        "Responsive table layouts",
+        "Data grid with resizable columns",
+        "Loading and empty states",
+        "Web3 transaction and address tables"
+      ]
+    },
+    "iconsIllustrations": {
+      "title": "Ícones e ilustrações",
+      "description": "Sistema abrangente de ícones com dimensões, cores e padrões de uso contextuais coerentes",
+      "features": [
+        "Consistent icon sizing system (xs to xxxl)",
+        "Semantic color variants (success, warning, error)",
+        "Context-specific icon patterns (buttons, _inputs, navigation)",
+        "Interactive states and hover effects",
+        "Web3-specific blockchain icons",
+        "Decorative and hero icon variants",
+        "Status indicators and loading states",
+        "Accessibility and screen reader support"
+      ]
+    },
+    "overlaysPortals": {
+      "title": "Sobreposições e Portais",
+      "description": "Sistema de sobreposição abrangente com modais, menus suspenso, tooltips, folhas e estados de carregamento",
+      "features": [
+        "Modal dialogs with animation states and focus management",
+        "Dropdown menus with positioning and keyboard navigation",
+        "Tooltips with multiple positioning options",
+        "Bottom sheets and drawer overlays for mobile",
+        "Context menus and right-click interactions",
+        "Loading overlays with backdrop blur effects",
+        "Proper z-index layering and portal management",
+        "Accessibility with ARIA labels and focus trapping"
+      ]
+    },
+    "microInteractions": {
+      "title": "Microinterações e animações",
+      "description": "Sistema de animação abrangente com efeitos de passagem do cursor, transições e interações específicas do Web3",
+      "features": [
+        "Hover effects with lift, glow, and scale animations",
+        "Loading animations and spinner variants",
+        "Smooth transitions for state changes",
+        "Gesture feedback and interaction responses",
+        "Web3-specific animations (wallet connect, transaction states)",
+        "Scroll-triggered animations and reveals",
+        "Reduced motion accessibility support",
+        "Performance-optimized CSS and JavaScript animations"
+      ]
+    },
+    "accessibility": {
+      "title": "Acessibilidade e A11Y",
+      "description": "Padrões abrangentes de acessibilidade e utilitários de design inclusivo para conformidade com o WCAG",
+      "features": [
+        "Screen reader support with ARIA labels and skip links",
+        "Focus management and keyboard navigation patterns",
+        "High contrast color combinations for visibility",
+        "Motion preferences and reduced motion support",
+        "Semantic HTML roles and interactive patterns",
+        "Form accessibility with validation and error handling",
+        "Web3-specific accessibility for wallet connections",
+        "WCAG 2.1 AA compliance utilities and best practices"
+      ]
+    },
+    "performance": {
+      "title": "Desempenho e otimização",
+      "description": "Padrões completos de desempenho e utilitários de otimização para aplicações rápidas e eficientes",
+      "features": [
+        "Bundle optimization with code splitting and lazy loading",
+        "Rendering optimization with GPU acceleration and virtual scrolling",
+        "Network optimization with caching and adaptive loading",
+        "Core Web Vitals monitoring (LCP, FID/INP, CLS)",
+        "Web3-specific optimizations (transaction batching, gas optimization)",
+        "Resource optimization with image compression and CDN patterns",
+        "Performance monitoring with real-time metrics",
+        "Memory optimization and efficient state management"
+      ]
+    }
+  }
+}

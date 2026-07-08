@@ -1,0 +1,197 @@
+{
+  "seo": {
+    "title": "Modals - Design-System - Intern - {{emailDomain}}",
+    "description": "Modale und Dialogkomponenten mit Web3-Mustern und Barrierefreiheitsfunktionen"
+  },
+  "header": {
+    "badge": "Modals & Dialogfelder",
+    "title": "Modalkomponenten",
+    "description": "Umfassendes Modals- und Dialogsystem mit Web3-Integrationsmustern, Barrierefreiheitsfunktionen und reaktiver Benutzerfreundlichkeit. Perfekt für Wallet-Verbindungen, Transaktionsbestätigungen und Benutzerinteraktionen."
+  },
+  "common": {
+    "copyToClipboard": "In die Zwischenablage kopieren",
+    "cancel": "Abbrechen"
+  },
+  "quickStart": {
+    "heading": "Schnellstart",
+    "examples": {
+      "basic": {
+        "title": "Grundlegendes Modal",
+        "description": "Standard-Modal mit Kopfzeile, Inhalt und Fußzeile"
+      },
+      "confirmation": {
+        "title": "Bestätigungsdialog",
+        "description": "Einfaches Bestätigungsdialogfeld mit Aktionsschaltflächen"
+      },
+      "wallet": {
+        "title": "Web3-Wallet-Verbindung",
+        "description": "Modal für die Auswahl und Verbindung der Brieftasche"
+      },
+      "transaction": {
+        "title": "Transaktionsstatus",
+        "description": "Modalfenster mit Fortschrittsanzeige und Status der Transaktion"
+      }
+    }
+  },
+  "demos": {
+    "heading": "Interaktive Demos",
+    "cards": {
+      "simpleModal": {
+        "title": "Grundlegendes Modal",
+        "description": "Standard-Modalfenster mit Kopfzeile, Inhalt und Fußzeile."
+      },
+      "confirmationModal": {
+        "title": "Bestätigungsdialog",
+        "description": "Einfaches Bestätigungsdialogfeld mit zerstörerischen Aktionen."
+      },
+      "walletModal": {
+        "title": "Brieftaschenverbindung",
+        "description": "Web3-Wallet-Auswahl- und Verbindungsinterface."
+      },
+      "transactionModal": {
+        "title": "Transaktionsstatus",
+        "description": "Modals zur Transaktionsfortschritts- und Statusrückmeldung."
+      },
+      "formModal": {
+        "title": "Formular-Modal",
+        "description": "Modalfenster mit Formularfeldern und Validierung."
+      },
+      "settingsModal": {
+        "title": "Einstellungs-Panel",
+        "description": "Großes Modalfenster für komplexe Einstellungen und Einstellungen."
+      }
+    }
+  },
+  "sizes": {
+    "heading": "Größenvarianten",
+    "availableTitle": "Verfügbare Größen",
+    "availableDescription": "Wählen Sie die geeignete Modalfeldgröße basierend auf Ihren Inhaltsanforderungen aus.",
+    "boxLabel": "{{name}} Modul ({{maxWidth}})",
+    "names": {
+      "small": "Klein",
+      "medium": "Medium",
+      "large": "Groß",
+      "extraLarge": "Extra groß"
+    }
+  },
+  "web3": {
+    "heading": "Web3-Integrationsmuster",
+    "walletFlow": {
+      "title": "Wallet-Verbindungsfluss",
+      "description": "Vervollständigen Sie die Wallet-Verbindungserfahrung mit der Auswahl des Anbieters."
+    },
+    "transactionConfirmation": {
+      "title": "Transaktionsbestätigung",
+      "description": "Transaktionsdetails und Bestätigungsinterface."
+    }
+  },
+  "accessibility": {
+    "heading": "Richtlinien für die Barrierefreiheit",
+    "ariaTitle": "ARIA-Attribute und Best Practices",
+    "ariaDescription": "Befolgen Sie diese Richtlinien, um sicherzustellen, dass Ihre Modals für alle Benutzer zugänglich sind.",
+    "requiredAria": "Erforderliche ARIA-Attribute",
+    "focusManagement": "Fokus-Management",
+    "focusItems": [
+      "Der Fokus sollte auf das erste fokussierbare Element im Modalfenster wechseln, wenn es geöffnet wird",
+      "Die Tab-Navigation sollte innerhalb des Modals eingeschlossen sein",
+      "Der Fokus sollte auf das Auslöse-Element zurückkehren, wenn das Modal geschlossen wird",
+      "Die ESC-Taste sollte das Modal schließen"
+    ],
+    "screenReader": "Unterstützung für Bildschirmleser",
+    "screenReaderItems": [
+      "Verwenden Sie semantische HTML-Elemente (button, form, usw.)",
+      "Geben Sie allen interaktiven Elementen klare, beschreibende Beschriftungen.",
+      "Modalzustandsänderungen mit lebenden Regionen ankündigen"
+    ]
+  },
+  "implementation": {
+    "heading": "Implementierungshinweise",
+    "portalTitle": "Verwendung von React-Portalen",
+    "portalDescription": "Rendern Sie Modals in einem Portal, um z-Index-Probleme zu vermeiden und eine korrekte Schichtung sicherzustellen.",
+    "animationTitle": "Animation-Überlegungen",
+    "animationDescription": "Verwenden Sie CSS-Animationen oder Bibliotheken wie Framer Motion für reibungslose Modalfenster-Übergänge.",
+    "animationItems": [
+      "• Ausblenden/Einblenden für Overlay",
+      "• Skalieren oder verschieben Sie für modale Inhalte",
+      "• Respektieren Sie die Bewegungspräferenzen des Benutzers",
+      "• Halten Sie Animationen unter 300 ms"
+    ]
+  },
+  "simpleModal": {
+    "title": "Einfaches Modal-Beispiel",
+    "body": "Dies ist ein einfacher Modalkasten mit Standardkopfzeile, Inhalt und Fußzeile. Er zeigt die typische Struktur und Formatierung eines Modalkastens an.",
+    "hint": "Klicken Sie außerhalb des Modals oder drücken Sie die Schaltfläche Schließen, um es zu schließen.",
+    "gotIt": "Verstanden"
+  },
+  "confirmationModal": {
+    "title": "Element löschen",
+    "body": "Sind Sie sicher, dass Sie diesen Eintrag löschen möchten? Diese Aktion kann nicht rückgängig gemacht werden.",
+    "delete": "Löschen"
+  },
+  "walletModal": {
+    "title": "Wallet verbinden",
+    "choose": "Wählen Sie eine Brieftasche aus, um sich mit der {{emailDomain}}-Plattform zu verbinden",
+    "metamask": "MetaMask",
+    "metamaskDescription": "Beliebte Browser-Erweiterung",
+    "walletConnect": "WalletConnect",
+    "walletConnectDescription": "Mit Wallet scannen",
+    "phantom": "Phantom",
+    "phantomDescription": "Solana-Wallet"
+  },
+  "transactionModal": {
+    "title": {
+      "idle": "Transaktion senden",
+      "pending": "Transaktion ausstehend",
+      "confirming": "Transaktion bestätigen",
+      "success": "Transaktion erfolgreich",
+      "error": "Transaktion fehlgeschlagen"
+    },
+    "description": {
+      "idle": "Überprüfen Sie die Transaktionsdaten und bestätigen Sie, um fortzufahren.",
+      "pending": "Bitte bestätigen Sie die Transaktion in Ihrer Wallet...",
+      "confirming": "Warte auf die Bestätigung der Blockchain...",
+      "success": "Ihre Transaktion wurde erfolgreich abgeschlossen.",
+      "error": "Die Transaktion wurde abgelehnt oder fehlgeschlagen. Bitte versuchen Sie es erneut."
+    },
+    "amount": "Betrag:",
+    "gasFee": "Gas-Gebühr:",
+    "total": "Insgesamt:",
+    "confirm": "Transaktion bestätigen",
+    "close": "Schließen"
+  },
+  "formModal": {
+    "title": "Kontaktformular",
+    "firstName": "Vorname",
+    "firstNamePlaceholder": "Geben Sie Ihren Vornamen ein",
+    "lastName": "Nachname",
+    "lastNamePlaceholder": "Geben Sie Ihren Nachnamen ein",
+    "email": "E-Mail-Adresse",
+    "emailPlaceholder": "Geben Sie Ihre E-Mail-Adresse ein",
+    "message": "Nachricht",
+    "messagePlaceholder": "Geben Sie Ihre Nachricht ein...",
+    "send": "Nachricht senden"
+  },
+  "settingsModal": {
+    "title": "Einstellungen & Einstellungen",
+    "account": "Kontoeinstellungen",
+    "emailNotifications": "E-Mail-Benachrichtigungen",
+    "emailNotificationsDescription": "Erhalten Sie Benachrichtigungen über Ihre Kontotätigkeit",
+    "twoFactor": "Zwei-Faktor-Authentifizierung",
+    "twoFactorDescription": "Fügen Sie einer zusätzlichen Sicherheitsebene zu Ihrem Konto hinzu",
+    "privacy": "Datenschutz-Einstellungen",
+    "profileVisibility": "Sichtbarkeit des Profils",
+    "visibilityPublic": "Öffentlich",
+    "visibilityFriends": "Nur Freunde",
+    "visibilityPrivate": "Privat",
+    "dataSharing": "Datenspeicherung",
+    "analyticsConsent": "Analyse-Daten sammeln zulassen",
+    "thirdPartyConsent": "Nutzungsdaten mit Dritten teilen",
+    "appearance": "Aussehen",
+    "theme": "Thema",
+    "themeLight": "Licht",
+    "themeDark": "Dunkel",
+    "themeAuto": "Automatik",
+    "resetDefaults": "Auf Standardwerte zurücksetzen",
+    "saveChanges": "Änderungen speichern"
+  }
+}

@@ -1,0 +1,136 @@
+{
+  "seo": {
+    "title": "Đầu vào - Hệ thống thiết kế - Nội bộ - {{emailDomain}}",
+    "description": "Tài liệu toàn diện về thành phần đầu vào với các biến thể, kích thước, trạng thái và tích hợp Web3"
+  },
+  "code": {
+    "copied": "✓ Đã sao chép!",
+    "copy": "Sao chép"
+  },
+  "header": {
+    "badge": "Đầu vào",
+    "title": "Thành phần đầu vào",
+    "intro": "Các thành phần nhập liệu biểu mẫu với phong cách nhất quán, trạng thái xác thực và tính năng truy cập được thiết kế cho cả ứng dụng truyền thống và Web3."
+  },
+  "stats": {
+    "inputTypes": "Loại đầu vào",
+    "sizeOptions": "Lựa chọn kích thước",
+    "stateTypes": "Loại nhà nước",
+    "web3Patterns": "Mẫu Web3"
+  },
+  "sections": {
+    "quickStart": {
+      "title": "🚀 Bắt đầu nhanh",
+      "description": "Bắt đầu với các mẫu đầu vào thường dùng nhất. Những ví dụ này cho thấy các loại đầu vào thiết yếu với chức năng xác thực và khả năng truy cập."
+    },
+    "variants": {
+      "title": "🎨 Các biến thể đầu vào",
+      "description": "Khám phá tất cả các biến thể đầu vào có sẵn cùng với các trường hợp sử dụng cụ thể và các tùy chọn định dạng cho các ngữ cảnh khác nhau."
+    },
+    "web3": {
+      "title": "⚡ Mẫu đầu vào Web3",
+      "description": "Các mẫu đầu vào chuyên biệt thường được sử dụng trong các ứng dụng Web3, bao gồm địa chỉ ví, tên miền ENS và số lượng token."
+    },
+    "accessibility": {
+      "title": "♿ Hướng dẫn về khả năng tiếp cận",
+      "description": "Đảm bảo các đầu vào của bạn có thể truy cập được cho tất cả người dùng với nhãn phù hợp, điều hướng bằng bàn phím và hỗ trợ trình đọc màn hình."
+    }
+  },
+  "validation": {
+    "emailInvalid": "Vui lòng nhập địa chỉ email hợp lệ",
+    "emailValid": "Địa chỉ email hợp lệ",
+    "walletInvalid": "Vui lòng nhập địa chỉ Ethereum hợp lệ",
+    "walletValid": "Địa chỉ Ethereum hợp lệ"
+  },
+  "quickStart": {
+    "essentialTitle": "1. Các loại đầu vào thiết yếu",
+    "emailLabel": "Địa chỉ email",
+    "passwordLabel": "Mật khẩu",
+    "passwordPlaceholder": "Nhập mật khẩu của bạn",
+    "searchLabel": "Tìm kiếm",
+    "searchPlaceholder": "Tìm tin nhắn...",
+    "messageLabel": "Tin nhắn",
+    "messagePlaceholder": "Nhập tin nhắn của bạn...",
+    "sizesTitle": "2. Biến thể kích thước",
+    "smallLabel": "Dữ liệu đầu vào nhỏ",
+    "smallPlaceholder": "Dữ liệu đầu vào kích thước nhỏ",
+    "defaultLabel": "Nhập mặc định",
+    "defaultPlaceholder": "Nhập kích thước mặc định",
+    "largeLabel": "Dữ liệu đầu vào lớn",
+    "largePlaceholder": "Dữ liệu đầu vào lớn",
+    "validationTitle": "3. Trạng thái xác thực",
+    "errorStateLabel": "Trạng thái lỗi",
+    "successStateLabel": "Trạng thái thành công",
+    "web3Title": "4. Dữ liệu đầu vào đặc thù cho Web3",
+    "walletLabel": "Địa chỉ ví",
+    "amountLabel": "Số lượng token",
+    "amountBalance": "Số dư: 2,4563 ETH"
+  },
+  "variants": {
+    "standardTitle": "Phiên bản chuẩn",
+    "specializedTitle": "Loại chuyên biệt",
+    "defaultLabel": "Nhập mặc định",
+    "defaultPlaceholder": "Trường nhập chuẩn",
+    "defaultHint": "Kiểu nhập phổ biến nhất",
+    "searchLabel": "Nhập tìm kiếm",
+    "searchPlaceholder": "Chức năng tìm kiếm",
+    "searchHint": "Tối ưu hóa cho các trường hợp sử dụng tìm kiếm",
+    "errorLabel": "Trạng thái lỗi",
+    "errorPlaceholder": "Dữ liệu đầu vào không hợp lệ",
+    "errorHint": "Đối với lỗi xác thực",
+    "iconLabel": "Với biểu tượng",
+    "iconHint": "Với vị trí biểu tượng bên trái",
+    "phoneLabel": "Số điện thoại",
+    "urlLabel": "URL trang web",
+    "dateLabel": "Ngày",
+    "fileLabel": "Tải tệp lên"
+  },
+  "web3": {
+    "walletInputsTitle": "Nhập địa chỉ ví",
+    "ethAddressLabel": "Địa chỉ Ethereum",
+    "solAddressLabel": "Địa chỉ Solana",
+    "ensLabel": "Tên miền ENS",
+    "snsLabel": "Miền SNS",
+    "tokenAmountsTitle": "Nhập số lượng token",
+    "ethAmountLabel": "Số tiền ETH",
+    "usdcAmountLabel": "Số tiền USDC",
+    "max": "MAX",
+    "ethBalance": "Số dư: 2,4563 ETH",
+    "usdcBalance": "Số dư: 1.547,23 USDC",
+    "gasTitle": "Cấu hình phí gas",
+    "gasPriceLabel": "Giá khí (Gwei)",
+    "gasSlow": "Chậm",
+    "gasStandard": "Chuẩn",
+    "gasFast": "Nhanh",
+    "gasSlowTime": "~5 phút",
+    "gasStandardTime": "~2 phút",
+    "gasFastTime": "~1 phút",
+    "customGasLabel": "Giá khí tùy chỉnh",
+    "customGasHint": "Chi phí ước tính: 8,45 USD • Thời gian ước tính: ~2 phút"
+  },
+  "accessibility": {
+    "bestPracticesTitle": "✅ Các thực hành tốt nhất",
+    "bestPractices": [
+      "Luôn cung cấp nhãn mô tả cho phần mềm đọc màn hình",
+      "Sử dụng các loại đầu vào phù hợp (email, điện thoại, URL, v.v.)",
+      "Thêm văn bản mẫu hữu ích và hướng dẫn",
+      "Cung cấp thông báo lỗi rõ ràng kèm theo gợi ý",
+      "Đảm bảo độ tương phản màu sắc phù hợp (tối thiểu 4,5:1)",
+      "Hỗ trợ điều hướng bằng bàn phím và trạng thái focus"
+    ],
+    "avoidTitle": "❌ Tránh",
+    "avoid": [
+      "Sử dụng văn bản mẫu làm nhãn duy nhất",
+      "Chỉ dựa vào màu sắc để chỉ trạng thái xác thực",
+      "Làm cho đầu vào quá nhỏ để tương tác thoải mái",
+      "Cung cấp thông báo lỗi mơ hồ hoặc không hữu ích",
+      "Tắt tính năng điền tự động của trình duyệt mà không có lý do chính đáng",
+      "Loại bỏ các chỉ báo tập trung hoặc làm chúng khó nhìn thấy"
+    ],
+    "examplesTitle": "Ví dụ về triển khai khả năng truy cập"
+  },
+  "nav": {
+    "back": "Quay lại Hệ thống Thiết kế",
+    "lastUpdated": "Cập nhật lần cuối: {{date}}"
+  }
+}

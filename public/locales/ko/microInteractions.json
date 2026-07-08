@@ -1,0 +1,82 @@
+{
+  "seo": {
+    "title": "마이크로 인터랙션 및 애니메이션 - 디자인 시스템 - 내부 - {{emailDomain}}",
+    "description": "호버 효과, 전환 효과, Web3 전용 상호작용을 포함한 포괄적인 애니메이션 시스템"
+  },
+  "header": {
+    "badge": "마이크로 인터랙션 및 애니메이션",
+    "title": "마이크로 인터랙션 및 애니메이션",
+    "description": "호버 효과, 로딩 상태, 전환 효과, Web3 전용 상호작용을 포함한 포괄적인 애니메이션 시스템. 모든 애니메이션은 사용자 모션 선호 설정을 존중하며 부드럽고 매력적인 사용자 경험을 제공합니다."
+  },
+  "stats": {
+    "variants": "애니메이션 변형",
+    "performance": "부드러운 성능",
+    "motionSafe": "모션 세이프",
+    "specialized": "전문적인"
+  },
+  "hover": {
+    "title": "호버 효과",
+    "description": "버튼, 카드 및 인터랙티브 요소를 위한 섬세하면서도 매력적인 호버 효과.",
+    "buttonEffectsTitle": "버튼 호버 효과",
+    "liftEffect": "리프트 효과",
+    "glowEffect": "글로우 효과",
+    "scaleEffect": "스케일 효과",
+    "shimmerEffect": "반짝임 효과",
+    "cardEffectsTitle": "카드 호버 효과",
+    "cardSubtle": "섬세한 호버 효과 - 부드럽게 들어 올림",
+    "cardGlow": "글로우 호버 효과 - 부드러운 빛을 추가"
+  },
+  "loading": {
+    "title": "로딩 상태",
+    "description": "사용자를 몰입시키는 로딩 애니메이션과 진행률 표시기.",
+    "spinnersTitle": "스피너스",
+    "interactiveDemoTitle": "인터랙티브 데모",
+    "loadingLabel": "로딩 중...",
+    "startLoading": "로딩 시작",
+    "simulateProgress": "진행 상황 시뮬레이션",
+    "progress": "진행률: {{progress}}%"
+  },
+  "web3": {
+    "title": "웹3 애니메이션",
+    "description": "웹3 상호작용을 위한 전문화된 애니메이션으로 지갑 연결 및 거래 상태를 포함합니다.",
+    "walletStatesTitle": "지갑 연결 상태",
+    "connecting": "연결 중...",
+    "connected": "연결됨",
+    "connectWallet": "지갑 연결",
+    "statusLabel": "상태:",
+    "transactionStatesTitle": "거래 상태",
+    "transactionPending": "거래 대기 중",
+    "transactionConfirmed": "거래가 확인되었습니다",
+    "transactionFailed": "거래 실패"
+  },
+  "motion": {
+    "title": "모션 선호 설정",
+    "description": "모든 애니메이션은 사용자 움직임 선호를 존중하며 접근성을 위한 대안을 제공합니다.",
+    "reducedMotionTitle": "모션 감소 지원",
+    "respectsPreferences": "모션 선호사항 존중",
+    "fadeOnly": "페이드 아닐레이션만",
+    "scaleOnly": "스케일만 애니메이션",
+    "safeAnimationsTitle": "안전한 애니메이션",
+    "safeFade": "안전한 페이드 전환",
+    "safeSlide": "안전한 슬라이드 전환"
+  },
+  "bestPractices": {
+    "title": "애니메이션 최적화 팁",
+    "doTitle": "✅ 이것을 하세요",
+    "do": [
+      "마이크로 인터랙션을 위해 애니메이션을 300ms 이하로 유지하세요.",
+      "자연스러운 움직임을 위해 이징 함수를 사용하세요",
+      "사용자 행동에 즉각적인 피드백을 제공하세요",
+      "선호하는 움직임 감소 설정 존중",
+      "500ms 이상 소요되는 작업에는 로딩 상태를 사용하세요"
+    ],
+    "avoidTitle": "❌ 이걸 피하세요",
+    "avoid": [
+      "애니메이션 과용 - 적은 것이 더 좋다",
+      "진행 상황 없이 긴 로딩 애니메이션",
+      "기능에 방해가 되는 애니메이션",
+      "페이지 로드 시 자동 재생되는 애니메이션",
+      "운동 민감성 있는 사용자를 위한 복잡한 애니메이션"
+    ]
+  }
+}

@@ -1,0 +1,127 @@
+{
+  "seo": {
+    "title": "加载状态 - 设计系统 - 内部 - {{emailDomain}}",
+    "description": "包含加载指示器、骨架、进度指示器和Web3模式的完整加载状态文档"
+  },
+  "copy": {
+    "copied": "✓ 已复制！",
+    "copy": "复制"
+  },
+  "header": {
+    "badge": "加载状态",
+    "title": "加载状态组件",
+    "description": "加载指示器和进度状态，可在异步操作期间提供清晰的视觉反馈，专为Web3交易和区块链交互而设计。",
+    "stats": {
+      "spinnerTypes": "旋转器类型",
+      "skeletonPatterns": "骨架模式",
+      "progressTypes": "进度类型",
+      "web3Examples": "Web3 示例"
+    }
+  },
+  "quickStart": {
+    "title": "🚀 快速入门",
+    "description": "从最常用的加载模式开始。这些示例展示了不同使用场景下的关键加载状态。",
+    "spinners": {
+      "title": "1. 基本加载旋转图标",
+      "small": "小",
+      "default": "默认",
+      "large": "大"
+    },
+    "buttons": {
+      "title": "2. 加载按钮状态",
+      "loading": "加载中...",
+      "clickToLoad": "点击加载",
+      "processing": "处理中",
+      "uploading": "正在上传..."
+    },
+    "progress": {
+      "title": "3. 进度指示器",
+      "label": "进度",
+      "startDemo": "开始演示"
+    },
+    "skeleton": {
+      "title": "4. 骨架加载"
+    }
+  },
+  "web3": {
+    "title": "⚡ Web3 加载模式",
+    "description": "Web3操作（钱包连接、交易和区块链确认等）的专用加载状态。",
+    "transaction": {
+      "title": "交易加载状态",
+      "startDemo": "开始交易演示",
+      "currentState": "当前状态: {{state}}",
+      "pending": {
+        "title": "交易待处理",
+        "message": "请在您的钱包中确认交易..."
+      },
+      "confirming": {
+        "title": "确认交易",
+        "message": "交易已提交。正在等待区块链确认...",
+        "hash": "哈希: 0x1234...abcd"
+      },
+      "confirmed": {
+        "title": "交易已确认",
+        "message": "您的交易已在区块链上确认！",
+        "block": "区块: #18,234,567"
+      }
+    },
+    "wallet": {
+      "title": "钱包连接状态",
+      "connecting": {
+        "title": "连接钱包",
+        "message": "请在您的钱包中批准连接"
+      },
+      "network": {
+        "title": "检测网络",
+        "message": "检查网络兼容性..."
+      }
+    },
+    "email": {
+      "title": "邮件和消息加载中",
+      "encrypting": {
+        "title": "加密消息中...",
+        "message": "使用Web3加密保护您的电子邮件"
+      },
+      "sending": {
+        "title": "正在发送到区块链...",
+        "message": "将电子邮件元数据上链记录"
+      },
+      "uploadProgress": "上传进度",
+      "uploading": "正在上传...",
+      "startUploadDemo": "开始上传演示"
+    }
+  },
+  "skeletons": {
+    "title": "💀 骷髅图案",
+    "description": "内容占位符，模拟加载内容的结构以提升感知性能。",
+    "emailList": "邮件列表骨架",
+    "cardContent": "卡片内容骨架"
+  },
+  "accessibility": {
+    "title": "♿ 可访问性指南",
+    "description": "确保您的加载状态具有适当的 ARIA 属性、屏幕阅读器支持和焦点管理。",
+    "bestPractices": {
+      "title": "✅ 最佳实践",
+      "items": [
+        "使用 ARIA live 区域来处理动态加载状态",
+        "提供有意义的加载消息",
+        "尽可能包含进度信息",
+        "为偏好用户使用减少的动画",
+        "在加载期间保持焦点管理"
+      ]
+    },
+    "avoid": {
+      "title": "❌ 避免",
+      "items": [
+        "没有文本替代的加载指示器",
+        "无进度指示的无限加载",
+        "可能引发癫痫的快速闪烁动画",
+        "在未警告的情况下移除焦点或内容",
+        "无上下文的通用“加载中...”消息"
+      ]
+    },
+    "implementation": "可访问性实现"
+  },
+  "backToDesignSystem": "返回设计系统",
+  "lastUpdated": "最后更新：{{date}}"
+}

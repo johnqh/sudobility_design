@@ -1,0 +1,159 @@
+{
+  "seo": {
+    "title": "Forms Advanced - Design System - Внутренний - {{emailDomain}}",
+    "description": "Расширенные шаблоны форм, включая многошаговые формы, загрузку файлов и ввод Web3"
+  },
+  "header": {
+    "badge": "Расширенные формы",
+    "title": "Расширенная система форм",
+    "description": "Расширенные шаблоны форм, включая многошаговые мастера, загрузку файлов, специфичные для Web3 вводы и сложные схемы валидации для сложных взаимодействий с пользователем."
+  },
+  "quickStart": {
+    "heading": "Быстрый старт",
+    "copyTitle": "Копировать в буфер обмена",
+    "examples": {
+      "multiStep": {
+        "title": "Многошаговая форма",
+        "description": "Форма пошагового процесса с индикатором хода выполнения"
+      },
+      "fileUpload": {
+        "title": "Загрузка файла перетаскиванием",
+        "description": "Расширенная загрузка файлов с предварительным просмотром и проверкой"
+      },
+      "tokenAmount": {
+        "title": "Ввод суммы токена Web3",
+        "description": "Специализированный ввод для сумм криптовалюты с проверкой"
+      },
+      "validation": {
+        "title": "Расширенная проверка",
+        "description": "Проверка в реальном времени с пользовательскими сообщениями об ошибках"
+      }
+    }
+  },
+  "steps": {
+    "account": {
+      "title": "Настройка аккаунта",
+      "description": "Основная информация об учетной записи"
+    },
+    "wallet": {
+      "title": "Подключение кошелька",
+      "description": "Подключите свою веб3-кошелек"
+    },
+    "transaction": {
+      "title": "Сведения о транзакции",
+      "description": "Настройка параметров транзакции"
+    },
+    "review": {
+      "title": "Проверить и подтвердить",
+      "description": "Проверить и отправить"
+    }
+  },
+  "multiStep": {
+    "heading": "Многошаговые формы",
+    "cardTitle": "Мастер настройки кошелька",
+    "cardDescription": "Интерактивная форма из нескольких шагов с отслеживанием прогресса и валидацией",
+    "emailLabel": "Адрес электронной почты",
+    "emailPlaceholder": "Введите свой электронный адрес",
+    "passwordLabel": "Пароль",
+    "passwordPlaceholder": "Создайте надежный пароль",
+    "confirmPasswordLabel": "Подтвердите пароль",
+    "confirmPasswordPlaceholder": "Подтвердите пароль",
+    "walletAddressLabel": "Адрес кошелька",
+    "walletAddressPlaceholder": "0x...",
+    "networkLabel": "Сеть",
+    "networks": {
+      "ethereum": "Основная сеть Ethereum",
+      "polygon": "Многоугольник",
+      "bsc": "Binance Smart Chain",
+      "arbitrum": "Arbitrum"
+    },
+    "tokenAmountLabel": "Сумма токенов",
+    "tokenAmountPlaceholder": "0,00",
+    "balance": "Баланс: 1,234567 ETH (2 468,90 $)",
+    "max": "Макс",
+    "gasPriceLabel": "Цена газа (Gwei)",
+    "gasPricePlaceholder": "20",
+    "gasPriceHint": "Более высокие цены на газ приводят к более быстрой подтверждению транзакций",
+    "reviewTitle": "Проверьте свою транзакцию",
+    "reviewNetwork": "Сеть:",
+    "reviewToAddress": "Адресат:",
+    "reviewAmount": "Сумма:",
+    "reviewGasPrice": "Цена на газ:",
+    "warningTitle": "Предупреждение о транзакции",
+    "warningBody": "Пожалуйста, дважды проверьте все детали транзакции. Транзакции в блокчейне нельзя отменить.",
+    "previous": "Предыдущий",
+    "next": "Следующий",
+    "submit": "Отправить транзакцию"
+  },
+  "validationMessages": {
+    "invalidAddress": "Неверный формат адреса Ethereum",
+    "positiveAmount": "Сумма должна быть положительным числом",
+    "insufficientBalance": "Недостаточный баланс",
+    "passwordMinLength": "Пароль должен содержать не менее 8 символов",
+    "passwordComplexity": "Пароль должен содержать заглавные, строчные буквы и цифры",
+    "passwordsDoNotMatch": "Пароли не совпадают"
+  },
+  "fileUpload": {
+    "heading": "Загрузка файлов",
+    "cardTitle": "Загрузка документа",
+    "cardDescription": "Загрузка файлов перетаскиванием с предварительным просмотром и проверкой",
+    "dropTitle": "Перетащите файлы сюда для загрузки",
+    "dropSubtitle": "Или нажмите, чтобы выбрать файлы с вашего компьютера",
+    "chooseFiles": "Выбрать файлы",
+    "supportedFormats": "Поддерживаемые форматы: PDF, DOC, DOCX, JPG, PNG, TXT (максимум 10 МБ на файл)",
+    "uploadedFiles": "Загруженные файлы ({{count}})",
+    "megabytes": "{{size}} МБ"
+  },
+  "web3": {
+    "heading": "Специализированные вводы Web3",
+    "walletCard": {
+      "title": "Ввод адреса кошелька",
+      "description": "Специализированный ввод для адресов криптовалют с проверкой",
+      "recipientLabel": "Адрес получателя",
+      "recipientPlaceholder": "0x... или имя ENS",
+      "validAddress": "✓ Действительный адрес Ethereum",
+      "ensLabel": "Имя ENS",
+      "ensPlaceholder": "vitalik.eth",
+      "ensResolves": "→ Решается в: 0x742d...5f0bEb7"
+    },
+    "tokenCard": {
+      "title": "Ввод суммы токенов",
+      "description": "Точное вводимое количество токенов с отображением баланса",
+      "amountLabel": "Сумма для отправки",
+      "amountPlaceholder": "0,00",
+      "balance": "Баланс: 1,234567 ETH",
+      "usdEquivalent": "примерно 1 234,50 долл. США",
+      "quarter": "25%",
+      "half": "50%",
+      "threeQuarters": "75%",
+      "max": "Макс",
+      "gasSettingsLabel": "Настройки газа",
+      "gasSlow": "Медленно",
+      "gasSlowValue": "15 Gwei",
+      "gasStandard": "Стандарт",
+      "gasStandardValue": "25 Gwei",
+      "gasFast": "Быстро",
+      "gasFastValue": "35 Gwei"
+    }
+  },
+  "validationSection": {
+    "heading": "Расширенная проверка",
+    "cardTitle": "Примеры проверки в реальном времени",
+    "cardDescription": "Расширенные паттерны проверки с обратной связью в реальном времени и пользовательскими сообщениями об ошибках",
+    "strongPasswordLabel": "Сильный пароль",
+    "strongPasswordPlaceholder": "Введите пароль",
+    "checkMinChars": "Не менее 8 символов",
+    "checkUppercase": "Содержит заглавную букву",
+    "checkNumber": "Содержит число",
+    "checkSpecialChar": "Содержит специальный символ",
+    "emailLabel": "Адрес электронной почты",
+    "emailPlaceholder": "Введите электронную почту",
+    "validEmail": "✓ Допустимый формат электронной почты",
+    "invalidLabel": "Неверный пример ввода",
+    "invalidPlaceholder": "Введите значение",
+    "invalidMessage": "В этом поле содержатся недопустимые символы",
+    "loadingLabel": "Загрузка проверки",
+    "loadingPlaceholder": "Проверка доступности...",
+    "loadingMessage": "Проверка доступности имени пользователя..."
+  }
+}

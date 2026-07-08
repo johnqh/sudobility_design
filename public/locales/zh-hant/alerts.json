@@ -1,0 +1,142 @@
+{
+  "seo": {
+    "title": "警報 - 設計系統 - 內部 - {{emailDomain}}",
+    "description": "全面的警報組件文件，包含變體、佈局、操作和Web3整合"
+  },
+  "copy": {
+    "copied": "✓ 已複製！",
+    "copy": "複製"
+  },
+  "header": {
+    "badge": "警報",
+    "title": "警報組件",
+    "intro": "提供重要資訊、警告或確認的上下文反饋訊息，具有清晰的視覺層次和可操作內容。"
+  },
+  "stats": {
+    "alertTypes": "警報類型",
+    "layoutOptions": "佈局選項",
+    "actionPatterns": "動作模式",
+    "web3Examples": "Web3 案例"
+  },
+  "quickStart": {
+    "title": "🚀 快速入門",
+    "description": "從最常見的警示模式開始。這些範例展示了基本的警示類型及其常見使用情境。",
+    "essentialTitle": "1. 必要的警報類型",
+    "success": {
+      "title": "成功！",
+      "body": "您的交易已在區塊鏈上確認。"
+    },
+    "info": {
+      "title": "資訊",
+      "body": "請連接您的錢包以繼續此操作。"
+    },
+    "warning": {
+      "title": "警告",
+      "body": "檢測到高額Gas費。建議等待網絡擁塞降低。"
+    },
+    "error": {
+      "title": "錯誤",
+      "body": "交易失敗。請檢查您的錢包餘額並重試。"
+    },
+    "compactTitle": "2. 緊湊型警示樣式",
+    "compact": {
+      "success": "✓ 電子郵件已成功發送",
+      "info": "ℹ 設定中可用的新功能",
+      "warning": "⚠ 钱包已斷開",
+      "error": "✗ 加載訊息失敗"
+    },
+    "dismissibleTitle": "3. 可關閉的警示訊息",
+    "dismissible": {
+      "successTitle": "帳戶已驗證！",
+      "successBody": "您現在可以存取所有高級功能。",
+      "infoTitle": "有新更新可用",
+      "infoBody": "2.0 版本包含改進的安全功能。"
+    },
+    "actionsTitle": "4. 帶操作按鈕的警報",
+    "actions": {
+      "title": "訂閱即將到期",
+      "body": "您的高級功能將在3天後被停用。",
+      "renewNow": "立即續訂",
+      "remindLater": "稍後提醒"
+    }
+  },
+  "variants": {
+    "title": "🎨 警報變體",
+    "description": "探索所有可用的警報變體及其語義含義，並了解在不同用戶溝通情境中的適當使用情境。",
+    "standardTitle": "標準警報",
+    "standard": {
+      "successTitle": "成功警報",
+      "successBody": "用於已完成的操作和正面確認",
+      "infoTitle": "資訊警示",
+      "infoBody": "用於中立資訊和實用提示",
+      "warningTitle": "警告提示",
+      "warningBody": "用於需要關注的潛在問題",
+      "errorTitle": "錯誤警示",
+      "errorBody": "用於失敗的操作和嚴重問題"
+    },
+    "compactTitle": "緊緻變體",
+    "compact": {
+      "success": "緊湊的成功訊息",
+      "successNote": "最小空間使用",
+      "info": "緊湊的資訊訊息",
+      "infoNote": "快速通知",
+      "warning": "緊湊的警告訊息",
+      "warningNote": "簡要的警告提示",
+      "error": "緊湊的錯誤訊息",
+      "errorNote": "簡短錯誤通知"
+    }
+  },
+  "web3": {
+    "title": "⚡ Web3 集成範例",
+    "description": "Web3應用程式中常見的警報實際案例，包括錢包連接、交易和區塊鏈互動。",
+    "transactionTitle": "交易狀態通知",
+    "transaction": {
+      "pendingTitle": "交易待處理",
+      "pendingBody": "您的交易正在區塊鏈上處理中。這可能需要幾分鐘。",
+      "confirmedTitle": "交易已確認",
+      "confirmedBody": "您的電子郵件已發送並記錄在區塊鏈上。",
+      "failedTitle": "交易失敗",
+      "failedBody": "資金不足或氣體限制過低。請重試。"
+    },
+    "walletTitle": "錢包連接提醒",
+    "wallet": {
+      "notConnectedTitle": "錢包未連接",
+      "notConnectedBody": "請連接您的錢包以訪問電子郵件並發送訊息。",
+      "connectWallet": "連接錢包",
+      "networkMismatchTitle": "網絡不匹配",
+      "networkMismatchBody": "請切換到以太坊主網以繼續使用該平台。",
+      "switchNetwork": "切換網路"
+    },
+    "gasTitle": "Gas費和網絡警報",
+    "gas": {
+      "highFeesTitle": "檢測到高Gas費",
+      "highFeesBody": "當前天然氣價格異常高。建議等待網絡擁塞降低。",
+      "ensTitle": "檢測到新的ENS域名",
+      "ensBody": "您的錢包現在擁有alice.eth。您可以在該地址接收電子郵件！",
+      "setAsPrimary": "設為主要"
+    }
+  },
+  "accessibility": {
+    "title": "♿ 可及性指南",
+    "description": "確保您的警報對所有用戶都可存取，使用正確的 ARIA 屬性、焦點管理與螢幕閱讀器相容性。",
+    "bestPracticesTitle": "✅ 最佳實踐",
+    "bestPractices": [
+      "使用適當的 ARIA 角色（alert、alertdialog、status）",
+      "包含描述性文本，而不仅仅是顏色或圖標",
+      "為互動元素提供鍵盤導航",
+      "使用足夠的顏色對比度（最小對比度為4.5:1）",
+      "適時取消提醒"
+    ],
+    "avoidTitle": "❌ 避免",
+    "avoid": [
+      "自動消失的關鍵錯誤訊息",
+      "僅使用顏色來表示重要性",
+      "用過多的警報讓用戶感到不知所措",
+      "使警報文字太小而無法閱讀",
+      "隱藏重要操作於不必要的點擊之後"
+    ],
+    "ariaTitle": "ARIA 實作範例"
+  },
+  "backToDesign": "返回設計系統",
+  "lastUpdated": "最後更新：{{date}}"
+}

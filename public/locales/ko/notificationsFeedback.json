@@ -1,0 +1,188 @@
+{
+  "seo": {
+    "title": "알림 및 피드백 - 디자인 시스템 - 내부 - {{emailDomain}}",
+    "description": "토스트, 진행률 표시기, 시스템 상태를 포함한 알림 및 피드백 구성 요소"
+  },
+  "toasts": {
+    "copied": {
+      "title": "복사됨!",
+      "message": "코드가 클립보드에 복사되었습니다"
+    },
+    "complete": {
+      "title": "완료!",
+      "message": "작업이 성공적으로 완료되었습니다"
+    },
+    "success": {
+      "title": "거래가 확인되었습니다!",
+      "message": "ETH 송금이 성공적으로 완료되었습니다"
+    },
+    "error": {
+      "title": "거래 실패",
+      "message": "거래에 필요한 가스가 부족합니다"
+    },
+    "warning": {
+      "title": "높은 가스 수수료",
+      "message": "네트워크 혼잡이 감지됨",
+      "actionLabel": "가스 조정"
+    },
+    "gasAdjusted": {
+      "title": "가스 조정됨",
+      "message": "가스 가격이 25 gwei로 업데이트되었습니다"
+    },
+    "info": {
+      "title": "새로운 기능 사용 가능",
+      "message": "다중 체인 스왑이 이제 지원됩니다"
+    }
+  },
+  "header": {
+    "badge": "알림 및 피드백",
+    "title": "알림 및 피드백 시스템",
+    "description": "웹3 애플리케이션을 위한 포괄적인 알림 및 피드백 시스템으로 토스트, 진행률 표시기, 거래 상태 업데이트, 시스템 상태 표시를 포함합니다."
+  },
+  "quickStart": {
+    "title": "빠른 시작",
+    "copyTooltip": "클립보드에 복사",
+    "examples": {
+      "toast": {
+        "title": "토스트 알림",
+        "description": "자동 종료 및 작업이 있는 일시적인 알림"
+      },
+      "progress": {
+        "title": "진행 알림",
+        "description": "오랜 시간이 걸리는 작업의 진행률 표시"
+      },
+      "transaction": {
+        "title": "거래 상태",
+        "description": "확정을 포함한 Web3 거래 진행 상황"
+      },
+      "systemStatus": {
+        "title": "시스템 상태 표시기",
+        "description": "실시간 시스템 및 연결 상태"
+      }
+    }
+  },
+  "toastSection": {
+    "title": "토스트 알림",
+    "demoTitle": "인터랙티브 토스트 데모",
+    "demoDescription": "버튼을 클릭하여 다양한 종류의 토스트 알림을 트리거합니다",
+    "buttons": {
+      "success": "성공",
+      "error": "오류",
+      "warning": "경고",
+      "info": "정보"
+    },
+    "featuresTitle": "토스트 유형 및 특징",
+    "features": {
+      "successLabel": "성공:",
+      "successText": "거래 확인, 완료된 작업",
+      "errorLabel": "오류:",
+      "errorText": "실패한 거래, 네트워크 오류",
+      "warningLabel": "경고:",
+      "warningText": "높은 가스 수수료, 보안 경고 (작업 포함)",
+      "infoLabel": "정보:",
+      "infoText": "새로운 기능, 시스템 업데이트 (지속적)",
+      "autoDismiss": "5초 후 자동으로 닫힘 (지속되지 않는 경우)",
+      "actionButtons": "인터랙티브 응답을 위한 선택적 액션 버튼"
+    }
+  },
+  "progressSection": {
+    "title": "진행률 지표",
+    "linear": {
+      "title": "선형 진행",
+      "description": "파일 업로드 및 작업에 대한 진행률 바",
+      "emailSync": "이메일 동기화 진행 상태",
+      "fileUpload": "파일 업로드",
+      "uploading": "document.pdf (2.3 MB) 업로드 중",
+      "simulate": "진행 상황 시뮬레이션"
+    },
+    "spinners": {
+      "title": "로딩 스피너",
+      "description": "다양한 로딩 상태 및 스피너",
+      "loadingTransactions": "거래를 불러오는 중...",
+      "connectingWallet": "지갑에 연결 중...",
+      "syncingBlockchain": "블록체인 데이터 동기화 중..."
+    }
+  },
+  "transactionSection": {
+    "title": "Web3 거래 상태",
+    "trackerTitle": "거래 추적기",
+    "trackerDescription": "확정 진행 상황이 있는 실시간 거래 상태",
+    "confirmations": "확인",
+    "confirmationsLabel": "확인",
+    "statuses": {
+      "pending": "보류 중",
+      "confirming": "확인",
+      "confirmed": "확인됨",
+      "failed": "실패"
+    },
+    "types": {
+      "sendEth": "ETH 전송",
+      "swapTokens": "토큰 교환",
+      "approveToken": "토큰 승인"
+    },
+    "statesTitle": "거래 상태",
+    "states": {
+      "pendingLabel": "보류 중:",
+      "pendingText": "거래가 메모풀에 제출됨",
+      "confirmingLabel": "확인합니다:",
+      "confirmingText": "블록에 포함되어 있음 (진행률 표시됨)",
+      "confirmedLabel": "확인됨:",
+      "confirmedText": "필요한 확인이 완료되었습니다",
+      "failedLabel": "실패함:",
+      "failedText": "거래가 되돌아가거나 거부되었습니다"
+    }
+  },
+  "systemStatusSection": {
+    "title": "시스템 상태 및 지표",
+    "connection": {
+      "title": "연결 상태",
+      "description": "실시간 연결 및 시스템 상태",
+      "systemStatus": "시스템 상태",
+      "online": "모든 시스템이 정상 작동 중입니다",
+      "degraded": "일부 서비스가 사용할 수 없습니다",
+      "offline": "시스템 유지보수",
+      "statusLabels": {
+        "online": "온라인",
+        "degraded": "열화",
+        "offline": "오프라인"
+      },
+      "internetConnection": "인터넷 연결",
+      "connected": "연결됨",
+      "walletConnection": "지갑 연결",
+      "metaMask": "MetaMask",
+      "ethereumNetwork": "이더리움 네트워크",
+      "mainnet": "Mainnet",
+      "securityStatus": "보안 상태",
+      "warning": "경고"
+    },
+    "badges": {
+      "title": "알림 배지",
+      "description": "지표 및 상태 배지 카운터",
+      "countBadges": "배지 세기",
+      "statusIndicators": "상태 표시기",
+      "online": "온라인",
+      "away": "멀리",
+      "offline": "오프라인"
+    }
+  },
+  "contextualFeedback": {
+    "title": "맥락 기반 피드백",
+    "smartTitle": "스마트 피드백 패턴",
+    "smartDescription": "사용자 행동과 시스템 상태에 맞춰 적응하는 맥락 인식 피드백",
+    "actionFeedback": "행동 피드백",
+    "emailSent": "이메일이 성공적으로 전송되었습니다",
+    "autoSave": "자동 저장이 활성화됨",
+    "draftSaved": "로컬에 초안이 저장되었습니다",
+    "smartSuggestions": "스마트 추천",
+    "enable2fa": {
+      "title": "더 높은 보안을 위해 2FA를 활성화하세요",
+      "description": "지갑 보호를 위한 추천",
+      "action": "활성화"
+    },
+    "backupSeed": {
+      "title": "시드 키워드를 백업하세요",
+      "description": "지갑 복구 보호하기",
+      "action": "백업"
+    }
+  }
+}

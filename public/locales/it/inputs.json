@@ -1,0 +1,136 @@
+{
+  "seo": {
+    "title": "Input - Sistema di design - Interno - {{emailDomain}}",
+    "description": "Documentazione completa dei componenti di input con varianti, dimensioni, stati e integrazione Web3"
+  },
+  "code": {
+    "copied": "✓ Copiato!",
+    "copy": "Copia"
+  },
+  "header": {
+    "badge": "Ingressi",
+    "title": "Componenti di input",
+    "intro": "Componenti di input del modulo con un design coerente, stati di convalida e funzionalità di accessibilità progettati per applicazioni tradizionali e Web3."
+  },
+  "stats": {
+    "inputTypes": "Tipi di input",
+    "sizeOptions": "Opzioni di taglia",
+    "stateTypes": "Tipi di stato",
+    "web3Patterns": "Modelli Web3"
+  },
+  "sections": {
+    "quickStart": {
+      "title": "🚀 Avvio rapido",
+      "description": "Inizia con i modelli di input più comunemente usati. Questi esempi mostrano tipi di input fondamentali con convalida e funzionalità di accessibilità."
+    },
+    "variants": {
+      "title": "🎨 Varianti di input",
+      "description": "Esplora tutte le varianti di input disponibili con i rispettivi casi d'uso specifici e le opzioni di formattazione per diversi contesti."
+    },
+    "web3": {
+      "title": "⚡ Modelli di input Web3",
+      "description": "Modelli di input specializzati comunemente usati nelle applicazioni Web3, inclusi indirizzi del portafoglio, domini ENS e importi di token."
+    },
+    "accessibility": {
+      "title": "♿ Linee guida sull'accessibilità",
+      "description": "Assicurati che i tuoi input siano accessibili a tutti gli utenti con etichettatura corretta, navigazione con la tastiera e supporto per i lettori schermo."
+    }
+  },
+  "validation": {
+    "emailInvalid": "Inserire un indirizzo email valido",
+    "emailValid": "Indirizzo email valido",
+    "walletInvalid": "Inserire un indirizzo Ethereum valido",
+    "walletValid": "Indirizzo Ethereum valido"
+  },
+  "quickStart": {
+    "essentialTitle": "1. Tipi di input fondamentali",
+    "emailLabel": "Indirizzo email",
+    "passwordLabel": "Password",
+    "passwordPlaceholder": "Inserisci la tua password",
+    "searchLabel": "Cerca",
+    "searchPlaceholder": "Cerca messaggi...",
+    "messageLabel": "Messaggio",
+    "messagePlaceholder": "Scrivi il tuo messaggio...",
+    "sizesTitle": "2. Variazioni di dimensione",
+    "smallLabel": "Piccola input",
+    "smallPlaceholder": "Piccola dimensione di input",
+    "defaultLabel": "Input predefinito",
+    "defaultPlaceholder": "Input dimensione predefinita",
+    "largeLabel": "Grande input",
+    "largePlaceholder": "Grande dimensione di input",
+    "validationTitle": "3. Stati di convalida",
+    "errorStateLabel": "Stato di errore",
+    "successStateLabel": "Stato di successo",
+    "web3Title": "4. Input specifici per Web3",
+    "walletLabel": "Indirizzo del portafoglio",
+    "amountLabel": "Importo dei token",
+    "amountBalance": "Saldo: 2,4563 ETH"
+  },
+  "variants": {
+    "standardTitle": "Varianti standard",
+    "specializedTitle": "Tipi specializzati",
+    "defaultLabel": "Input predefinito",
+    "defaultPlaceholder": "Campo di input standard",
+    "defaultHint": "Stile di input più comune",
+    "searchLabel": "Input di ricerca",
+    "searchPlaceholder": "Funzionalità di ricerca",
+    "searchHint": "Ottimizzato per casi d'uso di ricerca",
+    "errorLabel": "Stato di errore",
+    "errorPlaceholder": "Input non valido",
+    "errorHint": "Per gli errori di convalida",
+    "iconLabel": "Con icona",
+    "iconHint": "Con posizionamento dell'icona a sinistra",
+    "phoneLabel": "Numero di telefono",
+    "urlLabel": "URL del sito web",
+    "dateLabel": "Data",
+    "fileLabel": "Caricamento file"
+  },
+  "web3": {
+    "walletInputsTitle": "Inserimenti indirizzo portafoglio",
+    "ethAddressLabel": "Indirizzo Ethereum",
+    "solAddressLabel": "Indirizzo Solana",
+    "ensLabel": "Dominio ENS",
+    "snsLabel": "Dominio SNS",
+    "tokenAmountsTitle": "Inserimenti quantità token",
+    "ethAmountLabel": "Importo in ETH",
+    "usdcAmountLabel": "Importo in USDC",
+    "max": "MAX",
+    "ethBalance": "Saldo: 2,4563 ETH",
+    "usdcBalance": "Saldo: 1.547,23 USDC",
+    "gasTitle": "Configurazione delle commissioni di gas",
+    "gasPriceLabel": "Prezzo del gas (Gwei)",
+    "gasSlow": "Lento",
+    "gasStandard": "Standard",
+    "gasFast": "Veloce",
+    "gasSlowTime": "~5 min",
+    "gasStandardTime": "~2 min",
+    "gasFastTime": "~1 min",
+    "customGasLabel": "Prezzo del gas personalizzato",
+    "customGasHint": "Costo stimato: 8,45 USD • Tempo stimato: ~2 minuti"
+  },
+  "accessibility": {
+    "bestPracticesTitle": "✅ Migliori pratiche",
+    "bestPractices": [
+      "Fornire sempre etichette descrittive per i lettori schermo",
+      "Utilizzare i tipi di input appropriati (posta elettronica, telefono, URL, ecc.)",
+      "Includi testo di suggerimento utile e istruzioni",
+      "Fornire messaggi di errore chiari con suggerimenti",
+      "Assicurati un contrasto cromatico adeguato (minimo 4,5:1)",
+      "Supporto per la navigazione con la tastiera e gli stati di focus"
+    ],
+    "avoidTitle": "❌ Evitare",
+    "avoid": [
+      "Utilizzo del testo segnaposto come unico etichetta",
+      "Fidarsi solo del colore per indicare gli stati di convalida",
+      "Rendere gli input troppo piccoli per un'interazione comoda",
+      "Fornire messaggi di errore vaghi o poco utili",
+      "Disabilitare il completamento automatico del browser senza buona ragione",
+      "Rimuovere gli indicatori di focus o renderli difficili da vedere"
+    ],
+    "examplesTitle": "Esempi di implementazione dell'accessibilità"
+  },
+  "nav": {
+    "back": "Torna al sistema di design",
+    "lastUpdated": "Ultimo aggiornamento: {{date}}"
+  }
+}

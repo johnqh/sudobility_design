@@ -1,0 +1,117 @@
+{
+  "seo": {
+    "title": "表单 - 设计系统 - 内部 - {{emailDomain}}",
+    "description": "完整表单元素和输入组件展示用于设计系统"
+  },
+  "codeExample": {
+    "preview": "预览",
+    "usage": "使用"
+  },
+  "header": {
+    "badge": "表单元素",
+    "title": "表单组件与输入元素",
+    "description": "功能全面的表单元素库，提供一致的样式、验证状态和无障碍功能。所有组件均支持浅色/深色主题，并包含适当的焦点管理。"
+  },
+  "quickStart": {
+    "title": "快速入门 - 基本表单模式",
+    "description": "开箱即用的表单组件，具备完善的验证、可访问性和响应式设计。",
+    "textInput": {
+      "title": "文本输入",
+      "label": "电子邮件地址",
+      "placeholder": "请输入您的电子邮件..."
+    },
+    "select": {
+      "title": "选择下拉菜单",
+      "label": "区块链网络",
+      "placeholder": "选择一个网络..."
+    },
+    "checkbox": {
+      "title": "复选框",
+      "agree": "我同意服务条款和隐私政策"
+    },
+    "textarea": {
+      "title": "文本区域",
+      "label": "消息",
+      "placeholder": "请输入您的消息..."
+    }
+  },
+  "inputTypes": {
+    "title": "输入类型和变体",
+    "description": "不同类型的输入项，所有表单元素的样式保持一致。",
+    "textInputTypes": {
+      "title": "文本输入类型",
+      "description": "不同输入类型的统一样式",
+      "textPlaceholder": "文本输入",
+      "passwordPlaceholder": "密码"
+    },
+    "sizes": {
+      "title": "输入大小",
+      "description": "不同输入大小适用于各种使用场景",
+      "smallPlaceholder": "小输入",
+      "defaultPlaceholder": "默认输入",
+      "largePlaceholder": "大输入"
+    }
+  },
+  "validation": {
+    "title": "验证状态",
+    "description": "带有正确颜色编码和消息的表单验证状态。",
+    "success": {
+      "title": "成功状态",
+      "description": "有效输入，成功样式",
+      "label": "电子邮件地址",
+      "message": "有效的电子邮件地址"
+    },
+    "error": {
+      "title": "错误状态",
+      "description": "输入无效，带有错误样式",
+      "label": "密码",
+      "message": "密码必须至少包含8个字符"
+    }
+  },
+  "advanced": {
+    "title": "高级表单组件",
+    "description": "更复杂的表单模式，功能得到增强。",
+    "passwordToggle": {
+      "title": "带切换的密码输入",
+      "description": "带显示/隐藏功能的密码字段",
+      "label": "密码",
+      "placeholder": "输入密码..."
+    },
+    "radio": {
+      "title": "单选按钮组",
+      "description": "单选按钮",
+      "label": "订阅计划",
+      "free": "免费计划 - 基本功能",
+      "pro": "专业计划 - 高级功能"
+    }
+  },
+  "complete": {
+    "title": "填写表单示例",
+    "description": "一个全面的表单，展示所有表单元素协同工作。",
+    "form": {
+      "title": "Web3个人资料表单",
+      "description": "使用所有元素类型和验证完成表单",
+      "displayNameLabel": "显示名称",
+      "displayNamePlaceholder": "您的显示名称",
+      "emailLabel": "电子邮件地址",
+      "networkLabel": "首选网络",
+      "networkPlaceholder": "选择一个网络...",
+      "bioLabel": "生物",
+      "bioPlaceholder": "请告诉我们关于你自己...",
+      "notifications": "我同意接收电子邮件通知",
+      "submit": "保存资料"
+    }
+  },
+  "accessibility": {
+    "title": "无障碍指南",
+    "heading": "表单可访问性最佳实践",
+    "items": {
+      "labelsBefore": "始终使用正确的方法",
+      "labelsAfter": "与输入相关的元素",
+      "errorMessages": "包含清晰的错误消息和验证状态",
+      "focusStates": "确保焦点状态通过 ring 工具清晰可见",
+      "inputTypes": "使用适当的输入类型（如电子邮件、密码等）以提升移动设备体验",
+      "contrast": "保持足够的颜色对比度（最小对比度比为4.5:1）"
+    }
+  }
+}

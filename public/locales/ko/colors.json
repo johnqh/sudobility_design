@@ -1,0 +1,291 @@
+{
+  "seo": {
+    "title": "색상 - 디자인 시스템 - 내부 - {{emailDomain}}",
+    "description": "디자인 시스템을 위한 완전한 컬러 팔레트 및 변형 쇼케이스"
+  },
+  "nav": {
+    "viewTypography": "타이포그래피 보기"
+  },
+  "header": {
+    "badge": "색상 시스템",
+    "title": "색상 팔레트 및 사용법",
+    "description": "모든 색상 시스템은 {{appName}} 애플리케이션 전체에서 사용되며 색상 사용 예시와 코드 샘플이 포함되어 있습니다. 색상을 클릭하면 해당 색상의 16진수 값을 클립보드에 복사합니다."
+  },
+  "swatch": {
+    "copyAria": "색상 값 {{name}} {{value}} 복사"
+  },
+  "codeExample": {
+    "preview": "미리 보기",
+    "usage": "사용"
+  },
+  "quickStart": {
+    "title": "빠른 시작 - 일반적인 사용 예제",
+    "description": "가장 흔한 디자인 패턴을 위한 즉시 사용 가능한 코드 예제입니다. 컴포넌트에 직접 복사하여 붙여넣으세요.",
+    "primaryButton": {
+      "title": "기본 버튼",
+      "action": "주요 작업"
+    },
+    "successAlert": {
+      "title": "성공 알림",
+      "heading": "성공!",
+      "body": "당신의 작업이 성공적으로 완료되었습니다."
+    },
+    "blockchainBadge": {
+      "title": "블록체인 배지"
+    },
+    "formInput": {
+      "title": "폼 입력",
+      "placeholder": "이메일을 입력하세요..."
+    }
+  },
+  "palettes": {
+    "title": "컬러 팔레트",
+    "description": "색조별로 정리된 기본 색상 팔레트입니다. 각 팔레트에는 50(가장 밝은 색)에서 950(가장 어두운 색)까지의 음영이 포함되어 있습니다.",
+    "items": {
+      "blue": {
+        "name": "파랑 (기본)",
+        "description": "주요 브랜드 색상 팔레트"
+      },
+      "purple": {
+        "name": "보라색 (보조)",
+        "description": "보조 브랜드 색상 팔레트"
+      },
+      "neutral": {
+        "name": "중립 (그레이스케일)",
+        "description": "배경, 텍스트 및 테두리 색상"
+      },
+      "red": {
+        "name": "빨간색 (오류)",
+        "description": "오류 및 파괴적 행동 색상"
+      },
+      "green": {
+        "name": "초록색 (성공)",
+        "description": "성공과 긍정적인 행동 색상"
+      },
+      "amber": {
+        "name": "아마르 (경고)",
+        "description": "경고 및 주의 색상"
+      },
+      "orange": {
+        "name": "오렌지",
+        "description": "강조 및 하이라이트 색상"
+      }
+    }
+  },
+  "networks": {
+    "ethereum": "Ethereum",
+    "solana": "Solana",
+    "polygon": "다각형"
+  },
+  "web3": {
+    "title": "웹3 네트워크 색상",
+    "description": "다양한 블록체인 네트워크와 웹3 요소를 나타내는 색상.",
+    "usage": {
+      "ethereum": "이더리움 네트워크 브랜딩",
+      "solana": "솔라나 네트워크 브랜딩",
+      "polygon": "Polygon 네트워크 브랜딩"
+    },
+    "code": {
+      "title": "Web3 색상 사용",
+      "description": "컴포넌트에서 Web3 네트워크 색상을 사용하는 방법"
+    }
+  },
+  "semantic": {
+    "title": "세미틱 컬러스",
+    "description": "라이트 및 다크 테마에 적응하는 세미틱 컬러 토큰입니다. 이들은 인터페이스 전반에서 일관된 의미를 제공합니다.",
+    "lightMode": "라이트 모드",
+    "darkMode": "다크 모드",
+    "categories": {
+      "text": {
+        "name": "텍스트 색상",
+        "colors": {
+          "primaryText": {
+            "name": "기본 텍스트",
+            "usage": "메인 콘텐츠 텍스트"
+          },
+          "secondaryText": {
+            "name": "보조 텍스트",
+            "usage": "지원 텍스트"
+          },
+          "linkText": {
+            "name": "링크 텍스트",
+            "usage": "인터랙티브 링크"
+          }
+        }
+      },
+      "background": {
+        "name": "배경 색상",
+        "colors": {
+          "primaryBackground": {
+            "name": "기본 배경",
+            "usage": "메인 페이지 배경"
+          },
+          "secondaryBackground": {
+            "name": "보조 배경",
+            "usage": "카드 배경"
+          },
+          "elevatedBackground": {
+            "name": "상승한 배경",
+            "usage": "모달 및 오버레이"
+          }
+        }
+      },
+      "state": {
+        "name": "주 색상",
+        "colors": {
+          "success": {
+            "name": "성공",
+            "usage": "성공 메시지 및 작업"
+          },
+          "warning": {
+            "name": "경고",
+            "usage": "경고 메시지"
+          },
+          "error": {
+            "name": "오류",
+            "usage": "오류 메시지 및 파괴적 작업"
+          },
+          "info": {
+            "name": "정보",
+            "usage": "정보 메시지"
+          }
+        }
+      }
+    },
+    "code": {
+      "title": "세미틱 색상 사용",
+      "description": "디자인 시스템에서 세멘틱 컬러 사용 방법",
+      "preview": {
+        "success": "✓ 성공 메시지",
+        "error": "✗ 오류 메시지",
+        "warning": "⚠ 경고 메시지"
+      }
+    }
+  },
+  "components": {
+    "title": "컴포넌트 색상 및 사용 예시",
+    "description": "사전 설정된 색상 조합으로 일반적인 UI 구성 요소에 대해 호버, 포커스 및 테마 지원이 내장되어 있습니다.",
+    "exampleHeading": "{{name}} 예시",
+    "liveExamples": "라이브 예제",
+    "alertMessage": "{{name}} 메시지",
+    "interactiveHeading": "인터랙티브 {{name}} 예제:",
+    "createPreview": {
+      "button": {
+        "primary": "주요 작업",
+        "secondary": "보조 작업",
+        "destructive": "항목 삭제"
+      },
+      "alert": {
+        "infoLabel": "정보:",
+        "infoText": "이것은 정보 경보입니다",
+        "successLabel": "성공:",
+        "successText": "작업이 성공적으로 완료되었습니다",
+        "errorLabel": "오류:",
+        "errorText": "무언가 잘못되었습니다"
+      }
+    },
+    "items": {
+      "button": {
+        "name": "버튼",
+        "createTitle": "버튼 만들기",
+        "createDescription": "적절한 색상으로 버튼을 만드는 단계별 가이드",
+        "variantsTitle": "버튼 변형 및 상태",
+        "variantsDescription": "모든 버튼 색상 변형과 호버 및 포커스 상태",
+        "variants": {
+          "primary": "주요",
+          "secondary": "보조",
+          "destructive": "파괴적인",
+          "success": "성공"
+        }
+      },
+      "badge": {
+        "name": "배지",
+        "createTitle": "배지 만들기",
+        "createDescription": "적절한 색상으로 배지 만들기 위한 단계별 가이드",
+        "variantsTitle": "배지 변형 및 상태",
+        "variantsDescription": "모든 배지 색상 변형과 호버 및 포커스 상태",
+        "variants": {
+          "default": "기본값",
+          "primary": "주요",
+          "success": "성공",
+          "warning": "경고",
+          "error": "오류"
+        }
+      },
+      "alert": {
+        "name": "경보",
+        "createTitle": "경고 만들기",
+        "createDescription": "적절한 색상으로 알림을 생성하는 단계별 가이드",
+        "variantsTitle": "경보 변형 및 상태",
+        "variantsDescription": "모든 알림 색상 변형 및 호버 및 포커스 상태",
+        "variants": {
+          "info": "정보",
+          "success": "성공",
+          "warning": "경고",
+          "error": "오류"
+        }
+      }
+    }
+  },
+  "practical": {
+    "title": "실용적인 사용 예시",
+    "description": "일반적인 UI 패턴에 사용되는 색상 조합 방법을 보여주는 실제 사례.",
+    "form": {
+      "title": "색상으로 구분된 상태를 가진 폼",
+      "description": "폼 검증 및 상태에 색상을 사용하는 방법",
+      "emailLabel": "이메일 (유효한)",
+      "emailValid": "✓ 이메일 주소가 유효합니다",
+      "passwordLabel": "비밀번호 (오류)",
+      "passwordError": "✗ 비밀번호는 최소 8자 이상이어야 합니다",
+      "submit": "양식 제출"
+    },
+    "card": {
+      "title": "상태 색상이 있는 카드",
+      "description": "카드 컴포넌트의 다양한 상태에서 색상을 사용하는 방법",
+      "apiServer": "API 서버",
+      "online": "온라인",
+      "operational": "모든 시스템이 정상 작동 중입니다",
+      "database": "데이터베이스",
+      "maintenance": "유지보수",
+      "maintenanceProgress": "예정된 유지보수 중"
+    },
+    "navigation": {
+      "title": "색 상태를 사용한 탐색",
+      "description": "네비게이션 상태 및 활성 항목에 색상을 사용하는 방법",
+      "dashboard": "대시보드",
+      "users": "사용자",
+      "settings": "설정"
+    },
+    "progress": {
+      "title": "색상이 있는 진행률 표시기",
+      "description": "진행률 바와 로딩 상태에 색상을 사용하는 방법",
+      "label": "진행 상황",
+      "complete75": "75% 완료",
+      "success": "성공",
+      "complete100": "100% 완료"
+    }
+  },
+  "guidelines": {
+    "title": "사용 가이드라인",
+    "doTitle": "✓ 하기",
+    "do": [
+      "일관된 의미를 위해 세마틱 색상을 사용하세요",
+      "UI 요소에 컴포넌트 색상을 우선 사용하세요",
+      "라이트 모드와 다크 모드에서 색상을 테스트합니다",
+      "접근성을 위해 충분한 대비를 확보하세요",
+      "일관성을 위해 색상 유틸리티 함수를 사용하세요"
+    ],
+    "dontTitle": "✗ 하지 마",
+    "dont": [
+      "컴포넌트에서 직접 원시 헥스 값을 사용하십시오",
+      "다른 색상 시스템을 섞으세요",
+      "디자인 승인 없이 사용자 정의 색상 만들기",
+      "다크 모드에서 작동하지 않는 색상을 사용하세요",
+      "접근성 대비 요구사항 무시"
+    ]
+  },
+  "copyInstructions": {
+    "title": "값 복사하려면 클릭",
+    "description": "색상 샘플을 클릭하여 그 색상의 16진수 값을 복사하거나, 코드 예시의 복사 버튼을 사용하여 사용 코드를 복사하세요."
+  }
+}

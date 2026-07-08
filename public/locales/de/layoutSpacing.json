@@ -1,0 +1,147 @@
+{
+  "seo": {
+    "title": "Layout & Abstand - Design-System - Intern - {{emailDomain}}",
+    "description": "Layout- und Abstandssystem mit responsiven Rastern, Containern und Web3-spezifischen Mustern"
+  },
+  "header": {
+    "badge": "Layout & Abstand",
+    "title": "Layout- und Abstandssystem",
+    "description": "Umfassendes Layout- und Abstandssystem mit responsiven Rastern, flexiblen Containern und Web3-spezifischen Mustern für Wallets, Transaktionen und Dashboard-Interfaces."
+  },
+  "quickStart": {
+    "title": "Schnellstart",
+    "copyTooltip": "In die Zwischenablage kopieren",
+    "examples": {
+      "grid": {
+        "title": "Reaktives Raster-System",
+        "description": "Flexible Raster-Layouts, die sich an verschiedene Bildschirmgrößen anpassen"
+      },
+      "container": {
+        "title": "Container-System",
+        "description": "Reaktive Container mit konsistenten Maximalbreiten und Abstandseinstellungen"
+      },
+      "flex": {
+        "title": "Flexbox-Tools",
+        "description": "Häufige Flexbox-Muster für Komponenten-Layouts"
+      },
+      "spacing": {
+        "title": "Abstandssystem",
+        "description": "Konsistente Abstandsmuster für Ränder und Paddings"
+      }
+    }
+  },
+  "grid": {
+    "title": "Reaktives Raster-System",
+    "cardTitle": "Interaktive Raster-Beispiele",
+    "cardDescription": "Wechseln Sie zwischen Breakpoints, um zu sehen, wie sich die Raster anpassen",
+    "preview": "Vorschau:",
+    "breakpoints": {
+      "mobile": "Mobil",
+      "tablet": "Tablette",
+      "desktop": "Desktop"
+    },
+    "examples": {
+      "nftGallery": {
+        "name": "NFT-Galerie"
+      },
+      "dashboardWidgets": {
+        "name": "Dashboard-Widgets"
+      },
+      "transactionHistory": {
+        "name": "Transaktionsverlauf"
+      }
+    },
+    "item": "Gegenstand {{number}}"
+  },
+  "container": {
+    "title": "Container-System",
+    "cardTitle": "Container-Varianten",
+    "cardDescription": "Verschiedene Behältergrößen für verschiedene Inhaltstypen",
+    "label": "Container:",
+    "maxWidth": "Max. Breite:",
+    "bestFor": "Am besten geeignet für:",
+    "containerSuffix": "{{name}} Container",
+    "previewText": "Dieser Container passt sich den ausgewählten Breitenbeschränkungen an, während er einen responsiven Abstand beibehält.",
+    "sizes": {
+      "narrow": {
+        "name": "Schmal",
+        "use": "Artikel, Formulare"
+      },
+      "default": {
+        "name": "Standard",
+        "use": "Allgemeiner Inhalt"
+      },
+      "wide": {
+        "name": "Breit",
+        "use": "Dashboards, Tabellen"
+      },
+      "full": {
+        "name": "Voll",
+        "use": "Kanten-an-Kante-Layouts"
+      }
+    }
+  },
+  "flexbox": {
+    "title": "Flexbox-Muster",
+    "common": {
+      "title": "Häufige Muster",
+      "description": "Standard-Flexbox-Layouts für Komponenten",
+      "spaceBetween": "Abstand",
+      "center": "Zentrum",
+      "startWithGap": "Fangen Sie mit Lücke an",
+      "columnStack": "Spaltenstapel"
+    },
+    "web3": {
+      "title": "Web3-Muster",
+      "description": "Spezialisierte Layouts für Blockchain-Oberflächen",
+      "walletConnection": "Brieftaschenverbindung",
+      "walletName": "MetaMask",
+      "connected": "Verbunden",
+      "transactionSummary": "Transaktionsübersicht",
+      "amount": "Betrag:",
+      "gasFee": "Gas-Gebühr:",
+      "total": "Insgesamt:",
+      "nftCardLayout": "NFT-Kartenlayout",
+      "nftName": "Cooles NFT #1234",
+      "artistName": "Künstlername"
+    }
+  },
+  "spacing": {
+    "title": "Abstandssystem",
+    "cardTitle": "Konsistente Abstandsmuster",
+    "cardDescription": "Standard-Abstand-Tools für konsistente Layouts",
+    "scaleTitle": "Abstandsskala",
+    "componentTitle": "Komponentenabstand",
+    "sectionHeader": "Abschnittsüberschrift",
+    "component": "Komponente {{number}}",
+    "sectionSpacingLabel": "Abschnittsabstand:",
+    "sectionSpacingText": "32px vertikale Abstände",
+    "componentSpacingLabel": "Komponentenabstand:",
+    "componentSpacingText": "12px zwischen Elementen",
+    "internalPaddingLabel": "Interne Polsterung:",
+    "internalPaddingText": "16px für Inhaltbereiche"
+  },
+  "web3": {
+    "title": "Web3-Layout-Muster",
+    "wallet": {
+      "title": "Wallet-Dashboard",
+      "description": "Portfolioblick mit Kontostand und Vermögen",
+      "send": "Senden",
+      "receive": "Empfangen",
+      "swap": "Tauschen",
+      "assets": "Assets"
+    },
+    "transaction": {
+      "title": "Transaktionsablauf",
+      "description": "Schritt-für-Schritt-Transaktions-Oberfläche",
+      "recipientAddress": "Empfängeradresse",
+      "amount": "Betrag",
+      "balance": "Guthaben: 2,45 ETH",
+      "max": "Max",
+      "networkFee": "Netzwerkgebühr:",
+      "total": "Insgesamt:",
+      "cancel": "Abbrechen",
+      "continue": "Weiter"
+    }
+  }
+}

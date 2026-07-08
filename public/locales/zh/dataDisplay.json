@@ -1,0 +1,202 @@
+{
+  "seo": {
+    "title": "数据展示 - 设计系统 - 内部 - {{emailDomain}}",
+    "description": "包括表格、列表、网格和代码显示在内的数据展示组件"
+  },
+  "header": {
+    "badge": "数据展示组件",
+    "title": "数据展示系统",
+    "intro": "用于表格、列表、网格和代码的全面数据展示组件。专为Web3数据（包括地址、交易和区块链信息）优化。"
+  },
+  "quickStart": {
+    "heading": "快速入门",
+    "copy": "复制到剪贴板",
+    "examples": {
+      "dataTable": {
+        "title": "数据表",
+        "description": "可排序表格，包含悬停状态和选择功能"
+      },
+      "emailList": {
+        "title": "邮件列表",
+        "description": "带有已读/未读状态的交互式列表"
+      },
+      "keyValue": {
+        "title": "键值显示",
+        "description": "以键值对形式显示结构化数据"
+      },
+      "statsGrid": {
+        "title": "统计数据网格",
+        "description": "使用趋势指标显示指标和统计数据"
+      }
+    }
+  },
+  "tables": {
+    "heading": "数据表",
+    "cardTitle": "交互式联系人表格",
+    "cardDescription": "支持排序的表格，包含选择和悬停状态",
+    "columns": {
+      "name": "名字",
+      "email": "电子邮件",
+      "balance": "平衡",
+      "status": "状态",
+      "date": "日期"
+    },
+    "status": {
+      "active": "活跃",
+      "pending": "待处理",
+      "inactive": "不活跃"
+    }
+  },
+  "lists": {
+    "heading": "列表",
+    "cardTitle": "邮件列表",
+    "cardDescription": "支持已读/未读状态和操作的交互式邮件列表",
+    "emails": {
+      "1": {
+        "subject": "交易已确认",
+        "preview": "您的交易已在区块链上确认..."
+      },
+      "2": {
+        "subject": "新NFT发布提醒",
+        "preview": "激动人心的新系列将于明天发布..."
+      },
+      "3": {
+        "subject": "钱包安全更新",
+        "preview": "您钱包的重要安全改进..."
+      },
+      "4": {
+        "subject": "DeFi 收益报告",
+        "preview": "您的月度收益耕作总结..."
+      },
+      "5": {
+        "subject": "DAO提案 #42",
+        "preview": "为最新的社区提案投票..."
+      }
+    }
+  },
+  "gridLayouts": {
+    "heading": "网格布局",
+    "statsGrid": {
+      "heading": "统计网格",
+      "totalEmails": "总邮件数",
+      "totalEmailsChange": "上个月的12.5%",
+      "activeContacts": "活跃联系人",
+      "activeContactsChange": "本周新增5个",
+      "storageUsed": "已使用存储空间",
+      "storageUsedChange": "剩余15%"
+    },
+    "cardGrid": {
+      "heading": "卡片网格",
+      "cardTitle": "卡片标题 {{number}}",
+      "cardContent": "包含相关信息和操作的卡片内容。"
+    }
+  },
+  "keyValue": {
+    "heading": "键值显示",
+    "userProfile": {
+      "heading": "用户资料",
+      "fullName": "全名",
+      "ensName": "ENS名称",
+      "walletAddress": "钱包地址",
+      "email": "电子邮件",
+      "accountStatus": "账户状态",
+      "verified": "已验证"
+    },
+    "transactionDetails": {
+      "heading": "交易详情",
+      "transactionHash": "交易哈希",
+      "blockNumber": "区块编号",
+      "gasUsed": "使用的气体",
+      "status": "状态",
+      "success": "成功"
+    }
+  },
+  "codeDisplay": {
+    "heading": "代码显示",
+    "inlineCode": {
+      "heading": "内联代码",
+      "textStart": "使用 \"",
+      "textMiddle": " 用于内联代码。Web3 地址如 ",
+      "textMiddle2": " 以及交易哈希值，例如 ",
+      "textEnd": "有特殊样式。"
+    },
+    "codeBlock": {
+      "heading": "代码块"
+    }
+  },
+  "timeline": {
+    "heading": "时间轴",
+    "cardTitle": "活动时间线",
+    "items": {
+      "1": {
+        "title": "账户已创建",
+        "description": "欢迎来到 example.com"
+      },
+      "2": {
+        "title": "钱包已连接",
+        "description": "MetaMask钱包已成功链接"
+      },
+      "3": {
+        "title": "第一条邮件已发送",
+        "description": "已向团队发送欢迎邮件"
+      },
+      "4": {
+        "title": "ENS名称已注册",
+        "description": "alice.eth 已注册"
+      },
+      "5": {
+        "title": "高级升级",
+        "description": "升级到高级计划待处理"
+      }
+    }
+  },
+  "emptyStates": {
+    "heading": "空状态",
+    "noEmails": {
+      "title": "没有邮件",
+      "description": "通过撰写您的第一封电子邮件来开始",
+      "action": "撰写邮件"
+    },
+    "noData": {
+      "title": "没有可用数据",
+      "description": "目前没有记录可供显示"
+    }
+  },
+  "web3": {
+    "heading": "Web3 数据模式",
+    "cardTitle": "区块链数据展示",
+    "cardDescription": "用于显示Web3数据的专用模式",
+    "addressDisplay": {
+      "heading": "地址显示",
+      "full": "完整:",
+      "truncated": "截断：",
+      "ens": "ENS:"
+    },
+    "tokenBalances": {
+      "heading": "代币余额"
+    }
+  },
+  "implementationNotes": {
+    "heading": "实施说明",
+    "performance": {
+      "heading": "性能提示",
+      "items": [
+        "• 对于大型数据集，请使用虚拟滚动",
+        "• 为超过100行的表格实现分页",
+        "• 列表中延迟加载图片和头像",
+        "• 缓存昂贵的计算",
+        "• 在数据获取期间使用骨架加载器"
+      ]
+    },
+    "accessibility": {
+      "heading": "可访问性",
+      "items": [
+        "• 使用语义化HTML（table, thead, tbody）",
+        "• 为可排序列添加 aria-label",
+        "• 确保表格支持键盘导航",
+        "• 为视觉指示符提供文本替代",
+        "• 为列表使用适当的 ARIA 角色"
+      ]
+    }
+  }
+}

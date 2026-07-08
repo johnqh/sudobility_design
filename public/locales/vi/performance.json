@@ -1,0 +1,109 @@
+{
+  "seo": {
+    "title": "Hiệu suất và tối ưu hóa - Hệ thống thiết kế - Nội bộ - {{emailDomain}}",
+    "description": "Các mẫu tối ưu hiệu suất và công cụ Core Web Vitals cho các ứng dụng Web3 nhanh và hiệu quả"
+  },
+  "header": {
+    "badge": "Hiệu suất và tối ưu hóa",
+    "title": "Hệ thống tối ưu hóa hiệu suất",
+    "description": "Các mẫu hiệu suất toàn diện cho các ứng dụng Web3 nhanh và hiệu quả. Tối ưu kích thước gói, hiệu suất hiển thị, các chỉ số Core Web Vitals và tương tác với blockchain.",
+    "stats": {
+      "bundleSplit": {
+        "value": "Chia gói",
+        "label": "Mảnh mã"
+      },
+      "gpuLayers": {
+        "value": "Lớp GPU",
+        "label": "Tăng tốc phần cứng"
+      },
+      "web3Batch": {
+        "value": "Lô Web3",
+        "label": "Gộp giao dịch"
+      },
+      "lcpTarget": {
+        "value": "< 2,5 giây",
+        "label": "Điểm đến LCP"
+      }
+    }
+  },
+  "webVitals": {
+    "title": "Core Web Vitals",
+    "description": "Theo dõi thời gian thực các chỉ số Core Web Vitals cùng với các công cụ tối ưu hiệu suất.",
+    "lcp": {
+      "title": "Vẽ nội dung lớn nhất",
+      "description": "Thời gian để hiển thị phần tử lớn nhất"
+    },
+    "fid": {
+      "title": "Thời gian trì hoãn đầu tiên",
+      "description": "Thời gian phản hồi tương tác"
+    },
+    "cls": {
+      "title": "Sự dịch chuyển tích lũy của bố cục",
+      "description": "Điểm đánh giá độ ổn định thị giác"
+    }
+  },
+  "bundle": {
+    "title": "Tối ưu hóa gói",
+    "description": "Các mẫu chia mã và tải chậm để giảm kích thước gói khởi đầu.",
+    "lazyLoadingStates": "Trạng thái tải chậm",
+    "componentLoading": "Đang tải thành phần...",
+    "componentLoaded": "Thành phần đã được tải ✓",
+    "codeSplittingExample": "Ví dụ về chia nhỏ mã nguồn",
+    "loadingChunk": "Đang tải phần hệ thống thiết kế...",
+    "bundleAnalysis": "Phân tích gói",
+    "mainBundle": "Gói chính:",
+    "designSystem": "Hệ thống thiết kế:",
+    "web3Utils": "Công cụ Web3:",
+    "charts": "Biểu đồ:"
+  },
+  "network": {
+    "title": "Tối ưu hóa mạng",
+    "description": "Các chiến lược tải thích ứng dựa trên chất lượng kết nối và mẫu lưu trữ bộ nhớ đệm.",
+    "connectionQuality": "Chất lượng kết nối",
+    "currentConnection": "Kết nối hiện tại",
+    "latency": "Độ trễ: ~{{latency}}ms",
+    "simulateSlowConnection": "Mô phỏng kết nối chậm",
+    "cacheStatus": "Trạng thái bộ nhớ đệm",
+    "freshData": "Dữ liệu mới",
+    "freshDataSuffix": " - Gần đây đã lấy",
+    "staleData": "Dữ liệu lỗi thời",
+    "staleDataSuffix": " - Cần làm mới",
+    "implementation": "Triển khai"
+  },
+  "web3": {
+    "title": "Hiệu suất Web3",
+    "description": "Tối ưu hóa chuyên biệt cho tương tác với blockchain, kết nối ví và nhóm giao dịch.",
+    "walletConnection": "Kết nối ví",
+    "cachedConnection": "Kết nối đã được lưu trong bộ nhớ đệm",
+    "connecting": "Đang kết nối...",
+    "transactionBatching": "Gộp giao dịch",
+    "batchedTransactions": "Giao dịch theo lô",
+    "batchedTransactionsDetail": "5 giao dịch → 1 multicall",
+    "individualTransaction": "Giao dịch cá nhân",
+    "gasOptimization": "Tối ưu hóa khí",
+    "gasOptimal": "Khí tối ưu: 15 gwei",
+    "gasHigh": "Khí cao: 45 gwei",
+    "gasVeryHigh": "Rất cao: 120 gwei"
+  },
+  "bestPractices": {
+    "title": "Các thực hành tốt nhất về hiệu suất",
+    "doTitle": "✅ Làm điều này",
+    "do": [
+      "Sử dụng chia nhỏ mã cho các tính năng nội bộ/quản trị",
+      "Thực hiện tải chậm cho hình ảnh và thành phần",
+      "Xử lý giao dịch Web3 theo lô khi có thể",
+      "Sử dụng tăng tốc GPU để có các chuyển động mượt mà",
+      "Theo dõi các chỉ số Web Vitals cốt lõi trong môi trường sản xuất",
+      "Lưu trữ kết nối ví và dữ liệu blockchain vào bộ nhớ đệm"
+    ],
+    "avoidTitle": "❌ Tránh điều này",
+    "avoid": [
+      "Tải tất cả các thành phần một cách tích cực khi lần đầu tải trang",
+      "Thực hiện các cuộc gọi chuỗi khối riêng lẻ cho dữ liệu theo lô",
+      "Gây ra sự dịch chuyển bố cục với nội dung động",
+      "Sử dụng hiển thị chặn cho các tính năng không quan trọng",
+      "Bỏ qua điều kiện mạng khi tải tài nguyên",
+      "Đang truy xuất lại dữ liệu blockchain đã được lưu tạm"
+    ]
+  }
+}

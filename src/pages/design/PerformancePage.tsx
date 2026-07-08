@@ -10,6 +10,7 @@ import {
   SparklesIcon,
 } from "@heroicons/react/24/outline";
 import React, { useEffect, useState } from "react";
+import { useTranslation } from "react-i18next";
 import { SEOHead } from "@sudobility/seo_lib";
 import { Button, Card, CardContent } from "@sudobility/components";
 
@@ -22,6 +23,7 @@ const PerformancePage: React.FC<AppProps> = ({
   emailDomain,
   appName: _appName,
 }) => {
+  const { t } = useTranslation("performance");
   const [connectionSpeed, setConnectionSpeed] = useState<
     "fast" | "slow" | "offline"
   >("fast");
@@ -73,8 +75,8 @@ const PerformancePage: React.FC<AppProps> = ({
   return (
     <>
       <SEOHead
-        title={`Performance & Optimization - Design System - Internal - ${emailDomain}`}
-        description="Performance optimization patterns and Core Web Vitals utilities for fast, efficient Web3 applications"
+        title={t("seo.title", { emailDomain })}
+        description={t("seo.description")}
         noIndex={true}
       />
 
@@ -87,20 +89,18 @@ const PerformancePage: React.FC<AppProps> = ({
             <div className="inline-flex items-center bg-success/10 px-4 py-2 rounded-full mb-6">
               <RocketLaunchIcon className="h-5 w-5 text-success mr-2" />
               <span className="text-success font-semibold">
-                Performance & Optimization
+                {t("header.badge")}
               </span>
             </div>
 
             <h1 className={`${textVariants.heading.display.xl()} mb-6`}>
-              Performance Optimization System
+              {t("header.title")}
             </h1>
 
             <p
               className={`${textVariants.body.lg()} max-w-3xl mx-auto text-muted-foreground mb-8`}
             >
-              Comprehensive performance patterns for fast-loading, efficient
-              Web3 applications. Optimize bundle size, rendering performance,
-              Core Web Vitals, and blockchain interactions.
+              {t("header.description")}
             </p>
 
             {/* Performance Metrics */}
@@ -109,39 +109,41 @@ const PerformancePage: React.FC<AppProps> = ({
                 <div
                   className={`${textVariants.heading.h4()} text-success mb-1`}
                 >
-                  Bundle Split
+                  {t("header.stats.bundleSplit.value")}
                 </div>
                 <div className={textVariants.caption.default()}>
-                  Code Chunks
+                  {t("header.stats.bundleSplit.label")}
                 </div>
               </div>
               <div className={`${ui.background.subtle} rounded-lg p-4`}>
                 <div
                   className={`${textVariants.heading.h4()} text-primary mb-1`}
                 >
-                  GPU Layers
+                  {t("header.stats.gpuLayers.value")}
                 </div>
                 <div className={textVariants.caption.default()}>
-                  Hardware Acceleration
+                  {t("header.stats.gpuLayers.label")}
                 </div>
               </div>
               <div className={`${ui.background.subtle} rounded-lg p-4`}>
                 <div
                   className={`${textVariants.heading.h4()} text-accent mb-1`}
                 >
-                  Web3 Batch
+                  {t("header.stats.web3Batch.value")}
                 </div>
                 <div className={textVariants.caption.default()}>
-                  Transaction Batching
+                  {t("header.stats.web3Batch.label")}
                 </div>
               </div>
               <div className={`${ui.background.subtle} rounded-lg p-4`}>
                 <div
                   className={`${textVariants.heading.h4()} text-secondary mb-1`}
                 >
-                  &lt; 2.5s
+                  {t("header.stats.lcpTarget.value")}
                 </div>
-                <div className={textVariants.caption.default()}>LCP Target</div>
+                <div className={textVariants.caption.default()}>
+                  {t("header.stats.lcpTarget.label")}
+                </div>
               </div>
             </div>
           </div>
@@ -154,14 +156,15 @@ const PerformancePage: React.FC<AppProps> = ({
                   <ChartBarIcon
                     className={`${variants.icon.size.lg()} text-primary mr-3`}
                   />
-                  <h2 className={textVariants.heading.h3()}>Core Web Vitals</h2>
+                  <h2 className={textVariants.heading.h3()}>
+                    {t("webVitals.title")}
+                  </h2>
                 </div>
 
                 <p
                   className={`${textVariants.body.md()} text-muted-foreground mb-6`}
                 >
-                  Real-time monitoring of Core Web Vitals metrics with
-                  performance optimization utilities.
+                  {t("webVitals.description")}
                 </p>
 
                 <div className="space-y-4">
@@ -169,10 +172,10 @@ const PerformancePage: React.FC<AppProps> = ({
                   <div className="flex items-center justify-between p-3 rounded-lg border">
                     <div>
                       <h4 className={`${textVariants.heading.h5()}`}>
-                        Largest Contentful Paint
+                        {t("webVitals.lcp.title")}
                       </h4>
                       <p className="text-sm text-muted-foreground">
-                        Time to render largest element
+                        {t("webVitals.lcp.description")}
                       </p>
                     </div>
                     <div
@@ -188,10 +191,10 @@ const PerformancePage: React.FC<AppProps> = ({
                   <div className="flex items-center justify-between p-3 rounded-lg border">
                     <div>
                       <h4 className={`${textVariants.heading.h5()}`}>
-                        First Input Delay
+                        {t("webVitals.fid.title")}
                       </h4>
                       <p className="text-sm text-muted-foreground">
-                        Time to interactive response
+                        {t("webVitals.fid.description")}
                       </p>
                     </div>
                     <div
@@ -207,10 +210,10 @@ const PerformancePage: React.FC<AppProps> = ({
                   <div className="flex items-center justify-between p-3 rounded-lg border">
                     <div>
                       <h4 className={`${textVariants.heading.h5()}`}>
-                        Cumulative Layout Shift
+                        {t("webVitals.cls.title")}
                       </h4>
                       <p className="text-sm text-muted-foreground">
-                        Visual stability score
+                        {t("webVitals.cls.description")}
                       </p>
                     </div>
                     <div
@@ -241,39 +244,40 @@ variants.performance.webVitals.layoutStability.stable()`}
                     className={`${variants.icon.size.lg()} text-warning mr-3`}
                   />
                   <h2 className={textVariants.heading.h3()}>
-                    Bundle Optimization
+                    {t("bundle.title")}
                   </h2>
                 </div>
 
                 <p
                   className={`${textVariants.body.md()} text-muted-foreground mb-6`}
                 >
-                  Code splitting and lazy loading patterns to reduce initial
-                  bundle size.
+                  {t("bundle.description")}
                 </p>
 
                 <div className="space-y-4">
                   <div>
                     <h4 className={`${textVariants.heading.h5()} mb-3`}>
-                      Lazy Loading States
+                      {t("bundle.lazyLoadingStates")}
                     </h4>
                     <div className="space-y-2">
                       <div
                         className={`p-3 rounded ${variants.performance.bundle.lazy.component()}`}
                       >
-                        <p className="text-sm">Component loading...</p>
+                        <p className="text-sm">
+                          {t("bundle.componentLoading")}
+                        </p>
                       </div>
                       <div
                         className={`p-3 rounded ${variants.performance.bundle.lazy.componentLoaded()}`}
                       >
-                        <p className="text-sm">Component loaded ✓</p>
+                        <p className="text-sm">{t("bundle.componentLoaded")}</p>
                       </div>
                     </div>
                   </div>
 
                   <div>
                     <h4 className={`${textVariants.heading.h5()} mb-3`}>
-                      Code Splitting Example
+                      {t("bundle.codeSplittingExample")}
                     </h4>
                     <div
                       className={`p-3 rounded border ${variants.performance.bundle.splitting.fallback()}`}
@@ -282,28 +286,39 @@ variants.performance.webVitals.layoutStability.stable()`}
                         <div
                           className={`w-4 h-4 border-2 border-muted-foreground border-t-transparent rounded-full animate-spin mr-2`}
                         ></div>
-                        Loading design system chunk...
+                        {t("bundle.loadingChunk")}
                       </div>
                     </div>
                   </div>
 
                   <div>
                     <h4 className={`${textVariants.heading.h5()} mb-3`}>
-                      Bundle Analysis
+                      {t("bundle.bundleAnalysis")}
                     </h4>
                     <div className="grid grid-cols-2 gap-2 text-sm">
                       <div className="p-2 bg-success/10 rounded">
-                        <span className="font-medium">Main Bundle:</span> 245KB
+                        <span className="font-medium">
+                          {t("bundle.mainBundle")}
+                        </span>{" "}
+                        245KB
                       </div>
                       <div className="p-2 bg-primary/10 rounded">
-                        <span className="font-medium">Design System:</span>{" "}
+                        <span className="font-medium">
+                          {t("bundle.designSystem")}
+                        </span>{" "}
                         128KB
                       </div>
                       <div className="p-2 bg-accent/10 rounded">
-                        <span className="font-medium">Web3 Utils:</span> 89KB
+                        <span className="font-medium">
+                          {t("bundle.web3Utils")}
+                        </span>{" "}
+                        89KB
                       </div>
                       <div className="p-2 bg-warning/10 rounded">
-                        <span className="font-medium">Charts:</span> 56KB
+                        <span className="font-medium">
+                          {t("bundle.charts")}
+                        </span>{" "}
+                        56KB
                       </div>
                     </div>
                   </div>
@@ -320,21 +335,20 @@ variants.performance.webVitals.layoutStability.stable()`}
                   className={`${variants.icon.size.lg()} text-accent mr-3`}
                 />
                 <h2 className={textVariants.heading.h3()}>
-                  Network Optimization
+                  {t("network.title")}
                 </h2>
               </div>
 
               <p
                 className={`${textVariants.body.md()} text-muted-foreground mb-6`}
               >
-                Adaptive loading strategies based on connection quality and
-                caching patterns.
+                {t("network.description")}
               </p>
 
               <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
                 <div>
                   <h4 className={`${textVariants.heading.h5()} mb-3`}>
-                    Connection Quality
+                    {t("network.connectionQuality")}
                   </h4>
                   <div className="space-y-3">
                     <div
@@ -343,23 +357,25 @@ variants.performance.webVitals.layoutStability.stable()`}
                       ]()}`}
                     >
                       <div className="flex items-center justify-between">
-                        <span>Current Connection</span>
+                        <span>{t("network.currentConnection")}</span>
                         <span className="font-medium capitalize">
                           {connectionSpeed}
                         </span>
                       </div>
                       <div className="text-sm opacity-75 mt-1">
-                        Latency: ~{Math.round(networkLatency)}ms
+                        {t("network.latency", {
+                          latency: Math.round(networkLatency),
+                        })}
                       </div>
                     </div>
 
                     <Button onClick={simulateSlowConnection} variant="outline">
-                      Simulate Slow Connection
+                      {t("network.simulateSlowConnection")}
                     </Button>
                   </div>
 
                   <h4 className={`${textVariants.heading.h5()} mb-3 mt-6`}>
-                    Cache Status
+                    {t("network.cacheStatus")}
                   </h4>
                   <div className="space-y-2">
                     <div
@@ -369,9 +385,9 @@ variants.performance.webVitals.layoutStability.stable()`}
                         <span
                           className={variants.performance.network.cache.fresh()}
                         >
-                          Fresh Data
-                        </span>{" "}
-                        - Recently fetched
+                          {t("network.freshData")}
+                        </span>
+                        {t("network.freshDataSuffix")}
                       </div>
                     </div>
                     <div
@@ -381,9 +397,9 @@ variants.performance.webVitals.layoutStability.stable()`}
                         <span
                           className={variants.performance.network.cache.stale()}
                         >
-                          Stale Data
-                        </span>{" "}
-                        - Needs refresh
+                          {t("network.staleData")}
+                        </span>
+                        {t("network.staleDataSuffix")}
                       </div>
                     </div>
                   </div>
@@ -391,7 +407,7 @@ variants.performance.webVitals.layoutStability.stable()`}
 
                 <div>
                   <h4 className={`${textVariants.heading.h5()} mb-3`}>
-                    Implementation
+                    {t("network.implementation")}
                   </h4>
                   <div className="bg-muted p-4 rounded border">
                     <pre className="text-xs text-foreground overflow-x-auto">
@@ -418,20 +434,19 @@ variants.performance.network.cache.stale()`}
                 <SparklesIcon
                   className={`${variants.icon.size.lg()} text-accent mr-3`}
                 />
-                <h2 className={textVariants.heading.h3()}>Web3 Performance</h2>
+                <h2 className={textVariants.heading.h3()}>{t("web3.title")}</h2>
               </div>
 
               <p
                 className={`${textVariants.body.md()} text-muted-foreground mb-6`}
               >
-                Specialized optimizations for blockchain interactions, wallet
-                connections, and transaction batching.
+                {t("web3.description")}
               </p>
 
               <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
                 <div>
                   <h4 className={`${textVariants.heading.h5()} mb-3`}>
-                    Wallet Connection
+                    {t("web3.walletConnection")}
                   </h4>
                   <div className="space-y-3">
                     <div
@@ -439,7 +454,7 @@ variants.performance.network.cache.stale()`}
                     >
                       <div className="flex items-center">
                         <CheckIcon className="w-4 h-4 mr-2 text-success" />
-                        Cached Connection
+                        {t("web3.cachedConnection")}
                       </div>
                     </div>
                     <div
@@ -447,7 +462,7 @@ variants.performance.network.cache.stale()`}
                     >
                       <div className="flex items-center">
                         <div className="w-4 h-4 border-2 border-current border-t-transparent rounded-full animate-spin mr-2"></div>
-                        Connecting...
+                        {t("web3.connecting")}
                       </div>
                     </div>
                   </div>
@@ -455,7 +470,7 @@ variants.performance.network.cache.stale()`}
 
                 <div>
                   <h4 className={`${textVariants.heading.h5()} mb-3`}>
-                    Transaction Batching
+                    {t("web3.transactionBatching")}
                   </h4>
                   <div className="space-y-3">
                     <div
@@ -464,10 +479,10 @@ variants.performance.network.cache.stale()`}
                       <div className="p-3">
                         <div className="flex items-center">
                           <BoltIcon className="w-4 h-4 mr-2" />
-                          Batched Transactions
+                          {t("web3.batchedTransactions")}
                         </div>
                         <div className="text-sm opacity-75 mt-1">
-                          5 txs → 1 multicall
+                          {t("web3.batchedTransactionsDetail")}
                         </div>
                       </div>
                     </div>
@@ -477,7 +492,7 @@ variants.performance.network.cache.stale()`}
                       <div className="p-3">
                         <div className="flex items-center">
                           <ArrowPathIcon className="w-4 h-4 mr-2" />
-                          Individual Transaction
+                          {t("web3.individualTransaction")}
                         </div>
                       </div>
                     </div>
@@ -486,23 +501,23 @@ variants.performance.network.cache.stale()`}
 
                 <div>
                   <h4 className={`${textVariants.heading.h5()} mb-3`}>
-                    Gas Optimization
+                    {t("web3.gasOptimization")}
                   </h4>
                   <div className="space-y-3">
                     <div
                       className={`text-center p-2 rounded ${variants.performance.web3.transaction.gasOptimal()}`}
                     >
-                      Optimal Gas: 15 gwei
+                      {t("web3.gasOptimal")}
                     </div>
                     <div
                       className={`text-center p-2 rounded ${variants.performance.web3.transaction.gasHigh()}`}
                     >
-                      High Gas: 45 gwei
+                      {t("web3.gasHigh")}
                     </div>
                     <div
                       className={`text-center p-2 rounded ${variants.performance.web3.transaction.gasVeryHigh()}`}
                     >
-                      Very High: 120 gwei
+                      {t("web3.gasVeryHigh")}
                     </div>
                   </div>
                 </div>
@@ -531,72 +546,44 @@ variants.performance.web3.transaction.gasHigh()`}
                   className={`${variants.icon.size.lg()} text-success mr-3`}
                 />
                 <h2 className={textVariants.heading.h3()}>
-                  Performance Best Practices
+                  {t("bestPractices.title")}
                 </h2>
               </div>
 
               <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
                 <div>
                   <h4 className={`${textVariants.heading.h5()} mb-4`}>
-                    ✅ Do This
+                    {t("bestPractices.doTitle")}
                   </h4>
                   <ul className="space-y-2 text-sm">
-                    <li className="flex items-start">
-                      <CheckIcon className="h-4 w-4 text-success mr-2 mt-0.5 flex-shrink-0" />
-                      Use code splitting for internal/admin features
-                    </li>
-                    <li className="flex items-start">
-                      <CheckIcon className="h-4 w-4 text-success mr-2 mt-0.5 flex-shrink-0" />
-                      Implement lazy loading for images and components
-                    </li>
-                    <li className="flex items-start">
-                      <CheckIcon className="h-4 w-4 text-success mr-2 mt-0.5 flex-shrink-0" />
-                      Batch Web3 transactions when possible
-                    </li>
-                    <li className="flex items-start">
-                      <CheckIcon className="h-4 w-4 text-success mr-2 mt-0.5 flex-shrink-0" />
-                      Use GPU acceleration for smooth animations
-                    </li>
-                    <li className="flex items-start">
-                      <CheckIcon className="h-4 w-4 text-success mr-2 mt-0.5 flex-shrink-0" />
-                      Monitor Core Web Vitals in production
-                    </li>
-                    <li className="flex items-start">
-                      <CheckIcon className="h-4 w-4 text-success mr-2 mt-0.5 flex-shrink-0" />
-                      Cache wallet connections and blockchain data
-                    </li>
+                    {(
+                      t("bestPractices.do", {
+                        returnObjects: true,
+                      }) as string[]
+                    ).map((item, index) => (
+                      <li key={index} className="flex items-start">
+                        <CheckIcon className="h-4 w-4 text-success mr-2 mt-0.5 flex-shrink-0" />
+                        {item}
+                      </li>
+                    ))}
                   </ul>
                 </div>
 
                 <div>
                   <h4 className={`${textVariants.heading.h5()} mb-4`}>
-                    ❌ Avoid This
+                    {t("bestPractices.avoidTitle")}
                   </h4>
                   <ul className="space-y-2 text-sm">
-                    <li className="flex items-start">
-                      <ExclamationTriangleIcon className="h-4 w-4 text-destructive mr-2 mt-0.5 flex-shrink-0" />
-                      Loading all components eagerly on initial page load
-                    </li>
-                    <li className="flex items-start">
-                      <ExclamationTriangleIcon className="h-4 w-4 text-destructive mr-2 mt-0.5 flex-shrink-0" />
-                      Making individual blockchain calls for batch data
-                    </li>
-                    <li className="flex items-start">
-                      <ExclamationTriangleIcon className="h-4 w-4 text-destructive mr-2 mt-0.5 flex-shrink-0" />
-                      Causing layout shifts with dynamic content
-                    </li>
-                    <li className="flex items-start">
-                      <ExclamationTriangleIcon className="h-4 w-4 text-destructive mr-2 mt-0.5 flex-shrink-0" />
-                      Using blocking rendering for non-critical features
-                    </li>
-                    <li className="flex items-start">
-                      <ExclamationTriangleIcon className="h-4 w-4 text-destructive mr-2 mt-0.5 flex-shrink-0" />
-                      Ignoring network conditions for resource loading
-                    </li>
-                    <li className="flex items-start">
-                      <ExclamationTriangleIcon className="h-4 w-4 text-destructive mr-2 mt-0.5 flex-shrink-0" />
-                      Re-fetching already cached blockchain data
-                    </li>
+                    {(
+                      t("bestPractices.avoid", {
+                        returnObjects: true,
+                      }) as string[]
+                    ).map((item, index) => (
+                      <li key={index} className="flex items-start">
+                        <ExclamationTriangleIcon className="h-4 w-4 text-destructive mr-2 mt-0.5 flex-shrink-0" />
+                        {item}
+                      </li>
+                    ))}
                   </ul>
                 </div>
               </div>

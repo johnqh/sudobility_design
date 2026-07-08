@@ -1,0 +1,117 @@
+{
+  "seo": {
+    "title": "Forms - Design System - Internal - {{emailDomain}}",
+    "description": "Complete form elements and input components showcase for the design system"
+  },
+  "codeExample": {
+    "preview": "Preview",
+    "usage": "Usage"
+  },
+  "header": {
+    "badge": "Form Elements",
+    "title": "Form Components & Input Elements",
+    "description": "Comprehensive form element library with consistent styling, validation states, and accessibility features. All components support light/dark themes and include proper focus management."
+  },
+  "quickStart": {
+    "title": "Quick Start - Essential Form Patterns",
+    "description": "Ready-to-use form components with proper validation, accessibility, and responsive design.",
+    "textInput": {
+      "title": "Text Input",
+      "label": "Email Address",
+      "placeholder": "Enter your email..."
+    },
+    "select": {
+      "title": "Select Dropdown",
+      "label": "Blockchain Network",
+      "placeholder": "Select a network..."
+    },
+    "checkbox": {
+      "title": "Checkbox",
+      "agree": "I agree to the Terms of Service and Privacy Policy"
+    },
+    "textarea": {
+      "title": "Textarea",
+      "label": "Message",
+      "placeholder": "Enter your message..."
+    }
+  },
+  "inputTypes": {
+    "title": "Input Types & Variants",
+    "description": "Different input types with consistent styling across all form elements.",
+    "textInputTypes": {
+      "title": "Text Input Types",
+      "description": "Different input types with consistent styling",
+      "textPlaceholder": "Text input",
+      "passwordPlaceholder": "Password"
+    },
+    "sizes": {
+      "title": "Input Sizes",
+      "description": "Different input sizes for various use cases",
+      "smallPlaceholder": "Small input",
+      "defaultPlaceholder": "Default input",
+      "largePlaceholder": "Large input"
+    }
+  },
+  "validation": {
+    "title": "Validation States",
+    "description": "Form validation states with proper color coding and messaging.",
+    "success": {
+      "title": "Success State",
+      "description": "Valid input with success styling",
+      "label": "Email Address",
+      "message": "Valid email address"
+    },
+    "error": {
+      "title": "Error State",
+      "description": "Invalid input with error styling",
+      "label": "Password",
+      "message": "Password must be at least 8 characters"
+    }
+  },
+  "advanced": {
+    "title": "Advanced Form Components",
+    "description": "More complex form patterns with enhanced functionality.",
+    "passwordToggle": {
+      "title": "Password Input with Toggle",
+      "description": "Password field with show/hide functionality",
+      "label": "Password",
+      "placeholder": "Enter password..."
+    },
+    "radio": {
+      "title": "Radio Button Group",
+      "description": "Radio buttons for single selection",
+      "label": "Subscription Plan",
+      "free": "Free Plan - Basic features",
+      "pro": "Pro Plan - Advanced features"
+    }
+  },
+  "complete": {
+    "title": "Complete Form Example",
+    "description": "A comprehensive form showcasing all form elements working together.",
+    "form": {
+      "title": "Web3 Profile Form",
+      "description": "Complete form with all element types and validation",
+      "displayNameLabel": "Display Name",
+      "displayNamePlaceholder": "Your display name",
+      "emailLabel": "Email Address",
+      "networkLabel": "Preferred Network",
+      "networkPlaceholder": "Select a network...",
+      "bioLabel": "Bio",
+      "bioPlaceholder": "Tell us about yourself...",
+      "notifications": "I agree to receive email notifications",
+      "submit": "Save Profile"
+    }
+  },
+  "accessibility": {
+    "title": "Accessibility Guidelines",
+    "heading": "Form Accessibility Best Practices",
+    "items": {
+      "labelsBefore": "Always use proper",
+      "labelsAfter": "elements associated with inputs",
+      "errorMessages": "Include clear error messages with validation states",
+      "focusStates": "Ensure focus states are clearly visible with ring utilities",
+      "inputTypes": "Use appropriate input types (email, password, etc.) for better mobile experience",
+      "contrast": "Maintain sufficient color contrast (minimum 4.5:1 ratio)"
+    }
+  }
+}

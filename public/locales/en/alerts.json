@@ -1,0 +1,142 @@
+{
+  "seo": {
+    "title": "Alerts - Design System - Internal - {{emailDomain}}",
+    "description": "Comprehensive alert component documentation with variants, layouts, actions, and Web3 integration"
+  },
+  "copy": {
+    "copied": "✓ Copied!",
+    "copy": "Copy"
+  },
+  "header": {
+    "badge": "Alerts",
+    "title": "Alert Components",
+    "intro": "Contextual feedback messages that provide important information, warnings, or confirmations to users with clear visual hierarchy and actionable content."
+  },
+  "stats": {
+    "alertTypes": "Alert Types",
+    "layoutOptions": "Layout Options",
+    "actionPatterns": "Action Patterns",
+    "web3Examples": "Web3 Examples"
+  },
+  "quickStart": {
+    "title": "🚀 Quick Start",
+    "description": "Get started with the most commonly used alert patterns. These examples show the essential alert types and their typical use cases.",
+    "essentialTitle": "1. Essential Alert Types",
+    "success": {
+      "title": "Success!",
+      "body": "Your transaction has been confirmed on the blockchain."
+    },
+    "info": {
+      "title": "Information",
+      "body": "Please connect your wallet to continue with this action."
+    },
+    "warning": {
+      "title": "Warning",
+      "body": "High gas fees detected. Consider waiting for lower network congestion."
+    },
+    "error": {
+      "title": "Error",
+      "body": "Transaction failed. Please check your wallet balance and try again."
+    },
+    "compactTitle": "2. Compact Alert Style",
+    "compact": {
+      "success": "✓ Email sent successfully",
+      "info": "ℹ New features available in settings",
+      "warning": "⚠ Wallet disconnected",
+      "error": "✗ Failed to load messages"
+    },
+    "dismissibleTitle": "3. Dismissible Alerts",
+    "dismissible": {
+      "successTitle": "Account verified!",
+      "successBody": "You can now access all premium features.",
+      "infoTitle": "New update available",
+      "infoBody": "Version 2.0 includes improved security features."
+    },
+    "actionsTitle": "4. Alerts with Action Buttons",
+    "actions": {
+      "title": "Subscription expires soon",
+      "body": "Your premium features will be disabled in 3 days.",
+      "renewNow": "Renew Now",
+      "remindLater": "Remind Later"
+    }
+  },
+  "variants": {
+    "title": "🎨 Alert Variants",
+    "description": "Explore all available alert variants with their semantic meanings and appropriate contexts for different types of user communication.",
+    "standardTitle": "Standard Alerts",
+    "standard": {
+      "successTitle": "Success Alert",
+      "successBody": "Use for completed actions and positive confirmations",
+      "infoTitle": "Info Alert",
+      "infoBody": "Use for neutral information and helpful tips",
+      "warningTitle": "Warning Alert",
+      "warningBody": "Use for potential issues requiring attention",
+      "errorTitle": "Error Alert",
+      "errorBody": "Use for failed actions and critical problems"
+    },
+    "compactTitle": "Compact Variants",
+    "compact": {
+      "success": "Compact success message",
+      "successNote": "Minimal space usage",
+      "info": "Compact information message",
+      "infoNote": "Quick notifications",
+      "warning": "Compact warning message",
+      "warningNote": "Brief cautionary notes",
+      "error": "Compact error message",
+      "errorNote": "Short error notices"
+    }
+  },
+  "web3": {
+    "title": "⚡ Web3 Integration Examples",
+    "description": "Real-world examples of alerts commonly used in Web3 applications including wallet connections, transactions, and blockchain interactions.",
+    "transactionTitle": "Transaction Status Alerts",
+    "transaction": {
+      "pendingTitle": "Transaction Pending",
+      "pendingBody": "Your transaction is being processed on the blockchain. This may take a few minutes.",
+      "confirmedTitle": "Transaction Confirmed",
+      "confirmedBody": "Your email has been sent and recorded on the blockchain.",
+      "failedTitle": "Transaction Failed",
+      "failedBody": "Insufficient funds or gas limit too low. Please try again."
+    },
+    "walletTitle": "Wallet Connection Alerts",
+    "wallet": {
+      "notConnectedTitle": "Wallet Not Connected",
+      "notConnectedBody": "Please connect your wallet to access your emails and send messages.",
+      "connectWallet": "Connect Wallet",
+      "networkMismatchTitle": "Network Mismatch",
+      "networkMismatchBody": "Please switch to Ethereum Mainnet to continue using the platform.",
+      "switchNetwork": "Switch Network"
+    },
+    "gasTitle": "Gas Fee & Network Alerts",
+    "gas": {
+      "highFeesTitle": "High Gas Fees Detected",
+      "highFeesBody": "Current gas price is unusually high. Consider waiting for lower network congestion.",
+      "ensTitle": "New ENS Domain Detected",
+      "ensBody": "Your wallet now owns alice.eth. You can receive emails at this address!",
+      "setAsPrimary": "Set as Primary"
+    }
+  },
+  "accessibility": {
+    "title": "♿ Accessibility Guidelines",
+    "description": "Ensure your alerts are accessible to all users with proper ARIA attributes, focus management, and screen reader compatibility.",
+    "bestPracticesTitle": "✅ Best Practices",
+    "bestPractices": [
+      "Use appropriate ARIA roles (alert, alertdialog, status)",
+      "Include descriptive text, not just colors or icons",
+      "Provide keyboard navigation for interactive elements",
+      "Use sufficient color contrast (4.5:1 minimum)",
+      "Time dismissible alerts appropriately"
+    ],
+    "avoidTitle": "❌ Avoid",
+    "avoid": [
+      "Auto-dismissing critical error messages",
+      "Using only colors to convey importance",
+      "Overwhelming users with too many alerts",
+      "Making alert text too small to read",
+      "Hiding important actions behind unnecessary clicks"
+    ],
+    "ariaTitle": "ARIA Implementation Examples"
+  },
+  "backToDesign": "Back to Design System",
+  "lastUpdated": "Last updated: {{date}}"
+}

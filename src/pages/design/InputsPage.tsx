@@ -15,6 +15,7 @@ import {
   UserIcon,
 } from "@heroicons/react/24/outline";
 import React, { useState } from "react";
+import { useTranslation } from "react-i18next";
 import LocalizedLink from "../../components/LocalizedLink";
 import { SEOHead } from "@sudobility/seo_lib";
 import { textVariants, ui, variants } from "@sudobility/design";
@@ -31,19 +32,22 @@ const CodeBlock: React.FC<{
   copyKey: string;
   copiedStates: { [key: string]: boolean };
   copyToClipboard: (text: string, key: string) => void;
-}> = ({ code, _language = "tsx", copyKey, copiedStates, copyToClipboard }) => (
-  <div className="relative">
-    <pre className="bg-muted text-foreground p-4 rounded-lg overflow-x-auto text-sm">
-      <code>{code}</code>
-    </pre>
-    <button
-      onClick={() => copyToClipboard(code, copyKey)}
-      className="absolute top-3 right-3 bg-secondary hover:bg-secondary/80 text-secondary-foreground px-3 py-1 rounded text-xs transition-colors"
-    >
-      {copiedStates[copyKey] ? "✓ Copied!" : "Copy"}
-    </button>
-  </div>
-);
+}> = ({ code, _language = "tsx", copyKey, copiedStates, copyToClipboard }) => {
+  const { t } = useTranslation("inputs");
+  return (
+    <div className="relative">
+      <pre className="bg-muted text-foreground p-4 rounded-lg overflow-x-auto text-sm">
+        <code>{code}</code>
+      </pre>
+      <button
+        onClick={() => copyToClipboard(code, copyKey)}
+        className="absolute top-3 right-3 bg-secondary hover:bg-secondary/80 text-secondary-foreground px-3 py-1 rounded text-xs transition-colors"
+      >
+        {copiedStates[copyKey] ? t("code.copied") : t("code.copy")}
+      </button>
+    </div>
+  );
+};
 
 const SectionHeader: React.FC<{
   id: string;
@@ -73,6 +77,7 @@ const SectionHeader: React.FC<{
 );
 
 const InputsPage: React.FC<AppProps> = ({ emailDomain, appName: _appName }) => {
+  const { t } = useTranslation("inputs");
   const [copiedStates, setCopiedStates] = useState<{ [key: string]: boolean }>(
     {},
   );
@@ -128,7 +133,7 @@ const InputsPage: React.FC<AppProps> = ({ emailDomain, appName: _appName }) => {
       if (value && !emailRegex.test(value)) {
         setErrors((prev) => ({
           ...prev,
-          email: "Please enter a valid email address",
+          email: t("validation.emailInvalid"),
         }));
         setValidations((prev) => ({ ...prev, email: false }));
       } else if (value) {
@@ -145,7 +150,7 @@ const InputsPage: React.FC<AppProps> = ({ emailDomain, appName: _appName }) => {
       if (value && !ethRegex.test(value) && value.length > 10) {
         setErrors((prev) => ({
           ...prev,
-          wallet: "Please enter a valid Ethereum address",
+          wallet: t("validation.walletInvalid"),
         }));
         setValidations((prev) => ({ ...prev, wallet: false }));
       } else if (value && ethRegex.test(value)) {
@@ -161,8 +166,8 @@ const InputsPage: React.FC<AppProps> = ({ emailDomain, appName: _appName }) => {
   return (
     <>
       <SEOHead
-        title={`Inputs - Design System - Internal - ${emailDomain}`}
-        description="Comprehensive input component documentation with variants, sizes, states, and Web3 integration"
+        title={t("seo.title", { emailDomain })}
+        description={t("seo.description")}
         noIndex={true}
       />
 
@@ -174,19 +179,19 @@ const InputsPage: React.FC<AppProps> = ({ emailDomain, appName: _appName }) => {
           <div className="text-center mb-12">
             <div className="inline-flex items-center bg-primary/10 px-4 py-2 rounded-full mb-6">
               <PencilSquareIcon className="h-5 w-5 text-primary mr-2" />
-              <span className="text-primary font-semibold">Inputs</span>
+              <span className="text-primary font-semibold">
+                {t("header.badge")}
+              </span>
             </div>
 
             <h1 className={`${textVariants.heading.display.xl()} mb-6`}>
-              Input Components
+              {t("header.title")}
             </h1>
 
             <p
               className={`${textVariants.body.lg()} max-w-3xl mx-auto text-muted-foreground mb-8`}
             >
-              Form input components with consistent styling, validation states,
-              and accessibility features designed for both traditional and Web3
-              applications.
+              {t("header.intro")}
             </p>
 
             {/* Input Stats */}
@@ -198,7 +203,7 @@ const InputsPage: React.FC<AppProps> = ({ emailDomain, appName: _appName }) => {
                   8
                 </div>
                 <div className={textVariants.caption.default()}>
-                  Input Types
+                  {t("stats.inputTypes")}
                 </div>
               </div>
               <div className={`${ui.background.subtle} rounded-lg p-4`}>
@@ -208,7 +213,7 @@ const InputsPage: React.FC<AppProps> = ({ emailDomain, appName: _appName }) => {
                   3
                 </div>
                 <div className={textVariants.caption.default()}>
-                  Size Options
+                  {t("stats.sizeOptions")}
                 </div>
               </div>
               <div className={`${ui.background.subtle} rounded-lg p-4`}>
@@ -218,7 +223,7 @@ const InputsPage: React.FC<AppProps> = ({ emailDomain, appName: _appName }) => {
                   4
                 </div>
                 <div className={textVariants.caption.default()}>
-                  State Types
+                  {t("stats.stateTypes")}
                 </div>
               </div>
               <div className={`${ui.background.subtle} rounded-lg p-4`}>
@@ -228,7 +233,7 @@ const InputsPage: React.FC<AppProps> = ({ emailDomain, appName: _appName }) => {
                   6
                 </div>
                 <div className={textVariants.caption.default()}>
-                  Web3 Patterns
+                  {t("stats.web3Patterns")}
                 </div>
               </div>
             </div>
@@ -238,8 +243,8 @@ const InputsPage: React.FC<AppProps> = ({ emailDomain, appName: _appName }) => {
           <div className={`${variants.card.elevated.padded()} mb-12`}>
             <SectionHeader
               id="quick-start"
-              title="🚀 Quick Start"
-              description="Get started with the most commonly used input patterns. These examples show essential input types with validation and accessibility features."
+              title={t("sections.quickStart.title")}
+              description={t("sections.quickStart.description")}
               expandedSections={expandedSections}
               toggleSection={toggleSection}
             />
@@ -249,12 +254,12 @@ const InputsPage: React.FC<AppProps> = ({ emailDomain, appName: _appName }) => {
                 {/* Basic Input Types */}
                 <div>
                   <h3 className={`${textVariants.heading.h3()} mb-4`}>
-                    1. Essential Input Types
+                    {t("quickStart.essentialTitle")}
                   </h3>
                   <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-4">
                     <div>
                       <label className="block text-sm font-medium text-foreground mb-2">
-                        Email Address
+                        {t("quickStart.emailLabel")}
                       </label>
                       <input
                         type="email"
@@ -274,20 +279,20 @@ const InputsPage: React.FC<AppProps> = ({ emailDomain, appName: _appName }) => {
                       {validations.email && (
                         <p className="text-sm text-success mt-1 flex items-center">
                           <CheckCircleIcon className="h-4 w-4 mr-1" />
-                          Valid email address
+                          {t("validation.emailValid")}
                         </p>
                       )}
                     </div>
 
                     <div>
                       <label className="block text-sm font-medium text-foreground mb-2">
-                        Password
+                        {t("quickStart.passwordLabel")}
                       </label>
                       <div className="relative">
                         <input
                           type={showPassword ? "text" : "password"}
                           className={variants.input.default()}
-                          placeholder="Enter your password"
+                          placeholder={t("quickStart.passwordPlaceholder")}
                           value={demoValues.password}
                           onChange={(e) =>
                             handleDemoInput("password", e.target.value)
@@ -309,7 +314,7 @@ const InputsPage: React.FC<AppProps> = ({ emailDomain, appName: _appName }) => {
 
                     <div>
                       <label className="block text-sm font-medium text-foreground mb-2">
-                        Search
+                        {t("quickStart.searchLabel")}
                       </label>
                       <div className="relative">
                         <div className="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
@@ -318,7 +323,7 @@ const InputsPage: React.FC<AppProps> = ({ emailDomain, appName: _appName }) => {
                         <input
                           type="text"
                           className={variants.input.withIcon()}
-                          placeholder="Search messages..."
+                          placeholder={t("quickStart.searchPlaceholder")}
                           value={demoValues.search}
                           onChange={(e) =>
                             handleDemoInput("search", e.target.value)
@@ -329,11 +334,11 @@ const InputsPage: React.FC<AppProps> = ({ emailDomain, appName: _appName }) => {
 
                     <div>
                       <label className="block text-sm font-medium text-foreground mb-2">
-                        Message
+                        {t("quickStart.messageLabel")}
                       </label>
                       <textarea
                         className={variants.input.default()}
-                        placeholder="Type your message..."
+                        placeholder={t("quickStart.messagePlaceholder")}
                         rows={3}
                         value={demoValues.message}
                         onChange={(e) =>
@@ -392,37 +397,37 @@ const InputsPage: React.FC<AppProps> = ({ emailDomain, appName: _appName }) => {
                 {/* Input Sizes */}
                 <div>
                   <h3 className={`${textVariants.heading.h3()} mb-4`}>
-                    2. Size Variations
+                    {t("quickStart.sizesTitle")}
                   </h3>
                   <div className="space-y-4 mb-4">
                     <div>
                       <label className="block text-sm font-medium text-foreground mb-2">
-                        Small Input
+                        {t("quickStart.smallLabel")}
                       </label>
                       <input
                         type="text"
                         className={variants.input.small()}
-                        placeholder="Small size input"
+                        placeholder={t("quickStart.smallPlaceholder")}
                       />
                     </div>
                     <div>
                       <label className="block text-sm font-medium text-foreground mb-2">
-                        Default Input
+                        {t("quickStart.defaultLabel")}
                       </label>
                       <input
                         type="text"
                         className={variants.input.default()}
-                        placeholder="Default size input"
+                        placeholder={t("quickStart.defaultPlaceholder")}
                       />
                     </div>
                     <div>
                       <label className="block text-sm font-medium text-foreground mb-2">
-                        Large Input
+                        {t("quickStart.largeLabel")}
                       </label>
                       <input
                         type="text"
                         className={variants.input.large()}
-                        placeholder="Large size input"
+                        placeholder={t("quickStart.largePlaceholder")}
                       />
                     </div>
                   </div>
@@ -443,12 +448,12 @@ const InputsPage: React.FC<AppProps> = ({ emailDomain, appName: _appName }) => {
                 {/* Error State */}
                 <div>
                   <h3 className={`${textVariants.heading.h3()} mb-4`}>
-                    3. Validation States
+                    {t("quickStart.validationTitle")}
                   </h3>
                   <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-4">
                     <div>
                       <label className="block text-sm font-medium text-foreground mb-2">
-                        Error State
+                        {t("quickStart.errorStateLabel")}
                       </label>
                       <input
                         type="email"
@@ -458,13 +463,13 @@ const InputsPage: React.FC<AppProps> = ({ emailDomain, appName: _appName }) => {
                       />
                       <p className="text-sm text-destructive mt-1 flex items-center">
                         <ExclamationCircleIcon className="h-4 w-4 mr-1" />
-                        Please enter a valid email address
+                        {t("validation.emailInvalid")}
                       </p>
                     </div>
 
                     <div>
                       <label className="block text-sm font-medium text-foreground mb-2">
-                        Success State
+                        {t("quickStart.successStateLabel")}
                       </label>
                       <input
                         type="email"
@@ -477,7 +482,7 @@ const InputsPage: React.FC<AppProps> = ({ emailDomain, appName: _appName }) => {
                       />
                       <p className="text-sm text-success mt-1 flex items-center">
                         <CheckCircleIcon className="h-4 w-4 mr-1" />
-                        Valid email address
+                        {t("validation.emailValid")}
                       </p>
                     </div>
                   </div>
@@ -513,12 +518,12 @@ const InputsPage: React.FC<AppProps> = ({ emailDomain, appName: _appName }) => {
                 {/* Web3 Inputs */}
                 <div>
                   <h3 className={`${textVariants.heading.h3()} mb-4`}>
-                    4. Web3 Specific Inputs
+                    {t("quickStart.web3Title")}
                   </h3>
                   <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-4">
                     <div>
                       <label className="block text-sm font-medium text-foreground mb-2">
-                        Wallet Address
+                        {t("quickStart.walletLabel")}
                       </label>
                       <div className="relative">
                         <div className="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
@@ -545,14 +550,14 @@ const InputsPage: React.FC<AppProps> = ({ emailDomain, appName: _appName }) => {
                       {validations.wallet && (
                         <p className="text-sm text-success mt-1 flex items-center">
                           <CheckCircleIcon className="h-4 w-4 mr-1" />
-                          Valid Ethereum address
+                          {t("validation.walletValid")}
                         </p>
                       )}
                     </div>
 
                     <div>
                       <label className="block text-sm font-medium text-foreground mb-2">
-                        Token Amount
+                        {t("quickStart.amountLabel")}
                       </label>
                       <div className="relative">
                         <input
@@ -572,7 +577,7 @@ const InputsPage: React.FC<AppProps> = ({ emailDomain, appName: _appName }) => {
                         </div>
                       </div>
                       <p className="text-xs text-muted-foreground mt-1">
-                        Balance: 2.4563 ETH
+                        {t("quickStart.amountBalance")}
                       </p>
                     </div>
                   </div>
@@ -617,8 +622,8 @@ const InputsPage: React.FC<AppProps> = ({ emailDomain, appName: _appName }) => {
           <div className={`${variants.card.elevated.padded()} mb-12`}>
             <SectionHeader
               id="variants"
-              title="🎨 Input Variants"
-              description="Explore all available input variants with their specific use cases and styling options for different contexts."
+              title={t("sections.variants.title")}
+              description={t("sections.variants.description")}
               expandedSections={expandedSections}
               toggleSection={toggleSection}
             />
@@ -629,54 +634,54 @@ const InputsPage: React.FC<AppProps> = ({ emailDomain, appName: _appName }) => {
                   {/* Standard Variants */}
                   <div>
                     <h3 className={`${textVariants.heading.h4()} mb-4`}>
-                      Standard Variants
+                      {t("variants.standardTitle")}
                     </h3>
                     <div className="space-y-4">
                       <div>
                         <label className="block text-sm font-medium mb-2">
-                          Default Input
+                          {t("variants.defaultLabel")}
                         </label>
                         <input
                           type="text"
                           className={variants.input.default()}
-                          placeholder="Standard input field"
+                          placeholder={t("variants.defaultPlaceholder")}
                         />
                         <p className="text-xs text-muted-foreground mt-1">
-                          Most common input style
+                          {t("variants.defaultHint")}
                         </p>
                       </div>
 
                       <div>
                         <label className="block text-sm font-medium mb-2">
-                          Search Input
+                          {t("variants.searchLabel")}
                         </label>
                         <input
                           type="search"
                           className={variants.input.search()}
-                          placeholder="Search functionality"
+                          placeholder={t("variants.searchPlaceholder")}
                         />
                         <p className="text-xs text-muted-foreground mt-1">
-                          Optimized for search use cases
+                          {t("variants.searchHint")}
                         </p>
                       </div>
 
                       <div>
                         <label className="block text-sm font-medium mb-2">
-                          Error State
+                          {t("variants.errorLabel")}
                         </label>
                         <input
                           type="text"
                           className={variants.input.error()}
-                          placeholder="Invalid input"
+                          placeholder={t("variants.errorPlaceholder")}
                         />
                         <p className="text-xs text-muted-foreground mt-1">
-                          For validation errors
+                          {t("variants.errorHint")}
                         </p>
                       </div>
 
                       <div>
                         <label className="block text-sm font-medium mb-2">
-                          With Icon
+                          {t("variants.iconLabel")}
                         </label>
                         <div className="relative">
                           <div className="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
@@ -689,7 +694,7 @@ const InputsPage: React.FC<AppProps> = ({ emailDomain, appName: _appName }) => {
                           />
                         </div>
                         <p className="text-xs text-muted-foreground mt-1">
-                          With left icon placement
+                          {t("variants.iconHint")}
                         </p>
                       </div>
                     </div>
@@ -698,12 +703,12 @@ const InputsPage: React.FC<AppProps> = ({ emailDomain, appName: _appName }) => {
                   {/* Specialized Inputs */}
                   <div>
                     <h3 className={`${textVariants.heading.h4()} mb-4`}>
-                      Specialized Types
+                      {t("variants.specializedTitle")}
                     </h3>
                     <div className="space-y-4">
                       <div>
                         <label className="block text-sm font-medium mb-2">
-                          Phone Number
+                          {t("variants.phoneLabel")}
                         </label>
                         <div className="relative">
                           <div className="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
@@ -723,7 +728,7 @@ const InputsPage: React.FC<AppProps> = ({ emailDomain, appName: _appName }) => {
 
                       <div>
                         <label className="block text-sm font-medium mb-2">
-                          Website URL
+                          {t("variants.urlLabel")}
                         </label>
                         <div className="relative">
                           <div className="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
@@ -743,7 +748,7 @@ const InputsPage: React.FC<AppProps> = ({ emailDomain, appName: _appName }) => {
 
                       <div>
                         <label className="block text-sm font-medium mb-2">
-                          Date
+                          {t("variants.dateLabel")}
                         </label>
                         <div className="relative">
                           <div className="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
@@ -762,7 +767,7 @@ const InputsPage: React.FC<AppProps> = ({ emailDomain, appName: _appName }) => {
 
                       <div>
                         <label className="block text-sm font-medium mb-2">
-                          File Upload
+                          {t("variants.fileLabel")}
                         </label>
                         <input
                           type="file"
@@ -808,8 +813,8 @@ const InputsPage: React.FC<AppProps> = ({ emailDomain, appName: _appName }) => {
           <div className={`${variants.card.elevated.padded()} mb-12`}>
             <SectionHeader
               id="web3"
-              title="⚡ Web3 Input Patterns"
-              description="Specialized input patterns commonly used in Web3 applications including wallet addresses, ENS domains, and token amounts."
+              title={t("sections.web3.title")}
+              description={t("sections.web3.description")}
               expandedSections={expandedSections}
               toggleSection={toggleSection}
             />
@@ -819,12 +824,12 @@ const InputsPage: React.FC<AppProps> = ({ emailDomain, appName: _appName }) => {
                 {/* Wallet Address Patterns */}
                 <div>
                   <h3 className={`${textVariants.heading.h4()} mb-4`}>
-                    Wallet Address Inputs
+                    {t("web3.walletInputsTitle")}
                   </h3>
                   <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
                     <div>
                       <label className="block text-sm font-medium mb-2">
-                        Ethereum Address
+                        {t("web3.ethAddressLabel")}
                       </label>
                       <div className="relative">
                         <div className="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
@@ -842,7 +847,7 @@ const InputsPage: React.FC<AppProps> = ({ emailDomain, appName: _appName }) => {
 
                     <div>
                       <label className="block text-sm font-medium mb-2">
-                        Solana Address
+                        {t("web3.solAddressLabel")}
                       </label>
                       <div className="relative">
                         <div className="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
@@ -860,7 +865,7 @@ const InputsPage: React.FC<AppProps> = ({ emailDomain, appName: _appName }) => {
 
                     <div>
                       <label className="block text-sm font-medium mb-2">
-                        ENS Domain
+                        {t("web3.ensLabel")}
                       </label>
                       <div className="relative">
                         <div className="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
@@ -881,7 +886,7 @@ const InputsPage: React.FC<AppProps> = ({ emailDomain, appName: _appName }) => {
 
                     <div>
                       <label className="block text-sm font-medium mb-2">
-                        SNS Domain
+                        {t("web3.snsLabel")}
                       </label>
                       <div className="relative">
                         <div className="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
@@ -905,12 +910,12 @@ const InputsPage: React.FC<AppProps> = ({ emailDomain, appName: _appName }) => {
                 {/* Token Amount Inputs */}
                 <div>
                   <h3 className={`${textVariants.heading.h4()} mb-4`}>
-                    Token Amount Inputs
+                    {t("web3.tokenAmountsTitle")}
                   </h3>
                   <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
                     <div>
                       <label className="block text-sm font-medium mb-2">
-                        ETH Amount
+                        {t("web3.ethAmountLabel")}
                       </label>
                       <div className="relative">
                         <input
@@ -921,7 +926,7 @@ const InputsPage: React.FC<AppProps> = ({ emailDomain, appName: _appName }) => {
                         />
                         <div className="absolute inset-y-0 right-0 pr-3 flex items-center space-x-2">
                           <button className="text-xs text-primary hover:text-primary/80 font-medium">
-                            MAX
+                            {t("web3.max")}
                           </button>
                           <span className="text-sm text-muted-foreground">
                             ETH
@@ -930,13 +935,13 @@ const InputsPage: React.FC<AppProps> = ({ emailDomain, appName: _appName }) => {
                       </div>
                       <div className="flex justify-between text-xs text-muted-foreground mt-1">
                         <span>≈ $3,247.82 USD</span>
-                        <span>Balance: 2.4563 ETH</span>
+                        <span>{t("web3.ethBalance")}</span>
                       </div>
                     </div>
 
                     <div>
                       <label className="block text-sm font-medium mb-2">
-                        USDC Amount
+                        {t("web3.usdcAmountLabel")}
                       </label>
                       <div className="relative">
                         <input
@@ -947,7 +952,7 @@ const InputsPage: React.FC<AppProps> = ({ emailDomain, appName: _appName }) => {
                         />
                         <div className="absolute inset-y-0 right-0 pr-3 flex items-center space-x-2">
                           <button className="text-xs text-primary hover:text-primary/80 font-medium">
-                            MAX
+                            {t("web3.max")}
                           </button>
                           <span className="text-sm text-muted-foreground">
                             USDC
@@ -956,7 +961,7 @@ const InputsPage: React.FC<AppProps> = ({ emailDomain, appName: _appName }) => {
                       </div>
                       <div className="flex justify-between text-xs text-muted-foreground mt-1">
                         <span>≈ $1,000.00 USD</span>
-                        <span>Balance: 1,547.23 USDC</span>
+                        <span>{t("web3.usdcBalance")}</span>
                       </div>
                     </div>
                   </div>
@@ -965,35 +970,39 @@ const InputsPage: React.FC<AppProps> = ({ emailDomain, appName: _appName }) => {
                 {/* Gas Fee Inputs */}
                 <div>
                   <h3 className={`${textVariants.heading.h4()} mb-4`}>
-                    Gas Fee Configuration
+                    {t("web3.gasTitle")}
                   </h3>
                   <div className="space-y-4">
                     <div>
                       <label className="block text-sm font-medium mb-2">
-                        Gas Price (Gwei)
+                        {t("web3.gasPriceLabel")}
                       </label>
                       <div className="grid grid-cols-3 gap-4">
                         <button className="p-3 border border-input rounded-lg text-left hover:border-primary focus:border-primary focus:outline-none focus:ring-2 focus:ring-ring">
-                          <div className="text-sm font-medium">Slow</div>
+                          <div className="text-sm font-medium">
+                            {t("web3.gasSlow")}
+                          </div>
                           <div className="text-lg font-semibold">20 Gwei</div>
                           <div className="text-xs text-muted-foreground">
-                            ~5 min
+                            {t("web3.gasSlowTime")}
                           </div>
                         </button>
                         <button className="p-3 border-2 border-primary bg-primary/10 rounded-lg text-left">
                           <div className="text-sm font-medium text-primary">
-                            Standard
+                            {t("web3.gasStandard")}
                           </div>
                           <div className="text-lg font-semibold">35 Gwei</div>
                           <div className="text-xs text-muted-foreground">
-                            ~2 min
+                            {t("web3.gasStandardTime")}
                           </div>
                         </button>
                         <button className="p-3 border border-input rounded-lg text-left hover:border-primary focus:border-primary focus:outline-none focus:ring-2 focus:ring-ring">
-                          <div className="text-sm font-medium">Fast</div>
+                          <div className="text-sm font-medium">
+                            {t("web3.gasFast")}
+                          </div>
                           <div className="text-lg font-semibold">50 Gwei</div>
                           <div className="text-xs text-muted-foreground">
-                            ~1 min
+                            {t("web3.gasFastTime")}
                           </div>
                         </button>
                       </div>
@@ -1001,7 +1010,7 @@ const InputsPage: React.FC<AppProps> = ({ emailDomain, appName: _appName }) => {
 
                     <div>
                       <label className="block text-sm font-medium mb-2">
-                        Custom Gas Price
+                        {t("web3.customGasLabel")}
                       </label>
                       <div className="relative">
                         <input
@@ -1017,7 +1026,7 @@ const InputsPage: React.FC<AppProps> = ({ emailDomain, appName: _appName }) => {
                         </div>
                       </div>
                       <p className="text-xs text-muted-foreground mt-1">
-                        Estimated cost: $8.45 USD • Estimated time: ~2 minutes
+                        {t("web3.customGasHint")}
                       </p>
                     </div>
                   </div>
@@ -1072,8 +1081,8 @@ const InputsPage: React.FC<AppProps> = ({ emailDomain, appName: _appName }) => {
           <div className={`${variants.card.elevated.padded()} mb-12`}>
             <SectionHeader
               id="accessibility"
-              title="♿ Accessibility Guidelines"
-              description="Ensure your inputs are accessible to all users with proper labeling, keyboard navigation, and screen reader support."
+              title={t("sections.accessibility.title")}
+              description={t("sections.accessibility.description")}
               expandedSections={expandedSections}
               toggleSection={toggleSection}
             />
@@ -1083,96 +1092,44 @@ const InputsPage: React.FC<AppProps> = ({ emailDomain, appName: _appName }) => {
                 <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
                   <div>
                     <h3 className={`${textVariants.heading.h4()} mb-4`}>
-                      ✅ Best Practices
+                      {t("accessibility.bestPracticesTitle")}
                     </h3>
                     <ul className="space-y-3">
-                      <li className="flex items-start">
-                        <CheckCircleIcon className="h-5 w-5 text-success mr-2 mt-0.5 flex-shrink-0" />
-                        <span className="text-sm">
-                          Always provide descriptive labels for screen readers
-                        </span>
-                      </li>
-                      <li className="flex items-start">
-                        <CheckCircleIcon className="h-5 w-5 text-success mr-2 mt-0.5 flex-shrink-0" />
-                        <span className="text-sm">
-                          Use appropriate input types (email, tel, url, etc.)
-                        </span>
-                      </li>
-                      <li className="flex items-start">
-                        <CheckCircleIcon className="h-5 w-5 text-success mr-2 mt-0.5 flex-shrink-0" />
-                        <span className="text-sm">
-                          Include helpful placeholder text and instructions
-                        </span>
-                      </li>
-                      <li className="flex items-start">
-                        <CheckCircleIcon className="h-5 w-5 text-success mr-2 mt-0.5 flex-shrink-0" />
-                        <span className="text-sm">
-                          Provide clear error messages with suggestions
-                        </span>
-                      </li>
-                      <li className="flex items-start">
-                        <CheckCircleIcon className="h-5 w-5 text-success mr-2 mt-0.5 flex-shrink-0" />
-                        <span className="text-sm">
-                          Ensure adequate color contrast (4.5:1 minimum)
-                        </span>
-                      </li>
-                      <li className="flex items-start">
-                        <CheckCircleIcon className="h-5 w-5 text-success mr-2 mt-0.5 flex-shrink-0" />
-                        <span className="text-sm">
-                          Support keyboard navigation and focus states
-                        </span>
-                      </li>
+                      {(
+                        t("accessibility.bestPractices", {
+                          returnObjects: true,
+                        }) as string[]
+                      ).map((item, index) => (
+                        <li key={index} className="flex items-start">
+                          <CheckCircleIcon className="h-5 w-5 text-success mr-2 mt-0.5 flex-shrink-0" />
+                          <span className="text-sm">{item}</span>
+                        </li>
+                      ))}
                     </ul>
                   </div>
 
                   <div>
                     <h3 className={`${textVariants.heading.h4()} mb-4`}>
-                      ❌ Avoid
+                      {t("accessibility.avoidTitle")}
                     </h3>
                     <ul className="space-y-3">
-                      <li className="flex items-start">
-                        <ExclamationCircleIcon className="h-5 w-5 text-destructive mr-2 mt-0.5 flex-shrink-0" />
-                        <span className="text-sm">
-                          Using placeholder text as the only label
-                        </span>
-                      </li>
-                      <li className="flex items-start">
-                        <ExclamationCircleIcon className="h-5 w-5 text-destructive mr-2 mt-0.5 flex-shrink-0" />
-                        <span className="text-sm">
-                          Relying only on color to indicate validation states
-                        </span>
-                      </li>
-                      <li className="flex items-start">
-                        <ExclamationCircleIcon className="h-5 w-5 text-destructive mr-2 mt-0.5 flex-shrink-0" />
-                        <span className="text-sm">
-                          Making inputs too small for comfortable interaction
-                        </span>
-                      </li>
-                      <li className="flex items-start">
-                        <ExclamationCircleIcon className="h-5 w-5 text-destructive mr-2 mt-0.5 flex-shrink-0" />
-                        <span className="text-sm">
-                          Providing vague or unhelpful error messages
-                        </span>
-                      </li>
-                      <li className="flex items-start">
-                        <ExclamationCircleIcon className="h-5 w-5 text-destructive mr-2 mt-0.5 flex-shrink-0" />
-                        <span className="text-sm">
-                          Disabling browser autofill without good reason
-                        </span>
-                      </li>
-                      <li className="flex items-start">
-                        <ExclamationCircleIcon className="h-5 w-5 text-destructive mr-2 mt-0.5 flex-shrink-0" />
-                        <span className="text-sm">
-                          Removing focus indicators or making them hard to see
-                        </span>
-                      </li>
+                      {(
+                        t("accessibility.avoid", {
+                          returnObjects: true,
+                        }) as string[]
+                      ).map((item, index) => (
+                        <li key={index} className="flex items-start">
+                          <ExclamationCircleIcon className="h-5 w-5 text-destructive mr-2 mt-0.5 flex-shrink-0" />
+                          <span className="text-sm">{item}</span>
+                        </li>
+                      ))}
                     </ul>
                   </div>
                 </div>
 
                 <div className="mt-8">
                   <h3 className={`${textVariants.heading.h4()} mb-4`}>
-                    Accessibility Implementation Examples
+                    {t("accessibility.examplesTitle")}
                   </h3>
                   <CodeBlock
                     copyKey="accessibility-examples"
@@ -1241,11 +1198,13 @@ const InputsPage: React.FC<AppProps> = ({ emailDomain, appName: _appName }) => {
               className="flex items-center text-muted-foreground hover:text-foreground transition-colors"
             >
               <ArrowLeftIcon className="h-5 w-5 mr-2" />
-              Back to Design System
+              {t("nav.back")}
             </LocalizedLink>
 
             <div className="text-sm text-muted-foreground">
-              Last updated: {new Date().toLocaleDateString()}
+              {t("nav.lastUpdated", {
+                date: new Date().toLocaleDateString(),
+              })}
             </div>
           </div>
         </div>

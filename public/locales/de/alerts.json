@@ -1,0 +1,142 @@
+{
+  "seo": {
+    "title": "Benachrichtigungen - Design-System - Intern - {{emailDomain}}",
+    "description": "Umfassende Dokumentation des Alarm-Components mit Varianten, Layouts, Aktionen und Web3-Integration"
+  },
+  "copy": {
+    "copied": "✓ Kopiert!",
+    "copy": "Kopieren"
+  },
+  "header": {
+    "badge": "Benachrichtigungen",
+    "title": "Alarmkomponenten",
+    "intro": "Kontextbezogene Feedback-Nachrichten, die Benutzern wichtige Informationen, Warnungen oder Bestätigungen mit klarer visueller Hierarchie und handlungsfähigem Inhalt bereitstellen."
+  },
+  "stats": {
+    "alertTypes": "Alarmtypen",
+    "layoutOptions": "Layout-Optionen",
+    "actionPatterns": "Aktionenmuster",
+    "web3Examples": "Web3-Beispiele"
+  },
+  "quickStart": {
+    "title": "🚀 Schnellstart",
+    "description": "Beginnen Sie mit den am häufigsten verwendeten Warnungsmustern. Diese Beispiele zeigen die wesentlichen Warnungstypen und ihre typischen Einsatzfälle.",
+    "essentialTitle": "1. Wesentliche Warnungstypen",
+    "success": {
+      "title": "Erfolg!",
+      "body": "Ihre Transaktion wurde auf der Blockchain bestätigt."
+    },
+    "info": {
+      "title": "Information",
+      "body": "Bitte verbinden Sie Ihre Brieftasche, um diese Aktion fortzusetzen."
+    },
+    "warning": {
+      "title": "Warnung",
+      "body": "Hohe Gasgebühren erkannt. Überlegen Sie, bis zur niedrigeren Netzwerkbelastung zu warten."
+    },
+    "error": {
+      "title": "Fehler",
+      "body": "Transaktion fehlgeschlagen. Bitte überprüfen Sie Ihr Wallet-Guthaben und versuchen Sie es erneut."
+    },
+    "compactTitle": "2. Kompakter Warnungsstil",
+    "compact": {
+      "success": "✓ E-Mail erfolgreich versendet",
+      "info": "ℹ Neue Funktionen stehen in den Einstellungen zur Verfügung",
+      "warning": "⚠ Wallet getrennt",
+      "error": "✗ Lade Nachrichten fehlgeschlagen"
+    },
+    "dismissibleTitle": "3. Wegwerfbare Warnungen",
+    "dismissible": {
+      "successTitle": "Konto bestätigt!",
+      "successBody": "Sie können nun auf alle Premium-Funktionen zugreifen.",
+      "infoTitle": "Neues Update verfügbar",
+      "infoBody": "Version 2.0 enthält verbesserte Sicherheitsfunktionen."
+    },
+    "actionsTitle": "4. Warnungen mit Aktionsschaltflächen",
+    "actions": {
+      "title": "Das Abonnement läuft bald ab",
+      "body": "Ihre Premium-Funktionen werden in 3 Tagen deaktiviert.",
+      "renewNow": "Jetzt erneuern",
+      "remindLater": "Später erinnern"
+    }
+  },
+  "variants": {
+    "title": "🎨 Warnungsvarianten",
+    "description": "Erkunden Sie alle verfügbaren Warnungsvarianten mit ihren semantischen Bedeutungen und geeigneten Kontexten für verschiedene Arten der Benutzerkommunikation.",
+    "standardTitle": "Standard-Warnungen",
+    "standard": {
+      "successTitle": "Erfolgswarnung",
+      "successBody": "Verwenden Sie dies für abgeschlossene Aktionen und positive Bestätigungen",
+      "infoTitle": "Info-Warnung",
+      "infoBody": "Verwenden Sie dies für neutrale Informationen und nützliche Tipps",
+      "warningTitle": "Warnungswarnung",
+      "warningBody": "Verwenden Sie dies für potenzielle Probleme, die Aufmerksamkeit erfordern",
+      "errorTitle": "Fehlerwarnung",
+      "errorBody": "Verwenden Sie dies für fehlgeschlagene Aktionen und kritische Probleme"
+    },
+    "compactTitle": "Kompakte Varianten",
+    "compact": {
+      "success": "Kompakte Erfolgsmeldung",
+      "successNote": "Minimale Speicherplatznutzung",
+      "info": "Kompakte Informationsnachricht",
+      "infoNote": "Schnelle Benachrichtigungen",
+      "warning": "Kurze Warnmeldung",
+      "warningNote": "Kurze Warnhinweise",
+      "error": "Kompakte Fehlermeldung",
+      "errorNote": "Kurze Fehlermeldungen"
+    }
+  },
+  "web3": {
+    "title": "⚡ Web3-Integrations-Beispiele",
+    "description": "Realitätsnahe Beispiele für Warnungen, die häufig in Web3-Anwendungen verwendet werden, einschließlich Wallet-Verbindungen, Transaktionen und Blockchain-Interaktionen.",
+    "transactionTitle": "Transaktionsstatus-Benachrichtigungen",
+    "transaction": {
+      "pendingTitle": "Transaktion ausstehend",
+      "pendingBody": "Ihre Transaktion wird auf der Blockchain verarbeitet. Dies kann einige Minuten dauern.",
+      "confirmedTitle": "Transaktion bestätigt",
+      "confirmedBody": "Ihre E-Mail wurde versendet und auf der Blockchain aufgezeichnet.",
+      "failedTitle": "Transaktion fehlgeschlagen",
+      "failedBody": "Unzureichende Mittel oder Gasgrenze zu niedrig. Bitte versuchen Sie es erneut."
+    },
+    "walletTitle": "Warnungen bei Wallet-Verbindung",
+    "wallet": {
+      "notConnectedTitle": "Wallet nicht verbunden",
+      "notConnectedBody": "Bitte verbinden Sie Ihre Brieftasche, um auf Ihre E-Mails zugreifen und Nachrichten senden zu können.",
+      "connectWallet": "Wallet verbinden",
+      "networkMismatchTitle": "Netzwerkabgleich",
+      "networkMismatchBody": "Bitte wechseln Sie zur Ethereum Mainnet, um die Plattform weiterzuverwenden.",
+      "switchNetwork": "Netzwerk wechseln"
+    },
+    "gasTitle": "Gas-Gebühr- und Netzwerkwarnungen",
+    "gas": {
+      "highFeesTitle": "Hohe Gasgebühren erkannt",
+      "highFeesBody": "Der aktuelle Gaspreis ist ungewöhnlich hoch. Überlegen Sie, bis zur niedrigeren Netzwerkbelastung zu warten.",
+      "ensTitle": "Neuer ENS-Domain-Bereich erkannt",
+      "ensBody": "Ihr Wallet besitzt nun alice.eth. Sie können E-Mails an diese Adresse erhalten!",
+      "setAsPrimary": "Als Primär festlegen"
+    }
+  },
+  "accessibility": {
+    "title": "♿ Barrierefreiheitsrichtlinien",
+    "description": "Stellen Sie sicher, dass Ihre Warnungen für alle Benutzer mit geeigneten ARIA-Attributen, Fokusverwaltung und Kompatibilität mit Bildschirmlesern zugänglich sind.",
+    "bestPracticesTitle": "✅ Best Practices",
+    "bestPractices": [
+      "Verwenden Sie geeignete ARIA-Rollen (alert, alertdialog, status)",
+      "Fügen Sie beschreibenden Text hinzu, nicht nur Farben oder Symbole",
+      "Stellen Sie eine Tastaturnavigation für interaktive Elemente bereit",
+      "Verwenden Sie ausreichend Kontrast (mindestens 4,5:1)",
+      "Zeitlich abrufbare Warnungen angemessen behandeln"
+    ],
+    "avoidTitle": "❌ Vermeiden",
+    "avoid": [
+      "Automatisch verschwindende kritische Fehlermeldungen",
+      "Nur Farben verwenden, um die Bedeutung zu vermitteln",
+      "Benutzer mit zu vielen Warnungen überwältigen",
+      "Warnungstext zu klein zum Lesen",
+      "Wichtige Aktionen hinter unnötigen Klicks verstecken"
+    ],
+    "ariaTitle": "ARIA-Implementierungsbeispiele"
+  },
+  "backToDesign": "Zurück zum Design-System",
+  "lastUpdated": "Zuletzt aktualisiert: {{date}}"
+}

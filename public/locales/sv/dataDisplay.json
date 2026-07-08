@@ -1,0 +1,202 @@
+{
+  "seo": {
+    "title": "Datavisning - Designsystem - Intern - {{emailDomain}}",
+    "description": "Komponenter för visning av data, inklusive tabeller, listor, rutor och kodvisningar"
+  },
+  "header": {
+    "badge": "Komponenter för visning av data",
+    "title": "Datavisningssystem",
+    "intro": "Kompletta komponenter för visning av data för tabeller, listor, rännor och kod. Optimerade för Web3-data inklusive adresser, transaktioner och blockkedjainformation."
+  },
+  "quickStart": {
+    "heading": "Snabbstart",
+    "copy": "Kopiera till urklipp",
+    "examples": {
+      "dataTable": {
+        "title": "Datatabell",
+        "description": "Sorterbar tabell med hover-tillstånd och markering"
+      },
+      "emailList": {
+        "title": "E-postlista",
+        "description": "Interaktiv lista med läst/oläst tillstånd"
+      },
+      "keyValue": {
+        "title": "Nyckel-värde visning",
+        "description": "Visa strukturerade data i nyckel-värde-par"
+      },
+      "statsGrid": {
+        "title": "Statistikrutnät",
+        "description": "Visa mått och statistik med trendindikatorer"
+      }
+    }
+  },
+  "tables": {
+    "heading": "Datatabeller",
+    "cardTitle": "Interaktiv kontakttabell",
+    "cardDescription": "Sorterbar tabell med val- och hoverlägen",
+    "columns": {
+      "name": "Namn",
+      "email": "E-post",
+      "balance": "Balans",
+      "status": "Status",
+      "date": "Datum"
+    },
+    "status": {
+      "active": "Aktiv",
+      "pending": "Väntar",
+      "inactive": "Inaktiv"
+    }
+  },
+  "lists": {
+    "heading": "Listor",
+    "cardTitle": "E-postlista",
+    "cardDescription": "Interaktiv e-postlista med läst/oläst-status och åtgärder",
+    "emails": {
+      "1": {
+        "subject": "Transaktion bekräftad",
+        "preview": "Din transaktion har bekräftats på blockkedjan..."
+      },
+      "2": {
+        "subject": "Ny NFT-släpp-varning",
+        "preview": "Spännande ny samling som släpps imorgon..."
+      },
+      "3": {
+        "subject": "Uppdatering av plånboks säkerhet",
+        "preview": "Viktiga säkerhetsförbättringar för din plånbok..."
+      },
+      "4": {
+        "subject": "DeFi avkastningsrapport",
+        "preview": "Din månadsöversikt över avkastningsodling..."
+      },
+      "5": {
+        "subject": "DAO-förslag #42",
+        "preview": "Rösta på den senaste förslaget från gemenskapen..."
+      }
+    }
+  },
+  "gridLayouts": {
+    "heading": "Rutnätlayout",
+    "statsGrid": {
+      "heading": "Statistikrutnät",
+      "totalEmails": "Totalt antal e-postmeddelanden",
+      "totalEmailsChange": "12,5 % från föregående månad",
+      "activeContacts": "Aktiva kontakter",
+      "activeContactsChange": "5 nya denna vecka",
+      "storageUsed": "Använt lagringsutrymme",
+      "storageUsedChange": "15 % kvar"
+    },
+    "cardGrid": {
+      "heading": "Kortrutnät",
+      "cardTitle": "Kortrubrik {{number}}",
+      "cardContent": "Kortin innehåll med relevant information och åtgärder."
+    }
+  },
+  "keyValue": {
+    "heading": "Nyckel-värde visning",
+    "userProfile": {
+      "heading": "Användarprofil",
+      "fullName": "Fullständigt namn",
+      "ensName": "ENS-namn",
+      "walletAddress": "Plånboksadress",
+      "email": "E-post",
+      "accountStatus": "Kontostatus",
+      "verified": "Verifierat"
+    },
+    "transactionDetails": {
+      "heading": "Transaktionsdetaljer",
+      "transactionHash": "Transaktionshash",
+      "blockNumber": "Blocknummer",
+      "gasUsed": "Använt gas",
+      "status": "Status",
+      "success": "Framgång"
+    }
+  },
+  "codeDisplay": {
+    "heading": "Kodvisning",
+    "inlineCode": {
+      "heading": "Inline-kod",
+      "textStart": "Använd \"",
+      "textMiddle": " för inline-kod. Web3-adresser som ",
+      "textMiddle2": " och transaktionshashar som ",
+      "textEnd": "har speciell stil."
+    },
+    "codeBlock": {
+      "heading": "Kodblock"
+    }
+  },
+  "timeline": {
+    "heading": "Tidslinje",
+    "cardTitle": "Aktivitetstidslinje",
+    "items": {
+      "1": {
+        "title": "Konto skapat",
+        "description": "Välkommen till example.com"
+      },
+      "2": {
+        "title": "Plånbok ansluten",
+        "description": "MetaMask-plånbok kopplad framgångsrikt"
+      },
+      "3": {
+        "title": "Första e-postmeddelandet skickat",
+        "description": "Skickat välkomstmail till teamet"
+      },
+      "4": {
+        "title": "ENS-namn registrerat",
+        "description": "alice.eth registrerad"
+      },
+      "5": {
+        "title": "Premiumuppdatering",
+        "description": "Uppgradering till premiumpaket väntar"
+      }
+    }
+  },
+  "emptyStates": {
+    "heading": "Tomma tillstånd",
+    "noEmails": {
+      "title": "Inga e-postmeddelanden",
+      "description": "Börja genom att skriva din första e-post",
+      "action": "Skicka e-post"
+    },
+    "noData": {
+      "title": "Ingen data tillgänglig",
+      "description": "Det finns för närvarande inga poster att visa"
+    }
+  },
+  "web3": {
+    "heading": "Web3-data mönster",
+    "cardTitle": "Visning av blockchainedata",
+    "cardDescription": "Specialiserade mönster för visning av Web3-data",
+    "addressDisplay": {
+      "heading": "Adressvisning",
+      "full": "Full:",
+      "truncated": "Trunkerat:",
+      "ens": "ENS:"
+    },
+    "tokenBalances": {
+      "heading": "Tokenbalans"
+    }
+  },
+  "implementationNotes": {
+    "heading": "Implementeringsanteckningar",
+    "performance": {
+      "heading": "Prestandatips",
+      "items": [
+        "• Använd virtuell rullning för stora datamängder",
+        "• Implementera sidning för tabeller med mer än 100 rader",
+        "• Ladda bilder och profiler i listor med lazy load",
+        "• Cachar dyra beräkningar",
+        "• Använd skelettlastare vid hämtning av data"
+      ]
+    },
+    "accessibility": {
+      "heading": "Tillgänglighet",
+      "items": [
+        "• Använd semantiskt HTML (table, thead, tbody)",
+        "• Lägg till aria-labels för sorterbara kolumner",
+        "• Se till att tangentbordsnavigering fungerar för tabeller",
+        "• Ge textuella ersättningar för visuella indikatorer",
+        "• Använd lämpliga ARIA-roller för listor"
+      ]
+    }
+  }
+}

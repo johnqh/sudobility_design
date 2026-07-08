@@ -1,0 +1,80 @@
+{
+  "seo": {
+    "title": "Tablas y cuadrículas de datos - Sistema de diseño - Interno - {{emailDomain}}",
+    "description": "Sistema de tabla completa con clasificación, filtrado, paginación y funcionalidad de cuadrícula de datos"
+  },
+  "header": {
+    "badge": "Tablas y cuadrículas de datos",
+    "title": "Tablas y cuadrículas de datos",
+    "subtitle": "Sistema de tabla completa con clasificación, filtrado, paginación y funcionalidad de cuadrícula de datos. Perfecto para mostrar datos estructurados con patrones de interacción avanzados."
+  },
+  "columns": {
+    "name": "Nombre",
+    "email": "Correo electrónico",
+    "role": "Rol",
+    "status": "Estado",
+    "actions": "Acciones",
+    "transactions": "Transacciones",
+    "joinDate": "Fecha de unión",
+    "transactionHash": "Hash de transacción",
+    "from": "Desde",
+    "to": "A",
+    "amount": "Cantidad",
+    "chain": "Cadena"
+  },
+  "basic": {
+    "title": "Tabla Básica",
+    "usage": "Uso"
+  },
+  "sortable": {
+    "title": "Tabla ordenable",
+    "headers": "Encabezados ordenables"
+  },
+  "selectable": {
+    "title": "Tabla seleccionable con acciones por lotes",
+    "selected": "{{count}} fila(s) seleccionada(s)",
+    "export": "Exportar",
+    "delete": "Eliminar"
+  },
+  "compact": {
+    "title": "Mesa compacta"
+  },
+  "filterable": {
+    "title": "Tabla filtrable",
+    "searchPlaceholder": "Buscar usuarios...",
+    "filters": "Filtros"
+  },
+  "pagination": {
+    "title": "Tabla con paginación",
+    "showing": "Mostrando",
+    "to": "a",
+    "of": "de",
+    "results": "resultados",
+    "ariaLabel": "Paginación"
+  },
+  "web3": {
+    "title": "Tabla de transacciones Web3",
+    "confirmed": "Confirmado",
+    "pending": "Pendiente",
+    "ethereum": "Ethereum",
+    "solana": "Solana"
+  },
+  "empty": {
+    "title": "Estado vacío",
+    "noData": "No se encontraron datos",
+    "description": "Actualmente no hay registros para mostrar.",
+    "addRecord": "Agregar nuevo registro"
+  },
+  "tokens": {
+    "title": "Variantes de tabla disponibles",
+    "structure": "Estructura de tabla",
+    "containerBase": "Contenedor y base",
+    "headers": "Encabezados",
+    "body": "Cuerpo",
+    "statesPagination": "Estados y paginación"
+  },
+  "nav": {
+    "previous": "Diseño y espaciado",
+    "back": "Volver al sistema de diseño"
+  }
+}

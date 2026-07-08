@@ -1,0 +1,185 @@
+{
+  "seo": {
+    "title": "Navigation - Système de conception - Interne - {{emailDomain}}",
+    "description": "Composants de navigation, y compris les fil d'Ariane, onglets, pagination et systèmes de menus"
+  },
+  "header": {
+    "badge": "Composants de navigation",
+    "title": "Système de navigation",
+    "intro": "Composants de navigation complets pour les applications Web3, y compris les filtres de navigation, onglets, pagination, menus et navigation par étapes. Conçus pour l'accessibilité et un comportement réactif."
+  },
+  "quickStart": {
+    "title": "Mise en route rapide",
+    "copy": "Copier dans le presse-papiers",
+    "examples": {
+      "breadcrumb": {
+        "title": "Navigation par fil d'Ariane",
+        "description": "Navigation hiérarchique indiquant la position actuelle de la page"
+      },
+      "tabs": {
+        "title": "Navigation par onglets",
+        "description": "Organisez le contenu en plusieurs vues avec une navigation par onglets"
+      },
+      "pagination": {
+        "title": "Pagination",
+        "description": "Naviguez à travers plusieurs pages de contenu"
+      },
+      "steps": {
+        "title": "Navigation par étapes",
+        "description": "Guidez les utilisateurs à travers des processus à plusieurs étapes"
+      }
+    }
+  },
+  "breadcrumbs": {
+    "sectionTitle": "Navigation interactive",
+    "liveTitle": "Exemple de fil d'Ariane en direct",
+    "home": "Accueil",
+    "web3Projects": "Projets Web3",
+    "featuresTitle": "Fonctionnalités",
+    "features": [
+      "Données structurées pour l'optimisation du référencement",
+      "Attributs d'accessibilité ARIA",
+      "Prise en charge de la navigation au clavier",
+      "Conception réactive avec troncature",
+      "Icône de démarrage facultatif et partage social"
+    ]
+  },
+  "tabVariants": {
+    "sectionTitle": "Variants de navigation par onglets",
+    "defaultTitle": "Onglets par défaut",
+    "overview": "Aperçu",
+    "analytics": "Analyse",
+    "settings": "Paramètres",
+    "overviewContent": "Contenu de vue d'ensemble avec les statistiques du projet et les activités récentes.",
+    "analyticsContent": "Tableau de bord d'analyse avec graphiques et indicateurs.",
+    "settingsContent": "Panneau de paramètres pour les options de configuration.",
+    "underlinedTitle": "Onglets soulignés",
+    "dashboard": "Tableau de bord",
+    "team": "Équipe",
+    "projects": "Projets",
+    "calendar": "Calendrier",
+    "underlinedContent": "Contenu du tableau de bord avec style de onglet souligné propre.",
+    "pillsTitle": "Comprimés Pilules",
+    "all": "Tous",
+    "active": "Actif",
+    "draft": "Brouillon",
+    "archived": "Archivé",
+    "pillsContent": "Contenu filtré par l'onglet pilule sélectionné."
+  },
+  "pagination": {
+    "sectionTitle": "Pagination",
+    "listTitle": "Pagination de liste de courriels",
+    "listDescription": "Exemple de pagination pour la navigation dans la liste de courriels",
+    "emailSubject": "Sujet de l'email {{number}}",
+    "timeAgo": "il y a 2h",
+    "previous": "Précédent",
+    "next": "Suivant",
+    "showing": "Affichage",
+    "to": "à",
+    "of": "de",
+    "results": "résultats"
+  },
+  "steps": {
+    "sectionTitle": "Navigation par étapes",
+    "demoTitle": "Configuration du portefeuille Web3",
+    "demoDescription": "Guidez les utilisateurs à travers le processus de connexion au portefeuille",
+    "stepLabel": "Étape {{number}}:",
+    "items": {
+      "accountSetup": {
+        "name": "Configuration du compte",
+        "description": "Créez votre compte"
+      },
+      "walletConnection": {
+        "name": "Connexion du portefeuille",
+        "description": "Connectez votre portefeuille Web3"
+      },
+      "emailSetup": {
+        "name": "Configuration de messagerie",
+        "description": "Configurez vos préférences de courrier électronique"
+      },
+      "complete": {
+        "name": "Terminé",
+        "description": "Commencez à utiliser example.com"
+      }
+    },
+    "details": {
+      "1": "Créez votre compte {{emailDomain}} avec votre nom d'utilisateur préféré et vos paramètres de sécurité.",
+      "2": "Connectez votre portefeuille Web3 (MetaMask, WalletConnect, etc.) pour activer les fonctionnalités de la blockchain.",
+      "3": "Configurez vos paramètres de messagerie, vos notifications et vos paramètres de confidentialité.",
+      "4": "Votre configuration est terminée ! Commencez à envoyer et recevoir des e-mails Web3."
+    }
+  },
+  "sidebar": {
+    "sectionTitle": "Navigation latérale",
+    "cardTitle": "Barre latérale de l'application e-mail",
+    "cardDescription": "Navigation persistante pour l'application de messagerie",
+    "items": {
+      "dashboard": "Tableau de bord",
+      "inbox": "Boîte de réception",
+      "sent": "Envoyé",
+      "archive": "Archive",
+      "settings": "Paramètres"
+    },
+    "mainContent": "Zone principale de contenu",
+    "mainContentHint": "Les modifications du contenu dépendent du choix effectué dans la barre latérale"
+  },
+  "web3Patterns": {
+    "sectionTitle": "Schémas de navigation Web3",
+    "walletStatus": {
+      "title": "Navigation de l'état du portefeuille",
+      "description": "Navigation qui s'adapte à l'état de connexion du portefeuille",
+      "connected": "MetaMask connecté",
+      "inbox": "Boîte de réception Web3",
+      "ensProfile": "Profil ENS",
+      "walletSettings": "Paramètres du portefeuille"
+    },
+    "multiChain": {
+      "title": "Navigation multichaine",
+      "description": "Navigation entre différents réseaux de blockchain",
+      "ethereum": "Ethereum",
+      "solana": "Solana",
+      "polygon": "Polygone",
+      "ethereumInbox": "Boîte de réception Ethereum",
+      "ensNames": "Noms ENS",
+      "gasSettings": "Paramètres du gaz"
+    }
+  },
+  "accessibility": {
+    "sectionTitle": "Lignes directrices sur l'accessibilité",
+    "title": "Accessibilité de navigation",
+    "description": "Assurez-vous que tous les composants de navigation soient accessibles aux lecteurs d'écran et aux utilisateurs du clavier.",
+    "ariaLandmarks": "Repères ARIA",
+    "keyboardNavigation": "Navigation au clavier",
+    "breadcrumbsLabel": "Croûtons",
+    "breadcrumbsKeys": [
+      "Onglet : Navigation par les liens",
+      "Entrée/Espace : Activer le lien",
+      "Liens de saut pour les lecteurs d'écran"
+    ],
+    "tabsLabel": "onglets",
+    "tabsKeys": [
+      "Touches fléchées : Naviguer entre les onglets",
+      "Onglet : entrez le panneau d'onglets",
+      "Entrée/Espace : Activer l'onglet"
+    ]
+  },
+  "implementation": {
+    "sectionTitle": "Remarques d'implémentation",
+    "performanceTitle": "Considérations sur les performances",
+    "performance": [
+      "Chargez les éléments de navigation de manière différée lorsque cela est possible",
+      "Utilisez React.memo pour les composants de navigation complexes",
+      "Débouclage de la recherche dans les menus de navigation",
+      "Défilement virtuel pour les listes de navigation longues",
+      "Précharger les itinéraires de navigation critiques"
+    ],
+    "mobileTitle": "Réactivité mobile",
+    "mobile": [
+      "Réduire la navigation dans des menus hamburger",
+      "Utilisez la navigation inférieure pour les applications mobiles",
+      "Implémentez les gestes de glissement là où cela est approprié",
+      "Assurez-vous que les cibles tactiles mesurent au moins 44 px",
+      "Testez sur diverses tailles d'écran et orientations"
+    ]
+  }
+}

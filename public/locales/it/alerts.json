@@ -1,0 +1,142 @@
+{
+  "seo": {
+    "title": "Avvisi - Sistema di design - Interno - {{emailDomain}}",
+    "description": "Documentazione completa del componente di avviso con varianti, layout, azioni e integrazione Web3"
+  },
+  "copy": {
+    "copied": "✓ Copiato!",
+    "copy": "Copia"
+  },
+  "header": {
+    "badge": "Avvisi",
+    "title": "Componenti di allarme",
+    "intro": "Messaggi di feedback contestuale che forniscono informazioni importanti, avvisi o conferme agli utenti con una gerarchia visuale chiara e contenuti azionabili."
+  },
+  "stats": {
+    "alertTypes": "Tipi di allarme",
+    "layoutOptions": "Opzioni di layout",
+    "actionPatterns": "Modelli di azione",
+    "web3Examples": "Esempi di Web3"
+  },
+  "quickStart": {
+    "title": "🚀 Avvio rapido",
+    "description": "Inizia con i modelli di avviso più comunemente usati. Questi esempi mostrano i tipi fondamentali di avviso e i loro casi d'uso tipici.",
+    "essentialTitle": "1. Tipi essenziali di avvisi",
+    "success": {
+      "title": "Successo!",
+      "body": "La tua transazione è stata confermata sulla blockchain."
+    },
+    "info": {
+      "title": "Informazioni",
+      "body": "Collega il tuo portafoglio per continuare con questa azione."
+    },
+    "warning": {
+      "title": "Avviso",
+      "body": "Rilevati costi elevati delle commissioni. Considera di attendere una riduzione della congestione della rete."
+    },
+    "error": {
+      "title": "Errore",
+      "body": "Transazione fallita. Verifica il saldo del tuo portafoglio e riprova."
+    },
+    "compactTitle": "2. Stile di alert compattato",
+    "compact": {
+      "success": "✓ Email inviato con successo",
+      "info": "ℹ Nuove funzionalità disponibili nelle impostazioni",
+      "warning": "⚠ Portafoglio scollegato",
+      "error": "✗ Caricamento dei messaggi fallito"
+    },
+    "dismissibleTitle": "3. Avvisi eliminabili",
+    "dismissible": {
+      "successTitle": "Account verificato!",
+      "successBody": "Ora puoi accedere a tutte le funzionalità premium.",
+      "infoTitle": "Nuovo aggiornamento disponibile",
+      "infoBody": "La versione 2.0 include funzionalità di sicurezza migliorate."
+    },
+    "actionsTitle": "4. Avvisi con pulsanti di azione",
+    "actions": {
+      "title": "La sottoscrizione scade presto",
+      "body": "Le tue funzionalità premium verranno disattivate in 3 giorni.",
+      "renewNow": "Rinnova ora",
+      "remindLater": "Ricorda in seguito"
+    }
+  },
+  "variants": {
+    "title": "🎨 Varianti di avviso",
+    "description": "Esplora tutte le varianti di avviso disponibili con i loro significati semantici e i contesti appropriati per diversi tipi di comunicazione con l'utente.",
+    "standardTitle": "Avvisi standard",
+    "standard": {
+      "successTitle": "Avviso di successo",
+      "successBody": "Usalo per azioni completate e conferme positive",
+      "infoTitle": "Avviso informativo",
+      "infoBody": "Usalo per informazioni neutre e suggerimenti utili",
+      "warningTitle": "Avviso di allerta",
+      "warningBody": "Utilizzare per possibili problemi che richiedono attenzione",
+      "errorTitle": "Avviso di errore",
+      "errorBody": "Usare per azioni fallite e problemi critici"
+    },
+    "compactTitle": "Varianti compatte",
+    "compact": {
+      "success": "Messaggio di successo compatto",
+      "successNote": "Utilizzo minimo dello spazio",
+      "info": "Messaggio informativo compatto",
+      "infoNote": "Notifiche rapide",
+      "warning": "Messaggio di avviso compatto",
+      "warningNote": "Breve note di avvertimento",
+      "error": "Messaggio di errore compatto",
+      "errorNote": "Avvisi di errore brevi"
+    }
+  },
+  "web3": {
+    "title": "⚡ Esempi di integrazione Web3",
+    "description": "Esempi del mondo reale di avvisi comunemente utilizzati nelle applicazioni Web3, inclusi collegamenti al portafoglio, transazioni e interazioni con la blockchain.",
+    "transactionTitle": "Avvisi sullo stato delle transazioni",
+    "transaction": {
+      "pendingTitle": "Transazione in sospeso",
+      "pendingBody": "La tua transazione viene elaborata sulla blockchain. Potrebbe richiedere alcuni minuti.",
+      "confirmedTitle": "Transazione confermata",
+      "confirmedBody": "La tua e-mail è stata inviata e registrata sulla blockchain.",
+      "failedTitle": "Transazione fallita",
+      "failedBody": "Fondi insufficienti o limite di gas troppo basso. Riprova."
+    },
+    "walletTitle": "Avvisi di connessione del portafoglio",
+    "wallet": {
+      "notConnectedTitle": "Portafoglio non collegato",
+      "notConnectedBody": "Collega il tuo portafoglio per accedere alle tue email e inviare messaggi.",
+      "connectWallet": "Collega portafoglio",
+      "networkMismatchTitle": "Corrispondenza di rete",
+      "networkMismatchBody": "Passa alla Ethereum Mainnet per continuare a utilizzare la piattaforma.",
+      "switchNetwork": "Cambia rete"
+    },
+    "gasTitle": "Avvisi per le spese di gas e rete",
+    "gas": {
+      "highFeesTitle": "Rilevati costi elevati per la gas",
+      "highFeesBody": "Il prezzo attuale del gas è insolitamente alto. Considera di aspettare un calo della congestione della rete.",
+      "ensTitle": "Nuovo dominio ENS rilevato",
+      "ensBody": "Il tuo portafoglio possiede ora alice.eth. Puoi ricevere email all'indirizzo!",
+      "setAsPrimary": "Imposta come principale"
+    }
+  },
+  "accessibility": {
+    "title": "♿ Linee guida sull'accessibilità",
+    "description": "Assicurati che le tue notifiche siano accessibili a tutti gli utenti con gli attributi ARIA corretti, la gestione del focus e la compatibilità con i lettori di schermo.",
+    "bestPracticesTitle": "✅ Migliori pratiche",
+    "bestPractices": [
+      "Utilizza i ruoli ARIA appropriati (alert, alertdialog, status)",
+      "Includi un testo descrittivo, non solo colori o icone",
+      "Fornire la navigazione tramite tastiera per gli elementi interattivi",
+      "Utilizzare un contrasto di colore sufficiente (minimo 4,5:1)",
+      "Gli avvisi temporanei vengono gestiti in modo appropriato"
+    ],
+    "avoidTitle": "❌ Evitare",
+    "avoid": [
+      "Messaggi di errore critici che scompaiono automaticamente",
+      "Utilizzando solo colori per trasmettere l'importanza",
+      "Sovraccaricare gli utenti con troppi avvisi",
+      "Rendere il testo dell'avviso troppo piccolo da leggere",
+      "Nascondere azioni importanti dietro clic non necessari"
+    ],
+    "ariaTitle": "Esempi di implementazione di ARIA"
+  },
+  "backToDesign": "Torna al sistema di design",
+  "lastUpdated": "Ultimo aggiornamento: {{date}}"
+}

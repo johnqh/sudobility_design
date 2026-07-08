@@ -1,0 +1,132 @@
+{
+  "seo": {
+    "title": "バッジ - {{appName}}",
+    "description": "デザインシステム用のバッジコンポーネントとバリアント"
+  },
+  "header": {
+    "badge": "バッジ",
+    "title": "バッジコンポーネント",
+    "intro": "ラベル付け、分類、ステータス情報の伝達に適した、小型で多用途のコンポーネント。セマンティックカラーとインタラクティブステートを活用。"
+  },
+  "stats": {
+    "badgeVariants": "バッジのバリエーション",
+    "sizeOptions": "サイズオプション",
+    "stateTypes": "州の種類",
+    "web3Variants": "Web3のバリエーション"
+  },
+  "sections": {
+    "quickStart": {
+      "title": "🚀 クイックスタート",
+      "description": "最もよく使われるバッジパターンでスタートしましょう。これらの例をコピーして貼り付けることで、コンポーネントにバッジを素早く実装できます。",
+      "essentialTitle": "1. 必須のバッジタイプ",
+      "essential": {
+        "default": "デフォルト",
+        "primary": "プライマリー",
+        "success": "成功",
+        "warning": "警告",
+        "error": "エラー"
+      },
+      "statusTitle": "2. アイコン付きステータスバッジ",
+      "status": {
+        "active": "アクティブ",
+        "pending": "保留中",
+        "failed": "失敗しました",
+        "info": "情報"
+      },
+      "sizesTitle": "3. サイズのバリエーション",
+      "sizes": {
+        "small": "小さな",
+        "default": "デフォルト",
+        "large": "大"
+      },
+      "web3Title": "4. Web3統合バッジ",
+      "web3": {
+        "ethereum": "Ethereum",
+        "solana": "Solana",
+        "verified": "確認済み"
+      }
+    },
+    "variants": {
+      "title": "🎨 バッジのバリエーション",
+      "description": "バッジの色バリエーションとその意味、適切な使用例をすべて確認してください。",
+      "semanticTitle": "意味的色",
+      "web3Title": "Web3専用",
+      "semantic": {
+        "default": "デフォルト",
+        "defaultDesc": "一般的で中立的な情報",
+        "primary": "プライマリー",
+        "primaryDesc": "ブランドカラー、重要な強調",
+        "success": "成功",
+        "successDesc": "完了したアクション、ポジティブなステータス",
+        "warning": "警告",
+        "warningDesc": "注意が必要、保留中の操作",
+        "error": "エラー",
+        "errorDesc": "失敗した操作、重大な問題"
+      },
+      "web3": {
+        "ethereum": "Ethereum",
+        "ethereumDesc": "イーサリアムブロックチェーン関連",
+        "solana": "Solana",
+        "solanaDesc": "Solanaブロックチェーン関連"
+      }
+    },
+    "sizes": {
+      "title": "📏 サイズオプション",
+      "description": "コンパクトなインジケーターから目立つラベルまで、さまざまな用途に応じたバッジサイズ。",
+      "small": {
+        "heading": "小さな",
+        "badge": "小さなバッジ",
+        "desc": "コンパクトなサイズで密集したレイアウトに対応"
+      },
+      "default": {
+        "heading": "デフォルト",
+        "badge": "デフォルトバッジ",
+        "desc": "ほとんどの用途に適した標準サイズ"
+      },
+      "large": {
+        "heading": "大",
+        "badge": "大バッジ",
+        "desc": "強調のための目立つサイズ"
+      }
+    },
+    "interactive": {
+      "title": "⚡ インタラクティブなパターン",
+      "description": "バッジが異なるコンテキストやコンポーネントでどのように使用されるかの実世界の例。",
+      "userStatusTitle": "ユーザー状態インジケーター",
+      "userStatus": {
+        "online": "オンライン",
+        "away": "遠く",
+        "offline": "オフライン"
+      },
+      "notificationTitle": "通知数",
+      "notification": {
+        "messages": "📧 メッセージ",
+        "notifications": "🔔 通知",
+        "updates": "⭐ 更新"
+      }
+    },
+    "accessibility": {
+      "title": "♿ アクセシビリティガイドライン",
+      "description": "バッジがすべてのユーザーにアクセス可能であることを確認してください。適切なコントラスト、スクリーンリーダー対応、キーボードナビゲーションを確保してください。",
+      "bestPracticesTitle": "✅ ベストプラクティス",
+      "bestPractices": [
+        "意味を一貫して伝える意味的な色を使用してください",
+        "十分な色のコントラストを確保する（最小4.5:1）",
+        "色やアイコンだけでなく、テキストラベルを含めてください",
+        "スクリーンリーダー用に適切なARIAラベルを使用してください",
+        "バッジのテキストは簡潔で意味のあるものにしてください"
+      ],
+      "avoidTitle": "❌ 避ける",
+      "avoid": [
+        "情報伝達に色のみに頼る",
+        "1つのインターフェースであまりにも多くのバッジを使用する",
+        "バッジを読みやすくするための大きさよりも小さくする",
+        "明確でないまたは曖昧なバッジテキストの使用",
+        "アニメーションまたは点滅するバッジの過剰使用"
+      ],
+      "ariaExamplesTitle": "ARIAの例"
+    }
+  },
+  "backToDesignSystem": "デザインシステムに戻る",
+  "lastUpdated": "最終更新日: {{date}}"
+}

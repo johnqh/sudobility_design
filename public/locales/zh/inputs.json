@@ -1,0 +1,136 @@
+{
+  "seo": {
+    "title": "输入 - 设计系统 - 内部 - {{emailDomain}}",
+    "description": "包含变体、尺寸、状态和Web3集成的完整输入组件文档"
+  },
+  "code": {
+    "copied": "✓ 已复制！",
+    "copy": "复制"
+  },
+  "header": {
+    "badge": "输入",
+    "title": "输入组件",
+    "intro": "具有统一样式、验证状态和无障碍功能的表单输入组件，专为传统和Web3应用而设计。"
+  },
+  "stats": {
+    "inputTypes": "输入类型",
+    "sizeOptions": "尺寸选项",
+    "stateTypes": "国家类型",
+    "web3Patterns": "Web3 模式"
+  },
+  "sections": {
+    "quickStart": {
+      "title": "🚀 快速入门",
+      "description": "从最常用的输入模式开始。这些示例展示了包含验证和可访问性功能的基本输入类型。"
+    },
+    "variants": {
+      "title": "🎨 输入变体",
+      "description": "探索所有可用的输入变体及其特定用例和不同上下文中的样式选项。"
+    },
+    "web3": {
+      "title": "⚡ Web3 输入模式",
+      "description": "Web3 应用中常用的专用输入模式，包括钱包地址、ENS 域名和代币金额。"
+    },
+    "accessibility": {
+      "title": "♿ 可访问性指南",
+      "description": "确保您的输入对所有用户都可访问，包括适当的标签、键盘导航和屏幕阅读器支持。"
+    }
+  },
+  "validation": {
+    "emailInvalid": "请输入有效的电子邮件地址",
+    "emailValid": "有效的电子邮件地址",
+    "walletInvalid": "请输入一个有效的以太坊地址",
+    "walletValid": "有效的以太坊地址"
+  },
+  "quickStart": {
+    "essentialTitle": "1. 必要的输入类型",
+    "emailLabel": "电子邮件地址",
+    "passwordLabel": "密码",
+    "passwordPlaceholder": "输入您的密码",
+    "searchLabel": "搜索",
+    "searchPlaceholder": "搜索消息...",
+    "messageLabel": "消息",
+    "messagePlaceholder": "输入您的消息...",
+    "sizesTitle": "2. 尺寸变化",
+    "smallLabel": "小输入",
+    "smallPlaceholder": "小尺寸输入",
+    "defaultLabel": "默认输入",
+    "defaultPlaceholder": "默认大小输入",
+    "largeLabel": "大输入",
+    "largePlaceholder": "大尺寸输入",
+    "validationTitle": "3. 验证状态",
+    "errorStateLabel": "错误状态",
+    "successStateLabel": "成功状态",
+    "web3Title": "4. Web3 特定输入",
+    "walletLabel": "钱包地址",
+    "amountLabel": "代币金额",
+    "amountBalance": "余额: 2.4563 ETH"
+  },
+  "variants": {
+    "standardTitle": "标准变体",
+    "specializedTitle": "专用类型",
+    "defaultLabel": "默认输入",
+    "defaultPlaceholder": "标准输入字段",
+    "defaultHint": "最常见的输入方式",
+    "searchLabel": "搜索输入",
+    "searchPlaceholder": "搜索功能",
+    "searchHint": "针对搜索用例进行了优化",
+    "errorLabel": "错误状态",
+    "errorPlaceholder": "无效输入",
+    "errorHint": "用于验证错误",
+    "iconLabel": "带图标",
+    "iconHint": "左对齐图标",
+    "phoneLabel": "电话号码",
+    "urlLabel": "网站URL",
+    "dateLabel": "日期",
+    "fileLabel": "文件上传"
+  },
+  "web3": {
+    "walletInputsTitle": "钱包地址输入",
+    "ethAddressLabel": "以太坊地址",
+    "solAddressLabel": "Solana 地址",
+    "ensLabel": "ENS 域名",
+    "snsLabel": "SNS 域",
+    "tokenAmountsTitle": "代币金额输入",
+    "ethAmountLabel": "ETH金额",
+    "usdcAmountLabel": "USDC金额",
+    "max": "MAX",
+    "ethBalance": "余额: 2.4563 ETH",
+    "usdcBalance": "余额: 1,547.23 USDC",
+    "gasTitle": "Gas费配置",
+    "gasPriceLabel": "Gas价格 (Gwei)",
+    "gasSlow": "慢",
+    "gasStandard": "标准",
+    "gasFast": "快速",
+    "gasSlowTime": "~5分钟",
+    "gasStandardTime": "~2分钟",
+    "gasFastTime": "~1分钟",
+    "customGasLabel": "自定义Gas价格",
+    "customGasHint": "预计费用：8.45美元 • 预计时间：~2分钟"
+  },
+  "accessibility": {
+    "bestPracticesTitle": "✅ 最佳实践",
+    "bestPractices": [
+      "始终为屏幕阅读器提供描述性标签",
+      "使用适当的输入类型（电子邮件、电话、URL 等）",
+      "包含有用的占位符文本和说明",
+      "提供清晰的错误消息并附带建议",
+      "确保足够的颜色对比度（最低4.5:1）",
+      "支持键盘导航和焦点状态"
+    ],
+    "avoidTitle": "❌ 避免",
+    "avoid": [
+      "使用占位符文本作为唯一标签",
+      "仅依靠颜色来表示验证状态",
+      "使输入过小，难以舒适操作",
+      "提供模糊或无帮助的错误消息",
+      "没有充分理由就禁用浏览器自动填充",
+      "删除焦点指示器或使其难以看到"
+    ],
+    "examplesTitle": "无障碍实施示例"
+  },
+  "nav": {
+    "back": "返回设计系统",
+    "lastUpdated": "最后更新：{{date}}"
+  }
+}

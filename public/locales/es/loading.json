@@ -1,0 +1,127 @@
+{
+  "seo": {
+    "title": "Estados de carga - Sistema de diseño - Interno - {{emailDomain}}",
+    "description": "Documentación completa del estado de carga con animaciones, esqueletos, indicadores de progreso y patrones de Web3"
+  },
+  "copy": {
+    "copied": "✓ ¡Copiado!",
+    "copy": "Copiar"
+  },
+  "header": {
+    "badge": "Estados de carga",
+    "title": "Cargando componentes de estado",
+    "description": "Indicadores de carga y estados de progreso que proporcionan retroalimentación visual clara durante operaciones asíncronas, especialmente diseñados para transacciones Web3 e interacciones con blockchain.",
+    "stats": {
+      "spinnerTypes": "Tipos de girador",
+      "skeletonPatterns": "Patrones de esqueleto",
+      "progressTypes": "Tipos de progreso",
+      "web3Examples": "Ejemplos de Web3"
+    }
+  },
+  "quickStart": {
+    "title": "🚀 Comienzo rápido",
+    "description": "Comience con los patrones de carga más comúnmente utilizados. Estos ejemplos muestran estados de carga esenciales para diferentes casos de uso.",
+    "spinners": {
+      "title": "1. Spinner de carga básicos",
+      "small": "Pequeño",
+      "default": "Predeterminado",
+      "large": "Grande"
+    },
+    "buttons": {
+      "title": "2. Estados del botón de carga",
+      "loading": "Cargando...",
+      "clickToLoad": "Haga clic para cargar",
+      "processing": "Procesando",
+      "uploading": "Cargando..."
+    },
+    "progress": {
+      "title": "3. Indicadores de progreso",
+      "label": "Progreso",
+      "startDemo": "Iniciar demostración"
+    },
+    "skeleton": {
+      "title": "4. Carga del esqueleto"
+    }
+  },
+  "web3": {
+    "title": "⚡ Patrones de carga de Web3",
+    "description": "Estados de carga especializados para operaciones de Web3, incluyendo conexiones de billetera, transacciones y confirmaciones de cadena de bloques.",
+    "transaction": {
+      "title": "Estados de carga de transacción",
+      "startDemo": "Iniciar demo de transacción",
+      "currentState": "Estado actual: {{state}}",
+      "pending": {
+        "title": "Transacción pendiente",
+        "message": "Por favor, confirme la transacción en su billetera..."
+      },
+      "confirming": {
+        "title": "Confirmar transacción",
+        "message": "Transacción enviada. Esperando confirmación de la cadena de bloques...",
+        "hash": "Hash: 0x1234...abcd"
+      },
+      "confirmed": {
+        "title": "Transacción confirmada",
+        "message": "¡Su transacción ha sido confirmada en la cadena de bloques!",
+        "block": "Bloqueo: #18.234.567"
+      }
+    },
+    "wallet": {
+      "title": "Estados de conexión de billetera",
+      "connecting": {
+        "title": "Conectando billetera",
+        "message": "Por favor, apruebe la conexión en su billetera"
+      },
+      "network": {
+        "title": "Detección de red",
+        "message": "Comprobando la compatibilidad de red..."
+      }
+    },
+    "email": {
+      "title": "Carga de correo electrónico y mensajes",
+      "encrypting": {
+        "title": "Cifrando mensaje...",
+        "message": "Protegiendo su correo electrónico con cifrado Web3"
+      },
+      "sending": {
+        "title": "Enviando a la cadena de bloques...",
+        "message": "Grabar metadatos de correo electrónico en la cadena"
+      },
+      "uploadProgress": "Progreso de carga",
+      "uploading": "Cargando...",
+      "startUploadDemo": "Iniciar demo de carga"
+    }
+  },
+  "skeletons": {
+    "title": "💀 Patrones de Esqueleto",
+    "description": "Marcadores de posición de contenido que imitan la estructura del contenido de carga para una mejor percepción de rendimiento.",
+    "emailList": "Esqueleto de lista de correos",
+    "cardContent": "Esqueleto de contenido de tarjeta"
+  },
+  "accessibility": {
+    "title": "♿ Directrices de accesibilidad",
+    "description": "Asegúrese de que sus estados de carga sean accesibles con los atributos ARIA adecuados, soporte para lectores de pantalla y gestión del enfoque.",
+    "bestPractices": {
+      "title": "✅ Mejores prácticas",
+      "items": [
+        "Utilice regiones en vivo de ARIA para estados de carga dinámicos",
+        "Proporcione mensajes de carga significativos",
+        "Incluya información de progreso cuando sea posible",
+        "Utilice el movimiento reducido para los usuarios que lo prefieran",
+        "Mantenga la gestión de enfoque durante la carga"
+      ]
+    },
+    "avoid": {
+      "title": "❌ Evitar",
+      "items": [
+        "Indicadores de carga sin alternativas de texto",
+        "Carga indefinida sin indicador de progreso",
+        "Animaciones de parpadeo rápido que pueden provocar convulsiones",
+        "Quitar el enfoque o el contenido sin advertencia",
+        "Mensajes genéricos de \"Cargando...\" sin contexto"
+      ]
+    },
+    "implementation": "Implementación de accesibilidad"
+  },
+  "backToDesignSystem": "Volver al sistema de diseño",
+  "lastUpdated": "Última actualización: {{date}}"
+}

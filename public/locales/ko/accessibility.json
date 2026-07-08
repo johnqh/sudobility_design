@@ -1,0 +1,127 @@
+{
+  "seo": {
+    "title": "가용성 및 A11Y - 디자인 시스템 - 내부 - {{emailDomain}}",
+    "description": "WCAG 준수를 위한 포괄적인 접근성 패턴 및 포괄적 디자인 유틸리티"
+  },
+  "header": {
+    "badge": "접근성 및 A11Y",
+    "title": "포괄적 디자인 시스템",
+    "intro": "포괄적인 접근성 패턴과 도구로 인clusive하고 WCAG 기준을 충족하는 Web3 애플리케이션을 구축할 수 있습니다. 이러한 패턴은 보조 기술을 사용하는 사용자들을 포함하여 모든 사용자가 동등하게 접근할 수 있도록 보장합니다."
+  },
+  "stats": {
+    "wcag": {
+      "value": "WCAG 2.1",
+      "label": "AA 준수"
+    },
+    "touch": {
+      "value": "44px+",
+      "label": "터치 대상"
+    },
+    "contrast": {
+      "value": "4.5:1",
+      "label": "색 대비"
+    },
+    "screenReader": {
+      "value": "스크린 리더",
+      "label": "호환성 있음"
+    }
+  },
+  "screenReader": {
+    "title": "스크린 리더 지원",
+    "description": "스킵 링크, aria 레이블, 세미틱 HTML을 포함한 포괄적인 스크린 리더 패턴.",
+    "skipLink": {
+      "title": "건너뛰기 링크",
+      "button": "건너뛰기 링크 (포커스로 보기)",
+      "visible": "✓ 건너뛰기 링크가 이제 보입니다! 이는 키보드 사용자가 빠르게 이동할 수 있도록 도와줍니다."
+    },
+    "only": {
+      "title": "스크린 리더 전용 콘텐츠",
+      "description": "이 콘텐츠는 시각 디자인을 복잡하게 하지 않으면서 스크린 리더를 위한 맥락을 제공합니다.",
+      "hidden": "이 텍스트는 스크린 리더 사용자에게만 보입니다"
+    }
+  },
+  "focus": {
+    "title": "집중 관리",
+    "description": "모든 인터랙티브 요소에 대한 포커스 인디케이터와 키보드 탐색 패턴을 정리합니다.",
+    "indicatorsTitle": "포커스 지표",
+    "standard": "표준 포커스",
+    "highContrast": "높은 대비",
+    "wallet": "웹3 지갑",
+    "error": "오류 상태"
+  },
+  "contrast": {
+    "title": "색 대비",
+    "description": "WCAG AA 기준을 초과하는 고대비 텍스트 및 배경 조합.",
+    "levelsTitle": "텍스트 대비 수준",
+    "high": "높은 대비 텍스트 (WCAG AAA) - 비율 7:1+",
+    "medium": "중간 대비 텍스트 (WCAG AA) - 비율 4.5:1+",
+    "low": "낮은 대비 텍스트(보조 콘텐츠용)",
+    "backgroundsTitle": "높은 대비 배경",
+    "primary": "주요",
+    "success": "성공",
+    "warning": "경고",
+    "errorLabel": "오류"
+  },
+  "motion": {
+    "title": "모션 선호 설정",
+    "description": "사용자의 운동 선호를 존중하고 전정기 장애를 가진 사용자를 위한 대안을 제공하는 애니메이션.",
+    "controlsTitle": "모션 선호도 컨트롤",
+    "reduceMotion": "모션 줄이기",
+    "noAnimation": "애니메이션 없음",
+    "animatedButton": "애니메이션 버튼"
+  },
+  "form": {
+    "title": "양식 접근성",
+    "description": "적절한 레이블, 검증 및 오류 처리를 갖춘 접근성 있는 폼 패턴.",
+    "requiredTitle": "필수 필드 표시기",
+    "emailLabel": "이메일 주소",
+    "passwordLabel": "비밀번호",
+    "passwordError": "비밀번호는 최소 8자 이상이어야 합니다",
+    "codeExamplesTitle": "코드 예제"
+  },
+  "feedback": {
+    "title": "접근 가능한 피드백",
+    "description": "스크린 리더 친화적인 피드백 메시지와 적절한 ARIA live 영역을 사용합니다.",
+    "messageTypesTitle": "메시지 유형",
+    "successTitle": "성공",
+    "successMessage": "지갑이 성공적으로 연결되었습니다!",
+    "errorTitle": "오류",
+    "errorMessage": "거래에 실패했습니다. 다시 시도해 주세요.",
+    "liveRegionTitle": "라이브 영역 패턴",
+    "politeExample": "이 콘텐츠는 화면 판독기에게 정중하게 알릴 것입니다",
+    "assertiveExample": "이 콘텐츠는 중요한 알림을 위해 스크린 리더를 중단합니다"
+  },
+  "web3": {
+    "title": "웹3 접근성",
+    "description": "웹3 애플리케이션을 위한 전문화된 접근성 패턴으로 지갑 연결 및 거래 포함.",
+    "componentsTitle": "웹3 컴포넌트",
+    "connectWallet": "지갑 연결",
+    "connectWalletAria": "웹3 지갑 연결하기",
+    "transactionAria": "거래 상태",
+    "transactionPending": "거래 대기 중...",
+    "balanceAria": "계정 잔고는 1.5 ETH입니다",
+    "addressAria": "지갑 주소 0x1234...5678",
+    "implementationTitle": "구현"
+  },
+  "bestPractices": {
+    "title": "최선의 실천 방법",
+    "doTitle": "✅ 이것을 하세요",
+    "do": [
+      "세미틱 HTML 요소(버튼, 네비게이션, 메인 등)를 사용하세요",
+      "인터랙티브 요소에 설명적인 aria-label을 제공하세요",
+      "모바일에서 최소 44px 터치 대상 보장",
+      "키보드만으로 탐색하는 테스트",
+      "사용자의 움직임 선호를 존중합니다",
+      "복잡한 웹3 개념에 대한 대체 텍스트 제공"
+    ],
+    "avoidTitle": "❌ 이걸 피하세요",
+    "avoid": [
+      "정보를 전달하는 데 색상만을 사용하기",
+      "탈출구 없이 키보드 트랩 만들기",
+      "자동 재생되는 비디오 또는 애니메이션",
+      "「여기 클릭」이나 「더 읽기」와 같은 일반적인 레이블 사용하기",
+      "포커스 인디케이터를 완전히 제거하기",
+      "설명 없이 Web3 용어 사용"
+    ]
+  }
+}

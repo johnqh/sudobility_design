@@ -1,0 +1,109 @@
+{
+  "seo": {
+    "title": "성능 및 최적화 - 디자인 시스템 - 내부 - {{emailDomain}}",
+    "description": "빠르고 효율적인 Web3 애플리케이션을 위한 성능 최적화 패턴 및 Core Web Vitals 도구"
+  },
+  "header": {
+    "badge": "성능 및 최적화",
+    "title": "성능 최적화 시스템",
+    "description": "빠르고 효율적인 Web3 애플리케이션을 위한 포괄적인 성능 패턴. 번들 크기, 렌더링 성능, Core Web Vitals 및 블록체인 상호작용을 최적화하세요.",
+    "stats": {
+      "bundleSplit": {
+        "value": "패키지 분할",
+        "label": "코드 조각"
+      },
+      "gpuLayers": {
+        "value": "GPU 레이어",
+        "label": "하드웨어 가속"
+      },
+      "web3Batch": {
+        "value": "웹3 배치",
+        "label": "거래 배치"
+      },
+      "lcpTarget": {
+        "value": "< 2.5초",
+        "label": "LCP 대상"
+      }
+    }
+  },
+  "webVitals": {
+    "title": "Core Web Vitals",
+    "description": "성능 최적화 도구를 사용한 Core Web Vitals 지표의 실시간 모니터링.",
+    "lcp": {
+      "title": "가장 큰 콘텐츠 페인팅",
+      "description": "가장 큰 요소를 렌더링하는 시간"
+    },
+    "fid": {
+      "title": "첫 번째 입력 지연",
+      "description": "인터랙티브 응답 시간"
+    },
+    "cls": {
+      "title": "누적 레이아웃 이동",
+      "description": "시각적 안정성 점수"
+    }
+  },
+  "bundle": {
+    "title": "패키지 최적화",
+    "description": "초기 번들 크기를 줄이기 위한 코드 분할 및 지연 로딩 패턴.",
+    "lazyLoadingStates": "지연 로딩 상태",
+    "componentLoading": "컴포넌트 로딩 중...",
+    "componentLoaded": "컴포넌트 로드됨 ✓",
+    "codeSplittingExample": "코드 분할 예제",
+    "loadingChunk": "디자인 시스템 청크를 로드 중입니다...",
+    "bundleAnalysis": "패키지 분석",
+    "mainBundle": "메인 번들:",
+    "designSystem": "디자인 시스템:",
+    "web3Utils": "웹3 도구:",
+    "charts": "차트:"
+  },
+  "network": {
+    "title": "네트워크 최적화",
+    "description": "연결 품질과 캐시 패턴에 기반한 적응형 로딩 전략.",
+    "connectionQuality": "연결 품질",
+    "currentConnection": "현재 연결",
+    "latency": "지연 시간: ~{{latency}}ms",
+    "simulateSlowConnection": "느린 연결 시뮬레이션",
+    "cacheStatus": "캐시 상태",
+    "freshData": "신선한 데이터",
+    "freshDataSuffix": " - 최근에 가져옴",
+    "staleData": "오래된 데이터",
+    "staleDataSuffix": " - 새로 고침 필요",
+    "implementation": "구현"
+  },
+  "web3": {
+    "title": "웹3 성능",
+    "description": "블록체인 상호작용, 지갑 연결 및 거래 배치를 위한 전문화된 최적화.",
+    "walletConnection": "지갑 연결",
+    "cachedConnection": "캐시된 연결",
+    "connecting": "연결 중...",
+    "transactionBatching": "거래 배치",
+    "batchedTransactions": "배치 트랜잭션",
+    "batchedTransactionsDetail": "5 건의 트랜잭션 → 1개의 멀티콜",
+    "individualTransaction": "개별 거래",
+    "gasOptimization": "가스 최적화",
+    "gasOptimal": "최적의 가스: 15 gwei",
+    "gasHigh": "높은 가스: 45 gwei",
+    "gasVeryHigh": "매우 높음: 120 gwei"
+  },
+  "bestPractices": {
+    "title": "성능 최적화的最佳 실천 방법",
+    "doTitle": "✅ 이것을 하세요",
+    "do": [
+      "내부/관리 기능에 코드 분할을 사용하세요",
+      "이미지 및 컴포넌트에 대한 지연 로딩 구현",
+      "가능한 경우 배치로 Web3 거래를 처리하세요",
+      "부드러운 애니메이션을 위해 GPU 가속을 사용하세요",
+      "프로덕션 환경에서 Core Web Vitals 모니터링",
+      "지갑 연결과 블록체인 데이터 캐시"
+    ],
+    "avoidTitle": "❌ 이걸 피하세요",
+    "avoid": [
+      "초기 페이지 로드 시 모든 컴포넌트를 즉시 로드",
+      "배치 데이터에 대해 개별 블록체인 호출 수행",
+      "동적 콘텐츠로 레이아웃 이동을 유발하기",
+      "비핵심 기능에 대해 블로킹 렌더링 사용",
+      "리소스 로딩 시 네트워크 조건 무시",
+      "이미 캐시된 블록체인 데이터 재수신 중"
+    ]
+  }
+}

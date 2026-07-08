@@ -1,0 +1,188 @@
+{
+  "seo": {
+    "title": "Thông báo và Phản hồi - Hệ thống Thiết kế - Nội bộ - {{emailDomain}}",
+    "description": "Các thành phần thông báo và phản hồi, bao gồm toast, chỉ báo tiến độ và trạng thái hệ thống"
+  },
+  "toasts": {
+    "copied": {
+      "title": "Đã sao chép!",
+      "message": "Mã đã được sao chép vào bộ nhớ tạm"
+    },
+    "complete": {
+      "title": "Hoàn thành!",
+      "message": "Thao tác hoàn thành thành công"
+    },
+    "success": {
+      "title": "Giao dịch đã được xác nhận!",
+      "message": "Giao dịch chuyển ETH của bạn đã thành công"
+    },
+    "error": {
+      "title": "Giao dịch thất bại",
+      "message": "Khí không đủ cho giao dịch"
+    },
+    "warning": {
+      "title": "Phí gas cao",
+      "message": "Phát hiện quá tải mạng",
+      "actionLabel": "Điều chỉnh khí"
+    },
+    "gasAdjusted": {
+      "title": "Điều chỉnh theo khí",
+      "message": "Giá khí đã được cập nhật thành 25 gwei"
+    },
+    "info": {
+      "title": "Tính năng mới đang có sẵn",
+      "message": "Hoán đổi đa chuỗi hiện được hỗ trợ"
+    }
+  },
+  "header": {
+    "badge": "Thông báo và phản hồi",
+    "title": "Hệ thống thông báo và phản hồi",
+    "description": "Hệ thống thông báo và phản hồi toàn diện bao gồm thông báo dạng toast, chỉ báo tiến độ, cập nhật trạng thái giao dịch và hiển thị trạng thái hệ thống cho các ứng dụng Web3."
+  },
+  "quickStart": {
+    "title": "Bắt đầu nhanh",
+    "copyTooltip": "Sao chép vào bộ nhớ tạm",
+    "examples": {
+      "toast": {
+        "title": "Thông báo dạng toast",
+        "description": "Thông báo tạm thời với tự động tắt và hành động"
+      },
+      "progress": {
+        "title": "Thông báo tiến độ",
+        "description": "Hiển thị tiến độ cho các thao tác kéo dài"
+      },
+      "transaction": {
+        "title": "Trạng thái giao dịch",
+        "description": "Tiến độ giao dịch Web3 với xác nhận"
+      },
+      "systemStatus": {
+        "title": "Bộ chỉ thị trạng thái hệ thống",
+        "description": "Trạng thái hệ thống và kết nối theo thời gian thực"
+      }
+    }
+  },
+  "toastSection": {
+    "title": "Thông báo dạng toast",
+    "demoTitle": "Demo Toast tương tác",
+    "demoDescription": "Nhấp vào các nút để kích hoạt các loại thông báo toast khác nhau",
+    "buttons": {
+      "success": "Thành công",
+      "error": "Lỗi",
+      "warning": "Cảnh báo",
+      "info": "Thông tin"
+    },
+    "featuresTitle": "Loại và đặc điểm của bánh mì nướng",
+    "features": {
+      "successLabel": "Thành công:",
+      "successText": "Xác nhận giao dịch, hành động đã hoàn thành",
+      "errorLabel": "Lỗi:",
+      "errorText": "Giao dịch thất bại, lỗi mạng",
+      "warningLabel": "Cảnh báo:",
+      "warningText": "Phí gas cao, cảnh báo an ninh (có hành động)",
+      "infoLabel": "Thông tin:",
+      "infoText": "Tính năng mới, cập nhật hệ thống (bền vững)",
+      "autoDismiss": "Tự động đóng sau 5 giây (trừ khi là vĩnh viễn)",
+      "actionButtons": "Nút hành động tùy chọn cho phản hồi tương tác"
+    }
+  },
+  "progressSection": {
+    "title": "Chỉ số tiến độ",
+    "linear": {
+      "title": "Tiến độ tuyến tính",
+      "description": "Thanh tiến độ cho tải lên tệp và thao tác",
+      "emailSync": "Tiến độ đồng bộ hóa email",
+      "fileUpload": "Tải tệp lên",
+      "uploading": "Đang tải lên document.pdf (2,3 MB)",
+      "simulate": "Mô phỏng tiến độ"
+    },
+    "spinners": {
+      "title": "Spinners đang tải",
+      "description": "Nhiều trạng thái tải và vòng quay",
+      "loadingTransactions": "Đang tải giao dịch...",
+      "connectingWallet": "Đang kết nối ví...",
+      "syncingBlockchain": "Đang đồng bộ hóa dữ liệu chuỗi khối..."
+    }
+  },
+  "transactionSection": {
+    "title": "Trạng thái giao dịch Web3",
+    "trackerTitle": "Trình theo dõi giao dịch",
+    "trackerDescription": "Trạng thái giao dịch thời gian thực với tiến độ xác nhận",
+    "confirmations": "xác nhận",
+    "confirmationsLabel": "Xác nhận",
+    "statuses": {
+      "pending": "Đang chờ",
+      "confirming": "Xác nhận",
+      "confirmed": "Đã xác nhận",
+      "failed": "Thất bại"
+    },
+    "types": {
+      "sendEth": "Gửi ETH",
+      "swapTokens": "Đổi token",
+      "approveToken": "Duyệt Token"
+    },
+    "statesTitle": "Trạng thái giao dịch",
+    "states": {
+      "pendingLabel": "Đang chờ:",
+      "pendingText": "Giao dịch đã được gửi vào mempool",
+      "confirmingLabel": "Xác nhận:",
+      "confirmingText": "Được bao gồm trong các khối (hiển thị tiến độ)",
+      "confirmedLabel": "Đã xác nhận:",
+      "confirmedText": "Số lượng xác nhận cần thiết đã đạt được",
+      "failedLabel": "Thất bại:",
+      "failedText": "Giao dịch bị hoàn tác hoặc từ chối"
+    }
+  },
+  "systemStatusSection": {
+    "title": "Trạng thái hệ thống và chỉ báo",
+    "connection": {
+      "title": "Trạng thái kết nối",
+      "description": "Kết nối thời gian thực và trạng thái hệ thống",
+      "systemStatus": "Trạng thái hệ thống",
+      "online": "Tất cả các hệ thống đang hoạt động",
+      "degraded": "Một số dịch vụ không khả dụng",
+      "offline": "Bảo trì hệ thống",
+      "statusLabels": {
+        "online": "Trực tuyến",
+        "degraded": "Suy giảm",
+        "offline": "Chế độ ngoại tuyến"
+      },
+      "internetConnection": "Kết nối Internet",
+      "connected": "Đã kết nối",
+      "walletConnection": "Kết nối ví",
+      "metaMask": "MetaMask",
+      "ethereumNetwork": "Mạng Ethereum",
+      "mainnet": "Mainnet",
+      "securityStatus": "Trạng thái bảo mật",
+      "warning": "Cảnh báo"
+    },
+    "badges": {
+      "title": "Biển báo thông báo",
+      "description": "Bộ đếm chỉ số và biểu tượng trạng thái",
+      "countBadges": "Đếm huy hiệu",
+      "statusIndicators": "Các chỉ báo trạng thái",
+      "online": "Trực tuyến",
+      "away": "Xa",
+      "offline": "Chế độ ngoại tuyến"
+    }
+  },
+  "contextualFeedback": {
+    "title": "Phản hồi ngữ cảnh",
+    "smartTitle": "Mẫu phản hồi thông minh",
+    "smartDescription": "phản hồi nhận thức ngữ cảnh, điều chỉnh theo hành động người dùng và trạng thái hệ thống",
+    "actionFeedback": "Phản hồi hành động",
+    "emailSent": "Email đã được gửi thành công",
+    "autoSave": "Tự động lưu đã được bật",
+    "draftSaved": "Bản nháp đã được lưu cục bộ",
+    "smartSuggestions": "Gợi ý thông minh",
+    "enable2fa": {
+      "title": "Bật xác thực hai yếu tố để bảo mật tốt hơn",
+      "description": "Khuyên dùng để bảo vệ ví",
+      "action": "Kích hoạt"
+    },
+    "backupSeed": {
+      "title": "Sao lưu cụm từ khôi phục của bạn",
+      "description": "Bảo vệ khôi phục ví của bạn",
+      "action": "Sao lưu"
+    }
+  }
+}

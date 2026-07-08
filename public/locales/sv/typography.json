@@ -1,0 +1,477 @@
+{
+  "seo": {
+    "title": "Typografi - Designsystem - Intern - {{emailDomain}}",
+    "description": "Komplett typografisk system och textstilshowcase för designsystemet"
+  },
+  "nav": {
+    "viewColors": "Visa färger"
+  },
+  "header": {
+    "badge": "Typografi-system",
+    "title": "Typografi och textstilar",
+    "intro": "Komplett typografisk system med teckensnitt, storlekar, tyngder och stilar med användningsexempel och kodexempel. Klicka på ett exempel för att kopiera dess klassnamn till urklipp."
+  },
+  "example": {
+    "aria": "Kopiera klassnamnet {{title}}",
+    "preview": "Förhandsgranskning",
+    "usage": "Användning"
+  },
+  "quickStart": {
+    "heading": "Snabbstart - Typografiexempel",
+    "description": "Redo att använda typografiexempel för de vanligaste textmönstren. Kopiera och klistra in direkt i dina komponenter.",
+    "pageHeading": {
+      "title": "Sidans rubrik",
+      "preview": "Välkommen till plattformen"
+    },
+    "bodyText": {
+      "title": "Kroppstext",
+      "preview": "Detta är ett exempel på ett stort textstycke som visar rätt teckenstorlek, radhöjd och mellanrum för läsbar innehåll i din applikation."
+    },
+    "codeBlock": {
+      "title": "Kodblock"
+    },
+    "linkText": {
+      "title": "Länktext",
+      "preview": "Läs mer om Web3-e-post"
+    },
+    "captionText": {
+      "title": "Undertext",
+      "preview": "Senast uppdaterat: 15 mars 2024 kl. 14:30"
+    },
+    "inlineCode": {
+      "title": "Inline-kod",
+      "previewPrefix": "Använd",
+      "previewSuffix": "hook för att hantera komponentstatus i React-applikationer."
+    }
+  },
+  "fontFamilies": {
+    "heading": "Teckenfamiljer",
+    "description": "Tre primära teckensnittsfamiljer används i hela programmet för olika innehållstyper.",
+    "pangram": "Den snabba bruna reven hoppa över den tröga hunden",
+    "items": {
+      "sans": {
+        "name": "Sans Serif (standard)",
+        "description": "Primär teckensnittsfamilj för gränssnittselement och kroppstext",
+        "usage": "Användargränssnittselement, rubriker, huvudtext"
+      },
+      "serif": {
+        "name": "Serif",
+        "description": "För redaktionell och formell innehåll",
+        "usage": "Redaktionell innehåll, formella dokument"
+      },
+      "mono": {
+        "name": "Monospace",
+        "description": "För kodblock och teknisk text",
+        "usage": "Kodblockar, tekniskt innehåll, plånboksadresser"
+      }
+    },
+    "code": {
+      "title": "Användning av teckensnittsfamilj",
+      "description": "Hur man använder teckensnittsfamiljer från designsystemet"
+    },
+    "preview": {
+      "sans": "Detta är sans serif-text (standard UI-teckensnitt)",
+      "serif": "Detta är serif-text för redaktionell innehåll",
+      "mono": "Detta är monospace-text för kod"
+    }
+  },
+  "scale": {
+    "heading": "Typografi-skala",
+    "description": "Hierarkisk typskala från visningstext till rubriker, som ger konsekvent storlek över hela gränssnittet.",
+    "items": {
+      "hero": {
+        "name": "Hjälte",
+        "usage": "Inlämnings sidor, hero-avsnitt"
+      },
+      "xl": {
+        "name": "Visa XL",
+        "usage": "Stora rubriker på skärm"
+      },
+      "lg": {
+        "name": "Visa LG",
+        "usage": "Medelstora rubriker"
+      },
+      "md": {
+        "name": "Visa MD",
+        "usage": "Små skärmtitlar"
+      },
+      "sm": {
+        "name": "Visa SM",
+        "usage": "Extra små skärminnehåll"
+      },
+      "h1": {
+        "name": "Rubrik 1",
+        "usage": "Rubriker på startsidan"
+      },
+      "h2": {
+        "name": "Rubrik 2",
+        "usage": "Avsnittsrubriker"
+      },
+      "h3": {
+        "name": "Rubrik 3",
+        "usage": "Underrubriker"
+      },
+      "h4": {
+        "name": "Rubrik 4",
+        "usage": "Mindre rubriker"
+      },
+      "h5": {
+        "name": "Rubrik 5",
+        "usage": "Små rubriker"
+      },
+      "h6": {
+        "name": "Rubrik 6",
+        "usage": "Småsta rubriker"
+      }
+    },
+    "code": {
+      "title": "Användning av typografisk skala",
+      "description": "Så här använder du rubriksvarianter från designsystemet"
+    },
+    "preview": {
+      "h1": "Rubrik 1",
+      "h2": "Rubrik 2",
+      "h3": "Rubrik 3",
+      "body": "Texten följer efter rubrikerna"
+    }
+  },
+  "body": {
+    "heading": "Kroppstext",
+    "description": "Variationer av kroppstext för olika innehållstyper och hierarkinivåer.",
+    "sample": "Detta är ett exempeltext som visar storlek, tyckning och radavstånd för denna variant.",
+    "items": {
+      "xl": {
+        "name": "Kropp XL",
+        "usage": "Inledande stycken, viktigt innehåll"
+      },
+      "lg": {
+        "name": "Kropp stor",
+        "usage": "Standardtext i kroppen, huvudinnehåll"
+      },
+      "md": {
+        "name": "Kropp Medium",
+        "usage": "Standardkroppstext (alias för stor)"
+      },
+      "sm": {
+        "name": "Kropp liten",
+        "usage": "Ytterligare information, bildtexter"
+      },
+      "xs": {
+        "name": "Kropp Extra Liten",
+        "usage": "Liten skrift, minimala detaljer"
+      }
+    },
+    "code": {
+      "title": "Användning av kroppstext",
+      "description": "Hur man använder kroppstextvarianter"
+    },
+    "preview": {
+      "xl": "Detta är extra stort kroppstext för inledande stycken och viktigt inledande innehåll.",
+      "lg": "Detta är standardtexten som används i större delen av programmet för huvudinnehållet.",
+      "sm": "Detta är liten text som används för sekundär information, bildtexter och hjälptexter."
+    }
+  },
+  "emphasis": {
+    "heading": "Textmarkering",
+    "description": "Textstyrkevarianter för olika tyngd- och framträdensnivåer.",
+    "items": {
+      "strongLg": {
+        "name": "Stark stor",
+        "usage": "Viktigt framhävdat text"
+      },
+      "strongMd": {
+        "name": "Stark Medium",
+        "usage": "Medium fet text"
+      },
+      "strongSm": {
+        "name": "Stark liten",
+        "usage": "Liten framhävda text"
+      },
+      "emphasisLg": {
+        "name": "Fokus stor",
+        "usage": "Medium tyngd betoning"
+      },
+      "emphasisMd": {
+        "name": "Medium tyngdpunkt",
+        "usage": "Medium tyngd betoning"
+      },
+      "emphasisSm": {
+        "name": "Fokus liten",
+        "usage": "Lätt till medel tyngd betoning"
+      },
+      "mutedLg": {
+        "name": "Dämpad stor",
+        "usage": "Text med minskad betoning"
+      },
+      "mutedMd": {
+        "name": "Dämpat medel",
+        "usage": "Text med minskad betoning"
+      },
+      "mutedSm": {
+        "name": "Död liten",
+        "usage": "Avsågad liten text"
+      }
+    },
+    "code": {
+      "title": "Användning av textmarkering",
+      "description": "Hur man använder textfettningsvarianter"
+    },
+    "preview": {
+      "normalPrefix": "Detta är vanlig text med",
+      "strong": "stark tonvikt",
+      "and": "och",
+      "medium": "medeltyngd",
+      "muted": "Detta är dämpad text med minskad visuell framträdande."
+    }
+  },
+  "caption": {
+    "heading": "Rubrik och specialtext",
+    "captionTitle": "Bildtextvarianter",
+    "sample": "Detta är ett exempel på en bildtext",
+    "uppercaseSample": "SEKTIONSETIKETT",
+    "items": {
+      "default": {
+        "name": "Standardrubrik",
+        "usage": "Bildtexter, ytterligare information"
+      },
+      "emphasis": {
+        "name": "Framhävning av text",
+        "usage": "Viktiga bildtexter"
+      },
+      "uppercase": {
+        "name": "Stor bokstavsuppskrift",
+        "usage": "Avsnittslabel, taggar"
+      }
+    },
+    "leadTitle": "Huvudtext",
+    "leadSample": "Detta är inledningstexten som introducerar huvudinnehållet och ger sammanhang till det som följer.",
+    "leadItems": {
+      "lg": {
+        "name": "Stort bly",
+        "usage": "Inledningsparagrafer, artiklars inledningar"
+      },
+      "md": {
+        "name": "Medium lead",
+        "usage": "Inledande stycken"
+      },
+      "sm": {
+        "name": "Liten ledare",
+        "usage": "Liten introduktionstext"
+      }
+    },
+    "code": {
+      "title": "Användning av bildtext och huvudtext",
+      "description": "Hur man använder undertexter och ledtext"
+    },
+    "preview": {
+      "imageCaption": "Detta är en bildtext för bilden ovanför",
+      "sectionLabel": "SEKTIONSETIKETT",
+      "lead": "Detta är inledningstexten som introducerar avsnittet."
+    }
+  },
+  "links": {
+    "heading": "Länkstilar",
+    "description": "Olika länkstilar för olika sammanhang och nivåer av betoning.",
+    "externalSample": "Extern länk →",
+    "items": {
+      "default": {
+        "name": "Standardlänk",
+        "usage": "Standardlänkar med understrykning"
+      },
+      "subtle": {
+        "name": "Subtil länk",
+        "usage": "Länkar utan understrykning"
+      },
+      "muted": {
+        "name": "Död länk",
+        "usage": "Grålänkar"
+      },
+      "external": {
+        "name": "Extern länk",
+        "usage": "Länkar till externa sidor"
+      }
+    },
+    "code": {
+      "title": "Användning av länkstilar",
+      "description": "Hur man använder länkvarianter"
+    },
+    "preview": {
+      "paraPrefix": "Detta stycke innehåller en",
+      "defaultLink": "standardlänk",
+      "and": "och en",
+      "subtleLink": "subtil länk",
+      "checkPrefix": "Kolla på detta",
+      "externalLink": "extern länk →",
+      "or": "eller detta",
+      "mutedLink": "död länk"
+    }
+  },
+  "codeText": {
+    "heading": "Kod och teknisk text",
+    "description": "Monospace-teckensnitt för kod, tekniskt innehåll och teknisk dokumentation.",
+    "items": {
+      "inline": {
+        "name": "Inline-kod",
+        "usage": "Kod inuti texten"
+      },
+      "block": {
+        "name": "Kodblock",
+        "usage": "Flerradiga kodblock"
+      },
+      "small": {
+        "name": "Liten kod",
+        "usage": "Liten inline-kod"
+      }
+    },
+    "code": {
+      "title": "Användning av kodtext",
+      "description": "Hur man använder kodtextvarianter"
+    },
+    "preview": {
+      "usePrefix": "Använd",
+      "useSuffix": "hook för att hantera tillstånd.",
+      "runPrefix": "Köra",
+      "runSuffix": "för att komma igång."
+    }
+  },
+  "labels": {
+    "heading": "Formulär etiketter & meddelanden",
+    "description": "Textstilar för formulärkomponenter, etiketter och återkopplingsmeddelanden.",
+    "items": {
+      "default": {
+        "name": "Standardetikett",
+        "usage": "Formulärfältets etiketter",
+        "sample": "Standard"
+      },
+      "required": {
+        "name": "Nödvändig etikett",
+        "usage": "Nödvändiga formulärfält",
+        "sample": "E-postadress"
+      },
+      "optional": {
+        "name": "Valfri etikett",
+        "usage": "Valfria formulärfält",
+        "sample": "Valfritt"
+      },
+      "helper": {
+        "name": "Hjälptext",
+        "usage": "Formulärhjälptext",
+        "sample": "Hjälp"
+      },
+      "error": {
+        "name": "Feltext",
+        "usage": "Formulärfelmeddelanden",
+        "sample": "Fel"
+      },
+      "success": {
+        "name": "Lyckotext",
+        "usage": "Formulär-lyckosmeddelanden",
+        "sample": "Framgång"
+      }
+    },
+    "code": {
+      "title": "Användning av formulärmärken",
+      "description": "Hur man använder formulärets etikett- och meddelandeförslag"
+    },
+    "preview": {
+      "emailLabel": "E-postadress",
+      "emailHelper": "Vi kommer använda detta för att skicka dig uppdateringar",
+      "passwordLabel": "Lösenord",
+      "passwordError": "Lösenordet måste vara minst 8 tecken långt",
+      "phoneLabel": "Telefonnummer",
+      "phoneSuccess": "Telefonnummer har verifierats framgångsrikt"
+    }
+  },
+  "web3": {
+    "heading": "Web3-textstilar",
+    "description": "Specialiserade textstilar för Web3- och blockkedjenspecifika innehåll som adresser, hashar och belopp.",
+    "items": {
+      "address": {
+        "name": "Plånboksadress",
+        "usage": "Fullständiga plånboksadresser"
+      },
+      "addressShort": {
+        "name": "Kort adress",
+        "usage": "Trunkerade plånboksadresser"
+      },
+      "hash": {
+        "name": "Transaktionshash",
+        "usage": "Transaktionsidentifierare"
+      },
+      "amount": {
+        "name": "Tokenbelopp",
+        "usage": "Belopp i kryptowärd"
+      },
+      "chain": {
+        "name": "Kedjans namn",
+        "usage": "Blockchain-nätverksnamn"
+      },
+      "symbol": {
+        "name": "Token-symbol",
+        "usage": "Kryptowährungssymbole"
+      }
+    },
+    "code": {
+      "title": "Web3-textanvändning",
+      "description": "Hur man använder Web3-specifika textstilar"
+    },
+    "preview": {
+      "transactionHash": "Transaktionshash:"
+    }
+  },
+  "responsive": {
+    "heading": "Responsiv typografi",
+    "description": "Typografi som automatiskt anpassas till skärmstorlek för optimal läsbarhet över alla enheter.",
+    "items": {
+      "h1": {
+        "name": "Responsiv H1",
+        "usage": "Rubriker som anpassas efter skärmstorlek"
+      },
+      "h2": {
+        "name": "Responsivt H2",
+        "usage": "Avsnittsrubriker som skalar"
+      },
+      "h3": {
+        "name": "Responsivt H3",
+        "usage": "Undertitel som skalar"
+      },
+      "display": {
+        "name": "Responsiv visning",
+        "usage": "Visa text som skalar"
+      }
+    },
+    "code": {
+      "title": "Användning av reaktiv typografi",
+      "description": "Hur man använder responsiva textvarianter som anpassas efter skärmstorlek"
+    },
+    "preview": {
+      "heading": "Denna rubrik skalar med skärmstorlek",
+      "body": "Ändra storleken på din webbläsarvy för att se hur responsiva rubriker anpassar sig till olika skärmstorlekar."
+    }
+  },
+  "guidelines": {
+    "heading": "Typografi riktlinjer",
+    "doTitle": "✓ Göra",
+    "do": [
+      "Använd textVariants för konsekvent stil",
+      "Välj lämpliga hierarkinivåer",
+      "Använd responsiva variationer för huvudinnehåll",
+      "Se till att kontrastförhållandet är tillräckligt",
+      "Använd monospace för kod och adresser",
+      "Test läsbarhet på olika skärmstorlekar"
+    ],
+    "dontTitle": "✗ Gör inte",
+    "dont": [
+      "Använd slumpmässiga teckenstorlekar utanför skalan",
+      "Hoppa över rubriknivåer (h1 → h3)",
+      "Använd för många olika textstilar",
+      "Gör texten för liten på mobilenheter",
+      "Använd serif-teckensnitt för användargränssnittselement",
+      "Ignorera textfärg i mörkt läge"
+    ]
+  },
+  "copyInstructions": {
+    "title": "Klicka för att kopiera klassnamn",
+    "description": "Klicka på något textexempel för att kopiera dess CSS-klassnamn, eller använd kopieringsknappen i kodexemplen för att kopiera användningskoden"
+  }
+}

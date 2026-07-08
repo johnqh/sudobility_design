@@ -12,6 +12,7 @@ import {
   XCircleIcon,
 } from "@heroicons/react/24/outline";
 import React, { useState } from "react";
+import { useTranslation } from "react-i18next";
 import LocalizedLink from "../../components/LocalizedLink";
 import CodeBlock from "../../components/CodeBlock";
 import { SEOHead } from "@sudobility/seo_lib";
@@ -51,6 +52,7 @@ const SectionHeader: React.FC<{
 );
 
 const BadgesPage: React.FC<AppProps> = ({ appName }) => {
+  const { t } = useTranslation("badges");
   const [expandedSections, setExpandedSections] = useState<{
     [key: string]: boolean;
   }>({
@@ -70,27 +72,27 @@ const BadgesPage: React.FC<AppProps> = ({ appName }) => {
   return (
     <>
       <SEOHead
-        title={`Badges - ${appName}`}
-        description="Badge components and variants for the design system"
+        title={t("seo.title", { appName })}
+        description={t("seo.description")}
       />
       <div className="max-w-7xl mx-auto px-4 py-12">
         {/* Header */}
         <div className="text-center mb-12">
           <div className="inline-flex items-center bg-accent/10 px-4 py-2 rounded-full mb-6">
             <SparklesIcon className="h-5 w-5 text-accent mr-2" />
-            <span className="text-accent font-semibold">Badges</span>
+            <span className="text-accent font-semibold">
+              {t("header.badge")}
+            </span>
           </div>
 
           <h1 className={`${textVariants.heading.display.xl()} mb-6`}>
-            Badge Components
+            {t("header.title")}
           </h1>
 
           <p
             className={`${textVariants.body.lg()} max-w-3xl mx-auto text-muted-foreground mb-8`}
           >
-            Small, versatile components for labeling, categorizing, and
-            conveying status information with semantic colors and interactive
-            states.
+            {t("header.intro")}
           </p>
 
           {/* Badge Stats */}
@@ -100,20 +102,24 @@ const BadgesPage: React.FC<AppProps> = ({ appName }) => {
                 8
               </div>
               <div className={textVariants.caption.default()}>
-                Badge Variants
+                {t("stats.badgeVariants")}
               </div>
             </div>
             <div className={`${ui.background.subtle} rounded-lg p-4`}>
               <div className={`${textVariants.heading.h4()} text-success mb-1`}>
                 3
               </div>
-              <div className={textVariants.caption.default()}>Size Options</div>
+              <div className={textVariants.caption.default()}>
+                {t("stats.sizeOptions")}
+              </div>
             </div>
             <div className={`${ui.background.subtle} rounded-lg p-4`}>
               <div className={`${textVariants.heading.h4()} text-primary mb-1`}>
                 5
               </div>
-              <div className={textVariants.caption.default()}>State Types</div>
+              <div className={textVariants.caption.default()}>
+                {t("stats.stateTypes")}
+              </div>
             </div>
             <div className={`${ui.background.subtle} rounded-lg p-4`}>
               <div
@@ -122,7 +128,7 @@ const BadgesPage: React.FC<AppProps> = ({ appName }) => {
                 4
               </div>
               <div className={textVariants.caption.default()}>
-                Web3 Variants
+                {t("stats.web3Variants")}
               </div>
             </div>
           </div>
@@ -132,8 +138,8 @@ const BadgesPage: React.FC<AppProps> = ({ appName }) => {
         <div className={`${variants.card.elevated.padded()} mb-12`}>
           <SectionHeader
             id="quick-start"
-            title="🚀 Quick Start"
-            description="Get started with the most commonly used badge patterns. Copy and paste these examples to quickly implement badges in your components."
+            title={t("sections.quickStart.title")}
+            description={t("sections.quickStart.description")}
             expandedSections={expandedSections}
             toggleSection={toggleSection}
           />
@@ -143,15 +149,25 @@ const BadgesPage: React.FC<AppProps> = ({ appName }) => {
               {/* Basic Badges */}
               <div>
                 <h3 className={`${textVariants.heading.h3()} mb-4`}>
-                  1. Essential Badge Types
+                  {t("sections.quickStart.essentialTitle")}
                 </h3>
                 <div className="bg-muted p-6 rounded-lg mb-4">
                   <div className="flex flex-wrap gap-3 items-center">
-                    <span className={variants.badge.default()}>Default</span>
-                    <span className={variants.badge.primary()}>Primary</span>
-                    <span className={variants.badge.success()}>Success</span>
-                    <span className={variants.badge.warning()}>Warning</span>
-                    <span className={variants.badge.error()}>Error</span>
+                    <span className={variants.badge.default()}>
+                      {t("sections.quickStart.essential.default")}
+                    </span>
+                    <span className={variants.badge.primary()}>
+                      {t("sections.quickStart.essential.primary")}
+                    </span>
+                    <span className={variants.badge.success()}>
+                      {t("sections.quickStart.essential.success")}
+                    </span>
+                    <span className={variants.badge.warning()}>
+                      {t("sections.quickStart.essential.warning")}
+                    </span>
+                    <span className={variants.badge.error()}>
+                      {t("sections.quickStart.essential.error")}
+                    </span>
                   </div>
                 </div>
                 <CodeBlock
@@ -163,25 +179,25 @@ const BadgesPage: React.FC<AppProps> = ({ appName }) => {
               {/* Status Badges with Icons */}
               <div>
                 <h3 className={`${textVariants.heading.h3()} mb-4`}>
-                  2. Status Badges with Icons
+                  {t("sections.quickStart.statusTitle")}
                 </h3>
                 <div className="bg-muted p-6 rounded-lg mb-4">
                   <div className="flex flex-wrap gap-3 items-center">
                     <span className={variants.badge.success()}>
                       <CheckCircleIcon className="h-3 w-3 mr-1" />
-                      Active
+                      {t("sections.quickStart.status.active")}
                     </span>
                     <span className={variants.badge.warning()}>
                       <ExclamationTriangleIcon className="h-3 w-3 mr-1" />
-                      Pending
+                      {t("sections.quickStart.status.pending")}
                     </span>
                     <span className={variants.badge.error()}>
                       <XCircleIcon className="h-3 w-3 mr-1" />
-                      Failed
+                      {t("sections.quickStart.status.failed")}
                     </span>
                     <span className={variants.badge.primary()}>
                       <InformationCircleIcon className="h-3 w-3 mr-1" />
-                      Info
+                      {t("sections.quickStart.status.info")}
                     </span>
                   </div>
                 </div>
@@ -194,16 +210,18 @@ const BadgesPage: React.FC<AppProps> = ({ appName }) => {
               {/* Size Variants */}
               <div>
                 <h3 className={`${textVariants.heading.h3()} mb-4`}>
-                  3. Size Variations
+                  {t("sections.quickStart.sizesTitle")}
                 </h3>
                 <div className="bg-muted p-6 rounded-lg mb-4">
                   <div className="flex flex-wrap gap-3 items-center">
                     <span className={variants.badge.small("primary")}>
-                      Small
+                      {t("sections.quickStart.sizes.small")}
                     </span>
-                    <span className={variants.badge.primary()}>Default</span>
+                    <span className={variants.badge.primary()}>
+                      {t("sections.quickStart.sizes.default")}
+                    </span>
                     <span className={variants.badge.large("primary")}>
-                      Large
+                      {t("sections.quickStart.sizes.large")}
                     </span>
                   </div>
                 </div>
@@ -216,7 +234,7 @@ const BadgesPage: React.FC<AppProps> = ({ appName }) => {
               {/* Web3 Badges */}
               <div>
                 <h3 className={`${textVariants.heading.h3()} mb-4`}>
-                  4. Web3 Integration Badges
+                  {t("sections.quickStart.web3Title")}
                 </h3>
                 <div className="bg-muted p-6 rounded-lg mb-4">
                   <div className="flex flex-wrap gap-3 items-center">
@@ -229,15 +247,15 @@ const BadgesPage: React.FC<AppProps> = ({ appName }) => {
                         <path d="M12 0L5.35 12.11L12 16.22L18.65 12.11L12 0Z" />
                         <path d="M12 17.75L5.35 13.64L12 24L18.65 13.64L12 17.75Z" />
                       </svg>
-                      Ethereum
+                      {t("sections.quickStart.web3.ethereum")}
                     </span>
                     <span className={variants.badge.solana()}>
                       <BoltIcon className="h-3 w-3 mr-1" />
-                      Solana
+                      {t("sections.quickStart.web3.solana")}
                     </span>
                     <span className={variants.badge.primary()}>
                       <ShieldCheckIcon className="h-3 w-3 mr-1" />
-                      Verified
+                      {t("sections.quickStart.web3.verified")}
                     </span>
                   </div>
                 </div>
@@ -254,8 +272,8 @@ const BadgesPage: React.FC<AppProps> = ({ appName }) => {
         <div className={`${variants.card.elevated.padded()} mb-12`}>
           <SectionHeader
             id="variants"
-            title="🎨 Badge Variants"
-            description="Explore all available badge color variants with their semantic meanings and appropriate use cases."
+            title={t("sections.variants.title")}
+            description={t("sections.variants.description")}
             expandedSections={expandedSections}
             toggleSection={toggleSection}
           />
@@ -266,54 +284,56 @@ const BadgesPage: React.FC<AppProps> = ({ appName }) => {
                 {/* Semantic Variants */}
                 <div>
                   <h3 className={`${textVariants.heading.h4()} mb-4`}>
-                    Semantic Colors
+                    {t("sections.variants.semanticTitle")}
                   </h3>
                   <div className="space-y-4">
                     <div className="flex items-center justify-between p-4 border rounded-lg">
                       <div>
                         <span className={variants.badge.default()}>
-                          Default
+                          {t("sections.variants.semantic.default")}
                         </span>
                         <p className="text-sm text-muted-foreground mt-1">
-                          General purpose, neutral information
+                          {t("sections.variants.semantic.defaultDesc")}
                         </p>
                       </div>
                     </div>
                     <div className="flex items-center justify-between p-4 border rounded-lg">
                       <div>
                         <span className={variants.badge.primary()}>
-                          Primary
+                          {t("sections.variants.semantic.primary")}
                         </span>
                         <p className="text-sm text-muted-foreground mt-1">
-                          Brand colors, important highlights
+                          {t("sections.variants.semantic.primaryDesc")}
                         </p>
                       </div>
                     </div>
                     <div className="flex items-center justify-between p-4 border rounded-lg">
                       <div>
                         <span className={variants.badge.success()}>
-                          Success
+                          {t("sections.variants.semantic.success")}
                         </span>
                         <p className="text-sm text-muted-foreground mt-1">
-                          Completed actions, positive status
+                          {t("sections.variants.semantic.successDesc")}
                         </p>
                       </div>
                     </div>
                     <div className="flex items-center justify-between p-4 border rounded-lg">
                       <div>
                         <span className={variants.badge.warning()}>
-                          Warning
+                          {t("sections.variants.semantic.warning")}
                         </span>
                         <p className="text-sm text-muted-foreground mt-1">
-                          Caution required, pending actions
+                          {t("sections.variants.semantic.warningDesc")}
                         </p>
                       </div>
                     </div>
                     <div className="flex items-center justify-between p-4 border rounded-lg">
                       <div>
-                        <span className={variants.badge.error()}>Error</span>
+                        <span className={variants.badge.error()}>
+                          {t("sections.variants.semantic.error")}
+                        </span>
                         <p className="text-sm text-muted-foreground mt-1">
-                          Failed actions, critical issues
+                          {t("sections.variants.semantic.errorDesc")}
                         </p>
                       </div>
                     </div>
@@ -323,24 +343,26 @@ const BadgesPage: React.FC<AppProps> = ({ appName }) => {
                 {/* Web3 Variants */}
                 <div>
                   <h3 className={`${textVariants.heading.h4()} mb-4`}>
-                    Web3 Specific
+                    {t("sections.variants.web3Title")}
                   </h3>
                   <div className="space-y-4">
                     <div className="flex items-center justify-between p-4 border rounded-lg">
                       <div>
                         <span className={variants.badge.ethereum()}>
-                          Ethereum
+                          {t("sections.variants.web3.ethereum")}
                         </span>
                         <p className="text-sm text-muted-foreground mt-1">
-                          Ethereum blockchain related
+                          {t("sections.variants.web3.ethereumDesc")}
                         </p>
                       </div>
                     </div>
                     <div className="flex items-center justify-between p-4 border rounded-lg">
                       <div>
-                        <span className={variants.badge.solana()}>Solana</span>
+                        <span className={variants.badge.solana()}>
+                          {t("sections.variants.web3.solana")}
+                        </span>
                         <p className="text-sm text-muted-foreground mt-1">
-                          Solana blockchain related
+                          {t("sections.variants.web3.solanaDesc")}
                         </p>
                       </div>
                     </div>
@@ -360,8 +382,8 @@ const BadgesPage: React.FC<AppProps> = ({ appName }) => {
         <div className={`${variants.card.elevated.padded()} mb-12`}>
           <SectionHeader
             id="sizes"
-            title="📏 Size Options"
-            description="Different badge sizes for various use cases from compact indicators to prominent labels."
+            title={t("sections.sizes.title")}
+            description={t("sections.sizes.description")}
             expandedSections={expandedSections}
             toggleSection={toggleSection}
           />
@@ -370,40 +392,44 @@ const BadgesPage: React.FC<AppProps> = ({ appName }) => {
             <div className="space-y-6">
               <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
                 <div className="text-center">
-                  <h4 className={`${textVariants.heading.h5()} mb-3`}>Small</h4>
+                  <h4 className={`${textVariants.heading.h5()} mb-3`}>
+                    {t("sections.sizes.small.heading")}
+                  </h4>
                   <div className="bg-muted p-4 rounded-lg mb-3">
                     <span className={variants.badge.small("primary")}>
-                      Small Badge
+                      {t("sections.sizes.small.badge")}
                     </span>
                   </div>
                   <p className="text-sm text-muted-foreground">
-                    Compact size for dense layouts
+                    {t("sections.sizes.small.desc")}
                   </p>
                 </div>
 
                 <div className="text-center">
                   <h4 className={`${textVariants.heading.h5()} mb-3`}>
-                    Default
+                    {t("sections.sizes.default.heading")}
                   </h4>
                   <div className="bg-muted p-4 rounded-lg mb-3">
                     <span className={variants.badge.primary()}>
-                      Default Badge
+                      {t("sections.sizes.default.badge")}
                     </span>
                   </div>
                   <p className="text-sm text-muted-foreground">
-                    Standard size for most use cases
+                    {t("sections.sizes.default.desc")}
                   </p>
                 </div>
 
                 <div className="text-center">
-                  <h4 className={`${textVariants.heading.h5()} mb-3`}>Large</h4>
+                  <h4 className={`${textVariants.heading.h5()} mb-3`}>
+                    {t("sections.sizes.large.heading")}
+                  </h4>
                   <div className="bg-muted p-4 rounded-lg mb-3">
                     <span className={variants.badge.large("primary")}>
-                      Large Badge
+                      {t("sections.sizes.large.badge")}
                     </span>
                   </div>
                   <p className="text-sm text-muted-foreground">
-                    Prominent size for emphasis
+                    {t("sections.sizes.large.desc")}
                   </p>
                 </div>
               </div>
@@ -420,8 +446,8 @@ const BadgesPage: React.FC<AppProps> = ({ appName }) => {
         <div className={`${variants.card.elevated.padded()} mb-12`}>
           <SectionHeader
             id="interactive"
-            title="⚡ Interactive Patterns"
-            description="Real-world examples of how badges are used in different contexts and components."
+            title={t("sections.interactive.title")}
+            description={t("sections.interactive.description")}
             expandedSections={expandedSections}
             toggleSection={toggleSection}
           />
@@ -431,7 +457,7 @@ const BadgesPage: React.FC<AppProps> = ({ appName }) => {
               {/* User Status Example */}
               <div>
                 <h3 className={`${textVariants.heading.h4()} mb-4`}>
-                  User Status Indicators
+                  {t("sections.interactive.userStatusTitle")}
                 </h3>
                 <div className="bg-muted p-6 rounded-lg mb-4">
                   <div className="space-y-4">
@@ -442,7 +468,7 @@ const BadgesPage: React.FC<AppProps> = ({ appName }) => {
                       </div>
                       <span className={variants.badge.success()}>
                         <CheckCircleIcon className="h-3 w-3 mr-1" />
-                        Online
+                        {t("sections.interactive.userStatus.online")}
                       </span>
                     </div>
                     <div className="flex items-center justify-between p-3 bg-card rounded">
@@ -452,7 +478,7 @@ const BadgesPage: React.FC<AppProps> = ({ appName }) => {
                       </div>
                       <span className={variants.badge.warning()}>
                         <ClockIcon className="h-3 w-3 mr-1" />
-                        Away
+                        {t("sections.interactive.userStatus.away")}
                       </span>
                     </div>
                     <div className="flex items-center justify-between p-3 bg-card rounded">
@@ -460,7 +486,9 @@ const BadgesPage: React.FC<AppProps> = ({ appName }) => {
                         <div className="w-8 h-8 bg-muted-foreground rounded-full mr-3"></div>
                         <span>address.crypto</span>
                       </div>
-                      <span className={variants.badge.default()}>Offline</span>
+                      <span className={variants.badge.default()}>
+                        {t("sections.interactive.userStatus.offline")}
+                      </span>
                     </div>
                   </div>
                 </div>
@@ -469,13 +497,13 @@ const BadgesPage: React.FC<AppProps> = ({ appName }) => {
               {/* Notification Badges */}
               <div>
                 <h3 className={`${textVariants.heading.h4()} mb-4`}>
-                  Notification Counts
+                  {t("sections.interactive.notificationTitle")}
                 </h3>
                 <div className="bg-muted p-6 rounded-lg mb-4">
                   <div className="flex flex-wrap gap-6">
                     <div className="relative">
                       <button className="p-3 bg-card rounded-lg border">
-                        📧 Messages
+                        {t("sections.interactive.notification.messages")}
                       </button>
                       <span className="absolute -top-2 -right-2 bg-destructive text-destructive-foreground text-xs rounded-full h-6 w-6 flex items-center justify-center">
                         5
@@ -483,7 +511,7 @@ const BadgesPage: React.FC<AppProps> = ({ appName }) => {
                     </div>
                     <div className="relative">
                       <button className="p-3 bg-card rounded-lg border">
-                        🔔 Notifications
+                        {t("sections.interactive.notification.notifications")}
                       </button>
                       <span className="absolute -top-2 -right-2 bg-primary text-primary-foreground text-xs rounded-full h-6 w-6 flex items-center justify-center">
                         12
@@ -491,7 +519,7 @@ const BadgesPage: React.FC<AppProps> = ({ appName }) => {
                     </div>
                     <div className="relative">
                       <button className="p-3 bg-card rounded-lg border">
-                        ⭐ Updates
+                        {t("sections.interactive.notification.updates")}
                       </button>
                       <span className="absolute -top-2 -right-2 bg-success text-success-foreground text-xs rounded-full h-6 w-6 flex items-center justify-center">
                         3
@@ -513,8 +541,8 @@ const BadgesPage: React.FC<AppProps> = ({ appName }) => {
         <div className={`${variants.card.elevated.padded()} mb-12`}>
           <SectionHeader
             id="accessibility"
-            title="♿ Accessibility Guidelines"
-            description="Ensure your badges are accessible to all users with proper contrast, screen reader support, and keyboard navigation."
+            title={t("sections.accessibility.title")}
+            description={t("sections.accessibility.description")}
             expandedSections={expandedSections}
             toggleSection={toggleSection}
           />
@@ -524,84 +552,44 @@ const BadgesPage: React.FC<AppProps> = ({ appName }) => {
               <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
                 <div>
                   <h3 className={`${textVariants.heading.h4()} mb-4`}>
-                    ✅ Best Practices
+                    {t("sections.accessibility.bestPracticesTitle")}
                   </h3>
                   <ul className="space-y-3">
-                    <li className="flex items-start">
-                      <CheckCircleIcon className="h-5 w-5 text-success mr-2 mt-0.5 flex-shrink-0" />
-                      <span className="text-sm">
-                        Use semantic colors that convey meaning consistently
-                      </span>
-                    </li>
-                    <li className="flex items-start">
-                      <CheckCircleIcon className="h-5 w-5 text-success mr-2 mt-0.5 flex-shrink-0" />
-                      <span className="text-sm">
-                        Provide adequate color contrast (4.5:1 minimum)
-                      </span>
-                    </li>
-                    <li className="flex items-start">
-                      <CheckCircleIcon className="h-5 w-5 text-success mr-2 mt-0.5 flex-shrink-0" />
-                      <span className="text-sm">
-                        Include text labels, not just colors or icons
-                      </span>
-                    </li>
-                    <li className="flex items-start">
-                      <CheckCircleIcon className="h-5 w-5 text-success mr-2 mt-0.5 flex-shrink-0" />
-                      <span className="text-sm">
-                        Use appropriate ARIA labels for screen readers
-                      </span>
-                    </li>
-                    <li className="flex items-start">
-                      <CheckCircleIcon className="h-5 w-5 text-success mr-2 mt-0.5 flex-shrink-0" />
-                      <span className="text-sm">
-                        Keep badge text concise and meaningful
-                      </span>
-                    </li>
+                    {(
+                      t("sections.accessibility.bestPractices", {
+                        returnObjects: true,
+                      }) as string[]
+                    ).map((item, index) => (
+                      <li key={index} className="flex items-start">
+                        <CheckCircleIcon className="h-5 w-5 text-success mr-2 mt-0.5 flex-shrink-0" />
+                        <span className="text-sm">{item}</span>
+                      </li>
+                    ))}
                   </ul>
                 </div>
 
                 <div>
                   <h3 className={`${textVariants.heading.h4()} mb-4`}>
-                    ❌ Avoid
+                    {t("sections.accessibility.avoidTitle")}
                   </h3>
                   <ul className="space-y-3">
-                    <li className="flex items-start">
-                      <XCircleIcon className="h-5 w-5 text-destructive mr-2 mt-0.5 flex-shrink-0" />
-                      <span className="text-sm">
-                        Relying solely on color to convey information
-                      </span>
-                    </li>
-                    <li className="flex items-start">
-                      <XCircleIcon className="h-5 w-5 text-destructive mr-2 mt-0.5 flex-shrink-0" />
-                      <span className="text-sm">
-                        Using too many badges in a single interface
-                      </span>
-                    </li>
-                    <li className="flex items-start">
-                      <XCircleIcon className="h-5 w-5 text-destructive mr-2 mt-0.5 flex-shrink-0" />
-                      <span className="text-sm">
-                        Making badges too small to read comfortably
-                      </span>
-                    </li>
-                    <li className="flex items-start">
-                      <XCircleIcon className="h-5 w-5 text-destructive mr-2 mt-0.5 flex-shrink-0" />
-                      <span className="text-sm">
-                        Using unclear or ambiguous badge text
-                      </span>
-                    </li>
-                    <li className="flex items-start">
-                      <XCircleIcon className="h-5 w-5 text-destructive mr-2 mt-0.5 flex-shrink-0" />
-                      <span className="text-sm">
-                        Overusing animated or flashing badges
-                      </span>
-                    </li>
+                    {(
+                      t("sections.accessibility.avoid", {
+                        returnObjects: true,
+                      }) as string[]
+                    ).map((item, index) => (
+                      <li key={index} className="flex items-start">
+                        <XCircleIcon className="h-5 w-5 text-destructive mr-2 mt-0.5 flex-shrink-0" />
+                        <span className="text-sm">{item}</span>
+                      </li>
+                    ))}
                   </ul>
                 </div>
               </div>
 
               <div className="mt-8">
                 <h3 className={`${textVariants.heading.h4()} mb-4`}>
-                  ARIA Examples
+                  {t("sections.accessibility.ariaExamplesTitle")}
                 </h3>
                 <CodeBlock
                   filename="internal/badges/accessible-examples.tsx"
@@ -619,11 +607,11 @@ const BadgesPage: React.FC<AppProps> = ({ appName }) => {
             className="flex items-center text-muted-foreground hover:text-foreground transition-colors"
           >
             <ArrowLeftIcon className="h-5 w-5 mr-2" />
-            Back to Design System
+            {t("backToDesignSystem")}
           </LocalizedLink>
 
           <div className="text-sm text-muted-foreground">
-            Last updated: {new Date().toLocaleDateString()}
+            {t("lastUpdated", { date: new Date().toLocaleDateString() })}
           </div>
         </div>
       </div>

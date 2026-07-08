@@ -18,6 +18,7 @@ import {
 } from "@heroicons/react/24/outline";
 import { CheckCircleIcon as CheckCircleSolid } from "@heroicons/react/24/solid";
 import React, { useEffect, useState, useRef } from "react";
+import { useTranslation } from "react-i18next";
 import { SEOHead } from "@sudobility/seo_lib";
 import { Button, Section } from "@sudobility/components";
 
@@ -53,6 +54,7 @@ const NotificationsFeedbackPage: React.FC<AppProps> = ({
   emailDomain,
   appName: _appName,
 }) => {
+  const { t } = useTranslation("notificationsFeedback");
   const [toasts, setToasts] = useState<ToastNotification[]>([]);
   const toastIdCounter = useRef(0);
   const [transactions] = useState<TransactionStatus[]>([
@@ -60,7 +62,7 @@ const NotificationsFeedbackPage: React.FC<AppProps> = ({
       id: "1",
       hash: "0x742d35...5f0bEb7",
       status: "confirmed",
-      type: "Send ETH",
+      type: "sendEth",
       amount: "0.5 ETH",
       confirmations: 12,
       maxConfirmations: 12,
@@ -69,7 +71,7 @@ const NotificationsFeedbackPage: React.FC<AppProps> = ({
       id: "2",
       hash: "0x8f5a91...3c7d2eA",
       status: "confirming",
-      type: "Swap Tokens",
+      type: "swapTokens",
       amount: "100 USDC",
       confirmations: 3,
       maxConfirmations: 12,
@@ -78,7 +80,7 @@ const NotificationsFeedbackPage: React.FC<AppProps> = ({
       id: "3",
       hash: "0x1b4e7a...9f2c8d1",
       status: "pending",
-      type: "Approve Token",
+      type: "approveToken",
       amount: "DAI",
     },
   ]);
@@ -89,7 +91,7 @@ const NotificationsFeedbackPage: React.FC<AppProps> = ({
 
   const copyToClipboard = (text: string) => {
     navigator.clipboard.writeText(text);
-    addToast("success", "Copied!", "Code copied to clipboard");
+    addToast("success", t("toasts.copied.title"), t("toasts.copied.message"));
   };
 
   const addToast = (
@@ -131,7 +133,11 @@ const NotificationsFeedbackPage: React.FC<AppProps> = ({
       setProgress((prev) => {
         if (prev >= 100) {
           clearInterval(interval);
-          addToast("success", "Complete!", "Operation completed successfully");
+          addToast(
+            "success",
+            t("toasts.complete.title"),
+            t("toasts.complete.message"),
+          );
           return 100;
         }
         return prev + 10;
@@ -141,8 +147,7 @@ const NotificationsFeedbackPage: React.FC<AppProps> = ({
 
   const quickStartExamples = [
     {
-      title: "Toast Notifications",
-      description: "Temporary notifications with auto-dismiss and actions",
+      key: "toast",
       code: `// Toast Notification
 const showToast = (type, title, message) => {
   const toast = document.createElement('div');
@@ -168,8 +173,7 @@ const showToast = (type, title, message) => {
 };`,
     },
     {
-      title: "Progress Notifications",
-      description: "Show progress for long-running operations",
+      key: "progress",
       code: `// Progress Notification
 const ProgressNotification = ({ progress, title, message }) => (
   <div className={variants.notifications.progress.container()}>
@@ -196,8 +200,7 @@ const ProgressNotification = ({ progress, title, message }) => (
 );`,
     },
     {
-      title: "Transaction Status",
-      description: "Web3 transaction progress with confirmations",
+      key: "transaction",
       code: `// Transaction Status
 const TransactionStatus = ({ transaction }) => (
   <div className={variants.notifications.transaction.container()}>
@@ -226,8 +229,7 @@ const TransactionStatus = ({ transaction }) => (
 );`,
     },
     {
-      title: "System Status Indicator",
-      description: "Real-time system and connection status",
+      key: "systemStatus",
       code: `// System Status
 const SystemStatus = ({ status, message }) => (
   <div className={cn(
@@ -267,8 +269,8 @@ const SystemStatus = ({ status, message }) => (
   return (
     <>
       <SEOHead
-        title={`Notifications & Feedback - Design System - Internal - ${emailDomain}`}
-        description="Notification and feedback components including toasts, progress indicators, and system status"
+        title={t("seo.title", { emailDomain })}
+        description={t("seo.description")}
         noIndex={true}
       />
 
@@ -335,26 +337,26 @@ const SystemStatus = ({ status, message }) => (
             <div className="inline-flex items-center bg-info/10 px-4 py-2 rounded-full mb-6">
               <BellIcon className="h-5 w-5 text-info mr-2" />
               <span className="text-info font-semibold">
-                Notifications & Feedback
+                {t("header.badge")}
               </span>
             </div>
 
             <h1 className={`${textVariants.heading.display.xl()} mb-6`}>
-              Notifications & Feedback System
+              {t("header.title")}
             </h1>
 
             <p
               className={`${textVariants.body.lg()} max-w-3xl text-muted-foreground`}
             >
-              Comprehensive notification and feedback system including toasts,
-              progress indicators, transaction status updates, and system status
-              displays for Web3 applications.
+              {t("header.description")}
             </p>
           </div>
 
           {/* Quick Start Examples */}
           <Section>
-            <h2 className={`${textVariants.heading.h2()} mb-8`}>Quick Start</h2>
+            <h2 className={`${textVariants.heading.h2()} mb-8`}>
+              {t("quickStart.title")}
+            </h2>
 
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
               {quickStartExamples.map((example, index) => (
@@ -364,12 +366,12 @@ const SystemStatus = ({ status, message }) => (
                 >
                   <div className="p-6 border-b border-border">
                     <h3 className={`${textVariants.heading.h4()} mb-2`}>
-                      {example.title}
+                      {t(`quickStart.examples.${example.key}.title`)}
                     </h3>
                     <p
                       className={`${textVariants.body.sm()} text-muted-foreground`}
                     >
-                      {example.description}
+                      {t(`quickStart.examples.${example.key}.description`)}
                     </p>
                   </div>
                   <div className="relative">
@@ -379,7 +381,7 @@ const SystemStatus = ({ status, message }) => (
                     <button
                       onClick={() => copyToClipboard(example.code)}
                       className="absolute top-2 right-2 p-2 text-muted-foreground hover:text-foreground bg-card rounded-md shadow-sm border border-border hover:bg-muted transition-colors"
-                      title="Copy to clipboard"
+                      title={t("quickStart.copyTooltip")}
                     >
                       <ClipboardDocumentIcon className="h-4 w-4" />
                     </button>
@@ -392,7 +394,7 @@ const SystemStatus = ({ status, message }) => (
           {/* Toast Notifications Demo */}
           <Section>
             <h2 className={`${textVariants.heading.h2()} mb-8`}>
-              Toast Notifications
+              {t("toastSection.title")}
             </h2>
 
             <div
@@ -400,13 +402,12 @@ const SystemStatus = ({ status, message }) => (
             >
               <div className="p-6 border-b border-border">
                 <h3 className={`${textVariants.heading.h3()} mb-2`}>
-                  Interactive Toast Demos
+                  {t("toastSection.demoTitle")}
                 </h3>
                 <p
                   className={`${textVariants.body.sm()} text-muted-foreground`}
                 >
-                  Click buttons to trigger different types of toast
-                  notifications
+                  {t("toastSection.demoDescription")}
                 </p>
               </div>
 
@@ -416,44 +417,44 @@ const SystemStatus = ({ status, message }) => (
                     onClick={() =>
                       addToast(
                         "success",
-                        "Transaction Confirmed!",
-                        "Your ETH transfer was successful",
+                        t("toasts.success.title"),
+                        t("toasts.success.message"),
                       )
                     }
                     className="bg-success text-success-foreground hover:bg-success/90"
                   >
                     <CheckCircleIcon className="h-4 w-4 mr-2" />
-                    Success
+                    {t("toastSection.buttons.success")}
                   </Button>
 
                   <Button
                     onClick={() =>
                       addToast(
                         "error",
-                        "Transaction Failed",
-                        "Insufficient gas for transaction",
+                        t("toasts.error.title"),
+                        t("toasts.error.message"),
                       )
                     }
                     className="bg-destructive text-destructive-foreground hover:bg-destructive/90"
                   >
                     <XCircleIcon className="h-4 w-4 mr-2" />
-                    Error
+                    {t("toastSection.buttons.error")}
                   </Button>
 
                   <Button
                     onClick={() =>
                       addToast(
                         "warning",
-                        "High Gas Fees",
-                        "Network congestion detected",
+                        t("toasts.warning.title"),
+                        t("toasts.warning.message"),
                         false,
                         {
-                          label: "Adjust Gas",
+                          label: t("toasts.warning.actionLabel"),
                           onClick: () =>
                             addToast(
                               "info",
-                              "Gas Adjusted",
-                              "Gas price updated to 25 gwei",
+                              t("toasts.gasAdjusted.title"),
+                              t("toasts.gasAdjusted.message"),
                             ),
                         },
                       )
@@ -461,48 +462,50 @@ const SystemStatus = ({ status, message }) => (
                     className="bg-warning text-warning-foreground hover:bg-warning/90"
                   >
                     <ExclamationTriangleIcon className="h-4 w-4 mr-2" />
-                    Warning
+                    {t("toastSection.buttons.warning")}
                   </Button>
 
                   <Button
                     onClick={() =>
                       addToast(
                         "info",
-                        "New Feature Available",
-                        "Multi-chain swaps now supported",
+                        t("toasts.info.title"),
+                        t("toasts.info.message"),
                         true,
                       )
                     }
                     variant="outline"
                   >
                     <InformationCircleIcon className="h-4 w-4 mr-2" />
-                    Info
+                    {t("toastSection.buttons.info")}
                   </Button>
                 </div>
 
                 <div className="bg-muted rounded-lg p-4">
                   <h4 className="text-sm font-medium text-foreground mb-2">
-                    Toast Types & Features
+                    {t("toastSection.featuresTitle")}
                   </h4>
                   <ul className="text-sm text-muted-foreground space-y-1">
                     <li>
-                      • <strong>Success:</strong> Transaction confirmations,
-                      completed actions
+                      •{" "}
+                      <strong>{t("toastSection.features.successLabel")}</strong>{" "}
+                      {t("toastSection.features.successText")}
                     </li>
                     <li>
-                      • <strong>Error:</strong> Failed transactions, network
-                      errors
+                      • <strong>{t("toastSection.features.errorLabel")}</strong>{" "}
+                      {t("toastSection.features.errorText")}
                     </li>
                     <li>
-                      • <strong>Warning:</strong> High gas fees, security
-                      warnings (with actions)
+                      •{" "}
+                      <strong>{t("toastSection.features.warningLabel")}</strong>{" "}
+                      {t("toastSection.features.warningText")}
                     </li>
                     <li>
-                      • <strong>Info:</strong> New features, system updates
-                      (persistent)
+                      • <strong>{t("toastSection.features.infoLabel")}</strong>{" "}
+                      {t("toastSection.features.infoText")}
                     </li>
-                    <li>• Auto-dismiss after 5 seconds (unless persistent)</li>
-                    <li>• Optional action buttons for interactive responses</li>
+                    <li>• {t("toastSection.features.autoDismiss")}</li>
+                    <li>• {t("toastSection.features.actionButtons")}</li>
                   </ul>
                 </div>
               </div>
@@ -512,7 +515,7 @@ const SystemStatus = ({ status, message }) => (
           {/* Progress Indicators Demo */}
           <Section>
             <h2 className={`${textVariants.heading.h2()} mb-8`}>
-              Progress Indicators
+              {t("progressSection.title")}
             </h2>
 
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
@@ -522,12 +525,12 @@ const SystemStatus = ({ status, message }) => (
               >
                 <div className="p-6 border-b border-border">
                   <h3 className={`${textVariants.heading.h4()} mb-2`}>
-                    Linear Progress
+                    {t("progressSection.linear.title")}
                   </h3>
                   <p
                     className={`${textVariants.body.sm()} text-muted-foreground`}
                   >
-                    Progress bars for file uploads and operations
+                    {t("progressSection.linear.description")}
                   </p>
                 </div>
 
@@ -535,7 +538,7 @@ const SystemStatus = ({ status, message }) => (
                   <div>
                     <div className="flex items-center justify-between mb-2">
                       <span className="text-sm font-medium text-foreground">
-                        Email Sync Progress
+                        {t("progressSection.linear.emailSync")}
                       </span>
                       <span className="text-sm text-muted-foreground">
                         {progress}%
@@ -552,7 +555,7 @@ const SystemStatus = ({ status, message }) => (
                   <div>
                     <div className="flex items-center justify-between mb-2">
                       <span className="text-sm font-medium text-foreground">
-                        File Upload
+                        {t("progressSection.linear.fileUpload")}
                       </span>
                       <span className="text-sm text-muted-foreground">75%</span>
                     </div>
@@ -560,7 +563,7 @@ const SystemStatus = ({ status, message }) => (
                       <div className="bg-success h-2 rounded-full w-3/4" />
                     </div>
                     <p className="text-xs text-muted-foreground mt-1">
-                      Uploading document.pdf (2.3 MB)
+                      {t("progressSection.linear.uploading")}
                     </p>
                   </div>
 
@@ -570,7 +573,7 @@ const SystemStatus = ({ status, message }) => (
                     className="w-full"
                   >
                     <ArrowPathIcon className="h-4 w-4 mr-2" />
-                    Simulate Progress
+                    {t("progressSection.linear.simulate")}
                   </Button>
                 </div>
               </div>
@@ -581,12 +584,12 @@ const SystemStatus = ({ status, message }) => (
               >
                 <div className="p-6 border-b border-border">
                   <h3 className={`${textVariants.heading.h4()} mb-2`}>
-                    Loading Spinners
+                    {t("progressSection.spinners.title")}
                   </h3>
                   <p
                     className={`${textVariants.body.sm()} text-muted-foreground`}
                   >
-                    Various loading states and spinners
+                    {t("progressSection.spinners.description")}
                   </p>
                 </div>
 
@@ -594,7 +597,7 @@ const SystemStatus = ({ status, message }) => (
                   <div className="flex items-center space-x-4">
                     <div className="animate-spin rounded-full h-6 w-6 border-b-2 border-primary"></div>
                     <span className="text-sm text-muted-foreground">
-                      Loading transactions...
+                      {t("progressSection.spinners.loadingTransactions")}
                     </span>
                   </div>
 
@@ -605,7 +608,7 @@ const SystemStatus = ({ status, message }) => (
                       <div className="w-2 h-2 bg-primary rounded-full animation-delay-150"></div>
                     </div>
                     <span className="text-sm text-muted-foreground">
-                      Connecting to wallet...
+                      {t("progressSection.spinners.connectingWallet")}
                     </span>
                   </div>
 
@@ -615,7 +618,7 @@ const SystemStatus = ({ status, message }) => (
                       <div className="animate-spin rounded-full h-6 w-6 border-2 border-transparent border-t-success absolute top-0 left-0"></div>
                     </div>
                     <span className="text-sm text-muted-foreground">
-                      Syncing blockchain data...
+                      {t("progressSection.spinners.syncingBlockchain")}
                     </span>
                   </div>
                 </div>
@@ -626,7 +629,7 @@ const SystemStatus = ({ status, message }) => (
           {/* Transaction Status Demo */}
           <Section>
             <h2 className={`${textVariants.heading.h2()} mb-8`}>
-              Web3 Transaction Status
+              {t("transactionSection.title")}
             </h2>
 
             <div
@@ -634,12 +637,12 @@ const SystemStatus = ({ status, message }) => (
             >
               <div className="p-6 border-b border-border">
                 <h3 className={`${textVariants.heading.h3()} mb-2`}>
-                  Transaction Tracker
+                  {t("transactionSection.trackerTitle")}
                 </h3>
                 <p
                   className={`${textVariants.body.sm()} text-muted-foreground`}
                 >
-                  Real-time transaction status with confirmation progress
+                  {t("transactionSection.trackerDescription")}
                 </p>
               </div>
 
@@ -677,7 +680,7 @@ const SystemStatus = ({ status, message }) => (
                           <div>
                             <div className="flex items-center space-x-2">
                               <span className="text-sm font-medium text-foreground">
-                                {tx.type}
+                                {t(`transactionSection.types.${tx.type}`)}
                               </span>
                               {tx.amount && (
                                 <span className="text-sm text-muted-foreground">
@@ -704,13 +707,12 @@ const SystemStatus = ({ status, message }) => (
                                 "bg-destructive/10 text-destructive",
                             )}
                           >
-                            {tx.status.charAt(0).toUpperCase() +
-                              tx.status.slice(1)}
+                            {t(`transactionSection.statuses.${tx.status}`)}
                           </span>
                           {tx.confirmations !== undefined && (
                             <div className="text-xs text-muted-foreground mt-1">
                               {tx.confirmations}/{tx.maxConfirmations}{" "}
-                              confirmations
+                              {t("transactionSection.confirmations")}
                             </div>
                           )}
                         </div>
@@ -721,7 +723,9 @@ const SystemStatus = ({ status, message }) => (
                         tx.maxConfirmations && (
                           <div className="mt-3">
                             <div className="flex items-center justify-between text-xs text-muted-foreground mb-1">
-                              <span>Confirmations</span>
+                              <span>
+                                {t("transactionSection.confirmationsLabel")}
+                              </span>
                               <span>
                                 {tx.confirmations}/{tx.maxConfirmations}
                               </span>
@@ -742,24 +746,36 @@ const SystemStatus = ({ status, message }) => (
 
                 <div className="mt-6 bg-muted rounded-lg p-4">
                   <h4 className="text-sm font-medium text-foreground mb-2">
-                    Transaction States
+                    {t("transactionSection.statesTitle")}
                   </h4>
                   <ul className="text-sm text-muted-foreground space-y-1">
                     <li>
-                      • <strong>Pending:</strong> Transaction submitted to
-                      mempool
+                      •{" "}
+                      <strong>
+                        {t("transactionSection.states.pendingLabel")}
+                      </strong>{" "}
+                      {t("transactionSection.states.pendingText")}
                     </li>
                     <li>
-                      • <strong>Confirming:</strong> Being included in blocks
-                      (shows progress)
+                      •{" "}
+                      <strong>
+                        {t("transactionSection.states.confirmingLabel")}
+                      </strong>{" "}
+                      {t("transactionSection.states.confirmingText")}
                     </li>
                     <li>
-                      • <strong>Confirmed:</strong> Required confirmations
-                      reached
+                      •{" "}
+                      <strong>
+                        {t("transactionSection.states.confirmedLabel")}
+                      </strong>{" "}
+                      {t("transactionSection.states.confirmedText")}
                     </li>
                     <li>
-                      • <strong>Failed:</strong> Transaction reverted or
-                      rejected
+                      •{" "}
+                      <strong>
+                        {t("transactionSection.states.failedLabel")}
+                      </strong>{" "}
+                      {t("transactionSection.states.failedText")}
                     </li>
                   </ul>
                 </div>
@@ -770,7 +786,7 @@ const SystemStatus = ({ status, message }) => (
           {/* System Status Demo */}
           <Section>
             <h2 className={`${textVariants.heading.h2()} mb-8`}>
-              System Status & Indicators
+              {t("systemStatusSection.title")}
             </h2>
 
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
@@ -780,12 +796,12 @@ const SystemStatus = ({ status, message }) => (
               >
                 <div className="p-6 border-b border-border">
                   <h3 className={`${textVariants.heading.h4()} mb-2`}>
-                    Connection Status
+                    {t("systemStatusSection.connection.title")}
                   </h3>
                   <p
                     className={`${textVariants.body.sm()} text-muted-foreground`}
                   >
-                    Real-time connection and system status
+                    {t("systemStatusSection.connection.description")}
                   </p>
                 </div>
 
@@ -802,14 +818,15 @@ const SystemStatus = ({ status, message }) => (
                       />
                       <div>
                         <div className="text-sm font-medium text-foreground">
-                          System Status
+                          {t("systemStatusSection.connection.systemStatus")}
                         </div>
                         <div className="text-xs text-muted-foreground">
                           {systemStatus === "online" &&
-                            "All systems operational"}
+                            t("systemStatusSection.connection.online")}
                           {systemStatus === "degraded" &&
-                            "Some services unavailable"}
-                          {systemStatus === "offline" && "System maintenance"}
+                            t("systemStatusSection.connection.degraded")}
+                          {systemStatus === "offline" &&
+                            t("systemStatusSection.connection.offline")}
                         </div>
                       </div>
                     </div>
@@ -824,8 +841,9 @@ const SystemStatus = ({ status, message }) => (
                           "bg-destructive/10 text-destructive",
                       )}
                     >
-                      {systemStatus.charAt(0).toUpperCase() +
-                        systemStatus.slice(1)}
+                      {t(
+                        `systemStatusSection.connection.statusLabels.${systemStatus}`,
+                      )}
                     </div>
                   </div>
 
@@ -833,33 +851,41 @@ const SystemStatus = ({ status, message }) => (
                     <div className="flex items-center space-x-3">
                       <WifiIcon className="h-4 w-4 text-success" />
                       <span className="text-sm text-foreground">
-                        Internet Connection
+                        {t("systemStatusSection.connection.internetConnection")}
                       </span>
-                      <span className="text-xs text-success">Connected</span>
+                      <span className="text-xs text-success">
+                        {t("systemStatusSection.connection.connected")}
+                      </span>
                     </div>
 
                     <div className="flex items-center space-x-3">
                       <WalletIcon className="h-4 w-4 text-info" />
                       <span className="text-sm text-foreground">
-                        Wallet Connection
+                        {t("systemStatusSection.connection.walletConnection")}
                       </span>
-                      <span className="text-xs text-info">MetaMask</span>
+                      <span className="text-xs text-info">
+                        {t("systemStatusSection.connection.metaMask")}
+                      </span>
                     </div>
 
                     <div className="flex items-center space-x-3">
                       <SignalIcon className="h-4 w-4 text-success" />
                       <span className="text-sm text-foreground">
-                        Ethereum Network
+                        {t("systemStatusSection.connection.ethereumNetwork")}
                       </span>
-                      <span className="text-xs text-success">Mainnet</span>
+                      <span className="text-xs text-success">
+                        {t("systemStatusSection.connection.mainnet")}
+                      </span>
                     </div>
 
                     <div className="flex items-center space-x-3">
                       <ShieldCheckIcon className="h-4 w-4 text-warning" />
                       <span className="text-sm text-foreground">
-                        Security Status
+                        {t("systemStatusSection.connection.securityStatus")}
                       </span>
-                      <span className="text-xs text-warning">Warning</span>
+                      <span className="text-xs text-warning">
+                        {t("systemStatusSection.connection.warning")}
+                      </span>
                     </div>
                   </div>
                 </div>
@@ -871,19 +897,19 @@ const SystemStatus = ({ status, message }) => (
               >
                 <div className="p-6 border-b border-border">
                   <h3 className={`${textVariants.heading.h4()} mb-2`}>
-                    Notification Badges
+                    {t("systemStatusSection.badges.title")}
                   </h3>
                   <p
                     className={`${textVariants.body.sm()} text-muted-foreground`}
                   >
-                    Count indicators and status badges
+                    {t("systemStatusSection.badges.description")}
                   </p>
                 </div>
 
                 <div className="p-6 space-y-6">
                   <div className="space-y-4">
                     <h4 className="text-sm font-medium text-foreground">
-                      Count Badges
+                      {t("systemStatusSection.badges.countBadges")}
                     </h4>
 
                     <div className="flex items-center space-x-6">
@@ -912,23 +938,29 @@ const SystemStatus = ({ status, message }) => (
 
                   <div className="space-y-4">
                     <h4 className="text-sm font-medium text-foreground">
-                      Status Indicators
+                      {t("systemStatusSection.badges.statusIndicators")}
                     </h4>
 
                     <div className="space-y-3">
                       <div className="flex items-center space-x-3">
                         <div className="w-2 h-2 bg-success rounded-full animate-pulse"></div>
-                        <span className="text-sm text-foreground">Online</span>
+                        <span className="text-sm text-foreground">
+                          {t("systemStatusSection.badges.online")}
+                        </span>
                       </div>
 
                       <div className="flex items-center space-x-3">
                         <div className="w-2 h-2 bg-warning rounded-full"></div>
-                        <span className="text-sm text-foreground">Away</span>
+                        <span className="text-sm text-foreground">
+                          {t("systemStatusSection.badges.away")}
+                        </span>
                       </div>
 
                       <div className="flex items-center space-x-3">
                         <div className="w-2 h-2 bg-muted-foreground rounded-full"></div>
-                        <span className="text-sm text-foreground">Offline</span>
+                        <span className="text-sm text-foreground">
+                          {t("systemStatusSection.badges.offline")}
+                        </span>
                       </div>
                     </div>
                   </div>
@@ -940,7 +972,7 @@ const SystemStatus = ({ status, message }) => (
           {/* Contextual Feedback */}
           <Section>
             <h2 className={`${textVariants.heading.h2()} mb-8`}>
-              Contextual Feedback
+              {t("contextualFeedback.title")}
             </h2>
 
             <div
@@ -948,13 +980,12 @@ const SystemStatus = ({ status, message }) => (
             >
               <div className="p-6 border-b border-border">
                 <h3 className={`${textVariants.heading.h3()} mb-2`}>
-                  Smart Feedback Patterns
+                  {t("contextualFeedback.smartTitle")}
                 </h3>
                 <p
                   className={`${textVariants.body.sm()} text-muted-foreground`}
                 >
-                  Context-aware feedback that adapts to user actions and system
-                  state
+                  {t("contextualFeedback.smartDescription")}
                 </p>
               </div>
 
@@ -963,7 +994,7 @@ const SystemStatus = ({ status, message }) => (
                   {/* Action Feedback */}
                   <div className="space-y-4">
                     <h4 className="text-sm font-medium text-foreground">
-                      Action Feedback
+                      {t("contextualFeedback.actionFeedback")}
                     </h4>
 
                     <div className="space-y-3">
@@ -971,7 +1002,7 @@ const SystemStatus = ({ status, message }) => (
                         <div className="flex items-center">
                           <CheckCircleIcon className="h-4 w-4 text-success mr-2" />
                           <span className="text-sm">
-                            Email sent successfully
+                            {t("contextualFeedback.emailSent")}
                           </span>
                         </div>
                       </div>
@@ -979,14 +1010,18 @@ const SystemStatus = ({ status, message }) => (
                       <div className={(variants.alert as any).info()}>
                         <div className="flex items-center">
                           <InformationCircleIcon className="h-4 w-4 text-info mr-2" />
-                          <span className="text-sm">Auto-save enabled</span>
+                          <span className="text-sm">
+                            {t("contextualFeedback.autoSave")}
+                          </span>
                         </div>
                       </div>
 
                       <div className={(variants.alert as any).warning()}>
                         <div className="flex items-center">
                           <ExclamationTriangleIcon className="h-4 w-4 text-warning mr-2" />
-                          <span className="text-sm">Draft saved locally</span>
+                          <span className="text-sm">
+                            {t("contextualFeedback.draftSaved")}
+                          </span>
                         </div>
                       </div>
                     </div>
@@ -995,7 +1030,7 @@ const SystemStatus = ({ status, message }) => (
                   {/* Smart Suggestions */}
                   <div className="space-y-4">
                     <h4 className="text-sm font-medium text-foreground">
-                      Smart Suggestions
+                      {t("contextualFeedback.smartSuggestions")}
                     </h4>
 
                     <div className="space-y-3">
@@ -1003,14 +1038,14 @@ const SystemStatus = ({ status, message }) => (
                         <div className="flex items-start justify-between">
                           <div>
                             <p className="text-sm text-foreground">
-                              Enable 2FA for better security
+                              {t("contextualFeedback.enable2fa.title")}
                             </p>
                             <p className="text-xs text-muted-foreground mt-1">
-                              Recommended for wallet protection
+                              {t("contextualFeedback.enable2fa.description")}
                             </p>
                           </div>
                           <Button size="sm" variant="outline">
-                            Enable
+                            {t("contextualFeedback.enable2fa.action")}
                           </Button>
                         </div>
                       </div>
@@ -1019,14 +1054,14 @@ const SystemStatus = ({ status, message }) => (
                         <div className="flex items-start justify-between">
                           <div>
                             <p className="text-sm text-foreground">
-                              Back up your seed phrase
+                              {t("contextualFeedback.backupSeed.title")}
                             </p>
                             <p className="text-xs text-muted-foreground mt-1">
-                              Secure your wallet recovery
+                              {t("contextualFeedback.backupSeed.description")}
                             </p>
                           </div>
                           <Button size="sm" variant="outline">
-                            Backup
+                            {t("contextualFeedback.backupSeed.action")}
                           </Button>
                         </div>
                       </div>

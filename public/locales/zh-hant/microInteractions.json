@@ -1,0 +1,82 @@
+{
+  "seo": {
+    "title": "微互動與動畫 - 設計系統 - 內部 - {{emailDomain}}",
+    "description": "包含懸停效果、過渡動畫和Web3特定互動的完整動畫系統"
+  },
+  "header": {
+    "badge": "微互動與動畫",
+    "title": "微互動與動畫",
+    "description": "全面的動畫系統，包含懸停效果、加載狀態、過渡動畫和Web3特定互動。所有動畫均尊重用戶的運動偏好，提供流暢、愉悅的使用者體驗。"
+  },
+  "stats": {
+    "variants": "動畫變體",
+    "performance": "流暢性能",
+    "motionSafe": "運動安全",
+    "specialized": "專業"
+  },
+  "hover": {
+    "title": "懸停效果",
+    "description": "按鈕、卡片和互動元素的微妙但吸引人的懸停效果。",
+    "buttonEffectsTitle": "按鈕懸停效果",
+    "liftEffect": "提升效果",
+    "glowEffect": "發光效果",
+    "scaleEffect": "規模效應",
+    "shimmerEffect": "閃耀效果",
+    "cardEffectsTitle": "卡片懸停效果",
+    "cardSubtle": "微妙的懸停效果 - 輕輕抬起",
+    "cardGlow": "發光懸停效果 - 添加柔軟光暈"
+  },
+  "loading": {
+    "title": "載入狀態",
+    "description": "保持使用者參與的載入動畫和進度指示器。",
+    "spinnersTitle": "旋轉器",
+    "interactiveDemoTitle": "互動式演示",
+    "loadingLabel": "載入中...",
+    "startLoading": "開始加載",
+    "simulateProgress": "模擬進度",
+    "progress": "進度: {{progress}}%"
+  },
+  "web3": {
+    "title": "Web3 動畫",
+    "description": "專用於Web3互動的動畫，包括錢包連接和交易狀態。",
+    "walletStatesTitle": "錢包連接狀態",
+    "connecting": "連接中...",
+    "connected": "已連接",
+    "connectWallet": "連接錢包",
+    "statusLabel": "狀態:",
+    "transactionStatesTitle": "交易狀態",
+    "transactionPending": "交易待處理",
+    "transactionConfirmed": "交易已確認",
+    "transactionFailed": "交易失敗"
+  },
+  "motion": {
+    "title": "運動偏好",
+    "description": "所有動畫均尊重用戶的運動偏好，並提供無障礙替代方案。",
+    "reducedMotionTitle": "減少運動支援",
+    "respectsPreferences": "尊重運動偏好",
+    "fadeOnly": "僅淡出動畫",
+    "scaleOnly": "僅縮放動畫",
+    "safeAnimationsTitle": "安全動畫",
+    "safeFade": "安全淡出過渡",
+    "safeSlide": "安全的幻燈片過渡"
+  },
+  "bestPractices": {
+    "title": "動畫最佳實踐",
+    "doTitle": "✅ 做這個",
+    "do": [
+      "將微互動的動畫保持在300毫秒以下。",
+      "使用緩動函數實現自然運動",
+      "對使用者操作提供即時反饋",
+      "尊重偏好減少運動的設定",
+      "對於耗時超過500毫秒的操作，請使用載入狀態"
+    ],
+    "avoidTitle": "❌ 避免這一點",
+    "avoid": [
+      "過度使用動畫——少即是多",
+      "長時間加載動畫但無進度",
+      "干擾功能的動畫",
+      "頁面載入時自動播放動畫",
+      "為對運動敏感的用戶設計的複雜動畫"
+    ]
+  }
+}

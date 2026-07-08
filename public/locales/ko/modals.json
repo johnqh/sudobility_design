@@ -1,0 +1,197 @@
+{
+  "seo": {
+    "title": "모달 - 디자인 시스템 - 내부 - {{emailDomain}}",
+    "description": "웹3 패턴과 접근성 기능을 갖춘 모달 및 대화형 컴포넌트"
+  },
+  "header": {
+    "badge": "모달 및 대화상자",
+    "title": "모달 컴포넌트",
+    "description": "웹3 통합 패턴, 접근성 기능, 반응형 동작을 갖춘 포괄적인 모달 및 대화 시스템. 지갑 연결, 거래 확인 및 사용자 상호작용에 완벽합니다."
+  },
+  "common": {
+    "copyToClipboard": "클립보드에 복사",
+    "cancel": "취소"
+  },
+  "quickStart": {
+    "heading": "빠른 시작",
+    "examples": {
+      "basic": {
+        "title": "기본 모달",
+        "description": "헤더, 콘텐츠, 푸터가 포함된 표준 모달"
+      },
+      "confirmation": {
+        "title": "확인 대화상자",
+        "description": "액션 버튼이 있는 간단한 확인 대화상자"
+      },
+      "wallet": {
+        "title": "웹3 지갑 연결",
+        "description": "지갑 선택 및 연결을 위한 모달"
+      },
+      "transaction": {
+        "title": "거래 상태",
+        "description": "거래 진행 상황과 상태를 보여주는 모달"
+      }
+    }
+  },
+  "demos": {
+    "heading": "인터랙티브 데모",
+    "cards": {
+      "simpleModal": {
+        "title": "기본 모달",
+        "description": "헤더, 콘텐츠, 푸터 섹션을 포함한 표준 모달."
+      },
+      "confirmationModal": {
+        "title": "확인 대화상자",
+        "description": "破壊적인 작업을 포함한 간단한 확인 대화상자."
+      },
+      "walletModal": {
+        "title": "지갑 연결",
+        "description": "웹3 지갑 선택 및 연결 인터페이스."
+      },
+      "transactionModal": {
+        "title": "거래 상태",
+        "description": "거래 진행 상황 및 상태 피드백 모달."
+      },
+      "formModal": {
+        "title": "폼 모달",
+        "description": "폼 요소와 검증을 포함하는 모달."
+      },
+      "settingsModal": {
+        "title": "설정 패널",
+        "description": "복잡한 설정과 환경 설정을 위한 큰 모달 창입니다."
+      }
+    }
+  },
+  "sizes": {
+    "heading": "크기 변형",
+    "availableTitle": "사용 가능한 사이즈",
+    "availableDescription": "내용 요구 사항에 따라 적절한 모달 크기를 선택하세요.",
+    "boxLabel": "{{name}} 모달 ({{maxWidth}})",
+    "names": {
+      "small": "작은",
+      "medium": "Medium",
+      "large": "크다",
+      "extraLarge": "엑스트라 라지"
+    }
+  },
+  "web3": {
+    "heading": "웹3 통합 패턴",
+    "walletFlow": {
+      "title": "지갑 연결 흐름",
+      "description": "공급자 선택을 통해 지갑 연결 경험을 완료하세요."
+    },
+    "transactionConfirmation": {
+      "title": "거래 확인",
+      "description": "거래 세부 정보 및 확인 인터페이스."
+    }
+  },
+  "accessibility": {
+    "heading": "접근성 가이드라인",
+    "ariaTitle": "ARIA 속성 및 최선의 실천 방법",
+    "ariaDescription": "모달이 모든 사용자에게 접근 가능하도록 보장하기 위해 다음 지침을 따르세요.",
+    "requiredAria": "필수 ARIA 속성",
+    "focusManagement": "집중 관리",
+    "focusItems": [
+      "모달이 열릴 때, 첫 번째 포커스 가능한 요소로 포커스가 이동해야 합니다",
+      "탭 탐색은 모달 내부에 고정되어야 합니다",
+      "모달이 닫힐 때 포커스는 트리거 요소로 돌아가야 합니다",
+      "ESC 키는 모달을 닫아야 합니다"
+    ],
+    "screenReader": "스크린 리더 지원",
+    "screenReaderItems": [
+      "세미틱 HTML 요소(button, form 등)를 사용하세요",
+      "모든 인터랙티브 요소에 명확하고 설명적인 레이블을 제공하세요.",
+      "모달 상태 변경을 라이브 영역으로 알리기"
+    ]
+  },
+  "implementation": {
+    "heading": "구현 참고 사항",
+    "portalTitle": "React Portal 사용",
+    "portalDescription": "z-index 문제를 방지하고 올바른 레이어링을 보장하기 위해 모달을 포탈 내에서 렌더링하세요.",
+    "animationTitle": "애니메이션 고려 사항",
+    "animationDescription": "CSS 애니메이션 또는 Framer Motion과 같은 라이브러리를 사용하여 모달 전환을 부드럽게 하세요.",
+    "animationItems": [
+      "• 오버레이를 위한 페이드 인/아웃",
+      "• 모달 콘텐츠를 확대하거나 슬라이드합니다",
+      "• 사용자의 움직임 선호를 존중합니다",
+      "• 애니메이션을 300ms 이하로 유지하세요"
+    ]
+  },
+  "simpleModal": {
+    "title": "간단한 모달 예제",
+    "body": "이것은 표준 헤더, 콘텐츠 및 푸터 섹션을 갖춘 기본 모달입니다. 일반적인 모달 구조와 스타일링을 보여줍니다.",
+    "hint": "모달 외부를 클릭하거나 닫기 버튼을 눌러 닫으세요.",
+    "gotIt": "알겠습니다"
+  },
+  "confirmationModal": {
+    "title": "항목 삭제",
+    "body": "이 항목을 삭제하시겠습니까? 이 작업은 되돌릴 수 없습니다.",
+    "delete": "삭제"
+  },
+  "walletModal": {
+    "title": "지갑 연결",
+    "choose": "{{emailDomain}} 플랫폼에 연결할 지갑을 선택하세요",
+    "metamask": "MetaMask",
+    "metamaskDescription": "인기 브라우저 확장 프로그램",
+    "walletConnect": "WalletConnect",
+    "walletConnectDescription": "모바일 지갑으로 스캔하기",
+    "phantom": "판타움",
+    "phantomDescription": "솔라나 지갑"
+  },
+  "transactionModal": {
+    "title": {
+      "idle": "거래 전송",
+      "pending": "거래 대기 중",
+      "confirming": "거래 확인",
+      "success": "거래 성공",
+      "error": "거래 실패"
+    },
+    "description": {
+      "idle": "거래 내역을 확인하고 계속 진행하시려면 확인해 주세요.",
+      "pending": "지갑에서 거래를 확인해 주세요...",
+      "confirming": "블록체인 확인을 기다리는 중...",
+      "success": "거래가 성공적으로 완료되었습니다.",
+      "error": "거래가 거부되었거나 실패했습니다. 다시 시도해 주세요."
+    },
+    "amount": "금액:",
+    "gasFee": "가스 수수료:",
+    "total": "총계:",
+    "confirm": "거래 확인",
+    "close": "닫기"
+  },
+  "formModal": {
+    "title": "문의 양식",
+    "firstName": "이름",
+    "firstNamePlaceholder": "이름을 입력하세요",
+    "lastName": "성",
+    "lastNamePlaceholder": "성을 입력하세요",
+    "email": "이메일 주소",
+    "emailPlaceholder": "이메일 주소를 입력하세요",
+    "message": "메시지",
+    "messagePlaceholder": "메시지를 입력하세요...",
+    "send": "메시지 보내기"
+  },
+  "settingsModal": {
+    "title": "설정 및 환경 설정",
+    "account": "계정 설정",
+    "emailNotifications": "이메일 알림",
+    "emailNotificationsDescription": "계정 활동에 대한 알림을 수신합니다",
+    "twoFactor": "이중 인증",
+    "twoFactorDescription": "계정에 보안을 추가로 적용하세요",
+    "privacy": "개인정보 설정",
+    "profileVisibility": "프로필 가시성",
+    "visibilityPublic": "공개",
+    "visibilityFriends": "친구만",
+    "visibilityPrivate": "개인",
+    "dataSharing": "데이터 공유",
+    "analyticsConsent": "분석 데이터 수집 허용",
+    "thirdPartyConsent": "사용 데이터를 제3자와 공유합니다",
+    "appearance": "외관",
+    "theme": "테마",
+    "themeLight": "빛",
+    "themeDark": "어두운",
+    "themeAuto": "자동",
+    "resetDefaults": "기본값으로 재설정",
+    "saveChanges": "변경 사항 저장"
+  }
+}

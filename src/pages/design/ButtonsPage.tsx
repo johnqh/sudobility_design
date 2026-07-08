@@ -17,6 +17,7 @@ import {
 import { HeartIcon as HeartIconSolid } from "@heroicons/react/24/solid";
 import { SEOHead } from "@sudobility/seo_lib";
 import { textVariants, variants } from "@sudobility/design";
+import { useTranslation } from "react-i18next";
 
 interface AppProps {
   emailDomain: string;
@@ -31,65 +32,69 @@ const CodeExample: React.FC<{
   preview?: React.ReactNode;
   copiedValue: string | null;
   copyToClipboard: (value: string) => void;
-}> = ({ title, description, code, preview, copiedValue, copyToClipboard }) => (
-  <div className="border border-border rounded-lg p-4 space-y-4">
-    <div>
-      <h4 className={`${textVariants.heading.h5()} mb-1`}>{title}</h4>
-      {description && (
-        <p className={`${textVariants.body.sm()} text-muted-foreground`}>
-          {description}
-        </p>
+}> = ({ title, description, code, preview, copiedValue, copyToClipboard }) => {
+  const { t } = useTranslation("buttons");
+  return (
+    <div className="border border-border rounded-lg p-4 space-y-4">
+      <div>
+        <h4 className={`${textVariants.heading.h5()} mb-1`}>{title}</h4>
+        {description && (
+          <p className={`${textVariants.body.sm()} text-muted-foreground`}>
+            {description}
+          </p>
+        )}
+      </div>
+
+      {preview && (
+        <div className="bg-muted rounded-lg p-4">
+          <div className="flex items-center gap-2 mb-2">
+            <div className="w-2 h-2 bg-destructive rounded-full"></div>
+            <div className="w-2 h-2 bg-warning rounded-full"></div>
+            <div className="w-2 h-2 bg-success rounded-full"></div>
+            <span className={`${textVariants.caption.default()} ml-2`}>
+              {t("codeExample.preview")}
+            </span>
+          </div>
+          <div className="bg-card rounded border p-6 flex flex-wrap items-center gap-3">
+            {preview}
+          </div>
+        </div>
       )}
-    </div>
 
-    {preview && (
       <div className="bg-muted rounded-lg p-4">
-        <div className="flex items-center gap-2 mb-2">
-          <div className="w-2 h-2 bg-destructive rounded-full"></div>
-          <div className="w-2 h-2 bg-warning rounded-full"></div>
-          <div className="w-2 h-2 bg-success rounded-full"></div>
-          <span className={`${textVariants.caption.default()} ml-2`}>
-            Preview
-          </span>
-        </div>
-        <div className="bg-card rounded border p-6 flex flex-wrap items-center gap-3">
-          {preview}
-        </div>
-      </div>
-    )}
-
-    <div className="bg-muted rounded-lg p-4">
-      <div className="flex items-center justify-between mb-2">
-        <div className="flex items-center gap-2">
-          <CodeBracketIcon className="h-4 w-4 text-muted-foreground" />
-          <span
-            className={`${textVariants.caption.default()} text-muted-foreground`}
+        <div className="flex items-center justify-between mb-2">
+          <div className="flex items-center gap-2">
+            <CodeBracketIcon className="h-4 w-4 text-muted-foreground" />
+            <span
+              className={`${textVariants.caption.default()} text-muted-foreground`}
+            >
+              {t("codeExample.usage")}
+            </span>
+          </div>
+          <button
+            onClick={() => copyToClipboard(code)}
+            className="p-1 text-muted-foreground hover:text-foreground transition-colors"
           >
-            Usage
-          </span>
+            {copiedValue === code ? (
+              <CheckIcon className="h-4 w-4" />
+            ) : (
+              <ClipboardDocumentIcon className="h-4 w-4" />
+            )}
+          </button>
         </div>
-        <button
-          onClick={() => copyToClipboard(code)}
-          className="p-1 text-muted-foreground hover:text-foreground transition-colors"
-        >
-          {copiedValue === code ? (
-            <CheckIcon className="h-4 w-4" />
-          ) : (
-            <ClipboardDocumentIcon className="h-4 w-4" />
-          )}
-        </button>
+        <code className="font-mono text-xs font-medium text-foreground block whitespace-pre-wrap">
+          {code}
+        </code>
       </div>
-      <code className="font-mono text-xs font-medium text-foreground block whitespace-pre-wrap">
-        {code}
-      </code>
     </div>
-  </div>
-);
+  );
+};
 
 const ButtonsPage: React.FC<AppProps> = ({
   emailDomain,
   appName: _appName,
 }) => {
+  const { t } = useTranslation("buttons");
   const [copiedValue, setCopiedValue] = useState<string | null>(null);
   const [liked, setLiked] = useState(false);
   const [loading, setLoading] = useState(false);
@@ -144,8 +149,8 @@ const ButtonsPage: React.FC<AppProps> = ({
   return (
     <>
       <SEOHead
-        title={`Buttons - Design System - Internal - ${emailDomain}`}
-        description="Complete button component library with all variants, sizes, states, and interactions"
+        title={t("seo.title", { emailDomain })}
+        description={t("seo.description")}
         noIndex={true}
       />
 
@@ -168,21 +173,18 @@ const ButtonsPage: React.FC<AppProps> = ({
                 />
               </svg>
               <span className="text-accent-foreground font-semibold">
-                Button Components
+                {t("header.badge")}
               </span>
             </div>
 
             <h1 className={`${textVariants.heading.display.xl()} mb-6`}>
-              Button Library & Interaction Patterns
+              {t("header.title")}
             </h1>
 
             <p
               className={`${textVariants.body.lg()} max-w-3xl mx-auto text-muted-foreground`}
             >
-              Comprehensive button component system with consistent variants,
-              sizes, states, and interactive behaviors. All buttons support
-              loading states, proper focus management, and accessibility
-              features.
+              {t("header.intro")}
             </p>
           </div>
 
@@ -192,22 +194,21 @@ const ButtonsPage: React.FC<AppProps> = ({
               <div className="flex items-center mb-6">
                 <CodeBracketIcon className="h-8 w-8 text-primary mr-3" />
                 <h2 className={`${textVariants.heading.h2()}`}>
-                  Quick Start - Essential Button Patterns
+                  {t("quickStart.title")}
                 </h2>
               </div>
 
               <p
                 className={`${textVariants.body.md()} text-muted-foreground mb-8`}
               >
-                Ready-to-use button components with consistent styling, states,
-                and behavior patterns.
+                {t("quickStart.description")}
               </p>
 
               <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
                 {/* Primary Button */}
                 <div className="space-y-4">
                   <h3 className={`${textVariants.heading.h4()} mb-3`}>
-                    Primary Action Button
+                    {t("quickStart.primary.title")}
                   </h3>
                   <div className="bg-muted rounded-lg p-4 relative">
                     <button
@@ -226,7 +227,7 @@ const ButtonsPage: React.FC<AppProps> = ({
                   </div>
                   <div className="p-4 bg-card rounded-lg border border-border">
                     <button className={variants.button.primary.default()}>
-                      Primary Action
+                      {t("quickStart.primary.button")}
                     </button>
                   </div>
                 </div>
@@ -234,7 +235,7 @@ const ButtonsPage: React.FC<AppProps> = ({
                 {/* Secondary Button */}
                 <div className="space-y-4">
                   <h3 className={`${textVariants.heading.h4()} mb-3`}>
-                    Secondary Button
+                    {t("quickStart.secondary.title")}
                   </h3>
                   <div className="bg-muted rounded-lg p-4 relative">
                     <button
@@ -253,7 +254,7 @@ const ButtonsPage: React.FC<AppProps> = ({
                   </div>
                   <div className="p-4 bg-card rounded-lg border border-border">
                     <button className={variants.button.secondary.default()}>
-                      Secondary Action
+                      {t("quickStart.secondary.button")}
                     </button>
                   </div>
                 </div>
@@ -261,7 +262,7 @@ const ButtonsPage: React.FC<AppProps> = ({
                 {/* Outline Button */}
                 <div className="space-y-4">
                   <h3 className={`${textVariants.heading.h4()} mb-3`}>
-                    Outline Button
+                    {t("quickStart.outline.title")}
                   </h3>
                   <div className="bg-muted rounded-lg p-4 relative">
                     <button
@@ -280,7 +281,7 @@ const ButtonsPage: React.FC<AppProps> = ({
                   </div>
                   <div className="p-4 bg-card rounded-lg border border-border">
                     <button className={variants.button.outline.default()}>
-                      Outline Action
+                      {t("quickStart.outline.button")}
                     </button>
                   </div>
                 </div>
@@ -288,7 +289,7 @@ const ButtonsPage: React.FC<AppProps> = ({
                 {/* Ghost Button */}
                 <div className="space-y-4">
                   <h3 className={`${textVariants.heading.h4()} mb-3`}>
-                    Ghost Button
+                    {t("quickStart.ghost.title")}
                   </h3>
                   <div className="bg-muted rounded-lg p-4 relative">
                     <button
@@ -307,7 +308,7 @@ const ButtonsPage: React.FC<AppProps> = ({
                   </div>
                   <div className="p-4 bg-card rounded-lg border border-border">
                     <button className={variants.button.ghost.default()}>
-                      Ghost Action
+                      {t("quickStart.ghost.button")}
                     </button>
                   </div>
                 </div>
@@ -318,21 +319,20 @@ const ButtonsPage: React.FC<AppProps> = ({
           {/* Button Variants */}
           <Section>
             <h2 className={`${textVariants.heading.h2()} mb-8`}>
-              Button Variants
+              {t("variants.title")}
             </h2>
             <p
               className={`${textVariants.body.md()} text-muted-foreground mb-8`}
             >
-              Different button styles for various use cases and hierarchy
-              levels.
+              {t("variants.description")}
             </p>
 
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
               <CodeExample
-                title="Color Variants"
+                title={t("variants.colors.title")}
                 copiedValue={copiedValue}
                 copyToClipboard={copyToClipboard}
-                description="Primary, secondary, success, warning, and destructive button colors"
+                description={t("variants.colors.description")}
                 code={`import { variants } from '@sudobility/design';
 
 // Primary
@@ -353,24 +353,24 @@ const ButtonsPage: React.FC<AppProps> = ({
                 preview={
                   <div className="flex flex-wrap gap-3">
                     <button className={variants.button.primary.default()}>
-                      Primary
+                      {t("variants.colors.primary")}
                     </button>
                     <button className="bg-success text-success-foreground hover:bg-success/90 px-4 py-2 rounded-lg font-medium transition-colors">
-                      Success
+                      {t("variants.colors.success")}
                     </button>
                     <button className="bg-warning text-warning-foreground hover:bg-warning/90 px-4 py-2 rounded-lg font-medium transition-colors">
-                      Warning
+                      {t("variants.colors.warning")}
                     </button>
                     <button className={variants.button.destructive.default()}>
-                      Destructive
+                      {t("variants.colors.destructive")}
                     </button>
                   </div>
                 }
               />
 
               <CodeExample
-                title="Button Sizes"
-                description="Small, default, and large button sizes for different contexts"
+                title={t("variants.sizes.title")}
+                description={t("variants.sizes.description")}
                 copiedValue={copiedValue}
                 copyToClipboard={copyToClipboard}
                 code={`import { variants } from '@sudobility/design';
@@ -387,13 +387,13 @@ const ButtonsPage: React.FC<AppProps> = ({
                 preview={
                   <div className="flex flex-wrap items-center gap-3">
                     <button className={variants.button.primary.small()}>
-                      Small
+                      {t("variants.sizes.small")}
                     </button>
                     <button className={variants.button.primary.default()}>
-                      Default
+                      {t("variants.sizes.default")}
                     </button>
                     <button className={variants.button.primary.large()}>
-                      Large
+                      {t("variants.sizes.large")}
                     </button>
                   </div>
                 }
@@ -404,19 +404,18 @@ const ButtonsPage: React.FC<AppProps> = ({
           {/* Button States */}
           <Section>
             <h2 className={`${textVariants.heading.h2()} mb-8`}>
-              Button States
+              {t("states.title")}
             </h2>
             <p
               className={`${textVariants.body.md()} text-muted-foreground mb-8`}
             >
-              Interactive states including hover, active, focus, loading, and
-              disabled.
+              {t("states.description")}
             </p>
 
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
               <CodeExample
-                title="Interactive States"
-                description="Normal, hover, active, and focus states with proper transitions"
+                title={t("states.interactive.title")}
+                description={t("states.interactive.description")}
                 copiedValue={copiedValue}
                 copyToClipboard={copyToClipboard}
                 code={`import { variants } from '@sudobility/design';
@@ -431,18 +430,18 @@ const ButtonsPage: React.FC<AppProps> = ({
                 preview={
                   <div className="flex flex-wrap gap-3">
                     <button className={variants.button.primary.default()}>
-                      Interactive Button
+                      {t("states.interactive.button")}
                     </button>
                     <button className={variants.button.secondary.default()}>
-                      Secondary Interactive
+                      {t("states.interactive.secondary")}
                     </button>
                   </div>
                 }
               />
 
               <CodeExample
-                title="Loading & Disabled States"
-                description="Loading spinner integration and proper disabled styling"
+                title={t("states.loading.title")}
+                description={t("states.loading.description")}
                 copiedValue={copiedValue}
                 copyToClipboard={copyToClipboard}
                 code={`import { useState } from 'react';
@@ -489,13 +488,17 @@ const [loading, setLoading] = useState(false);
                           />
                         </svg>
                       )}
-                      <span>{loading ? "Loading..." : "Demo Loading"}</span>
+                      <span>
+                        {loading
+                          ? t("states.loading.loadingLabel")
+                          : t("states.loading.demoLabel")}
+                      </span>
                     </button>
                     <button
                       disabled
                       className={variants.button.primary.default()}
                     >
-                      Disabled
+                      {t("states.loading.disabled")}
                     </button>
                   </div>
                 }
@@ -506,19 +509,18 @@ const [loading, setLoading] = useState(false);
           {/* Icon Buttons */}
           <Section>
             <h2 className={`${textVariants.heading.h2()} mb-8`}>
-              Icon Buttons & Combinations
+              {t("icons.title")}
             </h2>
             <p
               className={`${textVariants.body.md()} text-muted-foreground mb-8`}
             >
-              Buttons with icons, icon-only buttons, and toggle buttons for
-              enhanced usability.
+              {t("icons.description")}
             </p>
 
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
               <CodeExample
-                title="Buttons with Icons"
-                description="Text buttons enhanced with icons for better recognition"
+                title={t("icons.withIcons.title")}
+                description={t("icons.withIcons.description")}
                 copiedValue={copiedValue}
                 copyToClipboard={copyToClipboard}
                 code={`import { variants } from '@sudobility/design';
@@ -545,15 +547,15 @@ const [loading, setLoading] = useState(false);
                   <div className="flex flex-wrap items-center gap-3">
                     <button className={variants.button.primary.withIcon()}>
                       <PaperAirplaneIcon className="h-4 w-4" />
-                      <span>Send Message</span>
+                      <span>{t("icons.withIcons.sendMessage")}</span>
                     </button>
                     <button className="bg-success text-success-foreground hover:bg-success/90 px-4 py-2 rounded-lg font-medium transition-colors flex items-center space-x-2">
-                      <span>Download</span>
+                      <span>{t("icons.withIcons.download")}</span>
                       <ArrowDownTrayIcon className="h-4 w-4" />
                     </button>
                     <button
                       className={variants.button.ghost.icon()}
-                      title="Settings"
+                      title={t("icons.withIcons.settingsTitle")}
                     >
                       <CogIcon className="h-5 w-5" />
                     </button>
@@ -562,8 +564,8 @@ const [loading, setLoading] = useState(false);
               />
 
               <CodeExample
-                title="Toggle & Action Buttons"
-                description="Toggle buttons and specific action button patterns"
+                title={t("icons.toggle.title")}
+                description={t("icons.toggle.description")}
                 copiedValue={copiedValue}
                 copyToClipboard={copyToClipboard}
                 code={`import { useState } from 'react';
@@ -598,19 +600,23 @@ const [liked, setLiked] = useState(false);
                       ) : (
                         <HeartIcon className="h-4 w-4" />
                       )}
-                      <span>{liked ? "Liked" : "Like"}</span>
+                      <span>
+                        {liked
+                          ? t("icons.toggle.liked")
+                          : t("icons.toggle.like")}
+                      </span>
                     </button>
                     <button
                       className={`${variants.button.destructive.default()} flex items-center space-x-2`}
                     >
                       <TrashIcon className="h-4 w-4" />
-                      <span>Delete</span>
+                      <span>{t("icons.toggle.delete")}</span>
                     </button>
                     <button
                       className={`${variants.button.secondary.default()} flex items-center space-x-2`}
                     >
                       <PencilIcon className="h-4 w-4" />
-                      <span>Edit</span>
+                      <span>{t("icons.toggle.edit")}</span>
                     </button>
                   </div>
                 }
@@ -621,19 +627,18 @@ const [liked, setLiked] = useState(false);
           {/* Button Groups */}
           <Section>
             <h2 className={`${textVariants.heading.h2()} mb-8`}>
-              Button Groups & Combinations
+              {t("groups.title")}
             </h2>
             <p
               className={`${textVariants.body.md()} text-muted-foreground mb-8`}
             >
-              Grouped buttons, button bars, and action combinations for complex
-              interfaces.
+              {t("groups.description")}
             </p>
 
             <div className="grid grid-cols-1 gap-8">
               <CodeExample
-                title="Button Groups"
-                description="Connected button groups for related actions"
+                title={t("groups.buttonGroups.title")}
+                description={t("groups.buttonGroups.description")}
                 copiedValue={copiedValue}
                 copyToClipboard={copyToClipboard}
                 code={`import { variants } from '@sudobility/design';
@@ -661,36 +666,36 @@ const [liked, setLiked] = useState(false);
                   <div className="space-y-4">
                     <div>
                       <p className="text-sm text-muted-foreground mb-2">
-                        Connected Group:
+                        {t("groups.buttonGroups.connectedLabel")}
                       </p>
                       <div
                         className="inline-flex rounded-lg shadow-sm"
                         role="group"
                       >
                         <button className="bg-card hover:bg-accent text-foreground px-4 py-2 text-sm font-medium border border-border rounded-l-lg focus:outline-none focus:ring-2 focus:ring-ring">
-                          Previous
+                          {t("groups.buttonGroups.previous")}
                         </button>
                         <button className="bg-card hover:bg-accent text-foreground px-4 py-2 text-sm font-medium border-t border-b border-border focus:outline-none focus:ring-2 focus:ring-ring">
-                          Current
+                          {t("groups.buttonGroups.current")}
                         </button>
                         <button className="bg-card hover:bg-accent text-foreground px-4 py-2 text-sm font-medium border border-border rounded-r-lg focus:outline-none focus:ring-2 focus:ring-ring">
-                          Next
+                          {t("groups.buttonGroups.next")}
                         </button>
                       </div>
                     </div>
                     <div>
                       <p className="text-sm text-muted-foreground mb-2">
-                        Spaced Group:
+                        {t("groups.buttonGroups.spacedLabel")}
                       </p>
                       <div className="flex flex-wrap gap-2">
                         <button className={variants.button.primary.default()}>
-                          Primary
+                          {t("groups.buttonGroups.primary")}
                         </button>
                         <button className={variants.button.secondary.default()}>
-                          Secondary
+                          {t("groups.buttonGroups.secondary")}
                         </button>
                         <button className={variants.button.ghost.default()}>
-                          Cancel
+                          {t("groups.buttonGroups.cancel")}
                         </button>
                       </div>
                     </div>
@@ -699,8 +704,8 @@ const [liked, setLiked] = useState(false);
               />
 
               <CodeExample
-                title="Action Bars & Toolbars"
-                description="Complex button combinations for toolbars and action areas"
+                title={t("groups.actionBars.title")}
+                description={t("groups.actionBars.description")}
                 copiedValue={copiedValue}
                 copyToClipboard={copyToClipboard}
                 code={`import { variants } from '@sudobility/design';
@@ -739,18 +744,18 @@ const [liked, setLiked] = useState(false);
                           className={`${variants.button.primary.small()} flex items-center space-x-1`}
                         >
                           <PlusIcon className="h-4 w-4" />
-                          <span>New</span>
+                          <span>{t("groups.actionBars.new")}</span>
                         </button>
                         <div className="h-4 w-px bg-border"></div>
                         <button
                           className={variants.button.ghost.icon()}
-                          title="Edit"
+                          title={t("groups.actionBars.editTitle")}
                         >
                           <PencilIcon className="h-4 w-4" />
                         </button>
                         <button
                           className={variants.button.ghost.icon()}
-                          title="Share"
+                          title={t("groups.actionBars.shareTitle")}
                         >
                           <ShareIcon className="h-4 w-4" />
                         </button>
@@ -758,11 +763,11 @@ const [liked, setLiked] = useState(false);
 
                       <div className="flex items-center space-x-2">
                         <button className={variants.button.secondary.small()}>
-                          Cancel
+                          {t("groups.actionBars.cancel")}
                         </button>
                         <button className="bg-destructive text-destructive-foreground hover:bg-destructive/90 px-3 py-1.5 text-sm rounded-lg font-medium transition-colors flex items-center space-x-1">
                           <TrashIcon className="h-4 w-4" />
-                          <span>Delete</span>
+                          <span>{t("groups.actionBars.delete")}</span>
                         </button>
                       </div>
                     </div>
@@ -775,63 +780,53 @@ const [liked, setLiked] = useState(false);
           {/* Accessibility Guidelines */}
           <Section>
             <h2 className={`${textVariants.heading.h2()} mb-8`}>
-              Accessibility & Best Practices
+              {t("accessibility.title")}
             </h2>
             <div className="bg-info/10 rounded-xl p-6 border border-info/20">
               <h3 className={`${textVariants.heading.h4()} mb-4`}>
-                Button Accessibility Guidelines
+                {t("accessibility.guidelinesTitle")}
               </h3>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                 <ul className="space-y-2 text-foreground">
                   <li className="flex items-start">
                     <span className="w-2 h-2 bg-info rounded-full mt-2 mr-3 flex-shrink-0"></span>
                     <span>
-                      Use semantic{" "}
+                      {t("accessibility.list.semanticBefore")}{" "}
                       <code className="bg-info/10 text-info px-1 rounded">
                         button
                       </code>{" "}
-                      elements instead of divs
+                      {t("accessibility.list.semanticAfter")}
                     </span>
                   </li>
                   <li className="flex items-start">
                     <span className="w-2 h-2 bg-info rounded-full mt-2 mr-3 flex-shrink-0"></span>
-                    <span>
-                      Ensure sufficient color contrast (4.5:1 minimum)
-                    </span>
+                    <span>{t("accessibility.list.contrast")}</span>
                   </li>
                   <li className="flex items-start">
                     <span className="w-2 h-2 bg-info rounded-full mt-2 mr-3 flex-shrink-0"></span>
-                    <span>Include focus states for keyboard navigation</span>
+                    <span>{t("accessibility.list.focus")}</span>
                   </li>
                   <li className="flex items-start">
                     <span className="w-2 h-2 bg-info rounded-full mt-2 mr-3 flex-shrink-0"></span>
-                    <span>
-                      Add loading states to prevent double submissions
-                    </span>
+                    <span>{t("accessibility.list.loadingStates")}</span>
                   </li>
                 </ul>
                 <ul className="space-y-2 text-foreground">
                   <li className="flex items-start">
                     <span className="w-2 h-2 bg-info rounded-full mt-2 mr-3 flex-shrink-0"></span>
-                    <span>
-                      Use appropriate ARIA labels for icon-only buttons
-                    </span>
+                    <span>{t("accessibility.list.ariaLabels")}</span>
                   </li>
                   <li className="flex items-start">
                     <span className="w-2 h-2 bg-info rounded-full mt-2 mr-3 flex-shrink-0"></span>
-                    <span>
-                      Maintain minimum touch target size (44px x 44px)
-                    </span>
+                    <span>{t("accessibility.list.touchTarget")}</span>
                   </li>
                   <li className="flex items-start">
                     <span className="w-2 h-2 bg-info rounded-full mt-2 mr-3 flex-shrink-0"></span>
-                    <span>Provide clear visual feedback for all states</span>
+                    <span>{t("accessibility.list.feedback")}</span>
                   </li>
                   <li className="flex items-start">
                     <span className="w-2 h-2 bg-info rounded-full mt-2 mr-3 flex-shrink-0"></span>
-                    <span>
-                      Group related buttons logically with proper spacing
-                    </span>
+                    <span>{t("accessibility.list.grouping")}</span>
                   </li>
                 </ul>
               </div>

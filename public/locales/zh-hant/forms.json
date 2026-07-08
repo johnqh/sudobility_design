@@ -1,0 +1,117 @@
+{
+  "seo": {
+    "title": "表單 - 設計系統 - 內部 - {{emailDomain}}",
+    "description": "完整表單元素和輸入組件展示用於設計系統"
+  },
+  "codeExample": {
+    "preview": "預覽",
+    "usage": "使用"
+  },
+  "header": {
+    "badge": "表單元素",
+    "title": "表單組件與輸入元素",
+    "description": "功能齊全的表單元素資料庫，具有一致的樣式、驗證狀態和可存取性功能。所有元件均支援淺色/深色主題，並包含適當的焦點管理。"
+  },
+  "quickStart": {
+    "title": "快速入門 - 基本表單模式",
+    "description": "開箱即用的表單元件，具備完善的驗證、可存取性和響應式設計。",
+    "textInput": {
+      "title": "文字輸入",
+      "label": "電子郵件地址",
+      "placeholder": "輸入您的電子郵件..."
+    },
+    "select": {
+      "title": "選擇下拉選單",
+      "label": "區塊鏈網絡",
+      "placeholder": "選擇一個網路..."
+    },
+    "checkbox": {
+      "title": "複選框",
+      "agree": "我同意服務條款和隱私政策"
+    },
+    "textarea": {
+      "title": "文字區域",
+      "label": "訊息",
+      "placeholder": "輸入您的訊息..."
+    }
+  },
+  "inputTypes": {
+    "title": "輸入類型和變體",
+    "description": "不同類型的輸入項目，所有表單元素的樣式保持一致。",
+    "textInputTypes": {
+      "title": "文字輸入類型",
+      "description": "不同輸入類型的統一樣式",
+      "textPlaceholder": "文字輸入",
+      "passwordPlaceholder": "密碼"
+    },
+    "sizes": {
+      "title": "輸入大小",
+      "description": "不同輸入大小適用於各種使用場景",
+      "smallPlaceholder": "小輸入",
+      "defaultPlaceholder": "預設輸入",
+      "largePlaceholder": "大輸入"
+    }
+  },
+  "validation": {
+    "title": "驗證狀態",
+    "description": "帶有正確顏色編碼和訊息的表單驗證狀態。",
+    "success": {
+      "title": "成功狀態",
+      "description": "有效輸入，成功樣式",
+      "label": "電子郵件地址",
+      "message": "有效的電郵地址"
+    },
+    "error": {
+      "title": "錯誤狀態",
+      "description": "輸入無效，帶有錯誤樣式",
+      "label": "密碼",
+      "message": "密碼必須至少包含8個字符"
+    }
+  },
+  "advanced": {
+    "title": "進階表單元件",
+    "description": "更複雜的表單模式，功能得到增強。",
+    "passwordToggle": {
+      "title": "帶切換的密碼輸入",
+      "description": "帶顯示/隱藏功能的密碼欄位",
+      "label": "密碼",
+      "placeholder": "輸入密碼..."
+    },
+    "radio": {
+      "title": "單選按鈕群組",
+      "description": "單選按鈕",
+      "label": "訂閱計劃",
+      "free": "免費計劃 - 基本功能",
+      "pro": "專業計劃 - 高級功能"
+    }
+  },
+  "complete": {
+    "title": "完成表單範例",
+    "description": "一個全面的表單，展示所有表單元素協同工作。",
+    "form": {
+      "title": "Web3 個人檔案表單",
+      "description": "使用所有元素類型和驗證完成表單",
+      "displayNameLabel": "顯示名稱",
+      "displayNamePlaceholder": "您的顯示名稱",
+      "emailLabel": "電子郵件地址",
+      "networkLabel": "首選網路",
+      "networkPlaceholder": "選擇一個網路...",
+      "bioLabel": "生物",
+      "bioPlaceholder": "請告訴我們關於你自己...",
+      "notifications": "我同意接收電子郵件通知",
+      "submit": "儲存個人檔案"
+    }
+  },
+  "accessibility": {
+    "title": "無障礙指南",
+    "heading": "表單可訪問性最佳實踐",
+    "items": {
+      "labelsBefore": "始終使用正確的方式",
+      "labelsAfter": "與輸入相關的元素",
+      "errorMessages": "包含清晰的錯誤訊息和驗證狀態",
+      "focusStates": "確保焦點狀態透過 ring 工具清晰可見",
+      "inputTypes": "使用適當的輸入類型（如電子郵件、密碼等）以提升移動設備體驗",
+      "contrast": "保持足夠的顏色對比度（最小對比度比為4.5:1）"
+    }
+  }
+}

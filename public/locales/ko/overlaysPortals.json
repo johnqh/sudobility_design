@@ -1,0 +1,133 @@
+{
+  "header": {
+    "title": "오버레이 및 포탈",
+    "description": "모달, 드롭다운, 툴팁, 시트, 로딩 상태를 포함하는 포괄적인 오버레이 시스템으로 z-index 관리와 접근성도 적절히 처리합니다."
+  },
+  "common": {
+    "interactiveExample": "인터랙티브 예제",
+    "usage": "사용"
+  },
+  "dropdownItems": {
+    "profile": "프로필 보기",
+    "settings": "설정",
+    "logout": "로그아웃"
+  },
+  "alerts": {
+    "profile": "프로필 클릭됨",
+    "settings": "설정 클릭됨",
+    "logout": "로그아웃 클릭됨"
+  },
+  "modals": {
+    "title": "모달",
+    "description": "배경 흐림, 애니메이션 상태, 여러 크기의 모달 대화상자. 포커스 관리와 키보드 탐색을 포함합니다.",
+    "openButton": "모달 열기",
+    "exampleTitle": "예시 모달",
+    "exampleBody": "이것은 새로운 오버레이 디자인 시스템을 사용하는 예시 모달입니다. 적절한 배경 처리, 포커스 관리 및 애니메이션 상태를 포함합니다.",
+    "featuresTitle": "기능",
+    "features": [
+      "배경 흐림 효과",
+      "포커스 트랩 및 복원",
+      "키보드 탐색",
+      "다양한 사이즈 옵션"
+    ],
+    "accessibilityTitle": "접근성",
+    "accessibility": [
+      "ARIA 레이블 및 역할",
+      "Esc 키 처리",
+      "스크린 리더 지원",
+      "집중 관리"
+    ],
+    "cancel": "취소",
+    "confirm": "확인"
+  },
+  "dropdowns": {
+    "title": "드롭다운",
+    "description": "다양한 위치 옵션, 아이콘, 구분선 및 키보드 탐색 기능을 갖춘 드롭다운 메뉴.",
+    "actionsButton": "작업",
+    "userMenuButton": "사용자 메뉴"
+  },
+  "tooltips": {
+    "title": "툴팁",
+    "description": "다양한 위치 옵션과 색상 변형을 갖춘 가벼운 툴팁.",
+    "hoverButton": "마우스 오버 시 {{position}} 툴팁 표시",
+    "tooltipOn": "{{position}}에 대한 툴팁"
+  },
+  "loading": {
+    "title": "오버레이 로딩 중",
+    "description": "백드롭 블러와 사용자 정의 메시지를 갖춘 전체 화면 및 인라인 로딩 상태.",
+    "showButton": "로딩 오버레이 표시",
+    "inlineLabel": "인라인 로딩 상태:",
+    "message": "요청을 처리 중입니다..."
+  },
+  "sheets": {
+    "title": "시트 (아래 시트)",
+    "description": "화면 하단에서 위로 슬라이드되는 모바일 우선의 바텀 시트와 액션 시트."
+  },
+  "contextMenus": {
+    "title": "컨텍스트 메뉴",
+    "description": "마우스 오른쪽 클릭으로 열리는 컨텍스트 메뉴, 키보드 단축키 및 중첩된 하위 메뉴."
+  },
+  "portal": {
+    "title": "포털 관리",
+    "description": "Z-인덱스 관리 시스템 및 포털 유틸리티로 올바른 오버레이 스택을 관리합니다.",
+    "zIndexLayersTitle": "Z-인덱스 레이어",
+    "focusManagementTitle": "집중 관리",
+    "layers": {
+      "backdrop": "배경",
+      "popover": "팝오버",
+      "dropdown": "드롭다운",
+      "tooltip": "툴팁",
+      "modal": "모달",
+      "sheet": "시트",
+      "contextMenu": "컨텍스트 메뉴",
+      "loading": "로딩 중",
+      "notification": "알림"
+    }
+  },
+  "animationStates": {
+    "title": "애니메이션 상태",
+    "description": "모든 오버레이 컴포넌트에서 진입/이탈 전환에 대해 일관된 애니메이션 상태를 제공합니다.",
+    "availableStatesTitle": "사용 가능한 상태",
+    "modalStatesTitle": "모달 상태",
+    "dropdownStatesTitle": "드롭다운 상태"
+  },
+  "bestPractices": {
+    "title": "최선의 실천 방법",
+    "accessibilityTitle": "접근성",
+    "accessibility": [
+      "항상 적절한 ARIA 레이블과 역할을 제공하세요",
+      "모달에 포커스 트랩을 구현합니다",
+      "키보드 탐색 지원 (Tab, Escape, 화살표 키)",
+      "포커스 순서와 복원 유지",
+      "세미틱 HTML 요소 사용",
+      "스크린 리더 알림 제공"
+    ],
+    "performanceTitle": "성능",
+    "performance": [
+      "올바른 DOM 렌더링을 위해 React Portals을 사용하세요",
+      "무거운 오버레이에 대한 지연 로딩 구현",
+      "언마운트 시 이벤트 리스너 정리하기",
+      "애니메이션에 CSS 변환을 사용하세요",
+      "모바일에서 복잡한 배경 필터를 피하세요",
+      "레이아웃 스래싱 최소화"
+    ],
+    "uxGuidelinesTitle": "UX 가이드라인",
+    "uxGuidelines": [
+      "모달을 단일 작업에 집중시키세요",
+      "명확한 닫기 액세스를 제공하세요",
+      "컨텍스트에 적절한 오버레이 유형을 사용하세요",
+      "일관된 애니메이션 시간 유지",
+      "모바일 뷰포트 제약을 고려하십시오",
+      "중첩 오버레이 상호작용을 피하십시오"
+    ],
+    "technicalTitle": "기술적인",
+    "technical": [
+      "적절한 z-index 레이어링 시스템을 사용하세요",
+      "바디 스크롤 잠금을 올바르게 처리하기",
+      "클릭과 키보드 상호작용 모두 지원",
+      "다양한 뷰포트 크기에서 테스트",
+      "모션 선호도를 줄이는 것을 고려하세요",
+      "적절한 오류 경계를 구현합니다"
+    ]
+  }
+}

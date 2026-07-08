@@ -1,0 +1,185 @@
+{
+  "seo": {
+    "title": "ナビゲーション - デザインシステム - 内部 - {{emailDomain}}",
+    "description": "ナビゲーションコンポーネント（バッジ、タブ、ページネーション、メニュー構造など）"
+  },
+  "header": {
+    "badge": "ナビゲーションコンポーネント",
+    "title": "ナビゲーションシステム",
+    "intro": "Web3アプリケーション向けの包括的なナビゲーションコンポーネント。ブレッドクラム、タブ、ページネーション、メニュー、ステップナビゲーションを含む。アクセシビリティとレスポンシブ動作を考慮して設計されています。"
+  },
+  "quickStart": {
+    "title": "クイックスタート",
+    "copy": "クリップボードにコピー",
+    "examples": {
+      "breadcrumb": {
+        "title": "パンくずナビゲーション",
+        "description": "現在のページ位置を示す階層的なナビゲーション"
+      },
+      "tabs": {
+        "title": "タブナビゲーション",
+        "description": "タブナビゲーションで複数のビューにコンテンツを整理する"
+      },
+      "pagination": {
+        "title": "ページネーション",
+        "description": "複数のページにわたるコンテンツをナビゲートする"
+      },
+      "steps": {
+        "title": "ステップナビゲーション",
+        "description": "ユーザーを複数ステップのプロセスに導く"
+      }
+    }
+  },
+  "breadcrumbs": {
+    "sectionTitle": "インタラクティブなパン屑",
+    "liveTitle": "ライブ・ブレッドクラム・例",
+    "home": "ホーム",
+    "web3Projects": "Web3プロジェクト",
+    "featuresTitle": "機能",
+    "features": [
+      "SEO最適化のための構造化データ",
+      "ARIAアクセシビリティ属性",
+      "キーボードナビゲーションのサポート",
+      "折りたたみ対応のデザイン",
+      "オプションのホームアイコンとソーシャルシェア"
+    ]
+  },
+  "tabVariants": {
+    "sectionTitle": "タブナビゲーションのバリエーション",
+    "defaultTitle": "デフォルトのタブ",
+    "overview": "概要",
+    "analytics": "分析",
+    "settings": "設定",
+    "overviewContent": "プロジェクト統計と最近の活動を含む概要コンテンツ。",
+    "analyticsContent": "チャートとメトリクスを備えた分析ダッシュボード。",
+    "settingsContent": "設定オプションのための設定パネル。",
+    "underlinedTitle": "下線付きタブ",
+    "dashboard": "ダッシュボード",
+    "team": "チーム",
+    "projects": "プロジェクト",
+    "calendar": "カレンダー",
+    "underlinedContent": "クリーンな下線付きタブスタイルのダッシュボードコンテンツ。",
+    "pillsTitle": "錠剤 パイル",
+    "all": "すべて",
+    "active": "アクティブ",
+    "draft": "下書き",
+    "archived": "アーカイブ済み",
+    "pillsContent": "選択されたピルタブによってフィルタリングされたコンテンツ。"
+  },
+  "pagination": {
+    "sectionTitle": "ページネーション",
+    "listTitle": "メールリストのページネーション",
+    "listDescription": "メールリストナビゲーション用のページネーションの例",
+    "emailSubject": "メール件名 {{number}}",
+    "timeAgo": "2時間前",
+    "previous": "前へ",
+    "next": "次へ",
+    "showing": "表示中",
+    "to": "へ",
+    "of": "の",
+    "results": "結果"
+  },
+  "steps": {
+    "sectionTitle": "ステップナビゲーション",
+    "demoTitle": "Web3ウォレットのセットアップ",
+    "demoDescription": "ユーザーをウォレット接続プロセスに導いてください",
+    "stepLabel": "ステップ {{number}}:",
+    "items": {
+      "accountSetup": {
+        "name": "アカウント設定",
+        "description": "アカウントを作成する"
+      },
+      "walletConnection": {
+        "name": "ウォレット接続",
+        "description": "Web3ウォレットを接続する"
+      },
+      "emailSetup": {
+        "name": "メール設定",
+        "description": "電子メールの通知設定を変更する"
+      },
+      "complete": {
+        "name": "完了",
+        "description": "example.com の使用を開始してください"
+      }
+    },
+    "details": {
+      "1": "お好みのユーザー名とセキュリティ設定で、{{emailDomain}}アカウントを作成してください。",
+      "2": "ブロックチェーン機能を有効にするために、Web3ウォレット（MetaMask、WalletConnectなど）を接続してください。",
+      "3": "電子メールの設定、通知およびプライバシー設定をカスタマイズします。",
+      "4": "設定が完了しました！Web3メールの送受信を開始しましょう。"
+    }
+  },
+  "sidebar": {
+    "sectionTitle": "サイドバーのナビゲーション",
+    "cardTitle": "メールアプリケーションサイドバー",
+    "cardDescription": "電子メールアプリケーションの永続的ナビゲーション",
+    "items": {
+      "dashboard": "ダッシュボード",
+      "inbox": "受信トレイ",
+      "sent": "送信済み",
+      "archive": "アーカイブ",
+      "settings": "設定"
+    },
+    "mainContent": "メインコンテンツ領域",
+    "mainContentHint": "コンテンツはサイドバーの選択に応じて変化します"
+  },
+  "web3Patterns": {
+    "sectionTitle": "Web3ナビゲーションパターン",
+    "walletStatus": {
+      "title": "ウォレットステータスナビゲーション",
+      "description": "ウォレット接続状態に応じて変化するナビゲーション",
+      "connected": "MetaMask が接続されました",
+      "inbox": "Web3受信トレイ",
+      "ensProfile": "ENSプロファイル",
+      "walletSettings": "ウォレット設定"
+    },
+    "multiChain": {
+      "title": "マルチチェーンナビゲーション",
+      "description": "異なるブロックチェーンネットワーク間のナビゲーション",
+      "ethereum": "Ethereum",
+      "solana": "Solana",
+      "polygon": "ポリゴン",
+      "ethereumInbox": "Ethereum メールインボックス",
+      "ensNames": "ENS名",
+      "gasSettings": "ガス設定"
+    }
+  },
+  "accessibility": {
+    "sectionTitle": "アクセシビリティガイドライン",
+    "title": "ナビゲーションのアクセシビリティ",
+    "description": "スクリーンリーダーおよびキーボードユーザーがすべてのナビゲーションコンポーネントにアクセスできるようにしてください。",
+    "ariaLandmarks": "ARIAランドマーク",
+    "keyboardNavigation": "キーボードナビゲーション",
+    "breadcrumbsLabel": "トーストのクランチ",
+    "breadcrumbsKeys": [
+      "タブ：リンクを移動",
+      "Enter/スペース: リンクを有効にする",
+      "スクリーンリーダー用のスキップリンク"
+    ],
+    "tabsLabel": "タブ",
+    "tabsKeys": [
+      "矢印キー：タブを移動",
+      "タブ：タブパネルを入力",
+      "Enter/スペース: タブを有効化"
+    ]
+  },
+  "implementation": {
+    "sectionTitle": "実装ノート",
+    "performanceTitle": "パフォーマンスに関する考慮事項",
+    "performance": [
+      "可能な限りナビゲーション項目を遅延読み込みする",
+      "複雑なナビゲーションコンポーネントに React.memo を使用してください",
+      "ナビゲーションメニュー内の検索のデバウンス",
+      "長いナビゲーションリスト用のバーチャルスクロール",
+      "重要なナビゲーション経路を事前に読み込む"
+    ],
+    "mobileTitle": "モバイル対応",
+    "mobile": [
+      "ナビゲーションをハンバーガーメニューに統合する",
+      "モバイルアプリでは下部ナビゲーションを使用してください",
+      "適切な場所にスワイプジェスチャーを実装します",
+      "タッチターゲットが少なくとも44pxであることを確認してください",
+      "さまざまな画面サイズと向きでのテスト"
+    ]
+  }
+}

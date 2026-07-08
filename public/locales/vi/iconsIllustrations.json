@@ -1,0 +1,155 @@
+{
+  "seo": {
+    "title": "Biểu tượng & Tranh minh họa - Hệ thống thiết kế - Nội bộ - {{emailDomain}}",
+    "description": "Hệ thống biểu tượng toàn diện với kích thước, màu sắc và mẫu sử dụng nhất quán"
+  },
+  "header": {
+    "badge": "Biểu tượng và minh họa",
+    "title": "Biểu tượng và minh họa",
+    "description": "Hệ thống biểu tượng toàn diện với kích thước, màu sắc và mẫu sử dụng nhất quán. Được xây dựng bằng Heroicons và tối ưu hóa cho khả năng truy cập và chế độ tối."
+  },
+  "sizes": {
+    "title": "Kích thước biểu tượng",
+    "variantsTitle": "Phiên bản kích thước",
+    "usageTitle": "Kích thước Sử dụng",
+    "labels": {
+      "xs": "xs (12px)",
+      "sm": "sm (16px)",
+      "md": "md (20px)",
+      "lg": "lg (24px)",
+      "xl": "xl (32px)",
+      "xxl": "xxl (40px)",
+      "xxxl": "xxxl (48px)"
+    }
+  },
+  "colors": {
+    "title": "Màu biểu tượng",
+    "variantsTitle": "Biến thể màu sắc",
+    "web3Title": "Màu Web3",
+    "default": {
+      "label": "Mặc định",
+      "value": "Xám 500 / 400"
+    },
+    "brand": {
+      "label": "Thương hiệu",
+      "value": "Xanh lam 600 / 400"
+    },
+    "success": {
+      "label": "Thành công",
+      "value": "Xanh lá 600 / 400"
+    },
+    "warning": {
+      "label": "Cảnh báo",
+      "value": "Amber 600 / 400"
+    },
+    "error": {
+      "label": "Lỗi",
+      "value": "Đỏ 600 / 400"
+    },
+    "interactive": {
+      "label": "Tương tác",
+      "value": "Hiệu ứng di chuột"
+    },
+    "ethereum": {
+      "label": "Ethereum",
+      "value": "Xanh lam 600 / 400"
+    },
+    "solana": {
+      "label": "Solana",
+      "value": "Tím 600 / 400"
+    },
+    "bitcoin": {
+      "label": "Bitcoin",
+      "value": "Cam 600 / 400"
+    }
+  },
+  "context": {
+    "title": "Biểu tượng cụ thể theo ngữ cảnh",
+    "buttonTitle": "Biểu tượng nút bấm",
+    "inputTitle": "Biểu tượng đầu vào",
+    "leadingIcon": "Biểu tượng chính",
+    "trailingIcon": "Biểu tượng cuối",
+    "iconOnly": "Chỉ biểu tượng",
+    "trailingInteractive": "Tương tác theo đuôi",
+    "addItem": "Thêm mục",
+    "continue": "Tiếp tục",
+    "searchPlaceholder": "Tìm kiếm...",
+    "passwordPlaceholder": "Mật khẩu"
+  },
+  "status": {
+    "title": "Biểu tượng trạng thái",
+    "success": {
+      "title": "Thành công",
+      "description": "Thao tác hoàn thành thành công"
+    },
+    "warning": {
+      "title": "Cảnh báo",
+      "description": "Vui lòng xem xét và tiếp tục"
+    },
+    "error": {
+      "title": "Lỗi",
+      "description": "Điều gì đó đã xảy ra sai"
+    },
+    "info": {
+      "title": "Thông tin",
+      "description": "Thông tin bổ sung"
+    }
+  },
+  "web3": {
+    "title": "Biểu tượng ngữ cảnh Web3",
+    "walletStatusTitle": "Trạng thái ví",
+    "blockchainTitle": "Biểu tượng Blockchain",
+    "walletConnected": "Ví điện tử đã kết nối",
+    "noWalletConnected": "Chưa kết nối ví",
+    "connectToContinue": "Kết nối để tiếp tục",
+    "ethereum": {
+      "title": "Ethereum",
+      "network": "Mạng ETH"
+    },
+    "solana": {
+      "title": "Solana",
+      "network": "Mạng lưới SOL"
+    },
+    "bitcoin": {
+      "title": "Bitcoin",
+      "network": "Mạng BTC"
+    }
+  },
+  "decorative": {
+    "title": "Biểu tượng trang trí",
+    "heroLarge": {
+      "title": "Anh hùng Lớn",
+      "size": "80px × 80px"
+    },
+    "heroMedium": {
+      "title": "Anh hùng cỡ trung",
+      "size": "64px × 64px"
+    },
+    "heroSmall": {
+      "title": "Anh hùng Nhỏ",
+      "size": "48px × 48px"
+    }
+  },
+  "browser": {
+    "title": "Trình duyệt biểu tượng",
+    "categories": {
+      "all": "Tất cả biểu tượng",
+      "actions": "Hành động",
+      "status": "Trạng thái",
+      "navigation": "Điều hướng",
+      "web3": "Web3",
+      "decorative": "Trang trí"
+    }
+  },
+  "tokens": {
+    "title": "Các biến thể biểu tượng có sẵn",
+    "sizeVariants": "Phiên bản kích thước",
+    "colorVariants": "Biến thể màu sắc",
+    "contextVariants": "Biến thể ngữ cảnh",
+    "combinedVariants": "Các biến thể kết hợp"
+  },
+  "navigation": {
+    "previous": "Bảng và lưới dữ liệu",
+    "backToDesignSystem": "Quay lại Hệ thống Thiết kế"
+  }
+}

@@ -1,0 +1,159 @@
+{
+  "seo": {
+    "title": "Forms Advanced - Design System - Interne - {{emailDomain}}",
+    "description": "Modèles de formulaires avancés, y compris des formulaires à plusieurs étapes, des téléchargements de fichiers et des entrées Web3"
+  },
+  "header": {
+    "badge": "Formulaires avancés",
+    "title": "Système de formulaires avancés",
+    "description": "Modèles avancés de formulaires, y compris des assistants à plusieurs étapes, des téléchargements de fichiers, des entrées spécifiques à Web3 et des modèles de validation sophistiqués pour des interactions utilisateur complexes."
+  },
+  "quickStart": {
+    "heading": "Mise en route rapide",
+    "copyTitle": "Copier dans le presse-papiers",
+    "examples": {
+      "multiStep": {
+        "title": "Formulaire à plusieurs étapes",
+        "description": "Formulaire pas à pas avec indicateur de progression"
+      },
+      "fileUpload": {
+        "title": "Téléchargement de fichier par glisser-déposer",
+        "description": "Téléchargement de fichiers avancé avec aperçu et validation"
+      },
+      "tokenAmount": {
+        "title": "Saisie du montant du jeton Web3",
+        "description": "Saisie spécialisée pour les montants de cryptomonnaies avec validation"
+      },
+      "validation": {
+        "title": "Validation avancée",
+        "description": "Validation en temps réel avec des messages d'erreur personnalisés"
+      }
+    }
+  },
+  "steps": {
+    "account": {
+      "title": "Configuration du compte",
+      "description": "Informations de base sur le compte"
+    },
+    "wallet": {
+      "title": "Connexion du portefeuille",
+      "description": "Connectez votre portefeuille Web3"
+    },
+    "transaction": {
+      "title": "Détails de la transaction",
+      "description": "Configurer les paramètres de transaction"
+    },
+    "review": {
+      "title": "Vérifier et confirmer",
+      "description": "Vérifier et envoyer"
+    }
+  },
+  "multiStep": {
+    "heading": "Formulaire à étapes multiples",
+    "cardTitle": "Assistant de configuration du portefeuille",
+    "cardDescription": "Formulaire interactif à plusieurs étapes avec suivi de progression et validation",
+    "emailLabel": "Adresse e-mail",
+    "emailPlaceholder": "Entrez votre adresse e-mail",
+    "passwordLabel": "Mot de passe",
+    "passwordPlaceholder": "Créez un mot de passe fort",
+    "confirmPasswordLabel": "Confirmer le mot de passe",
+    "confirmPasswordPlaceholder": "Confirmez votre mot de passe",
+    "walletAddressLabel": "Adresse du portefeuille",
+    "walletAddressPlaceholder": "0x...",
+    "networkLabel": "Réseau",
+    "networks": {
+      "ethereum": "Ethereum Mainnet",
+      "polygon": "Polygone",
+      "bsc": "Binance Smart Chain",
+      "arbitrum": "Arbitrum"
+    },
+    "tokenAmountLabel": "Montant des jetons",
+    "tokenAmountPlaceholder": "0,00",
+    "balance": "Solde : 1,234567 ETH (2 468,90 $)",
+    "max": "Max",
+    "gasPriceLabel": "Prix du gaz (Gwei)",
+    "gasPricePlaceholder": "20",
+    "gasPriceHint": "Des prix de gaz plus élevés entraînent une confirmation de transaction plus rapide",
+    "reviewTitle": "Vérifiez votre transaction",
+    "reviewNetwork": "Réseau :",
+    "reviewToAddress": "À l'adresse de :",
+    "reviewAmount": "Montant :",
+    "reviewGasPrice": "Prix du gaz :",
+    "warningTitle": "Avertissement de transaction",
+    "warningBody": "Veuillez vérifier soigneusement tous les détails de la transaction. Les transactions sur la chaîne ne peuvent pas être annulées.",
+    "previous": "Précédent",
+    "next": "Suivant",
+    "submit": "Soumettre la transaction"
+  },
+  "validationMessages": {
+    "invalidAddress": "Format de adresse Ethereum invalide",
+    "positiveAmount": "Le montant doit être un nombre positif",
+    "insufficientBalance": "Solde insuffisant",
+    "passwordMinLength": "Le mot de passe doit comporter au moins 8 caractères",
+    "passwordComplexity": "Le mot de passe doit contenir des majuscules, des minuscules et des chiffres",
+    "passwordsDoNotMatch": "Les mots de passe ne correspondent pas"
+  },
+  "fileUpload": {
+    "heading": "Téléchargement de fichiers",
+    "cardTitle": "Téléchargement de document",
+    "cardDescription": "Téléchargement de fichiers par glisser-déposer avec aperçu et validation",
+    "dropTitle": "Glissez les fichiers ici pour les télécharger",
+    "dropSubtitle": "Ou cliquez pour sélectionner des fichiers depuis votre ordinateur",
+    "chooseFiles": "Choisir des fichiers",
+    "supportedFormats": "Formats pris en charge : PDF, DOC, DOCX, JPG, PNG, TXT (taille maximale de 10 Mo par fichier)",
+    "uploadedFiles": "Fichiers téléchargés ({{count}})",
+    "megabytes": "{{size}} Mo"
+  },
+  "web3": {
+    "heading": "Entrées spécialisées Web3",
+    "walletCard": {
+      "title": "Saisie de l'adresse du portefeuille",
+      "description": "Saisie spécialisée pour les adresses de cryptomonnaies avec validation",
+      "recipientLabel": "Adresse du destinataire",
+      "recipientPlaceholder": "0x... ou nom ENS",
+      "validAddress": "✓ Adresse Ethereum valide",
+      "ensLabel": "Nom ENS",
+      "ensPlaceholder": "vitalik.eth",
+      "ensResolves": "→ Résout en : 0x742d...5f0bEb7"
+    },
+    "tokenCard": {
+      "title": "Saisie du montant des jetons",
+      "description": "Saisie précise du montant de jetons avec affichage du solde",
+      "amountLabel": "Montant à envoyer",
+      "amountPlaceholder": "0,00",
+      "balance": "Solde : 1,234567 ETH",
+      "usdEquivalent": "environ 1 234,50 USD",
+      "quarter": "25%",
+      "half": "50%",
+      "threeQuarters": "75%",
+      "max": "Max",
+      "gasSettingsLabel": "Paramètres du gaz",
+      "gasSlow": "Lent",
+      "gasSlowValue": "15 Gwei",
+      "gasStandard": "Standard",
+      "gasStandardValue": "25 Gwei",
+      "gasFast": "Rapide",
+      "gasFastValue": "35 Gwei"
+    }
+  },
+  "validationSection": {
+    "heading": "Validation avancée",
+    "cardTitle": "Exemples de validation en temps réel",
+    "cardDescription": "Schémas avancés de validation avec retour instantané et messages d'erreur personnalisés",
+    "strongPasswordLabel": "Mot de passe fort",
+    "strongPasswordPlaceholder": "Entrez le mot de passe",
+    "checkMinChars": "Au moins 8 caractères",
+    "checkUppercase": "Contient une lettre majuscule",
+    "checkNumber": "Contient un nombre",
+    "checkSpecialChar": "Contient un caractère spécial",
+    "emailLabel": "Adresse e-mail",
+    "emailPlaceholder": "Entrez l'adresse e-mail",
+    "validEmail": "✓ Format d'e-mail valide",
+    "invalidLabel": "Exemple d'entrée non valide",
+    "invalidPlaceholder": "Entrez la valeur",
+    "invalidMessage": "Ce champ contient des caractères non valides",
+    "loadingLabel": "Chargement de la validation",
+    "loadingPlaceholder": "Vérification de la disponibilité...",
+    "loadingMessage": "Vérification de la disponibilité du nom d'utilisateur..."
+  }
+}

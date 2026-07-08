@@ -1,0 +1,197 @@
+{
+  "seo": {
+    "title": "Modaler - Designsystem - Intern - {{emailDomain}}",
+    "description": "Modal- och dialogkomponenter med Web3-mönster och tillgänglighetsfunktioner"
+  },
+  "header": {
+    "badge": "Modaler och dialogrutor",
+    "title": "Modalkomponenter",
+    "description": "Komplett modal- och dialogsystem med Web3-integreringsmönster, tillgänglighetsfunktioner och responsiv beteende. Perfekt för plånbokshandlingar, transaktionsbekräftelser och användarinteraktioner."
+  },
+  "common": {
+    "copyToClipboard": "Kopiera till urklipp",
+    "cancel": "Avbryta"
+  },
+  "quickStart": {
+    "heading": "Snabbstart",
+    "examples": {
+      "basic": {
+        "title": "Grundläggande modal",
+        "description": "Standardmodal med rubrik, innehåll och fotnot"
+      },
+      "confirmation": {
+        "title": "Bekräftelsedialog",
+        "description": "Enkel bekräftelsedialog med åtgärdsknappar"
+      },
+      "wallet": {
+        "title": "Web3-plånbokanslutning",
+        "description": "Fönster för val och anslutning av plånbok"
+      },
+      "transaction": {
+        "title": "Transaktionsstatus",
+        "description": "Modal som visar transaktionsförflytning och tillstånd"
+      }
+    }
+  },
+  "demos": {
+    "heading": "Interaktiva demonstrationer",
+    "cards": {
+      "simpleModal": {
+        "title": "Grundläggande modal",
+        "description": "Standardmodal med rubrik, innehåll och sidfot."
+      },
+      "confirmationModal": {
+        "title": "Bekräftelsedialog",
+        "description": "Enkel bekräftelsedialog med destruktiva åtgärder."
+      },
+      "walletModal": {
+        "title": "Plånbokanslutning",
+        "description": "Web3-plånboksval och anslutningsgränssnitt."
+      },
+      "transactionModal": {
+        "title": "Transaktionsstatus",
+        "description": "Modalrutor för återkoppling om transaktionsförflytning och status."
+      },
+      "formModal": {
+        "title": "Formulärmodal",
+        "description": "Modal som innehåller formulärkomponenter och validering."
+      },
+      "settingsModal": {
+        "title": "Inställningspanel",
+        "description": "Stort modal för komplexa inställningar och inställningar."
+      }
+    }
+  },
+  "sizes": {
+    "heading": "Storleksvarianter",
+    "availableTitle": "Tillgängliga storlekar",
+    "availableDescription": "Välj rätt modalstorlek baserat på dina innehållsbehov.",
+    "boxLabel": "{{name}} Modal ({{maxWidth}})",
+    "names": {
+      "small": "Liten",
+      "medium": "Medium",
+      "large": "Stor",
+      "extraLarge": "Extra stor"
+    }
+  },
+  "web3": {
+    "heading": "Web3 integreringsmönster",
+    "walletFlow": {
+      "title": "Plånbok anslutningsflöde",
+      "description": "Slutför upplevelsen av att ansluta plånboken med val av leverantör."
+    },
+    "transactionConfirmation": {
+      "title": "Transaktionsbekräftelse",
+      "description": "Transaktionsinformation och bekräftelsegränssnitt."
+    }
+  },
+  "accessibility": {
+    "heading": "Riktlinjer för tillgänglighet",
+    "ariaTitle": "ARIA-attribut och bästa praxis",
+    "ariaDescription": "Följ dessa riktlinjer för att säkerställa att dina modaler är tillgängliga för alla användare.",
+    "requiredAria": "Nödvändiga ARIA-attribut",
+    "focusManagement": "Fokusledning",
+    "focusItems": [
+      "Fokus bör flyttas till det första fokuserbara elementet i modalen när den öppnas",
+      "Fliknavigation bör vara instängd inom modalen",
+      "Fokus bör återvända till utlösarelementet när modalen stängs",
+      "ESC-tangenten bör stänga modalen"
+    ],
+    "screenReader": "Stöd för skärmläsare",
+    "screenReaderItems": [
+      "Använd semantiska HTML-element (button, form, etc.)",
+      "Ange tydliga och beskrivande etiketter för alla interaktiva element.",
+      "Anmäl modaltillståndsförändringar med levande regioner"
+    ]
+  },
+  "implementation": {
+    "heading": "Implementeringsanteckningar",
+    "portalTitle": "Användning av React Portal",
+    "portalDescription": "Rendrera modaler i ett portat för att undvika z-index-problem och säkerställa korrekt lagerläggning.",
+    "animationTitle": "Överväganden kring animation",
+    "animationDescription": "Använd CSS-animationer eller bibliotek som Framer Motion för smidiga övergångar i modala fönster.",
+    "animationItems": [
+      "• Fading in/out för överlappning",
+      "• Skala eller dra för modalinnehåll",
+      "• Respektera användarens rörelsepreferenser",
+      "• Håll animationer under 300 ms"
+    ]
+  },
+  "simpleModal": {
+    "title": "Enkel modal exempel",
+    "body": "Detta är en enkel modal med standardrubrik, innehåll och fotavsnitt. Den visar den typiska strukturen och stilningen av en modal.",
+    "hint": "Klicka utanför modalen eller tryck på stängningsknappen för att avvisa den.",
+    "gotIt": "Förstått"
+  },
+  "confirmationModal": {
+    "title": "Ta bort objekt",
+    "body": "Är du säker på att du vill ta bort detta objekt? Denna åtgärd kan inte ångras.",
+    "delete": "Ta bort"
+  },
+  "walletModal": {
+    "title": "Anslut plånbok",
+    "choose": "Välj en plånbok för att ansluta till plattformen {{emailDomain}}",
+    "metamask": "MetaMask",
+    "metamaskDescription": "Populärt webbläsar tillägg",
+    "walletConnect": "WalletConnect",
+    "walletConnectDescription": "Skan med mobilplånbok",
+    "phantom": "Fantom",
+    "phantomDescription": "Solana-plånbok"
+  },
+  "transactionModal": {
+    "title": {
+      "idle": "Skicka transaktion",
+      "pending": "Transaktion väntar",
+      "confirming": "Bekräfta transaktion",
+      "success": "Transaktionen lyckades",
+      "error": "Transaktion misslyckades"
+    },
+    "description": {
+      "idle": "Granska transaktionsuppgifterna och bekräfta för att fortsätta.",
+      "pending": "Vänligen bekräfta transaktionen i din plånbok...",
+      "confirming": "Väntar på blockchains bekräftelse...",
+      "success": "Din transaktion har slutförts framgångsrikt.",
+      "error": "Transaktionen avvisades eller misslyckades. Försök igen."
+    },
+    "amount": "Belopp:",
+    "gasFee": "Gasavgift:",
+    "total": "Totalt:",
+    "confirm": "Bekräfta transaktion",
+    "close": "Stäng"
+  },
+  "formModal": {
+    "title": "Kontaktformulär",
+    "firstName": "Förnamn",
+    "firstNamePlaceholder": "Ange ditt förnamn",
+    "lastName": "Efternamn",
+    "lastNamePlaceholder": "Ange ditt efternamn",
+    "email": "E-postadress",
+    "emailPlaceholder": "Ange din e-postadress",
+    "message": "Meddelande",
+    "messagePlaceholder": "Skriv ditt meddelande...",
+    "send": "Skicka meddelande"
+  },
+  "settingsModal": {
+    "title": "Inställningar och inställningar",
+    "account": "Kontoinställningar",
+    "emailNotifications": "E-postmeddelanden",
+    "emailNotificationsDescription": "Få meddelanden om din kontoutveckling",
+    "twoFactor": "Tvåfaktorautentisering",
+    "twoFactorDescription": "Lägg till en extra säkerhetsnivå till ditt konto",
+    "privacy": "Inställningar för integritet",
+    "profileVisibility": "Profilsynlighet",
+    "visibilityPublic": "Offentlig",
+    "visibilityFriends": "Endast vänner",
+    "visibilityPrivate": "Privat",
+    "dataSharing": "Delning av data",
+    "analyticsConsent": "Tillåt insamling av analysdata",
+    "thirdPartyConsent": "Dela användningsdata med tredjeparts",
+    "appearance": "Utseende",
+    "theme": "Temat",
+    "themeLight": "Ljus",
+    "themeDark": "Mörk",
+    "themeAuto": "Automatisk",
+    "resetDefaults": "Återställ till standardvärden",
+    "saveChanges": "Spara ändringar"
+  }
+}

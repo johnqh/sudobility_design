@@ -1,0 +1,126 @@
+{
+  "seo": {
+    "title": "Carte - Sistema di progettazione - Interno - {{emailDomain}}",
+    "description": "Libreria completa di componenti per carte con layout, varianti e schemi interattivi"
+  },
+  "codeExample": {
+    "preview": "Anteprima",
+    "usage": "Utilizzo"
+  },
+  "header": {
+    "badge": "Componenti della carta",
+    "title": "Layout delle carte e modelli di contenuto",
+    "description": "Sistema completo di componenti per carte con layout flessibili, elementi interattivi e modelli di contenuto. Tutte le carte supportano l'elevazione, gli stati al passaggio del mouse e un design responsivo con spaziatura e stile coerenti."
+  },
+  "quickStart": {
+    "title": "Avvio rapido - Modelli fondamentali delle carte",
+    "description": "Componenti di carte pronti all'uso con layout, interazioni e organizzazione del contenuto coerenti.",
+    "basic": {
+      "heading": "Scheda contenuti base",
+      "cardTitle": "Titolo della carta",
+      "cardBody": "Questa è una carta di base con un layout semplice e contenuti e uno stile coerente."
+    },
+    "interactive": {
+      "heading": "Carta interattiva",
+      "cardTitle": "Carta interattiva",
+      "cardBody": "Clicca qui per attivare effetti di interazione e stati di hover migliorati.",
+      "learnMore": "Scopri di più →"
+    },
+    "stats": {
+      "heading": "Scheda statistiche",
+      "revenueLabel": "Entrate totali",
+      "fromLastMonth": "dal mese scorso"
+    },
+    "feature": {
+      "heading": "Scheda funzionalità",
+      "cardTitle": "Sicuro e privato",
+      "cardBody": "La crittografia end-to-end garantisce che le vostre comunicazioni rimangano private e sicure.",
+      "learnMore": "Scopri di più →"
+    }
+  },
+  "variants": {
+    "title": "Varianti delle carte ed elevazioni",
+    "description": "Diverse altezze delle carte e varianti di stile per vari casi d'uso.",
+    "elevation": {
+      "title": "Livelli di elevazione",
+      "description": "Diverse profondità delle ombre e stati al passaggio del mouse per una gerarchia visiva",
+      "flat": "Carta piatta",
+      "default": "Carta predefinita",
+      "elevated": "Carta Elevata",
+      "floating": "Carta galleggiante"
+    },
+    "color": {
+      "title": "Varianti di colore",
+      "description": "Varianti di colore marchiato e semantico per diversi contesti",
+      "success": "Carta del successo",
+      "warning": "Carta di avvertimento",
+      "error": "Carta di errore",
+      "info": "Scheda informativa"
+    }
+  },
+  "content": {
+    "title": "Schede contenuti e media",
+    "description": "Carte con contenuti ricchi, media e elementi interattivi per applicazioni sociali e di contenuti.",
+    "social": {
+      "title": "Scheda dei social media",
+      "description": "Carta con interazione utente, metriche di coinvolgimento e azioni",
+      "userName": "John Doe",
+      "timeAgo": "2 ore fa",
+      "post": "Appena spedita una nuova funzionalità! L'integrazione Web3 è ora attiva e pronta per il test.",
+      "share": "Condividi"
+    },
+    "product": {
+      "title": "Scheda prodotto",
+      "description": "Scheda di stile commercio elettronico con valutazione, prezzi e azioni",
+      "productName": "Kit di sviluppo Web3",
+      "reviews": "(128 recensioni)",
+      "productBody": "Kit completo per creare applicazioni decentralizzate con facilità.",
+      "addToCart": "Aggiungi al carrello"
+    }
+  },
+  "web3": {
+    "title": "Carte Web3 e Crypto",
+    "description": "Modelli di carte specializzati per applicazioni Web3, cripto e blockchain.",
+    "wallet": {
+      "title": "Carta di connessione al portafoglio",
+      "description": "Carta per la connessione del portafoglio con indicatori di stato",
+      "connected": "Connesso",
+      "network": "Rete",
+      "balance": "Equilibrio",
+      "disconnect": "Disconnetti"
+    },
+    "nft": {
+      "title": "Carta della collezione NFT",
+      "description": "Carta per visualizzare le raccolte di NFT e i metadati",
+      "collectionName": "Collezione Crypto Punks",
+      "collectionBody": "Collezione digitale rara della famosa serie CryptoPunks.",
+      "currentPrice": "Prezzo corrente",
+      "placeBid": "Piazza offerta"
+    }
+  },
+  "layouts": {
+    "title": "Layout delle carte e griglie",
+    "description": "Layout a griglia reattivi e disposizioni delle carte per diverse dimensioni dello schermo.",
+    "grid": {
+      "title": "Griglia di carte reattiva",
+      "description": "Griglia adattiva che funziona su tutte le dimensioni dello schermo",
+      "cardLabel": "Carta {{index}}",
+      "subtitle": "Sottotitolo",
+      "sampleContent": "Contenuto della carta di esempio per la dimostrazione della griglia."
+    }
+  },
+  "accessibility": {
+    "title": "Accessibilità e migliori pratiche",
+    "guidelinesTitle": "Linee guida sull'accessibilità delle carte",
+    "guidelines": [
+      "Utilizza una struttura HTML semantica con intestazioni corrette",
+      "Assicurati di avere un contrasto di colore sufficiente per il testo",
+      "Aggiungi stati di focus per gli elementi interattivi della carta",
+      "Utilizza etichette ARIA per le interazioni complesse delle carte",
+      "Implementa la navigazione con la tastiera per le azioni della carta",
+      "Fornisci un testo alternativo per gli elementi decorativi",
+      "Utilizzate un design reattivo per l'accessibilità mobile",
+      "Prova con lettori schermo e navigazione con tastiera"
+    ]
+  }
+}

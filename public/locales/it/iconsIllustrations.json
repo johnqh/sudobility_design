@@ -1,0 +1,155 @@
+{
+  "seo": {
+    "title": "Icone e illustrazioni - Sistema di design - Interno - {{emailDomain}}",
+    "description": "Comprehensive sistema iconografico con dimensioni, colori e usi contestuali coerenti"
+  },
+  "header": {
+    "badge": "Icone e illustrazioni",
+    "title": "Icone e illustrazioni",
+    "description": "Composto da un sistema di icone completo con dimensioni, colori e usi contestuali coerenti. Realizzato con Heroicons e ottimizzato per accessibilità e modalità scura."
+  },
+  "sizes": {
+    "title": "Dimensioni degli icon",
+    "variantsTitle": "Varianti di taglia",
+    "usageTitle": "Dimensione Utilizzo",
+    "labels": {
+      "xs": "xs (12px)",
+      "sm": "sm (16px)",
+      "md": "md (20px)",
+      "lg": "lg (24px)",
+      "xl": "xl (32px)",
+      "xxl": "xxl (40px)",
+      "xxxl": "xxxl (48px)"
+    }
+  },
+  "colors": {
+    "title": "Colori degli icon",
+    "variantsTitle": "Varianti di colore",
+    "web3Title": "Colori Web3",
+    "default": {
+      "label": "Predefinito",
+      "value": "Grigio 500 / 400"
+    },
+    "brand": {
+      "label": "Marchio",
+      "value": "Blu 600 / 400"
+    },
+    "success": {
+      "label": "Successo",
+      "value": "Verde 600 / 400"
+    },
+    "warning": {
+      "label": "Avviso",
+      "value": "Ambra 600 / 400"
+    },
+    "error": {
+      "label": "Errore",
+      "value": "Rosso 600 / 400"
+    },
+    "interactive": {
+      "label": "Interattivo",
+      "value": "Effetti al passaggio del mouse"
+    },
+    "ethereum": {
+      "label": "Ethereum",
+      "value": "Blu 600 / 400"
+    },
+    "solana": {
+      "label": "Solana",
+      "value": "Viola 600 / 400"
+    },
+    "bitcoin": {
+      "label": "Bitcoin",
+      "value": "Arancione 600 / 400"
+    }
+  },
+  "context": {
+    "title": "Icone specifiche del contesto",
+    "buttonTitle": "Icone del pulsante",
+    "inputTitle": "Icone di input",
+    "leadingIcon": "Icona principale",
+    "trailingIcon": "Icona finale",
+    "iconOnly": "Solo icona",
+    "trailingInteractive": "Interattivo di coda",
+    "addItem": "Aggiungi elemento",
+    "continue": "Continua",
+    "searchPlaceholder": "Cerca...",
+    "passwordPlaceholder": "Password"
+  },
+  "status": {
+    "title": "Icone dello stato",
+    "success": {
+      "title": "Successo",
+      "description": "Operazione completata con successo"
+    },
+    "warning": {
+      "title": "Avviso",
+      "description": "Si prega di controllare e continuare"
+    },
+    "error": {
+      "title": "Errore",
+      "description": "Qualcosa è andato storto"
+    },
+    "info": {
+      "title": "Informazioni",
+      "description": "Informazioni aggiuntive"
+    }
+  },
+  "web3": {
+    "title": "Icone del contesto Web3",
+    "walletStatusTitle": "Stato del portafoglio",
+    "blockchainTitle": "Icone della blockchain",
+    "walletConnected": "Portafoglio collegato",
+    "noWalletConnected": "Nessun portafoglio collegato",
+    "connectToContinue": "Collegati per continuare",
+    "ethereum": {
+      "title": "Ethereum",
+      "network": "Rete ETH"
+    },
+    "solana": {
+      "title": "Solana",
+      "network": "Rete SOL"
+    },
+    "bitcoin": {
+      "title": "Bitcoin",
+      "network": "Rete BTC"
+    }
+  },
+  "decorative": {
+    "title": "Icone decorative",
+    "heroLarge": {
+      "title": "Eroe Grande",
+      "size": "80px × 80px"
+    },
+    "heroMedium": {
+      "title": "Eroe Medio",
+      "size": "64px × 64px"
+    },
+    "heroSmall": {
+      "title": "Eroe Piccolo",
+      "size": "48px × 48px"
+    }
+  },
+  "browser": {
+    "title": "Browser delle icone",
+    "categories": {
+      "all": "Tutti gli icon",
+      "actions": "Azioni",
+      "status": "Stato",
+      "navigation": "Navigazione",
+      "web3": "Web3",
+      "decorative": "Decorativo"
+    }
+  },
+  "tokens": {
+    "title": "Varianti disponibili degli icon",
+    "sizeVariants": "Varianti di taglia",
+    "colorVariants": "Varianti di colore",
+    "contextVariants": "Varianti di contesto",
+    "combinedVariants": "Varianti combinate"
+  },
+  "navigation": {
+    "previous": "Tabelle e griglie dati",
+    "backToDesignSystem": "Torna al sistema di design"
+  }
+}

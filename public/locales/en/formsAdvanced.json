@@ -1,0 +1,159 @@
+{
+  "seo": {
+    "title": "Forms Advanced - Design System - Internal - {{emailDomain}}",
+    "description": "Advanced form patterns including multi-step forms, file uploads, and Web3 inputs"
+  },
+  "header": {
+    "badge": "Advanced Forms",
+    "title": "Advanced Forms System",
+    "description": "Advanced form patterns including multi-step wizards, file uploads, Web3-specific inputs, and sophisticated validation patterns for complex user interactions."
+  },
+  "quickStart": {
+    "heading": "Quick Start",
+    "copyTitle": "Copy to clipboard",
+    "examples": {
+      "multiStep": {
+        "title": "Multi-Step Form",
+        "description": "Step-by-step form with progress indicator"
+      },
+      "fileUpload": {
+        "title": "File Upload with Drag & Drop",
+        "description": "Advanced file upload with preview and validation"
+      },
+      "tokenAmount": {
+        "title": "Web3 Token Amount Input",
+        "description": "Specialized input for cryptocurrency amounts with validation"
+      },
+      "validation": {
+        "title": "Advanced Validation",
+        "description": "Real-time validation with custom error messages"
+      }
+    }
+  },
+  "steps": {
+    "account": {
+      "title": "Account Setup",
+      "description": "Basic account information"
+    },
+    "wallet": {
+      "title": "Wallet Connection",
+      "description": "Connect your Web3 wallet"
+    },
+    "transaction": {
+      "title": "Transaction Details",
+      "description": "Configure transaction parameters"
+    },
+    "review": {
+      "title": "Review & Confirm",
+      "description": "Review and submit"
+    }
+  },
+  "multiStep": {
+    "heading": "Multi-Step Forms",
+    "cardTitle": "Wallet Setup Wizard",
+    "cardDescription": "Interactive multi-step form with progress tracking and validation",
+    "emailLabel": "Email Address",
+    "emailPlaceholder": "Enter your email",
+    "passwordLabel": "Password",
+    "passwordPlaceholder": "Create a strong password",
+    "confirmPasswordLabel": "Confirm Password",
+    "confirmPasswordPlaceholder": "Confirm your password",
+    "walletAddressLabel": "Wallet Address",
+    "walletAddressPlaceholder": "0x...",
+    "networkLabel": "Network",
+    "networks": {
+      "ethereum": "Ethereum Mainnet",
+      "polygon": "Polygon",
+      "bsc": "Binance Smart Chain",
+      "arbitrum": "Arbitrum"
+    },
+    "tokenAmountLabel": "Token Amount",
+    "tokenAmountPlaceholder": "0.00",
+    "balance": "Balance: 1.234567 ETH ($2,468.90)",
+    "max": "Max",
+    "gasPriceLabel": "Gas Price (Gwei)",
+    "gasPricePlaceholder": "20",
+    "gasPriceHint": "Higher gas prices result in faster transaction confirmation",
+    "reviewTitle": "Review Your Transaction",
+    "reviewNetwork": "Network:",
+    "reviewToAddress": "To Address:",
+    "reviewAmount": "Amount:",
+    "reviewGasPrice": "Gas Price:",
+    "warningTitle": "Transaction Warning",
+    "warningBody": "Please double-check all transaction details. Blockchain transactions cannot be reversed.",
+    "previous": "Previous",
+    "next": "Next",
+    "submit": "Submit Transaction"
+  },
+  "validationMessages": {
+    "invalidAddress": "Invalid Ethereum address format",
+    "positiveAmount": "Amount must be a positive number",
+    "insufficientBalance": "Insufficient balance",
+    "passwordMinLength": "Password must be at least 8 characters",
+    "passwordComplexity": "Password must contain uppercase, lowercase, and number",
+    "passwordsDoNotMatch": "Passwords do not match"
+  },
+  "fileUpload": {
+    "heading": "File Uploads",
+    "cardTitle": "Document Upload",
+    "cardDescription": "Drag and drop file upload with preview and validation",
+    "dropTitle": "Drop files here to upload",
+    "dropSubtitle": "Or click to select files from your computer",
+    "chooseFiles": "Choose Files",
+    "supportedFormats": "Supported formats: PDF, DOC, DOCX, JPG, PNG, TXT (Max 10MB each)",
+    "uploadedFiles": "Uploaded Files ({{count}})",
+    "megabytes": "{{size}} MB"
+  },
+  "web3": {
+    "heading": "Web3 Specialized Inputs",
+    "walletCard": {
+      "title": "Wallet Address Input",
+      "description": "Specialized input for cryptocurrency addresses with validation",
+      "recipientLabel": "Recipient Address",
+      "recipientPlaceholder": "0x... or ENS name",
+      "validAddress": "✓ Valid Ethereum address",
+      "ensLabel": "ENS Name",
+      "ensPlaceholder": "vitalik.eth",
+      "ensResolves": "→ Resolves to: 0x742d...5f0bEb7"
+    },
+    "tokenCard": {
+      "title": "Token Amount Input",
+      "description": "Precise token amount input with balance display",
+      "amountLabel": "Amount to Send",
+      "amountPlaceholder": "0.00",
+      "balance": "Balance: 1.234567 ETH",
+      "usdEquivalent": "≈ $1,234.50 USD",
+      "quarter": "25%",
+      "half": "50%",
+      "threeQuarters": "75%",
+      "max": "Max",
+      "gasSettingsLabel": "Gas Settings",
+      "gasSlow": "Slow",
+      "gasSlowValue": "15 Gwei",
+      "gasStandard": "Standard",
+      "gasStandardValue": "25 Gwei",
+      "gasFast": "Fast",
+      "gasFastValue": "35 Gwei"
+    }
+  },
+  "validationSection": {
+    "heading": "Advanced Validation",
+    "cardTitle": "Real-time Validation Examples",
+    "cardDescription": "Advanced validation patterns with real-time feedback and custom error messages",
+    "strongPasswordLabel": "Strong Password",
+    "strongPasswordPlaceholder": "Enter password",
+    "checkMinChars": "At least 8 characters",
+    "checkUppercase": "Contains uppercase letter",
+    "checkNumber": "Contains number",
+    "checkSpecialChar": "Contains special character",
+    "emailLabel": "Email Address",
+    "emailPlaceholder": "Enter email",
+    "validEmail": "✓ Valid email format",
+    "invalidLabel": "Invalid Input Example",
+    "invalidPlaceholder": "Enter value",
+    "invalidMessage": "This field contains invalid characters",
+    "loadingLabel": "Loading Validation",
+    "loadingPlaceholder": "Checking availability...",
+    "loadingMessage": "Checking username availability..."
+  }
+}

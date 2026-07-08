@@ -1,0 +1,133 @@
+{
+  "header": {
+    "title": "Overlay e portal",
+    "description": "Sistema di sovrapposizione completo che include modali, menu a tendina, tooltip, fogli e stati di caricamento con gestione corretta dell'indice z e accessibilità."
+  },
+  "common": {
+    "interactiveExample": "Esempio interattivo",
+    "usage": "Utilizzo"
+  },
+  "dropdownItems": {
+    "profile": "Visualizza il profilo",
+    "settings": "Impostazioni",
+    "logout": "Esci"
+  },
+  "alerts": {
+    "profile": "Profilo cliccato",
+    "settings": "Impostazioni cliccate",
+    "logout": "Tasto uscita cliccato"
+  },
+  "modals": {
+    "title": "Modali",
+    "description": "Finestre modali con sfocatura di sfondo, stati di animazione e diverse dimensioni. Include la gestione del focus e la navigazione con la tastiera.",
+    "openButton": "Apri modal",
+    "exampleTitle": "Finestra modale di esempio",
+    "exampleBody": "Questo è un esempio di finestra modale che utilizza il nuovo sistema di design overlay. Include una gestione corretta del retrogrondo, la gestione del focus e gli stati di animazione.",
+    "featuresTitle": "Caratteristiche",
+    "features": [
+      "Effetto di sfocatura sfondo",
+      "Trappola di focalizzazione e ripristino",
+      "Navigazione con la tastiera",
+      "Varie varianti di dimensione"
+    ],
+    "accessibilityTitle": "Accessibilità",
+    "accessibility": [
+      "Etichette e ruoli ARIA",
+      "Gestione del tasto Esc",
+      "Supporto per lettore schermo",
+      "Gestione del focus"
+    ],
+    "cancel": "Annulla",
+    "confirm": "Confermare"
+  },
+  "dropdowns": {
+    "title": "Menu a tendina",
+    "description": "Menu a tendina con diverse opzioni di posizionamento, icone, separatori e navigazione con la tastiera.",
+    "actionsButton": "Azioni",
+    "userMenuButton": "Menu utente"
+  },
+  "tooltips": {
+    "title": "Tooltip",
+    "description": "Tooltip leggere con diverse opzioni di posizionamento e varianti di colore.",
+    "hoverButton": "Passa il mouse per visualizzare il suggerimento {{position}}",
+    "tooltipOn": "Tooltip su {{position}}"
+  },
+  "loading": {
+    "title": "Caricamento sovrapposizioni",
+    "description": "Stati di caricamento a schermo intero e inline con sfocatura di sfondo e messaggi personalizzabili.",
+    "showButton": "Mostra sovrapposizione di caricamento",
+    "inlineLabel": "Stato di caricamento inline:",
+    "message": "Elaborazione della tua richiesta..."
+  },
+  "sheets": {
+    "title": "Lenzuola (lenzuola inferiori)",
+    "description": "Fogli inferiori e fogli azione orientati al mobile che scivolano dal basso del display."
+  },
+  "contextMenus": {
+    "title": "Menu a tendina",
+    "description": "Menu contestuali con clic destro, scorciatoie da tastiera e sottomenu annidati."
+  },
+  "portal": {
+    "title": "Gestione dei portali",
+    "description": "Sistema di gestione dell'indice Z e strumenti del portale per uno stack di sovrapposizione corretto.",
+    "zIndexLayersTitle": "Livelli di indice Z",
+    "focusManagementTitle": "Gestione del focus",
+    "layers": {
+      "backdrop": "Sfondo",
+      "popover": "Popup",
+      "dropdown": "Menu a tendina",
+      "tooltip": "Tooltip",
+      "modal": "Modal",
+      "sheet": "Foglio",
+      "contextMenu": "Menu a tendina",
+      "loading": "Caricamento",
+      "notification": "Notifica"
+    }
+  },
+  "animationStates": {
+    "title": "Stati di animazione",
+    "description": "Stati di animazione coerenti per le transizioni di ingresso/uscita su tutti i componenti overlay.",
+    "availableStatesTitle": "Stati disponibili",
+    "modalStatesTitle": "Stati modali",
+    "dropdownStatesTitle": "Stati del menu a tendina"
+  },
+  "bestPractices": {
+    "title": "Migliori pratiche",
+    "accessibilityTitle": "Accessibilità",
+    "accessibility": [
+      "Fornire sempre etichette ARIA e ruoli corretti",
+      "Implementare il blocco del focus per i modali",
+      "Supporto per la navigazione con la tastiera (Tab, Esc, frecce)",
+      "Mantenere l'ordine di focus e il ripristino",
+      "Utilizza elementi HTML semantici",
+      "Fornisci annunci per lettori schermo"
+    ],
+    "performanceTitle": "Prestazione",
+    "performance": [
+      "Utilizza i portali React per un rendering DOM corretto",
+      "Implementa il caricamento differito per le sovrapposizioni pesanti",
+      "Pulisci gli ascoltatori di eventi durante lo smontaggio",
+      "Utilizza le trasformazioni CSS per le animazioni",
+      "Evita i filtri complessi per lo sfondo sui dispositivi mobili",
+      "Minimizza il thrashing della disposizione"
+    ],
+    "uxGuidelinesTitle": "Linee guida UX",
+    "uxGuidelines": [
+      "Mantieni i modali focalizzati su compiti singoli",
+      "Fornire chiari affordances di chiusura",
+      "Utilizza i tipi di sovrapposizione adatti per il contesto",
+      "Mantieni un tempo di animazione coerente",
+      "Considera i vincoli del viewport mobile",
+      "Evita le interazioni annidate delle sovrapposizioni"
+    ],
+    "technicalTitle": "Tecnico",
+    "technical": [
+      "Utilizzare un sistema di layering z-index corretto",
+      "Gestire correttamente il blocco dello scorrimento del corpo",
+      "Supporta sia le interazioni con il clic che con la tastiera",
+      "Prova con diverse dimensioni dello viewport",
+      "Considera le preferenze di movimento ridotto",
+      "Implementare confini di errore adeguati"
+    ]
+  }
+}

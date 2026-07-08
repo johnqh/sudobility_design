@@ -1,0 +1,132 @@
+{
+  "seo": {
+    "title": "Badges - {{appName}}",
+    "description": "Badge components and variants for the design system"
+  },
+  "header": {
+    "badge": "Badges",
+    "title": "Badge Components",
+    "intro": "Small, versatile components for labeling, categorizing, and conveying status information with semantic colors and interactive states."
+  },
+  "stats": {
+    "badgeVariants": "Badge Variants",
+    "sizeOptions": "Size Options",
+    "stateTypes": "State Types",
+    "web3Variants": "Web3 Variants"
+  },
+  "sections": {
+    "quickStart": {
+      "title": "🚀 Quick Start",
+      "description": "Get started with the most commonly used badge patterns. Copy and paste these examples to quickly implement badges in your components.",
+      "essentialTitle": "1. Essential Badge Types",
+      "essential": {
+        "default": "Default",
+        "primary": "Primary",
+        "success": "Success",
+        "warning": "Warning",
+        "error": "Error"
+      },
+      "statusTitle": "2. Status Badges with Icons",
+      "status": {
+        "active": "Active",
+        "pending": "Pending",
+        "failed": "Failed",
+        "info": "Info"
+      },
+      "sizesTitle": "3. Size Variations",
+      "sizes": {
+        "small": "Small",
+        "default": "Default",
+        "large": "Large"
+      },
+      "web3Title": "4. Web3 Integration Badges",
+      "web3": {
+        "ethereum": "Ethereum",
+        "solana": "Solana",
+        "verified": "Verified"
+      }
+    },
+    "variants": {
+      "title": "🎨 Badge Variants",
+      "description": "Explore all available badge color variants with their semantic meanings and appropriate use cases.",
+      "semanticTitle": "Semantic Colors",
+      "web3Title": "Web3 Specific",
+      "semantic": {
+        "default": "Default",
+        "defaultDesc": "General purpose, neutral information",
+        "primary": "Primary",
+        "primaryDesc": "Brand colors, important highlights",
+        "success": "Success",
+        "successDesc": "Completed actions, positive status",
+        "warning": "Warning",
+        "warningDesc": "Caution required, pending actions",
+        "error": "Error",
+        "errorDesc": "Failed actions, critical issues"
+      },
+      "web3": {
+        "ethereum": "Ethereum",
+        "ethereumDesc": "Ethereum blockchain related",
+        "solana": "Solana",
+        "solanaDesc": "Solana blockchain related"
+      }
+    },
+    "sizes": {
+      "title": "📏 Size Options",
+      "description": "Different badge sizes for various use cases from compact indicators to prominent labels.",
+      "small": {
+        "heading": "Small",
+        "badge": "Small Badge",
+        "desc": "Compact size for dense layouts"
+      },
+      "default": {
+        "heading": "Default",
+        "badge": "Default Badge",
+        "desc": "Standard size for most use cases"
+      },
+      "large": {
+        "heading": "Large",
+        "badge": "Large Badge",
+        "desc": "Prominent size for emphasis"
+      }
+    },
+    "interactive": {
+      "title": "⚡ Interactive Patterns",
+      "description": "Real-world examples of how badges are used in different contexts and components.",
+      "userStatusTitle": "User Status Indicators",
+      "userStatus": {
+        "online": "Online",
+        "away": "Away",
+        "offline": "Offline"
+      },
+      "notificationTitle": "Notification Counts",
+      "notification": {
+        "messages": "📧 Messages",
+        "notifications": "🔔 Notifications",
+        "updates": "⭐ Updates"
+      }
+    },
+    "accessibility": {
+      "title": "♿ Accessibility Guidelines",
+      "description": "Ensure your badges are accessible to all users with proper contrast, screen reader support, and keyboard navigation.",
+      "bestPracticesTitle": "✅ Best Practices",
+      "bestPractices": [
+        "Use semantic colors that convey meaning consistently",
+        "Provide adequate color contrast (4.5:1 minimum)",
+        "Include text labels, not just colors or icons",
+        "Use appropriate ARIA labels for screen readers",
+        "Keep badge text concise and meaningful"
+      ],
+      "avoidTitle": "❌ Avoid",
+      "avoid": [
+        "Relying solely on color to convey information",
+        "Using too many badges in a single interface",
+        "Making badges too small to read comfortably",
+        "Using unclear or ambiguous badge text",
+        "Overusing animated or flashing badges"
+      ],
+      "ariaExamplesTitle": "ARIA Examples"
+    }
+  },
+  "backToDesignSystem": "Back to Design System",
+  "lastUpdated": "Last updated: {{date}}"
+}

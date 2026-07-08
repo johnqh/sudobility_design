@@ -1,0 +1,185 @@
+{
+  "seo": {
+    "title": "Navigering - Designsystem - Intern - {{emailDomain}}",
+    "description": "Navigationskomponenter inklusive sidväg, flikar, sidnumrering och menysystem"
+  },
+  "header": {
+    "badge": "Navigeringskomponenter",
+    "title": "Navigeringssystem",
+    "intro": "Kompletta navigeringskomponenter för Web3-applikationer, inklusive sidväg, flikar, sidnumrering, menyer och stegvis navigering. Utformade för tillgänglighet och responsivt beteende."
+  },
+  "quickStart": {
+    "title": "Snabbstart",
+    "copy": "Kopiera till urklipp",
+    "examples": {
+      "breadcrumb": {
+        "title": "Breadcrumb-navigering",
+        "description": "Hierarkisk navigering som visar aktuell sidplacering"
+      },
+      "tabs": {
+        "title": "Fliknavigation",
+        "description": "Organisera innehållet i flera vyer med fliknavigation"
+      },
+      "pagination": {
+        "title": "Sidnumrering",
+        "description": "Navigera genom flera sidor med innehåll"
+      },
+      "steps": {
+        "title": "Stegvis navigering",
+        "description": "Vägled användare genom flerstegsprocesser"
+      }
+    }
+  },
+  "breadcrumbs": {
+    "sectionTitle": "Interaktiva brödsmulor",
+    "liveTitle": "Live breadcrumb-exempel",
+    "home": "Hem",
+    "web3Projects": "Web3-projekt",
+    "featuresTitle": "Funktioner",
+    "features": [
+      "Strukturerade data för SEO-optimering",
+      "ARIA-åtkomstattribut",
+      "Stöd för tangentbordsnavigering",
+      "Responsiv design med trunkering",
+      "Valfri hemikon och social delning"
+    ]
+  },
+  "tabVariants": {
+    "sectionTitle": "Fliknavigationstyper",
+    "defaultTitle": "Standardflikar",
+    "overview": "Översikt",
+    "analytics": "Analys",
+    "settings": "Inställningar",
+    "overviewContent": "Översikt innehåll med projektstatistik och senaste aktivitet.",
+    "analyticsContent": "Analysinstrument med diagram och mått.",
+    "settingsContent": "Inställningspanel för konfigurationsalternativ.",
+    "underlinedTitle": "Understrukna flikar",
+    "dashboard": "Instrumentpanel",
+    "team": "Lag",
+    "projects": "Projekt",
+    "calendar": "Kalender",
+    "underlinedContent": "Instrumentpanelinnehåll med ren understryken flikstil.",
+    "pillsTitle": "Tabletter Pillor",
+    "all": "Alla",
+    "active": "Aktiv",
+    "draft": "Entwurf",
+    "archived": "Arkiverat",
+    "pillsContent": "Innehåll som har filtrerats enligt den valda piltabben."
+  },
+  "pagination": {
+    "sectionTitle": "Sidnumrering",
+    "listTitle": "E-postlista sidning",
+    "listDescription": "Exempel på sidindelning för navigering i e-postlista",
+    "emailSubject": "E-postämne {{number}}",
+    "timeAgo": "för 2h",
+    "previous": "Föregående",
+    "next": "Nästa",
+    "showing": "Visar",
+    "to": "till",
+    "of": "av",
+    "results": "resultat"
+  },
+  "steps": {
+    "sectionTitle": "Stegvis navigering",
+    "demoTitle": "Web3-plånboksinställning",
+    "demoDescription": "Guide användare genom processen att ansluta plånboken",
+    "stepLabel": "Steg {{number}}:",
+    "items": {
+      "accountSetup": {
+        "name": "Kontoinställning",
+        "description": "Skapa ditt konto"
+      },
+      "walletConnection": {
+        "name": "Plånbokanslutning",
+        "description": "Anslut din Web3-plånbok"
+      },
+      "emailSetup": {
+        "name": "E-postinställning",
+        "description": "Konfigurera dina e-postinställningar"
+      },
+      "complete": {
+        "name": "Klart",
+        "description": "Börja använda example.com"
+      }
+    },
+    "details": {
+      "1": "Skapa ditt {{emailDomain}}-konto med önskat användarnamn och säkerhetsinställningar.",
+      "2": "Anslut din Web3-plånbok (MetaMask, WalletConnect etc.) för att aktivera blockkedjefunktioner.",
+      "3": "Konfigurera dina e-postinställningar, meddelanden och integritetsinställningar.",
+      "4": "Din inställning är klar! Börja skicka och ta emot Web3-e-post."
+    }
+  },
+  "sidebar": {
+    "sectionTitle": "Sidopanelens navigering",
+    "cardTitle": "E-postprogram sidoställd",
+    "cardDescription": "Permanent navigering för e-postprogrammet",
+    "items": {
+      "dashboard": "Instrumentpanel",
+      "inbox": "Inkorg",
+      "sent": "Skickat",
+      "archive": "Arkiv",
+      "settings": "Inställningar"
+    },
+    "mainContent": "Huvudinnehållsområde",
+    "mainContentHint": "Innehållet ändras beroende på val i sidopanelen"
+  },
+  "web3Patterns": {
+    "sectionTitle": "Web3-navigeringsmönster",
+    "walletStatus": {
+      "title": "Plånboksstatusnavigation",
+      "description": "Navigering som anpassar sig efter plånbokens anslutningsstatus",
+      "connected": "MetaMask anslutet",
+      "inbox": "Web3 inkorg",
+      "ensProfile": "ENS-profil",
+      "walletSettings": "Plånboksinställningar"
+    },
+    "multiChain": {
+      "title": "Multikedjanavigation",
+      "description": "Navigering mellan olika blockchainsnätverk",
+      "ethereum": "Ethereum",
+      "solana": "Solana",
+      "polygon": "Polygon",
+      "ethereumInbox": "Ethereum inkorg",
+      "ensNames": "ENS-namn",
+      "gasSettings": "Gassinställningar"
+    }
+  },
+  "accessibility": {
+    "sectionTitle": "Riktlinjer för tillgänglighet",
+    "title": "Navigerings tillgänglighet",
+    "description": "Se till att alla navigeringskomponenter är tillgängliga för skärmläsare och tangentbordsanvändare.",
+    "ariaLandmarks": "ARIA-platser",
+    "keyboardNavigation": "Tangentbordsnavigering",
+    "breadcrumbsLabel": "Brödskalor",
+    "breadcrumbsKeys": [
+      "Flik: Bläddra bland länkar",
+      "Enter/Space: Aktivera länk",
+      "Hoppa-länkar för skärmläsare"
+    ],
+    "tabsLabel": "flikar",
+    "tabsKeys": [
+      "Pilknappar: Bläddra mellan flikar",
+      "Flik: Ange flikpanel",
+      "Enter/Space: Aktivera flik"
+    ]
+  },
+  "implementation": {
+    "sectionTitle": "Implementeringsanteckningar",
+    "performanceTitle": "Prestandaöverväganden",
+    "performance": [
+      "Läs in navigeringsposter på begäran när det är möjligt",
+      "Använd React.memo för komplexa navigeringskomponenter",
+      "Debouncing av sök i navigeringsmenyer",
+      "Virtuellt scrollande för långa navigeringslistor",
+      "Ladda förväntade navigeringsvägar"
+    ],
+    "mobileTitle": "Mobil responsivitet",
+    "mobile": [
+      "Komprimera navigeringen till hamburgarmeny",
+      "Använd nedre navigering för mobilappar",
+      "Implementera svep-gester där det är lämpligt",
+      "Se till att tryckmål är minst 44px",
+      "Testa på olika skärmstorlekar och lägen"
+    ]
+  }
+}

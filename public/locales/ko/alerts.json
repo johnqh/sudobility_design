@@ -1,0 +1,142 @@
+{
+  "seo": {
+    "title": "경고 - 디자인 시스템 - 내부 - {{emailDomain}}",
+    "description": "버전, 레이아웃, 작업 및 Web3 통합을 포함한 포괄적인 알림 컴포넌트 설명서"
+  },
+  "copy": {
+    "copied": "✓ 복사되었습니다!",
+    "copy": "복사"
+  },
+  "header": {
+    "badge": "알림",
+    "title": "경고 구성 요소",
+    "intro": "사용자에게 중요한 정보, 경고 또는 확인을 명확한 시각적 계층 구조와 실행 가능한 콘텐츠로 제공하는 맥락 기반 피드백 메시지."
+  },
+  "stats": {
+    "alertTypes": "경보 유형",
+    "layoutOptions": "레이아웃 옵션",
+    "actionPatterns": "행동 패턴",
+    "web3Examples": "Web3 예시"
+  },
+  "quickStart": {
+    "title": "🚀 빠른 시작",
+    "description": "가장 흔히 사용되는 알림 패턴을 시작해 보세요. 이러한 예시들은 필수 알림 유형과 그 일반적인 사용 사례를 보여줍니다.",
+    "essentialTitle": "1. 핵심 알림 유형",
+    "success": {
+      "title": "성공!",
+      "body": "거래가 블록체인에서 확인되었습니다."
+    },
+    "info": {
+      "title": "정보",
+      "body": "이 작업을 계속하려면 지갑을 연결하세요."
+    },
+    "warning": {
+      "title": "경고",
+      "body": "높은 가스 요금이 감지되었습니다. 네트워크 혼잡도가 낮아질 때까지 기다리는 것을 고려하세요."
+    },
+    "error": {
+      "title": "오류",
+      "body": "거래에 실패했습니다. 지갑 잔고를 확인하고 다시 시도해 주세요."
+    },
+    "compactTitle": "2. 컴팩트 알림 스타일",
+    "compact": {
+      "success": "✓ 이메일이 성공적으로 전송되었습니다",
+      "info": "ℹ 설정에서 사용 가능한 새로운 기능",
+      "warning": "⚠ 지갑이 연결 해제됨",
+      "error": "✗ 메시지 로드에 실패했습니다"
+    },
+    "dismissibleTitle": "3. 삭제 가능한 알림",
+    "dismissible": {
+      "successTitle": "계정이 확인되었습니다!",
+      "successBody": "이제 모든 프리미엄 기능에 액세스할 수 있습니다.",
+      "infoTitle": "새로운 업데이트 사용 가능",
+      "infoBody": "버전 2.0에는 개선된 보안 기능이 포함되어 있습니다."
+    },
+    "actionsTitle": "4. 액션 버튼이 있는 알림",
+    "actions": {
+      "title": "구독 기간이 곧 만료됩니다",
+      "body": "귀하의 프리미엄 기능이 3일 후에 비활성화됩니다.",
+      "renewNow": "지금 갱신하기",
+      "remindLater": "나중에 알림"
+    }
+  },
+  "variants": {
+    "title": "🎨 경고 유형",
+    "description": "사용자 간 커뮤니케이션에 적절한 다양한 알림 유형과 그 의미, 그리고 적절한 맥락을 모두 탐색하세요.",
+    "standardTitle": "표준 알림",
+    "standard": {
+      "successTitle": "성공 알림",
+      "successBody": "완료된 작업과 긍정적인 확인에 사용하세요",
+      "infoTitle": "정보 알림",
+      "infoBody": "중립적인 정보와 유용한 팁에 사용하세요",
+      "warningTitle": "경고 알림",
+      "warningBody": "주의가 필요한 잠재적 문제에 사용",
+      "errorTitle": "오류 경고",
+      "errorBody": "실패한 작업과 중요한 문제에 사용"
+    },
+    "compactTitle": "컴팩트 변형",
+    "compact": {
+      "success": "작은 성공 메시지",
+      "successNote": "최소한의 공간 사용",
+      "info": "컴팩트한 정보 메시지",
+      "infoNote": "빠른 알림",
+      "warning": "작은 경고 메시지",
+      "warningNote": "간단한 경고 노트",
+      "error": "작은 오류 메시지",
+      "errorNote": "짧은 오류 알림"
+    }
+  },
+  "web3": {
+    "title": "⚡ Web3 통합 예시",
+    "description": "웹3 애플리케이션에서 흔히 사용되는 알림의 실제 사례로는 지갑 연결, 거래 및 블록체인 상호작용이 있습니다.",
+    "transactionTitle": "거래 상태 알림",
+    "transaction": {
+      "pendingTitle": "거래 대기 중",
+      "pendingBody": "거래가 블록체인에서 처리되고 있습니다. 몇 분이 걸릴 수 있습니다.",
+      "confirmedTitle": "거래가 확인되었습니다",
+      "confirmedBody": "이메일이 전송되어 블록체인에 기록되었습니다.",
+      "failedTitle": "거래 실패",
+      "failedBody": "잔고 부족 또는 가스 한도가 너무 낮습니다. 다시 시도해 주세요."
+    },
+    "walletTitle": "지갑 연결 알림",
+    "wallet": {
+      "notConnectedTitle": "지갑이 연결되지 않았습니다",
+      "notConnectedBody": "이메일을 확인하고 메시지를 보내기 위해 지갑을 연결해 주세요.",
+      "connectWallet": "지갑 연결",
+      "networkMismatchTitle": "네트워크 불일치",
+      "networkMismatchBody": "플랫폼을 계속 사용하려면 이더리움 메인넷으로 전환해 주세요.",
+      "switchNetwork": "네트워크 전환"
+    },
+    "gasTitle": "가스 요금 및 네트워크 알림",
+    "gas": {
+      "highFeesTitle": "높은 가스 수수료 감지됨",
+      "highFeesBody": "현재 가스 가격이 매우 높습니다. 네트워크 혼잡도가 낮아질 때까지 기다리는 것을 고려하세요.",
+      "ensTitle": "새로운 ENS 도메인 감지됨",
+      "ensBody": "지갑이 이제 alice.eth를 보유하고 있습니다. 이 주소로 이메일을 받을 수 있습니다!",
+      "setAsPrimary": "기본으로 설정"
+    }
+  },
+  "accessibility": {
+    "title": "♿ 접근성 가이드라인",
+    "description": "모든 사용자가 접근할 수 있도록 알림에 적절한 ARIA 속성, 포커스 관리 및 스크린 리더 호환성을 보장하세요.",
+    "bestPracticesTitle": "✅ 최선의 방법",
+    "bestPractices": [
+      "적절한 ARIA 역할(경고, 경고 대화상자, 상태)을 사용하세요",
+      "색상이나 아이콘만이 아니라 설명성 텍스트를 포함하세요",
+      "인터랙티브 요소에 대해 키보드 탐색을 제공하십시오",
+      "충분한 색 대비를 사용하세요 (최소 4.5:1)",
+      "시간에 따라 알림을 적절히 제거합니다"
+    ],
+    "avoidTitle": "❌ 피하기",
+    "avoid": [
+      "자동으로 사라지는 심각한 오류 메시지",
+      "중요성을 전달하기 위해 색상만 사용하기",
+      "너무 많은 알림으로 사용자를 압도하기",
+      "경고 텍스트를 읽기 어려울 정도로 너무 작게 만들기",
+      "불필요한 클릭 뒤에 중요한 작업을 숨기기"
+    ],
+    "ariaTitle": "ARIA 구현 예제"
+  },
+  "backToDesign": "디자인 시스템으로 돌아가기",
+  "lastUpdated": "마지막 업데이트: {{date}}"
+}

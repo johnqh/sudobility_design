@@ -1,0 +1,147 @@
+{
+  "seo": {
+    "title": "佈局與間距 - 設計系統 - 內部 - {{emailDomain}}",
+    "description": "具有響應式網格、容器和Web3特定模式的佈局與間距系統"
+  },
+  "header": {
+    "badge": "佈局與間距",
+    "title": "佈局與間距系統",
+    "description": "全面的佈局和間距系統，包含響應式網格、靈活的容器以及專為錢包、交易和儀表板介面設計的Web3特定模式。"
+  },
+  "quickStart": {
+    "title": "快速入門",
+    "copyTooltip": "複製到剪貼簿",
+    "examples": {
+      "grid": {
+        "title": "響應式網格系統",
+        "description": "可適應不同螢幕尺寸的靈活網格佈局"
+      },
+      "container": {
+        "title": "容器系統",
+        "description": "具有一致最大寬度和內邊距的響應式容器"
+      },
+      "flex": {
+        "title": "Flexbox 工具",
+        "description": "元件佈局常見的 flexbox 模式"
+      },
+      "spacing": {
+        "title": "間距系統",
+        "description": "邊距和內邊距的一致間距模式"
+      }
+    }
+  },
+  "grid": {
+    "title": "響應式網格系統",
+    "cardTitle": "互動式網格範例",
+    "cardDescription": "在斷点之間切換，查看網格如何自適應",
+    "preview": "預覽：",
+    "breakpoints": {
+      "mobile": "行動",
+      "tablet": "藥片",
+      "desktop": "桌面"
+    },
+    "examples": {
+      "nftGallery": {
+        "name": "NFT美術館"
+      },
+      "dashboardWidgets": {
+        "name": "儀表板小工具"
+      },
+      "transactionHistory": {
+        "name": "交易記錄"
+      }
+    },
+    "item": "物品 {{number}}"
+  },
+  "container": {
+    "title": "容器系統",
+    "cardTitle": "容器變體",
+    "cardDescription": "不同內容類型的容器大小",
+    "label": "容器:",
+    "maxWidth": "最大寬度:",
+    "bestFor": "最適合：",
+    "containerSuffix": "{{name}} 容器",
+    "previewText": "此容器會根據所選的寬度限制進行自適應，同時保持響應式內邊距。",
+    "sizes": {
+      "narrow": {
+        "name": "狹窄",
+        "use": "文章，表格"
+      },
+      "default": {
+        "name": "預設",
+        "use": "通用內容"
+      },
+      "wide": {
+        "name": "寬",
+        "use": "儀表板，表格"
+      },
+      "full": {
+        "name": "完整",
+        "use": "邊緣對邊緣佈局"
+      }
+    }
+  },
+  "flexbox": {
+    "title": "Flexbox 模式",
+    "common": {
+      "title": "常見模式",
+      "description": "元件的標準 flexbox 排版",
+      "spaceBetween": "間距",
+      "center": "中心",
+      "startWithGap": "從空白開始",
+      "columnStack": "列堆疊"
+    },
+    "web3": {
+      "title": "Web3 模式",
+      "description": "區塊鏈介面的專用佈局",
+      "walletConnection": "錢包連接",
+      "walletName": "MetaMask",
+      "connected": "已連接",
+      "transactionSummary": "交易摘要",
+      "amount": "金額：",
+      "gasFee": "Gas費：",
+      "total": "總計：",
+      "nftCardLayout": "NFT卡牌佈局",
+      "nftName": "酷NFT #1234",
+      "artistName": "藝術家姓名"
+    }
+  },
+  "spacing": {
+    "title": "間距系統",
+    "cardTitle": "一致的間距模式",
+    "cardDescription": "用於一致佈局的標準間距工具",
+    "scaleTitle": "間距比例",
+    "componentTitle": "組件間距",
+    "sectionHeader": "章節標題",
+    "component": "組件 {{number}}",
+    "sectionSpacingLabel": "段落間距：",
+    "sectionSpacingText": "32px 垂直邊距",
+    "componentSpacingLabel": "組件間距：",
+    "componentSpacingText": "項目之間的12px",
+    "internalPaddingLabel": "內部填充：",
+    "internalPaddingText": "16px 用於內容區域"
+  },
+  "web3": {
+    "title": "Web3 排版模式",
+    "wallet": {
+      "title": "錢包儀表板",
+      "description": "包含餘額和資產的投資組合概覽",
+      "send": "發送",
+      "receive": "接收",
+      "swap": "交換",
+      "assets": "資產"
+    },
+    "transaction": {
+      "title": "交易流程",
+      "description": "分步交易介面",
+      "recipientAddress": "收件人地址",
+      "amount": "金額",
+      "balance": "餘額: 2.45 ETH",
+      "max": "Max",
+      "networkFee": "網路手續費：",
+      "total": "總計：",
+      "cancel": "取消",
+      "continue": "繼續"
+    }
+  }
+}

@@ -1,0 +1,80 @@
+{
+  "seo": {
+    "title": "Tabelas e Grade de Dados - Sistema de Design - Interno - {{emailDomain}}",
+    "description": "Sistema de tabela abrangente com classificação, filtragem, paginação e funcionalidade de grade de dados"
+  },
+  "header": {
+    "badge": "Tabelas e Grade de Dados",
+    "title": "Tabelas e Grade de Dados",
+    "subtitle": "Sistema de tabela abrangente com classificação, filtragem, paginação e funcionalidade de grade de dados. Perfeito para exibir dados estruturados com padrões avançados de interação."
+  },
+  "columns": {
+    "name": "Nome",
+    "email": "E-mail",
+    "role": "Papel",
+    "status": "Status",
+    "actions": "Ações",
+    "transactions": "Transações",
+    "joinDate": "Data de adesão",
+    "transactionHash": "Hash da transação",
+    "from": "Desde",
+    "to": "Para",
+    "amount": "Quantia",
+    "chain": "Cadeia"
+  },
+  "basic": {
+    "title": "Tabela Básica",
+    "usage": "Uso"
+  },
+  "sortable": {
+    "title": "Tabela ordenável",
+    "headers": "Cabeçalhos ordenáveis"
+  },
+  "selectable": {
+    "title": "Tabela selecionável com ações em lote",
+    "selected": "{{count}} linha(s) selecionada(s)",
+    "export": "Exportar",
+    "delete": "Excluir"
+  },
+  "compact": {
+    "title": "Mesa compacta"
+  },
+  "filterable": {
+    "title": "Tabela filtrável",
+    "searchPlaceholder": "Procurar usuários...",
+    "filters": "Filtros"
+  },
+  "pagination": {
+    "title": "Tabela com paginação",
+    "showing": "Mostrando",
+    "to": "para",
+    "of": "de",
+    "results": "resultados",
+    "ariaLabel": "Paginação"
+  },
+  "web3": {
+    "title": "Tabela de Transações Web3",
+    "confirmed": "Confirmado",
+    "pending": "Pendente",
+    "ethereum": "Ethereum",
+    "solana": "Solana"
+  },
+  "empty": {
+    "title": "Estado vazio",
+    "noData": "Nenhum dado encontrado",
+    "description": "Atualmente não há registros para exibir.",
+    "addRecord": "Adicionar novo registro"
+  },
+  "tokens": {
+    "title": "Variantes de tabela disponíveis",
+    "structure": "Estrutura da tabela",
+    "containerBase": "Conjunto e base",
+    "headers": "Cabeçalhos",
+    "body": "Corpo",
+    "statesPagination": "Estados e paginação"
+  },
+  "nav": {
+    "previous": "Layout e espaçamento",
+    "back": "Voltar para o sistema de design"
+  }
+}

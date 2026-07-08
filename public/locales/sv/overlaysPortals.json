@@ -1,0 +1,133 @@
+{
+  "header": {
+    "title": "Överlappningar och portaler",
+    "description": "Komplett översiktsystem som inkluderar modaler, dropdownar, verktygstips, paneler och laddningslägen med korrekt hantering av z-index och tillgänglighet."
+  },
+  "common": {
+    "interactiveExample": "Interaktivt exempel",
+    "usage": "Användning"
+  },
+  "dropdownItems": {
+    "profile": "Visa profil",
+    "settings": "Inställningar",
+    "logout": "Logga ut"
+  },
+  "alerts": {
+    "profile": "Profil klickat",
+    "settings": "Inställningar klickade",
+    "logout": "Utloggad klickad"
+  },
+  "modals": {
+    "title": "Modal",
+    "description": "Modal dialogr med bakgrundsblurring, animationslägen och flera storlekar. Inkluderar fokushantering och tangentbordsnavigering.",
+    "openButton": "Öppna modal",
+    "exampleTitle": "Exempelmodal",
+    "exampleBody": "Detta är ett exempel på ett modal-fönster som använder det nya översiktsdesignsystemet. Det inkluderar korrekt bakgrundsbehandling, fokushantering och animationslägen.",
+    "featuresTitle": "Funktioner",
+    "features": [
+      "Effekt av bakgrundsoskärpa",
+      "Fokuseringsfång och återställning",
+      "Tangentbordsnavigering",
+      "Flera storleksvarianter"
+    ],
+    "accessibilityTitle": "Tillgänglighet",
+    "accessibility": [
+      "ARIA-etiketter och roller",
+      "Hantering av escape-tangenten",
+      "Stöd för skärmläsare",
+      "Fokusförvaltning"
+    ],
+    "cancel": "Avbryta",
+    "confirm": "Bekräfta"
+  },
+  "dropdowns": {
+    "title": "Rullgardiner",
+    "description": "Rullgardinsmenyer med flera placeringsoptioner, ikoner, avgränsare och tangentbordsnavigering.",
+    "actionsButton": "Handlingar",
+    "userMenuButton": "Användarmeny"
+  },
+  "tooltips": {
+    "title": "Verktygstips",
+    "description": "Lätta verktygstips med flera placeringsoptioner och färgvarianter.",
+    "hoverButton": "Hovera för att visa hjälpmeddelande {{position}}",
+    "tooltipOn": "Verktygstips på {{position}}"
+  },
+  "loading": {
+    "title": "Läser in överlappningar",
+    "description": "Fullskärm- och inline-laddningslägen med bakgrundsblurring och anpassningsbara meddelanden.",
+    "showButton": "Visa laddningsöverlager",
+    "inlineLabel": "Inline-laddningsläge:",
+    "message": "Bearbetar din begäran..."
+  },
+  "sheets": {
+    "title": "Lakan (undertäcken)",
+    "description": "Mobiltänkta nedre blad och åtgärdsblad som glider upp från botten av skärmen."
+  },
+  "contextMenus": {
+    "title": "Sammanhangsmenyer",
+    "description": "Högerklicks kontextmenyer med tangentbordskommandon och inbäddade undermenyer."
+  },
+  "portal": {
+    "title": "Portalförvaltning",
+    "description": "Z-index hanteringsystem och portalkomponenter för korrekt överlappningsstapling.",
+    "zIndexLayersTitle": "Z-indexlager",
+    "focusManagementTitle": "Fokusledning",
+    "layers": {
+      "backdrop": "Bakgrund",
+      "popover": "Pop-up",
+      "dropdown": "Rullgardinsmeny",
+      "tooltip": "Verktygstips",
+      "modal": "Modal",
+      "sheet": "Blad",
+      "contextMenu": "Kontextmeny",
+      "loading": "Laddar",
+      "notification": "Meddelande"
+    }
+  },
+  "animationStates": {
+    "title": "Animationslägen",
+    "description": "Konsekventa animationslägen för in- och utgångsövergångar i alla översiktskomponenter.",
+    "availableStatesTitle": "Tillgängliga tillstånd",
+    "modalStatesTitle": "Modala tillstånd",
+    "dropdownStatesTitle": "Rullgardinslägen"
+  },
+  "bestPractices": {
+    "title": "Bästa praktiker",
+    "accessibilityTitle": "Tillgänglighet",
+    "accessibility": [
+      "Ange alltid lämpliga ARIA-etiketter och roller",
+      "Implementera fokuseringsspärr för modaler",
+      "Stöd för tangentbordsnavigering (Tab, Escape, pilknappar)",
+      "Behåll fokusordning och återställning",
+      "Använd semantiska HTML-element",
+      "Ge skärmläsarmeddelanden"
+    ],
+    "performanceTitle": "Prestanda",
+    "performance": [
+      "Använd React Portals för korrekt DOM-rendering",
+      "Implementera lazy loading för tunga överlappningar",
+      "Rensa händelselyssnare vid avmontering",
+      "Använd CSS-omvandlingar för animationer",
+      "Undvik komplexa bakgrundsfilter på mobil",
+      "Minimera layoutthrashing"
+    ],
+    "uxGuidelinesTitle": "UX-riktlinjer",
+    "uxGuidelines": [
+      "Håll modaler fokuserade på enskilda uppgifter",
+      "Ge tydliga avslutningsmöjligheter",
+      "Använd lämpliga överlappningstyper för sammanhanget",
+      "Håll konsekvent animeringstid",
+      "Beaktas begränsningar för mobil viewport",
+      "Undvik inbäddade översiktsinteraktioner"
+    ],
+    "technicalTitle": "Teknisk",
+    "technical": [
+      "Använd ett korrekt z-index-lageringsystem",
+      "Hantera kroppsscrollningens låsning korrekt",
+      "Stödjer både klick- och tangentbordsinteraktioner",
+      "Testa över olika vystorlekar",
+      "Beakta minskade rörelsepreferenser",
+      "Implementera korrekta felgränser"
+    ]
+  }
+}

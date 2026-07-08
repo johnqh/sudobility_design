@@ -1,0 +1,127 @@
+{
+  "seo": {
+    "title": "Loading States - Design System - Internal - {{emailDomain}}",
+    "description": "Comprehensive loading state documentation with spinners, skeletons, progress indicators, and Web3 patterns"
+  },
+  "copy": {
+    "copied": "✓ Copied!",
+    "copy": "Copy"
+  },
+  "header": {
+    "badge": "Loading States",
+    "title": "Loading State Components",
+    "description": "Loading indicators and progress states that provide clear visual feedback during asynchronous operations, specially designed for Web3 transactions and blockchain interactions.",
+    "stats": {
+      "spinnerTypes": "Spinner Types",
+      "skeletonPatterns": "Skeleton Patterns",
+      "progressTypes": "Progress Types",
+      "web3Examples": "Web3 Examples"
+    }
+  },
+  "quickStart": {
+    "title": "🚀 Quick Start",
+    "description": "Get started with the most commonly used loading patterns. These examples show essential loading states for different use cases.",
+    "spinners": {
+      "title": "1. Basic Loading Spinners",
+      "small": "Small",
+      "default": "Default",
+      "large": "Large"
+    },
+    "buttons": {
+      "title": "2. Loading Button States",
+      "loading": "Loading...",
+      "clickToLoad": "Click to Load",
+      "processing": "Processing",
+      "uploading": "Uploading..."
+    },
+    "progress": {
+      "title": "3. Progress Indicators",
+      "label": "Progress",
+      "startDemo": "Start Progress Demo"
+    },
+    "skeleton": {
+      "title": "4. Skeleton Loading"
+    }
+  },
+  "web3": {
+    "title": "⚡ Web3 Loading Patterns",
+    "description": "Specialized loading states for Web3 operations including wallet connections, transactions, and blockchain confirmations.",
+    "transaction": {
+      "title": "Transaction Loading States",
+      "startDemo": "Start Transaction Demo",
+      "currentState": "Current state: {{state}}",
+      "pending": {
+        "title": "Transaction Pending",
+        "message": "Please confirm the transaction in your wallet..."
+      },
+      "confirming": {
+        "title": "Confirming Transaction",
+        "message": "Transaction submitted. Waiting for blockchain confirmation...",
+        "hash": "Hash: 0x1234...abcd"
+      },
+      "confirmed": {
+        "title": "Transaction Confirmed",
+        "message": "Your transaction has been confirmed on the blockchain!",
+        "block": "Block: #18,234,567"
+      }
+    },
+    "wallet": {
+      "title": "Wallet Connection States",
+      "connecting": {
+        "title": "Connecting Wallet",
+        "message": "Please approve the connection in your wallet"
+      },
+      "network": {
+        "title": "Detecting Network",
+        "message": "Checking network compatibility..."
+      }
+    },
+    "email": {
+      "title": "Email & Message Loading",
+      "encrypting": {
+        "title": "Encrypting message...",
+        "message": "Securing your email with Web3 encryption"
+      },
+      "sending": {
+        "title": "Sending to blockchain...",
+        "message": "Recording email metadata on-chain"
+      },
+      "uploadProgress": "Upload Progress",
+      "uploading": "Uploading...",
+      "startUploadDemo": "Start Upload Demo"
+    }
+  },
+  "skeletons": {
+    "title": "💀 Skeleton Patterns",
+    "description": "Content placeholders that mimic the structure of the loading content for better perceived performance.",
+    "emailList": "Email List Skeleton",
+    "cardContent": "Card Content Skeleton"
+  },
+  "accessibility": {
+    "title": "♿ Accessibility Guidelines",
+    "description": "Ensure your loading states are accessible with proper ARIA attributes, screen reader support, and focus management.",
+    "bestPractices": {
+      "title": "✅ Best Practices",
+      "items": [
+        "Use ARIA live regions for dynamic loading states",
+        "Provide meaningful loading messages",
+        "Include progress information when possible",
+        "Use reduced motion for users who prefer it",
+        "Maintain focus management during loading"
+      ]
+    },
+    "avoid": {
+      "title": "❌ Avoid",
+      "items": [
+        "Loading indicators without text alternatives",
+        "Indefinite loading without progress indication",
+        "Fast-flashing animations that can trigger seizures",
+        "Removing focus or content without warning",
+        "Generic \"Loading...\" messages without context"
+      ]
+    },
+    "implementation": "Accessibility Implementation"
+  },
+  "backToDesignSystem": "Back to Design System",
+  "lastUpdated": "Last updated: {{date}}"
+}

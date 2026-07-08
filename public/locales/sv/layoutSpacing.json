@@ -1,0 +1,147 @@
+{
+  "seo": {
+    "title": "Layout och mellanrum - Designsystem - Intern - {{emailDomain}}",
+    "description": "Layout- och mellanrumssystem med responsiva rutor, containrar och Web3-specifika mönster"
+  },
+  "header": {
+    "badge": "Layout och mellanrum",
+    "title": "Layout- och mellanrumssystem",
+    "description": "Komplett layout- och mellanrumssystem med responsiva rutor, flexibla containrar och Web3-specifika mönster för plånböcker, transaktioner och instrumentpaneler."
+  },
+  "quickStart": {
+    "title": "Snabbstart",
+    "copyTooltip": "Kopiera till urklipp",
+    "examples": {
+      "grid": {
+        "title": "Responsiv rutnätsystem",
+        "description": "Flexibla rutnätslayoutar som anpassas efter olika skärmstorlekar"
+      },
+      "container": {
+        "title": "Behållarsystem",
+        "description": "Responsiva behållare med konsekventa maxbreddar och paddningar"
+      },
+      "flex": {
+        "title": "Flexbox-verktyg",
+        "description": "Vanliga flexbox-mönster för komponentlayout"
+      },
+      "spacing": {
+        "title": "Avståndssystem",
+        "description": "Konsekventa avståndsmönster för marginaler och paddningar"
+      }
+    }
+  },
+  "grid": {
+    "title": "Responsiv rutnätsystem",
+    "cardTitle": "Exempel på interaktiva rutor",
+    "cardDescription": "Byt mellan brytpunkter för att se hur rutnät anpassas",
+    "preview": "Förhandsgranskning:",
+    "breakpoints": {
+      "mobile": "Mobil",
+      "tablet": "Tablett",
+      "desktop": "Skrivbord"
+    },
+    "examples": {
+      "nftGallery": {
+        "name": "NFT-galleri"
+      },
+      "dashboardWidgets": {
+        "name": "Instrumentpanelens widgetar"
+      },
+      "transactionHistory": {
+        "name": "Transaktionshistorik"
+      }
+    },
+    "item": "Objekt {{number}}"
+  },
+  "container": {
+    "title": "Behållarsystem",
+    "cardTitle": "Behållarens varianter",
+    "cardDescription": "Olika behållarstorlekar för olika innehållstyper",
+    "label": "Behållare:",
+    "maxWidth": "Max bredd:",
+    "bestFor": "Bäst för:",
+    "containerSuffix": "{{name}} Behållare",
+    "previewText": "Denna behållare anpassar sig efter de valda breddbegränsningarna samtidigt som den bevarar responsiv paddning.",
+    "sizes": {
+      "narrow": {
+        "name": "Smal",
+        "use": "Artiklar, blanketter"
+      },
+      "default": {
+        "name": "Standard",
+        "use": "Allmänt innehåll"
+      },
+      "wide": {
+        "name": "Bred",
+        "use": "Instrumentpanel, tabeller"
+      },
+      "full": {
+        "name": "Full",
+        "use": "Kant mot kant-layout"
+      }
+    }
+  },
+  "flexbox": {
+    "title": "Flexbox-mönster",
+    "common": {
+      "title": "Vanliga mönster",
+      "description": "Standardflexboxlayout för komponenter",
+      "spaceBetween": "Avstånd mellan",
+      "center": "Centrum",
+      "startWithGap": "Börja med luckan",
+      "columnStack": "Kolumnstapel"
+    },
+    "web3": {
+      "title": "Web3-mönster",
+      "description": "Specialiserade layout för blockkedjans gränssnitt",
+      "walletConnection": "Plånbokanslutning",
+      "walletName": "MetaMask",
+      "connected": "Anslutet",
+      "transactionSummary": "Transaktionsöversikt",
+      "amount": "Belopp:",
+      "gasFee": "Gasavgift:",
+      "total": "Totalt:",
+      "nftCardLayout": "NFT-korts layout",
+      "nftName": "Cool NFT #1234",
+      "artistName": "Konstnarnamn"
+    }
+  },
+  "spacing": {
+    "title": "Avståndssystem",
+    "cardTitle": "Konsekventa mellanrumsmönster",
+    "cardDescription": "Standardavståndsverktyg för konsekventa layoutar",
+    "scaleTitle": "Avstånds skala",
+    "componentTitle": "Komponentavstånd",
+    "sectionHeader": "Avsnittsrubrik",
+    "component": "Komponent {{number}}",
+    "sectionSpacingLabel": "Avstånd mellan avsnitt:",
+    "sectionSpacingText": "32px vertikala marginaler",
+    "componentSpacingLabel": "Komponentavstånd:",
+    "componentSpacingText": "12px mellan objekt",
+    "internalPaddingLabel": "Intern paddning:",
+    "internalPaddingText": "16px för innehållsområden"
+  },
+  "web3": {
+    "title": "Web3-layoutmönster",
+    "wallet": {
+      "title": "Plånboksinstrumentpanel",
+      "description": "Portföljöversikt med saldo och tillgångar",
+      "send": "Skicka",
+      "receive": "Ta emot",
+      "swap": "Byt",
+      "assets": "Tillgångar"
+    },
+    "transaction": {
+      "title": "Transaktionsflöde",
+      "description": "Steg-för-steg transaktionsgränssnitt",
+      "recipientAddress": "Mottagarens adress",
+      "amount": "Belopp",
+      "balance": "Saldo: 2,45 ETH",
+      "max": "Max",
+      "networkFee": "Nätverksavgift:",
+      "total": "Totalt:",
+      "cancel": "Avbryta",
+      "continue": "Fortsätt"
+    }
+  }
+}

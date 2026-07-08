@@ -1,0 +1,159 @@
+{
+  "seo": {
+    "title": "Forms Advanced - Design System - Внутрішній - {{emailDomain}}",
+    "description": "Розширені шаблони форм, включаючи багатокрокові форми, завантаження файлів та введення Web3"
+  },
+  "header": {
+    "badge": "Розширені форми",
+    "title": "Розширення система форм",
+    "description": "Розширені шаблони форм, включаючи багатокрокові майстри, завантаження файлів, вхідні дані, спеціальні для Web3, та складні схеми валідації для складних взаємодій з користувачем."
+  },
+  "quickStart": {
+    "heading": "Швидкий початок",
+    "copyTitle": "Скопіювати в буфер обміну",
+    "examples": {
+      "multiStep": {
+        "title": "Багатокрокова форма",
+        "description": "Форма крок за кроком із індикатором прогресу"
+      },
+      "fileUpload": {
+        "title": "Завантаження файлу перетягуванням",
+        "description": "Розширене завантаження файлів із попереднім переглядом та валідацією"
+      },
+      "tokenAmount": {
+        "title": "Введення суми токену Web3",
+        "description": "Спеціалізований ввід для сум криптовалюти з перевіркою"
+      },
+      "validation": {
+        "title": "Розширена перевірка",
+        "description": "Перевірка в реальному часі з особистими повідомленнями про помилки"
+      }
+    }
+  },
+  "steps": {
+    "account": {
+      "title": "Налаштування облікового запису",
+      "description": "Основна інформація про обліковий запис"
+    },
+    "wallet": {
+      "title": "Підключення гаманця",
+      "description": "Підключіть свій Web3-гаманець"
+    },
+    "transaction": {
+      "title": "Деталі транзакції",
+      "description": "Налаштування параметрів транзакції"
+    },
+    "review": {
+      "title": "Перевірити і підтвердити",
+      "description": "Перевірити і надіслати"
+    }
+  },
+  "multiStep": {
+    "heading": "Багатокрокові форми",
+    "cardTitle": "Майстер налаштування гаманця",
+    "cardDescription": "Інтерактивна багатокрокова форма з відстеженням прогресу та валідацією",
+    "emailLabel": "Поштовий інштрукт",
+    "emailPlaceholder": "Введіть свою електронну пошту",
+    "passwordLabel": "Пароль",
+    "passwordPlaceholder": "Створіть надійний пароль",
+    "confirmPasswordLabel": "Підтвердити пароль",
+    "confirmPasswordPlaceholder": "Підтвердіть пароль",
+    "walletAddressLabel": "Адрес гаманця",
+    "walletAddressPlaceholder": "0x...",
+    "networkLabel": "Мережа",
+    "networks": {
+      "ethereum": "Основна мережа Ethereum",
+      "polygon": "Багатокутник",
+      "bsc": "Binance Smart Chain",
+      "arbitrum": "Arbitrum"
+    },
+    "tokenAmountLabel": "Сума токенів",
+    "tokenAmountPlaceholder": "0,00",
+    "balance": "Баланс: 1,234567 ETH (2 468,90 $)",
+    "max": "Макс",
+    "gasPriceLabel": "Ціна газу (Gwei)",
+    "gasPricePlaceholder": "20",
+    "gasPriceHint": "Вищі ціни на газ призводять до швидшого підтвердження транзакцій",
+    "reviewTitle": "Перевірте свою транзакцію",
+    "reviewNetwork": "Мережа:",
+    "reviewToAddress": "До адреси:",
+    "reviewAmount": "Сума:",
+    "reviewGasPrice": "Ціна на газ:",
+    "warningTitle": "Попередження про транзакцію",
+    "warningBody": "Будь ласка, двічі перевірте всі деталі транзакції. Транзакції в ланцюжку блоків не можна скасувати.",
+    "previous": "Попередній",
+    "next": "Наступний",
+    "submit": "Надіслати транзакцію"
+  },
+  "validationMessages": {
+    "invalidAddress": "Неправильний формат адреси Ethereum",
+    "positiveAmount": "Сума має бути додатним числом",
+    "insufficientBalance": "Недостатній баланс",
+    "passwordMinLength": "Пароль має містити не менше 8 символів",
+    "passwordComplexity": "Пароль має містити великі, малі літери та цифри",
+    "passwordsDoNotMatch": "Паролі не співпадають"
+  },
+  "fileUpload": {
+    "heading": "Завантаження файлів",
+    "cardTitle": "Завантаження документа",
+    "cardDescription": "Завантаження файлів перетягуванням із попереднім переглядом та валідацією",
+    "dropTitle": "Перетягніть файли сюди для завантаження",
+    "dropSubtitle": "Або натисніть, щоб вибрати файли з вашого комп'ютера",
+    "chooseFiles": "Вибрати файли",
+    "supportedFormats": "Підтримувані формати: PDF, DOC, DOCX, JPG, PNG, TXT (макс. 10 МБ на файл)",
+    "uploadedFiles": "Завантажені файли ({{count}})",
+    "megabytes": "{{size}} МБ"
+  },
+  "web3": {
+    "heading": "Спеціалізовані вхідні дані Web3",
+    "walletCard": {
+      "title": "Введення адреси гаманця",
+      "description": "Спеціалізований ввід для адрес криптовалют із валідацією",
+      "recipientLabel": "Адрес отримувача",
+      "recipientPlaceholder": "0x... або ім'я ENS",
+      "validAddress": "✓ Дійсний адрес Ethereum",
+      "ensLabel": "Ім'я ENS",
+      "ensPlaceholder": "vitalik.eth",
+      "ensResolves": "→ Розпаковується до: 0x742d...5f0bEb7"
+    },
+    "tokenCard": {
+      "title": "Введення кількості токенів",
+      "description": "Точне введення кількості токенів із відображенням балансу",
+      "amountLabel": "Сума для відправлення",
+      "amountPlaceholder": "0,00",
+      "balance": "Баланс: 1,234567 ETH",
+      "usdEquivalent": "близько 1 234,50 дол. США",
+      "quarter": "25%",
+      "half": "50%",
+      "threeQuarters": "75%",
+      "max": "Макс",
+      "gasSettingsLabel": "Налаштування газу",
+      "gasSlow": "Повільно",
+      "gasSlowValue": "15 Gwei",
+      "gasStandard": "Стандарт",
+      "gasStandardValue": "25 Gwei",
+      "gasFast": "Швидко",
+      "gasFastValue": "35 Gwei"
+    }
+  },
+  "validationSection": {
+    "heading": "Розширена перевірка",
+    "cardTitle": "Приклади валідації в реальному часі",
+    "cardDescription": "Розширені схеми валідації з поверненням в реальному часі та особистими повідомленнями про помилки",
+    "strongPasswordLabel": "Міцний пароль",
+    "strongPasswordPlaceholder": "Введіть пароль",
+    "checkMinChars": "Не менше 8 символів",
+    "checkUppercase": "Містить велику літеру",
+    "checkNumber": "Містить число",
+    "checkSpecialChar": "Містить спеціальний символ",
+    "emailLabel": "Поштовий інштрукт",
+    "emailPlaceholder": "Введіть електронну пошту",
+    "validEmail": "✓ Правильний формат електронної пошти",
+    "invalidLabel": "Неправильний приклад введення",
+    "invalidPlaceholder": "Введіть значення",
+    "invalidMessage": "У цьому полі містяться недопустимі символи",
+    "loadingLabel": "Завантаження валідації",
+    "loadingPlaceholder": "Перевірка наявності...",
+    "loadingMessage": "Перевірка доступності імені користувача..."
+  }
+}

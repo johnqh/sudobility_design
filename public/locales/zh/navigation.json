@@ -1,0 +1,185 @@
+{
+  "seo": {
+    "title": "导航 - 设计系统 - 内部 - {{emailDomain}}",
+    "description": "导航组件，包括面包屑、标签页、分页和菜单系统"
+  },
+  "header": {
+    "badge": "导航组件",
+    "title": "导航系统",
+    "intro": "Web3 应用程序的全面导航组件，包括面包屑、标签页、分页、菜单和步骤导航。专为可访问性和响应式行为而设计。"
+  },
+  "quickStart": {
+    "title": "快速入门",
+    "copy": "复制到剪贴板",
+    "examples": {
+      "breadcrumb": {
+        "title": "面包屑导航",
+        "description": "显示当前页面位置的层级导航"
+      },
+      "tabs": {
+        "title": "标签导航",
+        "description": "使用标签导航将内容组织为多个视图"
+      },
+      "pagination": {
+        "title": "分页",
+        "description": "浏览多页内容"
+      },
+      "steps": {
+        "title": "步骤导航",
+        "description": "引导用户完成多步骤流程"
+      }
+    }
+  },
+  "breadcrumbs": {
+    "sectionTitle": "交互式面包屑",
+    "liveTitle": "实时面包屑示例",
+    "home": "首页",
+    "web3Projects": "Web3 项目",
+    "featuresTitle": "功能",
+    "features": [
+      "用于SEO优化的结构化数据",
+      "ARIA 可访问性属性",
+      "键盘导航支持",
+      "响应式设计与截断",
+      "可选的主页图标和社交分享"
+    ]
+  },
+  "tabVariants": {
+    "sectionTitle": "标签导航变体",
+    "defaultTitle": "默认选项卡",
+    "overview": "概要",
+    "analytics": "分析",
+    "settings": "设置",
+    "overviewContent": "包含项目统计数据和最近活动的概览内容。",
+    "analyticsContent": "包含图表和指标的分析仪表板。",
+    "settingsContent": "用于配置选项的设置面板。",
+    "underlinedTitle": "下划线标签",
+    "dashboard": "仪表板",
+    "team": "团队",
+    "projects": "项目",
+    "calendar": "日历",
+    "underlinedContent": "带有干净下划线标签样式的仪表板内容。",
+    "pillsTitle": "药片 胶囊",
+    "all": "全部",
+    "active": "活跃",
+    "draft": "草稿",
+    "archived": "已归档",
+    "pillsContent": "根据所选药丸标签过滤的内容。"
+  },
+  "pagination": {
+    "sectionTitle": "分页",
+    "listTitle": "电子邮件列表分页",
+    "listDescription": "电子邮件列表导航的分页示例",
+    "emailSubject": "邮件主题 {{number}}",
+    "timeAgo": "2小时前",
+    "previous": "上一页",
+    "next": "下一个",
+    "showing": "显示",
+    "to": "到",
+    "of": "的",
+    "results": "结果"
+  },
+  "steps": {
+    "sectionTitle": "步骤导航",
+    "demoTitle": "Web3 钱包设置",
+    "demoDescription": "引导用户完成钱包连接流程",
+    "stepLabel": "步骤 {{number}}:",
+    "items": {
+      "accountSetup": {
+        "name": "账户设置",
+        "description": "创建您的账户"
+      },
+      "walletConnection": {
+        "name": "钱包连接",
+        "description": "连接您的 Web3 钱包"
+      },
+      "emailSetup": {
+        "name": "邮件设置",
+        "description": "配置您的电子邮件偏好"
+      },
+      "complete": {
+        "name": "完成",
+        "description": "开始使用 example.com"
+      }
+    },
+    "details": {
+      "1": "使用您偏好的用户名和安全设置创建您的{{emailDomain}}账户。",
+      "2": "连接您的 Web3 钱包（MetaMask、WalletConnect 等）以启用区块链功能。",
+      "3": "配置您的电子邮件偏好设置、通知和隐私设置。",
+      "4": "您的设置已完成！开始发送和接收Web3电子邮件。"
+    }
+  },
+  "sidebar": {
+    "sectionTitle": "侧边栏导航",
+    "cardTitle": "邮件应用侧边栏",
+    "cardDescription": "电子邮件应用的持续导航",
+    "items": {
+      "dashboard": "仪表板",
+      "inbox": "收件箱",
+      "sent": "已发送",
+      "archive": "归档",
+      "settings": "设置"
+    },
+    "mainContent": "主内容区域",
+    "mainContentHint": "内容会根据侧边栏的选择而变化"
+  },
+  "web3Patterns": {
+    "sectionTitle": "Web3 导航模式",
+    "walletStatus": {
+      "title": "钱包状态导航",
+      "description": "根据钱包连接状态自适应的导航",
+      "connected": "MetaMask 已连接",
+      "inbox": "Web3收件箱",
+      "ensProfile": "ENS个人资料",
+      "walletSettings": "钱包设置"
+    },
+    "multiChain": {
+      "title": "多链导航",
+      "description": "在不同区块链网络之间导航",
+      "ethereum": "以太坊",
+      "solana": "Solana",
+      "polygon": "多边形",
+      "ethereumInbox": "以太坊收件箱",
+      "ensNames": "ENS名称",
+      "gasSettings": "气体设置"
+    }
+  },
+  "accessibility": {
+    "sectionTitle": "无障碍指南",
+    "title": "导航可访问性",
+    "description": "确保所有导航组件对屏幕阅读器和键盘用户都可访问。",
+    "ariaLandmarks": "ARIA 标记",
+    "keyboardNavigation": "键盘导航",
+    "breadcrumbsLabel": "面包屑",
+    "breadcrumbsKeys": [
+      "标签：浏览链接",
+      "Enter/空格键：激活链接",
+      "屏幕阅读器的跳过链接"
+    ],
+    "tabsLabel": "标签",
+    "tabsKeys": [
+      "方向键：在标签页之间导航",
+      "标签：输入标签面板",
+      "Enter/空格键：激活选项卡"
+    ]
+  },
+  "implementation": {
+    "sectionTitle": "实现说明",
+    "performanceTitle": "性能考虑",
+    "performance": [
+      "尽可能延迟加载导航项",
+      "为复杂的导航组件使用 React.memo",
+      "导航菜单中的搜索去抖",
+      "长导航列表的虚拟滚动",
+      "预加载关键导航路线"
+    ],
+    "mobileTitle": "移动响应式",
+    "mobile": [
+      "将导航折叠为汉堡菜单",
+      "为移动应用使用底部导航",
+      "在适当的地方实现滑动手势",
+      "确保触摸目标至少为44像素",
+      "在各种屏幕尺寸和方向上进行测试"
+    ]
+  }
+}

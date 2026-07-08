@@ -17,6 +17,7 @@ import {
   TrashIcon,
 } from "@heroicons/react/24/outline";
 import React, { useState } from "react";
+import { useTranslation } from "react-i18next";
 import LocalizedLink from "../../components/LocalizedLink";
 import { SEOHead } from "@sudobility/seo_lib";
 
@@ -29,6 +30,7 @@ const TablesGridsPage: React.FC<AppProps> = ({
   emailDomain,
   appName: _appName,
 }) => {
+  const { t } = useTranslation("tablesGrids");
   const [sortColumn, setSortColumn] = useState<string>("");
   const [sortDirection, setSortDirection] = useState<"asc" | "desc">("asc");
   const [selectedRows, setSelectedRows] = useState<number[]>([]);
@@ -123,8 +125,8 @@ const TablesGridsPage: React.FC<AppProps> = ({
   return (
     <>
       <SEOHead
-        title={`Tables & Data Grids - Design System - Internal - ${emailDomain}`}
-        description="Comprehensive table system with sorting, filtering, pagination, and data grid functionality"
+        title={t("seo.title", { emailDomain })}
+        description={t("seo.description")}
         noIndex={true}
       />
 
@@ -137,36 +139,46 @@ const TablesGridsPage: React.FC<AppProps> = ({
             <div className="inline-flex items-center bg-accent/10 px-4 py-2 rounded-full mb-6">
               <TableIcon className="h-5 w-5 text-accent mr-2" />
               <span className="text-accent font-semibold">
-                Tables & Data Grids
+                {t("header.badge")}
               </span>
             </div>
 
             <h1 className={`${textVariants.heading.display.xl()} mb-6`}>
-              Tables & Data Grids
+              {t("header.title")}
             </h1>
 
             <p
               className={`${textVariants.body.lg()} max-w-3xl mx-auto text-muted-foreground mb-8`}
             >
-              Comprehensive table system with sorting, filtering, pagination,
-              and data grid functionality. Perfect for displaying structured
-              data with advanced interaction patterns.
+              {t("header.subtitle")}
             </p>
           </div>
 
           {/* Basic Table */}
           <Section>
-            <h2 className={`${textVariants.heading.h2()} mb-8`}>Basic Table</h2>
+            <h2 className={`${textVariants.heading.h2()} mb-8`}>
+              {t("basic.title")}
+            </h2>
 
             <div className={variants.table.container()}>
               <table className={variants.table.table()}>
                 <thead className={variants.table.header.row()}>
                   <tr>
-                    <th className={variants.table.header.cell()}>Name</th>
-                    <th className={variants.table.header.cell()}>Email</th>
-                    <th className={variants.table.header.cell()}>Role</th>
-                    <th className={variants.table.header.cell()}>Status</th>
-                    <th className={variants.table.header.cell()}>Actions</th>
+                    <th className={variants.table.header.cell()}>
+                      {t("columns.name")}
+                    </th>
+                    <th className={variants.table.header.cell()}>
+                      {t("columns.email")}
+                    </th>
+                    <th className={variants.table.header.cell()}>
+                      {t("columns.role")}
+                    </th>
+                    <th className={variants.table.header.cell()}>
+                      {t("columns.status")}
+                    </th>
+                    <th className={variants.table.header.cell()}>
+                      {t("columns.actions")}
+                    </th>
                   </tr>
                 </thead>
                 <tbody className="divide-y divide-border">
@@ -201,7 +213,9 @@ const TablesGridsPage: React.FC<AppProps> = ({
 
             {/* Code Example */}
             <div className="mt-8">
-              <h3 className={`${textVariants.heading.h4()} mb-4`}>Usage</h3>
+              <h3 className={`${textVariants.heading.h4()} mb-4`}>
+                {t("basic.usage")}
+              </h3>
               <div className="bg-muted rounded-lg p-6 overflow-x-auto">
                 <pre className="text-foreground text-sm">
                   <code>{`// Basic Table Structure
@@ -233,7 +247,7 @@ const TablesGridsPage: React.FC<AppProps> = ({
           {/* Sortable Table */}
           <Section>
             <h2 className={`${textVariants.heading.h2()} mb-8`}>
-              Sortable Table
+              {t("sortable.title")}
             </h2>
 
             <div className={variants.table.container()}>
@@ -245,7 +259,7 @@ const TablesGridsPage: React.FC<AppProps> = ({
                       onClick={() => handleSort("name")}
                     >
                       <div className="flex items-center">
-                        Name
+                        {t("columns.name")}
                         {sortColumn === "name" ? (
                           sortDirection === "asc" ? (
                             <ChevronUpIcon
@@ -268,7 +282,7 @@ const TablesGridsPage: React.FC<AppProps> = ({
                       onClick={() => handleSort("email")}
                     >
                       <div className="flex items-center">
-                        Email
+                        {t("columns.email")}
                         {sortColumn === "email" ? (
                           sortDirection === "asc" ? (
                             <ChevronUpIcon
@@ -291,7 +305,7 @@ const TablesGridsPage: React.FC<AppProps> = ({
                       onClick={() => handleSort("transactions")}
                     >
                       <div className="flex items-center">
-                        Transactions
+                        {t("columns.transactions")}
                         {sortColumn === "transactions" ? (
                           sortDirection === "asc" ? (
                             <ChevronUpIcon
@@ -331,7 +345,7 @@ const TablesGridsPage: React.FC<AppProps> = ({
 
             <div className="mt-8">
               <h3 className={`${textVariants.heading.h4()} mb-4`}>
-                Sortable Headers
+                {t("sortable.headers")}
               </h3>
               <div className="bg-muted rounded-lg p-6 overflow-x-auto">
                 <pre className="text-foreground text-sm">
@@ -361,26 +375,26 @@ const TablesGridsPage: React.FC<AppProps> = ({
           {/* Selectable Table */}
           <Section>
             <h2 className={`${textVariants.heading.h2()} mb-8`}>
-              Selectable Table with Bulk Actions
+              {t("selectable.title")}
             </h2>
 
             {selectedRows.length > 0 && (
               <div className="mb-4 bg-info/10 border border-info rounded-lg p-4 flex items-center justify-between">
                 <span className="text-info">
-                  {selectedRows.length} row(s) selected
+                  {t("selectable.selected", { count: selectedRows.length })}
                 </span>
                 <div className="flex gap-2">
                   <button
                     className={(variants.button as any).secondary.small()}
                   >
                     <ArrowTopRightOnSquareIcon className="h-4 w-4 mr-1" />
-                    Export
+                    {t("selectable.export")}
                   </button>
                   <button
                     className={(variants.button as any).destructive.small()}
                   >
                     <TrashIcon className="h-4 w-4 mr-1" />
-                    Delete
+                    {t("selectable.delete")}
                   </button>
                 </div>
               </div>
@@ -398,10 +412,18 @@ const TablesGridsPage: React.FC<AppProps> = ({
                         onChange={toggleAllRows}
                       />
                     </th>
-                    <th className={variants.table.header.cell()}>Name</th>
-                    <th className={variants.table.header.cell()}>Role</th>
-                    <th className={variants.table.header.cell()}>Status</th>
-                    <th className={variants.table.header.cell()}>Join Date</th>
+                    <th className={variants.table.header.cell()}>
+                      {t("columns.name")}
+                    </th>
+                    <th className={variants.table.header.cell()}>
+                      {t("columns.role")}
+                    </th>
+                    <th className={variants.table.header.cell()}>
+                      {t("columns.status")}
+                    </th>
+                    <th className={variants.table.header.cell()}>
+                      {t("columns.joinDate")}
+                    </th>
                   </tr>
                 </thead>
                 <tbody className="divide-y divide-border">
@@ -446,7 +468,7 @@ const TablesGridsPage: React.FC<AppProps> = ({
           {/* Compact Table */}
           <Section>
             <h2 className={`${textVariants.heading.h2()} mb-8`}>
-              Compact Table
+              {t("compact.title")}
             </h2>
 
             <div className={variants.table.container()}>
@@ -454,16 +476,16 @@ const TablesGridsPage: React.FC<AppProps> = ({
                 <thead className={variants.table.header.row()}>
                   <tr>
                     <th className={variants.table.compact.header.cell()}>
-                      Name
+                      {t("columns.name")}
                     </th>
                     <th className={variants.table.compact.header.cell()}>
-                      Email
+                      {t("columns.email")}
                     </th>
                     <th className={variants.table.compact.header.cell()}>
-                      Role
+                      {t("columns.role")}
                     </th>
                     <th className={variants.table.compact.header.cell()}>
-                      Status
+                      {t("columns.status")}
                     </th>
                   </tr>
                 </thead>
@@ -502,7 +524,7 @@ const TablesGridsPage: React.FC<AppProps> = ({
           {/* Filterable Table */}
           <Section>
             <h2 className={`${textVariants.heading.h2()} mb-8`}>
-              Filterable Table
+              {t("filterable.title")}
             </h2>
 
             <div className={variants.table.container()}>
@@ -512,7 +534,7 @@ const TablesGridsPage: React.FC<AppProps> = ({
                     <MagnifyingGlassIcon className="absolute left-3 top-1/2 transform -translate-y-1/2 h-4 w-4 text-muted-foreground" />
                     <input
                       type="text"
-                      placeholder="Search users..."
+                      placeholder={t("filterable.searchPlaceholder")}
                       value={filterValue}
                       onChange={(e) => setFilterValue(e.target.value)}
                       className={`${variants.table.grid.filterInput()} pl-10`}
@@ -522,7 +544,7 @@ const TablesGridsPage: React.FC<AppProps> = ({
                     className={(variants.button as any).secondary.default()}
                   >
                     <FunnelIcon className="h-4 w-4 mr-2" />
-                    Filters
+                    {t("filterable.filters")}
                   </button>
                 </div>
               </div>
@@ -530,11 +552,21 @@ const TablesGridsPage: React.FC<AppProps> = ({
               <table className={variants.table.table()}>
                 <thead className={variants.table.header.row()}>
                   <tr>
-                    <th className={variants.table.header.cell()}>Name</th>
-                    <th className={variants.table.header.cell()}>Email</th>
-                    <th className={variants.table.header.cell()}>Role</th>
-                    <th className={variants.table.header.cell()}>Status</th>
-                    <th className={variants.table.header.cell()}>Actions</th>
+                    <th className={variants.table.header.cell()}>
+                      {t("columns.name")}
+                    </th>
+                    <th className={variants.table.header.cell()}>
+                      {t("columns.email")}
+                    </th>
+                    <th className={variants.table.header.cell()}>
+                      {t("columns.role")}
+                    </th>
+                    <th className={variants.table.header.cell()}>
+                      {t("columns.status")}
+                    </th>
+                    <th className={variants.table.header.cell()}>
+                      {t("columns.actions")}
+                    </th>
                   </tr>
                 </thead>
                 <tbody className="divide-y divide-border">
@@ -582,17 +614,25 @@ const TablesGridsPage: React.FC<AppProps> = ({
           {/* Pagination */}
           <Section>
             <h2 className={`${textVariants.heading.h2()} mb-8`}>
-              Table with Pagination
+              {t("pagination.title")}
             </h2>
 
             <div className={variants.table.container()}>
               <table className={variants.table.table()}>
                 <thead className={variants.table.header.row()}>
                   <tr>
-                    <th className={variants.table.header.cell()}>Name</th>
-                    <th className={variants.table.header.cell()}>Email</th>
-                    <th className={variants.table.header.cell()}>Role</th>
-                    <th className={variants.table.header.cell()}>Status</th>
+                    <th className={variants.table.header.cell()}>
+                      {t("columns.name")}
+                    </th>
+                    <th className={variants.table.header.cell()}>
+                      {t("columns.email")}
+                    </th>
+                    <th className={variants.table.header.cell()}>
+                      {t("columns.role")}
+                    </th>
+                    <th className={variants.table.header.cell()}>
+                      {t("columns.status")}
+                    </th>
                   </tr>
                 </thead>
                 <tbody className="divide-y divide-border">
@@ -621,23 +661,29 @@ const TablesGridsPage: React.FC<AppProps> = ({
               <div className={variants.table.pagination.container()}>
                 <div className={variants.table.pagination.info()}>
                   <p className="text-sm text-muted-foreground">
-                    Showing <span className="font-medium">1</span> to{" "}
-                    <span className="font-medium">3</span> of{" "}
-                    <span className="font-medium">5</span> results
+                    {t("pagination.showing")}{" "}
+                    <span className="font-medium">1</span> {t("pagination.to")}{" "}
+                    <span className="font-medium">3</span> {t("pagination.of")}{" "}
+                    <span className="font-medium">5</span>{" "}
+                    {t("pagination.results")}
                   </p>
                 </div>
                 <div className={variants.table.pagination.nav()}>
                   <div>
                     <p className="text-sm text-muted-foreground">
-                      Showing <span className="font-medium">1</span> to{" "}
-                      <span className="font-medium">3</span> of{" "}
-                      <span className="font-medium">5</span> results
+                      {t("pagination.showing")}{" "}
+                      <span className="font-medium">1</span>{" "}
+                      {t("pagination.to")}{" "}
+                      <span className="font-medium">3</span>{" "}
+                      {t("pagination.of")}{" "}
+                      <span className="font-medium">5</span>{" "}
+                      {t("pagination.results")}
                     </p>
                   </div>
                   <div>
                     <nav
                       className="relative z-0 inline-flex rounded-md shadow-sm -space-x-px"
-                      aria-label="Pagination"
+                      aria-label={t("pagination.ariaLabel")}
                     >
                       <button
                         className={variants.table.pagination.button()}
@@ -675,7 +721,7 @@ const TablesGridsPage: React.FC<AppProps> = ({
           {/* Web3 Data Table */}
           <Section>
             <h2 className={`${textVariants.heading.h2()} mb-8`}>
-              Web3 Transaction Table
+              {t("web3.title")}
             </h2>
 
             <div className={variants.table.container()}>
@@ -683,13 +729,23 @@ const TablesGridsPage: React.FC<AppProps> = ({
                 <thead className={variants.table.header.row()}>
                   <tr>
                     <th className={variants.table.header.cell()}>
-                      Transaction Hash
+                      {t("columns.transactionHash")}
                     </th>
-                    <th className={variants.table.header.cell()}>From</th>
-                    <th className={variants.table.header.cell()}>To</th>
-                    <th className={variants.table.header.cell()}>Amount</th>
-                    <th className={variants.table.header.cell()}>Status</th>
-                    <th className={variants.table.header.cell()}>Chain</th>
+                    <th className={variants.table.header.cell()}>
+                      {t("columns.from")}
+                    </th>
+                    <th className={variants.table.header.cell()}>
+                      {t("columns.to")}
+                    </th>
+                    <th className={variants.table.header.cell()}>
+                      {t("columns.amount")}
+                    </th>
+                    <th className={variants.table.header.cell()}>
+                      {t("columns.status")}
+                    </th>
+                    <th className={variants.table.header.cell()}>
+                      {t("columns.chain")}
+                    </th>
                   </tr>
                 </thead>
                 <tbody className="divide-y divide-border">
@@ -708,12 +764,12 @@ const TablesGridsPage: React.FC<AppProps> = ({
                     </td>
                     <td className={variants.table.body.cell()}>
                       <span className={variants.badge.success()}>
-                        Confirmed
+                        {t("web3.confirmed")}
                       </span>
                     </td>
                     <td className={variants.table.body.cell()}>
                       <span className={variants.badge.ethereum()}>
-                        Ethereum
+                        {t("web3.ethereum")}
                       </span>
                     </td>
                   </tr>
@@ -731,10 +787,14 @@ const TablesGridsPage: React.FC<AppProps> = ({
                       <span className="font-semibold">250 SOL</span>
                     </td>
                     <td className={variants.table.body.cell()}>
-                      <span className={variants.badge.warning()}>Pending</span>
+                      <span className={variants.badge.warning()}>
+                        {t("web3.pending")}
+                      </span>
                     </td>
                     <td className={variants.table.body.cell()}>
-                      <span className={variants.badge.solana()}>Solana</span>
+                      <span className={variants.badge.solana()}>
+                        {t("web3.solana")}
+                      </span>
                     </td>
                   </tr>
                 </tbody>
@@ -744,15 +804,23 @@ const TablesGridsPage: React.FC<AppProps> = ({
 
           {/* Empty State */}
           <Section>
-            <h2 className={`${textVariants.heading.h2()} mb-8`}>Empty State</h2>
+            <h2 className={`${textVariants.heading.h2()} mb-8`}>
+              {t("empty.title")}
+            </h2>
 
             <div className={variants.table.container()}>
               <table className={variants.table.table()}>
                 <thead className={variants.table.header.row()}>
                   <tr>
-                    <th className={variants.table.header.cell()}>Name</th>
-                    <th className={variants.table.header.cell()}>Email</th>
-                    <th className={variants.table.header.cell()}>Status</th>
+                    <th className={variants.table.header.cell()}>
+                      {t("columns.name")}
+                    </th>
+                    <th className={variants.table.header.cell()}>
+                      {t("columns.email")}
+                    </th>
+                    <th className={variants.table.header.cell()}>
+                      {t("columns.status")}
+                    </th>
                   </tr>
                 </thead>
                 <tbody>
@@ -761,17 +829,17 @@ const TablesGridsPage: React.FC<AppProps> = ({
                       <div className="flex flex-col items-center">
                         <CubeIcon className="h-12 w-12 text-muted-foreground mb-4" />
                         <h3 className={`${textVariants.heading.h4()} mb-2`}>
-                          No data found
+                          {t("empty.noData")}
                         </h3>
                         <p
                           className={`${textVariants.body.sm()} text-muted-foreground mb-4`}
                         >
-                          There are no records to display at this time.
+                          {t("empty.description")}
                         </p>
                         <button
                           className={(variants.button as any).primary.default()}
                         >
-                          Add New Record
+                          {t("empty.addRecord")}
                         </button>
                       </div>
                     </td>
@@ -784,19 +852,19 @@ const TablesGridsPage: React.FC<AppProps> = ({
           {/* Design Tokens */}
           <Section>
             <h2 className={`${textVariants.heading.h2()} mb-8`}>
-              Available Table Variants
+              {t("tokens.title")}
             </h2>
 
             <div className={`${ui.background.subtle} rounded-xl p-8`}>
               <h3 className={`${textVariants.heading.h3()} mb-6`}>
-                Table Structure
+                {t("tokens.structure")}
               </h3>
 
               <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
                 {/* Container & Table */}
                 <div>
                   <h4 className={`${textVariants.heading.h4()} mb-4`}>
-                    Container & Base
+                    {t("tokens.containerBase")}
                   </h4>
                   <div className="space-y-2 text-sm">
                     <div>
@@ -815,7 +883,7 @@ const TablesGridsPage: React.FC<AppProps> = ({
                 {/* Headers */}
                 <div>
                   <h4 className={`${textVariants.heading.h4()} mb-4`}>
-                    Headers
+                    {t("tokens.headers")}
                   </h4>
                   <div className="space-y-2 text-sm">
                     <div>
@@ -838,7 +906,9 @@ const TablesGridsPage: React.FC<AppProps> = ({
 
                 {/* Body */}
                 <div>
-                  <h4 className={`${textVariants.heading.h4()} mb-4`}>Body</h4>
+                  <h4 className={`${textVariants.heading.h4()} mb-4`}>
+                    {t("tokens.body")}
+                  </h4>
                   <div className="space-y-2 text-sm">
                     <div>
                       <code className="bg-muted px-2 py-1 rounded">
@@ -866,7 +936,7 @@ const TablesGridsPage: React.FC<AppProps> = ({
                 {/* States */}
                 <div>
                   <h4 className={`${textVariants.heading.h4()} mb-4`}>
-                    States & Pagination
+                    {t("tokens.statesPagination")}
                   </h4>
                   <div className="space-y-2 text-sm">
                     <div>
@@ -897,13 +967,13 @@ const TablesGridsPage: React.FC<AppProps> = ({
               className={`${(variants.button as any).secondary.default()} group`}
             >
               <ChevronLeftIcon className="h-4 w-4 mr-2 group-hover:-translate-x-1 transition-transform" />
-              Layout & Spacing
+              {t("nav.previous")}
             </LocalizedLink>
             <LocalizedLink
               to="/design"
               className={(variants.button as any).outline.default()}
             >
-              Back to Design System
+              {t("nav.back")}
             </LocalizedLink>
             <div className="w-32" /> {/* Spacer for next section when added */}
           </div>

@@ -1,0 +1,477 @@
+{
+  "seo": {
+    "title": "Typographie - Système de conception - Interne - {{emailDomain}}",
+    "description": "Système typographique complet et présentation des styles de texte pour le système de conception"
+  },
+  "nav": {
+    "viewColors": "Voir les couleurs"
+  },
+  "header": {
+    "badge": "Système de typographie",
+    "title": "Typographie et styles de texte",
+    "intro": "Système typographique complet incluant les polices, tailles, épaisseurs et styles, avec des exemples d'utilisation et des extraits de code. Cliquez sur un exemple pour copier son nom de classe dans le presse-papiers."
+  },
+  "example": {
+    "aria": "Copiez le nom de la classe {{title}}",
+    "preview": "Aperçu",
+    "usage": "Utilisation"
+  },
+  "quickStart": {
+    "heading": "Démarrage rapide - Exemples de typographie",
+    "description": "Exemples de typographie prêts à l'emploi pour les modèles de texte les plus courants. Copiez-collez directement dans vos composants.",
+    "pageHeading": {
+      "title": "Titre de page",
+      "preview": "Bienvenue sur la plateforme"
+    },
+    "bodyText": {
+      "title": "Texte du corps",
+      "preview": "Il s'agit d'un long exemple de texte qui montre la taille de police, la hauteur de ligne et l'espacement appropriés pour un contenu lisible dans votre application."
+    },
+    "codeBlock": {
+      "title": "Bloc de code"
+    },
+    "linkText": {
+      "title": "Texte du lien",
+      "preview": "En savoir plus sur l'e-mail Web3"
+    },
+    "captionText": {
+      "title": "Texte de légende",
+      "preview": "Dernière mise à jour : 15 mars 2024 à 14h30"
+    },
+    "inlineCode": {
+      "title": "Code en ligne",
+      "previewPrefix": "Utilisez la",
+      "previewSuffix": "hook pour gérer l'état d'un composant dans les applications React."
+    }
+  },
+  "fontFamilies": {
+    "heading": "Familles de polices",
+    "description": "Trois familles de polices principales sont utilisées dans toute l'application pour différents types de contenu.",
+    "pangram": "Le renard brun rapide saute par-dessus le chien paresseux",
+    "items": {
+      "sans": {
+        "name": "Sans Serif (par défaut)",
+        "description": "Famille de polices principale pour les éléments d'interface et le texte corps",
+        "usage": "Éléments d'interface, titres, texte principal"
+      },
+      "serif": {
+        "name": "Serif",
+        "description": "Pour le contenu éditorial et formel",
+        "usage": "Contenu éditorial, documents officiels"
+      },
+      "mono": {
+        "name": "Monospace",
+        "description": "Pour les blocs de code et le texte technique",
+        "usage": "Blocs de code, contenu technique, adresses de portefeuille"
+      }
+    },
+    "code": {
+      "title": "Utilisation de la famille de polices",
+      "description": "Comment utiliser les familles de polices du système de design"
+    },
+    "preview": {
+      "sans": "Ceci est du texte sans serif (police par défaut de l'interface utilisateur)",
+      "serif": "Ceci est du texte serif pour le contenu éditorial",
+      "mono": "Ceci est du texte monospace pour le code"
+    }
+  },
+  "scale": {
+    "heading": "Échelle typographique",
+    "description": "Échelle hiérarchique des types du texte d'affichage aux titres, offrant une taille cohérente à travers l'interface.",
+    "items": {
+      "hero": {
+        "name": "Héros",
+        "usage": "Pages de destination, sections héros"
+      },
+      "xl": {
+        "name": "Afficher XL",
+        "usage": "Titres d'affichage grand format"
+      },
+      "lg": {
+        "name": "Afficher LG",
+        "usage": "Titres d'affichage moyens"
+      },
+      "md": {
+        "name": "Afficher MD",
+        "usage": "Titres d'affichage petits"
+      },
+      "sm": {
+        "name": "Afficher SM",
+        "usage": "Titres d'affichage extra petits"
+      },
+      "h1": {
+        "name": "Titre 1",
+        "usage": "Titres de la page principale"
+      },
+      "h2": {
+        "name": "Titre 2",
+        "usage": "Titres de section"
+      },
+      "h3": {
+        "name": "Titre 3",
+        "usage": "Sous-titres"
+      },
+      "h4": {
+        "name": "Titre 4",
+        "usage": "Sous-titres mineurs"
+      },
+      "h5": {
+        "name": "Titre 5",
+        "usage": "Petites titres"
+      },
+      "h6": {
+        "name": "Titre 6",
+        "usage": "Plus petits titres"
+      }
+    },
+    "code": {
+      "title": "Utilisation de l'échelle typographique",
+      "description": "Comment utiliser les variantes de titre du système de conception"
+    },
+    "preview": {
+      "h1": "Titre 1",
+      "h2": "Titre 2",
+      "h3": "Titre 3",
+      "body": "Le texte suit les titres"
+    }
+  },
+  "body": {
+    "heading": "Texte du corps",
+    "description": "Variants de texte corps pour différents types de contenu et niveaux de hiérarchie.",
+    "sample": "Ceci est un texte d'exemple illustrant la taille de police, l'épaisseur et la hauteur de ligne de cette variante.",
+    "items": {
+      "xl": {
+        "name": "Corps XL",
+        "usage": "Paragraphes d'introduction, contenu important"
+      },
+      "lg": {
+        "name": "Corps grand",
+        "usage": "Texte standard du corps, contenu principal"
+      },
+      "md": {
+        "name": "Corps Moyen",
+        "usage": "Texte corps standard (alias de grand)"
+      },
+      "sm": {
+        "name": "Corps petit",
+        "usage": "Informations secondaires, légendes"
+      },
+      "xs": {
+        "name": "Corps Extra Petit",
+        "usage": "Petites mentions, détails minimes"
+      }
+    },
+    "code": {
+      "title": "Utilisation du texte corps",
+      "description": "Comment utiliser les variantes de texte corporel"
+    },
+    "preview": {
+      "xl": "Ceci est un texte corporel extra grand pour les paragraphes d'introduction et le contenu important.",
+      "lg": "Il s'agit du texte principal standard utilisé dans la majeure partie de l'application pour le contenu principal.",
+      "sm": "Ce texte est utilisé pour des informations secondaires, légendes et textes d'aide."
+    }
+  },
+  "emphasis": {
+    "heading": "Mise en évidence du texte",
+    "description": "Variants d'emphase de texte pour différents niveaux de poids et de prominences.",
+    "items": {
+      "strongLg": {
+        "name": "Fort Grand",
+        "usage": "Texte important mis en évidence"
+      },
+      "strongMd": {
+        "name": "Fort Moyen",
+        "usage": "Texte en grasseyé moyen"
+      },
+      "strongSm": {
+        "name": "Fort petit",
+        "usage": "Petit texte mis en évidence"
+      },
+      "emphasisLg": {
+        "name": "Accentuation grande",
+        "usage": "Mise en valeur de poids moyen"
+      },
+      "emphasisMd": {
+        "name": "Moyen d'accentuation",
+        "usage": "Mise en valeur de poids moyen"
+      },
+      "emphasisSm": {
+        "name": "Emphase petite",
+        "usage": "Mise en évidence de poids léger à moyen"
+      },
+      "mutedLg": {
+        "name": "Grand muet",
+        "usage": "Texte désaccentué"
+      },
+      "mutedMd": {
+        "name": "Muet Moyen",
+        "usage": "Texte désaccentué"
+      },
+      "mutedSm": {
+        "name": "Petit muet",
+        "usage": "Petit texte désaccentué"
+      }
+    },
+    "code": {
+      "title": "Utilisation de la mise en évidence du texte",
+      "description": "Comment utiliser les variantes de mise en gras du texte"
+    },
+    "preview": {
+      "normalPrefix": "Ceci est un texte normal avec",
+      "strong": "accentuation forte",
+      "and": "et",
+      "medium": "accentuation modérée",
+      "muted": "Ce texte est muet et présente une visibilité réduite."
+    }
+  },
+  "caption": {
+    "heading": "Légende et texte spécial",
+    "captionTitle": "Variants de légende",
+    "sample": "Ceci est un exemple de légende",
+    "uppercaseSample": "LIBELLÉ DE SECTION",
+    "items": {
+      "default": {
+        "name": "Légende par défaut",
+        "usage": "Légendes d'image, informations supplémentaires"
+      },
+      "emphasis": {
+        "name": "Légende en surimpression",
+        "usage": "Légendes importantes"
+      },
+      "uppercase": {
+        "name": "Légende en majuscules",
+        "usage": "Libellés de section, balises"
+      }
+    },
+    "leadTitle": "Texte principal",
+    "leadSample": "Ce texte d'introduction présente le contenu principal et fournit le contexte pour ce qui suit.",
+    "leadItems": {
+      "lg": {
+        "name": "Grand Plomb",
+        "usage": "Paragraphes d'introduction, premières phrases d'articles"
+      },
+      "md": {
+        "name": "Lead moyen",
+        "usage": "Paragraphes d'introduction"
+      },
+      "sm": {
+        "name": "Petit leader",
+        "usage": "Petit texte d'introduction"
+      }
+    },
+    "code": {
+      "title": "Utilisation du texte d'identification et du texte d'accroche",
+      "description": "Comment utiliser les légendes et le texte d'introduction"
+    },
+    "preview": {
+      "imageCaption": "Ceci est une légende pour l'image ci-dessus",
+      "sectionLabel": "LIBELLÉ DE SECTION",
+      "lead": "Ceci est le texte d'introduction qui présente la section."
+    }
+  },
+  "links": {
+    "heading": "Styles de lien",
+    "description": "Différents styles de lien pour divers contextes et niveaux d'accentuation.",
+    "externalSample": "Lien externe →",
+    "items": {
+      "default": {
+        "name": "Lien par défaut",
+        "usage": "Liens standards avec souligné"
+      },
+      "subtle": {
+        "name": "Lien subtil",
+        "usage": "Liens sans souligné"
+      },
+      "muted": {
+        "name": "Lien muet",
+        "usage": "Liens de couleur grise"
+      },
+      "external": {
+        "name": "Lien externe",
+        "usage": "Liens vers des sites externes"
+      }
+    },
+    "code": {
+      "title": "Utilisation des styles de lien",
+      "description": "Comment utiliser les variantes de lien"
+    },
+    "preview": {
+      "paraPrefix": "Ce paragraphe contient un",
+      "defaultLink": "lien par défaut",
+      "and": "et un",
+      "subtleLink": "lien subtil",
+      "checkPrefix": "Découvrez ceci",
+      "externalLink": "lien externe →",
+      "or": "ou cela",
+      "mutedLink": "lien muet"
+    }
+  },
+  "codeText": {
+    "heading": "Code et texte technique",
+    "description": "Styles de police monospace pour le code, le contenu technique et la documentation technique.",
+    "items": {
+      "inline": {
+        "name": "Code en ligne",
+        "usage": "Code dans le texte"
+      },
+      "block": {
+        "name": "Bloc de code",
+        "usage": "Blocs de code multilignes"
+      },
+      "small": {
+        "name": "Petit code",
+        "usage": "Petit code en ligne"
+      }
+    },
+    "code": {
+      "title": "Utilisation du texte de code",
+      "description": "Comment utiliser les variantes de texte de code"
+    },
+    "preview": {
+      "usePrefix": "Utilisez la",
+      "useSuffix": "hook pour gérer l'état.",
+      "runPrefix": "Exécuter",
+      "runSuffix": "pour commencer."
+    }
+  },
+  "labels": {
+    "heading": "Étiquettes et messages de formulaire",
+    "description": "Styles de texte pour les éléments de formulaire, les étiquettes et les messages de retour.",
+    "items": {
+      "default": {
+        "name": "Libellé par défaut",
+        "usage": "Étiquettes des champs de formulaire",
+        "sample": "Par défaut"
+      },
+      "required": {
+        "name": "Étiquette requise",
+        "usage": "Champs de formulaire obligatoires",
+        "sample": "Adresse e-mail"
+      },
+      "optional": {
+        "name": "Étiquette facultative",
+        "usage": "Champs de formulaire facultatifs",
+        "sample": "Facultatif"
+      },
+      "helper": {
+        "name": "Texte d'aide",
+        "usage": "Texte d'aide du formulaire",
+        "sample": "Aide"
+      },
+      "error": {
+        "name": "Texte d'erreur",
+        "usage": "Messages d'erreur de formulaire",
+        "sample": "Erreur"
+      },
+      "success": {
+        "name": "Texte de succès",
+        "usage": "Messages de succès du formulaire",
+        "sample": "Succès"
+      }
+    },
+    "code": {
+      "title": "Utilisation des étiquettes de formulaire",
+      "description": "Comment utiliser les variantes de libellé et de message de formulaire"
+    },
+    "preview": {
+      "emailLabel": "Adresse e-mail",
+      "emailHelper": "Nous utiliserons cela pour vous envoyer des mises à jour",
+      "passwordLabel": "Mot de passe",
+      "passwordError": "Le mot de passe doit comporter au moins 8 caractères",
+      "phoneLabel": "Numéro de téléphone",
+      "phoneSuccess": "Numéro de téléphone vérifié avec succès"
+    }
+  },
+  "web3": {
+    "heading": "Styles de texte Web3",
+    "description": "Styles de texte spécialisés pour le contenu Web3 et spécifique à la blockchain, comme les adresses, les hachages et les montants.",
+    "items": {
+      "address": {
+        "name": "Adresse du portefeuille",
+        "usage": "Adresses complètes de portefeuille"
+      },
+      "addressShort": {
+        "name": "Adresse courte",
+        "usage": "Adresses de portefeuille tronquées"
+      },
+      "hash": {
+        "name": "Hachage de transaction",
+        "usage": "Identifiants de transaction"
+      },
+      "amount": {
+        "name": "Montant des jetons",
+        "usage": "Montants de cryptomonnaies"
+      },
+      "chain": {
+        "name": "Nom de la chaîne",
+        "usage": "Noms des réseaux de blockchain"
+      },
+      "symbol": {
+        "name": "Symbole du jeton",
+        "usage": "Symboles de cryptomonnaies"
+      }
+    },
+    "code": {
+      "title": "Utilisation du texte Web3",
+      "description": "Comment utiliser les styles de texte spécifiques à Web3"
+    },
+    "preview": {
+      "transactionHash": "Hachage de transaction :"
+    }
+  },
+  "responsive": {
+    "heading": "Typographie réactive",
+    "description": "Typographie qui s'ajuste automatiquement à la taille de l'écran pour une lisibilité optimale sur tous les appareils.",
+    "items": {
+      "h1": {
+        "name": "H1 réactif",
+        "usage": "Titres qui s'adaptent à la taille de l'écran"
+      },
+      "h2": {
+        "name": "H2 réactif",
+        "usage": "Titres de section qui s'adaptent"
+      },
+      "h3": {
+        "name": "H3 réactif",
+        "usage": "Sous-titres qui s'adaptent"
+      },
+      "display": {
+        "name": "Affichage réactif",
+        "usage": "Afficher du texte qui s'adapte"
+      }
+    },
+    "code": {
+      "title": "Utilisation de la typographie réactive",
+      "description": "Comment utiliser des variantes de texte réactives qui s'adaptent à la taille de l'écran"
+    },
+    "preview": {
+      "heading": "Cette en-tête s'ajuste en fonction de la taille de l'écran",
+      "body": "Redimensionnez la fenêtre de votre navigateur pour voir comment les titres réactifs s'adaptent à différentes tailles d'écran."
+    }
+  },
+  "guidelines": {
+    "heading": "Lignes directrices de typographie",
+    "doTitle": "✓ Faire",
+    "do": [
+      "Utilisez textVariants pour un style cohérent",
+      "Choisissez les niveaux de hiérarchie appropriés",
+      "Utilisez des variantes réactives pour le contenu héroïque",
+      "Assurez-vous d'avoir un rapport de contraste suffisant",
+      "Utilisez une police monospaced pour le code et les adresses",
+      "Testez la lisibilité sur différentes tailles d'écran"
+    ],
+    "dontTitle": "✗ Ne pas",
+    "dont": [
+      "Utilisez des tailles de police aléatoires en dehors de l'échelle",
+      "Passer outre les niveaux de titre (h1 → h3)",
+      "Utilisez trop nombreux styles de texte différents",
+      "Rendre le texte trop petit sur les appareils mobiles",
+      "Utilisez des polices serif pour les éléments de l'interface utilisateur",
+      "Ignorez les couleurs de texte en mode sombre"
+    ]
+  },
+  "copyInstructions": {
+    "title": "Cliquez pour copier les noms de classe",
+    "description": "Cliquez sur n'importe quel exemple de texte pour copier son nom de classe CSS, ou utilisez le bouton copier dans les exemples de code pour copier le code d'utilisation"
+  }
+}

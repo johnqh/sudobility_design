@@ -1,0 +1,147 @@
+{
+  "seo": {
+    "title": "レイアウトと余白 - デザインシステム - 内部 - {{emailDomain}}",
+    "description": "レスポンシブグリッド、コンテナ、Web3固有のパターンを備えたレイアウトと間隔システム"
+  },
+  "header": {
+    "badge": "レイアウトと余白",
+    "title": "レイアウトと間隔システム",
+    "description": "レスポンシブグリッド、柔軟なコンテナ、Web3専用のパターンを備えた包括的なレイアウトと間隔システム。ウォレット、取引、ダッシュボードインターフェースに適応。"
+  },
+  "quickStart": {
+    "title": "クイックスタート",
+    "copyTooltip": "クリップボードにコピー",
+    "examples": {
+      "grid": {
+        "title": "レスポンシブグリッドシステム",
+        "description": "異なる画面サイズに応じて調整される柔軟なグリッドレイアウト"
+      },
+      "container": {
+        "title": "コンテナシステム",
+        "description": "一貫した最大幅とパディングを持つレスポンシブコンテナ"
+      },
+      "flex": {
+        "title": "Flexboxユーティリティ",
+        "description": "コンポーネントレイアウト用の一般的な flexbox パターン"
+      },
+      "spacing": {
+        "title": "スペースシステム",
+        "description": "マージンとパディングのための一貫した余白パターン"
+      }
+    }
+  },
+  "grid": {
+    "title": "レスポンシブグリッドシステム",
+    "cardTitle": "インタラクティブグリッドの例",
+    "cardDescription": "ブレークポイント間を切り替えると、グリッドがどのように適応するかがわかります",
+    "preview": "プレビュー：",
+    "breakpoints": {
+      "mobile": "モバイル",
+      "tablet": "タブレット",
+      "desktop": "デスクトップ"
+    },
+    "examples": {
+      "nftGallery": {
+        "name": "NFTギャラリー"
+      },
+      "dashboardWidgets": {
+        "name": "ダッシュボードウィジェット"
+      },
+      "transactionHistory": {
+        "name": "取引履歴"
+      }
+    },
+    "item": "アイテム {{number}}"
+  },
+  "container": {
+    "title": "コンテナシステム",
+    "cardTitle": "コンテナのバリエーション",
+    "cardDescription": "さまざまなコンテンツタイプに応じた異なるコンテナサイズ",
+    "label": "コンテナ:",
+    "maxWidth": "最大幅:",
+    "bestFor": "最適な用途:",
+    "containerSuffix": "{{name}} コンテナ",
+    "previewText": "このコンテナは、選択された幅制約に適応しながら、応答性のあるパディングを維持します。",
+    "sizes": {
+      "narrow": {
+        "name": "狭い",
+        "use": "記事、フォーム"
+      },
+      "default": {
+        "name": "デフォルト",
+        "use": "一般コンテンツ"
+      },
+      "wide": {
+        "name": "広い",
+        "use": "ダッシュボード、テーブル"
+      },
+      "full": {
+        "name": "フル",
+        "use": "エッジツーエッジレイアウト"
+      }
+    }
+  },
+  "flexbox": {
+    "title": "Flexbox パターン",
+    "common": {
+      "title": "一般的なパターン",
+      "description": "コンポーネント用の標準的な flexbox レイアウト",
+      "spaceBetween": "間隔",
+      "center": "センター",
+      "startWithGap": "ギャップから始めましょう",
+      "columnStack": "カラムスタック"
+    },
+    "web3": {
+      "title": "Web3 パターン",
+      "description": "ブロックチェーンインターフェース向けの専用レイアウト",
+      "walletConnection": "ウォレット接続",
+      "walletName": "MetaMask",
+      "connected": "接続済み",
+      "transactionSummary": "取引の概要",
+      "amount": "金額：",
+      "gasFee": "ガス手数料：",
+      "total": "合計：",
+      "nftCardLayout": "NFTカードレイアウト",
+      "nftName": "クールなNFT #1234",
+      "artistName": "アーティスト名"
+    }
+  },
+  "spacing": {
+    "title": "スペースシステム",
+    "cardTitle": "一貫した間隔パターン",
+    "cardDescription": "一貫したレイアウトを実現するための標準的な余白ユーティリティ",
+    "scaleTitle": "スケール間隔",
+    "componentTitle": "コンポーネント間隔",
+    "sectionHeader": "セクション見出し",
+    "component": "コンポーネント {{number}}",
+    "sectionSpacingLabel": "セクションの間隔：",
+    "sectionSpacingText": "32pxの垂直マージン",
+    "componentSpacingLabel": "コンポーネントの間隔：",
+    "componentSpacingText": "アイテム間の12px",
+    "internalPaddingLabel": "内部パディング：",
+    "internalPaddingText": "コンテンツ領域の16px"
+  },
+  "web3": {
+    "title": "Web3レイアウトパターン",
+    "wallet": {
+      "title": "ウォレットダッシュボード",
+      "description": "残高と資産を含むポートフォリオの概要",
+      "send": "送信",
+      "receive": "受信",
+      "swap": "交換",
+      "assets": "アセット"
+    },
+    "transaction": {
+      "title": "取引フロー",
+      "description": "ステップバイステップの取引インターフェース",
+      "recipientAddress": "受信者住所",
+      "amount": "金額",
+      "balance": "残高: 2.45 ETH",
+      "max": "マックス",
+      "networkFee": "ネットワーク手数料：",
+      "total": "合計：",
+      "cancel": "キャンセル",
+      "continue": "続行"
+    }
+  }
+}

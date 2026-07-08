@@ -36,6 +36,7 @@ import {
   XCircleIcon as XCircleSolid,
 } from "@heroicons/react/24/solid";
 import React, { useState } from "react";
+import { useTranslation } from "react-i18next";
 import LocalizedLink from "../../components/LocalizedLink";
 import { SEOHead } from "@sudobility/seo_lib";
 import { textVariants, ui, variants } from "@sudobility/design";
@@ -49,16 +50,17 @@ const IconsIllustrationsPage: React.FC<AppProps> = ({
   emailDomain,
   appName: _appName,
 }) => {
+  const { t } = useTranslation("iconsIllustrations");
   const [selectedCategory, setSelectedCategory] = useState("all");
 
   // Icon categories for demo
   const iconCategories = [
-    { id: "all", name: "All Icons", count: 24 },
-    { id: "actions", name: "Actions", count: 6 },
-    { id: "status", name: "Status", count: 4 },
-    { id: "navigation", name: "Navigation", count: 5 },
-    { id: "web3", name: "Web3", count: 4 },
-    { id: "decorative", name: "Decorative", count: 5 },
+    { id: "all", count: 24 },
+    { id: "actions", count: 6 },
+    { id: "status", count: 4 },
+    { id: "navigation", count: 5 },
+    { id: "web3", count: 4 },
+    { id: "decorative", count: 5 },
   ];
 
   // Sample icons for demonstration
@@ -136,8 +138,8 @@ const IconsIllustrationsPage: React.FC<AppProps> = ({
   return (
     <>
       <SEOHead
-        title={`Icons & Illustrations - Design System - Internal - ${emailDomain}`}
-        description="Comprehensive icon system with consistent sizing, colors, and contextual usage patterns"
+        title={t("seo.title", { emailDomain })}
+        description={t("seo.description")}
         noIndex={true}
       />
 
@@ -148,37 +150,37 @@ const IconsIllustrationsPage: React.FC<AppProps> = ({
             <div className="inline-flex items-center bg-accent/10 px-4 py-2 rounded-full mb-6">
               <PhotoIcon className="h-5 w-5 text-accent mr-2" />
               <span className="text-accent font-semibold">
-                Icons & Illustrations
+                {t("header.badge")}
               </span>
             </div>
 
             <h1 className={`${textVariants.heading.display.xl()} mb-6`}>
-              Icons & Illustrations
+              {t("header.title")}
             </h1>
 
             <p
               className={`${textVariants.body.lg()} max-w-3xl mx-auto text-muted-foreground mb-8`}
             >
-              Comprehensive icon system with consistent sizing, colors, and
-              contextual usage patterns. Built with Heroicons and optimized for
-              accessibility and dark mode.
+              {t("header.description")}
             </p>
           </div>
 
           {/* Icon Sizes */}
           <Section>
-            <h2 className={`${textVariants.heading.h2()} mb-8`}>Icon Sizes</h2>
+            <h2 className={`${textVariants.heading.h2()} mb-8`}>
+              {t("sizes.title")}
+            </h2>
 
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
               {/* Size Examples */}
               <div className={`${ui.background.subtle} rounded-xl p-8`}>
                 <h3 className={`${textVariants.heading.h3()} mb-6`}>
-                  Size Variants
+                  {t("sizes.variantsTitle")}
                 </h3>
                 <div className="space-y-6">
                   <div className="flex items-center gap-4">
                     <div className="w-20 text-sm text-muted-foreground">
-                      xs (12px)
+                      {t("sizes.labels.xs")}
                     </div>
                     <StarIcon className={variants.icon.size.xs()} />
                     <code className="text-sm bg-muted px-2 py-1 rounded">
@@ -187,7 +189,7 @@ const IconsIllustrationsPage: React.FC<AppProps> = ({
                   </div>
                   <div className="flex items-center gap-4">
                     <div className="w-20 text-sm text-muted-foreground">
-                      sm (16px)
+                      {t("sizes.labels.sm")}
                     </div>
                     <StarIcon className={variants.icon.size.sm()} />
                     <code className="text-sm bg-muted px-2 py-1 rounded">
@@ -196,7 +198,7 @@ const IconsIllustrationsPage: React.FC<AppProps> = ({
                   </div>
                   <div className="flex items-center gap-4">
                     <div className="w-20 text-sm text-muted-foreground">
-                      md (20px)
+                      {t("sizes.labels.md")}
                     </div>
                     <StarIcon className={variants.icon.size.md()} />
                     <code className="text-sm bg-muted px-2 py-1 rounded">
@@ -205,7 +207,7 @@ const IconsIllustrationsPage: React.FC<AppProps> = ({
                   </div>
                   <div className="flex items-center gap-4">
                     <div className="w-20 text-sm text-muted-foreground">
-                      lg (24px)
+                      {t("sizes.labels.lg")}
                     </div>
                     <StarIcon className={variants.icon.size.lg()} />
                     <code className="text-sm bg-muted px-2 py-1 rounded">
@@ -214,7 +216,7 @@ const IconsIllustrationsPage: React.FC<AppProps> = ({
                   </div>
                   <div className="flex items-center gap-4">
                     <div className="w-20 text-sm text-muted-foreground">
-                      xl (32px)
+                      {t("sizes.labels.xl")}
                     </div>
                     <StarIcon className={variants.icon.size.xl()} />
                     <code className="text-sm bg-muted px-2 py-1 rounded">
@@ -223,7 +225,7 @@ const IconsIllustrationsPage: React.FC<AppProps> = ({
                   </div>
                   <div className="flex items-center gap-4">
                     <div className="w-20 text-sm text-muted-foreground">
-                      xxl (40px)
+                      {t("sizes.labels.xxl")}
                     </div>
                     <StarIcon className={variants.icon.size.xxl()} />
                     <code className="text-sm bg-muted px-2 py-1 rounded">
@@ -232,7 +234,7 @@ const IconsIllustrationsPage: React.FC<AppProps> = ({
                   </div>
                   <div className="flex items-center gap-4">
                     <div className="w-20 text-sm text-muted-foreground">
-                      xxxl (48px)
+                      {t("sizes.labels.xxxl")}
                     </div>
                     <StarIcon className={variants.icon.size.xxxl()} />
                     <code className="text-sm bg-muted px-2 py-1 rounded">
@@ -245,7 +247,7 @@ const IconsIllustrationsPage: React.FC<AppProps> = ({
               {/* Usage Code */}
               <div>
                 <h3 className={`${textVariants.heading.h3()} mb-4`}>
-                  Size Usage
+                  {t("sizes.usageTitle")}
                 </h3>
                 <div className="bg-muted rounded-lg p-6 overflow-x-auto">
                   <pre className="text-foreground text-sm">
@@ -268,68 +270,74 @@ const IconsIllustrationsPage: React.FC<AppProps> = ({
 
           {/* Icon Colors */}
           <Section>
-            <h2 className={`${textVariants.heading.h2()} mb-8`}>Icon Colors</h2>
+            <h2 className={`${textVariants.heading.h2()} mb-8`}>
+              {t("colors.title")}
+            </h2>
 
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
               {/* Color Examples */}
               <div className={`${ui.background.subtle} rounded-xl p-8`}>
                 <h3 className={`${textVariants.heading.h3()} mb-6`}>
-                  Color Variants
+                  {t("colors.variantsTitle")}
                 </h3>
                 <div className="space-y-4">
                   <div className="flex items-center gap-4">
                     <div className="w-24 text-sm text-muted-foreground">
-                      Default
+                      {t("colors.default.label")}
                     </div>
                     <StarIcon className={variants.icon.color.default()} />
                     <span className="text-xs text-muted-foreground">
-                      Gray 500 / 400
+                      {t("colors.default.value")}
                     </span>
                   </div>
                   <div className="flex items-center gap-4">
                     <div className="w-24 text-sm text-muted-foreground">
-                      Brand
+                      {t("colors.brand.label")}
                     </div>
                     <StarIcon className={variants.icon.color.brand()} />
-                    <span className="text-xs text-primary">Blue 600 / 400</span>
+                    <span className="text-xs text-primary">
+                      {t("colors.brand.value")}
+                    </span>
                   </div>
                   <div className="flex items-center gap-4">
                     <div className="w-24 text-sm text-muted-foreground">
-                      Success
+                      {t("colors.success.label")}
                     </div>
                     <CheckCircleIcon
                       className={variants.icon.color.success()}
                     />
                     <span className="text-xs text-success">
-                      Green 600 / 400
+                      {t("colors.success.value")}
                     </span>
                   </div>
                   <div className="flex items-center gap-4">
                     <div className="w-24 text-sm text-muted-foreground">
-                      Warning
+                      {t("colors.warning.label")}
                     </div>
                     <ExclamationTriangleIcon
                       className={variants.icon.color.warning()}
                     />
                     <span className="text-xs text-warning">
-                      Amber 600 / 400
+                      {t("colors.warning.value")}
                     </span>
                   </div>
                   <div className="flex items-center gap-4">
                     <div className="w-24 text-sm text-muted-foreground">
-                      Error
+                      {t("colors.error.label")}
                     </div>
                     <XCircleIcon className={variants.icon.color.error()} />
                     <span className="text-xs text-destructive">
-                      Red 600 / 400
+                      {t("colors.error.value")}
                     </span>
                   </div>
                   <div className="flex items-center gap-4">
                     <div className="w-24 text-sm text-muted-foreground">
-                      Interactive
+                      {t("colors.interactive.label")}
                     </div>
                     <HeartIcon className={variants.icon.color.interactive()} />
-                    <span className="text-xs text-primary">Hover effects</span>
+                    <span className="text-xs text-primary">
+                      {t("colors.interactive.value")}
+                    </span>
                   </div>
                 </div>
               </div>
@@ -337,32 +345,34 @@ const IconsIllustrationsPage: React.FC<AppProps> = ({
               {/* Web3 Colors */}
               <div className={`${ui.background.subtle} rounded-xl p-8`}>
                 <h3 className={`${textVariants.heading.h3()} mb-6`}>
-                  Web3 Colors
+                  {t("colors.web3Title")}
                 </h3>
                 <div className="space-y-4">
                   <div className="flex items-center gap-4">
                     <div className="w-24 text-sm text-muted-foreground">
-                      Ethereum
+                      {t("colors.ethereum.label")}
                     </div>
                     <CubeIcon className={variants.icon.color.ethereum()} />
-                    <span className="text-xs text-info">Blue 600 / 400</span>
-                  </div>
-                  <div className="flex items-center gap-4">
-                    <div className="w-24 text-sm text-muted-foreground">
-                      Solana
-                    </div>
-                    <BoltIcon className={variants.icon.color.solana()} />
-                    <span className="text-xs text-secondary-foreground">
-                      Purple 600 / 400
+                    <span className="text-xs text-info">
+                      {t("colors.ethereum.value")}
                     </span>
                   </div>
                   <div className="flex items-center gap-4">
                     <div className="w-24 text-sm text-muted-foreground">
-                      Bitcoin
+                      {t("colors.solana.label")}
+                    </div>
+                    <BoltIcon className={variants.icon.color.solana()} />
+                    <span className="text-xs text-secondary-foreground">
+                      {t("colors.solana.value")}
+                    </span>
+                  </div>
+                  <div className="flex items-center gap-4">
+                    <div className="w-24 text-sm text-muted-foreground">
+                      {t("colors.bitcoin.label")}
                     </div>
                     <BanknotesIcon className={variants.icon.color.bitcoin()} />
                     <span className="text-xs text-warning">
-                      Orange 600 / 400
+                      {t("colors.bitcoin.value")}
                     </span>
                   </div>
                 </div>
@@ -373,19 +383,19 @@ const IconsIllustrationsPage: React.FC<AppProps> = ({
           {/* Context-Specific Icons */}
           <Section>
             <h2 className={`${textVariants.heading.h2()} mb-8`}>
-              Context-Specific Icons
+              {t("context.title")}
             </h2>
 
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
               {/* Button Icons */}
               <div className={`${ui.background.subtle} rounded-xl p-8`}>
                 <h3 className={`${textVariants.heading.h3()} mb-6`}>
-                  Button Icons
+                  {t("context.buttonTitle")}
                 </h3>
                 <div className="space-y-6">
                   <div>
                     <h4 className={`${textVariants.heading.h5()} mb-3`}>
-                      Leading Icon
+                      {t("context.leadingIcon")}
                     </h4>
                     <button
                       className={(variants.button as any).primary.default()}
@@ -393,17 +403,17 @@ const IconsIllustrationsPage: React.FC<AppProps> = ({
                       <PlusIcon
                         className={variants.icon.context.button.leading()}
                       />
-                      Add Item
+                      {t("context.addItem")}
                     </button>
                   </div>
                   <div>
                     <h4 className={`${textVariants.heading.h5()} mb-3`}>
-                      Trailing Icon
+                      {t("context.trailingIcon")}
                     </h4>
                     <button
                       className={(variants.button as any).outline.default()}
                     >
-                      Continue
+                      {t("context.continue")}
                       <ArrowRightIcon
                         className={variants.icon.context.button.trailing()}
                       />
@@ -411,7 +421,7 @@ const IconsIllustrationsPage: React.FC<AppProps> = ({
                   </div>
                   <div>
                     <h4 className={`${textVariants.heading.h5()} mb-3`}>
-                      Icon Only
+                      {t("context.iconOnly")}
                     </h4>
                     <button className={(variants.button as any).ghost.icon()}>
                       <CogIcon
@@ -425,12 +435,12 @@ const IconsIllustrationsPage: React.FC<AppProps> = ({
               {/* Input Icons */}
               <div className={`${ui.background.subtle} rounded-xl p-8`}>
                 <h3 className={`${textVariants.heading.h3()} mb-6`}>
-                  Input Icons
+                  {t("context.inputTitle")}
                 </h3>
                 <div className="space-y-6">
                   <div>
                     <h4 className={`${textVariants.heading.h5()} mb-3`}>
-                      Leading Icon
+                      {t("context.leadingIcon")}
                     </h4>
                     <div className="relative">
                       <MagnifyingGlassIcon
@@ -438,19 +448,19 @@ const IconsIllustrationsPage: React.FC<AppProps> = ({
                       />
                       <input
                         type="text"
-                        placeholder="Search..."
+                        placeholder={t("context.searchPlaceholder")}
                         className={`${(variants.input as any).default()} pl-10`}
                       />
                     </div>
                   </div>
                   <div>
                     <h4 className={`${textVariants.heading.h5()} mb-3`}>
-                      Trailing Interactive
+                      {t("context.trailingInteractive")}
                     </h4>
                     <div className="relative">
                       <input
                         type="password"
-                        placeholder="Password"
+                        placeholder={t("context.passwordPlaceholder")}
                         className={`${(variants.input as any).default()} pr-10`}
                       />
                       <EyeIcon
@@ -466,7 +476,7 @@ const IconsIllustrationsPage: React.FC<AppProps> = ({
           {/* Status Icons */}
           <Section>
             <h2 className={`${textVariants.heading.h2()} mb-8`}>
-              Status Icons
+              {t("status.title")}
             </h2>
 
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
@@ -475,9 +485,11 @@ const IconsIllustrationsPage: React.FC<AppProps> = ({
                   className={variants.icon.context.status.success()}
                 />
                 <div>
-                  <h4 className={textVariants.heading.h5()}>Success</h4>
+                  <h4 className={textVariants.heading.h5()}>
+                    {t("status.success.title")}
+                  </h4>
                   <p className={textVariants.body.sm()}>
-                    Operation completed successfully
+                    {t("status.success.description")}
                   </p>
                 </div>
               </div>
@@ -486,9 +498,11 @@ const IconsIllustrationsPage: React.FC<AppProps> = ({
                   className={variants.icon.context.status.warning()}
                 />
                 <div>
-                  <h4 className={textVariants.heading.h5()}>Warning</h4>
+                  <h4 className={textVariants.heading.h5()}>
+                    {t("status.warning.title")}
+                  </h4>
                   <p className={textVariants.body.sm()}>
-                    Please review and continue
+                    {t("status.warning.description")}
                   </p>
                 </div>
               </div>
@@ -497,8 +511,12 @@ const IconsIllustrationsPage: React.FC<AppProps> = ({
                   className={variants.icon.context.status.error()}
                 />
                 <div>
-                  <h4 className={textVariants.heading.h5()}>Error</h4>
-                  <p className={textVariants.body.sm()}>Something went wrong</p>
+                  <h4 className={textVariants.heading.h5()}>
+                    {t("status.error.title")}
+                  </h4>
+                  <p className={textVariants.body.sm()}>
+                    {t("status.error.description")}
+                  </p>
                 </div>
               </div>
               <div className={(variants.alert as any).info()}>
@@ -506,9 +524,11 @@ const IconsIllustrationsPage: React.FC<AppProps> = ({
                   className={variants.icon.context.status.info()}
                 />
                 <div>
-                  <h4 className={textVariants.heading.h5()}>Info</h4>
+                  <h4 className={textVariants.heading.h5()}>
+                    {t("status.info.title")}
+                  </h4>
                   <p className={textVariants.body.sm()}>
-                    Additional information
+                    {t("status.info.description")}
                   </p>
                 </div>
               </div>
@@ -518,14 +538,14 @@ const IconsIllustrationsPage: React.FC<AppProps> = ({
           {/* Web3 Icons */}
           <Section>
             <h2 className={`${textVariants.heading.h2()} mb-8`}>
-              Web3 Context Icons
+              {t("web3.title")}
             </h2>
 
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
               {/* Wallet Status */}
               <div className={`${ui.background.subtle} rounded-xl p-8`}>
                 <h3 className={`${textVariants.heading.h3()} mb-6`}>
-                  Wallet Status
+                  {t("web3.walletStatusTitle")}
                 </h3>
                 <div className="space-y-4">
                   <div className="flex items-center gap-4 p-4 bg-card rounded-lg">
@@ -534,7 +554,7 @@ const IconsIllustrationsPage: React.FC<AppProps> = ({
                     />
                     <div>
                       <div className={textVariants.heading.h5()}>
-                        Wallet Connected
+                        {t("web3.walletConnected")}
                       </div>
                       <div
                         className={`${textVariants.body.sm()} text-muted-foreground`}
@@ -549,12 +569,12 @@ const IconsIllustrationsPage: React.FC<AppProps> = ({
                     />
                     <div>
                       <div className={textVariants.heading.h5()}>
-                        No Wallet Connected
+                        {t("web3.noWalletConnected")}
                       </div>
                       <div
                         className={`${textVariants.body.sm()} text-muted-foreground`}
                       >
-                        Connect to continue
+                        {t("web3.connectToContinue")}
                       </div>
                     </div>
                   </div>
@@ -564,7 +584,7 @@ const IconsIllustrationsPage: React.FC<AppProps> = ({
               {/* Blockchain Icons */}
               <div className={`${ui.background.subtle} rounded-xl p-8`}>
                 <h3 className={`${textVariants.heading.h3()} mb-6`}>
-                  Blockchain Icons
+                  {t("web3.blockchainTitle")}
                 </h3>
                 <div className="space-y-4">
                   <div className="flex items-center gap-4 p-4 bg-card rounded-lg">
@@ -572,11 +592,13 @@ const IconsIllustrationsPage: React.FC<AppProps> = ({
                       className={variants.icon.context.web3.blockchain.ethereum()}
                     />
                     <div>
-                      <div className={textVariants.heading.h5()}>Ethereum</div>
+                      <div className={textVariants.heading.h5()}>
+                        {t("web3.ethereum.title")}
+                      </div>
                       <div
                         className={`${textVariants.body.sm()} text-muted-foreground`}
                       >
-                        ETH Network
+                        {t("web3.ethereum.network")}
                       </div>
                     </div>
                   </div>
@@ -585,11 +607,13 @@ const IconsIllustrationsPage: React.FC<AppProps> = ({
                       className={variants.icon.context.web3.blockchain.solana()}
                     />
                     <div>
-                      <div className={textVariants.heading.h5()}>Solana</div>
+                      <div className={textVariants.heading.h5()}>
+                        {t("web3.solana.title")}
+                      </div>
                       <div
                         className={`${textVariants.body.sm()} text-muted-foreground`}
                       >
-                        SOL Network
+                        {t("web3.solana.network")}
                       </div>
                     </div>
                   </div>
@@ -598,11 +622,13 @@ const IconsIllustrationsPage: React.FC<AppProps> = ({
                       className={variants.icon.context.web3.blockchain.bitcoin()}
                     />
                     <div>
-                      <div className={textVariants.heading.h5()}>Bitcoin</div>
+                      <div className={textVariants.heading.h5()}>
+                        {t("web3.bitcoin.title")}
+                      </div>
                       <div
                         className={`${textVariants.body.sm()} text-muted-foreground`}
                       >
-                        BTC Network
+                        {t("web3.bitcoin.network")}
                       </div>
                     </div>
                   </div>
@@ -614,7 +640,7 @@ const IconsIllustrationsPage: React.FC<AppProps> = ({
           {/* Decorative Icons */}
           <Section>
             <h2 className={`${textVariants.heading.h2()} mb-8`}>
-              Decorative Icons
+              {t("decorative.title")}
             </h2>
 
             <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
@@ -624,12 +650,12 @@ const IconsIllustrationsPage: React.FC<AppProps> = ({
               >
                 <FireIcon className={variants.icon.decorative.hero.large()} />
                 <h3 className={`${textVariants.heading.h3()} mt-4 mb-2`}>
-                  Hero Large
+                  {t("decorative.heroLarge.title")}
                 </h3>
                 <p
                   className={`${textVariants.body.sm()} text-muted-foreground`}
                 >
-                  80px × 80px
+                  {t("decorative.heroLarge.size")}
                 </p>
               </div>
 
@@ -640,12 +666,12 @@ const IconsIllustrationsPage: React.FC<AppProps> = ({
                   className={variants.icon.decorative.hero.medium()}
                 />
                 <h3 className={`${textVariants.heading.h3()} mt-4 mb-2`}>
-                  Hero Medium
+                  {t("decorative.heroMedium.title")}
                 </h3>
                 <p
                   className={`${textVariants.body.sm()} text-muted-foreground`}
                 >
-                  64px × 64px
+                  {t("decorative.heroMedium.size")}
                 </p>
               </div>
 
@@ -656,12 +682,12 @@ const IconsIllustrationsPage: React.FC<AppProps> = ({
                   className={variants.icon.decorative.hero.small()}
                 />
                 <h3 className={`${textVariants.heading.h3()} mt-4 mb-2`}>
-                  Hero Small
+                  {t("decorative.heroSmall.title")}
                 </h3>
                 <p
                   className={`${textVariants.body.sm()} text-muted-foreground`}
                 >
-                  48px × 48px
+                  {t("decorative.heroSmall.size")}
                 </p>
               </div>
             </div>
@@ -670,7 +696,7 @@ const IconsIllustrationsPage: React.FC<AppProps> = ({
           {/* Icon Browser */}
           <Section>
             <h2 className={`${textVariants.heading.h2()} mb-8`}>
-              Icon Browser
+              {t("browser.title")}
             </h2>
 
             {/* Category Filter */}
@@ -685,7 +711,7 @@ const IconsIllustrationsPage: React.FC<AppProps> = ({
                       : "bg-muted text-foreground hover:bg-muted/80"
                   }`}
                 >
-                  {category.name} ({category.count})
+                  {t(`browser.categories.${category.id}`)} ({category.count})
                 </button>
               ))}
             </div>
@@ -713,7 +739,7 @@ const IconsIllustrationsPage: React.FC<AppProps> = ({
           {/* Design Tokens */}
           <Section>
             <h2 className={`${textVariants.heading.h2()} mb-8`}>
-              Available Icon Variants
+              {t("tokens.title")}
             </h2>
 
             <div className={`${ui.background.subtle} rounded-xl p-8`}>
@@ -721,7 +747,7 @@ const IconsIllustrationsPage: React.FC<AppProps> = ({
                 {/* Size Variants */}
                 <div>
                   <h4 className={`${textVariants.heading.h4()} mb-4`}>
-                    Size Variants
+                    {t("tokens.sizeVariants")}
                   </h4>
                   <div className="space-y-2 text-sm">
                     <div>
@@ -755,7 +781,7 @@ const IconsIllustrationsPage: React.FC<AppProps> = ({
                 {/* Color Variants */}
                 <div>
                   <h4 className={`${textVariants.heading.h4()} mb-4`}>
-                    Color Variants
+                    {t("tokens.colorVariants")}
                   </h4>
                   <div className="space-y-2 text-sm">
                     <div>
@@ -789,7 +815,7 @@ const IconsIllustrationsPage: React.FC<AppProps> = ({
                 {/* Context Variants */}
                 <div>
                   <h4 className={`${textVariants.heading.h4()} mb-4`}>
-                    Context Variants
+                    {t("tokens.contextVariants")}
                   </h4>
                   <div className="space-y-2 text-sm">
                     <div>
@@ -818,7 +844,7 @@ const IconsIllustrationsPage: React.FC<AppProps> = ({
                 {/* Combined Variants */}
                 <div>
                   <h4 className={`${textVariants.heading.h4()} mb-4`}>
-                    Combined Variants
+                    {t("tokens.combinedVariants")}
                   </h4>
                   <div className="space-y-2 text-sm">
                     <div>
@@ -854,13 +880,13 @@ const IconsIllustrationsPage: React.FC<AppProps> = ({
               className={`${(variants.button as any).secondary.default()} group`}
             >
               <ChevronLeftIcon className="h-4 w-4 mr-2 group-hover:-translate-x-1 transition-transform" />
-              Tables & Data Grids
+              {t("navigation.previous")}
             </LocalizedLink>
             <LocalizedLink
               to="/design"
               className={(variants.button as any).outline.default()}
             >
-              Back to Design System
+              {t("navigation.backToDesignSystem")}
             </LocalizedLink>
             <div className="w-32" /> {/* Spacer for next section when added */}
           </div>

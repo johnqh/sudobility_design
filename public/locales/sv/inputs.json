@@ -1,0 +1,136 @@
+{
+  "seo": {
+    "title": "Indata - Designsystem - Intern - {{emailDomain}}",
+    "description": "Komplett dokumentation av inmatningskomponenter med variationer, storlekar, tillstånd och Web3-integration"
+  },
+  "code": {
+    "copied": "✓ Kopierat!",
+    "copy": "Kopiera"
+  },
+  "header": {
+    "badge": "Indata",
+    "title": "Indatakomponenter",
+    "intro": "Komponenter för formulärindata med konsekvent stil, valideringslägen och tillgänglighetsfunktioner som är utformade för både traditionella och Web3-applikationer."
+  },
+  "stats": {
+    "inputTypes": "Indatatyper",
+    "sizeOptions": "Storleksval",
+    "stateTypes": "Statsformer",
+    "web3Patterns": "Web3-mönster"
+  },
+  "sections": {
+    "quickStart": {
+      "title": "🚀 Snabbstart",
+      "description": "Börja med de vanligaste inmatningsmönstren. Dessa exempel visar viktiga inmatningstyper med validering och tillgänglighetsfunktioner."
+    },
+    "variants": {
+      "title": "🎨 Indatavarianter",
+      "description": "Utforska alla tillgängliga inmatningsvarianter med deras specifika användningsområden och stilalternativ för olika sammanhang."
+    },
+    "web3": {
+      "title": "⚡ Web3-inmatningsmönster",
+      "description": "Specialiserade inmatningsmönster som ofta används i Web3-applikationer, inklusive plånboksadresser, ENS-domäner och tokenbelopp."
+    },
+    "accessibility": {
+      "title": "♿ Tillgänglighetsrikklinjer",
+      "description": "Se till att dina inmatningar är tillgängliga för alla användare med rätt etikettering, tangentbordsnavigering och stöd för skärmläsare."
+    }
+  },
+  "validation": {
+    "emailInvalid": "Ange en giltig e-postadress",
+    "emailValid": "Giltig e-postadress",
+    "walletInvalid": "Ange en giltig Ethereum-adress",
+    "walletValid": "Giltig Ethereum-adress"
+  },
+  "quickStart": {
+    "essentialTitle": "1. Viktiga inmatningstyper",
+    "emailLabel": "E-postadress",
+    "passwordLabel": "Lösenord",
+    "passwordPlaceholder": "Ange ditt lösenord",
+    "searchLabel": "Sök",
+    "searchPlaceholder": "Sök meddelanden...",
+    "messageLabel": "Meddelande",
+    "messagePlaceholder": "Skriv ditt meddelande...",
+    "sizesTitle": "2. Storleksvariationer",
+    "smallLabel": "Liten inmatning",
+    "smallPlaceholder": "Liten storlek på inmatning",
+    "defaultLabel": "Standardindata",
+    "defaultPlaceholder": "Standardstorlek inmatning",
+    "largeLabel": "Stor inmatning",
+    "largePlaceholder": "Stor inmatning",
+    "validationTitle": "3. Valideringslägen",
+    "errorStateLabel": "Fel tillstånd",
+    "successStateLabel": "Framgångstillstånd",
+    "web3Title": "4. Web3-specifika inmatningar",
+    "walletLabel": "Plånboksadress",
+    "amountLabel": "Tokenbelopp",
+    "amountBalance": "Saldo: 2,4563 ETH"
+  },
+  "variants": {
+    "standardTitle": "Standardvarianter",
+    "specializedTitle": "Specialiserade typer",
+    "defaultLabel": "Standardindata",
+    "defaultPlaceholder": "Standardindatafält",
+    "defaultHint": "Vanligaste inmatningsstil",
+    "searchLabel": "Sökindata",
+    "searchPlaceholder": "Sökfunktion",
+    "searchHint": "Optimerat för söknyttan",
+    "errorLabel": "Fel tillstånd",
+    "errorPlaceholder": "Ogiltig inmatning",
+    "errorHint": "För valideringsfel",
+    "iconLabel": "Med ikon",
+    "iconHint": "Med ikonplacering till vänster",
+    "phoneLabel": "Telefonnummer",
+    "urlLabel": "Webbplatsens URL",
+    "dateLabel": "Datum",
+    "fileLabel": "Filuppladdning"
+  },
+  "web3": {
+    "walletInputsTitle": "Plånboksinmatningar",
+    "ethAddressLabel": "Ethereum-adress",
+    "solAddressLabel": "Solana-adress",
+    "ensLabel": "ENS-domän",
+    "snsLabel": "SNS-domän",
+    "tokenAmountsTitle": "Tokenbelopp inmatning",
+    "ethAmountLabel": "ETH-belopp",
+    "usdcAmountLabel": "USDC-belopp",
+    "max": "MAX",
+    "ethBalance": "Saldo: 2,4563 ETH",
+    "usdcBalance": "Saldo: 1 547,23 USDC",
+    "gasTitle": "Konfiguration av avgifter för gas",
+    "gasPriceLabel": "Gaspris (Gwei)",
+    "gasSlow": "Långsamt",
+    "gasStandard": "Standard",
+    "gasFast": "Snabbt",
+    "gasSlowTime": "~5 min",
+    "gasStandardTime": "~2 min",
+    "gasFastTime": "~1 min",
+    "customGasLabel": "Anpassad gaspris",
+    "customGasHint": "Uppskattad kostnad: 8,45 USD • Uppskattad tid: ~2 minuter"
+  },
+  "accessibility": {
+    "bestPracticesTitle": "✅ Bästa praxis",
+    "bestPractices": [
+      "Ange alltid beskrivande etiketter för skärmläsare",
+      "Använd lämpliga inmatningstyper (e-post, telefon, webbplats, etc.)",
+      "Lägg till användbar platsbehållartext och instruktioner",
+      "Ge tydliga felmeddelanden med förslag",
+      "Se till att det finns tillräcklig färgkontrast (minst 4,5:1)",
+      "Stöd för tangentbordsnavigation och fokuslägen"
+    ],
+    "avoidTitle": "❌ Undvik",
+    "avoid": [
+      "Användning av platsersättningstext som endast etikett",
+      "Lita endast på färg för att visa valideringslägen",
+      "Göra inmatningarna för små för bekvämlig interaktion",
+      "Att ge vagda eller olösliga felmeddelanden",
+      "Avstänga webbläsarautofyllning utan god anledning",
+      "Ta bort fokusindikatorer eller göra dem svåra att se"
+    ],
+    "examplesTitle": "Exempel på tillgänglighetsimplementering"
+  },
+  "nav": {
+    "back": "Tillbaka till designsystemet",
+    "lastUpdated": "Senast uppdaterat: {{date}}"
+  }
+}

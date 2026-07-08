@@ -1,0 +1,132 @@
+{
+  "seo": {
+    "title": "Insignes - {{appName}}",
+    "description": "Composants et variantes de badges pour le système de conception"
+  },
+  "header": {
+    "badge": "Badges",
+    "title": "Composants de badge",
+    "intro": "Petits composants polyvalents pour l'étiquetage, la catégorisation et la transmission d'informations d'état avec des couleurs sémantiques et des états interactifs."
+  },
+  "stats": {
+    "badgeVariants": "Variants de badge",
+    "sizeOptions": "Options de taille",
+    "stateTypes": "Types d'État",
+    "web3Variants": "Variants de Web3"
+  },
+  "sections": {
+    "quickStart": {
+      "title": "🚀 Démarrage rapide",
+      "description": "Commencez avec les modèles de badges les plus couramment utilisés. Copiez-collez ces exemples pour intégrer rapidement des badges dans vos composants.",
+      "essentialTitle": "1. Types essentiels de badges",
+      "essential": {
+        "default": "Par défaut",
+        "primary": "Principal",
+        "success": "Succès",
+        "warning": "Avertissement",
+        "error": "Erreur"
+      },
+      "statusTitle": "2. Badges d'état avec icônes",
+      "status": {
+        "active": "Actif",
+        "pending": "En attente",
+        "failed": "Échec",
+        "info": "Informations"
+      },
+      "sizesTitle": "3. Variations de taille",
+      "sizes": {
+        "small": "Petit",
+        "default": "Par défaut",
+        "large": "Grand"
+      },
+      "web3Title": "4. Badges d'intégration Web3",
+      "web3": {
+        "ethereum": "Ethereum",
+        "solana": "Solana",
+        "verified": "Vérifié"
+      }
+    },
+    "variants": {
+      "title": "🎨 Variants de badge",
+      "description": "Explorez toutes les variantes de couleur de badge disponibles, leurs significations sémantiques et leurs cas d'utilisation appropriés.",
+      "semanticTitle": "Couleurs sémantiques",
+      "web3Title": "Spécifique à Web3",
+      "semantic": {
+        "default": "Par défaut",
+        "defaultDesc": "Informations générales et neutres",
+        "primary": "Principal",
+        "primaryDesc": "Couleurs de marque, éléments importants à souligner",
+        "success": "Succès",
+        "successDesc": "Actions terminées, statut positif",
+        "warning": "Avertissement",
+        "warningDesc": "Précaution requise, actions en attente",
+        "error": "Erreur",
+        "errorDesc": "Actions échouées, problèmes critiques"
+      },
+      "web3": {
+        "ethereum": "Ethereum",
+        "ethereumDesc": "lié à la blockchain Ethereum",
+        "solana": "Solana",
+        "solanaDesc": "lié à la blockchain Solana"
+      }
+    },
+    "sizes": {
+      "title": "📏 Options de taille",
+      "description": "Différentes tailles d'insignes pour divers cas d'utilisation, allant d'indicateurs compacts à des étiquettes prominentes.",
+      "small": {
+        "heading": "Petit",
+        "badge": "Petit badge",
+        "desc": "Format compact pour les mises en page denses"
+      },
+      "default": {
+        "heading": "Par défaut",
+        "badge": "Badge par défaut",
+        "desc": "Taille standard pour la plupart des cas d'utilisation"
+      },
+      "large": {
+        "heading": "Grand",
+        "badge": "Grande médaille",
+        "desc": "Taille importante pour l'accentuation"
+      }
+    },
+    "interactive": {
+      "title": "⚡ Modèles interactifs",
+      "description": "Exemples du monde réel de la manière dont les badges sont utilisés dans différents contextes et composants.",
+      "userStatusTitle": "Indicateurs d'état de l'utilisateur",
+      "userStatus": {
+        "online": "En ligne",
+        "away": "Partir",
+        "offline": "Hors ligne"
+      },
+      "notificationTitle": "Nombre de notifications",
+      "notification": {
+        "messages": "📧 Messages",
+        "notifications": "🔔 Notifications",
+        "updates": "⭐ Mises à jour"
+      }
+    },
+    "accessibility": {
+      "title": "♿ Lignes directrices sur l'accessibilité",
+      "description": "Assurez-vous que vos badges soient accessibles à tous les utilisateurs grâce à un contraste adéquat, au support des lecteurs d'écran et à la navigation au clavier.",
+      "bestPracticesTitle": "✅ Meilleures pratiques",
+      "bestPractices": [
+        "Utilisez des couleurs sémantiques qui transmettent un sens de manière cohérente",
+        "Assurez un contraste de couleur suffisant (au moins 4,5:1)",
+        "Inclure des étiquettes de texte, et non seulement des couleurs ou des icônes",
+        "Utilisez des étiquettes ARIA appropriées pour les lecteurs d'écran",
+        "Gardez le texte du badge court et significatif"
+      ],
+      "avoidTitle": "❌ Éviter",
+      "avoid": [
+        "Se baser uniquement sur la couleur pour transmettre des informations",
+        "Utiliser trop d'insignes dans une même interface",
+        "Rendre les badges trop petits pour les lire confortablement",
+        "Utiliser un texte d'étiquette ambigu ou peu clair",
+        "Utilisation excessive de badges animés ou clignotants"
+      ],
+      "ariaExamplesTitle": "Exemples ARIA"
+    }
+  },
+  "backToDesignSystem": "Retour au système de conception",
+  "lastUpdated": "Dernière mise à jour : {{date}}"
+}

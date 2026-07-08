@@ -1,0 +1,130 @@
+{
+  "seo": {
+    "title": "按钮 - 设计系统 - 内部 - {{emailDomain}}",
+    "description": "完成按钮组件库，包含所有变体、尺寸、状态和交互"
+  },
+  "codeExample": {
+    "preview": "预览",
+    "usage": "使用"
+  },
+  "header": {
+    "badge": "按钮组件",
+    "title": "按钮库与交互模式",
+    "intro": "功能全面的按钮组件系统，具备一致的变体、尺寸、状态和交互行为。所有按钮均支持加载状态、正确的焦点管理以及无障碍功能。"
+  },
+  "quickStart": {
+    "title": "快速入门 - 必备按钮模式",
+    "description": "具有一致样式、状态和行为模式的即用型按钮组件。",
+    "primary": {
+      "title": "主要操作按钮",
+      "button": "主要操作"
+    },
+    "secondary": {
+      "title": "次要按钮",
+      "button": "次要操作"
+    },
+    "outline": {
+      "title": "轮廓按钮",
+      "button": "轮廓操作"
+    },
+    "ghost": {
+      "title": "幽灵按钮",
+      "button": "幽灵行动"
+    }
+  },
+  "variants": {
+    "title": "按钮变体",
+    "description": "适用于不同使用场景和层级的按钮样式。",
+    "colors": {
+      "title": "颜色变体",
+      "description": "主按钮、次按钮、成功按钮、警告按钮和破坏性按钮的颜色",
+      "primary": "主要",
+      "success": "成功",
+      "warning": "警告",
+      "destructive": "破坏性的"
+    },
+    "sizes": {
+      "title": "按钮大小",
+      "description": "适用于不同场景的小、默认和大按钮尺寸",
+      "small": "小",
+      "default": "默认",
+      "large": "大"
+    }
+  },
+  "states": {
+    "title": "按钮状态",
+    "description": "包括悬停、激活、焦点、加载和禁用的交互状态。",
+    "interactive": {
+      "title": "交互状态",
+      "description": "正常、悬停、激活和焦点状态，带有适当的过渡效果",
+      "button": "交互式按钮",
+      "secondary": "次要交互"
+    },
+    "loading": {
+      "title": "加载和禁用状态",
+      "description": "加载指示器集成和正确的禁用样式",
+      "loadingLabel": "加载中...",
+      "demoLabel": "演示加载",
+      "disabled": "已禁用"
+    }
+  },
+  "icons": {
+    "title": "图标按钮及组合",
+    "description": "带图标的按钮、仅图标按钮和切换按钮，以增强可用性。",
+    "withIcons": {
+      "title": "带图标的按钮",
+      "description": "文本按钮通过图标增强，以提高识别度",
+      "sendMessage": "发送消息",
+      "download": "下载",
+      "settingsTitle": "设置"
+    },
+    "toggle": {
+      "title": "切换和操作按钮",
+      "description": "切换按钮和特定操作按钮模式",
+      "liked": "喜欢",
+      "like": "像",
+      "delete": "删除",
+      "edit": "编辑"
+    }
+  },
+  "groups": {
+    "title": "按钮组和组合",
+    "description": "分组按钮、按钮栏以及复杂界面中的操作组合。",
+    "buttonGroups": {
+      "title": "按钮组",
+      "description": "用于相关操作的连接按钮组",
+      "connectedLabel": "已连接组：",
+      "previous": "上一页",
+      "current": "当前",
+      "next": "下一个",
+      "spacedLabel": "间隔分组：",
+      "primary": "主要",
+      "secondary": "二级",
+      "cancel": "取消"
+    },
+    "actionBars": {
+      "title": "操作栏和工具栏",
+      "description": "工具栏和操作区域的复杂按钮组合",
+      "new": "新",
+      "editTitle": "编辑",
+      "shareTitle": "分享",
+      "cancel": "取消",
+      "delete": "删除"
+    }
+  },
+  "accessibility": {
+    "title": "可访问性与最佳实践",
+    "guidelinesTitle": "按钮可访问性指南",
+    "list": {
+      "semanticBefore": "使用语义",
+      "semanticAfter": "元素而不是div",
+      "contrast": "确保足够的颜色对比度（最小对比度为4.5:1）",
+      "focus": "为键盘导航包含焦点状态",
+      "loadingStates": "添加加载状态以防止重复提交",
+      "ariaLabels": "为仅包含图标按钮使用适当的 ARIA 标签",
+      "touchTarget": "保持最小触摸目标大小（44px x 44px）",
+      "feedback": "为所有状态提供清晰的视觉反馈",
+      "grouping": "使用适当的间距，逻辑地分组相关按钮"
+    }
+  }
+}

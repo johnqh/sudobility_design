@@ -1,0 +1,127 @@
+{
+  "seo": {
+    "title": "Barrierefreiheit & A11Y - Design-System - Intern - {{emailDomain}}",
+    "description": "Umfassende Zugänglichkeitsmuster und inklusive Design-Tools für die WCAG-Konformität"
+  },
+  "header": {
+    "badge": "Barrierefreiheit & A11Y",
+    "title": "Inklusives Gestaltungssystem",
+    "intro": "Umfassende Zugänglichkeitsmuster und -tools zur Erstellung inklusiver, WCAG-konformer Web3-Anwendungen. Diese Muster stellen eine gleichberechtigte Nutzung für alle Benutzer sicher, einschließlich solcher, die Hilfstechnologien verwenden."
+  },
+  "stats": {
+    "wcag": {
+      "value": "WCAG 2.1",
+      "label": "AA-konform"
+    },
+    "touch": {
+      "value": "44px+",
+      "label": "Berührbare Ziele"
+    },
+    "contrast": {
+      "value": "4,5:1",
+      "label": "Farbkontrast"
+    },
+    "screenReader": {
+      "value": "Bildschirmleser",
+      "label": "Kompatibel"
+    }
+  },
+  "screenReader": {
+    "title": "Unterstützung für Bildschirmleser",
+    "description": "Umfassende Bildschirmleser-Pattern, einschließlich Sprunglinks, aria-Bezeichnungen und semantisches HTML.",
+    "skipLink": {
+      "title": "Sprunglink",
+      "button": "Sprunglink (Fokus anzeigen)",
+      "visible": "✓ Sprungmarke ist nun sichtbar! Dies hilft Tastaturnutzern, schnell zu navigieren."
+    },
+    "only": {
+      "title": "Nur für Bildschirmleser gedachte Inhalte",
+      "description": "Dieser Inhalt bietet Kontext für Bildschirmleser, ohne die visuelle Gestaltung zu belasten.",
+      "hidden": "Dieser Text ist nur für Bildschirmleser sichtbar"
+    }
+  },
+  "focus": {
+    "title": "Fokus-Management",
+    "description": "Entfernen Sie Fokusindikatoren und Tastatur-Navigationsmuster für alle interaktiven Elemente.",
+    "indicatorsTitle": "Fokusindikatoren",
+    "standard": "Standard-Fokus",
+    "highContrast": "Hoher Kontrast",
+    "wallet": "Web3-Wallet",
+    "error": "Fehlerzustand"
+  },
+  "contrast": {
+    "title": "Farbkontrast",
+    "description": "Hochkontrastige Text- und Hintergrundkombinationen, die die WCAG-AA-Anforderungen übertreffen.",
+    "levelsTitle": "Textkontraststufen",
+    "high": "Hohes Kontrast-Text (WCAG AAA) - Verhältnis 7:1+",
+    "medium": "Text mit mittlerem Kontrast (WCAG AA) - Verhältnis 4,5:1+",
+    "low": "Text mit geringem Kontrast (für sekundäre Inhalte)",
+    "backgroundsTitle": "Hochkontrast-Hintergründe",
+    "primary": "Primär",
+    "success": "Erfolg",
+    "warning": "Warnung",
+    "errorLabel": "Fehler"
+  },
+  "motion": {
+    "title": "Bewegungseinstellungen",
+    "description": "Animationen, die die Bewegungspräferenzen des Benutzers respektieren und Alternativen für Benutzer mit vestibulären Störungen bieten.",
+    "controlsTitle": "Bewegungspräferenzsteuerung",
+    "reduceMotion": "Bewegung reduzieren",
+    "noAnimation": "Keine Animation",
+    "animatedButton": "Animierter Button"
+  },
+  "form": {
+    "title": "Formularbarrierefreiheit",
+    "description": "Zugängliche Formularmuster mit korrekter Beschriftung, Validierung und Fehlerbehandlung.",
+    "requiredTitle": "Pflichtfeld-Indikatoren",
+    "emailLabel": "E-Mail-Adresse",
+    "passwordLabel": "Passwort",
+    "passwordError": "Das Passwort muss mindestens 8 Zeichen lang sein",
+    "codeExamplesTitle": "Code-Beispiele"
+  },
+  "feedback": {
+    "title": "Zugängliche Rückmeldung",
+    "description": "Feedback-Nachrichten, die für Bildschirmleser geeignet sind, mit geeigneten ARIA live regions.",
+    "messageTypesTitle": "Nachrichtentypen",
+    "successTitle": "Erfolg",
+    "successMessage": "Ihr Wallet wurde erfolgreich verbunden!",
+    "errorTitle": "Fehler",
+    "errorMessage": "Transaktion fehlgeschlagen. Bitte versuchen Sie es erneut.",
+    "liveRegionTitle": "Live-Bereich-Muster",
+    "politeExample": "Dieser Inhalt wird den Bildschirmlesern höflich angekündigt",
+    "assertiveExample": "Dieser Inhalt unterbricht Bildschirmleser für wichtige Warnungen"
+  },
+  "web3": {
+    "title": "Web3-Zugänglichkeit",
+    "description": "Spezialisierte Barrierefreiheitsmuster für Web3-Anwendungen, einschließlich Wallet-Verbindungen und Transaktionen.",
+    "componentsTitle": "Web3-Komponenten",
+    "connectWallet": "Wallet verbinden",
+    "connectWalletAria": "Verbinden Sie Ihre Web3-Wallet",
+    "transactionAria": "Transaktionsstatus",
+    "transactionPending": "Transaktion ausstehend...",
+    "balanceAria": "Kontostand beträgt 1,5 ETH",
+    "addressAria": "Brieftaschen-Adresse 0x1234...5678",
+    "implementationTitle": "Implementierung"
+  },
+  "bestPractices": {
+    "title": "Beste Praktiken",
+    "doTitle": "✅ Mach das",
+    "do": [
+      "Verwenden Sie semantische HTML-Elemente (button, nav, main, usw.)",
+      "Geben Sie beschreibende aria-labels für interaktive Elemente an",
+      "Stellen Sie sicher, dass bei mobilen Geräten Mindestabmessungen von 44px für Touch-Ziele eingehalten werden",
+      "Test mit der Navigierung nur mit der Tastatur",
+      "Respektieren Sie die Bewegungspräferenzen des Benutzers",
+      "Geben Sie alternatives Text für komplexe Web3-Konzepte an"
+    ],
+    "avoidTitle": "❌ Vermeide das",
+    "avoid": [
+      "Farbe allein zur Veranschaulichung von Informationen verwenden",
+      "Erstellen von Tastaturfallen ohne Fluchtmöglichkeiten",
+      "Automatisch abspielende Videos oder Animationen",
+      "Verwendung generischer Labels wie \"Hier klicken\" oder \"Mehr lesen\"",
+      "Fokussierungsindikatoren vollständig entfernen",
+      "Verwendung von Web3-Jargon ohne Erklärungen"
+    ]
+  }
+}

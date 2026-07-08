@@ -7,6 +7,7 @@ import {
   XMarkIcon,
 } from "@heroicons/react/24/outline";
 import React, { useState } from "react";
+import { useTranslation } from "react-i18next";
 import { SEOHead } from "@sudobility/seo_lib";
 import { Button, Card, CardContent } from "@sudobility/components";
 import { textVariants, ui, variants } from "@sudobility/design";
@@ -20,6 +21,7 @@ const MicroInteractionsAnimationsPage: React.FC<AppProps> = ({
   emailDomain,
   appName: _appName,
 }) => {
+  const { t } = useTranslation("microInteractions");
   const [isLoading, setIsLoading] = useState(false);
   const [progress, setProgress] = useState(0);
   const [walletStatus, setWalletStatus] = useState<
@@ -53,8 +55,8 @@ const MicroInteractionsAnimationsPage: React.FC<AppProps> = ({
   return (
     <>
       <SEOHead
-        title={`Micro-Interactions & Animations - Design System - Internal - ${emailDomain}`}
-        description="Comprehensive animation system with hover effects, transitions, and Web3-specific interactions"
+        title={t("seo.title", { emailDomain })}
+        description={t("seo.description")}
         noIndex={true}
       />
 
@@ -67,21 +69,18 @@ const MicroInteractionsAnimationsPage: React.FC<AppProps> = ({
             <div className="inline-flex items-center bg-accent/10 px-4 py-2 rounded-full mb-6">
               <CursorArrowRippleIcon className="h-5 w-5 text-accent mr-2" />
               <span className="text-accent font-semibold">
-                Micro-Interactions & Animations
+                {t("header.badge")}
               </span>
             </div>
 
             <h1 className={`${textVariants.heading.display.xl()} mb-6`}>
-              Micro-Interactions & Animations
+              {t("header.title")}
             </h1>
 
             <p
               className={`${textVariants.body.lg()} max-w-3xl mx-auto text-muted-foreground mb-8`}
             >
-              Comprehensive animation system with hover effects, loading states,
-              transitions, and Web3-specific interactions. All animations
-              respect user motion preferences and provide smooth, delightful
-              user experiences.
+              {t("header.description")}
             </p>
 
             {/* Quick Stats */}
@@ -93,7 +92,7 @@ const MicroInteractionsAnimationsPage: React.FC<AppProps> = ({
                   200+
                 </div>
                 <div className={textVariants.caption.default()}>
-                  Animation Variants
+                  {t("stats.variants")}
                 </div>
               </div>
               <div className={`${ui.background.subtle} rounded-lg p-4`}>
@@ -103,7 +102,7 @@ const MicroInteractionsAnimationsPage: React.FC<AppProps> = ({
                   60fps
                 </div>
                 <div className={textVariants.caption.default()}>
-                  Smooth Performance
+                  {t("stats.performance")}
                 </div>
               </div>
               <div className={`${ui.background.subtle} rounded-lg p-4`}>
@@ -113,7 +112,7 @@ const MicroInteractionsAnimationsPage: React.FC<AppProps> = ({
                   A11Y
                 </div>
                 <div className={textVariants.caption.default()}>
-                  Motion Safe
+                  {t("stats.motionSafe")}
                 </div>
               </div>
               <div className={`${ui.background.subtle} rounded-lg p-4`}>
@@ -123,7 +122,7 @@ const MicroInteractionsAnimationsPage: React.FC<AppProps> = ({
                   Web3
                 </div>
                 <div className={textVariants.caption.default()}>
-                  Specialized
+                  {t("stats.specialized")}
                 </div>
               </div>
             </div>
@@ -137,67 +136,64 @@ const MicroInteractionsAnimationsPage: React.FC<AppProps> = ({
                   <CursorArrowRippleIcon
                     className={`${variants.icon.size.lg()} text-accent mr-3`}
                   />
-                  <h2 className={textVariants.heading.h3()}>Hover Effects</h2>
+                  <h2 className={textVariants.heading.h3()}>
+                    {t("hover.title")}
+                  </h2>
                 </div>
 
                 <p
                   className={`${textVariants.body.md()} text-muted-foreground mb-6`}
                 >
-                  Subtle but engaging hover effects for buttons, cards, and
-                  interactive elements.
+                  {t("hover.description")}
                 </p>
 
                 <div className="space-y-4">
                   <div>
                     <h4 className={`${textVariants.heading.h5()} mb-3`}>
-                      Button Hover Effects
+                      {t("hover.buttonEffectsTitle")}
                     </h4>
                     <div className="grid grid-cols-2 gap-3">
                       <Button
                         variant="default"
                         className={variants.animations.hover.button.lift()}
                       >
-                        Lift Effect
+                        {t("hover.liftEffect")}
                       </Button>
                       <Button
                         variant="secondary"
                         className={variants.animations.hover.button.glow()}
                       >
-                        Glow Effect
+                        {t("hover.glowEffect")}
                       </Button>
                       <Button
                         variant="default"
                         className={variants.animations.hover.button.scale()}
                       >
-                        Scale Effect
+                        {t("hover.scaleEffect")}
                       </Button>
                       <Button
                         variant="secondary"
                         className={variants.animations.hover.button.shimmer()}
                       >
-                        Shimmer Effect
+                        {t("hover.shimmerEffect")}
                       </Button>
                     </div>
                   </div>
 
                   <div>
                     <h4 className={`${textVariants.heading.h5()} mb-3`}>
-                      Card Hover Effects
+                      {t("hover.cardEffectsTitle")}
                     </h4>
                     <div className="grid grid-cols-1 gap-3">
                       <div
                         className={`p-4 border rounded-lg ${variants.animations.hover.card.subtle()}`}
                       >
-                        <p className="text-sm">
-                          Subtle hover effect - lifts gently
-                        </p>
+                        <p className="text-sm">{t("hover.cardSubtle")}</p>
                       </div>
                       <div
                         className={`p-4 border rounded-lg ${variants.animations.hover.card.glow()}`}
                       >
-                        <p className="text-sm">
-                          Glow hover effect - adds soft glow
-                        </p>
+                        <p className="text-sm">{t("hover.cardGlow")}</p>
                       </div>
                     </div>
                   </div>
@@ -221,20 +217,21 @@ variants.animations.hover.icon.bounce()`}
                   <ArrowPathIcon
                     className={`${variants.icon.size.lg()} text-primary mr-3`}
                   />
-                  <h2 className={textVariants.heading.h3()}>Loading States</h2>
+                  <h2 className={textVariants.heading.h3()}>
+                    {t("loading.title")}
+                  </h2>
                 </div>
 
                 <p
                   className={`${textVariants.body.md()} text-muted-foreground mb-6`}
                 >
-                  Loading animations and progress indicators that keep users
-                  engaged.
+                  {t("loading.description")}
                 </p>
 
                 <div className="space-y-4">
                   <div>
                     <h4 className={`${textVariants.heading.h5()} mb-3`}>
-                      Spinners
+                      {t("loading.spinnersTitle")}
                     </h4>
                     <div className="flex items-center space-x-4">
                       <div
@@ -251,7 +248,7 @@ variants.animations.hover.icon.bounce()`}
 
                   <div>
                     <h4 className={`${textVariants.heading.h5()} mb-3`}>
-                      Interactive Demo
+                      {t("loading.interactiveDemoTitle")}
                     </h4>
                     <Button
                       onClick={simulateLoading}
@@ -263,16 +260,16 @@ variants.animations.hover.icon.bounce()`}
                           <div
                             className={`w-4 h-4 border-2 border-primary-foreground border-t-transparent rounded-full ${variants.animations.loading.spinner.default()} mr-2`}
                           ></div>
-                          Loading...
+                          {t("loading.loadingLabel")}
                         </>
                       ) : (
-                        "Start Loading"
+                        t("loading.startLoading")
                       )}
                     </Button>
 
                     <div>
                       <Button onClick={simulateProgress} className="mb-2">
-                        Simulate Progress
+                        {t("loading.simulateProgress")}
                       </Button>
                       <div className="w-full bg-muted rounded-full h-2">
                         <div
@@ -285,7 +282,7 @@ variants.animations.hover.icon.bounce()`}
                         ></div>
                       </div>
                       <p className="text-sm text-muted-foreground mt-1">
-                        Progress: {progress}%
+                        {t("loading.progress", { progress })}
                       </p>
                     </div>
                   </div>
@@ -310,20 +307,19 @@ variants.animations.loading.progress.bar()`}
                 <SparklesIcon
                   className={`${variants.icon.size.lg()} text-accent mr-3`}
                 />
-                <h2 className={textVariants.heading.h3()}>Web3 Animations</h2>
+                <h2 className={textVariants.heading.h3()}>{t("web3.title")}</h2>
               </div>
 
               <p
                 className={`${textVariants.body.md()} text-muted-foreground mb-6`}
               >
-                Specialized animations for Web3 interactions including wallet
-                connections and transaction states.
+                {t("web3.description")}
               </p>
 
               <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
                 <div>
                   <h4 className={`${textVariants.heading.h5()} mb-3`}>
-                    Wallet Connection States
+                    {t("web3.walletStatesTitle")}
                   </h4>
                   <div className="space-y-3">
                     <Button
@@ -346,14 +342,14 @@ variants.animations.loading.progress.bar()`}
                         <CheckIcon className="w-4 h-4 mr-2" />
                       )}
                       {walletStatus === "connecting"
-                        ? "Connecting..."
+                        ? t("web3.connecting")
                         : walletStatus === "connected"
-                          ? "Connected"
-                          : "Connect Wallet"}
+                          ? t("web3.connected")
+                          : t("web3.connectWallet")}
                     </Button>
 
                     <p className="text-sm text-muted-foreground">
-                      Status:{" "}
+                      {t("web3.statusLabel")}{" "}
                       <span className="font-medium capitalize">
                         {walletStatus}
                       </span>
@@ -363,7 +359,7 @@ variants.animations.loading.progress.bar()`}
 
                 <div>
                   <h4 className={`${textVariants.heading.h5()} mb-3`}>
-                    Transaction States
+                    {t("web3.transactionStatesTitle")}
                   </h4>
                   <div className="space-y-3">
                     <div
@@ -373,7 +369,7 @@ variants.animations.loading.progress.bar()`}
                         <div
                           className={`w-4 h-4 border-2 border-warning border-t-transparent rounded-full ${variants.animations.loading.spinner.default()} mr-2`}
                         ></div>
-                        Transaction Pending
+                        {t("web3.transactionPending")}
                       </div>
                     </div>
 
@@ -382,7 +378,7 @@ variants.animations.loading.progress.bar()`}
                     >
                       <div className="flex items-center">
                         <CheckIcon className="w-4 h-4 mr-2 text-success" />
-                        Transaction Confirmed
+                        {t("web3.transactionConfirmed")}
                       </div>
                     </div>
 
@@ -391,7 +387,7 @@ variants.animations.loading.progress.bar()`}
                     >
                       <div className="flex items-center">
                         <XMarkIcon className="w-4 h-4 mr-2 text-destructive" />
-                        Transaction Failed
+                        {t("web3.transactionFailed")}
                       </div>
                     </div>
                   </div>
@@ -418,55 +414,54 @@ variants.animations.web3.transaction.confirmed()`}
                   className={`${variants.icon.size.lg()} text-warning mr-3`}
                 />
                 <h2 className={textVariants.heading.h3()}>
-                  Motion Preferences
+                  {t("motion.title")}
                 </h2>
               </div>
 
               <p
                 className={`${textVariants.body.md()} text-muted-foreground mb-6`}
               >
-                All animations respect user motion preferences and provide
-                alternatives for accessibility.
+                {t("motion.description")}
               </p>
 
               <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
                 <div>
                   <h4 className={`${textVariants.heading.h5()} mb-3`}>
-                    Reduced Motion Support
+                    {t("motion.reducedMotionTitle")}
                   </h4>
                   <div className="space-y-3">
                     <Button
                       className={variants.animations.utility.reduced.respectPrefers()}
                     >
-                      Respects Motion Preferences
+                      {t("motion.respectsPreferences")}
                     </Button>
                     <Button
                       className={variants.animations.utility.reduced.fadeOnly()}
                     >
-                      Fade Only Animation
+                      {t("motion.fadeOnly")}
                     </Button>
                     <Button
                       className={variants.animations.utility.reduced.scaleOnly()}
                     >
-                      Scale Only Animation
+                      {t("motion.scaleOnly")}
                     </Button>
                   </div>
                 </div>
 
                 <div>
                   <h4 className={`${textVariants.heading.h5()} mb-3`}>
-                    Safe Animations
+                    {t("motion.safeAnimationsTitle")}
                   </h4>
                   <div className="space-y-3">
                     <div
                       className={`p-3 border rounded-lg ${variants.animations.transitions.fade.default()}`}
                     >
-                      <p className="text-sm">Safe fade transition</p>
+                      <p className="text-sm">{t("motion.safeFade")}</p>
                     </div>
                     <div
                       className={`p-3 border rounded-lg ${variants.animations.transitions.slide.up()}`}
                     >
-                      <p className="text-sm">Safe slide transition</p>
+                      <p className="text-sm">{t("motion.safeSlide")}</p>
                     </div>
                   </div>
                 </div>
@@ -493,64 +488,44 @@ variants.animations.utility.reduced.fadeOnly()
                   className={`${variants.icon.size.lg()} text-success mr-3`}
                 />
                 <h2 className={textVariants.heading.h3()}>
-                  Animation Best Practices
+                  {t("bestPractices.title")}
                 </h2>
               </div>
 
               <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
                 <div>
                   <h4 className={`${textVariants.heading.h5()} mb-4`}>
-                    ✅ Do This
+                    {t("bestPractices.doTitle")}
                   </h4>
                   <ul className="space-y-2 text-sm">
-                    <li className="flex items-start">
-                      <CheckIcon className="h-4 w-4 text-success mr-2 mt-0.5 flex-shrink-0" />
-                      Keep animations under 300ms for micro-interactions
-                    </li>
-                    <li className="flex items-start">
-                      <CheckIcon className="h-4 w-4 text-success mr-2 mt-0.5 flex-shrink-0" />
-                      Use easing functions for natural movement
-                    </li>
-                    <li className="flex items-start">
-                      <CheckIcon className="h-4 w-4 text-success mr-2 mt-0.5 flex-shrink-0" />
-                      Provide immediate feedback on user actions
-                    </li>
-                    <li className="flex items-start">
-                      <CheckIcon className="h-4 w-4 text-success mr-2 mt-0.5 flex-shrink-0" />
-                      Respect prefers-reduced-motion settings
-                    </li>
-                    <li className="flex items-start">
-                      <CheckIcon className="h-4 w-4 text-success mr-2 mt-0.5 flex-shrink-0" />
-                      Use loading states for operations &gt; 500ms
-                    </li>
+                    {(
+                      t("bestPractices.do", {
+                        returnObjects: true,
+                      }) as string[]
+                    ).map((item, index) => (
+                      <li key={index} className="flex items-start">
+                        <CheckIcon className="h-4 w-4 text-success mr-2 mt-0.5 flex-shrink-0" />
+                        {item}
+                      </li>
+                    ))}
                   </ul>
                 </div>
 
                 <div>
                   <h4 className={`${textVariants.heading.h5()} mb-4`}>
-                    ❌ Avoid This
+                    {t("bestPractices.avoidTitle")}
                   </h4>
                   <ul className="space-y-2 text-sm">
-                    <li className="flex items-start">
-                      <XMarkIcon className="h-4 w-4 text-destructive mr-2 mt-0.5 flex-shrink-0" />
-                      Overusing animations - less is more
-                    </li>
-                    <li className="flex items-start">
-                      <XMarkIcon className="h-4 w-4 text-destructive mr-2 mt-0.5 flex-shrink-0" />
-                      Long loading animations without progress
-                    </li>
-                    <li className="flex items-start">
-                      <XMarkIcon className="h-4 w-4 text-destructive mr-2 mt-0.5 flex-shrink-0" />
-                      Animations that interfere with functionality
-                    </li>
-                    <li className="flex items-start">
-                      <XMarkIcon className="h-4 w-4 text-destructive mr-2 mt-0.5 flex-shrink-0" />
-                      Auto-playing animations on page load
-                    </li>
-                    <li className="flex items-start">
-                      <XMarkIcon className="h-4 w-4 text-destructive mr-2 mt-0.5 flex-shrink-0" />
-                      Complex animations for users with motion sensitivities
-                    </li>
+                    {(
+                      t("bestPractices.avoid", {
+                        returnObjects: true,
+                      }) as string[]
+                    ).map((item, index) => (
+                      <li key={index} className="flex items-start">
+                        <XMarkIcon className="h-4 w-4 text-destructive mr-2 mt-0.5 flex-shrink-0" />
+                        {item}
+                      </li>
+                    ))}
                   </ul>
                 </div>
               </div>

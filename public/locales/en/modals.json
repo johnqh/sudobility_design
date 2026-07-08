@@ -1,0 +1,197 @@
+{
+  "seo": {
+    "title": "Modals - Design System - Internal - {{emailDomain}}",
+    "description": "Modal and dialog components with Web3 patterns and accessibility features"
+  },
+  "header": {
+    "badge": "Modals & Dialogs",
+    "title": "Modal Components",
+    "description": "Comprehensive modal and dialog system with Web3 integration patterns, accessibility features, and responsive behavior. Perfect for wallet connections, transaction confirmations, and user interactions."
+  },
+  "common": {
+    "copyToClipboard": "Copy to clipboard",
+    "cancel": "Cancel"
+  },
+  "quickStart": {
+    "heading": "Quick Start",
+    "examples": {
+      "basic": {
+        "title": "Basic Modal",
+        "description": "Standard modal with header, content, and footer"
+      },
+      "confirmation": {
+        "title": "Confirmation Dialog",
+        "description": "Simple confirmation dialog with action buttons"
+      },
+      "wallet": {
+        "title": "Web3 Wallet Connection",
+        "description": "Modal for wallet selection and connection"
+      },
+      "transaction": {
+        "title": "Transaction Status",
+        "description": "Modal showing transaction progress and states"
+      }
+    }
+  },
+  "demos": {
+    "heading": "Interactive Demos",
+    "cards": {
+      "simpleModal": {
+        "title": "Basic Modal",
+        "description": "Standard modal with header, content, and footer sections."
+      },
+      "confirmationModal": {
+        "title": "Confirmation Dialog",
+        "description": "Simple confirmation dialog with destructive actions."
+      },
+      "walletModal": {
+        "title": "Wallet Connection",
+        "description": "Web3 wallet selection and connection interface."
+      },
+      "transactionModal": {
+        "title": "Transaction Status",
+        "description": "Transaction progress and status feedback modals."
+      },
+      "formModal": {
+        "title": "Form Modal",
+        "description": "Modal containing form elements and validation."
+      },
+      "settingsModal": {
+        "title": "Settings Panel",
+        "description": "Large modal for complex settings and preferences."
+      }
+    }
+  },
+  "sizes": {
+    "heading": "Size Variants",
+    "availableTitle": "Available Sizes",
+    "availableDescription": "Choose the appropriate modal size based on your content needs.",
+    "boxLabel": "{{name}} Modal ({{maxWidth}})",
+    "names": {
+      "small": "Small",
+      "medium": "Medium",
+      "large": "Large",
+      "extraLarge": "Extra Large"
+    }
+  },
+  "web3": {
+    "heading": "Web3 Integration Patterns",
+    "walletFlow": {
+      "title": "Wallet Connection Flow",
+      "description": "Complete wallet connection experience with provider selection."
+    },
+    "transactionConfirmation": {
+      "title": "Transaction Confirmation",
+      "description": "Transaction details and confirmation interface."
+    }
+  },
+  "accessibility": {
+    "heading": "Accessibility Guidelines",
+    "ariaTitle": "ARIA Attributes & Best Practices",
+    "ariaDescription": "Follow these guidelines to ensure your modals are accessible to all users.",
+    "requiredAria": "Required ARIA Attributes",
+    "focusManagement": "Focus Management",
+    "focusItems": [
+      "Focus should move to the first focusable element in the modal when opened",
+      "Tab navigation should be trapped within the modal",
+      "Focus should return to the trigger element when modal is closed",
+      "ESC key should close the modal"
+    ],
+    "screenReader": "Screen Reader Support",
+    "screenReaderItems": [
+      "Use semantic HTML elements (button, form, etc.)",
+      "Provide clear, descriptive labels for all interactive elements",
+      "Announce modal state changes with live regions"
+    ]
+  },
+  "implementation": {
+    "heading": "Implementation Notes",
+    "portalTitle": "React Portal Usage",
+    "portalDescription": "Render modals in a portal to avoid z-index issues and ensure proper layering.",
+    "animationTitle": "Animation Considerations",
+    "animationDescription": "Use CSS animations or libraries like Framer Motion for smooth modal transitions.",
+    "animationItems": [
+      "• Fade in/out for overlay",
+      "• Scale or slide for modal content",
+      "• Respect user's motion preferences",
+      "• Keep animations under 300ms"
+    ]
+  },
+  "simpleModal": {
+    "title": "Simple Modal Example",
+    "body": "This is a basic modal with standard header, content, and footer sections. It demonstrates the typical modal structure and styling.",
+    "hint": "Click outside the modal or press the close button to dismiss it.",
+    "gotIt": "Got it"
+  },
+  "confirmationModal": {
+    "title": "Delete Item",
+    "body": "Are you sure you want to delete this item? This action cannot be undone.",
+    "delete": "Delete"
+  },
+  "walletModal": {
+    "title": "Connect Wallet",
+    "choose": "Choose a wallet to connect to the {{emailDomain}} platform",
+    "metamask": "MetaMask",
+    "metamaskDescription": "Popular browser extension",
+    "walletConnect": "WalletConnect",
+    "walletConnectDescription": "Scan with mobile wallet",
+    "phantom": "Phantom",
+    "phantomDescription": "Solana wallet"
+  },
+  "transactionModal": {
+    "title": {
+      "idle": "Send Transaction",
+      "pending": "Transaction Pending",
+      "confirming": "Confirming Transaction",
+      "success": "Transaction Successful",
+      "error": "Transaction Failed"
+    },
+    "description": {
+      "idle": "Review transaction details and confirm to proceed.",
+      "pending": "Please confirm the transaction in your wallet...",
+      "confirming": "Waiting for blockchain confirmation...",
+      "success": "Your transaction has been successfully completed.",
+      "error": "Transaction was rejected or failed. Please try again."
+    },
+    "amount": "Amount:",
+    "gasFee": "Gas Fee:",
+    "total": "Total:",
+    "confirm": "Confirm Transaction",
+    "close": "Close"
+  },
+  "formModal": {
+    "title": "Contact Form",
+    "firstName": "First Name",
+    "firstNamePlaceholder": "Enter your first name",
+    "lastName": "Last Name",
+    "lastNamePlaceholder": "Enter your last name",
+    "email": "Email Address",
+    "emailPlaceholder": "Enter your email address",
+    "message": "Message",
+    "messagePlaceholder": "Enter your message...",
+    "send": "Send Message"
+  },
+  "settingsModal": {
+    "title": "Settings & Preferences",
+    "account": "Account Settings",
+    "emailNotifications": "Email Notifications",
+    "emailNotificationsDescription": "Receive notifications about your account activity",
+    "twoFactor": "Two-Factor Authentication",
+    "twoFactorDescription": "Add an extra layer of security to your account",
+    "privacy": "Privacy Settings",
+    "profileVisibility": "Profile Visibility",
+    "visibilityPublic": "Public",
+    "visibilityFriends": "Friends Only",
+    "visibilityPrivate": "Private",
+    "dataSharing": "Data Sharing",
+    "analyticsConsent": "Allow analytics data collection",
+    "thirdPartyConsent": "Share usage data with third parties",
+    "appearance": "Appearance",
+    "theme": "Theme",
+    "themeLight": "Light",
+    "themeDark": "Dark",
+    "themeAuto": "Auto",
+    "resetDefaults": "Reset to Defaults",
+    "saveChanges": "Save Changes"
+  }
+}

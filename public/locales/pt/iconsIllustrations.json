@@ -1,0 +1,155 @@
+{
+  "seo": {
+    "title": "Ícones e Ilustrações - Sistema de Design - Interno - {{emailDomain}}",
+    "description": "Sistema abrangente de ícones com dimensões, cores e padrões de uso contextuais coerentes"
+  },
+  "header": {
+    "badge": "Ícones e ilustrações",
+    "title": "Ícones e ilustrações",
+    "description": "Sistema abrangente de ícones com dimensões, cores e padrões de uso contextuais consistentes. Criado com Heroicons e otimizado para acessibilidade e modo escuro."
+  },
+  "sizes": {
+    "title": "Tamanhos de ícones",
+    "variantsTitle": "Variações de tamanho",
+    "usageTitle": "Tamanho Uso",
+    "labels": {
+      "xs": "xs (12px)",
+      "sm": "sm (16px)",
+      "md": "md (20px)",
+      "lg": "lg (24px)",
+      "xl": "xl (32px)",
+      "xxl": "xxl (40px)",
+      "xxxl": "xxxl (48px)"
+    }
+  },
+  "colors": {
+    "title": "Cores dos ícones",
+    "variantsTitle": "Variações de cor",
+    "web3Title": "Cores Web3",
+    "default": {
+      "label": "Padrão",
+      "value": "Cinza 500 / 400"
+    },
+    "brand": {
+      "label": "Marca",
+      "value": "Azul 600 / 400"
+    },
+    "success": {
+      "label": "Sucesso",
+      "value": "Verde 600 / 400"
+    },
+    "warning": {
+      "label": "Aviso",
+      "value": "Âmbar 600 / 400"
+    },
+    "error": {
+      "label": "Erro",
+      "value": "Vermelho 600 / 400"
+    },
+    "interactive": {
+      "label": "Interativo",
+      "value": "Efeitos de passagem do mouse"
+    },
+    "ethereum": {
+      "label": "Ethereum",
+      "value": "Azul 600 / 400"
+    },
+    "solana": {
+      "label": "Solana",
+      "value": "Roxo 600 / 400"
+    },
+    "bitcoin": {
+      "label": "Bitcoin",
+      "value": "Laranja 600 / 400"
+    }
+  },
+  "context": {
+    "title": "Ícones específicos do contexto",
+    "buttonTitle": "Ícones de botão",
+    "inputTitle": "Ícones de entrada",
+    "leadingIcon": "Ícone principal",
+    "trailingIcon": "Ícone final",
+    "iconOnly": "Apenas ícone",
+    "trailingInteractive": "Interativo de rastreamento",
+    "addItem": "Adicionar item",
+    "continue": "Continuar",
+    "searchPlaceholder": "Procurar...",
+    "passwordPlaceholder": "Senha"
+  },
+  "status": {
+    "title": "Ícones de estado",
+    "success": {
+      "title": "Sucesso",
+      "description": "Operação concluída com sucesso"
+    },
+    "warning": {
+      "title": "Aviso",
+      "description": "Por favor, revise e continue"
+    },
+    "error": {
+      "title": "Erro",
+      "description": "Algo deu errado"
+    },
+    "info": {
+      "title": "Informações",
+      "description": "Informações adicionais"
+    }
+  },
+  "web3": {
+    "title": "Ícones de Contexto Web3",
+    "walletStatusTitle": "Estado da carteira",
+    "blockchainTitle": "Ícones de Blockchain",
+    "walletConnected": "Carteira conectada",
+    "noWalletConnected": "Nenhuma carteira conectada",
+    "connectToContinue": "Conecte-se para continuar",
+    "ethereum": {
+      "title": "Ethereum",
+      "network": "Rede ETH"
+    },
+    "solana": {
+      "title": "Solana",
+      "network": "Rede SOL"
+    },
+    "bitcoin": {
+      "title": "Bitcoin",
+      "network": "Rede BTC"
+    }
+  },
+  "decorative": {
+    "title": "Ícones decorativos",
+    "heroLarge": {
+      "title": "Herói Grande",
+      "size": "80px × 80px"
+    },
+    "heroMedium": {
+      "title": "Herói Médio",
+      "size": "64px × 64px"
+    },
+    "heroSmall": {
+      "title": "Herói Pequeno",
+      "size": "48px × 48px"
+    }
+  },
+  "browser": {
+    "title": "Navegador de ícones",
+    "categories": {
+      "all": "Todos os ícones",
+      "actions": "Ações",
+      "status": "Status",
+      "navigation": "Navegação",
+      "web3": "Web3",
+      "decorative": "Decorativo"
+    }
+  },
+  "tokens": {
+    "title": "Variantes de ícones disponíveis",
+    "sizeVariants": "Variações de tamanho",
+    "colorVariants": "Variações de cor",
+    "contextVariants": "Variantes de contexto",
+    "combinedVariants": "Variantes combinadas"
+  },
+  "navigation": {
+    "previous": "Tabelas e Grade de Dados",
+    "backToDesignSystem": "Voltar para o sistema de design"
+  }
+}

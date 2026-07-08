@@ -1,0 +1,117 @@
+{
+  "seo": {
+    "title": "Formulare - Design-System - Intern - {{emailDomain}}",
+    "description": "Formularfelder und Eingabekomponenten zeigen die Showcase-Funktion für das Design-System"
+  },
+  "codeExample": {
+    "preview": "Vorschau",
+    "usage": "Verwendung"
+  },
+  "header": {
+    "badge": "Formularfelder",
+    "title": "Formularkomponenten und Eingabeelemente",
+    "description": "Umfassende Bibliothek für Formular-Elemente mit konsistenter Stilisierung, Validierungs-Zuständen und Barrierefreiheits-Funktionen. Alle Komponenten unterstützen Licht/Dunkel-Themen und verfügen über korrekte Fokussierung."
+  },
+  "quickStart": {
+    "title": "Schnellstart - Wesentliche Formmuster",
+    "description": "Bereit zu verwendende Formularkomponenten mit korrekter Validierung, Barrierefreiheit und responsivem Design.",
+    "textInput": {
+      "title": "Texteingabe",
+      "label": "E-Mail-Adresse",
+      "placeholder": "Geben Sie Ihre E-Mail-Adresse ein..."
+    },
+    "select": {
+      "title": "Auswahlfeld auswählen",
+      "label": "Blockchain-Netzwerk",
+      "placeholder": "Wählen Sie ein Netzwerk..."
+    },
+    "checkbox": {
+      "title": "Kontrollkästchen",
+      "agree": "Ich stimme den Allgemeinen Geschäftsbedingungen und der Datenschutzrichtlinie zu"
+    },
+    "textarea": {
+      "title": "Textfeld",
+      "label": "Nachricht",
+      "placeholder": "Geben Sie Ihre Nachricht ein..."
+    }
+  },
+  "inputTypes": {
+    "title": "Eingabetypen & Varianten",
+    "description": "Verschiedene Eingabetypen mit konsistenter Stilierung für alle Formularfelder.",
+    "textInputTypes": {
+      "title": "Texteingabetypen",
+      "description": "Verschiedene Eingabetypen mit konsistenter Stilisierung",
+      "textPlaceholder": "Texteingabe",
+      "passwordPlaceholder": "Passwort"
+    },
+    "sizes": {
+      "title": "Eingabegrößen",
+      "description": "Unterschiedliche Eingabegrößen für verschiedene Anwendungsfälle",
+      "smallPlaceholder": "Kleine Eingabe",
+      "defaultPlaceholder": "Standard-Eingabe",
+      "largePlaceholder": "Große Eingabe"
+    }
+  },
+  "validation": {
+    "title": "Validierungsstatus",
+    "description": "Formularvalidierungsstatus mit korrekter Farbcodierung und Nachrichten.",
+    "success": {
+      "title": "Erfolgszustand",
+      "description": "Gültige Eingabe mit Erfolgstil",
+      "label": "E-Mail-Adresse",
+      "message": "Gültige E-Mail-Adresse"
+    },
+    "error": {
+      "title": "Fehlerzustand",
+      "description": "Ungültige Eingabe mit Fehlerstil",
+      "label": "Passwort",
+      "message": "Das Passwort muss mindestens 8 Zeichen lang sein"
+    }
+  },
+  "advanced": {
+    "title": "Erweiterte Formularkomponenten",
+    "description": "Komplexere Formularmuster mit erweiterter Funktionalität.",
+    "passwordToggle": {
+      "title": "Passwort-Eingabe mit Umschalter",
+      "description": "Passfeld mit Sichtbarkeitsfunktion",
+      "label": "Passwort",
+      "placeholder": "Passwort eingeben..."
+    },
+    "radio": {
+      "title": "Radiobutton-Gruppe",
+      "description": "Radiobuttons für die Einzelwahl",
+      "label": "Abonnement-Plan",
+      "free": "Kostenloser Plan - Grundfunktionen",
+      "pro": "Pro-Plan - Erweiterte Funktionen"
+    }
+  },
+  "complete": {
+    "title": "Formularbeispiel ausfüllen",
+    "description": "Ein umfassendes Formular, das alle Formularelemente zeigt, die zusammenarbeiten.",
+    "form": {
+      "title": "Web3-Profilformular",
+      "description": "Formular vollständig mit allen Elementtypen und Validierung ausfüllen",
+      "displayNameLabel": "Anzeigename",
+      "displayNamePlaceholder": "Ihr Anzeigename",
+      "emailLabel": "E-Mail-Adresse",
+      "networkLabel": "Bevorzugtes Netzwerk",
+      "networkPlaceholder": "Wählen Sie ein Netzwerk...",
+      "bioLabel": "Bio",
+      "bioPlaceholder": "Erzählen Sie uns etwas über sich...",
+      "notifications": "Ich stimme zu, E-Mail-Benachrichtigungen zu erhalten",
+      "submit": "Profil speichern"
+    }
+  },
+  "accessibility": {
+    "title": "Richtlinien für die Barrierefreiheit",
+    "heading": "Formular-Zugänglichkeits-Best Practices",
+    "items": {
+      "labelsBefore": "Verwenden Sie immer die richtige Methode",
+      "labelsAfter": "mit Eingaben verbundene Elemente",
+      "errorMessages": "Fügen Sie klare Fehlermeldungen mit Validierungsstatus hinzu",
+      "focusStates": "Stellen Sie sicher, dass Fokusanzeigen mit Ring-Tools deutlich sichtbar sind",
+      "inputTypes": "Verwenden Sie geeignete Eingabetypen (E-Mail, Passwort usw.) für eine bessere mobile Erfahrung",
+      "contrast": "Stellen Sie eine ausreichende Farbkontrastierung sicher (Mindestverhältnis 4,5:1)"
+    }
+  }
+}

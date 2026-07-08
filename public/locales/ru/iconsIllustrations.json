@@ -1,0 +1,155 @@
+{
+  "seo": {
+    "title": "Иконки и иллюстрации — Система дизайна — Внутренняя — {{emailDomain}}",
+    "description": "Комплексная система иконок с согласованным размером, цветом и контекстным использованием"
+  },
+  "header": {
+    "badge": "Значки и иллюстрации",
+    "title": "Значки и иллюстрации",
+    "description": "Полная система иконок с согласованным размером, цветами и контекстным использованием. Создана с использованием Heroicons и оптимизирована для доступности и темного режима."
+  },
+  "sizes": {
+    "title": "Размеры значков",
+    "variantsTitle": "Размерные варианты",
+    "usageTitle": "Размер Использование",
+    "labels": {
+      "xs": "xs (12px)",
+      "sm": "sm (16px)",
+      "md": "md (20px)",
+      "lg": "lg (24px)",
+      "xl": "xl (32px)",
+      "xxl": "xxl (40px)",
+      "xxxl": "xxxl (48px)"
+    }
+  },
+  "colors": {
+    "title": "Цвета значков",
+    "variantsTitle": "Цветовые варианты",
+    "web3Title": "Цвета Web3",
+    "default": {
+      "label": "По умолчанию",
+      "value": "Серый 500 / 400"
+    },
+    "brand": {
+      "label": "Бренд",
+      "value": "Синий 600 / 400"
+    },
+    "success": {
+      "label": "Успех",
+      "value": "Зеленый 600 / 400"
+    },
+    "warning": {
+      "label": "Предупреждение",
+      "value": "Янтарь 600 / 400"
+    },
+    "error": {
+      "label": "Ошибка",
+      "value": "Красный 600 / 400"
+    },
+    "interactive": {
+      "label": "Интерактивный",
+      "value": "Эффекты наведения"
+    },
+    "ethereum": {
+      "label": "Ethereum",
+      "value": "Синий 600 / 400"
+    },
+    "solana": {
+      "label": "Solana",
+      "value": "Фиолетовый 600 / 400"
+    },
+    "bitcoin": {
+      "label": "Bitcoin",
+      "value": "Оранжевый 600 / 400"
+    }
+  },
+  "context": {
+    "title": "Контекстно-зависимые значки",
+    "buttonTitle": "Значки кнопок",
+    "inputTitle": "Значки ввода",
+    "leadingIcon": "Ведущая иконка",
+    "trailingIcon": "Значок в конце",
+    "iconOnly": "Только значок",
+    "trailingInteractive": "Интерактивный хвост",
+    "addItem": "Добавить элемент",
+    "continue": "Продолжить",
+    "searchPlaceholder": "Поиск...",
+    "passwordPlaceholder": "Пароль"
+  },
+  "status": {
+    "title": "Значки состояния",
+    "success": {
+      "title": "Успех",
+      "description": "Операция успешно завершена"
+    },
+    "warning": {
+      "title": "Предупреждение",
+      "description": "Пожалуйста, проверьте и продолжите"
+    },
+    "error": {
+      "title": "Ошибка",
+      "description": "Что-то пошло не так"
+    },
+    "info": {
+      "title": "Информация",
+      "description": "Дополнительная информация"
+    }
+  },
+  "web3": {
+    "title": "Иконки контекста Web3",
+    "walletStatusTitle": "Состояние кошелька",
+    "blockchainTitle": "Иконки блокчейна",
+    "walletConnected": "Portfel подключен",
+    "noWalletConnected": "Кошелек не подключен",
+    "connectToContinue": "Подключитесь, чтобы продолжить",
+    "ethereum": {
+      "title": "Ethereum",
+      "network": "Сеть ETH"
+    },
+    "solana": {
+      "title": "Solana",
+      "network": "Сеть SOL"
+    },
+    "bitcoin": {
+      "title": "Bitcoin",
+      "network": "Сеть BTC"
+    }
+  },
+  "decorative": {
+    "title": "Декоративные значки",
+    "heroLarge": {
+      "title": "Герой Большой",
+      "size": "80px × 80px"
+    },
+    "heroMedium": {
+      "title": "Герой среднего размера",
+      "size": "64px × 64px"
+    },
+    "heroSmall": {
+      "title": "Герой Маленький",
+      "size": "48px × 48px"
+    }
+  },
+  "browser": {
+    "title": "Просмотрщик значков",
+    "categories": {
+      "all": "Все значки",
+      "actions": "Действия",
+      "status": "Статус",
+      "navigation": "Навигация",
+      "web3": "Web3",
+      "decorative": "Декоративный"
+    }
+  },
+  "tokens": {
+    "title": "Доступные варианты значков",
+    "sizeVariants": "Размерные варианты",
+    "colorVariants": "Цветовые варианты",
+    "contextVariants": "Варианты контекста",
+    "combinedVariants": "Совмещенные варианты"
+  },
+  "navigation": {
+    "previous": "Таблицы и таблицы данных",
+    "backToDesignSystem": "Обратно в систему дизайна"
+  }
+}

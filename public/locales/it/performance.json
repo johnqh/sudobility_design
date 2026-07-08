@@ -1,0 +1,109 @@
+{
+  "seo": {
+    "title": "Prestazioni e ottimizzazione - Sistema di design - Interno - {{emailDomain}}",
+    "description": "Modelli di ottimizzazione delle prestazioni e strumenti Core Web Vitals per applicazioni Web3 veloci ed efficienti"
+  },
+  "header": {
+    "badge": "Prestazioni e ottimizzazione",
+    "title": "Sistema di ottimizzazione delle prestazioni",
+    "description": "Modelli completi di prestazioni per applicazioni Web3 veloci ed efficienti. Ottimizza la dimensione del bundle, le prestazioni di rendering, i Core Web Vitals e le interazioni con la blockchain.",
+    "stats": {
+      "bundleSplit": {
+        "value": "Divisione del pacchetto",
+        "label": "Frammenti di codice"
+      },
+      "gpuLayers": {
+        "value": "Livelli GPU",
+        "label": "Accelerazione hardware"
+      },
+      "web3Batch": {
+        "value": "Batch Web3",
+        "label": "Raggruppamento delle transazioni"
+      },
+      "lcpTarget": {
+        "value": "< 2,5 s",
+        "label": "Obiettivo LCP"
+      }
+    }
+  },
+  "webVitals": {
+    "title": "Core Web Vitals",
+    "description": "Monitoraggio in tempo reale delle metriche Core Web Vitals con strumenti di ottimizzazione delle prestazioni.",
+    "lcp": {
+      "title": "Prestazione del contenuto principale",
+      "description": "Tempo necessario per rendere l'elemento più grande"
+    },
+    "fid": {
+      "title": "Ritardo della prima entrata",
+      "description": "Tempo di risposta interattivo"
+    },
+    "cls": {
+      "title": "Spostamento cumulativo del layout",
+      "description": "Punteggio di stabilità visiva"
+    }
+  },
+  "bundle": {
+    "title": "Ottimizzazione del pacchetto",
+    "description": "Modelli di suddivisione del codice e caricamento differito per ridurre la dimensione del bundle iniziale.",
+    "lazyLoadingStates": "Stati di caricamento differito",
+    "componentLoading": "Caricamento del componente...",
+    "componentLoaded": "Componente caricato ✓",
+    "codeSplittingExample": "Esempio di suddivisione del codice",
+    "loadingChunk": "Caricamento del frammento del sistema di design...",
+    "bundleAnalysis": "Analisi del pacchetto",
+    "mainBundle": "Pacchetto principale:",
+    "designSystem": "Sistema di progettazione:",
+    "web3Utils": "Strumenti Web3:",
+    "charts": "Grafici:"
+  },
+  "network": {
+    "title": "Ottimizzazione della rete",
+    "description": "Strategie di caricamento adattive basate sulla qualità della connessione e sui modelli di caching.",
+    "connectionQuality": "Qualità della connessione",
+    "currentConnection": "Connessione corrente",
+    "latency": "Latenza: ~{{latency}}ms",
+    "simulateSlowConnection": "Simula connessione lenta",
+    "cacheStatus": "Stato della cache",
+    "freshData": "Dati freschi",
+    "freshDataSuffix": " - Recentemente recuperato",
+    "staleData": "Dati obsoleti",
+    "staleDataSuffix": " - Richiede aggiornamento",
+    "implementation": "Implementazione"
+  },
+  "web3": {
+    "title": "Prestazioni Web3",
+    "description": "Ottimizzazioni specializzate per le interazioni con la blockchain, le connessioni del portafoglio e il raggruppamento delle transazioni.",
+    "walletConnection": "Connessione portafoglio",
+    "cachedConnection": "Connessione in cache",
+    "connecting": "Connessione in corso...",
+    "transactionBatching": "Raggruppamento delle transazioni",
+    "batchedTransactions": "Transazioni in batch",
+    "batchedTransactionsDetail": "5 transazioni → 1 multicall",
+    "individualTransaction": "Transazione individuale",
+    "gasOptimization": "Ottimizzazione del gas",
+    "gasOptimal": "Gas ottimale: 15 gwei",
+    "gasHigh": "Alto gas: 45 gwei",
+    "gasVeryHigh": "Molto alto: 120 gwei"
+  },
+  "bestPractices": {
+    "title": "Migliori pratiche per le prestazioni",
+    "doTitle": "✅ Fallo questo",
+    "do": [
+      "Utilizza lo splitting del codice per le funzionalità interne/amministrazione",
+      "Implementa il caricamento differito per immagini e componenti",
+      "Elabora le transazioni Web3 in batch quando possibile",
+      "Utilizza l'accelerazione GPU per animazioni fluide",
+      "Monitorare i Core Web Vitals in produzione",
+      "Memorizzare nella cache le connessioni del portafoglio e i dati della blockchain"
+    ],
+    "avoidTitle": "❌ Evita questo",
+    "avoid": [
+      "Caricamento di tutti i componenti in modo aggressivo al caricamento iniziale della pagina",
+      "Effettuare chiamate individuali alla blockchain per dati in batch",
+      "Causare spostamenti del layout con contenuti dinamici",
+      "Utilizzo del rendering bloccante per funzionalità non critiche",
+      "Ignorare le condizioni di rete per il caricamento delle risorse",
+      "Ricaricamento dei dati della blockchain già memorizzati nella cache"
+    ]
+  }
+}

@@ -1,0 +1,185 @@
+{
+  "seo": {
+    "title": "導航 - 設計系統 - 內部 - {{emailDomain}}",
+    "description": "導航組件，包括面包屑、標籤頁、分頁和菜單系統"
+  },
+  "header": {
+    "badge": "導航組件",
+    "title": "導航系統",
+    "intro": "Web3 應用程式的全面導航元件，包括面包屑、標籤頁、分頁、選單和步驟導航。專為可存取性和響應式行為而設計。"
+  },
+  "quickStart": {
+    "title": "快速入門",
+    "copy": "複製到剪貼簿",
+    "examples": {
+      "breadcrumb": {
+        "title": "麵包屑導航",
+        "description": "顯示目前頁面位置的階層式導航"
+      },
+      "tabs": {
+        "title": "標籤導航",
+        "description": "使用標籤導航將內容組織為多個檢視"
+      },
+      "pagination": {
+        "title": "分頁",
+        "description": "瀏覽多頁內容"
+      },
+      "steps": {
+        "title": "步驟導航",
+        "description": "引導使用者完成多步驟流程"
+      }
+    }
+  },
+  "breadcrumbs": {
+    "sectionTitle": "互動式麵包屑",
+    "liveTitle": "即時面包屑範例",
+    "home": "首頁",
+    "web3Projects": "Web3 項目",
+    "featuresTitle": "功能",
+    "features": [
+      "用於SEO優化的結構化資料",
+      "ARIA 可存取性屬性",
+      "鍵盤導航支援",
+      "響應式設計與截斷",
+      "可選的主頁圖示和社交分享"
+    ]
+  },
+  "tabVariants": {
+    "sectionTitle": "標籤導航變體",
+    "defaultTitle": "預設選項卡",
+    "overview": "概要",
+    "analytics": "分析",
+    "settings": "設定",
+    "overviewContent": "包含專案統計資料和最近活動的概觀內容。",
+    "analyticsContent": "包含圖表和指標的分析儀表板。",
+    "settingsContent": "用於設定選項的設定面板。",
+    "underlinedTitle": "底線標籤",
+    "dashboard": "儀表板",
+    "team": "團隊",
+    "projects": "項目",
+    "calendar": "日曆",
+    "underlinedContent": "具有乾淨下劃線標籤樣式的儀表板內容。",
+    "pillsTitle": "藥片 膠囊",
+    "all": "全部",
+    "active": "活躍",
+    "draft": "草稿",
+    "archived": "已歸檔",
+    "pillsContent": "根據所選藥丸標籤過濾的內容。"
+  },
+  "pagination": {
+    "sectionTitle": "分頁",
+    "listTitle": "電子郵件列表分頁",
+    "listDescription": "電子郵件列表導航的分頁範例",
+    "emailSubject": "郵件主旨 {{number}}",
+    "timeAgo": "2小時前",
+    "previous": "上一頁",
+    "next": "下一個",
+    "showing": "顯示",
+    "to": "到",
+    "of": "的",
+    "results": "結果"
+  },
+  "steps": {
+    "sectionTitle": "步驟導航",
+    "demoTitle": "Web3 錢包設定",
+    "demoDescription": "引導用戶完成錢包連接流程",
+    "stepLabel": "步驟 {{number}}:",
+    "items": {
+      "accountSetup": {
+        "name": "帳戶設定",
+        "description": "建立您的帳戶"
+      },
+      "walletConnection": {
+        "name": "錢包連接",
+        "description": "連接您的 Web3 錢包"
+      },
+      "emailSetup": {
+        "name": "郵件設定",
+        "description": "設定您的電子郵件偏好"
+      },
+      "complete": {
+        "name": "完成",
+        "description": "開始使用 example.com"
+      }
+    },
+    "details": {
+      "1": "使用您偏好的使用者名稱和安全設定建立您的{{emailDomain}}帳戶。",
+      "2": "連接您的 Web3 錢包（MetaMask、WalletConnect 等）以啟用區塊鏈功能。",
+      "3": "設定您的電子郵件偏好設定、通知和隱私設定。",
+      "4": "您的設定已完成！開始發送和接收Web3電子郵件。"
+    }
+  },
+  "sidebar": {
+    "sectionTitle": "側邊欄導航",
+    "cardTitle": "郵件應用側邊欄",
+    "cardDescription": "電子郵件應用的持續導航",
+    "items": {
+      "dashboard": "儀表板",
+      "inbox": "收件箱",
+      "sent": "已發送",
+      "archive": "歸檔",
+      "settings": "設定"
+    },
+    "mainContent": "主內容區域",
+    "mainContentHint": "內容會根據側邊欄的選擇而變更"
+  },
+  "web3Patterns": {
+    "sectionTitle": "Web3 導航模式",
+    "walletStatus": {
+      "title": "錢包狀態導航",
+      "description": "根據錢包連接狀態自適應的導航",
+      "connected": "MetaMask 已連接",
+      "inbox": "Web3 收件箱",
+      "ensProfile": "ENS個人資料",
+      "walletSettings": "錢包設定"
+    },
+    "multiChain": {
+      "title": "多鏈導航",
+      "description": "在不同區塊鏈網絡之間導航",
+      "ethereum": "以太坊",
+      "solana": "Solana",
+      "polygon": "多邊形",
+      "ethereumInbox": "以太坊收件箱",
+      "ensNames": "ENS名稱",
+      "gasSettings": "氣體設定"
+    }
+  },
+  "accessibility": {
+    "sectionTitle": "無障礙指南",
+    "title": "導航可及性",
+    "description": "確保所有導航組件對螢幕閱讀器和鍵盤使用者都可存取。",
+    "ariaLandmarks": "ARIA 標記",
+    "keyboardNavigation": "鍵盤導航",
+    "breadcrumbsLabel": "麵包屑",
+    "breadcrumbsKeys": [
+      "標籤：瀏覽連結",
+      "Enter/空白鍵：啟用連結",
+      "螢幕閱讀器的跳過連結"
+    ],
+    "tabsLabel": "標籤",
+    "tabsKeys": [
+      "方向鍵：在標籤頁之間導航",
+      "標籤：輸入標籤面板",
+      "Enter/空白鍵：啟用標籤"
+    ]
+  },
+  "implementation": {
+    "sectionTitle": "實作注意事項",
+    "performanceTitle": "效能考量",
+    "performance": [
+      "盡可能延遲加載導航項目",
+      "為複雜的導航組件使用 React.memo",
+      "導航選單中的搜尋去抖",
+      "長導航清單的虛擬滾動",
+      "預加載關鍵導航路徑"
+    ],
+    "mobileTitle": "行動裝置適應性",
+    "mobile": [
+      "將導航收合為漢堡選單",
+      "為行動應用程式使用底部導航",
+      "在適當的地方實現滑動手势",
+      "確保觸控目標至少為44像素",
+      "在各種螢幕尺寸和方向上進行測試"
+    ]
+  }
+}

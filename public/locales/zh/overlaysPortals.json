@@ -1,0 +1,128 @@
+{
+  "header": {
+    "title": "叠加与门户",
+    "description": "包含模态框、下拉菜单、工具提示、面板和加载状态的完整叠加系统，具备正确的z-index管理与可访问性。"
+  },
+  "common": {
+    "interactiveExample": "交互式示例",
+    "usage": "使用"
+  },
+  "dropdownItems": {
+    "profile": "查看资料",
+    "settings": "设置",
+    "logout": "登出"
+  },
+  "alerts": {
+    "profile": "个人资料已点击",
+    "settings": "设置已点击",
+    "logout": "已点击登出"
+  },
+  "modals": {
+    "title": "模态",
+    "description": "带有背景模糊、动画状态和多种尺寸的模态对话框。包含焦点管理和键盘导航。",
+    "openButton": "打开弹窗",
+    "exampleTitle": "示例弹窗",
+    "exampleBody": "这是一个使用新叠加设计系统的示例模态框。它包含正确的背景处理、焦点管理以及动画状态。",
+    "featuresTitle": "功能",
+    "features": ["背景模糊效果", "焦点陷阱与恢复", "键盘导航", "多种尺寸选项"],
+    "accessibilityTitle": "可访问性",
+    "accessibility": [
+      "ARIA 标签和角色",
+      "Escape键处理",
+      "屏幕阅读器支持",
+      "注意力管理"
+    ],
+    "cancel": "取消",
+    "confirm": "确认"
+  },
+  "dropdowns": {
+    "title": "下拉菜单",
+    "description": "具有多种定位选项、图标、分隔线和键盘导航功能的下拉菜单。",
+    "actionsButton": "操作",
+    "userMenuButton": "用户菜单"
+  },
+  "tooltips": {
+    "title": "工具提示",
+    "description": "轻量级工具提示，支持多种定位选项和颜色变体。",
+    "hoverButton": "悬停以显示{{position}}提示",
+    "tooltipOn": "{{position}} 上的提示"
+  },
+  "loading": {
+    "title": "加载叠加层",
+    "description": "全屏和内联加载状态，带有背景模糊和可自定义的消息。",
+    "showButton": "显示加载覆盖层",
+    "inlineLabel": "内联加载状态：",
+    "message": "正在处理您的请求..."
+  },
+  "sheets": {
+    "title": "床单（床单下层）",
+    "description": "以移动设备为优先的底部弹出面板和操作面板，从屏幕底部滑出。"
+  },
+  "contextMenus": {
+    "title": "上下文菜单",
+    "description": "右键单击上下文菜单，支持键盘快捷键和嵌套子菜单。"
+  },
+  "portal": {
+    "title": "门户管理",
+    "description": "Z-index 管理系统和门户工具，用于正确堆叠叠加层。",
+    "zIndexLayersTitle": "Z轴图层",
+    "focusManagementTitle": "注意力管理",
+    "layers": {
+      "backdrop": "背景",
+      "popover": "弹出框",
+      "dropdown": "下拉菜单",
+      "tooltip": "提示",
+      "modal": "模态",
+      "sheet": "表",
+      "contextMenu": "上下文菜单",
+      "loading": "加载中",
+      "notification": "通知"
+    }
+  },
+  "animationStates": {
+    "title": "动画状态",
+    "description": "所有叠加组件的进入/退出过渡保持一致的动画状态。",
+    "availableStatesTitle": "可用状态",
+    "modalStatesTitle": "模态状态",
+    "dropdownStatesTitle": "下拉状态"
+  },
+  "bestPractices": {
+    "title": "最佳实践",
+    "accessibilityTitle": "可访问性",
+    "accessibility": [
+      "始终提供适当的 ARIA 标签和角色",
+      "为模态框实现焦点捕获",
+      "支持键盘导航（Tab、Escape、箭头键）",
+      "保持焦点顺序和恢复",
+      "使用语义化HTML元素",
+      "提供屏幕阅读器通知"
+    ],
+    "performanceTitle": "性能",
+    "performance": [
+      "使用 React Portals 实现正确的 DOM 渲染",
+      "为重型叠加实现懒加载",
+      "卸载时清理事件监听器",
+      "使用 CSS 变换进行动画",
+      "避免在移动设备上使用复杂的背景滤镜",
+      "最小化布局抖动"
+    ],
+    "uxGuidelinesTitle": "UX指南",
+    "uxGuidelines": [
+      "保持模态框专注于单一任务",
+      "提供清晰的关闭操作",
+      "为上下文使用合适的叠加类型",
+      "保持一致的动画时间",
+      "考虑移动视口限制",
+      "避免嵌套的叠加交互"
+    ],
+    "technicalTitle": "技术",
+    "technical": [
+      "使用正确的z-index层级系统",
+      "正确处理身体滚动锁定",
+      "支持点击和键盘操作",
+      "在不同视口大小上进行测试",
+      "考虑减少运动的偏好",
+      "实现适当的错误边界"
+    ]
+  }
+}

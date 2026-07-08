@@ -1,0 +1,133 @@
+{
+  "header": {
+    "title": "Overlay & Portale",
+    "description": "Umfassendes Overlay-System mit Modals, Dropdowns, Tooltips, Blättern und Ladezuständen mit korrekter Z-Index-Verwaltung und Barrierefreiheit."
+  },
+  "common": {
+    "interactiveExample": "Interaktives Beispiel",
+    "usage": "Verwendung"
+  },
+  "dropdownItems": {
+    "profile": "Profil ansehen",
+    "settings": "Einstellungen",
+    "logout": "Abmelden"
+  },
+  "alerts": {
+    "profile": "Profil angeklickt",
+    "settings": "Einstellungen angeklickt",
+    "logout": "Abmelden geklickt"
+  },
+  "modals": {
+    "title": "Modals",
+    "description": "Modale Dialogfelder mit Backdrop-Blur, Animationszuständen und mehreren Größen. Enthält Fokusverwaltung und Tastaturnavigation.",
+    "openButton": "Modal öffnen",
+    "exampleTitle": "Beispiel-Modalfenster",
+    "exampleBody": "Dies ist ein Beispiel-Modal mit dem neuen Overlay-Designsystem. Es enthält eine korrekte Hintergrundbehandlung, Fokusverwaltung und Animationszustände.",
+    "featuresTitle": "Eigenschaften",
+    "features": [
+      "Backdrop-Blur-Effekt",
+      "Fokus-Falle und Wiederherstellung",
+      "Tastaturnavigation",
+      "Mehrere Größenvarianten"
+    ],
+    "accessibilityTitle": "Barrierefreiheit",
+    "accessibility": [
+      "ARIA-Bezeichnungen und -Rollen",
+      "Behandlung der Escape-Taste",
+      "Unterstützung für Bildschirmleser",
+      "Fokus-Management"
+    ],
+    "cancel": "Abbrechen",
+    "confirm": "Bestätigen"
+  },
+  "dropdowns": {
+    "title": "Auswahlfelder",
+    "description": "Dropdown-Menüs mit mehreren Positionierungsoptionen, Symbolen, Trennlinien und Navigation über die Tastatur.",
+    "actionsButton": "Aktionen",
+    "userMenuButton": "Benutzermenü"
+  },
+  "tooltips": {
+    "title": "Hilfetexte",
+    "description": "Leichte Tooltips mit mehreren Positionsoptionen und Farbvarianten.",
+    "hoverButton": "Mouseover für {{position}} Tooltip",
+    "tooltipOn": "Tooltip bei {{position}}"
+  },
+  "loading": {
+    "title": "Lade Überlagerungen",
+    "description": "Vollbild- und Inline-Ladezustände mit Backdrop-Blur und anpassbaren Nachrichten.",
+    "showButton": "Lade-Overlay anzeigen",
+    "inlineLabel": "Inline-Ladezustand:",
+    "message": "Ihre Anfrage wird verarbeitet..."
+  },
+  "sheets": {
+    "title": "Bettlaken (Bettbezug)",
+    "description": "Mobile-first-Bottom-Sheets und Action-Sheets, die von unten auf dem Bildschirm hervorgehen."
+  },
+  "contextMenus": {
+    "title": "Kontextmenüs",
+    "description": "Kontextmenüs mit rechter Maustaste, Tastenkombinationen und geschachtelten Untermenüs."
+  },
+  "portal": {
+    "title": "Portale-Verwaltung",
+    "description": "Z-Index-Verwaltungssystem und Portale-Tools für die korrekte Stapelung von Overlays.",
+    "zIndexLayersTitle": "Z-Index-Ebenen",
+    "focusManagementTitle": "Fokus-Management",
+    "layers": {
+      "backdrop": "Hintergrund",
+      "popover": "Hinweisfenster",
+      "dropdown": "Auswahlfeld",
+      "tooltip": "Tooltip",
+      "modal": "Modal",
+      "sheet": "Blatt",
+      "contextMenu": "Kontextmenü",
+      "loading": "Laden",
+      "notification": "Benachrichtigung"
+    }
+  },
+  "animationStates": {
+    "title": "Animationszustände",
+    "description": "Konsistente Animationszustände für Ein- und Ausgangsübergänge bei allen Overlay-Komponenten.",
+    "availableStatesTitle": "Verfügbare Zustände",
+    "modalStatesTitle": "Modale Zustände",
+    "dropdownStatesTitle": "Dropdown-Zustände"
+  },
+  "bestPractices": {
+    "title": "Beste Praktiken",
+    "accessibilityTitle": "Barrierefreiheit",
+    "accessibility": [
+      "Stellen Sie immer geeignete ARIA-Bezeichnungen und -Rollen bereit",
+      "Fokustrapping für Modals implementieren",
+      "Unterstützung der Tastaturnavigation (Tab, Escape, Pfeiltasten)",
+      "Fokusreihenfolge und Wiederherstellung beibehalten",
+      "Verwenden Sie semantische HTML-Elemente",
+      "Bieten Sie Bildschirmleserankündigungen an"
+    ],
+    "performanceTitle": "Leistung",
+    "performance": [
+      "Verwenden Sie React-Portale für die korrekte DOM-Rendering",
+      "Implementieren Sie die lazy loading für schwere Overlays",
+      "Bereinige Ereignis-Listener beim Ausräumen",
+      "Verwenden Sie CSS-Transformationen für Animationen",
+      "Vermeide komplexe Hintergrund-Filter auf Mobilgeräten",
+      "Layout-Thrashing minimieren"
+    ],
+    "uxGuidelinesTitle": "UX-Richtlinien",
+    "uxGuidelines": [
+      "Halten Sie Modals auf einzelne Aufgaben fokussiert",
+      "Stellen Sie klare Schließungsaffordanzen bereit",
+      "Verwenden Sie geeignete Overlay-Typen für den Kontext",
+      "Stellen Sie eine konsistente Animationszeit ein",
+      "Berücksichtigen Sie die Einschränkungen des mobilen Viewports",
+      "Vermeiden Sie verschachtelte Overlay-Interaktionen"
+    ],
+    "technicalTitle": "Technisch",
+    "technical": [
+      "Verwenden Sie ein ordnungsgemäßes Z-Index-Layering-System",
+      "Körper-Scroll-Sperre korrekt verwalten",
+      "Unterstützt sowohl Klick- als auch Tastatureingaben",
+      "Testen Sie über verschiedene Bildschirmgrößen",
+      "Berücksichtigung reduzierter Bewegungspräferenzen",
+      "Implementieren Sie ordnungsgemäße Fehlergrenzen"
+    ]
+  }
+}

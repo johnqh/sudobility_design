@@ -1,0 +1,155 @@
+{
+  "seo": {
+    "title": "ไอคอนและภาพประกอบ - ระบบการออกแบบ - เข้าร่วมภายใน - {{emailDomain}}",
+    "description": "ระบบไอคอนที่ครอบคลุมพร้อมขนาดสีและรูปแบบการใช้งานที่สอดคล้องกัน"
+  },
+  "header": {
+    "badge": "ไอคอนและภาพประกอบ",
+    "title": "ไอคอนและภาพประกอบ",
+    "description": "ระบบไอคอนที่ครอบคลุมพร้อมขนาดสีและรูปแบบการใช้งานที่สอดคล้องกัน สร้างด้วย Heroicons และปรับให้เหมาะสมกับการเข้าถึงและโหมดมืด"
+  },
+  "sizes": {
+    "title": "ขนาดไอคอน",
+    "variantsTitle": "รุ่นขนาด",
+    "usageTitle": "ขนาด การใช้งาน",
+    "labels": {
+      "xs": "xs (12px)",
+      "sm": "sm (16px)",
+      "md": "md (20px)",
+      "lg": "lg (24px)",
+      "xl": "xl (32px)",
+      "xxl": "xxl (40px)",
+      "xxxl": "xxxl (48px)"
+    }
+  },
+  "colors": {
+    "title": "สีไอคอน",
+    "variantsTitle": "รุ่นสี",
+    "web3Title": "สีเว็บ3",
+    "default": {
+      "label": "ค่าเริ่มต้น",
+      "value": "เทา 500 / 400"
+    },
+    "brand": {
+      "label": "แบรนด์",
+      "value": "สีน้ำเงิน 600 / 400"
+    },
+    "success": {
+      "label": "ความสำเร็จ",
+      "value": "สีเขียว 600 / 400"
+    },
+    "warning": {
+      "label": "คำเตือน",
+      "value": "อมเบอร์ 600 / 400"
+    },
+    "error": {
+      "label": "ข้อผิดพลาด",
+      "value": "แดง 600 / 400"
+    },
+    "interactive": {
+      "label": "โต้ตอบได้",
+      "value": "เอฟเฟกต์การชี้"
+    },
+    "ethereum": {
+      "label": "Ethereum",
+      "value": "สีน้ำเงิน 600 / 400"
+    },
+    "solana": {
+      "label": "Solana",
+      "value": "ม่วง 600 / 400"
+    },
+    "bitcoin": {
+      "label": "Bitcoin",
+      "value": "ส้ม 600 / 400"
+    }
+  },
+  "context": {
+    "title": "ไอคอนเฉพาะบริบท",
+    "buttonTitle": "ไอคอนปุ่ม",
+    "inputTitle": "ไอคอนป้อนข้อมูล",
+    "leadingIcon": "ไอคอนนำ",
+    "trailingIcon": "ไอคอนท้าย",
+    "iconOnly": "ไอคอนเดียว",
+    "trailingInteractive": "การโต้ตอบแบบท้าย",
+    "addItem": "เพิ่มรายการ",
+    "continue": "ดำเนินการต่อ",
+    "searchPlaceholder": "ค้นหา...",
+    "passwordPlaceholder": "รหัสผ่าน"
+  },
+  "status": {
+    "title": "ไอคอนสถานะ",
+    "success": {
+      "title": "ความสำเร็จ",
+      "description": "การดำเนินการสำเร็จแล้ว"
+    },
+    "warning": {
+      "title": "คำเตือน",
+      "description": "โปรดตรวจสอบและดำเนินการต่อ"
+    },
+    "error": {
+      "title": "ข้อผิดพลาด",
+      "description": "เกิดข้อผิดพลาดบางอย่าง"
+    },
+    "info": {
+      "title": "ข้อมูล",
+      "description": "ข้อมูลเพิ่มเติม"
+    }
+  },
+  "web3": {
+    "title": "ไอคอนบริบท Web3",
+    "walletStatusTitle": "สถานะกระเป๋าสตางค์",
+    "blockchainTitle": "ไอคอนบล็อกเชน",
+    "walletConnected": "กระเป๋าเงินเชื่อมต่อแล้ว",
+    "noWalletConnected": "ไม่มีกระเป๋าสตางค์ที่เชื่อมต่อ",
+    "connectToContinue": "เชื่อมต่อเพื่อดำเนินการต่อ",
+    "ethereum": {
+      "title": "Ethereum",
+      "network": "เครือข่าย ETH"
+    },
+    "solana": {
+      "title": "Solana",
+      "network": "เครือข่าย SOL"
+    },
+    "bitcoin": {
+      "title": "Bitcoin",
+      "network": "เครือข่าย BTC"
+    }
+  },
+  "decorative": {
+    "title": "ไอคอนตกแต่ง",
+    "heroLarge": {
+      "title": "ฮีโร่ ขนาดใหญ่",
+      "size": "80px × 80px"
+    },
+    "heroMedium": {
+      "title": "ฮีโร่ มิดเดิล",
+      "size": "64px × 64px"
+    },
+    "heroSmall": {
+      "title": "ฮีโร่ สมอล",
+      "size": "48px × 48px"
+    }
+  },
+  "browser": {
+    "title": "เบราว์เซอร์ไอคอน",
+    "categories": {
+      "all": "ไอคอนทั้งหมด",
+      "actions": "การกระทำ",
+      "status": "สถานะ",
+      "navigation": "การนำทาง",
+      "web3": "Web3",
+      "decorative": "ตกแต่ง"
+    }
+  },
+  "tokens": {
+    "title": "รูปแบบไอคอนที่ใช้ได้",
+    "sizeVariants": "รุ่นขนาด",
+    "colorVariants": "รุ่นสี",
+    "contextVariants": "รูปแบบบริบท",
+    "combinedVariants": "รูปแบบที่รวมกัน"
+  },
+  "navigation": {
+    "previous": "ตารางและกริดข้อมูล",
+    "backToDesignSystem": "กลับไปยังระบบการออกแบบ"
+  }
+}

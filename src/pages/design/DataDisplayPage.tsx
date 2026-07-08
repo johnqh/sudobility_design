@@ -13,6 +13,7 @@ import {
 } from "@heroicons/react/24/outline";
 import { StarIcon as StarSolid } from "@heroicons/react/24/solid";
 import React, { useState } from "react";
+import { useTranslation } from "react-i18next";
 import { SEOHead } from "@sudobility/seo_lib";
 import { Button, Section } from "@sudobility/components";
 import { cn } from "@sudobility/components";
@@ -27,6 +28,7 @@ const DataDisplayPage: React.FC<AppProps> = ({
   emailDomain,
   appName: _appName,
 }) => {
+  const { t } = useTranslation("dataDisplay");
   const [sortColumn, setSortColumn] = useState("date");
   const [sortDirection, setSortDirection] = useState<"asc" | "desc">("desc");
   const [selectedRow, setSelectedRow] = useState<number | null>(null);
@@ -38,8 +40,7 @@ const DataDisplayPage: React.FC<AppProps> = ({
 
   const quickStartExamples = [
     {
-      title: "Data Table",
-      description: "Sortable table with hover states and selection",
+      key: "dataTable",
       code: `// Data Table
 <div className={variants.dataDisplay.table.container()}>
   <div className={variants.dataDisplay.table.wrapper()}>
@@ -65,8 +66,7 @@ const DataDisplayPage: React.FC<AppProps> = ({
 </div>`,
     },
     {
-      title: "Email List",
-      description: "Interactive list with read/unread states",
+      key: "emailList",
       code: `// Email List
 <div className={variants.dataDisplay.list.container()}>
   <ul className={variants.dataDisplay.list.ul()}>
@@ -87,8 +87,7 @@ const DataDisplayPage: React.FC<AppProps> = ({
 </div>`,
     },
     {
-      title: "Key-Value Display",
-      description: "Display structured data in key-value pairs",
+      key: "keyValue",
       code: `// Key-Value Pairs
 <div className={variants.dataDisplay.keyValue.container()}>
   <dl className={variants.dataDisplay.keyValue.list()}>
@@ -110,8 +109,7 @@ const DataDisplayPage: React.FC<AppProps> = ({
 </div>`,
     },
     {
-      title: "Stats Grid",
-      description: "Display metrics and statistics with trend indicators",
+      key: "statsGrid",
       code: `// Stats Grid
 <div className={variants.dataDisplay.stats.container()}>
   <div className={variants.dataDisplay.stats.grid()}>
@@ -178,45 +176,35 @@ const DataDisplayPage: React.FC<AppProps> = ({
   const emailData = [
     {
       id: 1,
-      subject: "Transaction Confirmed",
       sender: "noreply@etherscan.io",
-      preview: "Your transaction has been confirmed on the blockchain...",
       time: "2h ago",
       read: false,
       starred: true,
     },
     {
       id: 2,
-      subject: "New NFT Drop Alert",
       sender: "updates@opensea.io",
-      preview: "Exciting new collection launching tomorrow...",
       time: "5h ago",
       read: false,
       starred: false,
     },
     {
       id: 3,
-      subject: "Wallet Security Update",
       sender: "security@metamask.io",
-      preview: "Important security improvements to your wallet...",
       time: "1d ago",
       read: true,
       starred: false,
     },
     {
       id: 4,
-      subject: "DeFi Yield Report",
       sender: "report@aave.com",
-      preview: "Your monthly yield farming summary...",
       time: "2d ago",
       read: true,
       starred: true,
     },
     {
       id: 5,
-      subject: "DAO Proposal #42",
       sender: "governance@dao.eth",
-      preview: "Vote on the latest community proposal...",
       time: "3d ago",
       read: true,
       starred: false,
@@ -226,36 +214,26 @@ const DataDisplayPage: React.FC<AppProps> = ({
   const timelineData = [
     {
       id: 1,
-      title: "Account Created",
-      description: "Welcome to example.com",
       time: "2024-01-01 10:00 AM",
       status: "complete",
     },
     {
       id: 2,
-      title: "Wallet Connected",
-      description: "MetaMask wallet linked successfully",
       time: "2024-01-01 10:15 AM",
       status: "complete",
     },
     {
       id: 3,
-      title: "First Email Sent",
-      description: "Sent welcome email to team",
       time: "2024-01-01 11:00 AM",
       status: "complete",
     },
     {
       id: 4,
-      title: "ENS Name Registered",
-      description: "alice.eth registered",
       time: "2024-01-02 2:00 PM",
       status: "active",
     },
     {
       id: 5,
-      title: "Premium Upgrade",
-      description: "Upgrade to premium plan pending",
       time: "Pending",
       status: "pending",
     },
@@ -273,8 +251,8 @@ const DataDisplayPage: React.FC<AppProps> = ({
   return (
     <>
       <SEOHead
-        title={`Data Display - Design System - Internal - ${emailDomain}`}
-        description="Data display components including tables, lists, grids, and code displays"
+        title={t("seo.title", { emailDomain })}
+        description={t("seo.description")}
         noIndex={true}
       />
 
@@ -285,26 +263,26 @@ const DataDisplayPage: React.FC<AppProps> = ({
             <div className="inline-flex items-center bg-accent/10 px-4 py-2 rounded-full mb-6">
               <TableCellsIcon className="h-5 w-5 text-accent mr-2" />
               <span className="text-accent font-semibold">
-                Data Display Components
+                {t("header.badge")}
               </span>
             </div>
 
             <h1 className={`${textVariants.heading.display.xl()} mb-6`}>
-              Data Display System
+              {t("header.title")}
             </h1>
 
             <p
               className={`${textVariants.body.lg()} max-w-3xl text-muted-foreground`}
             >
-              Comprehensive data display components for tables, lists, grids,
-              and code. Optimized for Web3 data including addresses,
-              transactions, and blockchain information.
+              {t("header.intro")}
             </p>
           </div>
 
           {/* Quick Start Examples */}
           <Section>
-            <h2 className={`${textVariants.heading.h2()} mb-8`}>Quick Start</h2>
+            <h2 className={`${textVariants.heading.h2()} mb-8`}>
+              {t("quickStart.heading")}
+            </h2>
 
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
               {quickStartExamples.map((example, index) => (
@@ -314,12 +292,12 @@ const DataDisplayPage: React.FC<AppProps> = ({
                 >
                   <div className="p-6 border-b border-border">
                     <h3 className={`${textVariants.heading.h4()} mb-2`}>
-                      {example.title}
+                      {t(`quickStart.examples.${example.key}.title`)}
                     </h3>
                     <p
                       className={`${textVariants.body.sm()} text-muted-foreground`}
                     >
-                      {example.description}
+                      {t(`quickStart.examples.${example.key}.description`)}
                     </p>
                   </div>
                   <div className="relative">
@@ -329,7 +307,7 @@ const DataDisplayPage: React.FC<AppProps> = ({
                     <button
                       onClick={() => copyToClipboard(example.code)}
                       className="absolute top-2 right-2 p-2 text-muted-foreground hover:text-foreground bg-card rounded-md shadow-sm border border-border hover:bg-muted transition-colors"
-                      title="Copy to clipboard"
+                      title={t("quickStart.copy")}
                     >
                       <svg
                         className="h-4 w-4"
@@ -353,19 +331,21 @@ const DataDisplayPage: React.FC<AppProps> = ({
 
           {/* Interactive Table Demo */}
           <Section>
-            <h2 className={`${textVariants.heading.h2()} mb-8`}>Data Tables</h2>
+            <h2 className={`${textVariants.heading.h2()} mb-8`}>
+              {t("tables.heading")}
+            </h2>
 
             <div
               className={`${ui.background.surface} ${ui.border.default} border rounded-lg overflow-hidden`}
             >
               <div className="p-6 border-b border-border">
                 <h3 className={`${textVariants.heading.h3()} mb-2`}>
-                  Interactive Contact Table
+                  {t("tables.cardTitle")}
                 </h3>
                 <p
                   className={`${textVariants.body.sm()} text-muted-foreground`}
                 >
-                  Sortable table with selection and hover states
+                  {t("tables.cardDescription")}
                 </p>
               </div>
 
@@ -381,7 +361,7 @@ const DataDisplayPage: React.FC<AppProps> = ({
                         onClick={() => handleSort("name")}
                       >
                         <div className="flex items-center">
-                          Name
+                          {t("tables.columns.name")}
                           {sortColumn === "name" &&
                             (sortDirection === "asc" ? (
                               <ChevronUpIcon className="h-3 w-3 ml-1" />
@@ -390,19 +370,21 @@ const DataDisplayPage: React.FC<AppProps> = ({
                             ))}
                         </div>
                       </th>
-                      <th className={variants.dataDisplay.table.th()}>Email</th>
                       <th className={variants.dataDisplay.table.th()}>
-                        Balance
+                        {t("tables.columns.email")}
                       </th>
                       <th className={variants.dataDisplay.table.th()}>
-                        Status
+                        {t("tables.columns.balance")}
+                      </th>
+                      <th className={variants.dataDisplay.table.th()}>
+                        {t("tables.columns.status")}
                       </th>
                       <th
                         className={variants.dataDisplay.table.thSortable()}
                         onClick={() => handleSort("date")}
                       >
                         <div className="flex items-center">
-                          Date
+                          {t("tables.columns.date")}
                           {sortColumn === "date" &&
                             (sortDirection === "asc" ? (
                               <ChevronUpIcon className="h-3 w-3 ml-1" />
@@ -462,7 +444,7 @@ const DataDisplayPage: React.FC<AppProps> = ({
                                 "bg-muted text-muted-foreground",
                             )}
                           >
-                            {row.status}
+                            {t(`tables.status.${row.status.toLowerCase()}`)}
                           </span>
                         </td>
                         <td className={variants.dataDisplay.table.td()}>
@@ -478,19 +460,21 @@ const DataDisplayPage: React.FC<AppProps> = ({
 
           {/* Email List Demo */}
           <Section>
-            <h2 className={`${textVariants.heading.h2()} mb-8`}>Lists</h2>
+            <h2 className={`${textVariants.heading.h2()} mb-8`}>
+              {t("lists.heading")}
+            </h2>
 
             <div
               className={`${ui.background.surface} ${ui.border.default} border rounded-lg overflow-hidden`}
             >
               <div className="p-6 border-b border-border">
                 <h3 className={`${textVariants.heading.h3()} mb-2`}>
-                  Email List
+                  {t("lists.cardTitle")}
                 </h3>
                 <p
                   className={`${textVariants.body.sm()} text-muted-foreground`}
                 >
-                  Interactive email list with read/unread states and actions
+                  {t("lists.cardDescription")}
                 </p>
               </div>
 
@@ -530,7 +514,7 @@ const DataDisplayPage: React.FC<AppProps> = ({
                               !email.read && "font-semibold",
                             )}
                           >
-                            {email.subject}
+                            {t(`lists.emails.${email.id}.subject`)}
                           </p>
                           <span className="text-xs text-muted-foreground ml-2 flex-shrink-0">
                             {email.time}
@@ -540,7 +524,7 @@ const DataDisplayPage: React.FC<AppProps> = ({
                           {email.sender}
                         </p>
                         <p className="text-sm text-muted-foreground truncate">
-                          {email.preview}
+                          {t(`lists.emails.${email.id}.preview`)}
                         </p>
                       </div>
                     </li>
@@ -553,19 +537,19 @@ const DataDisplayPage: React.FC<AppProps> = ({
           {/* Grid Layouts */}
           <Section>
             <h2 className={`${textVariants.heading.h2()} mb-8`}>
-              Grid Layouts
+              {t("gridLayouts.heading")}
             </h2>
 
             <div className="space-y-8">
               <div>
                 <h3 className={`${textVariants.heading.h3()} mb-4`}>
-                  Stats Grid
+                  {t("gridLayouts.statsGrid.heading")}
                 </h3>
                 <div className={variants.dataDisplay.stats.container()}>
                   <div className={variants.dataDisplay.stats.grid()}>
                     <div className={variants.dataDisplay.stats.item()}>
                       <p className={variants.dataDisplay.stats.label()}>
-                        Total Emails
+                        {t("gridLayouts.statsGrid.totalEmails")}
                       </p>
                       <p className={variants.dataDisplay.stats.value()}>
                         1,234
@@ -577,12 +561,12 @@ const DataDisplayPage: React.FC<AppProps> = ({
                         )}
                       >
                         <ArrowTrendingUpIcon className="h-4 w-4 mr-1 inline" />
-                        12.5% from last month
+                        {t("gridLayouts.statsGrid.totalEmailsChange")}
                       </p>
                     </div>
                     <div className={variants.dataDisplay.stats.item()}>
                       <p className={variants.dataDisplay.stats.label()}>
-                        Active Contacts
+                        {t("gridLayouts.statsGrid.activeContacts")}
                       </p>
                       <p className={variants.dataDisplay.stats.value()}>89</p>
                       <p
@@ -591,13 +575,13 @@ const DataDisplayPage: React.FC<AppProps> = ({
                           variants.dataDisplay.stats.changePositive(),
                         )}
                       >
-                        <ArrowTrendingUpIcon className="h-4 w-4 mr-1 inline" />5
-                        new this week
+                        <ArrowTrendingUpIcon className="h-4 w-4 mr-1 inline" />
+                        {t("gridLayouts.statsGrid.activeContactsChange")}
                       </p>
                     </div>
                     <div className={variants.dataDisplay.stats.item()}>
                       <p className={variants.dataDisplay.stats.label()}>
-                        Storage Used
+                        {t("gridLayouts.statsGrid.storageUsed")}
                       </p>
                       <p className={variants.dataDisplay.stats.value()}>
                         2.4GB
@@ -609,7 +593,7 @@ const DataDisplayPage: React.FC<AppProps> = ({
                         )}
                       >
                         <ArrowTrendingDownIcon className="h-4 w-4 mr-1 inline" />
-                        15% remaining
+                        {t("gridLayouts.statsGrid.storageUsedChange")}
                       </p>
                     </div>
                   </div>
@@ -618,7 +602,7 @@ const DataDisplayPage: React.FC<AppProps> = ({
 
               <div>
                 <h3 className={`${textVariants.heading.h3()} mb-4`}>
-                  Card Grid
+                  {t("gridLayouts.cardGrid.heading")}
                 </h3>
                 <div className={variants.dataDisplay.grid.threeColumn()}>
                   {[1, 2, 3, 4, 5, 6].map((i) => (
@@ -633,12 +617,12 @@ const DataDisplayPage: React.FC<AppProps> = ({
                         </span>
                       </div>
                       <h4 className={textVariants.heading.h4()}>
-                        Card Title {i}
+                        {t("gridLayouts.cardGrid.cardTitle", { number: i })}
                       </h4>
                       <p
                         className={`${textVariants.body.sm()} text-muted-foreground mt-2`}
                       >
-                        Card content with relevant information and actions.
+                        {t("gridLayouts.cardGrid.cardContent")}
                       </p>
                     </div>
                   ))}
@@ -650,19 +634,19 @@ const DataDisplayPage: React.FC<AppProps> = ({
           {/* Key-Value Display */}
           <Section>
             <h2 className={`${textVariants.heading.h2()} mb-8`}>
-              Key-Value Display
+              {t("keyValue.heading")}
             </h2>
 
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
               <div>
                 <h3 className={`${textVariants.heading.h3()} mb-4`}>
-                  User Profile
+                  {t("keyValue.userProfile.heading")}
                 </h3>
                 <div className={variants.dataDisplay.keyValue.container()}>
                   <dl className={variants.dataDisplay.keyValue.list()}>
                     <div className={variants.dataDisplay.keyValue.row()}>
                       <dt className={variants.dataDisplay.keyValue.key()}>
-                        Full Name
+                        {t("keyValue.userProfile.fullName")}
                       </dt>
                       <dd className={variants.dataDisplay.keyValue.value()}>
                         Alice Johnson
@@ -670,7 +654,7 @@ const DataDisplayPage: React.FC<AppProps> = ({
                     </div>
                     <div className={variants.dataDisplay.keyValue.row()}>
                       <dt className={variants.dataDisplay.keyValue.key()}>
-                        ENS Name
+                        {t("keyValue.userProfile.ensName")}
                       </dt>
                       <dd className={variants.dataDisplay.keyValue.value()}>
                         alice.eth
@@ -678,7 +662,7 @@ const DataDisplayPage: React.FC<AppProps> = ({
                     </div>
                     <div className={variants.dataDisplay.keyValue.row()}>
                       <dt className={variants.dataDisplay.keyValue.key()}>
-                        Wallet Address
+                        {t("keyValue.userProfile.walletAddress")}
                       </dt>
                       <dd className={variants.dataDisplay.keyValue.value()}>
                         <code className={variants.dataDisplay.code.address()}>
@@ -688,7 +672,7 @@ const DataDisplayPage: React.FC<AppProps> = ({
                     </div>
                     <div className={variants.dataDisplay.keyValue.row()}>
                       <dt className={variants.dataDisplay.keyValue.key()}>
-                        Email
+                        {t("keyValue.userProfile.email")}
                       </dt>
                       <dd className={variants.dataDisplay.keyValue.value()}>
                         alice@{emailDomain}
@@ -696,11 +680,11 @@ const DataDisplayPage: React.FC<AppProps> = ({
                     </div>
                     <div className={variants.dataDisplay.keyValue.row()}>
                       <dt className={variants.dataDisplay.keyValue.key()}>
-                        Account Status
+                        {t("keyValue.userProfile.accountStatus")}
                       </dt>
                       <dd className={variants.dataDisplay.keyValue.value()}>
                         <span className="px-2 py-1 text-xs rounded-full bg-success/10 text-success">
-                          Verified
+                          {t("keyValue.userProfile.verified")}
                         </span>
                       </dd>
                     </div>
@@ -710,13 +694,13 @@ const DataDisplayPage: React.FC<AppProps> = ({
 
               <div>
                 <h3 className={`${textVariants.heading.h3()} mb-4`}>
-                  Transaction Details
+                  {t("keyValue.transactionDetails.heading")}
                 </h3>
                 <div className={variants.dataDisplay.keyValue.container()}>
                   <dl className={variants.dataDisplay.keyValue.list()}>
                     <div className={variants.dataDisplay.keyValue.row()}>
                       <dt className={variants.dataDisplay.keyValue.key()}>
-                        Transaction Hash
+                        {t("keyValue.transactionDetails.transactionHash")}
                       </dt>
                       <dd className={variants.dataDisplay.keyValue.value()}>
                         <code className={variants.dataDisplay.code.hash()}>
@@ -726,7 +710,7 @@ const DataDisplayPage: React.FC<AppProps> = ({
                     </div>
                     <div className={variants.dataDisplay.keyValue.row()}>
                       <dt className={variants.dataDisplay.keyValue.key()}>
-                        Block Number
+                        {t("keyValue.transactionDetails.blockNumber")}
                       </dt>
                       <dd className={variants.dataDisplay.keyValue.value()}>
                         18,234,567
@@ -734,7 +718,7 @@ const DataDisplayPage: React.FC<AppProps> = ({
                     </div>
                     <div className={variants.dataDisplay.keyValue.row()}>
                       <dt className={variants.dataDisplay.keyValue.key()}>
-                        Gas Used
+                        {t("keyValue.transactionDetails.gasUsed")}
                       </dt>
                       <dd className={variants.dataDisplay.keyValue.value()}>
                         21,000
@@ -742,12 +726,12 @@ const DataDisplayPage: React.FC<AppProps> = ({
                     </div>
                     <div className={variants.dataDisplay.keyValue.row()}>
                       <dt className={variants.dataDisplay.keyValue.key()}>
-                        Status
+                        {t("keyValue.transactionDetails.status")}
                       </dt>
                       <dd className={variants.dataDisplay.keyValue.value()}>
                         <span className="flex items-center text-success">
                           <CheckCircleIcon className="h-4 w-4 mr-1" />
-                          Success
+                          {t("keyValue.transactionDetails.success")}
                         </span>
                       </dd>
                     </div>
@@ -760,7 +744,7 @@ const DataDisplayPage: React.FC<AppProps> = ({
           {/* Code Display */}
           <Section>
             <h2 className={`${textVariants.heading.h2()} mb-8`}>
-              Code Display
+              {t("codeDisplay.heading")}
             </h2>
 
             <div className="space-y-8">
@@ -768,22 +752,22 @@ const DataDisplayPage: React.FC<AppProps> = ({
                 className={`${ui.background.surface} ${ui.border.default} border rounded-lg p-6`}
               >
                 <h3 className={`${textVariants.heading.h3()} mb-4`}>
-                  Inline Code
+                  {t("codeDisplay.inlineCode.heading")}
                 </h3>
                 <p className={textVariants.body.md()}>
-                  Use{" "}
+                  {t("codeDisplay.inlineCode.textStart")}
                   <code className={variants.dataDisplay.code.inline()}>
                     variants.dataDisplay.code.inline()
-                  </code>{" "}
-                  for inline code. Web3 addresses like{" "}
+                  </code>
+                  {t("codeDisplay.inlineCode.textMiddle")}
                   <code className={variants.dataDisplay.code.address()}>
                     0x742d...4e88
-                  </code>{" "}
-                  and transaction hashes like{" "}
+                  </code>
+                  {t("codeDisplay.inlineCode.textMiddle2")}
                   <code className={variants.dataDisplay.code.hash()}>
                     0xabc123...def456
-                  </code>{" "}
-                  have special styling.
+                  </code>
+                  {t("codeDisplay.inlineCode.textEnd")}
                 </p>
               </div>
 
@@ -791,7 +775,7 @@ const DataDisplayPage: React.FC<AppProps> = ({
                 className={`${ui.background.surface} ${ui.border.default} border rounded-lg p-6`}
               >
                 <h3 className={`${textVariants.heading.h3()} mb-4`}>
-                  Code Block
+                  {t("codeDisplay.codeBlock.heading")}
                 </h3>
                 <pre className={variants.dataDisplay.code.block()}>
                   <code>{`// Smart Contract Example
@@ -815,13 +799,15 @@ contract EmailRegistry {
 
           {/* Timeline */}
           <Section>
-            <h2 className={`${textVariants.heading.h2()} mb-8`}>Timeline</h2>
+            <h2 className={`${textVariants.heading.h2()} mb-8`}>
+              {t("timeline.heading")}
+            </h2>
 
             <div
               className={`${ui.background.surface} ${ui.border.default} border rounded-lg p-8`}
             >
               <h3 className={`${textVariants.heading.h3()} mb-6`}>
-                Activity Timeline
+                {t("timeline.cardTitle")}
               </h3>
 
               <div className={variants.dataDisplay.timeline.container()}>
@@ -867,12 +853,12 @@ contract EmailRegistry {
                             {item.time}
                           </p>
                           <p className={variants.dataDisplay.timeline.title()}>
-                            {item.title}
+                            {t(`timeline.items.${item.id}.title`)}
                           </p>
                           <p
                             className={variants.dataDisplay.timeline.description()}
                           >
-                            {item.description}
+                            {t(`timeline.items.${item.id}.description`)}
                           </p>
                         </div>
                       </div>
@@ -886,7 +872,7 @@ contract EmailRegistry {
           {/* Empty States */}
           <Section>
             <h2 className={`${textVariants.heading.h2()} mb-8`}>
-              Empty States
+              {t("emptyStates.heading")}
             </h2>
 
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
@@ -896,13 +882,13 @@ contract EmailRegistry {
                 <div className={variants.dataDisplay.empty.container()}>
                   <InboxIcon className={variants.dataDisplay.empty.icon()} />
                   <h3 className={variants.dataDisplay.empty.title()}>
-                    No emails
+                    {t("emptyStates.noEmails.title")}
                   </h3>
                   <p className={variants.dataDisplay.empty.description()}>
-                    Get started by composing your first email
+                    {t("emptyStates.noEmails.description")}
                   </p>
                   <div className={variants.dataDisplay.empty.action()}>
-                    <Button>Compose Email</Button>
+                    <Button>{t("emptyStates.noEmails.action")}</Button>
                   </div>
                 </div>
               </div>
@@ -915,10 +901,10 @@ contract EmailRegistry {
                     className={variants.dataDisplay.empty.icon()}
                   />
                   <h3 className={variants.dataDisplay.empty.title()}>
-                    No data available
+                    {t("emptyStates.noData.title")}
                   </h3>
                   <p className={variants.dataDisplay.empty.description()}>
-                    There are no records to display at this time
+                    {t("emptyStates.noData.description")}
                   </p>
                 </div>
               </div>
@@ -928,7 +914,7 @@ contract EmailRegistry {
           {/* Web3 Data Patterns */}
           <Section>
             <h2 className={`${textVariants.heading.h2()} mb-8`}>
-              Web3 Data Patterns
+              {t("web3.heading")}
             </h2>
 
             <div
@@ -936,26 +922,26 @@ contract EmailRegistry {
             >
               <div className="p-6 border-b border-border">
                 <h3 className={`${textVariants.heading.h3()} mb-2`}>
-                  Blockchain Data Display
+                  {t("web3.cardTitle")}
                 </h3>
                 <p
                   className={`${textVariants.body.sm()} text-muted-foreground`}
                 >
-                  Specialized patterns for displaying Web3 data
+                  {t("web3.cardDescription")}
                 </p>
               </div>
 
               <div className="p-6 space-y-6">
                 <div>
                   <h4 className={`${textVariants.heading.h4()} mb-3`}>
-                    Address Display
+                    {t("web3.addressDisplay.heading")}
                   </h4>
                   <div className="space-y-2">
                     <div className={variants.dataDisplay.keyValue.inline()}>
                       <span
                         className={variants.dataDisplay.keyValue.inlineKey()}
                       >
-                        Full:
+                        {t("web3.addressDisplay.full")}
                       </span>
                       <code className={variants.dataDisplay.code.address()}>
                         0x742d35Cc6634C0532925a3b844Bc9e7595f0bEb7
@@ -968,7 +954,7 @@ contract EmailRegistry {
                       <span
                         className={variants.dataDisplay.keyValue.inlineKey()}
                       >
-                        Truncated:
+                        {t("web3.addressDisplay.truncated")}
                       </span>
                       <code className={variants.dataDisplay.code.address()}>
                         0x742d...bEb7
@@ -978,7 +964,7 @@ contract EmailRegistry {
                       <span
                         className={variants.dataDisplay.keyValue.inlineKey()}
                       >
-                        ENS:
+                        {t("web3.addressDisplay.ens")}
                       </span>
                       <span
                         className={variants.dataDisplay.keyValue.inlineValue()}
@@ -991,7 +977,7 @@ contract EmailRegistry {
 
                 <div>
                   <h4 className={`${textVariants.heading.h4()} mb-3`}>
-                    Token Balances
+                    {t("web3.tokenBalances.heading")}
                   </h4>
                   <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
                     <div className="text-center">
@@ -1027,34 +1013,38 @@ contract EmailRegistry {
           {/* Implementation Notes */}
           <Section>
             <h2 className={`${textVariants.heading.h2()} mb-8`}>
-              Implementation Notes
+              {t("implementationNotes.heading")}
             </h2>
 
             <div className={`${ui.background.subtle} rounded-xl p-8`}>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
                 <div>
                   <h3 className={`${textVariants.heading.h3()} mb-4`}>
-                    Performance Tips
+                    {t("implementationNotes.performance.heading")}
                   </h3>
                   <ul className="space-y-2 text-muted-foreground">
-                    <li>• Use virtual scrolling for large data sets</li>
-                    <li>• Implement pagination for tables over 100 rows</li>
-                    <li>• Lazy load images and avatars in lists</li>
-                    <li>• Memoize expensive calculations</li>
-                    <li>• Use skeleton loaders during data fetching</li>
+                    {(
+                      t("implementationNotes.performance.items", {
+                        returnObjects: true,
+                      }) as string[]
+                    ).map((item, i) => (
+                      <li key={i}>{item}</li>
+                    ))}
                   </ul>
                 </div>
 
                 <div>
                   <h3 className={`${textVariants.heading.h3()} mb-4`}>
-                    Accessibility
+                    {t("implementationNotes.accessibility.heading")}
                   </h3>
                   <ul className="space-y-2 text-muted-foreground">
-                    <li>• Use semantic HTML (table, thead, tbody)</li>
-                    <li>• Add aria-labels for sortable columns</li>
-                    <li>• Ensure keyboard navigation for tables</li>
-                    <li>• Provide text alternatives for visual indicators</li>
-                    <li>• Use appropriate ARIA roles for lists</li>
+                    {(
+                      t("implementationNotes.accessibility.items", {
+                        returnObjects: true,
+                      }) as string[]
+                    ).map((item, i) => (
+                      <li key={i}>{item}</li>
+                    ))}
                   </ul>
                 </div>
               </div>

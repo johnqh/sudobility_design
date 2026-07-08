@@ -1,0 +1,159 @@
+{
+  "seo": {
+    "title": "Forms Advanced - Design System - Interno - {{emailDomain}}",
+    "description": "Patrones de formulario avanzados, incluyendo formularios de múltiples pasos, cargas de archivos y entradas de Web3"
+  },
+  "header": {
+    "badge": "Formularios avanzados",
+    "title": "Sistema de formularios avanzados",
+    "description": "Patrones avanzados de formularios, incluyendo asistentes de múltiples pasos, cargas de archivos, entradas específicas de Web3 y patrones de validación sofisticados para interacciones complejas con el usuario."
+  },
+  "quickStart": {
+    "heading": "Inicio rápido",
+    "copyTitle": "Copiar al portapapeles",
+    "examples": {
+      "multiStep": {
+        "title": "Formulario de varios pasos",
+        "description": "Formulario paso a paso con indicador de progreso"
+      },
+      "fileUpload": {
+        "title": "Carga de archivo con arrastrar y soltar",
+        "description": "Carga de archivos avanzada con vista previa y validación"
+      },
+      "tokenAmount": {
+        "title": "Entrada de cantidad de token Web3",
+        "description": "Entrada especializada para cantidades de criptomonedas con validación"
+      },
+      "validation": {
+        "title": "Validación avanzada",
+        "description": "Validación en tiempo real con mensajes de error personalizados"
+      }
+    }
+  },
+  "steps": {
+    "account": {
+      "title": "Configuración de cuenta",
+      "description": "Información básica de la cuenta"
+    },
+    "wallet": {
+      "title": "Conexión de billetera",
+      "description": "Conecta tu billetera Web3"
+    },
+    "transaction": {
+      "title": "Detalles de la transacción",
+      "description": "Configurar parámetros de transacción"
+    },
+    "review": {
+      "title": "Revisar y confirmar",
+      "description": "Revisar y enviar"
+    }
+  },
+  "multiStep": {
+    "heading": "Formularios de múltiples pasos",
+    "cardTitle": "Asistente de configuración de billetera",
+    "cardDescription": "Formulario interactivo de múltiples pasos con seguimiento de progreso y validación",
+    "emailLabel": "Dirección de correo electrónico",
+    "emailPlaceholder": "Ingrese su correo electrónico",
+    "passwordLabel": "Contraseña",
+    "passwordPlaceholder": "Cree una contraseña segura",
+    "confirmPasswordLabel": "Confirmar contraseña",
+    "confirmPasswordPlaceholder": "Confirme su contraseña",
+    "walletAddressLabel": "Dirección de billetera",
+    "walletAddressPlaceholder": "0x...",
+    "networkLabel": "Red",
+    "networks": {
+      "ethereum": "Ethereum Mainnet",
+      "polygon": "Polígono",
+      "bsc": "Binance Smart Chain",
+      "arbitrum": "Arbitrum"
+    },
+    "tokenAmountLabel": "Cantidad de tokens",
+    "tokenAmountPlaceholder": "0,00",
+    "balance": "Saldo: 1,234567 ETH (2.468,90 $)",
+    "max": "Max",
+    "gasPriceLabel": "Precio de gas (Gwei)",
+    "gasPricePlaceholder": "20",
+    "gasPriceHint": "Los precios más altos de gasolina resultan en confirmaciones de transacción más rápidas",
+    "reviewTitle": "Revise su transacción",
+    "reviewNetwork": "Red:",
+    "reviewToAddress": "A nombre de:",
+    "reviewAmount": "Cantidad:",
+    "reviewGasPrice": "Precio de gas:",
+    "warningTitle": "Advertencia de transacción",
+    "warningBody": "Por favor, revise detenidamente todos los detalles de la transacción. Las transacciones en cadena no se pueden revertir.",
+    "previous": "Anterior",
+    "next": "Siguiente",
+    "submit": "Enviar transacción"
+  },
+  "validationMessages": {
+    "invalidAddress": "Formato de dirección de Ethereum no válido",
+    "positiveAmount": "El monto debe ser un número positivo",
+    "insufficientBalance": "Saldo insuficiente",
+    "passwordMinLength": "La contraseña debe tener al menos 8 caracteres",
+    "passwordComplexity": "La contraseña debe contener mayúsculas, minúsculas y números",
+    "passwordsDoNotMatch": "Las contraseñas no coinciden"
+  },
+  "fileUpload": {
+    "heading": "Carga de archivos",
+    "cardTitle": "Carga de documento",
+    "cardDescription": "Carga de archivos arrastrando y soltando con vista previa y validación",
+    "dropTitle": "Arrastre archivos aquí para subirlos",
+    "dropSubtitle": "O haga clic para seleccionar archivos de su computadora",
+    "chooseFiles": "Elegir archivos",
+    "supportedFormats": "Formatos admitidos: PDF, DOC, DOCX, JPG, PNG, TXT (máximo 10 MB por archivo)",
+    "uploadedFiles": "Archivos subidos ({{count}})",
+    "megabytes": "{{size}} MB"
+  },
+  "web3": {
+    "heading": "Entradas especializadas de Web3",
+    "walletCard": {
+      "title": "Entrada de la dirección de billetera",
+      "description": "Entrada especializada para direcciones de criptomonedas con validación",
+      "recipientLabel": "Dirección del destinatario",
+      "recipientPlaceholder": "0x... o nombre ENS",
+      "validAddress": "✓ Dirección de Ethereum válida",
+      "ensLabel": "Nombre ENS",
+      "ensPlaceholder": "vitalik.eth",
+      "ensResolves": "→ Resuelve a: 0x742d...5f0bEb7"
+    },
+    "tokenCard": {
+      "title": "Entrada de cantidad de tokens",
+      "description": "Entrada precisa de cantidad de tokens con visualización del saldo",
+      "amountLabel": "Cantidad a enviar",
+      "amountPlaceholder": "0,00",
+      "balance": "Saldo: 1,234567 ETH",
+      "usdEquivalent": "aprox. 1.234,50 USD",
+      "quarter": "25%",
+      "half": "50%",
+      "threeQuarters": "75%",
+      "max": "Max",
+      "gasSettingsLabel": "Ajustes de gas",
+      "gasSlow": "Lento",
+      "gasSlowValue": "15 Gwei",
+      "gasStandard": "Estándar",
+      "gasStandardValue": "25 Gwei",
+      "gasFast": "Rápido",
+      "gasFastValue": "35 Gwei"
+    }
+  },
+  "validationSection": {
+    "heading": "Validación avanzada",
+    "cardTitle": "Ejemplos de validación en tiempo real",
+    "cardDescription": "Patrones avanzados de validación con retroalimentación en tiempo real y mensajes de error personalizados",
+    "strongPasswordLabel": "Contraseña segura",
+    "strongPasswordPlaceholder": "Introduzca la contraseña",
+    "checkMinChars": "Al menos 8 caracteres",
+    "checkUppercase": "Contiene letra mayúscula",
+    "checkNumber": "Contiene número",
+    "checkSpecialChar": "Contiene carácter especial",
+    "emailLabel": "Dirección de correo electrónico",
+    "emailPlaceholder": "Introduzca el correo electrónico",
+    "validEmail": "✓ Formato de correo electrónico válido",
+    "invalidLabel": "Ejemplo de entrada no válida",
+    "invalidPlaceholder": "Introduzca el valor",
+    "invalidMessage": "Este campo contiene caracteres no válidos",
+    "loadingLabel": "Cargando validación",
+    "loadingPlaceholder": "Comprobando disponibilidad...",
+    "loadingMessage": "Comprobando la disponibilidad del nombre de usuario..."
+  }
+}

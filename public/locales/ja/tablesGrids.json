@@ -1,0 +1,80 @@
+{
+  "seo": {
+    "title": "テーブルとデータグリッド - デザインシステム - 内部 - {{emailDomain}}",
+    "description": "ソート、フィルタリング、ページネーション、データグリッド機能を備えた包括的なテーブルシステム"
+  },
+  "header": {
+    "badge": "テーブルとデータグリッド",
+    "title": "テーブルとデータグリッド",
+    "subtitle": "ソート、フィルタリング、ページネーション、データグリッド機能を備えた包括的なテーブルシステム。構造化されたデータを高度なインタラクションパターンで表示するのに最適です。"
+  },
+  "columns": {
+    "name": "名",
+    "email": "電子メール",
+    "role": "ロール",
+    "status": "ステータス",
+    "actions": "アクション",
+    "transactions": "取引",
+    "joinDate": "参加日",
+    "transactionHash": "取引ハッシュ",
+    "from": "から",
+    "to": "へ",
+    "amount": "金額",
+    "chain": "チェーン"
+  },
+  "basic": {
+    "title": "基本テーブル",
+    "usage": "使用"
+  },
+  "sortable": {
+    "title": "並べ替え可能なテーブル",
+    "headers": "並べ替え可能なヘッダー"
+  },
+  "selectable": {
+    "title": "バッチ操作対応の選択可能テーブル",
+    "selected": "{{count}} 行が選択されました",
+    "export": "エクスポート",
+    "delete": "削除"
+  },
+  "compact": {
+    "title": "コンパクトテーブル"
+  },
+  "filterable": {
+    "title": "フィルタ可能なテーブル",
+    "searchPlaceholder": "ユーザーを検索...",
+    "filters": "フィルター"
+  },
+  "pagination": {
+    "title": "ページネーション付きのテーブル",
+    "showing": "表示中",
+    "to": "へ",
+    "of": "の",
+    "results": "結果",
+    "ariaLabel": "ページネーション"
+  },
+  "web3": {
+    "title": "Web3取引テーブル",
+    "confirmed": "確認済み",
+    "pending": "保留中",
+    "ethereum": "Ethereum",
+    "solana": "Solana"
+  },
+  "empty": {
+    "title": "空の状態",
+    "noData": "データが見つかりません",
+    "description": "現在、表示する記録がありません。",
+    "addRecord": "新しいレコードを追加"
+  },
+  "tokens": {
+    "title": "利用可能なテーブルバリアント",
+    "structure": "テーブル構造",
+    "containerBase": "コンテナとベース",
+    "headers": "ヘッダー",
+    "body": "体",
+    "statesPagination": "ステートとページネーション"
+  },
+  "nav": {
+    "previous": "レイアウトと余白",
+    "back": "デザインシステムに戻る"
+  }
+}

@@ -1,0 +1,197 @@
+{
+  "seo": {
+    "title": "模态框 - 设计系统 - 内部 - {{emailDomain}}",
+    "description": "具有 Web3 模式和可访问性功能的模态和对话框组件"
+  },
+  "header": {
+    "badge": "模态框与对话框",
+    "title": "模态组件",
+    "description": "包含Web3集成模式、无障碍功能和响应式行为的全面模态和对话系统。非常适合钱包连接、交易确认和用户交互。"
+  },
+  "common": {
+    "copyToClipboard": "复制到剪贴板",
+    "cancel": "取消"
+  },
+  "quickStart": {
+    "heading": "快速入门",
+    "examples": {
+      "basic": {
+        "title": "基本弹窗",
+        "description": "带标题、内容和页脚的标准模态框"
+      },
+      "confirmation": {
+        "title": "确认对话框",
+        "description": "带有操作按钮的简单确认对话框"
+      },
+      "wallet": {
+        "title": "Web3 钱包连接",
+        "description": "钱包选择和连接的弹窗"
+      },
+      "transaction": {
+        "title": "交易状态",
+        "description": "显示交易进度和状态的模态框"
+      }
+    }
+  },
+  "demos": {
+    "heading": "交互式演示",
+    "cards": {
+      "simpleModal": {
+        "title": "基本弹窗",
+        "description": "带标题、内容和页脚部分的标准模态框。"
+      },
+      "confirmationModal": {
+        "title": "确认对话框",
+        "description": "带有破坏性操作的简单确认对话框。"
+      },
+      "walletModal": {
+        "title": "钱包连接",
+        "description": "Web3钱包选择和连接界面。"
+      },
+      "transactionModal": {
+        "title": "交易状态",
+        "description": "交易进度和状态反馈弹窗。"
+      },
+      "formModal": {
+        "title": "表单弹窗",
+        "description": "包含表单元素和验证的模态框。"
+      },
+      "settingsModal": {
+        "title": "设置面板",
+        "description": "用于复杂设置和首选项的大模态窗口。"
+      }
+    }
+  },
+  "sizes": {
+    "heading": "尺寸变体",
+    "availableTitle": "可用尺寸",
+    "availableDescription": "根据您的内容需求选择合适的模态框大小。",
+    "boxLabel": "{{name}} 模态框 ({{maxWidth}})",
+    "names": {
+      "small": "小",
+      "medium": "Medium",
+      "large": "大",
+      "extraLarge": "特大号"
+    }
+  },
+  "web3": {
+    "heading": "Web3 集成模式",
+    "walletFlow": {
+      "title": "钱包连接流程",
+      "description": "通过选择提供商完成钱包连接体验。"
+    },
+    "transactionConfirmation": {
+      "title": "交易确认",
+      "description": "交易详情和确认界面。"
+    }
+  },
+  "accessibility": {
+    "heading": "无障碍指南",
+    "ariaTitle": "ARIA 属性与最佳实践",
+    "ariaDescription": "遵循这些指南，以确保您的模态框对所有用户都可访问。",
+    "requiredAria": "必需的 ARIA 属性",
+    "focusManagement": "注意力管理",
+    "focusItems": [
+      "打开模态框时，焦点应自动移动到第一个可聚焦元素上",
+      "标签导航应在模态框内被限制",
+      "模态框关闭时，焦点应返回到触发元素",
+      "ESC 键应关闭模态框"
+    ],
+    "screenReader": "屏幕阅读器支持",
+    "screenReaderItems": [
+      "使用语义化HTML元素（button、form等）",
+      "为所有交互式元素提供清晰、描述性的标签。",
+      "使用实时区域通告模态状态变化"
+    ]
+  },
+  "implementation": {
+    "heading": "实现说明",
+    "portalTitle": "React Portal 使用",
+    "portalDescription": "在门户中渲染模态框，以避免z-index问题并确保正确的层叠顺序。",
+    "animationTitle": "动画注意事项",
+    "animationDescription": "使用 CSS 动画或 Framer Motion 等库来实现平滑的模态框过渡。",
+    "animationItems": [
+      "• 叠加淡入淡出",
+      "• 缩放或滑动以查看模态内容",
+      "• 尊重用户的运动偏好",
+      "• 保持动画在300毫秒以下"
+    ]
+  },
+  "simpleModal": {
+    "title": "简单模态框示例",
+    "body": "这是一个带有标准标题、内容和页脚部分的基本模态框。它展示了典型的模态框结构和样式。",
+    "hint": "点击模态框外部或按下关闭按钮以关闭它。",
+    "gotIt": "明白"
+  },
+  "confirmationModal": {
+    "title": "删除项目",
+    "body": "您确定要删除此项吗？此操作无法撤销。",
+    "delete": "删除"
+  },
+  "walletModal": {
+    "title": "连接钱包",
+    "choose": "选择一个钱包以连接到 {{emailDomain}} 平台",
+    "metamask": "MetaMask",
+    "metamaskDescription": "流行的浏览器扩展",
+    "walletConnect": "WalletConnect",
+    "walletConnectDescription": "使用移动钱包扫描",
+    "phantom": "幻影",
+    "phantomDescription": "Solana 钱包"
+  },
+  "transactionModal": {
+    "title": {
+      "idle": "发送交易",
+      "pending": "交易待处理",
+      "confirming": "确认交易",
+      "success": "交易成功",
+      "error": "交易失败"
+    },
+    "description": {
+      "idle": "查看交易详情并确认以继续。",
+      "pending": "请在您的钱包中确认交易...",
+      "confirming": "等待区块链确认...",
+      "success": "您的交易已成功完成。",
+      "error": "交易被拒绝或失败。请重试。"
+    },
+    "amount": "金额：",
+    "gasFee": "Gas费：",
+    "total": "总计：",
+    "confirm": "确认交易",
+    "close": "关闭"
+  },
+  "formModal": {
+    "title": "联系表单",
+    "firstName": "名字",
+    "firstNamePlaceholder": "请输入您的名字",
+    "lastName": "姓",
+    "lastNamePlaceholder": "输入您的姓氏",
+    "email": "电子邮件地址",
+    "emailPlaceholder": "输入您的电子邮件地址",
+    "message": "消息",
+    "messagePlaceholder": "输入您的消息...",
+    "send": "发送消息"
+  },
+  "settingsModal": {
+    "title": "设置与偏好",
+    "account": "账户设置",
+    "emailNotifications": "电子邮件通知",
+    "emailNotificationsDescription": "接收有关您账户活动的通知",
+    "twoFactor": "双因素认证",
+    "twoFactorDescription": "为您的账户增加额外的安全层",
+    "privacy": "隐私设置",
+    "profileVisibility": "个人资料可见性",
+    "visibilityPublic": "公开",
+    "visibilityFriends": "仅限好友",
+    "visibilityPrivate": "私人",
+    "dataSharing": "数据共享",
+    "analyticsConsent": "允许分析数据收集",
+    "thirdPartyConsent": "与第三方共享使用数据",
+    "appearance": "外观",
+    "theme": "主题",
+    "themeLight": "光",
+    "themeDark": "黑暗",
+    "themeAuto": "自动",
+    "resetDefaults": "恢复默认设置",
+    "saveChanges": "保存更改"
+  }
+}

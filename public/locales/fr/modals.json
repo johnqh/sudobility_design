@@ -1,0 +1,197 @@
+{
+  "seo": {
+    "title": "Modales - Système de conception - Interne - {{emailDomain}}",
+    "description": "Composants modaux et de dialogue avec des modèles Web3 et des fonctionnalités d'accessibilité"
+  },
+  "header": {
+    "badge": "Modaux et boîtes de dialogue",
+    "title": "Composants modaux",
+    "description": "Système modal et de dialogue complet avec des modèles d'intégration Web3, des fonctionnalités d'accessibilité et un comportement réactif. Idéal pour les connexions de portefeuille, les confirmations de transaction et les interactions utilisateur."
+  },
+  "common": {
+    "copyToClipboard": "Copier dans le presse-papiers",
+    "cancel": "Annuler"
+  },
+  "quickStart": {
+    "heading": "Mise en route rapide",
+    "examples": {
+      "basic": {
+        "title": "Modale de base",
+        "description": "Boîte de dialogue standard avec en-tête, contenu et pied de page"
+      },
+      "confirmation": {
+        "title": "Boîte de dialogue de confirmation",
+        "description": "Boîte de dialogue de confirmation simple avec boutons d'action"
+      },
+      "wallet": {
+        "title": "Connexion du portefeuille Web3",
+        "description": "Boîte de dialogue pour la sélection et la connexion du portefeuille"
+      },
+      "transaction": {
+        "title": "État de la transaction",
+        "description": "Boîte de dialogue affichant l'avancement et les états de la transaction"
+      }
+    }
+  },
+  "demos": {
+    "heading": "Démonstrations interactives",
+    "cards": {
+      "simpleModal": {
+        "title": "Modale de base",
+        "description": "Boîte de dialogue standard avec en-tête, contenu et pied de page."
+      },
+      "confirmationModal": {
+        "title": "Boîte de dialogue de confirmation",
+        "description": "Boîte de dialogue de confirmation simple avec des actions destructrices."
+      },
+      "walletModal": {
+        "title": "Connexion du portefeuille",
+        "description": "Interface de sélection et de connexion de portefeuille Web3."
+      },
+      "transactionModal": {
+        "title": "État de la transaction",
+        "description": "Boîtes de dialogue de retour sur l'avancement et l'état de la transaction."
+      },
+      "formModal": {
+        "title": "Boîte de dialogue de formulaire",
+        "description": "Boîte modale contenant des éléments de formulaire et une validation."
+      },
+      "settingsModal": {
+        "title": "Panneau de paramètres",
+        "description": "Grand modal pour les paramètres et préférences complexes."
+      }
+    }
+  },
+  "sizes": {
+    "heading": "Variants de taille",
+    "availableTitle": "Tailles disponibles",
+    "availableDescription": "Choisissez la taille de modal appropriée en fonction de vos besoins en contenu.",
+    "boxLabel": "{{name}} Modale ({{maxWidth}})",
+    "names": {
+      "small": "Petit",
+      "medium": "Medium",
+      "large": "Grand",
+      "extraLarge": "Très grand"
+    }
+  },
+  "web3": {
+    "heading": "Modèles d'intégration Web3",
+    "walletFlow": {
+      "title": "Flux de connexion du portefeuille",
+      "description": "Complétez l'expérience de connexion du portefeuille avec le choix du fournisseur."
+    },
+    "transactionConfirmation": {
+      "title": "Confirmation de transaction",
+      "description": "Interface de détail et de confirmation de transaction."
+    }
+  },
+  "accessibility": {
+    "heading": "Lignes directrices sur l'accessibilité",
+    "ariaTitle": "Attributs ARIA et bonnes pratiques",
+    "ariaDescription": "Suivez ces directives pour vous assurer que vos modaux sont accessibles à tous les utilisateurs.",
+    "requiredAria": "Attributs ARIA requis",
+    "focusManagement": "Gestion de l'attention",
+    "focusItems": [
+      "Le focus devrait passer au premier élément pouvant recevoir le focus dans la fenêtre modale lorsqu'elle s'ouvre",
+      "La navigation avec la touche Tab devrait être bloquée à l'intérieur du modal",
+      "Le focus doit revenir sur l'élément déclencheur lorsque la fenêtre modale est fermée",
+      "La touche ESC devrait fermer le modal"
+    ],
+    "screenReader": "Prise en charge du lecteur d'écran",
+    "screenReaderItems": [
+      "Utilisez des éléments HTML sémantiques (button, form, etc.)",
+      "Fournissez des libellés clairs et descriptifs pour tous les éléments interactifs.",
+      "Annoncer les changements d'état des modales avec des régions vivantes"
+    ]
+  },
+  "implementation": {
+    "heading": "Remarques d'implémentation",
+    "portalTitle": "Utilisation du portail React",
+    "portalDescription": "Rendrez les modaux dans un portail pour éviter les problèmes d'index z et garantir un empilement correct.",
+    "animationTitle": "Considérations sur l'animation",
+    "animationDescription": "Utilisez des animations CSS ou des bibliothèques comme Framer Motion pour des transitions fluides des fenêtres modales.",
+    "animationItems": [
+      "• Fondu entrant/sortant pour superposition",
+      "• Agrandir ou glisser pour le contenu modal",
+      "• Respecter les préférences de mouvement de l'utilisateur",
+      "• Gardez les animations inférieures à 300 ms"
+    ]
+  },
+  "simpleModal": {
+    "title": "Exemple de modal simple",
+    "body": "Il s'agit d'une fenêtre modale basique avec une en-tête standard, du contenu et une section de pied. Elle illustre la structure et le style typiques d'une fenêtre modale.",
+    "hint": "Cliquez en dehors du modal ou appuyez sur le bouton de fermeture pour le faire disparaître.",
+    "gotIt": "Compris"
+  },
+  "confirmationModal": {
+    "title": "Supprimer l'élément",
+    "body": "Êtes-vous sûr de vouloir supprimer cet élément ? Cette action ne peut pas être annulée.",
+    "delete": "Supprimer"
+  },
+  "walletModal": {
+    "title": "Connecter le portefeuille",
+    "choose": "Choisissez un portefeuille pour vous connecter à la plateforme {{emailDomain}}",
+    "metamask": "MetaMask",
+    "metamaskDescription": "Extension de navigateur populaire",
+    "walletConnect": "WalletConnect",
+    "walletConnectDescription": "Numériser avec portefeuille mobile",
+    "phantom": "Phantom",
+    "phantomDescription": "portefeuille Solana"
+  },
+  "transactionModal": {
+    "title": {
+      "idle": "Envoyer la transaction",
+      "pending": "Transaction en attente",
+      "confirming": "Confirmer la transaction",
+      "success": "Transaction réussie",
+      "error": "Transaction échouée"
+    },
+    "description": {
+      "idle": "Vérifiez les détails de la transaction et confirmez pour continuer.",
+      "pending": "Veuillez confirmer la transaction dans votre portefeuille...",
+      "confirming": "En attente de la confirmation du blocage...",
+      "success": "Votre transaction a été effectuée avec succès.",
+      "error": "La transaction a été rejetée ou a échoué. Veuillez réessayer."
+    },
+    "amount": "Montant :",
+    "gasFee": "Frais de gaz :",
+    "total": "Total :",
+    "confirm": "Confirmer la transaction",
+    "close": "Fermer"
+  },
+  "formModal": {
+    "title": "Formulaire de contact",
+    "firstName": "Prénom",
+    "firstNamePlaceholder": "Entrez votre prénom",
+    "lastName": "Nom de famille",
+    "lastNamePlaceholder": "Entrez votre nom de famille",
+    "email": "Adresse e-mail",
+    "emailPlaceholder": "Entrez votre adresse e-mail",
+    "message": "Message",
+    "messagePlaceholder": "Entrez votre message...",
+    "send": "Envoyer un message"
+  },
+  "settingsModal": {
+    "title": "Paramètres et préférences",
+    "account": "Paramètres du compte",
+    "emailNotifications": "Notifications par e-mail",
+    "emailNotificationsDescription": "Recevez des notifications concernant l'activité de votre compte",
+    "twoFactor": "Authentification à deux facteurs",
+    "twoFactorDescription": "Ajoutez une couche supplémentaire de sécurité à votre compte",
+    "privacy": "Paramètres de confidentialité",
+    "profileVisibility": "Visibilité du profil",
+    "visibilityPublic": "Publique",
+    "visibilityFriends": "Amis seulement",
+    "visibilityPrivate": "Privé",
+    "dataSharing": "Partage de données",
+    "analyticsConsent": "Autoriser la collecte de données d'analyse",
+    "thirdPartyConsent": "Partager les données d'utilisation avec des tiers",
+    "appearance": "Apparence",
+    "theme": "Thème",
+    "themeLight": "Lumière",
+    "themeDark": "Sombre",
+    "themeAuto": "Automatique",
+    "resetDefaults": "Réinitialiser aux paramètres par défaut",
+    "saveChanges": "Enregistrer les modifications"
+  }
+}

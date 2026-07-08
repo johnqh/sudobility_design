@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { useTranslation } from "react-i18next";
 import {
   EyeIcon,
   HandRaisedIcon,
@@ -24,6 +25,7 @@ const AccessibilityPage: React.FC<AppProps> = ({
   emailDomain,
   appName: _appName,
 }) => {
+  const { t } = useTranslation("accessibility");
   const [reducedMotion, setReducedMotion] = useState(false);
   const [_highContrast, _setHighContrast] = useState(false);
   const [showSkipLink, setShowSkipLink] = useState(false);
@@ -31,8 +33,8 @@ const AccessibilityPage: React.FC<AppProps> = ({
   return (
     <>
       <SEOHead
-        title={`Accessibility & A11Y - Design System - Internal - ${emailDomain}`}
-        description="Comprehensive accessibility patterns and inclusive design utilities for WCAG compliance"
+        title={t("seo.title", { emailDomain })}
+        description={t("seo.description")}
         noIndex={true}
       />
 
@@ -43,21 +45,18 @@ const AccessibilityPage: React.FC<AppProps> = ({
             <div className="inline-flex items-center bg-info/10 px-4 py-2 rounded-full mb-6">
               <EyeIcon className="h-5 w-5 text-info mr-2" />
               <span className="text-info font-semibold">
-                Accessibility & A11Y
+                {t("header.badge")}
               </span>
             </div>
 
             <h1 className={`${textVariants.heading.display.xl()} mb-6`}>
-              Inclusive Design System
+              {t("header.title")}
             </h1>
 
             <p
               className={`${textVariants.body.lg()} max-w-3xl mx-auto text-muted-foreground mb-8`}
             >
-              Comprehensive accessibility patterns and utilities for building
-              inclusive, WCAG-compliant Web3 applications. These patterns ensure
-              equal access for all users, including those using assistive
-              technologies.
+              {t("header.intro")}
             </p>
 
             {/* Quick Stats */}
@@ -66,39 +65,41 @@ const AccessibilityPage: React.FC<AppProps> = ({
                 <div
                   className={`${textVariants.heading.h4()} text-primary mb-1`}
                 >
-                  WCAG 2.1
+                  {t("stats.wcag.value")}
                 </div>
                 <div className={textVariants.caption.default()}>
-                  AA Compliant
+                  {t("stats.wcag.label")}
                 </div>
               </div>
               <div className={`${ui.background.subtle} rounded-lg p-4`}>
                 <div
                   className={`${textVariants.heading.h4()} text-success mb-1`}
                 >
-                  44px+
+                  {t("stats.touch.value")}
                 </div>
                 <div className={textVariants.caption.default()}>
-                  Touch Targets
+                  {t("stats.touch.label")}
                 </div>
               </div>
               <div className={`${ui.background.subtle} rounded-lg p-4`}>
                 <div
                   className={`${textVariants.heading.h4()} text-accent mb-1`}
                 >
-                  4.5:1
+                  {t("stats.contrast.value")}
                 </div>
                 <div className={textVariants.caption.default()}>
-                  Color Contrast
+                  {t("stats.contrast.label")}
                 </div>
               </div>
               <div className={`${ui.background.subtle} rounded-lg p-4`}>
                 <div
                   className={`${textVariants.heading.h4()} text-warning mb-1`}
                 >
-                  Screen Reader
+                  {t("stats.screenReader.value")}
                 </div>
-                <div className={textVariants.caption.default()}>Compatible</div>
+                <div className={textVariants.caption.default()}>
+                  {t("stats.screenReader.label")}
+                </div>
               </div>
             </div>
           </div>
@@ -113,22 +114,21 @@ const AccessibilityPage: React.FC<AppProps> = ({
                     className={`${variants.icon.size.lg()} text-primary mr-3`}
                   />
                   <h2 className={textVariants.heading.h3()}>
-                    Screen Reader Support
+                    {t("screenReader.title")}
                   </h2>
                 </div>
 
                 <p
                   className={`${textVariants.body.md()} text-muted-foreground mb-6`}
                 >
-                  Comprehensive screen reader patterns including skip links,
-                  aria labels, and semantic HTML.
+                  {t("screenReader.description")}
                 </p>
 
                 <div className="space-y-4">
                   {/* Skip Link Demo */}
                   <div className="border rounded-lg p-4">
                     <h4 className={`${textVariants.heading.h5()} mb-3`}>
-                      Skip Link
+                      {t("screenReader.skipLink.title")}
                     </h4>
                     <div className="bg-muted p-4 rounded border">
                       <pre className="text-xs text-foreground overflow-x-auto">
@@ -150,12 +150,11 @@ focus:m-2 focus:no-underline`}
                       onBlur={() => setShowSkipLink(false)}
                       className={variants.accessibility.screenReader.skipLink()}
                     >
-                      Skip Link (Focus to see)
+                      {t("screenReader.skipLink.button")}
                     </button>
                     {showSkipLink && (
                       <p className="text-sm text-success mt-2">
-                        ✓ Skip link is now visible! This helps keyboard users
-                        navigate quickly.
+                        {t("screenReader.skipLink.visible")}
                       </p>
                     )}
                   </div>
@@ -163,7 +162,7 @@ focus:m-2 focus:no-underline`}
                   {/* Screen Reader Only Content */}
                   <div className="border rounded-lg p-4">
                     <h4 className={`${textVariants.heading.h5()} mb-3`}>
-                      Screen Reader Only Content
+                      {t("screenReader.only.title")}
                     </h4>
                     <div className="bg-muted p-4 rounded border">
                       <pre className="text-xs text-foreground">
@@ -173,12 +172,11 @@ focus:m-2 focus:no-underline`}
                       </pre>
                     </div>
                     <p className="text-sm text-muted-foreground mt-2">
-                      This content provides context for screen readers without
-                      cluttering the visual design.
+                      {t("screenReader.only.description")}
                       <span
                         className={variants.accessibility.screenReader.only()}
                       >
-                        This text is only visible to screen readers
+                        {t("screenReader.only.hidden")}
                       </span>
                     </p>
                   </div>
@@ -194,47 +192,46 @@ focus:m-2 focus:no-underline`}
                     className={`${variants.icon.size.lg()} text-accent mr-3`}
                   />
                   <h2 className={textVariants.heading.h3()}>
-                    Focus Management
+                    {t("focus.title")}
                   </h2>
                 </div>
 
                 <p
                   className={`${textVariants.body.md()} text-muted-foreground mb-6`}
                 >
-                  Clear focus indicators and keyboard navigation patterns for
-                  all interactive elements.
+                  {t("focus.description")}
                 </p>
 
                 <div className="space-y-4">
                   {/* Focus Ring Examples */}
                   <div className="border rounded-lg p-4">
                     <h4 className={`${textVariants.heading.h5()} mb-3`}>
-                      Focus Indicators
+                      {t("focus.indicatorsTitle")}
                     </h4>
                     <div className="grid grid-cols-2 gap-4">
                       <Button
                         variant="default"
                         className={variants.accessibility.focus.ring()}
                       >
-                        Standard Focus
+                        {t("focus.standard")}
                       </Button>
                       <Button
                         variant="secondary"
                         className={variants.accessibility.focus.highContrast()}
                       >
-                        High Contrast
+                        {t("focus.highContrast")}
                       </Button>
                       <Button
                         variant="default"
                         className={variants.accessibility.focus.wallet()}
                       >
-                        Web3 Wallet
+                        {t("focus.wallet")}
                       </Button>
                       <Button
                         variant="destructive"
                         className={variants.accessibility.focus.error()}
                       >
-                        Error State
+                        {t("focus.error")}
                       </Button>
                     </div>
                     <div className="mt-4 bg-muted p-4 rounded border">
@@ -258,63 +255,64 @@ variants.accessibility.focus.error()       // Error states`}
                   <AdjustmentsHorizontalIcon
                     className={`${variants.icon.size.lg()} text-success mr-3`}
                   />
-                  <h2 className={textVariants.heading.h3()}>Color Contrast</h2>
+                  <h2 className={textVariants.heading.h3()}>
+                    {t("contrast.title")}
+                  </h2>
                 </div>
 
                 <p
                   className={`${textVariants.body.md()} text-muted-foreground mb-6`}
                 >
-                  High contrast text and background combinations that exceed
-                  WCAG AA requirements.
+                  {t("contrast.description")}
                 </p>
 
                 <div className="space-y-4">
                   {/* Contrast Examples */}
                   <div className="border rounded-lg p-4">
                     <h4 className={`${textVariants.heading.h5()} mb-3`}>
-                      Text Contrast Levels
+                      {t("contrast.levelsTitle")}
                     </h4>
                     <div className="space-y-3">
                       <div
                         className={`p-3 rounded ${variants.accessibility.contrast.text.high()}`}
                       >
-                        High contrast text (WCAG AAA) - Ratio 7:1+
+                        {t("contrast.high")}
                       </div>
                       <div
                         className={`p-3 rounded ${variants.accessibility.contrast.text.medium()}`}
                       >
-                        Medium contrast text (WCAG AA) - Ratio 4.5:1+
+                        {t("contrast.medium")}
                       </div>
                       <div
                         className={`p-3 rounded ${variants.accessibility.contrast.text.low()}`}
                       >
-                        Low contrast text (for secondary content)
+                        {t("contrast.low")}
                       </div>
                     </div>
 
                     <h4 className={`${textVariants.heading.h5()} mb-3 mt-6`}>
-                      High Contrast Backgrounds
+                      {t("contrast.backgroundsTitle")}
                     </h4>
                     <div className="grid grid-cols-2 gap-2">
                       <div
                         className={`p-3 rounded text-center ${variants.accessibility.contrast.background.primary()}`}
                       >
-                        Primary
+                        {t("contrast.primary")}
                       </div>
                       <div
                         className={`p-3 rounded text-center ${variants.accessibility.contrast.background.success()}`}
                       >
-                        Success
+                        {t("contrast.success")}
                       </div>
                       <div
                         className={`p-3 rounded text-center ${variants.accessibility.contrast.background.warning()}`}
                       >
-                        Warning
+                        {t("contrast.warning")}
                       </div>
                       <div
                         className={`p-3 rounded text-center ${variants.accessibility.contrast.background.error()}`}
                       >
-                        Error
+                        {t("contrast.errorLabel")}
                       </div>
                     </div>
                   </div>
@@ -339,22 +337,21 @@ variants.accessibility.contrast.link.default()`}
                     className={`${variants.icon.size.lg()} text-warning mr-3`}
                   />
                   <h2 className={textVariants.heading.h3()}>
-                    Motion Preferences
+                    {t("motion.title")}
                   </h2>
                 </div>
 
                 <p
                   className={`${textVariants.body.md()} text-muted-foreground mb-6`}
                 >
-                  Animations that respect user motion preferences and provide
-                  alternatives for users with vestibular disorders.
+                  {t("motion.description")}
                 </p>
 
                 <div className="space-y-4">
                   {/* Motion Controls */}
                   <div className="border rounded-lg p-4">
                     <h4 className={`${textVariants.heading.h5()} mb-3`}>
-                      Motion Preference Controls
+                      {t("motion.controlsTitle")}
                     </h4>
                     <div className="flex items-center space-x-4 mb-4">
                       <label className="flex items-center">
@@ -364,7 +361,7 @@ variants.accessibility.contrast.link.default()`}
                           onChange={(e) => setReducedMotion(e.target.checked)}
                           className="mr-2"
                         />
-                        Reduce Motion
+                        {t("motion.reduceMotion")}
                       </label>
                     </div>
 
@@ -376,7 +373,9 @@ variants.accessibility.contrast.link.default()`}
                             : variants.animations.hover.button.lift()
                         }
                       >
-                        {reducedMotion ? "No Animation" : "Animated Button"}
+                        {reducedMotion
+                          ? t("motion.noAnimation")
+                          : t("motion.animatedButton")}
                       </Button>
                       <div
                         className={`w-8 h-8 bg-primary rounded mx-auto ${
@@ -412,22 +411,19 @@ motion-reduce:transition-none`}
                 <HandRaisedIcon
                   className={`${variants.icon.size.lg()} text-primary mr-3`}
                 />
-                <h2 className={textVariants.heading.h3()}>
-                  Form Accessibility
-                </h2>
+                <h2 className={textVariants.heading.h3()}>{t("form.title")}</h2>
               </div>
 
               <p
                 className={`${textVariants.body.md()} text-muted-foreground mb-6`}
               >
-                Accessible form patterns with proper labeling, validation, and
-                error handling.
+                {t("form.description")}
               </p>
 
               <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
                 <div>
                   <h4 className={`${textVariants.heading.h5()} mb-3`}>
-                    Required Field Indicators
+                    {t("form.requiredTitle")}
                   </h4>
                   <form className="space-y-4">
                     <div>
@@ -435,7 +431,7 @@ motion-reduce:transition-none`}
                         htmlFor="email-field"
                         className={`block text-sm font-medium mb-1 ${variants.accessibility.form.required.visual()}`}
                       >
-                        Email Address
+                        {t("form.emailLabel")}
                       </label>
                       <input
                         id="email-field"
@@ -451,7 +447,7 @@ motion-reduce:transition-none`}
                         htmlFor="password-field"
                         className={`block text-sm font-medium mb-1 ${variants.accessibility.form.required.visual()}`}
                       >
-                        Password
+                        {t("form.passwordLabel")}
                       </label>
                       <input
                         id="password-field"
@@ -466,7 +462,7 @@ motion-reduce:transition-none`}
                         role="alert"
                         aria-live="polite"
                       >
-                        Password must be at least 8 characters long
+                        {t("form.passwordError")}
                       </div>
                     </div>
                   </form>
@@ -474,7 +470,7 @@ motion-reduce:transition-none`}
 
                 <div>
                   <h4 className={`${textVariants.heading.h5()} mb-3`}>
-                    Code Examples
+                    {t("form.codeExamplesTitle")}
                   </h4>
                   <div className="bg-muted p-4 rounded border">
                     <pre className="text-xs text-foreground overflow-x-auto">
@@ -505,21 +501,20 @@ variants.accessibility.feedback.error.message()`}
                   className={`${variants.icon.size.lg()} text-warning mr-3`}
                 />
                 <h2 className={textVariants.heading.h3()}>
-                  Accessible Feedback
+                  {t("feedback.title")}
                 </h2>
               </div>
 
               <p
                 className={`${textVariants.body.md()} text-muted-foreground mb-6`}
               >
-                Screen reader-friendly feedback messages with appropriate ARIA
-                live regions.
+                {t("feedback.description")}
               </p>
 
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                 <div>
                   <h4 className={`${textVariants.heading.h5()} mb-3`}>
-                    Message Types
+                    {t("feedback.messageTypesTitle")}
                   </h4>
                   <div className="space-y-4">
                     <div
@@ -533,12 +528,12 @@ variants.accessibility.feedback.error.message()`}
                           <h5
                             className={variants.accessibility.feedback.success.title()}
                           >
-                            Success
+                            {t("feedback.successTitle")}
                           </h5>
                           <p
                             className={variants.accessibility.feedback.success.message()}
                           >
-                            Your wallet has been connected successfully!
+                            {t("feedback.successMessage")}
                           </p>
                         </div>
                       </div>
@@ -555,12 +550,12 @@ variants.accessibility.feedback.error.message()`}
                           <h5
                             className={variants.accessibility.feedback.error.title()}
                           >
-                            Error
+                            {t("feedback.errorTitle")}
                           </h5>
                           <p
                             className={variants.accessibility.feedback.error.message()}
                           >
-                            Transaction failed. Please try again.
+                            {t("feedback.errorMessage")}
                           </p>
                         </div>
                       </div>
@@ -570,7 +565,7 @@ variants.accessibility.feedback.error.message()`}
 
                 <div>
                   <h4 className={`${textVariants.heading.h5()} mb-3`}>
-                    Live Region Patterns
+                    {t("feedback.liveRegionTitle")}
                   </h4>
                   <div className="bg-muted p-4 rounded border">
                     <pre className="text-xs text-foreground">
@@ -593,13 +588,12 @@ variants.accessibility.feedback.error.message()`}
                   <div
                     className={variants.accessibility.feedback.liveRegion.polite()}
                   >
-                    This content will be announced politely to screen readers
+                    {t("feedback.politeExample")}
                   </div>
                   <div
                     className={variants.accessibility.feedback.liveRegion.assertive()}
                   >
-                    This content will interrupt screen readers for important
-                    alerts
+                    {t("feedback.assertiveExample")}
                   </div>
                 </div>
               </div>
@@ -613,48 +607,45 @@ variants.accessibility.feedback.error.message()`}
                 <GlobeAltIcon
                   className={`${variants.icon.size.lg()} text-info mr-3`}
                 />
-                <h2 className={textVariants.heading.h3()}>
-                  Web3 Accessibility
-                </h2>
+                <h2 className={textVariants.heading.h3()}>{t("web3.title")}</h2>
               </div>
 
               <p
                 className={`${textVariants.body.md()} text-muted-foreground mb-6`}
               >
-                Specialized accessibility patterns for Web3 applications
-                including wallet connections and transactions.
+                {t("web3.description")}
               </p>
 
               <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
                 <div>
                   <h4 className={`${textVariants.heading.h5()} mb-3`}>
-                    Web3 Components
+                    {t("web3.componentsTitle")}
                   </h4>
                   <div className="space-y-4">
                     <Button
                       className={variants.accessibility.focus.wallet()}
-                      aria-label="Connect your Web3 wallet"
+                      aria-label={t("web3.connectWalletAria")}
                     >
-                      Connect Wallet
+                      {t("web3.connectWallet")}
                     </Button>
 
                     <div
                       className={variants.accessibility.semantic.web3.transaction()}
-                      aria-label="Transaction Status"
+                      aria-label={t("web3.transactionAria")}
                     >
-                      Transaction pending...
+                      {t("web3.transactionPending")}
                     </div>
 
                     <div
                       className={variants.accessibility.semantic.web3.balance()}
-                      aria-label="Account balance is 1.5 ETH"
+                      aria-label={t("web3.balanceAria")}
                     >
                       1.5 ETH
                     </div>
 
                     <code
                       className={`text-sm font-mono ${variants.accessibility.semantic.web3.address()}`}
-                      aria-label="Wallet address 0x1234...5678"
+                      aria-label={t("web3.addressAria")}
                     >
                       0x1234...5678
                     </code>
@@ -663,7 +654,7 @@ variants.accessibility.feedback.error.message()`}
 
                 <div>
                   <h4 className={`${textVariants.heading.h5()} mb-3`}>
-                    Implementation
+                    {t("web3.implementationTitle")}
                   </h4>
                   <div className="bg-muted p-4 rounded border">
                     <pre className="text-xs text-foreground">
@@ -697,71 +688,45 @@ variants.accessibility.feedback.error.message()`}
                 <CheckCircleIcon
                   className={`${variants.icon.size.lg()} text-success mr-3`}
                 />
-                <h2 className={textVariants.heading.h3()}>Best Practices</h2>
+                <h2 className={textVariants.heading.h3()}>
+                  {t("bestPractices.title")}
+                </h2>
               </div>
 
               <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
                 <div>
                   <h4 className={`${textVariants.heading.h5()} mb-4`}>
-                    ✅ Do This
+                    {t("bestPractices.doTitle")}
                   </h4>
                   <ul className="space-y-2 text-sm">
-                    <li className="flex items-start">
-                      <CheckCircleIcon className="h-4 w-4 text-success mr-2 mt-0.5 flex-shrink-0" />
-                      Use semantic HTML elements (button, nav, main, etc.)
-                    </li>
-                    <li className="flex items-start">
-                      <CheckCircleIcon className="h-4 w-4 text-success mr-2 mt-0.5 flex-shrink-0" />
-                      Provide descriptive aria-labels for interactive elements
-                    </li>
-                    <li className="flex items-start">
-                      <CheckCircleIcon className="h-4 w-4 text-success mr-2 mt-0.5 flex-shrink-0" />
-                      Ensure minimum 44px touch targets on mobile
-                    </li>
-                    <li className="flex items-start">
-                      <CheckCircleIcon className="h-4 w-4 text-success mr-2 mt-0.5 flex-shrink-0" />
-                      Test with keyboard-only navigation
-                    </li>
-                    <li className="flex items-start">
-                      <CheckCircleIcon className="h-4 w-4 text-success mr-2 mt-0.5 flex-shrink-0" />
-                      Respect user's motion preferences
-                    </li>
-                    <li className="flex items-start">
-                      <CheckCircleIcon className="h-4 w-4 text-success mr-2 mt-0.5 flex-shrink-0" />
-                      Provide alternative text for complex Web3 concepts
-                    </li>
+                    {(
+                      t("bestPractices.do", {
+                        returnObjects: true,
+                      }) as string[]
+                    ).map((item, index) => (
+                      <li key={index} className="flex items-start">
+                        <CheckCircleIcon className="h-4 w-4 text-success mr-2 mt-0.5 flex-shrink-0" />
+                        {item}
+                      </li>
+                    ))}
                   </ul>
                 </div>
 
                 <div>
                   <h4 className={`${textVariants.heading.h5()} mb-4`}>
-                    ❌ Avoid This
+                    {t("bestPractices.avoidTitle")}
                   </h4>
                   <ul className="space-y-2 text-sm">
-                    <li className="flex items-start">
-                      <XCircleIcon className="h-4 w-4 text-destructive mr-2 mt-0.5 flex-shrink-0" />
-                      Using color alone to convey information
-                    </li>
-                    <li className="flex items-start">
-                      <XCircleIcon className="h-4 w-4 text-destructive mr-2 mt-0.5 flex-shrink-0" />
-                      Creating keyboard traps without escape routes
-                    </li>
-                    <li className="flex items-start">
-                      <XCircleIcon className="h-4 w-4 text-destructive mr-2 mt-0.5 flex-shrink-0" />
-                      Auto-playing videos or animations
-                    </li>
-                    <li className="flex items-start">
-                      <XCircleIcon className="h-4 w-4 text-destructive mr-2 mt-0.5 flex-shrink-0" />
-                      Using generic labels like "Click here" or "Read more"
-                    </li>
-                    <li className="flex items-start">
-                      <XCircleIcon className="h-4 w-4 text-destructive mr-2 mt-0.5 flex-shrink-0" />
-                      Removing focus indicators completely
-                    </li>
-                    <li className="flex items-start">
-                      <XCircleIcon className="h-4 w-4 text-destructive mr-2 mt-0.5 flex-shrink-0" />
-                      Using Web3 jargon without explanations
-                    </li>
+                    {(
+                      t("bestPractices.avoid", {
+                        returnObjects: true,
+                      }) as string[]
+                    ).map((item, index) => (
+                      <li key={index} className="flex items-start">
+                        <XCircleIcon className="h-4 w-4 text-destructive mr-2 mt-0.5 flex-shrink-0" />
+                        {item}
+                      </li>
+                    ))}
                   </ul>
                 </div>
               </div>

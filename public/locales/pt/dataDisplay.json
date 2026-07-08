@@ -1,0 +1,202 @@
+{
+  "seo": {
+    "title": "Exibição de dados - Sistema de design - Interno - {{emailDomain}}",
+    "description": "Componentes de exibição de dados, incluindo tabelas, listas, grelhas e exibições de código"
+  },
+  "header": {
+    "badge": "Componentes de exibição de dados",
+    "title": "Sistema de Exibição de Dados",
+    "intro": "Componentes abrangentes de exibição de dados para tabelas, listas, grelhas e código. Otimizados para dados Web3, incluindo endereços, transações e informações de blockchain."
+  },
+  "quickStart": {
+    "heading": "Início Rápido",
+    "copy": "Copiar para a área de transferência",
+    "examples": {
+      "dataTable": {
+        "title": "Tabela de Dados",
+        "description": "Tabela classificável com estados de passagem e seleção"
+      },
+      "emailList": {
+        "title": "Lista de e-mails",
+        "description": "Lista interativa com estados lido/não lido"
+      },
+      "keyValue": {
+        "title": "Exibição de chave-valor",
+        "description": "Exibir dados estruturados em pares chave-valor"
+      },
+      "statsGrid": {
+        "title": "Grade de estatísticas",
+        "description": "Exiba métricas e estatísticas com indicadores de tendência"
+      }
+    }
+  },
+  "tables": {
+    "heading": "Tabelas de dados",
+    "cardTitle": "Tabela Interativa de Contato",
+    "cardDescription": "Tabela ordenável com estados de seleção e passagem do mouse",
+    "columns": {
+      "name": "Nome",
+      "email": "E-mail",
+      "balance": "Equilíbrio",
+      "status": "Estado",
+      "date": "Data"
+    },
+    "status": {
+      "active": "Ativo",
+      "pending": "Pendente",
+      "inactive": "Inativo"
+    }
+  },
+  "lists": {
+    "heading": "Listas",
+    "cardTitle": "Lista de e-mails",
+    "cardDescription": "Lista de e-mails interativa com estados lido/não lido e ações",
+    "emails": {
+      "1": {
+        "subject": "Transação confirmada",
+        "preview": "Sua transação foi confirmada na blockchain..."
+      },
+      "2": {
+        "subject": "Alerta de novo lançamento de NFT",
+        "preview": "Nova coleção emocionante lançando amanhã..."
+      },
+      "3": {
+        "subject": "Atualização de segurança da carteira",
+        "preview": "Melhorias importantes de segurança para sua carteira..."
+      },
+      "4": {
+        "subject": "Relatório de Rendimento DeFi",
+        "preview": "Seu resumo mensal de agricultura de rendimento..."
+      },
+      "5": {
+        "subject": "Proposta de DAO #42",
+        "preview": "Vote na última proposta da comunidade..."
+      }
+    }
+  },
+  "gridLayouts": {
+    "heading": "Layouts de grade",
+    "statsGrid": {
+      "heading": "Grade de estatísticas",
+      "totalEmails": "E-mails totais",
+      "totalEmailsChange": "12,5 % em relação ao mês passado",
+      "activeContacts": "Contatos ativos",
+      "activeContactsChange": "5 novos esta semana",
+      "storageUsed": "Armazenamento usado",
+      "storageUsedChange": "15% restante"
+    },
+    "cardGrid": {
+      "heading": "Grade de cartões",
+      "cardTitle": "Título do cartão {{number}}",
+      "cardContent": "Conteúdo do cartão com informações e ações relevantes."
+    }
+  },
+  "keyValue": {
+    "heading": "Exibição de chave-valor",
+    "userProfile": {
+      "heading": "Perfil do Usuário",
+      "fullName": "Nome completo",
+      "ensName": "Nome ENS",
+      "walletAddress": "Endereço da carteira",
+      "email": "E-mail",
+      "accountStatus": "Status da conta",
+      "verified": "Verificado"
+    },
+    "transactionDetails": {
+      "heading": "Detalhes da transação",
+      "transactionHash": "Hash da transação",
+      "blockNumber": "Número do bloco",
+      "gasUsed": "Gás usado",
+      "status": "Estado",
+      "success": "Sucesso"
+    }
+  },
+  "codeDisplay": {
+    "heading": "Exibição de código",
+    "inlineCode": {
+      "heading": "Código em linha",
+      "textStart": "Use \"",
+      "textMiddle": " para código em linha. Endereços Web3 como ",
+      "textMiddle2": " e hashes de transação como ",
+      "textEnd": "têm um estilo especial."
+    },
+    "codeBlock": {
+      "heading": "Bloco de código"
+    }
+  },
+  "timeline": {
+    "heading": "Linha do tempo",
+    "cardTitle": "Linha do tempo de atividade",
+    "items": {
+      "1": {
+        "title": "Conta criada",
+        "description": "Bem-vindo ao example.com"
+      },
+      "2": {
+        "title": "Carteira conectada",
+        "description": "Carteira MetaMask vinculada com sucesso"
+      },
+      "3": {
+        "title": "Primeiro e-mail enviado",
+        "description": "Enviado e-mail de boas-vindas para a equipe"
+      },
+      "4": {
+        "title": "Nome ENS registrado",
+        "description": "alice.eth registrado"
+      },
+      "5": {
+        "title": "Atualização Premium",
+        "description": "Atualização para o plano premium pendente"
+      }
+    }
+  },
+  "emptyStates": {
+    "heading": "Estados vazios",
+    "noEmails": {
+      "title": "Sem e-mails",
+      "description": "Comece redigindo seu primeiro e-mail",
+      "action": "Escrever e-mail"
+    },
+    "noData": {
+      "title": "Nenhum dado disponível",
+      "description": "Atualmente não há registros para exibir"
+    }
+  },
+  "web3": {
+    "heading": "Padrões de Dados Web3",
+    "cardTitle": "Exibição de dados de blockchain",
+    "cardDescription": "Padrões especializados para exibir dados Web3",
+    "addressDisplay": {
+      "heading": "Exibição de endereço",
+      "full": "Completo:",
+      "truncated": "Truncado:",
+      "ens": "ENS:"
+    },
+    "tokenBalances": {
+      "heading": "Saldo de tokens"
+    }
+  },
+  "implementationNotes": {
+    "heading": "Notas de Implementação",
+    "performance": {
+      "heading": "Dicas de desempenho",
+      "items": [
+        "• Use o rolagem virtual para grandes conjuntos de dados",
+        "• Implementar paginação para tabelas com mais de 100 linhas",
+        "• Carregar imagens e avatares em listas com lazy load",
+        "• Memorizar cálculos caros",
+        "• Use carregadores esqueleto durante a busca de dados"
+      ]
+    },
+    "accessibility": {
+      "heading": "Acessibilidade",
+      "items": [
+        "• Use HTML semântico (table, thead, tbody)",
+        "• Adicione rótulos aria-label para colunas ordenáveis",
+        "• Garanta a navegação com o teclado para tabelas",
+        "• Forneça alternativas de texto para indicadores visuais",
+        "• Use papéis ARIA apropriados para listas"
+      ]
+    }
+  }
+}

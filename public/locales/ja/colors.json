@@ -1,0 +1,291 @@
+{
+  "seo": {
+    "title": "カラー - デザインシステム - 内部 - {{emailDomain}}",
+    "description": "デザインシステムのカラーパレットとバリエーションの完全なショーケース"
+  },
+  "nav": {
+    "viewTypography": "タイプグラフィを表示"
+  },
+  "header": {
+    "badge": "カラーシステム",
+    "title": "カラーパレットと使用法",
+    "description": "{{appName}}アプリケーション全体で使用される完全なカラーシステム。使用例とコードサンプルを含みます。任意の色をクリックして、そのHEX値をクリップボードにコピーできます。"
+  },
+  "swatch": {
+    "copyAria": "カラー値 {{name}} {{value}} をコピーする"
+  },
+  "codeExample": {
+    "preview": "プレビュー",
+    "usage": "使用"
+  },
+  "quickStart": {
+    "title": "クイックスタート - 一般的な使用例",
+    "description": "最も一般的なデザインパターンのための、すぐに使えるコード例。コンポーネントに直接コピーして貼り付けられます。",
+    "primaryButton": {
+      "title": "プライマリーボタン",
+      "action": "主な操作"
+    },
+    "successAlert": {
+      "title": "成功アラート",
+      "heading": "成功！",
+      "body": "操作は正常に完了しました。"
+    },
+    "blockchainBadge": {
+      "title": "ブロックチェーンバッジ"
+    },
+    "formInput": {
+      "title": "フォーム入力",
+      "placeholder": "メールアドレスを入力してください..."
+    }
+  },
+  "palettes": {
+    "title": "カラーパレット",
+    "description": "色相ごとに整理されたベースカラーのパレット。各パレットには、50（最も明るい）から950（最も暗い）までのトーンが含まれます。",
+    "items": {
+      "blue": {
+        "name": "青色（メイン）",
+        "description": "ブランドのメインカラー・パレット"
+      },
+      "purple": {
+        "name": "紫（補色）",
+        "description": "サブブランドカラーのパレット"
+      },
+      "neutral": {
+        "name": "ニュートラル（グレースケール）",
+        "description": "背景、テキスト、ボーダーカラー"
+      },
+      "red": {
+        "name": "赤（エラー）",
+        "description": "エラーおよび破壊的行動の色"
+      },
+      "green": {
+        "name": "緑色（成功）",
+        "description": "成功とポジティブな行動の色"
+      },
+      "amber": {
+        "name": "アーモンド（警告）",
+        "description": "警告および注意の色"
+      },
+      "orange": {
+        "name": "オレンジ",
+        "description": "強調色とハイライトカラー"
+      }
+    }
+  },
+  "networks": {
+    "ethereum": "Ethereum",
+    "solana": "Solana",
+    "polygon": "ポリゴン"
+  },
+  "web3": {
+    "title": "Web3ネットワークカラー",
+    "description": "ブロックチェーンネットワークおよびWeb3要素を表す色。",
+    "usage": {
+      "ethereum": "Ethereumネットワークのブランディング",
+      "solana": "Solanaネットワークのブランディング",
+      "polygon": "Polygonネットワークのブランディング"
+    },
+    "code": {
+      "title": "Web3のカラーユーザー",
+      "description": "コンポーネントでWeb3ネットワークカラーを使用する方法"
+    }
+  },
+  "semantic": {
+    "title": "意味的色",
+    "description": "ライトおよびダークテーマに適応するセマンティックカラーのトークン。これらはインターフェース全体で一貫した意味を提供します。",
+    "lightMode": "ライトモード",
+    "darkMode": "ダークモード",
+    "categories": {
+      "text": {
+        "name": "テキストカラー",
+        "colors": {
+          "primaryText": {
+            "name": "プライマリテキスト",
+            "usage": "メインコンテンツテキスト"
+          },
+          "secondaryText": {
+            "name": "補助テキスト",
+            "usage": "サポートテキスト"
+          },
+          "linkText": {
+            "name": "リンクテキスト",
+            "usage": "インタラクティブリンク"
+          }
+        }
+      },
+      "background": {
+        "name": "背景色",
+        "colors": {
+          "primaryBackground": {
+            "name": "プライマリ背景",
+            "usage": "メインページの背景"
+          },
+          "secondaryBackground": {
+            "name": "二次的背景",
+            "usage": "カードの背景"
+          },
+          "elevatedBackground": {
+            "name": "高めの背景",
+            "usage": "モーダルとオーバーレイ"
+          }
+        }
+      },
+      "state": {
+        "name": "州の色",
+        "colors": {
+          "success": {
+            "name": "成功",
+            "usage": "成功メッセージとアクション"
+          },
+          "warning": {
+            "name": "警告",
+            "usage": "警告メッセージ"
+          },
+          "error": {
+            "name": "エラー",
+            "usage": "エラーメッセージと破壊的行動"
+          },
+          "info": {
+            "name": "情報",
+            "usage": "情報メッセージ"
+          }
+        }
+      }
+    },
+    "code": {
+      "title": "意味的な色の使用",
+      "description": "デザインシステムからのセマンティックカラーの使い方",
+      "preview": {
+        "success": "✓ 成功メッセージ",
+        "error": "✗ エラーメッセージ",
+        "warning": "⚠ 警告メッセージ"
+      }
+    }
+  },
+  "components": {
+    "title": "コンポーネントの色と使用例",
+    "description": "組み込みのホバー、フォーカス、テーマ対応を備えた、一般的なUIコンポーネント用の事前設定済みカラー組み合わせ。",
+    "exampleHeading": "{{name}} 例",
+    "liveExamples": "ライブ例",
+    "alertMessage": "{{name}} メッセージ",
+    "interactiveHeading": "インタラクティブな {{name}} の例:",
+    "createPreview": {
+      "button": {
+        "primary": "主な操作",
+        "secondary": "セカンダリアクション",
+        "destructive": "アイテムを削除"
+      },
+      "alert": {
+        "infoLabel": "情報:",
+        "infoText": "これは情報アラートです",
+        "successLabel": "成功：",
+        "successText": "操作が正常に完了しました",
+        "errorLabel": "エラー:",
+        "errorText": "何かが間違いました"
+      }
+    },
+    "items": {
+      "button": {
+        "name": "ボタン",
+        "createTitle": "ボタンの作成方法",
+        "createDescription": "適切な色を使用したボタンを作成するためのステップバイステップガイド",
+        "variantsTitle": "ボタンの種類と状態",
+        "variantsDescription": "すべてのボタンカラーのバリエーションとホバー、フォーカス状態",
+        "variants": {
+          "primary": "プライマリー",
+          "secondary": "二次",
+          "destructive": "破壊的な",
+          "success": "成功"
+        }
+      },
+      "badge": {
+        "name": "バッジ",
+        "createTitle": "バッジの作成方法",
+        "createDescription": "適切な色を使用したバッジを作成するためのステップバイステップガイド",
+        "variantsTitle": "バッジのバリエーションと状態",
+        "variantsDescription": "ホバーおよびフォーカス状態を含むすべてのバッジカラーのバリエーション",
+        "variants": {
+          "default": "デフォルト",
+          "primary": "プライマリ",
+          "success": "成功",
+          "warning": "警告",
+          "error": "エラー"
+        }
+      },
+      "alert": {
+        "name": "アラート",
+        "createTitle": "アラートの作成方法",
+        "createDescription": "適切な色を使用したアラートを作成するためのステップバイステップガイド",
+        "variantsTitle": "アラートの種類と状態",
+        "variantsDescription": "すべてのアラートカラーのバリエーションとホバー、フォーカス状態",
+        "variants": {
+          "info": "情報",
+          "success": "成功",
+          "warning": "警告",
+          "error": "エラー"
+        }
+      }
+    }
+  },
+  "practical": {
+    "title": "実用的な使用例",
+    "description": "一般的なUIパターンの色の組み合わせ方を示す実世界の例。",
+    "form": {
+      "title": "色分けされた状態を持つフォーム",
+      "description": "フォームの検証と状態に色を使用する方法",
+      "emailLabel": "メール (有効)",
+      "emailValid": "✓ メールアドレスは有効です",
+      "passwordLabel": "パスワード（エラー）",
+      "passwordError": "✗ パスワードは8文字以上である必要があります",
+      "submit": "フォームを送信"
+    },
+    "card": {
+      "title": "ステータスカラー付きカード",
+      "description": "カードコンポーネントの異なる状態で色を使用する方法",
+      "apiServer": "APIサーバー",
+      "online": "オンライン",
+      "operational": "すべてのシステムが正常に動作しています",
+      "database": "データベース",
+      "maintenance": "メンテナンス",
+      "maintenanceProgress": "予定されたメンテナンス作業中"
+    },
+    "navigation": {
+      "title": "色状態によるナビゲーション",
+      "description": "ナビゲーション状態およびアクティブなアイテムの色の使い方",
+      "dashboard": "ダッシュボード",
+      "users": "ユーザー",
+      "settings": "設定"
+    },
+    "progress": {
+      "title": "色付きの進捗インジケーター",
+      "description": "プログレスバーとローディング状態に色を使用する方法",
+      "label": "進捗",
+      "complete75": "75% 完了",
+      "success": "成功",
+      "complete100": "100% 完了"
+    }
+  },
+  "guidelines": {
+    "title": "使用ガイド",
+    "doTitle": "✓ する",
+    "do": [
+      "一貫した意味を持つセマンティックカラーを使用してください",
+      "UI要素にはコンポーネントカラーを優先してください",
+      "ライトモードとダークモードの両方で色をテスト",
+      "アクセシビリティのために十分なコントラストを確保してください",
+      "一貫性を保つために色ユーティリティ関数を使用してください"
+    ],
+    "dontTitle": "✗ しないで",
+    "dont": [
+      "コンポーネントで直接生の16進値を使用する",
+      "異なる色システムを混ぜる",
+      "デザイン承認なしにカスタムカラーを作成",
+      "ダークモードで機能しない色を使用してください",
+      "アクセシビリティのコントラスト要件を無視する"
+    ]
+  },
+  "copyInstructions": {
+    "title": "値をコピーするにはクリック",
+    "description": "色のスウォッチをクリックすると、その16進数値をコピーできます。また、コード例のコピー ボタンを使用して、使用コードをコピーすることもできます。"
+  }
+}

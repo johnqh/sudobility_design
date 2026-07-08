@@ -1,0 +1,202 @@
+{
+  "seo": {
+    "title": "データ表示 - デザインシステム - 内部 - {{emailDomain}}",
+    "description": "テーブル、リスト、グリッド、コード表示を含むデータ表示コンポーネント"
+  },
+  "header": {
+    "badge": "データ表示コンポーネント",
+    "title": "データ表示システム",
+    "intro": "テーブル、リスト、グリッド、コード用の包括的なデータ表示コンポーネント。アドレス、取引、ブロックチェーン情報などWeb3データに最適化されています。"
+  },
+  "quickStart": {
+    "heading": "クイックスタート",
+    "copy": "クリップボードにコピー",
+    "examples": {
+      "dataTable": {
+        "title": "データテーブル",
+        "description": "ホバー状態と選択を備えた並べ替え可能なテーブル"
+      },
+      "emailList": {
+        "title": "メールリスト",
+        "description": "読み/未読状態を備えたインタラクティブリスト"
+      },
+      "keyValue": {
+        "title": "キー値表示",
+        "description": "キーバリューペアとして構造化データを表示"
+      },
+      "statsGrid": {
+        "title": "統計グリッド",
+        "description": "トレンドインジケーター付きのメトリクスと統計を表示"
+      }
+    }
+  },
+  "tables": {
+    "heading": "データテーブル",
+    "cardTitle": "インタラクティブな連絡先テーブル",
+    "cardDescription": "選択およびホバー状態を備えた並べ替え可能なテーブル",
+    "columns": {
+      "name": "名",
+      "email": "電子メール",
+      "balance": "バランス",
+      "status": "ステータス",
+      "date": "日付"
+    },
+    "status": {
+      "active": "アクティブ",
+      "pending": "保留中",
+      "inactive": "非アクティブ"
+    }
+  },
+  "lists": {
+    "heading": "リスト",
+    "cardTitle": "メールリスト",
+    "cardDescription": "読み取り/未読状態と操作を備えたインタラクティブなメールリスト",
+    "emails": {
+      "1": {
+        "subject": "取引が確認されました",
+        "preview": "あなたの取引はブロックチェーン上で確認されました..."
+      },
+      "2": {
+        "subject": "新しいNFTドロップのアラート",
+        "preview": "明日、新しいコレクションが登場します..."
+      },
+      "3": {
+        "subject": "ウォレットのセキュリティ更新",
+        "preview": "ウォレットの重要なセキュリティ向上..."
+      },
+      "4": {
+        "subject": "DeFi収益レポート",
+        "preview": "あなたの月間収益ファーミングの要約..."
+      },
+      "5": {
+        "subject": "DAOプロポーザル #42",
+        "preview": "最新のコミュニティプロポーザルに投票する..."
+      }
+    }
+  },
+  "gridLayouts": {
+    "heading": "グリッドレイアウト",
+    "statsGrid": {
+      "heading": "統計グリッド",
+      "totalEmails": "合計メール",
+      "totalEmailsChange": "先月比12.5%",
+      "activeContacts": "アクティブな連絡先",
+      "activeContactsChange": "今週の新着5件",
+      "storageUsed": "使用中のストレージ",
+      "storageUsedChange": "15% が残り"
+    },
+    "cardGrid": {
+      "heading": "カードグリッド",
+      "cardTitle": "カードタイトル {{number}}",
+      "cardContent": "関連情報と操作が記載されたカードコンテンツ。"
+    }
+  },
+  "keyValue": {
+    "heading": "キー値表示",
+    "userProfile": {
+      "heading": "ユーザー・プロファイル",
+      "fullName": "氏名",
+      "ensName": "ENS名",
+      "walletAddress": "ウォレットアドレス",
+      "email": "電子メール",
+      "accountStatus": "アカウントステータス",
+      "verified": "確認済み"
+    },
+    "transactionDetails": {
+      "heading": "取引の詳細",
+      "transactionHash": "取引ハッシュ",
+      "blockNumber": "ブロック番号",
+      "gasUsed": "使用ガス",
+      "status": "ステータス",
+      "success": "成功"
+    }
+  },
+  "codeDisplay": {
+    "heading": "コード表示",
+    "inlineCode": {
+      "heading": "インラインコード",
+      "textStart": "使用 \"",
+      "textMiddle": " インラインコード用。Web3アドレス例：",
+      "textMiddle2": " およびトランザクションハッシュ例：",
+      "textEnd": "特別なスタイリングがあります。"
+    },
+    "codeBlock": {
+      "heading": "コードブロック"
+    }
+  },
+  "timeline": {
+    "heading": "タイムライン",
+    "cardTitle": "アクティビティタイムライン",
+    "items": {
+      "1": {
+        "title": "アカウントが作成されました",
+        "description": "example.comへようこそ"
+      },
+      "2": {
+        "title": "ウォレットが接続されました",
+        "description": "MetaMaskウォレットが正常にリンクされました"
+      },
+      "3": {
+        "title": "最初のメールが送信されました",
+        "description": "チームへウェルカムメールを送信しました"
+      },
+      "4": {
+        "title": "ENS名が登録されました",
+        "description": "alice.eth の登録"
+      },
+      "5": {
+        "title": "プレミアムアップグレード",
+        "description": "プレミアムプランへのアップグレード保留中"
+      }
+    }
+  },
+  "emptyStates": {
+    "heading": "空の状態",
+    "noEmails": {
+      "title": "メールなし",
+      "description": "最初のメールを書くことで始めましょう",
+      "action": "メールを書く"
+    },
+    "noData": {
+      "title": "利用可能なデータがありません",
+      "description": "現在、表示する記録がありません"
+    }
+  },
+  "web3": {
+    "heading": "Web3データパターン",
+    "cardTitle": "ブロックチェーンデータ表示",
+    "cardDescription": "Web3データを表示するための専門的なパターン",
+    "addressDisplay": {
+      "heading": "住所の表示",
+      "full": "完全:",
+      "truncated": "切り捨てられた：",
+      "ens": "ENS:"
+    },
+    "tokenBalances": {
+      "heading": "トークン残高"
+    }
+  },
+  "implementationNotes": {
+    "heading": "実装ノート",
+    "performance": {
+      "heading": "パフォーマンスのヒント",
+      "items": [
+        "• 大きなデータセットには仮想スクロールを使用してください",
+        "• 100行を超えるテーブルに対してページネーションを実装する",
+        "• リスト内の画像とアバターを遅延読み込みする",
+        "• 高コストな計算をメモ化する",
+        "• データ取得中にスケルトンローダーを使用する"
+      ]
+    },
+    "accessibility": {
+      "heading": "アクセシビリティ",
+      "items": [
+        "• 意味のあるHTMLを使用してください (table, thead, tbody)",
+        "• ソート可能な列に aria-label を追加",
+        "• テーブルのキーボードナビゲーションを確認する",
+        "• 視覚的インジケーターのテキスト代替を提供する",
+        "• リストに適切な ARIA ロールを使用する"
+      ]
+    }
+  }
+}

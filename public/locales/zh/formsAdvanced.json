@@ -1,0 +1,159 @@
+{
+  "seo": {
+    "title": "Forms Advanced - Design System - 内部 - {{emailDomain}}",
+    "description": "包括多步表单、文件上传和Web3输入在内的高级表单模式"
+  },
+  "header": {
+    "badge": "高级表单",
+    "title": "高级表单系统",
+    "description": "包括多步向导、文件上传、Web3专用输入以及复杂用户交互的高级验证模式在内的高级表单模式。"
+  },
+  "quickStart": {
+    "heading": "快速入门",
+    "copyTitle": "复制到剪贴板",
+    "examples": {
+      "multiStep": {
+        "title": "多步骤表单",
+        "description": "带进度指示器的分步表单"
+      },
+      "fileUpload": {
+        "title": "拖拽上传文件",
+        "description": "带预览和验证的高级文件上传"
+      },
+      "tokenAmount": {
+        "title": "Web3代币金额输入",
+        "description": "用于加密货币金额的专用输入及验证"
+      },
+      "validation": {
+        "title": "高级验证",
+        "description": "实时验证，支持自定义错误消息"
+      }
+    }
+  },
+  "steps": {
+    "account": {
+      "title": "账户设置",
+      "description": "账户基本信息"
+    },
+    "wallet": {
+      "title": "钱包连接",
+      "description": "连接您的 Web3 钱包"
+    },
+    "transaction": {
+      "title": "交易详情",
+      "description": "配置交易参数"
+    },
+    "review": {
+      "title": "审查并确认",
+      "description": "审核并提交"
+    }
+  },
+  "multiStep": {
+    "heading": "多步骤表单",
+    "cardTitle": "钱包设置向导",
+    "cardDescription": "带进度跟踪和验证的交互式多步表单",
+    "emailLabel": "电子邮件地址",
+    "emailPlaceholder": "请输入您的电子邮件",
+    "passwordLabel": "密码",
+    "passwordPlaceholder": "创建一个强密码",
+    "confirmPasswordLabel": "确认密码",
+    "confirmPasswordPlaceholder": "确认您的密码",
+    "walletAddressLabel": "钱包地址",
+    "walletAddressPlaceholder": "0x...",
+    "networkLabel": "网络",
+    "networks": {
+      "ethereum": "以太坊主网",
+      "polygon": "多边形",
+      "bsc": "Binance Smart Chain",
+      "arbitrum": "Arbitrum"
+    },
+    "tokenAmountLabel": "代币金额",
+    "tokenAmountPlaceholder": "0.00",
+    "balance": "余额: 1.234567 ETH ($2,468.90)",
+    "max": "Max",
+    "gasPriceLabel": "Gas价格 (Gwei)",
+    "gasPricePlaceholder": "20",
+    "gasPriceHint": "更高的气体价格导致更快的交易确认",
+    "reviewTitle": "查看您的交易",
+    "reviewNetwork": "网络:",
+    "reviewToAddress": "收件人：",
+    "reviewAmount": "金额：",
+    "reviewGasPrice": "天然气价格：",
+    "warningTitle": "交易警告",
+    "warningBody": "请再次核对所有交易详情。区块链交易无法撤销。",
+    "previous": "上一页",
+    "next": "下一个",
+    "submit": "提交交易"
+  },
+  "validationMessages": {
+    "invalidAddress": "无效的以太坊地址格式",
+    "positiveAmount": "金额必须为正数",
+    "insufficientBalance": "余额不足",
+    "passwordMinLength": "密码必须至少包含8个字符",
+    "passwordComplexity": "密码必须包含大写字母、小写字母和数字",
+    "passwordsDoNotMatch": "密码不匹配"
+  },
+  "fileUpload": {
+    "heading": "文件上传",
+    "cardTitle": "文档上传",
+    "cardDescription": "支持预览和验证的拖拽上传文件",
+    "dropTitle": "将文件拖到这里上传",
+    "dropSubtitle": "或点击以从您的计算机中选择文件",
+    "chooseFiles": "选择文件",
+    "supportedFormats": "支持的格式：PDF、DOC、DOCX、JPG、PNG、TXT（每个最大10MB）",
+    "uploadedFiles": "已上传文件 ({{count}})",
+    "megabytes": "{{size}} MB"
+  },
+  "web3": {
+    "heading": "Web3专用输入",
+    "walletCard": {
+      "title": "钱包地址输入",
+      "description": "用于加密货币地址的专用输入及验证",
+      "recipientLabel": "收件人地址",
+      "recipientPlaceholder": "0x... 或 ENS 名称",
+      "validAddress": "✓ 有效的以太坊地址",
+      "ensLabel": "ENS名称",
+      "ensPlaceholder": "vitalik.eth",
+      "ensResolves": "→ 解析为: 0x742d...5f0bEb7"
+    },
+    "tokenCard": {
+      "title": "代币金额输入",
+      "description": "精确的代币数量输入并显示余额",
+      "amountLabel": "要发送的金额",
+      "amountPlaceholder": "0.00",
+      "balance": "余额: 1.234567 ETH",
+      "usdEquivalent": "约1,234.50美元",
+      "quarter": "25%",
+      "half": "50%",
+      "threeQuarters": "75%",
+      "max": "Max",
+      "gasSettingsLabel": "气体设置",
+      "gasSlow": "慢",
+      "gasSlowValue": "15 Gwei",
+      "gasStandard": "标准",
+      "gasStandardValue": "25 Gwei",
+      "gasFast": "快速",
+      "gasFastValue": "35 Gwei"
+    }
+  },
+  "validationSection": {
+    "heading": "高级验证",
+    "cardTitle": "实时验证示例",
+    "cardDescription": "高级验证模式，支持实时反馈和自定义错误消息",
+    "strongPasswordLabel": "强密码",
+    "strongPasswordPlaceholder": "输入密码",
+    "checkMinChars": "至少8个字符",
+    "checkUppercase": "包含大写字母",
+    "checkNumber": "包含数字",
+    "checkSpecialChar": "包含特殊字符",
+    "emailLabel": "电子邮件地址",
+    "emailPlaceholder": "输入电子邮件",
+    "validEmail": "✓ 有效电子邮件格式",
+    "invalidLabel": "无效输入示例",
+    "invalidPlaceholder": "输入值",
+    "invalidMessage": "此字段包含无效字符",
+    "loadingLabel": "加载验证",
+    "loadingPlaceholder": "检查可用性...",
+    "loadingMessage": "检查用户名可用性..."
+  }
+}

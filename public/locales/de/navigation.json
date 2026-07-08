@@ -1,0 +1,185 @@
+{
+  "seo": {
+    "title": "Navigation - Design System - Intern - {{emailDomain}}",
+    "description": "Navigationskomponenten einschließlich Breadcrumb, Registerkarten, Paginierung und Menüsysteme"
+  },
+  "header": {
+    "badge": "Navigationskomponenten",
+    "title": "Navigationsystem",
+    "intro": "Umfassende Navigationskomponenten für Web3-Anwendungen, einschließlich Breadcrumb-Navigation, Registerkarten, Paginierung, Menüs und Schritt-Navigation. Entwickelt für Barrierefreiheit und responsives Verhalten."
+  },
+  "quickStart": {
+    "title": "Schnellstart",
+    "copy": "In die Zwischenablage kopieren",
+    "examples": {
+      "breadcrumb": {
+        "title": "Breadcrumb-Navigation",
+        "description": "Hierarchische Navigation, die die aktuelle Seitenposition anzeigt"
+      },
+      "tabs": {
+        "title": "Registerkarten-Navigation",
+        "description": "Organisieren Sie den Inhalt in mehreren Ansichten mit Tab-Navigation"
+      },
+      "pagination": {
+        "title": "Seitennummerierung",
+        "description": "Navigieren Sie durch mehrere Seiten mit Inhalten"
+      },
+      "steps": {
+        "title": "Schritt-Navigation",
+        "description": "Führen Sie Benutzer durch mehrstufige Prozesse"
+      }
+    }
+  },
+  "breadcrumbs": {
+    "sectionTitle": "Interaktive Breadcrumb",
+    "liveTitle": "Live-Breadcrumb-Beispiel",
+    "home": "Startseite",
+    "web3Projects": "Web3-Projekte",
+    "featuresTitle": "Eigenschaften",
+    "features": [
+      "Strukturierte Daten für die SEO-Optimierung",
+      "ARIA-Zugänglichkeitsattribute",
+      "Unterstützung der Tastaturnavigation",
+      "Reaktive Gestaltung mit Ausschneidung",
+      "Optional das Home-Symbol und soziale Freigabe"
+    ]
+  },
+  "tabVariants": {
+    "sectionTitle": "Tab-Navigationsvarianten",
+    "defaultTitle": "Standard-Tabs",
+    "overview": "Übersicht",
+    "analytics": "Analytik",
+    "settings": "Einstellungen",
+    "overviewContent": "Übersichtsinhalt mit Projektstatistiken und jüngster Aktivität.",
+    "analyticsContent": "Analytik-Dashboard mit Diagrammen und Metriken.",
+    "settingsContent": "Einstellungsansicht für Konfigurationsoptionen.",
+    "underlinedTitle": "Unterstrichene Registerkarten",
+    "dashboard": "Dashboard",
+    "team": "Team",
+    "projects": "Projekte",
+    "calendar": "Kalender",
+    "underlinedContent": "Dashboard-Inhalt mit sauberer unterstrichenen Tab-Formatierung.",
+    "pillsTitle": "Pillen Tabletten",
+    "all": "Alle",
+    "active": "Aktiv",
+    "draft": "Entwurf",
+    "archived": "Archiviert",
+    "pillsContent": "Inhalt wird durch die ausgewählte Pille-Tab ausgefiltert."
+  },
+  "pagination": {
+    "sectionTitle": "Seitennummerierung",
+    "listTitle": "E-Mail-Liste Paginierung",
+    "listDescription": "Beispiel für Paginierung zur Navigation in der E-Mail-Liste",
+    "emailSubject": "E-Mail-Betreff {{number}}",
+    "timeAgo": "vor 2 Stunden",
+    "previous": "Vorheriges",
+    "next": "Nächste",
+    "showing": "Anzeigen",
+    "to": "zu",
+    "of": "von",
+    "results": "Ergebnisse"
+  },
+  "steps": {
+    "sectionTitle": "Schritt-Navigation",
+    "demoTitle": "Web3-Wallet-Einrichtung",
+    "demoDescription": "Führen Sie Benutzer durch den Wallet-Verbindungsprozess",
+    "stepLabel": "Schritt {{number}}:",
+    "items": {
+      "accountSetup": {
+        "name": "Kontoeinrichtung",
+        "description": "Erstellen Sie Ihr Konto"
+      },
+      "walletConnection": {
+        "name": "Brieftaschenverbindung",
+        "description": "Verbinden Sie Ihre Web3-Wallet"
+      },
+      "emailSetup": {
+        "name": "E-Mail-Einrichtung",
+        "description": "Konfigurieren Sie Ihre E-Mail-Einstellungen"
+      },
+      "complete": {
+        "name": "Abgeschlossen",
+        "description": "Beginnen Sie mit der Verwendung von example.com"
+      }
+    },
+    "details": {
+      "1": "Erstellen Sie Ihr {{emailDomain}}-Konto mit Ihrem gewünschten Benutzernamen und Sicherheitseinstellungen.",
+      "2": "Verbinden Sie Ihre Web3-Wallet (z. B. MetaMask, WalletConnect) zum Aktivieren von Blockchain-Funktionen.",
+      "3": "Konfigurieren Sie Ihre E-Mail-Einstellungen, Benachrichtigungen und Datenschutzeinstellungen.",
+      "4": "Ihre Einrichtung ist abgeschlossen! Beginnen Sie mit dem Senden und Empfangen von Web3-E-Mails."
+    }
+  },
+  "sidebar": {
+    "sectionTitle": "Seitenleitnavigation",
+    "cardTitle": "E-Mail-Anwendungsideleiste",
+    "cardDescription": "Persistente Navigation für die E-Mail-Anwendung",
+    "items": {
+      "dashboard": "Dashboard",
+      "inbox": "Postfach",
+      "sent": "Gesendet",
+      "archive": "Archiv",
+      "settings": "Einstellungen"
+    },
+    "mainContent": "Hauptinhaltsbereich",
+    "mainContentHint": "Inhalte ändern sich basierend auf der Auswahl im Seitenleistenmenü"
+  },
+  "web3Patterns": {
+    "sectionTitle": "Web3-Navigationsmuster",
+    "walletStatus": {
+      "title": "Wallet-Status-Navigation",
+      "description": "Navigation, die sich an den Wallet-Verbindungsstatus anpasst",
+      "connected": "MetaMask verbunden",
+      "inbox": "Web3 Postfach",
+      "ensProfile": "ENS-Profil",
+      "walletSettings": "Wallet-Einstellungen"
+    },
+    "multiChain": {
+      "title": "Multiketten-Navigation",
+      "description": "Navigation über verschiedene Blockchain-Netzwerke",
+      "ethereum": "Ethereum",
+      "solana": "Solana",
+      "polygon": "Polygon",
+      "ethereumInbox": "Ethereum Postfach",
+      "ensNames": "ENS-Namen",
+      "gasSettings": "Gas-Einstellungen"
+    }
+  },
+  "accessibility": {
+    "sectionTitle": "Richtlinien für die Barrierefreiheit",
+    "title": "Navigationsbarrierefreiheit",
+    "description": "Stellen Sie sicher, dass alle Navigationskomponenten für Bildschirmleser und Tastaturbenutzer zugänglich sind.",
+    "ariaLandmarks": "ARIA-Übersichtslandmarken",
+    "keyboardNavigation": "Tastaturnavigation",
+    "breadcrumbsLabel": "Brotkrumen",
+    "breadcrumbsKeys": [
+      "Registerkarte: Navigieren Sie durch Links",
+      "Enter/Leertaste: Link aktivieren",
+      "Sprunglinks für Bildschirmleser"
+    ],
+    "tabsLabel": "Registerkarten",
+    "tabsKeys": [
+      "Pfeiltasten: Tab-Blätter navigieren",
+      "Registerkarte: Eingabe des Registerkarten-Elements",
+      "Eingabe/Leertaste: Registerkarte aktivieren"
+    ]
+  },
+  "implementation": {
+    "sectionTitle": "Implementierungshinweise",
+    "performanceTitle": "Leistungsaspekte",
+    "performance": [
+      "Lade Navigationselemente bei Bedarf lazy",
+      "Verwenden Sie React.memo für komplexe Navigationskomponenten",
+      "Suche in Navigationsmenüs de-bouncen",
+      "Virtuelles Scrollen für lange Navigationslisten",
+      "Kritische Navigationswege vorladen"
+    ],
+    "mobileTitle": "Mobile Responsiveness",
+    "mobile": [
+      "Navigation in Hamburger-Menüs zusammenfalten",
+      "Verwenden Sie die Bottom-Navigation für mobile Apps",
+      "Schwunggesten dort implementieren, wo angemessen",
+      "Stellen Sie sicher, dass Berührungselemente mindestens 44 px groß sind",
+      "Testen Sie auf verschiedenen Bildschirmgrößen und -ausrichtungen"
+    ]
+  }
+}

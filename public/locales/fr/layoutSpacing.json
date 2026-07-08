@@ -1,0 +1,147 @@
+{
+  "seo": {
+    "title": "Mise en page et espacement - Système de conception - Interne - {{emailDomain}}",
+    "description": "Système de mise en page et d'espacement avec des grilles réactives, des conteneurs et des motifs spécifiques à Web3"
+  },
+  "header": {
+    "badge": "Mise en page et espacement",
+    "title": "Système de mise en page et d'espacement",
+    "description": "Système complet de mise en page et d'espacement avec des grilles réactives, des conteneurs flexibles et des modèles spécifiques à Web3 pour les portefeuilles, les transactions et les interfaces de tableau de bord."
+  },
+  "quickStart": {
+    "title": "Mise en route rapide",
+    "copyTooltip": "Copier dans le presse-papiers",
+    "examples": {
+      "grid": {
+        "title": "Système de grille réactive",
+        "description": "Mises en page en grille flexibles qui s'adaptent aux différentes tailles d'écran"
+      },
+      "container": {
+        "title": "Système conteneur",
+        "description": "Conteneurs réactifs avec des largeurs maximales et des espacements cohérents"
+      },
+      "flex": {
+        "title": "Fonctionnalités Flexbox",
+        "description": "Modèles courants de flexbox pour les mises en page des composants"
+      },
+      "spacing": {
+        "title": "Système d'espacement",
+        "description": "Schémas de mise en page cohérents pour les marges et les remplissages"
+      }
+    }
+  },
+  "grid": {
+    "title": "Système de grille réactive",
+    "cardTitle": "Exemples de grille interactive",
+    "cardDescription": "Passez d'un point de rupture à un autre pour voir comment les grilles s'adaptent",
+    "preview": "Aperçu :",
+    "breakpoints": {
+      "mobile": "Mobile",
+      "tablet": "Tablette",
+      "desktop": "Bureau"
+    },
+    "examples": {
+      "nftGallery": {
+        "name": "Galerie NFT"
+      },
+      "dashboardWidgets": {
+        "name": "Widgets du tableau de bord"
+      },
+      "transactionHistory": {
+        "name": "Historique des transactions"
+      }
+    },
+    "item": "Objet {{number}}"
+  },
+  "container": {
+    "title": "Système conteneur",
+    "cardTitle": "Variants de conteneur",
+    "cardDescription": "Différentes tailles de conteneurs pour divers types de contenu",
+    "label": "Conteneur :",
+    "maxWidth": "Largeur maximale :",
+    "bestFor": "Meilleur pour :",
+    "containerSuffix": "{{name}} Conteneur",
+    "previewText": "Ce conteneur s'adapte aux contraintes de largeur sélectionnées tout en maintenant un remplissage réactif.",
+    "sizes": {
+      "narrow": {
+        "name": "étroit",
+        "use": "Articles, formulaires"
+      },
+      "default": {
+        "name": "Par défaut",
+        "use": "Contenu général"
+      },
+      "wide": {
+        "name": "Large",
+        "use": "Tableaux de bord, tableaux"
+      },
+      "full": {
+        "name": "Complet",
+        "use": "Mises en page bord à bord"
+      }
+    }
+  },
+  "flexbox": {
+    "title": "Modèles Flexbox",
+    "common": {
+      "title": "Schablonen courantes",
+      "description": "Mises en page flexbox standard pour les composants",
+      "spaceBetween": "Espace entre",
+      "center": "Centre",
+      "startWithGap": "Commencez par le vide",
+      "columnStack": "Pile de colonnes"
+    },
+    "web3": {
+      "title": "Modèles Web3",
+      "description": "Mises en page spécialisées pour les interfaces de blockchain",
+      "walletConnection": "Connexion du portefeuille",
+      "walletName": "MetaMask",
+      "connected": "Connecté",
+      "transactionSummary": "Résumé de transaction",
+      "amount": "Montant :",
+      "gasFee": "Frais de gaz :",
+      "total": "Total :",
+      "nftCardLayout": "Mise en page de carte NFT",
+      "nftName": "NFT génial #1234",
+      "artistName": "Nom de l'artiste"
+    }
+  },
+  "spacing": {
+    "title": "Système d'espacement",
+    "cardTitle": "Schémas de mise en page cohérents",
+    "cardDescription": "Outils de mise en page standard pour des agencements cohérents",
+    "scaleTitle": "Échelle d'espacement",
+    "componentTitle": "Espacement des composants",
+    "sectionHeader": "Titre de section",
+    "component": "Composant {{number}}",
+    "sectionSpacingLabel": "Espacement des sections :",
+    "sectionSpacingText": "marges verticales de 32px",
+    "componentSpacingLabel": "Espacement des composants :",
+    "componentSpacingText": "12px entre les éléments",
+    "internalPaddingLabel": "Rembourrage interne :",
+    "internalPaddingText": "16px pour les zones de contenu"
+  },
+  "web3": {
+    "title": "Modèles de mise en page Web3",
+    "wallet": {
+      "title": "Tableau de bord du portefeuille",
+      "description": "Aperçu du portefeuille avec le solde et les actifs",
+      "send": "Envoyer",
+      "receive": "Recevoir",
+      "swap": "Échanger",
+      "assets": "Actifs"
+    },
+    "transaction": {
+      "title": "Flux de transaction",
+      "description": "Interface de transaction pas à pas",
+      "recipientAddress": "Adresse du destinataire",
+      "amount": "Montant",
+      "balance": "Solde : 2,45 ETH",
+      "max": "Max",
+      "networkFee": "Frais de réseau :",
+      "total": "Total :",
+      "cancel": "Annuler",
+      "continue": "Continuer"
+    }
+  }
+}

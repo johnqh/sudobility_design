@@ -1,0 +1,117 @@
+{
+  "seo": {
+    "title": "Forms - Hệ thống thiết kế - Nội bộ - {{emailDomain}}",
+    "description": "Hoàn thành các thành phần biểu mẫu và thành phần đầu vào để trưng bày cho hệ thống thiết kế"
+  },
+  "codeExample": {
+    "preview": "Xem trước",
+    "usage": "Sử dụng"
+  },
+  "header": {
+    "badge": "Các thành phần biểu mẫu",
+    "title": "Thành phần biểu mẫu và các phần tử đầu vào",
+    "description": "Thư viện các thành phần biểu mẫu toàn diện với phong cách nhất quán, trạng thái xác thực và tính khả dụng. Tất cả các thành phần đều hỗ trợ chế độ sáng/tối và bao gồm quản lý tập trung đúng cách."
+  },
+  "quickStart": {
+    "title": "Bắt đầu nhanh - Các mẫu biểu mẫu thiết yếu",
+    "description": "Các thành phần biểu mẫu sẵn sàng sử dụng với xác thực đúng, khả năng truy cập và thiết kế phản hồi.",
+    "textInput": {
+      "title": "Nhập văn bản",
+      "label": "Địa chỉ email",
+      "placeholder": "Nhập địa chỉ email của bạn..."
+    },
+    "select": {
+      "title": "Chọn menu thả xuống",
+      "label": "Mạng lưới blockchain",
+      "placeholder": "Chọn một mạng..."
+    },
+    "checkbox": {
+      "title": "Hộp kiểm",
+      "agree": "Tôi đồng ý với Điều khoản Dịch vụ và Chính sách Bảo mật"
+    },
+    "textarea": {
+      "title": "Vùng văn bản",
+      "label": "Tin nhắn",
+      "placeholder": "Nhập tin nhắn của bạn..."
+    }
+  },
+  "inputTypes": {
+    "title": "Loại đầu vào và biến thể",
+    "description": "Các loại đầu vào khác nhau với kiểu dáng nhất quán trên tất cả các thành phần biểu mẫu.",
+    "textInputTypes": {
+      "title": "Loại đầu vào văn bản",
+      "description": "Các loại đầu vào khác nhau với phong cách nhất quán",
+      "textPlaceholder": "Nhập văn bản",
+      "passwordPlaceholder": "Mật khẩu"
+    },
+    "sizes": {
+      "title": "Kích thước đầu vào",
+      "description": "Kích thước đầu vào khác nhau cho các trường hợp sử dụng khác nhau",
+      "smallPlaceholder": "Nhập nhỏ",
+      "defaultPlaceholder": "Nhập mặc định",
+      "largePlaceholder": "Dữ liệu đầu vào lớn"
+    }
+  },
+  "validation": {
+    "title": "Trạng thái xác thực",
+    "description": "Trạng thái xác thực biểu mẫu với mã hóa màu phù hợp và thông báo.",
+    "success": {
+      "title": "Trạng thái thành công",
+      "description": "Dữ liệu hợp lệ với phong cách thành công",
+      "label": "Địa chỉ email",
+      "message": "Địa chỉ email hợp lệ"
+    },
+    "error": {
+      "title": "Trạng thái lỗi",
+      "description": "Dữ liệu đầu vào không hợp lệ với định dạng lỗi",
+      "label": "Mật khẩu",
+      "message": "Mật khẩu phải có ít nhất 8 ký tự"
+    }
+  },
+  "advanced": {
+    "title": "Các thành phần biểu mẫu nâng cao",
+    "description": "Các mẫu biểu mẫu phức tạp hơn với chức năng được nâng cao.",
+    "passwordToggle": {
+      "title": "Nhập mật khẩu với nút chuyển đổi",
+      "description": "Trường mật khẩu với chức năng hiển thị/ẩn",
+      "label": "Mật khẩu",
+      "placeholder": "Nhập mật khẩu..."
+    },
+    "radio": {
+      "title": "Nhóm nút radio",
+      "description": "Nút radio cho lựa chọn đơn lẻ",
+      "label": "Gói đăng ký",
+      "free": "Gói miễn phí - các tính năng cơ bản",
+      "pro": "Gói Pro - Tính năng nâng cao"
+    }
+  },
+  "complete": {
+    "title": "Hoàn thành mẫu biểu",
+    "description": "Một biểu mẫu toàn diện thể hiện tất cả các thành phần biểu mẫu đang hoạt động cùng nhau.",
+    "form": {
+      "title": "Biểu mẫu hồ sơ Web3",
+      "description": "Hoàn thành biểu mẫu với tất cả các loại phần tử và xác thực",
+      "displayNameLabel": "Tên hiển thị",
+      "displayNamePlaceholder": "Tên hiển thị của bạn",
+      "emailLabel": "Địa chỉ email",
+      "networkLabel": "Mạng ưu tiên",
+      "networkPlaceholder": "Chọn một mạng...",
+      "bioLabel": "Sinh học",
+      "bioPlaceholder": "Hãy kể cho chúng tôi nghe về bản thân bạn...",
+      "notifications": "Tôi đồng ý nhận thông báo qua email",
+      "submit": "Lưu hồ sơ"
+    }
+  },
+  "accessibility": {
+    "title": "Hướng dẫn về khả năng truy cập",
+    "heading": "Các nguyên tắc tốt nhất về khả năng truy cập cho biểu mẫu",
+    "items": {
+      "labelsBefore": "Luôn sử dụng phương pháp đúng",
+      "labelsAfter": "các thành phần liên quan đến đầu vào",
+      "errorMessages": "Bao gồm các thông báo lỗi rõ ràng với trạng thái xác thực",
+      "focusStates": "Đảm bảo các trạng thái tập trung hiển thị rõ ràng bằng các công cụ vòng",
+      "inputTypes": "Sử dụng các loại đầu vào phù hợp (email, mật khẩu, v.v.) để cải thiện trải nghiệm di động",
+      "contrast": "Duy trì độ tương phản màu sắc đủ (tỷ lệ tối thiểu 4,5:1)"
+    }
+  }
+}

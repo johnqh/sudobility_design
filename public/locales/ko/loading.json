@@ -1,0 +1,127 @@
+{
+  "seo": {
+    "title": "로딩 상태 - 디자인 시스템 - 내부 - {{emailDomain}}",
+    "description": "스피너, 스켈레톤, 프로그레스 인디케이터 및 Web3 패턴을 포함한 포괄적인 로딩 상태 문서"
+  },
+  "copy": {
+    "copied": "✓ 복사되었습니다!",
+    "copy": "복사"
+  },
+  "header": {
+    "badge": "로딩 상태",
+    "title": "로딩 상태 컴포넌트",
+    "description": "비동기 작업 중에 명확한 시각적 피드백을 제공하는 로딩 인디케이터와 진행 상태로, Web3 거래 및 블록체인 상호작용에 특별히 설계되었습니다.",
+    "stats": {
+      "spinnerTypes": "스피너 유형",
+      "skeletonPatterns": "스켈레톤 패턴",
+      "progressTypes": "진행 유형",
+      "web3Examples": "Web3 예시"
+    }
+  },
+  "quickStart": {
+    "title": "🚀 빠른 시작",
+    "description": "가장 흔히 사용되는 로딩 패턴으로 시작하세요. 이러한 예시는 다양한 사용 사례에 필요한 핵심 로딩 상태를 보여줍니다.",
+    "spinners": {
+      "title": "1. 기본 로딩 스피너",
+      "small": "작은",
+      "default": "기본값",
+      "large": "크다"
+    },
+    "buttons": {
+      "title": "2. 로딩 버튼 상태",
+      "loading": "로딩 중...",
+      "clickToLoad": "로드하려면 클릭하세요",
+      "processing": "처리 중",
+      "uploading": "업로드 중..."
+    },
+    "progress": {
+      "title": "3. 진행률 표시기",
+      "label": "진행 상황",
+      "startDemo": "진행 중 데모 시작"
+    },
+    "skeleton": {
+      "title": "4. 스켈레톤 로딩"
+    }
+  },
+  "web3": {
+    "title": "⚡ Web3 로딩 패턴",
+    "description": "웹3 작업(지갑 연결, 거래, 블록체인 확인 등)을 위한 전문화된 로딩 상태.",
+    "transaction": {
+      "title": "거래 로딩 상태",
+      "startDemo": "거래 데모 시작",
+      "currentState": "현재 상태: {{state}}",
+      "pending": {
+        "title": "거래 대기 중",
+        "message": "지갑에서 거래를 확인해 주세요..."
+      },
+      "confirming": {
+        "title": "거래 확인",
+        "message": "거래가 제출되었습니다. 블록체인 확인을 기다리는 중입니다...",
+        "hash": "해시: 0x1234...abcd"
+      },
+      "confirmed": {
+        "title": "거래가 확인되었습니다",
+        "message": "블록체인에서 거래가 확인되었습니다!",
+        "block": "블록: #18,234,567"
+      }
+    },
+    "wallet": {
+      "title": "지갑 연결 상태",
+      "connecting": {
+        "title": "지갑 연결",
+        "message": "지갑에서 연결을 승인해 주세요"
+      },
+      "network": {
+        "title": "네트워크 감지",
+        "message": "네트워크 호환성 확인 중..."
+      }
+    },
+    "email": {
+      "title": "이메일 및 메시지 로딩",
+      "encrypting": {
+        "title": "메시지 암호화 중...",
+        "message": "웹3 암호화로 이메일 보호하기"
+      },
+      "sending": {
+        "title": "블록체인으로 전송 중...",
+        "message": "이메일 메타데이터를 블록체인에 기록하기"
+      },
+      "uploadProgress": "업로드 진행률",
+      "uploading": "업로드 중...",
+      "startUploadDemo": "업로드 데모 시작"
+    }
+  },
+  "skeletons": {
+    "title": "💀 뼈대 패턴",
+    "description": "로딩 콘텐츠의 구조를 모방하여 더 나은 성능 인식을 위한 콘텐츠 플레이스홀더.",
+    "emailList": "이메일 리스트 스켈레톤",
+    "cardContent": "카드 콘텐츠 스켈레톤"
+  },
+  "accessibility": {
+    "title": "♿ 접근성 가이드라인",
+    "description": "로딩 상태가 적절한 ARIA 속성, 스크린 리더 지원 및 포커스 관리를 통해 접근 가능하도록 하십시오.",
+    "bestPractices": {
+      "title": "✅ 최선의 방법",
+      "items": [
+        "동적 로딩 상태에는 ARIA live 영역을 사용하세요",
+        "의미 있는 로딩 메시지를 제공하세요",
+        "가능한 경우 진행 정보를 포함하세요",
+        "선호하는 사용자를 위해 감소된 움직임을 사용하세요",
+        "로딩 중에 포커스 관리를 유지합니다"
+      ]
+    },
+    "avoid": {
+      "title": "❌ 피하기",
+      "items": [
+        "텍스트 대체 없이 로딩 인디케이터",
+        "진행 표시 없이 무한히 로딩 중",
+        "간헐적 빛나는 애니메이션이 발작을 유발할 수 있음",
+        "경고 없이 포커스 또는 콘텐츠를 제거합니다",
+        "맥락이 없는 일반적인 \"로딩 중...\" 메시지"
+      ]
+    },
+    "implementation": "접근성 구현"
+  },
+  "backToDesignSystem": "디자인 시스템으로 돌아가기",
+  "lastUpdated": "마지막 업데이트: {{date}}"
+}

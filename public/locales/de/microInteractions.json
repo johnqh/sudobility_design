@@ -1,0 +1,82 @@
+{
+  "seo": {
+    "title": "Micro-Interaktionen & Animationen - Design-System - Intern - {{emailDomain}}",
+    "description": "Umfassendes Animationsystem mit Hover-Effekten, Übergängen und Web3-spezifischen Interaktionen"
+  },
+  "header": {
+    "badge": "Mikro-Interaktionen und Animationen",
+    "title": "Mikro-Interaktionen und Animationen",
+    "description": "Umfassendes Animationsystem mit Hover-Effekten, Ladezuständen, Übergängen und Web3-spezifischen Interaktionen. Alle Animationen berücksichtigen die Benutzer-Bewegungseinstellungen und bieten reibungslose, ansprechende Benutzererlebnisse."
+  },
+  "stats": {
+    "variants": "Animationsvarianten",
+    "performance": "Glatte Leistung",
+    "motionSafe": "Bewegungssicher",
+    "specialized": "Spezialisiert"
+  },
+  "hover": {
+    "title": "Hover-Effekte",
+    "description": "Subtile, aber ansprechende Hover-Effekte für Buttons, Karten und interaktive Elemente.",
+    "buttonEffectsTitle": "Button-Hover-Effekte",
+    "liftEffect": "Hebeffekt",
+    "glowEffect": "Leuchteffekt",
+    "scaleEffect": "Skaleneffekt",
+    "shimmerEffect": "Schimmer-Effekt",
+    "cardEffectsTitle": "Karten-Hover-Effekte",
+    "cardSubtle": "Subtiler Hover-Effekt - hebt sanft ab",
+    "cardGlow": "Glow-Hover-Effekt - fügt weiches Glühen hinzu"
+  },
+  "loading": {
+    "title": "Ladezustände",
+    "description": "Ladenanimationen und Fortschrittsanzeiger, die Benutzer engagieren.",
+    "spinnersTitle": "Spinner",
+    "interactiveDemoTitle": "Interaktiver Demo",
+    "loadingLabel": "Lade...",
+    "startLoading": "Lade starten",
+    "simulateProgress": "Simuliere Fortschritt",
+    "progress": "Fortschritt: {{progress}}%"
+  },
+  "web3": {
+    "title": "Web3-Animationen",
+    "description": "Spezialisierte Animationen für Web3-Interaktionen, einschließlich Wallet-Verbindungen und Transaktionszustände.",
+    "walletStatesTitle": "Zustände der Brieftaschenverbindung",
+    "connecting": "Verbindung herstellen...",
+    "connected": "Verbunden",
+    "connectWallet": "Wallet verbinden",
+    "statusLabel": "Status:",
+    "transactionStatesTitle": "Transaktionszustände",
+    "transactionPending": "Transaktion ausstehend",
+    "transactionConfirmed": "Transaktion bestätigt",
+    "transactionFailed": "Transaktion fehlgeschlagen"
+  },
+  "motion": {
+    "title": "Bewegungseinstellungen",
+    "description": "Alle Animationen berücksichtigen die Bewegungseinstellungen des Benutzers und bieten Alternativen für die Barrierefreiheit.",
+    "reducedMotionTitle": "Unterstützung für reduzierte Bewegung",
+    "respectsPreferences": "Respektiert Bewegungspräferenzen",
+    "fadeOnly": "Nur Animationsverlauf",
+    "scaleOnly": "Nur Animation skalieren",
+    "safeAnimationsTitle": "Sichere Animationen",
+    "safeFade": "Sicherer Ausblenden-Übergang",
+    "safeSlide": "Sichere Bildschirmübergang"
+  },
+  "bestPractices": {
+    "title": "Animations-Best-Practices",
+    "doTitle": "✅ Mach das",
+    "do": [
+      "Halten Sie Animationen bei Mikro-Interaktionen unter 300 ms.",
+      "Verwenden Sie Easing-Funktionen für eine natürliche Bewegung",
+      "Geben Sie sofortige Rückmeldung zu Benutzeraktionen",
+      "Respekt vor Einstellungen für reduzierte Bewegung",
+      "Verwenden Sie Ladezustände für Operationen, die länger als 500 ms dauern"
+    ],
+    "avoidTitle": "❌ Vermeide dies",
+    "avoid": [
+      "Animationen überschreiten - weniger ist mehr",
+      "Lange Ladeanimationen ohne Fortschritt",
+      "Animationen, die die Funktionalität stören",
+      "Automatische Animationen beim Laden der Seite",
+      "Komplexe Animationen für Benutzer mit Bewegungsempfindlichkeit"
+    ]
+  }
+}

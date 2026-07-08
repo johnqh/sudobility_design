@@ -1,0 +1,80 @@
+{
+  "seo": {
+    "title": "테이블 및 데이터 그리드 - 디자인 시스템 - 내부 - {{emailDomain}}",
+    "description": "정렬, 필터링, 페이지네이션 및 데이터 그리드 기능을 갖춘 포괄적인 테이블 시스템"
+  },
+  "header": {
+    "badge": "테이블 및 데이터 그리드",
+    "title": "테이블 및 데이터 그리드",
+    "subtitle": "정렬, 필터링, 페이지네이션 및 데이터 그리드 기능을 갖춘 포괄적인 테이블 시스템입니다. 구조화된 데이터를 고급 상호작용 패턴으로 표시하는 데 이상적입니다."
+  },
+  "columns": {
+    "name": "이름",
+    "email": "이메일",
+    "role": "역할",
+    "status": "상태",
+    "actions": "작업",
+    "transactions": "거래",
+    "joinDate": "가입일",
+    "transactionHash": "트랜잭션 해시",
+    "from": "에서",
+    "to": "로",
+    "amount": "금액",
+    "chain": "체인"
+  },
+  "basic": {
+    "title": "기본 테이블",
+    "usage": "사용"
+  },
+  "sortable": {
+    "title": "정렬 가능한 테이블",
+    "headers": "정렬 가능한 헤더"
+  },
+  "selectable": {
+    "title": "일괄 작업이 가능한 선택 가능한 테이블",
+    "selected": "{{count}} 행 선택됨",
+    "export": "내보내기",
+    "delete": "삭제"
+  },
+  "compact": {
+    "title": "콤팩트 테이블"
+  },
+  "filterable": {
+    "title": "필터 가능한 테이블",
+    "searchPlaceholder": "사용자 검색...",
+    "filters": "필터"
+  },
+  "pagination": {
+    "title": "페이지네이션 있는 테이블",
+    "showing": "보기",
+    "to": "로",
+    "of": "의",
+    "results": "결과",
+    "ariaLabel": "페이지네이션"
+  },
+  "web3": {
+    "title": "Web3 거래 테이블",
+    "confirmed": "확인됨",
+    "pending": "보류 중",
+    "ethereum": "Ethereum",
+    "solana": "Solana"
+  },
+  "empty": {
+    "title": "빈 상태",
+    "noData": "데이터를 찾을 수 없습니다",
+    "description": "현재 표시할 기록이 없습니다.",
+    "addRecord": "새 기록 추가"
+  },
+  "tokens": {
+    "title": "사용 가능한 테이블 변형",
+    "structure": "테이블 구조",
+    "containerBase": "컨테이너 및 베이스",
+    "headers": "헤더",
+    "body": "몸",
+    "statesPagination": "상태 및 페이지네이션"
+  },
+  "nav": {
+    "previous": "레이아웃 및 간격",
+    "back": "디자인 시스템으로 돌아가기"
+  }
+}

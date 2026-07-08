@@ -1,0 +1,291 @@
+{
+  "seo": {
+    "title": "Colors - Design System - Internal - {{emailDomain}}",
+    "description": "Complete color palette and variations showcase for the design system"
+  },
+  "nav": {
+    "viewTypography": "View Typography"
+  },
+  "header": {
+    "badge": "Color System",
+    "title": "Color Palette & Usage",
+    "description": "Complete color system used throughout the {{appName}} application with usage examples and code samples. Click any color to copy its hex value to clipboard."
+  },
+  "swatch": {
+    "copyAria": "Copy {{name}} color value {{value}}"
+  },
+  "codeExample": {
+    "preview": "Preview",
+    "usage": "Usage"
+  },
+  "quickStart": {
+    "title": "Quick Start - Common Usage Examples",
+    "description": "Ready-to-use code examples for the most common design patterns. Copy and paste directly into your components.",
+    "primaryButton": {
+      "title": "Primary Button",
+      "action": "Primary Action"
+    },
+    "successAlert": {
+      "title": "Success Alert",
+      "heading": "Success!",
+      "body": "Your action was completed successfully."
+    },
+    "blockchainBadge": {
+      "title": "Blockchain Badge"
+    },
+    "formInput": {
+      "title": "Form Input",
+      "placeholder": "Enter your email..."
+    }
+  },
+  "palettes": {
+    "title": "Color Palettes",
+    "description": "Base color palettes organized by hue. Each palette includes shades from 50 (lightest) to 950 (darkest).",
+    "items": {
+      "blue": {
+        "name": "Blue (Primary)",
+        "description": "Primary brand color palette"
+      },
+      "purple": {
+        "name": "Purple (Secondary)",
+        "description": "Secondary brand color palette"
+      },
+      "neutral": {
+        "name": "Neutral (Grayscale)",
+        "description": "Background, text, and border colors"
+      },
+      "red": {
+        "name": "Red (Error)",
+        "description": "Error and destructive action colors"
+      },
+      "green": {
+        "name": "Green (Success)",
+        "description": "Success and positive action colors"
+      },
+      "amber": {
+        "name": "Amber (Warning)",
+        "description": "Warning and caution colors"
+      },
+      "orange": {
+        "name": "Orange",
+        "description": "Accent and highlight colors"
+      }
+    }
+  },
+  "networks": {
+    "ethereum": "Ethereum",
+    "solana": "Solana",
+    "polygon": "Polygon"
+  },
+  "web3": {
+    "title": "Web3 Network Colors",
+    "description": "Colors representing different blockchain networks and Web3 elements.",
+    "usage": {
+      "ethereum": "Ethereum network branding",
+      "solana": "Solana network branding",
+      "polygon": "Polygon network branding"
+    },
+    "code": {
+      "title": "Web3 Color Usage",
+      "description": "How to use Web3 network colors in components"
+    }
+  },
+  "semantic": {
+    "title": "Semantic Colors",
+    "description": "Semantic color tokens that adapt to light and dark themes. These provide consistent meaning across the interface.",
+    "lightMode": "Light Mode",
+    "darkMode": "Dark Mode",
+    "categories": {
+      "text": {
+        "name": "Text Colors",
+        "colors": {
+          "primaryText": {
+            "name": "Primary Text",
+            "usage": "Main content text"
+          },
+          "secondaryText": {
+            "name": "Secondary Text",
+            "usage": "Supporting text"
+          },
+          "linkText": {
+            "name": "Link Text",
+            "usage": "Interactive links"
+          }
+        }
+      },
+      "background": {
+        "name": "Background Colors",
+        "colors": {
+          "primaryBackground": {
+            "name": "Primary Background",
+            "usage": "Main page backgrounds"
+          },
+          "secondaryBackground": {
+            "name": "Secondary Background",
+            "usage": "Card backgrounds"
+          },
+          "elevatedBackground": {
+            "name": "Elevated Background",
+            "usage": "Modals and overlays"
+          }
+        }
+      },
+      "state": {
+        "name": "State Colors",
+        "colors": {
+          "success": {
+            "name": "Success",
+            "usage": "Success messages and actions"
+          },
+          "warning": {
+            "name": "Warning",
+            "usage": "Warning messages"
+          },
+          "error": {
+            "name": "Error",
+            "usage": "Error messages and destructive actions"
+          },
+          "info": {
+            "name": "Info",
+            "usage": "Informational messages"
+          }
+        }
+      }
+    },
+    "code": {
+      "title": "Semantic Colors Usage",
+      "description": "How to use semantic colors from the design system",
+      "preview": {
+        "success": "✓ Success message",
+        "error": "✗ Error message",
+        "warning": "⚠ Warning message"
+      }
+    }
+  },
+  "components": {
+    "title": "Component Colors & Usage Examples",
+    "description": "Pre-configured color combinations for common UI components with built-in hover, focus, and theme support.",
+    "exampleHeading": "{{name}} Examples",
+    "liveExamples": "Live Examples",
+    "alertMessage": "{{name}} message",
+    "interactiveHeading": "Interactive {{name}} Examples:",
+    "createPreview": {
+      "button": {
+        "primary": "Primary Action",
+        "secondary": "Secondary Action",
+        "destructive": "Delete Item"
+      },
+      "alert": {
+        "infoLabel": "Info:",
+        "infoText": "This is an information alert",
+        "successLabel": "Success:",
+        "successText": "Operation completed successfully",
+        "errorLabel": "Error:",
+        "errorText": "Something went wrong"
+      }
+    },
+    "items": {
+      "button": {
+        "name": "Button",
+        "createTitle": "How to Create Buttons",
+        "createDescription": "Step-by-step guide to create buttons with proper colors",
+        "variantsTitle": "Button Variants & States",
+        "variantsDescription": "All button color variants with hover and focus states",
+        "variants": {
+          "primary": "Primary",
+          "secondary": "Secondary",
+          "destructive": "Destructive",
+          "success": "Success"
+        }
+      },
+      "badge": {
+        "name": "Badge",
+        "createTitle": "How to Create Badges",
+        "createDescription": "Step-by-step guide to create badges with proper colors",
+        "variantsTitle": "Badge Variants & States",
+        "variantsDescription": "All badge color variants with hover and focus states",
+        "variants": {
+          "default": "Default",
+          "primary": "Primary",
+          "success": "Success",
+          "warning": "Warning",
+          "error": "Error"
+        }
+      },
+      "alert": {
+        "name": "Alert",
+        "createTitle": "How to Create Alerts",
+        "createDescription": "Step-by-step guide to create alerts with proper colors",
+        "variantsTitle": "Alert Variants & States",
+        "variantsDescription": "All alert color variants with hover and focus states",
+        "variants": {
+          "info": "Info",
+          "success": "Success",
+          "warning": "Warning",
+          "error": "Error"
+        }
+      }
+    }
+  },
+  "practical": {
+    "title": "Practical Usage Examples",
+    "description": "Real-world examples showing how to combine colors for common UI patterns.",
+    "form": {
+      "title": "Form with Color-Coded States",
+      "description": "How to use colors for form validation and states",
+      "emailLabel": "Email (Valid)",
+      "emailValid": "✓ Email is valid",
+      "passwordLabel": "Password (Error)",
+      "passwordError": "✗ Password must be at least 8 characters",
+      "submit": "Submit Form"
+    },
+    "card": {
+      "title": "Card with Status Colors",
+      "description": "How to use colors in card components with different states",
+      "apiServer": "API Server",
+      "online": "online",
+      "operational": "All systems operational",
+      "database": "Database",
+      "maintenance": "maintenance",
+      "maintenanceProgress": "Scheduled maintenance in progress"
+    },
+    "navigation": {
+      "title": "Navigation with Color States",
+      "description": "How to use colors for navigation states and active items",
+      "dashboard": "Dashboard",
+      "users": "Users",
+      "settings": "Settings"
+    },
+    "progress": {
+      "title": "Progress Indicators with Colors",
+      "description": "How to use colors for progress bars and loading states",
+      "label": "Progress",
+      "complete75": "75% Complete",
+      "success": "Success",
+      "complete100": "100% Complete"
+    }
+  },
+  "guidelines": {
+    "title": "Usage Guidelines",
+    "doTitle": "✓ Do",
+    "do": [
+      "Use semantic colors for consistent meaning",
+      "Prefer component colors for UI elements",
+      "Test colors in both light and dark modes",
+      "Ensure sufficient contrast for accessibility",
+      "Use the color utility functions for consistency"
+    ],
+    "dontTitle": "✗ Don't",
+    "dont": [
+      "Use raw hex values directly in components",
+      "Mix different color systems",
+      "Create custom colors without design approval",
+      "Use colors that don't work in dark mode",
+      "Ignore accessibility contrast requirements"
+    ]
+  },
+  "copyInstructions": {
+    "title": "Click to Copy Values",
+    "description": "Click on any color swatch to copy its hex value, or use the copy button on code examples to copy usage code"
+  }
+}

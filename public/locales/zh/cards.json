@@ -1,0 +1,126 @@
+{
+  "seo": {
+    "title": "卡片 - 设计系统 - 内部 - {{emailDomain}}",
+    "description": "完整的卡片组件库，包含布局、变体和交互模式"
+  },
+  "codeExample": {
+    "preview": "预览",
+    "usage": "使用"
+  },
+  "header": {
+    "badge": "卡片组件",
+    "title": "卡片布局与内容模式",
+    "description": "功能全面的卡片组件系统，支持灵活布局、交互元素和内容模式。所有卡片均支持阴影效果、悬停状态，以及具有统一间距和样式的响应式设计。"
+  },
+  "quickStart": {
+    "title": "快速入门 - 必备卡牌模式",
+    "description": "开箱即用的卡片组件，具有一致的布局、交互和内容组织。",
+    "basic": {
+      "heading": "基本内容卡片",
+      "cardTitle": "卡片标题",
+      "cardBody": "这是一张基础卡片，具有简单的内容布局和一致的样式。"
+    },
+    "interactive": {
+      "heading": "交互式卡片",
+      "cardTitle": "交互式卡片",
+      "cardBody": "点击我以获得交互效果和增强的悬停状态。",
+      "learnMore": "了解详情 →"
+    },
+    "stats": {
+      "heading": "统计数据卡",
+      "revenueLabel": "总收入",
+      "fromLastMonth": "从上个月"
+    },
+    "feature": {
+      "heading": "功能卡",
+      "cardTitle": "安全且私密",
+      "cardBody": "端到端加密可确保您的通信保持私密和安全。",
+      "learnMore": "了解详情 →"
+    }
+  },
+  "variants": {
+    "title": "卡牌变体与提升",
+    "description": "适用于不同使用场景的多种卡牌高度和风格变体。",
+    "elevation": {
+      "title": "高程等级",
+      "description": "不同的阴影深度和悬停状态以实现视觉层次",
+      "flat": "平面卡",
+      "default": "默认卡",
+      "elevated": "高级卡",
+      "floating": "浮动卡片"
+    },
+    "color": {
+      "title": "颜色变体",
+      "description": "不同情境下的品牌和语义颜色变体",
+      "success": "成功卡",
+      "warning": "警告卡",
+      "error": "错误卡",
+      "info": "信息卡"
+    }
+  },
+  "content": {
+    "title": "内容与媒体卡片",
+    "description": "用于社交和内容应用的卡片，包含丰富的内容、媒体和交互元素。",
+    "social": {
+      "title": "社交媒体卡片",
+      "description": "包含用户互动、参与度指标和操作的卡片",
+      "userName": "John Doe",
+      "timeAgo": "2小时前",
+      "post": "刚刚发布了一个新功能！Web3集成现已上线，可供测试。",
+      "share": "分享"
+    },
+    "product": {
+      "title": "产品卡",
+      "description": "电商风格卡片，包含评分、价格和操作",
+      "productName": "Web3 开发工具包",
+      "reviews": "(128条评价)",
+      "productBody": "功能齐全的工具包，可轻松构建去中心化应用。",
+      "addToCart": "添加到购物车"
+    }
+  },
+  "web3": {
+    "title": "Web3 与加密卡",
+    "description": "适用于Web3、加密货币和区块链应用的专用卡片模式。",
+    "wallet": {
+      "title": "钱包连接卡",
+      "description": "带状态指示灯的钱包连接卡",
+      "connected": "已连接",
+      "network": "网络",
+      "balance": "平衡",
+      "disconnect": "断开连接"
+    },
+    "nft": {
+      "title": "NFT收藏卡",
+      "description": "用于显示NFT收藏和元数据的卡片",
+      "collectionName": "Crypto Punks 系列",
+      "collectionBody": "来自著名CryptoPunks系列的稀有数字收藏品。",
+      "currentPrice": "当前价格",
+      "placeBid": "出价"
+    }
+  },
+  "layouts": {
+    "title": "卡片布局与网格",
+    "description": "适用于不同屏幕尺寸的响应式网格布局和卡片排列。",
+    "grid": {
+      "title": "响应式卡片网格",
+      "description": "可跨所有屏幕尺寸工作的自适应网格",
+      "cardLabel": "卡片 {{index}}",
+      "subtitle": "字幕",
+      "sampleContent": "网格演示的示例卡片内容。"
+    }
+  },
+  "accessibility": {
+    "title": "可访问性与最佳实践",
+    "guidelinesTitle": "卡片可访问性指南",
+    "guidelines": [
+      "使用语义化的HTML结构并使用正确的标题",
+      "确保文本内容具有足够的颜色对比度",
+      "为交互式卡片元素添加焦点状态",
+      "为复杂的卡片交互使用 ARIA 标签",
+      "为卡片操作实现键盘导航",
+      "为装饰性元素提供替代文本",
+      "为移动设备可访问性使用响应式设计",
+      "使用屏幕阅读器和键盘导航进行测试"
+    ]
+  }
+}

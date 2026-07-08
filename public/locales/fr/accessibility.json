@@ -1,0 +1,127 @@
+{
+  "seo": {
+    "title": "Accessibilité & A11Y - Système de conception - Interne - {{emailDomain}}",
+    "description": "Modèles complets d'accessibilité et outils de conception inclusive pour la conformité WCAG"
+  },
+  "header": {
+    "badge": "Accessibilité et A11Y",
+    "title": "Système de conception inclusif",
+    "intro": "Des modèles et des utilitaires d'accessibilité complets pour créer des applications Web3 inclusives et conformes aux recommandations WCAG. Ces modèles garantissent un accès égal pour tous les utilisateurs, y compris ceux qui utilisent des technologies d'assistance."
+  },
+  "stats": {
+    "wcag": {
+      "value": "WCAG 2.1",
+      "label": "Conforme à AA"
+    },
+    "touch": {
+      "value": "44px+",
+      "label": "Cibles tactiles"
+    },
+    "contrast": {
+      "value": "4,5:1",
+      "label": "Contraste de couleur"
+    },
+    "screenReader": {
+      "value": "Lecteur d'écran",
+      "label": "Compatible"
+    }
+  },
+  "screenReader": {
+    "title": "Prise en charge du lecteur d'écran",
+    "description": "Modèles complets de lecteur d'écran, y compris les liens de saut, les étiquettes ARIA et le HTML sémantique.",
+    "skipLink": {
+      "title": "Lien de saut",
+      "button": "Lien de saut (Focus pour voir)",
+      "visible": "✓ Le lien de saut est maintenant visible ! Cela aide les utilisateurs du clavier à naviguer rapidement."
+    },
+    "only": {
+      "title": "Contenu uniquement pour lecteur d'écran",
+      "description": "Ce contenu fournit un contexte pour les lecteurs d'écran sans alourdir la conception visuelle.",
+      "hidden": "Ce texte n'est visible que par les lecteurs d'écran"
+    }
+  },
+  "focus": {
+    "title": "Gestion de l'attention",
+    "description": "Supprimez les indicateurs de focus et les modèles de navigation au clavier pour tous les éléments interactifs.",
+    "indicatorsTitle": "Indicateurs de focus",
+    "standard": "Focus standard",
+    "highContrast": "Contraste élevé",
+    "wallet": "Portefeuille Web3",
+    "error": "État d'erreur"
+  },
+  "contrast": {
+    "title": "Contraste de couleur",
+    "description": "Combinaisons de texte et arrière-plan à fort contraste qui dépassent les exigences WCAG AA.",
+    "levelsTitle": "Niveaux de contraste de texte",
+    "high": "Texte à fort contraste (WCAG AAA) - Rapport 7:1+",
+    "medium": "Texte à contraste modéré (WCAG AA) - Rapport 4,5:1+",
+    "low": "Texte à faible contraste (pour le contenu secondaire)",
+    "backgroundsTitle": "Arrière-plans à fort contraste",
+    "primary": "Principal",
+    "success": "Succès",
+    "warning": "Avertissement",
+    "errorLabel": "Erreur"
+  },
+  "motion": {
+    "title": "Préférences de mouvement",
+    "description": "Animations qui respectent les préférences de mouvement de l'utilisateur et proposent des alternatives pour les utilisateurs souffrant de troubles vestibulaires.",
+    "controlsTitle": "Contrôles de préférence de mouvement",
+    "reduceMotion": "Réduire le mouvement",
+    "noAnimation": "Pas d'animation",
+    "animatedButton": "Bouton animé"
+  },
+  "form": {
+    "title": "Accessibilité des formulaires",
+    "description": "Modèles de formulaires accessibles avec étiquetage approprié, validation et gestion des erreurs.",
+    "requiredTitle": "Indicateurs de champ obligatoire",
+    "emailLabel": "Adresse e-mail",
+    "passwordLabel": "Mot de passe",
+    "passwordError": "Le mot de passe doit comporter au moins 8 caractères",
+    "codeExamplesTitle": "Exemples de code"
+  },
+  "feedback": {
+    "title": "Retour accessible",
+    "description": "Messages de retour adaptés aux lecteurs d'écran, avec des régions ARIA vivantes appropriées.",
+    "messageTypesTitle": "Types de messages",
+    "successTitle": "Succès",
+    "successMessage": "Votre portefeuille a été connecté avec succès !",
+    "errorTitle": "Erreur",
+    "errorMessage": "La transaction a échoué. Veuillez réessayer.",
+    "liveRegionTitle": "Modèles de région en direct",
+    "politeExample": "Ce contenu sera annoncé poliment aux lecteurs d'écran",
+    "assertiveExample": "Ce contenu interrompra les lecteurs d'écran pour les alertes importantes"
+  },
+  "web3": {
+    "title": "Accessibilité Web3",
+    "description": "Modèles spécialisés d'accessibilité pour les applications Web3, y compris les connexions de portefeuille et les transactions.",
+    "componentsTitle": "Composants Web3",
+    "connectWallet": "Connecter le portefeuille",
+    "connectWalletAria": "Connectez votre portefeuille Web3",
+    "transactionAria": "État de la transaction",
+    "transactionPending": "Transaction en cours...",
+    "balanceAria": "Le solde du compte est de 1,5 ETH",
+    "addressAria": "Adresse du portefeuille 0x1234...5678",
+    "implementationTitle": "Implémentation"
+  },
+  "bestPractices": {
+    "title": "Meilleures pratiques",
+    "doTitle": "✅ Fais cela",
+    "do": [
+      "Utilisez des éléments HTML sémantiques (button, nav, main, etc.)",
+      "Fournissez des étiquettes aria-label descriptives pour les éléments interactifs",
+      "Assurez-vous que les cibles tactiles aient au moins 44px sur les appareils mobiles",
+      "Test avec la navigation uniquement au clavier",
+      "Respecter les préférences de mouvement de l'utilisateur",
+      "Fournissez un texte alternatif pour des concepts Web3 complexes"
+    ],
+    "avoidTitle": "❌ Évite cela",
+    "avoid": [
+      "Utiliser la couleur seule pour transmettre des informations",
+      "Créer des pièges de clavier sans issues de secours",
+      "Vidéos ou animations lecture automatique",
+      "Utiliser des libellés génériques comme \"Cliquez ici\" ou \"Lire la suite\"",
+      "Supprimer complètement les indicateurs de focus",
+      "Utilisation du jargon Web3 sans explications"
+    ]
+  }
+}

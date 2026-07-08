@@ -1,0 +1,142 @@
+{
+  "seo": {
+    "title": "Alertas - Sistema de Design - Interno - {{emailDomain}}",
+    "description": "Documentação abrangente do componente de alerta com variantes, layouts, ações e integração com Web3"
+  },
+  "copy": {
+    "copied": "✓ Copiado!",
+    "copy": "Copiar"
+  },
+  "header": {
+    "badge": "Alertas",
+    "title": "Componentes de alerta",
+    "intro": "Mensagens de feedback contextualizadas que fornecem informações importantes, avisos ou confirmações aos usuários com hierarquia visual clara e conteúdo acionável."
+  },
+  "stats": {
+    "alertTypes": "Tipos de alerta",
+    "layoutOptions": "Opções de layout",
+    "actionPatterns": "Padrões de Ação",
+    "web3Examples": "Exemplos de Web3"
+  },
+  "quickStart": {
+    "title": "🚀 Início rápido",
+    "description": "Comece com os padrões de alerta mais comumente usados. Estes exemplos mostram os tipos essenciais de alerta e seus casos de uso típicos.",
+    "essentialTitle": "1. Tipos essenciais de alertas",
+    "success": {
+      "title": "Sucesso!",
+      "body": "Sua transação foi confirmada na blockchain."
+    },
+    "info": {
+      "title": "Informação",
+      "body": "Por favor, conecte sua carteira para continuar com esta ação."
+    },
+    "warning": {
+      "title": "Aviso",
+      "body": "Detetadas taxas de gás elevadas. Considere aguardar por menor congestionamento na rede."
+    },
+    "error": {
+      "title": "Erro",
+      "body": "A transação falhou. Verifique o seu saldo na carteira e tente novamente."
+    },
+    "compactTitle": "2. Estilo de alerta compacto",
+    "compact": {
+      "success": "✓ E-mail enviado com sucesso",
+      "info": "ℹ Novos recursos disponíveis nas configurações",
+      "warning": "⚠ Carteira desconectada",
+      "error": "✗ Falha ao carregar mensagens"
+    },
+    "dismissibleTitle": "3. Alertas descartáveis",
+    "dismissible": {
+      "successTitle": "Conta verificada!",
+      "successBody": "Agora você pode acessar todos os recursos premium.",
+      "infoTitle": "Nova atualização disponível",
+      "infoBody": "A versão 2.0 inclui recursos de segurança aprimorados."
+    },
+    "actionsTitle": "4. Alertas com botões de ação",
+    "actions": {
+      "title": "A assinatura expira em breve",
+      "body": "Os seus recursos premium serão desativados em 3 dias.",
+      "renewNow": "Renovar agora",
+      "remindLater": "Lembre-me depois"
+    }
+  },
+  "variants": {
+    "title": "🎨 Variantes de alerta",
+    "description": "Explore todos os variantes de alerta disponíveis com seus significados semânticos e contextos apropriados para diferentes tipos de comunicação com o usuário.",
+    "standardTitle": "Alertas Padrão",
+    "standard": {
+      "successTitle": "Alerta de Sucesso",
+      "successBody": "Use para ações concluídas e confirmações positivas",
+      "infoTitle": "Alerta de Informação",
+      "infoBody": "Use para informações neutras e dicas úteis",
+      "warningTitle": "Aviso de Alerta",
+      "warningBody": "Use para problemas potenciais que exigem atenção",
+      "errorTitle": "Alerta de erro",
+      "errorBody": "Use para ações falhadas e problemas críticos"
+    },
+    "compactTitle": "Variantes compactas",
+    "compact": {
+      "success": "Mensagem de sucesso compacta",
+      "successNote": "Uso mínimo de espaço",
+      "info": "Mensagem de informação compacta",
+      "infoNote": "Notificações rápidas",
+      "warning": "Mensagem de aviso compacta",
+      "warningNote": "Notas breves de aviso",
+      "error": "Mensagem de erro compacta",
+      "errorNote": "Mensagens de erro curtas"
+    }
+  },
+  "web3": {
+    "title": "⚡ Exemplos de integração Web3",
+    "description": "Exemplos do mundo real de alertas comumente usados em aplicativos Web3, incluindo conexões de carteira, transações e interações com a blockchain.",
+    "transactionTitle": "Alertas de Status de Transação",
+    "transaction": {
+      "pendingTitle": "Transação pendente",
+      "pendingBody": "Sua transação está sendo processada na blockchain. Isso pode levar alguns minutos.",
+      "confirmedTitle": "Transação confirmada",
+      "confirmedBody": "Seu e-mail foi enviado e registrado na blockchain.",
+      "failedTitle": "Transação falhou",
+      "failedBody": "Fundos insuficientes ou limite de gás muito baixo. Tente novamente."
+    },
+    "walletTitle": "Alertas de conexão da carteira",
+    "wallet": {
+      "notConnectedTitle": "Carteira não conectada",
+      "notConnectedBody": "Por favor, conecte sua carteira para acessar seus e-mails e enviar mensagens.",
+      "connectWallet": "Conectar carteira",
+      "networkMismatchTitle": "Conflito de rede",
+      "networkMismatchBody": "Mude para a Ethereum Mainnet para continuar usando a plataforma.",
+      "switchNetwork": "Mudar rede"
+    },
+    "gasTitle": "Alertas de Taxa de Gás e Rede",
+    "gas": {
+      "highFeesTitle": "Taxas de gás altas detectadas",
+      "highFeesBody": "O preço atual de gás é anormalmente alto. Considere esperar por menor congestionamento da rede.",
+      "ensTitle": "Novo domínio ENS detectado",
+      "ensBody": "Seu wallet agora possui alice.eth. Você pode receber e-mails neste endereço!",
+      "setAsPrimary": "Definir como principal"
+    }
+  },
+  "accessibility": {
+    "title": "♿ Diretrizes de acessibilidade",
+    "description": "Certifique-se de que seus alertas sejam acessíveis a todos os usuários com atributos ARIA apropriados, gerenciamento de foco e compatibilidade com leitores de tela.",
+    "bestPracticesTitle": "✅ Melhores práticas",
+    "bestPractices": [
+      "Use as funções ARIA apropriadas (alerta, alertdialog, status)",
+      "Inclua texto descritivo, não apenas cores ou ícones",
+      "Forneça navegação com teclado para elementos interativos",
+      "Use a contraste de cor suficiente (mínimo de 4,5:1)",
+      "Alertas temporais são tratados adequadamente"
+    ],
+    "avoidTitle": "❌ Evitar",
+    "avoid": [
+      "Mensagens de erro crítico que desaparecem automaticamente",
+      "Usando apenas cores para transmitir a importância",
+      "Sobrecarregar os usuários com muitos alertas",
+      "Tornar o texto do alerta muito pequeno para ler",
+      "Escondendo ações importantes por trás de cliques desnecessários"
+    ],
+    "ariaTitle": "Exemplos de Implementação do ARIA"
+  },
+  "backToDesign": "Voltar para o sistema de design",
+  "lastUpdated": "Última atualização: {{date}}"
+}

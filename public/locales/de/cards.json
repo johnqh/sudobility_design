@@ -1,0 +1,126 @@
+{
+  "seo": {
+    "title": "Karten - Design-System - Intern - {{emailDomain}}",
+    "description": "Komplette Kartenkomponenten-Bibliothek mit Layouts, Varianten und interaktiven Mustern"
+  },
+  "codeExample": {
+    "preview": "Vorschau",
+    "usage": "Verwendung"
+  },
+  "header": {
+    "badge": "Kartenkomponenten",
+    "title": "Kartenlayout und Inhaltsmuster",
+    "description": "Umfassendes Kartenkomponentensystem mit flexiblen Layouts, interaktiven Elementen und Inhaltsmustern. Alle Karten unterstützen Elevation, Hover-Zustände und responsive Gestaltung mit konsistenter Abstandsgestaltung und Stilierung."
+  },
+  "quickStart": {
+    "title": "Schnellstart - Wesentliche Kartenmuster",
+    "description": "Bereitgestellte Kartenkomponenten mit konsistenten Layouts, Interaktionen und Inhaltsorganisation.",
+    "basic": {
+      "heading": "Grundkarte",
+      "cardTitle": "Kartenüberschrift",
+      "cardBody": "Dies ist eine einfache Karte mit einfacher Inhaltsanordnung und konsistenter Gestaltung."
+    },
+    "interactive": {
+      "heading": "Interaktive Karte",
+      "cardTitle": "Interaktive Karte",
+      "cardBody": "Klicken Sie hier, um Interaktionseffekte und verbesserte Hover-Zustände zu aktivieren.",
+      "learnMore": "Mehr erfahren →"
+    },
+    "stats": {
+      "heading": "Statistik-Karte",
+      "revenueLabel": "Gesamte Einnahmen",
+      "fromLastMonth": "vom letzten Monat"
+    },
+    "feature": {
+      "heading": "Feature-Karte",
+      "cardTitle": "Sicher & privat",
+      "cardBody": "End-to-End-Verschlüsselung sorgt dafür, dass Ihre Kommunikation privat und sicher bleibt.",
+      "learnMore": "Mehr erfahren →"
+    }
+  },
+  "variants": {
+    "title": "Kartenvarianten und Erhöhungen",
+    "description": "Verschiedene Kartenhöhen und Stilvarianten für verschiedene Einsatzgebiete.",
+    "elevation": {
+      "title": "Höhenstufen",
+      "description": "Unterschiedliche Schattentiefen und Hover-Zustände für die visuelle Hierarchie",
+      "flat": "Flacher Karton",
+      "default": "Standardkarte",
+      "elevated": "Hochwertiges Karten",
+      "floating": "Schwebende Karte"
+    },
+    "color": {
+      "title": "Farbvarianten",
+      "description": "Marken- und semantische Farbvarianten für verschiedene Kontexte",
+      "success": "Erfolgskarte",
+      "warning": "Warnkarte",
+      "error": "Fehlerkarte",
+      "info": "Info-Karte"
+    }
+  },
+  "content": {
+    "title": "Inhalts- und Medienkarten",
+    "description": "Karten mit reichhaltigem Inhalt, Medien und interaktiven Elementen für soziale und Content-Anwendungen.",
+    "social": {
+      "title": "Karte sozialer Medien",
+      "description": "Karte mit Benutzerinteraktion, Engagement-Metrik und Aktionen",
+      "userName": "John Doe",
+      "timeAgo": "vor 2 Stunden",
+      "post": "Gerade ein neues Feature versandt! Die Web3-Integration ist jetzt live und für die Tests bereit.",
+      "share": "Teilen"
+    },
+    "product": {
+      "title": "Produktkarte",
+      "description": "E-Commerce-Karte im Stil mit Bewertung, Preisgestaltung und Aktionen",
+      "productName": "Web3-Entwicklungswerkzeug",
+      "reviews": "(128 Bewertungen)",
+      "productBody": "Komplettes Toolkit zum einfachen Erstellen dezentraler Anwendungen.",
+      "addToCart": "Zum Warenkorb hinzufügen"
+    }
+  },
+  "web3": {
+    "title": "Web3 & Krypto-Karten",
+    "description": "Spezialisierte Kartenmuster für Web3-, Krypto- und Blockchain-Anwendungen.",
+    "wallet": {
+      "title": "Kartenverbindung zum Wallet",
+      "description": "Karte zur Wallet-Verbindung mit Statusanzeigen",
+      "connected": "Verbunden",
+      "network": "Netzwerk",
+      "balance": "Ausgleich",
+      "disconnect": "Trennen"
+    },
+    "nft": {
+      "title": "NFT-Sammlerkarte",
+      "description": "Karte zur Anzeige von NFT-Sammlungen und Metadaten",
+      "collectionName": "Crypto Punks Sammlung",
+      "collectionBody": "Seltene digitale Sammlerstück aus der ikonischen CryptoPunks-Serie.",
+      "currentPrice": "Aktueller Preis",
+      "placeBid": "Bieten platzieren"
+    }
+  },
+  "layouts": {
+    "title": "Kartenlayouts und Raster",
+    "description": "Reaktive Rasterlayouts und Kartenanordnungen für verschiedene Bildschirmgrößen.",
+    "grid": {
+      "title": "Reagierender Karten-Grid",
+      "description": "Anpassbares Raster, das auf allen Bildschirmgrößen funktioniert",
+      "cardLabel": "Karte {{index}}",
+      "subtitle": "Untertitel",
+      "sampleContent": "Beispielkarteninhalt für die Gitterdemonstration."
+    }
+  },
+  "accessibility": {
+    "title": "Barrierefreiheit und Best Practices",
+    "guidelinesTitle": "Richtlinien für die Barrierefreiheit von Karten",
+    "guidelines": [
+      "Verwenden Sie eine semantische HTML-Struktur mit korrekten Überschriften",
+      "Stellen Sie eine ausreichende Farbkontrastierung für den Textinhalt sicher",
+      "Fokuszustände für interaktive Kartelemente hinzufügen",
+      "Verwenden Sie ARIA-Beschriftungen für komplexe Karteninteraktionen",
+      "Implementieren Sie die Tastaturnavigation für Kartenaktionen",
+      "Geben Sie alternativen Text für dekorative Elemente an",
+      "Verwenden Sie responsive Gestaltung für mobile Zugänglichkeit",
+      "Testen mit Bildschirmlesern und Tastaturnavigation"
+    ]
+  }
+}

@@ -1,0 +1,109 @@
+{
+  "seo": {
+    "title": "パフォーマンスと最適化 - デザインシステム - 内部 - {{emailDomain}}",
+    "description": "高速で効率的なWeb3アプリケーション向けのパフォーマンス最適化パターンとCore Web Vitalsユーティリティ"
+  },
+  "header": {
+    "badge": "パフォーマンスと最適化",
+    "title": "パフォーマンス最適化システム",
+    "description": "高速で効率的なWeb3アプリケーション向けの包括的なパフォーマンスパターン。バンドルサイズ、レンダリングパフォーマンス、Core Web Vitals、ブロックチェーンとの相互作用を最適化します。",
+    "stats": {
+      "bundleSplit": {
+        "value": "バンドル分割",
+        "label": "コードチャンク"
+      },
+      "gpuLayers": {
+        "value": "GPUレイヤー",
+        "label": "ハードウェアアクセラレーション"
+      },
+      "web3Batch": {
+        "value": "Web3 バッチ",
+        "label": "取引のバッチ処理"
+      },
+      "lcpTarget": {
+        "value": "< 2.5秒",
+        "label": "LCPターゲット"
+      }
+    }
+  },
+  "webVitals": {
+    "title": "Core Web Vitals",
+    "description": "パフォーマンス最適化ユーティリティを用いた、Core Web Vitalsメトリクスのリアルタイム監視。",
+    "lcp": {
+      "title": "最大コンテンツ描画",
+      "description": "最大の要素をレンダリングする時間"
+    },
+    "fid": {
+      "title": "最初の入力遅延",
+      "description": "インタラクティブ応答の時間"
+    },
+    "cls": {
+      "title": "累積的レイアウトシフト",
+      "description": "視覚的安定スコア"
+    }
+  },
+  "bundle": {
+    "title": "バンドル最適化",
+    "description": "初期バンドルサイズを減らすためのコード分割と遅延読み込みのパターン。",
+    "lazyLoadingStates": "遅延読み込み状態",
+    "componentLoading": "コンポーネントの読み込み中...",
+    "componentLoaded": "コンポーネントが読み込まれました ✓",
+    "codeSplittingExample": "コード分割の例",
+    "loadingChunk": "デザインシステムのチャンクを読み込んでいます...",
+    "bundleAnalysis": "バンドル分析",
+    "mainBundle": "メインバンドル：",
+    "designSystem": "デザインシステム：",
+    "web3Utils": "Web3ユーティリティ:",
+    "charts": "チャート："
+  },
+  "network": {
+    "title": "ネットワーク最適化",
+    "description": "接続品質およびキャッシュパターンに基づいた適応型ロード戦略。",
+    "connectionQuality": "接続品質",
+    "currentConnection": "現在の接続",
+    "latency": "レイテンシー: ~{{latency}}ms",
+    "simulateSlowConnection": "遅い接続をシミュレートする",
+    "cacheStatus": "キャッシュステータス",
+    "freshData": "新鮮なデータ",
+    "freshDataSuffix": " - 最近取得",
+    "staleData": "古くなったデータ",
+    "staleDataSuffix": " - 更新が必要",
+    "implementation": "実装"
+  },
+  "web3": {
+    "title": "Web3パフォーマンス",
+    "description": "ブロックチェーン連携、ウォレット接続、トランザクションバッチ処理のための専門的最適化。",
+    "walletConnection": "ウォレット接続",
+    "cachedConnection": "キャッシュされた接続",
+    "connecting": "接続中...",
+    "transactionBatching": "取引のバッチ処理",
+    "batchedTransactions": "バッチ処理トランザクション",
+    "batchedTransactionsDetail": "5 件のトランザクション → 1 つのマルチコール",
+    "individualTransaction": "個別取引",
+    "gasOptimization": "ガス最適化",
+    "gasOptimal": "最適なガス：15 gwei",
+    "gasHigh": "高ガス：45 gwei",
+    "gasVeryHigh": "非常に高い：120 gwei"
+  },
+  "bestPractices": {
+    "title": "パフォーマンス最適化のベストプラクティス",
+    "doTitle": "✅ これを行ってください",
+    "do": [
+      "内部/管理者機能用にコード分割を使用してください",
+      "画像およびコンポーネントの遅延読み込みを実装する",
+      "可能であれば、Web3トランザクションをバッチ処理する",
+      "スムーズなアニメーションのためにGPUアクセラレーションを使用してください",
+      "本番環境で Core Web Vitals を監視する",
+      "ウォレット接続とブロックチェーンデータをキャッシュする"
+    ],
+    "avoidTitle": "❌ これを避ける",
+    "avoid": [
+      "初期ページ読み込み時にすべてのコンポーネントを積極的に読み込む",
+      "バッチデータに対して個別のブロックチェーン呼び出しを行う",
+      "動的コンテンツでレイアウトのずれを引き起こす",
+      "非重要な機能に対してブロッキングレンダリングを使用",
+      "リソース読み込み時のネットワーク状態を無視する",
+      "キャッシュ済みのブロックチェーンデータを再取得しています"
+    ]
+  }
+}

@@ -1,0 +1,202 @@
+{
+  "seo": {
+    "title": "데이터 표시 - 디자인 시스템 - 내부 - {{emailDomain}}",
+    "description": "테이블, 목록, 그리드 및 코드 표시를 포함한 데이터 표시 구성 요소"
+  },
+  "header": {
+    "badge": "데이터 표시 구성 요소",
+    "title": "데이터 표시 시스템",
+    "intro": "테이블, 목록, 그리드 및 코드용 포괄적인 데이터 표시 구성 요소. 주소, 거래 및 블록체인 정보를 포함한 Web3 데이터에 최적화되어 있습니다."
+  },
+  "quickStart": {
+    "heading": "빠른 시작",
+    "copy": "클립보드에 복사",
+    "examples": {
+      "dataTable": {
+        "title": "데이터 테이블",
+        "description": "호버 상태와 선택 기능이 있는 정렬 가능한 테이블"
+      },
+      "emailList": {
+        "title": "이메일 목록",
+        "description": "읽음/안 읽음 상태를 갖춘 인터랙티브 목록"
+      },
+      "keyValue": {
+        "title": "키-값 표시",
+        "description": "키-값 쌍으로 구조화된 데이터 표시"
+      },
+      "statsGrid": {
+        "title": "통계 그리드",
+        "description": "트렌드 지표를 사용하여 메트릭 및 통계 표시"
+      }
+    }
+  },
+  "tables": {
+    "heading": "데이터 테이블",
+    "cardTitle": "인터랙티브 연락처 테이블",
+    "cardDescription": "선택 및 호버 상태를 갖춘 정렬 가능한 테이블",
+    "columns": {
+      "name": "이름",
+      "email": "이메일",
+      "balance": "균형",
+      "status": "상태",
+      "date": "날짜"
+    },
+    "status": {
+      "active": "활성",
+      "pending": "보류 중",
+      "inactive": "비활성"
+    }
+  },
+  "lists": {
+    "heading": "목록",
+    "cardTitle": "이메일 목록",
+    "cardDescription": "읽음/안 읽음 상태와 작업이 가능한 인터랙티브 이메일 목록",
+    "emails": {
+      "1": {
+        "subject": "거래가 확인되었습니다",
+        "preview": "거래가 블록체인에서 확인되었습니다..."
+      },
+      "2": {
+        "subject": "새로운 NFT 드롭 알림",
+        "preview": "내일 출시되는 흥미로운 신규 컬렉션..."
+      },
+      "3": {
+        "subject": "지갑 보안 업데이트",
+        "preview": "지갑의 중요한 보안 개선 사항..."
+      },
+      "4": {
+        "subject": "DeFi 수익 보고서",
+        "preview": "당신의 월간 수익 농사 요약..."
+      },
+      "5": {
+        "subject": "DAO 제안 #42",
+        "preview": "최신 커뮤니티 제안에 투표하세요..."
+      }
+    }
+  },
+  "gridLayouts": {
+    "heading": "그리드 레이아웃",
+    "statsGrid": {
+      "heading": "통계 그리드",
+      "totalEmails": "총 이메일",
+      "totalEmailsChange": "지난 달 대비 12.5%",
+      "activeContacts": "활동 중인 연락처",
+      "activeContactsChange": "이번 주에 새로 추가된 것 5개",
+      "storageUsed": "사용 중인 스토리지",
+      "storageUsedChange": "남은 15%"
+    },
+    "cardGrid": {
+      "heading": "카드 그리드",
+      "cardTitle": "카드 제목 {{number}}",
+      "cardContent": "관련 정보와 작업이 포함된 카드 콘텐츠."
+    }
+  },
+  "keyValue": {
+    "heading": "키-값 표시",
+    "userProfile": {
+      "heading": "사용자 프로필",
+      "fullName": "성명",
+      "ensName": "ENS 이름",
+      "walletAddress": "지갑 주소",
+      "email": "이메일",
+      "accountStatus": "계정 상태",
+      "verified": "확인됨"
+    },
+    "transactionDetails": {
+      "heading": "거래 세부 정보",
+      "transactionHash": "트랜잭션 해시",
+      "blockNumber": "블록 번호",
+      "gasUsed": "사용된 가스",
+      "status": "상태",
+      "success": "성공"
+    }
+  },
+  "codeDisplay": {
+    "heading": "코드 표시",
+    "inlineCode": {
+      "heading": "인라인 코드",
+      "textStart": "사용 \"",
+      "textMiddle": " 인라인 코드용. Web3 주소 예: ",
+      "textMiddle2": " 및 거래 해시 예: ",
+      "textEnd": "특별한 스타일이 있습니다."
+    },
+    "codeBlock": {
+      "heading": "코드 블록"
+    }
+  },
+  "timeline": {
+    "heading": "타임라인",
+    "cardTitle": "활동 타임라인",
+    "items": {
+      "1": {
+        "title": "계정이 생성되었습니다",
+        "description": "example.com에 오신 것을 환영합니다"
+      },
+      "2": {
+        "title": "지갑 연결됨",
+        "description": "MetaMask 지갑이 성공적으로 연결되었습니다"
+      },
+      "3": {
+        "title": "첫 번째 이메일 전송됨",
+        "description": "팀에 환영 이메일을 보냈습니다"
+      },
+      "4": {
+        "title": "ENS 이름 등록됨",
+        "description": "alice.eth 등록됨"
+      },
+      "5": {
+        "title": "프리미엄 업그레이드",
+        "description": "프리미엄 플랜으로 업그레이드 대기 중"
+      }
+    }
+  },
+  "emptyStates": {
+    "heading": "빈 상태",
+    "noEmails": {
+      "title": "이메일 없음",
+      "description": "첫 번째 이메일을 작성하여 시작해보세요",
+      "action": "이메일 작성"
+    },
+    "noData": {
+      "title": "사용 가능한 데이터 없음",
+      "description": "현재 표시할 기록이 없습니다"
+    }
+  },
+  "web3": {
+    "heading": "웹3 데이터 패턴",
+    "cardTitle": "블록체인 데이터 표시",
+    "cardDescription": "웹3 데이터를 표시하기 위한 전문화된 패턴",
+    "addressDisplay": {
+      "heading": "주소 표시",
+      "full": "완전:",
+      "truncated": "자르기:",
+      "ens": "ENS:"
+    },
+    "tokenBalances": {
+      "heading": "토큰 잔액"
+    }
+  },
+  "implementationNotes": {
+    "heading": "구현 참고 사항",
+    "performance": {
+      "heading": "성능 팁",
+      "items": [
+        "• 대용량 데이터 세트에는 가상 스크롤링을 사용하세요",
+        "• 100행을 초과하는 테이블에 대해 페이지네이션을 구현합니다",
+        "• 리스트에서 이미지와 아바타를 지연 로딩합니다",
+        "• 비용이 큰 계산을 메모이제이션",
+        "• 데이터 가져오기 중에 스켈레톤 로더 사용"
+      ]
+    },
+    "accessibility": {
+      "heading": "접근성",
+      "items": [
+        "• 의미 있는 HTML(예: table, thead, tbody)을 사용하세요",
+        "• 정렬 가능한 열에 aria-label 추가",
+        "• 테이블에 대한 키보드 탐색을 보장하세요",
+        "• 시각적 표시 요소에 대한 텍스트 대체를 제공합니다",
+        "• 목록에 적절한 ARIA 역할 사용"
+      ]
+    }
+  }
+}

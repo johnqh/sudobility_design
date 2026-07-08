@@ -1,0 +1,130 @@
+{
+  "seo": {
+    "title": "Boutons - Système de conception - Interne - {{emailDomain}}",
+    "description": "Complétez la bibliothèque de composants de bouton avec toutes les variantes, tailles, états et interactions"
+  },
+  "codeExample": {
+    "preview": "Aperçu",
+    "usage": "Utilisation"
+  },
+  "header": {
+    "badge": "Composants de bouton",
+    "title": "Bibliothèque de boutons et modèles d'interaction",
+    "intro": "Système complet de composants de boutons avec des variantes, tailles, états et comportements interactifs cohérents. Tous les boutons prennent en charge les états de chargement, une gestion appropriée du focus et des fonctionnalités d'accessibilité."
+  },
+  "quickStart": {
+    "title": "Mise en route rapide - Modèles essentiels de boutons",
+    "description": "Composants de boutons prêts à l'emploi avec une mise en forme cohérente, des états et des modèles de comportement.",
+    "primary": {
+      "title": "Bouton d'action principale",
+      "button": "Action principale"
+    },
+    "secondary": {
+      "title": "Bouton secondaire",
+      "button": "Action secondaire"
+    },
+    "outline": {
+      "title": "Bouton de contour",
+      "button": "Action de contour"
+    },
+    "ghost": {
+      "title": "Bouton fantôme",
+      "button": "Action fantôme"
+    }
+  },
+  "variants": {
+    "title": "Variants de bouton",
+    "description": "Différents styles de boutons pour diverses utilisations et niveaux de hiérarchie.",
+    "colors": {
+      "title": "Variants de couleur",
+      "description": "Couleurs des boutons principaux, secondaires, succès, avertissement et destructeurs",
+      "primary": "Principal",
+      "success": "Succès",
+      "warning": "Avertissement",
+      "destructive": "Destructeur"
+    },
+    "sizes": {
+      "title": "Tailles des boutons",
+      "description": "Petites, moyennes et grandes tailles de boutons pour différents contextes",
+      "small": "Petit",
+      "default": "Par défaut",
+      "large": "Grand"
+    }
+  },
+  "states": {
+    "title": "États du bouton",
+    "description": "États interactifs, y compris survol, actif, focus, chargement et désactivé.",
+    "interactive": {
+      "title": "États interactifs",
+      "description": "États normaux, au survol, actifs et au focus avec des transitions appropriées",
+      "button": "Bouton interactif",
+      "secondary": "Interaction secondaire"
+    },
+    "loading": {
+      "title": "États de chargement et désactivé",
+      "description": "Intégration du chargeur de chargement et style approprié pour désactivé",
+      "loadingLabel": "Chargement...",
+      "demoLabel": "Chargement de démo",
+      "disabled": "Désactivé"
+    }
+  },
+  "icons": {
+    "title": "Boutons d'icônes et combinaisons",
+    "description": "Boutons avec icônes, boutons à icône seule et boutons bascule pour une meilleure utilisabilité.",
+    "withIcons": {
+      "title": "Boutons avec icônes",
+      "description": "Boutons de texte améliorés avec des icônes pour une meilleure reconnaissance",
+      "sendMessage": "Envoyer un message",
+      "download": "Télécharger",
+      "settingsTitle": "Paramètres"
+    },
+    "toggle": {
+      "title": "Boutons de commutation et d'action",
+      "description": "Boutons bascule et modèles spécifiques de boutons d'action",
+      "liked": "Aimé",
+      "like": "Comme",
+      "delete": "Supprimer",
+      "edit": "Modifier"
+    }
+  },
+  "groups": {
+    "title": "Groupes et combinaisons de boutons",
+    "description": "Boutons regroupés, barres de boutons et combinaisons d'actions pour des interfaces complexes.",
+    "buttonGroups": {
+      "title": "Groupes de boutons",
+      "description": "Groupes de boutons connectés pour des actions associées",
+      "connectedLabel": "Groupe connecté :",
+      "previous": "Précédent",
+      "current": "Actuel",
+      "next": "Suivant",
+      "spacedLabel": "Groupe espacé :",
+      "primary": "Principal",
+      "secondary": "Secondaire",
+      "cancel": "Annuler"
+    },
+    "actionBars": {
+      "title": "Barres d'actions et barres d'outils",
+      "description": "Combinaisons complexes de boutons pour les barres d'outils et les zones d'action",
+      "new": "Nouveau",
+      "editTitle": "Modifier",
+      "shareTitle": "Partager",
+      "cancel": "Annuler",
+      "delete": "Supprimer"
+    }
+  },
+  "accessibility": {
+    "title": "Accessibilité et bonnes pratiques",
+    "guidelinesTitle": "Lignes directrices pour l'accessibilité des boutons",
+    "list": {
+      "semanticBefore": "Utilisez la sémantique",
+      "semanticAfter": "éléments au lieu de divs",
+      "contrast": "Assurez-vous d'avoir un contraste de couleur suffisant (au moins 4,5:1)",
+      "focus": "Inclure les états de focus pour la navigation au clavier",
+      "loadingStates": "Ajouter des états de chargement pour éviter les soumissions doubles",
+      "ariaLabels": "Utilisez des libellés ARIA appropriés pour les boutons ne comportant que des icônes",
+      "touchTarget": "Maintenez la taille minimale cible tactile (44px x 44px)",
+      "feedback": "Fournissez un retour visuel clair pour tous les états",
+      "grouping": "Regroupez logiquement les boutons connexes avec un espacement approprié"
+    }
+  }
+}

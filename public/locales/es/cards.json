@@ -1,0 +1,126 @@
+{
+  "seo": {
+    "title": "Tarjetas - Sistema de diseño - Interno - {{emailDomain}}",
+    "description": "Biblioteca completa de componentes de tarjetas con diseños, variantes y patrones interactivos"
+  },
+  "codeExample": {
+    "preview": "Vista previa",
+    "usage": "Uso"
+  },
+  "header": {
+    "badge": "Componentes de tarjeta",
+    "title": "Diseño de tarjetas y patrones de contenido",
+    "description": "Sistema completo de componentes de tarjetas con diseños flexibles, elementos interactivos y patrones de contenido. Todas las tarjetas admiten elevación, estados de paso del cursor y diseño adaptable con espaciado y estilo coherentes."
+  },
+  "quickStart": {
+    "title": "Inicio rápido - Patrones esenciales de tarjetas",
+    "description": "Componentes de tarjetas listos para usar con diseños, interacciones y organización de contenido coherentes.",
+    "basic": {
+      "heading": "Tarjeta de contenido básico",
+      "cardTitle": "Título de la tarjeta",
+      "cardBody": "Esta es una tarjeta básica con una disposición simple de contenido y un estilo consistente."
+    },
+    "interactive": {
+      "heading": "Tarjeta interactiva",
+      "cardTitle": "Tarjeta interactiva",
+      "cardBody": "Haga clic aquí para activar efectos de interacción y estados mejorados de hover.",
+      "learnMore": "Más información →"
+    },
+    "stats": {
+      "heading": "Tarjeta de estadísticas",
+      "revenueLabel": "Ingresos totales",
+      "fromLastMonth": "del mes pasado"
+    },
+    "feature": {
+      "heading": "Tarjeta de características",
+      "cardTitle": "Seguro y privado",
+      "cardBody": "La cifrado de extremo a extremo garantiza que sus comunicaciones permanezcan privadas y seguras.",
+      "learnMore": "Más información →"
+    }
+  },
+  "variants": {
+    "title": "Variantes de cartas y elevaciones",
+    "description": "Diferentes elevaciones de cartas y variantes de diseño para diversos casos de uso.",
+    "elevation": {
+      "title": "Niveles de elevación",
+      "description": "Diferentes profundidades de sombras y estados de hover para jerarquía visual",
+      "flat": "Tarjeta plana",
+      "default": "Tarjeta predeterminada",
+      "elevated": "Tarjeta Elevada",
+      "floating": "Tarjeta flotante"
+    },
+    "color": {
+      "title": "Variantes de color",
+      "description": "Variantes de color marcado y semántico para diferentes contextos",
+      "success": "Tarjeta de éxito",
+      "warning": "Tarjeta de advertencia",
+      "error": "Tarjeta de error",
+      "info": "Tarjeta de información"
+    }
+  },
+  "content": {
+    "title": "Tarjetas de contenido y medios",
+    "description": "Tarjetas con contenido rico, medios y elementos interactivos para aplicaciones sociales y de contenido.",
+    "social": {
+      "title": "Tarjeta de redes sociales",
+      "description": "Tarjeta con interacción del usuario, métricas de compromiso y acciones",
+      "userName": "John Doe",
+      "timeAgo": "hace 2 horas",
+      "post": "¡Acabo de enviar una nueva característica! La integración de Web3 ahora está en funcionamiento y lista para probar.",
+      "share": "Compartir"
+    },
+    "product": {
+      "title": "Tarjeta de producto",
+      "description": "Tarjeta de estilo de comercio electrónico con clasificación, precios y acciones",
+      "productName": "Kit de Desarrollo Web3",
+      "reviews": "(128 reseñas)",
+      "productBody": "Kit completo para crear aplicaciones descentralizadas con facilidad.",
+      "addToCart": "Añadir al carrito"
+    }
+  },
+  "web3": {
+    "title": "Tarjetas Web3 y Cripto",
+    "description": "Patrones de tarjetas especializadas para aplicaciones de Web3, cripto y blockchain.",
+    "wallet": {
+      "title": "Tarjeta de conexión de billetera",
+      "description": "Tarjeta para conexión de billetera con indicadores de estado",
+      "connected": "Conectado",
+      "network": "Red",
+      "balance": "Equilibrio",
+      "disconnect": "Desconectar"
+    },
+    "nft": {
+      "title": "Tarjeta de colección de NFT",
+      "description": "Tarjeta para mostrar colecciones de NFT y metadatos",
+      "collectionName": "Colección Crypto Punks",
+      "collectionBody": "Coleccionable digital raro de la icónica serie CryptoPunks.",
+      "currentPrice": "Precio actual",
+      "placeBid": "Pujar"
+    }
+  },
+  "layouts": {
+    "title": "Diseños de tarjetas y cuadrículas",
+    "description": "Diseños de cuadrícula responsivos y disposiciones de tarjetas para diferentes tamaños de pantalla.",
+    "grid": {
+      "title": "Cuadrícula de tarjetas adaptable",
+      "description": "Cuadrícula adaptable que funciona en todos los tamaños de pantalla",
+      "cardLabel": "Tarjeta {{index}}",
+      "subtitle": "Subtítulo",
+      "sampleContent": "Contenido de tarjeta de ejemplo para la demostración de cuadrícula."
+    }
+  },
+  "accessibility": {
+    "title": "Accesibilidad y mejores prácticas",
+    "guidelinesTitle": "Directrices de accesibilidad de tarjetas",
+    "guidelines": [
+      "Utilice una estructura HTML semántica con encabezados adecuados",
+      "Asegúrese de que haya un contraste de color suficiente para el contenido de texto",
+      "Añadir estados de enfoque para los elementos de tarjeta interactivos",
+      "Utilice etiquetas ARIA para interacciones complejas de tarjetas",
+      "Implemente la navegación con el teclado para las acciones de tarjeta",
+      "Proporcione texto alternativo para elementos decorativos",
+      "Utilice un diseño adaptable para accesibilidad móvil",
+      "Prueba con lectores de pantalla y navegación con teclado"
+    ]
+  }
+}

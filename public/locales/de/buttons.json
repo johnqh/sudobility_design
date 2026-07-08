@@ -1,0 +1,130 @@
+{
+  "seo": {
+    "title": "Schaltflächen - Design-System - Intern - {{emailDomain}}",
+    "description": "Button-Komponentenbibliothek mit allen Varianten, Größen, Zuständen und Interaktionen vervollständigen"
+  },
+  "codeExample": {
+    "preview": "Vorschau",
+    "usage": "Verwendung"
+  },
+  "header": {
+    "badge": "Schaltflächenkomponenten",
+    "title": "Schaltflächen-Bibliothek und Interaktionsmuster",
+    "intro": "Umfassendes Button-Komponentensystem mit konsistenten Varianten, Größen, Zuständen und interaktiven Verhaltensweisen. Alle Buttons unterstützen Ladezustände, korrekte Fokussierung und Barrierefreiheitsfunktionen."
+  },
+  "quickStart": {
+    "title": "Schnellstart - Wesentliche Schaltflächenmuster",
+    "description": "Bereits verwendbare Schaltflächenkomponenten mit konsistenter Gestaltung, Zuständen und Verhaltensmustern.",
+    "primary": {
+      "title": "Primärer Aktionstaste",
+      "button": "Primäre Aktion"
+    },
+    "secondary": {
+      "title": "Sekundärer Button",
+      "button": "Sekundäre Aktion"
+    },
+    "outline": {
+      "title": "Ausschnitt-Button",
+      "button": "Aktion umreißen"
+    },
+    "ghost": {
+      "title": "Geisterknopf",
+      "button": "Geisteraktion"
+    }
+  },
+  "variants": {
+    "title": "Schaltflächen-Varianten",
+    "description": "Verschiedene Button-Stile für verschiedene Einsatzgebiete und Hierarchieebenen.",
+    "colors": {
+      "title": "Farbvarianten",
+      "description": "Primäre, sekundäre, Erfolg-, Warn- und zerstörerische Button-Farben",
+      "primary": "Primär",
+      "success": "Erfolg",
+      "warning": "Warnung",
+      "destructive": "Zerstörerisch"
+    },
+    "sizes": {
+      "title": "Schaltflächengrößen",
+      "description": "Kleine, Standard- und große Schaltflächengrößen für verschiedene Kontexte",
+      "small": "Klein",
+      "default": "Standard",
+      "large": "Groß"
+    }
+  },
+  "states": {
+    "title": "Schaltzustände",
+    "description": "Interaktive Zustände einschließlich Hover, aktiv, Fokus, Laden und deaktiviert.",
+    "interactive": {
+      "title": "Interaktive Zustände",
+      "description": "Normale, Hover-, Aktiv- und Fokusszustände mit korrekten Übergängen",
+      "button": "Interaktiver Button",
+      "secondary": "Sekundäre Interaktion"
+    },
+    "loading": {
+      "title": "Laden und deaktivierte Zustände",
+      "description": "Lade-Spinner-Integration und korrekte Stilisierung für deaktiviert",
+      "loadingLabel": "Lade...",
+      "demoLabel": "Demo-Laden",
+      "disabled": "Deaktiviert"
+    }
+  },
+  "icons": {
+    "title": "Symbolknöpfe und Kombinationen",
+    "description": "Schaltflächen mit Symbolen, symbolalleine Schaltflächen und Umschaltflächen zur verbesserten Benutzerfreundlichkeit.",
+    "withIcons": {
+      "title": "Schaltflächen mit Symbolen",
+      "description": "Textschaltflächen verbessert mit Symbolen zur besseren Erkennbarkeit",
+      "sendMessage": "Nachricht senden",
+      "download": "Herunterladen",
+      "settingsTitle": "Einstellungen"
+    },
+    "toggle": {
+      "title": "Umschalten und Aktionstasten",
+      "description": "Schaltflächen und spezifische Aktionstastenmuster",
+      "liked": "Gefallen",
+      "like": "Wie",
+      "delete": "Löschen",
+      "edit": "Bearbeiten"
+    }
+  },
+  "groups": {
+    "title": "Schaltflächengruppen und -kombinationen",
+    "description": "Gruppierte Schaltflächen, Schaltflächenleisten und Aktionenkombinationen für komplexe Schnittstellen.",
+    "buttonGroups": {
+      "title": "Schaltflächengruppen",
+      "description": "Verbundene Schaltflächengruppen für verwandte Aktionen",
+      "connectedLabel": "Verbundene Gruppe:",
+      "previous": "Vorheriges",
+      "current": "Aktuell",
+      "next": "Nächste",
+      "spacedLabel": "Gruppenplatz:",
+      "primary": "Primär",
+      "secondary": "Sekundär",
+      "cancel": "Abbrechen"
+    },
+    "actionBars": {
+      "title": "Aktionsleisten & Werkzeugleisten",
+      "description": "Komplexe Tastenkombinationen für Werkzeugleisten und Aktionbereiche",
+      "new": "Neu",
+      "editTitle": "Bearbeiten",
+      "shareTitle": "Teilen",
+      "cancel": "Abbrechen",
+      "delete": "Löschen"
+    }
+  },
+  "accessibility": {
+    "title": "Barrierefreiheit und Best Practices",
+    "guidelinesTitle": "Richtlinien für die Barrierefreiheit von Schaltflächen",
+    "list": {
+      "semanticBefore": "Verwenden Sie semantische",
+      "semanticAfter": "Elemente anstelle von Divs",
+      "contrast": "Stellen Sie eine ausreichende Farbkontrastierung sicher (mindestens 4,5:1)",
+      "focus": "Fokuszustände für die Tastaturnavigation hinzufügen",
+      "loadingStates": "Ladezustände hinzufügen, um doppelte Einsendungen zu vermeiden",
+      "ariaLabels": "Verwenden Sie geeignete ARIA-Bezeichnungen für symbolbasierte Schaltflächen",
+      "touchTarget": "Stellen Sie sicher, dass die Mindestgröße des Touch-Ziels (44px x 44px) eingehalten wird",
+      "feedback": "Stellen Sie für alle Zustände eine klare visuelle Rückmeldung bereit",
+      "grouping": "Gruppieren Sie verwandte Schaltflächen logisch mit angemessenen Abständen"
+    }
+  }
+}

@@ -8,6 +8,7 @@ import {
 } from "@sudobility/components";
 
 import React, { useState } from "react";
+import { useTranslation } from "react-i18next";
 import {
   ClipboardDocumentIcon,
   CheckIcon,
@@ -41,60 +42,64 @@ const CodeExample: React.FC<CodeExampleProps> = ({
   preview,
   copiedValue,
   onCopy,
-}) => (
-  <div className="border border-border rounded-lg p-4 space-y-4">
-    <div>
-      <h4 className={`${textVariants.heading.h5()} mb-1`}>{title}</h4>
-      {description && (
-        <p className={`${textVariants.body.sm()} text-muted-foreground`}>
-          {description}
-        </p>
+}) => {
+  const { t } = useTranslation("forms");
+  return (
+    <div className="border border-border rounded-lg p-4 space-y-4">
+      <div>
+        <h4 className={`${textVariants.heading.h5()} mb-1`}>{title}</h4>
+        {description && (
+          <p className={`${textVariants.body.sm()} text-muted-foreground`}>
+            {description}
+          </p>
+        )}
+      </div>
+
+      {preview && (
+        <div className="bg-muted rounded-lg p-4">
+          <div className="flex items-center gap-2 mb-2">
+            <div className="w-2 h-2 bg-destructive rounded-full"></div>
+            <div className="w-2 h-2 bg-warning rounded-full"></div>
+            <div className="w-2 h-2 bg-success rounded-full"></div>
+            <span className={`${textVariants.caption.default()} ml-2`}>
+              {t("codeExample.preview")}
+            </span>
+          </div>
+          <div className="bg-card rounded border p-3">{preview}</div>
+        </div>
       )}
-    </div>
 
-    {preview && (
       <div className="bg-muted rounded-lg p-4">
-        <div className="flex items-center gap-2 mb-2">
-          <div className="w-2 h-2 bg-destructive rounded-full"></div>
-          <div className="w-2 h-2 bg-warning rounded-full"></div>
-          <div className="w-2 h-2 bg-success rounded-full"></div>
-          <span className={`${textVariants.caption.default()} ml-2`}>
-            Preview
-          </span>
-        </div>
-        <div className="bg-card rounded border p-3">{preview}</div>
-      </div>
-    )}
-
-    <div className="bg-muted rounded-lg p-4">
-      <div className="flex items-center justify-between mb-2">
-        <div className="flex items-center gap-2">
-          <CodeBracketIcon className="h-4 w-4 text-muted-foreground" />
-          <span
-            className={`${textVariants.caption.default()} text-muted-foreground`}
+        <div className="flex items-center justify-between mb-2">
+          <div className="flex items-center gap-2">
+            <CodeBracketIcon className="h-4 w-4 text-muted-foreground" />
+            <span
+              className={`${textVariants.caption.default()} text-muted-foreground`}
+            >
+              {t("codeExample.usage")}
+            </span>
+          </div>
+          <button
+            onClick={() => onCopy(code)}
+            className="p-1 text-muted-foreground hover:text-foreground transition-colors"
           >
-            Usage
-          </span>
+            {copiedValue === code ? (
+              <CheckIcon className="h-4 w-4" />
+            ) : (
+              <ClipboardDocumentIcon className="h-4 w-4" />
+            )}
+          </button>
         </div>
-        <button
-          onClick={() => onCopy(code)}
-          className="p-1 text-muted-foreground hover:text-foreground transition-colors"
-        >
-          {copiedValue === code ? (
-            <CheckIcon className="h-4 w-4" />
-          ) : (
-            <ClipboardDocumentIcon className="h-4 w-4" />
-          )}
-        </button>
+        <code className="font-mono text-xs font-medium text-foreground block whitespace-pre-wrap">
+          {code}
+        </code>
       </div>
-      <code className="font-mono text-xs font-medium text-foreground block whitespace-pre-wrap">
-        {code}
-      </code>
     </div>
-  </div>
-);
+  );
+};
 
 const FormsPage: React.FC<AppProps> = ({ emailDomain, appName: _appName }) => {
+  const { t } = useTranslation("forms");
   const [copiedValue, setCopiedValue] = useState<string | null>(null);
   const [showPassword, setShowPassword] = useState(false);
 
@@ -107,8 +112,8 @@ const FormsPage: React.FC<AppProps> = ({ emailDomain, appName: _appName }) => {
   return (
     <>
       <SEOHead
-        title={`Forms - Design System - Internal - ${emailDomain}`}
-        description="Complete form elements and input components showcase for the design system"
+        title={t("seo.title", { emailDomain })}
+        description={t("seo.description")}
         noIndex={true}
       />
 
@@ -130,19 +135,19 @@ const FormsPage: React.FC<AppProps> = ({ emailDomain, appName: _appName }) => {
                   d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"
                 />
               </svg>
-              <span className="text-success font-semibold">Form Elements</span>
+              <span className="text-success font-semibold">
+                {t("header.badge")}
+              </span>
             </div>
 
             <h1 className={`${textVariants.heading.display.xl()} mb-6`}>
-              Form Components & Input Elements
+              {t("header.title")}
             </h1>
 
             <p
               className={`${textVariants.body.lg()} max-w-3xl mx-auto text-muted-foreground`}
             >
-              Comprehensive form element library with consistent styling,
-              validation states, and accessibility features. All components
-              support light/dark themes and include proper focus management.
+              {t("header.description")}
             </p>
           </div>
 
@@ -152,13 +157,12 @@ const FormsPage: React.FC<AppProps> = ({ emailDomain, appName: _appName }) => {
               <div className="flex items-center mb-6">
                 <CodeBracketIcon className="h-8 w-8 text-success mr-3" />
                 <h2 className={`${textVariants.heading.h2()} text-success`}>
-                  Quick Start - Essential Form Patterns
+                  {t("quickStart.title")}
                 </h2>
               </div>
 
               <p className={`${textVariants.body.md()} text-success mb-8`}>
-                Ready-to-use form components with proper validation,
-                accessibility, and responsive design.
+                {t("quickStart.description")}
               </p>
 
               <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
@@ -167,7 +171,7 @@ const FormsPage: React.FC<AppProps> = ({ emailDomain, appName: _appName }) => {
                   <h3
                     className={`${textVariants.heading.h4()} text-success mb-3`}
                   >
-                    Text Input
+                    {t("quickStart.textInput.title")}
                   </h3>
                   <div className="bg-muted rounded-lg p-4 relative">
                     <button
@@ -213,12 +217,12 @@ const FormsPage: React.FC<AppProps> = ({ emailDomain, appName: _appName }) => {
                       <label
                         className={`${textVariants.label.default()} block`}
                       >
-                        Email Address
+                        {t("quickStart.textInput.label")}
                       </label>
                       <input
                         type="email"
                         className={variants.input.default()}
-                        placeholder="Enter your email..."
+                        placeholder={t("quickStart.textInput.placeholder")}
                       />
                     </div>
                   </div>
@@ -229,7 +233,7 @@ const FormsPage: React.FC<AppProps> = ({ emailDomain, appName: _appName }) => {
                   <h3
                     className={`${textVariants.heading.h4()} text-success mb-3`}
                   >
-                    Select Dropdown
+                    {t("quickStart.select.title")}
                   </h3>
                   <div className="bg-muted rounded-lg p-4 relative">
                     <button
@@ -286,11 +290,13 @@ const FormsPage: React.FC<AppProps> = ({ emailDomain, appName: _appName }) => {
                       <label
                         className={`${textVariants.label.default()} block`}
                       >
-                        Blockchain Network
+                        {t("quickStart.select.label")}
                       </label>
                       <Select>
                         <SelectTrigger className={variants.input.default()}>
-                          <SelectValue placeholder="Select a network..." />
+                          <SelectValue
+                            placeholder={t("quickStart.select.placeholder")}
+                          />
                         </SelectTrigger>
                         <SelectContent>
                           <SelectItem value="ethereum">Ethereum</SelectItem>
@@ -307,7 +313,7 @@ const FormsPage: React.FC<AppProps> = ({ emailDomain, appName: _appName }) => {
                   <h3
                     className={`${textVariants.heading.h4()} text-success mb-3`}
                   >
-                    Checkbox
+                    {t("quickStart.checkbox.title")}
                   </h3>
                   <div className="bg-muted rounded-lg p-4 relative">
                     <button
@@ -361,7 +367,7 @@ const FormsPage: React.FC<AppProps> = ({ emailDomain, appName: _appName }) => {
                         className="w-4 h-4 text-primary bg-card border-input rounded focus:ring-ring focus:ring-2 transition-colors"
                       />
                       <span className="text-sm text-foreground">
-                        I agree to the Terms of Service and Privacy Policy
+                        {t("quickStart.checkbox.agree")}
                       </span>
                     </label>
                   </div>
@@ -372,7 +378,7 @@ const FormsPage: React.FC<AppProps> = ({ emailDomain, appName: _appName }) => {
                   <h3
                     className={`${textVariants.heading.h4()} text-success mb-3`}
                   >
-                    Textarea
+                    {t("quickStart.textarea.title")}
                   </h3>
                   <div className="bg-muted rounded-lg p-4 relative">
                     <button
@@ -426,12 +432,12 @@ const FormsPage: React.FC<AppProps> = ({ emailDomain, appName: _appName }) => {
                       <label
                         className={`${textVariants.label.default()} block`}
                       >
-                        Message
+                        {t("quickStart.textarea.label")}
                       </label>
                       <textarea
                         rows={4}
                         className={`${variants.input.default()} resize-vertical`}
-                        placeholder="Enter your message..."
+                        placeholder={t("quickStart.textarea.placeholder")}
                       />
                     </div>
                   </div>
@@ -443,19 +449,18 @@ const FormsPage: React.FC<AppProps> = ({ emailDomain, appName: _appName }) => {
           {/* Input Types */}
           <Section>
             <h2 className={`${textVariants.heading.h2()} mb-8`}>
-              Input Types & Variants
+              {t("inputTypes.title")}
             </h2>
             <p
               className={`${textVariants.body.md()} text-muted-foreground mb-8`}
             >
-              Different input types with consistent styling across all form
-              elements.
+              {t("inputTypes.description")}
             </p>
 
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
               <CodeExample
-                title="Text Input Types"
-                description="Different input types with consistent styling"
+                title={t("inputTypes.textInputTypes.title")}
+                description={t("inputTypes.textInputTypes.description")}
                 copiedValue={copiedValue}
                 onCopy={copyToClipboard}
                 code={`import { variants } from '@sudobility/design';
@@ -476,7 +481,9 @@ const FormsPage: React.FC<AppProps> = ({ emailDomain, appName: _appName }) => {
                     <input
                       type="text"
                       className={variants.input.default()}
-                      placeholder="Text input"
+                      placeholder={t(
+                        "inputTypes.textInputTypes.textPlaceholder",
+                      )}
                     />
                     <input
                       type="email"
@@ -486,7 +493,9 @@ const FormsPage: React.FC<AppProps> = ({ emailDomain, appName: _appName }) => {
                     <input
                       type="password"
                       className={variants.input.default()}
-                      placeholder="Password"
+                      placeholder={t(
+                        "inputTypes.textInputTypes.passwordPlaceholder",
+                      )}
                     />
                     <input
                       type="number"
@@ -498,8 +507,8 @@ const FormsPage: React.FC<AppProps> = ({ emailDomain, appName: _appName }) => {
               />
 
               <CodeExample
-                title="Input Sizes"
-                description="Different input sizes for various use cases"
+                title={t("inputTypes.sizes.title")}
+                description={t("inputTypes.sizes.description")}
                 copiedValue={copiedValue}
                 onCopy={copyToClipboard}
                 code={`import { variants } from '@sudobility/design';
@@ -516,15 +525,15 @@ const FormsPage: React.FC<AppProps> = ({ emailDomain, appName: _appName }) => {
                   <div className="space-y-4">
                     <input
                       className={`${variants.input.small()} h-8`}
-                      placeholder="Small input"
+                      placeholder={t("inputTypes.sizes.smallPlaceholder")}
                     />
                     <input
                       className={`${variants.input.default()} h-10`}
-                      placeholder="Default input"
+                      placeholder={t("inputTypes.sizes.defaultPlaceholder")}
                     />
                     <input
                       className={`${variants.input.large()} h-12`}
-                      placeholder="Large input"
+                      placeholder={t("inputTypes.sizes.largePlaceholder")}
                     />
                   </div>
                 }
@@ -535,18 +544,18 @@ const FormsPage: React.FC<AppProps> = ({ emailDomain, appName: _appName }) => {
           {/* Validation States */}
           <Section>
             <h2 className={`${textVariants.heading.h2()} mb-8`}>
-              Validation States
+              {t("validation.title")}
             </h2>
             <p
               className={`${textVariants.body.md()} text-muted-foreground mb-8`}
             >
-              Form validation states with proper color coding and messaging.
+              {t("validation.description")}
             </p>
 
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
               <CodeExample
-                title="Success State"
-                description="Valid input with success styling"
+                title={t("validation.success.title")}
+                description={t("validation.success.description")}
                 copiedValue={copiedValue}
                 onCopy={copyToClipboard}
                 code={`import { textVariants } from '@sudobility/design';
@@ -567,7 +576,7 @@ const FormsPage: React.FC<AppProps> = ({ emailDomain, appName: _appName }) => {
                 preview={
                   <div className="space-y-1">
                     <label className={`${textVariants.label.default()} block`}>
-                      Email Address
+                      {t("validation.success.label")}
                     </label>
                     <input
                       type="email"
@@ -577,15 +586,15 @@ const FormsPage: React.FC<AppProps> = ({ emailDomain, appName: _appName }) => {
                     />
                     <p className="text-sm text-success flex items-center">
                       <CheckIcon className="h-4 w-4 mr-1" />
-                      Valid email address
+                      {t("validation.success.message")}
                     </p>
                   </div>
                 }
               />
 
               <CodeExample
-                title="Error State"
-                description="Invalid input with error styling"
+                title={t("validation.error.title")}
+                description={t("validation.error.description")}
                 copiedValue={copiedValue}
                 onCopy={copyToClipboard}
                 code={`import { variants, textVariants } from '@sudobility/design';
@@ -601,7 +610,7 @@ const FormsPage: React.FC<AppProps> = ({ emailDomain, appName: _appName }) => {
                 preview={
                   <div className="space-y-1">
                     <label className={`${textVariants.label.default()} block`}>
-                      Password
+                      {t("validation.error.label")}
                     </label>
                     <input
                       type="password"
@@ -611,7 +620,7 @@ const FormsPage: React.FC<AppProps> = ({ emailDomain, appName: _appName }) => {
                     />
                     <p className="text-sm text-destructive flex items-center">
                       <ExclamationCircleIcon className="h-4 w-4 mr-1" />
-                      Password must be at least 8 characters
+                      {t("validation.error.message")}
                     </p>
                   </div>
                 }
@@ -622,18 +631,18 @@ const FormsPage: React.FC<AppProps> = ({ emailDomain, appName: _appName }) => {
           {/* Complex Form Components */}
           <Section>
             <h2 className={`${textVariants.heading.h2()} mb-8`}>
-              Advanced Form Components
+              {t("advanced.title")}
             </h2>
             <p
               className={`${textVariants.body.md()} text-muted-foreground mb-8`}
             >
-              More complex form patterns with enhanced functionality.
+              {t("advanced.description")}
             </p>
 
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
               <CodeExample
-                title="Password Input with Toggle"
-                description="Password field with show/hide functionality"
+                title={t("advanced.passwordToggle.title")}
+                description={t("advanced.passwordToggle.description")}
                 copiedValue={copiedValue}
                 onCopy={copyToClipboard}
                 code={`import { variants, textVariants } from '@sudobility/design';
@@ -665,13 +674,13 @@ const [showPassword, setShowPassword] = useState(false);
                 preview={
                   <div className="space-y-1">
                     <label className={`${textVariants.label.default()} block`}>
-                      Password
+                      {t("advanced.passwordToggle.label")}
                     </label>
                     <div className="relative">
                       <input
                         type={showPassword ? "text" : "password"}
                         className={`${variants.input.default()} pr-10`}
-                        placeholder="Enter password..."
+                        placeholder={t("advanced.passwordToggle.placeholder")}
                       />
                       <button
                         type="button"
@@ -690,8 +699,8 @@ const [showPassword, setShowPassword] = useState(false);
               />
 
               <CodeExample
-                title="Radio Button Group"
-                description="Radio buttons for single selection"
+                title={t("advanced.radio.title")}
+                description={t("advanced.radio.description")}
                 copiedValue={copiedValue}
                 onCopy={copyToClipboard}
                 code={`import { textVariants } from '@sudobility/design';
@@ -722,7 +731,7 @@ const [showPassword, setShowPassword] = useState(false);
                 preview={
                   <div className="space-y-3">
                     <label className={`${textVariants.label.default()} block`}>
-                      Subscription Plan
+                      {t("advanced.radio.label")}
                     </label>
                     <div className="space-y-2">
                       <label className="flex items-center space-x-3 cursor-pointer">
@@ -733,7 +742,7 @@ const [showPassword, setShowPassword] = useState(false);
                           className="w-4 h-4 text-primary bg-card border-input focus:ring-ring focus:ring-2"
                         />
                         <span className="text-sm text-foreground">
-                          Free Plan - Basic features
+                          {t("advanced.radio.free")}
                         </span>
                       </label>
                       <label className="flex items-center space-x-3 cursor-pointer">
@@ -744,7 +753,7 @@ const [showPassword, setShowPassword] = useState(false);
                           className="w-4 h-4 text-primary bg-card border-input focus:ring-ring focus:ring-2"
                         />
                         <span className="text-sm text-foreground">
-                          Pro Plan - Advanced features
+                          {t("advanced.radio.pro")}
                         </span>
                       </label>
                     </div>
@@ -757,18 +766,17 @@ const [showPassword, setShowPassword] = useState(false);
           {/* Complete Form Example */}
           <Section>
             <h2 className={`${textVariants.heading.h2()} mb-8`}>
-              Complete Form Example
+              {t("complete.title")}
             </h2>
             <p
               className={`${textVariants.body.md()} text-muted-foreground mb-8`}
             >
-              A comprehensive form showcasing all form elements working
-              together.
+              {t("complete.description")}
             </p>
 
             <CodeExample
-              title="Web3 Profile Form"
-              description="Complete form with all element types and validation"
+              title={t("complete.form.title")}
+              description={t("complete.form.description")}
               copiedValue={copiedValue}
               onCopy={copyToClipboard}
               code={`import { variants, textVariants } from '@sudobility/design';
@@ -826,18 +834,18 @@ const [showPassword, setShowPassword] = useState(false);
                 <form className="space-y-6 max-w-2xl">
                   <div className="space-y-1">
                     <label className={`${textVariants.label.default()} block`}>
-                      Display Name
+                      {t("complete.form.displayNameLabel")}
                     </label>
                     <input
                       type="text"
                       className={variants.input.default()}
-                      placeholder="Your display name"
+                      placeholder={t("complete.form.displayNamePlaceholder")}
                     />
                   </div>
 
                   <div className="space-y-1">
                     <label className={`${textVariants.label.default()} block`}>
-                      Email Address
+                      {t("complete.form.emailLabel")}
                     </label>
                     <input
                       type="email"
@@ -848,11 +856,13 @@ const [showPassword, setShowPassword] = useState(false);
 
                   <div className="space-y-1">
                     <label className={`${textVariants.label.default()} block`}>
-                      Preferred Network
+                      {t("complete.form.networkLabel")}
                     </label>
                     <Select>
                       <SelectTrigger className={variants.input.default()}>
-                        <SelectValue placeholder="Select a network..." />
+                        <SelectValue
+                          placeholder={t("complete.form.networkPlaceholder")}
+                        />
                       </SelectTrigger>
                       <SelectContent>
                         <SelectItem value="ethereum">Ethereum</SelectItem>
@@ -864,12 +874,12 @@ const [showPassword, setShowPassword] = useState(false);
 
                   <div className="space-y-1">
                     <label className={`${textVariants.label.default()} block`}>
-                      Bio
+                      {t("complete.form.bioLabel")}
                     </label>
                     <textarea
                       rows={3}
                       className={`${variants.input.default()} resize-vertical`}
-                      placeholder="Tell us about yourself..."
+                      placeholder={t("complete.form.bioPlaceholder")}
                     />
                   </div>
 
@@ -879,7 +889,7 @@ const [showPassword, setShowPassword] = useState(false);
                       className="w-4 h-4 text-primary bg-card border-input rounded focus:ring-ring focus:ring-2 transition-colors"
                     />
                     <span className="text-sm text-foreground">
-                      I agree to receive email notifications
+                      {t("complete.form.notifications")}
                     </span>
                   </label>
 
@@ -887,7 +897,7 @@ const [showPassword, setShowPassword] = useState(false);
                     type="submit"
                     className={variants.button.primary.fullWidth()}
                   >
-                    Save Profile
+                    {t("complete.form.submit")}
                   </button>
                 </form>
               }
@@ -897,45 +907,36 @@ const [showPassword, setShowPassword] = useState(false);
           {/* Accessibility Guidelines */}
           <Section>
             <h2 className={`${textVariants.heading.h2()} mb-8`}>
-              Accessibility Guidelines
+              {t("accessibility.title")}
             </h2>
             <div className="bg-info/10 rounded-xl p-6 border border-info">
               <h3 className={`${textVariants.heading.h4()} mb-4 text-info`}>
-                Form Accessibility Best Practices
+                {t("accessibility.heading")}
               </h3>
               <ul className="space-y-2 text-info">
                 <li className="flex items-start">
                   <span className="w-2 h-2 bg-info rounded-full mt-2 mr-3 flex-shrink-0"></span>
                   <span>
-                    Always use proper{" "}
+                    {t("accessibility.items.labelsBefore")}{" "}
                     <code className="bg-info/20 px-1 rounded">label</code>{" "}
-                    elements associated with inputs
+                    {t("accessibility.items.labelsAfter")}
                   </span>
                 </li>
                 <li className="flex items-start">
                   <span className="w-2 h-2 bg-info rounded-full mt-2 mr-3 flex-shrink-0"></span>
-                  <span>
-                    Include clear error messages with validation states
-                  </span>
+                  <span>{t("accessibility.items.errorMessages")}</span>
                 </li>
                 <li className="flex items-start">
                   <span className="w-2 h-2 bg-info rounded-full mt-2 mr-3 flex-shrink-0"></span>
-                  <span>
-                    Ensure focus states are clearly visible with ring utilities
-                  </span>
+                  <span>{t("accessibility.items.focusStates")}</span>
                 </li>
                 <li className="flex items-start">
                   <span className="w-2 h-2 bg-info rounded-full mt-2 mr-3 flex-shrink-0"></span>
-                  <span>
-                    Use appropriate input types (email, password, etc.) for
-                    better mobile experience
-                  </span>
+                  <span>{t("accessibility.items.inputTypes")}</span>
                 </li>
                 <li className="flex items-start">
                   <span className="w-2 h-2 bg-info rounded-full mt-2 mr-3 flex-shrink-0"></span>
-                  <span>
-                    Maintain sufficient color contrast (minimum 4.5:1 ratio)
-                  </span>
+                  <span>{t("accessibility.items.contrast")}</span>
                 </li>
               </ul>
             </div>

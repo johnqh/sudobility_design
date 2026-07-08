@@ -5,6 +5,7 @@ import {
   UserIcon,
 } from "@heroicons/react/24/outline";
 import React, { useState } from "react";
+import { useTranslation } from "react-i18next";
 import {
   Button,
   Dropdown,
@@ -25,6 +26,7 @@ const OverlaysPortalsPage: React.FC<AppProps> = ({
   emailDomain: _emailDomain,
   appName: _appName,
 }) => {
+  const { t } = useTranslation("overlaysPortals");
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [isLoadingOverlayOpen, setIsLoadingOverlayOpen] = useState(false);
   const [tooltipVisible, setTooltipVisible] = useState("");
@@ -32,21 +34,21 @@ const OverlaysPortalsPage: React.FC<AppProps> = ({
   const dropdownItems = [
     {
       id: "profile",
-      label: "View Profile",
+      label: t("dropdownItems.profile"),
       icon: UserIcon,
-      onClick: () => alert("Profile clicked"),
+      onClick: () => alert(t("alerts.profile")),
     },
     {
       id: "settings",
-      label: "Settings",
+      label: t("dropdownItems.settings"),
       icon: CogIcon,
-      onClick: () => alert("Settings clicked"),
+      onClick: () => alert(t("alerts.settings")),
     },
     {
       id: "logout",
-      label: "Sign Out",
+      label: t("dropdownItems.logout"),
       icon: ArrowRightOnRectangleIcon,
-      onClick: () => alert("Sign out clicked"),
+      onClick: () => alert(t("alerts.logout")),
     },
   ];
 
@@ -59,62 +61,67 @@ const OverlaysPortalsPage: React.FC<AppProps> = ({
     <div className={variants.layout.container.default()}>
       <div className="py-8">
         <div className="mb-8">
-          <h1 className={textVariants.heading.h1()}>Overlays & Portals</h1>
+          <h1 className={textVariants.heading.h1()}>{t("header.title")}</h1>
           <p className={textVariants.body.lg() + " mt-4"}>
-            Comprehensive overlay system including modals, dropdowns, tooltips,
-            sheets, and loading states with proper z-index management and
-            accessibility.
+            {t("header.description")}
           </p>
         </div>
 
         {/* Modals Section */}
         <Section>
-          <h2 className={textVariants.heading.h2() + " mb-6"}>Modals</h2>
+          <h2 className={textVariants.heading.h2() + " mb-6"}>
+            {t("modals.title")}
+          </h2>
           <p className={textVariants.body.md() + " mb-6"}>
-            Modal dialogs with backdrop blur, animation states, and multiple
-            sizes. Includes focus management and keyboard navigation.
+            {t("modals.description")}
           </p>
 
           <div className={variants.card.default.padded() + " mb-6"}>
             <h3 className={textVariants.heading.h3() + " mb-4"}>
-              Interactive Example
+              {t("common.interactiveExample")}
             </h3>
-            <Button onClick={() => setIsModalOpen(true)}>Open Modal</Button>
+            <Button onClick={() => setIsModalOpen(true)}>
+              {t("modals.openButton")}
+            </Button>
 
             <Modal
               isOpen={isModalOpen}
               onClose={() => setIsModalOpen(false)}
-              title="Example Modal"
+              title={t("modals.exampleTitle")}
               size="medium"
             >
               <ModalContent>
                 <div className="space-y-4">
                   <p className={textVariants.body.md()}>
-                    This is an example modal using the new overlay design
-                    system. It includes proper backdrop handling, focus
-                    management, and animation states.
+                    {t("modals.exampleBody")}
                   </p>
                   <div className="grid grid-cols-2 gap-4">
                     <div className={ui.background.subtle + " p-4"}>
                       <h4 className={textVariants.heading.h5() + " mb-2"}>
-                        Features
+                        {t("modals.featuresTitle")}
                       </h4>
                       <ul className="space-y-1 text-sm text-muted-foreground">
-                        <li>• Backdrop blur effect</li>
-                        <li>• Focus trap and restoration</li>
-                        <li>• Keyboard navigation</li>
-                        <li>• Multiple size variants</li>
+                        {(
+                          t("modals.features", {
+                            returnObjects: true,
+                          }) as string[]
+                        ).map((feature) => (
+                          <li key={feature}>• {feature}</li>
+                        ))}
                       </ul>
                     </div>
                     <div className={ui.background.subtle + " p-4"}>
                       <h4 className={textVariants.heading.h5() + " mb-2"}>
-                        Accessibility
+                        {t("modals.accessibilityTitle")}
                       </h4>
                       <ul className="space-y-1 text-sm text-muted-foreground">
-                        <li>• ARIA labels and roles</li>
-                        <li>• Escape key handling</li>
-                        <li>• Screen reader support</li>
-                        <li>• Focus management</li>
+                        {(
+                          t("modals.accessibility", {
+                            returnObjects: true,
+                          }) as string[]
+                        ).map((item) => (
+                          <li key={item}>• {item}</li>
+                        ))}
                       </ul>
                     </div>
                   </div>
@@ -122,15 +129,19 @@ const OverlaysPortalsPage: React.FC<AppProps> = ({
               </ModalContent>
               <ModalFooter>
                 <Button variant="outline" onClick={() => setIsModalOpen(false)}>
-                  Cancel
+                  {t("modals.cancel")}
                 </Button>
-                <Button onClick={() => setIsModalOpen(false)}>Confirm</Button>
+                <Button onClick={() => setIsModalOpen(false)}>
+                  {t("modals.confirm")}
+                </Button>
               </ModalFooter>
             </Modal>
           </div>
 
           <div className={variants.card.default.padded() + " p-6"}>
-            <h3 className={textVariants.heading.h3() + " mb-4"}>Usage</h3>
+            <h3 className={textVariants.heading.h3() + " mb-4"}>
+              {t("common.usage")}
+            </h3>
             <pre className={variants.dataDisplay.code.block()}>
               {`import { Modal, ModalContent, ModalFooter } from "../../components/ui"
 import { variants } from '@/design-system';
@@ -174,15 +185,16 @@ size="extraLarge" // ${variants.overlays.modal.extraLarge()}
 
         {/* Dropdowns Section */}
         <Section>
-          <h2 className={textVariants.heading.h2() + " mb-6"}>Dropdowns</h2>
+          <h2 className={textVariants.heading.h2() + " mb-6"}>
+            {t("dropdowns.title")}
+          </h2>
           <p className={textVariants.body.md() + " mb-6"}>
-            Dropdown menus with multiple positioning options, icons, dividers,
-            and keyboard navigation.
+            {t("dropdowns.description")}
           </p>
 
           <div className={variants.card.default.padded() + " mb-6"}>
             <h3 className={textVariants.heading.h3() + " mb-4"}>
-              Interactive Example
+              {t("common.interactiveExample")}
             </h3>
             <div className="flex space-x-4">
               <Dropdown
@@ -191,7 +203,7 @@ size="extraLarge" // ${variants.overlays.modal.extraLarge()}
                     <EllipsisVerticalIcon
                       className={variants.icon.variant.muted.sm() + " mr-2"}
                     />
-                    Actions
+                    {t("dropdowns.actionsButton")}
                   </Button>
                 }
                 items={dropdownItems}
@@ -201,7 +213,7 @@ size="extraLarge" // ${variants.overlays.modal.extraLarge()}
               <Dropdown
                 trigger={
                   <Button>
-                    User Menu
+                    {t("dropdowns.userMenuButton")}
                     <EllipsisVerticalIcon
                       className={
                         variants.icon.variant.interactive.sm() + " ml-2"
@@ -216,7 +228,9 @@ size="extraLarge" // ${variants.overlays.modal.extraLarge()}
           </div>
 
           <div className={variants.card.default.padded() + " p-6"}>
-            <h3 className={textVariants.heading.h3() + " mb-4"}>Usage</h3>
+            <h3 className={textVariants.heading.h3() + " mb-4"}>
+              {t("common.usage")}
+            </h3>
             <pre className={variants.dataDisplay.code.block()}>
               {`import { Dropdown } from "../../components/ui"
 import { variants } from '@/design-system';
@@ -263,15 +277,16 @@ const items = [
 
         {/* Tooltips Section */}
         <Section>
-          <h2 className={textVariants.heading.h2() + " mb-6"}>Tooltips</h2>
+          <h2 className={textVariants.heading.h2() + " mb-6"}>
+            {t("tooltips.title")}
+          </h2>
           <p className={textVariants.body.md() + " mb-6"}>
-            Lightweight tooltips with multiple positioning options and color
-            variants.
+            {t("tooltips.description")}
           </p>
 
           <div className={variants.card.default.padded() + " mb-6"}>
             <h3 className={textVariants.heading.h3() + " mb-4"}>
-              Interactive Example
+              {t("common.interactiveExample")}
             </h3>
             <div className="flex flex-wrap gap-4">
               {["top", "bottom", "left", "right"].map((position) => (
@@ -281,7 +296,7 @@ const items = [
                     onMouseEnter={() => setTooltipVisible(position)}
                     onMouseLeave={() => setTooltipVisible("")}
                   >
-                    Hover for {position} tooltip
+                    {t("tooltips.hoverButton", { position })}
                   </Button>
                   {tooltipVisible === position && (
                     <>
@@ -290,7 +305,7 @@ const items = [
                           position as keyof typeof variants.overlays.tooltip
                         ]()}`}
                       >
-                        Tooltip on {position}
+                        {t("tooltips.tooltipOn", { position })}
                         <div
                           className={`${variants.overlays.tooltip.arrow()} ${variants.overlays.tooltip[
                             `${position}Arrow` as keyof typeof variants.overlays.tooltip
@@ -305,7 +320,9 @@ const items = [
           </div>
 
           <div className={variants.card.default.padded() + " p-6"}>
-            <h3 className={textVariants.heading.h3() + " mb-4"}>Usage</h3>
+            <h3 className={textVariants.heading.h3() + " mb-4"}>
+              {t("common.usage")}
+            </h3>
             <pre className={variants.dataDisplay.code.block()}>
               {`// Tooltip variants
 className={variants.overlays.tooltip.container()} // Base container
@@ -334,46 +351,44 @@ className={variants.overlays.tooltip.right()}     // Right position
         {/* Loading Overlays Section */}
         <Section>
           <h2 className={textVariants.heading.h2() + " mb-6"}>
-            Loading Overlays
+            {t("loading.title")}
           </h2>
           <p className={textVariants.body.md() + " mb-6"}>
-            Full-screen and inline loading states with backdrop blur and
-            customizable messaging.
+            {t("loading.description")}
           </p>
 
           <div className={variants.card.default.padded() + " mb-6"}>
             <h3 className={textVariants.heading.h3() + " mb-4"}>
-              Interactive Example
+              {t("common.interactiveExample")}
             </h3>
             <div className="space-y-4">
               <div>
                 <Button onClick={showLoadingOverlay}>
-                  Show Loading Overlay
+                  {t("loading.showButton")}
                 </Button>
               </div>
 
               <div className="border rounded-lg p-4 bg-muted relative h-32">
                 <p className={textVariants.body.sm() + " mb-2"}>
-                  Inline Loading State:
+                  {t("loading.inlineLabel")}
                 </p>
-                <LoadingState
-                  message="Processing your request..."
-                  size="small"
-                />
+                <LoadingState message={t("loading.message")} size="small" />
               </div>
             </div>
 
             {isLoadingOverlayOpen && (
               <LoadingState
                 fullScreen
-                message="Processing your request..."
+                message={t("loading.message")}
                 size="large"
               />
             )}
           </div>
 
           <div className={variants.card.default.padded() + " p-6"}>
-            <h3 className={textVariants.heading.h3() + " mb-4"}>Usage</h3>
+            <h3 className={textVariants.heading.h3() + " mb-4"}>
+              {t("common.usage")}
+            </h3>
             <pre className={variants.dataDisplay.code.block()}>
               {`import LoadingState from "../../components/ui"
 import { variants } from '@/design-system';
@@ -412,15 +427,16 @@ interface AppProps {
         {/* Sheets Section */}
         <Section>
           <h2 className={textVariants.heading.h2() + " mb-6"}>
-            Sheets (Bottom Sheets)
+            {t("sheets.title")}
           </h2>
           <p className={textVariants.body.md() + " mb-6"}>
-            Mobile-first bottom sheets and action sheets that slide up from the
-            bottom of the screen.
+            {t("sheets.description")}
           </p>
 
           <div className={variants.card.default.padded() + " p-6"}>
-            <h3 className={textVariants.heading.h3() + " mb-4"}>Usage</h3>
+            <h3 className={textVariants.heading.h3() + " mb-4"}>
+              {t("common.usage")}
+            </h3>
             <pre className={variants.dataDisplay.code.block()}>
               {`// Sheet structure
 <div className={variants.overlays.sheet.backdrop()}>
@@ -453,14 +469,17 @@ className={variants.overlays.sheet.exiting()}  // translate-y-full`}
 
         {/* Context Menus Section */}
         <Section>
-          <h2 className={textVariants.heading.h2() + " mb-6"}>Context Menus</h2>
+          <h2 className={textVariants.heading.h2() + " mb-6"}>
+            {t("contextMenus.title")}
+          </h2>
           <p className={textVariants.body.md() + " mb-6"}>
-            Right-click context menus with keyboard shortcuts and nested
-            submenus.
+            {t("contextMenus.description")}
           </p>
 
           <div className={variants.card.default.padded() + " p-6"}>
-            <h3 className={textVariants.heading.h3() + " mb-4"}>Usage</h3>
+            <h3 className={textVariants.heading.h3() + " mb-4"}>
+              {t("common.usage")}
+            </h3>
             <pre className={variants.dataDisplay.code.block()}>
               {`// Context menu structure
 <div className={variants.overlays.contextMenu.backdrop()}>
@@ -490,70 +509,71 @@ className={variants.overlays.sheet.exiting()}  // translate-y-full`}
         {/* Portal Management Section */}
         <Section>
           <h2 className={textVariants.heading.h2() + " mb-6"}>
-            Portal Management
+            {t("portal.title")}
           </h2>
           <p className={textVariants.body.md() + " mb-6"}>
-            Z-index management system and portal utilities for proper overlay
-            stacking.
+            {t("portal.description")}
           </p>
 
           <div className={variants.card.default.padded() + " p-6"}>
             <h3 className={textVariants.heading.h3() + " mb-4"}>
-              Z-Index Layers
+              {t("portal.zIndexLayersTitle")}
             </h3>
             <div className="space-y-3">
               {[
                 {
-                  name: "Backdrop",
+                  key: "backdrop",
                   value: "40",
                   class: variants.overlays.portal.backdrop(),
                 },
                 {
-                  name: "Popover",
+                  key: "popover",
                   value: "40",
                   class: variants.overlays.portal.popover(),
                 },
                 {
-                  name: "Dropdown",
+                  key: "dropdown",
                   value: "50",
                   class: variants.overlays.portal.dropdown(),
                 },
                 {
-                  name: "Tooltip",
+                  key: "tooltip",
                   value: "50",
                   class: variants.overlays.portal.tooltip(),
                 },
                 {
-                  name: "Modal",
+                  key: "modal",
                   value: "50",
                   class: variants.overlays.portal.modal(),
                 },
                 {
-                  name: "Sheet",
+                  key: "sheet",
                   value: "50",
                   class: variants.overlays.portal.sheet(),
                 },
                 {
-                  name: "Context Menu",
+                  key: "contextMenu",
                   value: "50",
                   class: variants.overlays.portal.contextMenu(),
                 },
                 {
-                  name: "Loading",
+                  key: "loading",
                   value: "60",
                   class: variants.overlays.portal.loading(),
                 },
                 {
-                  name: "Notification",
+                  key: "notification",
                   value: "70",
                   class: variants.overlays.portal.notification(),
                 },
               ].map((layer) => (
                 <div
-                  key={layer.name}
+                  key={layer.key}
                   className="flex items-center justify-between p-3 bg-muted rounded"
                 >
-                  <span className={textVariants.body.sm()}>{layer.name}</span>
+                  <span className={textVariants.body.sm()}>
+                    {t(`portal.layers.${layer.key}`)}
+                  </span>
                   <span className={`${variants.badge.default()} font-mono`}>
                     z-{layer.value}
                   </span>
@@ -564,7 +584,7 @@ className={variants.overlays.sheet.exiting()}  // translate-y-full`}
 
           <div className={variants.card.default.padded() + " p-6 mt-6"}>
             <h3 className={textVariants.heading.h3() + " mb-4"}>
-              Focus Management
+              {t("portal.focusManagementTitle")}
             </h3>
             <pre className={variants.dataDisplay.code.block()}>
               {`// Focus trap utilities
@@ -594,21 +614,20 @@ className={variants.overlays.portal.srOnly()}       // sr-only
         {/* Animation States */}
         <Section>
           <h2 className={textVariants.heading.h2() + " mb-6"}>
-            Animation States
+            {t("animationStates.title")}
           </h2>
           <p className={textVariants.body.md() + " mb-6"}>
-            Consistent animation states for enter/exit transitions across all
-            overlay components.
+            {t("animationStates.description")}
           </p>
 
           <div className={variants.card.default.padded() + " p-6"}>
             <h3 className={textVariants.heading.h3() + " mb-4"}>
-              Available States
+              {t("animationStates.availableStatesTitle")}
             </h3>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
               <div>
                 <h4 className={textVariants.heading.h5() + " mb-3"}>
-                  Modal States
+                  {t("animationStates.modalStatesTitle")}
                 </h4>
                 <pre className={variants.dataDisplay.code.block()}>
                   {`// Modal backdrop
@@ -625,7 +644,7 @@ ${variants.overlays.modal.containerExiting()}  // opacity-0 scale-95`}
 
               <div>
                 <h4 className={textVariants.heading.h5() + " mb-3"}>
-                  Dropdown States
+                  {t("animationStates.dropdownStatesTitle")}
                 </h4>
                 <pre className={variants.dataDisplay.code.block()}>
                   {`// Dropdown menu
@@ -641,61 +660,67 @@ ${variants.overlays.dropdown.menuExiting()}  // opacity-0 scale-95 origin-top`}
         {/* Best Practices */}
         <Section>
           <h2 className={textVariants.heading.h2() + " mb-6"}>
-            Best Practices
+            {t("bestPractices.title")}
           </h2>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             <div className={variants.card.default.padded() + " p-6"}>
               <h3 className={textVariants.heading.h3() + " mb-4"}>
-                Accessibility
+                {t("bestPractices.accessibilityTitle")}
               </h3>
               <ul className="space-y-2 text-sm text-muted-foreground">
-                <li>• Always provide proper ARIA labels and roles</li>
-                <li>• Implement focus trapping for modals</li>
-                <li>• Support keyboard navigation (Tab, Escape, Arrow keys)</li>
-                <li>• Maintain focus order and restoration</li>
-                <li>• Use semantic HTML elements</li>
-                <li>• Provide screen reader announcements</li>
+                {(
+                  t("bestPractices.accessibility", {
+                    returnObjects: true,
+                  }) as string[]
+                ).map((item) => (
+                  <li key={item}>• {item}</li>
+                ))}
               </ul>
             </div>
 
             <div className={variants.card.default.padded() + " p-6"}>
               <h3 className={textVariants.heading.h3() + " mb-4"}>
-                Performance
+                {t("bestPractices.performanceTitle")}
               </h3>
               <ul className="space-y-2 text-sm text-muted-foreground">
-                <li>• Use React Portals for proper DOM rendering</li>
-                <li>• Implement lazy loading for heavy overlays</li>
-                <li>• Clean up event listeners on unmount</li>
-                <li>• Use CSS transforms for animations</li>
-                <li>• Avoid complex backdrop filters on mobile</li>
-                <li>• Minimize layout thrashing</li>
+                {(
+                  t("bestPractices.performance", {
+                    returnObjects: true,
+                  }) as string[]
+                ).map((item) => (
+                  <li key={item}>• {item}</li>
+                ))}
               </ul>
             </div>
 
             <div className={variants.card.default.padded() + " p-6"}>
               <h3 className={textVariants.heading.h3() + " mb-4"}>
-                UX Guidelines
+                {t("bestPractices.uxGuidelinesTitle")}
               </h3>
               <ul className="space-y-2 text-sm text-muted-foreground">
-                <li>• Keep modals focused on single tasks</li>
-                <li>• Provide clear close affordances</li>
-                <li>• Use appropriate overlay types for context</li>
-                <li>• Maintain consistent animation timing</li>
-                <li>• Consider mobile viewport constraints</li>
-                <li>• Avoid nested overlay interactions</li>
+                {(
+                  t("bestPractices.uxGuidelines", {
+                    returnObjects: true,
+                  }) as string[]
+                ).map((item) => (
+                  <li key={item}>• {item}</li>
+                ))}
               </ul>
             </div>
 
             <div className={variants.card.default.padded() + " p-6"}>
-              <h3 className={textVariants.heading.h3() + " mb-4"}>Technical</h3>
+              <h3 className={textVariants.heading.h3() + " mb-4"}>
+                {t("bestPractices.technicalTitle")}
+              </h3>
               <ul className="space-y-2 text-sm text-muted-foreground">
-                <li>• Use proper z-index layering system</li>
-                <li>• Handle body scroll locking correctly</li>
-                <li>• Support both click and keyboard interactions</li>
-                <li>• Test across different viewport sizes</li>
-                <li>• Consider reduced motion preferences</li>
-                <li>• Implement proper error boundaries</li>
+                {(
+                  t("bestPractices.technical", {
+                    returnObjects: true,
+                  }) as string[]
+                ).map((item) => (
+                  <li key={item}>• {item}</li>
+                ))}
               </ul>
             </div>
           </div>

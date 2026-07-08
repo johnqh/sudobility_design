@@ -1,0 +1,109 @@
+{
+  "seo": {
+    "title": "Prestanda och optimering - Designsystem - Intern - {{emailDomain}}",
+    "description": "Mönster för prestandaoptimering och verktyg för Core Web Vitals för snabba och effektiva web3-applikationer"
+  },
+  "header": {
+    "badge": "Prestanda och optimering",
+    "title": "Prestandaoptimeringssystem",
+    "description": "Kompletta prestandamönster för snabbt laddande, effektiva Web3-applikationer. Optimera paketstorlek, renderingsprestanda, Core Web Vitals och blockkedjens interaktioner.",
+    "stats": {
+      "bundleSplit": {
+        "value": "Paketdelning",
+        "label": "Kodbitar"
+      },
+      "gpuLayers": {
+        "value": "GPU-lager",
+        "label": "Hårdvaruacceleration"
+      },
+      "web3Batch": {
+        "value": "Web3-batch",
+        "label": "Transaktionsbatchning"
+      },
+      "lcpTarget": {
+        "value": "< 2,5 s",
+        "label": "LCP-mål"
+      }
+    }
+  },
+  "webVitals": {
+    "title": "Core Web Vitals",
+    "description": "Direktuppföljning av Core Web Vitals-mått med verktyg för prestandaoptimering.",
+    "lcp": {
+      "title": "Största innehållspunkt",
+      "description": "Tid att rita det största elementet"
+    },
+    "fid": {
+      "title": "Första inmatningsfördröjning",
+      "description": "Tid för interaktiv respons"
+    },
+    "cls": {
+      "title": "Kumulativt layoutförskjutning",
+      "description": "Visuell stabilitetspoäng"
+    }
+  },
+  "bundle": {
+    "title": "Paketoptimering",
+    "description": "Mönster för koddelning och lazy loading för att minska storleken på det ursprungliga paketet.",
+    "lazyLoadingStates": "Lägesinställningar för försenad inladdning",
+    "componentLoading": "Läser in komponent...",
+    "componentLoaded": "Komponent laddad ✓",
+    "codeSplittingExample": "Exempel på koduppdelning",
+    "loadingChunk": "Läser in designsystemets del...",
+    "bundleAnalysis": "Paketanalys",
+    "mainBundle": "Huvudpaket:",
+    "designSystem": "Designsystem:",
+    "web3Utils": "Web3-verktyg:",
+    "charts": "Diagram:"
+  },
+  "network": {
+    "title": "Nätverksoptimering",
+    "description": "Adaptiva laddningsstrategier baserade på anslutningskvalitet och cachelagringsscheman.",
+    "connectionQuality": "Anslutningskvalitet",
+    "currentConnection": "Nuvarande anslutning",
+    "latency": "Latenstid: ~{{latency}}ms",
+    "simulateSlowConnection": "Simulera långsam anslutning",
+    "cacheStatus": "Cache-status",
+    "freshData": "Färsk data",
+    "freshDataSuffix": " - Senast hämtat",
+    "staleData": "Föråldrade data",
+    "staleDataSuffix": " - Behöver uppdatering",
+    "implementation": "Implementering"
+  },
+  "web3": {
+    "title": "Web3-prestanda",
+    "description": "Specialiserade optimeringar för blockkedjens interaktioner, plånbokanslutningar och transaktionsbatchning.",
+    "walletConnection": "Plånbokanslutning",
+    "cachedConnection": "Cached anslutning",
+    "connecting": "Ansluter...",
+    "transactionBatching": "Transaktionsbatchning",
+    "batchedTransactions": "Batchtransaktioner",
+    "batchedTransactionsDetail": "5 transaktioner → 1 multicall",
+    "individualTransaction": "Enskild transaktion",
+    "gasOptimization": "Gasoptimering",
+    "gasOptimal": "Optimal gas: 15 gwei",
+    "gasHigh": "Hög gas: 45 gwei",
+    "gasVeryHigh": "Mycket högt: 120 gwei"
+  },
+  "bestPractices": {
+    "title": "Bästa praxis för prestanda",
+    "doTitle": "✅ Gör detta",
+    "do": [
+      "Använd koddelning för inre/admin-funktioner",
+      "Implementera lazy loading för bilder och komponenter",
+      "Bearbeta Web3-transaktioner i batchar när det är möjligt",
+      "Använd GPU-acceleration för smidiga animationer",
+      "Övervaka Core Web Vitals i produktion",
+      "Cachar plånboksförbindelser och blockkedjedata"
+    ],
+    "avoidTitle": "❌ Undvik detta",
+    "avoid": [
+      "Laddar alla komponenter aktivt vid första sidladdningen",
+      "Utföra enskilda blockkedjansanrop för batchdata",
+      "Orsaka layoutförskjutningar med dynamiskt innehåll",
+      "Använd blockande rendering för icke-kritiska funktioner",
+      "Ignorera nätverksförhållanden vid resursinläsning",
+      "Hämtar om redan cachelagrade blockchainsdata"
+    ]
+  }
+}

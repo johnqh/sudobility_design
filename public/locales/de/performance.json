@@ -1,0 +1,109 @@
+{
+  "seo": {
+    "title": "Leistung & Optimierung - Design-System - Intern - {{emailDomain}}",
+    "description": "Muster zur Leistungs-Optimierung und Tools für Core Web Vitals für schnelle, effiziente Web3-Anwendungen"
+  },
+  "header": {
+    "badge": "Leistung & Optimierung",
+    "title": "Leistungs-Optimierungssystem",
+    "description": "Umfassende Leistungsmuster für schnellladende, effiziente Web3-Anwendungen. Optimieren Sie die Bundle-Größe, die Rendering-Leistung, die Core Web Vitals und die Blockchain-Interaktionen.",
+    "stats": {
+      "bundleSplit": {
+        "value": "Bündel aufteilen",
+        "label": "Code-Abschnitte"
+      },
+      "gpuLayers": {
+        "value": "GPU-Layer",
+        "label": "Hardware-Beschleunigung"
+      },
+      "web3Batch": {
+        "value": "Web3-Batch",
+        "label": "Transaktions-Batching"
+      },
+      "lcpTarget": {
+        "value": "< 2,5 s",
+        "label": "LCP-Ziel"
+      }
+    }
+  },
+  "webVitals": {
+    "title": "Core Web Vitals",
+    "description": "Echtzeit-Überwachung der Core-Web-Vitals-Metriken mit Leistungs-Optimierungswerkzeugen.",
+    "lcp": {
+      "title": "Größter Inhaltspunkt",
+      "description": "Zeit zum Rendern des größten Elements"
+    },
+    "fid": {
+      "title": "Verzögerung der ersten Eingabe",
+      "description": "Zeit bis zur interaktiven Antwort"
+    },
+    "cls": {
+      "title": "Kumulativer Layoutverschiebung",
+      "description": "Visuelle Stabilitätsbewertung"
+    }
+  },
+  "bundle": {
+    "title": "Bündel-Optimierung",
+    "description": "Code-Splitting- und Lazy-Loading-Muster, um die Größe des Anfangsbundles zu reduzieren.",
+    "lazyLoadingStates": "Ladezustände verzögern",
+    "componentLoading": "Komponente wird geladen...",
+    "componentLoaded": "Komponente geladen ✓",
+    "codeSplittingExample": "Beispiel zur Code-Aufspaltung",
+    "loadingChunk": "Lade Design-System-Chunk...",
+    "bundleAnalysis": "Bündelanalyse",
+    "mainBundle": "Hauptpaket:",
+    "designSystem": "Design-System:",
+    "web3Utils": "Web3-Tools:",
+    "charts": "Diagramme:"
+  },
+  "network": {
+    "title": "Netzwerk-Optimierung",
+    "description": "Adaptive Ladestrategien basierend auf der Verbindungsqualität und Caching-Mustern.",
+    "connectionQuality": "Verbindungsqualität",
+    "currentConnection": "Aktuelle Verbindung",
+    "latency": "Latenz: ~{{latency}}ms",
+    "simulateSlowConnection": "Langsame Verbindung simulieren",
+    "cacheStatus": "Cache-Status",
+    "freshData": "Frische Daten",
+    "freshDataSuffix": " - Kürzlich abgerufen",
+    "staleData": "Veraltetes Daten",
+    "staleDataSuffix": " - Benötigt Aktualisierung",
+    "implementation": "Implementierung"
+  },
+  "web3": {
+    "title": "Web3-Leistung",
+    "description": "Spezialisierte Optimierungen für Blockchain-Interaktionen, Wallet-Verbindungen und Transaktions-Batching.",
+    "walletConnection": "Brieftaschenverbindung",
+    "cachedConnection": "Gecachte Verbindung",
+    "connecting": "Verbindung herstellen...",
+    "transactionBatching": "Transaktions-Batching",
+    "batchedTransactions": "Batch-Transaktionen",
+    "batchedTransactionsDetail": "5 Transaktionen → 1 Multicall",
+    "individualTransaction": "Einzeltransaktion",
+    "gasOptimization": "Gas-Optimierung",
+    "gasOptimal": "Optimaler Gas: 15 gwei",
+    "gasHigh": "Hoher Gas: 45 gwei",
+    "gasVeryHigh": "Sehr hoch: 120 Gwei"
+  },
+  "bestPractices": {
+    "title": "Best Practices für Leistung",
+    "doTitle": "✅ Mach das",
+    "do": [
+      "Verwenden Sie Code-Splitting für interne/Admin-Funktionen",
+      "Implementieren Sie die lazy Loading für Bilder und Komponenten",
+      "Web3-Transaktionen bei Gelegenheit in Batches ausführen",
+      "Verwenden Sie die GPU-Beschleunigung für reibungslose Animationen",
+      "Core Web Vitals in der Produktion überwachen",
+      "Cache-Ber Verbindungen und Blockchain-Daten"
+    ],
+    "avoidTitle": "❌ Vermeide dies",
+    "avoid": [
+      "Lade alle Komponenten beim ersten Seitenaufruf sofort",
+      "Ausführen einzelner Blockchain-Aufrufe für Batch-Daten",
+      "Verursachen von Layoutverschiebungen mit dynamischem Inhalt",
+      "Verwendung blockierender Rendern für nicht-kritische Funktionen",
+      "Netzwerkbedingungen beim Laden von Ressourcen ignorieren",
+      "Nochmalige Nachholung bereits zwischengespeicherter Blockchain-Daten"
+    ]
+  }
+}

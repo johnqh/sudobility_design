@@ -1,0 +1,185 @@
+{
+  "seo": {
+    "title": "내비게이션 - 디자인 시스템 - 내부 - {{emailDomain}}",
+    "description": "브레드크럼, 탭, 페이지네이션 및 메뉴 시스템을 포함한 탐색 구성 요소"
+  },
+  "header": {
+    "badge": "네비게이션 컴포넌트",
+    "title": "導航 시스템",
+    "intro": "Web3 애플리케이션을 위한 포괄적인 네비게이션 구성 요소로, 브레드크럼, 탭, 페이지네이션, 메뉴 및 단계별 탐색을 포함합니다. 접근성과 반응형 동작을 고려하여 설계되었습니다."
+  },
+  "quickStart": {
+    "title": "빠른 시작",
+    "copy": "클립보드에 복사",
+    "examples": {
+      "breadcrumb": {
+        "title": "브레드크럼 탐색",
+        "description": "현재 페이지 위치를 보여주는 계층적 탐색"
+      },
+      "tabs": {
+        "title": "탭 탐색",
+        "description": "탭 탐색을 사용하여 콘텐츠를 여러 뷰로 정리하기"
+      },
+      "pagination": {
+        "title": "페이지네이션",
+        "description": "다양한 페이지의 콘텐츠를 탐색합니다"
+      },
+      "steps": {
+        "title": "단계 탐색",
+        "description": "사용자를 다단계 프로세스로 안내합니다"
+      }
+    }
+  },
+  "breadcrumbs": {
+    "sectionTitle": "인터랙티브 브레드크럼",
+    "liveTitle": "라이브 브레드크럼 예시",
+    "home": "홈",
+    "web3Projects": "웹3 프로젝트",
+    "featuresTitle": "기능",
+    "features": [
+      "SEO 최적화를 위한 구조화된 데이터",
+      "ARIA 접근성 속성",
+      "키보드 탐색 지원",
+      "트렁케이션을 사용한 반응형 디자인",
+      "선택적 홈 아이콘 및 소셜 공유"
+    ]
+  },
+  "tabVariants": {
+    "sectionTitle": "탭 탐색 변형",
+    "defaultTitle": "기본 탭",
+    "overview": "개요",
+    "analytics": "분석",
+    "settings": "설정",
+    "overviewContent": "프로젝트 통계와 최근 활동을 포함한 개요 콘텐츠.",
+    "analyticsContent": "차트와 지표를 포함한 분석 대시보드.",
+    "settingsContent": "설정 옵션을 위한 설정 패널.",
+    "underlinedTitle": "밑줄이 그어진 탭",
+    "dashboard": "대시보드",
+    "team": "팀",
+    "projects": "프로젝트",
+    "calendar": "캘린더",
+    "underlinedContent": "청결한 밑줄이 있는 탭 스타일의 대시보드 콘텐츠.",
+    "pillsTitle": "알약 타블렛",
+    "all": "모두",
+    "active": "활성",
+    "draft": "초안",
+    "archived": "보관됨",
+    "pillsContent": "선택한 필 테이블 탭으로 필터링된 콘텐츠."
+  },
+  "pagination": {
+    "sectionTitle": "페이지네이션",
+    "listTitle": "이메일 리스트 페이징",
+    "listDescription": "이메일 목록 탐색을 위한 예시 페이징",
+    "emailSubject": "이메일 제목 {{number}}",
+    "timeAgo": "2시간 전",
+    "previous": "이전",
+    "next": "다음",
+    "showing": "보기",
+    "to": "로",
+    "of": "의",
+    "results": "결과"
+  },
+  "steps": {
+    "sectionTitle": "단계 탐색",
+    "demoTitle": "웹3 지갑 설정",
+    "demoDescription": "사용자가 지갑 연결 프로세스를 통해 안내되도록 하세요",
+    "stepLabel": "단계 {{number}}:",
+    "items": {
+      "accountSetup": {
+        "name": "계정 설정",
+        "description": "계정 만들기"
+      },
+      "walletConnection": {
+        "name": "지갑 연결",
+        "description": "웹3 지갑 연결하기"
+      },
+      "emailSetup": {
+        "name": "이메일 설정",
+        "description": "이메일 설정을 구성하세요"
+      },
+      "complete": {
+        "name": "완료",
+        "description": "example.com 사용을 시작하세요"
+      }
+    },
+    "details": {
+      "1": "선호하는 사용자 이름과 보안 설정으로 {{emailDomain}} 계정을 생성하세요.",
+      "2": "블록체인 기능을 사용하려면 Web3 지갑(MetaMask, WalletConnect 등)을 연결하세요.",
+      "3": "이메일 설정, 알림 및 개인정보 보호 설정을 구성하세요.",
+      "4": "설정이 완료되었습니다! Web3 이메일을 보내고 받기 시작하세요."
+    }
+  },
+  "sidebar": {
+    "sectionTitle": "사이드바 탐색",
+    "cardTitle": "이메일 앱 사이드바",
+    "cardDescription": "이메일 앱을 위한 지속적인 탐색",
+    "items": {
+      "dashboard": "대시보드",
+      "inbox": "받은 메일",
+      "sent": "보내기",
+      "archive": "아카이브",
+      "settings": "설정"
+    },
+    "mainContent": "메인 콘텐츠 영역",
+    "mainContentHint": "콘텐츠는 사이드바 선택에 따라 변경됩니다"
+  },
+  "web3Patterns": {
+    "sectionTitle": "웹3 탐색 패턴",
+    "walletStatus": {
+      "title": "지갑 상태 탐색",
+      "description": "지갑 연결 상태에 맞춰 조정되는 탐색",
+      "connected": "MetaMask 연결됨",
+      "inbox": "Web3 수신함",
+      "ensProfile": "ENS 프로필",
+      "walletSettings": "지갑 설정"
+    },
+    "multiChain": {
+      "title": "멀티체인 탐색",
+      "description": "다른 블록체인 네트워크 간 탐색",
+      "ethereum": "Ethereum",
+      "solana": "Solana",
+      "polygon": "다각형",
+      "ethereumInbox": "이더리움 인보크스",
+      "ensNames": "ENS 이름",
+      "gasSettings": "가스 설정"
+    }
+  },
+  "accessibility": {
+    "sectionTitle": "접근성 가이드라인",
+    "title": "탐색 접근성",
+    "description": "모든 탐색 구성 요소가 화면 판독기 사용자와 키보드 사용자에게 접근 가능하도록 하십시오.",
+    "ariaLandmarks": "ARIA 랜드마크",
+    "keyboardNavigation": "키보드 탐색",
+    "breadcrumbsLabel": "크러스트",
+    "breadcrumbsKeys": [
+      "탭: 링크를 탐색",
+      "Enter/스페이스: 링크 활성화",
+      "스크린 리더를 위한 건너뛰기 링크"
+    ],
+    "tabsLabel": "탭",
+    "tabsKeys": [
+      "화살표 키: 탭 이동",
+      "탭: 탭 패널 입력",
+      "Enter/스페이스: 탭 활성화"
+    ]
+  },
+  "implementation": {
+    "sectionTitle": "구현 참고 사항",
+    "performanceTitle": "성능 고려 사항",
+    "performance": [
+      "가능한 경우 탐색 항목을 지연로드합니다",
+      "복잡한 네비게이션 컴포넌트에 React.memo를 사용하세요",
+      "네비게이션 메뉴에서 검색을 디바운싱",
+      "긴 탐색 목록을 위한 가상 스크롤링",
+      "핵심 탐색 경로를 미리 로드합니다"
+    ],
+    "mobileTitle": "모바일 반응성",
+    "mobile": [
+      "네비게이션을 해머버거 메뉴로 축소하기",
+      "모바일 앱에서는 하단 탐색을 사용하세요",
+      "적절한 곳에 스와이프 제스처를 구현합니다",
+      "터치 대상이 최소 44px 이상이 되도록 하세요",
+      "다양한 화면 크기와 방향에서 테스트"
+    ]
+  }
+}

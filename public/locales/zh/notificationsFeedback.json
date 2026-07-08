@@ -1,0 +1,188 @@
+{
+  "seo": {
+    "title": "通知与反馈 - 设计系统 - 内部 - {{emailDomain}}",
+    "description": "包括弹出通知、进度指示器和系统状态在内的通知和反馈组件"
+  },
+  "toasts": {
+    "copied": {
+      "title": "已复制！",
+      "message": "代码已复制到剪贴板"
+    },
+    "complete": {
+      "title": "完成！",
+      "message": "操作成功完成"
+    },
+    "success": {
+      "title": "交易已确认！",
+      "message": "您的ETH转账成功"
+    },
+    "error": {
+      "title": "交易失败",
+      "message": "交易气体不足"
+    },
+    "warning": {
+      "title": "高Gas费",
+      "message": "检测到网络拥塞",
+      "actionLabel": "调整燃气"
+    },
+    "gasAdjusted": {
+      "title": "气体调整",
+      "message": "Gas价格已更新为25 gwei"
+    },
+    "info": {
+      "title": "新功能可用",
+      "message": "现在支持多链交换"
+    }
+  },
+  "header": {
+    "badge": "通知和反馈",
+    "title": "通知与反馈系统",
+    "description": "包含弹出通知、进度指示器、交易状态更新和系统状态显示的全面通知和反馈系统，适用于Web3应用。"
+  },
+  "quickStart": {
+    "title": "快速入门",
+    "copyTooltip": "复制到剪贴板",
+    "examples": {
+      "toast": {
+        "title": "吐司通知",
+        "description": "带有自动消失和操作的临时通知"
+      },
+      "progress": {
+        "title": "进度通知",
+        "description": "显示长时间运行操作的进度"
+      },
+      "transaction": {
+        "title": "交易状态",
+        "description": "带有确认的Web3交易进度"
+      },
+      "systemStatus": {
+        "title": "系统状态指示器",
+        "description": "实时系统和连接状态"
+      }
+    }
+  },
+  "toastSection": {
+    "title": "吐司通知",
+    "demoTitle": "交互式 Toast 演示",
+    "demoDescription": "点击按钮以触发不同类型的吐司通知",
+    "buttons": {
+      "success": "成功",
+      "error": "错误",
+      "warning": "警告",
+      "info": "信息"
+    },
+    "featuresTitle": "吐司类型与功能",
+    "features": {
+      "successLabel": "成功：",
+      "successText": "交易确认，已完成的操作",
+      "errorLabel": "错误:",
+      "errorText": "失败的交易，网络错误",
+      "warningLabel": "警告:",
+      "warningText": "高额Gas费，安全警告（含操作）",
+      "infoLabel": "信息:",
+      "infoText": "新功能，系统更新（持久）",
+      "autoDismiss": "5秒后自动关闭（除非是持久的）",
+      "actionButtons": "交互式响应的可选操作按钮"
+    }
+  },
+  "progressSection": {
+    "title": "进度指示器",
+    "linear": {
+      "title": "线性进度",
+      "description": "文件上传和操作的进度条",
+      "emailSync": "邮件同步进度",
+      "fileUpload": "文件上传",
+      "uploading": "正在上传 document.pdf (2.3 MB)",
+      "simulate": "模拟进度"
+    },
+    "spinners": {
+      "title": "加载旋转器",
+      "description": "各种加载状态和加载指示器",
+      "loadingTransactions": "正在加载交易...",
+      "connectingWallet": "连接钱包中...",
+      "syncingBlockchain": "同步区块链数据..."
+    }
+  },
+  "transactionSection": {
+    "title": "Web3交易状态",
+    "trackerTitle": "交易追踪器",
+    "trackerDescription": "实时交易状态及确认进度",
+    "confirmations": "确认",
+    "confirmationsLabel": "确认",
+    "statuses": {
+      "pending": "待处理",
+      "confirming": "确认",
+      "confirmed": "已确认",
+      "failed": "失败"
+    },
+    "types": {
+      "sendEth": "发送 ETH",
+      "swapTokens": "兑换代币",
+      "approveToken": "批准代币"
+    },
+    "statesTitle": "交易状态",
+    "states": {
+      "pendingLabel": "待处理:",
+      "pendingText": "交易已提交至内存池",
+      "confirmingLabel": "确认：",
+      "confirmingText": "包含在区块中（显示进度）",
+      "confirmedLabel": "已确认:",
+      "confirmedText": "已达到所需的确认数量",
+      "failedLabel": "失败：",
+      "failedText": "交易被撤销或拒绝"
+    }
+  },
+  "systemStatusSection": {
+    "title": "系统状态与指示器",
+    "connection": {
+      "title": "连接状态",
+      "description": "实时连接和系统状态",
+      "systemStatus": "系统状态",
+      "online": "所有系统正常运行",
+      "degraded": "部分服务不可用",
+      "offline": "系统维护",
+      "statusLabels": {
+        "online": "在线",
+        "degraded": "退化",
+        "offline": "离线"
+      },
+      "internetConnection": "互联网连接",
+      "connected": "已连接",
+      "walletConnection": "钱包连接",
+      "metaMask": "MetaMask",
+      "ethereumNetwork": "以太坊网络",
+      "mainnet": "主网",
+      "securityStatus": "安全状态",
+      "warning": "警告"
+    },
+    "badges": {
+      "title": "通知徽章",
+      "description": "计数指标和状态徽章",
+      "countBadges": "计数徽章",
+      "statusIndicators": "状态指示器",
+      "online": "在线",
+      "away": "远处",
+      "offline": "离线"
+    }
+  },
+  "contextualFeedback": {
+    "title": "上下文反馈",
+    "smartTitle": "智能反馈模式",
+    "smartDescription": "根据用户操作和系统状态自适应的上下文感知反馈",
+    "actionFeedback": "操作反馈",
+    "emailSent": "邮件发送成功",
+    "autoSave": "自动保存已启用",
+    "draftSaved": "草稿已本地保存",
+    "smartSuggestions": "智能建议",
+    "enable2fa": {
+      "title": "为获得更好的安全性，请启用2FA",
+      "description": "推荐用于钱包保护",
+      "action": "启用"
+    },
+    "backupSeed": {
+      "title": "备份您的助记短语",
+      "description": "保护您的钱包恢复",
+      "action": "备份"
+    }
+  }
+}

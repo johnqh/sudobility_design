@@ -1,0 +1,291 @@
+{
+  "seo": {
+    "title": "Cores - Sistema de Design - Interno - {{emailDomain}}",
+    "description": "Mostrário completo de paleta de cores e variações para o sistema de design"
+  },
+  "nav": {
+    "viewTypography": "Ver Tipografia"
+  },
+  "header": {
+    "badge": "Sistema de cores",
+    "title": "Paleta de cores e uso",
+    "description": "Sistema de cores completo usado em toda a aplicação {{appName}} com exemplos de uso e amostras de código. Clique em qualquer cor para copiar seu valor hexadecimal para a área de transferência."
+  },
+  "swatch": {
+    "copyAria": "Copie o valor de cor {{name}} {{value}}"
+  },
+  "codeExample": {
+    "preview": "Pré-visualização",
+    "usage": "Uso"
+  },
+  "quickStart": {
+    "title": "Início Rápido - Exemplos Comuns de Uso",
+    "description": "Exemplos de código prontos para uso para os padrões de design mais comuns. Copie e cole diretamente em seus componentes.",
+    "primaryButton": {
+      "title": "Botão principal",
+      "action": "Ação principal"
+    },
+    "successAlert": {
+      "title": "Alerta de Sucesso",
+      "heading": "Sucesso!",
+      "body": "Sua ação foi concluída com sucesso."
+    },
+    "blockchainBadge": {
+      "title": "Distintivo de Blockchain"
+    },
+    "formInput": {
+      "title": "Entrada de formulário",
+      "placeholder": "Insira seu e-mail..."
+    }
+  },
+  "palettes": {
+    "title": "Paletas de cor",
+    "description": "Paletas de cores base organizadas por matiz. Cada paleta inclui tons de 50 (mais claro) a 950 (mais escuro).",
+    "items": {
+      "blue": {
+        "name": "Azul (Principal)",
+        "description": "Paleta de cores principais da marca"
+      },
+      "purple": {
+        "name": "Roxo (Secundário)",
+        "description": "Paleta de cores da marca secundária"
+      },
+      "neutral": {
+        "name": "Neutro (escala de cinza)",
+        "description": "Cores de plano de fundo, texto e borda"
+      },
+      "red": {
+        "name": "Vermelho (Erro)",
+        "description": "Cores de erro e ação destrutiva"
+      },
+      "green": {
+        "name": "Verde (Sucesso)",
+        "description": "Sucesso e cores de ação positiva"
+      },
+      "amber": {
+        "name": "Âmbar (Aviso)",
+        "description": "Cores de aviso e cautela"
+      },
+      "orange": {
+        "name": "Laranja",
+        "description": "Cores de destaque e realce"
+      }
+    }
+  },
+  "networks": {
+    "ethereum": "Ethereum",
+    "solana": "Solana",
+    "polygon": "Polígono"
+  },
+  "web3": {
+    "title": "Cores da Rede Web3",
+    "description": "Cores que representam diferentes redes de blockchain e elementos de Web3.",
+    "usage": {
+      "ethereum": "Marca da rede Ethereum",
+      "solana": "marca da rede Solana",
+      "polygon": "Marca da rede Polygon"
+    },
+    "code": {
+      "title": "Uso de cores no Web3",
+      "description": "Como usar as cores da rede Web3 nos componentes"
+    }
+  },
+  "semantic": {
+    "title": "Cores semânticas",
+    "description": "Tokens de cor semântica que se adaptam aos temas claro e escuro. Eles fornecem significado consistente em toda a interface.",
+    "lightMode": "Modo claro",
+    "darkMode": "Modo escuro",
+    "categories": {
+      "text": {
+        "name": "Cores do texto",
+        "colors": {
+          "primaryText": {
+            "name": "Texto principal",
+            "usage": "Texto principal do conteúdo"
+          },
+          "secondaryText": {
+            "name": "Texto secundário",
+            "usage": "Texto de apoio"
+          },
+          "linkText": {
+            "name": "Texto do link",
+            "usage": "Links interativos"
+          }
+        }
+      },
+      "background": {
+        "name": "Cores de plano de fundo",
+        "colors": {
+          "primaryBackground": {
+            "name": "Plano de fundo primário",
+            "usage": "Planos de fundo da página principal"
+          },
+          "secondaryBackground": {
+            "name": "Plano de fundo secundário",
+            "usage": "Planos de fundo de cartas"
+          },
+          "elevatedBackground": {
+            "name": "Plano de fundo elevado",
+            "usage": "Modais e sobreposições"
+          }
+        }
+      },
+      "state": {
+        "name": "Cores do Estado",
+        "colors": {
+          "success": {
+            "name": "Sucesso",
+            "usage": "Mensagens de sucesso e ações"
+          },
+          "warning": {
+            "name": "Aviso",
+            "usage": "Mensagens de aviso"
+          },
+          "error": {
+            "name": "Erro",
+            "usage": "Mensagens de erro e ações destrutivas"
+          },
+          "info": {
+            "name": "Informações",
+            "usage": "Mensagens informativas"
+          }
+        }
+      }
+    },
+    "code": {
+      "title": "Uso de cores semânticas",
+      "description": "Como usar cores semânticas do sistema de design",
+      "preview": {
+        "success": "✓ Mensagem de sucesso",
+        "error": "✗ Mensagem de erro",
+        "warning": "⚠ Mensagem de aviso"
+      }
+    }
+  },
+  "components": {
+    "title": "Cores de componentes e exemplos de uso",
+    "description": "Combinações de cores pré-configuradas para componentes de interface comuns com suporte integrado a passar o mouse, foco e temas.",
+    "exampleHeading": "{{name}} Exemplos",
+    "liveExamples": "Exemplos ao vivo",
+    "alertMessage": "mensagem {{name}}",
+    "interactiveHeading": "Exemplos interativos de {{name}}:",
+    "createPreview": {
+      "button": {
+        "primary": "Ação principal",
+        "secondary": "Ação secundária",
+        "destructive": "Excluir item"
+      },
+      "alert": {
+        "infoLabel": "Informações:",
+        "infoText": "Este é um aviso informativo",
+        "successLabel": "Sucesso:",
+        "successText": "Operação concluída com sucesso",
+        "errorLabel": "Erro:",
+        "errorText": "Algo deu errado"
+      }
+    },
+    "items": {
+      "button": {
+        "name": "Botão",
+        "createTitle": "Como criar botões",
+        "createDescription": "Guia passo a passo para criar botões com cores apropriadas",
+        "variantsTitle": "Variantes e estados do botão",
+        "variantsDescription": "Todas as variantes de cor de botão com estados de passagem e foco",
+        "variants": {
+          "primary": "Principal",
+          "secondary": "Secundário",
+          "destructive": "Destrutivo",
+          "success": "Sucesso"
+        }
+      },
+      "badge": {
+        "name": "Emblema",
+        "createTitle": "Como criar badges",
+        "createDescription": "Guia passo a passo para criar crachás com cores apropriadas",
+        "variantsTitle": "Variantes e estados dos crachás",
+        "variantsDescription": "Todos os variantes de cor de badge com estados de passagem e foco",
+        "variants": {
+          "default": "Padrão",
+          "primary": "Principal",
+          "success": "Sucesso",
+          "warning": "Aviso",
+          "error": "Erro"
+        }
+      },
+      "alert": {
+        "name": "Aviso",
+        "createTitle": "Como criar alertas",
+        "createDescription": "Guia passo a passo para criar alertas com cores apropriadas",
+        "variantsTitle": "Variantes e Estados de Alerta",
+        "variantsDescription": "Todas as variantes de cor de alerta com estados de passar o mouse e foco",
+        "variants": {
+          "info": "Informações",
+          "success": "Sucesso",
+          "warning": "Aviso",
+          "error": "Erro"
+        }
+      }
+    }
+  },
+  "practical": {
+    "title": "Exemplos práticos de uso",
+    "description": "Exemplos do mundo real que mostram como combinar cores para padrões comuns de interface.",
+    "form": {
+      "title": "Formulário com estados codificados por cor",
+      "description": "Como usar cores para validação de formulários e estados",
+      "emailLabel": "E-mail (válido)",
+      "emailValid": "✓ O e-mail é válido",
+      "passwordLabel": "Senha (Erro)",
+      "passwordError": "✗ A senha deve ter pelo menos 8 caracteres",
+      "submit": "Enviar formulário"
+    },
+    "card": {
+      "title": "Cartão com cores de status",
+      "description": "Como usar cores em componentes de cartão com diferentes estados",
+      "apiServer": "Servidor de API",
+      "online": "online",
+      "operational": "Todos os sistemas operacionais",
+      "database": "Banco de dados",
+      "maintenance": "manutenção",
+      "maintenanceProgress": "Manutenção agendada em andamento"
+    },
+    "navigation": {
+      "title": "Navegação com Estados de Cor",
+      "description": "Como usar cores para estados de navegação e itens ativos",
+      "dashboard": "Painel de controle",
+      "users": "Utilizadores",
+      "settings": "Configurações"
+    },
+    "progress": {
+      "title": "Indicadores de Progresso com Cores",
+      "description": "Como usar cores para barras de progresso e estados de carregamento",
+      "label": "Progresso",
+      "complete75": "75 % concluído",
+      "success": "Sucesso",
+      "complete100": "100% concluído"
+    }
+  },
+  "guidelines": {
+    "title": "Diretrizes de uso",
+    "doTitle": "✓ Fazer",
+    "do": [
+      "Use cores semânticas para significado consistente",
+      "Prefira cores de componente para elementos da interface",
+      "Teste de cores nos modos claro e escuro",
+      "Certifique-se de ter contraste suficiente para acessibilidade",
+      "Use as funções de utilidade de cor para consistência"
+    ],
+    "dontTitle": "✗ Não",
+    "dont": [
+      "Use valores hexadecimais brutos diretamente nos componentes",
+      "Misture diferentes sistemas de cor",
+      "Crie cores personalizadas sem aprovação de design",
+      "Use cores que não funcionam no modo escuro",
+      "Ignorar os requisitos de contraste de acessibilidade"
+    ]
+  },
+  "copyInstructions": {
+    "title": "Clique para copiar os valores",
+    "description": "Clique em qualquer amostra de cor para copiar seu valor hex, ou use o botão copiar em exemplos de código para copiar o código de uso"
+  }
+}

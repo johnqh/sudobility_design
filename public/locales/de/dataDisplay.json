@@ -1,0 +1,202 @@
+{
+  "seo": {
+    "title": "Datendarstellung - Design-System - Intern - {{emailDomain}}",
+    "description": "Datendarstellungskomponenten wie Tabellen, Listen, Raster und Code-Anzeigen"
+  },
+  "header": {
+    "badge": "Datenanzeigekomponenten",
+    "title": "Datendarstellungssystem",
+    "intro": "Umfassende Datenanzeigekomponenten für Tabellen, Listen, Raster und Code. Optimiert für Web3-Daten wie Adressen, Transaktionen und Blockchainedaten."
+  },
+  "quickStart": {
+    "heading": "Schnellstart",
+    "copy": "In die Zwischenablage kopieren",
+    "examples": {
+      "dataTable": {
+        "title": "Datentabelle",
+        "description": "Sortierbare Tabelle mit Hover-Zuständen und Auswahl"
+      },
+      "emailList": {
+        "title": "E-Mail-Liste",
+        "description": "Interaktive Liste mit Lese-/Nicht-Lesezuständen"
+      },
+      "keyValue": {
+        "title": "Schlüssel-Wert-Anzeige",
+        "description": "Strukturierte Daten in Schlüssel-Wert-Paaren anzeigen"
+      },
+      "statsGrid": {
+        "title": "Statistik-Raster",
+        "description": "Metriken und Statistiken mit Trendindikatoren anzeigen"
+      }
+    }
+  },
+  "tables": {
+    "heading": "Datentabellen",
+    "cardTitle": "Interaktive Kontakt-Tabelle",
+    "cardDescription": "Sortierbare Tabelle mit Auswahl- und Hover-Zuständen",
+    "columns": {
+      "name": "Name",
+      "email": "E-Mail",
+      "balance": "Ausgleich",
+      "status": "Status",
+      "date": "Datum"
+    },
+    "status": {
+      "active": "Aktiv",
+      "pending": "Ausstehend",
+      "inactive": "Inaktiv"
+    }
+  },
+  "lists": {
+    "heading": "Listen",
+    "cardTitle": "E-Mail-Liste",
+    "cardDescription": "Interaktive E-Mail-Liste mit Lese-/Nichtgelesen-Status und Aktionen",
+    "emails": {
+      "1": {
+        "subject": "Transaktion bestätigt",
+        "preview": "Ihre Transaktion wurde auf der Blockchain bestätigt..."
+      },
+      "2": {
+        "subject": "Neuer NFT-Abwurf-Warnung",
+        "preview": "Aufregende neue Kollektion kommt morgen heraus..."
+      },
+      "3": {
+        "subject": "Sicherheitsaktualisierung der Brieftasche",
+        "preview": "Wichtige Sicherheitsverbesserungen für Ihre Brieftasche..."
+      },
+      "4": {
+        "subject": "DeFi-Zinnsbericht",
+        "preview": "Ihr monatlicher Yield-Farming-Überblick..."
+      },
+      "5": {
+        "subject": "DAO-Vorschlag #42",
+        "preview": "Stimme ab auf den neuesten Gemeinschaftsvorschlag..."
+      }
+    }
+  },
+  "gridLayouts": {
+    "heading": "Raster-Layouts",
+    "statsGrid": {
+      "heading": "Statistik-Grid",
+      "totalEmails": "Gesamtanzahl E-Mails",
+      "totalEmailsChange": "12,5 % vom letzten Monat",
+      "activeContacts": "Aktive Kontakte",
+      "activeContactsChange": "5 neu diese Woche",
+      "storageUsed": "Speicherplatz verwendet",
+      "storageUsedChange": "15 % verbleibend"
+    },
+    "cardGrid": {
+      "heading": "Kartenraster",
+      "cardTitle": "Karten-Titel {{number}}",
+      "cardContent": "Karteninhalt mit relevanten Informationen und Aktionen."
+    }
+  },
+  "keyValue": {
+    "heading": "Schlüssel-Wert-Anzeige",
+    "userProfile": {
+      "heading": "Benutzerprofil",
+      "fullName": "Vollständiger Name",
+      "ensName": "ENS-Name",
+      "walletAddress": "Brieftaschenadresse",
+      "email": "E-Mail",
+      "accountStatus": "Kontostatus",
+      "verified": "Verifiziert"
+    },
+    "transactionDetails": {
+      "heading": "Transaktionsdetails",
+      "transactionHash": "Transaktions-Hash",
+      "blockNumber": "Block-Nummer",
+      "gasUsed": "Gasverbrauch",
+      "status": "Status",
+      "success": "Erfolg"
+    }
+  },
+  "codeDisplay": {
+    "heading": "Code-Anzeige",
+    "inlineCode": {
+      "heading": "Inline-Code",
+      "textStart": "Verwenden Sie \"",
+      "textMiddle": " für Inline-Code. Web3-Adressen wie ",
+      "textMiddle2": " und Transaktionshashes wie ",
+      "textEnd": "haben speziellen Stil."
+    },
+    "codeBlock": {
+      "heading": "Codeblock"
+    }
+  },
+  "timeline": {
+    "heading": "Zeitleiste",
+    "cardTitle": "Aktivitätszeitachse",
+    "items": {
+      "1": {
+        "title": "Konto erstellt",
+        "description": "Willkommen auf example.com"
+      },
+      "2": {
+        "title": "Brieftasche verbunden",
+        "description": "MetaMask-Wallet erfolgreich verknüpft"
+      },
+      "3": {
+        "title": "Erste E-Mail gesendet",
+        "description": "Willkommens-E-Mail an das Team gesendet"
+      },
+      "4": {
+        "title": "ENS-Name registriert",
+        "description": "alice.eth registriert"
+      },
+      "5": {
+        "title": "Premium-Abo",
+        "description": "Upgrade auf Premium-Plan ausstehend"
+      }
+    }
+  },
+  "emptyStates": {
+    "heading": "Leere Zustände",
+    "noEmails": {
+      "title": "Keine E-Mails",
+      "description": "Fangen Sie an, indem Sie Ihre erste E-Mail verfassen",
+      "action": "E-Mail verfassen"
+    },
+    "noData": {
+      "title": "Keine Daten verfügbar",
+      "description": "Derzeit gibt es keine Aufzeichnungen zum Anzeigen"
+    }
+  },
+  "web3": {
+    "heading": "Web3-Datenmuster",
+    "cardTitle": "Blockchain-Datenanzeige",
+    "cardDescription": "Spezialisierte Muster zur Anzeige von Web3-Daten",
+    "addressDisplay": {
+      "heading": "Adressenanzeige",
+      "full": "Voll:",
+      "truncated": "Abgeschnitten:",
+      "ens": "ENS:"
+    },
+    "tokenBalances": {
+      "heading": "Token-Bestände"
+    }
+  },
+  "implementationNotes": {
+    "heading": "Implementierungshinweise",
+    "performance": {
+      "heading": "Leistungs-Tipps",
+      "items": [
+        "• Verwenden Sie virtuelles Scrollen für große Datensätze",
+        "• Paginierung für Tabellen mit mehr als 100 Zeilen implementieren",
+        "• Bilder und Avatare in Listen lazy loaden",
+        "• Teure Berechnungen speichern",
+        "• Verwenden Sie Skeleton-Lader während des Datenabrufs"
+      ]
+    },
+    "accessibility": {
+      "heading": "Barrierefreiheit",
+      "items": [
+        "• Verwenden Sie semantisches HTML (table, thead, tbody)",
+        "• Fügen Sie aria-labels für sortierbare Spalten hinzu",
+        "• Stellen Sie die Tastaturnavigation für Tabellen sicher",
+        "• Geben Sie Textalternativen für visuelle Indikatoren an",
+        "• Verwenden Sie geeignete ARIA-Rollen für Listen"
+      ]
+    }
+  }
+}

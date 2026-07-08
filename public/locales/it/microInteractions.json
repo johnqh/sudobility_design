@@ -1,0 +1,82 @@
+{
+  "seo": {
+    "title": "Microinterazioni e animazioni - Sistema di design - Interno - {{emailDomain}}",
+    "description": "Completo sistema di animazione con effetti al passaggio del mouse, transizioni e interazioni specifiche per Web3"
+  },
+  "header": {
+    "badge": "Micro-interazioni e animazioni",
+    "title": "Micro-interazioni e animazioni",
+    "description": "Comprehensive system di animazione con effetti al passaggio del mouse, stati di caricamento, transizioni e interazioni specifiche per Web3. Tutte le animazioni rispettano le preferenze di movimento dell'utente e offrono esperienze utente fluide e gradevoli."
+  },
+  "stats": {
+    "variants": "Varianti di animazione",
+    "performance": "Prestazioni fluide",
+    "motionSafe": "Sicurezza Movimento",
+    "specialized": "Specializzato"
+  },
+  "hover": {
+    "title": "Effetti al passaggio del mouse",
+    "description": "Effetti hover sottili ma coinvolgenti per pulsanti, carte ed elementi interattivi.",
+    "buttonEffectsTitle": "Effetti di passaggio del mouse sul pulsante",
+    "liftEffect": "Effetto di sollevamento",
+    "glowEffect": "Effetto luminoso",
+    "scaleEffect": "Effetto scala",
+    "shimmerEffect": "Effetto scintillante",
+    "cardEffectsTitle": "Effetti di passaggio del mouse sulle carte",
+    "cardSubtle": "Effetto hover sottile - si solleva dolcemente",
+    "cardGlow": "Effetto hover luminoso - aggiunge un bagliore morbido"
+  },
+  "loading": {
+    "title": "Stati di caricamento",
+    "description": "Animazioni di caricamento e indicatori di avanzamento che tengono gli utenti coinvolti.",
+    "spinnersTitle": "Spinner",
+    "interactiveDemoTitle": "Demo interattiva",
+    "loadingLabel": "Caricamento...",
+    "startLoading": "Inizia il caricamento",
+    "simulateProgress": "Simula il progresso",
+    "progress": "Avanzamento: {{progress}}%"
+  },
+  "web3": {
+    "title": "Animazioni Web3",
+    "description": "Animazioni specializzate per interazioni Web3, inclusi collegamenti al portafoglio e stati delle transazioni.",
+    "walletStatesTitle": "Stati di connessione del portafoglio",
+    "connecting": "Connessione in corso...",
+    "connected": "Connesso",
+    "connectWallet": "Collega portafoglio",
+    "statusLabel": "Stato:",
+    "transactionStatesTitle": "Stati delle transazioni",
+    "transactionPending": "Transazione in sospeso",
+    "transactionConfirmed": "Transazione confermata",
+    "transactionFailed": "Transazione fallita"
+  },
+  "motion": {
+    "title": "Preferenze di movimento",
+    "description": "Tutte le animazioni rispettano le preferenze di movimento dell'utente e offrono alternative per l'accessibilità.",
+    "reducedMotionTitle": "Supporto per movimento ridotto",
+    "respectsPreferences": "Rispetta le preferenze di movimento",
+    "fadeOnly": "Animazione solo sfumatura",
+    "scaleOnly": "Animazione solo di scala",
+    "safeAnimationsTitle": "Animazioni sicure",
+    "safeFade": "Transizione morbida di dissolvenza",
+    "safeSlide": "Transizione sicura della diapositiva"
+  },
+  "bestPractices": {
+    "title": "Best practice per le animazioni",
+    "doTitle": "✅ Fallo questo",
+    "do": [
+      "Mantieni le animazioni sotto i 300 ms per le micro-interazioni.",
+      "Utilizza le funzioni di easing per un movimento naturale",
+      "Fornisci un feedback immediato sulle azioni dell'utente",
+      "Rispettare le impostazioni preferite per il movimento ridotto",
+      "Utilizzate stati di caricamento per le operazioni che durano più di 500 ms"
+    ],
+    "avoidTitle": "❌ Evita questo",
+    "avoid": [
+      "Eccesso di animazioni - meno è meglio",
+      "Lunghe animazioni di caricamento senza avanzamento",
+      "Animazioni che interferiscono con la funzionalità",
+      "Animazioni di riproduzione automatica al caricamento della pagina",
+      "Animazioni complesse per utenti con sensibilità al movimento"
+    ]
+  }
+}

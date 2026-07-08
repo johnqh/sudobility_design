@@ -1,0 +1,133 @@
+{
+  "header": {
+    "title": "Superpositions et portails",
+    "description": "Système de superposition complet incluant les fenêtres modales, les listes déroulantes, les infobulles, les panneaux et les états de chargement, avec une gestion appropriée de l'index z et de l'accessibilité."
+  },
+  "common": {
+    "interactiveExample": "Exemple interactif",
+    "usage": "Utilisation"
+  },
+  "dropdownItems": {
+    "profile": "Voir le profil",
+    "settings": "Paramètres",
+    "logout": "Se déconnecter"
+  },
+  "alerts": {
+    "profile": "Profil cliqué",
+    "settings": "Paramètres cliqués",
+    "logout": "Déconnexion cliquée"
+  },
+  "modals": {
+    "title": "Modaux",
+    "description": "Boîtes de dialogue modales avec flou de fond, états d'animation et plusieurs tailles. Inclut la gestion du focus et la navigation au clavier.",
+    "openButton": "Ouvrir le modal",
+    "exampleTitle": "Modale exemple",
+    "exampleBody": "Ceci est une fenêtre modale exemple utilisant le nouveau système de conception d'overlay. Elle inclut une gestion appropriée du fond, la gestion du focus et les états d'animation.",
+    "featuresTitle": "Fonctionnalités",
+    "features": [
+      "Effet de flou d'arrière-plan",
+      "Piège de focalisation et restauration",
+      "Navigation au clavier",
+      "Plusieurs variantes de taille"
+    ],
+    "accessibilityTitle": "Accessibilité",
+    "accessibility": [
+      "Libellés et rôles ARIA",
+      "Gestion de la touche Échap",
+      "Prise en charge du lecteur d'écran",
+      "Gestion de l'attention"
+    ],
+    "cancel": "Annuler",
+    "confirm": "Confirmer"
+  },
+  "dropdowns": {
+    "title": "Listes déroulantes",
+    "description": "Menus déroulants avec plusieurs options de positionnement, icônes, séparateurs et navigation au clavier.",
+    "actionsButton": "Actions",
+    "userMenuButton": "Menu utilisateur"
+  },
+  "tooltips": {
+    "title": "Infobulles",
+    "description": "Infobulles légères avec plusieurs options de positionnement et variantes de couleur.",
+    "hoverButton": "Passez le curseur pour afficher l'astuce {{position}}",
+    "tooltipOn": "Infobulle sur {{position}}"
+  },
+  "loading": {
+    "title": "Chargement des superpositions",
+    "description": "États de chargement en plein écran et en ligne avec flou de fond et messages personnalisables.",
+    "showButton": "Afficher le masque de chargement",
+    "inlineLabel": "État de chargement en ligne :",
+    "message": "Traitement de votre demande..."
+  },
+  "sheets": {
+    "title": "Feuilles (draps inférieurs)",
+    "description": "Feuilles inférieures et feuilles d'action orientées vers les mobiles qui glissent depuis le bas de l'écran."
+  },
+  "contextMenus": {
+    "title": "Menus contextuels",
+    "description": "Menus contextuels avec clic droit, raccourcis clavier et sous-menus imbriqués."
+  },
+  "portal": {
+    "title": "Gestion des portails",
+    "description": "Système de gestion de l'indice Z et outils du portail pour un empilement de superposition approprié.",
+    "zIndexLayersTitle": "Niveaux d'index Z",
+    "focusManagementTitle": "Gestion de l'attention",
+    "layers": {
+      "backdrop": "Fond",
+      "popover": "Pop-up",
+      "dropdown": "Liste déroulante",
+      "tooltip": "Tooltip",
+      "modal": "Modal",
+      "sheet": "Feuille",
+      "contextMenu": "Menu contextuel",
+      "loading": "Chargement",
+      "notification": "Notification"
+    }
+  },
+  "animationStates": {
+    "title": "États d'animation",
+    "description": "États d'animation cohérents pour les transitions d'entrée/sortie sur tous les composants de superposition.",
+    "availableStatesTitle": "États disponibles",
+    "modalStatesTitle": "États modaux",
+    "dropdownStatesTitle": "États du menu déroulant"
+  },
+  "bestPractices": {
+    "title": "Meilleures pratiques",
+    "accessibilityTitle": "Accessibilité",
+    "accessibility": [
+      "Fournissez toujours des libellés ARIA et des rôles appropriés",
+      "Mettre en œuvre le verrouillage de focus pour les modaux",
+      "Prise en charge de la navigation au clavier (Tab, Échap, touches fléchées)",
+      "Maintenir l'ordre de focus et la restauration",
+      "Utilisez des éléments HTML sémantiques",
+      "Fournissez des annonces pour lecteurs d'écran"
+    ],
+    "performanceTitle": "Performance",
+    "performance": [
+      "Utilisez les portails React pour un rendu DOM approprié",
+      "Mettez en œuvre le chargement différé pour les superpositions lourdes",
+      "Nettoyez les écouteurs d'événements lors du démontage",
+      "Utilisez les transformations CSS pour les animations",
+      "Évitez les filtres arrière complexes sur mobile",
+      "Réduire le blocage de mise en page"
+    ],
+    "uxGuidelinesTitle": "Guides UX",
+    "uxGuidelines": [
+      "Maintenez les modaux centrés sur des tâches individuelles",
+      "Fournissez des affords de fermeture clairs",
+      "Utilisez les types de superposition appropriés pour le contexte",
+      "Maintenez un déclenchement d'animation cohérent",
+      "Tenez compte des contraintes du viewport mobile",
+      "Évitez les interactions imbriquées des superpositions"
+    ],
+    "technicalTitle": "Technique",
+    "technical": [
+      "Utilisez un système de superposition de z-index approprié",
+      "Gérer correctement le verrouillage du défilement du corps",
+      "Prend en charge les interactions par clic et au clavier",
+      "Testez sur différentes tailles de viewport",
+      "Considérez les préférences de mouvement réduit",
+      "Mettre en œuvre des limites d'erreur appropriées"
+    ]
+  }
+}

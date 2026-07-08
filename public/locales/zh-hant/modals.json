@@ -1,0 +1,197 @@
+{
+  "seo": {
+    "title": "模態框 - 設計系統 - 內部 - {{emailDomain}}",
+    "description": "具備 Web3 模式和可存取性功能的模態和對話方塊元件"
+  },
+  "header": {
+    "badge": "對話框與彈窗",
+    "title": "模態組件",
+    "description": "包含Web3整合模式、無障礙功能和響應式行為的全面模態和對話系統。非常適合錢包連接、交易確認和使用者互動。"
+  },
+  "common": {
+    "copyToClipboard": "複製到剪貼簿",
+    "cancel": "取消"
+  },
+  "quickStart": {
+    "heading": "快速入門",
+    "examples": {
+      "basic": {
+        "title": "基本彈窗",
+        "description": "帶標題、內容和頁腳的標準模態框"
+      },
+      "confirmation": {
+        "title": "確認對話框",
+        "description": "帶有操作按鈕的簡單確認對話框"
+      },
+      "wallet": {
+        "title": "Web3 錢包連接",
+        "description": "錢包選擇和連接的彈窗"
+      },
+      "transaction": {
+        "title": "交易狀態",
+        "description": "顯示交易進度和狀態的模態框"
+      }
+    }
+  },
+  "demos": {
+    "heading": "互動式示範",
+    "cards": {
+      "simpleModal": {
+        "title": "基本彈窗",
+        "description": "帶標題、內容和頁腳部分的標準模態框。"
+      },
+      "confirmationModal": {
+        "title": "確認對話框",
+        "description": "帶有破壞性操作的簡單確認對話框。"
+      },
+      "walletModal": {
+        "title": "錢包連接",
+        "description": "Web3錢包選擇和連接介面。"
+      },
+      "transactionModal": {
+        "title": "交易狀態",
+        "description": "交易進度和狀態反饋彈窗。"
+      },
+      "formModal": {
+        "title": "表單彈窗",
+        "description": "包含表單元素和驗證的模態框。"
+      },
+      "settingsModal": {
+        "title": "設定面板",
+        "description": "用於複雜設定和首選項的大彈窗。"
+      }
+    }
+  },
+  "sizes": {
+    "heading": "尺寸變體",
+    "availableTitle": "可用尺寸",
+    "availableDescription": "根據您的內容需求選擇合適的模態框大小。",
+    "boxLabel": "{{name}} 模態框 ({{maxWidth}})",
+    "names": {
+      "small": "小",
+      "medium": "Medium",
+      "large": "大",
+      "extraLarge": "特大號"
+    }
+  },
+  "web3": {
+    "heading": "Web3 集成模式",
+    "walletFlow": {
+      "title": "錢包連接流程",
+      "description": "透過選擇提供者完成錢包連接體驗。"
+    },
+    "transactionConfirmation": {
+      "title": "交易確認",
+      "description": "交易詳情和確認介面。"
+    }
+  },
+  "accessibility": {
+    "heading": "無障礙指南",
+    "ariaTitle": "ARIA 屬性與最佳實踐",
+    "ariaDescription": "遵循這些指南，以確保您的模態框對所有使用者都可存取。",
+    "requiredAria": "必需的 ARIA 屬性",
+    "focusManagement": "注意力管理",
+    "focusItems": [
+      "打開模態框時，焦點應自動移動到第一個可聚焦元素上",
+      "標籤導航應被限制在模態框內",
+      "模態框關閉時，焦點應返回到觸發元素",
+      "ESC 鍵應關閉模態框"
+    ],
+    "screenReader": "螢幕閱讀器支援",
+    "screenReaderItems": [
+      "使用語意化HTML元素（button、form等）",
+      "為所有互動式元素提供清晰、描述性的標籤。",
+      "使用即時區域通告模態狀態變更"
+    ]
+  },
+  "implementation": {
+    "heading": "實作注意事項",
+    "portalTitle": "React Portal 使用",
+    "portalDescription": "在門戶中渲染模態框，以避免z-index問題並確保正確的層疊順序。",
+    "animationTitle": "動畫考慮事項",
+    "animationDescription": "使用 CSS 動畫或 Framer Motion 等程式庫來實現平滑的模態框過渡。",
+    "animationItems": [
+      "• 叠加淡入淡出",
+      "• 縮放或滑動以查看模態內容",
+      "• 尊重用戶的運動偏好",
+      "• 保持動畫在300毫秒以下"
+    ]
+  },
+  "simpleModal": {
+    "title": "簡單模態框範例",
+    "body": "這是一個帶有標準標題、內容和頁腳部分的基本彈窗。它展示了典型的彈窗結構和樣式。",
+    "hint": "點擊模態框外部或按下關閉按鈕以關閉它。",
+    "gotIt": "明白"
+  },
+  "confirmationModal": {
+    "title": "刪除項目",
+    "body": "您確定要刪除此項目嗎？此操作無法撤銷。",
+    "delete": "刪除"
+  },
+  "walletModal": {
+    "title": "連接錢包",
+    "choose": "選擇一個錢包以連接到 {{emailDomain}} 平台",
+    "metamask": "MetaMask",
+    "metamaskDescription": "流行的瀏覽器擴展",
+    "walletConnect": "WalletConnect",
+    "walletConnectDescription": "使用行動錢包掃描",
+    "phantom": "幻影",
+    "phantomDescription": "Solana 錢包"
+  },
+  "transactionModal": {
+    "title": {
+      "idle": "發送交易",
+      "pending": "交易待處理",
+      "confirming": "確認交易",
+      "success": "交易成功",
+      "error": "交易失敗"
+    },
+    "description": {
+      "idle": "查看交易詳情並確認以繼續。",
+      "pending": "請在您的錢包中確認交易...",
+      "confirming": "等待區塊鏈確認...",
+      "success": "您的交易已成功完成。",
+      "error": "交易被拒絕或失敗。請重試。"
+    },
+    "amount": "金額：",
+    "gasFee": "Gas費：",
+    "total": "總計：",
+    "confirm": "確認交易",
+    "close": "關閉"
+  },
+  "formModal": {
+    "title": "聯絡表單",
+    "firstName": "名字",
+    "firstNamePlaceholder": "請輸入您的名字",
+    "lastName": "姓",
+    "lastNamePlaceholder": "輸入您的姓氏",
+    "email": "電子郵件地址",
+    "emailPlaceholder": "輸入您的電子郵件地址",
+    "message": "訊息",
+    "messagePlaceholder": "輸入您的訊息...",
+    "send": "發送訊息"
+  },
+  "settingsModal": {
+    "title": "設定與偏好",
+    "account": "帳戶設定",
+    "emailNotifications": "電子郵件通知",
+    "emailNotificationsDescription": "接收有關您帳戶活動的通知",
+    "twoFactor": "雙因素認證",
+    "twoFactorDescription": "為您的帳戶增加額外的安全層",
+    "privacy": "隱私權設定",
+    "profileVisibility": "個人資料可見性",
+    "visibilityPublic": "公開",
+    "visibilityFriends": "僅限好友",
+    "visibilityPrivate": "私人",
+    "dataSharing": "資料共享",
+    "analyticsConsent": "允許分析數據收集",
+    "thirdPartyConsent": "與第三方共享使用資料",
+    "appearance": "外觀",
+    "theme": "主題",
+    "themeLight": "光",
+    "themeDark": "黑暗",
+    "themeAuto": "自動",
+    "resetDefaults": "還原預設設定",
+    "saveChanges": "儲存變更"
+  }
+}

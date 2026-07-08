@@ -1,0 +1,126 @@
+{
+  "seo": {
+    "title": "Thẻ - Hệ thống thiết kế - Nội bộ - {{emailDomain}}",
+    "description": "Thư viện thành phần thẻ hoàn chỉnh với bố cục, biến thể và mẫu tương tác"
+  },
+  "codeExample": {
+    "preview": "Xem trước",
+    "usage": "Sử dụng"
+  },
+  "header": {
+    "badge": "Thành phần thẻ",
+    "title": "Bố cục thẻ và mẫu nội dung",
+    "description": "Hệ thống thành phần thẻ toàn diện với bố cục linh hoạt, các thành phần tương tác và các mẫu nội dung. Tất cả các thẻ đều hỗ trợ độ nổi, trạng thái khi di chuột và thiết kế phản hồi với khoảng cách và phong cách nhất quán."
+  },
+  "quickStart": {
+    "title": "Bắt đầu nhanh - Các mẫu thẻ thiết yếu",
+    "description": "Các thành phần thẻ sẵn dùng với bố cục, tương tác và tổ chức nội dung nhất quán.",
+    "basic": {
+      "heading": "Thẻ nội dung cơ bản",
+      "cardTitle": "Tiêu đề thẻ",
+      "cardBody": "Đây là một thẻ cơ bản với bố cục nội dung đơn giản và phong cách nhất quán"
+    },
+    "interactive": {
+      "heading": "Thẻ tương tác",
+      "cardTitle": "Thẻ tương tác",
+      "cardBody": "Nhấp vào đây để có hiệu ứng tương tác và trạng thái di chuột được cải thiện.",
+      "learnMore": "Tìm hiểu thêm →"
+    },
+    "stats": {
+      "heading": "Thẻ thống kê",
+      "revenueLabel": "Doanh thu tổng cộng",
+      "fromLastMonth": "từ tháng trước"
+    },
+    "feature": {
+      "heading": "Thẻ tính năng",
+      "cardTitle": "An toàn và riêng tư",
+      "cardBody": "Mã hóa đầu đến đầu đảm bảo các cuộc trò chuyện của bạn luôn được bảo mật và an toàn.",
+      "learnMore": "Tìm hiểu thêm →"
+    }
+  },
+  "variants": {
+    "title": "Biến thể thẻ và nâng cấp",
+    "description": "Các độ cao thẻ khác nhau và các biến thể phong cách cho các trường hợp sử dụng khác nhau.",
+    "elevation": {
+      "title": "Mức độ nâng cao",
+      "description": "Các độ sâu bóng khác nhau và trạng thái di chuột để tạo thứ bậc trực quan",
+      "flat": "Thẻ phẳng",
+      "default": "Thẻ mặc định",
+      "elevated": "Thẻ Nâng cao",
+      "floating": "Thẻ trôi nổi"
+    },
+    "color": {
+      "title": "Biến thể màu sắc",
+      "description": "Các biến thể màu thương hiệu và ngữ nghĩa cho các ngữ cảnh khác nhau",
+      "success": "Thẻ thành công",
+      "warning": "Thẻ cảnh báo",
+      "error": "Thẻ lỗi",
+      "info": "Thẻ thông tin"
+    }
+  },
+  "content": {
+    "title": "Nội dung & Thẻ phương tiện",
+    "description": "Thẻ với nội dung phong phú, phương tiện và các thành phần tương tác cho các ứng dụng xã hội và nội dung",
+    "social": {
+      "title": "Thẻ mạng xã hội",
+      "description": "Thẻ với tương tác người dùng, chỉ số tham gia và hành động",
+      "userName": "John Doe",
+      "timeAgo": "2 giờ trước",
+      "post": "Vừa phát hành một tính năng mới! Tích hợp Web3 hiện đã hoạt động và sẵn sàng để kiểm thử.",
+      "share": "Chia sẻ"
+    },
+    "product": {
+      "title": "Thẻ sản phẩm",
+      "description": "Thẻ phong cách thương mại điện tử với đánh giá, giá cả và hành động",
+      "productName": "Bộ công cụ phát triển Web3",
+      "reviews": "(128 đánh giá)",
+      "productBody": "Bộ công cụ hoàn chỉnh để xây dựng các ứng dụng phi tập trung một cách dễ dàng.",
+      "addToCart": "Thêm vào giỏ hàng"
+    }
+  },
+  "web3": {
+    "title": "Thẻ Web3 & Tiền mã hóa",
+    "description": "Các mẫu thẻ chuyên biệt cho ứng dụng Web3, tiền mã hóa và blockchain.",
+    "wallet": {
+      "title": "Thẻ kết nối ví",
+      "description": "Thẻ kết nối ví với đèn chỉ báo trạng thái",
+      "connected": "Đã kết nối",
+      "network": "Mạng lưới",
+      "balance": "Cân bằng",
+      "disconnect": "Ngắt kết nối"
+    },
+    "nft": {
+      "title": "Thẻ bộ sưu tập NFT",
+      "description": "Thẻ để hiển thị các bộ sưu tập NFT và dữ liệu mô tả",
+      "collectionName": "Bộ sưu tập Crypto Punks",
+      "collectionBody": "Đồ sưu tập kỹ thuật số hiếm từ bộ sưu tập nổi tiếng CryptoPunks.",
+      "currentPrice": "Giá hiện tại",
+      "placeBid": "Đặt giá thầu"
+    }
+  },
+  "layouts": {
+    "title": "Bố cục thẻ và lưới",
+    "description": "Bố cục lưới phản ứng và sắp xếp thẻ cho các kích thước màn hình khác nhau.",
+    "grid": {
+      "title": "Lưới thẻ phản hồi",
+      "description": "Lưới thích ứng hoạt động trên mọi kích thước màn hình",
+      "cardLabel": "Thẻ {{index}}",
+      "subtitle": "Chữ phụ đề",
+      "sampleContent": "Nội dung thẻ mẫu để minh họa lưới."
+    }
+  },
+  "accessibility": {
+    "title": "Truy cập và các thực hành tốt nhất",
+    "guidelinesTitle": "Hướng dẫn về khả năng truy cập thẻ",
+    "guidelines": [
+      "Sử dụng cấu trúc HTML ngữ nghĩa với các tiêu đề phù hợp",
+      "Đảm bảo độ tương phản màu sắc đủ cho nội dung văn bản",
+      "Thêm trạng thái tập trung cho các phần tử thẻ tương tác",
+      "Sử dụng nhãn ARIA cho các tương tác phức tạp trên thẻ",
+      "Thực hiện điều hướng bằng bàn phím cho các hành động thẻ",
+      "Cung cấp văn bản thay thế cho các thành phần trang trí",
+      "Sử dụng thiết kế phản hồi để truy cập di động",
+      "Kiểm tra với trình đọc màn hình và điều hướng bằng bàn phím"
+    ]
+  }
+}

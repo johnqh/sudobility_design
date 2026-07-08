@@ -1,0 +1,127 @@
+{
+  "seo": {
+    "title": "Laddningslägen - Designsystem - Intern - {{emailDomain}}",
+    "description": "Komplett dokumentation av lässtatus med spinner, skelett, förloppsmärken och Web3-mönster"
+  },
+  "copy": {
+    "copied": "✓ Kopierat!",
+    "copy": "Kopiera"
+  },
+  "header": {
+    "badge": "Laddningslägen",
+    "title": "Läser in statuskomponenter",
+    "description": "Laddningsindikatorer och förloppstillstånd som ger tydlig visuell återkoppling vid asynkrona operationer, särskilt utformade för Web3-transaktioner och blockkedjekopplingar.",
+    "stats": {
+      "spinnerTypes": "Spinnertyper",
+      "skeletonPatterns": "Skeletonmönster",
+      "progressTypes": "Förloppstyper",
+      "web3Examples": "Web3-exempel"
+    }
+  },
+  "quickStart": {
+    "title": "🚀 Snabbstart",
+    "description": "Börja med de mest vanligt förekommande laddningsmönstren. Dessa exempel visar avgörande laddningslägen för olika användningsområden.",
+    "spinners": {
+      "title": "1. Grundläggande laddningsspinners",
+      "small": "Liten",
+      "default": "Standard",
+      "large": "Stor"
+    },
+    "buttons": {
+      "title": "2. Laddningsknapps tillstånd",
+      "loading": "Läser in...",
+      "clickToLoad": "Klicka för att ladda",
+      "processing": "Bearbetning",
+      "uploading": "Laddar upp..."
+    },
+    "progress": {
+      "title": "3. Framstegsindikatorer",
+      "label": "Framsteg",
+      "startDemo": "Starta demonstrationsversion"
+    },
+    "skeleton": {
+      "title": "4. Skeleton-laddning"
+    }
+  },
+  "web3": {
+    "title": "⚡ Web3-laddningsmönster",
+    "description": "Specialiserade läsningstillstånd för Web3-åtgärder, inklusive plånbokanslutningar, transaktioner och blockkedjekonfirmationer.",
+    "transaction": {
+      "title": "Transaktionsladdningslägen",
+      "startDemo": "Starta transaktionsdemo",
+      "currentState": "Nuvarande tillstånd: {{state}}",
+      "pending": {
+        "title": "Transaktion väntar",
+        "message": "Vänligen bekräfta transaktionen i din plånbok..."
+      },
+      "confirming": {
+        "title": "Bekräfta transaktion",
+        "message": "Transaktion skickad. Väntar på blockchains bekräftelse...",
+        "hash": "Hash: 0x1234...abcd"
+      },
+      "confirmed": {
+        "title": "Transaktion bekräftad",
+        "message": "Din transaktion har bekräftats på blockkedjan!",
+        "block": "Block: #18.234.567"
+      }
+    },
+    "wallet": {
+      "title": "Plånbokans anslutningslägen",
+      "connecting": {
+        "title": "Ansluter plånbok",
+        "message": "Godkänn anslutningen i din plånbok"
+      },
+      "network": {
+        "title": "Nätverksupptäckt",
+        "message": "Kontrollerar nätverkskompatibilitet..."
+      }
+    },
+    "email": {
+      "title": "E-post- och meddelandeladdning",
+      "encrypting": {
+        "title": "Krypterar meddelande...",
+        "message": "Säkerställa din e-post med Web3-kryptering"
+      },
+      "sending": {
+        "title": "Skickar till blockkedjan...",
+        "message": "Registrera e-postmetadata på blockkedjan"
+      },
+      "uploadProgress": "Uppladdningsstatus",
+      "uploading": "Laddar upp...",
+      "startUploadDemo": "Starta uppladdningsdemo"
+    }
+  },
+  "skeletons": {
+    "title": "💀 Skelett-mönster",
+    "description": "Platshållare för innehåll som efterliknar strukturen hos innehållet vid laddning för bättre uppfattad prestanda.",
+    "emailList": "E-postlista skelett",
+    "cardContent": "Kortinnehållsskelett"
+  },
+  "accessibility": {
+    "title": "♿ Tillgänglighetsrikklinjer",
+    "description": "Se till att dina laddningslägen är tillgängliga med rätt ARIA-attribut, stöd för skärmläsare och fokushantering.",
+    "bestPractices": {
+      "title": "✅ Bästa praxis",
+      "items": [
+        "Använd ARIA live-regioner för dynamiska läs- och skrivstatus",
+        "Ge meningsfulla laddningsmeddelanden",
+        "Inkludera förloppsinformation vid tillfälle",
+        "Använd minskad rörelse för användare som föredrar det",
+        "Behåll fokushantering under inläsning"
+      ]
+    },
+    "avoid": {
+      "title": "❌ Undvik",
+      "items": [
+        "Laddningsindikatorer utan texters ersättningsalternativ",
+        "Oändlig laddning utan förloppsmarkering",
+        "Snabbflimmerande animationer som kan utlösa anfall",
+        "Ta bort fokus eller innehåll utan varning",
+        "Generiska \"Laddar...\"-meddelanden utan sammanhang"
+      ]
+    },
+    "implementation": "Implementering av tillgänglighet"
+  },
+  "backToDesignSystem": "Tillbaka till designsystemet",
+  "lastUpdated": "Senast uppdaterat: {{date}}"
+}

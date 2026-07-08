@@ -1,0 +1,291 @@
+{
+  "seo": {
+    "title": "颜色 - 设计系统 - 内部 - {{emailDomain}}",
+    "description": "完整的设计系统配色方案及变体展示"
+  },
+  "nav": {
+    "viewTypography": "查看排版"
+  },
+  "header": {
+    "badge": "颜色系统",
+    "title": "配色方案与使用",
+    "description": "完整色彩系统在 {{appName}} 应用程序中全程使用，包含使用示例和代码示例。点击任意颜色可将其十六进制值复制到剪贴板。"
+  },
+  "swatch": {
+    "copyAria": "复制 {{name}} 颜色值 {{value}}"
+  },
+  "codeExample": {
+    "preview": "预览",
+    "usage": "使用"
+  },
+  "quickStart": {
+    "title": "快速入门 - 常见用法示例",
+    "description": "适用于最常见的设计模式的即用型代码示例。直接复制并粘贴到您的组件中。",
+    "primaryButton": {
+      "title": "主按钮",
+      "action": "主要操作"
+    },
+    "successAlert": {
+      "title": "成功警报",
+      "heading": "成功！",
+      "body": "您的操作已成功完成。"
+    },
+    "blockchainBadge": {
+      "title": "区块链徽章"
+    },
+    "formInput": {
+      "title": "表单输入",
+      "placeholder": "请输入您的电子邮件..."
+    }
+  },
+  "palettes": {
+    "title": "配色方案",
+    "description": "按色相组织的基础色板。每个色板包含从50（最浅）到950（最深）的色调。",
+    "items": {
+      "blue": {
+        "name": "蓝色（主）",
+        "description": "主品牌色板"
+      },
+      "purple": {
+        "name": "紫色（次要）",
+        "description": "辅助品牌配色"
+      },
+      "neutral": {
+        "name": "中性（灰度）",
+        "description": "背景、文本和边框颜色"
+      },
+      "red": {
+        "name": "红色（错误）",
+        "description": "错误和破坏性动作颜色"
+      },
+      "green": {
+        "name": "绿色（成功）",
+        "description": "成功和积极行动的颜色"
+      },
+      "amber": {
+        "name": "琥珀色（警告）",
+        "description": "警告和警示颜色"
+      },
+      "orange": {
+        "name": "橙子",
+        "description": "强调和高亮颜色"
+      }
+    }
+  },
+  "networks": {
+    "ethereum": "以太坊",
+    "solana": "Solana",
+    "polygon": "多边形"
+  },
+  "web3": {
+    "title": "Web3网络颜色",
+    "description": "代表不同区块链网络和Web3元素的颜色。",
+    "usage": {
+      "ethereum": "以太坊网络品牌",
+      "solana": "Solana网络品牌",
+      "polygon": "Polygon网络品牌"
+    },
+    "code": {
+      "title": "Web3 颜色使用",
+      "description": "如何在组件中使用Web3网络颜色"
+    }
+  },
+  "semantic": {
+    "title": "语义颜色",
+    "description": "语义颜色标记，可自动适配亮色和暗色主题。这些标记在界面中提供一致的语义。",
+    "lightMode": "浅色模式",
+    "darkMode": "深色模式",
+    "categories": {
+      "text": {
+        "name": "文本颜色",
+        "colors": {
+          "primaryText": {
+            "name": "主文本",
+            "usage": "主内容文本"
+          },
+          "secondaryText": {
+            "name": "次要文本",
+            "usage": "支持文本"
+          },
+          "linkText": {
+            "name": "链接文本",
+            "usage": "交互式链接"
+          }
+        }
+      },
+      "background": {
+        "name": "背景颜色",
+        "colors": {
+          "primaryBackground": {
+            "name": "主背景",
+            "usage": "主页背景"
+          },
+          "secondaryBackground": {
+            "name": "次要背景",
+            "usage": "卡牌背景"
+          },
+          "elevatedBackground": {
+            "name": "提升背景",
+            "usage": "模态框和叠加层"
+          }
+        }
+      },
+      "state": {
+        "name": "州色",
+        "colors": {
+          "success": {
+            "name": "成功",
+            "usage": "成功消息和操作"
+          },
+          "warning": {
+            "name": "警告",
+            "usage": "警告消息"
+          },
+          "error": {
+            "name": "错误",
+            "usage": "错误消息和破坏性操作"
+          },
+          "info": {
+            "name": "信息",
+            "usage": "信息消息"
+          }
+        }
+      }
+    },
+    "code": {
+      "title": "语义颜色使用",
+      "description": "如何在设计系统中使用语义颜色",
+      "preview": {
+        "success": "✓ 成功消息",
+        "error": "✗ 错误消息",
+        "warning": "⚠ 警告消息"
+      }
+    }
+  },
+  "components": {
+    "title": "组件颜色与使用示例",
+    "description": "为常见UI组件预配置的颜色组合，支持内置悬停、焦点和主题功能。",
+    "exampleHeading": "{{name}} 示例",
+    "liveExamples": "实时示例",
+    "alertMessage": "{{name}} 消息",
+    "interactiveHeading": "交互式 {{name}} 示例：",
+    "createPreview": {
+      "button": {
+        "primary": "主要操作",
+        "secondary": "次要操作",
+        "destructive": "删除项目"
+      },
+      "alert": {
+        "infoLabel": "信息:",
+        "infoText": "这是一个信息警报",
+        "successLabel": "成功：",
+        "successText": "操作成功完成",
+        "errorLabel": "错误:",
+        "errorText": "出错了"
+      }
+    },
+    "items": {
+      "button": {
+        "name": "按钮",
+        "createTitle": "如何创建按钮",
+        "createDescription": "创建带正确颜色按钮的逐步指南",
+        "variantsTitle": "按钮变体和状态",
+        "variantsDescription": "所有按钮颜色变体，包含悬停和焦点状态",
+        "variants": {
+          "primary": "主要",
+          "secondary": "二级",
+          "destructive": "破坏性的",
+          "success": "成功"
+        }
+      },
+      "badge": {
+        "name": "徽章",
+        "createTitle": "如何创建徽章",
+        "createDescription": "创建带有正确颜色徽章的逐步指南",
+        "variantsTitle": "徽章变体与状态",
+        "variantsDescription": "所有徽章颜色变体，包含悬停和焦点状态",
+        "variants": {
+          "default": "默认",
+          "primary": "主要",
+          "success": "成功",
+          "warning": "警告",
+          "error": "错误"
+        }
+      },
+      "alert": {
+        "name": "警报",
+        "createTitle": "如何创建警报",
+        "createDescription": "创建带有正确颜色的警报的逐步指南",
+        "variantsTitle": "警报变体和状态",
+        "variantsDescription": "所有告警颜色变体，包含悬停和焦点状态",
+        "variants": {
+          "info": "信息",
+          "success": "成功",
+          "warning": "警告",
+          "error": "错误"
+        }
+      }
+    }
+  },
+  "practical": {
+    "title": "实际使用示例",
+    "description": "展示如何将颜色组合用于常见UI模式的实际示例。",
+    "form": {
+      "title": "带颜色编码状态的表单",
+      "description": "如何使用颜色进行表单验证和状态显示",
+      "emailLabel": "电子邮件（有效）",
+      "emailValid": "✓ 邮箱地址有效",
+      "passwordLabel": "密码（错误）",
+      "passwordError": "✗ 密码必须至少包含8个字符",
+      "submit": "提交表单"
+    },
+    "card": {
+      "title": "状态颜色卡片",
+      "description": "如何在不同状态的卡片组件中使用颜色",
+      "apiServer": "API 服务器",
+      "online": "在线",
+      "operational": "所有系统运行正常",
+      "database": "数据库",
+      "maintenance": "维护",
+      "maintenanceProgress": "正在进行计划内维护"
+    },
+    "navigation": {
+      "title": "带颜色状态的导航",
+      "description": "如何使用颜色来表示导航状态和活动项目",
+      "dashboard": "仪表板",
+      "users": "用户",
+      "settings": "设置"
+    },
+    "progress": {
+      "title": "带颜色的进度指示器",
+      "description": "如何为进度条和加载状态使用颜色",
+      "label": "进度",
+      "complete75": "75% 完成",
+      "success": "成功",
+      "complete100": "100% 完成"
+    }
+  },
+  "guidelines": {
+    "title": "使用指南",
+    "doTitle": "✓ 做",
+    "do": [
+      "使用语义颜色以保持一致的含义",
+      "优先使用组件颜色来设置UI元素",
+      "测试浅色和深色模式下的颜色",
+      "确保足够的对比度以实现可访问性",
+      "使用颜色工具函数以保持一致性"
+    ],
+    "dontTitle": "✗ 不要",
+    "dont": [
+      "在组件中直接使用原始十六进制值",
+      "混合不同的颜色系统",
+      "创建自定义颜色，无需设计审批",
+      "使用在深色模式下无法正常工作的颜色",
+      "忽略无障碍对比度要求"
+    ]
+  },
+  "copyInstructions": {
+    "title": "点击以复制值",
+    "description": "点击任意颜色样本以复制其十六进制值，或使用代码示例中的复制按钮来复制使用代码"
+  }
+}

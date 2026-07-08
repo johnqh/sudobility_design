@@ -1,0 +1,127 @@
+{
+  "seo": {
+    "title": "Trạng thái đang tải - Hệ thống thiết kế - Nội bộ - {{emailDomain}}",
+    "description": "Tài liệu toàn diện về trạng thái tải với vòng quay, xương sống, chỉ báo tiến độ và các mẫu Web3"
+  },
+  "copy": {
+    "copied": "✓ Đã sao chép!",
+    "copy": "Sao chép"
+  },
+  "header": {
+    "badge": "Trạng thái đang tải",
+    "title": "Đang tải các thành phần trạng thái",
+    "description": "Các chỉ báo tải và trạng thái tiến độ cung cấp phản hồi trực quan rõ ràng trong các thao tác bất đồng bộ, đặc biệt được thiết kế cho các giao dịch Web3 và tương tác với blockchain.",
+    "stats": {
+      "spinnerTypes": "Loại bộ quay",
+      "skeletonPatterns": "Mẫu khung xương",
+      "progressTypes": "Loại tiến độ",
+      "web3Examples": "Ví dụ về Web3"
+    }
+  },
+  "quickStart": {
+    "title": "🚀 Bắt đầu nhanh",
+    "description": "Bắt đầu với các mẫu tải thường được sử dụng nhất. Những ví dụ này cho thấy các trạng thái tải quan trọng cho các trường hợp sử dụng khác nhau.",
+    "spinners": {
+      "title": "1. Bộ chỉ báo tải cơ bản",
+      "small": "Nhỏ",
+      "default": "Mặc định",
+      "large": "Lớn"
+    },
+    "buttons": {
+      "title": "2. Trạng thái nút tải",
+      "loading": "Đang tải...",
+      "clickToLoad": "Nhấp để tải",
+      "processing": "Đang xử lý",
+      "uploading": "Đang tải lên..."
+    },
+    "progress": {
+      "title": "3. Biểu tượng tiến độ",
+      "label": "Tiến độ",
+      "startDemo": "Bắt đầu bản trình diễn"
+    },
+    "skeleton": {
+      "title": "4. Tải khung xương"
+    }
+  },
+  "web3": {
+    "title": "⚡ Mẫu tải Web3",
+    "description": "Trạng thái tải chuyên biệt cho các thao tác Web3, bao gồm kết nối ví, giao dịch và xác nhận khối chuỗi.",
+    "transaction": {
+      "title": "Trạng thái tải giao dịch",
+      "startDemo": "Bắt đầu demo giao dịch",
+      "currentState": "Trạng thái hiện tại: {{state}}",
+      "pending": {
+        "title": "Giao dịch đang chờ xử lý",
+        "message": "Vui lòng xác nhận giao dịch trong ví của bạn..."
+      },
+      "confirming": {
+        "title": "Xác nhận giao dịch",
+        "message": "Giao dịch đã được gửi. Đang chờ xác nhận từ blockchain...",
+        "hash": "Băm: 0x1234...abcd"
+      },
+      "confirmed": {
+        "title": "Giao dịch đã được xác nhận",
+        "message": "Giao dịch của bạn đã được xác nhận trên blockchain!",
+        "block": "Khối: #18.234.567"
+      }
+    },
+    "wallet": {
+      "title": "Trạng thái kết nối ví",
+      "connecting": {
+        "title": "Kết nối ví",
+        "message": "Vui lòng xác nhận kết nối trong ví của bạn"
+      },
+      "network": {
+        "title": "Phát hiện mạng",
+        "message": "Đang kiểm tra tính tương thích mạng..."
+      }
+    },
+    "email": {
+      "title": "Đang tải thư điện tử và tin nhắn",
+      "encrypting": {
+        "title": "Mã hóa tin nhắn...",
+        "message": "Bảo mật email của bạn bằng mã hóa Web3"
+      },
+      "sending": {
+        "title": "Đang gửi đến blockchain...",
+        "message": "Ghi lại thông tin siêu dữ liệu email trên chuỗi"
+      },
+      "uploadProgress": "Tiến độ tải lên",
+      "uploading": "Đang tải lên...",
+      "startUploadDemo": "Bắt đầu bản trình diễn tải lên"
+    }
+  },
+  "skeletons": {
+    "title": "💀 Mẫu xương",
+    "description": "Các chỗ chấm thay thế nội dung mô phỏng cấu trúc nội dung đang tải để cải thiện cảm nhận về hiệu suất.",
+    "emailList": "Khung danh sách email",
+    "cardContent": "Khung nội dung thẻ"
+  },
+  "accessibility": {
+    "title": "♿ Hướng dẫn về khả năng tiếp cận",
+    "description": "Đảm bảo rằng trạng thái tải của bạn được truy cập được với các thuộc tính ARIA phù hợp, hỗ trợ trình đọc màn hình và quản lý tập trung.",
+    "bestPractices": {
+      "title": "✅ Các thực hành tốt nhất",
+      "items": [
+        "Sử dụng các vùng ARIA live cho trạng thái tải động",
+        "Cung cấp thông báo tải có ý nghĩa",
+        "Thêm thông tin tiến độ khi có thể",
+        "Sử dụng chuyển động giảm cho người dùng thích nó",
+        "Duy trì quản lý tập trung trong khi đang tải"
+      ]
+    },
+    "avoid": {
+      "title": "❌ Tránh",
+      "items": [
+        "Biểu tượng tải mà không có bản thay thế văn bản",
+        "Tải kéo dài vô thời hạn mà không có chỉ báo tiến độ",
+        "Các hoạt hình nhấp nháy nhanh có thể gây co giật",
+        "Loại bỏ điểm tập trung hoặc nội dung mà không cảnh báo",
+        "Các thông báo chung \"Đang tải...\" mà không có ngữ cảnh"
+      ]
+    },
+    "implementation": "Triển khai khả năng truy cập"
+  },
+  "backToDesignSystem": "Quay lại Hệ thống Thiết kế",
+  "lastUpdated": "Cập nhật lần cuối: {{date}}"
+}

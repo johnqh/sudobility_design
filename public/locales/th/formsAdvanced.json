@@ -1,0 +1,159 @@
+{
+  "seo": {
+    "title": "Forms Advanced - Design System - ภายใน - {{emailDomain}}",
+    "description": "รูปแบบฟอร์มขั้นสูง รวมถึงฟอร์มหลายขั้นตอน การอัปโหลดไฟล์ และการป้อนข้อมูล Web3"
+  },
+  "header": {
+    "badge": "แบบฟอร์มขั้นสูง",
+    "title": "ระบบฟอร์มขั้นสูง",
+    "description": "รูปแบบฟอร์มขั้นสูง รวมถึงวิธีการขั้นตอนหลายขั้นตอน การอัปโหลดไฟล์ ฟิลด์เฉพาะ Web3 และรูปแบบการตรวจสอบขั้นสูงสำหรับการโต้ตอบกับผู้ใช้ที่ซับซ้อน"
+  },
+  "quickStart": {
+    "heading": "เริ่มต้นใช้งานอย่างรวดเร็ว",
+    "copyTitle": "คัดลอกไปยังคลิปบอร์ด",
+    "examples": {
+      "multiStep": {
+        "title": "แบบฟอร์มหลายขั้นตอน",
+        "description": "แบบฟอร์มขั้นตอนต่อไปเรื่อย ๆ พร้อมตัวชี้วัดความคืบหน้า"
+      },
+      "fileUpload": {
+        "title": "การอัปโหลดไฟล์ด้วยการลากและวาง",
+        "description": "การอัปโหลดไฟล์ขั้นสูงพร้อมการดูตัวอย่างและตรวจสอบ"
+      },
+      "tokenAmount": {
+        "title": "การป้อนจำนวนโทเคน Web3",
+        "description": "การป้อนข้อมูลเฉพาะสำหรับจำนวนสกุลเงินดิจิทัลพร้อมการตรวจสอบ"
+      },
+      "validation": {
+        "title": "การตรวจสอบขั้นสูง",
+        "description": "การตรวจสอบแบบเรียลไทม์ด้วยข้อความข้อผิดพลาดที่กำหนดเอง"
+      }
+    }
+  },
+  "steps": {
+    "account": {
+      "title": "การตั้งค่าบัญชี",
+      "description": "ข้อมูลบัญชีพื้นฐาน"
+    },
+    "wallet": {
+      "title": "การเชื่อมต่อกระเป๋าสตางค์",
+      "description": "เชื่อมต่อกระเป๋าสตางค์ Web3 ของคุณ"
+    },
+    "transaction": {
+      "title": "รายละเอียดการซื้อขาย",
+      "description": "ตั้งค่าพารามิเตอร์การทำธุรกรรม"
+    },
+    "review": {
+      "title": "ตรวจสอบและยืนยัน",
+      "description": "ตรวจสอบและส่ง"
+    }
+  },
+  "multiStep": {
+    "heading": "แบบฟอร์มหลายขั้นตอน",
+    "cardTitle": "วิศวกรตั้งค่ากระเป๋าเงิน",
+    "cardDescription": "แบบฟอร์มแบบโต้ตอบหลายขั้นตอนพร้อมการติดตามความคืบหน้าและการตรวจสอบ",
+    "emailLabel": "ที่อยู่อีเมล",
+    "emailPlaceholder": "กรอกอีเมลของคุณ",
+    "passwordLabel": "รหัสผ่าน",
+    "passwordPlaceholder": "สร้างรหัสผ่านที่แข็งแรง",
+    "confirmPasswordLabel": "ยืนยันรหัสผ่าน",
+    "confirmPasswordPlaceholder": "ยืนยันรหัสผ่านของคุณ",
+    "walletAddressLabel": "ที่อยู่กระเป๋าเงิน",
+    "walletAddressPlaceholder": "0x...",
+    "networkLabel": "เครือข่าย",
+    "networks": {
+      "ethereum": "Ethereum Mainnet",
+      "polygon": "รูปหลายเหลี่ยม",
+      "bsc": "Binance Smart Chain",
+      "arbitrum": "Arbitrum"
+    },
+    "tokenAmountLabel": "จำนวนโทเคน",
+    "tokenAmountPlaceholder": "0.00",
+    "balance": "ยอดคงเหลือ: 1.234567 ETH ($2,468.90)",
+    "max": "แมกซ์",
+    "gasPriceLabel": "ราคาแก๊ส (Gwei)",
+    "gasPricePlaceholder": "20",
+    "gasPriceHint": "ราคาแก๊สที่สูงขึ้นทำให้การยืนยันธุรกรรมเร็วขึ้น",
+    "reviewTitle": "ตรวจสอบธุรกรรมของคุณ",
+    "reviewNetwork": "เครือข่าย:",
+    "reviewToAddress": "เพื่อที่อยู่:",
+    "reviewAmount": "จำนวนเงิน:",
+    "reviewGasPrice": "ราคาแก๊ส:",
+    "warningTitle": "คำเตือนการดำเนินการ",
+    "warningBody": "โปรดตรวจสอบรายละเอียดการโอนเงินทั้งหมดอีกครั้ง บล็อกเชนทรานส์แอคชั่นไม่สามารถย้อนกลับได้",
+    "previous": "ก่อนหน้า",
+    "next": "ถัดไป",
+    "submit": "ส่งธุรกรรม"
+  },
+  "validationMessages": {
+    "invalidAddress": "รูปแบบที่อยู่อีเธอร์เน็ตไม่ถูกต้อง",
+    "positiveAmount": "จำนวนต้องเป็นจำนวนบวก",
+    "insufficientBalance": "ยอดเงินคงเหลือไม่เพียงพอ",
+    "passwordMinLength": "รหัสผ่านต้องมีอย่างน้อย 8 ตัวอักษร",
+    "passwordComplexity": "รหัสผ่านต้องมีตัวอักษรพิมพ์ใหญ่ ตัวอักษรพิมพ์เล็ก และตัวเลข",
+    "passwordsDoNotMatch": "รหัสผ่านไม่ตรงกัน"
+  },
+  "fileUpload": {
+    "heading": "การอัปโหลดไฟล์",
+    "cardTitle": "การอัปโหลดเอกสาร",
+    "cardDescription": "การอัปโหลดไฟล์โดยลากและวางพร้อมการดูตัวอย่างและการตรวจสอบ",
+    "dropTitle": "ลากไฟล์มาที่นี่เพื่ออัปโหลด",
+    "dropSubtitle": "หรือคลิกเพื่อเลือกไฟล์จากคอมพิวเตอร์ของคุณ",
+    "chooseFiles": "เลือกไฟล์",
+    "supportedFormats": "รูปแบบที่รองรับ: PDF, DOC, DOCX, JPG, PNG, TXT (ขนาดสูงสุด 10MB ต่อไฟล์)",
+    "uploadedFiles": "ไฟล์ที่อัปโหลด ({{count}})",
+    "megabytes": "{{size}} MB"
+  },
+  "web3": {
+    "heading": "อินพุตเฉพาะด้านเว็บ3",
+    "walletCard": {
+      "title": "การป้อนที่อยู่กระเป๋าเงิน",
+      "description": "การป้อนข้อมูลเฉพาะสำหรับที่อยู่สกุลเงินดิจิทัลพร้อมการตรวจสอบ",
+      "recipientLabel": "ที่อยู่ผู้รับ",
+      "recipientPlaceholder": "0x... หรือชื่อ ENS",
+      "validAddress": "✓ ที่อยู่ Ethereum ที่ถูกต้อง",
+      "ensLabel": "ชื่อ ENS",
+      "ensPlaceholder": "vitalik.eth",
+      "ensResolves": "→ แก้ไขเป็น: 0x742d...5f0bEb7"
+    },
+    "tokenCard": {
+      "title": "การป้อนจำนวนโทเค็น",
+      "description": "การป้อนจำนวนโทเค็นอย่างแม่นยำพร้อมการแสดงยอดคงเหลือ",
+      "amountLabel": "จำนวนเงินที่จะส่ง",
+      "amountPlaceholder": "0.00",
+      "balance": "ยอดเงิน: 1.234567 ETH",
+      "usdEquivalent": "ประมาณ 1,234.50 ดอลลาร์สหรัฐ",
+      "quarter": "25%",
+      "half": "50%",
+      "threeQuarters": "75%",
+      "max": "แมกซ์",
+      "gasSettingsLabel": "การตั้งค่าแก๊ส",
+      "gasSlow": "ช้า",
+      "gasSlowValue": "15 Gwei",
+      "gasStandard": "มาตรฐาน",
+      "gasStandardValue": "25 Gwei",
+      "gasFast": "เร็ว",
+      "gasFastValue": "35 Gwei"
+    }
+  },
+  "validationSection": {
+    "heading": "การตรวจสอบขั้นสูง",
+    "cardTitle": "ตัวอย่างการตรวจสอบแบบเรียลไทม์",
+    "cardDescription": "รูปแบบการตรวจสอบขั้นสูงพร้อมข้อเสนอแนะแบบเรียลไทม์และข้อความข้อผิดพลาดที่กำหนดเอง",
+    "strongPasswordLabel": "รหัสผ่านที่แข็งแรง",
+    "strongPasswordPlaceholder": "ป้อนรหัสผ่าน",
+    "checkMinChars": "อย่างน้อย 8 ตัวอักษร",
+    "checkUppercase": "มีตัวอักษรพิมพ์ใหญ่",
+    "checkNumber": "มีตัวเลข",
+    "checkSpecialChar": "มีตัวอักษรพิเศษ",
+    "emailLabel": "ที่อยู่อีเมล",
+    "emailPlaceholder": "ป้อนอีเมล",
+    "validEmail": "✓ รูปแบบอีเมลที่ถูกต้อง",
+    "invalidLabel": "ตัวอย่างข้อมูลนำเข้าที่ไม่ถูกต้อง",
+    "invalidPlaceholder": "ป้อนค่า",
+    "invalidMessage": "ช่องนี้มีตัวอักษรที่ไม่ถูกต้อง",
+    "loadingLabel": "กำลังโหลดการตรวจสอบ",
+    "loadingPlaceholder": "ตรวจสอบความพร้อมใช้งาน...",
+    "loadingMessage": "ตรวจสอบความพร้อมใช้งานของชื่อผู้ใช้..."
+  }
+}

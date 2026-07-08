@@ -1,0 +1,126 @@
+{
+  "seo": {
+    "title": "Cards - Design System - Internal - {{emailDomain}}",
+    "description": "Complete card component library with layouts, variants, and interactive patterns"
+  },
+  "codeExample": {
+    "preview": "Preview",
+    "usage": "Usage"
+  },
+  "header": {
+    "badge": "Card Components",
+    "title": "Card Layout & Content Patterns",
+    "description": "Comprehensive card component system with flexible layouts, interactive elements, and content patterns. All cards support elevation, hover states, and responsive design with consistent spacing and styling."
+  },
+  "quickStart": {
+    "title": "Quick Start - Essential Card Patterns",
+    "description": "Ready-to-use card components with consistent layouts, interactions, and content organization.",
+    "basic": {
+      "heading": "Basic Content Card",
+      "cardTitle": "Card Title",
+      "cardBody": "This is a basic card with simple content layout and consistent styling."
+    },
+    "interactive": {
+      "heading": "Interactive Card",
+      "cardTitle": "Interactive Card",
+      "cardBody": "Click me for interaction effects and enhanced hover states.",
+      "learnMore": "Learn more →"
+    },
+    "stats": {
+      "heading": "Statistics Card",
+      "revenueLabel": "Total Revenue",
+      "fromLastMonth": "from last month"
+    },
+    "feature": {
+      "heading": "Feature Card",
+      "cardTitle": "Secure & Private",
+      "cardBody": "End-to-end encryption ensures your communications remain private and secure.",
+      "learnMore": "Learn more →"
+    }
+  },
+  "variants": {
+    "title": "Card Variants & Elevations",
+    "description": "Different card elevations and styling variants for various use cases.",
+    "elevation": {
+      "title": "Elevation Levels",
+      "description": "Different shadow depths and hover states for visual hierarchy",
+      "flat": "Flat Card",
+      "default": "Default Card",
+      "elevated": "Elevated Card",
+      "floating": "Floating Card"
+    },
+    "color": {
+      "title": "Color Variants",
+      "description": "Branded and semantic color variants for different contexts",
+      "success": "Success Card",
+      "warning": "Warning Card",
+      "error": "Error Card",
+      "info": "Info Card"
+    }
+  },
+  "content": {
+    "title": "Content & Media Cards",
+    "description": "Cards with rich content, media, and interactive elements for social and content applications.",
+    "social": {
+      "title": "Social Media Card",
+      "description": "Card with user interaction, engagement metrics, and actions",
+      "userName": "John Doe",
+      "timeAgo": "2 hours ago",
+      "post": "Just shipped a new feature! The Web3 integration is now live and ready for testing.",
+      "share": "Share"
+    },
+    "product": {
+      "title": "Product Card",
+      "description": "E-commerce style card with rating, pricing, and actions",
+      "productName": "Web3 Development Kit",
+      "reviews": "(128 reviews)",
+      "productBody": "Complete toolkit for building decentralized applications with ease.",
+      "addToCart": "Add to Cart"
+    }
+  },
+  "web3": {
+    "title": "Web3 & Crypto Cards",
+    "description": "Specialized card patterns for Web3, crypto, and blockchain applications.",
+    "wallet": {
+      "title": "Wallet Connection Card",
+      "description": "Card for wallet connection with status indicators",
+      "connected": "Connected",
+      "network": "Network",
+      "balance": "Balance",
+      "disconnect": "Disconnect"
+    },
+    "nft": {
+      "title": "NFT Collection Card",
+      "description": "Card for displaying NFT collections and metadata",
+      "collectionName": "Crypto Punks Collection",
+      "collectionBody": "Rare digital collectible from the iconic CryptoPunks series.",
+      "currentPrice": "Current Price",
+      "placeBid": "Place Bid"
+    }
+  },
+  "layouts": {
+    "title": "Card Layouts & Grids",
+    "description": "Responsive grid layouts and card arrangements for different screen sizes.",
+    "grid": {
+      "title": "Responsive Card Grid",
+      "description": "Adaptive grid that works across all screen sizes",
+      "cardLabel": "Card {{index}}",
+      "subtitle": "Subtitle",
+      "sampleContent": "Sample card content for grid demonstration."
+    }
+  },
+  "accessibility": {
+    "title": "Accessibility & Best Practices",
+    "guidelinesTitle": "Card Accessibility Guidelines",
+    "guidelines": [
+      "Use semantic HTML structure with proper headings",
+      "Ensure sufficient color contrast for text content",
+      "Add focus states for interactive card elements",
+      "Use ARIA labels for complex card interactions",
+      "Implement keyboard navigation for card actions",
+      "Provide alternative text for decorative elements",
+      "Use responsive design for mobile accessibility",
+      "Test with screen readers and keyboard navigation"
+    ]
+  }
+}

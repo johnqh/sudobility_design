@@ -9,6 +9,7 @@ import {
   XMarkIcon,
 } from "@heroicons/react/24/outline";
 import React, { useState } from "react";
+import { useTranslation } from "react-i18next";
 import { SEOHead } from "@sudobility/seo_lib";
 import {
   Button,
@@ -27,6 +28,7 @@ interface AppProps {
 }
 
 const ModalsPage: React.FC<AppProps> = ({ emailDomain, appName: _appName }) => {
+  const { t } = useTranslation("modals");
   const [_activeModal, setActiveModal] = useState<string | null>(null);
   const [transactionState, setTransactionState] = useState<
     "idle" | "pending" | "confirming" | "success" | "error"
@@ -64,8 +66,8 @@ const ModalsPage: React.FC<AppProps> = ({ emailDomain, appName: _appName }) => {
 
   const quickStartExamples = [
     {
-      title: "Basic Modal",
-      description: "Standard modal with header, content, and footer",
+      title: t("quickStart.examples.basic.title"),
+      description: t("quickStart.examples.basic.description"),
       code: `// Basic Modal Structure
 <div className={variants.modal.overlay.default()}>
   <div className={variants.modal.container.medium()}>
@@ -86,8 +88,8 @@ const ModalsPage: React.FC<AppProps> = ({ emailDomain, appName: _appName }) => {
 </div>`,
     },
     {
-      title: "Confirmation Dialog",
-      description: "Simple confirmation dialog with action buttons",
+      title: t("quickStart.examples.confirmation.title"),
+      description: t("quickStart.examples.confirmation.description"),
       code: `// Confirmation Dialog
 <div className={variants.modal.overlay.default()}>
   <div className={variants.modal.container.small()}>
@@ -106,8 +108,8 @@ const ModalsPage: React.FC<AppProps> = ({ emailDomain, appName: _appName }) => {
 </div>`,
     },
     {
-      title: "Web3 Wallet Connection",
-      description: "Modal for wallet selection and connection",
+      title: t("quickStart.examples.wallet.title"),
+      description: t("quickStart.examples.wallet.description"),
       code: `// Web3 Wallet Modal
 <div className={variants.modal.overlay.default()}>
   <div className={variants.modal.web3.wallet()}>
@@ -133,8 +135,8 @@ const ModalsPage: React.FC<AppProps> = ({ emailDomain, appName: _appName }) => {
 </div>`,
     },
     {
-      title: "Transaction Status",
-      description: "Modal showing transaction progress and states",
+      title: t("quickStart.examples.transaction.title"),
+      description: t("quickStart.examples.transaction.description"),
       code: `// Transaction Status Modal
 <div className={variants.modal.overlay.default()}>
   <div className={variants.modal.web3.transaction()}>
@@ -158,10 +160,14 @@ const ModalsPage: React.FC<AppProps> = ({ emailDomain, appName: _appName }) => {
   ];
 
   const sizeVariants = [
-    { name: "Small", value: "small", maxWidth: "max-w-sm" },
-    { name: "Medium", value: "medium", maxWidth: "max-w-md" },
-    { name: "Large", value: "large", maxWidth: "max-w-2xl" },
-    { name: "Extra Large", value: "extraLarge", maxWidth: "max-w-4xl" },
+    { name: t("sizes.names.small"), value: "small", maxWidth: "max-w-sm" },
+    { name: t("sizes.names.medium"), value: "medium", maxWidth: "max-w-md" },
+    { name: t("sizes.names.large"), value: "large", maxWidth: "max-w-2xl" },
+    {
+      name: t("sizes.names.extraLarge"),
+      value: "extraLarge",
+      maxWidth: "max-w-4xl",
+    },
   ];
 
   const _overlayVariants = [
@@ -177,8 +183,8 @@ const ModalsPage: React.FC<AppProps> = ({ emailDomain, appName: _appName }) => {
   return (
     <>
       <SEOHead
-        title={`Modals - Design System - Internal - ${emailDomain}`}
-        description="Modal and dialog components with Web3 patterns and accessibility features"
+        title={t("seo.title", { emailDomain })}
+        description={t("seo.description")}
         noIndex={true}
       />
 
@@ -191,27 +197,26 @@ const ModalsPage: React.FC<AppProps> = ({ emailDomain, appName: _appName }) => {
             <div className="inline-flex items-center bg-accent/10 px-4 py-2 rounded-full mb-6">
               <Cog6ToothIcon className="h-5 w-5 text-accent mr-2" />
               <span className="text-accent font-semibold">
-                Modals & Dialogs
+                {t("header.badge")}
               </span>
             </div>
 
             <h1 className={`${textVariants.heading.display.xl()} mb-6`}>
-              Modal Components
+              {t("header.title")}
             </h1>
 
             <p
               className={`${textVariants.body.lg()} max-w-3xl text-muted-foreground`}
             >
-              Comprehensive modal and dialog system with Web3 integration
-              patterns, accessibility features, and responsive behavior. Perfect
-              for wallet connections, transaction confirmations, and user
-              interactions.
+              {t("header.description")}
             </p>
           </div>
 
           {/* Quick Start Examples */}
           <Section>
-            <h2 className={`${textVariants.heading.h2()} mb-8`}>Quick Start</h2>
+            <h2 className={`${textVariants.heading.h2()} mb-8`}>
+              {t("quickStart.heading")}
+            </h2>
 
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
               {quickStartExamples.map((example, index) => (
@@ -236,7 +241,7 @@ const ModalsPage: React.FC<AppProps> = ({ emailDomain, appName: _appName }) => {
                     <button
                       onClick={() => copyToClipboard(example.code)}
                       className="absolute top-2 right-2 p-2 text-muted-foreground hover:text-foreground bg-card rounded-md shadow-sm border border-border hover:bg-muted transition-colors"
-                      title="Copy to clipboard"
+                      title={t("common.copyToClipboard")}
                     >
                       <svg
                         className="h-4 w-4"
@@ -261,7 +266,7 @@ const ModalsPage: React.FC<AppProps> = ({ emailDomain, appName: _appName }) => {
           {/* Interactive Demos */}
           <Section>
             <h2 className={`${textVariants.heading.h2()} mb-8`}>
-              Interactive Demos
+              {t("demos.heading")}
             </h2>
 
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -273,7 +278,7 @@ const ModalsPage: React.FC<AppProps> = ({ emailDomain, appName: _appName }) => {
                   <h3
                     className={`${textVariants.heading.h4()} group-hover:text-primary transition-colors`}
                   >
-                    Basic Modal
+                    {t("demos.cards.simpleModal.title")}
                   </h3>
                   <div className="w-8 h-8 bg-primary/10 rounded-full flex items-center justify-center">
                     <Cog6ToothIcon className="h-4 w-4 text-primary" />
@@ -282,7 +287,7 @@ const ModalsPage: React.FC<AppProps> = ({ emailDomain, appName: _appName }) => {
                 <p
                   className={`${textVariants.body.sm()} text-muted-foreground`}
                 >
-                  Standard modal with header, content, and footer sections.
+                  {t("demos.cards.simpleModal.description")}
                 </p>
               </button>
 
@@ -294,7 +299,7 @@ const ModalsPage: React.FC<AppProps> = ({ emailDomain, appName: _appName }) => {
                   <h3
                     className={`${textVariants.heading.h4()} group-hover:text-warning transition-colors`}
                   >
-                    Confirmation Dialog
+                    {t("demos.cards.confirmationModal.title")}
                   </h3>
                   <div className="w-8 h-8 bg-warning/10 rounded-full flex items-center justify-center">
                     <ExclamationTriangleIcon className="h-4 w-4 text-warning" />
@@ -303,7 +308,7 @@ const ModalsPage: React.FC<AppProps> = ({ emailDomain, appName: _appName }) => {
                 <p
                   className={`${textVariants.body.sm()} text-muted-foreground`}
                 >
-                  Simple confirmation dialog with destructive actions.
+                  {t("demos.cards.confirmationModal.description")}
                 </p>
               </button>
 
@@ -315,7 +320,7 @@ const ModalsPage: React.FC<AppProps> = ({ emailDomain, appName: _appName }) => {
                   <h3
                     className={`${textVariants.heading.h4()} group-hover:text-success transition-colors`}
                   >
-                    Wallet Connection
+                    {t("demos.cards.walletModal.title")}
                   </h3>
                   <div className="w-8 h-8 bg-success/10 rounded-full flex items-center justify-center">
                     <WalletIcon className="h-4 w-4 text-success" />
@@ -324,7 +329,7 @@ const ModalsPage: React.FC<AppProps> = ({ emailDomain, appName: _appName }) => {
                 <p
                   className={`${textVariants.body.sm()} text-muted-foreground`}
                 >
-                  Web3 wallet selection and connection interface.
+                  {t("demos.cards.walletModal.description")}
                 </p>
               </button>
 
@@ -339,7 +344,7 @@ const ModalsPage: React.FC<AppProps> = ({ emailDomain, appName: _appName }) => {
                   <h3
                     className={`${textVariants.heading.h4()} group-hover:text-accent transition-colors`}
                   >
-                    Transaction Status
+                    {t("demos.cards.transactionModal.title")}
                   </h3>
                   <div className="w-8 h-8 bg-accent/10 rounded-full flex items-center justify-center">
                     <CurrencyDollarIcon className="h-4 w-4 text-accent" />
@@ -348,7 +353,7 @@ const ModalsPage: React.FC<AppProps> = ({ emailDomain, appName: _appName }) => {
                 <p
                   className={`${textVariants.body.sm()} text-muted-foreground`}
                 >
-                  Transaction progress and status feedback modals.
+                  {t("demos.cards.transactionModal.description")}
                 </p>
               </button>
 
@@ -360,7 +365,7 @@ const ModalsPage: React.FC<AppProps> = ({ emailDomain, appName: _appName }) => {
                   <h3
                     className={`${textVariants.heading.h4()} group-hover:text-secondary transition-colors`}
                   >
-                    Form Modal
+                    {t("demos.cards.formModal.title")}
                   </h3>
                   <div className="w-8 h-8 bg-secondary/10 rounded-full flex items-center justify-center">
                     <Cog6ToothIcon className="h-4 w-4 text-secondary" />
@@ -369,7 +374,7 @@ const ModalsPage: React.FC<AppProps> = ({ emailDomain, appName: _appName }) => {
                 <p
                   className={`${textVariants.body.sm()} text-muted-foreground`}
                 >
-                  Modal containing form elements and validation.
+                  {t("demos.cards.formModal.description")}
                 </p>
               </button>
 
@@ -381,7 +386,7 @@ const ModalsPage: React.FC<AppProps> = ({ emailDomain, appName: _appName }) => {
                   <h3
                     className={`${textVariants.heading.h4()} group-hover:text-muted-foreground transition-colors`}
                   >
-                    Settings Panel
+                    {t("demos.cards.settingsModal.title")}
                   </h3>
                   <div className="w-8 h-8 bg-muted rounded-full flex items-center justify-center">
                     <Cog6ToothIcon className="h-4 w-4 text-muted-foreground" />
@@ -390,7 +395,7 @@ const ModalsPage: React.FC<AppProps> = ({ emailDomain, appName: _appName }) => {
                 <p
                   className={`${textVariants.body.sm()} text-muted-foreground`}
                 >
-                  Large modal for complex settings and preferences.
+                  {t("demos.cards.settingsModal.description")}
                 </p>
               </button>
             </div>
@@ -399,7 +404,7 @@ const ModalsPage: React.FC<AppProps> = ({ emailDomain, appName: _appName }) => {
           {/* Size Variants */}
           <Section>
             <h2 className={`${textVariants.heading.h2()} mb-8`}>
-              Size Variants
+              {t("sizes.heading")}
             </h2>
 
             <div
@@ -407,12 +412,12 @@ const ModalsPage: React.FC<AppProps> = ({ emailDomain, appName: _appName }) => {
             >
               <div className="p-6 border-b border-border">
                 <h3 className={`${textVariants.heading.h3()} mb-4`}>
-                  Available Sizes
+                  {t("sizes.availableTitle")}
                 </h3>
                 <p
                   className={`${textVariants.body.md()} text-muted-foreground`}
                 >
-                  Choose the appropriate modal size based on your content needs.
+                  {t("sizes.availableDescription")}
                 </p>
               </div>
 
@@ -437,7 +442,7 @@ const ModalsPage: React.FC<AppProps> = ({ emailDomain, appName: _appName }) => {
                           )
                         }
                         className="text-muted-foreground hover:text-foreground p-2 rounded-md hover:bg-muted transition-colors"
-                        title="Copy to clipboard"
+                        title={t("common.copyToClipboard")}
                       >
                         <svg
                           className="h-4 w-4"
@@ -460,7 +465,10 @@ const ModalsPage: React.FC<AppProps> = ({ emailDomain, appName: _appName }) => {
                     >
                       <div className="bg-card p-3 rounded border">
                         <div className="text-center text-muted-foreground text-sm">
-                          {variant.name} Modal ({variant.maxWidth})
+                          {t("sizes.boxLabel", {
+                            name: variant.name,
+                            maxWidth: variant.maxWidth,
+                          })}
                         </div>
                       </div>
                     </div>
@@ -473,7 +481,7 @@ const ModalsPage: React.FC<AppProps> = ({ emailDomain, appName: _appName }) => {
           {/* Web3 Integration Examples */}
           <Section>
             <h2 className={`${textVariants.heading.h2()} mb-8`}>
-              Web3 Integration Patterns
+              {t("web3.heading")}
             </h2>
 
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
@@ -482,13 +490,12 @@ const ModalsPage: React.FC<AppProps> = ({ emailDomain, appName: _appName }) => {
               >
                 <div className="p-6 border-b border-border">
                   <h3 className={`${textVariants.heading.h3()} mb-2`}>
-                    Wallet Connection Flow
+                    {t("web3.walletFlow.title")}
                   </h3>
                   <p
                     className={`${textVariants.body.sm()} text-muted-foreground`}
                   >
-                    Complete wallet connection experience with provider
-                    selection.
+                    {t("web3.walletFlow.description")}
                   </p>
                 </div>
                 <div className="p-6">
@@ -514,12 +521,12 @@ const ModalsPage: React.FC<AppProps> = ({ emailDomain, appName: _appName }) => {
               >
                 <div className="p-6 border-b border-border">
                   <h3 className={`${textVariants.heading.h3()} mb-2`}>
-                    Transaction Confirmation
+                    {t("web3.transactionConfirmation.title")}
                   </h3>
                   <p
                     className={`${textVariants.body.sm()} text-muted-foreground`}
                   >
-                    Transaction details and confirmation interface.
+                    {t("web3.transactionConfirmation.description")}
                   </p>
                 </div>
                 <div className="p-6">
@@ -546,7 +553,7 @@ const ModalsPage: React.FC<AppProps> = ({ emailDomain, appName: _appName }) => {
           {/* Accessibility Guidelines */}
           <Section>
             <h2 className={`${textVariants.heading.h2()} mb-8`}>
-              Accessibility Guidelines
+              {t("accessibility.heading")}
             </h2>
 
             <div
@@ -554,13 +561,12 @@ const ModalsPage: React.FC<AppProps> = ({ emailDomain, appName: _appName }) => {
             >
               <div className="p-6 border-b border-border">
                 <h3 className={`${textVariants.heading.h3()} mb-4`}>
-                  ARIA Attributes & Best Practices
+                  {t("accessibility.ariaTitle")}
                 </h3>
                 <p
                   className={`${textVariants.body.md()} text-muted-foreground`}
                 >
-                  Follow these guidelines to ensure your modals are accessible
-                  to all users.
+                  {t("accessibility.ariaDescription")}
                 </p>
               </div>
 
@@ -568,7 +574,7 @@ const ModalsPage: React.FC<AppProps> = ({ emailDomain, appName: _appName }) => {
                 <div className="space-y-6">
                   <div>
                     <h4 className={`${textVariants.heading.h4()} mb-3`}>
-                      Required ARIA Attributes
+                      {t("accessibility.requiredAria")}
                     </h4>
                     <pre className="bg-muted p-4 rounded-lg text-sm overflow-x-auto">
                       <code className="text-foreground">{`<div
@@ -588,60 +594,37 @@ const ModalsPage: React.FC<AppProps> = ({ emailDomain, appName: _appName }) => {
 
                   <div>
                     <h4 className={`${textVariants.heading.h4()} mb-3`}>
-                      Focus Management
+                      {t("accessibility.focusManagement")}
                     </h4>
                     <ul className="space-y-2 text-muted-foreground">
-                      <li className="flex items-start gap-2">
-                        <CheckCircleIcon className="h-5 w-5 text-success flex-shrink-0 mt-0.5" />
-                        <span>
-                          Focus should move to the first focusable element in
-                          the modal when opened
-                        </span>
-                      </li>
-                      <li className="flex items-start gap-2">
-                        <CheckCircleIcon className="h-5 w-5 text-success flex-shrink-0 mt-0.5" />
-                        <span>
-                          Tab navigation should be trapped within the modal
-                        </span>
-                      </li>
-                      <li className="flex items-start gap-2">
-                        <CheckCircleIcon className="h-5 w-5 text-success flex-shrink-0 mt-0.5" />
-                        <span>
-                          Focus should return to the trigger element when modal
-                          is closed
-                        </span>
-                      </li>
-                      <li className="flex items-start gap-2">
-                        <CheckCircleIcon className="h-5 w-5 text-success flex-shrink-0 mt-0.5" />
-                        <span>ESC key should close the modal</span>
-                      </li>
+                      {(
+                        t("accessibility.focusItems", {
+                          returnObjects: true,
+                        }) as string[]
+                      ).map((item, i) => (
+                        <li key={i} className="flex items-start gap-2">
+                          <CheckCircleIcon className="h-5 w-5 text-success flex-shrink-0 mt-0.5" />
+                          <span>{item}</span>
+                        </li>
+                      ))}
                     </ul>
                   </div>
 
                   <div>
                     <h4 className={`${textVariants.heading.h4()} mb-3`}>
-                      Screen Reader Support
+                      {t("accessibility.screenReader")}
                     </h4>
                     <ul className="space-y-2 text-muted-foreground">
-                      <li className="flex items-start gap-2">
-                        <InformationCircleIcon className="h-5 w-5 text-info flex-shrink-0 mt-0.5" />
-                        <span>
-                          Use semantic HTML elements (button, form, etc.)
-                        </span>
-                      </li>
-                      <li className="flex items-start gap-2">
-                        <InformationCircleIcon className="h-5 w-5 text-info flex-shrink-0 mt-0.5" />
-                        <span>
-                          Provide clear, descriptive labels for all interactive
-                          elements
-                        </span>
-                      </li>
-                      <li className="flex items-start gap-2">
-                        <InformationCircleIcon className="h-5 w-5 text-info flex-shrink-0 mt-0.5" />
-                        <span>
-                          Announce modal state changes with live regions
-                        </span>
-                      </li>
+                      {(
+                        t("accessibility.screenReaderItems", {
+                          returnObjects: true,
+                        }) as string[]
+                      ).map((item, i) => (
+                        <li key={i} className="flex items-start gap-2">
+                          <InformationCircleIcon className="h-5 w-5 text-info flex-shrink-0 mt-0.5" />
+                          <span>{item}</span>
+                        </li>
+                      ))}
                     </ul>
                   </div>
                 </div>
@@ -652,20 +635,19 @@ const ModalsPage: React.FC<AppProps> = ({ emailDomain, appName: _appName }) => {
           {/* Implementation Notes */}
           <Section>
             <h2 className={`${textVariants.heading.h2()} mb-8`}>
-              Implementation Notes
+              {t("implementation.heading")}
             </h2>
 
             <div className={`${ui.background.subtle} rounded-xl p-8`}>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
                 <div>
                   <h3 className={`${textVariants.heading.h3()} mb-4`}>
-                    React Portal Usage
+                    {t("implementation.portalTitle")}
                   </h3>
                   <p
                     className={`${textVariants.body.md()} text-muted-foreground mb-4`}
                   >
-                    Render modals in a portal to avoid z-index issues and ensure
-                    proper layering.
+                    {t("implementation.portalDescription")}
                   </p>
                   <pre className="bg-muted text-foreground p-4 rounded-lg text-sm">
                     <code>{`import { createPortal } from 'react-dom';
@@ -686,19 +668,21 @@ const Modal = ({ children, isOpen }) => {
 
                 <div>
                   <h3 className={`${textVariants.heading.h3()} mb-4`}>
-                    Animation Considerations
+                    {t("implementation.animationTitle")}
                   </h3>
                   <p
                     className={`${textVariants.body.md()} text-muted-foreground mb-4`}
                   >
-                    Use CSS animations or libraries like Framer Motion for
-                    smooth modal transitions.
+                    {t("implementation.animationDescription")}
                   </p>
                   <ul className="space-y-2 text-muted-foreground">
-                    <li>• Fade in/out for overlay</li>
-                    <li>• Scale or slide for modal content</li>
-                    <li>• Respect user's motion preferences</li>
-                    <li>• Keep animations under 300ms</li>
+                    {(
+                      t("implementation.animationItems", {
+                        returnObjects: true,
+                      }) as string[]
+                    ).map((item, i) => (
+                      <li key={i}>{item}</li>
+                    ))}
                   </ul>
                 </div>
               </div>
@@ -719,7 +703,7 @@ const Modal = ({ children, isOpen }) => {
           >
             <div className={variants.modal.header.default()}>
               <h3 className={textVariants.heading.h3()}>
-                Simple Modal Example
+                {t("simpleModal.title")}
               </h3>
               <button
                 className={variants.modal.close.default()}
@@ -729,15 +713,11 @@ const Modal = ({ children, isOpen }) => {
               </button>
             </div>
             <div className={variants.modal.content.default()}>
-              <p className={textVariants.body.md()}>
-                This is a basic modal with standard header, content, and footer
-                sections. It demonstrates the typical modal structure and
-                styling.
-              </p>
+              <p className={textVariants.body.md()}>{t("simpleModal.body")}</p>
               <p
                 className={`${textVariants.body.sm()} text-muted-foreground mt-3`}
               >
-                Click outside the modal or press the close button to dismiss it.
+                {t("simpleModal.hint")}
               </p>
             </div>
             <div className={variants.modal.footer.default()}>
@@ -745,9 +725,11 @@ const Modal = ({ children, isOpen }) => {
                 variant="outline"
                 onClick={() => closeModal("simpleModal")}
               >
-                Cancel
+                {t("common.cancel")}
               </Button>
-              <Button onClick={() => closeModal("simpleModal")}>Got it</Button>
+              <Button onClick={() => closeModal("simpleModal")}>
+                {t("simpleModal.gotIt")}
+              </Button>
             </div>
           </div>
         </div>
@@ -765,11 +747,12 @@ const Modal = ({ children, isOpen }) => {
             <div className={variants.modal.content.padded()}>
               <div className="flex items-center gap-3 mb-4">
                 <ExclamationTriangleIcon className="h-6 w-6 text-warning" />
-                <h3 className={textVariants.heading.h4()}>Delete Item</h3>
+                <h3 className={textVariants.heading.h4()}>
+                  {t("confirmationModal.title")}
+                </h3>
               </div>
               <p className={textVariants.body.md()}>
-                Are you sure you want to delete this item? This action cannot be
-                undone.
+                {t("confirmationModal.body")}
               </p>
             </div>
             <div className={variants.modal.footer.default()}>
@@ -777,13 +760,13 @@ const Modal = ({ children, isOpen }) => {
                 variant="outline"
                 onClick={() => closeModal("confirmationModal")}
               >
-                Cancel
+                {t("common.cancel")}
               </Button>
               <Button
                 variant="destructive"
                 onClick={() => closeModal("confirmationModal")}
               >
-                Delete
+                {t("confirmationModal.delete")}
               </Button>
             </div>
           </div>
@@ -800,7 +783,9 @@ const Modal = ({ children, isOpen }) => {
             onClick={(e) => e.stopPropagation()}
           >
             <div className={variants.modal.header.default()}>
-              <h3 className={textVariants.heading.h3()}>Connect Wallet</h3>
+              <h3 className={textVariants.heading.h3()}>
+                {t("walletModal.title")}
+              </h3>
               <button
                 className={variants.modal.close.default()}
                 onClick={() => closeModal("walletModal")}
@@ -812,7 +797,7 @@ const Modal = ({ children, isOpen }) => {
               <p
                 className={`${textVariants.body.sm()} text-muted-foreground mb-4`}
               >
-                Choose a wallet to connect to the {emailDomain} platform
+                {t("walletModal.choose", { emailDomain })}
               </p>
               <div className="space-y-3">
                 <button className="w-full flex items-center gap-3 p-3 border border-border rounded-lg hover:bg-muted transition-colors">
@@ -820,11 +805,13 @@ const Modal = ({ children, isOpen }) => {
                     <WalletIcon className="h-5 w-5 text-secondary" />
                   </div>
                   <div className="text-left">
-                    <div className={textVariants.heading.h5()}>MetaMask</div>
+                    <div className={textVariants.heading.h5()}>
+                      {t("walletModal.metamask")}
+                    </div>
                     <div
                       className={`${textVariants.caption.default()} text-muted-foreground`}
                     >
-                      Popular browser extension
+                      {t("walletModal.metamaskDescription")}
                     </div>
                   </div>
                 </button>
@@ -834,12 +821,12 @@ const Modal = ({ children, isOpen }) => {
                   </div>
                   <div className="text-left">
                     <div className={textVariants.heading.h5()}>
-                      WalletConnect
+                      {t("walletModal.walletConnect")}
                     </div>
                     <div
                       className={`${textVariants.caption.default()} text-muted-foreground`}
                     >
-                      Scan with mobile wallet
+                      {t("walletModal.walletConnectDescription")}
                     </div>
                   </div>
                 </button>
@@ -848,11 +835,13 @@ const Modal = ({ children, isOpen }) => {
                     <WalletIcon className="h-5 w-5 text-accent" />
                   </div>
                   <div className="text-left">
-                    <div className={textVariants.heading.h5()}>Phantom</div>
+                    <div className={textVariants.heading.h5()}>
+                      {t("walletModal.phantom")}
+                    </div>
                     <div
                       className={`${textVariants.caption.default()} text-muted-foreground`}
                     >
-                      Solana wallet
+                      {t("walletModal.phantomDescription")}
                     </div>
                   </div>
                 </button>
@@ -890,33 +879,21 @@ const Modal = ({ children, isOpen }) => {
                   )}
                 </div>
                 <h3 className={`${textVariants.heading.h3()} mb-2`}>
-                  {transactionState === "idle" && "Send Transaction"}
-                  {transactionState === "pending" && "Transaction Pending"}
-                  {transactionState === "confirming" &&
-                    "Confirming Transaction"}
-                  {transactionState === "success" && "Transaction Successful"}
-                  {transactionState === "error" && "Transaction Failed"}
+                  {t(`transactionModal.title.${transactionState}`)}
                 </h3>
                 <p
                   className={`${textVariants.body.md()} text-muted-foreground mb-6`}
                 >
-                  {transactionState === "idle" &&
-                    "Review transaction details and confirm to proceed."}
-                  {transactionState === "pending" &&
-                    "Please confirm the transaction in your wallet..."}
-                  {transactionState === "confirming" &&
-                    "Waiting for blockchain confirmation..."}
-                  {transactionState === "success" &&
-                    "Your transaction has been successfully completed."}
-                  {transactionState === "error" &&
-                    "Transaction was rejected or failed. Please try again."}
+                  {t(`transactionModal.description.${transactionState}`)}
                 </p>
 
                 {transactionState === "idle" && (
                   <div className="space-y-4 mb-6">
                     <div className="bg-muted rounded-lg p-4">
                       <div className="flex justify-between items-center mb-2">
-                        <span className={textVariants.body.sm()}>Amount:</span>
+                        <span className={textVariants.body.sm()}>
+                          {t("transactionModal.amount")}
+                        </span>
                         <span
                           className={`${textVariants.body.sm()} font-medium`}
                         >
@@ -924,7 +901,9 @@ const Modal = ({ children, isOpen }) => {
                         </span>
                       </div>
                       <div className="flex justify-between items-center mb-2">
-                        <span className={textVariants.body.sm()}>Gas Fee:</span>
+                        <span className={textVariants.body.sm()}>
+                          {t("transactionModal.gasFee")}
+                        </span>
                         <span
                           className={`${textVariants.body.sm()} font-medium`}
                         >
@@ -932,7 +911,9 @@ const Modal = ({ children, isOpen }) => {
                         </span>
                       </div>
                       <div className="flex justify-between items-center border-t pt-2 mt-2">
-                        <span className={textVariants.body.sm()}>Total:</span>
+                        <span className={textVariants.body.sm()}>
+                          {t("transactionModal.total")}
+                        </span>
                         <span
                           className={`${textVariants.body.md()} font-semibold`}
                         >
@@ -950,17 +931,17 @@ const Modal = ({ children, isOpen }) => {
                         variant="outline"
                         onClick={() => closeModal("transactionModal")}
                       >
-                        Cancel
+                        {t("common.cancel")}
                       </Button>
                       <Button onClick={handleTransaction}>
-                        Confirm Transaction
+                        {t("transactionModal.confirm")}
                       </Button>
                     </>
                   )}
                   {(transactionState === "success" ||
                     transactionState === "error") && (
                     <Button onClick={() => closeModal("transactionModal")}>
-                      Close
+                      {t("transactionModal.close")}
                     </Button>
                   )}
                 </div>
@@ -980,7 +961,9 @@ const Modal = ({ children, isOpen }) => {
             onClick={(e) => e.stopPropagation()}
           >
             <div className={variants.modal.header.default()}>
-              <h3 className={textVariants.heading.h3()}>Contact Form</h3>
+              <h3 className={textVariants.heading.h3()}>
+                {t("formModal.title")}
+              </h3>
               <button
                 className={variants.modal.close.default()}
                 onClick={() => closeModal("formModal")}
@@ -993,53 +976,53 @@ const Modal = ({ children, isOpen }) => {
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                   <div>
                     <label className={`${textVariants.body.sm()} block mb-2`}>
-                      First Name
+                      {t("formModal.firstName")}
                     </label>
                     <input
                       type="text"
                       className="w-full px-3 py-2 border border-input rounded-md bg-background focus:outline-none focus:ring-2 focus:ring-ring"
-                      placeholder="Enter your first name"
+                      placeholder={t("formModal.firstNamePlaceholder")}
                     />
                   </div>
                   <div>
                     <label className={`${textVariants.body.sm()} block mb-2`}>
-                      Last Name
+                      {t("formModal.lastName")}
                     </label>
                     <input
                       type="text"
                       className="w-full px-3 py-2 border border-input rounded-md bg-background focus:outline-none focus:ring-2 focus:ring-ring"
-                      placeholder="Enter your last name"
+                      placeholder={t("formModal.lastNamePlaceholder")}
                     />
                   </div>
                 </div>
                 <div>
                   <label className={`${textVariants.body.sm()} block mb-2`}>
-                    Email Address
+                    {t("formModal.email")}
                   </label>
                   <input
                     type="email"
                     className="w-full px-3 py-2 border border-input rounded-md bg-background focus:outline-none focus:ring-2 focus:ring-ring"
-                    placeholder="Enter your email address"
+                    placeholder={t("formModal.emailPlaceholder")}
                   />
                 </div>
                 <div>
                   <label className={`${textVariants.body.sm()} block mb-2`}>
-                    Message
+                    {t("formModal.message")}
                   </label>
                   <textarea
                     rows={4}
                     className="w-full px-3 py-2 border border-input rounded-md bg-background focus:outline-none focus:ring-2 focus:ring-ring"
-                    placeholder="Enter your message..."
+                    placeholder={t("formModal.messagePlaceholder")}
                   />
                 </div>
               </form>
             </div>
             <div className={variants.modal.footer.default()}>
               <Button variant="outline" onClick={() => closeModal("formModal")}>
-                Cancel
+                {t("common.cancel")}
               </Button>
               <Button onClick={() => closeModal("formModal")}>
-                Send Message
+                {t("formModal.send")}
               </Button>
             </div>
           </div>
@@ -1057,7 +1040,7 @@ const Modal = ({ children, isOpen }) => {
           >
             <div className={variants.modal.header.default()}>
               <h3 className={textVariants.heading.h3()}>
-                Settings & Preferences
+                {t("settingsModal.title")}
               </h3>
               <button
                 className={variants.modal.close.default()}
@@ -1070,18 +1053,18 @@ const Modal = ({ children, isOpen }) => {
               <div className="space-y-8">
                 <div>
                   <h4 className={`${textVariants.heading.h4()} mb-4`}>
-                    Account Settings
+                    {t("settingsModal.account")}
                   </h4>
                   <div className="space-y-4">
                     <div className="flex items-center justify-between">
                       <div>
                         <div className={textVariants.body.md()}>
-                          Email Notifications
+                          {t("settingsModal.emailNotifications")}
                         </div>
                         <div
                           className={`${textVariants.body.sm()} text-muted-foreground`}
                         >
-                          Receive notifications about your account activity
+                          {t("settingsModal.emailNotificationsDescription")}
                         </div>
                       </div>
                       <button className="w-11 h-6 bg-primary rounded-full relative transition-colors">
@@ -1091,12 +1074,12 @@ const Modal = ({ children, isOpen }) => {
                     <div className="flex items-center justify-between">
                       <div>
                         <div className={textVariants.body.md()}>
-                          Two-Factor Authentication
+                          {t("settingsModal.twoFactor")}
                         </div>
                         <div
                           className={`${textVariants.body.sm()} text-muted-foreground`}
                         >
-                          Add an extra layer of security to your account
+                          {t("settingsModal.twoFactorDescription")}
                         </div>
                       </div>
                       <button className="w-11 h-6 bg-input rounded-full relative transition-colors">
@@ -1108,29 +1091,33 @@ const Modal = ({ children, isOpen }) => {
 
                 <div>
                   <h4 className={`${textVariants.heading.h4()} mb-4`}>
-                    Privacy Settings
+                    {t("settingsModal.privacy")}
                   </h4>
                   <div className="space-y-4">
                     <div>
                       <label className={`${textVariants.body.sm()} block mb-2`}>
-                        Profile Visibility
+                        {t("settingsModal.profileVisibility")}
                       </label>
                       <Select defaultValue="Public">
                         <SelectTrigger className="w-full px-3 py-2 border border-input rounded-md bg-background focus:outline-none focus:ring-2 focus:ring-ring">
                           <SelectValue />
                         </SelectTrigger>
                         <SelectContent>
-                          <SelectItem value="Public">Public</SelectItem>
-                          <SelectItem value="Friends Only">
-                            Friends Only
+                          <SelectItem value="Public">
+                            {t("settingsModal.visibilityPublic")}
                           </SelectItem>
-                          <SelectItem value="Private">Private</SelectItem>
+                          <SelectItem value="Friends Only">
+                            {t("settingsModal.visibilityFriends")}
+                          </SelectItem>
+                          <SelectItem value="Private">
+                            {t("settingsModal.visibilityPrivate")}
+                          </SelectItem>
                         </SelectContent>
                       </Select>
                     </div>
                     <div>
                       <label className={`${textVariants.body.sm()} block mb-2`}>
-                        Data Sharing
+                        {t("settingsModal.dataSharing")}
                       </label>
                       <div className="space-y-2">
                         <label className="flex items-center">
@@ -1140,13 +1127,13 @@ const Modal = ({ children, isOpen }) => {
                             defaultChecked
                           />
                           <span className={textVariants.body.sm()}>
-                            Allow analytics data collection
+                            {t("settingsModal.analyticsConsent")}
                           </span>
                         </label>
                         <label className="flex items-center">
                           <input type="checkbox" className="mr-2" />
                           <span className={textVariants.body.sm()}>
-                            Share usage data with third parties
+                            {t("settingsModal.thirdPartyConsent")}
                           </span>
                         </label>
                       </div>
@@ -1156,22 +1143,22 @@ const Modal = ({ children, isOpen }) => {
 
                 <div>
                   <h4 className={`${textVariants.heading.h4()} mb-4`}>
-                    Appearance
+                    {t("settingsModal.appearance")}
                   </h4>
                   <div className="space-y-4">
                     <div>
                       <label className={`${textVariants.body.sm()} block mb-2`}>
-                        Theme
+                        {t("settingsModal.theme")}
                       </label>
                       <div className="flex gap-2">
                         <button className="px-4 py-2 bg-primary text-primary-foreground rounded-md text-sm">
-                          Light
+                          {t("settingsModal.themeLight")}
                         </button>
                         <button className="px-4 py-2 border border-border rounded-md text-sm">
-                          Dark
+                          {t("settingsModal.themeDark")}
                         </button>
                         <button className="px-4 py-2 border border-border rounded-md text-sm">
-                          Auto
+                          {t("settingsModal.themeAuto")}
                         </button>
                       </div>
                     </div>
@@ -1184,17 +1171,17 @@ const Modal = ({ children, isOpen }) => {
                 variant="outline"
                 onClick={() => closeModal("settingsModal")}
               >
-                Reset to Defaults
+                {t("settingsModal.resetDefaults")}
               </Button>
               <div className="flex gap-3">
                 <Button
                   variant="outline"
                   onClick={() => closeModal("settingsModal")}
                 >
-                  Cancel
+                  {t("common.cancel")}
                 </Button>
                 <Button onClick={() => closeModal("settingsModal")}>
-                  Save Changes
+                  {t("settingsModal.saveChanges")}
                 </Button>
               </div>
             </div>

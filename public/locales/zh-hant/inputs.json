@@ -1,0 +1,136 @@
+{
+  "seo": {
+    "title": "輸入 - 設計系統 - 內部 - {{emailDomain}}",
+    "description": "包含變體、尺寸、狀態和Web3整合的完整輸入組件文件"
+  },
+  "code": {
+    "copied": "✓ 已複製！",
+    "copy": "複製"
+  },
+  "header": {
+    "badge": "輸入",
+    "title": "輸入組件",
+    "intro": "具有一致樣式、驗證狀態和可訪問性功能的表單輸入元件，專為傳統和Web3應用而設計。"
+  },
+  "stats": {
+    "inputTypes": "輸入類型",
+    "sizeOptions": "尺寸選項",
+    "stateTypes": "國家類型",
+    "web3Patterns": "Web3 模式"
+  },
+  "sections": {
+    "quickStart": {
+      "title": "🚀 快速入門",
+      "description": "從最常見的輸入模式開始。這些範例顯示了包含驗證和可訪問性功能的基本輸入類型。"
+    },
+    "variants": {
+      "title": "🎨 輸入變體",
+      "description": "探索所有可用的輸入變體及其特定使用案例和不同情境中的樣式選項。"
+    },
+    "web3": {
+      "title": "⚡ Web3 輸入模式",
+      "description": "Web3 應用中常用的專用輸入模式，包括錢包位址、ENS 域名和代幣金額。"
+    },
+    "accessibility": {
+      "title": "♿ 可及性指南",
+      "description": "確保您的輸入對所有使用者都可存取，包含適當的標籤、鍵盤導航與螢幕閱讀器支援。"
+    }
+  },
+  "validation": {
+    "emailInvalid": "請輸入有效的電子郵件地址",
+    "emailValid": "有效的電子郵件地址",
+    "walletInvalid": "請輸入一個有效的以太坊地址",
+    "walletValid": "有效的以太坊地址"
+  },
+  "quickStart": {
+    "essentialTitle": "1. 必要的輸入類型",
+    "emailLabel": "電子郵件地址",
+    "passwordLabel": "密碼",
+    "passwordPlaceholder": "輸入您的密碼",
+    "searchLabel": "搜尋",
+    "searchPlaceholder": "搜尋訊息...",
+    "messageLabel": "訊息",
+    "messagePlaceholder": "輸入您的訊息...",
+    "sizesTitle": "2. 尺寸變異",
+    "smallLabel": "小輸入",
+    "smallPlaceholder": "小尺寸輸入",
+    "defaultLabel": "預設輸入",
+    "defaultPlaceholder": "預設大小輸入",
+    "largeLabel": "大輸入",
+    "largePlaceholder": "大尺寸輸入",
+    "validationTitle": "3. 驗證狀態",
+    "errorStateLabel": "錯誤狀態",
+    "successStateLabel": "成功狀態",
+    "web3Title": "4. Web3 特定輸入",
+    "walletLabel": "錢包地址",
+    "amountLabel": "代幣金額",
+    "amountBalance": "餘額: 2.4563 ETH"
+  },
+  "variants": {
+    "standardTitle": "標準變體",
+    "specializedTitle": "專用類型",
+    "defaultLabel": "預設輸入",
+    "defaultPlaceholder": "標準輸入欄位",
+    "defaultHint": "最常見的輸入方式",
+    "searchLabel": "搜尋輸入",
+    "searchPlaceholder": "搜尋功能",
+    "searchHint": "針對搜尋用例進行了優化",
+    "errorLabel": "錯誤狀態",
+    "errorPlaceholder": "無效輸入",
+    "errorHint": "用於驗證錯誤",
+    "iconLabel": "帶圖示",
+    "iconHint": "左對齊圖標",
+    "phoneLabel": "電話號碼",
+    "urlLabel": "網站URL",
+    "dateLabel": "日期",
+    "fileLabel": "檔案上傳"
+  },
+  "web3": {
+    "walletInputsTitle": "錢包地址輸入",
+    "ethAddressLabel": "以太坊地址",
+    "solAddressLabel": "Solana 位址",
+    "ensLabel": "ENS 網域",
+    "snsLabel": "SNS 網域",
+    "tokenAmountsTitle": "代幣金額輸入",
+    "ethAmountLabel": "ETH金額",
+    "usdcAmountLabel": "USDC金額",
+    "max": "MAX",
+    "ethBalance": "餘額: 2.4563 ETH",
+    "usdcBalance": "餘額: 1,547.23 USDC",
+    "gasTitle": "Gas費設定",
+    "gasPriceLabel": "Gas價格 (Gwei)",
+    "gasSlow": "慢",
+    "gasStandard": "標準",
+    "gasFast": "快速",
+    "gasSlowTime": "~5分鐘",
+    "gasStandardTime": "~2分鐘",
+    "gasFastTime": "~1分鐘",
+    "customGasLabel": "自訂Gas價格",
+    "customGasHint": "預計費用：8.45美元 • 預計時間：~2分鐘"
+  },
+  "accessibility": {
+    "bestPracticesTitle": "✅ 最佳實踐",
+    "bestPractices": [
+      "始終為螢幕閱讀器提供描述性標籤",
+      "使用適當的輸入類型（電子郵件、電話、URL 等）",
+      "包含有用的占位符文字和說明",
+      "提供清晰的錯誤訊息並附帶建議",
+      "確保足夠的顏色對比度（最低4.5:1）",
+      "支援鍵盤導航和焦點狀態"
+    ],
+    "avoidTitle": "❌ 避免",
+    "avoid": [
+      "使用占位符文字作為唯一標籤",
+      "僅依靠顏色來表示驗證狀態",
+      "使輸入過小，難以舒適操作",
+      "提供模糊或無幫助的錯誤訊息",
+      "沒有充分理由就禁用瀏覽器自動填充",
+      "刪除焦點指示器或使其難以看到"
+    ],
+    "examplesTitle": "無障礙實施範例"
+  },
+  "nav": {
+    "back": "返回設計系統",
+    "lastUpdated": "最後更新：{{date}}"
+  }
+}

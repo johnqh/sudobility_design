@@ -1,0 +1,80 @@
+{
+  "seo": {
+    "title": "Tables & Data Grids - Design System - Internal - {{emailDomain}}",
+    "description": "Comprehensive table system with sorting, filtering, pagination, and data grid functionality"
+  },
+  "header": {
+    "badge": "Tables & Data Grids",
+    "title": "Tables & Data Grids",
+    "subtitle": "Comprehensive table system with sorting, filtering, pagination, and data grid functionality. Perfect for displaying structured data with advanced interaction patterns."
+  },
+  "columns": {
+    "name": "Name",
+    "email": "Email",
+    "role": "Role",
+    "status": "Status",
+    "actions": "Actions",
+    "transactions": "Transactions",
+    "joinDate": "Join Date",
+    "transactionHash": "Transaction Hash",
+    "from": "From",
+    "to": "To",
+    "amount": "Amount",
+    "chain": "Chain"
+  },
+  "basic": {
+    "title": "Basic Table",
+    "usage": "Usage"
+  },
+  "sortable": {
+    "title": "Sortable Table",
+    "headers": "Sortable Headers"
+  },
+  "selectable": {
+    "title": "Selectable Table with Bulk Actions",
+    "selected": "{{count}} row(s) selected",
+    "export": "Export",
+    "delete": "Delete"
+  },
+  "compact": {
+    "title": "Compact Table"
+  },
+  "filterable": {
+    "title": "Filterable Table",
+    "searchPlaceholder": "Search users...",
+    "filters": "Filters"
+  },
+  "pagination": {
+    "title": "Table with Pagination",
+    "showing": "Showing",
+    "to": "to",
+    "of": "of",
+    "results": "results",
+    "ariaLabel": "Pagination"
+  },
+  "web3": {
+    "title": "Web3 Transaction Table",
+    "confirmed": "Confirmed",
+    "pending": "Pending",
+    "ethereum": "Ethereum",
+    "solana": "Solana"
+  },
+  "empty": {
+    "title": "Empty State",
+    "noData": "No data found",
+    "description": "There are no records to display at this time.",
+    "addRecord": "Add New Record"
+  },
+  "tokens": {
+    "title": "Available Table Variants",
+    "structure": "Table Structure",
+    "containerBase": "Container & Base",
+    "headers": "Headers",
+    "body": "Body",
+    "statesPagination": "States & Pagination"
+  },
+  "nav": {
+    "previous": "Layout & Spacing",
+    "back": "Back to Design System"
+  }
+}

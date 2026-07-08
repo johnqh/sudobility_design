@@ -1,0 +1,127 @@
+{
+  "seo": {
+    "title": "Truy cập & A11Y - Hệ thống thiết kế - Nội bộ - {{emailDomain}}",
+    "description": "Các mẫu truy cập toàn diện và công cụ thiết kế bao trùm để tuân thủ WCAG"
+  },
+  "header": {
+    "badge": "Truy cập và A11Y",
+    "title": "Hệ thống thiết kế bao trùm",
+    "intro": "Các mẫu và công cụ truy cập toàn diện để xây dựng các ứng dụng Web3 bao dung, tuân thủ WCAG. Các mẫu này đảm bảo quyền truy cập ngang bằng cho tất cả người dùng, bao gồm cả những người sử dụng công nghệ hỗ trợ."
+  },
+  "stats": {
+    "wcag": {
+      "value": "WCAG 2.1",
+      "label": "Tuân thủ AA"
+    },
+    "touch": {
+      "value": "44px+",
+      "label": "Điểm chạm"
+    },
+    "contrast": {
+      "value": "4,5:1",
+      "label": "Độ tương phản màu sắc"
+    },
+    "screenReader": {
+      "value": "Trình đọc màn hình",
+      "label": "Tương thích"
+    }
+  },
+  "screenReader": {
+    "title": "Hỗ trợ trình đọc màn hình",
+    "description": "Các mẫu trình đọc màn hình toàn diện bao gồm liên kết bỏ qua, nhãn aria và HTML ngữ nghĩa",
+    "skipLink": {
+      "title": "Liên kết bỏ qua",
+      "button": "Liên kết bỏ qua (Nhấn để tập trung)",
+      "visible": "✓ Liên kết bỏ qua hiện đã hiển thị! Điều này giúp người dùng bàn phím di chuyển nhanh chóng"
+    },
+    "only": {
+      "title": "Nội dung chỉ dành cho trình đọc màn hình",
+      "description": "Nội dung này cung cấp bối cảnh cho người đọc màn hình mà không làm rối thiết kế trực quan.",
+      "hidden": "Văn bản này chỉ hiển thị cho người đọc màn hình"
+    }
+  },
+  "focus": {
+    "title": "Quản lý tập trung",
+    "description": "Xóa các chỉ báo tập trung và mẫu điều hướng bằng bàn phím cho tất cả các thành phần tương tác.",
+    "indicatorsTitle": "Chỉ báo tập trung",
+    "standard": "Chế độ tập trung chuẩn",
+    "highContrast": "Độ tương phản cao",
+    "wallet": "Ví điện tử Web3",
+    "error": "Trạng thái lỗi"
+  },
+  "contrast": {
+    "title": "Độ tương phản màu sắc",
+    "description": "Các kết hợp văn bản và nền có độ tương phản cao vượt quá yêu cầu WCAG AA.",
+    "levelsTitle": "Mức độ tương phản văn bản",
+    "high": "Văn bản tương phản cao (WCAG AAA) - Tỷ lệ 7:1+",
+    "medium": "Văn bản độ tương phản trung bình (WCAG AA) - Tỷ lệ 4,5:1+",
+    "low": "Văn bản độ tương phản thấp (cho nội dung phụ)",
+    "backgroundsTitle": "Nền tương phản cao",
+    "primary": "Chính",
+    "success": "Thành công",
+    "warning": "Cảnh báo",
+    "errorLabel": "Lỗi"
+  },
+  "motion": {
+    "title": "Ưa thích chuyển động",
+    "description": "Các chuyển động được tôn trọng sự ưu tiên di chuyển của người dùng và cung cấp các lựa chọn thay thế cho người dùng bị rối loạn tiền đình.",
+    "controlsTitle": "Điều khiển ưa thích chuyển động",
+    "reduceMotion": "Giảm chuyển động",
+    "noAnimation": "Không có hoạt hình",
+    "animatedButton": "Nút được hoạt hình"
+  },
+  "form": {
+    "title": "Khả năng truy cập biểu mẫu",
+    "description": "Các mẫu biểu mẫu dễ tiếp cận với nhãn đúng, xác thực và xử lý lỗi.",
+    "requiredTitle": "Biểu tượng trường bắt buộc",
+    "emailLabel": "Địa chỉ email",
+    "passwordLabel": "Mật khẩu",
+    "passwordError": "Mật khẩu phải có ít nhất 8 ký tự",
+    "codeExamplesTitle": "Ví dụ mã nguồn"
+  },
+  "feedback": {
+    "title": "Phản hồi khả dụng",
+    "description": "Thông báo phản hồi thân thiện với phần mềm đọc màn hình, có vùng ARIA live phù hợp.",
+    "messageTypesTitle": "Loại tin nhắn",
+    "successTitle": "Thành công",
+    "successMessage": "Ví của bạn đã kết nối thành công!",
+    "errorTitle": "Lỗi",
+    "errorMessage": "Giao dịch thất bại. Vui lòng thử lại.",
+    "liveRegionTitle": "Mẫu vùng trực tiếp",
+    "politeExample": "Nội dung này sẽ được thông báo một cách lịch sự cho người dùng máy đọc màn hình",
+    "assertiveExample": "Nội dung này sẽ làm gián đoạn phần mềm đọc màn hình cho các thông báo quan trọng"
+  },
+  "web3": {
+    "title": "Khả năng truy cập Web3",
+    "description": "Các mẫu truy cập chuyên biệt cho ứng dụng Web3 bao gồm kết nối ví và giao dịch",
+    "componentsTitle": "Thành phần Web3",
+    "connectWallet": "Kết nối ví",
+    "connectWalletAria": "Kết nối ví Web3 của bạn",
+    "transactionAria": "Trạng thái giao dịch",
+    "transactionPending": "Giao dịch đang chờ xử lý...",
+    "balanceAria": "Số dư tài khoản là 1,5 ETH",
+    "addressAria": "Địa chỉ ví 0x1234...5678",
+    "implementationTitle": "Triển khai"
+  },
+  "bestPractices": {
+    "title": "Các thực hành tốt nhất",
+    "doTitle": "✅ Làm điều này",
+    "do": [
+      "Sử dụng các phần tử HTML ngữ nghĩa (button, nav, main, v.v.)",
+      "Cung cấp nhãn aria-label mô tả cho các phần tử tương tác",
+      "Đảm bảo kích thước tối thiểu 44px cho các mục chạm trên di động",
+      "Kiểm tra với điều hướng chỉ bằng bàn phím",
+      "Tôn trọng sở thích chuyển động của người dùng",
+      "Cung cấp văn bản thay thế cho các khái niệm Web3 phức tạp"
+    ],
+    "avoidTitle": "❌ Tránh điều này",
+    "avoid": [
+      "Sử dụng màu sắc duy nhất để truyền đạt thông tin",
+      "Tạo bẫy bàn phím mà không có lối thoát",
+      "Video hoặc hoạt hình tự động phát",
+      "Sử dụng các nhãn chung như \"Nhấn vào đây\" hoặc \"Đọc thêm\"",
+      "Xóa bỏ hoàn toàn các chỉ báo tập trung",
+      "Sử dụng thuật ngữ Web3 mà không giải thích"
+    ]
+  }
+}

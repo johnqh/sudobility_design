@@ -1,0 +1,82 @@
+{
+  "seo": {
+    "title": "Tương tác vi mô và hoạt hình - Hệ thống thiết kế - Nội bộ - {{emailDomain}}",
+    "description": "Hệ thống hoạt hình toàn diện với hiệu ứng di chuột, chuyển tiếp và tương tác đặc biệt cho Web3"
+  },
+  "header": {
+    "badge": "Tương tác vi mô và hoạt hình",
+    "title": "Tương tác vi mô và hoạt hình",
+    "description": "Hệ thống hoạt hình toàn diện với hiệu ứng di chuột, trạng thái tải, chuyển tiếp và các tương tác đặc biệt cho Web3. Tất cả các hiệu ứng hoạt hình đều tôn trọng tùy chọn di chuyển của người dùng và mang lại trải nghiệm người dùng mượt mà, thú vị."
+  },
+  "stats": {
+    "variants": "Biến thể hoạt hình",
+    "performance": "Hiệu suất mượt mà",
+    "motionSafe": "An toàn chuyển động",
+    "specialized": "Chuyên biệt"
+  },
+  "hover": {
+    "title": "Hiệu ứng di chuột",
+    "description": "Hiệu ứng di chuột tinh tế nhưng hấp dẫn cho nút bấm, thẻ và các thành phần tương tác.",
+    "buttonEffectsTitle": "Hiệu ứng di chuột qua nút",
+    "liftEffect": "Hiệu ứng nâng",
+    "glowEffect": "Hiệu ứng phát sáng",
+    "scaleEffect": "Hiệu ứng quy mô",
+    "shimmerEffect": "Hiệu ứng lấp lánh",
+    "cardEffectsTitle": "Hiệu ứng di chuột qua thẻ",
+    "cardSubtle": "Hiệu ứng di chuột tinh tế - nâng nhẹ nhàng",
+    "cardGlow": "Hiệu ứng glow khi di chuột - thêm ánh sáng nhẹ"
+  },
+  "loading": {
+    "title": "Trạng thái đang tải",
+    "description": "Các hiệu ứng tải và chỉ báo tiến độ giúp người dùng luôn được tham gia.",
+    "spinnersTitle": "Các bộ phận quay",
+    "interactiveDemoTitle": "Bản trình diễn tương tác",
+    "loadingLabel": "Đang tải...",
+    "startLoading": "Bắt đầu tải",
+    "simulateProgress": "Mô phỏng tiến độ",
+    "progress": "Tiến độ: {{progress}}%"
+  },
+  "web3": {
+    "title": "Hoạt hình Web3",
+    "description": "Các hoạt hình chuyên biệt cho các tương tác Web3, bao gồm kết nối ví và trạng thái giao dịch.",
+    "walletStatesTitle": "Trạng thái kết nối ví",
+    "connecting": "Đang kết nối...",
+    "connected": "Đã kết nối",
+    "connectWallet": "Kết nối ví",
+    "statusLabel": "Trạng thái:",
+    "transactionStatesTitle": "Trạng thái giao dịch",
+    "transactionPending": "Giao dịch đang chờ xử lý",
+    "transactionConfirmed": "Giao dịch đã được xác nhận",
+    "transactionFailed": "Giao dịch thất bại"
+  },
+  "motion": {
+    "title": "Ưa thích chuyển động",
+    "description": "Tất cả các hiệu ứng chuyển động đều tôn trọng các tùy chọn chuyển động của người dùng và cung cấp các lựa chọn thay thế cho khả năng truy cập.",
+    "reducedMotionTitle": "Hỗ trợ chế độ chuyển động giảm",
+    "respectsPreferences": "Tôn trọng các sở thích chuyển động",
+    "fadeOnly": "Chuyển động chỉ mờ dần",
+    "scaleOnly": "Chỉ hoạt hình thay đổi kích thước",
+    "safeAnimationsTitle": "Hoạt hình an toàn",
+    "safeFade": "Chuyển đổi mờ an toàn",
+    "safeSlide": "Chuyển đổi trang chiếu an toàn"
+  },
+  "bestPractices": {
+    "title": "Các thực hành tốt nhất cho hoạt hình",
+    "doTitle": "✅ Làm điều này",
+    "do": [
+      "Giữ các chuyển động dưới 300ms cho các tương tác nhỏ.",
+      "Sử dụng các hàm làm mượt để tạo chuyển động tự nhiên",
+      "Cung cấp phản hồi tức thì về các hành động của người dùng",
+      "Tôn trọng cài đặt ưu tiên giảm chuyển động",
+      "Sử dụng trạng thái tải cho các thao tác kéo dài hơn 500ms"
+    ],
+    "avoidTitle": "❌ Tránh điều này",
+    "avoid": [
+      "Sử dụng hiệu ứng chuyển động quá mức - ít hơn là tốt hơn",
+      "Các hiệu ứng tải kéo dài mà không có tiến độ",
+      "Các chuyển động ảnh gây cản trở chức năng",
+      "Hoạt hình phát tự động khi tải trang",
+      "Hoạt hình phức tạp cho người dùng nhạy cảm với chuyển động"
+    ]
+  }
+}

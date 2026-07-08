@@ -1,0 +1,126 @@
+{
+  "seo": {
+    "title": "Kort - Designsystem - Interna - {{emailDomain}}",
+    "description": "Komplett kartkomponentbibliotek med layouter, varianter och interaktiva mönster"
+  },
+  "codeExample": {
+    "preview": "Förhandsgranskning",
+    "usage": "Användning"
+  },
+  "header": {
+    "badge": "Kortkomponenter",
+    "title": "Kortlayout och innehållsmönster",
+    "description": "Komplett system för kortkomponenter med flexibla layouter, interaktiva element och innehållsmönster. Alla kort stöder upphöjning, hover-tillstånd och responsiv design med konsekvent mellanrum och stil."
+  },
+  "quickStart": {
+    "title": "Snabbstart – Essentiella kortmallar",
+    "description": "Klartillverkade kortkomponenter med konsekventa layouter, interaktioner och innehållsorganisation.",
+    "basic": {
+      "heading": "Grundkort",
+      "cardTitle": "Kortrubrik",
+      "cardBody": "Detta är en enkel kort med enkel innehållslayout och konsekvent stil."
+    },
+    "interactive": {
+      "heading": "Interaktiv kort",
+      "cardTitle": "Interaktiv kort",
+      "cardBody": "Klicka mig för interaktionseffekter och förbättrade hover-tillstånd.",
+      "learnMore": "Läs mer →"
+    },
+    "stats": {
+      "heading": "Statistikkort",
+      "revenueLabel": "Totalintäkt",
+      "fromLastMonth": "från förra månaden"
+    },
+    "feature": {
+      "heading": "Funktionkort",
+      "cardTitle": "Säkert och privat",
+      "cardBody": "Slut-till-slutkryptering säkerställer att dina kommunikationer förblir privata och säkra.",
+      "learnMore": "Läs mer →"
+    }
+  },
+  "variants": {
+    "title": "Kortvarianter och upphöjningar",
+    "description": "Olika korthöjder och stilvarianter för olika användningsområden.",
+    "elevation": {
+      "title": "Höjdnivåer",
+      "description": "Olika skuggdjup och hover-tillstånd för visuellt hierarki",
+      "flat": "Platt kort",
+      "default": "Standardkort",
+      "elevated": "Höjd kort",
+      "floating": "Schwebande kort"
+    },
+    "color": {
+      "title": "Färgvarianter",
+      "description": "Märk- och semantiska färgvarianter för olika sammanhang",
+      "success": "Lyckokort",
+      "warning": "Varningkort",
+      "error": "Felkort",
+      "info": "Informationskort"
+    }
+  },
+  "content": {
+    "title": "Innehålls- och mediekort",
+    "description": "Kort med rik innehåll, media och interaktiva element för sociala och innehållsrelaterade appar.",
+    "social": {
+      "title": "Kort för sociala medier",
+      "description": "Kort med användarinteraktion, engagemangsmått och åtgärder",
+      "userName": "John Doe",
+      "timeAgo": "för 2 timmar sedan",
+      "post": "Just skickat en ny funktion! Web3-integreringen är nu live och redo för testning.",
+      "share": "Dela"
+    },
+    "product": {
+      "title": "Produktkort",
+      "description": "E-handelsstilkort med betyg, pris och åtgärder",
+      "productName": "Web3-utvecklingsverktyg",
+      "reviews": "(128 recensioner)",
+      "productBody": "Komplett verktygslåda för att enkelt bygga decentraliserade appar.",
+      "addToCart": "Lägg till i varukorgen"
+    }
+  },
+  "web3": {
+    "title": "Web3- och krypto-kort",
+    "description": "Specialiserade kortmönster för Web3, krypto- och blockkedjeprogram.",
+    "wallet": {
+      "title": "Plånbokanslutningskort",
+      "description": "Kort för väskaanslutning med statusindikatorer",
+      "connected": "Anslutet",
+      "network": "Nätverk",
+      "balance": "Balans",
+      "disconnect": "Koppla från"
+    },
+    "nft": {
+      "title": "NFT-samlingskort",
+      "description": "Kort för att visa NFT-collectioner och metadata",
+      "collectionName": "Crypto Punks-samling",
+      "collectionBody": "Sällsynt digital samlingsvara från den ikoniska CryptoPunks-serien.",
+      "currentPrice": "Nuvarande pris",
+      "placeBid": "Placera bud"
+    }
+  },
+  "layouts": {
+    "title": "Kortlayout och rutsystem",
+    "description": "Responsiva rutnätlayout och kortlayouter för olika skärmstorlekar.",
+    "grid": {
+      "title": "Responsivt kortnät",
+      "description": "Anpassad rutnät som fungerar på alla skärmstorlekar",
+      "cardLabel": "Kort {{index}}",
+      "subtitle": "Undertext",
+      "sampleContent": "Exempelkortinnehåll för rutnätsdemonstration."
+    }
+  },
+  "accessibility": {
+    "title": "Tillgänglighet och bästa praxis",
+    "guidelinesTitle": "Riktlinjer för kortets tillgänglighet",
+    "guidelines": [
+      "Använd semantisk HTML-struktur med korrekta rubriker",
+      "Se till att det finns tillräckligt kontrast mellan färger för textinnehåll",
+      "Lägg till fokuslägen för interaktiva kortelement",
+      "Använd ARIA-etiketter för komplexa kortinteraktioner",
+      "Implementera tangentbordsnavigation för kortåtgärder",
+      "Ange alternativ text för dekorativa element",
+      "Använd responsiv design för mobil tillgänglighet",
+      "Testa med skärmläsare och tangentbordsnavigering"
+    ]
+  }
+}

@@ -1,0 +1,185 @@
+{
+  "seo": {
+    "title": "Navigation - Design System - Internal - {{emailDomain}}",
+    "description": "Navigation components including breadcrumbs, tabs, pagination, and menu systems"
+  },
+  "header": {
+    "badge": "Navigation Components",
+    "title": "Navigation System",
+    "intro": "Comprehensive navigation components for Web3 applications including breadcrumbs, tabs, pagination, menus, and step navigation. Designed for accessibility and responsive behavior."
+  },
+  "quickStart": {
+    "title": "Quick Start",
+    "copy": "Copy to clipboard",
+    "examples": {
+      "breadcrumb": {
+        "title": "Breadcrumb Navigation",
+        "description": "Hierarchical navigation showing current page location"
+      },
+      "tabs": {
+        "title": "Tab Navigation",
+        "description": "Organize content into multiple views with tab navigation"
+      },
+      "pagination": {
+        "title": "Pagination",
+        "description": "Navigate through multiple pages of content"
+      },
+      "steps": {
+        "title": "Step Navigation",
+        "description": "Guide users through multi-step processes"
+      }
+    }
+  },
+  "breadcrumbs": {
+    "sectionTitle": "Interactive Breadcrumbs",
+    "liveTitle": "Live Breadcrumb Example",
+    "home": "Home",
+    "web3Projects": "Web3 Projects",
+    "featuresTitle": "Features",
+    "features": [
+      "Structured data for SEO optimization",
+      "ARIA accessibility attributes",
+      "Keyboard navigation support",
+      "Responsive design with truncation",
+      "Optional home icon and social sharing"
+    ]
+  },
+  "tabVariants": {
+    "sectionTitle": "Tab Navigation Variants",
+    "defaultTitle": "Default Tabs",
+    "overview": "Overview",
+    "analytics": "Analytics",
+    "settings": "Settings",
+    "overviewContent": "Overview content with project statistics and recent activity.",
+    "analyticsContent": "Analytics dashboard with charts and metrics.",
+    "settingsContent": "Settings panel for configuration options.",
+    "underlinedTitle": "Underlined Tabs",
+    "dashboard": "Dashboard",
+    "team": "Team",
+    "projects": "Projects",
+    "calendar": "Calendar",
+    "underlinedContent": "Dashboard content with clean underlined tab style.",
+    "pillsTitle": "Pills Tabs",
+    "all": "All",
+    "active": "Active",
+    "draft": "Draft",
+    "archived": "Archived",
+    "pillsContent": "Content filtered by the selected pill tab."
+  },
+  "pagination": {
+    "sectionTitle": "Pagination",
+    "listTitle": "Email List Pagination",
+    "listDescription": "Example pagination for email list navigation",
+    "emailSubject": "Email Subject {{number}}",
+    "timeAgo": "2h ago",
+    "previous": "Previous",
+    "next": "Next",
+    "showing": "Showing",
+    "to": "to",
+    "of": "of",
+    "results": "results"
+  },
+  "steps": {
+    "sectionTitle": "Step Navigation",
+    "demoTitle": "Web3 Wallet Setup",
+    "demoDescription": "Guide users through the wallet connection process",
+    "stepLabel": "Step {{number}}:",
+    "items": {
+      "accountSetup": {
+        "name": "Account Setup",
+        "description": "Create your account"
+      },
+      "walletConnection": {
+        "name": "Wallet Connection",
+        "description": "Connect your Web3 wallet"
+      },
+      "emailSetup": {
+        "name": "Email Setup",
+        "description": "Configure your email preferences"
+      },
+      "complete": {
+        "name": "Complete",
+        "description": "Start using example.com"
+      }
+    },
+    "details": {
+      "1": "Create your {{emailDomain}} account with your preferred username and security settings.",
+      "2": "Connect your Web3 wallet (MetaMask, WalletConnect, etc.) to enable blockchain features.",
+      "3": "Configure your email preferences, notifications, and privacy settings.",
+      "4": "Your setup is complete! Start sending and receiving Web3 emails."
+    }
+  },
+  "sidebar": {
+    "sectionTitle": "Sidebar Navigation",
+    "cardTitle": "Email Application Sidebar",
+    "cardDescription": "Persistent navigation for email application",
+    "items": {
+      "dashboard": "Dashboard",
+      "inbox": "Inbox",
+      "sent": "Sent",
+      "archive": "Archive",
+      "settings": "Settings"
+    },
+    "mainContent": "Main content area",
+    "mainContentHint": "Content changes based on sidebar selection"
+  },
+  "web3Patterns": {
+    "sectionTitle": "Web3 Navigation Patterns",
+    "walletStatus": {
+      "title": "Wallet Status Navigation",
+      "description": "Navigation that adapts to wallet connection status",
+      "connected": "MetaMask Connected",
+      "inbox": "Web3 Inbox",
+      "ensProfile": "ENS Profile",
+      "walletSettings": "Wallet Settings"
+    },
+    "multiChain": {
+      "title": "Multi-Chain Navigation",
+      "description": "Navigation across different blockchain networks",
+      "ethereum": "Ethereum",
+      "solana": "Solana",
+      "polygon": "Polygon",
+      "ethereumInbox": "Ethereum Inbox",
+      "ensNames": "ENS Names",
+      "gasSettings": "Gas Settings"
+    }
+  },
+  "accessibility": {
+    "sectionTitle": "Accessibility Guidelines",
+    "title": "Navigation Accessibility",
+    "description": "Ensure all navigation components are accessible to screen readers and keyboard users.",
+    "ariaLandmarks": "ARIA Landmarks",
+    "keyboardNavigation": "Keyboard Navigation",
+    "breadcrumbsLabel": "Breadcrumbs",
+    "breadcrumbsKeys": [
+      "Tab: Navigate through links",
+      "Enter/Space: Activate link",
+      "Skip links for screen readers"
+    ],
+    "tabsLabel": "Tabs",
+    "tabsKeys": [
+      "Arrow keys: Navigate tabs",
+      "Tab: Enter tab panel",
+      "Enter/Space: Activate tab"
+    ]
+  },
+  "implementation": {
+    "sectionTitle": "Implementation Notes",
+    "performanceTitle": "Performance Considerations",
+    "performance": [
+      "Lazy load navigation items when possible",
+      "Use React.memo for complex navigation components",
+      "Debounce search in navigation menus",
+      "Virtual scrolling for long navigation lists",
+      "Preload critical navigation routes"
+    ],
+    "mobileTitle": "Mobile Responsiveness",
+    "mobile": [
+      "Collapse navigation into hamburger menus",
+      "Use bottom navigation for mobile apps",
+      "Implement swipe gestures where appropriate",
+      "Ensure touch targets are at least 44px",
+      "Test on various screen sizes and orientations"
+    ]
+  }
+}

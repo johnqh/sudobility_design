@@ -1,0 +1,133 @@
+{
+  "header": {
+    "title": "Lớp chồng và cổng",
+    "description": "Hệ thống chồng lớp toàn diện bao gồm các hộp thoại, danh sách thả xuống, công cụ gợi ý, bảng và trạng thái tải với quản lý chỉ số z và khả năng truy cập phù hợp."
+  },
+  "common": {
+    "interactiveExample": "Ví dụ tương tác",
+    "usage": "Sử dụng"
+  },
+  "dropdownItems": {
+    "profile": "Xem hồ sơ",
+    "settings": "Cài đặt",
+    "logout": "Đăng xuất"
+  },
+  "alerts": {
+    "profile": "Nhấp vào hồ sơ",
+    "settings": "Cài đặt đã nhấp",
+    "logout": "Đã nhấp vào đăng xuất"
+  },
+  "modals": {
+    "title": "Cửa sổ bật ra",
+    "description": "Hộp thoại dạng mô-đa với mờ nền, trạng thái hoạt hình và nhiều kích thước. Bao gồm quản lý tập trung và điều hướng bằng bàn phím.",
+    "openButton": "Mở hộp thoại",
+    "exampleTitle": "Hộp thoại mẫu",
+    "exampleBody": "Đây là một hộp thoại mẫu sử dụng hệ thống thiết kế lớp chồng mới. Nó bao gồm xử lý nền phù hợp, quản lý tập trung và trạng thái hoạt hình.",
+    "featuresTitle": "Tính năng",
+    "features": [
+      "Hiệu ứng làm mờ nền",
+      "Bẫy tập trung và phục hồi",
+      "Điều hướng bằng bàn phím",
+      "Nhiều biến thể kích thước"
+    ],
+    "accessibilityTitle": "Khả năng tiếp cận",
+    "accessibility": [
+      "Nhãn và vai trò ARIA",
+      "Xử lý phím Escape",
+      "Hỗ trợ trình đọc màn hình",
+      "Quản lý tập trung"
+    ],
+    "cancel": "Hủy",
+    "confirm": "Xác nhận"
+  },
+  "dropdowns": {
+    "title": "Các danh sách thả xuống",
+    "description": "Các menu thả xuống với nhiều tùy chọn vị trí, biểu tượng, đường phân cách và điều hướng bằng bàn phím.",
+    "actionsButton": "Hành động",
+    "userMenuButton": "Menu người dùng"
+  },
+  "tooltips": {
+    "title": "Tooltip",
+    "description": "Các công cụ gợi ý nhẹ với nhiều tùy chọn vị trí và biến thể màu sắc.",
+    "hoverButton": "Chạm để hiển thị chú thích {{position}}",
+    "tooltipOn": "Tooltip trên {{position}}"
+  },
+  "loading": {
+    "title": "Đang tải các lớp chồng",
+    "description": "Trạng thái tải toàn màn hình và nhúng với mờ nền và thông điệp tùy chỉnh.",
+    "showButton": "Hiển thị lớp tải",
+    "inlineLabel": "Trạng thái tải nội tuyến:",
+    "message": "Đang xử lý yêu cầu của bạn..."
+  },
+  "sheets": {
+    "title": "Chăn (chăn dưới)",
+    "description": "Các bảng dưới cùng và bảng hành động tập trung vào thiết bị di động trượt lên từ phía dưới màn hình."
+  },
+  "contextMenus": {
+    "title": "Menu ngữ cảnh",
+    "description": "Các menu ngữ cảnh với chuột phải, phím tắt bàn phím và các menu con lồng nhau."
+  },
+  "portal": {
+    "title": "Quản lý cổng",
+    "description": "Hệ thống quản lý chỉ số Z và công cụ cổng để xếp chồng lớp chồng phù hợp.",
+    "zIndexLayersTitle": "Lớp chỉ số Z",
+    "focusManagementTitle": "Quản lý tập trung",
+    "layers": {
+      "backdrop": "Nền",
+      "popover": "Bật nổi",
+      "dropdown": "Menu thả xuống",
+      "tooltip": "Tooltip",
+      "modal": "Bản modal",
+      "sheet": "Lá",
+      "contextMenu": "Menu ngữ cảnh",
+      "loading": "Đang tải",
+      "notification": "Thông báo"
+    }
+  },
+  "animationStates": {
+    "title": "Trạng thái hoạt hình",
+    "description": "Trạng thái hoạt hình nhất quán cho các chuyển tiếp vào/ra trên tất cả các thành phần lớp chồng.",
+    "availableStatesTitle": "Trạng thái khả dụng",
+    "modalStatesTitle": "Trạng thái mô-đa",
+    "dropdownStatesTitle": "Trạng thái menu thả xuống"
+  },
+  "bestPractices": {
+    "title": "Các thực hành tốt nhất",
+    "accessibilityTitle": "Khả năng tiếp cận",
+    "accessibility": [
+      "Luôn cung cấp nhãn ARIA và vai trò phù hợp",
+      "Thực hiện chặn tập trung cho các hộp thoại",
+      "Hỗ trợ điều hướng bằng bàn phím (Tab, Escape, phím mũi tên)",
+      "Duy trì thứ tự tập trung và khôi phục",
+      "Sử dụng các phần tử HTML ngữ nghĩa",
+      "Cung cấp thông báo cho người đọc màn hình"
+    ],
+    "performanceTitle": "Hiệu suất",
+    "performance": [
+      "Sử dụng React Portals để hiển thị DOM đúng cách",
+      "Thực hiện tải chậm cho các lớp chồng nặng",
+      "Dọn dẹp các trình theo dõi sự kiện khi gỡ bỏ",
+      "Sử dụng chuyển đổi CSS cho hoạt hình",
+      "Tránh sử dụng bộ lọc nền phức tạp trên thiết bị di động",
+      "Tối ưu hóa việc gây ra thrashing trong bố cục"
+    ],
+    "uxGuidelinesTitle": "Hướng dẫn UX",
+    "uxGuidelines": [
+      "Giữ các hộp thoại tập trung vào một nhiệm vụ duy nhất",
+      "Cung cấp các khả năng đóng rõ ràng",
+      "Sử dụng loại chồng chéo phù hợp cho ngữ cảnh",
+      "Duy trì thời gian hoạt hình nhất quán",
+      "Xem xét các hạn chế của khung nhìn di động",
+      "Tránh các tương tác lồng nhau của lớp chồng"
+    ],
+    "technicalTitle": "Kỹ thuật",
+    "technical": [
+      "Sử dụng hệ thống lớp z-index phù hợp",
+      "Xử lý khóa cuộn thân đúng cách",
+      "Hỗ trợ cả tương tác bằng nhấp chuột và bàn phím",
+      "Thử nghiệm trên các kích thước khung nhìn khác nhau",
+      "Xem xét các tùy chọn giảm chuyển động",
+      "Thực hiện các biên giới lỗi phù hợp"
+    ]
+  }
+}

@@ -1,0 +1,132 @@
+{
+  "seo": {
+    "title": "Huy hiệu - {{appName}}",
+    "description": "Các thành phần và biến thể nhãn cho hệ thống thiết kế"
+  },
+  "header": {
+    "badge": "Huy hiệu",
+    "title": "Thành phần huy hiệu",
+    "intro": "Các thành phần nhỏ gọn, linh hoạt để đánh dấu, phân loại và truyền đạt thông tin trạng thái với màu sắc ngữ nghĩa và trạng thái tương tác."
+  },
+  "stats": {
+    "badgeVariants": "Phiên bản huy hiệu",
+    "sizeOptions": "Lựa chọn kích thước",
+    "stateTypes": "Loại nhà nước",
+    "web3Variants": "Biến thể Web3"
+  },
+  "sections": {
+    "quickStart": {
+      "title": "🚀 Bắt đầu nhanh",
+      "description": "Bắt đầu với các mẫu dấu hiệu được sử dụng phổ biến nhất. Sao chép và dán các ví dụ này để nhanh chóng triển khai dấu hiệu trong các thành phần của bạn.",
+      "essentialTitle": "1. Các loại huy hiệu thiết yếu",
+      "essential": {
+        "default": "Mặc định",
+        "primary": "Chính",
+        "success": "Thành công",
+        "warning": "Cảnh báo",
+        "error": "Lỗi"
+      },
+      "statusTitle": "2. Nhãn trạng thái với biểu tượng",
+      "status": {
+        "active": "Đang hoạt động",
+        "pending": "Đang chờ",
+        "failed": "Thất bại",
+        "info": "Thông tin"
+      },
+      "sizesTitle": "3. Biến thể kích thước",
+      "sizes": {
+        "small": "Nhỏ",
+        "default": "Mặc định",
+        "large": "Lớn"
+      },
+      "web3Title": "4. Thẻ tích hợp Web3",
+      "web3": {
+        "ethereum": "Ethereum",
+        "solana": "Solana",
+        "verified": "Đã xác minh"
+      }
+    },
+    "variants": {
+      "title": "🎨 Các biến thể huy hiệu",
+      "description": "Khám phá tất cả các biến thể màu dấu hiệu có sẵn cùng với ý nghĩa ngữ nghĩa và các trường hợp sử dụng phù hợp.",
+      "semanticTitle": "Màu ngữ nghĩa",
+      "web3Title": "Cụ thể cho Web3",
+      "semantic": {
+        "default": "Mặc định",
+        "defaultDesc": "Thông tin mang tính chung, trung lập",
+        "primary": "Chính",
+        "primaryDesc": "Màu thương hiệu, điểm nhấn quan trọng",
+        "success": "Thành công",
+        "successDesc": "Các hành động đã hoàn thành, trạng thái tích cực",
+        "warning": "Cảnh báo",
+        "warningDesc": "Cẩn trọng, các hành động đang chờ xử lý",
+        "error": "Lỗi",
+        "errorDesc": "Hành động thất bại, sự cố nghiêm trọng"
+      },
+      "web3": {
+        "ethereum": "Ethereum",
+        "ethereumDesc": "liên quan đến blockchain Ethereum",
+        "solana": "Solana",
+        "solanaDesc": "liên quan đến blockchain Solana"
+      }
+    },
+    "sizes": {
+      "title": "📏 Các tùy chọn kích thước",
+      "description": "Các kích thước biểu tượng khác nhau cho các trường hợp sử dụng khác nhau, từ các chỉ báo nhỏ gọn đến các nhãn nổi bật.",
+      "small": {
+        "heading": "Nhỏ",
+        "badge": "Huy hiệu nhỏ",
+        "desc": "Kích thước nhỏ gọn cho bố cục dày đặc"
+      },
+      "default": {
+        "heading": "Mặc định",
+        "badge": "Huy hiệu mặc định",
+        "desc": "Kích thước tiêu chuẩn cho hầu hết các trường hợp sử dụng"
+      },
+      "large": {
+        "heading": "Lớn",
+        "badge": "Huy hiệu lớn",
+        "desc": "Kích thước nổi bật để nhấn mạnh"
+      }
+    },
+    "interactive": {
+      "title": "⚡ Mẫu tương tác",
+      "description": "Các ví dụ thực tế về cách các huy hiệu được sử dụng trong các bối cảnh và thành phần khác nhau.",
+      "userStatusTitle": "Biểu tượng trạng thái người dùng",
+      "userStatus": {
+        "online": "Trực tuyến",
+        "away": "Xa",
+        "offline": "Chế độ ngoại tuyến"
+      },
+      "notificationTitle": "Số lượng thông báo",
+      "notification": {
+        "messages": "📧 Tin nhắn",
+        "notifications": "🔔 Thông báo",
+        "updates": "⭐ Cập nhật"
+      }
+    },
+    "accessibility": {
+      "title": "♿ Hướng dẫn về khả năng tiếp cận",
+      "description": "Đảm bảo các huy hiệu của bạn có thể truy cập được cho tất cả người dùng với độ tương phản phù hợp, hỗ trợ trình đọc màn hình và điều hướng bằng bàn phím.",
+      "bestPracticesTitle": "✅ Các thực hành tốt nhất",
+      "bestPractices": [
+        "Sử dụng màu sắc ngữ nghĩa để truyền đạt ý nghĩa một cách nhất quán",
+        "Cung cấp độ tương phản màu sắc hợp lý (tối thiểu 4,5:1)",
+        "Thêm nhãn văn bản, không chỉ màu sắc hoặc biểu tượng",
+        "Sử dụng nhãn ARIA phù hợp cho người đọc màn hình",
+        "Giữ nội dung nhãn ngắn gọn và có ý nghĩa"
+      ],
+      "avoidTitle": "❌ Tránh",
+      "avoid": [
+        "Dựa duy nhất vào màu sắc để truyền đạt thông tin",
+        "Sử dụng quá nhiều biểu tượng trong một giao diện duy nhất",
+        "Làm cho huy hiệu quá nhỏ để đọc thoải mái",
+        "Sử dụng văn bản gắn nhãn không rõ ràng hoặc mơ hồ",
+        "Sử dụng quá nhiều biểu tượng chuyển động hoặc nhấp nháy"
+      ],
+      "ariaExamplesTitle": "Ví dụ ARIA"
+    }
+  },
+  "backToDesignSystem": "Quay lại Hệ thống thiết kế",
+  "lastUpdated": "Cập nhật lần cuối: {{date}}"
+}

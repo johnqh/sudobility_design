@@ -1,0 +1,185 @@
+{
+  "seo": {
+    "title": "Navigazione - Sistema di progettazione - Interno - {{emailDomain}}",
+    "description": "Componenti di navigazione, inclusi breadcrumb, schede, paginazione e sistemi di menu"
+  },
+  "header": {
+    "badge": "Componenti di navigazione",
+    "title": "Sistema di navigazione",
+    "intro": "Componenti di navigazione completi per le applicazioni Web3, inclusi breadcrumb, schede, paginazione, menu e navigazione per passi. Progettati per l'accessibilità e il comportamento reattivo."
+  },
+  "quickStart": {
+    "title": "Avvio rapido",
+    "copy": "Copia negli appunti",
+    "examples": {
+      "breadcrumb": {
+        "title": "Navigazione a breadcrumb",
+        "description": "Navigazione gerarchica che mostra la posizione corrente della pagina"
+      },
+      "tabs": {
+        "title": "Navigazione con schede",
+        "description": "Organizza il contenuto in più visualizzazioni con navigazione tramite schede"
+      },
+      "pagination": {
+        "title": "Paginazione",
+        "description": "Naviga attraverso diverse pagine di contenuti"
+      },
+      "steps": {
+        "title": "Navigazione passo dopo passo",
+        "description": "Guida gli utenti attraverso processi a più fasi"
+      }
+    }
+  },
+  "breadcrumbs": {
+    "sectionTitle": "Breadcrumb interattivo",
+    "liveTitle": "Esempio di breadcrumb in tempo reale",
+    "home": "Home",
+    "web3Projects": "Progetti Web3",
+    "featuresTitle": "Caratteristiche",
+    "features": [
+      "Dati strutturati per l'ottimizzazione SEO",
+      "Attributi di accessibilità ARIA",
+      "Supporto per la navigazione con la tastiera",
+      "Progettazione reattiva con troncamento",
+      "Icona home opzionale e condivisione sociale"
+    ]
+  },
+  "tabVariants": {
+    "sectionTitle": "Varianti di navigazione con schede",
+    "defaultTitle": "Schede predefinite",
+    "overview": "Panoramica",
+    "analytics": "Analisi",
+    "settings": "Impostazioni",
+    "overviewContent": "Contenuto panoramico con statistiche del progetto e attività recenti.",
+    "analyticsContent": "Dashboard di analisi con grafici e metriche.",
+    "settingsContent": "Pannello delle impostazioni per le opzioni di configurazione.",
+    "underlinedTitle": "Schede sottolineate",
+    "dashboard": "Pannello di controllo",
+    "team": "Team",
+    "projects": "Progetti",
+    "calendar": "Calendario",
+    "underlinedContent": "Contenuto del pannello con stile di scheda sottolineata pulito.",
+    "pillsTitle": "Compresse Pillole",
+    "all": "Tutti",
+    "active": "Attivo",
+    "draft": "Bozza",
+    "archived": "Archiviato",
+    "pillsContent": "Contenuto filtrato dalla scheda pillola selezionata."
+  },
+  "pagination": {
+    "sectionTitle": "Paginazione",
+    "listTitle": "Paginazione elenco email",
+    "listDescription": "Esempio di paginazione per la navigazione della lista email",
+    "emailSubject": "Oggetto dell'email {{number}}",
+    "timeAgo": "2 ore fa",
+    "previous": "Precedente",
+    "next": "Prossimo",
+    "showing": "Visualizzazione",
+    "to": "a",
+    "of": "di",
+    "results": "risultati"
+  },
+  "steps": {
+    "sectionTitle": "Navigazione passo dopo passo",
+    "demoTitle": "Impostazione del portafoglio Web3",
+    "demoDescription": "Guida gli utenti attraverso il processo di connessione del portafoglio",
+    "stepLabel": "Passo {{number}}:",
+    "items": {
+      "accountSetup": {
+        "name": "Impostazione del conto",
+        "description": "Crea il tuo account"
+      },
+      "walletConnection": {
+        "name": "Connessione portafoglio",
+        "description": "Collega il tuo portafoglio Web3"
+      },
+      "emailSetup": {
+        "name": "Impostazione posta elettronica",
+        "description": "Configura le tue preferenze di posta elettronica"
+      },
+      "complete": {
+        "name": "Completato",
+        "description": "Inizia a usare example.com"
+      }
+    },
+    "details": {
+      "1": "Crea il tuo account {{emailDomain}} con il nome utente preferito e le impostazioni di sicurezza.",
+      "2": "Collega il tuo portafoglio Web3 (MetaMask, WalletConnect, ecc.) per abilitare le funzionalità della blockchain.",
+      "3": "Configura le tue preferenze di posta elettronica, le notifiche e le impostazioni di privacy.",
+      "4": "La tua configurazione è completata! Inizia a inviare e ricevere e-mail Web3."
+    }
+  },
+  "sidebar": {
+    "sectionTitle": "Navigazione a fianco",
+    "cardTitle": "Barra laterale dell'applicazione email",
+    "cardDescription": "Navigazione persistente per l'applicazione di posta elettronica",
+    "items": {
+      "dashboard": "Pannello di controllo",
+      "inbox": "Posta in arrivo",
+      "sent": "Inviato",
+      "archive": "Archivio",
+      "settings": "Impostazioni"
+    },
+    "mainContent": "Area principale del contenuto",
+    "mainContentHint": "Le modifiche al contenuto dipendono dalla selezione effettuata nella barra laterale"
+  },
+  "web3Patterns": {
+    "sectionTitle": "Modelli di navigazione Web3",
+    "walletStatus": {
+      "title": "Navigazione dello stato del portafoglio",
+      "description": "Navigazione che si adatta allo stato di connessione del portafoglio",
+      "connected": "MetaMask collegato",
+      "inbox": "Posta in arrivo Web3",
+      "ensProfile": "Profilo ENS",
+      "walletSettings": "Impostazioni del portafoglio"
+    },
+    "multiChain": {
+      "title": "Navigazione multicanale",
+      "description": "Navigazione tra diverse reti blockchain",
+      "ethereum": "Ethereum",
+      "solana": "Solana",
+      "polygon": "Poligono",
+      "ethereumInbox": "Posta in arrivo Ethereum",
+      "ensNames": "Nomi ENS",
+      "gasSettings": "Impostazioni del gas"
+    }
+  },
+  "accessibility": {
+    "sectionTitle": "Linee guida sull'accessibilità",
+    "title": "Accessibilità della navigazione",
+    "description": "Assicurati che tutti i componenti di navigazione siano accessibili per gli utenti con screen reader e tastiera.",
+    "ariaLandmarks": "Segnalazioni ARIA",
+    "keyboardNavigation": "Navigazione con la tastiera",
+    "breadcrumbsLabel": "Briciole",
+    "breadcrumbsKeys": [
+      "Scheda: Spostati tra i collegamenti",
+      "Invio/Spazio: Attiva il collegamento",
+      "Collegamenti salto per lettori schermo"
+    ],
+    "tabsLabel": "schede",
+    "tabsKeys": [
+      "Tasti freccia: Spostarsi tra le schede",
+      "Scheda: inserisci il pannello schede",
+      "Invio/Spazio: Attiva scheda"
+    ]
+  },
+  "implementation": {
+    "sectionTitle": "Note di implementazione",
+    "performanceTitle": "Considerazioni sulle prestazioni",
+    "performance": [
+      "Carica in modo lazy gli elementi della navigazione quando possibile",
+      "Utilizza React.memo per i componenti di navigazione complessi",
+      "Debouncing della ricerca nei menu di navigazione",
+      "Scorrimento virtuale per elenchi di navigazione lunghi",
+      "Pre-carica le rotte di navigazione critiche"
+    ],
+    "mobileTitle": "Risposta mobile",
+    "mobile": [
+      "Comprimi la navigazione nei menu a hamburger",
+      "Utilizza la navigazione in fondo per le app mobili",
+      "Implementa i gesti di scorrimento quando appropriato",
+      "Assicurati che gli elementi di tocco abbiano almeno 44 px",
+      "Prova su diverse dimensioni di schermo e orientamenti"
+    ]
+  }
+}

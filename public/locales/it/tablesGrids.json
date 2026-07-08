@@ -1,0 +1,80 @@
+{
+  "seo": {
+    "title": "Tabelle e griglie dati - Sistema di progettazione - Interno - {{emailDomain}}",
+    "description": "Sistema tabella completo con ordinamento, filtraggio, paginazione e funzionalità di griglia dati"
+  },
+  "header": {
+    "badge": "Tabelle e griglie dati",
+    "title": "Tabelle e griglie dati",
+    "subtitle": "Sistema tabella completo con ordinamento, filtraggio, paginazione e funzionalità di griglia dati. Perfetto per visualizzare dati strutturati con modelli di interazione avanzati."
+  },
+  "columns": {
+    "name": "Nome",
+    "email": "Posta elettronica",
+    "role": "Ruolo",
+    "status": "Stato",
+    "actions": "Azioni",
+    "transactions": "Transazioni",
+    "joinDate": "Data di iscrizione",
+    "transactionHash": "Hash della transazione",
+    "from": "Da",
+    "to": "A",
+    "amount": "Importo",
+    "chain": "Catena"
+  },
+  "basic": {
+    "title": "Tabella di base",
+    "usage": "Utilizzo"
+  },
+  "sortable": {
+    "title": "Tabella ordinabile",
+    "headers": "Intestazioni ordinabili"
+  },
+  "selectable": {
+    "title": "Tabella selezionabile con azioni di massa",
+    "selected": "{{count}} riga(e) selezionata(e)",
+    "export": "Esporta",
+    "delete": "Elimina"
+  },
+  "compact": {
+    "title": "Tavolo compatto"
+  },
+  "filterable": {
+    "title": "Tabella filtrabile",
+    "searchPlaceholder": "Cerca utenti...",
+    "filters": "Filtri"
+  },
+  "pagination": {
+    "title": "Tabella con paginazione",
+    "showing": "Visualizzazione",
+    "to": "a",
+    "of": "di",
+    "results": "risultati",
+    "ariaLabel": "Paginazione"
+  },
+  "web3": {
+    "title": "Tabella delle transazioni Web3",
+    "confirmed": "Confermato",
+    "pending": "In sospeso",
+    "ethereum": "Ethereum",
+    "solana": "Solana"
+  },
+  "empty": {
+    "title": "Stato vuoto",
+    "noData": "Nessun dato trovato",
+    "description": "Al momento non ci sono registrazioni da visualizzare.",
+    "addRecord": "Aggiungi nuovo record"
+  },
+  "tokens": {
+    "title": "Varianti di tavolo disponibili",
+    "structure": "Struttura della tabella",
+    "containerBase": "Contenitore e base",
+    "headers": "Intestazioni",
+    "body": "Corpo",
+    "statesPagination": "Stati e paginazione"
+  },
+  "nav": {
+    "previous": "Layout e spaziatura",
+    "back": "Torna al sistema di design"
+  }
+}

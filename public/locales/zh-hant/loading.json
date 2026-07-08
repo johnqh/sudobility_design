@@ -1,0 +1,127 @@
+{
+  "seo": {
+    "title": "載入狀態 - 設計系統 - 內部 - {{emailDomain}}",
+    "description": "包含載入指示器、骨架、進度指示器和Web3模式的完整載入狀態文件"
+  },
+  "copy": {
+    "copied": "✓ 已複製！",
+    "copy": "複製"
+  },
+  "header": {
+    "badge": "載入狀態",
+    "title": "載入狀態組件",
+    "description": "載入指示器和進度狀態，可在異步操作期間提供清晰的視覺反饋，專為Web3交易和區塊鏈互動而設計。",
+    "stats": {
+      "spinnerTypes": "旋轉器類型",
+      "skeletonPatterns": "骨架模式",
+      "progressTypes": "進度類型",
+      "web3Examples": "Web3 案例"
+    }
+  },
+  "quickStart": {
+    "title": "🚀 快速入門",
+    "description": "從最常見的載入模式開始。這些範例顯示不同使用情境下的關鍵載入狀態。",
+    "spinners": {
+      "title": "1. 基本加載旋轉圖示",
+      "small": "小",
+      "default": "預設",
+      "large": "大"
+    },
+    "buttons": {
+      "title": "2. 加載按鈕狀態",
+      "loading": "載入中...",
+      "clickToLoad": "點擊加載",
+      "processing": "處理中",
+      "uploading": "正在上傳..."
+    },
+    "progress": {
+      "title": "3. 進度指示器",
+      "label": "進度",
+      "startDemo": "開始演示"
+    },
+    "skeleton": {
+      "title": "4. 骨架載入"
+    }
+  },
+  "web3": {
+    "title": "⚡ Web3 加載模式",
+    "description": "Web3操作（錢包連接、交易和區塊鏈確認等）的專用載入狀態。",
+    "transaction": {
+      "title": "交易加載狀態",
+      "startDemo": "開始交易示範",
+      "currentState": "當前狀態: {{state}}",
+      "pending": {
+        "title": "交易待處理",
+        "message": "請在您的錢包中確認交易..."
+      },
+      "confirming": {
+        "title": "確認交易",
+        "message": "交易已提交。正在等待區塊鏈確認...",
+        "hash": "雜湊: 0x1234...abcd"
+      },
+      "confirmed": {
+        "title": "交易已確認",
+        "message": "您的交易已在區塊鏈上確認！",
+        "block": "區塊: #18,234,567"
+      }
+    },
+    "wallet": {
+      "title": "錢包連接狀態",
+      "connecting": {
+        "title": "連接錢包",
+        "message": "請在您的錢包中批准連接"
+      },
+      "network": {
+        "title": "檢測網絡",
+        "message": "檢查網絡相容性..."
+      }
+    },
+    "email": {
+      "title": "郵件與訊息載入中",
+      "encrypting": {
+        "title": "加密訊息中...",
+        "message": "使用Web3加密保護您的電子郵件"
+      },
+      "sending": {
+        "title": "正在發送到區塊鏈...",
+        "message": "將電子郵件元數據上鏈記錄"
+      },
+      "uploadProgress": "上傳進度",
+      "uploading": "正在上傳...",
+      "startUploadDemo": "開始上傳示範"
+    }
+  },
+  "skeletons": {
+    "title": "💀 骷髏圖案",
+    "description": "內容占位符，模擬載入內容的結構以提升感知效能。",
+    "emailList": "郵件列表骨架",
+    "cardContent": "卡片內容骨架"
+  },
+  "accessibility": {
+    "title": "♿ 可及性指南",
+    "description": "確保您的載入狀態具有適當的 ARIA 屬性、螢幕閱讀器支援和焦點管理。",
+    "bestPractices": {
+      "title": "✅ 最佳實踐",
+      "items": [
+        "使用 ARIA live 區域來處理動態加載狀態",
+        "提供有意義的加載訊息",
+        "盡可能包含進度資訊",
+        "為偏好使用者使用減少的動畫",
+        "在載入期間保持焦點管理"
+      ]
+    },
+    "avoid": {
+      "title": "❌ 避免",
+      "items": [
+        "沒有文字替代的加載指示器",
+        "無進度指示的無限加載",
+        "可能引發癲癇的快速閃爍動畫",
+        "在未警告的情況下移除焦點或內容",
+        "無上下文的通用「載入中...」訊息"
+      ]
+    },
+    "implementation": "可訪問性實現"
+  },
+  "backToDesignSystem": "返回設計系統",
+  "lastUpdated": "最後更新：{{date}}"
+}

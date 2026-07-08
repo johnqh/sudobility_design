@@ -1,0 +1,142 @@
+{
+  "seo": {
+    "title": "Thông báo - Hệ thống thiết kế - Nội bộ - {{emailDomain}}",
+    "description": "Tài liệu hướng dẫn toàn diện về thành phần cảnh báo với các biến thể, bố cục, hành động và tích hợp Web3"
+  },
+  "copy": {
+    "copied": "✓ Đã sao chép!",
+    "copy": "Sao chép"
+  },
+  "header": {
+    "badge": "Cảnh báo",
+    "title": "Thành phần cảnh báo",
+    "intro": "Các thông báo phản hồi ngữ cảnh cung cấp thông tin quan trọng, cảnh báo hoặc xác nhận cho người dùng với thứ tự phân cấp trực quan rõ ràng và nội dung có thể thực hiện."
+  },
+  "stats": {
+    "alertTypes": "Loại cảnh báo",
+    "layoutOptions": "Tùy chọn bố cục",
+    "actionPatterns": "Mẫu hành động",
+    "web3Examples": "Ví dụ về Web3"
+  },
+  "quickStart": {
+    "title": "🚀 Bắt đầu nhanh",
+    "description": "Bắt đầu với các mẫu cảnh báo được sử dụng phổ biến nhất. Những ví dụ này cho thấy các loại cảnh báo thiết yếu và các trường hợp sử dụng điển hình của chúng.",
+    "essentialTitle": "1. Các loại cảnh báo cần thiết",
+    "success": {
+      "title": "Thành công!",
+      "body": "Giao dịch của bạn đã được xác nhận trên blockchain."
+    },
+    "info": {
+      "title": "Thông tin",
+      "body": "Vui lòng kết nối ví của bạn để tiếp tục thao tác này."
+    },
+    "warning": {
+      "title": "Cảnh báo",
+      "body": "Phát hiện phí gas cao. Hãy cân nhắc chờ đợi để giảm tải mạng."
+    },
+    "error": {
+      "title": "Lỗi",
+      "body": "Giao dịch thất bại. Vui lòng kiểm tra số dư ví của bạn và thử lại."
+    },
+    "compactTitle": "2. Kiểu thông báo gọn nhẹ",
+    "compact": {
+      "success": "✓ Email đã được gửi thành công",
+      "info": "ℹ Các tính năng mới có sẵn trong cài đặt",
+      "warning": "⚠ Ví tiền đã ngắt kết nối",
+      "error": "✗ Không thể tải tin nhắn"
+    },
+    "dismissibleTitle": "3. Thông báo có thể đóng",
+    "dismissible": {
+      "successTitle": "Tài khoản đã được xác minh!",
+      "successBody": "Bạn now có thể truy cập tất cả các tính năng cao cấp.",
+      "infoTitle": "Cập nhật mới đang sẵn sàng",
+      "infoBody": "Phiên bản 2.0 bao gồm các tính năng bảo mật được cải thiện."
+    },
+    "actionsTitle": "4. Cảnh báo với nút hành động",
+    "actions": {
+      "title": "Thời hạn đăng ký sẽ hết hạn sớm",
+      "body": "Tính năng cao cấp của bạn sẽ bị vô hiệu hóa trong 3 ngày nữa.",
+      "renewNow": "Nâng cấp ngay",
+      "remindLater": "Nhắc lại sau"
+    }
+  },
+  "variants": {
+    "title": "🎨 Các biến thể cảnh báo",
+    "description": "Khám phá tất cả các biến thể cảnh báo có sẵn cùng với ý nghĩa ngữ nghĩa và ngữ cảnh phù hợp cho các loại giao tiếp khác nhau với người dùng.",
+    "standardTitle": "Thông báo chuẩn",
+    "standard": {
+      "successTitle": "Thông báo thành công",
+      "successBody": "Sử dụng cho các hành động đã hoàn thành và xác nhận tích cực",
+      "infoTitle": "Thông báo thông tin",
+      "infoBody": "Sử dụng cho thông tin trung lập và mẹo hữu ích",
+      "warningTitle": "Cảnh báo cảnh báo",
+      "warningBody": "Sử dụng cho các vấn đề tiềm năng cần sự chú ý",
+      "errorTitle": "Thông báo lỗi",
+      "errorBody": "Sử dụng cho các hành động thất bại và sự cố nghiêm trọng"
+    },
+    "compactTitle": "Phiên bản nhỏ gọn",
+    "compact": {
+      "success": "Thông báo thành công gọn nhẹ",
+      "successNote": "Sử dụng không gian tối thiểu",
+      "info": "Tin nhắn thông tin gọn nhẹ",
+      "infoNote": "Thông báo nhanh",
+      "warning": "Thông báo cảnh báo ngắn gọn",
+      "warningNote": "Những ghi chú cảnh báo ngắn gọn",
+      "error": "Thông báo lỗi ngắn gọn",
+      "errorNote": "Thông báo lỗi ngắn"
+    }
+  },
+  "web3": {
+    "title": "⚡ Các ví dụ về tích hợp Web3",
+    "description": "Các ví dụ thực tế về thông báo thường được sử dụng trong các ứng dụng Web3, bao gồm kết nối ví, giao dịch và tương tác với blockchain.",
+    "transactionTitle": "Thông báo trạng thái giao dịch",
+    "transaction": {
+      "pendingTitle": "Giao dịch đang chờ xử lý",
+      "pendingBody": "Giao dịch của bạn đang được xử lý trên blockchain. Điều này có thể mất vài phút.",
+      "confirmedTitle": "Giao dịch đã được xác nhận",
+      "confirmedBody": "Email của bạn đã được gửi và ghi lại trên blockchain.",
+      "failedTitle": "Giao dịch thất bại",
+      "failedBody": "Số dư không đủ hoặc giới hạn gas quá thấp. Vui lòng thử lại."
+    },
+    "walletTitle": "Thông báo kết nối ví",
+    "wallet": {
+      "notConnectedTitle": "Ví không được kết nối",
+      "notConnectedBody": "Vui lòng kết nối ví của bạn để truy cập email và gửi tin nhắn.",
+      "connectWallet": "Kết nối ví",
+      "networkMismatchTitle": "Không khớp mạng",
+      "networkMismatchBody": "Vui lòng chuyển sang Ethereum Mainnet để tiếp tục sử dụng nền tảng.",
+      "switchNetwork": "Chuyển đổi mạng"
+    },
+    "gasTitle": "Thông báo phí Gas và mạng lưới",
+    "gas": {
+      "highFeesTitle": "Phát hiện phí gas cao",
+      "highFeesBody": "Giá khí hiện tại khá cao. Hãy cân nhắc chờ đợi để giảm tải mạng",
+      "ensTitle": "Phát hiện tên miền ENS mới",
+      "ensBody": "Ví của bạn hiện đã sở hữu alice.eth. Bạn có thể nhận email tại địa chỉ này!",
+      "setAsPrimary": "Thiết lập làm chính"
+    }
+  },
+  "accessibility": {
+    "title": "♿ Hướng dẫn về khả năng tiếp cận",
+    "description": "Đảm bảo các thông báo của bạn có thể truy cập được cho tất cả người dùng bằng cách sử dụng các thuộc tính ARIA phù hợp, quản lý tập trung và tương thích với trình đọc màn hình.",
+    "bestPracticesTitle": "✅ Các thực hành tốt nhất",
+    "bestPractices": [
+      "Sử dụng các vai trò ARIA phù hợp (alert, alertdialog, status)",
+      "Thêm văn bản mô tả, không chỉ màu sắc hoặc biểu tượng",
+      "Cung cấp thao tác điều hướng bằng bàn phím cho các thành phần tương tác",
+      "Sử dụng độ tương phản màu đủ (tối thiểu 4,5:1)",
+      "Thông báo thời gian được loại bỏ một cách phù hợp"
+    ],
+    "avoidTitle": "❌ Tránh",
+    "avoid": [
+      "Tin nhắn lỗi nghiêm trọng tự động tắt",
+      "Chỉ sử dụng màu sắc để truyền đạt mức độ quan trọng",
+      "Làm cho người dùng bị quá tải vì quá nhiều thông báo",
+      "Làm văn bản thông báo quá nhỏ để đọc",
+      "Che giấu các thao tác quan trọng đằng sau những cú nhấp chuột không cần thiết"
+    ],
+    "ariaTitle": "Ví dụ triển khai ARIA"
+  },
+  "backToDesign": "Quay lại Hệ thống thiết kế",
+  "lastUpdated": "Cập nhật lần cuối: {{date}}"
+}

@@ -1,0 +1,286 @@
+{
+  "seo": {
+    "title": "Hệ thống thiết kế - {{appName}}",
+    "description": "Tài liệu hệ thống thiết kế và trưng bày thành phần"
+  },
+  "badge": "Hệ thống thiết kế",
+  "intro": "Tài liệu hệ thống thiết kế toàn diện, minh họa tất cả các màu sắc, kiểu chữ và các token thiết kế được sử dụng trong {{appName}}.",
+  "stats": {
+    "fontFamilies": "Thế hệ phông chữ",
+    "textSizes": "Kích thước văn bản",
+    "spacingUnits": "Đơn vị khoảng cách",
+    "borderRadius": "Bán kính viền"
+  },
+  "exploreAria": "Khám phá tài liệu của {{title}}",
+  "explore": "Khám phá {{title}}",
+  "architecture": {
+    "title": "Kiến trúc Hệ thống Thiết kế",
+    "body": "Hệ thống {{appName}} được xây dựng với sự chú trọng đến tính nhất quán, khả năng mở rộng và khả năng tiếp cận. Nó cung cấp một bộ đầy đủ các token thiết kế, thành phần và hướng dẫn.",
+    "tokensTitle": "Token thiết kế",
+    "tokens": [
+      "Các thang và họ phông chữ",
+      "Bảng màu và màu ngữ nghĩa",
+      "Các hệ thống khoảng cách và kích thước",
+      "Các token bán kính viền và bóng đổ"
+    ],
+    "implementationTitle": "Triển khai",
+    "implementation": [
+      "tích hợp Tailwind CSS",
+      "Hỗ trợ TypeScript",
+      "Tương thích với chế độ tối",
+      "Công cụ thiết kế phản hồi"
+    ]
+  },
+  "areas": {
+    "colors": {
+      "title": "Màu sắc",
+      "description": "Khám phá tất cả các biến thể màu sắc, màu sắc ngữ nghĩa và chủ đề được sử dụng trong ứng dụng",
+      "features": [
+        "Màu thương hiệu và biến thể",
+        "Hệ thống màu ngữ nghĩa",
+        "Chế độ sáng và tối",
+        "Màu trạng thái (thành công, lỗi, cảnh báo)",
+        "Màu nền và bề mặt"
+      ]
+    },
+    "typography": {
+      "title": "Thiết kế chữ",
+      "description": "Xem tất cả các kiểu văn bản, phông chữ, kích thước và biến thể về kiểu chữ được hệ thống thiết kế hỗ trợ",
+      "features": [
+        "Các gia đình và trọng lượng phông chữ",
+        "Kích thước và thang độ văn bản",
+        "Các biến thể tiêu đề",
+        "Kiểu văn bản nội dung",
+        "Các biến thể văn bản đặc biệt (mã, liên kết, v.v.)"
+      ]
+    },
+    "forms": {
+      "title": "Biểu mẫu",
+      "description": "Thư viện toàn diện các thành phần biểu mẫu với trạng thái xác thực, tính năng khả năng truy cập và phong cách nhất quán",
+      "features": [
+        "Loại đầu vào và biến thể",
+        "Trạng thái xác thực (thành công, lỗi)",
+        "Các thành phần điều khiển biểu mẫu (select, hộp chọn, nút radio)",
+        "Mẫu nâng cao (chuyển đổi mật khẩu)",
+        "Hướng dẫn về khả năng truy cập"
+      ]
+    },
+    "buttons": {
+      "title": "Nút bấm",
+      "description": "Hệ thống thành phần nút bấm toàn diện với các biến thể, kích thước, trạng thái và mẫu tương tác",
+      "features": [
+        "Biến thể màu sắc (chính, phụ, phá hủy)",
+        "Kích thước nút (nhỏ, mặc định, lớn)",
+        "Trạng tương tác (chạm, hoạt động, đang tải)",
+        "Nút biểu tượng và tổ hợp",
+        "Nhóm nút bấm và thanh công cụ"
+      ]
+    },
+    "cards": {
+      "title": "Thẻ",
+      "description": "Hệ thống thành phần thẻ linh hoạt với độ nâng, biến thể nội dung và mẫu tích hợp Web3",
+      "features": [
+        "Card elevation and shadow variants",
+        "Content and media card layouts",
+        "Interactive card states and actions",
+        "Web3-specific card patterns (wallet, NFT)",
+        "Responsive grid layouts"
+      ]
+    },
+    "badges": {
+      "title": "Huy hiệu",
+      "description": "Các thành phần nhỏ gọn, linh hoạt để dán nhãn, phân loại và truyền đạt thông tin trạng thái",
+      "features": [
+        "Semantic color variants (success, warning, error)",
+        "Size options (small, default, large)",
+        "Web3-specific blockchain badges",
+        "Interactive states and notifications",
+        "Accessibility and screen reader support"
+      ]
+    },
+    "alerts": {
+      "title": "Cảnh báo",
+      "description": "Tin nhắn phản hồi ngữ cảnh cho thông tin quan trọng, cảnh báo và xác nhận",
+      "features": [
+        "Standard and compact alert layouts",
+        "Dismissible alerts with close actions",
+        "Web3 transaction and wallet status alerts",
+        "Action buttons and interactive elements",
+        "ARIA accessibility and screen reader support"
+      ]
+    },
+    "inputs": {
+      "title": "Đầu vào",
+      "description": "Các thành phần nhập liệu biểu mẫu với phong cách nhất quán, trạng thái xác thực và khả năng truy cập",
+      "features": [
+        "Text, email, password, and search inputs",
+        "Size variations (small, default, large)",
+        "Validation states and error handling",
+        "Web3 wallet address and token amount inputs",
+        "Icon placement and accessibility support"
+      ]
+    },
+    "loading": {
+      "title": "Trạng thái đang tải",
+      "description": "Các mẫu tải toàn diện bao gồm vòng quay, chỉ báo tiến độ và trạng thái giao dịch Web3",
+      "features": [
+        "Spinners and loading buttons",
+        "Progress bars and skeleton loading",
+        "Web3 transaction and wallet states",
+        "Contextual loading messages",
+        "Accessibility and screen reader support"
+      ]
+    },
+    "modals": {
+      "title": "Cửa sổ bật ra",
+      "description": "Các thành phần mô-đa và hộp thoại với các mẫu tích hợp Web3 và tính năng khả dụng",
+      "features": [
+        "Modal sizes and layout variants",
+        "Web3 wallet connection and transaction modals",
+        "Interactive confirmation dialogs",
+        "Form modals and settings panels",
+        "ARIA accessibility and focus management"
+      ]
+    },
+    "navigation": {
+      "title": "Điều hướng",
+      "description": "Các thành phần điều hướng bao gồm breadcrumb, tab, phân trang và hệ thống menu",
+      "features": [
+        "Breadcrumb navigation with SEO optimization",
+        "Tab navigation with multiple variants",
+        "Pagination for data sets",
+        "Sidebar and menu navigation patterns",
+        "Web3-specific navigation (multi-chain, wallet status)"
+      ]
+    },
+    "dataDisplay": {
+      "title": "Hiển thị dữ liệu",
+      "description": "Các thành phần để hiển thị dữ liệu, bao gồm bảng, danh sách, lưới và bố cục thông tin",
+      "features": [
+        "Data tables with sorting and filtering",
+        "List components for emails and transactions",
+        "Grid layouts for NFTs and blockchain data",
+        "Key-value displays and metadata",
+        "Timeline and activity feeds"
+      ]
+    },
+    "formsAdvanced": {
+      "title": "Biểu mẫu nâng cao",
+      "description": "Các mẫu biểu mẫu nâng cao, bao gồm hướng dẫn nhiều bước, tải lên tệp và đầu vào Web3",
+      "features": [
+        "Multi-step form wizards with progress tracking",
+        "File upload with drag & drop functionality",
+        "Web3-specific inputs (wallet addresses, token amounts)",
+        "Advanced validation with real-time feedback",
+        "Security patterns for sensitive data"
+      ]
+    },
+    "notificationsFeedback": {
+      "title": "Thông báo và phản hồi",
+      "description": "Hệ thống thông báo toàn diện với thông báo dạng toast, chỉ báo tiến độ và hiển thị trạng thái",
+      "features": [
+        "Toast notifications with auto-dismiss and actions",
+        "Progress indicators for long-running operations",
+        "Web3 transaction status with confirmation tracking",
+        "System status indicators and connection states",
+        "Contextual feedback and smart suggestions"
+      ]
+    },
+    "layoutSpacing": {
+      "title": "Bố cục và khoảng cách",
+      "description": "Hệ thống bố cục toàn diện với lưới phản hồi, khung chứa và công cụ khoảng cách",
+      "features": [
+        "Responsive grid systems and auto-fit patterns",
+        "Container variants for different content widths",
+        "Flexible Flexbox patterns for common layouts",
+        "Comprehensive spacing utility system",
+        "Web3-specific layout patterns (wallets, NFTs, DeFi)",
+        "Dashboard and page layout templates"
+      ]
+    },
+    "tablesGrids": {
+      "title": "Bảng và lưới dữ liệu",
+      "description": "Hệ thống bảng toàn diện với sắp xếp, lọc, phân trang và chức năng lưới dữ liệu",
+      "features": [
+        "Sortable columns with visual indicators",
+        "Filterable data with search functionality",
+        "Pagination for large datasets",
+        "Row selection and bulk actions",
+        "Responsive table layouts",
+        "Data grid with resizable columns",
+        "Loading and empty states",
+        "Web3 transaction and address tables"
+      ]
+    },
+    "iconsIllustrations": {
+      "title": "Biểu tượng và minh họa",
+      "description": "Hệ thống biểu tượng toàn diện với kích thước, màu sắc và mẫu sử dụng nhất quán",
+      "features": [
+        "Consistent icon sizing system (xs to xxxl)",
+        "Semantic color variants (success, warning, error)",
+        "Context-specific icon patterns (buttons, _inputs, navigation)",
+        "Interactive states and hover effects",
+        "Web3-specific blockchain icons",
+        "Decorative and hero icon variants",
+        "Status indicators and loading states",
+        "Accessibility and screen reader support"
+      ]
+    },
+    "overlaysPortals": {
+      "title": "Lớp chồng và cổng",
+      "description": "Hệ thống chồng lớp toàn diện với các hộp thoại, danh sách thả xuống, công cụ gợi ý, bảng và trạng thái tải",
+      "features": [
+        "Modal dialogs with animation states and focus management",
+        "Dropdown menus with positioning and keyboard navigation",
+        "Tooltips with multiple positioning options",
+        "Bottom sheets and drawer overlays for mobile",
+        "Context menus and right-click interactions",
+        "Loading overlays with backdrop blur effects",
+        "Proper z-index layering and portal management",
+        "Accessibility with ARIA labels and focus trapping"
+      ]
+    },
+    "microInteractions": {
+      "title": "Tương tác vi mô và hoạt hình",
+      "description": "Hệ thống hoạt hình toàn diện với hiệu ứng di chuột, chuyển tiếp và tương tác đặc biệt cho Web3",
+      "features": [
+        "Hover effects with lift, glow, and scale animations",
+        "Loading animations and spinner variants",
+        "Smooth transitions for state changes",
+        "Gesture feedback and interaction responses",
+        "Web3-specific animations (wallet connect, transaction states)",
+        "Scroll-triggered animations and reveals",
+        "Reduced motion accessibility support",
+        "Performance-optimized CSS and JavaScript animations"
+      ]
+    },
+    "accessibility": {
+      "title": "Truy cập và A11Y",
+      "description": "Các mẫu truy cập toàn diện và công cụ thiết kế bao trùm để tuân thủ WCAG",
+      "features": [
+        "Screen reader support with ARIA labels and skip links",
+        "Focus management and keyboard navigation patterns",
+        "High contrast color combinations for visibility",
+        "Motion preferences and reduced motion support",
+        "Semantic HTML roles and interactive patterns",
+        "Form accessibility with validation and error handling",
+        "Web3-specific accessibility for wallet connections",
+        "WCAG 2.1 AA compliance utilities and best practices"
+      ]
+    },
+    "performance": {
+      "title": "Hiệu suất và tối ưu hóa",
+      "description": "Các mẫu hiệu suất toàn diện và công cụ tối ưu hóa cho các ứng dụng nhanh và hiệu quả",
+      "features": [
+        "Bundle optimization with code splitting and lazy loading",
+        "Rendering optimization with GPU acceleration and virtual scrolling",
+        "Network optimization with caching and adaptive loading",
+        "Core Web Vitals monitoring (LCP, FID/INP, CLS)",
+        "Web3-specific optimizations (transaction batching, gas optimization)",
+        "Resource optimization with image compression and CDN patterns",
+        "Performance monitoring with real-time metrics",
+        "Memory optimization and efficient state management"
+      ]
+    }
+  }
+}

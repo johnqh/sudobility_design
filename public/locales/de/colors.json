@@ -1,0 +1,291 @@
+{
+  "seo": {
+    "title": "Farben - Design-System - Intern - {{emailDomain}}",
+    "description": "Vollständige Farbpalette und Varianten-Showcase für das Design-System"
+  },
+  "nav": {
+    "viewTypography": "Ansicht Typografie"
+  },
+  "header": {
+    "badge": "Farbsystem",
+    "title": "Farbpalette und Verwendung",
+    "description": "Komplettes Farbsystem, das im gesamten {{appName}}-Anwendungsprogramm verwendet wird, mit Verwendungsbeispielen und Codebeispielen. Klicken Sie auf eine Farbe, um ihren Hex-Wert in die Zwischenablage zu kopieren."
+  },
+  "swatch": {
+    "copyAria": "Kopiere den Farbwert {{name}} {{value}}"
+  },
+  "codeExample": {
+    "preview": "Vorschau",
+    "usage": "Verwendung"
+  },
+  "quickStart": {
+    "title": "Schnellstart - Häufig verwendete Beispiele",
+    "description": "Bereits verwendbare Codebeispiele für die häufigsten Entwurfsmuster. Kopieren und Einfügen direkt in Ihre Komponenten.",
+    "primaryButton": {
+      "title": "Primärer Button",
+      "action": "Primäre Aktion"
+    },
+    "successAlert": {
+      "title": "Erfolgswarnung",
+      "heading": "Erfolg!",
+      "body": "Ihre Aktion wurde erfolgreich abgeschlossen."
+    },
+    "blockchainBadge": {
+      "title": "Blockchain-Abzeichen"
+    },
+    "formInput": {
+      "title": "Formular Eingabe",
+      "placeholder": "Geben Sie Ihre E-Mail-Adresse ein..."
+    }
+  },
+  "palettes": {
+    "title": "Farbpaletten",
+    "description": "Basistongpaletten nach Farbton sortiert. Jede Paletten enthält Schattierungen von 50 (helligste) bis 950 (dunkelste).",
+    "items": {
+      "blue": {
+        "name": "Blau (Primär)",
+        "description": "Primärfarbpalette der Marke"
+      },
+      "purple": {
+        "name": "Lila (Sekundär)",
+        "description": "Farbpalette für die zweite Marke"
+      },
+      "neutral": {
+        "name": "Neutral (Grayscale)",
+        "description": "Hintergrund-, Text- und Randfarben"
+      },
+      "red": {
+        "name": "Rot (Fehler)",
+        "description": "Fehler- und zerstörerische Aktionen Farben"
+      },
+      "green": {
+        "name": "Grün (Erfolg)",
+        "description": "Erfolg und positive Aktionsfarben"
+      },
+      "amber": {
+        "name": "Bernstein (Warnung)",
+        "description": "Warn- und Vorsichtsfarben"
+      },
+      "orange": {
+        "name": "Orange",
+        "description": "Akzent- und Hervorhebungsfarben"
+      }
+    }
+  },
+  "networks": {
+    "ethereum": "Ethereum",
+    "solana": "Solana",
+    "polygon": "Polygon"
+  },
+  "web3": {
+    "title": "Web3-Netzwerkfarben",
+    "description": "Farben, die verschiedene Blockchain-Netzwerke und Web3-Elemente darstellen.",
+    "usage": {
+      "ethereum": "Ethereum-Netzwerk-Branding",
+      "solana": "Solana-Netzwerk-Branding",
+      "polygon": "Polygon-Netzwerk-Branding"
+    },
+    "code": {
+      "title": "Web3-Farbenverwendung",
+      "description": "Wie man Web3-Netzwerkfarben in Komponenten verwendet"
+    }
+  },
+  "semantic": {
+    "title": "Semantische Farben",
+    "description": "Semantische Farb-Tokens, die sich an helle und dunkle Themen anpassen. Diese bieten konsistente Bedeutung im gesamten Interface.",
+    "lightMode": "Leichter Modus",
+    "darkMode": "Dunkler Modus",
+    "categories": {
+      "text": {
+        "name": "Textfarben",
+        "colors": {
+          "primaryText": {
+            "name": "Primärer Text",
+            "usage": "Hauptinhalts-Text"
+          },
+          "secondaryText": {
+            "name": "Sekundärtext",
+            "usage": "Unterstützender Text"
+          },
+          "linkText": {
+            "name": "Link-Text",
+            "usage": "Interaktive Links"
+          }
+        }
+      },
+      "background": {
+        "name": "Hintergrundfarben",
+        "colors": {
+          "primaryBackground": {
+            "name": "Primärer Hintergrund",
+            "usage": "Hauptseiten-Hintergründe"
+          },
+          "secondaryBackground": {
+            "name": "Sekundärer Hintergrund",
+            "usage": "Kartenhintergründe"
+          },
+          "elevatedBackground": {
+            "name": "Höherer Hintergrund",
+            "usage": "Modals und Overlay"
+          }
+        }
+      },
+      "state": {
+        "name": "Länderfarben",
+        "colors": {
+          "success": {
+            "name": "Erfolg",
+            "usage": "Erfolgsmeldungen und Aktionen"
+          },
+          "warning": {
+            "name": "Warnung",
+            "usage": "Warnmeldungen"
+          },
+          "error": {
+            "name": "Fehler",
+            "usage": "Fehlermeldungen und zerstörerische Aktionen"
+          },
+          "info": {
+            "name": "Info",
+            "usage": "Informationsmeldungen"
+          }
+        }
+      }
+    },
+    "code": {
+      "title": "Verwendung semantischer Farben",
+      "description": "Wie man semantische Farben aus dem Design-System verwendet",
+      "preview": {
+        "success": "✓ Erfolgsmeldung",
+        "error": "✗ Fehlermeldung",
+        "warning": "⚠ Warnmeldung"
+      }
+    }
+  },
+  "components": {
+    "title": "Komponentenfarben und Verwendungsbeispiele",
+    "description": "Vorkonfigurierte Farbkombinationen für gängige Benutzeroberflächen-Elemente mit integrierter Hover-, Fokus- und Themenunterstützung.",
+    "exampleHeading": "{{name}} Beispiele",
+    "liveExamples": "Live-Beispiele",
+    "alertMessage": "{{name}} Nachricht",
+    "interactiveHeading": "Interaktive {{name}} Beispiele:",
+    "createPreview": {
+      "button": {
+        "primary": "Primäre Aktion",
+        "secondary": "Sekundäre Aktion",
+        "destructive": "Element löschen"
+      },
+      "alert": {
+        "infoLabel": "Info:",
+        "infoText": "Dies ist eine Informationswarnung",
+        "successLabel": "Erfolg:",
+        "successText": "Vorgang erfolgreich abgeschlossen",
+        "errorLabel": "Fehler:",
+        "errorText": "Beim Ausführen ist ein Fehler aufgetreten"
+      }
+    },
+    "items": {
+      "button": {
+        "name": "Knopf",
+        "createTitle": "Wie man Schaltflächen erstellt",
+        "createDescription": "Schritt-für-Schritt-Anleitung zum Erstellen von Schaltflächen mit korrekten Farben",
+        "variantsTitle": "Schaltflächen-Varianten und Zustände",
+        "variantsDescription": "Alle Button-Farbenvarianten mit Hover- und Fokusszuständen",
+        "variants": {
+          "primary": "Primär",
+          "secondary": "Sekundär",
+          "destructive": "Zerstörerisch",
+          "success": "Erfolg"
+        }
+      },
+      "badge": {
+        "name": "Abzeichen",
+        "createTitle": "Wie man Abzeichen erstellt",
+        "createDescription": "Schritt-für-Schritt-Anleitung zum Erstellen von Abzeichen mit korrekten Farben",
+        "variantsTitle": "Abzeichen-Varianten und -zustände",
+        "variantsDescription": "Alle Abzeichenfarbvarianten mit Hover- und Fokusszuständen",
+        "variants": {
+          "default": "Standard",
+          "primary": "Primär",
+          "success": "Erfolg",
+          "warning": "Warnung",
+          "error": "Fehler"
+        }
+      },
+      "alert": {
+        "name": "Warnung",
+        "createTitle": "So erstellen Sie Warnungen",
+        "createDescription": "Schritt-für-Schritt-Anleitung zum Erstellen von Warnungen mit korrekten Farben",
+        "variantsTitle": "Warnungsvarianten und -zustände",
+        "variantsDescription": "Alle Warnungsfarbenvarianten mit Hover- und Fokusszuständen",
+        "variants": {
+          "info": "Info",
+          "success": "Erfolg",
+          "warning": "Warnung",
+          "error": "Fehler"
+        }
+      }
+    }
+  },
+  "practical": {
+    "title": "Praktische Verwendungsbeispiele",
+    "description": "Realitätsnahe Beispiele, die zeigen, wie Farben für gängige UI-Muster kombiniert werden können.",
+    "form": {
+      "title": "Formular mit farbcodierten Zuständen",
+      "description": "Wie man Farben für die Formularvalidierung und Zustände verwendet",
+      "emailLabel": "E-Mail (gültig)",
+      "emailValid": "✓ E-Mail-Adresse ist gültig",
+      "passwordLabel": "Passwort (Fehler)",
+      "passwordError": "✗ Das Passwort muss mindestens 8 Zeichen lang sein",
+      "submit": "Formular absenden"
+    },
+    "card": {
+      "title": "Karte mit Statusfarben",
+      "description": "Wie man Farben in Kartenkomponenten mit verschiedenen Zuständen verwendet",
+      "apiServer": "API-Server",
+      "online": "online",
+      "operational": "Alle Systeme betriebsbereit",
+      "database": "Datenbank",
+      "maintenance": "Wartung",
+      "maintenanceProgress": "Wartung im Gange"
+    },
+    "navigation": {
+      "title": "Navigation mit Farbzuständen",
+      "description": "Wie man Farben für Navigationszustände und aktive Elemente verwendet",
+      "dashboard": "Dashboard",
+      "users": "Benutzer",
+      "settings": "Einstellungen"
+    },
+    "progress": {
+      "title": "Fortschrittsindikatoren mit Farben",
+      "description": "Wie man Farben für Fortschrittsbalken und Ladezustände verwendet",
+      "label": "Fortschritt",
+      "complete75": "75 % abgeschlossen",
+      "success": "Erfolg",
+      "complete100": "100 % vollständig"
+    }
+  },
+  "guidelines": {
+    "title": "Verwendungsanleitung",
+    "doTitle": "✓ Machen",
+    "do": [
+      "Verwenden Sie semantische Farben für konsistente Bedeutung",
+      "Bevorzugen Sie Komponentenfarben für Benutzeroberflächenelemente",
+      "Testfarben in beiden Modi, hell und dunkel",
+      "Stellen Sie eine ausreichende Kontrastierung für die Barrierefreiheit sicher",
+      "Verwenden Sie die Farbeffekt-Funktionen für Konsistenz"
+    ],
+    "dontTitle": "✗ Nicht",
+    "dont": [
+      "Verwenden Sie rohe Hexwerte direkt in Komponenten",
+      "Mischen Sie verschiedene Farbsysteme",
+      "Erstellen Sie benutzerdefinierte Farben ohne Designgenehmigung",
+      "Verwenden Sie Farben, die im Dunkelmodus nicht funktionieren",
+      "Ignoriere Anforderungen an die Kontrasthöhe für Barrierefreiheit"
+    ]
+  },
+  "copyInstructions": {
+    "title": "Klicken zum Kopieren der Werte",
+    "description": "Klicken Sie auf eine beliebige Farbprobe, um ihren Hex-Wert zu kopieren, oder verwenden Sie die Kopier-Schaltfläche bei Codebeispielen, um den Verwendungs-Code zu kopieren"
+  }
+}

@@ -1,0 +1,109 @@
+{
+  "seo": {
+    "title": "性能与优化 - 设计系统 - 内部 - {{emailDomain}}",
+    "description": "用于快速高效Web3应用的性能优化模式和Core Web Vitals工具"
+  },
+  "header": {
+    "badge": "性能与优化",
+    "title": "性能优化系统",
+    "description": "适用于快速加载、高效运行的Web3应用的全面性能模式。优化捆绑包大小、渲染性能、核心Web指标以及区块链交互。",
+    "stats": {
+      "bundleSplit": {
+        "value": "捆绑拆分",
+        "label": "代码片段"
+      },
+      "gpuLayers": {
+        "value": "GPU 层",
+        "label": "硬件加速"
+      },
+      "web3Batch": {
+        "value": "Web3 批处理",
+        "label": "交易批处理"
+      },
+      "lcpTarget": {
+        "value": "< 2.5秒",
+        "label": "LCP 目标"
+      }
+    }
+  },
+  "webVitals": {
+    "title": "Core Web Vitals",
+    "description": "使用性能优化工具进行核心网页指标的实时监控。",
+    "lcp": {
+      "title": "最大内容绘制",
+      "description": "渲染最大元素所需时间"
+    },
+    "fid": {
+      "title": "首次输入延迟",
+      "description": "交互式响应时间"
+    },
+    "cls": {
+      "title": "累积布局偏移",
+      "description": "视觉稳定性评分"
+    }
+  },
+  "bundle": {
+    "title": "捆绑优化",
+    "description": "代码分割和懒加载模式，以减小初始捆绑包大小。",
+    "lazyLoadingStates": "延迟加载状态",
+    "componentLoading": "组件加载中...",
+    "componentLoaded": "组件已加载 ✓",
+    "codeSplittingExample": "代码拆分示例",
+    "loadingChunk": "正在加载设计系统块...",
+    "bundleAnalysis": "捆绑分析",
+    "mainBundle": "主捆绑包：",
+    "designSystem": "设计系统：",
+    "web3Utils": "Web3 工具：",
+    "charts": "图表："
+  },
+  "network": {
+    "title": "网络优化",
+    "description": "基于连接质量与缓存模式的自适应加载策略。",
+    "connectionQuality": "连接质量",
+    "currentConnection": "当前连接",
+    "latency": "延迟: ~{{latency}}ms",
+    "simulateSlowConnection": "模拟慢速连接",
+    "cacheStatus": "缓存状态",
+    "freshData": "新鲜数据",
+    "freshDataSuffix": " - 最近获取",
+    "staleData": "过时数据",
+    "staleDataSuffix": " - 需要刷新",
+    "implementation": "实现"
+  },
+  "web3": {
+    "title": "Web3性能",
+    "description": "针对区块链交互、钱包连接和交易批处理的专用优化。",
+    "walletConnection": "钱包连接",
+    "cachedConnection": "已缓存连接",
+    "connecting": "连接中...",
+    "transactionBatching": "交易批处理",
+    "batchedTransactions": "批量交易",
+    "batchedTransactionsDetail": "5 交易 → 1 多调用",
+    "individualTransaction": "单笔交易",
+    "gasOptimization": "气体优化",
+    "gasOptimal": "最佳Gas：15 gwei",
+    "gasHigh": "高Gas：45 gwei",
+    "gasVeryHigh": "非常高：120 gwei"
+  },
+  "bestPractices": {
+    "title": "性能最佳实践",
+    "doTitle": "✅ 做这个",
+    "do": [
+      "为内部/管理功能使用代码分割",
+      "为图像和组件实现懒加载",
+      "尽可能批量处理Web3交易",
+      "使用GPU加速以获得流畅的动画",
+      "在生产环境中监控核心网页指标",
+      "缓存钱包连接和区块链数据"
+    ],
+    "avoidTitle": "❌ 避免这个",
+    "avoid": [
+      "在初始页面加载时立即加载所有组件",
+      "对批量数据执行单独的区块链调用",
+      "使用动态内容导致布局偏移",
+      "对非关键功能使用阻塞渲染",
+      "忽略网络条件以加载资源",
+      "正在重新获取已缓存的区块链数据"
+    ]
+  }
+}

@@ -1,0 +1,82 @@
+{
+  "seo": {
+    "title": "Micro-Interactions & Animations - Design System - Internal - {{emailDomain}}",
+    "description": "Comprehensive animation system with hover effects, transitions, and Web3-specific interactions"
+  },
+  "header": {
+    "badge": "Micro-Interactions & Animations",
+    "title": "Micro-Interactions & Animations",
+    "description": "Comprehensive animation system with hover effects, loading states, transitions, and Web3-specific interactions. All animations respect user motion preferences and provide smooth, delightful user experiences."
+  },
+  "stats": {
+    "variants": "Animation Variants",
+    "performance": "Smooth Performance",
+    "motionSafe": "Motion Safe",
+    "specialized": "Specialized"
+  },
+  "hover": {
+    "title": "Hover Effects",
+    "description": "Subtle but engaging hover effects for buttons, cards, and interactive elements.",
+    "buttonEffectsTitle": "Button Hover Effects",
+    "liftEffect": "Lift Effect",
+    "glowEffect": "Glow Effect",
+    "scaleEffect": "Scale Effect",
+    "shimmerEffect": "Shimmer Effect",
+    "cardEffectsTitle": "Card Hover Effects",
+    "cardSubtle": "Subtle hover effect - lifts gently",
+    "cardGlow": "Glow hover effect - adds soft glow"
+  },
+  "loading": {
+    "title": "Loading States",
+    "description": "Loading animations and progress indicators that keep users engaged.",
+    "spinnersTitle": "Spinners",
+    "interactiveDemoTitle": "Interactive Demo",
+    "loadingLabel": "Loading...",
+    "startLoading": "Start Loading",
+    "simulateProgress": "Simulate Progress",
+    "progress": "Progress: {{progress}}%"
+  },
+  "web3": {
+    "title": "Web3 Animations",
+    "description": "Specialized animations for Web3 interactions including wallet connections and transaction states.",
+    "walletStatesTitle": "Wallet Connection States",
+    "connecting": "Connecting...",
+    "connected": "Connected",
+    "connectWallet": "Connect Wallet",
+    "statusLabel": "Status:",
+    "transactionStatesTitle": "Transaction States",
+    "transactionPending": "Transaction Pending",
+    "transactionConfirmed": "Transaction Confirmed",
+    "transactionFailed": "Transaction Failed"
+  },
+  "motion": {
+    "title": "Motion Preferences",
+    "description": "All animations respect user motion preferences and provide alternatives for accessibility.",
+    "reducedMotionTitle": "Reduced Motion Support",
+    "respectsPreferences": "Respects Motion Preferences",
+    "fadeOnly": "Fade Only Animation",
+    "scaleOnly": "Scale Only Animation",
+    "safeAnimationsTitle": "Safe Animations",
+    "safeFade": "Safe fade transition",
+    "safeSlide": "Safe slide transition"
+  },
+  "bestPractices": {
+    "title": "Animation Best Practices",
+    "doTitle": "✅ Do This",
+    "do": [
+      "Keep animations under 300ms for micro-interactions",
+      "Use easing functions for natural movement",
+      "Provide immediate feedback on user actions",
+      "Respect prefers-reduced-motion settings",
+      "Use loading states for operations > 500ms"
+    ],
+    "avoidTitle": "❌ Avoid This",
+    "avoid": [
+      "Overusing animations - less is more",
+      "Long loading animations without progress",
+      "Animations that interfere with functionality",
+      "Auto-playing animations on page load",
+      "Complex animations for users with motion sensitivities"
+    ]
+  }
+}

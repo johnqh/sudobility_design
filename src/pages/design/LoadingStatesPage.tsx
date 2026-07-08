@@ -9,6 +9,7 @@ import {
   ExclamationTriangleIcon,
 } from "@heroicons/react/24/outline";
 import React, { useState } from "react";
+import { useTranslation } from "react-i18next";
 import LocalizedLink from "../../components/LocalizedLink";
 import { SEOHead } from "@sudobility/seo_lib";
 import { textVariants, ui, variants } from "@sudobility/design";
@@ -25,19 +26,22 @@ const CodeBlock: React.FC<{
   copyKey: string;
   copiedStates: { [key: string]: boolean };
   copyToClipboard: (text: string, key: string) => void;
-}> = ({ code, _language = "tsx", copyKey, copiedStates, copyToClipboard }) => (
-  <div className="relative">
-    <pre className="bg-muted text-foreground p-4 rounded-lg overflow-x-auto text-sm">
-      <code>{code}</code>
-    </pre>
-    <button
-      onClick={() => copyToClipboard(code, copyKey)}
-      className="absolute top-3 right-3 bg-secondary hover:bg-secondary/80 text-secondary-foreground px-3 py-1 rounded text-xs transition-colors"
-    >
-      {copiedStates[copyKey] ? "✓ Copied!" : "Copy"}
-    </button>
-  </div>
-);
+}> = ({ code, _language = "tsx", copyKey, copiedStates, copyToClipboard }) => {
+  const { t } = useTranslation("loading");
+  return (
+    <div className="relative">
+      <pre className="bg-muted text-foreground p-4 rounded-lg overflow-x-auto text-sm">
+        <code>{code}</code>
+      </pre>
+      <button
+        onClick={() => copyToClipboard(code, copyKey)}
+        className="absolute top-3 right-3 bg-secondary hover:bg-secondary/80 text-secondary-foreground px-3 py-1 rounded text-xs transition-colors"
+      >
+        {copiedStates[copyKey] ? t("copy.copied") : t("copy.copy")}
+      </button>
+    </div>
+  );
+};
 
 const SectionHeader: React.FC<{
   id: string;
@@ -83,6 +87,7 @@ const LoadingStatesPage: React.FC<AppProps> = ({
   emailDomain,
   appName: _appName,
 }) => {
+  const { t } = useTranslation("loading");
   const [copiedStates, setCopiedStates] = useState<{ [key: string]: boolean }>(
     {},
   );
@@ -184,8 +189,8 @@ const LoadingStatesPage: React.FC<AppProps> = ({
   return (
     <>
       <SEOHead
-        title={`Loading States - Design System - Internal - ${emailDomain}`}
-        description="Comprehensive loading state documentation with spinners, skeletons, progress indicators, and Web3 patterns"
+        title={t("seo.title", { emailDomain })}
+        description={t("seo.description")}
         noIndex={true}
       />
 
@@ -198,20 +203,18 @@ const LoadingStatesPage: React.FC<AppProps> = ({
             <div className="inline-flex items-center bg-accent px-4 py-2 rounded-full mb-6">
               <ArrowPathIcon className="h-5 w-5 text-accent-foreground mr-2 animate-spin" />
               <span className="text-accent-foreground font-semibold">
-                Loading States
+                {t("header.badge")}
               </span>
             </div>
 
             <h1 className={`${textVariants.heading.display.xl()} mb-6`}>
-              Loading State Components
+              {t("header.title")}
             </h1>
 
             <p
               className={`${textVariants.body.lg()} max-w-3xl mx-auto text-muted-foreground mb-8`}
             >
-              Loading indicators and progress states that provide clear visual
-              feedback during asynchronous operations, specially designed for
-              Web3 transactions and blockchain interactions.
+              {t("header.description")}
             </p>
 
             {/* Loading Stats */}
@@ -223,7 +226,7 @@ const LoadingStatesPage: React.FC<AppProps> = ({
                   6
                 </div>
                 <div className={textVariants.caption.default()}>
-                  Spinner Types
+                  {t("header.stats.spinnerTypes")}
                 </div>
               </div>
               <div className={`${ui.background.subtle} rounded-lg p-4`}>
@@ -233,7 +236,7 @@ const LoadingStatesPage: React.FC<AppProps> = ({
                   4
                 </div>
                 <div className={textVariants.caption.default()}>
-                  Skeleton Patterns
+                  {t("header.stats.skeletonPatterns")}
                 </div>
               </div>
               <div className={`${ui.background.subtle} rounded-lg p-4`}>
@@ -243,7 +246,7 @@ const LoadingStatesPage: React.FC<AppProps> = ({
                   5
                 </div>
                 <div className={textVariants.caption.default()}>
-                  Progress Types
+                  {t("header.stats.progressTypes")}
                 </div>
               </div>
               <div className={`${ui.background.subtle} rounded-lg p-4`}>
@@ -253,7 +256,7 @@ const LoadingStatesPage: React.FC<AppProps> = ({
                   8
                 </div>
                 <div className={textVariants.caption.default()}>
-                  Web3 Examples
+                  {t("header.stats.web3Examples")}
                 </div>
               </div>
             </div>
@@ -265,8 +268,8 @@ const LoadingStatesPage: React.FC<AppProps> = ({
               expandedSections={expandedSections}
               toggleSection={toggleSection}
               id="quick-start"
-              title="🚀 Quick Start"
-              description="Get started with the most commonly used loading patterns. These examples show essential loading states for different use cases."
+              title={t("quickStart.title")}
+              description={t("quickStart.description")}
             />
 
             {expandedSections["quick-start"] && (
@@ -274,25 +277,25 @@ const LoadingStatesPage: React.FC<AppProps> = ({
                 {/* Basic Spinners */}
                 <div>
                   <h3 className={`${textVariants.heading.h3()} mb-4`}>
-                    1. Basic Loading Spinners
+                    {t("quickStart.spinners.title")}
                   </h3>
                   <div className="flex items-center gap-8 p-6 bg-muted rounded-lg mb-4">
                     <div className="text-center">
                       <SpinnerSmall />
                       <p className="text-xs text-muted-foreground mt-2">
-                        Small
+                        {t("quickStart.spinners.small")}
                       </p>
                     </div>
                     <div className="text-center">
                       <SpinnerDefault />
                       <p className="text-xs text-muted-foreground mt-2">
-                        Default
+                        {t("quickStart.spinners.default")}
                       </p>
                     </div>
                     <div className="text-center">
                       <SpinnerLarge />
                       <p className="text-xs text-muted-foreground mt-2">
-                        Large
+                        {t("quickStart.spinners.large")}
                       </p>
                     </div>
                   </div>
@@ -315,7 +318,7 @@ const LoadingStatesPage: React.FC<AppProps> = ({
                 {/* Loading Button */}
                 <div>
                   <h3 className={`${textVariants.heading.h3()} mb-4`}>
-                    2. Loading Button States
+                    {t("quickStart.buttons.title")}
                   </h3>
                   <div className="flex flex-wrap gap-4 p-6 bg-muted rounded-lg mb-4">
                     <button
@@ -326,10 +329,10 @@ const LoadingStatesPage: React.FC<AppProps> = ({
                       {demoStates.isLoading ? (
                         <div className="flex items-center">
                           <div className="animate-spin rounded-full h-4 w-4 border-b-2 border-primary-foreground mr-2"></div>
-                          Loading...
+                          {t("quickStart.buttons.loading")}
                         </div>
                       ) : (
-                        "Click to Load"
+                        t("quickStart.buttons.clickToLoad")
                       )}
                     </button>
 
@@ -337,7 +340,7 @@ const LoadingStatesPage: React.FC<AppProps> = ({
                       className={`${(variants.button as any).secondary.default()} flex items-center`}
                     >
                       <div className="animate-spin rounded-full h-4 w-4 border-b-2 border-secondary-foreground mr-2"></div>
-                      Processing
+                      {t("quickStart.buttons.processing")}
                     </button>
 
                     <button
@@ -345,7 +348,7 @@ const LoadingStatesPage: React.FC<AppProps> = ({
                       disabled
                     >
                       <div className="animate-pulse h-4 w-4 bg-primary-foreground rounded-full mr-2"></div>
-                      Uploading...
+                      {t("quickStart.buttons.uploading")}
                     </button>
                   </div>
 
@@ -381,12 +384,12 @@ const LoadingStatesPage: React.FC<AppProps> = ({
                 {/* Progress Bars */}
                 <div>
                   <h3 className={`${textVariants.heading.h3()} mb-4`}>
-                    3. Progress Indicators
+                    {t("quickStart.progress.title")}
                   </h3>
                   <div className="space-y-4 p-6 bg-muted rounded-lg mb-4">
                     <div>
                       <div className="flex justify-between text-sm mb-2">
-                        <span>Progress</span>
+                        <span>{t("quickStart.progress.label")}</span>
                         <span>{demoStates.progress}%</span>
                       </div>
                       <div className="w-full bg-muted rounded-full h-2">
@@ -401,7 +404,7 @@ const LoadingStatesPage: React.FC<AppProps> = ({
                       className={(variants.button as any).secondary.default()}
                       onClick={startProgressDemo}
                     >
-                      Start Progress Demo
+                      {t("quickStart.progress.startDemo")}
                     </button>
 
                     <div className="w-full bg-muted rounded-full h-1">
@@ -440,7 +443,7 @@ const LoadingStatesPage: React.FC<AppProps> = ({
                 {/* Skeleton Loading */}
                 <div>
                   <h3 className={`${textVariants.heading.h3()} mb-4`}>
-                    4. Skeleton Loading
+                    {t("quickStart.skeleton.title")}
                   </h3>
                   <div className="p-6 bg-muted rounded-lg mb-4">
                     <div className="animate-pulse">
@@ -486,8 +489,8 @@ const LoadingStatesPage: React.FC<AppProps> = ({
               expandedSections={expandedSections}
               toggleSection={toggleSection}
               id="web3"
-              title="⚡ Web3 Loading Patterns"
-              description="Specialized loading states for Web3 operations including wallet connections, transactions, and blockchain confirmations."
+              title={t("web3.title")}
+              description={t("web3.description")}
             />
 
             {expandedSections["web3"] && (
@@ -495,7 +498,7 @@ const LoadingStatesPage: React.FC<AppProps> = ({
                 {/* Transaction States */}
                 <div>
                   <h3 className={`${textVariants.heading.h4()} mb-4`}>
-                    Transaction Loading States
+                    {t("web3.transaction.title")}
                   </h3>
                   <div className="space-y-4 p-6 bg-muted rounded-lg mb-6">
                     <div className="flex items-center justify-between">
@@ -504,10 +507,12 @@ const LoadingStatesPage: React.FC<AppProps> = ({
                         onClick={startTransactionDemo}
                         disabled={demoStates.transactionState !== "idle"}
                       >
-                        Start Transaction Demo
+                        {t("web3.transaction.startDemo")}
                       </button>
                       <span className="text-sm text-muted-foreground">
-                        Current state: {demoStates.transactionState}
+                        {t("web3.transaction.currentState", {
+                          state: demoStates.transactionState,
+                        })}
                       </span>
                     </div>
 
@@ -515,9 +520,11 @@ const LoadingStatesPage: React.FC<AppProps> = ({
                       <div className={(variants.alert as any).info()}>
                         <div className="animate-spin rounded-full h-5 w-5 border-b-2 border-primary"></div>
                         <div>
-                          <div className="font-medium">Transaction Pending</div>
+                          <div className="font-medium">
+                            {t("web3.transaction.pending.title")}
+                          </div>
                           <div className="text-sm">
-                            Please confirm the transaction in your wallet...
+                            {t("web3.transaction.pending.message")}
                           </div>
                         </div>
                       </div>
@@ -528,14 +535,13 @@ const LoadingStatesPage: React.FC<AppProps> = ({
                         <ClockIcon className="h-5 w-5 animate-pulse" />
                         <div>
                           <div className="font-medium">
-                            Confirming Transaction
+                            {t("web3.transaction.confirming.title")}
                           </div>
                           <div className="text-sm">
-                            Transaction submitted. Waiting for blockchain
-                            confirmation...
+                            {t("web3.transaction.confirming.message")}
                           </div>
                           <div className="text-xs text-muted-foreground mt-1">
-                            Hash: 0x1234...abcd
+                            {t("web3.transaction.confirming.hash")}
                           </div>
                         </div>
                       </div>
@@ -546,14 +552,13 @@ const LoadingStatesPage: React.FC<AppProps> = ({
                         <CheckCircleIcon className="h-5 w-5" />
                         <div>
                           <div className="font-medium">
-                            Transaction Confirmed
+                            {t("web3.transaction.confirmed.title")}
                           </div>
                           <div className="text-sm">
-                            Your transaction has been confirmed on the
-                            blockchain!
+                            {t("web3.transaction.confirmed.message")}
                           </div>
                           <div className="text-xs text-muted-foreground mt-1">
-                            Block: #18,234,567
+                            {t("web3.transaction.confirmed.block")}
                           </div>
                         </div>
                       </div>
@@ -564,7 +569,7 @@ const LoadingStatesPage: React.FC<AppProps> = ({
                 {/* Wallet Connection */}
                 <div>
                   <h3 className={`${textVariants.heading.h4()} mb-4`}>
-                    Wallet Connection States
+                    {t("web3.wallet.title")}
                   </h3>
                   <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
                     <div
@@ -574,9 +579,11 @@ const LoadingStatesPage: React.FC<AppProps> = ({
                         <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-primary"></div>
                       </div>
                       <div className="text-center">
-                        <h4 className="font-medium">Connecting Wallet</h4>
+                        <h4 className="font-medium">
+                          {t("web3.wallet.connecting.title")}
+                        </h4>
                         <p className="text-sm text-muted-foreground">
-                          Please approve the connection in your wallet
+                          {t("web3.wallet.connecting.message")}
                         </p>
                       </div>
                     </div>
@@ -598,9 +605,11 @@ const LoadingStatesPage: React.FC<AppProps> = ({
                         </div>
                       </div>
                       <div className="text-center">
-                        <h4 className="font-medium">Detecting Network</h4>
+                        <h4 className="font-medium">
+                          {t("web3.wallet.network.title")}
+                        </h4>
                         <p className="text-sm text-muted-foreground">
-                          Checking network compatibility...
+                          {t("web3.wallet.network.message")}
                         </p>
                       </div>
                     </div>
@@ -610,15 +619,17 @@ const LoadingStatesPage: React.FC<AppProps> = ({
                 {/* Email/Message Loading */}
                 <div>
                   <h3 className={`${textVariants.heading.h4()} mb-4`}>
-                    Email & Message Loading
+                    {t("web3.email.title")}
                   </h3>
                   <div className="space-y-4 mb-6">
                     <div className="flex items-center space-x-3 p-4 border rounded-lg">
                       <div className="animate-spin rounded-full h-6 w-6 border-b-2 border-success"></div>
                       <div>
-                        <p className="font-medium">Encrypting message...</p>
+                        <p className="font-medium">
+                          {t("web3.email.encrypting.title")}
+                        </p>
                         <p className="text-sm text-muted-foreground">
-                          Securing your email with Web3 encryption
+                          {t("web3.email.encrypting.message")}
                         </p>
                       </div>
                     </div>
@@ -626,16 +637,18 @@ const LoadingStatesPage: React.FC<AppProps> = ({
                     <div className="flex items-center space-x-3 p-4 border rounded-lg">
                       <EnvelopeIcon className="h-6 w-6 text-primary animate-pulse" />
                       <div>
-                        <p className="font-medium">Sending to blockchain...</p>
+                        <p className="font-medium">
+                          {t("web3.email.sending.title")}
+                        </p>
                         <p className="text-sm text-muted-foreground">
-                          Recording email metadata on-chain
+                          {t("web3.email.sending.message")}
                         </p>
                       </div>
                     </div>
 
                     <div className="space-y-2">
                       <div className="flex justify-between text-sm">
-                        <span>Upload Progress</span>
+                        <span>{t("web3.email.uploadProgress")}</span>
                         <span>{demoStates.uploadProgress}%</span>
                       </div>
                       <div className="w-full bg-muted rounded-full h-2">
@@ -650,8 +663,8 @@ const LoadingStatesPage: React.FC<AppProps> = ({
                         disabled={demoStates.isUploading}
                       >
                         {demoStates.isUploading
-                          ? "Uploading..."
-                          : "Start Upload Demo"}
+                          ? t("web3.email.uploading")
+                          : t("web3.email.startUploadDemo")}
                       </button>
                     </div>
                   </div>
@@ -706,8 +719,8 @@ const LoadingStatesPage: React.FC<AppProps> = ({
               expandedSections={expandedSections}
               toggleSection={toggleSection}
               id="skeletons"
-              title="💀 Skeleton Patterns"
-              description="Content placeholders that mimic the structure of the loading content for better perceived performance."
+              title={t("skeletons.title")}
+              description={t("skeletons.description")}
             />
 
             {expandedSections["skeletons"] && (
@@ -716,7 +729,7 @@ const LoadingStatesPage: React.FC<AppProps> = ({
                   {/* Email List Skeleton */}
                   <div>
                     <h4 className={`${textVariants.heading.h5()} mb-4`}>
-                      Email List Skeleton
+                      {t("skeletons.emailList")}
                     </h4>
                     <div className="space-y-3 p-4 border rounded-lg">
                       {[1, 2, 3].map((i) => (
@@ -735,7 +748,7 @@ const LoadingStatesPage: React.FC<AppProps> = ({
                   {/* Card Skeleton */}
                   <div>
                     <h4 className={`${textVariants.heading.h5()} mb-4`}>
-                      Card Content Skeleton
+                      {t("skeletons.cardContent")}
                     </h4>
                     <div className="animate-pulse p-4 border rounded-lg">
                       <div className="h-32 bg-muted-foreground/20 rounded mb-4"></div>
@@ -787,8 +800,8 @@ const LoadingStatesPage: React.FC<AppProps> = ({
               expandedSections={expandedSections}
               toggleSection={toggleSection}
               id="accessibility"
-              title="♿ Accessibility Guidelines"
-              description="Ensure your loading states are accessible with proper ARIA attributes, screen reader support, and focus management."
+              title={t("accessibility.title")}
+              description={t("accessibility.description")}
             />
 
             {expandedSections["accessibility"] && (
@@ -796,84 +809,44 @@ const LoadingStatesPage: React.FC<AppProps> = ({
                 <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
                   <div>
                     <h3 className={`${textVariants.heading.h4()} mb-4`}>
-                      ✅ Best Practices
+                      {t("accessibility.bestPractices.title")}
                     </h3>
                     <ul className="space-y-3">
-                      <li className="flex items-start">
-                        <CheckCircleIcon className="h-5 w-5 text-success mr-2 mt-0.5 flex-shrink-0" />
-                        <span className="text-sm">
-                          Use ARIA live regions for dynamic loading states
-                        </span>
-                      </li>
-                      <li className="flex items-start">
-                        <CheckCircleIcon className="h-5 w-5 text-success mr-2 mt-0.5 flex-shrink-0" />
-                        <span className="text-sm">
-                          Provide meaningful loading messages
-                        </span>
-                      </li>
-                      <li className="flex items-start">
-                        <CheckCircleIcon className="h-5 w-5 text-success mr-2 mt-0.5 flex-shrink-0" />
-                        <span className="text-sm">
-                          Include progress information when possible
-                        </span>
-                      </li>
-                      <li className="flex items-start">
-                        <CheckCircleIcon className="h-5 w-5 text-success mr-2 mt-0.5 flex-shrink-0" />
-                        <span className="text-sm">
-                          Use reduced motion for users who prefer it
-                        </span>
-                      </li>
-                      <li className="flex items-start">
-                        <CheckCircleIcon className="h-5 w-5 text-success mr-2 mt-0.5 flex-shrink-0" />
-                        <span className="text-sm">
-                          Maintain focus management during loading
-                        </span>
-                      </li>
+                      {(
+                        t("accessibility.bestPractices.items", {
+                          returnObjects: true,
+                        }) as string[]
+                      ).map((item, index) => (
+                        <li key={index} className="flex items-start">
+                          <CheckCircleIcon className="h-5 w-5 text-success mr-2 mt-0.5 flex-shrink-0" />
+                          <span className="text-sm">{item}</span>
+                        </li>
+                      ))}
                     </ul>
                   </div>
 
                   <div>
                     <h3 className={`${textVariants.heading.h4()} mb-4`}>
-                      ❌ Avoid
+                      {t("accessibility.avoid.title")}
                     </h3>
                     <ul className="space-y-3">
-                      <li className="flex items-start">
-                        <ExclamationTriangleIcon className="h-5 w-5 text-destructive mr-2 mt-0.5 flex-shrink-0" />
-                        <span className="text-sm">
-                          Loading indicators without text alternatives
-                        </span>
-                      </li>
-                      <li className="flex items-start">
-                        <ExclamationTriangleIcon className="h-5 w-5 text-destructive mr-2 mt-0.5 flex-shrink-0" />
-                        <span className="text-sm">
-                          Indefinite loading without progress indication
-                        </span>
-                      </li>
-                      <li className="flex items-start">
-                        <ExclamationTriangleIcon className="h-5 w-5 text-destructive mr-2 mt-0.5 flex-shrink-0" />
-                        <span className="text-sm">
-                          Fast-flashing animations that can trigger seizures
-                        </span>
-                      </li>
-                      <li className="flex items-start">
-                        <ExclamationTriangleIcon className="h-5 w-5 text-destructive mr-2 mt-0.5 flex-shrink-0" />
-                        <span className="text-sm">
-                          Removing focus or content without warning
-                        </span>
-                      </li>
-                      <li className="flex items-start">
-                        <ExclamationTriangleIcon className="h-5 w-5 text-destructive mr-2 mt-0.5 flex-shrink-0" />
-                        <span className="text-sm">
-                          Generic "Loading..." messages without context
-                        </span>
-                      </li>
+                      {(
+                        t("accessibility.avoid.items", {
+                          returnObjects: true,
+                        }) as string[]
+                      ).map((item, index) => (
+                        <li key={index} className="flex items-start">
+                          <ExclamationTriangleIcon className="h-5 w-5 text-destructive mr-2 mt-0.5 flex-shrink-0" />
+                          <span className="text-sm">{item}</span>
+                        </li>
+                      ))}
                     </ul>
                   </div>
                 </div>
 
                 <div className="mt-8">
                   <h3 className={`${textVariants.heading.h4()} mb-4`}>
-                    Accessibility Implementation
+                    {t("accessibility.implementation")}
                   </h3>
                   <CodeBlock
                     copiedStates={copiedStates}
@@ -932,11 +905,11 @@ const LoadingStatesPage: React.FC<AppProps> = ({
               className="flex items-center text-muted-foreground hover:text-foreground transition-colors"
             >
               <ArrowLeftIcon className="h-5 w-5 mr-2" />
-              Back to Design System
+              {t("backToDesignSystem")}
             </LocalizedLink>
 
             <div className="text-sm text-muted-foreground">
-              Last updated: {new Date().toLocaleDateString()}
+              {t("lastUpdated", { date: new Date().toLocaleDateString() })}
             </div>
           </div>
         </div>

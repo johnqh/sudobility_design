@@ -1,0 +1,109 @@
+{
+  "seo": {
+    "title": "Performance & Optimization - Design System - Internal - {{emailDomain}}",
+    "description": "Performance optimization patterns and Core Web Vitals utilities for fast, efficient Web3 applications"
+  },
+  "header": {
+    "badge": "Performance & Optimization",
+    "title": "Performance Optimization System",
+    "description": "Comprehensive performance patterns for fast-loading, efficient Web3 applications. Optimize bundle size, rendering performance, Core Web Vitals, and blockchain interactions.",
+    "stats": {
+      "bundleSplit": {
+        "value": "Bundle Split",
+        "label": "Code Chunks"
+      },
+      "gpuLayers": {
+        "value": "GPU Layers",
+        "label": "Hardware Acceleration"
+      },
+      "web3Batch": {
+        "value": "Web3 Batch",
+        "label": "Transaction Batching"
+      },
+      "lcpTarget": {
+        "value": "< 2.5s",
+        "label": "LCP Target"
+      }
+    }
+  },
+  "webVitals": {
+    "title": "Core Web Vitals",
+    "description": "Real-time monitoring of Core Web Vitals metrics with performance optimization utilities.",
+    "lcp": {
+      "title": "Largest Contentful Paint",
+      "description": "Time to render largest element"
+    },
+    "fid": {
+      "title": "First Input Delay",
+      "description": "Time to interactive response"
+    },
+    "cls": {
+      "title": "Cumulative Layout Shift",
+      "description": "Visual stability score"
+    }
+  },
+  "bundle": {
+    "title": "Bundle Optimization",
+    "description": "Code splitting and lazy loading patterns to reduce initial bundle size.",
+    "lazyLoadingStates": "Lazy Loading States",
+    "componentLoading": "Component loading...",
+    "componentLoaded": "Component loaded ✓",
+    "codeSplittingExample": "Code Splitting Example",
+    "loadingChunk": "Loading design system chunk...",
+    "bundleAnalysis": "Bundle Analysis",
+    "mainBundle": "Main Bundle:",
+    "designSystem": "Design System:",
+    "web3Utils": "Web3 Utils:",
+    "charts": "Charts:"
+  },
+  "network": {
+    "title": "Network Optimization",
+    "description": "Adaptive loading strategies based on connection quality and caching patterns.",
+    "connectionQuality": "Connection Quality",
+    "currentConnection": "Current Connection",
+    "latency": "Latency: ~{{latency}}ms",
+    "simulateSlowConnection": "Simulate Slow Connection",
+    "cacheStatus": "Cache Status",
+    "freshData": "Fresh Data",
+    "freshDataSuffix": " - Recently fetched",
+    "staleData": "Stale Data",
+    "staleDataSuffix": " - Needs refresh",
+    "implementation": "Implementation"
+  },
+  "web3": {
+    "title": "Web3 Performance",
+    "description": "Specialized optimizations for blockchain interactions, wallet connections, and transaction batching.",
+    "walletConnection": "Wallet Connection",
+    "cachedConnection": "Cached Connection",
+    "connecting": "Connecting...",
+    "transactionBatching": "Transaction Batching",
+    "batchedTransactions": "Batched Transactions",
+    "batchedTransactionsDetail": "5 txs → 1 multicall",
+    "individualTransaction": "Individual Transaction",
+    "gasOptimization": "Gas Optimization",
+    "gasOptimal": "Optimal Gas: 15 gwei",
+    "gasHigh": "High Gas: 45 gwei",
+    "gasVeryHigh": "Very High: 120 gwei"
+  },
+  "bestPractices": {
+    "title": "Performance Best Practices",
+    "doTitle": "✅ Do This",
+    "do": [
+      "Use code splitting for internal/admin features",
+      "Implement lazy loading for images and components",
+      "Batch Web3 transactions when possible",
+      "Use GPU acceleration for smooth animations",
+      "Monitor Core Web Vitals in production",
+      "Cache wallet connections and blockchain data"
+    ],
+    "avoidTitle": "❌ Avoid This",
+    "avoid": [
+      "Loading all components eagerly on initial page load",
+      "Making individual blockchain calls for batch data",
+      "Causing layout shifts with dynamic content",
+      "Using blocking rendering for non-critical features",
+      "Ignoring network conditions for resource loading",
+      "Re-fetching already cached blockchain data"
+    ]
+  }
+}

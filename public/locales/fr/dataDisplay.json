@@ -1,0 +1,202 @@
+{
+  "seo": {
+    "title": "Affichage des données - Système de conception - Interne - {{emailDomain}}",
+    "description": "Composants d'affichage de données, y compris les tableaux, listes, grilles et affichages de code"
+  },
+  "header": {
+    "badge": "Composants d'affichage de données",
+    "title": "Système d'affichage des données",
+    "intro": "Composants d'affichage de données complets pour les tableaux, listes, grilles et code. Optimisés pour les données Web3, y compris les adresses, les transactions et les informations de blockchain."
+  },
+  "quickStart": {
+    "heading": "Mise en route rapide",
+    "copy": "Copier dans le presse-papiers",
+    "examples": {
+      "dataTable": {
+        "title": "Tableau de données",
+        "description": "Table triable avec états au survol et sélection"
+      },
+      "emailList": {
+        "title": "Liste de courriels",
+        "description": "Liste interactive avec états lu/non lu"
+      },
+      "keyValue": {
+        "title": "Affichage clé-valeur",
+        "description": "Afficher des données structurées sous forme de paires clé-valeur"
+      },
+      "statsGrid": {
+        "title": "Grille de statistiques",
+        "description": "Afficher les métriques et statistiques avec des indicateurs de tendance"
+      }
+    }
+  },
+  "tables": {
+    "heading": "Tableaux de données",
+    "cardTitle": "Tableau de contact interactif",
+    "cardDescription": "Table triable avec états de sélection et survol",
+    "columns": {
+      "name": "Nom",
+      "email": "Courriel",
+      "balance": "Équilibre",
+      "status": "Statut",
+      "date": "Date"
+    },
+    "status": {
+      "active": "Actif",
+      "pending": "En attente",
+      "inactive": "Inactif"
+    }
+  },
+  "lists": {
+    "heading": "Listes",
+    "cardTitle": "Liste de courriels",
+    "cardDescription": "Liste de courriels interactive avec états lu/non lu et actions",
+    "emails": {
+      "1": {
+        "subject": "Transaction confirmée",
+        "preview": "Votre transaction a été confirmée sur la blockchain..."
+      },
+      "2": {
+        "subject": "Alerte de nouveau lancement de NFT",
+        "preview": "Nouvelle collection passionnante qui sort demain..."
+      },
+      "3": {
+        "subject": "Mise à jour de sécurité du portefeuille",
+        "preview": "De importantes améliorations de sécurité pour votre portefeuille..."
+      },
+      "4": {
+        "subject": "Rapport de rendement DeFi",
+        "preview": "Votre résumé mensuel de farming de rendement..."
+      },
+      "5": {
+        "subject": "Projet de DAO #42",
+        "preview": "Voter la dernière proposition de la communauté..."
+      }
+    }
+  },
+  "gridLayouts": {
+    "heading": "Mises en page en grille",
+    "statsGrid": {
+      "heading": "Grille de statistiques",
+      "totalEmails": "E-mails totaux",
+      "totalEmailsChange": "12,5 % par rapport au mois dernier",
+      "activeContacts": "Contacts actifs",
+      "activeContactsChange": "5 nouveaux cette semaine",
+      "storageUsed": "Espace de stockage utilisé",
+      "storageUsedChange": "15 % restant"
+    },
+    "cardGrid": {
+      "heading": "Grille de cartes",
+      "cardTitle": "Titre de la carte {{number}}",
+      "cardContent": "Contenu de la carte avec des informations et des actions pertinentes."
+    }
+  },
+  "keyValue": {
+    "heading": "Affichage clé-valeur",
+    "userProfile": {
+      "heading": "Profil utilisateur",
+      "fullName": "Nom complet",
+      "ensName": "Nom ENS",
+      "walletAddress": "Adresse du portefeuille",
+      "email": "Courriel",
+      "accountStatus": "État du compte",
+      "verified": "Vérifié"
+    },
+    "transactionDetails": {
+      "heading": "Détails de la transaction",
+      "transactionHash": "Hachage de transaction",
+      "blockNumber": "Numéro de bloc",
+      "gasUsed": "Gaz utilisé",
+      "status": "Statut",
+      "success": "Succès"
+    }
+  },
+  "codeDisplay": {
+    "heading": "Affichage du code",
+    "inlineCode": {
+      "heading": "Code en ligne",
+      "textStart": "Utilisez \"",
+      "textMiddle": " pour le code en ligne. Adresses Web3 comme ",
+      "textMiddle2": " et les hachages de transaction comme ",
+      "textEnd": "ont un style spécial."
+    },
+    "codeBlock": {
+      "heading": "Bloc de code"
+    }
+  },
+  "timeline": {
+    "heading": "Chronologie",
+    "cardTitle": "Chronologie des activités",
+    "items": {
+      "1": {
+        "title": "Compte créé",
+        "description": "Bienvenue sur example.com"
+      },
+      "2": {
+        "title": "Portefeuille connecté",
+        "description": "Portefeuille MetaMask lié avec succès"
+      },
+      "3": {
+        "title": "Premier e-mail envoyé",
+        "description": "Courriel de bienvenue envoyé à l'équipe"
+      },
+      "4": {
+        "title": "Nom ENS enregistré",
+        "description": "alice.eth enregistré"
+      },
+      "5": {
+        "title": "Mise à niveau Premium",
+        "description": "Mise à niveau vers le forfait premium en attente"
+      }
+    }
+  },
+  "emptyStates": {
+    "heading": "États vides",
+    "noEmails": {
+      "title": "Aucun e-mail",
+      "description": "Commencez en rédigeant votre premier e-mail",
+      "action": "Rédiger un e-mail"
+    },
+    "noData": {
+      "title": "Aucune donnée disponible",
+      "description": "Il n'y a actuellement aucun enregistrement à afficher"
+    }
+  },
+  "web3": {
+    "heading": "Modèles de données Web3",
+    "cardTitle": "Affichage des données de blockchain",
+    "cardDescription": "Modèles spécialisés pour afficher les données Web3",
+    "addressDisplay": {
+      "heading": "Affichage de l'adresse",
+      "full": "Complet :",
+      "truncated": "Tronqué :",
+      "ens": "ENS:"
+    },
+    "tokenBalances": {
+      "heading": "Solde des jetons"
+    }
+  },
+  "implementationNotes": {
+    "heading": "Remarques d'implémentation",
+    "performance": {
+      "heading": "Conseils de performance",
+      "items": [
+        "• Utilisez le défilement virtuel pour de grandes ensembles de données",
+        "• Mettre en œuvre la pagination pour les tableaux comportant plus de 100 lignes",
+        "• Charger les images et avatars des listes en lazy load",
+        "• Mémoire des calculs coûteux",
+        "• Utilisez des chargeurs d'esquelette pendant la récupération des données"
+      ]
+    },
+    "accessibility": {
+      "heading": "Accessibilité",
+      "items": [
+        "• Utilisez un HTML sémantique (table, thead, tbody)",
+        "• Ajoutez des balises aria-label pour les colonnes triables",
+        "• Assurez-vous de la navigation au clavier pour les tableaux",
+        "• Fournissez des alternatives textuelles pour les indicateurs visuels",
+        "• Utilisez des rôles ARIA appropriés pour les listes"
+      ]
+    }
+  }
+}

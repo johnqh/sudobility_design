@@ -1,0 +1,197 @@
+{
+  "seo": {
+    "title": "Modales - Sistema de diseño - Interno - {{emailDomain}}",
+    "description": "Componentes modales y de diálogo con patrones de Web3 y características de accesibilidad"
+  },
+  "header": {
+    "badge": "Modales y ventanas emergentes",
+    "title": "Componentes modales",
+    "description": "Sistema modal y de diálogo completo con patrones de integración de Web3, funciones de accesibilidad y comportamiento adaptable. Perfecto para conexiones de billetera, confirmaciones de transacción y interacciones de usuario."
+  },
+  "common": {
+    "copyToClipboard": "Copiar al portapapeles",
+    "cancel": "Cancelar"
+  },
+  "quickStart": {
+    "heading": "Inicio rápido",
+    "examples": {
+      "basic": {
+        "title": "Modal básico",
+        "description": "Modal estándar con encabezado, contenido y pie de página"
+      },
+      "confirmation": {
+        "title": "Cuadro de confirmación",
+        "description": "Cuadro de diálogo de confirmación simple con botones de acción"
+      },
+      "wallet": {
+        "title": "Conexión de billetera Web3",
+        "description": "Modal para la selección y conexión de la billetera"
+      },
+      "transaction": {
+        "title": "Estado de la transacción",
+        "description": "Modal que muestra el progreso y los estados de la transacción"
+      }
+    }
+  },
+  "demos": {
+    "heading": "Demo interactivas",
+    "cards": {
+      "simpleModal": {
+        "title": "Modal básico",
+        "description": "Modal estándar con sección de encabezado, contenido y pie de página."
+      },
+      "confirmationModal": {
+        "title": "Cuadro de confirmación",
+        "description": "Cuadro de diálogo de confirmación simple con acciones destructivas."
+      },
+      "walletModal": {
+        "title": "Conexión de billetera",
+        "description": "Interfaz de selección y conexión de billetera Web3."
+      },
+      "transactionModal": {
+        "title": "Estado de la transacción",
+        "description": "Ventanas emergentes de retroalimentación sobre el progreso y estado de la transacción."
+      },
+      "formModal": {
+        "title": "Modal de formulario",
+        "description": "Modal que contiene elementos de formulario y validación."
+      },
+      "settingsModal": {
+        "title": "Panel de configuración",
+        "description": "Modal grande para ajustes y preferencias complejos."
+      }
+    }
+  },
+  "sizes": {
+    "heading": "Variantes de tamaño",
+    "availableTitle": "Tallas disponibles",
+    "availableDescription": "Elija el tamaño de modal adecuado según sus necesidades de contenido.",
+    "boxLabel": "{{name}} Modal ({{maxWidth}})",
+    "names": {
+      "small": "Pequeño",
+      "medium": "Medium",
+      "large": "Grande",
+      "extraLarge": "Extra grande"
+    }
+  },
+  "web3": {
+    "heading": "Patrones de integración de Web3",
+    "walletFlow": {
+      "title": "Flujo de conexión de billetera",
+      "description": "Complete la experiencia de conexión de billetera con la selección del proveedor."
+    },
+    "transactionConfirmation": {
+      "title": "Confirmación de transacción",
+      "description": "Interfaz de detalles y confirmación de transacción."
+    }
+  },
+  "accessibility": {
+    "heading": "Directrices de accesibilidad",
+    "ariaTitle": "Atributos ARIA y mejores prácticas",
+    "ariaDescription": "Siga estas pautas para asegurarse de que sus modales sean accesibles para todos los usuarios.",
+    "requiredAria": "Atributos ARIA requeridos",
+    "focusManagement": "Gestión del enfoque",
+    "focusItems": [
+      "El enfoque debería moverse al primer elemento enfocable en el modal cuando se abre",
+      "La navegación con tabulador debería estar atrapada dentro del modal",
+      "El enfoque debería regresar al elemento desencadenante cuando se cierre el modal",
+      "La tecla ESC debería cerrar el modal"
+    ],
+    "screenReader": "Compatibilidad con lector de pantalla",
+    "screenReaderItems": [
+      "Utilice elementos HTML semánticos (button, form, etc.)",
+      "Proporcione etiquetas claras y descriptivas para todos los elementos interactivos.",
+      "Anunciar cambios de estado de modal con regiones vivas"
+    ]
+  },
+  "implementation": {
+    "heading": "Notas de implementación",
+    "portalTitle": "Uso de React Portal",
+    "portalDescription": "Renderice los modales en un portal para evitar problemas de z-index y asegurar una superposición adecuada.",
+    "animationTitle": "Consideraciones de animación",
+    "animationDescription": "Utilice animaciones CSS o bibliotecas como Framer Motion para transiciones suaves de ventanas modales.",
+    "animationItems": [
+      "• Desvanecer entrada/salida para superposición",
+      "• Escala o desliza para contenido modal",
+      "• Respetar las preferencias de movimiento del usuario",
+      "• Mantenga las animaciones bajo los 300 ms"
+    ]
+  },
+  "simpleModal": {
+    "title": "Ejemplo de modal simple",
+    "body": "Este es un modal básico con encabezado estándar, contenido y sección de pie. Muestra la estructura y estilo típicos de un modal.",
+    "hint": "Haga clic fuera del modal o pulse el botón de cierre para cerrarlo.",
+    "gotIt": "Entendido"
+  },
+  "confirmationModal": {
+    "title": "Eliminar elemento",
+    "body": "¿Está seguro de que desea eliminar este elemento? Esta acción no se puede deshacer.",
+    "delete": "Eliminar"
+  },
+  "walletModal": {
+    "title": "Conectar billetera",
+    "choose": "Elija una billetera para conectarse a la plataforma {{emailDomain}}",
+    "metamask": "MetaMask",
+    "metamaskDescription": "Extensión de navegador popular",
+    "walletConnect": "WalletConnect",
+    "walletConnectDescription": "Escanea con billetera móvil",
+    "phantom": "Fantasma",
+    "phantomDescription": "billetera Solana"
+  },
+  "transactionModal": {
+    "title": {
+      "idle": "Enviar transacción",
+      "pending": "Transacción pendiente",
+      "confirming": "Confirmar transacción",
+      "success": "Transacción exitosa",
+      "error": "Transacción fallida"
+    },
+    "description": {
+      "idle": "Revise los detalles de la transacción y confirme para continuar.",
+      "pending": "Por favor, confirme la transacción en su billetera...",
+      "confirming": "Esperando confirmación de la cadena de bloques...",
+      "success": "Su transacción se ha completado con éxito.",
+      "error": "La transacción fue rechazada o falló. Inténtalo de nuevo."
+    },
+    "amount": "Cantidad:",
+    "gasFee": "Tarifa de gas:",
+    "total": "Total:",
+    "confirm": "Confirmar transacción",
+    "close": "Cerrar"
+  },
+  "formModal": {
+    "title": "Formulario de contacto",
+    "firstName": "Nombre",
+    "firstNamePlaceholder": "Ingrese su nombre de pila",
+    "lastName": "Apellido",
+    "lastNamePlaceholder": "Ingrese su apellido",
+    "email": "Dirección de correo electrónico",
+    "emailPlaceholder": "Ingrese su dirección de correo electrónico",
+    "message": "Mensaje",
+    "messagePlaceholder": "Escriba su mensaje...",
+    "send": "Enviar mensaje"
+  },
+  "settingsModal": {
+    "title": "Ajustes y Preferencias",
+    "account": "Configuración de cuenta",
+    "emailNotifications": "Notificaciones por correo electrónico",
+    "emailNotificationsDescription": "Reciba notificaciones sobre la actividad de su cuenta",
+    "twoFactor": "Autenticación de dos factores",
+    "twoFactorDescription": "Añada una capa adicional de seguridad a su cuenta",
+    "privacy": "Configuración de privacidad",
+    "profileVisibility": "Visibilidad del perfil",
+    "visibilityPublic": "Público",
+    "visibilityFriends": "Solo amigos",
+    "visibilityPrivate": "Privado",
+    "dataSharing": "Compartir datos",
+    "analyticsConsent": "Permitir la recopilación de datos analíticos",
+    "thirdPartyConsent": "Compartir datos de uso con terceros",
+    "appearance": "Apariencia",
+    "theme": "Tema",
+    "themeLight": "Luz",
+    "themeDark": "Oscuro",
+    "themeAuto": "Automático",
+    "resetDefaults": "Restablecer valores predeterminados",
+    "saveChanges": "Guardar cambios"
+  }
+}

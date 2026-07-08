@@ -1,0 +1,197 @@
+{
+  "seo": {
+    "title": "Cửa sổ bật ra - Hệ thống thiết kế - Nội bộ - {{emailDomain}}",
+    "description": "Các thành phần mô-đa và hộp thoại với các mẫu Web3 và tính năng khả dụng"
+  },
+  "header": {
+    "badge": "Hộp thoại & Hộp thoại bật lên",
+    "title": "Thành phần mô-đa",
+    "description": "Hệ thống mô-đa và hộp thoại toàn diện với các mẫu tích hợp Web3, tính năng khả năng truy cập và hành vi phản hồi. Hoàn hảo cho kết nối ví, xác nhận giao dịch và tương tác người dùng."
+  },
+  "common": {
+    "copyToClipboard": "Sao chép vào bộ nhớ tạm",
+    "cancel": "Hủy"
+  },
+  "quickStart": {
+    "heading": "Bắt đầu nhanh",
+    "examples": {
+      "basic": {
+        "title": "Hộp thoại cơ bản",
+        "description": "Hộp thoại chuẩn với tiêu đề, nội dung và chân trang"
+      },
+      "confirmation": {
+        "title": "Hộp thoại xác nhận",
+        "description": "Hộp thoại xác nhận đơn giản với các nút hành động"
+      },
+      "wallet": {
+        "title": "Kết nối ví Web3",
+        "description": "Hộp thoại chọn và kết nối ví"
+      },
+      "transaction": {
+        "title": "Trạng thái giao dịch",
+        "description": "Hộp thoại hiển thị tiến độ và trạng thái giao dịch"
+      }
+    }
+  },
+  "demos": {
+    "heading": "Bản trình diễn tương tác",
+    "cards": {
+      "simpleModal": {
+        "title": "Hộp thoại cơ bản",
+        "description": "Hộp thoại chuẩn với phần tiêu đề, nội dung và chân trang."
+      },
+      "confirmationModal": {
+        "title": "Hộp thoại xác nhận",
+        "description": "Hộp thoại xác nhận đơn giản với các hành động phá hủy."
+      },
+      "walletModal": {
+        "title": "Kết nối ví",
+        "description": "Giao diện chọn và kết nối ví Web3."
+      },
+      "transactionModal": {
+        "title": "Trạng thái giao dịch",
+        "description": "Hộp thoại phản hồi về tiến độ và trạng thái giao dịch."
+      },
+      "formModal": {
+        "title": "Hộp thoại biểu mẫu",
+        "description": "Hộp thoại chứa các thành phần biểu mẫu và xác thực."
+      },
+      "settingsModal": {
+        "title": "Bảng cài đặt",
+        "description": "Hộp thoại lớn cho cài đặt và tùy chọn phức tạp."
+      }
+    }
+  },
+  "sizes": {
+    "heading": "Phiên bản kích thước",
+    "availableTitle": "Kích thước có sẵn",
+    "availableDescription": "Chọn kích thước hộp thoại phù hợp dựa trên nhu cầu nội dung của bạn.",
+    "boxLabel": "{{name}} Hộp thoại ({{maxWidth}})",
+    "names": {
+      "small": "Nhỏ",
+      "medium": "Medium",
+      "large": "Lớn",
+      "extraLarge": "Rất lớn"
+    }
+  },
+  "web3": {
+    "heading": "Mẫu tích hợp Web3",
+    "walletFlow": {
+      "title": "Luồng kết nối ví",
+      "description": "Hoàn thành trải nghiệm kết nối ví với việc chọn nhà cung cấp."
+    },
+    "transactionConfirmation": {
+      "title": "Xác nhận giao dịch",
+      "description": "Giao diện chi tiết giao dịch và xác nhận."
+    }
+  },
+  "accessibility": {
+    "heading": "Hướng dẫn về khả năng tiếp cận",
+    "ariaTitle": "Thuộc tính ARIA và các thực hành tốt nhất",
+    "ariaDescription": "Tuân thủ các hướng dẫn này để đảm bảo các hộp thoại của bạn có thể truy cập được cho tất cả người dùng.",
+    "requiredAria": "Thuộc tính ARIA bắt buộc",
+    "focusManagement": "Quản lý tập trung",
+    "focusItems": [
+      "Khi mở hộp thoại, con trỏ nên chuyển đến phần tử đầu tiên có thể nhận được tập trung",
+      "Việc điều hướng bằng phím Tab nên bị giới hạn trong hộp thoại",
+      "Chú ý nên quay trở lại phần tử kích hoạt khi hộp thoại đóng",
+      "Phím ESC nên đóng hộp thoại"
+    ],
+    "screenReader": "Hỗ trợ trình đọc màn hình",
+    "screenReaderItems": [
+      "Sử dụng các phần tử HTML ngữ nghĩa (button, form, v.v.)",
+      "Cung cấp nhãn rõ ràng và mô tả cho tất cả các thành phần tương tác.",
+      "Thông báo thay đổi trạng thái chế độ bật với các vùng sống"
+    ]
+  },
+  "implementation": {
+    "heading": "Ghi chú triển khai",
+    "portalTitle": "Sử dụng React Portal",
+    "portalDescription": "Hiển thị các hộp thoại trong một portal để tránh các vấn đề về chỉ số z và đảm bảo thứ tự lớp đúng.",
+    "animationTitle": "Các yếu tố cần xem xét khi tạo hoạt hình",
+    "animationDescription": "Sử dụng hiệu ứng chuyển động CSS hoặc các thư viện như Framer Motion để chuyển đổi cửa sổ bật lên một cách mượt mà.",
+    "animationItems": [
+      "• Chuyển mờ vào/ra cho lớp chồng",
+      "• Phóng to hoặc trượt để nội dung dạng bảng điều khiển",
+      "• Tôn trọng sở thích di chuyển của người dùng",
+      "• Giữ thời gian hoạt hình dưới 300ms"
+    ]
+  },
+  "simpleModal": {
+    "title": "Ví dụ về hộp thoại đơn giản",
+    "body": "Đây là một hộp thoại cơ bản với tiêu đề chuẩn, nội dung và phần chân trang. Nó minh họa cấu trúc và phong cách tiêu biểu của hộp thoại.",
+    "hint": "Nhấn bên ngoài hộp thoại hoặc nhấn nút đóng để đóng nó.",
+    "gotIt": "Hiểu rồi"
+  },
+  "confirmationModal": {
+    "title": "Xóa mục",
+    "body": "Bạn có chắc chắn muốn xóa mục này không? Hành động này không thể hoàn tác.",
+    "delete": "Xóa"
+  },
+  "walletModal": {
+    "title": "Kết nối ví",
+    "choose": "Chọn ví để kết nối với nền tảng {{emailDomain}}",
+    "metamask": "MetaMask",
+    "metamaskDescription": "Tiện ích trình duyệt phổ biến",
+    "walletConnect": "WalletConnect",
+    "walletConnectDescription": "Quét bằng ví di động",
+    "phantom": "Phantom",
+    "phantomDescription": "ví tiền Solana"
+  },
+  "transactionModal": {
+    "title": {
+      "idle": "Gửi giao dịch",
+      "pending": "Giao dịch đang chờ xử lý",
+      "confirming": "Xác nhận giao dịch",
+      "success": "Giao dịch thành công",
+      "error": "Giao dịch thất bại"
+    },
+    "description": {
+      "idle": "Xem xét lại chi tiết giao dịch và xác nhận để tiếp tục.",
+      "pending": "Vui lòng xác nhận giao dịch trong ví của bạn...",
+      "confirming": "Đang chờ xác nhận từ blockchain...",
+      "success": "Giao dịch của bạn đã được hoàn tất thành công.",
+      "error": "Giao dịch đã bị từ chối hoặc thất bại. Vui lòng thử lại."
+    },
+    "amount": "Số tiền:",
+    "gasFee": "Phí khí gas:",
+    "total": "Tổng cộng:",
+    "confirm": "Xác nhận giao dịch",
+    "close": "Đóng"
+  },
+  "formModal": {
+    "title": "Form liên hệ",
+    "firstName": "Họ",
+    "firstNamePlaceholder": "Nhập tên của bạn",
+    "lastName": "Họ",
+    "lastNamePlaceholder": "Nhập họ của bạn",
+    "email": "Địa chỉ email",
+    "emailPlaceholder": "Nhập địa chỉ email của bạn",
+    "message": "Tin nhắn",
+    "messagePlaceholder": "Nhập tin nhắn của bạn...",
+    "send": "Gửi tin nhắn"
+  },
+  "settingsModal": {
+    "title": "Cài đặt và tùy chọn",
+    "account": "Cài đặt tài khoản",
+    "emailNotifications": "Thông báo qua email",
+    "emailNotificationsDescription": "Nhận thông báo về hoạt động tài khoản của bạn",
+    "twoFactor": "Xác thực hai yếu tố",
+    "twoFactorDescription": "Thêm một lớp bảo mật bổ sung vào tài khoản của bạn",
+    "privacy": "Cài đặt quyền riêng tư",
+    "profileVisibility": "Độ hiển thị hồ sơ",
+    "visibilityPublic": "Công khai",
+    "visibilityFriends": "Chỉ bạn bè",
+    "visibilityPrivate": "Riêng tư",
+    "dataSharing": "Chia sẻ dữ liệu",
+    "analyticsConsent": "Cho phép thu thập dữ liệu phân tích",
+    "thirdPartyConsent": "Chia sẻ dữ liệu sử dụng với bên thứ ba",
+    "appearance": "Ngoại hình",
+    "theme": "Chủ đề",
+    "themeLight": "Ánh sáng",
+    "themeDark": "Tối",
+    "themeAuto": "Tự động",
+    "resetDefaults": "Đặt lại về mặc định",
+    "saveChanges": "Lưu thay đổi"
+  }
+}

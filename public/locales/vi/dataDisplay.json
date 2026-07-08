@@ -1,0 +1,202 @@
+{
+  "seo": {
+    "title": "Hiển thị dữ liệu - Hệ thống thiết kế - Nội bộ - {{emailDomain}}",
+    "description": "Các thành phần hiển thị dữ liệu bao gồm bảng, danh sách, lưới và hiển thị mã"
+  },
+  "header": {
+    "badge": "Thành phần hiển thị dữ liệu",
+    "title": "Hệ thống hiển thị dữ liệu",
+    "intro": "Các thành phần hiển thị dữ liệu toàn diện cho bảng, danh sách, lưới và mã. Được tối ưu hóa cho dữ liệu Web3, bao gồm địa chỉ, giao dịch và thông tin blockchain."
+  },
+  "quickStart": {
+    "heading": "Bắt đầu nhanh",
+    "copy": "Sao chép vào bộ nhớ tạm",
+    "examples": {
+      "dataTable": {
+        "title": "Bảng dữ liệu",
+        "description": "Bảng có thể sắp xếp theo thứ tự với trạng thái khi di chuột và chọn"
+      },
+      "emailList": {
+        "title": "Danh sách email",
+        "description": "Danh sách tương tác với trạng thái đã đọc/chưa đọc"
+      },
+      "keyValue": {
+        "title": "Hiển thị cặp khóa-giá trị",
+        "description": "Hiển thị dữ liệu có cấu trúc dưới dạng cặp khóa-giá trị"
+      },
+      "statsGrid": {
+        "title": "Lưới thống kê",
+        "description": "Hiển thị các chỉ số và thống kê với các chỉ báo xu hướng"
+      }
+    }
+  },
+  "tables": {
+    "heading": "Bảng dữ liệu",
+    "cardTitle": "Bảng liên hệ tương tác",
+    "cardDescription": "Bảng có thể sắp xếp theo thứ tự với trạng thái chọn và di chuột",
+    "columns": {
+      "name": "Tên",
+      "email": "Thư điện tử",
+      "balance": "Cân bằng",
+      "status": "Trạng thái",
+      "date": "Ngày"
+    },
+    "status": {
+      "active": "Đang hoạt động",
+      "pending": "Đang chờ",
+      "inactive": "Không hoạt động"
+    }
+  },
+  "lists": {
+    "heading": "Danh sách",
+    "cardTitle": "Danh sách email",
+    "cardDescription": "Danh sách email tương tác với trạng thái đã đọc/chưa đọc và hành động",
+    "emails": {
+      "1": {
+        "subject": "Giao dịch đã được xác nhận",
+        "preview": "Giao dịch của bạn đã được xác nhận trên blockchain..."
+      },
+      "2": {
+        "subject": "Thông báo sự kiện NFT mới",
+        "preview": "Bộ sưu tập mới đầy hào hứng sẽ ra mắt ngày mai..."
+      },
+      "3": {
+        "subject": "Cập nhật bảo mật ví",
+        "preview": "Những cải tiến bảo mật quan trọng cho ví của bạn..."
+      },
+      "4": {
+        "subject": "Báo cáo lợi tức DeFi",
+        "preview": "Tóm tắt hàng tháng về nông trại sinh lời của bạn..."
+      },
+      "5": {
+        "subject": "Đề xuất DAO #42",
+        "preview": "Bỏ phiếu cho đề xuất cộng đồng mới nhất..."
+      }
+    }
+  },
+  "gridLayouts": {
+    "heading": "Bố cục lưới",
+    "statsGrid": {
+      "heading": "Lưới thống kê",
+      "totalEmails": "Tổng số email",
+      "totalEmailsChange": "12,5% so với tháng trước",
+      "activeContacts": "Liên hệ đang hoạt động",
+      "activeContactsChange": "5 mới trong tuần này",
+      "storageUsed": "Dung lượng đã sử dụng",
+      "storageUsedChange": "còn lại 15%"
+    },
+    "cardGrid": {
+      "heading": "Lưới thẻ",
+      "cardTitle": "Tiêu đề thẻ {{number}}",
+      "cardContent": "Nội dung thẻ với thông tin và hành động liên quan."
+    }
+  },
+  "keyValue": {
+    "heading": "Hiển thị cặp khóa-giá trị",
+    "userProfile": {
+      "heading": "Hồ sơ người dùng",
+      "fullName": "Họ và tên",
+      "ensName": "Tên ENS",
+      "walletAddress": "Địa chỉ ví",
+      "email": "Thư điện tử",
+      "accountStatus": "Trạng thái tài khoản",
+      "verified": "Đã xác minh"
+    },
+    "transactionDetails": {
+      "heading": "Chi tiết giao dịch",
+      "transactionHash": "Băm giao dịch",
+      "blockNumber": "Số khối",
+      "gasUsed": "Khí dùng",
+      "status": "Trạng thái",
+      "success": "Thành công"
+    }
+  },
+  "codeDisplay": {
+    "heading": "Hiển thị mã",
+    "inlineCode": {
+      "heading": "Mã nhúng",
+      "textStart": "Sử dụng \"",
+      "textMiddle": " cho mã nhúng. Địa chỉ Web3 như ",
+      "textMiddle2": " và các mã băm giao dịch như ",
+      "textEnd": "có phong cách đặc biệt."
+    },
+    "codeBlock": {
+      "heading": "Khối mã"
+    }
+  },
+  "timeline": {
+    "heading": "Lộ trình thời gian",
+    "cardTitle": "Lộ trình hoạt động",
+    "items": {
+      "1": {
+        "title": "Tài khoản đã được tạo",
+        "description": "Chào mừng bạn đến với example.com"
+      },
+      "2": {
+        "title": "Ví điện tử đã kết nối",
+        "description": "Ví điện tử MetaMask đã kết nối thành công"
+      },
+      "3": {
+        "title": "Email đầu tiên đã được gửi",
+        "description": "Đã gửi email chào mừng đến đội nhóm"
+      },
+      "4": {
+        "title": "Tên ENS đã được đăng ký",
+        "description": "alice.eth đã đăng ký"
+      },
+      "5": {
+        "title": "Nâng cấp cao cấp",
+        "description": "Nâng cấp lên gói cao cấp đang chờ xử lý"
+      }
+    }
+  },
+  "emptyStates": {
+    "heading": "Trạng thái trống",
+    "noEmails": {
+      "title": "Không có email",
+      "description": "Bắt đầu bằng cách soạn email đầu tiên của bạn",
+      "action": "Soạn email"
+    },
+    "noData": {
+      "title": "Không có dữ liệu nào khả dụng",
+      "description": "Hiện tại không có bản ghi nào để hiển thị"
+    }
+  },
+  "web3": {
+    "heading": "Mẫu dữ liệu Web3",
+    "cardTitle": "Hiển thị dữ liệu blockchain",
+    "cardDescription": "Các mẫu chuyên biệt để hiển thị dữ liệu Web3",
+    "addressDisplay": {
+      "heading": "Hiển thị địa chỉ",
+      "full": "Đầy đủ:",
+      "truncated": "Cắt ngắn:",
+      "ens": "ENS:"
+    },
+    "tokenBalances": {
+      "heading": "Số dư token"
+    }
+  },
+  "implementationNotes": {
+    "heading": "Ghi chú triển khai",
+    "performance": {
+      "heading": "Lời khuyên về hiệu suất",
+      "items": [
+        "• Sử dụng cuộn ảo cho các tập dữ liệu lớn",
+        "• Triển khai phân trang cho bảng có hơn 100 dòng",
+        "• Tải hình ảnh và ảnh đại diện trong danh sách theo cách lazy load",
+        "• Nhớ các phép tính tốn kém",
+        "• Sử dụng bộ tải xương trong quá trình lấy dữ liệu"
+      ]
+    },
+    "accessibility": {
+      "heading": "Khả năng tiếp cận",
+      "items": [
+        "• Sử dụng HTML ngữ nghĩa (table, thead, tbody)",
+        "• Thêm aria-label cho các cột có thể sắp xếp",
+        "• Đảm bảo thao tác bằng bàn phím cho bảng",
+        "• Cung cấp các bản thay thế văn bản cho các chỉ báo hình ảnh",
+        "• Sử dụng vai trò ARIA phù hợp cho danh sách"
+      ]
+    }
+  }
+}

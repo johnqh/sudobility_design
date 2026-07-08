@@ -1,0 +1,159 @@
+{
+  "seo": {
+    "title": "Forms Advanced - Design System - Nội bộ - {{emailDomain}}",
+    "description": "Các mẫu biểu mẫu nâng cao, bao gồm biểu mẫu nhiều bước, tải lên tệp và đầu vào Web3"
+  },
+  "header": {
+    "badge": "Biểu mẫu nâng cao",
+    "title": "Hệ thống biểu mẫu nâng cao",
+    "description": "Các mẫu biểu mẫu nâng cao bao gồm hướng dẫn đa bước, tải tệp lên, các trường nhập đặc biệt cho Web3 và các mẫu xác thực phức tạp cho các tương tác người dùng phức tạp."
+  },
+  "quickStart": {
+    "heading": "Bắt đầu nhanh",
+    "copyTitle": "Sao chép vào bộ nhớ tạm",
+    "examples": {
+      "multiStep": {
+        "title": "Biểu mẫu nhiều bước",
+        "description": "Biểu mẫu từng bước với bộ chỉ báo tiến độ"
+      },
+      "fileUpload": {
+        "title": "Tải lên tệp bằng thao tác kéo và thả",
+        "description": "Tải lên tệp nâng cao với xem trước và xác thực"
+      },
+      "tokenAmount": {
+        "title": "Nhập số lượng token Web3",
+        "description": "Đầu vào chuyên biệt cho số tiền tiền mã hóa với xác thực"
+      },
+      "validation": {
+        "title": "Xác minh nâng cao",
+        "description": "Xác thực thời gian thực với thông báo lỗi tùy chỉnh"
+      }
+    }
+  },
+  "steps": {
+    "account": {
+      "title": "Thiết lập tài khoản",
+      "description": "Thông tin tài khoản cơ bản"
+    },
+    "wallet": {
+      "title": "Kết nối ví",
+      "description": "Kết nối ví Web3 của bạn"
+    },
+    "transaction": {
+      "title": "Chi tiết giao dịch",
+      "description": "Cấu hình tham số giao dịch"
+    },
+    "review": {
+      "title": "Xem xét và xác nhận",
+      "description": "Xem lại và gửi"
+    }
+  },
+  "multiStep": {
+    "heading": "Biểu mẫu nhiều bước",
+    "cardTitle": "Trợ lý thiết lập ví",
+    "cardDescription": "Form tương tác nhiều bước với theo dõi tiến độ và xác thực",
+    "emailLabel": "Địa chỉ email",
+    "emailPlaceholder": "Nhập địa chỉ email của bạn",
+    "passwordLabel": "Mật khẩu",
+    "passwordPlaceholder": "Tạo mật khẩu mạnh",
+    "confirmPasswordLabel": "Xác nhận mật khẩu",
+    "confirmPasswordPlaceholder": "Xác nhận mật khẩu của bạn",
+    "walletAddressLabel": "Địa chỉ ví",
+    "walletAddressPlaceholder": "0x...",
+    "networkLabel": "Mạng lưới",
+    "networks": {
+      "ethereum": "Ethereum Mainnet",
+      "polygon": "Đa giác",
+      "bsc": "Binance Smart Chain",
+      "arbitrum": "Arbitrum"
+    },
+    "tokenAmountLabel": "Số lượng token",
+    "tokenAmountPlaceholder": "0,00",
+    "balance": "Số dư: 1,234567 ETH ($2.468,90)",
+    "max": "Max",
+    "gasPriceLabel": "Giá khí (Gwei)",
+    "gasPricePlaceholder": "20",
+    "gasPriceHint": "Giá khí đốt cao hơn dẫn đến xác nhận giao dịch nhanh hơn",
+    "reviewTitle": "Xem lại giao dịch của bạn",
+    "reviewNetwork": "Mạng:",
+    "reviewToAddress": "Để địa chỉ:",
+    "reviewAmount": "Số tiền:",
+    "reviewGasPrice": "Giá khí đốt:",
+    "warningTitle": "Cảnh báo giao dịch",
+    "warningBody": "Vui lòng kiểm tra lại tất cả các chi tiết giao dịch. Các giao dịch trên blockchain không thể hoàn tác.",
+    "previous": "Trước đó",
+    "next": "Tiếp theo",
+    "submit": "Gửi giao dịch"
+  },
+  "validationMessages": {
+    "invalidAddress": "Định dạng địa chỉ Ethereum không hợp lệ",
+    "positiveAmount": "Số tiền phải là một số dương",
+    "insufficientBalance": "Số dư không đủ",
+    "passwordMinLength": "Mật khẩu phải có ít nhất 8 ký tự",
+    "passwordComplexity": "Mật khẩu phải chứa chữ hoa, chữ thường và chữ số",
+    "passwordsDoNotMatch": "Mật khẩu không khớp"
+  },
+  "fileUpload": {
+    "heading": "Tải lên tệp tin",
+    "cardTitle": "Tải tài liệu lên",
+    "cardDescription": "Tải lên tệp bằng thao tác kéo và thả với xem trước và xác thực",
+    "dropTitle": "Kéo tập tin vào đây để tải lên",
+    "dropSubtitle": "Hoặc nhấp để chọn tệp từ máy tính của bạn",
+    "chooseFiles": "Chọn tập tin",
+    "supportedFormats": "Các định dạng được hỗ trợ: PDF, DOC, DOCX, JPG, PNG, TXT (tối đa 10MB mỗi tệp)",
+    "uploadedFiles": "Tập tin đã tải lên ({{count}})",
+    "megabytes": "{{size}} MB"
+  },
+  "web3": {
+    "heading": "Đầu vào chuyên biệt Web3",
+    "walletCard": {
+      "title": "Nhập địa chỉ ví",
+      "description": "Nhập đặc biệt cho địa chỉ tiền điện tử với xác thực",
+      "recipientLabel": "Địa chỉ người nhận",
+      "recipientPlaceholder": "0x... hoặc tên ENS",
+      "validAddress": "✓ Địa chỉ Ethereum hợp lệ",
+      "ensLabel": "Tên ENS",
+      "ensPlaceholder": "vitalik.eth",
+      "ensResolves": "→ Giải quyết thành: 0x742d...5f0bEb7"
+    },
+    "tokenCard": {
+      "title": "Nhập số lượng token",
+      "description": "Nhập chính xác số lượng token với hiển thị số dư",
+      "amountLabel": "Số tiền gửi",
+      "amountPlaceholder": "0,00",
+      "balance": "Số dư: 1,234567 ETH",
+      "usdEquivalent": "khoảng 1.234,50 USD",
+      "quarter": "25%",
+      "half": "50%",
+      "threeQuarters": "75%",
+      "max": "Max",
+      "gasSettingsLabel": "Cài đặt khí",
+      "gasSlow": "Chậm",
+      "gasSlowValue": "15 Gwei",
+      "gasStandard": "Chuẩn",
+      "gasStandardValue": "25 Gwei",
+      "gasFast": "Nhanh",
+      "gasFastValue": "35 Gwei"
+    }
+  },
+  "validationSection": {
+    "heading": "Xác minh nâng cao",
+    "cardTitle": "Ví dụ về xác thực thời gian thực",
+    "cardDescription": "Các mẫu xác thực nâng cao với phản hồi thời gian thực và thông báo lỗi tùy chỉnh",
+    "strongPasswordLabel": "Mật khẩu mạnh",
+    "strongPasswordPlaceholder": "Nhập mật khẩu",
+    "checkMinChars": "Ít nhất 8 ký tự",
+    "checkUppercase": "Chứa chữ hoa",
+    "checkNumber": "Chứa số",
+    "checkSpecialChar": "Chứa ký tự đặc biệt",
+    "emailLabel": "Địa chỉ email",
+    "emailPlaceholder": "Nhập địa chỉ email",
+    "validEmail": "✓ Định dạng email hợp lệ",
+    "invalidLabel": "Ví dụ đầu vào không hợp lệ",
+    "invalidPlaceholder": "Nhập giá trị",
+    "invalidMessage": "Trường này chứa ký tự không hợp lệ",
+    "loadingLabel": "Đang tải xác thực",
+    "loadingPlaceholder": "Đang kiểm tra khả năng sẵn sàng...",
+    "loadingMessage": "Đang kiểm tra tính khả dụng của tên người dùng..."
+  }
+}

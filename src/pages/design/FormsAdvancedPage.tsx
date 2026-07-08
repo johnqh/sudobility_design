@@ -15,6 +15,7 @@ import {
   XCircleIcon,
 } from "@heroicons/react/24/outline";
 import React, { useState } from "react";
+import { useTranslation } from "react-i18next";
 import { SEOHead } from "@sudobility/seo_lib";
 import {
   Button,
@@ -47,6 +48,7 @@ const FormsAdvancedPage: React.FC<AppProps> = ({
   emailDomain,
   appName: _appName,
 }) => {
+  const { t } = useTranslation("formsAdvanced");
   const [currentStep, setCurrentStep] = useState(1);
   const [showPassword, setShowPassword] = useState(false);
   const [formData, setFormData] = useState({
@@ -69,29 +71,29 @@ const FormsAdvancedPage: React.FC<AppProps> = ({
   const steps: FormStep[] = [
     {
       id: 1,
-      title: "Account Setup",
-      description: "Basic account information",
+      title: t("steps.account.title"),
+      description: t("steps.account.description"),
       completed: false,
       current: currentStep === 1,
     },
     {
       id: 2,
-      title: "Wallet Connection",
-      description: "Connect your Web3 wallet",
+      title: t("steps.wallet.title"),
+      description: t("steps.wallet.description"),
       completed: false,
       current: currentStep === 2,
     },
     {
       id: 3,
-      title: "Transaction Details",
-      description: "Configure transaction parameters",
+      title: t("steps.transaction.title"),
+      description: t("steps.transaction.description"),
       completed: false,
       current: currentStep === 3,
     },
     {
       id: 4,
-      title: "Review & Confirm",
-      description: "Review and submit",
+      title: t("steps.review.title"),
+      description: t("steps.review.description"),
       completed: false,
       current: currentStep === 4,
     },
@@ -99,8 +101,8 @@ const FormsAdvancedPage: React.FC<AppProps> = ({
 
   const quickStartExamples = [
     {
-      title: "Multi-Step Form",
-      description: "Step-by-step form with progress indicator",
+      title: t("quickStart.examples.multiStep.title"),
+      description: t("quickStart.examples.multiStep.description"),
       code: `// Multi-Step Form — semantic tokens auto-adapt to theme
 {steps.map((step, index) => (
   <div key={step.id} className="flex flex-col items-center flex-1">
@@ -122,8 +124,8 @@ const FormsAdvancedPage: React.FC<AppProps> = ({
 ))}`,
     },
     {
-      title: "File Upload with Drag & Drop",
-      description: "Advanced file upload with preview and validation",
+      title: t("quickStart.examples.fileUpload.title"),
+      description: t("quickStart.examples.fileUpload.description"),
       code: `// File Upload Zone — semantic tokens, no dark: overrides needed
 <div
   className={cn(
@@ -142,9 +144,8 @@ const FormsAdvancedPage: React.FC<AppProps> = ({
 </div>`,
     },
     {
-      title: "Web3 Token Amount Input",
-      description:
-        "Specialized input for cryptocurrency amounts with validation",
+      title: t("quickStart.examples.tokenAmount.title"),
+      description: t("quickStart.examples.tokenAmount.description"),
       code: `// Token Amount Input — Input uses variants.input.* under the hood
 <Label className="text-sm font-medium text-foreground">Amount to Send</Label>
 <div className="flex rounded-md shadow-sm">
@@ -164,8 +165,8 @@ const FormsAdvancedPage: React.FC<AppProps> = ({
 <Button variant="outline" size="sm">Max</Button>`,
     },
     {
-      title: "Advanced Validation",
-      description: "Real-time validation with custom error messages",
+      title: t("quickStart.examples.validation.title"),
+      description: t("quickStart.examples.validation.description"),
       code: `// Advanced Validation — intent tokens (destructive/success) instead of red/green
 <Label className="text-sm font-medium text-foreground">Wallet Address</Label>
 <div className="relative">
@@ -203,7 +204,7 @@ const FormsAdvancedPage: React.FC<AppProps> = ({
   const validateWalletAddress = (address: string) => {
     if (!address) return "";
     if (!/^0x[a-fA-F0-9]{40}$/.test(address)) {
-      return "Invalid Ethereum address format";
+      return t("validationMessages.invalidAddress");
     }
     return "";
   };
@@ -211,10 +212,10 @@ const FormsAdvancedPage: React.FC<AppProps> = ({
   const validateTokenAmount = (amount: string) => {
     if (!amount) return "";
     if (isNaN(Number(amount)) || Number(amount) <= 0) {
-      return "Amount must be a positive number";
+      return t("validationMessages.positiveAmount");
     }
     if (Number(amount) > 1.234567) {
-      return "Insufficient balance";
+      return t("validationMessages.insufficientBalance");
     }
     return "";
   };
@@ -222,10 +223,10 @@ const FormsAdvancedPage: React.FC<AppProps> = ({
   const validatePassword = (password: string) => {
     if (!password) return "";
     if (password.length < 8) {
-      return "Password must be at least 8 characters";
+      return t("validationMessages.passwordMinLength");
     }
     if (!/(?=.*[a-z])(?=.*[A-Z])(?=.*\d)/.test(password)) {
-      return "Password must contain uppercase, lowercase, and number";
+      return t("validationMessages.passwordComplexity");
     }
     return "";
   };
@@ -246,7 +247,10 @@ const FormsAdvancedPage: React.FC<AppProps> = ({
         error = validatePassword(value);
         break;
       case "confirmPassword":
-        error = value !== formData.password ? "Passwords do not match" : "";
+        error =
+          value !== formData.password
+            ? t("validationMessages.passwordsDoNotMatch")
+            : "";
         break;
     }
 
@@ -256,8 +260,8 @@ const FormsAdvancedPage: React.FC<AppProps> = ({
   return (
     <>
       <SEOHead
-        title={`Forms Advanced - Design System - Internal - ${emailDomain}`}
-        description="Advanced form patterns including multi-step forms, file uploads, and Web3 inputs"
+        title={t("seo.title", { emailDomain })}
+        description={t("seo.description")}
         noIndex={true}
       />
 
@@ -267,25 +271,27 @@ const FormsAdvancedPage: React.FC<AppProps> = ({
           <div className="mb-12">
             <div className="inline-flex items-center bg-accent/10 px-4 py-2 rounded-full mb-6">
               <DocumentTextIcon className="h-5 w-5 text-accent mr-2" />
-              <span className="text-accent font-semibold">Advanced Forms</span>
+              <span className="text-accent font-semibold">
+                {t("header.badge")}
+              </span>
             </div>
 
             <h1 className={`${textVariants.heading.display.xl()} mb-6`}>
-              Advanced Forms System
+              {t("header.title")}
             </h1>
 
             <p
               className={`${textVariants.body.lg()} max-w-3xl text-muted-foreground`}
             >
-              Advanced form patterns including multi-step wizards, file uploads,
-              Web3-specific inputs, and sophisticated validation patterns for
-              complex user interactions.
+              {t("header.description")}
             </p>
           </div>
 
           {/* Quick Start Examples */}
           <Section>
-            <h2 className={`${textVariants.heading.h2()} mb-8`}>Quick Start</h2>
+            <h2 className={`${textVariants.heading.h2()} mb-8`}>
+              {t("quickStart.heading")}
+            </h2>
 
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
               {quickStartExamples.map((example, index) => (
@@ -310,7 +316,7 @@ const FormsAdvancedPage: React.FC<AppProps> = ({
                     <button
                       onClick={() => copyToClipboard(example.code)}
                       className="absolute top-2 right-2 p-2 text-muted-foreground hover:text-foreground bg-card rounded-md shadow-sm border border-border hover:bg-muted transition-colors"
-                      title="Copy to clipboard"
+                      title={t("quickStart.copyTitle")}
                     >
                       <ClipboardDocumentIcon className="h-4 w-4" />
                     </button>
@@ -323,7 +329,7 @@ const FormsAdvancedPage: React.FC<AppProps> = ({
           {/* Multi-Step Form Demo */}
           <Section>
             <h2 className={`${textVariants.heading.h2()} mb-8`}>
-              Multi-Step Forms
+              {t("multiStep.heading")}
             </h2>
 
             <div
@@ -331,13 +337,12 @@ const FormsAdvancedPage: React.FC<AppProps> = ({
             >
               <div className="p-6 border-b border-border">
                 <h3 className={`${textVariants.heading.h3()} mb-2`}>
-                  Wallet Setup Wizard
+                  {t("multiStep.cardTitle")}
                 </h3>
                 <p
                   className={`${textVariants.body.sm()} text-muted-foreground`}
                 >
-                  Interactive multi-step form with progress tracking and
-                  validation
+                  {t("multiStep.cardDescription")}
                 </p>
               </div>
 
@@ -401,11 +406,11 @@ const FormsAdvancedPage: React.FC<AppProps> = ({
                     <div className="space-y-6">
                       <div>
                         <Label className="text-sm font-medium text-foreground">
-                          Email Address
+                          {t("multiStep.emailLabel")}
                         </Label>
                         <Input
                           type="email"
-                          placeholder="Enter your email"
+                          placeholder={t("multiStep.emailPlaceholder")}
                           value={formData.email}
                           onChange={(e: React.ChangeEvent<HTMLInputElement>) =>
                             handleInputChange("email", e.target.value)
@@ -415,12 +420,12 @@ const FormsAdvancedPage: React.FC<AppProps> = ({
                       </div>
                       <div>
                         <Label className="text-sm font-medium text-foreground">
-                          Password
+                          {t("multiStep.passwordLabel")}
                         </Label>
                         <div className="relative mt-1">
                           <Input
                             type={showPassword ? "text" : "password"}
-                            placeholder="Create a strong password"
+                            placeholder={t("multiStep.passwordPlaceholder")}
                             value={formData.password}
                             onChange={(
                               e: React.ChangeEvent<HTMLInputElement>,
@@ -449,11 +454,13 @@ const FormsAdvancedPage: React.FC<AppProps> = ({
                       </div>
                       <div>
                         <Label className="text-sm font-medium text-foreground">
-                          Confirm Password
+                          {t("multiStep.confirmPasswordLabel")}
                         </Label>
                         <Input
                           type="password"
-                          placeholder="Confirm your password"
+                          placeholder={t(
+                            "multiStep.confirmPasswordPlaceholder",
+                          )}
                           value={formData.confirmPassword}
                           onChange={(e: React.ChangeEvent<HTMLInputElement>) =>
                             handleInputChange("confirmPassword", e.target.value)
@@ -476,12 +483,14 @@ const FormsAdvancedPage: React.FC<AppProps> = ({
                     <div className="space-y-6">
                       <div>
                         <Label className="text-sm font-medium text-foreground">
-                          Wallet Address
+                          {t("multiStep.walletAddressLabel")}
                         </Label>
                         <div className="relative mt-1">
                           <Input
                             type="text"
-                            placeholder="0x..."
+                            placeholder={t(
+                              "multiStep.walletAddressPlaceholder",
+                            )}
                             value={formData.walletAddress}
                             onChange={(
                               e: React.ChangeEvent<HTMLInputElement>,
@@ -512,7 +521,7 @@ const FormsAdvancedPage: React.FC<AppProps> = ({
 
                       <div>
                         <Label className="text-sm font-medium text-foreground">
-                          Network
+                          {t("multiStep.networkLabel")}
                         </Label>
                         <Select
                           value={formData.network}
@@ -525,13 +534,17 @@ const FormsAdvancedPage: React.FC<AppProps> = ({
                           </SelectTrigger>
                           <SelectContent>
                             <SelectItem value="ethereum">
-                              Ethereum Mainnet
+                              {t("multiStep.networks.ethereum")}
                             </SelectItem>
-                            <SelectItem value="polygon">Polygon</SelectItem>
+                            <SelectItem value="polygon">
+                              {t("multiStep.networks.polygon")}
+                            </SelectItem>
                             <SelectItem value="bsc">
-                              Binance Smart Chain
+                              {t("multiStep.networks.bsc")}
                             </SelectItem>
-                            <SelectItem value="arbitrum">Arbitrum</SelectItem>
+                            <SelectItem value="arbitrum">
+                              {t("multiStep.networks.arbitrum")}
+                            </SelectItem>
                           </SelectContent>
                         </Select>
                       </div>
@@ -542,13 +555,15 @@ const FormsAdvancedPage: React.FC<AppProps> = ({
                     <div className="space-y-6">
                       <div>
                         <Label className="text-sm font-medium text-foreground">
-                          Token Amount
+                          {t("multiStep.tokenAmountLabel")}
                         </Label>
                         <div className="relative mt-1">
                           <div className="flex rounded-md shadow-sm">
                             <Input
                               type="number"
-                              placeholder="0.00"
+                              placeholder={t(
+                                "multiStep.tokenAmountPlaceholder",
+                              )}
                               value={formData.tokenAmount}
                               onChange={(
                                 e: React.ChangeEvent<HTMLInputElement>,
@@ -569,7 +584,7 @@ const FormsAdvancedPage: React.FC<AppProps> = ({
                         </div>
                         <div className="mt-1 flex items-center justify-between text-sm">
                           <span className="text-muted-foreground">
-                            Balance: 1.234567 ETH ($2,468.90)
+                            {t("multiStep.balance")}
                           </span>
                           <Button
                             variant="outline"
@@ -578,7 +593,7 @@ const FormsAdvancedPage: React.FC<AppProps> = ({
                               handleInputChange("tokenAmount", "1.234567")
                             }
                           >
-                            Max
+                            {t("multiStep.max")}
                           </Button>
                         </div>
                         {errors.tokenAmount && (
@@ -590,11 +605,11 @@ const FormsAdvancedPage: React.FC<AppProps> = ({
 
                       <div>
                         <Label className="text-sm font-medium text-foreground">
-                          Gas Price (Gwei)
+                          {t("multiStep.gasPriceLabel")}
                         </Label>
                         <Input
                           type="number"
-                          placeholder="20"
+                          placeholder={t("multiStep.gasPricePlaceholder")}
                           value={formData.gasPrice}
                           onChange={(e: React.ChangeEvent<HTMLInputElement>) =>
                             handleInputChange("gasPrice", e.target.value)
@@ -603,8 +618,7 @@ const FormsAdvancedPage: React.FC<AppProps> = ({
                           min="1"
                         />
                         <p className="mt-1 text-sm text-muted-foreground">
-                          Higher gas prices result in faster transaction
-                          confirmation
+                          {t("multiStep.gasPriceHint")}
                         </p>
                       </div>
                     </div>
@@ -614,12 +628,12 @@ const FormsAdvancedPage: React.FC<AppProps> = ({
                     <div className="space-y-6">
                       <div className="bg-muted rounded-lg p-6">
                         <h4 className="font-medium text-foreground mb-4">
-                          Review Your Transaction
+                          {t("multiStep.reviewTitle")}
                         </h4>
                         <dl className="space-y-3">
                           <div className="flex justify-between">
                             <dt className="text-sm text-muted-foreground">
-                              Network:
+                              {t("multiStep.reviewNetwork")}
                             </dt>
                             <dd className="text-sm font-medium text-foreground capitalize">
                               {formData.network}
@@ -627,7 +641,7 @@ const FormsAdvancedPage: React.FC<AppProps> = ({
                           </div>
                           <div className="flex justify-between">
                             <dt className="text-sm text-muted-foreground">
-                              To Address:
+                              {t("multiStep.reviewToAddress")}
                             </dt>
                             <dd className="text-sm font-mono text-foreground">
                               {formData.walletAddress}
@@ -635,7 +649,7 @@ const FormsAdvancedPage: React.FC<AppProps> = ({
                           </div>
                           <div className="flex justify-between">
                             <dt className="text-sm text-muted-foreground">
-                              Amount:
+                              {t("multiStep.reviewAmount")}
                             </dt>
                             <dd className="text-sm font-medium text-foreground">
                               {formData.tokenAmount} ETH
@@ -643,7 +657,7 @@ const FormsAdvancedPage: React.FC<AppProps> = ({
                           </div>
                           <div className="flex justify-between">
                             <dt className="text-sm text-muted-foreground">
-                              Gas Price:
+                              {t("multiStep.reviewGasPrice")}
                             </dt>
                             <dd className="text-sm font-medium text-foreground">
                               {formData.gasPrice || "20"} Gwei
@@ -657,11 +671,10 @@ const FormsAdvancedPage: React.FC<AppProps> = ({
                           <ExclamationTriangleIcon className="h-5 w-5 text-warning mr-3 flex-shrink-0 mt-0.5" />
                           <div>
                             <h5 className="text-sm font-medium text-warning">
-                              Transaction Warning
+                              {t("multiStep.warningTitle")}
                             </h5>
                             <p className="mt-1 text-sm text-warning">
-                              Please double-check all transaction details.
-                              Blockchain transactions cannot be reversed.
+                              {t("multiStep.warningBody")}
                             </p>
                           </div>
                         </div>
@@ -677,7 +690,7 @@ const FormsAdvancedPage: React.FC<AppProps> = ({
                     onClick={() => setCurrentStep(Math.max(1, currentStep - 1))}
                     disabled={currentStep === 1}
                   >
-                    Previous
+                    {t("multiStep.previous")}
                   </Button>
                   <Button
                     onClick={() => {
@@ -687,7 +700,9 @@ const FormsAdvancedPage: React.FC<AppProps> = ({
                     }}
                     disabled={currentStep === 4}
                   >
-                    {currentStep === 4 ? "Submit Transaction" : "Next"}
+                    {currentStep === 4
+                      ? t("multiStep.submit")
+                      : t("multiStep.next")}
                   </Button>
                 </div>
               </div>
@@ -697,7 +712,7 @@ const FormsAdvancedPage: React.FC<AppProps> = ({
           {/* File Upload Demo */}
           <Section>
             <h2 className={`${textVariants.heading.h2()} mb-8`}>
-              File Uploads
+              {t("fileUpload.heading")}
             </h2>
 
             <div
@@ -705,12 +720,12 @@ const FormsAdvancedPage: React.FC<AppProps> = ({
             >
               <div className="p-6 border-b border-border">
                 <h3 className={`${textVariants.heading.h3()} mb-2`}>
-                  Document Upload
+                  {t("fileUpload.cardTitle")}
                 </h3>
                 <p
                   className={`${textVariants.body.sm()} text-muted-foreground`}
                 >
-                  Drag and drop file upload with preview and validation
+                  {t("fileUpload.cardDescription")}
                 </p>
               </div>
 
@@ -735,10 +750,10 @@ const FormsAdvancedPage: React.FC<AppProps> = ({
                 >
                   <CloudArrowUpIcon className="h-12 w-12 text-muted-foreground mx-auto mb-4" />
                   <p className="text-lg font-medium text-foreground mb-2">
-                    Drop files here to upload
+                    {t("fileUpload.dropTitle")}
                   </p>
                   <p className="text-sm text-muted-foreground mb-4">
-                    Or click to select files from your computer
+                    {t("fileUpload.dropSubtitle")}
                   </p>
                   <input
                     type="file"
@@ -753,11 +768,10 @@ const FormsAdvancedPage: React.FC<AppProps> = ({
                     className="inline-flex items-center px-4 py-2 border border-input rounded-md shadow-sm text-sm font-medium text-foreground bg-card hover:bg-muted cursor-pointer"
                   >
                     <PaperClipIcon className="h-4 w-4 mr-2" />
-                    Choose Files
+                    {t("fileUpload.chooseFiles")}
                   </label>
                   <p className="text-xs text-muted-foreground mt-2">
-                    Supported formats: PDF, DOC, DOCX, JPG, PNG, TXT (Max 10MB
-                    each)
+                    {t("fileUpload.supportedFormats")}
                   </p>
                 </div>
 
@@ -765,7 +779,9 @@ const FormsAdvancedPage: React.FC<AppProps> = ({
                 {uploadedFiles.length > 0 && (
                   <div className="mt-6">
                     <h4 className="text-sm font-medium text-foreground mb-4">
-                      Uploaded Files ({uploadedFiles.length})
+                      {t("fileUpload.uploadedFiles", {
+                        count: uploadedFiles.length,
+                      })}
                     </h4>
                     <div className="space-y-2">
                       {uploadedFiles.map((file, index) => (
@@ -782,7 +798,9 @@ const FormsAdvancedPage: React.FC<AppProps> = ({
                                 {file.name}
                               </p>
                               <p className="text-xs text-muted-foreground">
-                                {(file.size / 1024 / 1024).toFixed(2)} MB
+                                {t("fileUpload.megabytes", {
+                                  size: (file.size / 1024 / 1024).toFixed(2),
+                                })}
                               </p>
                             </div>
                           </div>
@@ -804,7 +822,7 @@ const FormsAdvancedPage: React.FC<AppProps> = ({
           {/* Web3 Inputs Demo */}
           <Section>
             <h2 className={`${textVariants.heading.h2()} mb-8`}>
-              Web3 Specialized Inputs
+              {t("web3.heading")}
             </h2>
 
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
@@ -814,13 +832,12 @@ const FormsAdvancedPage: React.FC<AppProps> = ({
               >
                 <div className="p-6 border-b border-border">
                   <h3 className={`${textVariants.heading.h4()} mb-2`}>
-                    Wallet Address Input
+                    {t("web3.walletCard.title")}
                   </h3>
                   <p
                     className={`${textVariants.body.sm()} text-muted-foreground`}
                   >
-                    Specialized input for cryptocurrency addresses with
-                    validation
+                    {t("web3.walletCard.description")}
                   </p>
                 </div>
 
@@ -828,12 +845,12 @@ const FormsAdvancedPage: React.FC<AppProps> = ({
                   <div>
                     <Label className="text-sm font-medium text-foreground mb-2 block">
                       <WalletIcon className="h-4 w-4 inline mr-1" />
-                      Recipient Address
+                      {t("web3.walletCard.recipientLabel")}
                     </Label>
                     <div className="relative">
                       <Input
                         type="text"
-                        placeholder="0x... or ENS name"
+                        placeholder={t("web3.walletCard.recipientPlaceholder")}
                         className="font-mono text-sm"
                         value="0x742d35Cc6634C0532925a3b844Bc9e7595f0bEb7"
                       />
@@ -842,23 +859,23 @@ const FormsAdvancedPage: React.FC<AppProps> = ({
                       </div>
                     </div>
                     <p className="mt-1 text-xs text-success">
-                      ✓ Valid Ethereum address
+                      {t("web3.walletCard.validAddress")}
                     </p>
                   </div>
 
                   <div>
                     <Label className="text-sm font-medium text-foreground mb-2 block">
                       <GlobeAltIcon className="h-4 w-4 inline mr-1" />
-                      ENS Name
+                      {t("web3.walletCard.ensLabel")}
                     </Label>
                     <Input
                       type="text"
-                      placeholder="vitalik.eth"
+                      placeholder={t("web3.walletCard.ensPlaceholder")}
                       className="font-mono text-sm"
                       value="alice.eth"
                     />
                     <p className="mt-1 text-xs text-info">
-                      → Resolves to: 0x742d...5f0bEb7
+                      {t("web3.walletCard.ensResolves")}
                     </p>
                   </div>
                 </div>
@@ -870,12 +887,12 @@ const FormsAdvancedPage: React.FC<AppProps> = ({
               >
                 <div className="p-6 border-b border-border">
                   <h3 className={`${textVariants.heading.h4()} mb-2`}>
-                    Token Amount Input
+                    {t("web3.tokenCard.title")}
                   </h3>
                   <p
                     className={`${textVariants.body.sm()} text-muted-foreground`}
                   >
-                    Precise token amount input with balance display
+                    {t("web3.tokenCard.description")}
                   </p>
                 </div>
 
@@ -883,12 +900,12 @@ const FormsAdvancedPage: React.FC<AppProps> = ({
                   <div>
                     <Label className="text-sm font-medium text-foreground mb-2 block">
                       <CurrencyDollarIcon className="h-4 w-4 inline mr-1" />
-                      Amount to Send
+                      {t("web3.tokenCard.amountLabel")}
                     </Label>
                     <div className="flex rounded-md shadow-sm">
                       <Input
                         type="number"
-                        placeholder="0.00"
+                        placeholder={t("web3.tokenCard.amountPlaceholder")}
                         className="rounded-r-none font-mono"
                         step="0.000000000000000001"
                         min="0"
@@ -900,52 +917,56 @@ const FormsAdvancedPage: React.FC<AppProps> = ({
                     </div>
                     <div className="mt-2 flex items-center justify-between">
                       <span className="text-sm text-muted-foreground">
-                        Balance: 1.234567 ETH
+                        {t("web3.tokenCard.balance")}
                       </span>
                       <div className="flex space-x-2">
                         <Button variant="outline" size="sm">
-                          25%
+                          {t("web3.tokenCard.quarter")}
                         </Button>
                         <Button variant="outline" size="sm">
-                          50%
+                          {t("web3.tokenCard.half")}
                         </Button>
                         <Button variant="outline" size="sm">
-                          75%
+                          {t("web3.tokenCard.threeQuarters")}
                         </Button>
                         <Button variant="outline" size="sm">
-                          Max
+                          {t("web3.tokenCard.max")}
                         </Button>
                       </div>
                     </div>
                     <p className="mt-1 text-xs text-muted-foreground">
-                      ≈ $1,234.50 USD
+                      {t("web3.tokenCard.usdEquivalent")}
                     </p>
                   </div>
 
                   <div>
                     <Label className="text-sm font-medium text-foreground mb-2 block">
                       <ShieldCheckIcon className="h-4 w-4 inline mr-1" />
-                      Gas Settings
+                      {t("web3.tokenCard.gasSettingsLabel")}
                     </Label>
                     <div className="grid grid-cols-3 gap-2">
                       <button className="p-2 text-center border rounded-md border-success bg-success/10">
                         <div className="text-xs font-medium text-success">
-                          Slow
+                          {t("web3.tokenCard.gasSlow")}
                         </div>
-                        <div className="text-xs text-success">15 Gwei</div>
+                        <div className="text-xs text-success">
+                          {t("web3.tokenCard.gasSlowValue")}
+                        </div>
                       </button>
                       <button className="p-2 text-center border rounded-md border-primary bg-primary/10">
                         <div className="text-xs font-medium text-primary">
-                          Standard
+                          {t("web3.tokenCard.gasStandard")}
                         </div>
-                        <div className="text-xs text-primary">25 Gwei</div>
+                        <div className="text-xs text-primary">
+                          {t("web3.tokenCard.gasStandardValue")}
+                        </div>
                       </button>
                       <button className="p-2 text-center border rounded-md border-input">
                         <div className="text-xs font-medium text-foreground">
-                          Fast
+                          {t("web3.tokenCard.gasFast")}
                         </div>
                         <div className="text-xs text-muted-foreground">
-                          35 Gwei
+                          {t("web3.tokenCard.gasFastValue")}
                         </div>
                       </button>
                     </div>
@@ -958,7 +979,7 @@ const FormsAdvancedPage: React.FC<AppProps> = ({
           {/* Validation Patterns */}
           <Section>
             <h2 className={`${textVariants.heading.h2()} mb-8`}>
-              Advanced Validation
+              {t("validationSection.heading")}
             </h2>
 
             <div
@@ -966,13 +987,12 @@ const FormsAdvancedPage: React.FC<AppProps> = ({
             >
               <div className="p-6 border-b border-border">
                 <h3 className={`${textVariants.heading.h3()} mb-2`}>
-                  Real-time Validation Examples
+                  {t("validationSection.cardTitle")}
                 </h3>
                 <p
                   className={`${textVariants.body.sm()} text-muted-foreground`}
                 >
-                  Advanced validation patterns with real-time feedback and
-                  custom error messages
+                  {t("validationSection.cardDescription")}
                 </p>
               </div>
 
@@ -981,12 +1001,14 @@ const FormsAdvancedPage: React.FC<AppProps> = ({
                   <div className="space-y-4">
                     <div>
                       <Label className="text-sm font-medium text-foreground">
-                        Strong Password
+                        {t("validationSection.strongPasswordLabel")}
                       </Label>
                       <div className="relative mt-1">
                         <Input
                           type="password"
-                          placeholder="Enter password"
+                          placeholder={t(
+                            "validationSection.strongPasswordPlaceholder",
+                          )}
                           value="StrongPass123!"
                         />
                         <CheckCircleIcon className="absolute right-3 top-1/2 transform -translate-y-1/2 h-4 w-4 text-success" />
@@ -995,23 +1017,25 @@ const FormsAdvancedPage: React.FC<AppProps> = ({
                         <div className="flex items-center text-xs">
                           <CheckCircleIcon className="h-3 w-3 text-success mr-1" />
                           <span className="text-success">
-                            At least 8 characters
+                            {t("validationSection.checkMinChars")}
                           </span>
                         </div>
                         <div className="flex items-center text-xs">
                           <CheckCircleIcon className="h-3 w-3 text-success mr-1" />
                           <span className="text-success">
-                            Contains uppercase letter
+                            {t("validationSection.checkUppercase")}
                           </span>
                         </div>
                         <div className="flex items-center text-xs">
                           <CheckCircleIcon className="h-3 w-3 text-success mr-1" />
-                          <span className="text-success">Contains number</span>
+                          <span className="text-success">
+                            {t("validationSection.checkNumber")}
+                          </span>
                         </div>
                         <div className="flex items-center text-xs">
                           <CheckCircleIcon className="h-3 w-3 text-success mr-1" />
                           <span className="text-success">
-                            Contains special character
+                            {t("validationSection.checkSpecialChar")}
                           </span>
                         </div>
                       </div>
@@ -1019,18 +1043,18 @@ const FormsAdvancedPage: React.FC<AppProps> = ({
 
                     <div>
                       <Label className="text-sm font-medium text-foreground">
-                        Email Address
+                        {t("validationSection.emailLabel")}
                       </Label>
                       <div className="relative mt-1">
                         <Input
                           type="email"
-                          placeholder="Enter email"
+                          placeholder={t("validationSection.emailPlaceholder")}
                           value="user@example.com"
                         />
                         <CheckCircleIcon className="absolute right-3 top-1/2 transform -translate-y-1/2 h-4 w-4 text-success" />
                       </div>
                       <p className="mt-1 text-xs text-success">
-                        ✓ Valid email format
+                        {t("validationSection.validEmail")}
                       </p>
                     </div>
                   </div>
@@ -1038,30 +1062,34 @@ const FormsAdvancedPage: React.FC<AppProps> = ({
                   <div className="space-y-4">
                     <div>
                       <Label className="text-sm font-medium text-foreground">
-                        Invalid Input Example
+                        {t("validationSection.invalidLabel")}
                       </Label>
                       <div className="relative mt-1">
                         <Input
                           type="text"
-                          placeholder="Enter value"
+                          placeholder={t(
+                            "validationSection.invalidPlaceholder",
+                          )}
                           value="invalid123"
                           className="border-destructive pr-10"
                         />
                         <XCircleIcon className="absolute right-3 top-1/2 transform -translate-y-1/2 h-4 w-4 text-destructive" />
                       </div>
                       <p className="mt-1 text-xs text-destructive">
-                        This field contains invalid characters
+                        {t("validationSection.invalidMessage")}
                       </p>
                     </div>
 
                     <div>
                       <Label className="text-sm font-medium text-foreground">
-                        Loading Validation
+                        {t("validationSection.loadingLabel")}
                       </Label>
                       <div className="relative mt-1">
                         <Input
                           type="text"
-                          placeholder="Checking availability..."
+                          placeholder={t(
+                            "validationSection.loadingPlaceholder",
+                          )}
                           value="username123"
                           className="pr-10"
                         />
@@ -1070,7 +1098,7 @@ const FormsAdvancedPage: React.FC<AppProps> = ({
                         </div>
                       </div>
                       <p className="mt-1 text-xs text-info">
-                        Checking username availability...
+                        {t("validationSection.loadingMessage")}
                       </p>
                     </div>
                   </div>

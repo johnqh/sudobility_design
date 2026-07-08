@@ -1,0 +1,159 @@
+{
+  "seo": {
+    "title": "Forms Advanced - Design System - 內部 - {{emailDomain}}",
+    "description": "包括多步表單、檔案上傳和Web3輸入在內的進階表單模式"
+  },
+  "header": {
+    "badge": "進階表單",
+    "title": "高級表單系統",
+    "description": "包括多步向導、檔案上傳、Web3專用輸入以及複雜使用者互動的進階驗證模式在內的進階表單模式。"
+  },
+  "quickStart": {
+    "heading": "快速入門",
+    "copyTitle": "複製到剪貼簿",
+    "examples": {
+      "multiStep": {
+        "title": "多步表單",
+        "description": "帶進度指示器的分步表單"
+      },
+      "fileUpload": {
+        "title": "拖曳上傳檔案",
+        "description": "具預覽與驗證的進階檔案上傳"
+      },
+      "tokenAmount": {
+        "title": "Web3代幣金額輸入",
+        "description": "用於加密貨幣金額的專用輸入及驗證"
+      },
+      "validation": {
+        "title": "高級驗證",
+        "description": "即時驗證，支援自訂錯誤訊息"
+      }
+    }
+  },
+  "steps": {
+    "account": {
+      "title": "帳戶設定",
+      "description": "帳戶基本資訊"
+    },
+    "wallet": {
+      "title": "錢包連接",
+      "description": "連接您的 Web3 錢包"
+    },
+    "transaction": {
+      "title": "交易詳情",
+      "description": "設定交易參數"
+    },
+    "review": {
+      "title": "審查並確認",
+      "description": "審核並提交"
+    }
+  },
+  "multiStep": {
+    "heading": "多步驟表單",
+    "cardTitle": "錢包設定向導",
+    "cardDescription": "帶進度追蹤和驗證的互動式多步表單",
+    "emailLabel": "電子郵件地址",
+    "emailPlaceholder": "請輸入您的電子郵件",
+    "passwordLabel": "密碼",
+    "passwordPlaceholder": "建立一個強密碼",
+    "confirmPasswordLabel": "確認密碼",
+    "confirmPasswordPlaceholder": "確認您的密碼",
+    "walletAddressLabel": "錢包地址",
+    "walletAddressPlaceholder": "0x...",
+    "networkLabel": "網絡",
+    "networks": {
+      "ethereum": "以太坊主網",
+      "polygon": "多邊形",
+      "bsc": "Binance Smart Chain",
+      "arbitrum": "Arbitrum"
+    },
+    "tokenAmountLabel": "代幣金額",
+    "tokenAmountPlaceholder": "0.00",
+    "balance": "餘額: 1.234567 ETH ($2,468.90)",
+    "max": "Max",
+    "gasPriceLabel": "Gas價格 (Gwei)",
+    "gasPricePlaceholder": "20",
+    "gasPriceHint": "更高的氣體價格導致更快的交易確認",
+    "reviewTitle": "查看您的交易",
+    "reviewNetwork": "網路:",
+    "reviewToAddress": "收件人：",
+    "reviewAmount": "金額：",
+    "reviewGasPrice": "天然氣價格：",
+    "warningTitle": "交易警告",
+    "warningBody": "請再次核對所有交易詳情。區塊鏈交易無法撤銷。",
+    "previous": "上一頁",
+    "next": "下一個",
+    "submit": "提交交易"
+  },
+  "validationMessages": {
+    "invalidAddress": "無效的以太坊地址格式",
+    "positiveAmount": "金額必須為正數",
+    "insufficientBalance": "餘額不足",
+    "passwordMinLength": "密碼必須至少包含8個字符",
+    "passwordComplexity": "密碼必須包含大寫字母、小寫字母和數字",
+    "passwordsDoNotMatch": "密碼不相符"
+  },
+  "fileUpload": {
+    "heading": "檔案上傳",
+    "cardTitle": "文件上傳",
+    "cardDescription": "支援預覽與驗證的拖曳上傳檔案",
+    "dropTitle": "將檔案拖曳到這裡上傳",
+    "dropSubtitle": "或點擊以從您的電腦中選擇檔案",
+    "chooseFiles": "選擇檔案",
+    "supportedFormats": "支援的格式：PDF、DOC、DOCX、JPG、PNG、TXT（每個最大10MB）",
+    "uploadedFiles": "已上傳檔案 ({{count}})",
+    "megabytes": "{{size}} MB"
+  },
+  "web3": {
+    "heading": "Web3專用輸入",
+    "walletCard": {
+      "title": "錢包地址輸入",
+      "description": "用於加密貨幣地址的專用輸入及驗證",
+      "recipientLabel": "收件人地址",
+      "recipientPlaceholder": "0x... 或 ENS 名稱",
+      "validAddress": "✓ 有效的以太坊地址",
+      "ensLabel": "ENS名稱",
+      "ensPlaceholder": "vitalik.eth",
+      "ensResolves": "→ 解析為: 0x742d...5f0bEb7"
+    },
+    "tokenCard": {
+      "title": "代幣金額輸入",
+      "description": "精確的代幣數量輸入並顯示餘額",
+      "amountLabel": "要發送的金額",
+      "amountPlaceholder": "0.00",
+      "balance": "餘額: 1.234567 ETH",
+      "usdEquivalent": "約1,234.50美元",
+      "quarter": "25%",
+      "half": "50%",
+      "threeQuarters": "75%",
+      "max": "Max",
+      "gasSettingsLabel": "氣體設定",
+      "gasSlow": "慢",
+      "gasSlowValue": "15 Gwei",
+      "gasStandard": "標準",
+      "gasStandardValue": "25 Gwei",
+      "gasFast": "快速",
+      "gasFastValue": "35 Gwei"
+    }
+  },
+  "validationSection": {
+    "heading": "高級驗證",
+    "cardTitle": "即時驗證範例",
+    "cardDescription": "進階驗證模式，支援即時反饋和自訂錯誤訊息",
+    "strongPasswordLabel": "強密碼",
+    "strongPasswordPlaceholder": "輸入密碼",
+    "checkMinChars": "至少8個字符",
+    "checkUppercase": "包含大寫字母",
+    "checkNumber": "包含數字",
+    "checkSpecialChar": "包含特殊字符",
+    "emailLabel": "電子郵件地址",
+    "emailPlaceholder": "輸入電子郵件",
+    "validEmail": "✓ 有效的電子郵件格式",
+    "invalidLabel": "無效輸入範例",
+    "invalidPlaceholder": "輸入值",
+    "invalidMessage": "此欄位包含無效字符",
+    "loadingLabel": "載入驗證",
+    "loadingPlaceholder": "檢查可用性...",
+    "loadingMessage": "檢查用戶名可用性..."
+  }
+}

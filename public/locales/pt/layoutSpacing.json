@@ -1,0 +1,147 @@
+{
+  "seo": {
+    "title": "Layout e Espaçamento - Sistema de Design - Interno - {{emailDomain}}",
+    "description": "Sistema de layout e espaçamento com grelhas responsivas, contêineres e padrões específicos do Web3"
+  },
+  "header": {
+    "badge": "Layout e espaçamento",
+    "title": "Sistema de Layout e Espaçamento",
+    "description": "Sistema abrangente de layout e espaçamento com grades responsivas, contêineres flexíveis e padrões específicos para Web3 para carteiras, transações e interfaces de painel."
+  },
+  "quickStart": {
+    "title": "Início Rápido",
+    "copyTooltip": "Copiar para a área de transferência",
+    "examples": {
+      "grid": {
+        "title": "Sistema de Grade Responsivo",
+        "description": "Layouts de grade flexíveis que se adaptam a diferentes tamanhos de tela"
+      },
+      "container": {
+        "title": "Sistema de Contêiner",
+        "description": "Contêineres responsivos com larguras máximas e preenchimentos consistentes"
+      },
+      "flex": {
+        "title": "Utilitários do Flexbox",
+        "description": "Padrões comuns de flexbox para layouts de componentes"
+      },
+      "spacing": {
+        "title": "Sistema de espaçamento",
+        "description": "Padrões de espaçamento consistente para margens e preenchimentos"
+      }
+    }
+  },
+  "grid": {
+    "title": "Sistema de Grade Responsivo",
+    "cardTitle": "Exemplos de grade interativa",
+    "cardDescription": "Mude entre pontos de quebra para ver como as grelhas se adaptam",
+    "preview": "Pré-visualização:",
+    "breakpoints": {
+      "mobile": "Móvel",
+      "tablet": "Tablete",
+      "desktop": "Área de Trabalho"
+    },
+    "examples": {
+      "nftGallery": {
+        "name": "Galeria de NFT"
+      },
+      "dashboardWidgets": {
+        "name": "Widgets do painel"
+      },
+      "transactionHistory": {
+        "name": "Histórico de transações"
+      }
+    },
+    "item": "Item {{number}}"
+  },
+  "container": {
+    "title": "Sistema de Contêiner",
+    "cardTitle": "Variantes de contêiner",
+    "cardDescription": "Diferentes tamanhos de contêiner para diversos tipos de conteúdo",
+    "label": "Contêiner:",
+    "maxWidth": "Largura máxima:",
+    "bestFor": "Melhor para:",
+    "containerSuffix": "{{name}} Contêiner",
+    "previewText": "Este contêiner adapta-se às restrições de largura selecionadas, mantendo o preenchimento responsivo.",
+    "sizes": {
+      "narrow": {
+        "name": "Estreito",
+        "use": "Artigos, formulários"
+      },
+      "default": {
+        "name": "Padrão",
+        "use": "Conteúdo geral"
+      },
+      "wide": {
+        "name": "Largo",
+        "use": "Painéis, tabelas"
+      },
+      "full": {
+        "name": "Completo",
+        "use": "Disposições borda a borda"
+      }
+    }
+  },
+  "flexbox": {
+    "title": "Padrões Flexbox",
+    "common": {
+      "title": "Padrões comuns",
+      "description": "Layouts flexbox padrão para componentes",
+      "spaceBetween": "Espaço entre",
+      "center": "Centro",
+      "startWithGap": "Comece com o vazio",
+      "columnStack": "Pilha de colunas"
+    },
+    "web3": {
+      "title": "Padrões Web3",
+      "description": "Layouts especializados para interfaces de blockchain",
+      "walletConnection": "Conexão da carteira",
+      "walletName": "MetaMask",
+      "connected": "Conectado",
+      "transactionSummary": "Resumo da transação",
+      "amount": "Quantia:",
+      "gasFee": "Taxa de gás:",
+      "total": "Total:",
+      "nftCardLayout": "Layout da Carta NFT",
+      "nftName": "NFT legal #1234",
+      "artistName": "Nome do artista"
+    }
+  },
+  "spacing": {
+    "title": "Sistema de espaçamento",
+    "cardTitle": "Padrões de espaçamento consistente",
+    "cardDescription": "Utilitários padrão de espaçamento para layouts coerentes",
+    "scaleTitle": "Escala de espaçamento",
+    "componentTitle": "Espaçamento de componentes",
+    "sectionHeader": "Cabeçalho da seção",
+    "component": "Componente {{number}}",
+    "sectionSpacingLabel": "Espaçamento de seção:",
+    "sectionSpacingText": "margens verticais de 32px",
+    "componentSpacingLabel": "Espaçamento de componentes:",
+    "componentSpacingText": "12px entre itens",
+    "internalPaddingLabel": "Acabamento interno:",
+    "internalPaddingText": "16px para áreas de conteúdo"
+  },
+  "web3": {
+    "title": "Padrões de Layout Web3",
+    "wallet": {
+      "title": "Painel do Carteira",
+      "description": "Visão geral do portfólio com saldo e ativos",
+      "send": "Enviar",
+      "receive": "Receber",
+      "swap": "Trocar",
+      "assets": "Ativos"
+    },
+    "transaction": {
+      "title": "Fluxo de transação",
+      "description": "Interface de transação passo a passo",
+      "recipientAddress": "Endereço do destinatário",
+      "amount": "Quantia",
+      "balance": "Saldo: 2,45 ETH",
+      "max": "Max",
+      "networkFee": "Taxa de rede:",
+      "total": "Total:",
+      "cancel": "Cancelar",
+      "continue": "Continuar"
+    }
+  }
+}

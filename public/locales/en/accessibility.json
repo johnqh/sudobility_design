@@ -1,0 +1,127 @@
+{
+  "seo": {
+    "title": "Accessibility & A11Y - Design System - Internal - {{emailDomain}}",
+    "description": "Comprehensive accessibility patterns and inclusive design utilities for WCAG compliance"
+  },
+  "header": {
+    "badge": "Accessibility & A11Y",
+    "title": "Inclusive Design System",
+    "intro": "Comprehensive accessibility patterns and utilities for building inclusive, WCAG-compliant Web3 applications. These patterns ensure equal access for all users, including those using assistive technologies."
+  },
+  "stats": {
+    "wcag": {
+      "value": "WCAG 2.1",
+      "label": "AA Compliant"
+    },
+    "touch": {
+      "value": "44px+",
+      "label": "Touch Targets"
+    },
+    "contrast": {
+      "value": "4.5:1",
+      "label": "Color Contrast"
+    },
+    "screenReader": {
+      "value": "Screen Reader",
+      "label": "Compatible"
+    }
+  },
+  "screenReader": {
+    "title": "Screen Reader Support",
+    "description": "Comprehensive screen reader patterns including skip links, aria labels, and semantic HTML.",
+    "skipLink": {
+      "title": "Skip Link",
+      "button": "Skip Link (Focus to see)",
+      "visible": "✓ Skip link is now visible! This helps keyboard users navigate quickly."
+    },
+    "only": {
+      "title": "Screen Reader Only Content",
+      "description": "This content provides context for screen readers without cluttering the visual design.",
+      "hidden": "This text is only visible to screen readers"
+    }
+  },
+  "focus": {
+    "title": "Focus Management",
+    "description": "Clear focus indicators and keyboard navigation patterns for all interactive elements.",
+    "indicatorsTitle": "Focus Indicators",
+    "standard": "Standard Focus",
+    "highContrast": "High Contrast",
+    "wallet": "Web3 Wallet",
+    "error": "Error State"
+  },
+  "contrast": {
+    "title": "Color Contrast",
+    "description": "High contrast text and background combinations that exceed WCAG AA requirements.",
+    "levelsTitle": "Text Contrast Levels",
+    "high": "High contrast text (WCAG AAA) - Ratio 7:1+",
+    "medium": "Medium contrast text (WCAG AA) - Ratio 4.5:1+",
+    "low": "Low contrast text (for secondary content)",
+    "backgroundsTitle": "High Contrast Backgrounds",
+    "primary": "Primary",
+    "success": "Success",
+    "warning": "Warning",
+    "errorLabel": "Error"
+  },
+  "motion": {
+    "title": "Motion Preferences",
+    "description": "Animations that respect user motion preferences and provide alternatives for users with vestibular disorders.",
+    "controlsTitle": "Motion Preference Controls",
+    "reduceMotion": "Reduce Motion",
+    "noAnimation": "No Animation",
+    "animatedButton": "Animated Button"
+  },
+  "form": {
+    "title": "Form Accessibility",
+    "description": "Accessible form patterns with proper labeling, validation, and error handling.",
+    "requiredTitle": "Required Field Indicators",
+    "emailLabel": "Email Address",
+    "passwordLabel": "Password",
+    "passwordError": "Password must be at least 8 characters long",
+    "codeExamplesTitle": "Code Examples"
+  },
+  "feedback": {
+    "title": "Accessible Feedback",
+    "description": "Screen reader-friendly feedback messages with appropriate ARIA live regions.",
+    "messageTypesTitle": "Message Types",
+    "successTitle": "Success",
+    "successMessage": "Your wallet has been connected successfully!",
+    "errorTitle": "Error",
+    "errorMessage": "Transaction failed. Please try again.",
+    "liveRegionTitle": "Live Region Patterns",
+    "politeExample": "This content will be announced politely to screen readers",
+    "assertiveExample": "This content will interrupt screen readers for important alerts"
+  },
+  "web3": {
+    "title": "Web3 Accessibility",
+    "description": "Specialized accessibility patterns for Web3 applications including wallet connections and transactions.",
+    "componentsTitle": "Web3 Components",
+    "connectWallet": "Connect Wallet",
+    "connectWalletAria": "Connect your Web3 wallet",
+    "transactionAria": "Transaction Status",
+    "transactionPending": "Transaction pending...",
+    "balanceAria": "Account balance is 1.5 ETH",
+    "addressAria": "Wallet address 0x1234...5678",
+    "implementationTitle": "Implementation"
+  },
+  "bestPractices": {
+    "title": "Best Practices",
+    "doTitle": "✅ Do This",
+    "do": [
+      "Use semantic HTML elements (button, nav, main, etc.)",
+      "Provide descriptive aria-labels for interactive elements",
+      "Ensure minimum 44px touch targets on mobile",
+      "Test with keyboard-only navigation",
+      "Respect user's motion preferences",
+      "Provide alternative text for complex Web3 concepts"
+    ],
+    "avoidTitle": "❌ Avoid This",
+    "avoid": [
+      "Using color alone to convey information",
+      "Creating keyboard traps without escape routes",
+      "Auto-playing videos or animations",
+      "Using generic labels like \"Click here\" or \"Read more\"",
+      "Removing focus indicators completely",
+      "Using Web3 jargon without explanations"
+    ]
+  }
+}

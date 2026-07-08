@@ -1,0 +1,155 @@
+{
+  "seo": {
+    "title": "Ikoner och illustrationer - Designsystem - Intern - {{emailDomain}}",
+    "description": "Komplett ikonsystem med konsekvent storlek, färger och kontextuell användning"
+  },
+  "header": {
+    "badge": "IKoner och illustrationer",
+    "title": "IKoner och illustrationer",
+    "description": "Komplett ikonsystem med konsekvent storlek, färger och kontextuell användning. Byggt med Heroicons och optimerat för tillgänglighet och mörkt läge."
+  },
+  "sizes": {
+    "title": "Ikonstorlekar",
+    "variantsTitle": "Storleksvarianter",
+    "usageTitle": "Storlek Användning",
+    "labels": {
+      "xs": "xs (12px)",
+      "sm": "sm (16px)",
+      "md": "md (20px)",
+      "lg": "lg (24px)",
+      "xl": "xl (32px)",
+      "xxl": "xxl (40px)",
+      "xxxl": "xxxl (48px)"
+    }
+  },
+  "colors": {
+    "title": "Ikonfärger",
+    "variantsTitle": "Färgvarianter",
+    "web3Title": "Web3-färger",
+    "default": {
+      "label": "Standard",
+      "value": "Grå 500 / 400"
+    },
+    "brand": {
+      "label": "Märke",
+      "value": "Blå 600 / 400"
+    },
+    "success": {
+      "label": "Framgång",
+      "value": "Grön 600 / 400"
+    },
+    "warning": {
+      "label": "Varning",
+      "value": "Amber 600 / 400"
+    },
+    "error": {
+      "label": "Fel",
+      "value": "Rött 600 / 400"
+    },
+    "interactive": {
+      "label": "Interaktiv",
+      "value": "Hovereffekter"
+    },
+    "ethereum": {
+      "label": "Ethereum",
+      "value": "Blå 600 / 400"
+    },
+    "solana": {
+      "label": "Solana",
+      "value": "Lila 600 / 400"
+    },
+    "bitcoin": {
+      "label": "Bitcoin",
+      "value": "Orange 600 / 400"
+    }
+  },
+  "context": {
+    "title": "Sammanhangsspecifika ikoner",
+    "buttonTitle": "Knappikoner",
+    "inputTitle": "Indataikoner",
+    "leadingIcon": "Framstående ikon",
+    "trailingIcon": "Avslutande ikon",
+    "iconOnly": "Endast ikon",
+    "trailingInteractive": "Interaktiv spår",
+    "addItem": "Lägg till objekt",
+    "continue": "Fortsätt",
+    "searchPlaceholder": "Sök...",
+    "passwordPlaceholder": "Lösenord"
+  },
+  "status": {
+    "title": "Statusikoner",
+    "success": {
+      "title": "Framgång",
+      "description": "Uppgift slutförd framgångsrikt"
+    },
+    "warning": {
+      "title": "Varning",
+      "description": "Vänligen granska och fortsätt"
+    },
+    "error": {
+      "title": "Fel",
+      "description": "Något gick fel"
+    },
+    "info": {
+      "title": "Information",
+      "description": "Ytterligare information"
+    }
+  },
+  "web3": {
+    "title": "Web3-kontextikoner",
+    "walletStatusTitle": "Plånboksstatus",
+    "blockchainTitle": "Blockchain-ikoner",
+    "walletConnected": "Plånbok ansluten",
+    "noWalletConnected": "Ingen plånbok ansluten",
+    "connectToContinue": "Anslut för att fortsätta",
+    "ethereum": {
+      "title": "Ethereum",
+      "network": "ETH-nätverk"
+    },
+    "solana": {
+      "title": "Solana",
+      "network": "SOL-nätverk"
+    },
+    "bitcoin": {
+      "title": "Bitcoin",
+      "network": "BTC-nätverk"
+    }
+  },
+  "decorative": {
+    "title": "Dekorativa ikoner",
+    "heroLarge": {
+      "title": "Hjälte Stor",
+      "size": "80px × 80px"
+    },
+    "heroMedium": {
+      "title": "Hjälte Medium",
+      "size": "64px × 64px"
+    },
+    "heroSmall": {
+      "title": "Hjälte Liten",
+      "size": "48px × 48px"
+    }
+  },
+  "browser": {
+    "title": "Ikonbläddrare",
+    "categories": {
+      "all": "Alla ikoner",
+      "actions": "Handlingar",
+      "status": "Status",
+      "navigation": "Navigering",
+      "web3": "Web3",
+      "decorative": "Dekorativ"
+    }
+  },
+  "tokens": {
+    "title": "Tillgängliga ikonvarianter",
+    "sizeVariants": "Storleksvarianter",
+    "colorVariants": "Färgvarianter",
+    "contextVariants": "Kontextvarianter",
+    "combinedVariants": "Kombinerade variationer"
+  },
+  "navigation": {
+    "previous": "Tabeller och datagridgar",
+    "backToDesignSystem": "Tillbaka till designsystemet"
+  }
+}

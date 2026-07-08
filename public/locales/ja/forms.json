@@ -1,0 +1,117 @@
+{
+  "seo": {
+    "title": "フォーム - デザインシステム - 内部 - {{emailDomain}}",
+    "description": "フォーム要素と入力コンポーネントの完全な表示をデザインシステムで紹介"
+  },
+  "codeExample": {
+    "preview": "プレビュー",
+    "usage": "使用"
+  },
+  "header": {
+    "badge": "フォーム要素",
+    "title": "フォームコンポーネントと入力要素",
+    "description": "一貫したスタイリング、検証状態、アクセシビリティ機能を備えた包括的なフォーム要素ライブラリ。すべてのコンポーネントはライト/ダークテーマをサポートし、適切なフォーカス管理を実装しています。"
+  },
+  "quickStart": {
+    "title": "クイックスタート - 必須のフォームパターン",
+    "description": "適切な検証、アクセシビリティ、レスポンシブデザインを備えた、すぐに使えるフォームコンポーネント。",
+    "textInput": {
+      "title": "テキスト入力",
+      "label": "メールアドレス",
+      "placeholder": "メールアドレスを入力してください..."
+    },
+    "select": {
+      "title": "ドロップダウンを選択",
+      "label": "ブロックチェーンネットワーク",
+      "placeholder": "ネットワークを選択してください..."
+    },
+    "checkbox": {
+      "title": "チェックボックス",
+      "agree": "利用規約およびプライバシーポリシーに同意します"
+    },
+    "textarea": {
+      "title": "テキストエリア",
+      "label": "メッセージ",
+      "placeholder": "メッセージを入力してください..."
+    }
+  },
+  "inputTypes": {
+    "title": "入力タイプとバリエーション",
+    "description": "さまざまな入力タイプを、すべてのフォーム要素で一貫したスタイリングで提供。",
+    "textInputTypes": {
+      "title": "テキスト入力タイプ",
+      "description": "一貫したスタイリングを持つさまざまな入力タイプ",
+      "textPlaceholder": "テキスト入力",
+      "passwordPlaceholder": "パスワード"
+    },
+    "sizes": {
+      "title": "入力サイズ",
+      "description": "さまざまな使用ケース向けの異なる入力サイズ",
+      "smallPlaceholder": "小さな入力",
+      "defaultPlaceholder": "デフォルトの入力",
+      "largePlaceholder": "大きな入力"
+    }
+  },
+  "validation": {
+    "title": "検証状態",
+    "description": "適切な色分けとメッセージを用いたフォーム検証状態。",
+    "success": {
+      "title": "成功状態",
+      "description": "成功スタイル付きの有効な入力",
+      "label": "メールアドレス",
+      "message": "有効なメールアドレス"
+    },
+    "error": {
+      "title": "エラーステート",
+      "description": "無効な入力でエラースタイル",
+      "label": "パスワード",
+      "message": "パスワードは8文字以上である必要があります"
+    }
+  },
+  "advanced": {
+    "title": "高度なフォームコンポーネント",
+    "description": "機能が強化されたより複雑なフォームパターン。",
+    "passwordToggle": {
+      "title": "トグル付きパスワード入力",
+      "description": "表示/非表示機能付きのパスワードフィールド",
+      "label": "パスワード",
+      "placeholder": "パスワードを入力してください..."
+    },
+    "radio": {
+      "title": "ラジオボタングループ",
+      "description": "単一選択用のラジオボタン",
+      "label": "サブスクリプションプラン",
+      "free": "無料プラン - 基本機能",
+      "pro": "プロプラン - 高度な機能"
+    }
+  },
+  "complete": {
+    "title": "フォームの例を入力する",
+    "description": "すべてのフォーム要素が連携して動作する包括的なフォームを表示しています。",
+    "form": {
+      "title": "Web3プロフィールフォーム",
+      "description": "すべての要素タイプと検証を含むフォームを完了する",
+      "displayNameLabel": "表示名",
+      "displayNamePlaceholder": "表示名",
+      "emailLabel": "電子メールアドレス",
+      "networkLabel": "優先ネットワーク",
+      "networkPlaceholder": "ネットワークを選択してください...",
+      "bioLabel": "バイオ",
+      "bioPlaceholder": "自分について教えてください...",
+      "notifications": "メール通知を受け取ることに同意します",
+      "submit": "プロフィールを保存"
+    }
+  },
+  "accessibility": {
+    "title": "アクセシビリティガイドライン",
+    "heading": "フォームのアクセシビリティのベストプラクティス",
+    "items": {
+      "labelsBefore": "常に適切な方法を使用してください",
+      "labelsAfter": "入力に関連する要素",
+      "errorMessages": "検証状態付きの明確なエラーメッセージを含めてください",
+      "focusStates": "リングユーティリティを使用して、フォーカス状態が明確に見えるように確認してください",
+      "inputTypes": "適切な入力タイプ（メール、パスワードなど）を使用して、モバイル体験を向上させましょう",
+      "contrast": "十分な色のコントラストを維持する（最小比4.5:1）"
+    }
+  }
+}

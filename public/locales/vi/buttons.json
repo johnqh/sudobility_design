@@ -1,0 +1,130 @@
+{
+  "seo": {
+    "title": "Nút - Hệ thống thiết kế - Nội bộ - {{emailDomain}}",
+    "description": "Hoàn thành thư viện thành phần nút với tất cả các biến thể, kích thước, trạng thái và tương tác"
+  },
+  "codeExample": {
+    "preview": "Xem trước",
+    "usage": "Sử dụng"
+  },
+  "header": {
+    "badge": "Thành phần nút bấm",
+    "title": "Thư viện nút và mẫu tương tác",
+    "intro": "Hệ thống thành phần nút bấm toàn diện với các biến thể nhất quán, kích thước, trạng thái và hành vi tương tác. Tất cả các nút đều hỗ trợ trạng thái đang tải, quản lý tập trung đúng cách và các tính năng truy cập."
+  },
+  "quickStart": {
+    "title": "Bắt đầu nhanh - Các mẫu nút cơ bản",
+    "description": "Các thành phần nút đã sẵn sàng sử dụng với phong cách nhất quán, trạng thái và mẫu hành vi.",
+    "primary": {
+      "title": "Nút hành động chính",
+      "button": "Hành động chính"
+    },
+    "secondary": {
+      "title": "Nút phụ",
+      "button": "Hành động phụ"
+    },
+    "outline": {
+      "title": "Nút viền",
+      "button": "Hành động viền"
+    },
+    "ghost": {
+      "title": "Nút ma quái",
+      "button": "Hành động ma quỷ"
+    }
+  },
+  "variants": {
+    "title": "Các biến thể nút bấm",
+    "description": "Các phong cách nút khác nhau cho các trường hợp sử dụng và cấp độ thứ bậc khác nhau.",
+    "colors": {
+      "title": "Biến thể màu sắc",
+      "description": "Màu nút chính, phụ, thành công, cảnh báo và hủy bỏ",
+      "primary": "Chính",
+      "success": "Thành công",
+      "warning": "Cảnh báo",
+      "destructive": "Phá hoại"
+    },
+    "sizes": {
+      "title": "Kích thước nút bấm",
+      "description": "Kích thước nút nhỏ, mặc định và lớn cho các ngữ cảnh khác nhau",
+      "small": "Nhỏ",
+      "default": "Mặc định",
+      "large": "Lớn"
+    }
+  },
+  "states": {
+    "title": "Trạng thái nút bấm",
+    "description": "Các trạng thái tương tác bao gồm di chuột, hoạt động, tập trung, đang tải và vô hiệu hóa.",
+    "interactive": {
+      "title": "Trạng thái tương tác",
+      "description": "Trạng bình thường, khi di chuột, trạng thái hoạt động và trạng thái tập trung với các chuyển tiếp phù hợp",
+      "button": "Nút tương tác",
+      "secondary": "Tương tác phụ"
+    },
+    "loading": {
+      "title": "Trạng thái đang tải và bị vô hiệu hóa",
+      "description": "Tích hợp spinner tải và phong cách vô hiệu hóa đúng cách",
+      "loadingLabel": "Đang tải...",
+      "demoLabel": "Đang tải demo",
+      "disabled": "Vô hiệu hóa"
+    }
+  },
+  "icons": {
+    "title": "Nút biểu tượng và tổ hợp",
+    "description": "Các nút có biểu tượng, nút chỉ có biểu tượng và nút chuyển đổi để tăng tính tiện dụng.",
+    "withIcons": {
+      "title": "Nút với biểu tượng",
+      "description": "Nút văn bản được nâng cấp với biểu tượng để nhận diện tốt hơn",
+      "sendMessage": "Gửi tin nhắn",
+      "download": "Tải xuống",
+      "settingsTitle": "Cài đặt"
+    },
+    "toggle": {
+      "title": "Chuyển đổi và nút hành động",
+      "description": "Nút chuyển đổi và các mẫu nút hành động cụ thể",
+      "liked": "Thích",
+      "like": "Giống như",
+      "delete": "Xóa",
+      "edit": "Chỉnh sửa"
+    }
+  },
+  "groups": {
+    "title": "Nhóm nút và tổ hợp",
+    "description": "Các nút được nhóm lại, thanh nút và tổ hợp hành động cho các giao diện phức tạp.",
+    "buttonGroups": {
+      "title": "Nhóm nút bấm",
+      "description": "Các nhóm nút kết nối cho các hành động liên quan",
+      "connectedLabel": "Nhóm đã kết nối:",
+      "previous": "Trước đó",
+      "current": "Hiện tại",
+      "next": "Tiếp theo",
+      "spacedLabel": "Nhóm cách nhau:",
+      "primary": "Chính",
+      "secondary": "Thứ cấp",
+      "cancel": "Hủy"
+    },
+    "actionBars": {
+      "title": "Thanh thao tác và thanh công cụ",
+      "description": "Các tổ hợp phím phức tạp cho thanh công cụ và khu vực hành động",
+      "new": "Mới",
+      "editTitle": "Chỉnh sửa",
+      "shareTitle": "Chia sẻ",
+      "cancel": "Hủy",
+      "delete": "Xóa"
+    }
+  },
+  "accessibility": {
+    "title": "Truy cập và các thực hành tốt nhất",
+    "guidelinesTitle": "Hướng dẫn truy cập nút bấm",
+    "list": {
+      "semanticBefore": "Sử dụng ngữ nghĩa",
+      "semanticAfter": "các phần tử thay vì các div",
+      "contrast": "Đảm bảo độ tương phản màu sắc đủ (tối thiểu 4,5:1)",
+      "focus": "Bao gồm trạng thái tập trung cho thao tác bằng bàn phím",
+      "loadingStates": "Thêm trạng thái tải để tránh gửi lại hai lần",
+      "ariaLabels": "Sử dụng nhãn ARIA phù hợp cho các nút chỉ có biểu tượng",
+      "touchTarget": "Duy trì kích thước mục tiêu tối thiểu (44px x 44px)",
+      "feedback": "Cung cấp phản hồi trực quan rõ ràng cho tất cả các trạng thái",
+      "grouping": "Sắp xếp các nút liên quan một cách hợp lý với khoảng cách phù hợp"
+    }
+  }
+}

@@ -1,0 +1,82 @@
+{
+  "seo": {
+    "title": "Microinteraktioner och animationer - Designsystem - Intern - {{emailDomain}}",
+    "description": "Komplett animationsystem med hover-effekter, övergångar och Web3-specifika interaktioner"
+  },
+  "header": {
+    "badge": "Microinteraktioner och animationer",
+    "title": "Microinteraktioner och animationer",
+    "description": "Komplett animationsystem med hover-effekter, laddningslägen, övergångar och Web3-specifika interaktioner. Alla animationer respekterar användarens rörelsepreferenser och ger smidiga, behagliga användarupplevelser."
+  },
+  "stats": {
+    "variants": "Animationsvarianter",
+    "performance": "Släpp prestanda",
+    "motionSafe": "Rörelse säker",
+    "specialized": "Specialiserad"
+  },
+  "hover": {
+    "title": "Hovereffekter",
+    "description": "Subtila men engagerande hover-effekter för knappar, kort och interaktiva element.",
+    "buttonEffectsTitle": "Knappförflyttningseffekter",
+    "liftEffect": "Lyfteffekt",
+    "glowEffect": "Ljusande effekt",
+    "scaleEffect": "Skaleffekt",
+    "shimmerEffect": "Skimmer-effekt",
+    "cardEffectsTitle": "Kortförsökseffekter",
+    "cardSubtle": "Subtil hover-effekt - lyfter lätt",
+    "cardGlow": "Glow-höjdeffekt - lägger till mjukt glödande"
+  },
+  "loading": {
+    "title": "Laddningslägen",
+    "description": "Laddningsanimationer och förloppsmarkeringar som håller användare engagerade.",
+    "spinnersTitle": "Spinnare",
+    "interactiveDemoTitle": "Interaktiv demo",
+    "loadingLabel": "Läser in...",
+    "startLoading": "Starta laddning",
+    "simulateProgress": "Simulera framsteg",
+    "progress": "Framsteg: {{progress}}%"
+  },
+  "web3": {
+    "title": "Web3-animationer",
+    "description": "Specialiserade animationer för Web3-interaktioner, inklusive anslutning till plånbok och transaktionslägen.",
+    "walletStatesTitle": "Plånbokans anslutningslägen",
+    "connecting": "Ansluter...",
+    "connected": "Anslutet",
+    "connectWallet": "Anslut plånbok",
+    "statusLabel": "Status:",
+    "transactionStatesTitle": "Transaktionslägen",
+    "transactionPending": "Transaktion väntar",
+    "transactionConfirmed": "Transaktion bekräftad",
+    "transactionFailed": "Transaktion misslyckades"
+  },
+  "motion": {
+    "title": "Rörelseinställningar",
+    "description": "Alla animationer respekterar användarens rörelsepreferenser och erbjuder alternativ för tillgänglighet.",
+    "reducedMotionTitle": "Stöd för minskad rörelse",
+    "respectsPreferences": "Respektera rörelsepreferenser",
+    "fadeOnly": "Endast avfading animation",
+    "scaleOnly": "Endast skalningsanimation",
+    "safeAnimationsTitle": "Säkra animationer",
+    "safeFade": "Säker övergång genom utblekningstransition",
+    "safeSlide": "Säker bildövergång"
+  },
+  "bestPractices": {
+    "title": "Bästa praxis för animation",
+    "doTitle": "✅ Gör detta",
+    "do": [
+      "Håll animationer under 300 ms för mikrointeraktioner.",
+      "Använd avklingningsfunktioner för naturlig rörelse",
+      "Ge omedelbar återkoppling på användaråtgärder",
+      "Respektera inställningar för minskad rörelse",
+      "Använd laddningslägen för åtgärder som tar längre tid än 500 ms"
+    ],
+    "avoidTitle": "❌ Undvik detta",
+    "avoid": [
+      "För mycket animationer - mindre är mer",
+      "Långa laddningsanimationer utan förlopp",
+      "Animationer som stör funktionen",
+      "Automatisk avspelning av animationer vid sidladdning",
+      "Komplexa animationer för användare med rörelsekänslighet"
+    ]
+  }
+}

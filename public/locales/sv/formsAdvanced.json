@@ -1,0 +1,159 @@
+{
+  "seo": {
+    "title": "Forms Advanced - Design System - Intern - {{emailDomain}}",
+    "description": "Avancerade formulärsmönster inklusive flerstegsformer, filuppladdningar och Web3-ingångar"
+  },
+  "header": {
+    "badge": "Avancerade former",
+    "title": "Avancerat formulärssystem",
+    "description": "Avancerade formulärsmönster inklusive flerstegsvägledare, filuppladdningar, Web3-specifika inmatningar och avancerade valideringsmönster för komplexa användarinteraktioner."
+  },
+  "quickStart": {
+    "heading": "Snabbstart",
+    "copyTitle": "Kopiera till urklipp",
+    "examples": {
+      "multiStep": {
+        "title": "Flerskalig form",
+        "description": "Steg-för-steg-formulär med förloppsmarkering"
+      },
+      "fileUpload": {
+        "title": "Uppladdning av fil med dra och släpp",
+        "description": "Avancerad filuppladdning med förhandsgranskning och validering"
+      },
+      "tokenAmount": {
+        "title": "Web3-tokenbelopp inmatning",
+        "description": "Specialiserad inmatning för kryptovalutamängder med validering"
+      },
+      "validation": {
+        "title": "Avancerad validering",
+        "description": "Ettidig validering med anpassade felmeddelanden"
+      }
+    }
+  },
+  "steps": {
+    "account": {
+      "title": "Kontoinställning",
+      "description": "Grundläggande kontoinformation"
+    },
+    "wallet": {
+      "title": "Plånbokanslutning",
+      "description": "Anslut din Web3-plånbok"
+    },
+    "transaction": {
+      "title": "Transaktionsdetaljer",
+      "description": "Konfigurera transaktionsparametrar"
+    },
+    "review": {
+      "title": "Granska och bekräfta",
+      "description": "Granska och skicka"
+    }
+  },
+  "multiStep": {
+    "heading": "Flerskaliga former",
+    "cardTitle": "Plånbokskonfigurationsguiden",
+    "cardDescription": "Interaktiv flerstegsformulär med förloppspåning och validering",
+    "emailLabel": "E-postadress",
+    "emailPlaceholder": "Ange din e-post",
+    "passwordLabel": "Lösenord",
+    "passwordPlaceholder": "Skapa ett starkt lösenord",
+    "confirmPasswordLabel": "Bekräfta lösenord",
+    "confirmPasswordPlaceholder": "Bekräfta ditt lösenord",
+    "walletAddressLabel": "Plånboksadress",
+    "walletAddressPlaceholder": "0x...",
+    "networkLabel": "Nätverk",
+    "networks": {
+      "ethereum": "Ethereum Mainnet",
+      "polygon": "Polygon",
+      "bsc": "Binance Smart Chain",
+      "arbitrum": "Arbitrum"
+    },
+    "tokenAmountLabel": "Tokenbelopp",
+    "tokenAmountPlaceholder": "0,00",
+    "balance": "Saldo: 1,234567 ETH (2 468,90 $)",
+    "max": "Max",
+    "gasPriceLabel": "Gaspris (Gwei)",
+    "gasPricePlaceholder": "20",
+    "gasPriceHint": "Högre gaspriser leder till snabbare bekräftelse av transaktioner",
+    "reviewTitle": "Granska din transaktion",
+    "reviewNetwork": "Nätverk:",
+    "reviewToAddress": "Till adress:",
+    "reviewAmount": "Belopp:",
+    "reviewGasPrice": "Bensinpris:",
+    "warningTitle": "Transaktionsvarning",
+    "warningBody": "Vänligen dubbelkolla alla transaktionsuppgifter. Blockchain-transaktioner kan inte ångras.",
+    "previous": "Föregående",
+    "next": "Nästa",
+    "submit": "Skicka transaktion"
+  },
+  "validationMessages": {
+    "invalidAddress": "Ogiltigt Ethereum-adressformat",
+    "positiveAmount": "Beloppet måste vara ett positivt tal",
+    "insufficientBalance": "Otillräckligt saldo",
+    "passwordMinLength": "Lösenordet måste vara minst 8 tecken långt",
+    "passwordComplexity": "Lösenordet måste innehålla versaler, gemener och siffror",
+    "passwordsDoNotMatch": "Lösenorden matchar inte"
+  },
+  "fileUpload": {
+    "heading": "Filuppladdning",
+    "cardTitle": "Dokumentuppladdning",
+    "cardDescription": "Uppladdning av filer genom att dra och släppa med förhandsgranskning och validering",
+    "dropTitle": "Dra filer hit för att ladda upp",
+    "dropSubtitle": "Eller klicka för att välja filer från din dator",
+    "chooseFiles": "Välj filer",
+    "supportedFormats": "Stödda format: PDF, DOC, DOCX, JPG, PNG, TXT (max 10 MB per fil)",
+    "uploadedFiles": "Uppladdade filer ({{count}})",
+    "megabytes": "{{size}} MB"
+  },
+  "web3": {
+    "heading": "Web3-specifika inmatningar",
+    "walletCard": {
+      "title": "Insättning av plånboksadress",
+      "description": "Specialiserad inmatning för kryptowärdemålsadresser med validering",
+      "recipientLabel": "Mottagarens adress",
+      "recipientPlaceholder": "0x... eller ENS-namn",
+      "validAddress": "✓ Giltig Ethereum-adress",
+      "ensLabel": "ENS-namn",
+      "ensPlaceholder": "vitalik.eth",
+      "ensResolves": "→ Lösas till: 0x742d...5f0bEb7"
+    },
+    "tokenCard": {
+      "title": "Tokenbelopp inmatning",
+      "description": "Precis inmatning av tokenbelopp med balansvisning",
+      "amountLabel": "Belopp att skicka",
+      "amountPlaceholder": "0,00",
+      "balance": "Saldo: 1,234567 ETH",
+      "usdEquivalent": "ca. 1 234,50 USD",
+      "quarter": "25%",
+      "half": "50%",
+      "threeQuarters": "75%",
+      "max": "Max",
+      "gasSettingsLabel": "Gassinställningar",
+      "gasSlow": "Långsamt",
+      "gasSlowValue": "15 Gwei",
+      "gasStandard": "Standard",
+      "gasStandardValue": "25 Gwei",
+      "gasFast": "Snabbt",
+      "gasFastValue": "35 Gwei"
+    }
+  },
+  "validationSection": {
+    "heading": "Avancerad validering",
+    "cardTitle": "Exempel på realtidsvalidering",
+    "cardDescription": "Avancerade valideringsmönster med realtidsåterkoppling och anpassade felmeddelanden",
+    "strongPasswordLabel": "Kraftfull lösenord",
+    "strongPasswordPlaceholder": "Ange lösenord",
+    "checkMinChars": "Minst 8 tecken",
+    "checkUppercase": "Innehåller versal bokstav",
+    "checkNumber": "Innehåller siffra",
+    "checkSpecialChar": "Innehåller specialtecken",
+    "emailLabel": "E-postadress",
+    "emailPlaceholder": "Ange e-post",
+    "validEmail": "✓ Giltigt e-postformat",
+    "invalidLabel": "Ogiltigt inmatningsexempel",
+    "invalidPlaceholder": "Ange värde",
+    "invalidMessage": "Detta fält innehåller ogiltiga tecken",
+    "loadingLabel": "Läser in validering",
+    "loadingPlaceholder": "Kontrollerar tillgänglighet...",
+    "loadingMessage": "Kontrollerar användarnamnets tillgänglighet..."
+  }
+}

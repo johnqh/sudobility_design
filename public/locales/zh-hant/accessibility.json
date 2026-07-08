@@ -1,0 +1,127 @@
+{
+  "seo": {
+    "title": "可訪問性與A11Y - 設計系統 - 內部 - {{emailDomain}}",
+    "description": "全面的無障礙模式和包容性設計工具，用於符合WCAG標準"
+  },
+  "header": {
+    "badge": "可及性與 A11Y",
+    "title": "包容性設計系統",
+    "intro": "為建立包容性、符合 WCAG 標準的 Web3 應用程式而設計的全面可訪問性模式與工具。這些模式確保所有使用者，包括使用輔助技術的使用者，都能平等存取。"
+  },
+  "stats": {
+    "wcag": {
+      "value": "WCAG 2.1",
+      "label": "符合AA"
+    },
+    "touch": {
+      "value": "44px+",
+      "label": "觸控目標"
+    },
+    "contrast": {
+      "value": "4.5:1",
+      "label": "色彩對比"
+    },
+    "screenReader": {
+      "value": "螢幕閱讀器",
+      "label": "相容"
+    }
+  },
+  "screenReader": {
+    "title": "螢幕閱讀器支援",
+    "description": "包含跳轉連結、aria標籤和語義化HTML的全面螢幕閱讀器模式。",
+    "skipLink": {
+      "title": "跳過連結",
+      "button": "跳過連結（聚焦後查看）",
+      "visible": "✓ 跳轉連結現在可見！這有助於鍵盤使用者快速導航。"
+    },
+    "only": {
+      "title": "僅螢幕閱讀器內容",
+      "description": "此內容為螢幕閱讀器提供上下文，而不會使視覺設計變得雜亂。",
+      "hidden": "此文本僅對螢幕閱讀器可見"
+    }
+  },
+  "focus": {
+    "title": "注意力管理",
+    "description": "清除所有互動元素的焦點指示器和鍵盤導航模式。",
+    "indicatorsTitle": "焦點指示器",
+    "standard": "標準焦點",
+    "highContrast": "高對比度",
+    "wallet": "Web3錢包",
+    "error": "錯誤狀態"
+  },
+  "contrast": {
+    "title": "色彩對比",
+    "description": "高對比度的文本和背景組合，超出WCAG AA標準要求。",
+    "levelsTitle": "文字對比層級",
+    "high": "高對比度文字（WCAG AAA）- 比例 7:1+",
+    "medium": "中等對比度文字（WCAG AA）- 比例 4.5:1+",
+    "low": "低對比度文字（用於次要內容）",
+    "backgroundsTitle": "高對比度背景",
+    "primary": "主要",
+    "success": "成功",
+    "warning": "警告",
+    "errorLabel": "錯誤"
+  },
+  "motion": {
+    "title": "運動偏好",
+    "description": "尊重用戶運動偏好的動畫，並為前庭功能障礙用戶提供替代方案。",
+    "controlsTitle": "動作偏好設定",
+    "reduceMotion": "減少運動",
+    "noAnimation": "無動畫",
+    "animatedButton": "動畫按鈕"
+  },
+  "form": {
+    "title": "表單可訪問性",
+    "description": "具有正確標籤、驗證和錯誤處理的可訪問表單模式。",
+    "requiredTitle": "必要欄位指示",
+    "emailLabel": "電子郵件地址",
+    "passwordLabel": "密碼",
+    "passwordError": "密碼必須至少包含8個字符",
+    "codeExamplesTitle": "程式碼範例"
+  },
+  "feedback": {
+    "title": "可存取的反饋",
+    "description": "配有適當 ARIA live 區域的螢幕閱讀器友善反饋訊息。",
+    "messageTypesTitle": "訊息類型",
+    "successTitle": "成功",
+    "successMessage": "您的錢包已成功連接！",
+    "errorTitle": "錯誤",
+    "errorMessage": "交易失敗。請重試。",
+    "liveRegionTitle": "即時區域模式",
+    "politeExample": "此內容將被禮貌地通知螢幕閱讀器",
+    "assertiveExample": "此內容將中斷螢幕閱讀器以發出重要警示"
+  },
+  "web3": {
+    "title": "Web3可訪問性",
+    "description": "適用於Web3應用的專用无障碍模式，包括錢包連接和交易。",
+    "componentsTitle": "Web3 組件",
+    "connectWallet": "連接錢包",
+    "connectWalletAria": "連接您的Web3錢包",
+    "transactionAria": "交易狀態",
+    "transactionPending": "交易待處理...",
+    "balanceAria": "帳戶餘額為 1.5 ETH",
+    "addressAria": "錢包地址 0x1234...5678",
+    "implementationTitle": "實現"
+  },
+  "bestPractices": {
+    "title": "最佳實踐",
+    "doTitle": "✅ 做這件事",
+    "do": [
+      "使用語義化HTML元素（button、nav、main等）",
+      "為互動式元素提供描述性 aria-label",
+      "確保移動設備上的最小觸控目標為44px",
+      "使用鍵盤僅導航進行測試",
+      "尊重用戶的運動偏好",
+      "為複雜的Web3概念提供替代文字"
+    ],
+    "avoidTitle": "❌ 避免這樣",
+    "avoid": [
+      "僅使用顏色來傳遞資訊",
+      "創建沒有逃生路線的鍵盤陷阱",
+      "自動播放的影片或動畫",
+      "使用通用標籤，例如「點擊這裡」或「閱讀更多」",
+      "完全移除焦點指示器",
+      "使用Web3術語而不做解釋"
+    ]
+  }
+}

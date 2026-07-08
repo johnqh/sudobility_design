@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { useTranslation } from "react-i18next";
 import LocalizedLink from "../../components/LocalizedLink";
 import {
   ArrowLeftIcon,
@@ -31,19 +32,22 @@ const CodeBlock: React.FC<{
   copyKey: string;
   copiedStates: { [key: string]: boolean };
   copyToClipboard: (text: string, key: string) => void;
-}> = ({ code, _language = "tsx", copyKey, copiedStates, copyToClipboard }) => (
-  <div className="relative">
-    <pre className="bg-muted text-foreground p-4 rounded-lg overflow-x-auto text-sm">
-      <code>{code}</code>
-    </pre>
-    <button
-      onClick={() => copyToClipboard(code, copyKey)}
-      className="absolute top-3 right-3 bg-muted hover:bg-muted/80 text-muted-foreground px-3 py-1 rounded text-xs transition-colors"
-    >
-      {copiedStates[copyKey] ? "✓ Copied!" : "Copy"}
-    </button>
-  </div>
-);
+}> = ({ code, _language = "tsx", copyKey, copiedStates, copyToClipboard }) => {
+  const { t } = useTranslation("alerts");
+  return (
+    <div className="relative">
+      <pre className="bg-muted text-foreground p-4 rounded-lg overflow-x-auto text-sm">
+        <code>{code}</code>
+      </pre>
+      <button
+        onClick={() => copyToClipboard(code, copyKey)}
+        className="absolute top-3 right-3 bg-muted hover:bg-muted/80 text-muted-foreground px-3 py-1 rounded text-xs transition-colors"
+      >
+        {copiedStates[copyKey] ? t("copy.copied") : t("copy.copy")}
+      </button>
+    </div>
+  );
+};
 
 const SectionHeader: React.FC<{
   id: string;
@@ -73,6 +77,7 @@ const SectionHeader: React.FC<{
 );
 
 const AlertsPage: React.FC<AppProps> = ({ emailDomain, appName: _appName }) => {
+  const { t } = useTranslation("alerts");
   const [copiedStates, setCopiedStates] = useState<{ [key: string]: boolean }>(
     {},
   );
@@ -111,8 +116,8 @@ const AlertsPage: React.FC<AppProps> = ({ emailDomain, appName: _appName }) => {
   return (
     <>
       <SEOHead
-        title={`Alerts - Design System - Internal - ${emailDomain}`}
-        description="Comprehensive alert component documentation with variants, layouts, actions, and Web3 integration"
+        title={t("seo.title", { emailDomain })}
+        description={t("seo.description")}
         noIndex={true}
       />
 
@@ -122,19 +127,19 @@ const AlertsPage: React.FC<AppProps> = ({ emailDomain, appName: _appName }) => {
           <div className="text-center mb-12">
             <div className="inline-flex items-center bg-destructive/10 px-4 py-2 rounded-full mb-6">
               <BellIcon className="h-5 w-5 text-destructive mr-2" />
-              <span className="text-destructive font-semibold">Alerts</span>
+              <span className="text-destructive font-semibold">
+                {t("header.badge")}
+              </span>
             </div>
 
             <h1 className={`${textVariants.heading.display.xl()} mb-6`}>
-              Alert Components
+              {t("header.title")}
             </h1>
 
             <p
               className={`${textVariants.body.lg()} max-w-3xl mx-auto text-muted-foreground mb-8`}
             >
-              Contextual feedback messages that provide important information,
-              warnings, or confirmations to users with clear visual hierarchy
-              and actionable content.
+              {t("header.intro")}
             </p>
 
             {/* Alert Stats */}
@@ -146,7 +151,7 @@ const AlertsPage: React.FC<AppProps> = ({ emailDomain, appName: _appName }) => {
                   4
                 </div>
                 <div className={textVariants.caption.default()}>
-                  Alert Types
+                  {t("stats.alertTypes")}
                 </div>
               </div>
               <div className={`${ui.background.subtle} rounded-lg p-4`}>
@@ -156,7 +161,7 @@ const AlertsPage: React.FC<AppProps> = ({ emailDomain, appName: _appName }) => {
                   3
                 </div>
                 <div className={textVariants.caption.default()}>
-                  Layout Options
+                  {t("stats.layoutOptions")}
                 </div>
               </div>
               <div className={`${ui.background.subtle} rounded-lg p-4`}>
@@ -164,7 +169,7 @@ const AlertsPage: React.FC<AppProps> = ({ emailDomain, appName: _appName }) => {
                   5
                 </div>
                 <div className={textVariants.caption.default()}>
-                  Action Patterns
+                  {t("stats.actionPatterns")}
                 </div>
               </div>
               <div className={`${ui.background.subtle} rounded-lg p-4`}>
@@ -174,7 +179,7 @@ const AlertsPage: React.FC<AppProps> = ({ emailDomain, appName: _appName }) => {
                   6
                 </div>
                 <div className={textVariants.caption.default()}>
-                  Web3 Examples
+                  {t("stats.web3Examples")}
                 </div>
               </div>
             </div>
@@ -186,8 +191,8 @@ const AlertsPage: React.FC<AppProps> = ({ emailDomain, appName: _appName }) => {
               expandedSections={expandedSections}
               toggleSection={toggleSection}
               id="quick-start"
-              title="🚀 Quick Start"
-              description="Get started with the most commonly used alert patterns. These examples show the essential alert types and their typical use cases."
+              title={t("quickStart.title")}
+              description={t("quickStart.description")}
             />
 
             {expandedSections["quick-start"] && (
@@ -195,45 +200,50 @@ const AlertsPage: React.FC<AppProps> = ({ emailDomain, appName: _appName }) => {
                 {/* Basic Alert Types */}
                 <div>
                   <h3 className={`${textVariants.heading.h3()} mb-4`}>
-                    1. Essential Alert Types
+                    {t("quickStart.essentialTitle")}
                   </h3>
                   <div className="space-y-4 mb-4">
                     <div className={(variants.alert as any).success()}>
                       <CheckCircleIcon className="h-5 w-5" />
                       <div>
-                        <div className="font-medium">Success!</div>
+                        <div className="font-medium">
+                          {t("quickStart.success.title")}
+                        </div>
                         <div className="text-sm">
-                          Your transaction has been confirmed on the blockchain.
+                          {t("quickStart.success.body")}
                         </div>
                       </div>
                     </div>
                     <div className={(variants.alert as any).info()}>
                       <InformationCircleIcon className="h-5 w-5" />
                       <div>
-                        <div className="font-medium">Information</div>
+                        <div className="font-medium">
+                          {t("quickStart.info.title")}
+                        </div>
                         <div className="text-sm">
-                          Please connect your wallet to continue with this
-                          action.
+                          {t("quickStart.info.body")}
                         </div>
                       </div>
                     </div>
                     <div className={(variants.alert as any).warning()}>
                       <ExclamationTriangleIcon className="h-5 w-5" />
                       <div>
-                        <div className="font-medium">Warning</div>
+                        <div className="font-medium">
+                          {t("quickStart.warning.title")}
+                        </div>
                         <div className="text-sm">
-                          High gas fees detected. Consider waiting for lower
-                          network congestion.
+                          {t("quickStart.warning.body")}
                         </div>
                       </div>
                     </div>
                     <div className={(variants.alert as any).error()}>
                       <XCircleIcon className="h-5 w-5" />
                       <div>
-                        <div className="font-medium">Error</div>
+                        <div className="font-medium">
+                          {t("quickStart.error.title")}
+                        </div>
                         <div className="text-sm">
-                          Transaction failed. Please check your wallet balance
-                          and try again.
+                          {t("quickStart.error.body")}
                         </div>
                       </div>
                     </div>
@@ -283,20 +293,20 @@ import { CheckCircleIcon, InformationCircleIcon, ExclamationTriangleIcon, XCircl
                 {/* Compact Alerts */}
                 <div>
                   <h3 className={`${textVariants.heading.h3()} mb-4`}>
-                    2. Compact Alert Style
+                    {t("quickStart.compactTitle")}
                   </h3>
                   <div className="space-y-3 mb-4">
                     <div className={(variants.alert as any).compact.success()}>
-                      ✓ Email sent successfully
+                      {t("quickStart.compact.success")}
                     </div>
                     <div className={(variants.alert as any).compact.info()}>
-                      ℹ New features available in settings
+                      {t("quickStart.compact.info")}
                     </div>
                     <div className={(variants.alert as any).compact.warning()}>
-                      ⚠ Wallet disconnected
+                      {t("quickStart.compact.warning")}
                     </div>
                     <div className={(variants.alert as any).compact.error()}>
-                      ✗ Failed to load messages
+                      {t("quickStart.compact.error")}
                     </div>
                   </div>
                   <CodeBlock
@@ -324,16 +334,18 @@ import { CheckCircleIcon, InformationCircleIcon, ExclamationTriangleIcon, XCircl
                 {/* Dismissible Alerts */}
                 <div>
                   <h3 className={`${textVariants.heading.h3()} mb-4`}>
-                    3. Dismissible Alerts
+                    {t("quickStart.dismissibleTitle")}
                   </h3>
                   <div className="space-y-4 mb-4">
                     {!dismissedAlerts["demo-success"] && (
                       <div className={(variants.alert as any).success()}>
                         <CheckCircleIcon className="h-5 w-5" />
                         <div className="flex-1">
-                          <div className="font-medium">Account verified!</div>
+                          <div className="font-medium">
+                            {t("quickStart.dismissible.successTitle")}
+                          </div>
                           <div className="text-sm">
-                            You can now access all premium features.
+                            {t("quickStart.dismissible.successBody")}
                           </div>
                         </div>
                         <button
@@ -349,10 +361,10 @@ import { CheckCircleIcon, InformationCircleIcon, ExclamationTriangleIcon, XCircl
                         <InformationCircleIcon className="h-5 w-5" />
                         <div className="flex-1">
                           <div className="font-medium">
-                            New update available
+                            {t("quickStart.dismissible.infoTitle")}
                           </div>
                           <div className="text-sm">
-                            Version 2.0 includes improved security features.
+                            {t("quickStart.dismissible.infoBody")}
                           </div>
                         </div>
                         <button
@@ -396,24 +408,24 @@ const [dismissed, setDismissed] = useState(false);
                 {/* Alert with Actions */}
                 <div>
                   <h3 className={`${textVariants.heading.h3()} mb-4`}>
-                    4. Alerts with Action Buttons
+                    {t("quickStart.actionsTitle")}
                   </h3>
                   <div className="space-y-4 mb-4">
                     <div className={(variants.alert as any).warning()}>
                       <ExclamationTriangleIcon className="h-5 w-5" />
                       <div className="flex-1">
                         <div className="font-medium">
-                          Subscription expires soon
+                          {t("quickStart.actions.title")}
                         </div>
                         <div className="text-sm">
-                          Your premium features will be disabled in 3 days.
+                          {t("quickStart.actions.body")}
                         </div>
                         <div className="mt-3 flex space-x-3">
                           <button className="bg-warning/20 text-warning px-3 py-1 rounded text-sm font-medium hover:bg-warning/30">
-                            Renew Now
+                            {t("quickStart.actions.renewNow")}
                           </button>
                           <button className="text-warning px-3 py-1 text-sm font-medium hover:underline">
-                            Remind Later
+                            {t("quickStart.actions.remindLater")}
                           </button>
                         </div>
                       </div>
@@ -454,8 +466,8 @@ import { ExclamationTriangleIcon } from '@heroicons/react/24/outline';
               expandedSections={expandedSections}
               toggleSection={toggleSection}
               id="variants"
-              title="🎨 Alert Variants"
-              description="Explore all available alert variants with their semantic meanings and appropriate contexts for different types of user communication."
+              title={t("variants.title")}
+              description={t("variants.description")}
             />
 
             {expandedSections["variants"] && (
@@ -464,17 +476,18 @@ import { ExclamationTriangleIcon } from '@heroicons/react/24/outline';
                   {/* Standard Alerts */}
                   <div>
                     <h3 className={`${textVariants.heading.h4()} mb-4`}>
-                      Standard Alerts
+                      {t("variants.standardTitle")}
                     </h3>
                     <div className="space-y-4">
                       <div>
                         <div className={(variants.alert as any).success()}>
                           <CheckCircleIcon className="h-5 w-5" />
                           <div>
-                            <div className="font-medium">Success Alert</div>
+                            <div className="font-medium">
+                              {t("variants.standard.successTitle")}
+                            </div>
                             <div className="text-sm">
-                              Use for completed actions and positive
-                              confirmations
+                              {t("variants.standard.successBody")}
                             </div>
                           </div>
                         </div>
@@ -483,9 +496,11 @@ import { ExclamationTriangleIcon } from '@heroicons/react/24/outline';
                         <div className={(variants.alert as any).info()}>
                           <InformationCircleIcon className="h-5 w-5" />
                           <div>
-                            <div className="font-medium">Info Alert</div>
+                            <div className="font-medium">
+                              {t("variants.standard.infoTitle")}
+                            </div>
                             <div className="text-sm">
-                              Use for neutral information and helpful tips
+                              {t("variants.standard.infoBody")}
                             </div>
                           </div>
                         </div>
@@ -494,9 +509,11 @@ import { ExclamationTriangleIcon } from '@heroicons/react/24/outline';
                         <div className={(variants.alert as any).warning()}>
                           <ExclamationTriangleIcon className="h-5 w-5" />
                           <div>
-                            <div className="font-medium">Warning Alert</div>
+                            <div className="font-medium">
+                              {t("variants.standard.warningTitle")}
+                            </div>
                             <div className="text-sm">
-                              Use for potential issues requiring attention
+                              {t("variants.standard.warningBody")}
                             </div>
                           </div>
                         </div>
@@ -505,9 +522,11 @@ import { ExclamationTriangleIcon } from '@heroicons/react/24/outline';
                         <div className={(variants.alert as any).error()}>
                           <XCircleIcon className="h-5 w-5" />
                           <div>
-                            <div className="font-medium">Error Alert</div>
+                            <div className="font-medium">
+                              {t("variants.standard.errorTitle")}
+                            </div>
                             <div className="text-sm">
-                              Use for failed actions and critical problems
+                              {t("variants.standard.errorBody")}
                             </div>
                           </div>
                         </div>
@@ -518,45 +537,45 @@ import { ExclamationTriangleIcon } from '@heroicons/react/24/outline';
                   {/* Compact Alerts */}
                   <div>
                     <h3 className={`${textVariants.heading.h4()} mb-4`}>
-                      Compact Variants
+                      {t("variants.compactTitle")}
                     </h3>
                     <div className="space-y-4">
                       <div>
                         <div
                           className={(variants.alert as any).compact.success()}
                         >
-                          Compact success message
+                          {t("variants.compact.success")}
                         </div>
                         <p className="text-sm text-muted-foreground mt-1">
-                          Minimal space usage
+                          {t("variants.compact.successNote")}
                         </p>
                       </div>
                       <div>
                         <div className={(variants.alert as any).compact.info()}>
-                          Compact information message
+                          {t("variants.compact.info")}
                         </div>
                         <p className="text-sm text-muted-foreground mt-1">
-                          Quick notifications
+                          {t("variants.compact.infoNote")}
                         </p>
                       </div>
                       <div>
                         <div
                           className={(variants.alert as any).compact.warning()}
                         >
-                          Compact warning message
+                          {t("variants.compact.warning")}
                         </div>
                         <p className="text-sm text-muted-foreground mt-1">
-                          Brief cautionary notes
+                          {t("variants.compact.warningNote")}
                         </p>
                       </div>
                       <div>
                         <div
                           className={(variants.alert as any).compact.error()}
                         >
-                          Compact error message
+                          {t("variants.compact.error")}
                         </div>
                         <p className="text-sm text-muted-foreground mt-1">
-                          Short error notices
+                          {t("variants.compact.errorNote")}
                         </p>
                       </div>
                     </div>
@@ -592,8 +611,8 @@ import { ExclamationTriangleIcon } from '@heroicons/react/24/outline';
               expandedSections={expandedSections}
               toggleSection={toggleSection}
               id="web3"
-              title="⚡ Web3 Integration Examples"
-              description="Real-world examples of alerts commonly used in Web3 applications including wallet connections, transactions, and blockchain interactions."
+              title={t("web3.title")}
+              description={t("web3.description")}
             />
 
             {expandedSections["web3"] && (
@@ -601,16 +620,17 @@ import { ExclamationTriangleIcon } from '@heroicons/react/24/outline';
                 {/* Transaction Alerts */}
                 <div>
                   <h3 className={`${textVariants.heading.h4()} mb-4`}>
-                    Transaction Status Alerts
+                    {t("web3.transactionTitle")}
                   </h3>
                   <div className="space-y-4 mb-4">
                     <div className={(variants.alert as any).info()}>
                       <div className="animate-spin rounded-full h-5 w-5 border-b-2 border-info"></div>
                       <div>
-                        <div className="font-medium">Transaction Pending</div>
+                        <div className="font-medium">
+                          {t("web3.transaction.pendingTitle")}
+                        </div>
                         <div className="text-sm">
-                          Your transaction is being processed on the blockchain.
-                          This may take a few minutes.
+                          {t("web3.transaction.pendingBody")}
                         </div>
                         <div className="text-xs text-info mt-1">
                           Hash: 0x1234...abcd
@@ -621,10 +641,11 @@ import { ExclamationTriangleIcon } from '@heroicons/react/24/outline';
                     <div className={(variants.alert as any).success()}>
                       <CheckCircleSolid className="h-5 w-5" />
                       <div>
-                        <div className="font-medium">Transaction Confirmed</div>
+                        <div className="font-medium">
+                          {t("web3.transaction.confirmedTitle")}
+                        </div>
                         <div className="text-sm">
-                          Your email has been sent and recorded on the
-                          blockchain.
+                          {t("web3.transaction.confirmedBody")}
                         </div>
                         <div className="text-xs text-success mt-1">
                           Gas used: 21,000 • Block: #18,234,567
@@ -635,10 +656,11 @@ import { ExclamationTriangleIcon } from '@heroicons/react/24/outline';
                     <div className={(variants.alert as any).error()}>
                       <XCircleIcon className="h-5 w-5" />
                       <div>
-                        <div className="font-medium">Transaction Failed</div>
+                        <div className="font-medium">
+                          {t("web3.transaction.failedTitle")}
+                        </div>
                         <div className="text-sm">
-                          Insufficient funds or gas limit too low. Please try
-                          again.
+                          {t("web3.transaction.failedBody")}
                         </div>
                         <div className="text-xs text-destructive mt-1">
                           Error: Execution reverted
@@ -651,20 +673,21 @@ import { ExclamationTriangleIcon } from '@heroicons/react/24/outline';
                 {/* Wallet Alerts */}
                 <div>
                   <h3 className={`${textVariants.heading.h4()} mb-4`}>
-                    Wallet Connection Alerts
+                    {t("web3.walletTitle")}
                   </h3>
                   <div className="space-y-4 mb-4">
                     <div className={(variants.alert as any).warning()}>
                       <WifiIcon className="h-5 w-5" />
                       <div>
-                        <div className="font-medium">Wallet Not Connected</div>
+                        <div className="font-medium">
+                          {t("web3.wallet.notConnectedTitle")}
+                        </div>
                         <div className="text-sm">
-                          Please connect your wallet to access your emails and
-                          send messages.
+                          {t("web3.wallet.notConnectedBody")}
                         </div>
                         <div className="mt-2">
                           <button className="bg-warning/20 text-warning px-3 py-1 rounded text-sm font-medium hover:bg-warning/30">
-                            Connect Wallet
+                            {t("web3.wallet.connectWallet")}
                           </button>
                         </div>
                       </div>
@@ -673,14 +696,15 @@ import { ExclamationTriangleIcon } from '@heroicons/react/24/outline';
                     <div className={(variants.alert as any).error()}>
                       <SignalSlashIcon className="h-5 w-5" />
                       <div>
-                        <div className="font-medium">Network Mismatch</div>
+                        <div className="font-medium">
+                          {t("web3.wallet.networkMismatchTitle")}
+                        </div>
                         <div className="text-sm">
-                          Please switch to Ethereum Mainnet to continue using
-                          the platform.
+                          {t("web3.wallet.networkMismatchBody")}
                         </div>
                         <div className="mt-2">
                           <button className="bg-destructive/20 text-destructive px-3 py-1 rounded text-sm font-medium hover:bg-destructive/30">
-                            Switch Network
+                            {t("web3.wallet.switchNetwork")}
                           </button>
                         </div>
                       </div>
@@ -691,18 +715,17 @@ import { ExclamationTriangleIcon } from '@heroicons/react/24/outline';
                 {/* Gas Fee Alerts */}
                 <div>
                   <h3 className={`${textVariants.heading.h4()} mb-4`}>
-                    Gas Fee & Network Alerts
+                    {t("web3.gasTitle")}
                   </h3>
                   <div className="space-y-4 mb-4">
                     <div className={(variants.alert as any).warning()}>
                       <CurrencyDollarIcon className="h-5 w-5" />
                       <div>
                         <div className="font-medium">
-                          High Gas Fees Detected
+                          {t("web3.gas.highFeesTitle")}
                         </div>
                         <div className="text-sm">
-                          Current gas price is unusually high. Consider waiting
-                          for lower network congestion.
+                          {t("web3.gas.highFeesBody")}
                         </div>
                         <div className="text-xs text-warning mt-1">
                           Estimated cost: ~$45 USD • Gas price: 120 gwei
@@ -714,15 +737,12 @@ import { ExclamationTriangleIcon } from '@heroicons/react/24/outline';
                       <UserPlusIcon className="h-5 w-5" />
                       <div>
                         <div className="font-medium">
-                          New ENS Domain Detected
+                          {t("web3.gas.ensTitle")}
                         </div>
-                        <div className="text-sm">
-                          Your wallet now owns alice.eth. You can receive emails
-                          at this address!
-                        </div>
+                        <div className="text-sm">{t("web3.gas.ensBody")}</div>
                         <div className="mt-2">
                           <button className="bg-info/20 text-info px-3 py-1 rounded text-sm font-medium hover:bg-info/30">
-                            Set as Primary
+                            {t("web3.gas.setAsPrimary")}
                           </button>
                         </div>
                       </div>
@@ -778,8 +798,8 @@ import { ExclamationTriangleIcon } from '@heroicons/react/24/outline';
               expandedSections={expandedSections}
               toggleSection={toggleSection}
               id="accessibility"
-              title="♿ Accessibility Guidelines"
-              description="Ensure your alerts are accessible to all users with proper ARIA attributes, focus management, and screen reader compatibility."
+              title={t("accessibility.title")}
+              description={t("accessibility.description")}
             />
 
             {expandedSections["accessibility"] && (
@@ -787,85 +807,44 @@ import { ExclamationTriangleIcon } from '@heroicons/react/24/outline';
                 <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
                   <div>
                     <h3 className={`${textVariants.heading.h4()} mb-4`}>
-                      ✅ Best Practices
+                      {t("accessibility.bestPracticesTitle")}
                     </h3>
                     <ul className="space-y-3">
-                      <li className="flex items-start">
-                        <CheckCircleIcon className="h-5 w-5 text-success mr-2 mt-0.5 flex-shrink-0" />
-                        <span className="text-sm">
-                          Use appropriate ARIA roles (alert, alertdialog,
-                          status)
-                        </span>
-                      </li>
-                      <li className="flex items-start">
-                        <CheckCircleIcon className="h-5 w-5 text-success mr-2 mt-0.5 flex-shrink-0" />
-                        <span className="text-sm">
-                          Include descriptive text, not just colors or icons
-                        </span>
-                      </li>
-                      <li className="flex items-start">
-                        <CheckCircleIcon className="h-5 w-5 text-success mr-2 mt-0.5 flex-shrink-0" />
-                        <span className="text-sm">
-                          Provide keyboard navigation for interactive elements
-                        </span>
-                      </li>
-                      <li className="flex items-start">
-                        <CheckCircleIcon className="h-5 w-5 text-success mr-2 mt-0.5 flex-shrink-0" />
-                        <span className="text-sm">
-                          Use sufficient color contrast (4.5:1 minimum)
-                        </span>
-                      </li>
-                      <li className="flex items-start">
-                        <CheckCircleIcon className="h-5 w-5 text-success mr-2 mt-0.5 flex-shrink-0" />
-                        <span className="text-sm">
-                          Time dismissible alerts appropriately
-                        </span>
-                      </li>
+                      {(
+                        t("accessibility.bestPractices", {
+                          returnObjects: true,
+                        }) as string[]
+                      ).map((item, index) => (
+                        <li key={index} className="flex items-start">
+                          <CheckCircleIcon className="h-5 w-5 text-success mr-2 mt-0.5 flex-shrink-0" />
+                          <span className="text-sm">{item}</span>
+                        </li>
+                      ))}
                     </ul>
                   </div>
 
                   <div>
                     <h3 className={`${textVariants.heading.h4()} mb-4`}>
-                      ❌ Avoid
+                      {t("accessibility.avoidTitle")}
                     </h3>
                     <ul className="space-y-3">
-                      <li className="flex items-start">
-                        <XCircleIcon className="h-5 w-5 text-destructive mr-2 mt-0.5 flex-shrink-0" />
-                        <span className="text-sm">
-                          Auto-dismissing critical error messages
-                        </span>
-                      </li>
-                      <li className="flex items-start">
-                        <XCircleIcon className="h-5 w-5 text-destructive mr-2 mt-0.5 flex-shrink-0" />
-                        <span className="text-sm">
-                          Using only colors to convey importance
-                        </span>
-                      </li>
-                      <li className="flex items-start">
-                        <XCircleIcon className="h-5 w-5 text-destructive mr-2 mt-0.5 flex-shrink-0" />
-                        <span className="text-sm">
-                          Overwhelming users with too many alerts
-                        </span>
-                      </li>
-                      <li className="flex items-start">
-                        <XCircleIcon className="h-5 w-5 text-destructive mr-2 mt-0.5 flex-shrink-0" />
-                        <span className="text-sm">
-                          Making alert text too small to read
-                        </span>
-                      </li>
-                      <li className="flex items-start">
-                        <XCircleIcon className="h-5 w-5 text-destructive mr-2 mt-0.5 flex-shrink-0" />
-                        <span className="text-sm">
-                          Hiding important actions behind unnecessary clicks
-                        </span>
-                      </li>
+                      {(
+                        t("accessibility.avoid", {
+                          returnObjects: true,
+                        }) as string[]
+                      ).map((item, index) => (
+                        <li key={index} className="flex items-start">
+                          <XCircleIcon className="h-5 w-5 text-destructive mr-2 mt-0.5 flex-shrink-0" />
+                          <span className="text-sm">{item}</span>
+                        </li>
+                      ))}
                     </ul>
                   </div>
                 </div>
 
                 <div className="mt-8">
                   <h3 className={`${textVariants.heading.h4()} mb-4`}>
-                    ARIA Implementation Examples
+                    {t("accessibility.ariaTitle")}
                   </h3>
                   <CodeBlock
                     copiedStates={copiedStates}
@@ -927,11 +906,11 @@ import { ExclamationTriangleIcon } from '@heroicons/react/24/outline';
               className="flex items-center text-muted-foreground hover:text-foreground transition-colors"
             >
               <ArrowLeftIcon className="h-5 w-5 mr-2" />
-              Back to Design System
+              {t("backToDesign")}
             </LocalizedLink>
 
             <div className="text-sm text-muted-foreground">
-              Last updated: {new Date().toLocaleDateString()}
+              {t("lastUpdated", { date: new Date().toLocaleDateString() })}
             </div>
           </div>
         </div>

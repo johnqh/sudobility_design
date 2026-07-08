@@ -1,0 +1,142 @@
+{
+  "seo": {
+    "title": "Alertes - Système de conception - Interne - {{emailDomain}}",
+    "description": "Documentation complète du composant d'alerte avec des variantes, des mises en page, des actions et une intégration Web3"
+  },
+  "copy": {
+    "copied": "✓ Copié !",
+    "copy": "Copier"
+  },
+  "header": {
+    "badge": "Alertes",
+    "title": "Composants d'alerte",
+    "intro": "Messages de retour contextuels qui fournissent des informations importantes, des avertissements ou des confirmations aux utilisateurs, avec une hiérarchie visuelle claire et un contenu actionnable."
+  },
+  "stats": {
+    "alertTypes": "Types d'alerte",
+    "layoutOptions": "Options de mise en page",
+    "actionPatterns": "Schablonnes d'action",
+    "web3Examples": "Exemples de Web3"
+  },
+  "quickStart": {
+    "title": "🚀 Démarrage rapide",
+    "description": "Commencez avec les modèles d'alerte les plus couramment utilisés. Ces exemples montrent les types d'alerte essentiels et leurs cas d'utilisation typiques.",
+    "essentialTitle": "1. Types essentiels d'alertes",
+    "success": {
+      "title": "Succès !",
+      "body": "Votre transaction a été confirmée sur la blockchain."
+    },
+    "info": {
+      "title": "Informations",
+      "body": "Veuillez connecter votre portefeuille pour continuer cette action."
+    },
+    "warning": {
+      "title": "Avertissement",
+      "body": "Frais de gaz élevés détectés. Pensez à attendre une période de moindre congestion du réseau."
+    },
+    "error": {
+      "title": "Erreur",
+      "body": "La transaction a échoué. Veuillez vérifier le solde de votre portefeuille et réessayer."
+    },
+    "compactTitle": "2. Style d'alerte compact",
+    "compact": {
+      "success": "✓ E-mail envoyé avec succès",
+      "info": "ℹ Nouvelles fonctionnalités disponibles dans les paramètres",
+      "warning": "⚠ Portefeuille déconnecté",
+      "error": "✗ Échec du chargement des messages"
+    },
+    "dismissibleTitle": "3. Alertes dismissibles",
+    "dismissible": {
+      "successTitle": "Compte vérifié !",
+      "successBody": "Vous pouvez désormais accéder à toutes les fonctionnalités premium.",
+      "infoTitle": "Nouvelle mise à jour disponible",
+      "infoBody": "La version 2.0 inclut des fonctionnalités de sécurité améliorées."
+    },
+    "actionsTitle": "4. Alertes avec boutons d'action",
+    "actions": {
+      "title": "Abonnement bientôt expiré",
+      "body": "Vos fonctionnalités premium seront désactivées dans 3 jours.",
+      "renewNow": "Renouveler maintenant",
+      "remindLater": "Rappeler plus tard"
+    }
+  },
+  "variants": {
+    "title": "🎨 Variantes d'alerte",
+    "description": "Explorez toutes les variantes d'alerte avec leurs significations sémantiques et les contextes appropriés pour différents types de communication utilisateur.",
+    "standardTitle": "Alertes standard",
+    "standard": {
+      "successTitle": "Alerte de succès",
+      "successBody": "Utilisez-le pour les actions terminées et les confirmations positives",
+      "infoTitle": "Alerte d'information",
+      "infoBody": "Utilisez-le pour des informations neutres et des conseils utiles",
+      "warningTitle": "Alerte d'avertissement",
+      "warningBody": "Utilisez pour les problèmes éventuels nécessitant une attention",
+      "errorTitle": "Alerte d'erreur",
+      "errorBody": "Utilisez pour les actions échouées et les problèmes critiques"
+    },
+    "compactTitle": "Variants compactes",
+    "compact": {
+      "success": "Message de succès compact",
+      "successNote": "Utilisation minimale de l'espace",
+      "info": "Message d'information compact",
+      "infoNote": "Notifications rapides",
+      "warning": "Message d'alerte compact",
+      "warningNote": "Courtes notes d'avertissement",
+      "error": "Message d'erreur compact",
+      "errorNote": "Messages d'erreur courts"
+    }
+  },
+  "web3": {
+    "title": "⚡ Exemples d'intégration Web3",
+    "description": "Des exemples du monde réel d'alertes couramment utilisées dans les applications Web3, y compris les connexions de portefeuille, les transactions et les interactions sur la blockchain.",
+    "transactionTitle": "Alertes sur l'état des transactions",
+    "transaction": {
+      "pendingTitle": "Transaction en attente",
+      "pendingBody": "Votre transaction est en cours de traitement sur la blockchain. Cela peut prendre quelques minutes.",
+      "confirmedTitle": "Transaction confirmée",
+      "confirmedBody": "Votre e-mail a été envoyé et enregistré sur la blockchain.",
+      "failedTitle": "Transaction échouée",
+      "failedBody": "Fonds insuffisants ou limite de gaz trop basse. Veuillez réessayer."
+    },
+    "walletTitle": "Alertes de connexion au portefeuille",
+    "wallet": {
+      "notConnectedTitle": "Portefeuille non connecté",
+      "notConnectedBody": "Veuillez connecter votre portefeuille pour accéder à vos e-mails et envoyer des messages.",
+      "connectWallet": "Connecter le portefeuille",
+      "networkMismatchTitle": "Non correspondance du réseau",
+      "networkMismatchBody": "Veuillez passer au réseau principal Ethereum pour continuer à utiliser la plateforme.",
+      "switchNetwork": "Changer de réseau"
+    },
+    "gasTitle": "Alertes de frais de gaz et de réseau",
+    "gas": {
+      "highFeesTitle": "Frais de gaz élevés détectés",
+      "highFeesBody": "Le prix actuel du gaz est anormalement élevé. Pensez à attendre une baisse de la congestion du réseau.",
+      "ensTitle": "Nouveau domaine ENS détecté",
+      "ensBody": "Votre portefeuille possède désormais alice.eth. Vous pouvez recevoir des e-mails à cette adresse !",
+      "setAsPrimary": "Définir comme principal"
+    }
+  },
+  "accessibility": {
+    "title": "♿ Lignes directrices sur l'accessibilité",
+    "description": "Assurez-vous que vos alertes soient accessibles à tous les utilisateurs grâce à des attributs ARIA appropriés, à la gestion du focus et à la compatibilité avec les lecteurs d'écran.",
+    "bestPracticesTitle": "✅ Meilleures pratiques",
+    "bestPractices": [
+      "Utilisez des rôles ARIA appropriés (alert, alertdialog, status)",
+      "Incluez un texte descriptif, et non seulement des couleurs ou des icônes",
+      "Fournissez une navigation au clavier pour les éléments interactifs",
+      "Utilisez un contraste de couleur suffisant (au moins 4,5:1)",
+      "Les alertes temporaires sont traitées de manière appropriée"
+    ],
+    "avoidTitle": "❌ Éviter",
+    "avoid": [
+      "Messages d'erreur critiques qui disparaissent automatiquement",
+      "Utiliser uniquement les couleurs pour indiquer l'importance",
+      "Submerger les utilisateurs avec trop d'alertes",
+      "Rendre le texte d'alerte trop petit à lire",
+      "Cacher des actions importantes derrière des clics inutiles"
+    ],
+    "ariaTitle": "Exemples de mise en œuvre d'ARIA"
+  },
+  "backToDesign": "Retour au système de conception",
+  "lastUpdated": "Dernière mise à jour : {{date}}"
+}

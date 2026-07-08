@@ -1,7 +1,7 @@
 {
   "name": "sudobility-design",
   "private": true,
-  "version": "0.1.1",
+  "version": "0.1.2",
   "type": "module",
   "scripts": {
     "dev": "vite",
@@ -10,7 +10,7 @@
     "lint": "eslint .",
     "format": "prettier --write \"src/**/*.{ts,tsx,js,jsx,json}\"",
     "format:check": "prettier --check \"src/**/*.{ts,tsx,js,jsx,json}\"",
-    "localize": "SCRIPT=$(mktemp) && curl -fsSL https://raw.githubusercontent.com/johnqh/workflows/main/scripts/localize_batch.cjs -o $SCRIPT && node $SCRIPT ./public/locales https://api.whisperly.dev/api/v1/translate/jie9cytr/starter --word-limit 40 && rm -f $SCRIPT && prettier . --write",
+    "localize": "SCRIPT=$(mktemp) && curl -fsSL https://raw.githubusercontent.com/johnqh/workflows/main/scripts/localize_batch.cjs -o $SCRIPT && node $SCRIPT ./public/locales https://api.whisperly.dev/api/v1/translate/jie9cytr/starter --word-limit 500 && rm -f $SCRIPT && prettier . --write",
     "localized": "node scripts/localization_verify.cjs"
   },
   "dependencies": {

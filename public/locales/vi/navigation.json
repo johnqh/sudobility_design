@@ -1,0 +1,185 @@
+{
+  "seo": {
+    "title": "Điều hướng - Hệ thống thiết kế - Nội bộ - {{emailDomain}}",
+    "description": "Các thành phần điều hướng bao gồm breadcrumb, tab, phân trang và hệ thống menu"
+  },
+  "header": {
+    "badge": "Thành phần điều hướng",
+    "title": "Hệ thống định vị",
+    "intro": "Các thành phần điều hướng toàn diện cho các ứng dụng Web3, bao gồm breadcrumb, tab, phân trang, menu và điều hướng theo từng bước. Được thiết kế để hỗ trợ khả năng truy cập và hành vi phản hồi."
+  },
+  "quickStart": {
+    "title": "Bắt đầu nhanh",
+    "copy": "Sao chép vào bộ nhớ tạm",
+    "examples": {
+      "breadcrumb": {
+        "title": "Điều hướng breadcrumb",
+        "description": "Dẫn đường phân cấp hiển thị vị trí trang hiện tại"
+      },
+      "tabs": {
+        "title": "Điều hướng theo tab",
+        "description": "Sắp xếp nội dung thành nhiều chế độ xem với điều hướng tab"
+      },
+      "pagination": {
+        "title": "Phân trang",
+        "description": "Điều hướng qua nhiều trang nội dung"
+      },
+      "steps": {
+        "title": "Điều hướng theo từng bước",
+        "description": "Hướng dẫn người dùng qua các quy trình nhiều bước"
+      }
+    }
+  },
+  "breadcrumbs": {
+    "sectionTitle": "Bánh mì tương tác",
+    "liveTitle": "Ví dụ breadcrumb trực tiếp",
+    "home": "Trang chủ",
+    "web3Projects": "Dự án Web3",
+    "featuresTitle": "Tính năng",
+    "features": [
+      "Dữ liệu có cấu trúc để tối ưu hóa SEO",
+      "Thuộc tính truy cập ARIA",
+      "Hỗ trợ điều hướng bằng bàn phím",
+      "Thiết kế phản hồi với cắt ngắn",
+      "Biểu tượng trang chủ tùy chọn và chia sẻ xã hội"
+    ]
+  },
+  "tabVariants": {
+    "sectionTitle": "Các biến thể điều hướng tab",
+    "defaultTitle": "Thẻ mặc định",
+    "overview": "Tổng quan",
+    "analytics": "Phân tích",
+    "settings": "Cài đặt",
+    "overviewContent": "Nội dung tổng quan với thống kê dự án và hoạt động gần đây.",
+    "analyticsContent": "Bảng điều khiển phân tích với biểu đồ và chỉ số.",
+    "settingsContent": "Bảng điều khiển cài đặt cho các tùy chọn cấu hình.",
+    "underlinedTitle": "Thẻ gạch chân",
+    "dashboard": "Bảng điều khiển",
+    "team": "Đội",
+    "projects": "Dự án",
+    "calendar": "Lịch",
+    "underlinedContent": "Nội dung bảng điều khiển với phong cách tab gạch chân sạch sẽ.",
+    "pillsTitle": "Viên thuốc Viên nén",
+    "all": "Tất cả",
+    "active": "Đang hoạt động",
+    "draft": "Bản nháp",
+    "archived": "Đã lưu trữ",
+    "pillsContent": "Nội dung đã được lọc theo thẻ thuốc viên đã chọn."
+  },
+  "pagination": {
+    "sectionTitle": "Phân trang",
+    "listTitle": "Phân trang danh sách email",
+    "listDescription": "Ví dụ về phân trang cho thao tác điều hướng danh sách email",
+    "emailSubject": "Tiêu đề email {{number}}",
+    "timeAgo": "2 giờ trước",
+    "previous": "Trước đó",
+    "next": "Tiếp theo",
+    "showing": "Đang hiển thị",
+    "to": "đến",
+    "of": "của",
+    "results": "kết quả"
+  },
+  "steps": {
+    "sectionTitle": "Điều hướng theo từng bước",
+    "demoTitle": "Thiết lập ví Web3",
+    "demoDescription": "Hướng dẫn người dùng qua quy trình kết nối ví",
+    "stepLabel": "Bước {{number}}:",
+    "items": {
+      "accountSetup": {
+        "name": "Thiết lập tài khoản",
+        "description": "Tạo tài khoản của bạn"
+      },
+      "walletConnection": {
+        "name": "Kết nối ví",
+        "description": "Kết nối ví Web3 của bạn"
+      },
+      "emailSetup": {
+        "name": "Thiết lập email",
+        "description": "Thiết lập tùy chọn email của bạn"
+      },
+      "complete": {
+        "name": "Hoàn thành",
+        "description": "Bắt đầu sử dụng example.com"
+      }
+    },
+    "details": {
+      "1": "Tạo tài khoản {{emailDomain}} của bạn với tên người dùng yêu thích và cài đặt bảo mật.",
+      "2": "Kết nối ví Web3 của bạn (MetaMask, WalletConnect, v.v.) để kích hoạt các tính năng blockchain.",
+      "3": "Thiết lập các cài đặt email, thông báo và quyền riêng tư của bạn.",
+      "4": "Cài đặt của bạn đã hoàn tất! Bắt đầu gửi và nhận email Web3."
+    }
+  },
+  "sidebar": {
+    "sectionTitle": "Dẫn đường thanh bên",
+    "cardTitle": "Thanh bên ứng dụng email",
+    "cardDescription": "Điều hướng liên tục cho ứng dụng email",
+    "items": {
+      "dashboard": "Bảng điều khiển",
+      "inbox": "Hộp thư đến",
+      "sent": "Đã gửi",
+      "archive": "Lưu trữ",
+      "settings": "Cài đặt"
+    },
+    "mainContent": "Khu vực nội dung chính",
+    "mainContentHint": "Nội dung thay đổi tùy theo lựa chọn trong thanh bên"
+  },
+  "web3Patterns": {
+    "sectionTitle": "Mẫu định hướng Web3",
+    "walletStatus": {
+      "title": "Điều hướng trạng thái ví",
+      "description": "Trình điều hướng tự điều chỉnh theo trạng thái kết nối ví",
+      "connected": "MetaMask đã kết nối",
+      "inbox": "Hộp thư đến Web3",
+      "ensProfile": "Hồ sơ ENS",
+      "walletSettings": "Cài đặt Ví"
+    },
+    "multiChain": {
+      "title": "Điều hướng đa chuỗi",
+      "description": "Điều hướng qua các mạng lưới blockchain khác nhau",
+      "ethereum": "Ethereum",
+      "solana": "Solana",
+      "polygon": "Đa giác",
+      "ethereumInbox": "Hộp thư đến Ethereum",
+      "ensNames": "Tên ENS",
+      "gasSettings": "Cài đặt khí"
+    }
+  },
+  "accessibility": {
+    "sectionTitle": "Hướng dẫn về khả năng tiếp cận",
+    "title": "Khả năng truy cập điều hướng",
+    "description": "Đảm bảo tất cả các thành phần điều hướng đều có thể truy cập được cho người dùng máy đọc màn hình và người dùng bàn phím.",
+    "ariaLandmarks": "Điểm đánh dấu ARIA",
+    "keyboardNavigation": "Điều hướng bằng bàn phím",
+    "breadcrumbsLabel": "Vỏ bánh mì",
+    "breadcrumbsKeys": [
+      "Thẻ: Di chuyển qua các liên kết",
+      "Enter/Phím cách: Kích hoạt liên kết",
+      "Liên kết bỏ qua cho người đọc màn hình"
+    ],
+    "tabsLabel": "thẻ",
+    "tabsKeys": [
+      "Phím mũi tên: Di chuyển giữa các tab",
+      "Thẻ: nhập bảng thẻ",
+      "Enter/Phím cách: Kích hoạt tab"
+    ]
+  },
+  "implementation": {
+    "sectionTitle": "Ghi chú triển khai",
+    "performanceTitle": "Các yếu tố liên quan đến hiệu suất",
+    "performance": [
+      "Tải các mục điều hướng theo cách tải chậm khi có thể",
+      "Sử dụng React.memo cho các thành phần điều hướng phức tạp",
+      "Giảm chấn động tìm kiếm trong các menu điều hướng",
+      "Cuộn ảo cho danh sách điều hướng dài",
+      "Tiền tải các tuyến đường điều hướng quan trọng"
+    ],
+    "mobileTitle": "Tính phản hồi trên di động",
+    "mobile": [
+      "Thu gọn thanh điều hướng thành menu hamburger",
+      "Sử dụng thanh điều hướng dưới cho ứng dụng di động",
+      "Thực hiện các thao tác vuốt ở nơi phù hợp",
+      "Đảm bảo các mục chạm có ít nhất 44px",
+      "Thử nghiệm trên nhiều kích thước màn hình và hướng khác nhau"
+    ]
+  }
+}

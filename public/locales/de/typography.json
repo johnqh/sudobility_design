@@ -1,0 +1,477 @@
+{
+  "seo": {
+    "title": "Typografie - Design-System - Intern - {{emailDomain}}",
+    "description": "Komplettes Typografiesystem und Textstil-Showcase für das Design-System"
+  },
+  "nav": {
+    "viewColors": "Farben anzeigen"
+  },
+  "header": {
+    "badge": "Typografiesystem",
+    "title": "Typografie & Textstile",
+    "intro": "Komplettes Typografiesystem mit Schriftarten, Größen, Gewichten und Stilen sowie Verwendungsmustern und Code-Beispielen. Klicken Sie auf ein Beispiel, um seinen Klassennamen in die Zwischenablage zu kopieren."
+  },
+  "example": {
+    "aria": "Kopiere den Klassennamen {{title}}",
+    "preview": "Vorschau",
+    "usage": "Verwendung"
+  },
+  "quickStart": {
+    "heading": "Schnellstart - Typografie-Beispiele",
+    "description": "Bereits verwendbare Typografie-Beispiele für die häufigsten Textmuster. Kopieren Sie diese direkt in Ihre Komponenten.",
+    "pageHeading": {
+      "title": "Seitenüberschrift",
+      "preview": "Willkommen auf der Plattform"
+    },
+    "bodyText": {
+      "title": "Körper-Text",
+      "preview": "Dies ist ein großes Textbeispiel, das die richtige Schriftgröße, Zeilenhöhe und Abstand für lesbaren Inhalt in Ihrer Anwendung zeigt."
+    },
+    "codeBlock": {
+      "title": "Codeblock"
+    },
+    "linkText": {
+      "title": "Link-Text",
+      "preview": "Erfahren Sie mehr über Web3-E-Mail"
+    },
+    "captionText": {
+      "title": "Beschriftungstext",
+      "preview": "Zuletzt aktualisiert: 15. März 2024 um 14:30"
+    },
+    "inlineCode": {
+      "title": "Inline-Code",
+      "previewPrefix": "Verwenden Sie die",
+      "previewSuffix": "Hook zum Verwalten des Komponentenstatus in React-Anwendungen."
+    }
+  },
+  "fontFamilies": {
+    "heading": "Schriftfamilien",
+    "description": "Drei primäre Schriftfamilien werden im gesamten Anwendungsbereich für verschiedene Inhaltsarten verwendet.",
+    "pangram": "Der schnelle braune Fuchs springt über den faulen Hund",
+    "items": {
+      "sans": {
+        "name": "Sans Serif (Standard)",
+        "description": "Primäre Schriftfamilie für Benutzeroberflächenelemente und Haupttext",
+        "usage": "Benutzeroberflächenelemente, Überschriften, Body-Text"
+      },
+      "serif": {
+        "name": "Serif",
+        "description": "Für redaktionelle und formelle Inhalte",
+        "usage": "Redaktionelle Inhalte, formelle Dokumente"
+      },
+      "mono": {
+        "name": "Monospace",
+        "description": "Für Codeblöcke und technischen Text",
+        "usage": "Codeblöcke, technischer Inhalt, Wallet-Adressen"
+      }
+    },
+    "code": {
+      "title": "Verwendung der Schriftfamilie",
+      "description": "So verwenden Sie Schriftfamilien aus dem Design-System"
+    },
+    "preview": {
+      "sans": "Dies ist sans-serif-Text (Standard-UI-Schriftart)",
+      "serif": "Dies ist Serifen-Text für redaktionelle Inhalte",
+      "mono": "Dies ist monospace-Text für Code"
+    }
+  },
+  "scale": {
+    "heading": "Typografieskala",
+    "description": "Hierarchische Typenskala von Anzeigetext zu Überschriften, die eine konsistente Größenanpassung über die gesamte Benutzeroberfläche bietet.",
+    "items": {
+      "hero": {
+        "name": "Held",
+        "usage": "Landingpages, Hero-Bereiche"
+      },
+      "xl": {
+        "name": "XL anzeigen",
+        "usage": "Große Überschriften"
+      },
+      "lg": {
+        "name": "Anzeige LG",
+        "usage": "Mittelgroße Überschriften"
+      },
+      "md": {
+        "name": "MD anzeigen",
+        "usage": "Kleine Bildschirmüberschriften"
+      },
+      "sm": {
+        "name": "SM anzeigen",
+        "usage": "Extra kleine Bildschirmüberschriften"
+      },
+      "h1": {
+        "name": "Überschrift 1",
+        "usage": "Überschriften der Hauptseite"
+      },
+      "h2": {
+        "name": "Überschrift 2",
+        "usage": "Abschnittsüberschriften"
+      },
+      "h3": {
+        "name": "Überschrift 3",
+        "usage": "Unterüberschriften"
+      },
+      "h4": {
+        "name": "Überschrift 4",
+        "usage": "Minore Überschriften"
+      },
+      "h5": {
+        "name": "Überschrift 5",
+        "usage": "Kleine Überschriften"
+      },
+      "h6": {
+        "name": "Überschrift 6",
+        "usage": "Kleinste Überschriften"
+      }
+    },
+    "code": {
+      "title": "Typografie-Skalen-Nutzung",
+      "description": "So verwenden Sie Kopfzeilenvarianten aus dem Design-System"
+    },
+    "preview": {
+      "h1": "Überschrift 1",
+      "h2": "Überschrift 2",
+      "h3": "Überschrift 3",
+      "body": "Der Text folgt den Überschriften"
+    }
+  },
+  "body": {
+    "heading": "Körper-Text",
+    "description": "Körper-Text-Varianten für verschiedene Inhaltstypen und Hierarchieebenen.",
+    "sample": "Dies ist ein Beispieltext, der die Schriftgröße, -dicke und Zeilenhöhe dieser Variante veranschaulicht.",
+    "items": {
+      "xl": {
+        "name": "Körper XL",
+        "usage": "Einführende Absätze, wichtiger Inhalt"
+      },
+      "lg": {
+        "name": "Körper groß",
+        "usage": "Standard-Textkörper, Hauptinhalt"
+      },
+      "md": {
+        "name": "Körper Mittel",
+        "usage": "Standard-Körper-Text (Alias für groß)"
+      },
+      "sm": {
+        "name": "Körper klein",
+        "usage": "Zusatzinformationen, Bildunterschriften"
+      },
+      "xs": {
+        "name": "Körper Extra Klein",
+        "usage": "Kleingedrucktes, minimale Details"
+      }
+    },
+    "code": {
+      "title": "Verwendung des Body-Texts",
+      "description": "Wie man Körpertextvarianten verwendet"
+    },
+    "preview": {
+      "xl": "Dies ist extra große Körper-Text für Lead-Absätze und wichtigen einleitenden Inhalt.",
+      "lg": "Dies ist der Standard-Textkörper, der im gesamten Anwendungsbereich für den Hauptinhalt verwendet wird.",
+      "sm": "Dies ist kleiner Body-Text, der für sekundäre Informationen, Bildunterschriften und Hilfetexte verwendet wird."
+    }
+  },
+  "emphasis": {
+    "heading": "Text-Hervorhebung",
+    "description": "Texteinsätze mit verschiedenen Gewichts- und Prominenzstufen.",
+    "items": {
+      "strongLg": {
+        "name": "Stark Groß",
+        "usage": "Wichtiger hervorgehobener Text"
+      },
+      "strongMd": {
+        "name": "Stark Mittel",
+        "usage": "Medium fett hervorgehobener Text"
+      },
+      "strongSm": {
+        "name": "Stark klein",
+        "usage": "Kleiner hervorgehobener Text"
+      },
+      "emphasisLg": {
+        "name": "Großer Akzent",
+        "usage": "Mittlere Gewichtung"
+      },
+      "emphasisMd": {
+        "name": "Mediumer Schwerpunkt",
+        "usage": "Mittlere Gewichtung"
+      },
+      "emphasisSm": {
+        "name": "Auffällig klein",
+        "usage": "Kleine mittlere Gewichtsunterstreichung"
+      },
+      "mutedLg": {
+        "name": "Stumm groß",
+        "usage": "Text mit geringerer Hervorhebung"
+      },
+      "mutedMd": {
+        "name": "Stumm mittel",
+        "usage": "Text mit geringerer Hervorhebung"
+      },
+      "mutedSm": {
+        "name": "Stumm klein",
+        "usage": "Deemphasierter kleiner Text"
+      }
+    },
+    "code": {
+      "title": "Text-Hervorhebung Verwendung",
+      "description": "Wie man Text-Emphasis-Varianten verwendet"
+    },
+    "preview": {
+      "normalPrefix": "Dies ist normaler Text mit",
+      "strong": "starker Akzent",
+      "and": "und",
+      "medium": "mittlere Betonung",
+      "muted": "Dies ist gedämpfter Text mit reduzierter visueller Hervorhebung."
+    }
+  },
+  "caption": {
+    "heading": "Beschriftung & Sonder-Text",
+    "captionTitle": "Bildunterschriften-Varianten",
+    "sample": "Dies ist ein Beispiel für eine Bildunterschrift",
+    "uppercaseSample": "SEKTIONSTITEL",
+    "items": {
+      "default": {
+        "name": "Standardunterschrift",
+        "usage": "Bildunterschriften, zusätzliche Informationen"
+      },
+      "emphasis": {
+        "name": "Hervorhebungsunterschrift",
+        "usage": "Wichtige Beschriftungen"
+      },
+      "uppercase": {
+        "name": "Großbuchstabenüberschrift",
+        "usage": "Abschnittsbezeichnungen, Tags"
+      }
+    },
+    "leadTitle": "Leittext",
+    "leadSample": "Dies ist der Lead-Text, der den Hauptinhalt einführt und Kontext für das Folgende bietet.",
+    "leadItems": {
+      "lg": {
+        "name": "Großes Blei",
+        "usage": "Einleitungssätze, Artikel-Einleitungen"
+      },
+      "md": {
+        "name": "Mittlerer Lead",
+        "usage": "Einleitungspassagen"
+      },
+      "sm": {
+        "name": "Kleiner Führer",
+        "usage": "Kleine Einführungstext"
+      }
+    },
+    "code": {
+      "title": "Beschriftung und Lead-Text-Verwendung",
+      "description": "Wie man Untertitel und Lead-Text verwendet"
+    },
+    "preview": {
+      "imageCaption": "Dies ist eine Bildunterschrift für das Bild darüber",
+      "sectionLabel": "SEKTIONSTITEL",
+      "lead": "Dies ist der Lead-Text, der den Abschnitt einführt."
+    }
+  },
+  "links": {
+    "heading": "Link-Stile",
+    "description": "Verschiedene Link-Stile für verschiedene Kontexte und Betonungsebenen.",
+    "externalSample": "Externer Link →",
+    "items": {
+      "default": {
+        "name": "Standard-Link",
+        "usage": "Standard-Links mit Unterstrich"
+      },
+      "subtle": {
+        "name": "Leiser Link",
+        "usage": "Links ohne Unterstrich"
+      },
+      "muted": {
+        "name": "Stummes Link",
+        "usage": "Graue Links"
+      },
+      "external": {
+        "name": "Externer Link",
+        "usage": "Links zu externen Websites"
+      }
+    },
+    "code": {
+      "title": "Link-Stile Verwendung",
+      "description": "Wie man Link-Varianten verwendet"
+    },
+    "preview": {
+      "paraPrefix": "Dieser Absatz enthält einen",
+      "defaultLink": "Standard-Link",
+      "and": "und ein",
+      "subtleLink": "leiser Link",
+      "checkPrefix": "Schauen Sie sich dies an",
+      "externalLink": "externer Link →",
+      "or": "oder dies",
+      "mutedLink": "stummes Link"
+    }
+  },
+  "codeText": {
+    "heading": "Code & technischer Text",
+    "description": "Monospace-Schriftarten für Code, technische Inhalte und technische Dokumentation.",
+    "items": {
+      "inline": {
+        "name": "Inline-Code",
+        "usage": "Code innerhalb des Textes"
+      },
+      "block": {
+        "name": "Codeblock",
+        "usage": "Mehrzeilige Codeblöcke"
+      },
+      "small": {
+        "name": "Kleiner Code",
+        "usage": "Kleiner Inline-Code"
+      }
+    },
+    "code": {
+      "title": "Code-Text-Verwendung",
+      "description": "Wie man Code-Text-Varianten verwendet"
+    },
+    "preview": {
+      "usePrefix": "Verwenden Sie die",
+      "useSuffix": "Hook zum Verwalten des Zustands.",
+      "runPrefix": "Ausführen",
+      "runSuffix": "um loszulegen."
+    }
+  },
+  "labels": {
+    "heading": "Formularbeschriftungen & Nachrichten",
+    "description": "Textstile für Formularfelder, Beschriftungen und Feedback-Nachrichten.",
+    "items": {
+      "default": {
+        "name": "Standardbezeichnung",
+        "usage": "Formularfeldbeschriftungen",
+        "sample": "Standard"
+      },
+      "required": {
+        "name": "Erforderlicher Bezeichner",
+        "usage": "Erforderliche Formularfelder",
+        "sample": "E-Mail-Adresse"
+      },
+      "optional": {
+        "name": "Optionaler Bezeichner",
+        "usage": "Optionale Formularfelder",
+        "sample": "Optional"
+      },
+      "helper": {
+        "name": "Hilfetext",
+        "usage": "Hilfetext für das Formular",
+        "sample": "Hilfe"
+      },
+      "error": {
+        "name": "Fehlermeldung",
+        "usage": "Formular-Fehlermeldungen",
+        "sample": "Fehler"
+      },
+      "success": {
+        "name": "Erfolgreich Text",
+        "usage": "Formular-Erfolgsmeldungen",
+        "sample": "Erfolg"
+      }
+    },
+    "code": {
+      "title": "Formularbeschriftungen Verwendung",
+      "description": "Wie man Formularbeschriftungen und Nachrichtenvarianten verwendet"
+    },
+    "preview": {
+      "emailLabel": "E-Mail-Adresse",
+      "emailHelper": "Wir werden dies verwenden, um Ihnen Updates zu senden",
+      "passwordLabel": "Passwort",
+      "passwordError": "Das Passwort muss mindestens 8 Zeichen lang sein",
+      "phoneLabel": "Telefonnummer",
+      "phoneSuccess": "Telefonnummer erfolgreich verifiziert"
+    }
+  },
+  "web3": {
+    "heading": "Web3-Textstile",
+    "description": "Spezialisierte Textstile für Web3- und blockchain-spezifische Inhalte wie Adressen, Hashes und Beträge.",
+    "items": {
+      "address": {
+        "name": "Brieftaschen-Adresse",
+        "usage": "Vollständige Brieftaschen-Adressen"
+      },
+      "addressShort": {
+        "name": "Kurze Adresse",
+        "usage": "Abgeschnittene Brieftaschen-Adressen"
+      },
+      "hash": {
+        "name": "Transaktions-Hash",
+        "usage": "Transaktionskennungen"
+      },
+      "amount": {
+        "name": "Token-Betrag",
+        "usage": "Kryptowährungsbeträge"
+      },
+      "chain": {
+        "name": "Kettenname",
+        "usage": "Blockchain-Netzwerknamen"
+      },
+      "symbol": {
+        "name": "Token-Symbol",
+        "usage": "Kryptowährungssymbole"
+      }
+    },
+    "code": {
+      "title": "Web3-Textverwendung",
+      "description": "Wie man Web3-spezifische Textstile verwendet"
+    },
+    "preview": {
+      "transactionHash": "Transaktions-Hash:"
+    }
+  },
+  "responsive": {
+    "heading": "Reaktive Typografie",
+    "description": "Typografie, die sich automatisch an die Bildschirmgröße anpasst, um eine optimale Lesbarkeit auf allen Geräten zu gewährleisten.",
+    "items": {
+      "h1": {
+        "name": "Reagierbarer H1",
+        "usage": "Überschriften, die sich an die Bildschirmgröße anpassen"
+      },
+      "h2": {
+        "name": "Reaktionsfähiges H2",
+        "usage": "Abschnittsüberschriften, die skaliert werden"
+      },
+      "h3": {
+        "name": "Reaktionsfähiges H3",
+        "usage": "Unterüberschriften, die skaliert werden"
+      },
+      "display": {
+        "name": "Reaktive Anzeige",
+        "usage": "Text anzeigen, der skaliert"
+      }
+    },
+    "code": {
+      "title": "Reaktive Typografie-Nutzung",
+      "description": "Wie man responsive Textvarianten verwendet, die sich an die Bildschirmgröße anpassen"
+    },
+    "preview": {
+      "heading": "Diese Überschrift skaliert mit der Bildschirmgröße",
+      "body": "Ändern Sie die Größe Ihres Browserfensters, um zu sehen, wie sich responsive Überschriften an verschiedene Bildschirmgrößen anpassen."
+    }
+  },
+  "guidelines": {
+    "heading": "Typografie-Richtlinien",
+    "doTitle": "✓ Machen",
+    "do": [
+      "Verwenden Sie textVariants für konsistente Stilierung",
+      "Wählen Sie die geeigneten Hierarchieebenen aus",
+      "Verwenden Sie responsive Varianten für den Hero-Content",
+      "Stellen Sie eine ausreichende Kontrastverhältnis sicher",
+      "Verwenden Sie eine Monospace-Schriftart für Code und Adressen",
+      "Lesbarkeit bei verschiedenen Bildschirmgrößen testen"
+    ],
+    "dontTitle": "✗ Nicht",
+    "dont": [
+      "Verwenden Sie zufällige Schriftgrößen außerhalb des Bereichs",
+      "Überspringen Sie die Kopfzeilenstufen (h1 → h3)",
+      "Verwenden Sie zu viele verschiedene Textstile",
+      "Text zu klein auf mobilen Geräten",
+      "Verwenden Sie Serifen-Schriftarten für Benutzeroberflächenelemente",
+      "Ignoriere Textfarben im Dunkelmodus"
+    ]
+  },
+  "copyInstructions": {
+    "title": "Klicken zum Kopieren der Klassennamen",
+    "description": "Klicken Sie auf ein beliebiges Textbeispiel, um seinen CSS-Klassennamen zu kopieren, oder verwenden Sie die Kopier-Schaltfläche bei Codebeispielen, um den Verwendungscode zu kopieren"
+  }
+}

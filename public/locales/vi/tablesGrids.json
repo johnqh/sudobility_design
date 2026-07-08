@@ -1,0 +1,80 @@
+{
+  "seo": {
+    "title": "Bảng & lưới dữ liệu - Hệ thống thiết kế - Nội bộ - {{emailDomain}}",
+    "description": "Hệ thống bảng toàn diện với sắp xếp, lọc, phân trang và chức năng lưới dữ liệu"
+  },
+  "header": {
+    "badge": "Bảng và lưới dữ liệu",
+    "title": "Bảng và lưới dữ liệu",
+    "subtitle": "Hệ thống bảng toàn diện với sắp xếp, lọc, phân trang và chức năng lưới dữ liệu. Lý tưởng để hiển thị dữ liệu có cấu trúc với các mẫu tương tác nâng cao."
+  },
+  "columns": {
+    "name": "Tên",
+    "email": "Thư điện tử",
+    "role": "Vai trò",
+    "status": "Trạng thái",
+    "actions": "Hành động",
+    "transactions": "Giao dịch",
+    "joinDate": "Ngày tham gia",
+    "transactionHash": "Băm giao dịch",
+    "from": "Từ",
+    "to": "Đến",
+    "amount": "Số tiền",
+    "chain": "Xích"
+  },
+  "basic": {
+    "title": "Bảng cơ bản",
+    "usage": "Sử dụng"
+  },
+  "sortable": {
+    "title": "Bảng có thể sắp xếp",
+    "headers": "Tiêu đề có thể sắp xếp"
+  },
+  "selectable": {
+    "title": "Bảng chọn được với các hành động khối",
+    "selected": "{{count}} dòng đã chọn",
+    "export": "Xuất khẩu",
+    "delete": "Xóa"
+  },
+  "compact": {
+    "title": "Bàn nhỏ gọn"
+  },
+  "filterable": {
+    "title": "Bảng có thể lọc",
+    "searchPlaceholder": "Tìm người dùng...",
+    "filters": "Bộ lọc"
+  },
+  "pagination": {
+    "title": "Bảng với phân trang",
+    "showing": "Đang hiển thị",
+    "to": "đến",
+    "of": "của",
+    "results": "kết quả",
+    "ariaLabel": "Phân trang"
+  },
+  "web3": {
+    "title": "Bảng giao dịch Web3",
+    "confirmed": "Đã xác nhận",
+    "pending": "Đang chờ",
+    "ethereum": "Ethereum",
+    "solana": "Solana"
+  },
+  "empty": {
+    "title": "Trạng thái trống",
+    "noData": "Không tìm thấy dữ liệu",
+    "description": "Hiện tại không có bản ghi nào để hiển thị.",
+    "addRecord": "Thêm bản ghi mới"
+  },
+  "tokens": {
+    "title": "Các biến thể bảng có sẵn",
+    "structure": "Cấu trúc bảng",
+    "containerBase": "Thùng chứa và nền",
+    "headers": "Tiêu đề",
+    "body": "Thân thể",
+    "statesPagination": "Trạng thái và phân trang"
+  },
+  "nav": {
+    "previous": "Bố cục và khoảng cách",
+    "back": "Quay lại Hệ thống Thiết kế"
+  }
+}

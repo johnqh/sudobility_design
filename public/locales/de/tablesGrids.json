@@ -1,0 +1,80 @@
+{
+  "seo": {
+    "title": "Tabellen & Datengitter - Design-System - Intern - {{emailDomain}}",
+    "description": "Umfassendes Tabellensystem mit Sortierung, Filterung, Pagination und Datenrasterfunktionalität"
+  },
+  "header": {
+    "badge": "Tabellen & Datenblöcke",
+    "title": "Tabellen & Datenblöcke",
+    "subtitle": "Umfassendes Tabellensystem mit Sortierung, Filterung, Paginierung und Datenrasterfunktionalität. Perfekt zum Anzeigen strukturierter Daten mit fortgeschrittenen Interaktionsmustern."
+  },
+  "columns": {
+    "name": "Name",
+    "email": "E-Mail",
+    "role": "Rolle",
+    "status": "Status",
+    "actions": "Aktionen",
+    "transactions": "Transaktionen",
+    "joinDate": "Beitrittsdatum",
+    "transactionHash": "Transaktions-Hash",
+    "from": "Von",
+    "to": "Zu",
+    "amount": "Betrag",
+    "chain": "Kette"
+  },
+  "basic": {
+    "title": "Grundlegende Tabelle",
+    "usage": "Verwendung"
+  },
+  "sortable": {
+    "title": "Sortierbare Tabelle",
+    "headers": "Sortierbare Kopfzeilen"
+  },
+  "selectable": {
+    "title": "Wählbare Tabelle mit Massenaktionen",
+    "selected": "{{count}} Zeile(n) ausgewählt",
+    "export": "Exportieren",
+    "delete": "Löschen"
+  },
+  "compact": {
+    "title": "Kompakt-Tisch"
+  },
+  "filterable": {
+    "title": "Filterbare Tabelle",
+    "searchPlaceholder": "Benutzer suchen...",
+    "filters": "Filter"
+  },
+  "pagination": {
+    "title": "Tabelle mit Paginierung",
+    "showing": "Anzeigen",
+    "to": "zu",
+    "of": "von",
+    "results": "Ergebnisse",
+    "ariaLabel": "Seitennummerierung"
+  },
+  "web3": {
+    "title": "Web3-Transaktions-Tabelle",
+    "confirmed": "Bestätigt",
+    "pending": "Ausstehend",
+    "ethereum": "Ethereum",
+    "solana": "Solana"
+  },
+  "empty": {
+    "title": "Leerer Zustand",
+    "noData": "Keine Daten gefunden",
+    "description": "Derzeit gibt es keine Aufzeichnungen zum Anzeigen.",
+    "addRecord": "Neuen Datensatz hinzufügen"
+  },
+  "tokens": {
+    "title": "Verfügbare Tabellenvarianten",
+    "structure": "Tabellenstruktur",
+    "containerBase": "Behälter & Basis",
+    "headers": "Kopfzeilen",
+    "body": "Körper",
+    "statesPagination": "Länder & Paginierung"
+  },
+  "nav": {
+    "previous": "Layout & Abstand",
+    "back": "Zurück zum Design-System"
+  }
+}

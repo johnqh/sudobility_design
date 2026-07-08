@@ -1,0 +1,291 @@
+{
+  "seo": {
+    "title": "Färger - Designsystem - Intern - {{emailDomain}}",
+    "description": "Komplett färgpalett och variationer visar för designsystemet"
+  },
+  "nav": {
+    "viewTypography": "Visa typografi"
+  },
+  "header": {
+    "badge": "Färgsystem",
+    "title": "Färgpalett och användning",
+    "description": "Färgsystem som används genom hela {{appName}}-appen med användningsexempel och kodexempel. Klicka på någon färg för att kopiera dess hexvärde till urklipp."
+  },
+  "swatch": {
+    "copyAria": "Kopiera färgvärdet {{name}} {{value}}"
+  },
+  "codeExample": {
+    "preview": "Förhandsgranskning",
+    "usage": "Användning"
+  },
+  "quickStart": {
+    "title": "Snabbstart - vanliga användningsområden",
+    "description": "Kodexempel som är klara att använda för de vanligaste designmönstren. Kopiera och klistra in direkt i dina komponenter.",
+    "primaryButton": {
+      "title": "Primär knapp",
+      "action": "Huvudåtgärd"
+    },
+    "successAlert": {
+      "title": "Lyckoskickning",
+      "heading": "Lyckat!",
+      "body": "Ditt ärende har slutförts framgångsrikt."
+    },
+    "blockchainBadge": {
+      "title": "Blockchain-badge"
+    },
+    "formInput": {
+      "title": "Formulär inmatning",
+      "placeholder": "Ange din e-post..."
+    }
+  },
+  "palettes": {
+    "title": "Färgpaletter",
+    "description": "Basfärpaletter organiserade efter nyans. Varje palett innehåller nyans från 50 (ljust) till 950 (mörkast).",
+    "items": {
+      "blue": {
+        "name": "Blå (primär)",
+        "description": "Huvudmärkesfärgpalett"
+      },
+      "purple": {
+        "name": "Lila (sekundär)",
+        "description": "Sekundär varumärkes färgpalett"
+      },
+      "neutral": {
+        "name": "Neutral (gråskala)",
+        "description": "Bakgrund, text och gränsfärger"
+      },
+      "red": {
+        "name": "Rött (Fel)",
+        "description": "Fel och destruktiva åtgärdsfärger"
+      },
+      "green": {
+        "name": "Grön (Lyckat)",
+        "description": "Framgång och positiva åtgärdsfärger"
+      },
+      "amber": {
+        "name": "Amber (Varning)",
+        "description": "Varning och försiktighetsfärger"
+      },
+      "orange": {
+        "name": "Orange",
+        "description": "Accent- och markeringsskärmar"
+      }
+    }
+  },
+  "networks": {
+    "ethereum": "Ethereum",
+    "solana": "Solana",
+    "polygon": "Polygon"
+  },
+  "web3": {
+    "title": "Web3-nätverksfärger",
+    "description": "Färger som representerar olika blockkedjens nätverk och Web3-element.",
+    "usage": {
+      "ethereum": "Ethereum-nätverksmarkering",
+      "solana": "Solana-nätverksmarkering",
+      "polygon": "Polygon-nätverksmärkning"
+    },
+    "code": {
+      "title": "Användning av färger i Web3",
+      "description": "Hur man använder web3-nätverksfärger i komponenter"
+    }
+  },
+  "semantic": {
+    "title": "Semantiska färger",
+    "description": "Semantiska färgtoken som anpassas till ljus- och mörkteman. Dessa ger konsekvent betydelse över hela gränssnittet.",
+    "lightMode": "Ljusläge",
+    "darkMode": "Mörkt läge",
+    "categories": {
+      "text": {
+        "name": "Textfärger",
+        "colors": {
+          "primaryText": {
+            "name": "Primärtext",
+            "usage": "Huvudinnehållstext"
+          },
+          "secondaryText": {
+            "name": "Sekundärt text",
+            "usage": "Stödtext"
+          },
+          "linkText": {
+            "name": "Länktext",
+            "usage": "Interaktiva länkar"
+          }
+        }
+      },
+      "background": {
+        "name": "Bakgrunds färger",
+        "colors": {
+          "primaryBackground": {
+            "name": "Primär bakgrund",
+            "usage": "Huvudsidans bakgrunder"
+          },
+          "secondaryBackground": {
+            "name": "Sekundär bakgrund",
+            "usage": "Kortbakgrunder"
+          },
+          "elevatedBackground": {
+            "name": "Höjd bakgrund",
+            "usage": "Modal och överlappningar"
+          }
+        }
+      },
+      "state": {
+        "name": "Staters färger",
+        "colors": {
+          "success": {
+            "name": "Framgång",
+            "usage": "Lyckosmeddelanden och åtgärder"
+          },
+          "warning": {
+            "name": "Varning",
+            "usage": "Varningsmeddelanden"
+          },
+          "error": {
+            "name": "Fel",
+            "usage": "Felmeddelanden och destruktiva åtgärder"
+          },
+          "info": {
+            "name": "Information",
+            "usage": "Informationsmeddelanden"
+          }
+        }
+      }
+    },
+    "code": {
+      "title": "Användning av semantiska färger",
+      "description": "Hur man använder semantiska färger från designsystemet",
+      "preview": {
+        "success": "✓ Lyckadesmeddelande",
+        "error": "✗ Felmeddelande",
+        "warning": "⚠ Varningsmeddelande"
+      }
+    }
+  },
+  "components": {
+    "title": "Komponentfärger och användningsexempel",
+    "description": "Förkonfigurerade färgkombinationer för vanliga gränssnittskomponenter med inbyggt stöd för hover, fokus och teman.",
+    "exampleHeading": "{{name}} Exempel",
+    "liveExamples": "Live exempel",
+    "alertMessage": "{{name}} meddelande",
+    "interactiveHeading": "Interaktiva exempel på {{name}}:",
+    "createPreview": {
+      "button": {
+        "primary": "Huvudåtgärd",
+        "secondary": "Andra åtgärd",
+        "destructive": "Ta bort objekt"
+      },
+      "alert": {
+        "infoLabel": "Information:",
+        "infoText": "Detta är en informationsvarning",
+        "successLabel": "Framgång:",
+        "successText": "Operationen slutfördes framgångsrikt",
+        "errorLabel": "Fel:",
+        "errorText": "Något gick fel"
+      }
+    },
+    "items": {
+      "button": {
+        "name": "Knapp",
+        "createTitle": "Så här skapar du knappar",
+        "createDescription": "Steg-för-steg-guide för att skapa knappar med rätt färger",
+        "variantsTitle": "Knappens varianter och tillstånd",
+        "variantsDescription": "Alla knappfärger med hover- och fokuslägen",
+        "variants": {
+          "primary": "Primär",
+          "secondary": "Andra",
+          "destructive": "Destruktiv",
+          "success": "Framgång"
+        }
+      },
+      "badge": {
+        "name": "Badge",
+        "createTitle": "Hur man skapar insignier",
+        "createDescription": "Steg-för-steg-guide för att skapa insignier med rätt färger",
+        "variantsTitle": "Badgevarianter och -tillstånd",
+        "variantsDescription": "Alla badgefärgvarianter med hover- och fokuslägen",
+        "variants": {
+          "default": "Standard",
+          "primary": "Primär",
+          "success": "Framgång",
+          "warning": "Varning",
+          "error": "Fel"
+        }
+      },
+      "alert": {
+        "name": "Varning",
+        "createTitle": "Så här skapar du varningar",
+        "createDescription": "Steg-för-steg-guide för att skapa varningar med rätt färger",
+        "variantsTitle": "Varningar – varianter och tillstånd",
+        "variantsDescription": "Alla varianter av varningsfärger med hover- och fokuslägen",
+        "variants": {
+          "info": "Information",
+          "success": "Framgång",
+          "warning": "Varning",
+          "error": "Fel"
+        }
+      }
+    }
+  },
+  "practical": {
+    "title": "Praktiska användningsexempel",
+    "description": "Exempel från verkligheten som visar hur man kombinerar färger för vanliga gränssnittsmönster.",
+    "form": {
+      "title": "Formulär med färgkodade tillstånd",
+      "description": "Hur man använder färger vid formulärvalidering och tillstånd",
+      "emailLabel": "E-post (giltig)",
+      "emailValid": "✓ E-postadressen är giltig",
+      "passwordLabel": "Lösenord (Fel)",
+      "passwordError": "✗ Lösenordet måste vara minst 8 tecken",
+      "submit": "Skicka formulär"
+    },
+    "card": {
+      "title": "Kort med statusfärger",
+      "description": "Hur man använder färger i kortkomponenter med olika tillstånd",
+      "apiServer": "API-server",
+      "online": "online",
+      "operational": "Alla system är i funktion",
+      "database": "Databas",
+      "maintenance": "underhåll",
+      "maintenanceProgress": "Planerat underhåll pågår"
+    },
+    "navigation": {
+      "title": "Navigering med färglägen",
+      "description": "Hur man använder färger för navigeringslägen och aktiva objekt",
+      "dashboard": "Instrumentpanel",
+      "users": "Användare",
+      "settings": "Inställningar"
+    },
+    "progress": {
+      "title": "Förloppsmärken med färger",
+      "description": "Hur man använder färger för progressstrecks- och laddningsstater",
+      "label": "Framsteg",
+      "complete75": "75 % klar",
+      "success": "Framgång",
+      "complete100": "100 % klar"
+    }
+  },
+  "guidelines": {
+    "title": "Användningsanvisningar",
+    "doTitle": "✓ Göra",
+    "do": [
+      "Använd semantiska färger för konsekvent betydelse",
+      "Använd komponentfärger för användargränssnittselement",
+      "Testa färger i både ljus- och mörkt läge",
+      "Se till att det finns tillräcklig kontrast för tillgänglighet",
+      "Använd färgverktygsfunktioner för konsekvens"
+    ],
+    "dontTitle": "✗ Gör inte",
+    "dont": [
+      "Använd rå hex-värden direkt i komponenter",
+      "Blanda olika färgsystem",
+      "Skapa anpassade färger utan designgodkännande",
+      "Använd färger som inte fungerar i mörkt läge",
+      "Ignorera krav på kontrast för tillgänglighet"
+    ]
+  },
+  "copyInstructions": {
+    "title": "Klicka för att kopiera värden",
+    "description": "Klicka på någon färgskiva för att kopiera dess hexvärde, eller använd kopieringsknappen i kodexemplen för att kopiera användningskoden"
+  }
+}

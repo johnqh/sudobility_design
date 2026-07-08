@@ -1,0 +1,197 @@
+{
+  "seo": {
+    "title": "モーダル - デザインシステム - 内部 - {{emailDomain}}",
+    "description": "Web3のパターンとアクセシビリティ機能を備えたモーダルおよびダイアログコンポーネント"
+  },
+  "header": {
+    "badge": "モーダルとダイアログ",
+    "title": "モーダルコンポーネント",
+    "description": "Web3統合パターン、アクセシビリティ機能、応答性のある動作を備えた包括的なモーダルおよびダイアログシステム。ウォレット接続、取引確認、ユーザー操作に最適です。"
+  },
+  "common": {
+    "copyToClipboard": "クリップボードにコピー",
+    "cancel": "キャンセル"
+  },
+  "quickStart": {
+    "heading": "クイックスタート",
+    "examples": {
+      "basic": {
+        "title": "基本モーダル",
+        "description": "ヘッダー、コンテンツ、フッターを備えた標準モーダル"
+      },
+      "confirmation": {
+        "title": "確認ダイアログ",
+        "description": "アクションボタンを備えたシンプルな確認ダイアログ"
+      },
+      "wallet": {
+        "title": "Web3ウォレット接続",
+        "description": "ウォレット選択および接続のモーダル"
+      },
+      "transaction": {
+        "title": "取引ステータス",
+        "description": "取引の進捗状況とステータスを表示するモーダル"
+      }
+    }
+  },
+  "demos": {
+    "heading": "インタラクティブデモ",
+    "cards": {
+      "simpleModal": {
+        "title": "基本モーダル",
+        "description": "ヘッダー、コンテンツ、フッターを備えた標準モーダル。"
+      },
+      "confirmationModal": {
+        "title": "確認ダイアログ",
+        "description": "破壊的行動を伴うシンプルな確認ダイアログ。"
+      },
+      "walletModal": {
+        "title": "ウォレット接続",
+        "description": "Web3ウォレット選択および接続インターフェース。"
+      },
+      "transactionModal": {
+        "title": "取引ステータス",
+        "description": "取引の進捗およびステータスフィードバックモーダル。"
+      },
+      "formModal": {
+        "title": "フォームモーダル",
+        "description": "フォーム要素と検証を含むモーダル。"
+      },
+      "settingsModal": {
+        "title": "設定パネル",
+        "description": "複雑な設定と設定を扱うための大きなモーダル。"
+      }
+    }
+  },
+  "sizes": {
+    "heading": "サイズバリエーション",
+    "availableTitle": "利用可能なサイズ",
+    "availableDescription": "コンテンツの要件に応じて、適切なモーダルサイズを選択してください。",
+    "boxLabel": "{{name}} モーダル ({{maxWidth}})",
+    "names": {
+      "small": "小さな",
+      "medium": "Medium",
+      "large": "大",
+      "extraLarge": "エクストララージ"
+    }
+  },
+  "web3": {
+    "heading": "Web3統合パターン",
+    "walletFlow": {
+      "title": "ウォレット接続フロー",
+      "description": "プロバイダ選択によるウォレット接続体験を完了します。"
+    },
+    "transactionConfirmation": {
+      "title": "取引確認",
+      "description": "取引の詳細と確認インターフェース。"
+    }
+  },
+  "accessibility": {
+    "heading": "アクセシビリティガイドライン",
+    "ariaTitle": "ARIA 属性とベストプラクティス",
+    "ariaDescription": "モーダルがすべてのユーザーにアクセス可能であることを確認するため、これらのガイドラインに従ってください。",
+    "requiredAria": "必須のARIA属性",
+    "focusManagement": "フォーカス管理",
+    "focusItems": [
+      "モーダルが開かれたときに、最初のフォーカス可能な要素にフォーカスが移動するべきです",
+      "タブナビゲーションはモーダル内に閉じ込められるべきです",
+      "モーダルが閉じられたときに、フォーカスはトリガー要素に戻るべきです",
+      "ESCキーはモーダルを閉じるべきです"
+    ],
+    "screenReader": "スクリーンリーダー対応",
+    "screenReaderItems": [
+      "意味のあるHTML要素（button、formなど）を使用してください",
+      "すべてのインタラクティブな要素に明確で説明的なラベルを提供してください。",
+      "ライブ領域を使ってモーダルの状態変更を通知する"
+    ]
+  },
+  "implementation": {
+    "heading": "実装ノート",
+    "portalTitle": "React Portal の使用",
+    "portalDescription": "z-indexの問題を回避し、適切なレイヤリングを確保するために、モーダルをポータル内でレンダリングしてください。",
+    "animationTitle": "アニメーションに関する考慮事項",
+    "animationDescription": "CSSアニメーションまたはFramer Motionなどのライブラリを使って、モーダルの遷移をスムーズにします。",
+    "animationItems": [
+      "• オーバーレイのフェードイン/アウト",
+      "• モーダルコンテンツのスケーリングまたはスライド",
+      "• ユーザーの動きの好みを尊重する",
+      "• アニメーションを300ミリ秒未満に保つ"
+    ]
+  },
+  "simpleModal": {
+    "title": "シンプルなモーダルの例",
+    "body": "これは標準的なヘッダー、コンテンツ、フッターを備えた基本的なモーダルです。モーダルの典型的な構造とスタイリングを示しています。",
+    "hint": "モーダルの外をクリックするか、閉じるボタンを押して閉じてください。",
+    "gotIt": "了解しました"
+  },
+  "confirmationModal": {
+    "title": "アイテムを削除",
+    "body": "このアイテムを削除してもよろしいですか？この操作は元に戻せません。",
+    "delete": "削除"
+  },
+  "walletModal": {
+    "title": "ウォレットを接続する",
+    "choose": "{{emailDomain}} プラットフォームに接続するウォレットを選択してください",
+    "metamask": "MetaMask",
+    "metamaskDescription": "人気のブラウザ拡張機能",
+    "walletConnect": "WalletConnect",
+    "walletConnectDescription": "モバイルウォレットでスキャン",
+    "phantom": "ファントム",
+    "phantomDescription": "Solanaウォレット"
+  },
+  "transactionModal": {
+    "title": {
+      "idle": "取引を送信する",
+      "pending": "取引保留中",
+      "confirming": "取引の確認",
+      "success": "取引が成功しました",
+      "error": "取引に失敗しました"
+    },
+    "description": {
+      "idle": "取引の詳細を確認して、続行するための承認を行ってください。",
+      "pending": "ウォレットで取引を確認してください...",
+      "confirming": "ブロックチェーンの確認を待っています...",
+      "success": "取引は正常に完了しました。",
+      "error": "取引は拒否されたか失敗しました。再度お試しください。"
+    },
+    "amount": "金額：",
+    "gasFee": "ガス手数料：",
+    "total": "合計：",
+    "confirm": "取引を確認する",
+    "close": "閉じる"
+  },
+  "formModal": {
+    "title": "お問い合わせフォーム",
+    "firstName": "名",
+    "firstNamePlaceholder": "お名前を入力してください",
+    "lastName": "姓",
+    "lastNamePlaceholder": "姓を入力してください",
+    "email": "メールアドレス",
+    "emailPlaceholder": "メールアドレスを入力してください",
+    "message": "メッセージ",
+    "messagePlaceholder": "メッセージを入力してください...",
+    "send": "メッセージを送信"
+  },
+  "settingsModal": {
+    "title": "設定と設定",
+    "account": "アカウント設定",
+    "emailNotifications": "メール通知",
+    "emailNotificationsDescription": "アカウントの活動に関する通知を受け取る",
+    "twoFactor": "二要素認証",
+    "twoFactorDescription": "アカウントのセキュリティをさらに強化する",
+    "privacy": "プライバシー設定",
+    "profileVisibility": "プロフィールの表示設定",
+    "visibilityPublic": "公開",
+    "visibilityFriends": "友達のみ",
+    "visibilityPrivate": "プライベート",
+    "dataSharing": "データ共有",
+    "analyticsConsent": "分析データの収集を許可する",
+    "thirdPartyConsent": "第三者と使用データを共有する",
+    "appearance": "外観",
+    "theme": "テーマ",
+    "themeLight": "光",
+    "themeDark": "暗い",
+    "themeAuto": "自動",
+    "resetDefaults": "デフォルトにリセット",
+    "saveChanges": "変更を保存"
+  }
+}

@@ -1,0 +1,117 @@
+{
+  "seo": {
+    "title": "Formulär - Designsystem - Interna - {{emailDomain}}",
+    "description": "Kompletta formulärkomponenter och inmatningskomponenter visar för designsystemet"
+  },
+  "codeExample": {
+    "preview": "Förhandsgranskning",
+    "usage": "Användning"
+  },
+  "header": {
+    "badge": "Formulärkomponenter",
+    "title": "Formulärkomponenter och inmatningselement",
+    "description": "Komplett bibliotek av formulärkomponenter med konsekvent formatering, valideringslägen och tillgänglighetsfunktioner. Alla komponenter stöder ljus/mörkt läge och innehåller korrekt fokushantering."
+  },
+  "quickStart": {
+    "title": "Snabbstart – Essentiella formulärmallar",
+    "description": "Klart att använda formuläradelar med korrekt validering, tillgänglighet och responsiv design.",
+    "textInput": {
+      "title": "Textinmatning",
+      "label": "E-postadress",
+      "placeholder": "Ange din e-post..."
+    },
+    "select": {
+      "title": "Välj rullgardinsmeny",
+      "label": "Blockchain-nätverk",
+      "placeholder": "Välj ett nätverk..."
+    },
+    "checkbox": {
+      "title": "Avmarkningsruta",
+      "agree": "Jag godkänner villkoren för tjänsten och integritetspolicy"
+    },
+    "textarea": {
+      "title": "Textområde",
+      "label": "Meddelande",
+      "placeholder": "Skriv ditt meddelande..."
+    }
+  },
+  "inputTypes": {
+    "title": "Indatatyper och varianter",
+    "description": "Olika inmatnings typer med konsekvent formatering över alla formulärkomponenter.",
+    "textInputTypes": {
+      "title": "Typ av textinmatning",
+      "description": "Olika inmatningstyper med konsekvent stil",
+      "textPlaceholder": "Textinmatning",
+      "passwordPlaceholder": "Lösenord"
+    },
+    "sizes": {
+      "title": "Inmatningsstorlekar",
+      "description": "Olika inmatningsstorlekar för olika användningsområden",
+      "smallPlaceholder": "Liten inmatning",
+      "defaultPlaceholder": "Standardindata",
+      "largePlaceholder": "Stor inmatning"
+    }
+  },
+  "validation": {
+    "title": "Valideringslägen",
+    "description": "Formulärvalideringslägen med korrekt färgkodning och meddelanden.",
+    "success": {
+      "title": "Framgångstillstånd",
+      "description": "Giltigt inmatning med lyckostil",
+      "label": "E-postadress",
+      "message": "Giltig e-postadress"
+    },
+    "error": {
+      "title": "Fel tillstånd",
+      "description": "Ogiltig inmatning med felstilning",
+      "label": "Lösenord",
+      "message": "Lösenordet måste vara minst 8 tecken"
+    }
+  },
+  "advanced": {
+    "title": "Avancerade formulärkomponenter",
+    "description": "Mer komplexa formulärsmönster med förbättrad funktionalitet.",
+    "passwordToggle": {
+      "title": "Lösenordsinmatning med växla",
+      "description": "Lösenordsfält med visnings-/döljningsfunktion",
+      "label": "Lösenord",
+      "placeholder": "Ange lösenord..."
+    },
+    "radio": {
+      "title": "Radioknappgrupp",
+      "description": "Radioknappar för enskild val",
+      "label": "Prenumerationsplan",
+      "free": "Gratis plan - Grundläggande funktioner",
+      "pro": "Pro-plan - Avancerade funktioner"
+    }
+  },
+  "complete": {
+    "title": "Fyll i formulär exempel",
+    "description": "En omfattande form som visar alla formulärkomponenter som fungerar tillsammans.",
+    "form": {
+      "title": "Web3-profilformulär",
+      "description": "Fyll i formuläret med alla elementtyper och validering",
+      "displayNameLabel": "Visningsnamn",
+      "displayNamePlaceholder": "Ditt visningsnamn",
+      "emailLabel": "E-postadress",
+      "networkLabel": "Föredrat nätverk",
+      "networkPlaceholder": "Välj ett nätverk...",
+      "bioLabel": "Bio",
+      "bioPlaceholder": "Berätta om dig själv...",
+      "notifications": "Jag godkänner att ta emot e-postmeddelanden",
+      "submit": "Spara profil"
+    }
+  },
+  "accessibility": {
+    "title": "Riktlinjer för tillgänglighet",
+    "heading": "Bästa praxis för formulärs tillgänglighet",
+    "items": {
+      "labelsBefore": "Använd alltid rätt metod",
+      "labelsAfter": "element relaterade till inmatning",
+      "errorMessages": "Inkludera tydliga felmeddelanden med valideringslägen",
+      "focusStates": "Se till att fokuslägen är tydligt synliga med ring-verktyg",
+      "inputTypes": "Använd lämpliga inmatningstyper (e-post, lösenord osv.) för en bättre mobilupplevelse",
+      "contrast": "Säkerställ tillräcklig färgkontrast (minsta förhållande 4,5:1)"
+    }
+  }
+}

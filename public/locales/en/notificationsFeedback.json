@@ -1,0 +1,188 @@
+{
+  "seo": {
+    "title": "Notifications & Feedback - Design System - Internal - {{emailDomain}}",
+    "description": "Notification and feedback components including toasts, progress indicators, and system status"
+  },
+  "toasts": {
+    "copied": {
+      "title": "Copied!",
+      "message": "Code copied to clipboard"
+    },
+    "complete": {
+      "title": "Complete!",
+      "message": "Operation completed successfully"
+    },
+    "success": {
+      "title": "Transaction Confirmed!",
+      "message": "Your ETH transfer was successful"
+    },
+    "error": {
+      "title": "Transaction Failed",
+      "message": "Insufficient gas for transaction"
+    },
+    "warning": {
+      "title": "High Gas Fees",
+      "message": "Network congestion detected",
+      "actionLabel": "Adjust Gas"
+    },
+    "gasAdjusted": {
+      "title": "Gas Adjusted",
+      "message": "Gas price updated to 25 gwei"
+    },
+    "info": {
+      "title": "New Feature Available",
+      "message": "Multi-chain swaps now supported"
+    }
+  },
+  "header": {
+    "badge": "Notifications & Feedback",
+    "title": "Notifications & Feedback System",
+    "description": "Comprehensive notification and feedback system including toasts, progress indicators, transaction status updates, and system status displays for Web3 applications."
+  },
+  "quickStart": {
+    "title": "Quick Start",
+    "copyTooltip": "Copy to clipboard",
+    "examples": {
+      "toast": {
+        "title": "Toast Notifications",
+        "description": "Temporary notifications with auto-dismiss and actions"
+      },
+      "progress": {
+        "title": "Progress Notifications",
+        "description": "Show progress for long-running operations"
+      },
+      "transaction": {
+        "title": "Transaction Status",
+        "description": "Web3 transaction progress with confirmations"
+      },
+      "systemStatus": {
+        "title": "System Status Indicator",
+        "description": "Real-time system and connection status"
+      }
+    }
+  },
+  "toastSection": {
+    "title": "Toast Notifications",
+    "demoTitle": "Interactive Toast Demos",
+    "demoDescription": "Click buttons to trigger different types of toast notifications",
+    "buttons": {
+      "success": "Success",
+      "error": "Error",
+      "warning": "Warning",
+      "info": "Info"
+    },
+    "featuresTitle": "Toast Types & Features",
+    "features": {
+      "successLabel": "Success:",
+      "successText": "Transaction confirmations, completed actions",
+      "errorLabel": "Error:",
+      "errorText": "Failed transactions, network errors",
+      "warningLabel": "Warning:",
+      "warningText": "High gas fees, security warnings (with actions)",
+      "infoLabel": "Info:",
+      "infoText": "New features, system updates (persistent)",
+      "autoDismiss": "Auto-dismiss after 5 seconds (unless persistent)",
+      "actionButtons": "Optional action buttons for interactive responses"
+    }
+  },
+  "progressSection": {
+    "title": "Progress Indicators",
+    "linear": {
+      "title": "Linear Progress",
+      "description": "Progress bars for file uploads and operations",
+      "emailSync": "Email Sync Progress",
+      "fileUpload": "File Upload",
+      "uploading": "Uploading document.pdf (2.3 MB)",
+      "simulate": "Simulate Progress"
+    },
+    "spinners": {
+      "title": "Loading Spinners",
+      "description": "Various loading states and spinners",
+      "loadingTransactions": "Loading transactions...",
+      "connectingWallet": "Connecting to wallet...",
+      "syncingBlockchain": "Syncing blockchain data..."
+    }
+  },
+  "transactionSection": {
+    "title": "Web3 Transaction Status",
+    "trackerTitle": "Transaction Tracker",
+    "trackerDescription": "Real-time transaction status with confirmation progress",
+    "confirmations": "confirmations",
+    "confirmationsLabel": "Confirmations",
+    "statuses": {
+      "pending": "Pending",
+      "confirming": "Confirming",
+      "confirmed": "Confirmed",
+      "failed": "Failed"
+    },
+    "types": {
+      "sendEth": "Send ETH",
+      "swapTokens": "Swap Tokens",
+      "approveToken": "Approve Token"
+    },
+    "statesTitle": "Transaction States",
+    "states": {
+      "pendingLabel": "Pending:",
+      "pendingText": "Transaction submitted to mempool",
+      "confirmingLabel": "Confirming:",
+      "confirmingText": "Being included in blocks (shows progress)",
+      "confirmedLabel": "Confirmed:",
+      "confirmedText": "Required confirmations reached",
+      "failedLabel": "Failed:",
+      "failedText": "Transaction reverted or rejected"
+    }
+  },
+  "systemStatusSection": {
+    "title": "System Status & Indicators",
+    "connection": {
+      "title": "Connection Status",
+      "description": "Real-time connection and system status",
+      "systemStatus": "System Status",
+      "online": "All systems operational",
+      "degraded": "Some services unavailable",
+      "offline": "System maintenance",
+      "statusLabels": {
+        "online": "Online",
+        "degraded": "Degraded",
+        "offline": "Offline"
+      },
+      "internetConnection": "Internet Connection",
+      "connected": "Connected",
+      "walletConnection": "Wallet Connection",
+      "metaMask": "MetaMask",
+      "ethereumNetwork": "Ethereum Network",
+      "mainnet": "Mainnet",
+      "securityStatus": "Security Status",
+      "warning": "Warning"
+    },
+    "badges": {
+      "title": "Notification Badges",
+      "description": "Count indicators and status badges",
+      "countBadges": "Count Badges",
+      "statusIndicators": "Status Indicators",
+      "online": "Online",
+      "away": "Away",
+      "offline": "Offline"
+    }
+  },
+  "contextualFeedback": {
+    "title": "Contextual Feedback",
+    "smartTitle": "Smart Feedback Patterns",
+    "smartDescription": "Context-aware feedback that adapts to user actions and system state",
+    "actionFeedback": "Action Feedback",
+    "emailSent": "Email sent successfully",
+    "autoSave": "Auto-save enabled",
+    "draftSaved": "Draft saved locally",
+    "smartSuggestions": "Smart Suggestions",
+    "enable2fa": {
+      "title": "Enable 2FA for better security",
+      "description": "Recommended for wallet protection",
+      "action": "Enable"
+    },
+    "backupSeed": {
+      "title": "Back up your seed phrase",
+      "description": "Secure your wallet recovery",
+      "action": "Backup"
+    }
+  }
+}

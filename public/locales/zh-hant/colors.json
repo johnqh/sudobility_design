@@ -1,0 +1,291 @@
+{
+  "seo": {
+    "title": "顏色 - 設計系統 - 內部 - {{emailDomain}}",
+    "description": "完整的設計系統配色方案及變體展示"
+  },
+  "nav": {
+    "viewTypography": "查看排版"
+  },
+  "header": {
+    "badge": "顏色系統",
+    "title": "配色方案與使用",
+    "description": "完整色彩系統應用於整個 {{appName}} 應用程式中，並包含使用範例和程式碼範例。點選任何顏色即可將其十六進位值複製到剪貼簿。"
+  },
+  "swatch": {
+    "copyAria": "複製 {{name}} 顏色值 {{value}}"
+  },
+  "codeExample": {
+    "preview": "預覽",
+    "usage": "使用"
+  },
+  "quickStart": {
+    "title": "快速入門 - 常見用法範例",
+    "description": "適用於最常見設計模式的即用型程式碼範例。直接複製並貼上到您的元件中。",
+    "primaryButton": {
+      "title": "主按鈕",
+      "action": "主要操作"
+    },
+    "successAlert": {
+      "title": "成功警報",
+      "heading": "成功！",
+      "body": "您的操作已成功完成。"
+    },
+    "blockchainBadge": {
+      "title": "區塊鏈徽章"
+    },
+    "formInput": {
+      "title": "表單輸入",
+      "placeholder": "輸入您的電郵..."
+    }
+  },
+  "palettes": {
+    "title": "配色方案",
+    "description": "按色相組織的基礎色板。每個色板包含從50（最淺）到950（最深）的色調。",
+    "items": {
+      "blue": {
+        "name": "藍色（主）",
+        "description": "主品牌色板"
+      },
+      "purple": {
+        "name": "紫色（次要）",
+        "description": "輔助品牌配色"
+      },
+      "neutral": {
+        "name": "中性（灰階）",
+        "description": "背景、文字和邊框顏色"
+      },
+      "red": {
+        "name": "紅色（錯誤）",
+        "description": "錯誤和破壞性動作顏色"
+      },
+      "green": {
+        "name": "綠色（成功）",
+        "description": "成功和積極行動的顏色"
+      },
+      "amber": {
+        "name": "琥珀色（警告）",
+        "description": "警告和警示顏色"
+      },
+      "orange": {
+        "name": "橙",
+        "description": "強調和高亮顏色"
+      }
+    }
+  },
+  "networks": {
+    "ethereum": "以太坊",
+    "solana": "Solana",
+    "polygon": "多邊形"
+  },
+  "web3": {
+    "title": "Web3 網路顏色",
+    "description": "代表不同區塊鏈網絡和Web3元素的顏色。",
+    "usage": {
+      "ethereum": "以太坊網絡品牌",
+      "solana": "Solana網絡品牌",
+      "polygon": "Polygon網絡品牌"
+    },
+    "code": {
+      "title": "Web3 配色使用",
+      "description": "如何在組件中使用Web3網絡顏色"
+    }
+  },
+  "semantic": {
+    "title": "語義色彩",
+    "description": "語義顏色標記，可自動適配亮色和暗色主題。這些標記在介面中提供一致的語義。",
+    "lightMode": "淺色模式",
+    "darkMode": "深色模式",
+    "categories": {
+      "text": {
+        "name": "文字顏色",
+        "colors": {
+          "primaryText": {
+            "name": "主文本",
+            "usage": "主內容文字"
+          },
+          "secondaryText": {
+            "name": "次要文本",
+            "usage": "支援文字"
+          },
+          "linkText": {
+            "name": "連結文字",
+            "usage": "互動式連結"
+          }
+        }
+      },
+      "background": {
+        "name": "背景顏色",
+        "colors": {
+          "primaryBackground": {
+            "name": "主背景",
+            "usage": "主頁背景"
+          },
+          "secondaryBackground": {
+            "name": "次要背景",
+            "usage": "卡牌背景"
+          },
+          "elevatedBackground": {
+            "name": "提升背景",
+            "usage": "彈窗和覆蓋層"
+          }
+        }
+      },
+      "state": {
+        "name": "州色",
+        "colors": {
+          "success": {
+            "name": "成功",
+            "usage": "成功訊息和操作"
+          },
+          "warning": {
+            "name": "警告",
+            "usage": "警告訊息"
+          },
+          "error": {
+            "name": "錯誤",
+            "usage": "錯誤訊息和破壞性操作"
+          },
+          "info": {
+            "name": "資訊",
+            "usage": "資訊訊息"
+          }
+        }
+      }
+    },
+    "code": {
+      "title": "語意色彩使用",
+      "description": "如何在設計系統中使用語義顏色",
+      "preview": {
+        "success": "✓ 成功訊息",
+        "error": "✗ 錯誤訊息",
+        "warning": "⚠ 警告訊息"
+      }
+    }
+  },
+  "components": {
+    "title": "組件顏色與使用範例",
+    "description": "為常見UI組件預設配置的色彩組合，支援內建懸停、焦點和主題功能。",
+    "exampleHeading": "{{name}} 範例",
+    "liveExamples": "即時範例",
+    "alertMessage": "{{name}} 消息",
+    "interactiveHeading": "互動式 {{name}} 範例：",
+    "createPreview": {
+      "button": {
+        "primary": "主要操作",
+        "secondary": "次要操作",
+        "destructive": "刪除項目"
+      },
+      "alert": {
+        "infoLabel": "資訊:",
+        "infoText": "這是一個資訊警示",
+        "successLabel": "成功：",
+        "successText": "操作成功完成",
+        "errorLabel": "錯誤:",
+        "errorText": "發生了某些錯誤"
+      }
+    },
+    "items": {
+      "button": {
+        "name": "按鈕",
+        "createTitle": "如何建立按鈕",
+        "createDescription": "創建帶有正確顏色按鈕的逐步指南",
+        "variantsTitle": "按鈕變體和狀態",
+        "variantsDescription": "所有按鈕顏色變體，包含懸停和焦點狀態",
+        "variants": {
+          "primary": "主要",
+          "secondary": "次級",
+          "destructive": "破壞性的",
+          "success": "成功"
+        }
+      },
+      "badge": {
+        "name": "徽章",
+        "createTitle": "如何建立徽章",
+        "createDescription": "創建帶有正確顏色徽章的逐步指南",
+        "variantsTitle": "徽章變體與狀態",
+        "variantsDescription": "所有徽章顏色變體，包含懸停和焦點狀態",
+        "variants": {
+          "default": "預設",
+          "primary": "主要",
+          "success": "成功",
+          "warning": "警告",
+          "error": "錯誤"
+        }
+      },
+      "alert": {
+        "name": "警報",
+        "createTitle": "如何建立警報",
+        "createDescription": "建立帶有正確顏色警報的逐步指南",
+        "variantsTitle": "警報變體和狀態",
+        "variantsDescription": "所有告警顏色變體，包含懸停和焦點狀態",
+        "variants": {
+          "info": "資訊",
+          "success": "成功",
+          "warning": "警告",
+          "error": "錯誤"
+        }
+      }
+    }
+  },
+  "practical": {
+    "title": "實用範例",
+    "description": "展示如何將顏色組合用於常見UI模式的實際範例。",
+    "form": {
+      "title": "帶顏色編碼狀態的表單",
+      "description": "如何使用顏色進行表單驗證和狀態顯示",
+      "emailLabel": "電子郵件（有效）",
+      "emailValid": "✓ 電子郵件地址有效",
+      "passwordLabel": "密碼（錯誤）",
+      "passwordError": "✗ 密碼必須至少包含8個字符",
+      "submit": "提交表單"
+    },
+    "card": {
+      "title": "狀態顏色卡片",
+      "description": "如何在不同狀態的卡片組件中使用顏色",
+      "apiServer": "API 伺服器",
+      "online": "線上",
+      "operational": "所有系統運作正常",
+      "database": "資料庫",
+      "maintenance": "維護",
+      "maintenanceProgress": "正在進行計劃內維護"
+    },
+    "navigation": {
+      "title": "帶顏色狀態的導航",
+      "description": "如何使用顏色來表示導航狀態和活動項目",
+      "dashboard": "儀表板",
+      "users": "使用者",
+      "settings": "設定"
+    },
+    "progress": {
+      "title": "帶顏色的進度指示器",
+      "description": "如何為進度條和加載狀態使用顏色",
+      "label": "進度",
+      "complete75": "75% 完成",
+      "success": "成功",
+      "complete100": "100% 完成"
+    }
+  },
+  "guidelines": {
+    "title": "使用指南",
+    "doTitle": "✓ 做",
+    "do": [
+      "使用語義顏色以保持一致的含義",
+      "優先使用組件顏色來設定UI元素",
+      "測試淺色和深色模式下的顏色",
+      "確保足夠的對比度以實現可訪問性",
+      "使用顏色工具函數以保持一致性"
+    ],
+    "dontTitle": "✗ 不要",
+    "dont": [
+      "在組件中直接使用原始十六進制值",
+      "混合不同的顏色系統",
+      "建立自訂顏色，無需設計批准",
+      "使用在深色模式下無法正常工作的顏色",
+      "忽略無障礙對比度要求"
+    ]
+  },
+  "copyInstructions": {
+    "title": "點擊以複製值",
+    "description": "點擊任何顏色樣本以複製其十六進制值，或使用程式碼範例中的複製按鈕來複製使用程式碼"
+  }
+}

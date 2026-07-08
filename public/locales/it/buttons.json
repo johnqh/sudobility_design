@@ -1,0 +1,130 @@
+{
+  "seo": {
+    "title": "Pulsanti - Sistema di progettazione - Interno - {{emailDomain}}",
+    "description": "Completare la libreria dei componenti del pulsante con tutte le varianti, dimensioni, stati e interazioni"
+  },
+  "codeExample": {
+    "preview": "Anteprima",
+    "usage": "Utilizzo"
+  },
+  "header": {
+    "badge": "Componenti del pulsante",
+    "title": "Libreria dei pulsanti e modelli di interazione",
+    "intro": "Sistema completo di componenti pulsante con varianti, dimensioni, stati e comportamenti interattivi coerenti. Tutti i pulsanti supportano stati di caricamento, gestione del focus corretta e funzionalità di accessibilità."
+  },
+  "quickStart": {
+    "title": "Avvio rapido - Modelli fondamentali dei pulsanti",
+    "description": "Componenti di pulsanti pronti all'uso con un design coerente, stati e modelli di comportamento.",
+    "primary": {
+      "title": "Pulsante principale dell'azione",
+      "button": "Azione principale"
+    },
+    "secondary": {
+      "title": "Pulsante secondario",
+      "button": "Azione secondaria"
+    },
+    "outline": {
+      "title": "Pulsante contorno",
+      "button": "Azione del contorno"
+    },
+    "ghost": {
+      "title": "Pulsante fantasma",
+      "button": "Azione fantasma"
+    }
+  },
+  "variants": {
+    "title": "Varianti del pulsante",
+    "description": "Diversi stili di pulsanti per vari casi d'uso e livelli di gerarchia.",
+    "colors": {
+      "title": "Varianti di colore",
+      "description": "Colori dei pulsanti principali, secondari, successo, avviso e distruttivi",
+      "primary": "Principale",
+      "success": "Successo",
+      "warning": "Avviso",
+      "destructive": "Distruttivo"
+    },
+    "sizes": {
+      "title": "Dimensioni dei pulsanti",
+      "description": "Piccole, predefinite e grandi dimensioni dei pulsanti per diversi contesti",
+      "small": "Piccolo",
+      "default": "Predefinito",
+      "large": "Grande"
+    }
+  },
+  "states": {
+    "title": "Stati del pulsante",
+    "description": "Stati interattivi, inclusi passaggio del mouse, attivo, focus, caricamento e disabilitato.",
+    "interactive": {
+      "title": "Stati interattivi",
+      "description": "Stati normali, al passaggio, attivi e al focus con transizioni corrette",
+      "button": "Pulsante interattivo",
+      "secondary": "Interazione secondaria"
+    },
+    "loading": {
+      "title": "Stati di caricamento e disabilitato",
+      "description": "Integrazione del caricatore di caricamento e stile corretto per disabilitato",
+      "loadingLabel": "Caricamento...",
+      "demoLabel": "Caricamento demo",
+      "disabled": "Disabilitato"
+    }
+  },
+  "icons": {
+    "title": "Pulsanti con icone e combinazioni",
+    "description": "Pulsanti con icone, pulsanti solo con icone e pulsanti a commutazione per un'usabilità migliorata.",
+    "withIcons": {
+      "title": "Pulsanti con icone",
+      "description": "Pulsanti di testo migliorati con icone per una migliore riconoscibilità",
+      "sendMessage": "Invia messaggio",
+      "download": "Scarica",
+      "settingsTitle": "Impostazioni"
+    },
+    "toggle": {
+      "title": "Pulsanti di commutazione e azione",
+      "description": "Pulsanti commutatori e modelli specifici di pulsanti d'azione",
+      "liked": "Piacevole",
+      "like": "Come",
+      "delete": "Elimina",
+      "edit": "Modifica"
+    }
+  },
+  "groups": {
+    "title": "Gruppi e combinazioni di pulsanti",
+    "description": "Pulsanti raggruppati, barre dei pulsanti e combinazioni di azioni per interfacce complesse.",
+    "buttonGroups": {
+      "title": "Gruppi di pulsanti",
+      "description": "Gruppi di pulsanti collegati per azioni correlate",
+      "connectedLabel": "Gruppo collegato:",
+      "previous": "Precedente",
+      "current": "Attuale",
+      "next": "Prossimo",
+      "spacedLabel": "Gruppo spaziatore:",
+      "primary": "Principale",
+      "secondary": "Secondario",
+      "cancel": "Annulla"
+    },
+    "actionBars": {
+      "title": "Barre di azione e barre degli strumenti",
+      "description": "Combinazioni complesse di pulsanti per barre degli strumenti e aree di azione",
+      "new": "Nuovo",
+      "editTitle": "Modifica",
+      "shareTitle": "Condividi",
+      "cancel": "Annulla",
+      "delete": "Elimina"
+    }
+  },
+  "accessibility": {
+    "title": "Accessibilità e migliori pratiche",
+    "guidelinesTitle": "Linee guida per l'accessibilità dei pulsanti",
+    "list": {
+      "semanticBefore": "Usa la semantica",
+      "semanticAfter": "elementi invece di div",
+      "contrast": "Assicurati un contrasto cromatico sufficiente (minimo 4,5:1)",
+      "focus": "Includi gli stati di focus per la navigazione con la tastiera",
+      "loadingStates": "Aggiungi stati di caricamento per evitare invii doppie",
+      "ariaLabels": "Utilizzare etichette ARIA appropriate per i pulsanti con solo icona",
+      "touchTarget": "Mantieni la dimensione minima dell'obiettivo touch (44px x 44px)",
+      "feedback": "Fornire un feedback visivo chiaro per tutti gli stati",
+      "grouping": "Raggruppa logicamente i pulsanti correlati con un adeguato spazio"
+    }
+  }
+}

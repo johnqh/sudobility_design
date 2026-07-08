@@ -1,0 +1,127 @@
+{
+  "seo": {
+    "title": "Ladezustände - Design-System - Intern - {{emailDomain}}",
+    "description": "Umfassende Dokumentation zum Laden-Zustand mit Spinnern, Skeletons, Fortschrittsanzeigern und Web3-Mustern"
+  },
+  "copy": {
+    "copied": "✓ Kopiert!",
+    "copy": "Kopieren"
+  },
+  "header": {
+    "badge": "Ladezustände",
+    "title": "Lade Statuskomponenten",
+    "description": "Ladeindikatoren und Fortschrittszustände, die klare visuelle Rückmeldung bei asynchronen Vorgängen liefern, speziell für Web3-Transaktionen und Blockchain-Interaktionen entwickelt.",
+    "stats": {
+      "spinnerTypes": "Spinnertypen",
+      "skeletonPatterns": "Skelettmuster",
+      "progressTypes": "Fortschrittstypen",
+      "web3Examples": "Web3-Beispiele"
+    }
+  },
+  "quickStart": {
+    "title": "🚀 Schnellstart",
+    "description": "Beginnen Sie mit den am häufigsten verwendeten Lade Mustern. Diese Beispiele zeigen wesentliche Ladezustände für verschiedene Anwendungsfälle.",
+    "spinners": {
+      "title": "1. Grundlegende Lade-Spinners",
+      "small": "Klein",
+      "default": "Standard",
+      "large": "Groß"
+    },
+    "buttons": {
+      "title": "2. Zustände der Lade-Schaltfläche",
+      "loading": "Lade...",
+      "clickToLoad": "Klicken zum Laden",
+      "processing": "Verarbeitung",
+      "uploading": "Lade hoch..."
+    },
+    "progress": {
+      "title": "3. Fortschrittsindikatoren",
+      "label": "Fortschritt",
+      "startDemo": "Starten Sie die Demo"
+    },
+    "skeleton": {
+      "title": "4. Skelett-Laden"
+    }
+  },
+  "web3": {
+    "title": "⚡ Web3-Lade-Muster",
+    "description": "Spezialisierte Ladezustände für Web3-Operationen, einschließlich Wallet-Verbindungen, Transaktionen und Blockchain-Bestätigungen.",
+    "transaction": {
+      "title": "Zustände beim Transaktionsladen",
+      "startDemo": "Transaktion Demo starten",
+      "currentState": "Aktueller Zustand: {{state}}",
+      "pending": {
+        "title": "Transaktion ausstehend",
+        "message": "Bitte bestätigen Sie die Transaktion in Ihrer Wallet..."
+      },
+      "confirming": {
+        "title": "Transaktion bestätigen",
+        "message": "Transaktion übermittelt. Warte auf Bestätigung durch die Blockchain...",
+        "hash": "Hash: 0x1234...abcd"
+      },
+      "confirmed": {
+        "title": "Transaktion bestätigt",
+        "message": "Ihre Transaktion wurde auf der Blockchain bestätigt!",
+        "block": "Block: #18.234.567"
+      }
+    },
+    "wallet": {
+      "title": "Zustände der Brieftaschenverbindung",
+      "connecting": {
+        "title": "Wallet verbinden",
+        "message": "Bitte genehmigen Sie die Verbindung in Ihrem Wallet"
+      },
+      "network": {
+        "title": "Netzwerk erkennen",
+        "message": "Überprüfe die Netzwerkkompatibilität..."
+      }
+    },
+    "email": {
+      "title": "E-Mail- und Nachrichten-Ladevorgang",
+      "encrypting": {
+        "title": "Nachricht verschlüsseln...",
+        "message": "Sichern Ihrer E-Mail mit Web3-Verschlüsselung"
+      },
+      "sending": {
+        "title": "Senden an die Blockchain...",
+        "message": "E-Mail-Metadaten auf der Blockchain aufzeichnen"
+      },
+      "uploadProgress": "Hochladefortschritt",
+      "uploading": "Lade hoch...",
+      "startUploadDemo": "Upload-Demo starten"
+    }
+  },
+  "skeletons": {
+    "title": "💀 Skelett-Muster",
+    "description": "Inhaltsplatzhalter, die die Struktur des Ladeneingangs nachahmen, um die wahrgenommene Leistung zu verbessern.",
+    "emailList": "E-Mail-Liste Skelett",
+    "cardContent": "Karteninhalts-Skelett"
+  },
+  "accessibility": {
+    "title": "♿ Barrierefreiheitsrichtlinien",
+    "description": "Stellen Sie sicher, dass Ihre Ladezustände mit geeigneten ARIA-Attributen, Unterstützung für Bildschirmleser und Fokusanalyse zugänglich sind.",
+    "bestPractices": {
+      "title": "✅ Best Practices",
+      "items": [
+        "Verwenden Sie ARIA live regions für dynamische Ladezustände",
+        "Geben Sie sinnvolle Lade-Meldungen an",
+        "Fügen Sie bei Gelegenheit Fortschrittsinformationen hinzu",
+        "Verwenden Sie reduzierte Bewegung für Benutzer, die dies bevorzugen",
+        "Stellen Sie die Fokusverwaltung während des Ladevorgangs sicher"
+      ]
+    },
+    "avoid": {
+      "title": "❌ Vermeiden",
+      "items": [
+        "Ladeindikatoren ohne Textalternativen",
+        "Unendliches Laden ohne Fortschrittsanzeige",
+        "Schnellflackernde Animationen, die Krampfanfälle auslösen können",
+        "Entfernen des Fokus oder des Inhalts ohne Warnung",
+        "Generische \"Laden...\"-Nachrichten ohne Kontext"
+      ]
+    },
+    "implementation": "Implementierung der Barrierefreiheit"
+  },
+  "backToDesignSystem": "Zurück zum Design-System",
+  "lastUpdated": "Zuletzt aktualisiert: {{date}}"
+}

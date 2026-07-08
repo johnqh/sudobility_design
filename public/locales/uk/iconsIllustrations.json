@@ -1,0 +1,155 @@
+{
+  "seo": {
+    "title": "Іконки та ілюстрації — Система проектування — Внутрішній — {{emailDomain}}",
+    "description": "Комплексна система іконок із послідовними розмірами, кольорами та контекстними шаблонами використання"
+  },
+  "header": {
+    "badge": "Піктограми та ілюстрації",
+    "title": "Піктограми та ілюстрації",
+    "description": "Універсальна система іконок із єдиною розмірною, кольоровою та контекстною логікою використання. Створена з використанням Heroicons і оптимізована для доступності та темного режиму."
+  },
+  "sizes": {
+    "title": "Розміри піктограм",
+    "variantsTitle": "Розмірні варіанти",
+    "usageTitle": "Розмір Використання",
+    "labels": {
+      "xs": "xs (12px)",
+      "sm": "sm (16px)",
+      "md": "md (20px)",
+      "lg": "lg (24px)",
+      "xl": "xl (32px)",
+      "xxl": "xxl (40px)",
+      "xxxl": "xxxl (48px)"
+    }
+  },
+  "colors": {
+    "title": "Кольори позначок",
+    "variantsTitle": "Кольорові варіанти",
+    "web3Title": "Кольори Web3",
+    "default": {
+      "label": "За замовчуванням",
+      "value": "Сірий 500 / 400"
+    },
+    "brand": {
+      "label": "Бренд",
+      "value": "Синій 600 / 400"
+    },
+    "success": {
+      "label": "Успіх",
+      "value": "Зелений 600 / 400"
+    },
+    "warning": {
+      "label": "Попередження",
+      "value": "Білий 600 / 400"
+    },
+    "error": {
+      "label": "Помилка",
+      "value": "Червоний 600 / 400"
+    },
+    "interactive": {
+      "label": "Інтерактивний",
+      "value": "Ефекти наведення"
+    },
+    "ethereum": {
+      "label": "Ethereum",
+      "value": "Синій 600 / 400"
+    },
+    "solana": {
+      "label": "Solana",
+      "value": "Фіолетовий 600 / 400"
+    },
+    "bitcoin": {
+      "label": "Bitcoin",
+      "value": "Помаранчевий 600 / 400"
+    }
+  },
+  "context": {
+    "title": "Контекстно-залежні іконки",
+    "buttonTitle": "Піктограми кнопок",
+    "inputTitle": "Піктограми введення",
+    "leadingIcon": "Головна іконка",
+    "trailingIcon": "Значок в кінці",
+    "iconOnly": "Лише іконка",
+    "trailingInteractive": "Інтерактивний хвіст",
+    "addItem": "Додати елемент",
+    "continue": "Продовжити",
+    "searchPlaceholder": "Шукати...",
+    "passwordPlaceholder": "Пароль"
+  },
+  "status": {
+    "title": "Значки стану",
+    "success": {
+      "title": "Успіх",
+      "description": "Операція успішно виконана"
+    },
+    "warning": {
+      "title": "Попередження",
+      "description": "Будь ласка, перевірте і продовжте"
+    },
+    "error": {
+      "title": "Помилка",
+      "description": "Щось пішло не так"
+    },
+    "info": {
+      "title": "Інформація",
+      "description": "Додаткова інформація"
+    }
+  },
+  "web3": {
+    "title": "Піктограми контексту Web3",
+    "walletStatusTitle": "Стан гаманця",
+    "blockchainTitle": "Іконки блокчейну",
+    "walletConnected": "Гаманец з'єднано",
+    "noWalletConnected": "Гаманець не підключений",
+    "connectToContinue": "Підключіться, щоб продовжити",
+    "ethereum": {
+      "title": "Ethereum",
+      "network": "Мережа ETH"
+    },
+    "solana": {
+      "title": "Solana",
+      "network": "Мережа SOL"
+    },
+    "bitcoin": {
+      "title": "Bitcoin",
+      "network": "Мережа BTC"
+    }
+  },
+  "decorative": {
+    "title": "Декоративні іконки",
+    "heroLarge": {
+      "title": "Герой Великий",
+      "size": "80px × 80px"
+    },
+    "heroMedium": {
+      "title": "Герой середнього розміру",
+      "size": "64px × 64px"
+    },
+    "heroSmall": {
+      "title": "Герой Малий",
+      "size": "48px × 48px"
+    }
+  },
+  "browser": {
+    "title": "Переглядач іконок",
+    "categories": {
+      "all": "Всі значки",
+      "actions": "Дії",
+      "status": "Статус",
+      "navigation": "Навігація",
+      "web3": "Web3",
+      "decorative": "Декоративний"
+    }
+  },
+  "tokens": {
+    "title": "Доступні варіанти іконок",
+    "sizeVariants": "Розмірні варіанти",
+    "colorVariants": "Кольорові варіанти",
+    "contextVariants": "Варіанти контексту",
+    "combinedVariants": "Поєднані варіанти"
+  },
+  "navigation": {
+    "previous": "Таблиці та таблиці даних",
+    "backToDesignSystem": "Повернення до системи дизайнів"
+  }
+}

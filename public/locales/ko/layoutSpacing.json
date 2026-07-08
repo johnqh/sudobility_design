@@ -1,0 +1,147 @@
+{
+  "seo": {
+    "title": "레이아웃 및 간격 - 디자인 시스템 - 내부 - {{emailDomain}}",
+    "description": "반응형 그리드, 컨테이너 및 Web3 전용 패턴을 갖춘 레이아웃 및 간격 시스템"
+  },
+  "header": {
+    "badge": "레이아웃 및 간격",
+    "title": "레이아웃 및 간격 시스템",
+    "description": "반응형 격자, 유연한 컨테이너, 웹3 전용 패턴을 갖춘 포괄적인 레이아웃 및 간격 시스템으로 지갑, 거래 및 대시보드 인터페이스에 최적화됨."
+  },
+  "quickStart": {
+    "title": "빠른 시작",
+    "copyTooltip": "클립보드에 복사",
+    "examples": {
+      "grid": {
+        "title": "반응형 그리드 시스템",
+        "description": "다양한 화면 크기에 맞춰 조정되는 유연한 그리드 레이아웃"
+      },
+      "container": {
+        "title": "컨테이너 시스템",
+        "description": "일관된 최대 너비와 패딩을 갖춘 반응형 컨테이너"
+      },
+      "flex": {
+        "title": "플렉스박스 도구",
+        "description": "컴포넌트 레이아웃용 일반적인 플렉스박스 패턴"
+      },
+      "spacing": {
+        "title": "스페이싱 시스템",
+        "description": "여백과 패딩을 위한 일관된 간격 패턴"
+      }
+    }
+  },
+  "grid": {
+    "title": "반응형 그리드 시스템",
+    "cardTitle": "인터랙티브 그리드 예제",
+    "cardDescription": "브레이크포인트를 전환하여 그리드가 어떻게 반응하는지 확인하세요",
+    "preview": "미리보기:",
+    "breakpoints": {
+      "mobile": "모바일",
+      "tablet": "탭레트",
+      "desktop": "데스크톱"
+    },
+    "examples": {
+      "nftGallery": {
+        "name": "NFT 갤러리"
+      },
+      "dashboardWidgets": {
+        "name": "대시보드 위젯"
+      },
+      "transactionHistory": {
+        "name": "거래 내역"
+      }
+    },
+    "item": "아이템 {{number}}"
+  },
+  "container": {
+    "title": "컨테이너 시스템",
+    "cardTitle": "컨테이너 변형",
+    "cardDescription": "다양한 콘텐츠 유형에 따른 다양한 컨테이너 크기",
+    "label": "컨테이너:",
+    "maxWidth": "최대 폭:",
+    "bestFor": "가장 적합한 사용 목적:",
+    "containerSuffix": "{{name}} 컨테이너",
+    "previewText": "이 컨테이너는 선택된 폭 제약에 맞춰 조정되면서 반응형 패딩을 유지합니다.",
+    "sizes": {
+      "narrow": {
+        "name": "좁은",
+        "use": "기사, 양식"
+      },
+      "default": {
+        "name": "기본값",
+        "use": "일반 콘텐츠"
+      },
+      "wide": {
+        "name": "넓은",
+        "use": "대시보드, 테이블"
+      },
+      "full": {
+        "name": "풀",
+        "use": "엣지 투 엣지 레이아웃"
+      }
+    }
+  },
+  "flexbox": {
+    "title": "플렉스박스 패턴",
+    "common": {
+      "title": "일반적인 패턴",
+      "description": "컴포넌트용 표준 플렉스박스 레이아웃",
+      "spaceBetween": "간격",
+      "center": "센터",
+      "startWithGap": "공백에서 시작하기",
+      "columnStack": "열 스택"
+    },
+    "web3": {
+      "title": "웹3 패턴",
+      "description": "블록체인 인터페이스를 위한 전용 레이아웃",
+      "walletConnection": "지갑 연결",
+      "walletName": "MetaMask",
+      "connected": "연결됨",
+      "transactionSummary": "거래 요약",
+      "amount": "금액:",
+      "gasFee": "가스 수수료:",
+      "total": "총계:",
+      "nftCardLayout": "NFT 카드 레이아웃",
+      "nftName": "멋진 NFT #1234",
+      "artistName": "아티스트 이름"
+    }
+  },
+  "spacing": {
+    "title": "스페이싱 시스템",
+    "cardTitle": "일관된 간격 패턴",
+    "cardDescription": "일관된 레이아웃을 위한 표준 간격 유틸리티",
+    "scaleTitle": "간격 스케일",
+    "componentTitle": "컴포넌트 간격",
+    "sectionHeader": "섹션 헤더",
+    "component": "컴포넌트 {{number}}",
+    "sectionSpacingLabel": "섹션 간격:",
+    "sectionSpacingText": "32px 수직 여백",
+    "componentSpacingLabel": "컴포넌트 간격:",
+    "componentSpacingText": "아이템 사이 12px",
+    "internalPaddingLabel": "내부 패딩:",
+    "internalPaddingText": "콘텐츠 영역의 16px"
+  },
+  "web3": {
+    "title": "웹3 레이아웃 패턴",
+    "wallet": {
+      "title": "지갑 대시보드",
+      "description": "잔고와 자산을 포함한 포트폴리오 개요",
+      "send": "보내기",
+      "receive": "받기",
+      "swap": "교체",
+      "assets": "자산"
+    },
+    "transaction": {
+      "title": "거래 흐름",
+      "description": "단계별 거래 인터페이스",
+      "recipientAddress": "수신자 주소",
+      "amount": "금액",
+      "balance": "잔액: 2.45 ETH",
+      "max": "맥스",
+      "networkFee": "네트워크 수수료:",
+      "total": "총계:",
+      "cancel": "취소",
+      "continue": "계속하기"
+    }
+  }
+}

@@ -1,0 +1,477 @@
+{
+  "seo": {
+    "title": "排版 - 设计系统 - 内部 - {{emailDomain}}",
+    "description": "设计系统完整排版系统和文本样式展示"
+  },
+  "nav": {
+    "viewColors": "查看颜色"
+  },
+  "header": {
+    "badge": "排版系统",
+    "title": "排版与文本样式",
+    "intro": "完整的排版系统，包括字体、大小、粗细和样式，以及使用示例和代码片段。点击任意示例可将其类名复制到剪贴板。"
+  },
+  "example": {
+    "aria": "复制 {{title}} 类名",
+    "preview": "预览",
+    "usage": "使用"
+  },
+  "quickStart": {
+    "heading": "快速入门 - 字体排版示例",
+    "description": "最常见的文本模式的即用型排版示例。直接复制粘贴到您的组件中。",
+    "pageHeading": {
+      "title": "页面标题",
+      "preview": "欢迎来到平台"
+    },
+    "bodyText": {
+      "title": "正文",
+      "preview": "这是一个大型文本示例，展示了在您的应用程序中实现可读内容所需的正确字体大小、行高和间距。"
+    },
+    "codeBlock": {
+      "title": "代码块"
+    },
+    "linkText": {
+      "title": "链接文本",
+      "preview": "了解有关 Web3 邮件的更多信息"
+    },
+    "captionText": {
+      "title": "标题文字",
+      "preview": "最后更新时间：2024年3月15日 14:30"
+    },
+    "inlineCode": {
+      "title": "内联代码",
+      "previewPrefix": "使用",
+      "previewSuffix": "用于在 React 应用程序中管理组件状态的 hook。"
+    }
+  },
+  "fontFamilies": {
+    "heading": "字体族",
+    "description": "应用程序中用于不同内容类型的三种主要字体家族。",
+    "pangram": "快速的棕色狐狸跳过懒狗",
+    "items": {
+      "sans": {
+        "name": "无衬线字体（默认）",
+        "description": "用户界面元素和正文文本的主字体家族",
+        "usage": "UI 元素、标题、正文"
+      },
+      "serif": {
+        "name": "衬线体",
+        "description": "用于编辑和正式内容",
+        "usage": "编辑内容，正式文件"
+      },
+      "mono": {
+        "name": "等宽",
+        "description": "用于代码块和技术文本",
+        "usage": "代码块，技术内容，钱包地址"
+      }
+    },
+    "code": {
+      "title": "字体族使用",
+      "description": "如何使用设计系统的字体族"
+    },
+    "preview": {
+      "sans": "这是无衬线文本（默认UI字体）",
+      "serif": "这是用于编辑内容的衬线体文本",
+      "mono": "这是用于代码的等宽文本"
+    }
+  },
+  "scale": {
+    "heading": "排版比例",
+    "description": "从显示文本到标题的层级字体大小，确保界面中的一致性排版。",
+    "items": {
+      "hero": {
+        "name": "英雄",
+        "usage": "着陆页，英雄区域"
+      },
+      "xl": {
+        "name": "显示 XL",
+        "usage": "大屏幕标题"
+      },
+      "lg": {
+        "name": "显示 LG",
+        "usage": "中等显示标题"
+      },
+      "md": {
+        "name": "显示 MD",
+        "usage": "小屏幕标题"
+      },
+      "sm": {
+        "name": "显示 SM",
+        "usage": "超小尺寸显示标题"
+      },
+      "h1": {
+        "name": "标题 1",
+        "usage": "主页标题"
+      },
+      "h2": {
+        "name": "标题 2",
+        "usage": "章节标题"
+      },
+      "h3": {
+        "name": "标题 3",
+        "usage": "小节标题"
+      },
+      "h4": {
+        "name": "标题 4",
+        "usage": "次要标题"
+      },
+      "h5": {
+        "name": "标题 5",
+        "usage": "小标题"
+      },
+      "h6": {
+        "name": "标题 6",
+        "usage": "最小标题"
+      }
+    },
+    "code": {
+      "title": "排版比例使用",
+      "description": "如何使用设计系统的标题变体"
+    },
+    "preview": {
+      "h1": "标题 1",
+      "h2": "标题 2",
+      "h3": "标题 3",
+      "body": "正文紧随标题之后"
+    }
+  },
+  "body": {
+    "heading": "正文",
+    "description": "不同内容类型和层级结构的正文文本变体。",
+    "sample": "这是演示此变体字体大小、字重和行距的示例正文。",
+    "items": {
+      "xl": {
+        "name": "身体 XL",
+        "usage": "引言段落，重要内容"
+      },
+      "lg": {
+        "name": "身体大",
+        "usage": "标准正文，主要内容"
+      },
+      "md": {
+        "name": "身体 中号",
+        "usage": "标准正文（大号的别名）"
+      },
+      "sm": {
+        "name": "身体小",
+        "usage": "次要信息，说明文字"
+      },
+      "xs": {
+        "name": "身体超小号",
+        "usage": "细文字，最少细节"
+      }
+    },
+    "code": {
+      "title": "正文文本使用",
+      "description": "如何使用正文变体"
+    },
+    "preview": {
+      "xl": "这是用于引言段落和重要介绍内容的超大正文文本。",
+      "lg": "这是应用程序中大部分用于主内容的标准正文文本。",
+      "sm": "这是用于次要信息、字幕和帮助文本的小型正文文本。"
+    }
+  },
+  "emphasis": {
+    "heading": "文本强调",
+    "description": "不同字重和突出程度的文本强调变体。",
+    "items": {
+      "strongLg": {
+        "name": "强力大",
+        "usage": "重要强调文本"
+      },
+      "strongMd": {
+        "name": "强 中",
+        "usage": "中等粗体文本"
+      },
+      "strongSm": {
+        "name": "强壮小",
+        "usage": "小号强调文本"
+      },
+      "emphasisLg": {
+        "name": "强调大",
+        "usage": "中等重量强调"
+      },
+      "emphasisMd": {
+        "name": "中等强调",
+        "usage": "中等重量强调"
+      },
+      "emphasisSm": {
+        "name": "强调 小",
+        "usage": "轻至中等重量强调"
+      },
+      "mutedLg": {
+        "name": "静音大",
+        "usage": "弱化文本"
+      },
+      "mutedMd": {
+        "name": "静音中",
+        "usage": "弱化文本"
+      },
+      "mutedSm": {
+        "name": "静音小",
+        "usage": "去强调的小文本"
+      }
+    },
+    "code": {
+      "title": "文本强调用法",
+      "description": "如何使用文本强调变体"
+    },
+    "preview": {
+      "normalPrefix": "这是正常文本，包含",
+      "strong": "强烈强调",
+      "and": "和",
+      "medium": "中等强调",
+      "muted": "这是音量降低的文本，视觉突出度降低。"
+    }
+  },
+  "caption": {
+    "heading": "标题和特殊文本",
+    "captionTitle": "标题变体",
+    "sample": "这是一个标题示例",
+    "uppercaseSample": "章节标签",
+    "items": {
+      "default": {
+        "name": "默认字幕",
+        "usage": "图像说明，附加信息"
+      },
+      "emphasis": {
+        "name": "强调字幕",
+        "usage": "重要标题"
+      },
+      "uppercase": {
+        "name": "大写标题",
+        "usage": "章节标签、标签"
+      }
+    },
+    "leadTitle": "主文本",
+    "leadSample": "这是介绍主内容的引言文本，为接下来的内容提供背景。",
+    "leadItems": {
+      "lg": {
+        "name": "大铅",
+        "usage": "引言段落，文章开头"
+      },
+      "md": {
+        "name": "中等线索",
+        "usage": "引言段落"
+      },
+      "sm": {
+        "name": "小领导",
+        "usage": "简短的介绍文字"
+      }
+    },
+    "code": {
+      "title": "标题和引言文本使用",
+      "description": "如何使用字幕和引言文本"
+    },
+    "preview": {
+      "imageCaption": "这是上方图像的说明文字",
+      "sectionLabel": "章节标签",
+      "lead": "这是介绍该部分的引言文本。"
+    }
+  },
+  "links": {
+    "heading": "链接样式",
+    "description": "不同上下文和强调程度的链接样式。",
+    "externalSample": "外部链接 →",
+    "items": {
+      "default": {
+        "name": "默认链接",
+        "usage": "带下划线的标准链接"
+      },
+      "subtle": {
+        "name": "微妙的链接",
+        "usage": "无下划线的链接"
+      },
+      "muted": {
+        "name": "静音链接",
+        "usage": "灰色链接"
+      },
+      "external": {
+        "name": "外部链接",
+        "usage": "外部网站链接"
+      }
+    },
+    "code": {
+      "title": "链接样式用法",
+      "description": "如何使用链接变体"
+    },
+    "preview": {
+      "paraPrefix": "此段落包含一个",
+      "defaultLink": "默认链接",
+      "and": "和一个",
+      "subtleLink": "微妙的链接",
+      "checkPrefix": "看看这个",
+      "externalLink": "外部链接 →",
+      "or": "或这个",
+      "mutedLink": "静音链接"
+    }
+  },
+  "codeText": {
+    "heading": "代码和专业技术文本",
+    "description": "代码、技术内容和技术文档的等宽文本样式。",
+    "items": {
+      "inline": {
+        "name": "内联代码",
+        "usage": "文本中的代码"
+      },
+      "block": {
+        "name": "代码块",
+        "usage": "多行代码块"
+      },
+      "small": {
+        "name": "小代码",
+        "usage": "小内联代码"
+      }
+    },
+    "code": {
+      "title": "代码文本使用",
+      "description": "如何使用代码文本变体"
+    },
+    "preview": {
+      "usePrefix": "使用",
+      "useSuffix": "用于管理状态的hook。",
+      "runPrefix": "运行",
+      "runSuffix": "开始使用。"
+    }
+  },
+  "labels": {
+    "heading": "表单标签和消息",
+    "description": "表单元素、标签和反馈消息的文本样式。",
+    "items": {
+      "default": {
+        "name": "默认标签",
+        "usage": "表单字段标签",
+        "sample": "默认"
+      },
+      "required": {
+        "name": "必需标签",
+        "usage": "必填表单字段",
+        "sample": "电子邮件地址"
+      },
+      "optional": {
+        "name": "可选标签",
+        "usage": "可选表单字段",
+        "sample": "可选"
+      },
+      "helper": {
+        "name": "帮助文本",
+        "usage": "表单帮助文本",
+        "sample": "助手"
+      },
+      "error": {
+        "name": "错误文本",
+        "usage": "表单错误消息",
+        "sample": "错误"
+      },
+      "success": {
+        "name": "成功文本",
+        "usage": "表单成功消息",
+        "sample": "成功"
+      }
+    },
+    "code": {
+      "title": "表单标签使用",
+      "description": "如何使用表单标签和消息变体"
+    },
+    "preview": {
+      "emailLabel": "电子邮件地址",
+      "emailHelper": "我们将使用这个向您发送更新",
+      "passwordLabel": "密码",
+      "passwordError": "密码必须至少包含8个字符",
+      "phoneLabel": "电话号码",
+      "phoneSuccess": "电话号码验证成功"
+    }
+  },
+  "web3": {
+    "heading": "Web3 文本样式",
+    "description": "适用于Web3和区块链特定内容（如地址、哈希和金额）的专业文本样式。",
+    "items": {
+      "address": {
+        "name": "钱包地址",
+        "usage": "完整的钱包地址"
+      },
+      "addressShort": {
+        "name": "短地址",
+        "usage": "截断的钱包地址"
+      },
+      "hash": {
+        "name": "交易哈希",
+        "usage": "交易标识符"
+      },
+      "amount": {
+        "name": "代币金额",
+        "usage": "加密货币金额"
+      },
+      "chain": {
+        "name": "链名称",
+        "usage": "区块链网络名称"
+      },
+      "symbol": {
+        "name": "代币符号",
+        "usage": "加密货币符号"
+      }
+    },
+    "code": {
+      "title": "Web3 文本使用",
+      "description": "如何使用 Web3 特定的文本样式"
+    },
+    "preview": {
+      "transactionHash": "交易哈希："
+    }
+  },
+  "responsive": {
+    "heading": "响应式排版",
+    "description": "自动根据屏幕大小缩放的排版，以在各种设备上实现最佳可读性。",
+    "items": {
+      "h1": {
+        "name": "响应式 H1",
+        "usage": "随屏幕大小缩放的标题"
+      },
+      "h2": {
+        "name": "响应式 H2",
+        "usage": "可缩放的章节标题"
+      },
+      "h3": {
+        "name": "响应式 H3",
+        "usage": "可缩放的子节标题"
+      },
+      "display": {
+        "name": "响应式显示",
+        "usage": "显示可缩放的文本"
+      }
+    },
+    "code": {
+      "title": "响应式排版使用",
+      "description": "如何使用随屏幕大小缩放的响应式文本变体"
+    },
+    "preview": {
+      "heading": "此标题会随屏幕大小而缩放",
+      "body": "调整浏览器窗口大小，查看响应式标题如何根据不同的屏幕尺寸进行自适应。"
+    }
+  },
+  "guidelines": {
+    "heading": "排版指南",
+    "doTitle": "✓ 做",
+    "do": [
+      "使用 textVariants 实现一致的样式",
+      "选择合适的层次级别",
+      "为英雄内容使用响应式变体",
+      "确保足够的对比度",
+      "代码和地址使用等宽字体",
+      "在不同屏幕尺寸上测试可读性"
+    ],
+    "dontTitle": "✗ 不要",
+    "dont": [
+      "在比例范围外使用随机字体大小",
+      "跳过标题级别（h1 → h3）",
+      "使用太多不同的文本样式",
+      "使文本在移动设备上过小",
+      "为用户界面元素使用衬线字体",
+      "忽略深色模式下的文本颜色"
+    ]
+  },
+  "copyInstructions": {
+    "title": "点击以复制类名",
+    "description": "点击任意文本示例以复制其 CSS 类名，或使用代码示例中的复制按钮来复制使用代码"
+  }
+}

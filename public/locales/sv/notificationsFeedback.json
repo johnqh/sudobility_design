@@ -1,0 +1,188 @@
+{
+  "seo": {
+    "title": "Meddelanden och återkoppling - Designsystem - Intern - {{emailDomain}}",
+    "description": "Komponenter för meddelanden och återkoppling, inklusive toasts, förloppsmärken och systemstatus"
+  },
+  "toasts": {
+    "copied": {
+      "title": "Kopierat!",
+      "message": "Kod kopierad till urklipp"
+    },
+    "complete": {
+      "title": "Klart!",
+      "message": "Uppgift slutförd framgångsrikt"
+    },
+    "success": {
+      "title": "Transaktion bekräftad!",
+      "message": "Din ETH-överföring lyckades"
+    },
+    "error": {
+      "title": "Transaktion misslyckades",
+      "message": "Otillräckligt gas för transaktion"
+    },
+    "warning": {
+      "title": "Höga avgifter för gas",
+      "message": "Nätverkskänslighet upptäckt",
+      "actionLabel": "Justera gas"
+    },
+    "gasAdjusted": {
+      "title": "Gaskorrigerat",
+      "message": "Gasprijs uppdaterad till 25 gwei"
+    },
+    "info": {
+      "title": "Ny funktion tillgänglig",
+      "message": "Multi-kedja byten stöds nu"
+    }
+  },
+  "header": {
+    "badge": "Meddelanden och återkoppling",
+    "title": "System för meddelanden och återkoppling",
+    "description": "Komplett avisering- och återkopplingssystem som inkluderar popup-meddelanden, förloppsmärken, uppdateringar av transaktionsstatus och systemstatusvisningar för Web3-applikationer."
+  },
+  "quickStart": {
+    "title": "Snabbstart",
+    "copyTooltip": "Kopiera till urklipp",
+    "examples": {
+      "toast": {
+        "title": "Toast-meddelanden",
+        "description": "Tillfälliga meddelanden med automatisk avstängning och åtgärder"
+      },
+      "progress": {
+        "title": "Förloppsmeddelanden",
+        "description": "Visa förlopp för långvariga åtgärder"
+      },
+      "transaction": {
+        "title": "Transaktionsstatus",
+        "description": "Web3-transaktionsförflytning med bekräftelser"
+      },
+      "systemStatus": {
+        "title": "Systemstatusindikator",
+        "description": "System- och anslutningsstatus i realtid"
+      }
+    }
+  },
+  "toastSection": {
+    "title": "Toast-meddelanden",
+    "demoTitle": "Interaktiva Toast-demonstrationer",
+    "demoDescription": "Klicka på knapparna för att utlösa olika typer av toast-meddelanden",
+    "buttons": {
+      "success": "Framgång",
+      "error": "Fel",
+      "warning": "Varning",
+      "info": "Information"
+    },
+    "featuresTitle": "Typ av toast och funktioner",
+    "features": {
+      "successLabel": "Framgång:",
+      "successText": "Transaktionsbekräftelser, avslutade åtgärder",
+      "errorLabel": "Fel:",
+      "errorText": "Misslyckade transaktioner, nätverksfel",
+      "warningLabel": "Varning:",
+      "warningText": "Höga avgifter för gas, säkerhetsvarningar (med åtgärder)",
+      "infoLabel": "Information:",
+      "infoText": "Nya funktioner, systemuppdateringar (varaktiga)",
+      "autoDismiss": "Stängs automatiskt efter 5 sekunder (om inte beständig)",
+      "actionButtons": "Valfria åtgärdsknappar för interaktiva svar"
+    }
+  },
+  "progressSection": {
+    "title": "Framstegsindikatorer",
+    "linear": {
+      "title": "Linjär framsteg",
+      "description": "Förloppsindikatorer för filuppladdningar och åtgärder",
+      "emailSync": "E-postsynkroniseringsstatus",
+      "fileUpload": "Filuppladdning",
+      "uploading": "Laddar upp document.pdf (2,3 MB)",
+      "simulate": "Simulera framsteg"
+    },
+    "spinners": {
+      "title": "Laddningsspinnare",
+      "description": "Flera läsningstillstånd och spinner",
+      "loadingTransactions": "Läser in transaktioner...",
+      "connectingWallet": "Ansluter till plånbok...",
+      "syncingBlockchain": "Synkroniserar blockchainedata..."
+    }
+  },
+  "transactionSection": {
+    "title": "Web3-transaktionsstatus",
+    "trackerTitle": "Transaktionsspårare",
+    "trackerDescription": "Status för transaktion i realtid med bekräftelseframsteg",
+    "confirmations": "bekräftelser",
+    "confirmationsLabel": "Bekräftelser",
+    "statuses": {
+      "pending": "Väntar",
+      "confirming": "Bekräfta",
+      "confirmed": "Bekräftat",
+      "failed": "Misslyckat"
+    },
+    "types": {
+      "sendEth": "Skicka ETH",
+      "swapTokens": "Byt token",
+      "approveToken": "Godkänn token"
+    },
+    "statesTitle": "Transaktionslägen",
+    "states": {
+      "pendingLabel": "Väntar:",
+      "pendingText": "Transaktion skickad till mempool",
+      "confirmingLabel": "Bekräfta:",
+      "confirmingText": "Finns med i block (visar framsteg)",
+      "confirmedLabel": "Bekräftat:",
+      "confirmedText": "Nödvändiga bekräftelser uppnådda",
+      "failedLabel": "Misslyckat:",
+      "failedText": "Transaktion återställd eller avvisad"
+    }
+  },
+  "systemStatusSection": {
+    "title": "Systemstatus och indikatorer",
+    "connection": {
+      "title": "Anslutningsstatus",
+      "description": "Direktuppkoppling och systemstatus",
+      "systemStatus": "Systemstatus",
+      "online": "Alla system är aktiva",
+      "degraded": "Vissa tjänster är inte tillgängliga",
+      "offline": "Systemunderhållning",
+      "statusLabels": {
+        "online": "Online",
+        "degraded": "Degraderad",
+        "offline": "Offline"
+      },
+      "internetConnection": "Internetanslutning",
+      "connected": "Anslutet",
+      "walletConnection": "Plånbokanslutning",
+      "metaMask": "MetaMask",
+      "ethereumNetwork": "Ethereum-nätverk",
+      "mainnet": "Mainnet",
+      "securityStatus": "Säkerhetsstatus",
+      "warning": "Varning"
+    },
+    "badges": {
+      "title": "Notifikationsmeddelanden",
+      "description": "Räknare för indikatorer och statusmeddelanden",
+      "countBadges": "Räkna insignier",
+      "statusIndicators": "Statusindikatorer",
+      "online": "Online",
+      "away": "Bort",
+      "offline": "Offline"
+    }
+  },
+  "contextualFeedback": {
+    "title": "Sammanhangsbestämd feedback",
+    "smartTitle": "Smarta feedbackmönster",
+    "smartDescription": "kontextmedveten återkoppling som anpassar sig efter användaråtgärder och systemstatus",
+    "actionFeedback": "Åtgärdsrückkoppling",
+    "emailSent": "E-post skickat framgångsrikt",
+    "autoSave": "Automatisk sparning aktiverad",
+    "draftSaved": "Entwurf sparad lokalt",
+    "smartSuggestions": "Smarta förslag",
+    "enable2fa": {
+      "title": "Aktivera 2FA för bättre säkerhet",
+      "description": "Rekommenderat för plånboks skydd",
+      "action": "Aktivera"
+    },
+    "backupSeed": {
+      "title": "Säkerhetskopiera din återställningsfras",
+      "description": "Säkerhetskopiera din plånbok återställning",
+      "action": "Säkerhetskopiering"
+    }
+  }
+}

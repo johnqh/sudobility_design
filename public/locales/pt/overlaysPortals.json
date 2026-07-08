@@ -1,0 +1,133 @@
+{
+  "header": {
+    "title": "Sobreposições e Portais",
+    "description": "Sistema de sobreposição abrangente que inclui modais, menus suspenso, tooltips, folhas e estados de carregamento com gerenciamento adequado do z-index e acessibilidade."
+  },
+  "common": {
+    "interactiveExample": "Exemplo interativo",
+    "usage": "Uso"
+  },
+  "dropdownItems": {
+    "profile": "Ver Perfil",
+    "settings": "Configurações",
+    "logout": "Sair"
+  },
+  "alerts": {
+    "profile": "Perfil clicado",
+    "settings": "Configurações clicadas",
+    "logout": "Sair clicado"
+  },
+  "modals": {
+    "title": "Modais",
+    "description": "Diálogos modais com desfoque de plano de fundo, estados de animação e múltiplos tamanhos. Inclui gerenciamento de foco e navegação com teclado.",
+    "openButton": "Abrir modal",
+    "exampleTitle": "Modal de exemplo",
+    "exampleBody": "Este é um modal de exemplo que utiliza o novo sistema de design de sobreposição. Inclui um tratamento adequado do plano de fundo, gerenciamento de foco e estados de animação.",
+    "featuresTitle": "Recursos",
+    "features": [
+      "Efeito de desfoque de plano de fundo",
+      "Armadilha de foco e restauração",
+      "Navegação com o teclado",
+      "Várias variantes de tamanho"
+    ],
+    "accessibilityTitle": "Acessibilidade",
+    "accessibility": [
+      "Rótulos e papéis ARIA",
+      "Tratamento da tecla Escape",
+      "Suporte para leitor de tela",
+      "Gestão de foco"
+    ],
+    "cancel": "Cancelar",
+    "confirm": "Confirmar"
+  },
+  "dropdowns": {
+    "title": "Listas suspensas",
+    "description": "Menus suspenso com várias opções de posicionamento, ícones, divisores e navegação com o teclado.",
+    "actionsButton": "Ações",
+    "userMenuButton": "Menu do usuário"
+  },
+  "tooltips": {
+    "title": "Dicas",
+    "description": "Tooltips leves com múltiplas opções de posicionamento e variantes de cor.",
+    "hoverButton": "Passe o mouse para ver a dica {{position}}",
+    "tooltipOn": "Dica de ferramenta em {{position}}"
+  },
+  "loading": {
+    "title": "Carregando sobreposições",
+    "description": "Estados de carregamento em tela cheia e inline com desfoque de plano de fundo e mensagens personalizáveis.",
+    "showButton": "Mostrar sobreposição de carregamento",
+    "inlineLabel": "Estado de carregamento em linha:",
+    "message": "Processando sua solicitação..."
+  },
+  "sheets": {
+    "title": "Lençóis (lençóis de baixo)",
+    "description": "Folhas inferiores e folhas de ação orientadas para dispositivos móveis que deslizam a partir da parte inferior da tela."
+  },
+  "contextMenus": {
+    "title": "Menus contextuais",
+    "description": "Menus contextuais com clique direito, atalhos de teclado e submenus aninhados."
+  },
+  "portal": {
+    "title": "Gerenciamento de portais",
+    "description": "Sistema de gerenciamento de índice Z e utilitários de portal para empilhamento adequado de sobreposições.",
+    "zIndexLayersTitle": "Camadas de Índice Z",
+    "focusManagementTitle": "Gestão de Foco",
+    "layers": {
+      "backdrop": "Plano de fundo",
+      "popover": "Popover",
+      "dropdown": "Menu suspenso",
+      "tooltip": "Tooltip",
+      "modal": "Modal",
+      "sheet": "Folha",
+      "contextMenu": "Menu de contexto",
+      "loading": "Carregando",
+      "notification": "Notificação"
+    }
+  },
+  "animationStates": {
+    "title": "Estados de animação",
+    "description": "Estados de animação consistentes para transições de entrada/saída em todos os componentes de sobreposição.",
+    "availableStatesTitle": "Estados disponíveis",
+    "modalStatesTitle": "Estados modais",
+    "dropdownStatesTitle": "Estados do menu suspenso"
+  },
+  "bestPractices": {
+    "title": "Melhores práticas",
+    "accessibilityTitle": "Acessibilidade",
+    "accessibility": [
+      "Forneça sempre rótulos e papéis ARIA apropriados",
+      "Implementar o travamento de foco para modais",
+      "Suporte à navegação com teclado (Tab, Escape, teclas de seta)",
+      "Manter a ordem de foco e a restauração",
+      "Use elementos HTML semânticos",
+      "Forneça anúncios para leitores de tela"
+    ],
+    "performanceTitle": "Desempenho",
+    "performance": [
+      "Use Portais React para renderização DOM adequada",
+      "Implemente o carregamento preguiçoso para sobreposições pesadas",
+      "Limpe os ouvintes de eventos ao desmontar",
+      "Use transformações CSS para animações",
+      "Evite filtros de plano de fundo complexos no celular",
+      "Minimizar o thrashing de layout"
+    ],
+    "uxGuidelinesTitle": "Diretrizes de UX",
+    "uxGuidelines": [
+      "Mantenha os modais focados em tarefas individuais",
+      "Forneça claramente affordances de fechamento",
+      "Use tipos de sobreposição apropriados para o contexto",
+      "Mantenha a duração da animação consistente",
+      "Considere as limitações do viewport móvel",
+      "Evite interações aninhadas de sobreposição"
+    ],
+    "technicalTitle": "Técnico",
+    "technical": [
+      "Use um sistema de camadas z-index apropriado",
+      "Gerir corretamente o travamento de rolagem do corpo",
+      "Suporte tanto interações de clique como de teclado",
+      "Teste em diferentes tamanhos de viewport",
+      "Considere as preferências de movimento reduzido",
+      "Implemente limites de erro apropriados"
+    ]
+  }
+}

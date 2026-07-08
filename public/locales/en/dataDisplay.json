@@ -1,0 +1,202 @@
+{
+  "seo": {
+    "title": "Data Display - Design System - Internal - {{emailDomain}}",
+    "description": "Data display components including tables, lists, grids, and code displays"
+  },
+  "header": {
+    "badge": "Data Display Components",
+    "title": "Data Display System",
+    "intro": "Comprehensive data display components for tables, lists, grids, and code. Optimized for Web3 data including addresses, transactions, and blockchain information."
+  },
+  "quickStart": {
+    "heading": "Quick Start",
+    "copy": "Copy to clipboard",
+    "examples": {
+      "dataTable": {
+        "title": "Data Table",
+        "description": "Sortable table with hover states and selection"
+      },
+      "emailList": {
+        "title": "Email List",
+        "description": "Interactive list with read/unread states"
+      },
+      "keyValue": {
+        "title": "Key-Value Display",
+        "description": "Display structured data in key-value pairs"
+      },
+      "statsGrid": {
+        "title": "Stats Grid",
+        "description": "Display metrics and statistics with trend indicators"
+      }
+    }
+  },
+  "tables": {
+    "heading": "Data Tables",
+    "cardTitle": "Interactive Contact Table",
+    "cardDescription": "Sortable table with selection and hover states",
+    "columns": {
+      "name": "Name",
+      "email": "Email",
+      "balance": "Balance",
+      "status": "Status",
+      "date": "Date"
+    },
+    "status": {
+      "active": "Active",
+      "pending": "Pending",
+      "inactive": "Inactive"
+    }
+  },
+  "lists": {
+    "heading": "Lists",
+    "cardTitle": "Email List",
+    "cardDescription": "Interactive email list with read/unread states and actions",
+    "emails": {
+      "1": {
+        "subject": "Transaction Confirmed",
+        "preview": "Your transaction has been confirmed on the blockchain..."
+      },
+      "2": {
+        "subject": "New NFT Drop Alert",
+        "preview": "Exciting new collection launching tomorrow..."
+      },
+      "3": {
+        "subject": "Wallet Security Update",
+        "preview": "Important security improvements to your wallet..."
+      },
+      "4": {
+        "subject": "DeFi Yield Report",
+        "preview": "Your monthly yield farming summary..."
+      },
+      "5": {
+        "subject": "DAO Proposal #42",
+        "preview": "Vote on the latest community proposal..."
+      }
+    }
+  },
+  "gridLayouts": {
+    "heading": "Grid Layouts",
+    "statsGrid": {
+      "heading": "Stats Grid",
+      "totalEmails": "Total Emails",
+      "totalEmailsChange": "12.5% from last month",
+      "activeContacts": "Active Contacts",
+      "activeContactsChange": "5 new this week",
+      "storageUsed": "Storage Used",
+      "storageUsedChange": "15% remaining"
+    },
+    "cardGrid": {
+      "heading": "Card Grid",
+      "cardTitle": "Card Title {{number}}",
+      "cardContent": "Card content with relevant information and actions."
+    }
+  },
+  "keyValue": {
+    "heading": "Key-Value Display",
+    "userProfile": {
+      "heading": "User Profile",
+      "fullName": "Full Name",
+      "ensName": "ENS Name",
+      "walletAddress": "Wallet Address",
+      "email": "Email",
+      "accountStatus": "Account Status",
+      "verified": "Verified"
+    },
+    "transactionDetails": {
+      "heading": "Transaction Details",
+      "transactionHash": "Transaction Hash",
+      "blockNumber": "Block Number",
+      "gasUsed": "Gas Used",
+      "status": "Status",
+      "success": "Success"
+    }
+  },
+  "codeDisplay": {
+    "heading": "Code Display",
+    "inlineCode": {
+      "heading": "Inline Code",
+      "textStart": "Use ",
+      "textMiddle": " for inline code. Web3 addresses like ",
+      "textMiddle2": " and transaction hashes like ",
+      "textEnd": " have special styling."
+    },
+    "codeBlock": {
+      "heading": "Code Block"
+    }
+  },
+  "timeline": {
+    "heading": "Timeline",
+    "cardTitle": "Activity Timeline",
+    "items": {
+      "1": {
+        "title": "Account Created",
+        "description": "Welcome to example.com"
+      },
+      "2": {
+        "title": "Wallet Connected",
+        "description": "MetaMask wallet linked successfully"
+      },
+      "3": {
+        "title": "First Email Sent",
+        "description": "Sent welcome email to team"
+      },
+      "4": {
+        "title": "ENS Name Registered",
+        "description": "alice.eth registered"
+      },
+      "5": {
+        "title": "Premium Upgrade",
+        "description": "Upgrade to premium plan pending"
+      }
+    }
+  },
+  "emptyStates": {
+    "heading": "Empty States",
+    "noEmails": {
+      "title": "No emails",
+      "description": "Get started by composing your first email",
+      "action": "Compose Email"
+    },
+    "noData": {
+      "title": "No data available",
+      "description": "There are no records to display at this time"
+    }
+  },
+  "web3": {
+    "heading": "Web3 Data Patterns",
+    "cardTitle": "Blockchain Data Display",
+    "cardDescription": "Specialized patterns for displaying Web3 data",
+    "addressDisplay": {
+      "heading": "Address Display",
+      "full": "Full:",
+      "truncated": "Truncated:",
+      "ens": "ENS:"
+    },
+    "tokenBalances": {
+      "heading": "Token Balances"
+    }
+  },
+  "implementationNotes": {
+    "heading": "Implementation Notes",
+    "performance": {
+      "heading": "Performance Tips",
+      "items": [
+        "• Use virtual scrolling for large data sets",
+        "• Implement pagination for tables over 100 rows",
+        "• Lazy load images and avatars in lists",
+        "• Memoize expensive calculations",
+        "• Use skeleton loaders during data fetching"
+      ]
+    },
+    "accessibility": {
+      "heading": "Accessibility",
+      "items": [
+        "• Use semantic HTML (table, thead, tbody)",
+        "• Add aria-labels for sortable columns",
+        "• Ensure keyboard navigation for tables",
+        "• Provide text alternatives for visual indicators",
+        "• Use appropriate ARIA roles for lists"
+      ]
+    }
+  }
+}

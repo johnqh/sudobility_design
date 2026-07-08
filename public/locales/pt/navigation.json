@@ -1,0 +1,185 @@
+{
+  "seo": {
+    "title": "Navegação - Sistema de Design - Interno - {{emailDomain}}",
+    "description": "Componentes de navegação, incluindo breadcrumbs, abas, paginação e sistemas de menu"
+  },
+  "header": {
+    "badge": "Componentes de navegação",
+    "title": "Sistema de navegação",
+    "intro": "Componentes de navegação abrangentes para aplicações Web3, incluindo breadcrumbs, abas, paginação, menus e navegação por etapas. Projetados para acessibilidade e comportamento responsivo."
+  },
+  "quickStart": {
+    "title": "Início Rápido",
+    "copy": "Copiar para a área de transferência",
+    "examples": {
+      "breadcrumb": {
+        "title": "Navegação por breadcrumbs",
+        "description": "Navegação hierárquica que mostra a localização atual da página"
+      },
+      "tabs": {
+        "title": "Navegação por guias",
+        "description": "Organize o conteúdo em várias visualizações com navegação por guias"
+      },
+      "pagination": {
+        "title": "Paginação",
+        "description": "Navegue por várias páginas de conteúdo"
+      },
+      "steps": {
+        "title": "Navegação por etapas",
+        "description": "Guie os usuários por processos de múltiplos passos"
+      }
+    }
+  },
+  "breadcrumbs": {
+    "sectionTitle": "Caminho de Pão Interativo",
+    "liveTitle": "Exemplo de breadcrumb ao vivo",
+    "home": "Início",
+    "web3Projects": "Projetos Web3",
+    "featuresTitle": "Recursos",
+    "features": [
+      "Dados estruturados para otimização de SEO",
+      "Atributos de acessibilidade ARIA",
+      "Suporte à navegação com teclado",
+      "Design responsivo com truncagem",
+      "Ícone opcional de início e compartilhamento social"
+    ]
+  },
+  "tabVariants": {
+    "sectionTitle": "Variantes de navegação por guias",
+    "defaultTitle": "Abas padrão",
+    "overview": "Visão geral",
+    "analytics": "Análise",
+    "settings": "Configurações",
+    "overviewContent": "Conteúdo de visão geral com estatísticas do projeto e atividades recentes.",
+    "analyticsContent": "Painel de análise com gráficos e métricas.",
+    "settingsContent": "Painel de configuração para opções de configuração.",
+    "underlinedTitle": "Abas sublinhadas",
+    "dashboard": "Painel de controle",
+    "team": "Equipe",
+    "projects": "Projetos",
+    "calendar": "Calendário",
+    "underlinedContent": "Conteúdo do painel com estilo de aba sublinhado limpo.",
+    "pillsTitle": "Comprimidos Pílulas",
+    "all": "Todos",
+    "active": "Ativo",
+    "draft": "Rascunho",
+    "archived": "Arquivado",
+    "pillsContent": "Conteúdo filtrado pela aba de comprimido selecionada."
+  },
+  "pagination": {
+    "sectionTitle": "Paginação",
+    "listTitle": "Paginação da lista de e-mails",
+    "listDescription": "Exemplo de paginação para navegação na lista de e-mails",
+    "emailSubject": "Assunto do e-mail {{number}}",
+    "timeAgo": "há 2h",
+    "previous": "Anterior",
+    "next": "Próximo",
+    "showing": "Mostrando",
+    "to": "para",
+    "of": "de",
+    "results": "resultados"
+  },
+  "steps": {
+    "sectionTitle": "Navegação por etapas",
+    "demoTitle": "Configuração da carteira Web3",
+    "demoDescription": "Guie os usuários pelo processo de conexão da carteira",
+    "stepLabel": "Passo {{number}}:",
+    "items": {
+      "accountSetup": {
+        "name": "Configuração da conta",
+        "description": "Crie sua conta"
+      },
+      "walletConnection": {
+        "name": "Conexão da carteira",
+        "description": "Conecte sua carteira Web3"
+      },
+      "emailSetup": {
+        "name": "Configuração de e-mail",
+        "description": "Configure suas preferências de e-mail"
+      },
+      "complete": {
+        "name": "Concluído",
+        "description": "Comece a usar o example.com"
+      }
+    },
+    "details": {
+      "1": "Crie sua conta {{emailDomain}} com seu nome de usuário preferido e configurações de segurança.",
+      "2": "Conecte sua carteira Web3 (MetaMask, WalletConnect, etc.) para habilitar os recursos da blockchain.",
+      "3": "Configure suas preferências de e-mail, notificações e configurações de privacidade.",
+      "4": "Sua configuração está completa! Comece a enviar e receber e-mails Web3."
+    }
+  },
+  "sidebar": {
+    "sectionTitle": "Navegação do painel lateral",
+    "cardTitle": "Barra lateral do aplicativo de e-mail",
+    "cardDescription": "Navegação persistente para o aplicativo de e-mail",
+    "items": {
+      "dashboard": "Painel de controle",
+      "inbox": "Caixa de entrada",
+      "sent": "Enviado",
+      "archive": "Arquivo",
+      "settings": "Configurações"
+    },
+    "mainContent": "Área principal de conteúdo",
+    "mainContentHint": "As alterações no conteúdo dependem da seleção na barra lateral"
+  },
+  "web3Patterns": {
+    "sectionTitle": "Padrões de Navegação Web3",
+    "walletStatus": {
+      "title": "Navegação do status da carteira",
+      "description": "Navegação que se adapta ao estado de conexão da carteira",
+      "connected": "MetaMask conectado",
+      "inbox": "Caixa de entrada Web3",
+      "ensProfile": "Perfil ENS",
+      "walletSettings": "Configurações da carteira"
+    },
+    "multiChain": {
+      "title": "Navegação Multicadeia",
+      "description": "Navegação entre diferentes redes de blockchain",
+      "ethereum": "Ethereum",
+      "solana": "Solana",
+      "polygon": "Polígono",
+      "ethereumInbox": "Caixa de entrada do Ethereum",
+      "ensNames": "Nomes ENS",
+      "gasSettings": "Configurações de gás"
+    }
+  },
+  "accessibility": {
+    "sectionTitle": "Diretrizes de Acessibilidade",
+    "title": "Acessibilidade de navegação",
+    "description": "Certifique-se de que todos os componentes de navegação sejam acessíveis para leitores de tela e usuários do teclado.",
+    "ariaLandmarks": "Marcadores ARIA",
+    "keyboardNavigation": "Navegação com o teclado",
+    "breadcrumbsLabel": "Pedaços de pão",
+    "breadcrumbsKeys": [
+      "Guia: Navegue por links",
+      "Enter/Espaço: Ativar hiperlink",
+      "Links de pulo para leitores de tela"
+    ],
+    "tabsLabel": "abas",
+    "tabsKeys": [
+      "Teclas de seta: Navegar entre abas",
+      "Guia: insira o painel de guias",
+      "Enter/Espaço: Ativar aba"
+    ]
+  },
+  "implementation": {
+    "sectionTitle": "Notas de Implementação",
+    "performanceTitle": "Considerações de desempenho",
+    "performance": [
+      "Carregue os itens de navegação de forma diferida quando possível",
+      "Use React.memo para componentes de navegação complexos",
+      "Debouncing da pesquisa nos menus de navegação",
+      "Rolagem virtual para listas de navegação longas",
+      "Pré-carregar rotas de navegação críticas"
+    ],
+    "mobileTitle": "Responsividade móvel",
+    "mobile": [
+      "Colapsar a navegação em menus de hambúrguer",
+      "Use a navegação inferior para aplicativos móveis",
+      "Implemente gestos de deslize onde apropriado",
+      "Certifique-se de que os alvos táteis tenham pelo menos 44px",
+      "Teste em vários tamanhos de tela e orientações"
+    ]
+  }
+}

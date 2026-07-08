@@ -1,0 +1,132 @@
+{
+  "seo": {
+    "title": "Abzeichen - {{appName}}",
+    "description": "Abzeichenkomponenten und -varianten für das Design-System"
+  },
+  "header": {
+    "badge": "Abzeichen",
+    "title": "Abzeichenkomponenten",
+    "intro": "Kleine, vielseitige Komponenten zum Kennzeichnen, Kategorisieren und Übermitteln von Statusinformationen mit semantischen Farben und interaktiven Zuständen."
+  },
+  "stats": {
+    "badgeVariants": "Abzeichen-Varianten",
+    "sizeOptions": "Größenoptionen",
+    "stateTypes": "Staatsarten",
+    "web3Variants": "Web3-Varianten"
+  },
+  "sections": {
+    "quickStart": {
+      "title": "🚀 Schnellstart",
+      "description": "Beginnen Sie mit den am häufigsten verwendeten Badge-Mustern. Kopieren Sie diese Beispiele, um Badges schnell in Ihre Komponenten zu integrieren.",
+      "essentialTitle": "1. Wesentliche Abzeichen-Typen",
+      "essential": {
+        "default": "Standard",
+        "primary": "Primär",
+        "success": "Erfolg",
+        "warning": "Warnung",
+        "error": "Fehler"
+      },
+      "statusTitle": "2. Status-Abzeichen mit Symbolen",
+      "status": {
+        "active": "Aktiv",
+        "pending": "Ausstehend",
+        "failed": "Fehlgeschlagen",
+        "info": "Info"
+      },
+      "sizesTitle": "3. Größenvariationen",
+      "sizes": {
+        "small": "Klein",
+        "default": "Standard",
+        "large": "Groß"
+      },
+      "web3Title": "4. Web3-Integrations-Abzeichen",
+      "web3": {
+        "ethereum": "Ethereum",
+        "solana": "Solana",
+        "verified": "Verifiziert"
+      }
+    },
+    "variants": {
+      "title": "🎨 Abzeichen-Varianten",
+      "description": "Entdecken Sie alle verfügbaren Abzeichenfarbvarianten mit ihren semantischen Bedeutungen und geeigneten Einsatzgebieten.",
+      "semanticTitle": "Semantische Farben",
+      "web3Title": "Web3-spezifisch",
+      "semantic": {
+        "default": "Standard",
+        "defaultDesc": "Allgemeine, neutrale Informationen",
+        "primary": "Primär",
+        "primaryDesc": "Markenfarben, wichtige Hervorhebungen",
+        "success": "Erfolg",
+        "successDesc": "Abgeschlossene Aktionen, positiver Status",
+        "warning": "Warnung",
+        "warningDesc": "Vorsicht erforderlich, ausstehende Aktionen",
+        "error": "Fehler",
+        "errorDesc": "Fehlgeschlagene Aktionen, kritische Probleme"
+      },
+      "web3": {
+        "ethereum": "Ethereum",
+        "ethereumDesc": "Ethereum-Blockchain-bezogen",
+        "solana": "Solana",
+        "solanaDesc": "Solana-Blockchain bezogen"
+      }
+    },
+    "sizes": {
+      "title": "📏 Größenoptionen",
+      "description": "Verschiedene Abzeichen-Größen für verschiedene Einsatzgebiete, von kompakten Indikatoren bis zu auffälligen Beschriftungen.",
+      "small": {
+        "heading": "Klein",
+        "badge": "Kleines Abzeichen",
+        "desc": "Kompakte Größe für dichte Layouts"
+      },
+      "default": {
+        "heading": "Standard",
+        "badge": "Standardabzeichen",
+        "desc": "Standardgröße für die meisten Anwendungsfälle"
+      },
+      "large": {
+        "heading": "Groß",
+        "badge": "Großes Abzeichen",
+        "desc": "Hervorgehobene Größe für Betonung"
+      }
+    },
+    "interactive": {
+      "title": "⚡ Interaktive Muster",
+      "description": "Realitätsnahe Beispiele dafür, wie Abzeichen in verschiedenen Kontexten und Komponenten verwendet werden.",
+      "userStatusTitle": "Benutzerstatus-Indikatoren",
+      "userStatus": {
+        "online": "Online",
+        "away": "Weg",
+        "offline": "Offline"
+      },
+      "notificationTitle": "Benachrichtigungsanzahlen",
+      "notification": {
+        "messages": "📧 Nachrichten",
+        "notifications": "🔔 Benachrichtigungen",
+        "updates": "⭐ Aktualisierungen"
+      }
+    },
+    "accessibility": {
+      "title": "♿ Barrierefreiheitsrichtlinien",
+      "description": "Stellen Sie sicher, dass Ihre Abzeichen für alle Benutzer mit angemessener Kontrastierung, Unterstützung durch Bildschirmleser und Tastaturnavigation zugänglich sind.",
+      "bestPracticesTitle": "✅ Best Practices",
+      "bestPractices": [
+        "Verwenden Sie semantische Farben, die konsistent Bedeutung vermitteln",
+        "Stellen Sie eine ausreichende Farbkontrastierung sicher (mindestens 4,5:1)",
+        "Textbeschriftungen hinzufügen, nicht nur Farben oder Symbole",
+        "Verwenden Sie geeignete ARIA-Bezeichnungen für Bildschirmleser",
+        "Halten Sie den Badge-Text kurz und sinnvoll"
+      ],
+      "avoidTitle": "❌ Vermeiden",
+      "avoid": [
+        "Die alleinige Verwendung von Farbe zur Übermittlung von Informationen",
+        "Verwenden Sie zu viele Abzeichen in einer einzelnen Benutzeroberfläche",
+        "Abzeichen zu klein machen, um bequem zu lesen",
+        "Verwendung von unklarem oder mehrdeutigem Badge-Text",
+        "Übermäßiger Gebrauch von animierten oder blinkenden Abzeichen"
+      ],
+      "ariaExamplesTitle": "ARIA-Beispiele"
+    }
+  },
+  "backToDesignSystem": "Zurück zum Design-System",
+  "lastUpdated": "Zuletzt aktualisiert: {{date}}"
+}

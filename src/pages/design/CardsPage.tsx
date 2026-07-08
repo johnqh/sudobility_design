@@ -1,6 +1,7 @@
 import { Section } from "@sudobility/components";
 
 import React, { useState } from "react";
+import { useTranslation } from "react-i18next";
 import {
   ClipboardDocumentIcon,
   CheckIcon,
@@ -39,60 +40,64 @@ const CodeExample: React.FC<{
   preview?: React.ReactNode;
   copiedValue: string | null;
   copyToClipboard: (value: string) => void;
-}> = ({ title, description, code, preview, copiedValue, copyToClipboard }) => (
-  <div className="border border-border rounded-lg p-4 space-y-4">
-    <div>
-      <h4 className={`${textVariants.heading.h5()} mb-1`}>{title}</h4>
-      {description && (
-        <p className={`${textVariants.body.sm()} text-muted-foreground`}>
-          {description}
-        </p>
+}> = ({ title, description, code, preview, copiedValue, copyToClipboard }) => {
+  const { t } = useTranslation("cards");
+  return (
+    <div className="border border-border rounded-lg p-4 space-y-4">
+      <div>
+        <h4 className={`${textVariants.heading.h5()} mb-1`}>{title}</h4>
+        {description && (
+          <p className={`${textVariants.body.sm()} text-muted-foreground`}>
+            {description}
+          </p>
+        )}
+      </div>
+
+      {preview && (
+        <div className="bg-muted rounded-lg p-4">
+          <div className="flex items-center gap-2 mb-2">
+            <div className="w-2 h-2 bg-destructive rounded-full"></div>
+            <div className="w-2 h-2 bg-warning rounded-full"></div>
+            <div className="w-2 h-2 bg-success rounded-full"></div>
+            <span className={`${textVariants.caption.default()} ml-2`}>
+              {t("codeExample.preview")}
+            </span>
+          </div>
+          <div className="bg-card rounded border p-6">{preview}</div>
+        </div>
       )}
-    </div>
 
-    {preview && (
       <div className="bg-muted rounded-lg p-4">
-        <div className="flex items-center gap-2 mb-2">
-          <div className="w-2 h-2 bg-destructive rounded-full"></div>
-          <div className="w-2 h-2 bg-warning rounded-full"></div>
-          <div className="w-2 h-2 bg-success rounded-full"></div>
-          <span className={`${textVariants.caption.default()} ml-2`}>
-            Preview
-          </span>
-        </div>
-        <div className="bg-card rounded border p-6">{preview}</div>
-      </div>
-    )}
-
-    <div className="bg-muted rounded-lg p-4">
-      <div className="flex items-center justify-between mb-2">
-        <div className="flex items-center gap-2">
-          <CodeBracketIcon className="h-4 w-4 text-muted-foreground" />
-          <span
-            className={`${textVariants.caption.default()} text-muted-foreground`}
+        <div className="flex items-center justify-between mb-2">
+          <div className="flex items-center gap-2">
+            <CodeBracketIcon className="h-4 w-4 text-muted-foreground" />
+            <span
+              className={`${textVariants.caption.default()} text-muted-foreground`}
+            >
+              {t("codeExample.usage")}
+            </span>
+          </div>
+          <button
+            onClick={() => copyToClipboard(code)}
+            className="p-1 text-muted-foreground hover:text-foreground transition-colors"
           >
-            Usage
-          </span>
+            {copiedValue === code ? (
+              <CheckIcon className="h-4 w-4" />
+            ) : (
+              <ClipboardDocumentIcon className="h-4 w-4" />
+            )}
+          </button>
         </div>
-        <button
-          onClick={() => copyToClipboard(code)}
-          className="p-1 text-muted-foreground hover:text-foreground transition-colors"
-        >
-          {copiedValue === code ? (
-            <CheckIcon className="h-4 w-4" />
-          ) : (
-            <ClipboardDocumentIcon className="h-4 w-4" />
-          )}
-        </button>
+        <code className="font-mono text-xs font-medium text-foreground block whitespace-pre-wrap">
+          {code}
+        </code>
       </div>
-      <code className="font-mono text-xs font-medium text-foreground block whitespace-pre-wrap">
-        {code}
-      </code>
     </div>
-  </div>
-);
+  );
+};
 
 const CardsPage: React.FC<AppProps> = ({ emailDomain, appName: _appName }) => {
+  const { t } = useTranslation("cards");
   const [copiedValue, setCopiedValue] = useState<string | null>(null);
   const [liked, setLiked] = useState(false);
   const [bookmarked, setBookmarked] = useState(false);
@@ -175,8 +180,8 @@ const CardsPage: React.FC<AppProps> = ({ emailDomain, appName: _appName }) => {
   return (
     <>
       <SEOHead
-        title={`Cards - Design System - Internal - ${emailDomain}`}
-        description="Complete card component library with layouts, variants, and interactive patterns"
+        title={t("seo.title", { emailDomain })}
+        description={t("seo.description")}
         noIndex={true}
       />
 
@@ -199,21 +204,18 @@ const CardsPage: React.FC<AppProps> = ({ emailDomain, appName: _appName }) => {
                 />
               </svg>
               <span className="text-primary font-semibold">
-                Card Components
+                {t("header.badge")}
               </span>
             </div>
 
             <h1 className={`${textVariants.heading.display.xl()} mb-6`}>
-              Card Layout & Content Patterns
+              {t("header.title")}
             </h1>
 
             <p
               className={`${textVariants.body.lg()} max-w-3xl mx-auto text-muted-foreground`}
             >
-              Comprehensive card component system with flexible layouts,
-              interactive elements, and content patterns. All cards support
-              elevation, hover states, and responsive design with consistent
-              spacing and styling.
+              {t("header.description")}
             </p>
           </div>
 
@@ -223,15 +225,14 @@ const CardsPage: React.FC<AppProps> = ({ emailDomain, appName: _appName }) => {
               <div className="flex items-center mb-6">
                 <CodeBracketIcon className="h-8 w-8 text-primary mr-3" />
                 <h2 className={`${textVariants.heading.h2()} text-foreground`}>
-                  Quick Start - Essential Card Patterns
+                  {t("quickStart.title")}
                 </h2>
               </div>
 
               <p
                 className={`${textVariants.body.md()} text-muted-foreground mb-8`}
               >
-                Ready-to-use card components with consistent layouts,
-                interactions, and content organization.
+                {t("quickStart.description")}
               </p>
 
               <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
@@ -240,7 +241,7 @@ const CardsPage: React.FC<AppProps> = ({ emailDomain, appName: _appName }) => {
                   <h3
                     className={`${textVariants.heading.h4()} text-foreground mb-3`}
                   >
-                    Basic Content Card
+                    {t("quickStart.basic.heading")}
                   </h3>
                   <div className="bg-muted rounded-lg p-4 relative">
                     <button
@@ -262,11 +263,10 @@ const CardsPage: React.FC<AppProps> = ({ emailDomain, appName: _appName }) => {
                       className={`${variants.card.default.padded()} hover:shadow-md transition-shadow duration-200`}
                     >
                       <h3 className="text-lg font-semibold text-foreground mb-2">
-                        Card Title
+                        {t("quickStart.basic.cardTitle")}
                       </h3>
                       <p className="text-muted-foreground text-sm">
-                        This is a basic card with simple content layout and
-                        consistent styling.
+                        {t("quickStart.basic.cardBody")}
                       </p>
                     </div>
                   </div>
@@ -277,7 +277,7 @@ const CardsPage: React.FC<AppProps> = ({ emailDomain, appName: _appName }) => {
                   <h3
                     className={`${textVariants.heading.h4()} text-foreground mb-3`}
                   >
-                    Interactive Card
+                    {t("quickStart.interactive.heading")}
                   </h3>
                   <div className="bg-muted rounded-lg p-4 relative">
                     <button
@@ -299,15 +299,14 @@ const CardsPage: React.FC<AppProps> = ({ emailDomain, appName: _appName }) => {
                       className={`${variants.card.default.padded()} hover:shadow-lg hover:border-primary cursor-pointer transition-all duration-200 transform hover:-translate-y-1`}
                     >
                       <h3 className="text-lg font-semibold text-foreground mb-2">
-                        Interactive Card
+                        {t("quickStart.interactive.cardTitle")}
                       </h3>
                       <p className="text-muted-foreground text-sm mb-4">
-                        Click me for interaction effects and enhanced hover
-                        states.
+                        {t("quickStart.interactive.cardBody")}
                       </p>
                       <div className="flex items-center justify-between">
                         <span className="text-primary text-sm font-medium">
-                          Learn more →
+                          {t("quickStart.interactive.learnMore")}
                         </span>
                       </div>
                     </div>
@@ -319,7 +318,7 @@ const CardsPage: React.FC<AppProps> = ({ emailDomain, appName: _appName }) => {
                   <h3
                     className={`${textVariants.heading.h4()} text-foreground mb-3`}
                   >
-                    Statistics Card
+                    {t("quickStart.stats.heading")}
                   </h3>
                   <div className="bg-muted rounded-lg p-4 relative">
                     <button
@@ -344,7 +343,7 @@ const CardsPage: React.FC<AppProps> = ({ emailDomain, appName: _appName }) => {
                         </div>
                         <div className="ml-4">
                           <p className="text-sm font-medium text-muted-foreground">
-                            Total Revenue
+                            {t("quickStart.stats.revenueLabel")}
                           </p>
                           <p className="text-2xl font-semibold text-foreground">
                             $45,231.89
@@ -357,7 +356,7 @@ const CardsPage: React.FC<AppProps> = ({ emailDomain, appName: _appName }) => {
                           +20.1%
                         </span>
                         <span className="text-muted-foreground ml-2">
-                          from last month
+                          {t("quickStart.stats.fromLastMonth")}
                         </span>
                       </div>
                     </div>
@@ -369,7 +368,7 @@ const CardsPage: React.FC<AppProps> = ({ emailDomain, appName: _appName }) => {
                   <h3
                     className={`${textVariants.heading.h4()} text-foreground mb-3`}
                   >
-                    Feature Card
+                    {t("quickStart.feature.heading")}
                   </h3>
                   <div className="bg-muted rounded-lg p-4 relative">
                     <button
@@ -394,14 +393,13 @@ const CardsPage: React.FC<AppProps> = ({ emailDomain, appName: _appName }) => {
                         </div>
                         <div className="ml-4">
                           <h3 className="text-lg font-semibold text-foreground mb-2">
-                            Secure & Private
+                            {t("quickStart.feature.cardTitle")}
                           </h3>
                           <p className="text-muted-foreground text-sm mb-4">
-                            End-to-end encryption ensures your communications
-                            remain private and secure.
+                            {t("quickStart.feature.cardBody")}
                           </p>
                           <button className="text-success text-sm font-medium hover:text-success/80 transition-colors">
-                            Learn more →
+                            {t("quickStart.feature.learnMore")}
                           </button>
                         </div>
                       </div>
@@ -415,19 +413,18 @@ const CardsPage: React.FC<AppProps> = ({ emailDomain, appName: _appName }) => {
           {/* Card Variants */}
           <Section>
             <h2 className={`${textVariants.heading.h2()} mb-8`}>
-              Card Variants & Elevations
+              {t("variants.title")}
             </h2>
             <p
               className={`${textVariants.body.md()} text-muted-foreground mb-8`}
             >
-              Different card elevations and styling variants for various use
-              cases.
+              {t("variants.description")}
             </p>
 
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
               <CodeExample
-                title="Elevation Levels"
-                description="Different shadow depths and hover states for visual hierarchy"
+                title={t("variants.elevation.title")}
+                description={t("variants.elevation.description")}
                 copiedValue={copiedValue}
                 copyToClipboard={copyToClipboard}
                 code={`// Flat Card (no shadow)
@@ -453,22 +450,22 @@ const CardsPage: React.FC<AppProps> = ({ emailDomain, appName: _appName }) => {
                   <div className="space-y-4">
                     <div className="bg-card border border-border rounded-lg p-4">
                       <span className="text-sm text-muted-foreground">
-                        Flat Card
+                        {t("variants.elevation.flat")}
                       </span>
                     </div>
                     <div className="bg-card border border-border rounded-lg p-4 shadow-sm">
                       <span className="text-sm text-muted-foreground">
-                        Default Card
+                        {t("variants.elevation.default")}
                       </span>
                     </div>
                     <div className="bg-card border border-border rounded-lg p-4 shadow-md">
                       <span className="text-sm text-muted-foreground">
-                        Elevated Card
+                        {t("variants.elevation.elevated")}
                       </span>
                     </div>
                     <div className="bg-card border border-border rounded-lg p-4 shadow-lg">
                       <span className="text-sm text-muted-foreground">
-                        Floating Card
+                        {t("variants.elevation.floating")}
                       </span>
                     </div>
                   </div>
@@ -476,8 +473,8 @@ const CardsPage: React.FC<AppProps> = ({ emailDomain, appName: _appName }) => {
               />
 
               <CodeExample
-                title="Color Variants"
-                description="Branded and semantic color variants for different contexts"
+                title={t("variants.color.title")}
+                description={t("variants.color.description")}
                 copiedValue={copiedValue}
                 copyToClipboard={copyToClipboard}
                 code={`// Success Card
@@ -502,16 +499,24 @@ const CardsPage: React.FC<AppProps> = ({ emailDomain, appName: _appName }) => {
                 preview={
                   <div className="space-y-4">
                     <div className="bg-success/10 border border-success/20 rounded-lg p-4">
-                      <div className="text-success text-sm">Success Card</div>
+                      <div className="text-success text-sm">
+                        {t("variants.color.success")}
+                      </div>
                     </div>
                     <div className="bg-warning/10 border border-warning/20 rounded-lg p-4">
-                      <div className="text-warning text-sm">Warning Card</div>
+                      <div className="text-warning text-sm">
+                        {t("variants.color.warning")}
+                      </div>
                     </div>
                     <div className="bg-destructive/10 border border-destructive/20 rounded-lg p-4">
-                      <div className="text-destructive text-sm">Error Card</div>
+                      <div className="text-destructive text-sm">
+                        {t("variants.color.error")}
+                      </div>
                     </div>
                     <div className="bg-info/10 border border-info/20 rounded-lg p-4">
-                      <div className="text-info text-sm">Info Card</div>
+                      <div className="text-info text-sm">
+                        {t("variants.color.info")}
+                      </div>
                     </div>
                   </div>
                 }
@@ -522,19 +527,18 @@ const CardsPage: React.FC<AppProps> = ({ emailDomain, appName: _appName }) => {
           {/* Content Cards */}
           <Section>
             <h2 className={`${textVariants.heading.h2()} mb-8`}>
-              Content & Media Cards
+              {t("content.title")}
             </h2>
             <p
               className={`${textVariants.body.md()} text-muted-foreground mb-8`}
             >
-              Cards with rich content, media, and interactive elements for
-              social and content applications.
+              {t("content.description")}
             </p>
 
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
               <CodeExample
-                title="Social Media Card"
-                description="Card with user interaction, engagement metrics, and actions"
+                title={t("content.social.title")}
+                description={t("content.social.description")}
                 copiedValue={copiedValue}
                 copyToClipboard={copyToClipboard}
                 code={`import { variants } from '@sudobility/design';
@@ -592,10 +596,10 @@ const CardsPage: React.FC<AppProps> = ({ emailDomain, appName: _appName }) => {
                         </div>
                         <div className="ml-3">
                           <p className="font-medium text-foreground">
-                            John Doe
+                            {t("content.social.userName")}
                           </p>
                           <p className="text-xs text-muted-foreground">
-                            2 hours ago
+                            {t("content.social.timeAgo")}
                           </p>
                         </div>
                       </div>
@@ -606,8 +610,7 @@ const CardsPage: React.FC<AppProps> = ({ emailDomain, appName: _appName }) => {
 
                     {/* Content */}
                     <p className="text-foreground mb-4">
-                      Just shipped a new feature! The Web3 integration is now
-                      live and ready for testing.
+                      {t("content.social.post")}
                     </p>
 
                     {/* Actions */}
@@ -629,7 +632,9 @@ const CardsPage: React.FC<AppProps> = ({ emailDomain, appName: _appName }) => {
                       </button>
                       <button className="flex items-center space-x-2 text-muted-foreground hover:text-success transition-colors">
                         <ShareIcon className="h-5 w-5" />
-                        <span className="text-sm">Share</span>
+                        <span className="text-sm">
+                          {t("content.social.share")}
+                        </span>
                       </button>
                     </div>
                   </div>
@@ -637,8 +642,8 @@ const CardsPage: React.FC<AppProps> = ({ emailDomain, appName: _appName }) => {
               />
 
               <CodeExample
-                title="Product Card"
-                description="E-commerce style card with rating, pricing, and actions"
+                title={t("content.product.title")}
+                description={t("content.product.description")}
                 copiedValue={copiedValue}
                 copyToClipboard={copyToClipboard}
                 code={`import { variants } from '@sudobility/design';
@@ -692,7 +697,7 @@ const CardsPage: React.FC<AppProps> = ({ emailDomain, appName: _appName }) => {
                     {/* Content */}
                     <div className="p-6">
                       <h3 className="text-lg font-semibold text-foreground mb-2">
-                        Web3 Development Kit
+                        {t("content.product.productName")}
                       </h3>
 
                       {/* Rating */}
@@ -707,13 +712,12 @@ const CardsPage: React.FC<AppProps> = ({ emailDomain, appName: _appName }) => {
                           </button>
                         ))}
                         <span className="ml-2 text-sm text-muted-foreground">
-                          (128 reviews)
+                          {t("content.product.reviews")}
                         </span>
                       </div>
 
                       <p className="text-muted-foreground text-sm mb-4">
-                        Complete toolkit for building decentralized applications
-                        with ease.
+                        {t("content.product.productBody")}
                       </p>
 
                       {/* Price & Actions */}
@@ -733,7 +737,7 @@ const CardsPage: React.FC<AppProps> = ({ emailDomain, appName: _appName }) => {
                             )}
                           </button>
                           <button className={variants.button.primary.default()}>
-                            Add to Cart
+                            {t("content.product.addToCart")}
                           </button>
                         </div>
                       </div>
@@ -747,19 +751,18 @@ const CardsPage: React.FC<AppProps> = ({ emailDomain, appName: _appName }) => {
           {/* Web3 Specific Cards */}
           <Section>
             <h2 className={`${textVariants.heading.h2()} mb-8`}>
-              Web3 & Crypto Cards
+              {t("web3.title")}
             </h2>
             <p
               className={`${textVariants.body.md()} text-muted-foreground mb-8`}
             >
-              Specialized card patterns for Web3, crypto, and blockchain
-              applications.
+              {t("web3.description")}
             </p>
 
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
               <CodeExample
-                title="Wallet Connection Card"
-                description="Card for wallet connection with status indicators"
+                title={t("web3.wallet.title")}
+                description={t("web3.wallet.description")}
                 copiedValue={copiedValue}
                 copyToClipboard={copyToClipboard}
                 code={`import { variants } from '@sudobility/design';
@@ -816,14 +819,16 @@ const CardsPage: React.FC<AppProps> = ({ emailDomain, appName: _appName }) => {
                       </div>
                       <div className="flex items-center">
                         <div className="w-2 h-2 bg-success rounded-full mr-2"></div>
-                        <span className="text-sm text-success">Connected</span>
+                        <span className="text-sm text-success">
+                          {t("web3.wallet.connected")}
+                        </span>
                       </div>
                     </div>
 
                     <div className="space-y-3">
                       <div className="flex justify-between">
                         <span className="text-sm text-muted-foreground">
-                          Network
+                          {t("web3.wallet.network")}
                         </span>
                         <span className="text-sm font-medium text-foreground">
                           Ethereum
@@ -831,7 +836,7 @@ const CardsPage: React.FC<AppProps> = ({ emailDomain, appName: _appName }) => {
                       </div>
                       <div className="flex justify-between">
                         <span className="text-sm text-muted-foreground">
-                          Balance
+                          {t("web3.wallet.balance")}
                         </span>
                         <span className="text-sm font-medium text-foreground">
                           2.45 ETH
@@ -842,15 +847,15 @@ const CardsPage: React.FC<AppProps> = ({ emailDomain, appName: _appName }) => {
                     <button
                       className={`${variants.button.destructive.default()} w-full mt-4`}
                     >
-                      Disconnect
+                      {t("web3.wallet.disconnect")}
                     </button>
                   </div>
                 }
               />
 
               <CodeExample
-                title="NFT Collection Card"
-                description="Card for displaying NFT collections and metadata"
+                title={t("web3.nft.title")}
+                description={t("web3.nft.description")}
                 copiedValue={copiedValue}
                 copyToClipboard={copyToClipboard}
                 code={`import { variants } from '@sudobility/design';
@@ -908,7 +913,7 @@ const CardsPage: React.FC<AppProps> = ({ emailDomain, appName: _appName }) => {
                     <div className="p-6">
                       <div className="flex items-center justify-between mb-2">
                         <h3 className="font-semibold text-foreground">
-                          Crypto Punks Collection
+                          {t("web3.nft.collectionName")}
                         </h3>
                         <div className="flex items-center space-x-1">
                           <EyeIcon className="h-4 w-4 text-muted-foreground" />
@@ -919,14 +924,13 @@ const CardsPage: React.FC<AppProps> = ({ emailDomain, appName: _appName }) => {
                       </div>
 
                       <p className="text-sm text-muted-foreground mb-4">
-                        Rare digital collectible from the iconic CryptoPunks
-                        series.
+                        {t("web3.nft.collectionBody")}
                       </p>
 
                       <div className="flex items-center justify-between">
                         <div>
                           <p className="text-xs text-muted-foreground">
-                            Current Price
+                            {t("web3.nft.currentPrice")}
                           </p>
                           <p className="font-semibold text-foreground">
                             125.5 ETH
@@ -936,7 +940,7 @@ const CardsPage: React.FC<AppProps> = ({ emailDomain, appName: _appName }) => {
                           <button
                             className={`${variants.button.primary.default()} text-sm`}
                           >
-                            Place Bid
+                            {t("web3.nft.placeBid")}
                           </button>
                         </div>
                       </div>
@@ -950,18 +954,17 @@ const CardsPage: React.FC<AppProps> = ({ emailDomain, appName: _appName }) => {
           {/* Card Layouts */}
           <Section>
             <h2 className={`${textVariants.heading.h2()} mb-8`}>
-              Card Layouts & Grids
+              {t("layouts.title")}
             </h2>
             <p
               className={`${textVariants.body.md()} text-muted-foreground mb-8`}
             >
-              Responsive grid layouts and card arrangements for different screen
-              sizes.
+              {t("layouts.description")}
             </p>
 
             <CodeExample
-              title="Responsive Card Grid"
-              description="Adaptive grid that works across all screen sizes"
+              title={t("layouts.grid.title")}
+              description={t("layouts.grid.description")}
               copiedValue={copiedValue}
               copyToClipboard={copyToClipboard}
               code={`{/* Responsive Grid - adapts from 1 column on mobile to 4 on desktop */}
@@ -1009,15 +1012,15 @@ const CardsPage: React.FC<AppProps> = ({ emailDomain, appName: _appName }) => {
                           </div>
                           <div className="ml-3">
                             <h3 className="font-medium text-foreground text-sm">
-                              Card {index}
+                              {t("layouts.grid.cardLabel", { index })}
                             </h3>
                             <p className="text-xs text-muted-foreground">
-                              Subtitle
+                              {t("layouts.grid.subtitle")}
                             </p>
                           </div>
                         </div>
                         <p className="text-muted-foreground text-xs">
-                          Sample card content for grid demonstration.
+                          {t("layouts.grid.sampleContent")}
                         </p>
                       </div>
                     ))}
@@ -1030,58 +1033,42 @@ const CardsPage: React.FC<AppProps> = ({ emailDomain, appName: _appName }) => {
           {/* Accessibility Guidelines */}
           <Section>
             <h2 className={`${textVariants.heading.h2()} mb-8`}>
-              Accessibility & Best Practices
+              {t("accessibility.title")}
             </h2>
             <div className="bg-primary/10 rounded-xl p-6 border border-primary/20">
               <h3
                 className={`${textVariants.heading.h4()} mb-4 text-foreground`}
               >
-                Card Accessibility Guidelines
+                {t("accessibility.guidelinesTitle")}
               </h3>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                 <ul className="space-y-2 text-foreground">
-                  <li className="flex items-start">
-                    <span className="w-2 h-2 bg-primary rounded-full mt-2 mr-3 flex-shrink-0"></span>
-                    <span>
-                      Use semantic HTML structure with proper headings
-                    </span>
-                  </li>
-                  <li className="flex items-start">
-                    <span className="w-2 h-2 bg-primary rounded-full mt-2 mr-3 flex-shrink-0"></span>
-                    <span>
-                      Ensure sufficient color contrast for text content
-                    </span>
-                  </li>
-                  <li className="flex items-start">
-                    <span className="w-2 h-2 bg-primary rounded-full mt-2 mr-3 flex-shrink-0"></span>
-                    <span>Add focus states for interactive card elements</span>
-                  </li>
-                  <li className="flex items-start">
-                    <span className="w-2 h-2 bg-primary rounded-full mt-2 mr-3 flex-shrink-0"></span>
-                    <span>Use ARIA labels for complex card interactions</span>
-                  </li>
+                  {(
+                    t("accessibility.guidelines", {
+                      returnObjects: true,
+                    }) as string[]
+                  )
+                    .slice(0, 4)
+                    .map((guideline, index) => (
+                      <li key={index} className="flex items-start">
+                        <span className="w-2 h-2 bg-primary rounded-full mt-2 mr-3 flex-shrink-0"></span>
+                        <span>{guideline}</span>
+                      </li>
+                    ))}
                 </ul>
                 <ul className="space-y-2 text-foreground">
-                  <li className="flex items-start">
-                    <span className="w-2 h-2 bg-primary rounded-full mt-2 mr-3 flex-shrink-0"></span>
-                    <span>Implement keyboard navigation for card actions</span>
-                  </li>
-                  <li className="flex items-start">
-                    <span className="w-2 h-2 bg-primary rounded-full mt-2 mr-3 flex-shrink-0"></span>
-                    <span>
-                      Provide alternative text for decorative elements
-                    </span>
-                  </li>
-                  <li className="flex items-start">
-                    <span className="w-2 h-2 bg-primary rounded-full mt-2 mr-3 flex-shrink-0"></span>
-                    <span>Use responsive design for mobile accessibility</span>
-                  </li>
-                  <li className="flex items-start">
-                    <span className="w-2 h-2 bg-primary rounded-full mt-2 mr-3 flex-shrink-0"></span>
-                    <span>
-                      Test with screen readers and keyboard navigation
-                    </span>
-                  </li>
+                  {(
+                    t("accessibility.guidelines", {
+                      returnObjects: true,
+                    }) as string[]
+                  )
+                    .slice(4)
+                    .map((guideline, index) => (
+                      <li key={index} className="flex items-start">
+                        <span className="w-2 h-2 bg-primary rounded-full mt-2 mr-3 flex-shrink-0"></span>
+                        <span>{guideline}</span>
+                      </li>
+                    ))}
                 </ul>
               </div>
             </div>

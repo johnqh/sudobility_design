@@ -1,0 +1,80 @@
+{
+  "seo": {
+    "title": "Tabeller och datagridgar - Designsystem - Intern - {{emailDomain}}",
+    "description": "Komplett tabellsystem med sortering, filtrering, sidnumrering och datagridfunktioner"
+  },
+  "header": {
+    "badge": "Tabeller och datagridgar",
+    "title": "Tabeller och datagridgar",
+    "subtitle": "Komplett tabellsystem med sortering, filtrering, sidning och datagridsfunktioner. Perfekt för att visa strukturerade data med avancerade interaktionsmönster."
+  },
+  "columns": {
+    "name": "Namn",
+    "email": "E-post",
+    "role": "Roll",
+    "status": "Status",
+    "actions": "Handlingar",
+    "transactions": "Transaktioner",
+    "joinDate": "Anslutningsdatum",
+    "transactionHash": "Transaktionshash",
+    "from": "Från",
+    "to": "Till",
+    "amount": "Belopp",
+    "chain": "Kedja"
+  },
+  "basic": {
+    "title": "Grundläggande tabell",
+    "usage": "Användning"
+  },
+  "sortable": {
+    "title": "Sorterbar tabell",
+    "headers": "Sorterbara rubriker"
+  },
+  "selectable": {
+    "title": "Väljbar tabell med massåtgärder",
+    "selected": "{{count}} rad(val) valt",
+    "export": "Exportera",
+    "delete": "Ta bort"
+  },
+  "compact": {
+    "title": "Kompakt bord"
+  },
+  "filterable": {
+    "title": "Filtrerbar tabell",
+    "searchPlaceholder": "Sök användare...",
+    "filters": "Filter"
+  },
+  "pagination": {
+    "title": "Tabell med sidnumrering",
+    "showing": "Visar",
+    "to": "till",
+    "of": "av",
+    "results": "resultat",
+    "ariaLabel": "Sidnumrering"
+  },
+  "web3": {
+    "title": "Web3-transaktions-tabell",
+    "confirmed": "Bekräftat",
+    "pending": "Väntar",
+    "ethereum": "Ethereum",
+    "solana": "Solana"
+  },
+  "empty": {
+    "title": "Tomt tillstånd",
+    "noData": "Ingen data hittades",
+    "description": "Det finns för närvarande inga poster att visa.",
+    "addRecord": "Lägg till ny post"
+  },
+  "tokens": {
+    "title": "Tillgängliga tabelltyper",
+    "structure": "Tabellstruktur",
+    "containerBase": "Behållare och bas",
+    "headers": "Rubriker",
+    "body": "Kropp",
+    "statesPagination": "Länder och sidnumrering"
+  },
+  "nav": {
+    "previous": "Layout och mellanrum",
+    "back": "Tillbaka till designsystemet"
+  }
+}

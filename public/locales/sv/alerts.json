@@ -1,0 +1,142 @@
+{
+  "seo": {
+    "title": "Varningar - Designsystem - Interna - {{emailDomain}}",
+    "description": "Komplett dokumentation av varningskomponent med varianter, layouter, åtgärder och Web3-integration"
+  },
+  "copy": {
+    "copied": "✓ Kopierat!",
+    "copy": "Kopiera"
+  },
+  "header": {
+    "badge": "Varningar",
+    "title": "Varningskomponenter",
+    "intro": "Sammanhangsbestämda feedbackmeddelanden som ger viktiga uppgifter, varningar eller bekräftelser till användare med tydlig visuell hierarki och åtgärdsbar innehåll."
+  },
+  "stats": {
+    "alertTypes": "Varnings typer",
+    "layoutOptions": "Layoutalternativ",
+    "actionPatterns": "Aktionsmönster",
+    "web3Examples": "Web3-exempel"
+  },
+  "quickStart": {
+    "title": "🚀 Snabbstart",
+    "description": "Kom igång med de vanligaste varningsmönstren. Dessa exempel visar de viktigaste varningstyperna och deras vanliga användningsområden.",
+    "essentialTitle": "1. Viktiga varningstyper",
+    "success": {
+      "title": "Lyckat!",
+      "body": "Din transaktion har bekräftats på blockkedjan."
+    },
+    "info": {
+      "title": "Information",
+      "body": "Anslut din plånbok för att fortsätta med denna åtgärd."
+    },
+    "warning": {
+      "title": "Varning",
+      "body": "Höga avgifter för gas upptäckta. Överväg att vänta tills nätverkets belastning minskar."
+    },
+    "error": {
+      "title": "Fel",
+      "body": "Transaktionen misslyckades. Vänligen kontrollera ditt plånboksaldo och försök igen."
+    },
+    "compactTitle": "2. Kompakt varningsstil",
+    "compact": {
+      "success": "✓ E-post skickat framgångsrikt",
+      "info": "ℹ Nya funktioner tillgängliga i inställningarna",
+      "warning": "⚠ Plånbok avstängd",
+      "error": "✗ Misslyckades med att ladda meddelanden"
+    },
+    "dismissibleTitle": "3. Avvisningar som kan stängas",
+    "dismissible": {
+      "successTitle": "Kontot har verifierats!",
+      "successBody": "Du kan nu få tillgång till alla premiumfunktioner.",
+      "infoTitle": "Ny uppdatering tillgänglig",
+      "infoBody": "Version 2.0 innehåller förbättrade säkerhetsfunktioner."
+    },
+    "actionsTitle": "4. Varningsmeddelanden med åtgärdsknappar",
+    "actions": {
+      "title": "Prenumerationen löper snart ut",
+      "body": "Dina premiumfunktioner kommer att inaktiveras om 3 dagar.",
+      "renewNow": "Förnya nu",
+      "remindLater": "Kom ihåg senare"
+    }
+  },
+  "variants": {
+    "title": "🎨 Varningsvarianter",
+    "description": "Utforska alla tillgängliga varningsformer med deras semantiska betydelser och lämpliga sammanhang för olika typer av användarkommunikation.",
+    "standardTitle": "Standardvarningar",
+    "standard": {
+      "successTitle": "Lyckoskickning",
+      "successBody": "Används för slutförda åtgärder och positiva bekräftelser",
+      "infoTitle": "Infovarning",
+      "infoBody": "Använd för neutralt information och användbara tips",
+      "warningTitle": "Varning varning",
+      "warningBody": "Använd för potentiella problem som behöver uppmärksammas",
+      "errorTitle": "Felvarning",
+      "errorBody": "Används för misslyckade åtgärder och allvarliga problem"
+    },
+    "compactTitle": "Kompakta varianter",
+    "compact": {
+      "success": "Kompakt lyckosmeddelande",
+      "successNote": "Minimalt utrymme",
+      "info": "Kompakt informationmeddelande",
+      "infoNote": "Snabba meddelanden",
+      "warning": "Kompakt varningsmeddelande",
+      "warningNote": "Korta varningsanteckningar",
+      "error": "Kompakt felmeddelande",
+      "errorNote": "Korta felmeddelanden"
+    }
+  },
+  "web3": {
+    "title": "⚡ Web3 integreringsexempel",
+    "description": "Exempel på varningsmeddelanden som vanligtvis används i Web3-applikationer, inklusive växling av plånbok, transaktioner och interaktioner med blockkedja.",
+    "transactionTitle": "Transaktionsstatusvarningar",
+    "transaction": {
+      "pendingTitle": "Transaktion väntar",
+      "pendingBody": "Din transaktion bearbetas på blockkedjan. Det kan ta några minuter.",
+      "confirmedTitle": "Transaktion bekräftad",
+      "confirmedBody": "Din e-post har skickats och sparats på blockkedjan.",
+      "failedTitle": "Transaktion misslyckades",
+      "failedBody": "Otillräckligt medel eller gasgräns för låg. Försök igen."
+    },
+    "walletTitle": "Varningsmeddelanden vid plånbokanslutning",
+    "wallet": {
+      "notConnectedTitle": "Plånbok ej ansluten",
+      "notConnectedBody": "Vänligen koppla din plånbok för att komma åt dina e-postmeddelanden och skicka meddelanden.",
+      "connectWallet": "Anslut plånbok",
+      "networkMismatchTitle": "Nätverksmatchning",
+      "networkMismatchBody": "Vänligen byt till Ethereum Mainnet för att fortsätta använda plattformen.",
+      "switchNetwork": "Byt nätverk"
+    },
+    "gasTitle": "Avgiftsvarningar och nätverksvarningar",
+    "gas": {
+      "highFeesTitle": "Höga avgifter för gas upptäckta",
+      "highFeesBody": "Nuvarande gaspris är ovanligt högt. Ta hänsyn till att vänta tills nätverksbelastningen minskar.",
+      "ensTitle": "Ny ENS-domän upptäckt",
+      "ensBody": "Din plånbok äger nu alice.eth. Du kan ta emot e-post till denna adress!",
+      "setAsPrimary": "Ange som primär"
+    }
+  },
+  "accessibility": {
+    "title": "♿ Tillgänglighetsrikklinjer",
+    "description": "Se till att dina varningar är tillgängliga för alla användare genom lämpliga ARIA-attribut, fokushantering och kompatibilitet med skärmläsare.",
+    "bestPracticesTitle": "✅ Bästa praxis",
+    "bestPractices": [
+      "Använd lämpliga ARIA-roller (alert, alertdialog, status)",
+      "Inkludera beskrivande text, inte bara färger eller ikoner",
+      "Tillåt tangentbordsnavigering för interaktiva element",
+      "Använd tillräcklig färgkontrast (minst 4,5:1)",
+      "Tidsbegränsade varningar hanteras på lämpligt sätt"
+    ],
+    "avoidTitle": "❌ Undvik",
+    "avoid": [
+      "Automatisk försvinnande kritiska felmeddelanden",
+      "Använda endast färger för att överföra vikt",
+      "Överväldiga användare med för många varningsmeddelanden",
+      "Göra varningstexten för liten att läsa",
+      "Att dölja viktiga åtgärder bakom onödiga klick"
+    ],
+    "ariaTitle": "ARIA-exempel på implementering"
+  },
+  "backToDesign": "Tillbaka till designsystemet",
+  "lastUpdated": "Senast uppdaterat: {{date}}"
+}

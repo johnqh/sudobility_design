@@ -1,0 +1,155 @@
+{
+  "seo": {
+    "title": "Iconos y ilustraciones - Sistema de diseño - Interno - {{emailDomain}}",
+    "description": "Sistema de íconos completo con tamaños, colores y patrones de uso contextuales coherentes"
+  },
+  "header": {
+    "badge": "Iconos e ilustraciones",
+    "title": "Iconos e ilustraciones",
+    "description": "Sistema de íconos completo con tamaños, colores y patrones de uso contextuales coherentes. Desarrollado con Heroicons y optimizado para accesibilidad y modo oscuro."
+  },
+  "sizes": {
+    "title": "Tamaños de iconos",
+    "variantsTitle": "Variantes de tamaño",
+    "usageTitle": "Tamaño Uso",
+    "labels": {
+      "xs": "xs (12px)",
+      "sm": "sm (16px)",
+      "md": "md (20px)",
+      "lg": "lg (24px)",
+      "xl": "xl (32px)",
+      "xxl": "xxl (40px)",
+      "xxxl": "xxxl (48px)"
+    }
+  },
+  "colors": {
+    "title": "Colores de iconos",
+    "variantsTitle": "Variantes de color",
+    "web3Title": "Colores Web3",
+    "default": {
+      "label": "Predeterminado",
+      "value": "Gris 500 / 400"
+    },
+    "brand": {
+      "label": "Marca",
+      "value": "Azul 600 / 400"
+    },
+    "success": {
+      "label": "Éxito",
+      "value": "Verde 600 / 400"
+    },
+    "warning": {
+      "label": "Advertencia",
+      "value": "Ámbar 600 / 400"
+    },
+    "error": {
+      "label": "Error",
+      "value": "Rojo 600 / 400"
+    },
+    "interactive": {
+      "label": "Interactivo",
+      "value": "Efectos de paso del ratón"
+    },
+    "ethereum": {
+      "label": "Ethereum",
+      "value": "Azul 600 / 400"
+    },
+    "solana": {
+      "label": "Solana",
+      "value": "Morado 600 / 400"
+    },
+    "bitcoin": {
+      "label": "Bitcoin",
+      "value": "Naranja 600 / 400"
+    }
+  },
+  "context": {
+    "title": "Iconos específicos del contexto",
+    "buttonTitle": "Iconos de botón",
+    "inputTitle": "Íconos de entrada",
+    "leadingIcon": "Ícono principal",
+    "trailingIcon": "Ícono final",
+    "iconOnly": "Solo icono",
+    "trailingInteractive": "Interactivo de cola",
+    "addItem": "Añadir elemento",
+    "continue": "Continuar",
+    "searchPlaceholder": "Buscar...",
+    "passwordPlaceholder": "Contraseña"
+  },
+  "status": {
+    "title": "Íconos de estado",
+    "success": {
+      "title": "Éxito",
+      "description": "Operación completada con éxito"
+    },
+    "warning": {
+      "title": "Advertencia",
+      "description": "Por favor, revise y continúe"
+    },
+    "error": {
+      "title": "Error",
+      "description": "Algo salió mal"
+    },
+    "info": {
+      "title": "Información",
+      "description": "Información adicional"
+    }
+  },
+  "web3": {
+    "title": "Iconos de contexto Web3",
+    "walletStatusTitle": "Estado de la billetera",
+    "blockchainTitle": "Íconos de Blockchain",
+    "walletConnected": "Cartera conectada",
+    "noWalletConnected": "No se ha conectado ninguna billetera",
+    "connectToContinue": "Conéctate para continuar",
+    "ethereum": {
+      "title": "Ethereum",
+      "network": "Red ETH"
+    },
+    "solana": {
+      "title": "Solana",
+      "network": "Red SOL"
+    },
+    "bitcoin": {
+      "title": "Bitcoin",
+      "network": "Red BTC"
+    }
+  },
+  "decorative": {
+    "title": "Íconos decorativos",
+    "heroLarge": {
+      "title": "Héroe Grande",
+      "size": "80px × 80px"
+    },
+    "heroMedium": {
+      "title": "Héroe Mediano",
+      "size": "64px × 64px"
+    },
+    "heroSmall": {
+      "title": "Héroe Pequeño",
+      "size": "48px × 48px"
+    }
+  },
+  "browser": {
+    "title": "Explorador de iconos",
+    "categories": {
+      "all": "Todos los íconos",
+      "actions": "Acciones",
+      "status": "Estado",
+      "navigation": "Navegación",
+      "web3": "Web3",
+      "decorative": "Decorativo"
+    }
+  },
+  "tokens": {
+    "title": "Variantes de iconos disponibles",
+    "sizeVariants": "Variantes de tamaño",
+    "colorVariants": "Variantes de color",
+    "contextVariants": "Variantes de contexto",
+    "combinedVariants": "Variantes combinadas"
+  },
+  "navigation": {
+    "previous": "Tablas y cuadrículas de datos",
+    "backToDesignSystem": "Volver al sistema de diseño"
+  }
+}

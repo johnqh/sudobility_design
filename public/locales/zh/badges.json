@@ -1,0 +1,132 @@
+{
+  "seo": {
+    "title": "徽章 - {{appName}}",
+    "description": "设计系统中的徽章组件和变体"
+  },
+  "header": {
+    "badge": "徽章",
+    "title": "徽章组件",
+    "intro": "用于标记、分类和传达状态信息的微型多功能组件，支持语义颜色和交互状态。"
+  },
+  "stats": {
+    "badgeVariants": "徽章变体",
+    "sizeOptions": "尺寸选项",
+    "stateTypes": "国家类型",
+    "web3Variants": "Web3 变体"
+  },
+  "sections": {
+    "quickStart": {
+      "title": "🚀 快速入门",
+      "description": "从最常用的徽章模式开始。复制并粘贴这些示例，快速在您的组件中实现徽章。",
+      "essentialTitle": "1. 基本徽章类型",
+      "essential": {
+        "default": "默认",
+        "primary": "主要",
+        "success": "成功",
+        "warning": "警告",
+        "error": "错误"
+      },
+      "statusTitle": "2. 带图标的状况徽章",
+      "status": {
+        "active": "活跃",
+        "pending": "待处理",
+        "failed": "失败",
+        "info": "信息"
+      },
+      "sizesTitle": "3. 尺寸变化",
+      "sizes": {
+        "small": "小",
+        "default": "默认",
+        "large": "大"
+      },
+      "web3Title": "4. Web3 集成徽章",
+      "web3": {
+        "ethereum": "以太坊",
+        "solana": "Solana",
+        "verified": "已验证"
+      }
+    },
+    "variants": {
+      "title": "🎨 徽章变体",
+      "description": "探索所有可用徽章颜色变体及其语义含义和适当的使用场景。",
+      "semanticTitle": "语义颜色",
+      "web3Title": "Web3专用",
+      "semantic": {
+        "default": "默认",
+        "defaultDesc": "通用的中立信息",
+        "primary": "主要",
+        "primaryDesc": "品牌色彩，重要亮点",
+        "success": "成功",
+        "successDesc": "已完成操作，状态为正",
+        "warning": "警告",
+        "warningDesc": "注意，有待处理的操作",
+        "error": "错误",
+        "errorDesc": "失败的操作，严重问题"
+      },
+      "web3": {
+        "ethereum": "以太坊",
+        "ethereumDesc": "以太坊区块链相关",
+        "solana": "Solana",
+        "solanaDesc": "与Solana区块链相关"
+      }
+    },
+    "sizes": {
+      "title": "📏 尺寸选项",
+      "description": "适用于不同使用场景的多种徽章尺寸，从紧凑的指示器到醒目的标签。",
+      "small": {
+        "heading": "小",
+        "badge": "小徽章",
+        "desc": "紧凑尺寸，适用于密集布局"
+      },
+      "default": {
+        "heading": "默认",
+        "badge": "默认徽章",
+        "desc": "大多数使用场景的标准尺寸"
+      },
+      "large": {
+        "heading": "大",
+        "badge": "大徽章",
+        "desc": "突出的尺寸以强调"
+      }
+    },
+    "interactive": {
+      "title": "⚡ 交互式模式",
+      "description": "不同情境和组件中徽章使用的现实世界示例。",
+      "userStatusTitle": "用户状态指示器",
+      "userStatus": {
+        "online": "在线",
+        "away": "远处",
+        "offline": "离线"
+      },
+      "notificationTitle": "通知数量",
+      "notification": {
+        "messages": "📧 消息",
+        "notifications": "🔔 通知",
+        "updates": "⭐ 更新"
+      }
+    },
+    "accessibility": {
+      "title": "♿ 可访问性指南",
+      "description": "确保您的徽章对所有用户都可访问，具备适当的对比度、屏幕阅读器支持和键盘导航。",
+      "bestPracticesTitle": "✅ 最佳实践",
+      "bestPractices": [
+        "使用语义颜色来一致地传达意义",
+        "提供足够的颜色对比度（最小对比度为4.5:1）",
+        "包含文本标签，而不仅仅是颜色或图标",
+        "为屏幕阅读器使用适当的 ARIA 标签",
+        "保持徽章文本简洁且有意义"
+      ],
+      "avoidTitle": "❌ 避免",
+      "avoid": [
+        "仅依靠颜色来传递信息",
+        "在一个界面中使用过多徽章",
+        "让徽章太小而难以舒适地阅读",
+        "使用不清晰或模糊的徽章文本",
+        "过度使用动画或闪烁的徽章"
+      ],
+      "ariaExamplesTitle": "ARIA 示例"
+    }
+  },
+  "backToDesignSystem": "返回设计系统",
+  "lastUpdated": "最后更新：{{date}}"
+}

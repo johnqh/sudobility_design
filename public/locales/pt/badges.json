@@ -1,0 +1,132 @@
+{
+  "seo": {
+    "title": "Emblemas - {{appName}}",
+    "description": "Componentes e variantes de insígnias para o sistema de design"
+  },
+  "header": {
+    "badge": "Emblemas",
+    "title": "Componentes do crachá",
+    "intro": "Pequenos componentes versáteis para rotular, categorizar e transmitir informações de status com cores semânticas e estados interativos."
+  },
+  "stats": {
+    "badgeVariants": "Variantes de insígnia",
+    "sizeOptions": "Opções de tamanho",
+    "stateTypes": "Tipos de Estado",
+    "web3Variants": "Variantes do Web3"
+  },
+  "sections": {
+    "quickStart": {
+      "title": "🚀 Início rápido",
+      "description": "Comece com os padrões de insígnia mais comumente usados. Copie e cole esses exemplos para implementar insígnias rapidamente em seus componentes.",
+      "essentialTitle": "1. Tipos essenciais de medalhas",
+      "essential": {
+        "default": "Padrão",
+        "primary": "Principal",
+        "success": "Sucesso",
+        "warning": "Aviso",
+        "error": "Erro"
+      },
+      "statusTitle": "2. Emblemas de status com ícones",
+      "status": {
+        "active": "Ativo",
+        "pending": "Pendente",
+        "failed": "Falhou",
+        "info": "Informações"
+      },
+      "sizesTitle": "3. Variações de tamanho",
+      "sizes": {
+        "small": "Pequeno",
+        "default": "Padrão",
+        "large": "Grande"
+      },
+      "web3Title": "4. Crachás de Integração Web3",
+      "web3": {
+        "ethereum": "Ethereum",
+        "solana": "Solana",
+        "verified": "Verificado"
+      }
+    },
+    "variants": {
+      "title": "🎨 Variantes de insígnia",
+      "description": "Explore todas as variantes de cor de insígnia disponíveis com seus significados semânticos e casos de uso apropriados.",
+      "semanticTitle": "Cores semânticas",
+      "web3Title": "Específico do Web3",
+      "semantic": {
+        "default": "Padrão",
+        "defaultDesc": "Informação geral e neutra",
+        "primary": "Principal",
+        "primaryDesc": "Cores da marca, destaques importantes",
+        "success": "Sucesso",
+        "successDesc": "Ações concluídas, status positivo",
+        "warning": "Aviso",
+        "warningDesc": "Cuidado necessário, ações pendentes",
+        "error": "Erro",
+        "errorDesc": "Ações falhadas, problemas críticos"
+      },
+      "web3": {
+        "ethereum": "Ethereum",
+        "ethereumDesc": "relacionado à blockchain Ethereum",
+        "solana": "Solana",
+        "solanaDesc": "relacionado à blockchain Solana"
+      }
+    },
+    "sizes": {
+      "title": "📏 Opções de tamanho",
+      "description": "Tamanhos diferentes de insígnias para diversos casos de uso, desde indicadores compactos até rótulos proeminentes.",
+      "small": {
+        "heading": "Pequeno",
+        "badge": "Pequeno crachá",
+        "desc": "Tamanho compacto para layouts densos"
+      },
+      "default": {
+        "heading": "Padrão",
+        "badge": "Distintivo padrão",
+        "desc": "Tamanho padrão para a maioria dos casos de uso"
+      },
+      "large": {
+        "heading": "Grande",
+        "badge": "Grande distintivo",
+        "desc": "Tamanho proeminente para ênfase"
+      }
+    },
+    "interactive": {
+      "title": "⚡ Padrões interativos",
+      "description": "Exemplos do mundo real de como os crachás são usados em diferentes contextos e componentes.",
+      "userStatusTitle": "Indicadores de status do usuário",
+      "userStatus": {
+        "online": "Online",
+        "away": "Longe",
+        "offline": "Offline"
+      },
+      "notificationTitle": "Contagem de notificações",
+      "notification": {
+        "messages": "📧 Mensagens",
+        "notifications": "🔔 Notificações",
+        "updates": "⭐ Atualizações"
+      }
+    },
+    "accessibility": {
+      "title": "♿ Diretrizes de acessibilidade",
+      "description": "Certifique-se de que seus crachás sejam acessíveis a todos os usuários com contraste adequado, suporte a leitores de tela e navegação com teclado.",
+      "bestPracticesTitle": "✅ Melhores práticas",
+      "bestPractices": [
+        "Use cores semânticas que transmitam significado de forma consistente",
+        "Forneça contraste de cor adequado (mínimo de 4,5:1)",
+        "Inclua rótulos de texto, não apenas cores ou ícones",
+        "Use rótulos ARIA apropriados para leitores de tela",
+        "Mantenha o texto do badge conciso e significativo"
+      ],
+      "avoidTitle": "❌ Evitar",
+      "avoid": [
+        "Dependendo exclusivamente da cor para transmitir informações",
+        "Usar muitos insignes em uma única interface",
+        "Fazer as insígnias tão pequenas que não se possam ler com conforto",
+        "Usando texto de insígnia confuso ou ambíguo",
+        "Uso excessivo de insignias animadas ou piscando"
+      ],
+      "ariaExamplesTitle": "Exemplos de ARIA"
+    }
+  },
+  "backToDesignSystem": "Voltar para o sistema de design",
+  "lastUpdated": "Última atualização: {{date}}"
+}

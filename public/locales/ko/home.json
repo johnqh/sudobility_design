@@ -1,0 +1,286 @@
+{
+  "seo": {
+    "title": "디자인 시스템 - {{appName}}",
+    "description": "디자인 시스템 문서 및 컴포넌트 쇼케이스"
+  },
+  "badge": "디자인 시스템",
+  "intro": "모든 색상, 타이포그래피 및 디자인 토큰을 보여주는 {{appName}}의 포괄적인 디자인 시스템 문서입니다.",
+  "stats": {
+    "fontFamilies": "글꼴 패밀리",
+    "textSizes": "텍스트 크기",
+    "spacingUnits": "간격 단위",
+    "borderRadius": "테두리 반경"
+  },
+  "exploreAria": "{{title}} 설명서 탐색",
+  "explore": "{{title}} 탐색하기",
+  "architecture": {
+    "title": "디자인 시스템 아키텍처",
+    "body": "이 {{appName}}는 일관성, 확장성, 접근성에 중점을 두고 설계되었습니다. 디자인 토큰, 컴포넌트 및 가이드라인의 포괄적인 세트를 제공합니다.",
+    "tokensTitle": "디자인 토큰",
+    "tokens": [
+      "타이포그래피 스케일과 패밀리",
+      "컬러 팔레트 및 의미 색상",
+      "간격 및 크기 시스템",
+      "테두리 반경 및 그림자 토큰"
+    ],
+    "implementationTitle": "구현",
+    "implementation": [
+      "Tailwind CSS 통합",
+      "TypeScript 지원",
+      "다크 모드 호환성",
+      "반응형 디자인 유틸리티"
+    ]
+  },
+  "areas": {
+    "colors": {
+      "title": "색상",
+      "description": "앱 내에서 사용되는 모든 색상 변형, 의미적 색상 및 테마를 탐색하세요",
+      "features": [
+        "브랜드 색상 및 변형",
+        "세미틱 컬러 시스템",
+        "라이트 및 다크 테마",
+        "상태 색상 (성공, 오류, 경고)",
+        "배경 및 표면 색상"
+      ]
+    },
+    "typography": {
+      "title": "타이포그래피",
+      "description": "디자인 시스템에서 지원하는 모든 텍스트 스타일, 폰트, 크기 및 타이포그래피 변형 보기",
+      "features": [
+        "글꼴 패밀리 및 두께",
+        "텍스트 크기와 척도",
+        "제목 변형",
+        "본문 텍스트 스타일",
+        "특수 텍스트 형식 (코드, 링크 등)"
+      ]
+    },
+    "forms": {
+      "title": "양식",
+      "description": "유효성 검사 상태, 접근성 기능, 일관된 스타일링을 갖춘 완전한 폼 요소 라이브러리",
+      "features": [
+        "입력 유형 및 변형",
+        "검증 상태 (성공, 오류)",
+        "폼 컨트롤 (선택, 체크박스, 라디오 버튼)",
+        "고급 패턴 (비밀번호 전환)",
+        "접근성 가이드라인"
+      ]
+    },
+    "buttons": {
+      "title": "버튼",
+      "description": "버전, 크기, 상태 및 인터랙티브 패턴을 갖춘 포괄적인 버튼 컴포넌트 시스템",
+      "features": [
+        "색상 변형 (기본, 보조, 파괴적)",
+        "버튼 크기 (작은, 기본, 큰)",
+        "인터랙티브 상태 (호버, 활성, 로딩)",
+        "아이콘 버튼 및 조합",
+        "버튼 그룹과 도구 모음"
+      ]
+    },
+    "cards": {
+      "title": "카드",
+      "description": "에레베이션, 콘텐츠 변형 및 Web3 통합 패턴을 갖춘 유연한 카드 컴포넌트 시스템",
+      "features": [
+        "Card elevation and shadow variants",
+        "Content and media card layouts",
+        "Interactive card states and actions",
+        "Web3-specific card patterns (wallet, NFT)",
+        "Responsive grid layouts"
+      ]
+    },
+    "badges": {
+      "title": "배지",
+      "description": "라벨링, 분류 및 상태 정보 전달을 위한 소형 다기능 구성 요소",
+      "features": [
+        "Semantic color variants (success, warning, error)",
+        "Size options (small, default, large)",
+        "Web3-specific blockchain badges",
+        "Interactive states and notifications",
+        "Accessibility and screen reader support"
+      ]
+    },
+    "alerts": {
+      "title": "알림",
+      "description": "중요한 정보, 경고 및 확인을 위한 맥락 기반 피드백 메시지",
+      "features": [
+        "Standard and compact alert layouts",
+        "Dismissible alerts with close actions",
+        "Web3 transaction and wallet status alerts",
+        "Action buttons and interactive elements",
+        "ARIA accessibility and screen reader support"
+      ]
+    },
+    "inputs": {
+      "title": "입력",
+      "description": "일관된 스타일링, 검증 상태 및 접근성과 함께 폼 입력 컴포넌트",
+      "features": [
+        "Text, email, password, and search inputs",
+        "Size variations (small, default, large)",
+        "Validation states and error handling",
+        "Web3 wallet address and token amount inputs",
+        "Icon placement and accessibility support"
+      ]
+    },
+    "loading": {
+      "title": "로딩 상태",
+      "description": "스피너, 프로그레스 인디케이터, Web3 거래 상태를 포함한 포괄적인 로딩 패턴",
+      "features": [
+        "Spinners and loading buttons",
+        "Progress bars and skeleton loading",
+        "Web3 transaction and wallet states",
+        "Contextual loading messages",
+        "Accessibility and screen reader support"
+      ]
+    },
+    "modals": {
+      "title": "모달",
+      "description": "웹3 통합 패턴과 접근성 기능을 갖춘 모달 및 대화형 컴포넌트",
+      "features": [
+        "Modal sizes and layout variants",
+        "Web3 wallet connection and transaction modals",
+        "Interactive confirmation dialogs",
+        "Form modals and settings panels",
+        "ARIA accessibility and focus management"
+      ]
+    },
+    "navigation": {
+      "title": "내비게이션",
+      "description": "브레드크럼, 탭, 페이지네이션 및 메뉴 시스템을 포함한 탐색 구성 요소",
+      "features": [
+        "Breadcrumb navigation with SEO optimization",
+        "Tab navigation with multiple variants",
+        "Pagination for data sets",
+        "Sidebar and menu navigation patterns",
+        "Web3-specific navigation (multi-chain, wallet status)"
+      ]
+    },
+    "dataDisplay": {
+      "title": "데이터 표시",
+      "description": "테이블, 목록, 그리드 및 정보 레이아웃을 포함한 데이터 표시용 컴포넌트",
+      "features": [
+        "Data tables with sorting and filtering",
+        "List components for emails and transactions",
+        "Grid layouts for NFTs and blockchain data",
+        "Key-value displays and metadata",
+        "Timeline and activity feeds"
+      ]
+    },
+    "formsAdvanced": {
+      "title": "양식 고급 기능",
+      "description": "다단계 워즈, 파일 업로드 및 Web3 입력을 포함한 고급 폼 패턴",
+      "features": [
+        "Multi-step form wizards with progress tracking",
+        "File upload with drag & drop functionality",
+        "Web3-specific inputs (wallet addresses, token amounts)",
+        "Advanced validation with real-time feedback",
+        "Security patterns for sensitive data"
+      ]
+    },
+    "notificationsFeedback": {
+      "title": "알림 및 피드백",
+      "description": "토스트, 진행률 표시기 및 상태 표시를 갖춘 포괄적인 알림 시스템",
+      "features": [
+        "Toast notifications with auto-dismiss and actions",
+        "Progress indicators for long-running operations",
+        "Web3 transaction status with confirmation tracking",
+        "System status indicators and connection states",
+        "Contextual feedback and smart suggestions"
+      ]
+    },
+    "layoutSpacing": {
+      "title": "레이아웃 및 간격",
+      "description": "반응형 그리드, 컨테이너 및 여백 유틸리티를 갖춘 포괄적인 레이아웃 시스템",
+      "features": [
+        "Responsive grid systems and auto-fit patterns",
+        "Container variants for different content widths",
+        "Flexible Flexbox patterns for common layouts",
+        "Comprehensive spacing utility system",
+        "Web3-specific layout patterns (wallets, NFTs, DeFi)",
+        "Dashboard and page layout templates"
+      ]
+    },
+    "tablesGrids": {
+      "title": "테이블 및 데이터 그리드",
+      "description": "정렬, 필터링, 페이지네이션 및 데이터 그리드 기능을 갖춘 포괄적인 테이블 시스템",
+      "features": [
+        "Sortable columns with visual indicators",
+        "Filterable data with search functionality",
+        "Pagination for large datasets",
+        "Row selection and bulk actions",
+        "Responsive table layouts",
+        "Data grid with resizable columns",
+        "Loading and empty states",
+        "Web3 transaction and address tables"
+      ]
+    },
+    "iconsIllustrations": {
+      "title": "아이콘 및 일러스트레이션",
+      "description": "일관된 크기, 색상 및 맥락 기반 사용 패턴을 갖춘 포괄적인 아이콘 시스템",
+      "features": [
+        "Consistent icon sizing system (xs to xxxl)",
+        "Semantic color variants (success, warning, error)",
+        "Context-specific icon patterns (buttons, _inputs, navigation)",
+        "Interactive states and hover effects",
+        "Web3-specific blockchain icons",
+        "Decorative and hero icon variants",
+        "Status indicators and loading states",
+        "Accessibility and screen reader support"
+      ]
+    },
+    "overlaysPortals": {
+      "title": "오버레이 및 포탈",
+      "description": "모달, 드롭다운, 툴팁, 시트, 로딩 상태를 포함한 포괄적인 오버레이 시스템",
+      "features": [
+        "Modal dialogs with animation states and focus management",
+        "Dropdown menus with positioning and keyboard navigation",
+        "Tooltips with multiple positioning options",
+        "Bottom sheets and drawer overlays for mobile",
+        "Context menus and right-click interactions",
+        "Loading overlays with backdrop blur effects",
+        "Proper z-index layering and portal management",
+        "Accessibility with ARIA labels and focus trapping"
+      ]
+    },
+    "microInteractions": {
+      "title": "마이크로 인터랙션 및 애니메이션",
+      "description": "호버 효과, 전환 효과, Web3 전용 상호작용을 포함한 포괄적인 애니메이션 시스템",
+      "features": [
+        "Hover effects with lift, glow, and scale animations",
+        "Loading animations and spinner variants",
+        "Smooth transitions for state changes",
+        "Gesture feedback and interaction responses",
+        "Web3-specific animations (wallet connect, transaction states)",
+        "Scroll-triggered animations and reveals",
+        "Reduced motion accessibility support",
+        "Performance-optimized CSS and JavaScript animations"
+      ]
+    },
+    "accessibility": {
+      "title": "접근성 및 A11Y",
+      "description": "WCAG 준수를 위한 포괄적인 접근성 패턴 및 포괄적 디자인 유틸리티",
+      "features": [
+        "Screen reader support with ARIA labels and skip links",
+        "Focus management and keyboard navigation patterns",
+        "High contrast color combinations for visibility",
+        "Motion preferences and reduced motion support",
+        "Semantic HTML roles and interactive patterns",
+        "Form accessibility with validation and error handling",
+        "Web3-specific accessibility for wallet connections",
+        "WCAG 2.1 AA compliance utilities and best practices"
+      ]
+    },
+    "performance": {
+      "title": "성능 및 최적화",
+      "description": "빠르고 효율적인 애플리케이션을 위한 포괄적인 성능 패턴 및 최적화 유틸리티",
+      "features": [
+        "Bundle optimization with code splitting and lazy loading",
+        "Rendering optimization with GPU acceleration and virtual scrolling",
+        "Network optimization with caching and adaptive loading",
+        "Core Web Vitals monitoring (LCP, FID/INP, CLS)",
+        "Web3-specific optimizations (transaction batching, gas optimization)",
+        "Resource optimization with image compression and CDN patterns",
+        "Performance monitoring with real-time metrics",
+        "Memory optimization and efficient state management"
+      ]
+    }
+  }
+}

@@ -1,0 +1,109 @@
+{
+  "seo": {
+    "title": "Desempenho e otimização - Sistema de design - Interno - {{emailDomain}}",
+    "description": "Padrões de otimização de desempenho e utilitários do Core Web Vitals para aplicações Web3 rápidas e eficientes"
+  },
+  "header": {
+    "badge": "Desempenho e otimização",
+    "title": "Sistema de Otimização de Desempenho",
+    "description": "Padrões completos de desempenho para aplicações Web3 rápidas e eficientes. Otimize o tamanho do pacote, o desempenho de renderização, os indicadores Core Web Vitals e as interações com a blockchain.",
+    "stats": {
+      "bundleSplit": {
+        "value": "Divisão do pacote",
+        "label": "Trechos de código"
+      },
+      "gpuLayers": {
+        "value": "Camadas da GPU",
+        "label": "Aceleração por hardware"
+      },
+      "web3Batch": {
+        "value": "Lote Web3",
+        "label": "Agrupamento de transações"
+      },
+      "lcpTarget": {
+        "value": "< 2,5 s",
+        "label": "Alvo LCP"
+      }
+    }
+  },
+  "webVitals": {
+    "title": "Core Web Vitals",
+    "description": "Monitoramento em tempo real das métricas do Core Web Vitals com utilitários de otimização de desempenho.",
+    "lcp": {
+      "title": "Maior conteúdo pintado",
+      "description": "Tempo para renderizar o maior elemento"
+    },
+    "fid": {
+      "title": "Atraso da primeira entrada",
+      "description": "Tempo de resposta interativa"
+    },
+    "cls": {
+      "title": "Deslocamento Acumulado de Layout",
+      "description": "Pontuação de estabilidade visual"
+    }
+  },
+  "bundle": {
+    "title": "Otimização de pacotes",
+    "description": "Padrões de divisão de código e carregamento preguiçoso para reduzir o tamanho do pacote inicial.",
+    "lazyLoadingStates": "Estados de carregamento diferido",
+    "componentLoading": "Carregando componente...",
+    "componentLoaded": "Componente carregado ✓",
+    "codeSplittingExample": "Exemplo de divisão de código",
+    "loadingChunk": "Carregando o pedaço do sistema de design...",
+    "bundleAnalysis": "Análise de Pacotes",
+    "mainBundle": "Pacote principal:",
+    "designSystem": "Sistema de Design:",
+    "web3Utils": "Ferramentas Web3:",
+    "charts": "Gráficos:"
+  },
+  "network": {
+    "title": "Otimização de rede",
+    "description": "Estratégias adaptativas de carregamento baseadas na qualidade da conexão e nos padrões de cache.",
+    "connectionQuality": "Qualidade da conexão",
+    "currentConnection": "Conexão atual",
+    "latency": "Latência: ~{{latency}}ms",
+    "simulateSlowConnection": "Simular conexão lenta",
+    "cacheStatus": "Estado do cache",
+    "freshData": "Dados recentes",
+    "freshDataSuffix": " - Recente",
+    "staleData": "Dados desatualizados",
+    "staleDataSuffix": " - Precisa de atualização",
+    "implementation": "Implementação"
+  },
+  "web3": {
+    "title": "Desempenho do Web3",
+    "description": "Otimizações especializadas para interações com blockchain, conexões de carteira e agrupamento de transações.",
+    "walletConnection": "Conexão da carteira",
+    "cachedConnection": "Conexão em cache",
+    "connecting": "Conectando...",
+    "transactionBatching": "Agrupamento de transações",
+    "batchedTransactions": "Transações em lote",
+    "batchedTransactionsDetail": "5 transações → 1 multicall",
+    "individualTransaction": "Transação individual",
+    "gasOptimization": "Otimização de gás",
+    "gasOptimal": "Gás ideal: 15 gwei",
+    "gasHigh": "Alto de gás: 45 gwei",
+    "gasVeryHigh": "Muito alto: 120 gwei"
+  },
+  "bestPractices": {
+    "title": "Melhores práticas de desempenho",
+    "doTitle": "✅ Faça isto",
+    "do": [
+      "Use divisão de código para recursos internos/admin",
+      "Implemente o carregamento preguiçoso para imagens e componentes",
+      "Processar transações Web3 em lote quando possível",
+      "Use a aceleração por GPU para animações suaves",
+      "Monitorar os Core Web Vitals em produção",
+      "Armazenar em cache as conexões da carteira e os dados da blockchain"
+    ],
+    "avoidTitle": "❌ Evite isto",
+    "avoid": [
+      "Carregando todos os componentes de forma agressiva na carga inicial da página",
+      "Fazer chamadas individuais à blockchain para dados em lote",
+      "Causar deslocamentos de layout com conteúdo dinâmico",
+      "Usar renderização bloqueante para recursos não críticos",
+      "Ignorar as condições de rede para carregar recursos",
+      "Recuperando dados da blockchain já armazenados em cache"
+    ]
+  }
+}

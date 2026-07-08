@@ -1,0 +1,155 @@
+{
+  "seo": {
+    "title": "Symbole & Illustrationen - Design-System - Intern - {{emailDomain}}",
+    "description": "Umfassendes Icon-System mit konsistenter Größen-, Farb- und kontextbezogener Nutzung"
+  },
+  "header": {
+    "badge": "Symbole & Abbildungen",
+    "title": "Symbole & Abbildungen",
+    "description": "Umfassendes Icon-System mit konsistenter Größen-, Farb- und kontextbezogener Nutzung. Erstellt mit Heroicons und optimiert für Barrierefreiheit und Dunkelmodus."
+  },
+  "sizes": {
+    "title": "Symbolgrößen",
+    "variantsTitle": "Größenvarianten",
+    "usageTitle": "Größe Verwendung",
+    "labels": {
+      "xs": "xs (12px)",
+      "sm": "sm (16px)",
+      "md": "md (20px)",
+      "lg": "lg (24px)",
+      "xl": "xl (32px)",
+      "xxl": "xxl (40px)",
+      "xxxl": "xxxl (48px)"
+    }
+  },
+  "colors": {
+    "title": "Symbolfarben",
+    "variantsTitle": "Farbvarianten",
+    "web3Title": "Web3-Farben",
+    "default": {
+      "label": "Standard",
+      "value": "Grau 500 / 400"
+    },
+    "brand": {
+      "label": "Marke",
+      "value": "Blau 600 / 400"
+    },
+    "success": {
+      "label": "Erfolg",
+      "value": "Grün 600 / 400"
+    },
+    "warning": {
+      "label": "Warnung",
+      "value": "Amber 600 / 400"
+    },
+    "error": {
+      "label": "Fehler",
+      "value": "Rot 600 / 400"
+    },
+    "interactive": {
+      "label": "Interaktiv",
+      "value": "Hover-Effekte"
+    },
+    "ethereum": {
+      "label": "Ethereum",
+      "value": "Blau 600 / 400"
+    },
+    "solana": {
+      "label": "Solana",
+      "value": "Lila 600 / 400"
+    },
+    "bitcoin": {
+      "label": "Bitcoin",
+      "value": "Orange 600 / 400"
+    }
+  },
+  "context": {
+    "title": "kontextbezogene Symbole",
+    "buttonTitle": "Schaltflächen-Symbole",
+    "inputTitle": "Eingabesymbole",
+    "leadingIcon": "Führendes Symbol",
+    "trailingIcon": "Anhängendes Symbol",
+    "iconOnly": "Nur Symbol",
+    "trailingInteractive": "Interaktive Nachlauf",
+    "addItem": "Element hinzufügen",
+    "continue": "Weiter",
+    "searchPlaceholder": "Suchen...",
+    "passwordPlaceholder": "Passwort"
+  },
+  "status": {
+    "title": "Status-Symbole",
+    "success": {
+      "title": "Erfolg",
+      "description": "Vorgang erfolgreich abgeschlossen"
+    },
+    "warning": {
+      "title": "Warnung",
+      "description": "Bitte überprüfen und fortfahren"
+    },
+    "error": {
+      "title": "Fehler",
+      "description": "Beim Ausführen ist ein Fehler aufgetreten"
+    },
+    "info": {
+      "title": "Info",
+      "description": "Zusätzliche Informationen"
+    }
+  },
+  "web3": {
+    "title": "Web3-Kontext-Symbole",
+    "walletStatusTitle": "Brieftaschenstatus",
+    "blockchainTitle": "Blockchain-Symbole",
+    "walletConnected": "Brieftasche verbunden",
+    "noWalletConnected": "Kein Wallet verbunden",
+    "connectToContinue": "Verbinden, um fortzufahren",
+    "ethereum": {
+      "title": "Ethereum",
+      "network": "ETH-Netzwerk"
+    },
+    "solana": {
+      "title": "Solana",
+      "network": "SOL-Netzwerk"
+    },
+    "bitcoin": {
+      "title": "Bitcoin",
+      "network": "BTC-Netzwerk"
+    }
+  },
+  "decorative": {
+    "title": "Dekorative Symbole",
+    "heroLarge": {
+      "title": "Held Groß",
+      "size": "80px × 80px"
+    },
+    "heroMedium": {
+      "title": "Held mittlere Größe",
+      "size": "64px × 64px"
+    },
+    "heroSmall": {
+      "title": "Held Klein",
+      "size": "48px × 48px"
+    }
+  },
+  "browser": {
+    "title": "Icon-Browser",
+    "categories": {
+      "all": "Alle Symbole",
+      "actions": "Aktionen",
+      "status": "Status",
+      "navigation": "Navigation",
+      "web3": "Web3",
+      "decorative": "Dekorativ"
+    }
+  },
+  "tokens": {
+    "title": "Verfügbare Symbolvarianten",
+    "sizeVariants": "Größenvarianten",
+    "colorVariants": "Farbvarianten",
+    "contextVariants": "Kontextvarianten",
+    "combinedVariants": "Kombinierte Varianten"
+  },
+  "navigation": {
+    "previous": "Tabellen & Datenblöcke",
+    "backToDesignSystem": "Zurück zum Design-System"
+  }
+}

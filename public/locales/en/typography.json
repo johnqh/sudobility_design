@@ -1,0 +1,393 @@
+{
+  "seo": {
+    "title": "Typography - Design System - Internal - {{emailDomain}}",
+    "description": "Complete typography system and text styles showcase for the design system"
+  },
+  "nav": {
+    "viewColors": "View Colors"
+  },
+  "header": {
+    "badge": "Typography System",
+    "title": "Typography & Text Styles",
+    "intro": "Complete typography system including fonts, sizes, weights, and styles with usage examples and code samples. Click any example to copy its class name to clipboard."
+  },
+  "example": {
+    "aria": "Copy {{title}} class name",
+    "preview": "Preview",
+    "usage": "Usage"
+  },
+  "quickStart": {
+    "heading": "Quick Start - Typography Examples",
+    "description": "Ready-to-use typography examples for the most common text patterns. Copy and paste directly into your components.",
+    "pageHeading": {
+      "title": "Page Heading",
+      "preview": "Welcome to the platform"
+    },
+    "bodyText": {
+      "title": "Body Text",
+      "preview": "This is a large body text example that demonstrates the proper font size, line height, and spacing for readable content in your application."
+    },
+    "codeBlock": {
+      "title": "Code Block"
+    },
+    "linkText": {
+      "title": "Link Text",
+      "preview": "Learn more about Web3 email"
+    },
+    "captionText": {
+      "title": "Caption Text",
+      "preview": "Last updated: March 15, 2024 at 2:30 PM"
+    },
+    "inlineCode": {
+      "title": "Inline Code",
+      "previewPrefix": "Use the",
+      "previewSuffix": "hook to manage component state in React applications."
+    }
+  },
+  "fontFamilies": {
+    "heading": "Font Families",
+    "description": "Three primary font families used throughout the application for different content types.",
+    "pangram": "The quick brown fox jumps over the lazy dog",
+    "items": {
+      "sans": {
+        "name": "Sans Serif (Default)",
+        "description": "Primary font family for UI elements and body text",
+        "usage": "UI elements, headings, body text"
+      },
+      "serif": {
+        "name": "Serif",
+        "description": "For editorial and formal content",
+        "usage": "Editorial content, formal documents"
+      },
+      "mono": {
+        "name": "Monospace",
+        "description": "For code blocks and technical text",
+        "usage": "Code blocks, technical content, wallet addresses"
+      }
+    },
+    "code": {
+      "title": "Font Family Usage",
+      "description": "How to use font families from the design system"
+    },
+    "preview": {
+      "sans": "This is sans serif text (default UI font)",
+      "serif": "This is serif text for editorial content",
+      "mono": "This is monospace text for code"
+    }
+  },
+  "scale": {
+    "heading": "Typography Scale",
+    "description": "Hierarchical type scale from display text to headings, providing consistent sizing across the interface.",
+    "items": {
+      "hero": { "name": "Hero", "usage": "Landing pages, hero sections" },
+      "xl": { "name": "Display XL", "usage": "Large display headings" },
+      "lg": { "name": "Display LG", "usage": "Medium display headings" },
+      "md": { "name": "Display MD", "usage": "Small display headings" },
+      "sm": { "name": "Display SM", "usage": "Extra small display headings" },
+      "h1": { "name": "Heading 1", "usage": "Main page headings" },
+      "h2": { "name": "Heading 2", "usage": "Section headings" },
+      "h3": { "name": "Heading 3", "usage": "Subsection headings" },
+      "h4": { "name": "Heading 4", "usage": "Minor headings" },
+      "h5": { "name": "Heading 5", "usage": "Small headings" },
+      "h6": { "name": "Heading 6", "usage": "Smallest headings" }
+    },
+    "code": {
+      "title": "Typography Scale Usage",
+      "description": "How to use heading variants from the design system"
+    },
+    "preview": {
+      "h1": "Heading 1",
+      "h2": "Heading 2",
+      "h3": "Heading 3",
+      "body": "Body text follows the headings"
+    }
+  },
+  "body": {
+    "heading": "Body Text",
+    "description": "Body text variants for different content types and hierarchy levels.",
+    "sample": "This is sample body text demonstrating the font size, weight, and line height of this variant.",
+    "items": {
+      "xl": {
+        "name": "Body XL",
+        "usage": "Lead paragraphs, important content"
+      },
+      "lg": {
+        "name": "Body Large",
+        "usage": "Standard body text, main content"
+      },
+      "md": {
+        "name": "Body Medium",
+        "usage": "Standard body text (alias for large)"
+      },
+      "sm": {
+        "name": "Body Small",
+        "usage": "Secondary information, captions"
+      },
+      "xs": {
+        "name": "Body Extra Small",
+        "usage": "Fine print, minimal details"
+      }
+    },
+    "code": {
+      "title": "Body Text Usage",
+      "description": "How to use body text variants"
+    },
+    "preview": {
+      "xl": "This is extra large body text for lead paragraphs and important introductory content.",
+      "lg": "This is the standard body text used throughout most of the application for main content.",
+      "sm": "This is small body text used for secondary information, captions, and helper text."
+    }
+  },
+  "emphasis": {
+    "heading": "Text Emphasis",
+    "description": "Text emphasis variants for different weight and prominence levels.",
+    "items": {
+      "strongLg": {
+        "name": "Strong Large",
+        "usage": "Important emphasized text"
+      },
+      "strongMd": {
+        "name": "Strong Medium",
+        "usage": "Medium emphasized text"
+      },
+      "strongSm": { "name": "Strong Small", "usage": "Small emphasized text" },
+      "emphasisLg": {
+        "name": "Emphasis Large",
+        "usage": "Medium weight emphasis"
+      },
+      "emphasisMd": {
+        "name": "Emphasis Medium",
+        "usage": "Medium weight emphasis"
+      },
+      "emphasisSm": {
+        "name": "Emphasis Small",
+        "usage": "Small medium weight emphasis"
+      },
+      "mutedLg": { "name": "Muted Large", "usage": "De-emphasized text" },
+      "mutedMd": { "name": "Muted Medium", "usage": "De-emphasized text" },
+      "mutedSm": { "name": "Muted Small", "usage": "De-emphasized small text" }
+    },
+    "code": {
+      "title": "Text Emphasis Usage",
+      "description": "How to use text emphasis variants"
+    },
+    "preview": {
+      "normalPrefix": "This is normal text with",
+      "strong": "strong emphasis",
+      "and": "and",
+      "medium": "medium emphasis",
+      "muted": "This is muted text with reduced visual prominence."
+    }
+  },
+  "caption": {
+    "heading": "Caption & Special Text",
+    "captionTitle": "Caption Variants",
+    "sample": "This is a caption example",
+    "uppercaseSample": "SECTION LABEL",
+    "items": {
+      "default": {
+        "name": "Default Caption",
+        "usage": "Image captions, additional info"
+      },
+      "emphasis": { "name": "Emphasis Caption", "usage": "Important captions" },
+      "uppercase": {
+        "name": "Uppercase Caption",
+        "usage": "Section labels, tags"
+      }
+    },
+    "leadTitle": "Lead Text",
+    "leadSample": "This is lead text that introduces the main content and provides context for what follows.",
+    "leadItems": {
+      "lg": {
+        "name": "Large Lead",
+        "usage": "Introduction paragraphs, article leads"
+      },
+      "md": { "name": "Medium Lead", "usage": "Introduction paragraphs" },
+      "sm": { "name": "Small Lead", "usage": "Small introduction text" }
+    },
+    "code": {
+      "title": "Caption & Lead Text Usage",
+      "description": "How to use captions and lead text"
+    },
+    "preview": {
+      "imageCaption": "This is a caption for the image above",
+      "sectionLabel": "SECTION LABEL",
+      "lead": "This is lead text that introduces the section."
+    }
+  },
+  "links": {
+    "heading": "Link Styles",
+    "description": "Different link styles for various contexts and emphasis levels.",
+    "externalSample": "External link →",
+    "items": {
+      "default": {
+        "name": "Default Link",
+        "usage": "Standard links with underline"
+      },
+      "subtle": { "name": "Subtle Link", "usage": "Links without underline" },
+      "muted": { "name": "Muted Link", "usage": "Gray colored links" },
+      "external": {
+        "name": "External Link",
+        "usage": "Links to external sites"
+      }
+    },
+    "code": {
+      "title": "Link Styles Usage",
+      "description": "How to use link variants"
+    },
+    "preview": {
+      "paraPrefix": "This paragraph contains a",
+      "defaultLink": "default link",
+      "and": "and a",
+      "subtleLink": "subtle link",
+      "checkPrefix": "Check out this",
+      "externalLink": "external link →",
+      "or": "or this",
+      "mutedLink": "muted link"
+    }
+  },
+  "codeText": {
+    "heading": "Code & Technical Text",
+    "description": "Monospace text styles for code, technical content, and technical documentation.",
+    "items": {
+      "inline": { "name": "Inline Code", "usage": "Code within text" },
+      "block": { "name": "Code Block", "usage": "Multi-line code blocks" },
+      "small": { "name": "Small Code", "usage": "Small inline code" }
+    },
+    "code": {
+      "title": "Code Text Usage",
+      "description": "How to use code text variants"
+    },
+    "preview": {
+      "usePrefix": "Use the",
+      "useSuffix": "hook to manage state.",
+      "runPrefix": "Run",
+      "runSuffix": "to get started."
+    }
+  },
+  "labels": {
+    "heading": "Form Labels & Messages",
+    "description": "Text styles for form elements, labels, and feedback messages.",
+    "items": {
+      "default": {
+        "name": "Default Label",
+        "usage": "Form field labels",
+        "sample": "Default"
+      },
+      "required": {
+        "name": "Required Label",
+        "usage": "Required form fields",
+        "sample": "Email Address"
+      },
+      "optional": {
+        "name": "Optional Label",
+        "usage": "Optional form fields",
+        "sample": "Optional"
+      },
+      "helper": {
+        "name": "Helper Text",
+        "usage": "Form help text",
+        "sample": "Helper"
+      },
+      "error": {
+        "name": "Error Text",
+        "usage": "Form error messages",
+        "sample": "Error"
+      },
+      "success": {
+        "name": "Success Text",
+        "usage": "Form success messages",
+        "sample": "Success"
+      }
+    },
+    "code": {
+      "title": "Form Labels Usage",
+      "description": "How to use form label and message variants"
+    },
+    "preview": {
+      "emailLabel": "Email Address",
+      "emailHelper": "We'll use this to send you updates",
+      "passwordLabel": "Password",
+      "passwordError": "Password must be at least 8 characters",
+      "phoneLabel": "Phone Number",
+      "phoneSuccess": "Phone number verified successfully"
+    }
+  },
+  "web3": {
+    "heading": "Web3 Text Styles",
+    "description": "Specialized text styles for Web3 and blockchain-specific content like addresses, hashes, and amounts.",
+    "items": {
+      "address": { "name": "Wallet Address", "usage": "Full wallet addresses" },
+      "addressShort": {
+        "name": "Short Address",
+        "usage": "Truncated wallet addresses"
+      },
+      "hash": {
+        "name": "Transaction Hash",
+        "usage": "Transaction identifiers"
+      },
+      "amount": { "name": "Token Amount", "usage": "Cryptocurrency amounts" },
+      "chain": { "name": "Chain Name", "usage": "Blockchain network names" },
+      "symbol": { "name": "Token Symbol", "usage": "Cryptocurrency symbols" }
+    },
+    "code": {
+      "title": "Web3 Text Usage",
+      "description": "How to use Web3-specific text styles"
+    },
+    "preview": {
+      "transactionHash": "Transaction Hash:"
+    }
+  },
+  "responsive": {
+    "heading": "Responsive Typography",
+    "description": "Typography that automatically scales with screen size for optimal readability across devices.",
+    "items": {
+      "h1": {
+        "name": "Responsive H1",
+        "usage": "Headings that scale with screen size"
+      },
+      "h2": { "name": "Responsive H2", "usage": "Section headings that scale" },
+      "h3": {
+        "name": "Responsive H3",
+        "usage": "Subsection headings that scale"
+      },
+      "display": {
+        "name": "Responsive Display",
+        "usage": "Display text that scales"
+      }
+    },
+    "code": {
+      "title": "Responsive Typography Usage",
+      "description": "How to use responsive text variants that scale with screen size"
+    },
+    "preview": {
+      "heading": "This heading scales with screen size",
+      "body": "Resize your browser window to see how responsive headings adapt to different screen sizes."
+    }
+  },
+  "guidelines": {
+    "heading": "Typography Guidelines",
+    "doTitle": "✓ Do",
+    "do": [
+      "Use textVariants for consistent styling",
+      "Choose appropriate hierarchy levels",
+      "Use responsive variants for hero content",
+      "Ensure sufficient contrast ratios",
+      "Use monospace for code and addresses",
+      "Test readability on different screen sizes"
+    ],
+    "dontTitle": "✗ Don't",
+    "dont": [
+      "Use random font sizes outside the scale",
+      "Skip heading levels (h1 → h3)",
+      "Use too many different text styles",
+      "Make text too small on mobile devices",
+      "Use serif fonts for UI elements",
+      "Ignore dark mode text colors"
+    ]
+  },
+  "copyInstructions": {
+    "title": "Click to Copy Class Names",
+    "description": "Click on any text example to copy its CSS class name, or use the copy button on code examples to copy usage code"
+  }
+}

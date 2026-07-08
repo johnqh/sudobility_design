@@ -1,0 +1,117 @@
+{
+  "seo": {
+    "title": "Formulários - Sistema de Design - Interno - {{emailDomain}}",
+    "description": "Elementos de formulário e componentes de entrada mostram o sistema de design"
+  },
+  "codeExample": {
+    "preview": "Pré-visualização",
+    "usage": "Uso"
+  },
+  "header": {
+    "badge": "Elementos de formulário",
+    "title": "Componentes de formulário e elementos de entrada",
+    "description": "Biblioteca abrangente de elementos de formulário com estilização consistente, estados de validação e recursos de acessibilidade. Todos os componentes suportam temas claro/escuro e incluem gerenciamento adequado de foco."
+  },
+  "quickStart": {
+    "title": "Início Rápido - Modelos de Formulário Essenciais",
+    "description": "Componentes de formulário prontos para uso com validação adequada, acessibilidade e design responsivo.",
+    "textInput": {
+      "title": "Entrada de texto",
+      "label": "Endereço de e-mail",
+      "placeholder": "Insira seu e-mail..."
+    },
+    "select": {
+      "title": "Selecionar menu suspenso",
+      "label": "Rede de blockchain",
+      "placeholder": "Selecione uma rede..."
+    },
+    "checkbox": {
+      "title": "Caixa de seleção",
+      "agree": "Concordo com os Termos de Serviço e a Política de Privacidade"
+    },
+    "textarea": {
+      "title": "Área de texto",
+      "label": "Mensagem",
+      "placeholder": "Digite sua mensagem..."
+    }
+  },
+  "inputTypes": {
+    "title": "Tipos de Entrada e Variantes",
+    "description": "Diferentes tipos de entrada com estilização consistente em todos os elementos do formulário.",
+    "textInputTypes": {
+      "title": "Tipos de entrada de texto",
+      "description": "Diferentes tipos de entrada com estilização consistente",
+      "textPlaceholder": "Entrada de texto",
+      "passwordPlaceholder": "Senha"
+    },
+    "sizes": {
+      "title": "Tamanhos de entrada",
+      "description": "Tamanhos de entrada diferentes para diversos casos de uso",
+      "smallPlaceholder": "Pequena entrada",
+      "defaultPlaceholder": "Entrada padrão",
+      "largePlaceholder": "Entrada grande"
+    }
+  },
+  "validation": {
+    "title": "Estados de validação",
+    "description": "Estados de validação de formulário com codificação de cores e mensagens apropriadas.",
+    "success": {
+      "title": "Estado de sucesso",
+      "description": "Entrada válida com estilo de sucesso",
+      "label": "Endereço de e-mail",
+      "message": "Endereço de e-mail válido"
+    },
+    "error": {
+      "title": "Estado de erro",
+      "description": "Entrada inválida com estilo de erro",
+      "label": "Senha",
+      "message": "A senha deve ter pelo menos 8 caracteres"
+    }
+  },
+  "advanced": {
+    "title": "Componentes de formulário avançados",
+    "description": "Padrões de formulário mais complexos com funcionalidades aprimoradas.",
+    "passwordToggle": {
+      "title": "Entrada de senha com alternador",
+      "description": "Campo de senha com função mostrar/esconder",
+      "label": "Senha",
+      "placeholder": "Insira a senha..."
+    },
+    "radio": {
+      "title": "Grupo de botões de rádio",
+      "description": "Botões de opção para seleção única",
+      "label": "Plano de assinatura",
+      "free": "Plano gratuito - Recursos básicos",
+      "pro": "Plano Pro - Recursos avançados"
+    }
+  },
+  "complete": {
+    "title": "Preencher exemplo de formulário",
+    "description": "Um formulário abrangente que mostra todos os elementos de formulário funcionando juntos.",
+    "form": {
+      "title": "Formulário de Perfil Web3",
+      "description": "Preencha o formulário com todos os tipos de elementos e validação",
+      "displayNameLabel": "Nome para exibição",
+      "displayNamePlaceholder": "Seu nome de exibição",
+      "emailLabel": "Endereço de e-mail",
+      "networkLabel": "Rede Preferida",
+      "networkPlaceholder": "Selecione uma rede...",
+      "bioLabel": "Bio",
+      "bioPlaceholder": "Conte-nos algo sobre você...",
+      "notifications": "Concordo em receber notificações por e-mail",
+      "submit": "Salvar perfil"
+    }
+  },
+  "accessibility": {
+    "title": "Diretrizes de Acessibilidade",
+    "heading": "Melhores práticas de acessibilidade de formulários",
+    "items": {
+      "labelsBefore": "Sempre use o método adequado",
+      "labelsAfter": "elementos associados às entradas",
+      "errorMessages": "Inclua mensagens de erro claras com estados de validação",
+      "focusStates": "Certifique-se de que os estados de foco sejam claramente visíveis com as utilidades de anel",
+      "inputTypes": "Use tipos de entrada apropriados (e-mail, senha, etc.) para uma melhor experiência móvel",
+      "contrast": "Mantenha um contraste de cor suficiente (proporção mínima de 4,5:1)"
+    }
+  }
+}

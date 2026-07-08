@@ -1,0 +1,286 @@
+{
+  "seo": {
+    "title": "デザインシステム - {{appName}}",
+    "description": "デザインシステムのドキュメントとコンポーネントのショーケース"
+  },
+  "badge": "デザインシステム",
+  "intro": "{{appName}}で使用されているすべての色、フォント、デザイントークンを示す包括的なデザインシステムのドキュメント。",
+  "stats": {
+    "fontFamilies": "フォントファミリー",
+    "textSizes": "テキストサイズ",
+    "spacingUnits": "間隔単位",
+    "borderRadius": "ボーダー半径"
+  },
+  "exploreAria": "{{title}}のドキュメントを参照してください",
+  "explore": "{{title}} を探索する",
+  "architecture": {
+    "title": "デザインシステムアーキテクチャ",
+    "body": "{{appName}} は一貫性、スケーラビリティ、アクセシビリティを意識して構築されています。デザイントークン、コンポーネント、ガイドラインの包括的なセットを提供します。",
+    "tokensTitle": "デザイントークン",
+    "tokens": [
+      "タイプスケールとファミリー",
+      "カラーパレットと意味的な色",
+      "スペースとサイズのシステム",
+      "ボーダー半径とシャドウトークン"
+    ],
+    "implementationTitle": "実装",
+    "implementation": [
+      "Tailwind CSSの統合",
+      "TypeScriptのサポート",
+      "ダークモードの互換性",
+      "レスポンシブデザインユーティリティ"
+    ]
+  },
+  "areas": {
+    "colors": {
+      "title": "色",
+      "description": "アプリケーション全体で使用されているすべての色のバリエーション、意味的な色、テーマを確認してください",
+      "features": [
+        "ブランドカラーとバリエーション",
+        "意味的カラーシステム",
+        "ライトとダークテーマ",
+        "ステータスカラー（成功、エラー、警告）",
+        "背景色と表面色"
+      ]
+    },
+    "typography": {
+      "title": "タイプセット",
+      "description": "デザインシステムでサポートされているすべてのテキストスタイル、フォント、サイズ、タイプフェイスのバリエーションを表示",
+      "features": [
+        "フォントファミリーと太さ",
+        "テキストのサイズとスケール",
+        "見出しのバリエーション",
+        "本文のテキストスタイル",
+        "特別なテキスト形式（コード、リンクなど）"
+      ]
+    },
+    "forms": {
+      "title": "フォーム",
+      "description": "検証状態、アクセシビリティ機能、一貫したスタイリングを備えた完全なフォーム要素ライブラリ",
+      "features": [
+        "入力タイプとバリアント",
+        "検証ステータス（成功、エラー）",
+        "フォームコントロール（セレクトボックス、チェックボックス、ラジオボタン）",
+        "高度なパターン（パスワード切り替え）",
+        "アクセシビリティガイドライン"
+      ]
+    },
+    "buttons": {
+      "title": "ボタン",
+      "description": "バリエーション、サイズ、状態、インタラクティブパターンを備えた包括的なボタンコンポーネントシステム",
+      "features": [
+        "色のバリエーション（主色、補色、破壊的）",
+        "ボタンのサイズ（小、デフォルト、大）",
+        "インタラクティブな状態（ホバー、アクティブ、ロード中）",
+        "アイコンボタンと組み合わせ",
+        "ボタングループとツールバー"
+      ]
+    },
+    "cards": {
+      "title": "カード",
+      "description": "エレベーション、コンテンツ変種、Web3統合パターンを備えた柔軟なカードコンポーネントシステム",
+      "features": [
+        "Card elevation and shadow variants",
+        "Content and media card layouts",
+        "Interactive card states and actions",
+        "Web3-specific card patterns (wallet, NFT)",
+        "Responsive grid layouts"
+      ]
+    },
+    "badges": {
+      "title": "バッジ",
+      "description": "ラベル付け、分類、ステータス情報の伝達に使用する小型で多目的な部品",
+      "features": [
+        "Semantic color variants (success, warning, error)",
+        "Size options (small, default, large)",
+        "Web3-specific blockchain badges",
+        "Interactive states and notifications",
+        "Accessibility and screen reader support"
+      ]
+    },
+    "alerts": {
+      "title": "アラート",
+      "description": "重要な情報、警告、確認のための文脈に応じたフィードバックメッセージ",
+      "features": [
+        "Standard and compact alert layouts",
+        "Dismissible alerts with close actions",
+        "Web3 transaction and wallet status alerts",
+        "Action buttons and interactive elements",
+        "ARIA accessibility and screen reader support"
+      ]
+    },
+    "inputs": {
+      "title": "入力",
+      "description": "一貫したスタイリング、検証状態、アクセシビリティを備えたフォーム入力コンポーネント",
+      "features": [
+        "Text, email, password, and search inputs",
+        "Size variations (small, default, large)",
+        "Validation states and error handling",
+        "Web3 wallet address and token amount inputs",
+        "Icon placement and accessibility support"
+      ]
+    },
+    "loading": {
+      "title": "読み込み状態",
+      "description": "スピンナーやプログレスインジケーター、Web3取引状態を含む包括的なロードパターン",
+      "features": [
+        "Spinners and loading buttons",
+        "Progress bars and skeleton loading",
+        "Web3 transaction and wallet states",
+        "Contextual loading messages",
+        "Accessibility and screen reader support"
+      ]
+    },
+    "modals": {
+      "title": "モーダル",
+      "description": "Web3統合パターンとアクセシビリティ機能を備えたモーダルおよびダイアログコンポーネント",
+      "features": [
+        "Modal sizes and layout variants",
+        "Web3 wallet connection and transaction modals",
+        "Interactive confirmation dialogs",
+        "Form modals and settings panels",
+        "ARIA accessibility and focus management"
+      ]
+    },
+    "navigation": {
+      "title": "ナビゲーション",
+      "description": "ナビゲーションコンポーネント（バッジ、タブ、ページネーション、メニュー構造など）",
+      "features": [
+        "Breadcrumb navigation with SEO optimization",
+        "Tab navigation with multiple variants",
+        "Pagination for data sets",
+        "Sidebar and menu navigation patterns",
+        "Web3-specific navigation (multi-chain, wallet status)"
+      ]
+    },
+    "dataDisplay": {
+      "title": "データ表示",
+      "description": "テーブル、リスト、グリッド、情報レイアウトを含むデータ表示用のコンポーネント",
+      "features": [
+        "Data tables with sorting and filtering",
+        "List components for emails and transactions",
+        "Grid layouts for NFTs and blockchain data",
+        "Key-value displays and metadata",
+        "Timeline and activity feeds"
+      ]
+    },
+    "formsAdvanced": {
+      "title": "フォームの高度な機能",
+      "description": "マルチステップウィザード、ファイルアップロード、Web3入力などを含む高度なフォームパターン",
+      "features": [
+        "Multi-step form wizards with progress tracking",
+        "File upload with drag & drop functionality",
+        "Web3-specific inputs (wallet addresses, token amounts)",
+        "Advanced validation with real-time feedback",
+        "Security patterns for sensitive data"
+      ]
+    },
+    "notificationsFeedback": {
+      "title": "通知とフィードバック",
+      "description": "トースト、プログレスインジケーター、ステータス表示を備えた包括的な通知システム",
+      "features": [
+        "Toast notifications with auto-dismiss and actions",
+        "Progress indicators for long-running operations",
+        "Web3 transaction status with confirmation tracking",
+        "System status indicators and connection states",
+        "Contextual feedback and smart suggestions"
+      ]
+    },
+    "layoutSpacing": {
+      "title": "レイアウトと余白",
+      "description": "レスポンシブグリッド、コンテナ、余白ユーティリティを備えた包括的なレイアウトシステム",
+      "features": [
+        "Responsive grid systems and auto-fit patterns",
+        "Container variants for different content widths",
+        "Flexible Flexbox patterns for common layouts",
+        "Comprehensive spacing utility system",
+        "Web3-specific layout patterns (wallets, NFTs, DeFi)",
+        "Dashboard and page layout templates"
+      ]
+    },
+    "tablesGrids": {
+      "title": "テーブルとデータグリッド",
+      "description": "ソート、フィルタリング、ページネーション、データグリッド機能を備えた包括的なテーブルシステム",
+      "features": [
+        "Sortable columns with visual indicators",
+        "Filterable data with search functionality",
+        "Pagination for large datasets",
+        "Row selection and bulk actions",
+        "Responsive table layouts",
+        "Data grid with resizable columns",
+        "Loading and empty states",
+        "Web3 transaction and address tables"
+      ]
+    },
+    "iconsIllustrations": {
+      "title": "アイコンとイラストレーション",
+      "description": "一貫したサイズ、色、文脈的な使用パターンを備えた包括的なアイコンシステム",
+      "features": [
+        "Consistent icon sizing system (xs to xxxl)",
+        "Semantic color variants (success, warning, error)",
+        "Context-specific icon patterns (buttons, _inputs, navigation)",
+        "Interactive states and hover effects",
+        "Web3-specific blockchain icons",
+        "Decorative and hero icon variants",
+        "Status indicators and loading states",
+        "Accessibility and screen reader support"
+      ]
+    },
+    "overlaysPortals": {
+      "title": "オーバーレイとポータル",
+      "description": "モーダル、ドロップダウン、ツールチップ、シート、ロード状態を備えた包括的なオーバーレイシステム",
+      "features": [
+        "Modal dialogs with animation states and focus management",
+        "Dropdown menus with positioning and keyboard navigation",
+        "Tooltips with multiple positioning options",
+        "Bottom sheets and drawer overlays for mobile",
+        "Context menus and right-click interactions",
+        "Loading overlays with backdrop blur effects",
+        "Proper z-index layering and portal management",
+        "Accessibility with ARIA labels and focus trapping"
+      ]
+    },
+    "microInteractions": {
+      "title": "マイクロインタラクションとアニメーション",
+      "description": "ホバー効果、トランジション、Web3固有のインタラクションを備えた包括的なアニメーションシステム",
+      "features": [
+        "Hover effects with lift, glow, and scale animations",
+        "Loading animations and spinner variants",
+        "Smooth transitions for state changes",
+        "Gesture feedback and interaction responses",
+        "Web3-specific animations (wallet connect, transaction states)",
+        "Scroll-triggered animations and reveals",
+        "Reduced motion accessibility support",
+        "Performance-optimized CSS and JavaScript animations"
+      ]
+    },
+    "accessibility": {
+      "title": "アクセシビリティ & A11Y",
+      "description": "WCAG準拠のための包括的なアクセシビリティパターンとインクルーシブデザインユーティリティ",
+      "features": [
+        "Screen reader support with ARIA labels and skip links",
+        "Focus management and keyboard navigation patterns",
+        "High contrast color combinations for visibility",
+        "Motion preferences and reduced motion support",
+        "Semantic HTML roles and interactive patterns",
+        "Form accessibility with validation and error handling",
+        "Web3-specific accessibility for wallet connections",
+        "WCAG 2.1 AA compliance utilities and best practices"
+      ]
+    },
+    "performance": {
+      "title": "パフォーマンスと最適化",
+      "description": "高速で効率的なアプリケーション向けの包括的なパフォーマンスパターンと最適化ユーティリティ",
+      "features": [
+        "Bundle optimization with code splitting and lazy loading",
+        "Rendering optimization with GPU acceleration and virtual scrolling",
+        "Network optimization with caching and adaptive loading",
+        "Core Web Vitals monitoring (LCP, FID/INP, CLS)",
+        "Web3-specific optimizations (transaction batching, gas optimization)",
+        "Resource optimization with image compression and CDN patterns",
+        "Performance monitoring with real-time metrics",
+        "Memory optimization and efficient state management"
+      ]
+    }
+  }
+}

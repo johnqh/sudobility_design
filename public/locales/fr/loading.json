@@ -1,0 +1,127 @@
+{
+  "seo": {
+    "title": "États de chargement - Système de conception - Interne - {{emailDomain}}",
+    "description": "Documentation complète de l'état de chargement avec des chargeurs, des squelettes, des indicateurs de progression et des modèles Web3"
+  },
+  "copy": {
+    "copied": "✓ Copié !",
+    "copy": "Copier"
+  },
+  "header": {
+    "badge": "États de chargement",
+    "title": "Chargement des composants d'état",
+    "description": "Indicateurs de chargement et états de progression qui fournissent un retour visuel clair lors des opérations asynchrones, spécialement conçus pour les transactions Web3 et les interactions avec la blockchain.",
+    "stats": {
+      "spinnerTypes": "Types de tourneur",
+      "skeletonPatterns": "Modèles squelette",
+      "progressTypes": "Types de progression",
+      "web3Examples": "Exemples de Web3"
+    }
+  },
+  "quickStart": {
+    "title": "🚀 Démarrage rapide",
+    "description": "Commencez avec les modèles de chargement les plus couramment utilisés. Ces exemples montrent les états de chargement essentiels pour différents cas d'utilisation.",
+    "spinners": {
+      "title": "1. Chargeurs de chargement basiques",
+      "small": "Petit",
+      "default": "Par défaut",
+      "large": "Grand"
+    },
+    "buttons": {
+      "title": "2. États du bouton de chargement",
+      "loading": "Chargement...",
+      "clickToLoad": "Cliquez pour charger",
+      "processing": "Traitement",
+      "uploading": "Chargement..."
+    },
+    "progress": {
+      "title": "3. Indicateurs de progression",
+      "label": "Progrès",
+      "startDemo": "Démarrer la démo"
+    },
+    "skeleton": {
+      "title": "4. Chargement du squelette"
+    }
+  },
+  "web3": {
+    "title": "⚡ Modèles de chargement Web3",
+    "description": "États de chargement spécialisés pour les opérations Web3, y compris les connexions de portefeuille, les transactions et les confirmations de blockchain.",
+    "transaction": {
+      "title": "États de chargement des transactions",
+      "startDemo": "Démarrer la démo de transaction",
+      "currentState": "État actuel : {{state}}",
+      "pending": {
+        "title": "Transaction en attente",
+        "message": "Veuillez confirmer la transaction dans votre portefeuille..."
+      },
+      "confirming": {
+        "title": "Confirmer la transaction",
+        "message": "Transaction soumise. En attente de la confirmation du blocage...",
+        "hash": "Hachage : 0x1234...abcd"
+      },
+      "confirmed": {
+        "title": "Transaction confirmée",
+        "message": "Votre transaction a été confirmée sur la blockchain !",
+        "block": "Bloc : #18.234.567"
+      }
+    },
+    "wallet": {
+      "title": "États de connexion du portefeuille",
+      "connecting": {
+        "title": "Connexion du portefeuille",
+        "message": "Veuillez approuver la connexion dans votre portefeuille"
+      },
+      "network": {
+        "title": "Détection du réseau",
+        "message": "Vérification de la compatibilité réseau..."
+      }
+    },
+    "email": {
+      "title": "Chargement des e-mails et messages",
+      "encrypting": {
+        "title": "Chiffrement du message...",
+        "message": "Sécuriser votre courrier électronique avec le chiffrement Web3"
+      },
+      "sending": {
+        "title": "Envoi vers la blockchain...",
+        "message": "Enregistrer les métadonnées des e-mails sur la chaîne"
+      },
+      "uploadProgress": "Progrès du téléchargement",
+      "uploading": "Chargement...",
+      "startUploadDemo": "Démarrer la démo de téléchargement"
+    }
+  },
+  "skeletons": {
+    "title": "💀 Motifs Osseux",
+    "description": "Espaces réservés de contenu qui imitent la structure du contenu de chargement pour une meilleure perception des performances.",
+    "emailList": "Skeleton de liste d'e-mails",
+    "cardContent": "Skeleton de contenu de carte"
+  },
+  "accessibility": {
+    "title": "♿ Lignes directrices sur l'accessibilité",
+    "description": "Assurez-vous que vos états de chargement soient accessibles grâce aux attributs ARIA appropriés, au support des lecteurs d'écran et à la gestion du focus.",
+    "bestPractices": {
+      "title": "✅ Meilleures pratiques",
+      "items": [
+        "Utilisez les régions dynamiques ARIA pour les états de chargement dynamiques",
+        "Fournissez des messages de chargement significatifs",
+        "Inclure des informations sur l'avancement lorsque cela est possible",
+        "Utilisez un mouvement réduit pour les utilisateurs qui préfèrent",
+        "Maintenir la gestion du focus pendant le chargement"
+      ]
+    },
+    "avoid": {
+      "title": "❌ Éviter",
+      "items": [
+        "Indicateurs de chargement sans alternatives textuelles",
+        "Chargement indéfini sans indication de progression",
+        "Animations clignotantes rapides pouvant déclencher des crises",
+        "Supprimer le focus ou le contenu sans avertissement",
+        "Messages génériques \"Chargement...\" sans contexte"
+      ]
+    },
+    "implementation": "Mise en œuvre de l'accessibilité"
+  },
+  "backToDesignSystem": "Retour au système de conception",
+  "lastUpdated": "Dernière mise à jour : {{date}}"
+}

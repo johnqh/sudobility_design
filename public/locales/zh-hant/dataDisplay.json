@@ -1,0 +1,202 @@
+{
+  "seo": {
+    "title": "資料顯示 - 設計系統 - 內部 - {{emailDomain}}",
+    "description": "包括表格、列表、網格和代碼顯示在內的資料展示組件"
+  },
+  "header": {
+    "badge": "數據展示組件",
+    "title": "數據展示系統",
+    "intro": "用於表格、清單、網格和程式碼的全面資料顯示元件。針對Web3資料（包括位址、交易和區塊鏈資訊）進行最佳化。"
+  },
+  "quickStart": {
+    "heading": "快速入門",
+    "copy": "複製到剪貼簿",
+    "examples": {
+      "dataTable": {
+        "title": "資料表",
+        "description": "可排序表格，包含懸停狀態和選擇功能"
+      },
+      "emailList": {
+        "title": "郵件列表",
+        "description": "帶有已讀/未讀狀態的互動式清單"
+      },
+      "keyValue": {
+        "title": "鍵值顯示",
+        "description": "以鍵值對形式顯示結構化資料"
+      },
+      "statsGrid": {
+        "title": "統計資料網格",
+        "description": "使用趨勢指標顯示指標和統計數據"
+      }
+    }
+  },
+  "tables": {
+    "heading": "資料表",
+    "cardTitle": "互動式聯絡人表格",
+    "cardDescription": "支援排序的表格，包含選擇和懸停狀態",
+    "columns": {
+      "name": "名字",
+      "email": "電子郵件",
+      "balance": "平衡",
+      "status": "狀態",
+      "date": "日期"
+    },
+    "status": {
+      "active": "活躍",
+      "pending": "待處理",
+      "inactive": "不活躍"
+    }
+  },
+  "lists": {
+    "heading": "列表",
+    "cardTitle": "郵件列表",
+    "cardDescription": "支援已讀/未讀狀態和操作的互動式郵件列表",
+    "emails": {
+      "1": {
+        "subject": "交易已確認",
+        "preview": "您的交易已在區塊鏈上確認..."
+      },
+      "2": {
+        "subject": "新NFT發行提醒",
+        "preview": "令人興奮的新系列將於明天推出..."
+      },
+      "3": {
+        "subject": "錢包安全更新",
+        "preview": "您錢包的重要安全改進..."
+      },
+      "4": {
+        "subject": "DeFi 收益報告",
+        "preview": "您的月度收益耕作總結..."
+      },
+      "5": {
+        "subject": "DAO提案 #42",
+        "preview": "為最新的社區提案投票..."
+      }
+    }
+  },
+  "gridLayouts": {
+    "heading": "網格佈局",
+    "statsGrid": {
+      "heading": "統計網格",
+      "totalEmails": "總郵件數",
+      "totalEmailsChange": "上個月的12.5%",
+      "activeContacts": "活躍聯絡人",
+      "activeContactsChange": "本周新增5個",
+      "storageUsed": "已使用儲存空間",
+      "storageUsedChange": "剩餘15%"
+    },
+    "cardGrid": {
+      "heading": "卡片網格",
+      "cardTitle": "卡片標題 {{number}}",
+      "cardContent": "包含相關資訊和操作的卡片內容。"
+    }
+  },
+  "keyValue": {
+    "heading": "鍵值顯示",
+    "userProfile": {
+      "heading": "使用者資料",
+      "fullName": "全名",
+      "ensName": "ENS名稱",
+      "walletAddress": "錢包地址",
+      "email": "電子郵件",
+      "accountStatus": "帳戶狀態",
+      "verified": "已驗證"
+    },
+    "transactionDetails": {
+      "heading": "交易詳情",
+      "transactionHash": "交易哈希",
+      "blockNumber": "區塊編號",
+      "gasUsed": "使用的氣體",
+      "status": "狀態",
+      "success": "成功"
+    }
+  },
+  "codeDisplay": {
+    "heading": "程式碼顯示",
+    "inlineCode": {
+      "heading": "內聯代碼",
+      "textStart": "使用 \"",
+      "textMiddle": " 用於內聯程式碼。Web3 地址如 ",
+      "textMiddle2": " 以及交易雜湊值，例如 ",
+      "textEnd": "有特殊樣式。"
+    },
+    "codeBlock": {
+      "heading": "程式碼區塊"
+    }
+  },
+  "timeline": {
+    "heading": "時間軸",
+    "cardTitle": "活動時間軸",
+    "items": {
+      "1": {
+        "title": "帳戶已建立",
+        "description": "歡迎來到 example.com"
+      },
+      "2": {
+        "title": "錢包已連接",
+        "description": "MetaMask錢包已成功連結"
+      },
+      "3": {
+        "title": "第一封郵件已發送",
+        "description": "已向團隊發送歡迎郵件"
+      },
+      "4": {
+        "title": "ENS名稱已註冊",
+        "description": "alice.eth 已註冊"
+      },
+      "5": {
+        "title": "高級升級",
+        "description": "升級至高級方案待處理"
+      }
+    }
+  },
+  "emptyStates": {
+    "heading": "空狀態",
+    "noEmails": {
+      "title": "沒有郵件",
+      "description": "透過撰寫您的第一封電子郵件來開始",
+      "action": "撰寫郵件"
+    },
+    "noData": {
+      "title": "沒有可用資料",
+      "description": "目前沒有記錄可供顯示"
+    }
+  },
+  "web3": {
+    "heading": "Web3 數據模式",
+    "cardTitle": "區塊鏈數據展示",
+    "cardDescription": "用於顯示Web3資料的專用模式",
+    "addressDisplay": {
+      "heading": "地址顯示",
+      "full": "完整:",
+      "truncated": "截斷：",
+      "ens": "ENS:"
+    },
+    "tokenBalances": {
+      "heading": "代幣餘額"
+    }
+  },
+  "implementationNotes": {
+    "heading": "實施說明",
+    "performance": {
+      "heading": "效能提示",
+      "items": [
+        "• 對於大型資料集，請使用虛擬滾動",
+        "• 為超過100行的表格實作分頁",
+        "• 列表中延遲加載圖片和頭像",
+        "• 快取昂貴的計算",
+        "• 在資料取得期間使用骨架載入器"
+      ]
+    },
+    "accessibility": {
+      "heading": "可及性",
+      "items": [
+        "• 使用語義化HTML（table, thead, tbody）",
+        "• 為可排序欄位新增 aria-label",
+        "• 確保表格支援鍵盤導航",
+        "• 為視覺指示符提供文字替代",
+        "• 為清單使用適當的 ARIA 角色"
+      ]
+    }
+  }
+}

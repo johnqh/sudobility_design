@@ -1,0 +1,130 @@
+{
+  "seo": {
+    "title": "Buttons - Design System - Internal - {{emailDomain}}",
+    "description": "Complete button component library with all variants, sizes, states, and interactions"
+  },
+  "codeExample": {
+    "preview": "Preview",
+    "usage": "Usage"
+  },
+  "header": {
+    "badge": "Button Components",
+    "title": "Button Library & Interaction Patterns",
+    "intro": "Comprehensive button component system with consistent variants, sizes, states, and interactive behaviors. All buttons support loading states, proper focus management, and accessibility features."
+  },
+  "quickStart": {
+    "title": "Quick Start - Essential Button Patterns",
+    "description": "Ready-to-use button components with consistent styling, states, and behavior patterns.",
+    "primary": {
+      "title": "Primary Action Button",
+      "button": "Primary Action"
+    },
+    "secondary": {
+      "title": "Secondary Button",
+      "button": "Secondary Action"
+    },
+    "outline": {
+      "title": "Outline Button",
+      "button": "Outline Action"
+    },
+    "ghost": {
+      "title": "Ghost Button",
+      "button": "Ghost Action"
+    }
+  },
+  "variants": {
+    "title": "Button Variants",
+    "description": "Different button styles for various use cases and hierarchy levels.",
+    "colors": {
+      "title": "Color Variants",
+      "description": "Primary, secondary, success, warning, and destructive button colors",
+      "primary": "Primary",
+      "success": "Success",
+      "warning": "Warning",
+      "destructive": "Destructive"
+    },
+    "sizes": {
+      "title": "Button Sizes",
+      "description": "Small, default, and large button sizes for different contexts",
+      "small": "Small",
+      "default": "Default",
+      "large": "Large"
+    }
+  },
+  "states": {
+    "title": "Button States",
+    "description": "Interactive states including hover, active, focus, loading, and disabled.",
+    "interactive": {
+      "title": "Interactive States",
+      "description": "Normal, hover, active, and focus states with proper transitions",
+      "button": "Interactive Button",
+      "secondary": "Secondary Interactive"
+    },
+    "loading": {
+      "title": "Loading & Disabled States",
+      "description": "Loading spinner integration and proper disabled styling",
+      "loadingLabel": "Loading...",
+      "demoLabel": "Demo Loading",
+      "disabled": "Disabled"
+    }
+  },
+  "icons": {
+    "title": "Icon Buttons & Combinations",
+    "description": "Buttons with icons, icon-only buttons, and toggle buttons for enhanced usability.",
+    "withIcons": {
+      "title": "Buttons with Icons",
+      "description": "Text buttons enhanced with icons for better recognition",
+      "sendMessage": "Send Message",
+      "download": "Download",
+      "settingsTitle": "Settings"
+    },
+    "toggle": {
+      "title": "Toggle & Action Buttons",
+      "description": "Toggle buttons and specific action button patterns",
+      "liked": "Liked",
+      "like": "Like",
+      "delete": "Delete",
+      "edit": "Edit"
+    }
+  },
+  "groups": {
+    "title": "Button Groups & Combinations",
+    "description": "Grouped buttons, button bars, and action combinations for complex interfaces.",
+    "buttonGroups": {
+      "title": "Button Groups",
+      "description": "Connected button groups for related actions",
+      "connectedLabel": "Connected Group:",
+      "previous": "Previous",
+      "current": "Current",
+      "next": "Next",
+      "spacedLabel": "Spaced Group:",
+      "primary": "Primary",
+      "secondary": "Secondary",
+      "cancel": "Cancel"
+    },
+    "actionBars": {
+      "title": "Action Bars & Toolbars",
+      "description": "Complex button combinations for toolbars and action areas",
+      "new": "New",
+      "editTitle": "Edit",
+      "shareTitle": "Share",
+      "cancel": "Cancel",
+      "delete": "Delete"
+    }
+  },
+  "accessibility": {
+    "title": "Accessibility & Best Practices",
+    "guidelinesTitle": "Button Accessibility Guidelines",
+    "list": {
+      "semanticBefore": "Use semantic",
+      "semanticAfter": "elements instead of divs",
+      "contrast": "Ensure sufficient color contrast (4.5:1 minimum)",
+      "focus": "Include focus states for keyboard navigation",
+      "loadingStates": "Add loading states to prevent double submissions",
+      "ariaLabels": "Use appropriate ARIA labels for icon-only buttons",
+      "touchTarget": "Maintain minimum touch target size (44px x 44px)",
+      "feedback": "Provide clear visual feedback for all states",
+      "grouping": "Group related buttons logically with proper spacing"
+    }
+  }
+}

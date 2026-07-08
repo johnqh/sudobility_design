@@ -1,0 +1,127 @@
+{
+  "seo": {
+    "title": "Estados de carregamento - Sistema de design - Interno - {{emailDomain}}",
+    "description": "Documentação abrangente do estado de carregamento com carregadores, esqueletos, indicadores de progresso e padrões Web3"
+  },
+  "copy": {
+    "copied": "✓ Copiado!",
+    "copy": "Copiar"
+  },
+  "header": {
+    "badge": "Estados de carregamento",
+    "title": "Carregando componentes de estado",
+    "description": "Indicadores de carregamento e estados de progresso que fornecem feedback visual claro durante operações assíncronas, especialmente projetados para transações Web3 e interações com blockchain.",
+    "stats": {
+      "spinnerTypes": "Tipos de girador",
+      "skeletonPatterns": "Padrões de Esqueleto",
+      "progressTypes": "Tipos de progresso",
+      "web3Examples": "Exemplos de Web3"
+    }
+  },
+  "quickStart": {
+    "title": "🚀 Início rápido",
+    "description": "Comece com os padrões de carregamento mais comumente usados. Estes exemplos mostram os estados de carregamento essenciais para diferentes casos de uso.",
+    "spinners": {
+      "title": "1. Spinners de carregamento básicos",
+      "small": "Pequeno",
+      "default": "Padrão",
+      "large": "Grande"
+    },
+    "buttons": {
+      "title": "2. Estados do botão de carregamento",
+      "loading": "Carregando...",
+      "clickToLoad": "Clique para carregar",
+      "processing": "Processando",
+      "uploading": "A carregar..."
+    },
+    "progress": {
+      "title": "3. Indicadores de Progresso",
+      "label": "Progresso",
+      "startDemo": "Iniciar demonstração"
+    },
+    "skeleton": {
+      "title": "4. Carregamento do esqueleto"
+    }
+  },
+  "web3": {
+    "title": "⚡ Padrões de carregamento Web3",
+    "description": "Estados de carregamento especializados para operações Web3, incluindo conexões de carteira, transações e confirmações de blockchain.",
+    "transaction": {
+      "title": "Estados de carregamento de transação",
+      "startDemo": "Iniciar demonstração de transação",
+      "currentState": "Estado atual: {{state}}",
+      "pending": {
+        "title": "Transação pendente",
+        "message": "Por favor, confirme a transação na sua carteira..."
+      },
+      "confirming": {
+        "title": "Confirmar transação",
+        "message": "Transação enviada. Aguardando confirmação da blockchain...",
+        "hash": "Hash: 0x1234...abcd"
+      },
+      "confirmed": {
+        "title": "Transação confirmada",
+        "message": "Sua transação foi confirmada na blockchain!",
+        "block": "Bloco: #18.234.567"
+      }
+    },
+    "wallet": {
+      "title": "Estados de conexão da carteira",
+      "connecting": {
+        "title": "Conectando carteira",
+        "message": "Por favor, aprova a ligação na sua carteira"
+      },
+      "network": {
+        "title": "Detecção de rede",
+        "message": "Verificando a compatibilidade da rede..."
+      }
+    },
+    "email": {
+      "title": "Carregamento de e-mails e mensagens",
+      "encrypting": {
+        "title": "Criptografando mensagem...",
+        "message": "Protegendo seu e-mail com criptografia Web3"
+      },
+      "sending": {
+        "title": "Enviando para a blockchain...",
+        "message": "Gravar metadados de e-mail na cadeia"
+      },
+      "uploadProgress": "Progresso do upload",
+      "uploading": "A carregar...",
+      "startUploadDemo": "Iniciar demonstração de upload"
+    }
+  },
+  "skeletons": {
+    "title": "💀 Padrões de Esqueleto",
+    "description": "Espaços reservados de conteúdo que imitam a estrutura do conteúdo de carregamento para uma melhor percepção de desempenho.",
+    "emailList": "Esqueleto da lista de e-mails",
+    "cardContent": "Esqueleto de conteúdo do cartão"
+  },
+  "accessibility": {
+    "title": "♿ Diretrizes de acessibilidade",
+    "description": "Certifique-se de que seus estados de carregamento sejam acessíveis com os atributos ARIA apropriados, suporte para leitores de tela e gerenciamento de foco.",
+    "bestPractices": {
+      "title": "✅ Melhores práticas",
+      "items": [
+        "Use regiões ARIA live para estados de carregamento dinâmicos",
+        "Forneça mensagens de carregamento significativas",
+        "Inclua informações sobre o progresso sempre que possível",
+        "Use movimento reduzido para usuários que preferirem",
+        "Mantenha o gerenciamento de foco durante o carregamento"
+      ]
+    },
+    "avoid": {
+      "title": "❌ Evitar",
+      "items": [
+        "Indicadores de carregamento sem alternativas de texto",
+        "Carregamento indefinido sem indicação de progresso",
+        "Animações piscando rapidamente que podem desencadear convulsões",
+        "Remover o foco ou o conteúdo sem aviso",
+        "Mensagens genéricas de \"Carregando...\" sem contexto"
+      ]
+    },
+    "implementation": "Implementação de acessibilidade"
+  },
+  "backToDesignSystem": "Voltar para o sistema de design",
+  "lastUpdated": "Última atualização: {{date}}"
+}

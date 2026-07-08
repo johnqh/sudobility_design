@@ -1,0 +1,133 @@
+{
+  "header": {
+    "title": "Overlays & Portals",
+    "description": "Comprehensive overlay system including modals, dropdowns, tooltips, sheets, and loading states with proper z-index management and accessibility."
+  },
+  "common": {
+    "interactiveExample": "Interactive Example",
+    "usage": "Usage"
+  },
+  "dropdownItems": {
+    "profile": "View Profile",
+    "settings": "Settings",
+    "logout": "Sign Out"
+  },
+  "alerts": {
+    "profile": "Profile clicked",
+    "settings": "Settings clicked",
+    "logout": "Sign out clicked"
+  },
+  "modals": {
+    "title": "Modals",
+    "description": "Modal dialogs with backdrop blur, animation states, and multiple sizes. Includes focus management and keyboard navigation.",
+    "openButton": "Open Modal",
+    "exampleTitle": "Example Modal",
+    "exampleBody": "This is an example modal using the new overlay design system. It includes proper backdrop handling, focus management, and animation states.",
+    "featuresTitle": "Features",
+    "features": [
+      "Backdrop blur effect",
+      "Focus trap and restoration",
+      "Keyboard navigation",
+      "Multiple size variants"
+    ],
+    "accessibilityTitle": "Accessibility",
+    "accessibility": [
+      "ARIA labels and roles",
+      "Escape key handling",
+      "Screen reader support",
+      "Focus management"
+    ],
+    "cancel": "Cancel",
+    "confirm": "Confirm"
+  },
+  "dropdowns": {
+    "title": "Dropdowns",
+    "description": "Dropdown menus with multiple positioning options, icons, dividers, and keyboard navigation.",
+    "actionsButton": "Actions",
+    "userMenuButton": "User Menu"
+  },
+  "tooltips": {
+    "title": "Tooltips",
+    "description": "Lightweight tooltips with multiple positioning options and color variants.",
+    "hoverButton": "Hover for {{position}} tooltip",
+    "tooltipOn": "Tooltip on {{position}}"
+  },
+  "loading": {
+    "title": "Loading Overlays",
+    "description": "Full-screen and inline loading states with backdrop blur and customizable messaging.",
+    "showButton": "Show Loading Overlay",
+    "inlineLabel": "Inline Loading State:",
+    "message": "Processing your request..."
+  },
+  "sheets": {
+    "title": "Sheets (Bottom Sheets)",
+    "description": "Mobile-first bottom sheets and action sheets that slide up from the bottom of the screen."
+  },
+  "contextMenus": {
+    "title": "Context Menus",
+    "description": "Right-click context menus with keyboard shortcuts and nested submenus."
+  },
+  "portal": {
+    "title": "Portal Management",
+    "description": "Z-index management system and portal utilities for proper overlay stacking.",
+    "zIndexLayersTitle": "Z-Index Layers",
+    "focusManagementTitle": "Focus Management",
+    "layers": {
+      "backdrop": "Backdrop",
+      "popover": "Popover",
+      "dropdown": "Dropdown",
+      "tooltip": "Tooltip",
+      "modal": "Modal",
+      "sheet": "Sheet",
+      "contextMenu": "Context Menu",
+      "loading": "Loading",
+      "notification": "Notification"
+    }
+  },
+  "animationStates": {
+    "title": "Animation States",
+    "description": "Consistent animation states for enter/exit transitions across all overlay components.",
+    "availableStatesTitle": "Available States",
+    "modalStatesTitle": "Modal States",
+    "dropdownStatesTitle": "Dropdown States"
+  },
+  "bestPractices": {
+    "title": "Best Practices",
+    "accessibilityTitle": "Accessibility",
+    "accessibility": [
+      "Always provide proper ARIA labels and roles",
+      "Implement focus trapping for modals",
+      "Support keyboard navigation (Tab, Escape, Arrow keys)",
+      "Maintain focus order and restoration",
+      "Use semantic HTML elements",
+      "Provide screen reader announcements"
+    ],
+    "performanceTitle": "Performance",
+    "performance": [
+      "Use React Portals for proper DOM rendering",
+      "Implement lazy loading for heavy overlays",
+      "Clean up event listeners on unmount",
+      "Use CSS transforms for animations",
+      "Avoid complex backdrop filters on mobile",
+      "Minimize layout thrashing"
+    ],
+    "uxGuidelinesTitle": "UX Guidelines",
+    "uxGuidelines": [
+      "Keep modals focused on single tasks",
+      "Provide clear close affordances",
+      "Use appropriate overlay types for context",
+      "Maintain consistent animation timing",
+      "Consider mobile viewport constraints",
+      "Avoid nested overlay interactions"
+    ],
+    "technicalTitle": "Technical",
+    "technical": [
+      "Use proper z-index layering system",
+      "Handle body scroll locking correctly",
+      "Support both click and keyboard interactions",
+      "Test across different viewport sizes",
+      "Consider reduced motion preferences",
+      "Implement proper error boundaries"
+    ]
+  }
+}

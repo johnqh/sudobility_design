@@ -1,0 +1,286 @@
+{
+  "seo": {
+    "title": "設計系統 - {{appName}}",
+    "description": "設計系統文件和組件展示"
+  },
+  "badge": "設計系統",
+  "intro": "全面展示 {{appName}} 中使用的所有顏色、字體和設計令牌的設計系統文件。",
+  "stats": {
+    "fontFamilies": "字體族",
+    "textSizes": "文字大小",
+    "spacingUnits": "間距單位",
+    "borderRadius": "邊框半徑"
+  },
+  "exploreAria": "探索 {{title}} 文件",
+  "explore": "探索 {{title}}",
+  "architecture": {
+    "title": "設計系統架構",
+    "body": "該 {{appName}} 以一致性、可擴展性和可訪問性為設計重點。提供一套全面的設計令牌、組件和指南。",
+    "tokensTitle": "設計令牌",
+    "tokens": [
+      "排版縮放和字體族",
+      "配色方案和語義顏色",
+      "間距和尺寸系統",
+      "邊框圓角和陰影令牌"
+    ],
+    "implementationTitle": "實現",
+    "implementation": [
+      "Tailwind CSS 結合",
+      "TypeScript 支援",
+      "暗色模式相容性",
+      "響應式設計工具"
+    ]
+  },
+  "areas": {
+    "colors": {
+      "title": "顏色",
+      "description": "探索應用中使用的所有色彩變體、語義色彩和主題",
+      "features": [
+        "品牌色彩和變體",
+        "語義色彩系統",
+        "淺色和深色主題",
+        "狀態顏色（成功、錯誤、警告）",
+        "背景和表面顏色"
+      ]
+    },
+    "typography": {
+      "title": "排版",
+      "description": "查看設計系統支援的所有文字樣式、字體、大小和排版變體",
+      "features": [
+        "字型族與字重",
+        "文字大小和比例",
+        "標題變體",
+        "正文字體樣式",
+        "特殊文本變體（程式碼、連結等）"
+      ]
+    },
+    "forms": {
+      "title": "表單",
+      "description": "包含驗證狀態、無障礙功能和一致樣式的完整表單元素庫",
+      "features": [
+        "輸入類型和變體",
+        "驗證狀態（成功，錯誤）",
+        "表單控件（選擇框、複選框、單選按鈕）",
+        "進階模式（密碼切換）",
+        "無障礙指南"
+      ]
+    },
+    "buttons": {
+      "title": "按鈕",
+      "description": "包含變體、大小、狀態和互動模式的完整按鈕組件系統",
+      "features": [
+        "顏色變體（主色、輔色、破壞性）",
+        "按鈕大小（小、預設、大）",
+        "互動狀態（懸停、激活、載入）",
+        "圖示按鈕和組合",
+        "按鈕組和工具列"
+      ]
+    },
+    "cards": {
+      "title": "卡片",
+      "description": "具備高程、內容變體和Web3整合模式的靈活卡片組件系統",
+      "features": [
+        "Card elevation and shadow variants",
+        "Content and media card layouts",
+        "Interactive card states and actions",
+        "Web3-specific card patterns (wallet, NFT)",
+        "Responsive grid layouts"
+      ]
+    },
+    "badges": {
+      "title": "徽章",
+      "description": "用於標記、分類和傳遞狀態資訊的小型多功能組件",
+      "features": [
+        "Semantic color variants (success, warning, error)",
+        "Size options (small, default, large)",
+        "Web3-specific blockchain badges",
+        "Interactive states and notifications",
+        "Accessibility and screen reader support"
+      ]
+    },
+    "alerts": {
+      "title": "警報",
+      "description": "重要資訊、警告和確認的上下文反饋訊息",
+      "features": [
+        "Standard and compact alert layouts",
+        "Dismissible alerts with close actions",
+        "Web3 transaction and wallet status alerts",
+        "Action buttons and interactive elements",
+        "ARIA accessibility and screen reader support"
+      ]
+    },
+    "inputs": {
+      "title": "輸入",
+      "description": "具有一致樣式、驗證狀態和可訪問性的表單輸入組件",
+      "features": [
+        "Text, email, password, and search inputs",
+        "Size variations (small, default, large)",
+        "Validation states and error handling",
+        "Web3 wallet address and token amount inputs",
+        "Icon placement and accessibility support"
+      ]
+    },
+    "loading": {
+      "title": "載入狀態",
+      "description": "包含載入動畫、進度指示器和Web3交易狀態在內的完整載入模式",
+      "features": [
+        "Spinners and loading buttons",
+        "Progress bars and skeleton loading",
+        "Web3 transaction and wallet states",
+        "Contextual loading messages",
+        "Accessibility and screen reader support"
+      ]
+    },
+    "modals": {
+      "title": "模態",
+      "description": "具備 Web3 結合模式與可存取性功能的模態與對話方塊元件",
+      "features": [
+        "Modal sizes and layout variants",
+        "Web3 wallet connection and transaction modals",
+        "Interactive confirmation dialogs",
+        "Form modals and settings panels",
+        "ARIA accessibility and focus management"
+      ]
+    },
+    "navigation": {
+      "title": "導航",
+      "description": "導航組件，包括面包屑、標籤頁、分頁和菜單系統",
+      "features": [
+        "Breadcrumb navigation with SEO optimization",
+        "Tab navigation with multiple variants",
+        "Pagination for data sets",
+        "Sidebar and menu navigation patterns",
+        "Web3-specific navigation (multi-chain, wallet status)"
+      ]
+    },
+    "dataDisplay": {
+      "title": "資料顯示",
+      "description": "用於顯示資料的組件，包括表格、清單、網格和資訊佈局",
+      "features": [
+        "Data tables with sorting and filtering",
+        "List components for emails and transactions",
+        "Grid layouts for NFTs and blockchain data",
+        "Key-value displays and metadata",
+        "Timeline and activity feeds"
+      ]
+    },
+    "formsAdvanced": {
+      "title": "表單進階",
+      "description": "包括多步向導、檔案上傳和Web3輸入在內的進階表單模式",
+      "features": [
+        "Multi-step form wizards with progress tracking",
+        "File upload with drag & drop functionality",
+        "Web3-specific inputs (wallet addresses, token amounts)",
+        "Advanced validation with real-time feedback",
+        "Security patterns for sensitive data"
+      ]
+    },
+    "notificationsFeedback": {
+      "title": "通知與反饋",
+      "description": "包含彈出通知、進度指示器和狀態顯示的全面通知系統",
+      "features": [
+        "Toast notifications with auto-dismiss and actions",
+        "Progress indicators for long-running operations",
+        "Web3 transaction status with confirmation tracking",
+        "System status indicators and connection states",
+        "Contextual feedback and smart suggestions"
+      ]
+    },
+    "layoutSpacing": {
+      "title": "佈局與間距",
+      "description": "包含響應式網格、容器和間距工具的全面佈局系統",
+      "features": [
+        "Responsive grid systems and auto-fit patterns",
+        "Container variants for different content widths",
+        "Flexible Flexbox patterns for common layouts",
+        "Comprehensive spacing utility system",
+        "Web3-specific layout patterns (wallets, NFTs, DeFi)",
+        "Dashboard and page layout templates"
+      ]
+    },
+    "tablesGrids": {
+      "title": "表格與資料网格",
+      "description": "包含排序、篩選、分頁和資料网格功能的綜合性表格系統",
+      "features": [
+        "Sortable columns with visual indicators",
+        "Filterable data with search functionality",
+        "Pagination for large datasets",
+        "Row selection and bulk actions",
+        "Responsive table layouts",
+        "Data grid with resizable columns",
+        "Loading and empty states",
+        "Web3 transaction and address tables"
+      ]
+    },
+    "iconsIllustrations": {
+      "title": "圖示與插圖",
+      "description": "全面的圖示系統，具有一致的尺寸、色彩和情境使用模式",
+      "features": [
+        "Consistent icon sizing system (xs to xxxl)",
+        "Semantic color variants (success, warning, error)",
+        "Context-specific icon patterns (buttons, _inputs, navigation)",
+        "Interactive states and hover effects",
+        "Web3-specific blockchain icons",
+        "Decorative and hero icon variants",
+        "Status indicators and loading states",
+        "Accessibility and screen reader support"
+      ]
+    },
+    "overlaysPortals": {
+      "title": "疊加與門戶",
+      "description": "包含模態框、下拉選單、工具提示、面板和加載狀態的全面疊加系統",
+      "features": [
+        "Modal dialogs with animation states and focus management",
+        "Dropdown menus with positioning and keyboard navigation",
+        "Tooltips with multiple positioning options",
+        "Bottom sheets and drawer overlays for mobile",
+        "Context menus and right-click interactions",
+        "Loading overlays with backdrop blur effects",
+        "Proper z-index layering and portal management",
+        "Accessibility with ARIA labels and focus trapping"
+      ]
+    },
+    "microInteractions": {
+      "title": "微互動與動畫",
+      "description": "包含懸停效果、過渡動畫和Web3特定互動的完整動畫系統",
+      "features": [
+        "Hover effects with lift, glow, and scale animations",
+        "Loading animations and spinner variants",
+        "Smooth transitions for state changes",
+        "Gesture feedback and interaction responses",
+        "Web3-specific animations (wallet connect, transaction states)",
+        "Scroll-triggered animations and reveals",
+        "Reduced motion accessibility support",
+        "Performance-optimized CSS and JavaScript animations"
+      ]
+    },
+    "accessibility": {
+      "title": "可及性與 A11Y",
+      "description": "全面的無障礙模式和包容性設計工具，用於符合 WCAG",
+      "features": [
+        "Screen reader support with ARIA labels and skip links",
+        "Focus management and keyboard navigation patterns",
+        "High contrast color combinations for visibility",
+        "Motion preferences and reduced motion support",
+        "Semantic HTML roles and interactive patterns",
+        "Form accessibility with validation and error handling",
+        "Web3-specific accessibility for wallet connections",
+        "WCAG 2.1 AA compliance utilities and best practices"
+      ]
+    },
+    "performance": {
+      "title": "效能與最佳化",
+      "description": "全面的效能模式與最佳化工具，用於快速且高效的應用程式",
+      "features": [
+        "Bundle optimization with code splitting and lazy loading",
+        "Rendering optimization with GPU acceleration and virtual scrolling",
+        "Network optimization with caching and adaptive loading",
+        "Core Web Vitals monitoring (LCP, FID/INP, CLS)",
+        "Web3-specific optimizations (transaction batching, gas optimization)",
+        "Resource optimization with image compression and CDN patterns",
+        "Performance monitoring with real-time metrics",
+        "Memory optimization and efficient state management"
+      ]
+    }
+  }
+}
