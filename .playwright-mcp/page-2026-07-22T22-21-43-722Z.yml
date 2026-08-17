@@ -1,0 +1,507 @@
+- generic [active] [ref=f2e1]:
+  - generic [ref=f2e3]:
+    - generic [ref=f2e4]:
+      - heading [level=1] [ref=f2e5]:
+        - link "一起测" [ref=f2e6] [cursor=pointer]:
+          - /url: /site
+      - list [ref=f2e7]:
+        - listitem [ref=f2e8]:
+          - link "Login" [ref=f2e9] [cursor=pointer]:
+            - /url: https://my.17ce.com/login?language=zh-CN
+          - text: "|"
+        - listitem [ref=f2e10]:
+          - link "Register" [ref=f2e11] [cursor=pointer]:
+            - /url: https://my.17ce.com/register?language=zh-CN
+          - text: "|"
+        - listitem [ref=f2e12]:
+          - link "Download" [ref=f2e13] [cursor=pointer]:
+            - /url: /site/download.html?lang=zh_cn
+          - text: "|"
+        - listitem [ref=f2e14]:
+          - link "API" [ref=f2e15] [cursor=pointer]:
+            - /url: /site/api.html?lang=zh_cn
+          - text: "|"
+        - listitem [ref=f2e16]:
+          - link "SSL certificate" [ref=f2e17] [cursor=pointer]:
+            - /url: /site/ssl.html?lang=zh_cn
+          - text: "|"
+        - listitem [ref=f2e18]:
+          - link "Profitable router" [ref=f2e19] [cursor=pointer]:
+            - /url: /site/alliance.html?lang=zh_cn
+          - text: "|"
+        - listitem [ref=f2e20]:
+          - link "GEO检测" [ref=f2e21] [cursor=pointer]:
+            - /url: https://geo.17ce.com/?lang=zh_cn
+          - text: "|"
+        - listitem [ref=f2e22]:
+          - link "Tools" [ref=f2e23] [cursor=pointer]:
+            - /url: https://tool.17ce.com/?lang=zh_cn
+      - button "Select Region" [ref=f2e25] [cursor=pointer]
+    - generic [ref=f2e27]:
+      - generic [ref=f2e28]:
+        - link "Get" [ref=f2e29] [cursor=pointer]:
+          - /url: javascript:void(0);
+        - link "Ping" [ref=f2e30] [cursor=pointer]:
+          - /url: javascript:void(0);
+        - link "TraceRoute" [ref=f2e31] [cursor=pointer]:
+          - /url: javascript:void(0);
+        - link "Dns" [ref=f2e32] [cursor=pointer]:
+          - /url: javascript:void(0);
+        - link "Cdn" [ref=f2e33] [cursor=pointer]:
+          - /url: javascript:void(0);
+        - link "LDns" [ref=f2e34] [cursor=pointer]:
+          - /url: http://www.17ce.com/ldns
+      - generic [ref=f2e36]:
+        - generic [ref=f2e37]:
+          - textbox "请输入要检测的地址" [ref=f2e38]
+          - paragraph [ref=f2e39]
+        - generic [ref=f2e40] [cursor=pointer]:
+          - button "Check it" [ref=f2e42]
+          - generic [ref=f2e43]:
+            - link "Compare" [ref=f2e44]:
+              - /url: javascript:void(0);
+            - link "Advanced" [ref=f2e45]:
+              - /url: javascript:void(0);
+    - generic [ref=f2e48]:
+      - generic [ref=f2e49]:
+        - paragraph [ref=f2e51]:
+          - link [ref=f2e52] [cursor=pointer]:
+            - /url: https://www.yaocdn.com/
+        - generic [ref=f2e54]:
+          - list:
+            - listitem [ref=f2e55]:
+              - link [ref=f2e56] [cursor=pointer]:
+                - /url: https://www.yunvm.com?v=17ce.com
+            - listitem [ref=f2e58]:
+              - link [ref=f2e59] [cursor=pointer]:
+                - /url: https://www.yaocdn.com?v=17ce.com
+            - listitem [ref=f2e61]:
+              - link [ref=f2e62] [cursor=pointer]:
+                - /url: https://www.cdnunion.com?v=17ce.com
+            - listitem [ref=f2e64]:
+              - link [ref=f2e65] [cursor=pointer]:
+                - /url: https://www.wanyuanyun.com/?v=17ce.com
+            - listitem [ref=f2e67]:
+              - link [ref=f2e68] [cursor=pointer]:
+                - /url: http://www.17ce.com
+      - generic [ref=f2e70]:
+        - button [ref=f2e71] [cursor=pointer]
+        - button [ref=f2e72] [cursor=pointer]
+        - generic [ref=f2e73]:
+          - list:
+            - listitem [ref=f2e74]:
+              - heading "Regional analysis" [level=2] [ref=f2e75]
+              - paragraph [ref=f2e76]:
+                - text: Through regional analysis, it can quickly find out where the site is running slowly
+                - link "[More]" [ref=f2e77] [cursor=pointer]:
+                  - /url: /site/product.html#area-analysis
+            - listitem [ref=f2e79]:
+              - heading "ISP analysis" [level=2] [ref=f2e80]
+              - paragraph [ref=f2e81]:
+                - text: Through ISP analysis, it can quickly find the site in which operators to run slowly
+                - link "[More]" [ref=f2e82] [cursor=pointer]:
+                  - /url: /site/product.html#ISP-analysis
+            - listitem [ref=f2e84]:
+              - heading "Monitoring point analysis" [level=2] [ref=f2e85]
+              - paragraph [ref=f2e86]:
+                - text: Provide monitoring point data in order to reverse lookup
+                - link "[More]" [ref=f2e87] [cursor=pointer]:
+                  - /url: /site/product.html#monitor-analysis
+            - listitem [ref=f2e89]:
+              - heading "Trend analysis" [level=2] [ref=f2e90]
+              - paragraph [ref=f2e91]:
+                - text: It can mastery website performance curve and provide a powerful refer for site speed optimization.
+                - link "[More]" [ref=f2e92] [cursor=pointer]:
+                  - /url: /site/product.html#trend-analysis
+            - listitem [ref=f2e94]:
+              - heading "Error analysis" [level=2] [ref=f2e95]
+              - paragraph [ref=f2e96]:
+                - text: Error analysis of monitoring data for all day, Website access error in what time....
+                - link "[More]" [ref=f2e97] [cursor=pointer]:
+                  - /url: /site/product.html#error-analysis
+            - listitem [ref=f2e99]:
+              - heading "Regional analysis" [level=2] [ref=f2e100]
+              - paragraph [ref=f2e101]:
+                - text: Through regional analysis, it can quickly find out where the site is running slowly
+                - link "[More]" [ref=f2e102] [cursor=pointer]:
+                  - /url: /site/product.html#area-analysis
+            - listitem [ref=f2e104]:
+              - heading "ISP analysis" [level=2] [ref=f2e105]
+              - paragraph [ref=f2e106]:
+                - text: Through ISP analysis, it can quickly find the site in which operators to run slowly
+                - link "[More]" [ref=f2e107] [cursor=pointer]:
+                  - /url: /site/product.html#ISP-analysis
+            - listitem [ref=f2e109]:
+              - heading "Monitoring point analysis" [level=2] [ref=f2e110]
+              - paragraph [ref=f2e111]:
+                - text: Provide monitoring point data in order to reverse lookup
+                - link "[More]" [ref=f2e112] [cursor=pointer]:
+                  - /url: /site/product.html#monitor-analysis
+            - listitem [ref=f2e114]:
+              - heading "Trend analysis" [level=2] [ref=f2e115]
+              - paragraph [ref=f2e116]:
+                - text: It can mastery website performance curve and provide a powerful refer for site speed optimization.
+                - link "[More]" [ref=f2e117] [cursor=pointer]:
+                  - /url: /site/product.html#trend-analysis
+            - listitem [ref=f2e119]:
+              - heading "Error analysis" [level=2] [ref=f2e120]
+              - paragraph [ref=f2e121]:
+                - text: Error analysis of monitoring data for all day, Website access error in what time....
+                - link "[More]" [ref=f2e122] [cursor=pointer]:
+                  - /url: /site/product.html#error-analysis
+            - listitem [ref=f2e124]:
+              - heading "Regional analysis" [level=2] [ref=f2e125]
+              - paragraph [ref=f2e126]:
+                - text: Through regional analysis, it can quickly find out where the site is running slowly
+                - link "[More]" [ref=f2e127] [cursor=pointer]:
+                  - /url: /site/product.html#area-analysis
+      - paragraph [ref=f2e130]:
+        - link [ref=f2e131] [cursor=pointer]:
+          - /url: /site/api
+      - generic [ref=f2e133]:
+        - generic [ref=f2e134]:
+          - heading [level=3] [ref=f2e135]:
+            - strong [ref=f2e136]: speed ranking
+            - generic [ref=f2e137]:
+              - link "today" [ref=f2e138] [cursor=pointer]:
+                - /url: javascript:void(0)
+              - link "week" [ref=f2e139] [cursor=pointer]:
+                - /url: javascript:void(0)
+              - link "month" [ref=f2e140] [cursor=pointer]:
+                - /url: javascript:void(0)
+          - table [ref=f2e142]:
+            - rowgroup [ref=f2e143]:
+              - row [ref=f2e144]:
+                - columnheader "ranking" [ref=f2e145]
+                - columnheader "domain" [ref=f2e146]
+                - columnheader "time" [ref=f2e147]
+            - rowgroup [ref=f2e148]:
+              - row [ref=f2e149]:
+                - cell "1" [ref=f2e150]
+                - cell [ref=f2e151]:
+                  - link "51kpweb12.xelwxsbz.cn" [ref=f2e152] [cursor=pointer]:
+                    - /url: /site/http/20260723_7ed7f87085f911f183f4675de0fc8d05%3A1.html
+                - cell "0.278s" [ref=f2e153]
+              - row [ref=f2e154]:
+                - cell "2" [ref=f2e155]
+                - cell [ref=f2e156]:
+                  - link "xshipin5.xn--6rtsqu3ho25d0qb.c" [ref=f2e157] [cursor=pointer]:
+                    - /url: /site/http/20260723_b1ef8b90861411f183f4675de0fc8d05%3A1.html
+                - cell "0.285s" [ref=f2e158]
+              - row [ref=f2e159]:
+                - cell "3" [ref=f2e160]
+                - cell [ref=f2e161]:
+                  - link "xweb.xn--3iqr2bo2c1w7f.cn" [ref=f2e162] [cursor=pointer]:
+                    - /url: /site/http/20260723_a6f133a0861011f18349a743aebd33af%3A1.html
+                - cell "0.295s" [ref=f2e163]
+              - row [ref=f2e164]:
+                - cell "4" [ref=f2e165]
+                - cell [ref=f2e166]:
+                  - link "huliweb1.xn--9swo4jvzfw38bu2a." [ref=f2e167] [cursor=pointer]:
+                    - /url: /site/http/20260723_a0256500861011f18349a743aebd33af%3A1.html
+                - cell "0.297s" [ref=f2e168]
+              - row [ref=f2e169]:
+                - cell "5" [ref=f2e170]
+                - cell [ref=f2e171]:
+                  - link "naidouweb3.xelwxsbz.cn" [ref=f2e172] [cursor=pointer]:
+                    - /url: /site/http/20260723_48bf83c0861211f18349a743aebd33af%3A1.html
+                - cell "0.31s" [ref=f2e173]
+              - row [ref=f2e174]:
+                - cell "6" [ref=f2e175]
+                - cell [ref=f2e176]:
+                  - link "sp2.amor9999.com" [ref=f2e177] [cursor=pointer]:
+                    - /url: /site/http/20260723_90619190861311f18349a743aebd33af%3A1.html
+                - cell "0.315s" [ref=f2e178]
+              - row [ref=f2e179]:
+                - cell "7" [ref=f2e180]
+                - cell [ref=f2e181]:
+                  - link "bltupian.xn--wcvzyh42dd7t.com" [ref=f2e182] [cursor=pointer]:
+                    - /url: /site/http/20260721_25ee8e20847f11f183f4675de0fc8d05%3A1.html
+                - cell "0.325s" [ref=f2e183]
+              - row [ref=f2e184]:
+                - cell "8" [ref=f2e185]
+                - cell [ref=f2e186]:
+                  - link "baoliaoshipin.xn--fhq220bjva76" [ref=f2e187] [cursor=pointer]:
+                    - /url: /site/http/20260723_661f91b085f611f18349a743aebd33af%3A1.html
+                - cell "0.327s" [ref=f2e188]
+              - row [ref=f2e189]:
+                - cell "9" [ref=f2e190]
+                - cell [ref=f2e191]:
+                  - link "xshipin3tenxun.xn--sqrq1mjtaxi" [ref=f2e192] [cursor=pointer]:
+                    - /url: /site/http/20260721_061d31e0847611f18349a743aebd33af%3A1.html
+                - cell "0.366s" [ref=f2e193]
+              - row [ref=f2e194]:
+                - cell "10" [ref=f2e195]
+                - cell [ref=f2e196]:
+                  - link "tupian.xn--3oq237cdss.xn--fiqs" [ref=f2e197] [cursor=pointer]:
+                    - /url: /site/http/20260721_6739815084f211f18349a743aebd33af%3A1.html
+                - cell "0.445s" [ref=f2e198]
+        - generic [ref=f2e199]:
+          - heading [level=3] [ref=f2e200]:
+            - strong [ref=f2e201]: latest speed
+          - table [ref=f2e203]:
+            - rowgroup [ref=f2e204]:
+              - row [ref=f2e205]:
+                - columnheader "domain" [ref=f2e206]
+                - columnheader "type" [ref=f2e207]
+                - columnheader "time" [ref=f2e208]
+            - rowgroup [ref=f2e209]:
+              - row [ref=f2e210]:
+                - cell [ref=f2e211]:
+                  - link "h5.beyonderchina.com" [ref=f2e212] [cursor=pointer]:
+                    - /url: /site/http/20260723_97904710861b11f18349a743aebd33af%3A1.html
+                - cell "get" [ref=f2e213]
+                - cell "0.639s" [ref=f2e214]
+              - row [ref=f2e215]:
+                - cell [ref=f2e216]:
+                  - link "qsty.com" [ref=f2e217] [cursor=pointer]:
+                    - /url: /site/http/20260723_91ce2040861b11f18349a743aebd33af%3A1.html
+                - cell "get" [ref=f2e218]
+                - cell "1.486s" [ref=f2e219]
+              - row [ref=f2e220]:
+                - cell [ref=f2e221]:
+                  - link "www.baidu.com" [ref=f2e222] [cursor=pointer]:
+                    - /url: /site/http/20260723_7b680690861b11f18349a743aebd33af%3A1.html
+                - cell "get" [ref=f2e223]
+                - cell "0.311s" [ref=f2e224]
+              - row [ref=f2e225]:
+                - cell [ref=f2e226]:
+                  - link "ag666.com" [ref=f2e227] [cursor=pointer]:
+                    - /url: /site/http/20260723_2679c6f0861b11f18349a743aebd33af%3A1.html
+                - cell "get" [ref=f2e228]
+                - cell "0.663s" [ref=f2e229]
+              - row [ref=f2e230]:
+                - cell [ref=f2e231]:
+                  - link "qiusu.com" [ref=f2e232] [cursor=pointer]:
+                    - /url: /site/http/20260723_1e6105f0861b11f183f4675de0fc8d05%3A1.html
+                - cell "get" [ref=f2e233]
+                - cell "1.141s" [ref=f2e234]
+              - row [ref=f2e235]:
+                - cell [ref=f2e236]:
+                  - link "api.crmfapi02.com" [ref=f2e237] [cursor=pointer]:
+                    - /url: /site/http/20260723_0abbe100861b11f18349a743aebd33af%3A1.html
+                - cell "get" [ref=f2e238]
+                - cell "0.542s" [ref=f2e239]
+              - row [ref=f2e240]:
+                - cell [ref=f2e241]:
+                  - link "sl7.dxafyj.cn" [ref=f2e242] [cursor=pointer]:
+                    - /url: /site/http/20260723_06f03300861b11f183f4675de0fc8d05%3A1.html
+                - cell "get" [ref=f2e243]
+                - cell "0.985s" [ref=f2e244]
+              - row [ref=f2e245]:
+                - cell [ref=f2e246]:
+                  - link "51kpweb12.xelwxsbz.cn" [ref=f2e247] [cursor=pointer]:
+                    - /url: /site/http/20260723_047dac60861b11f18349a743aebd33af%3A1.html
+                - cell "get" [ref=f2e248]
+                - cell "0.68s" [ref=f2e249]
+              - row [ref=f2e250]:
+                - cell [ref=f2e251]:
+                  - link "apkzhu.xn--6oqz6ce58agu7a.co" [ref=f2e252] [cursor=pointer]:
+                    - /url: /site/http/20260723_03f56990861b11f18349a743aebd33af%3A1.html
+                - cell "get" [ref=f2e253]
+                - cell "1.692s" [ref=f2e254]
+              - row [ref=f2e255]:
+                - cell [ref=f2e256]:
+                  - link "hlwb.xn--s1vw0h7sqcwo.com" [ref=f2e257] [cursor=pointer]:
+                    - /url: /site/http/20260723_0045cf10861b11f18349a743aebd33af%3A1.html
+                - cell "get" [ref=f2e258]
+                - cell "0.329s" [ref=f2e259]
+        - generic [ref=f2e260]:
+          - heading [level=3] [ref=f2e261]:
+            - strong [ref=f2e262]: updated dynamic
+            - link "more" [ref=f2e264] [cursor=pointer]:
+              - /url: https://blog.17ce.com/
+          - list [ref=f2e266]:
+            - listitem [ref=f2e267]:
+              - text: 2026-03-20
+              - link "? 17CE 携手 OpenClaw：全网首款 AI 专属测速技能正式在 ClawHub 上线上架！" [ref=f2e268] [cursor=pointer]:
+                - /url: http://blog.17ce.com/?p=681
+            - listitem [ref=f2e269]:
+              - text: 2025-08-10
+              - link "17ce路由器收益2025年7月份提现" [ref=f2e270] [cursor=pointer]:
+                - /url: http://blog.17ce.com/?p=675
+            - listitem [ref=f2e271]:
+              - text: 2024-11-29
+              - link "17ce路由器收益2024年11月份提现" [ref=f2e272] [cursor=pointer]:
+                - /url: http://blog.17ce.com/?p=669
+            - listitem [ref=f2e273]:
+              - text: 2024-10-31
+              - link "17ce路由器收益2024年10月份提现" [ref=f2e274] [cursor=pointer]:
+                - /url: http://blog.17ce.com/?p=663
+            - listitem [ref=f2e275]:
+              - text: 2024-09-30
+              - link "17ce路由器收益2024年9月份提现" [ref=f2e276] [cursor=pointer]:
+                - /url: http://blog.17ce.com/?p=657
+            - listitem [ref=f2e277]:
+              - text: 2024-08-30
+              - link "17ce路由器收益2024年8月份提现" [ref=f2e278] [cursor=pointer]:
+                - /url: http://blog.17ce.com/?p=651
+            - listitem [ref=f2e279]:
+              - text: 2024-07-31
+              - link "17ce路由器收益2024年7月份提现" [ref=f2e280] [cursor=pointer]:
+                - /url: http://blog.17ce.com/?p=639
+            - listitem [ref=f2e281]:
+              - text: 2024-06-28
+              - link "17ce路由器收益2024年6月份提现" [ref=f2e282] [cursor=pointer]:
+                - /url: http://blog.17ce.com/?p=633
+            - listitem [ref=f2e283]:
+              - text: 2024-05-31
+              - link "17ce路由器收益2024年5月份提现" [ref=f2e284] [cursor=pointer]:
+                - /url: http://blog.17ce.com/?p=627
+            - listitem [ref=f2e285]:
+              - text: 2024-04-30
+              - link "17ce路由器收益2024年4月份提现" [ref=f2e286] [cursor=pointer]:
+                - /url: http://blog.17ce.com/?p=621
+            - listitem [ref=f2e287]: 2015-11-17 New detection support for HTTPS and FTP
+            - listitem [ref=f2e288]: 2015-11-17 Flash report updated to H5 report
+    - generic [ref=f2e289]:
+      - generic [ref=f2e290]:
+        - link [ref=f2e291] [cursor=pointer]:
+          - /url: /site/partners.html
+          - strong [ref=f2e292]: Partners
+        - link "主机测评" [ref=f2e293] [cursor=pointer]:
+          - /url: https://www.27ka.cn/
+        - link "YUNVM" [ref=f2e294] [cursor=pointer]:
+          - /url: http://www.yunvm.com/
+        - link "境外服务器" [ref=f2e295] [cursor=pointer]:
+          - /url: https://cn.varidata.com/
+        - link "LOCVPS" [ref=f2e296] [cursor=pointer]:
+          - /url: https://www.locvps.net
+        - link "海外服务器" [ref=f2e297] [cursor=pointer]:
+          - /url: https://zji.net
+        - link "灰域CDN" [ref=f2e298] [cursor=pointer]:
+          - /url: https://www.greypanel.com/?utm_source=17ce&utm_medium=banner&utm_campaign=adv1#contactus01
+        - link "菠萝云" [ref=f2e299] [cursor=pointer]:
+          - /url: http://www.boluoyun.com
+        - link "青果网络" [ref=f2e300] [cursor=pointer]:
+          - /url: https://www.qg.net/
+        - link "3A云服务器" [ref=f2e301] [cursor=pointer]:
+          - /url: http://17ce.cnaaa.cn
+        - link "华晨云" [ref=f2e302] [cursor=pointer]:
+          - /url: https://www.zj-idc.com/
+        - link "速联科技" [ref=f2e303] [cursor=pointer]:
+          - /url: http://www.idc002.com
+        - link "奇异互动" [ref=f2e304] [cursor=pointer]:
+          - /url: https://www.7e.hk/
+        - link "便捷云" [ref=f2e305] [cursor=pointer]:
+          - /url: http://www.bjyun.cn/
+        - link "傲闪云" [ref=f2e306] [cursor=pointer]:
+          - /url: https://cloud.cxas.com/server/buy.html?17ce
+        - link "HTTP代理" [ref=f2e307] [cursor=pointer]:
+          - /url: https://www.dmdaili.com/
+        - link "大航海" [ref=f2e308] [cursor=pointer]:
+          - /url: https://www.dahanghai.cool/
+        - link "Apply partner" [ref=f2e309] [cursor=pointer]:
+          - /url: /site/partner.html
+      - generic [ref=f2e310]:
+        - strong [ref=f2e311]: Links
+        - link "app开发" [ref=f2e312] [cursor=pointer]:
+          - /url: http://www.apppark.cn
+        - link "VPS侦探" [ref=f2e313] [cursor=pointer]:
+          - /url: http://www.vpser.net/
+        - link "游戏CDN" [ref=f2e314] [cursor=pointer]:
+          - /url: http://www.youxicdn.com
+        - link "云服务器" [ref=f2e315] [cursor=pointer]:
+          - /url: "https://www.xinruiyun.cn/ "
+        - link "服务器租用" [ref=f2e316] [cursor=pointer]:
+          - /url: http://www.tuidc.com/
+        - link "奇异互动" [ref=f2e317] [cursor=pointer]:
+          - /url: https://www.7e.hk/
+        - link "域名解析" [ref=f2e318] [cursor=pointer]:
+          - /url: https://www.51dns.com/
+        - link "远程工作" [ref=f2e319] [cursor=pointer]:
+          - /url: https://www.xmf.com
+        - link "云服务器" [ref=f2e320] [cursor=pointer]:
+          - /url: http://www.enkj.com
+        - link "域名注册" [ref=f2e321] [cursor=pointer]:
+          - /url: https://www.cndns.com/
+        - link "主机测评" [ref=f2e322] [cursor=pointer]:
+          - /url: https://www.27ka.cn/
+        - link "CRM" [ref=f2e323] [cursor=pointer]:
+          - /url: "https://www.5kcrm.com/ "
+        - link "国外VPS" [ref=f2e324] [cursor=pointer]:
+          - /url: "https://www.vps234.com/ "
+        - link "国外云主机" [ref=f2e325] [cursor=pointer]:
+          - /url: https://www.56dr.com/
+    - paragraph [ref=f2e326]
+    - generic [ref=f2e327]:
+      - generic [ref=f2e328]:
+        - generic [ref=f2e329]:
+          - term [ref=f2e330]: Why use 17CE
+          - definition [ref=f2e331]:
+            - link "Who is using 17CE" [ref=f2e332] [cursor=pointer]:
+              - /url: /site/customers
+          - definition [ref=f2e333]:
+            - link "ws-api documentation" [ref=f2e334] [cursor=pointer]:
+              - /url: https://www.17ce.com/doc/API%20Reference/websocket接口.html
+        - generic [ref=f2e335]:
+          - term [ref=f2e336]: Product introduction
+          - definition [ref=f2e337]:
+            - link "LDNS detection" [ref=f2e338] [cursor=pointer]:
+              - /url: http://ldns.17ce.com/
+          - definition [ref=f2e339]:
+            - link "Trend analysis" [ref=f2e340] [cursor=pointer]:
+              - /url: /site/product.html#trend-analysis
+          - definition [ref=f2e341]:
+            - link "Error analysis" [ref=f2e342] [cursor=pointer]:
+              - /url: /site/product.html#error-analysis
+          - definition [ref=f2e343]:
+            - link "Regional analysis" [ref=f2e344] [cursor=pointer]:
+              - /url: /site/product.html#area-analysis
+          - definition [ref=f2e345]:
+            - link "ISP analysis" [ref=f2e346] [cursor=pointer]:
+              - /url: /site/product.html#ISP-analysis
+          - definition [ref=f2e347]:
+            - link "Monitoring point analysis" [ref=f2e348] [cursor=pointer]:
+              - /url: /site/product.html#monitor-analysis
+        - generic [ref=f2e349]:
+          - term [ref=f2e350]: About us
+          - definition [ref=f2e351]:
+            - link "About 17CE" [ref=f2e352] [cursor=pointer]:
+              - /url: /site/aboutus.html
+          - definition [ref=f2e353]:
+            - link "Sitemap" [ref=f2e354] [cursor=pointer]:
+              - /url: /site/map.html
+          - definition [ref=f2e355]:
+            - link "Blog" [ref=f2e356] [cursor=pointer]:
+              - /url: https://blog.17ce.com/
+        - generic [ref=f2e357]:
+          - term [ref=f2e358]: Contact us
+          - definition [ref=f2e359]:
+            - link "Email：yiqice@qq.com" [ref=f2e360] [cursor=pointer]:
+              - /url: javascript:void(0)
+          - definition [ref=f2e361]:
+            - link "QQ：2253556988" [ref=f2e362] [cursor=pointer]:
+              - /url: javascript:void(0)
+          - definition [ref=f2e363]:
+            - link "17CEMonitoring technology：181028504" [ref=f2e364] [cursor=pointer]:
+              - /url: javascript:void(0)
+          - definition [ref=f2e365]:
+            - link "17CE router group：468678952/325564051" [ref=f2e366] [cursor=pointer]:
+              - /url: javascript:void(0)
+          - definition [ref=f2e367]:
+            - link "Tel：021-63355191" [ref=f2e368] [cursor=pointer]:
+              - /url: javascript:void(0)
+          - definition [ref=f2e369]:
+            - link [ref=f2e370] [cursor=pointer]:
+              - /url: http://weibo.com/17ce?s=6cm7D0
+              - img "17ce新浪微博" [ref=f2e371]
+        - generic [ref=f2e372]:
+          - term [ref=f2e373]
+          - definition [ref=f2e374]
+          - definition [ref=f2e375]: 17ce official account
+        - generic [ref=f2e376]:
+          - term [ref=f2e377]
+          - definition [ref=f2e378]
+          - definition [ref=f2e379]: 17ce WeChat
+      - paragraph [ref=f2e381]:
+        - text: © 2014-2026 Shanghai Yun-test Network Technology Co., Ltd. , Inc. All rights reserved.
+        - link "沪ICP备11033349号-1" [ref=f2e382] [cursor=pointer]:
+          - /url: https://beian.miit.gov.cn/
+  - list [ref=f2e384]:
+    - listitem [ref=f2e385]:
+      - link "在线客服" [ref=f2e386] [cursor=pointer]:
+        - /url: https://work.weixin.qq.com/kfid/kfcbd68de88953ca355
+    - listitem [ref=f2e388]:
+      - link [ref=f2e389] [cursor=pointer]:
+        - /url: https://www.17ce.com/
