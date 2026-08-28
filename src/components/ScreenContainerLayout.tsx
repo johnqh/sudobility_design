@@ -126,7 +126,7 @@ export default function ScreenContainerLayout() {
   ];
 
   return (
-    <LayoutProvider mode="standard">
+    <LayoutProvider mode="full">
       <div className="min-h-screen flex flex-col bg-background">
         {/* Sticky header: topbar + breadcrumbs */}
         <div className="sticky top-0 z-40">
