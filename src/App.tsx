@@ -1,5 +1,5 @@
 import { Suspense, lazy, type ComponentType } from "react";
-import { Routes, Route, Navigate } from "react-router-dom";
+import { Routes, Route, Navigate, useParams } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 import { SudobilityApp } from "@sudobility/building_blocks";
 import { initializeNetworkService } from "@sudobility/di";
@@ -54,6 +54,21 @@ const pageProps: PageProps = {
   appName: CONSTANTS.APP_NAME,
 };
 
+function NotFoundRedirect() {
+  const { lang } = useParams();
+  return <Navigate to={"/" + (lang || "en") + "/404"} replace />;
+}
+function NotFoundPage() {
+  const { lang } = useParams();
+  return (
+    <main className="mx-auto max-w-2xl px-4 py-16 text-center">
+      <h1>404</h1>
+      <p>Page Not Found</p>
+      <a href={"/" + (lang || "en")}>Go to Home</a>
+    </main>
+  );
+}
+
 function AppRoutes() {
   const { i18n: i18nInstance, t } = useTranslation("common");
   return (
@@ -70,6 +85,8 @@ function AppRoutes() {
           ))}
           <Route path="settings" element={<SettingsPage {...pageProps} />} />
           <Route path="docs" element={<DocsPage {...pageProps} />} />
+          <Route path="404" element={<NotFoundPage />} />
+          <Route path="*" element={<NotFoundRedirect />} />
         </Route>
         <Route
           path="/"
@@ -77,7 +94,7 @@ function AppRoutes() {
             <Navigate to={`/${i18nInstance.language || "en"}`} replace />
           }
         />
-        <Route path="*" element={<Navigate to="/en" replace />} />
+        <Route path="*" element={<Navigate to="/en/404" replace />} />
       </Routes>
     </Suspense>
   );
