@@ -1,7 +1,7 @@
 {
   "name": "sudobility-design",
   "private": true,
-  "version": "0.1.14",
+  "version": "0.1.15",
   "type": "module",
   "scripts": {
     "dev": "vite",
@@ -22,7 +22,7 @@
     "@radix-ui/react-slot": "^1.2.4",
     "@radix-ui/react-switch": "^1.2.6",
     "@radix-ui/react-tabs": "^1.1.13",
-    "@sudobility/building_blocks": "^0.0.307",
+    "@sudobility/building_blocks": "^0.0.308",
     "@sudobility/components": "^5.3.24",
     "@sudobility/design": "^1.1.55",
     "@sudobility/di": "^1.5.66",
